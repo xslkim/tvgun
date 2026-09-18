@@ -1,3 +1,9 @@
 out/
 __pycache__/
 *.pyc
+.venv/
+*.class
+*.apk
+*.apk.idsig
+classes.dex
+android/debug.keystore
