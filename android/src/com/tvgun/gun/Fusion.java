@@ -15,14 +15,15 @@ package com.tvgun.gun;
  * clock (no output); the first lock initializes p from p_camera.
  *
  * Axis mapping (device is locked to sensorLandscape, so detRotation is only
- * ever 0 or 180). rot=0:  dx = ROT0_SIGN_H * omega_y*dt*S,
- *                         dy = ROT0_SIGN_V * omega_x*dt*S.
- * rot=180 flips both signs. If real-device testing shows reversed movement,
- * flip ROT0_SIGN_H / ROT0_SIGN_V here only.
+ * ever 0 or 180). rot=0:  dx = ROT0_SIGN_H * omega_x*dt*S,
+ *                         dy = ROT0_SIGN_V * omega_y*dt*S.
+ * rot=180 flips both signs. The mapping was corrected by regression on
+ * recorded replay data (frame-to-frame cross displacement vs integrated gyro):
+ * dx=-wx, dy=+wy at rot=0.
  */
 public final class Fusion {
-    // ---- axis sign table (待真机验证：方向反了只改这两个常量) ----
-    public static final int ROT0_SIGN_H = +1;
+    // ---- axis sign table (回归实证：rot=0 时 dx=-wx, dy=+wy) ----
+    public static final int ROT0_SIGN_H = -1;
     public static final int ROT0_SIGN_V = +1;
 
     private static final float CAMERA_GAIN = 0.3f;      // complementary correction gain
@@ -75,8 +76,8 @@ public final class Fusion {
         if (!initialized) return;              // pre-first-lock: advance clock only
         if (!locked && tsNs - lastLockNs > PREDICT_NS) return; // frozen
         int sign = (rotation == 180) ? -1 : 1;
-        x += ROT0_SIGN_H * sign * wy * dt * scale;
-        y += ROT0_SIGN_V * sign * wx * dt * scale;
+        x += ROT0_SIGN_H * sign * wx * dt * scale;
+        y += ROT0_SIGN_V * sign * wy * dt * scale;
     }
 
     /** Camera frame with a valid crosshair (detector.locked && crossValid). */

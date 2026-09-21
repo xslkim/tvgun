@@ -35,6 +35,10 @@ public class OverlayView extends View {
     private int flashType;
     private long flashUntil;
     private long connFailUntil;
+    private int recSec = -1; // >=0: recording, elapsed seconds
+    private boolean unlockWarn; // lock lost >2s: screen out of view / occluded
+    private String lensLabel;
+    private long lensUntil;
 
     public OverlayView(Context context) {
         super(context);
@@ -78,14 +82,31 @@ public class OverlayView extends View {
         invalidate();
     }
 
+    public synchronized void setRecSec(int sec) {
+        recSec = sec;
+        invalidate();
+    }
+
+    public synchronized void setUnlockWarn(boolean warn) {
+        unlockWarn = warn;
+        invalidate();
+    }
+
+    /** Briefly shows the active lens name (shown ~2.5s after camera open/switch). */
+    public synchronized void setLensLabel(String label) {
+        lensLabel = label;
+        lensUntil = SystemClock.elapsedRealtime() + 2500;
+        invalidate();
+    }
+
     @Override
     protected void onDraw(Canvas canvas) {
-        boolean lk, av, pr, pd;
+        boolean lk, av, pr, pd, uw;
         float[] cs;
-        int dw, dh, sc, ft;
+        int dw, dh, sc, ft, rec;
         float cx, cy, f;
-        String srv;
-        long fu, cfu;
+        String srv, lens;
+        long fu, cfu, lu;
         synchronized (this) {
             lk = locked;
             av = aimValid;
@@ -102,6 +123,10 @@ public class OverlayView extends View {
             ft = flashType;
             fu = flashUntil;
             cfu = connFailUntil;
+            rec = recSec;
+            uw = unlockWarn;
+            lens = lensLabel;
+            lu = lensUntil;
         }
 
         long now = SystemClock.elapsedRealtime();
@@ -156,6 +181,26 @@ public class OverlayView extends View {
         if (connFail) {
             paint.setColor(Color.RED);
             canvas.drawText("连接失败", 20, 184, paint);
+        }
+        if (rec >= 0) {
+            // REC indicator, top-right: red dot + elapsed time
+            paint.setStyle(Paint.Style.FILL);
+            paint.setColor(Color.RED);
+            canvas.drawCircle(getWidth() - 150, 30, 12, paint);
+            canvas.drawText(String.format("REC %d:%02d", rec / 60, rec % 60),
+                    getWidth() - 125, 40, paint);
+        }
+        if (uw) {
+            paint.setStyle(Paint.Style.FILL);
+            paint.setTextSize(44f);
+            paint.setColor(Color.YELLOW);
+            canvas.drawText("屏幕出画/被遮挡", getWidth() / 2f - 170, getHeight() * 0.75f, paint);
+        }
+        if (lens != null && now < lu) {
+            paint.setStyle(Paint.Style.FILL);
+            paint.setTextSize(48f);
+            paint.setColor(Color.CYAN);
+            canvas.drawText(lens, getWidth() / 2f - 140, getHeight() * 0.25f, paint);
         }
         if (pd) {
             paint.setTextSize(40f);

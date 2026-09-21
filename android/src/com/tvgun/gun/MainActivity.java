@@ -19,6 +19,8 @@ import android.os.Looper;
 import android.os.SystemClock;
 import android.os.Vibrator;
 import android.util.Log;
+import android.util.Size;
+import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.OrientationEventListener;
 import android.view.SurfaceHolder;
@@ -32,11 +34,15 @@ import android.widget.FrameLayout;
 import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
@@ -57,6 +63,28 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     private int prevW;
     private int prevH;
     private volatile int detRotation;
+    private int[] fpsRangeChosen;
+    private String sceneModeChosen;
+    private float viewAngleDeg;
+    private float scaleS;
+    private int[] backCameraIds;
+    private float[] backViewAngles;
+    private int cameraId = -1;
+    // camera2 backend (preferred; legacy HAL1 kept as fallback)
+    private volatile boolean useCamera2;
+    private boolean backendChosen;
+    private Camera2Backend c2;
+    private List<Camera2Backend.LensInfo> c2Lenses;
+    private String c2Id;
+    private int sensorOrientation = 90;
+    private int c2ErrorRetries;
+
+    private final Recorder recorder = new Recorder();
+    private long pendingTs;
+    private int recSeq;
+    private long lastJpegNs;
+    private final int[] grayDims = new int[2];
+    private long lastLockedNs = SystemClock.elapsedRealtimeNanos();
 
     private final Detector detector = new Detector();
     private final Fusion fusion = new Fusion();
@@ -68,6 +96,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         @Override
         public void onSensorChanged(SensorEvent e) {
             fusion.onGyro(e.timestamp, e.values[0], e.values[1], e.values[2]);
+            recorder.recordGyro(e.timestamp, e.values[0], e.values[1], e.values[2]);
         }
 
         @Override
@@ -167,7 +196,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
             orientationListener.enable();
         }
         if (gyro != null) {
-            boolean ok = sensorManager.registerListener(gyroListener, gyro, SensorManager.SENSOR_DELAY_GAME);
+            boolean ok = sensorManager.registerListener(gyroListener, gyro, SensorManager.SENSOR_DELAY_FASTEST);
             Log.i(TAG, "gyro registered=" + ok + " delay=GAME");
         }
         openCamera();
@@ -190,6 +219,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     protected void onDestroy() {
         super.onDestroy();
         running = false;
+        recorder.stop();
         synchronized (frameLock) {
             frameLock.notifyAll();
         }
@@ -231,6 +261,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     @Override
     public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
         checkOrientationChange();
+        openCamera(); // setFixedSize resize lands here: retry opening with the new surface
     }
 
     @Override
@@ -241,17 +272,15 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         }
     }
 
-    /** Standard back-camera display-orientation formula. out = {info.orientation, displayRotation}. */
+    /** Standard back-camera display-orientation formula. out = {sensorOrientation, displayRotation}. */
     private int computeDisplayOrientation(int[] out) {
-        Camera.CameraInfo info = new Camera.CameraInfo();
-        Camera.getCameraInfo(0, info);
         int rotation = getWindowManager().getDefaultDisplay().getRotation();
         int degrees = rotation * 90; // ROTATION_0/90/180/270 -> 0/90/180/270
         if (out != null) {
-            out[0] = info.orientation;
+            out[0] = sensorOrientation;
             out[1] = rotation;
         }
-        return (info.orientation - degrees + 360) % 360;
+        return (sensorOrientation - degrees + 360) % 360;
     }
 
     /** Re-applies the display orientation if the device rotation changed (sensorLandscape 180° flips). */
@@ -261,7 +290,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         detRotation = newVal;
         fusion.setRotation(newVal);
         synchronized (camLock) {
-            if (camera != null) {
+            if (!useCamera2 && camera != null) {
                 try {
                     camera.setDisplayOrientation(newVal);
                 } catch (Exception e) {
@@ -280,9 +309,315 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
 
     private void openCamera() {
         synchronized (camLock) {
+            if (!backendChosen) {
+                backendChosen = true;
+                c2 = new Camera2Backend(this);
+                c2.errorListener = new Camera2Backend.ErrorListener() {
+                    @Override
+                    public void onCameraError() {
+                        ui.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                synchronized (camLock) {
+                                    if (!useCamera2 || c2.active) return;
+                                    c2ErrorRetries++;
+                                    if (c2ErrorRetries > 5) {
+                                        Log.e(TAG, "camera2 kept failing, fallback to legacy HAL1");
+                                        useCamera2 = false;
+                                        c2.close();
+                                        if (cameraId < 0) cameraId = selectInitialCameraLocked();
+                                    }
+                                }
+                                openCamera();
+                            }
+                        }, 800);
+                    }
+                };
+                try {
+                    c2Lenses = c2.enumerateBackLenses();
+                    useCamera2 = !c2Lenses.isEmpty();
+                } catch (Exception e) {
+                    Log.e(TAG, "camera2 enumeration failed, fallback to legacy HAL1", e);
+                    useCamera2 = false;
+                }
+                if (useCamera2) {
+                    c2Id = selectInitialC2Locked();
+                } else if (cameraId < 0) {
+                    cameraId = selectInitialCameraLocked();
+                }
+            }
+            if (useCamera2) {
+                if (!surfaceReady || !hasCameraPermission()) {
+                    return; // surfaceCreated/permission callback will retry
+                }
+                try {
+                    openCamera2Locked(c2Id);
+                    return; // active now, or a surface-resize retry was scheduled
+                } catch (Exception e) {
+                    Log.e(TAG, "camera2 open failed, fallback to legacy HAL1", e);
+                    useCamera2 = false;
+                    c2.close();
+                    if (cameraId < 0) cameraId = selectInitialCameraLocked();
+                }
+            }
+        }
+        openCamera(cameraId);
+    }
+
+    /** Persisted camera2 id if still present, else the widest back lens. Call with camLock held. */
+    private String selectInitialC2Locked() {
+        String pref = prefs.getString("camera2Id", null);
+        Camera2Backend.LensInfo widest = null;
+        for (Camera2Backend.LensInfo li : c2Lenses) {
+            if (li.id.equals(pref)) {
+                Log.i(TAG, String.format(Locale.US,
+                        "camera2 id=%s FOV=%.1f (restored from prefs)", li.id, li.fovH));
+                return li.id;
+            }
+            if (widest == null || li.fovH > widest.fovH) widest = li;
+        }
+        Log.i(TAG, String.format(Locale.US, "camera2 id=%s FOV=%.1f (widest of %d back)",
+                widest.id, widest.fovH, c2Lenses.size()));
+        return widest.id;
+    }
+
+    /**
+     * Opens the camera2 backend on id and syncs all pipeline state; throws on real
+     * failure. A surface-resize retry schedules a reopen via surfaceChanged and
+     * returns without throwing. Call with camLock held.
+     */
+    private void openCamera2Locked(String id) throws Exception {
+        if (c2.active || !surfaceReady || !hasCameraPermission()) return;
+        Size yuvSize = c2.chooseYuvSize(id);
+        // camera2 needs the preview surface at a supported size: a full-screen
+        // SurfaceView buffer (e.g. 2340x1080) negotiates silently to a black preview.
+        android.graphics.Rect frame = surfaceView.getHolder().getSurfaceFrame();
+        if (frame.width() != yuvSize.getWidth() || frame.height() != yuvSize.getHeight()) {
+            Log.i(TAG, "preview surface resize " + frame.width() + "x" + frame.height()
+                    + " -> " + yuvSize.getWidth() + "x" + yuvSize.getHeight());
+            surfaceView.getHolder().setFixedSize(yuvSize.getWidth(), yuvSize.getHeight());
+            return; // surfaceChanged/Created re-fires and reopens
+        }
+        c2.open(id, surfaceView.getHolder().getSurface(), c2Sink);
+        c2ErrorRetries = 0;
+        prevW = c2.width;
+        prevH = c2.height;
+        viewAngleDeg = c2.fovDeg;
+        scaleS = (float) (Detector.NORM_W / Math.toRadians(viewAngleDeg));
+        fusion.setScale(scaleS);
+        sensorOrientation = c2.sensorOrientation;
+        int[] dbg = new int[2];
+        detRotation = computeDisplayOrientation(dbg);
+        fusion.setRotation(detRotation);
+        Log.i(TAG, String.format(Locale.US,
+                "camera2 started: id=%s preview %dx%d S=%.1f viewAngle=%.1f detRotation=%d",
+                id, prevW, prevH, scaleS, viewAngleDeg, detRotation));
+        final String lens = lensLabelC2(id);
+        ui.post(new Runnable() {
+            @Override
+            public void run() {
+                overlay.setLensLabel("镜头: " + lens);
+            }
+        });
+    }
+
+    /** Lens name by FOV rank among camera2 back lenses (widest=超广角, narrowest=长焦). */
+    private String lensLabelC2(String id) {
+        if (c2Lenses == null) return "后置" + id;
+        Camera2Backend.LensInfo self = null;
+        int wider = 0, narrower = 0;
+        for (Camera2Backend.LensInfo li : c2Lenses) {
+            if (li.id.equals(id)) self = li;
+        }
+        if (self == null) return "后置" + id;
+        for (Camera2Backend.LensInfo li : c2Lenses) {
+            if (li.fovH > self.fovH) wider++;
+            if (li.fovH < self.fovH) narrower++;
+        }
+        String kind;
+        if (wider == 0 && c2Lenses.size() >= 2) kind = "超广角";
+        else if (narrower == 0 && c2Lenses.size() >= 3) kind = "长焦";
+        else kind = "主摄";
+        return String.format(Locale.US, "%s %.0f°", kind, self.fovH);
+    }
+
+    private final Camera2Backend.FrameSink c2Sink = new Camera2Backend.FrameSink() {
+        @Override
+        public void onFrame(byte[] y, int w, int h, long tsNs) {
+            synchronized (frameLock) {
+                if (pending == null) {
+                    pending = y;
+                    pendingTs = tsNs;
+                    frameLock.notify();
+                }
+                // drop otherwise: private copy, nothing to recycle
+            }
+        }
+    };
+
+    /**
+     * Enumerates back cameras (open/probe viewAngle/release each), logs every id,
+     * returns the persisted id if still present, else the widest. Falls back to id 0.
+     * Call with camLock held.
+     */
+    private int selectInitialCameraLocked() {
+        List<Integer> ids = new ArrayList<>();
+        List<Float> angles = new ArrayList<>();
+        int n = Camera.getNumberOfCameras();
+        Log.i(TAG, "getNumberOfCameras=" + n);
+        Camera.CameraInfo info = new Camera.CameraInfo();
+        for (int i = 0; i < n; i++) {
+            try {
+                Camera.getCameraInfo(i, info);
+            } catch (Exception e) {
+                continue;
+            }
+            Log.i(TAG, "camera id=" + i + " facing="
+                    + (info.facing == Camera.CameraInfo.CAMERA_FACING_BACK ? "back" : "front")
+                    + " orientation=" + info.orientation);
+            if (info.facing != Camera.CameraInfo.CAMERA_FACING_BACK) continue;
+            float va = Float.NaN;
+            Camera probe = null;
+            try {
+                probe = Camera.open(i);
+                va = probe.getParameters().getHorizontalViewAngle();
+            } catch (Exception e) {
+                Log.w(TAG, "camera id=" + i + " probe failed: " + e.getMessage());
+            } finally {
+                if (probe != null) {
+                    try {
+                        probe.release();
+                    } catch (Exception ignored) {
+                    }
+                }
+            }
+            if (Float.isNaN(va)) continue;
+            ids.add(i);
+            angles.add(va);
+            Log.i(TAG, String.format(Locale.US, "back camera id=%d viewAngle=%.1f", i, va));
+        }
+        backCameraIds = new int[ids.size()];
+        backViewAngles = new float[angles.size()];
+        int widest = 0;
+        for (int i = 0; i < ids.size(); i++) {
+            backCameraIds[i] = ids.get(i);
+            backViewAngles[i] = angles.get(i);
+            if (angles.get(i) > angles.get(widest)) widest = i;
+        }
+        if (ids.isEmpty()) {
+            Log.w(TAG, "no back cameras enumerated, fallback id 0");
+            backCameraIds = new int[]{0};
+            backViewAngles = new float[]{Float.NaN};
+            return 0;
+        }
+        int prefId = prefs.getInt("cameraId", -1);
+        for (int i = 0; i < backCameraIds.length; i++) {
+            if (backCameraIds[i] == prefId) {
+                Log.i(TAG, String.format(Locale.US,
+                        "camera id=%d viewAngle=%.1f (restored from prefs)", prefId, backViewAngles[i]));
+                return prefId;
+            }
+        }
+        Log.i(TAG, String.format(Locale.US, "camera id=%d viewAngle=%.1f (widest of %d back)",
+                backCameraIds[widest], backViewAngles[widest], backCameraIds.length));
+        return backCameraIds[widest];
+    }
+
+    /** Lens name by viewAngle rank among the back cameras (widest=超广角, narrowest=长焦). */
+    private String lensLabel(int id) {
+        if (backCameraIds == null) return "后置" + id;
+        int idx = -1;
+        for (int i = 0; i < backCameraIds.length; i++) {
+            if (backCameraIds[i] == id) idx = i;
+        }
+        if (idx < 0) return "后置" + id;
+        float va = backViewAngles[idx];
+        int wider = 0, narrower = 0;
+        for (float a : backViewAngles) {
+            if (a > va) wider++;
+            if (a < va) narrower++;
+        }
+        String kind;
+        if (wider == 0 && backCameraIds.length >= 2) kind = "超广角";
+        else if (narrower == 0 && backCameraIds.length >= 3) kind = "长焦";
+        else kind = "主摄";
+        return String.format(Locale.US, "%s %.0f°", kind, va);
+    }
+
+    /** Volume-up: cycle to the next back camera, skipping ids that fail to open. */
+    private void switchCamera() {
+        synchronized (camLock) {
+            if (recorder.isRecording()) {
+                Log.w(TAG, "camera switch ignored while recording");
+                return;
+            }
+            if (useCamera2) {
+                if (c2Lenses == null || c2Lenses.size() < 2) {
+                    Log.w(TAG, "camera switch ignored (single back lens)");
+                    return;
+                }
+                int cur = 0;
+                for (int i = 0; i < c2Lenses.size(); i++) {
+                    if (c2Lenses.get(i).id.equals(c2Id)) cur = i;
+                }
+                for (int attempt = 0; attempt < c2Lenses.size(); attempt++) {
+                    cur = (cur + 1) % c2Lenses.size();
+                    String next = c2Lenses.get(cur).id;
+                    c2.close();
+                    try {
+                        c2Id = next;
+                        openCamera2Locked(next);
+                        // success: active now, or reopen scheduled after surface resize
+                        prefs.edit().putString("camera2Id", next).apply();
+                        Log.i(TAG, "camera switched -> id=" + next + " " + lensLabelC2(next));
+                        return;
+                    } catch (Exception e) {
+                        Log.w(TAG, "camera2 id=" + next + " open failed: " + e.getMessage());
+                    }
+                }
+                Log.w(TAG, "all camera2 ids failed, fallback to legacy HAL1");
+                useCamera2 = false;
+                c2.close();
+                if (cameraId < 0) cameraId = selectInitialCameraLocked();
+                openCamera(cameraId);
+                return;
+            }
+            if (backCameraIds == null || backCameraIds.length < 2 || cameraId < 0) {
+                Log.w(TAG, "camera switch ignored (back ids not ready)");
+                return;
+            }
+            int cur = 0;
+            for (int i = 0; i < backCameraIds.length; i++) {
+                if (backCameraIds[i] == cameraId) cur = i;
+            }
+            for (int attempt = 0; attempt < backCameraIds.length; attempt++) {
+                cur = (cur + 1) % backCameraIds.length;
+                int next = backCameraIds[cur];
+                releaseCamera();
+                cameraId = next;
+                openCamera(next);
+                if (camera != null) {
+                    prefs.edit().putInt("cameraId", next).apply();
+                    Log.i(TAG, "camera switched -> id=" + next + " " + lensLabel(next));
+                    return;
+                }
+                Log.w(TAG, "camera id=" + next + " open failed, trying next");
+            }
+            releaseCamera();
+            cameraId = 0;
+            Log.w(TAG, "all back cameras failed, fallback id 0");
+            openCamera(0);
+        }
+    }
+
+    private void openCamera(int id) {
+        synchronized (camLock) {
             if (camera != null || !surfaceReady || !hasCameraPermission()) return;
             try {
-                camera = Camera.open();
+                camera = Camera.open(id);
+                Camera.CameraInfo info = new Camera.CameraInfo();
+                Camera.getCameraInfo(id, info);
+                sensorOrientation = info.orientation;
                 Camera.Parameters p = camera.getParameters();
                 Camera.Size best = null;
                 long bestDiff = Long.MAX_VALUE;
@@ -297,9 +632,61 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                 prevH = best.height;
                 p.setPreviewSize(prevW, prevH);
                 p.setRecordingHint(true);
+                // Fixed 30fps: prefer an exact [30000,30000] range, else the
+                // narrowest range containing 30000. Prevents the dark-scene
+                // frame-rate collapse (seen as fps=14 in logcat).
+                List<int[]> ranges = p.getSupportedPreviewFpsRange();
+                int[] chosenRange = null;
+                if (ranges != null) {
+                    for (int[] r : ranges) {
+                        if (r[0] == 30000 && r[1] == 30000) {
+                            chosenRange = r;
+                            break;
+                        }
+                    }
+                    if (chosenRange == null) {
+                        for (int[] r : ranges) {
+                            if (r[0] <= 30000 && r[1] >= 30000
+                                    && (chosenRange == null
+                                            || r[1] - r[0] < chosenRange[1] - chosenRange[0])) {
+                                chosenRange = r;
+                            }
+                        }
+                    }
+                }
+                if (chosenRange != null) {
+                    p.setPreviewFpsRange(chosenRange[0], chosenRange[1]);
+                }
+                StringBuilder rs = new StringBuilder();
+                if (ranges != null) {
+                    for (int[] r : ranges) {
+                        if (rs.length() > 0) rs.append(' ');
+                        rs.append('[').append(r[0]).append(',').append(r[1]).append(']');
+                    }
+                }
+                Log.i(TAG, "fps range chosen=" + (chosenRange == null ? "none"
+                        : "[" + chosenRange[0] + "," + chosenRange[1] + "]") + " supported=" + rs);
+                // Short-exposure scene mode against motion blur.
+                List<String> scenes = p.getSupportedSceneModes();
+                String sceneMode = null;
+                if (scenes != null) {
+                    if (scenes.contains(Camera.Parameters.SCENE_MODE_SPORTS)) {
+                        sceneMode = Camera.Parameters.SCENE_MODE_SPORTS;
+                    } else if (scenes.contains(Camera.Parameters.SCENE_MODE_ACTION)) {
+                        sceneMode = Camera.Parameters.SCENE_MODE_ACTION;
+                    }
+                }
+                if (sceneMode != null) {
+                    p.setSceneMode(sceneMode);
+                }
+                Log.i(TAG, "scene mode=" + sceneMode + " supported=" + scenes);
                 float viewAngle = p.getHorizontalViewAngle();
                 float scale = (float) (Detector.NORM_W / Math.toRadians(viewAngle));
                 fusion.setScale(scale);
+                fpsRangeChosen = chosenRange;
+                sceneModeChosen = sceneMode;
+                viewAngleDeg = viewAngle;
+                scaleS = scale;
                 Log.i(TAG, String.format(Locale.US, "S=%.1f viewAngle=%.1f", scale, viewAngle));
                 List<String> supportedFocus = p.getSupportedFocusModes();
                 String focusMode = null;
@@ -353,7 +740,14 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                         Log.w(TAG, "autoFocus failed", e);
                     }
                 }
-                Log.i(TAG, "camera started, preview " + prevW + "x" + prevH);
+                Log.i(TAG, "camera started: id=" + id + " preview " + prevW + "x" + prevH);
+                final String lens = lensLabel(id);
+                ui.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        overlay.setLensLabel("镜头: " + lens);
+                    }
+                });
             } catch (Exception e) {
                 Log.e(TAG, "openCamera failed", e);
                 if (camera != null) {
@@ -369,6 +763,9 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
 
     private void releaseCamera() {
         synchronized (camLock) {
+            if (c2 != null && c2.active) {
+                c2.close();
+            }
             if (camera == null) return;
             try {
                 camera.setPreviewCallbackWithBuffer(null);
@@ -384,9 +781,11 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     private final Camera.PreviewCallback previewCallback = new Camera.PreviewCallback() {
         @Override
         public void onPreviewFrame(byte[] data, Camera cam) {
+            long ts = SystemClock.elapsedRealtimeNanos();
             synchronized (frameLock) {
                 if (pending == null) {
                     pending = data;
+                    pendingTs = ts;
                     frameLock.notify();
                     return;
                 }
@@ -419,6 +818,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     private void workerLoop() {
         while (running) {
             byte[] d;
+            final long frameTs;
             synchronized (frameLock) {
                 while (running && pending == null) {
                     try {
@@ -428,10 +828,12 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                 }
                 d = pending;
                 pending = null;
+                frameTs = pendingTs;
             }
             if (d == null) continue;
             try {
-                detector.process(d, prevW, prevH, detRotation);
+                byte[] gray = sampleGray(d, prevW, prevH, detRotation, grayDims);
+                detector.processGray(gray, grayDims[0], grayDims[1]);
                 frames++;
                 long now = SystemClock.elapsedRealtime();
                 if (fpsWindowStart == 0) fpsWindowStart = now;
@@ -459,6 +861,32 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                     fusion.onCameraUnlock(nowNs);
                 }
                 final Fusion.State st = fusion.snapshot(nowNs);
+                if (lk) lastLockedNs = nowNs;
+                if (recorder.isRecording()) {
+                    if (nowNs - recorder.getStartNs() > 60_000_000_000L) {
+                        stopRecording();
+                    } else {
+                        final int seq = recSeq++;
+                        recorder.recordFrame(seq, frameTs, gray);
+                        recorder.recordDetect(frameTs, lk, cv, detector.lastFail,
+                                detector.lastThr, detector.lastLowThr,
+                                detector.detW * detector.detH > 0
+                                        ? (float) detector.lastBestCount / (detector.detW * detector.detH) : 0f,
+                                lk ? detector.corners : null,
+                                detector.cross[0], detector.cross[1], st.x, st.y, st.predicted);
+                        if (frameTs - lastJpegNs >= 1_000_000_000L) {
+                            lastJpegNs = frameTs;
+                            if (useCamera2) {
+                                recorder.recordGrayJpeg(seq, d.clone(), prevW, prevH);
+                            } else {
+                                recorder.recordJpeg(seq, d.clone(), prevW, prevH);
+                            }
+                        }
+                    }
+                }
+                final int recSec = recorder.isRecording()
+                        ? (int) ((nowNs - recorder.getStartNs()) / 1_000_000_000L) : -1;
+                final boolean uw = !lk && nowNs - lastLockedNs > 2_000_000_000L;
                 if (st.valid) {
                     long t = SystemClock.elapsedRealtime();
                     if (t - lastAimSent >= AIM_INTERVAL_MS) {
@@ -482,16 +910,22 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                     @Override
                     public void run() {
                         overlay.setState(lk, cs, dw, dh, ax, ay, av, pr, f, sc, srv);
+                        overlay.setRecSec(recSec);
+                        overlay.setUnlockWarn(uw);
                     }
                 });
             } catch (Throwable t) {
                 Log.e(TAG, "detect error", t);
             }
-            synchronized (camLock) {
-                if (camera != null) {
-                    try {
-                        camera.addCallbackBuffer(d);
-                    } catch (Exception ignored) {
+            if (useCamera2) {
+                c2.releaseBuffer(d);
+            } else {
+                synchronized (camLock) {
+                    if (camera != null) {
+                        try {
+                            camera.addCallbackBuffer(d);
+                        } catch (Exception ignored) {
+                        }
                     }
                 }
             }
@@ -556,6 +990,145 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         } finally {
             if (c != null) c.disconnect();
         }
+    }
+
+    // ---- recording ----
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN) {
+            if (event.getRepeatCount() == 0) {
+                toggleRecording();
+            }
+            return true;
+        }
+        if (keyCode == KeyEvent.KEYCODE_VOLUME_UP) {
+            if (event.getRepeatCount() == 0) {
+                switchCamera();
+            }
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+    @Override
+    public boolean onKeyUp(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN || keyCode == KeyEvent.KEYCODE_VOLUME_UP) {
+            return true; // consume: don't let the system change the volume
+        }
+        return super.onKeyUp(keyCode, event);
+    }
+
+    private void toggleRecording() {
+        if (recorder.isRecording()) {
+            stopRecording();
+            return;
+        }
+        if (prevW == 0) {
+            Log.w(TAG, "rec: camera not open, ignored");
+            return;
+        }
+        String ts = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US).format(new Date());
+        File dir = new File(getExternalFilesDir(null), "record/" + ts);
+        try {
+            recorder.start(dir, buildMeta(), SystemClock.elapsedRealtimeNanos());
+            recSeq = 0;
+            lastJpegNs = 0;
+        } catch (IOException e) {
+            Log.e(TAG, "rec start failed", e);
+        }
+    }
+
+    private void stopRecording() {
+        recorder.stop(); // logs the output dir and drop count
+    }
+
+    /** Stride-subsampled Y plane gray, rotated into display coords; outDims gets {w,h}. */
+    private byte[] sampleGray(byte[] y, int w, int h, int rotation, int[] outDims) {
+        int step = Math.max(1, w / 640);
+        int sw = w / step;
+        int sh = h / step;
+        byte[] a = new byte[sw * sh];
+        for (int j = 0; j < sh; j++) {
+            int srow = j * step * w;
+            int drow = j * sw;
+            for (int i = 0; i < sw; i++) {
+                a[drow + i] = y[srow + i * step];
+            }
+        }
+        switch (((rotation % 360) + 360) % 360) {
+            case 90:
+                byte[] b90 = new byte[a.length];
+                for (int j = 0; j < sw; j++) {
+                    for (int i = 0; i < sh; i++) {
+                        b90[j * sh + i] = a[(sh - 1 - i) * sw + j];
+                    }
+                }
+                outDims[0] = sh;
+                outDims[1] = sw;
+                return b90;
+            case 180:
+                byte[] b180 = new byte[a.length];
+                for (int j = 0; j < sh; j++) {
+                    for (int i = 0; i < sw; i++) {
+                        b180[j * sw + i] = a[(sh - 1 - j) * sw + (sw - 1 - i)];
+                    }
+                }
+                outDims[0] = sw;
+                outDims[1] = sh;
+                return b180;
+            case 270:
+                byte[] b270 = new byte[a.length];
+                for (int j = 0; j < sw; j++) {
+                    for (int i = 0; i < sh; i++) {
+                        b270[j * sh + i] = a[i * sw + (sw - 1 - j)];
+                    }
+                }
+                outDims[0] = sh;
+                outDims[1] = sw;
+                return b270;
+            default:
+                outDims[0] = sw;
+                outDims[1] = sh;
+                return a;
+        }
+    }
+
+    private String buildMeta() {
+        int recStep = Math.max(1, prevW / 640);
+        int rsw = prevW / recStep;
+        int rsh = prevH / recStep;
+        boolean swap = ((detRotation % 360) + 360) % 360 == 90
+                || ((detRotation % 360) + 360) % 360 == 270;
+        int rw = swap ? rsh : rsw;
+        int rh = swap ? rsw : rsh;
+        int detStep = Math.max(1, prevW / 320);
+        int dsw = prevW / detStep;
+        int dsh = prevH / detStep;
+        int dw = swap ? dsh : dsw;
+        int dh = swap ? dsw : dsh;
+        StringBuilder sb = new StringBuilder(512);
+        sb.append("preview=").append(prevW).append('x').append(prevH).append('\n');
+        sb.append("detect=").append(dw).append('x').append(dh)
+                .append(" (stride ").append(detStep).append(")\n");
+        sb.append("recordGray=").append(rw).append('x').append(rh)
+                .append(" (stride ").append(recStep)
+                .append(" from Y plane, rotated detRotation into display coords)\n");
+        sb.append("detRotation=").append(detRotation).append('\n');
+        sb.append("cameraId=").append(useCamera2 ? "c2:" + c2Id : String.valueOf(cameraId)).append('\n');
+        sb.append("camera2TsOffsetNs=").append(c2 != null ? c2.tsOffset : 0)
+                .append(" (image.getTimestamp vs elapsedRealtimeNanos, 0 when same clock or legacy)\n");
+        sb.append(String.format(Locale.US, "S=%.2f\n", scaleS));
+        sb.append(String.format(Locale.US, "viewAngle=%.2f\n", viewAngleDeg));
+        sb.append("fpsRange=").append(fpsRangeChosen == null ? "unset"
+                : "[" + fpsRangeChosen[0] + "," + fpsRangeChosen[1] + "]").append('\n');
+        sb.append("sceneMode=").append(sceneModeChosen == null ? "unset" : sceneModeChosen).append('\n');
+        sb.append("clock=SystemClock.elapsedRealtimeNanos (ns, monotonic; "
+                + "gyro SensorEvent.timestamp uses the same clock)\n");
+        sb.append("frames.bin=uint8 gray, ").append(rw).append('x').append(rh)
+                .append(" per frame, concatenated, indexed by frames_idx.csv seq\n");
+        sb.append("full_<seq>.jpg=NV21 preview compressed q85, <=1/s\n");
+        return sb.toString();
     }
 
     // ---- trigger ----

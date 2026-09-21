@@ -86,8 +86,8 @@ public class TestMain {
         check(Math.abs(d4.corners[0] - 50) < 2 && Math.abs(d4.corners[1] - 37.5f) < 2,
                 "TL corner from dim segment recovered");
 
-        // geometry rejection: filled trapezoid whose top edge slopes ~12.8deg vs
-        // horizontal bottom edge (> 10deg limit) must be rejected with fail=5.
+        // geometry rejection: filled trapezoid whose top edge slopes ~18.8deg vs
+        // horizontal bottom edge (> relaxed 15deg limit) must be rejected with fail=5.
         byte[] trap = trapezoidScene();
         Detector d5 = new Detector();
         d5.process(trap, W, H, 0);
@@ -117,14 +117,14 @@ public class TestMain {
         return y;
     }
 
-    /** Filled convex quad TL(200,150) TR(1080,350) BR(1080,570) BL(200,570):
-     *  valid area/edges, but top edge slopes 12.8deg vs bottom edge. */
+    /** Filled convex quad TL(200,150) TR(1080,450) BR(1080,570) BL(200,570):
+     *  valid area/edges, but top edge slopes 18.8deg vs bottom edge (> 15deg). */
     static byte[] trapezoidScene() {
         byte[] y = new byte[W * H];
         Arrays.fill(y, (byte) 10);
         for (int j = 150; j <= 570; j++) {
-            // above row 350 the right boundary lies on the slanted top edge
-            int xR = j < 350 ? 200 + (j - 150) * 880 / 200 : 1080;
+            // above row 450 the right boundary lies on the slanted top edge
+            int xR = j < 450 ? 200 + (j - 150) * 880 / 300 : 1080;
             for (int i = 200; i <= xR; i++) y[j * W + i] = (byte) 255;
         }
         return y;
