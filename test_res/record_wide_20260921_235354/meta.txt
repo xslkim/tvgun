@@ -1,0 +1,13 @@
+preview=1280x720
+detect=320x180 (stride 4)
+recordGray=640x360 (stride 2 from Y plane, rotated detRotation into display coords)
+detRotation=0
+cameraId=c2:21
+camera2TsOffsetNs=208224856 (image.getTimestamp vs elapsedRealtimeNanos, 0 when same clock or legacy)
+S=1196.36
+viewAngle=91.95
+fpsRange=unset
+sceneMode=unset
+clock=SystemClock.elapsedRealtimeNanos (ns, monotonic; gyro SensorEvent.timestamp uses the same clock)
+frames.bin=uint8 gray, 640x360 per frame, concatenated, indexed by frames_idx.csv seq
+full_<seq>.jpg=NV21 preview compressed q85, <=1/s
