@@ -20,7 +20,7 @@ public class OverlayView extends View {
     private final Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
     private final Path path = new Path();
 
-    private boolean locked;
+    private int grade;          // Tracker grade: 0=DEAD 1=GYRO 2=EDGE 3=PARTIAL 4=FULL
     private boolean aimValid;
     private boolean predicted;
     private boolean permissionDenied;
@@ -36,7 +36,7 @@ public class OverlayView extends View {
     private long flashUntil;
     private long connFailUntil;
     private int recSec = -1; // >=0: recording, elapsed seconds
-    private boolean unlockWarn; // lock lost >2s: screen out of view / occluded
+    private boolean unlockWarn; // vision lost >2s: screen out of view / occluded
     private String lensLabel;
     private long lensUntil;
 
@@ -44,10 +44,10 @@ public class OverlayView extends View {
         super(context);
     }
 
-    public synchronized void setState(boolean locked, float[] corners, int detW, int detH,
+    public synchronized void setState(int grade, float[] corners, int detW, int detH,
                                       float crossX, float crossY, boolean aimValid,
                                       boolean predicted, float fps, int score, String server) {
-        this.locked = locked;
+        this.grade = grade;
         this.corners = corners;
         this.detW = detW;
         this.detH = detH;
@@ -101,14 +101,15 @@ public class OverlayView extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        boolean lk, av, pr, pd, uw;
+        boolean av, pr, pd, uw;
+        int gd;
         float[] cs;
         int dw, dh, sc, ft, rec;
         float cx, cy, f;
         String srv, lens;
         long fu, cfu, lu;
         synchronized (this) {
-            lk = locked;
+            gd = grade;
             av = aimValid;
             pr = predicted;
             pd = permissionDenied;
@@ -134,8 +135,8 @@ public class OverlayView extends View {
         boolean connFail = now < cfu;
         if (now < fu || connFail) postInvalidateDelayed(120);
 
-        // Detected quadrilateral, scaled from detection coords to view coords.
-        if (lk && cs != null && dw > 0 && dh > 0) {
+        // Tracked quadrilateral, scaled from image coords to view coords.
+        if (gd >= Tracker.GRADE_EDGE && cs != null && dw > 0 && dh > 0) {
             float sx = getWidth() / (float) dw;
             float sy = getHeight() / (float) dh;
             path.reset();
@@ -146,11 +147,11 @@ public class OverlayView extends View {
             path.close();
             paint.setStyle(Paint.Style.STROKE);
             paint.setStrokeWidth(3f);
-            paint.setColor(Color.GREEN);
+            paint.setColor(gd == Tracker.GRADE_FULL ? Color.GREEN : Color.YELLOW);
             canvas.drawPath(path, paint);
         }
 
-        // Center crosshair: solid cross when locked, hollow circle when predicted.
+        // Center crosshair: solid cross when vision-informed, hollow circle in GYRO.
         int color;
         if (ft == FLASH_HIT) color = Color.GREEN;
         else if (ft == FLASH_MISS) color = Color.RED;
@@ -173,7 +174,7 @@ public class OverlayView extends View {
         paint.setTextSize(28f);
         paint.setShadowLayer(3f, 1f, 1f, Color.BLACK);
         paint.setColor(av ? Color.GREEN : Color.LTGRAY);
-        canvas.drawText((lk ? "LOCK" : (pr ? "PRED" : "NO LOCK")) + String.format("  %.1f fps", f), 20, 40, paint);
+        canvas.drawText(Tracker.GRADE_NAMES[gd] + String.format("  %.1f fps", f), 20, 40, paint);
         paint.setColor(Color.WHITE);
         canvas.drawText("准星: " + (int) cx + ", " + (int) cy, 20, 76, paint);
         canvas.drawText("分数: " + sc, 20, 112, paint);

@@ -52,7 +52,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     private static final String DEFAULT_SERVER = "192.168.3.19:8000";
     private static final int REQ_CAM = 1;
     private static final long LONG_PRESS_MS = 600;
-    private static final long AIM_INTERVAL_MS = 66;
+    private static final long AIM_INTERVAL_MS = 16;    // 60Hz 准星上报
 
     private SurfaceView surfaceView;
     private OverlayView overlay;
@@ -84,10 +84,9 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     private int recSeq;
     private long lastJpegNs;
     private final int[] grayDims = new int[2];
-    private long lastLockedNs = SystemClock.elapsedRealtimeNanos();
+    private long lastVisionNs = SystemClock.elapsedRealtimeNanos();
 
-    private final Detector detector = new Detector();
-    private final Fusion fusion = new Fusion();
+    private final Tracker tracker = new Tracker();
     private final Handler ui = new Handler(Looper.getMainLooper());
 
     private SensorManager sensorManager;
@@ -95,7 +94,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     private final SensorEventListener gyroListener = new SensorEventListener() {
         @Override
         public void onSensorChanged(SensorEvent e) {
-            fusion.onGyro(e.timestamp, e.values[0], e.values[1], e.values[2]);
+            tracker.onGyro(e.timestamp, e.values[0], e.values[1], e.values[2]);
             recorder.recordGyro(e.timestamp, e.values[0], e.values[1], e.values[2]);
         }
 
@@ -113,13 +112,8 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     private long fpsWindowStart;
     private float fps;
 
-    // aim streaming: mailbox consumed by a dedicated sender thread
+    // aim streaming: 60Hz self-timed sender reads tracker.snapshot() directly
     private final Object aimLock = new Object();
-    private boolean aimPending;
-    private float aimX;
-    private float aimY;
-    private long lastAimSent;
-    private long lastAimLog;
 
     private SharedPreferences prefs;
     private String server;
@@ -288,7 +282,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         int newVal = computeDisplayOrientation(null);
         if (newVal == detRotation) return;
         detRotation = newVal;
-        fusion.setRotation(newVal);
+        tracker.setRotation(newVal);
         synchronized (camLock) {
             if (!useCamera2 && camera != null) {
                 try {
@@ -403,12 +397,12 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         prevW = c2.width;
         prevH = c2.height;
         viewAngleDeg = c2.fovDeg;
-        scaleS = (float) (Detector.NORM_W / Math.toRadians(viewAngleDeg));
-        fusion.setScale(scaleS);
+        scaleS = (float) (Tracker.NORM_W / Math.toRadians(viewAngleDeg));
+        tracker.setFov(viewAngleDeg);
         sensorOrientation = c2.sensorOrientation;
         int[] dbg = new int[2];
         detRotation = computeDisplayOrientation(dbg);
-        fusion.setRotation(detRotation);
+        tracker.setRotation(detRotation);
         Log.i(TAG, String.format(Locale.US,
                 "camera2 started: id=%s preview %dx%d S=%.1f viewAngle=%.1f detRotation=%d",
                 id, prevW, prevH, scaleS, viewAngleDeg, detRotation));
@@ -681,8 +675,8 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                 }
                 Log.i(TAG, "scene mode=" + sceneMode + " supported=" + scenes);
                 float viewAngle = p.getHorizontalViewAngle();
-                float scale = (float) (Detector.NORM_W / Math.toRadians(viewAngle));
-                fusion.setScale(scale);
+                float scale = (float) (Tracker.NORM_W / Math.toRadians(viewAngle));
+                tracker.setFov(viewAngle);
                 fpsRangeChosen = chosenRange;
                 sceneModeChosen = sceneMode;
                 viewAngleDeg = viewAngle;
@@ -722,7 +716,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                 int displayOrientation = computeDisplayOrientation(dbg);
                 camera.setDisplayOrientation(displayOrientation);
                 detRotation = displayOrientation;
-                fusion.setRotation(displayOrientation);
+                tracker.setRotation(displayOrientation);
                 Log.i(TAG, "orientation: info.orientation=" + dbg[0]
                         + " rotation=" + dbg[1] + " displayOrientation=" + displayOrientation);
                 int bufSize = prevW * prevH * 3 / 2;
@@ -833,7 +827,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
             if (d == null) continue;
             try {
                 byte[] gray = sampleGray(d, prevW, prevH, detRotation, grayDims);
-                detector.processGray(gray, grayDims[0], grayDims[1]);
+                tracker.processGray(gray, grayDims[0], grayDims[1], frameTs);
                 frames++;
                 long now = SystemClock.elapsedRealtime();
                 if (fpsWindowStart == 0) fpsWindowStart = now;
@@ -842,38 +836,29 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                     frames = 0;
                     fpsWindowStart = now;
                     Log.i(TAG, String.format(Locale.US,
-                            "fps=%.1f locked=%b thr=%d cross=%d,%d valid=%b fail=%d blob=%.2f%%",
-                            fps, detector.locked, detector.lastThr,
-                            (int) detector.cross[0], (int) detector.cross[1], detector.crossValid,
-                            detector.lastFail,
-                            detector.detW * detector.detH > 0
-                                    ? 100f * detector.lastBestCount / (detector.detW * detector.detH) : 0f));
+                            "fps=%.1f grade=%s edges=%d thr=%d cross=%d,%d",
+                            fps, Tracker.GRADE_NAMES[tracker.grade], tracker.nEdges,
+                            tracker.lastThr,
+                            (int) tracker.cross[0], (int) tracker.cross[1]));
                 }
-                final boolean lk = detector.locked;
-                final float[] cs = lk ? detector.corners.clone() : null;
-                final int dw = detector.detW;
-                final int dh = detector.detH;
-                final boolean cv = detector.crossValid;
+                final int grade = tracker.grade;
+                final boolean av = tracker.aimValid();
+                final float[] cs = tracker.quadImage();
+                final int dw = grayDims[0];
+                final int dh = grayDims[1];
                 final long nowNs = SystemClock.elapsedRealtimeNanos();
-                if (lk && cv) {
-                    fusion.onCameraLock(nowNs, detector.cross[0], detector.cross[1]);
-                } else if (!lk) {
-                    fusion.onCameraUnlock(nowNs);
-                }
-                final Fusion.State st = fusion.snapshot(nowNs);
-                if (lk) lastLockedNs = nowNs;
+                if (grade >= Tracker.GRADE_EDGE) lastVisionNs = nowNs;
                 if (recorder.isRecording()) {
                     if (nowNs - recorder.getStartNs() > 60_000_000_000L) {
                         stopRecording();
                     } else {
                         final int seq = recSeq++;
                         recorder.recordFrame(seq, frameTs, gray);
-                        recorder.recordDetect(frameTs, lk, cv, detector.lastFail,
-                                detector.lastThr, detector.lastLowThr,
-                                detector.detW * detector.detH > 0
-                                        ? (float) detector.lastBestCount / (detector.detW * detector.detH) : 0f,
-                                lk ? detector.corners : null,
-                                detector.cross[0], detector.cross[1], st.x, st.y, st.predicted);
+                        recorder.recordDetect(frameTs, grade >= Tracker.GRADE_EDGE, av, grade,
+                                tracker.lastThr, tracker.lastLowThr, 0f,
+                                cs, tracker.cross[0], tracker.cross[1],
+                                tracker.cross[0], tracker.cross[1],
+                                grade == Tracker.GRADE_GYRO);
                         if (frameTs - lastJpegNs >= 1_000_000_000L) {
                             lastJpegNs = frameTs;
                             if (useCamera2) {
@@ -886,30 +871,17 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                 }
                 final int recSec = recorder.isRecording()
                         ? (int) ((nowNs - recorder.getStartNs()) / 1_000_000_000L) : -1;
-                final boolean uw = !lk && nowNs - lastLockedNs > 2_000_000_000L;
-                if (st.valid) {
-                    long t = SystemClock.elapsedRealtime();
-                    if (t - lastAimSent >= AIM_INTERVAL_MS) {
-                        lastAimSent = t;
-                        offerAim(st.x, st.y);
-                        if (t - lastAimLog >= 1000) {
-                            lastAimLog = t;
-                            Log.i(TAG, String.format(Locale.US, "aim (%.0f,%.0f) pred=%d",
-                                    st.x, st.y, st.predicted ? 1 : 0));
-                        }
-                    }
-                }
-                final float ax = st.x;
-                final float ay = st.y;
-                final boolean av = st.valid;
-                final boolean pr = st.predicted;
+                final boolean uw = nowNs - lastVisionNs > 2_000_000_000L;
+                final float ax = tracker.cross[0];
+                final float ay = tracker.cross[1];
+                final boolean pr = grade == Tracker.GRADE_GYRO;
                 final float f = fps;
                 final int sc = score;
                 final String srv = server;
                 ui.post(new Runnable() {
                     @Override
                     public void run() {
-                        overlay.setState(lk, cs, dw, dh, ax, ay, av, pr, f, sc, srv);
+                        overlay.setState(grade, cs, dw, dh, ax, ay, av, pr, f, sc, srv);
                         overlay.setRecSec(recSec);
                         overlay.setUnlockWarn(uw);
                     }
@@ -934,28 +906,40 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
 
     // ---- aim streaming ----
 
+    /**
+     * 60Hz self-timed aim sender: reads the tracker snapshot directly (the tracker
+     * propagates H on every gyro tick, so the cross is fresh at gyro rate, not
+     * limited to camera frames). Latest-wins: HTTP latency only delays, never queues.
+     */
     private void startAimSender() {
         Thread t = new Thread(new Runnable() {
             @Override
             public void run() {
+                long lastLog = 0;
+                int failStreak = 0;
                 while (true) {
-                    float x, y;
-                    String srv;
-                    synchronized (aimLock) {
-                        while (running && !aimPending) {
-                            try {
-                                aimLock.wait();
-                            } catch (InterruptedException ignored) {
-                            }
+                    if (!running) return;
+                    long nowMs = SystemClock.elapsedRealtime();
+                    if (tracker.aimValid()) {
+                        float[] st = tracker.snapshot();
+                        boolean ok = postAim("http://" + server + "/aim",
+                                String.format(Locale.US, "{\"x\":%.1f,\"y\":%.1f}", st[0], st[1]));
+                        failStreak = ok ? 0 : failStreak + 1;
+                        if (nowMs - lastLog >= 1000) {
+                            lastLog = nowMs;
+                            Log.i(TAG, String.format(Locale.US, "aim (%.0f,%.0f) grade=%s fail=%d",
+                                    st[0], st[1], Tracker.GRADE_NAMES[(int) st[2]], failStreak));
                         }
-                        if (!running) return;
-                        x = aimX;
-                        y = aimY;
-                        aimPending = false;
-                        srv = server;
                     }
-                    postAim("http://" + srv + "/aim",
-                            String.format(Locale.US, "{\"x\":%.1f,\"y\":%.1f}", x, y));
+                    long elapsed = SystemClock.elapsedRealtime() - nowMs;
+                    long sleep = AIM_INTERVAL_MS - elapsed;
+                    if (failStreak > 30) sleep = Math.max(sleep, 500);   // 断连退避
+                    if (sleep > 0) {
+                        try {
+                            Thread.sleep(sleep);
+                        } catch (InterruptedException ignored) {
+                        }
+                    }
                 }
             }
         }, "aim");
@@ -963,17 +947,10 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         t.start();
     }
 
-    private void offerAim(float x, float y) {
-        synchronized (aimLock) {
-            aimX = x;
-            aimY = y;
-            aimPending = true;
-            aimLock.notify();
-        }
-    }
-
-    /** request() with 1s timeouts and silent failure; runs on the "aim" thread only. */
-    private static void postAim(String urlStr, String body) {
+    /** request() with 1s timeouts and silent failure; runs on the "aim" thread only.
+     * Returns false on failure so the caller can back off (otherwise a dead server
+     * would stall the 60Hz loop on 1s connect timeouts). */
+    private static boolean postAim(String urlStr, String body) {
         HttpURLConnection c = null;
         try {
             c = (HttpURLConnection) new URL(urlStr).openConnection();
@@ -986,7 +963,9 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
             os.write(body.getBytes("UTF-8"));
             os.close();
             c.getResponseCode();
+            return true;
         } catch (Exception ignored) {
+            return false;
         } finally {
             if (c != null) c.disconnect();
         }
@@ -1150,14 +1129,14 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     }
 
     private void fire() {
-        final Fusion.State st = fusion.snapshot(SystemClock.elapsedRealtimeNanos());
-        if (!st.valid) {
+        if (!tracker.aimValid()) {
             overlay.flash(OverlayView.FLASH_NOLOCK);
             Log.i(TAG, "fire: no lock, skipped");
             return;
         }
-        final float x = st.x;
-        final float y = st.y;
+        final float[] st = tracker.snapshot();
+        final float x = st[0];
+        final float y = st[1];
         final String srv = server;
         new Thread(new Runnable() {
             @Override
