@@ -150,6 +150,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         if (gyro == null) {
             Log.w(TAG, "no gyroscope sensor; camera-only aiming");
         }
+        Log.i(TAG, "tvgun version " + Version.DESCRIBE);
 
         FrameLayout root = new FrameLayout(this);
         surfaceView = new SurfaceView(this);
@@ -1102,6 +1103,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         sb.append("fpsRange=").append(fpsRangeChosen == null ? "unset"
                 : "[" + fpsRangeChosen[0] + "," + fpsRangeChosen[1] + "]").append('\n');
         sb.append("sceneMode=").append(sceneModeChosen == null ? "unset" : sceneModeChosen).append('\n');
+        sb.append("appVersion=").append(Version.DESCRIBE).append('\n');
         sb.append("clock=SystemClock.elapsedRealtimeNanos (ns, monotonic; "
                 + "gyro SensorEvent.timestamp uses the same clock)\n");
         sb.append("frames.bin=uint8 gray, ").append(rw).append('x').append(rh)

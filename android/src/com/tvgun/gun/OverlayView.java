@@ -179,6 +179,11 @@ public class OverlayView extends View {
         canvas.drawText("准星: " + (int) cx + ", " + (int) cy, 20, 76, paint);
         canvas.drawText("分数: " + sc, 20, 112, paint);
         canvas.drawText("服务器: " + srv, 20, 148, paint);
+        // 版本角标（防版本错配：HUD 永远可见当前运行的构建版本）
+        paint.setTextSize(22f);
+        paint.setColor(Color.GRAY);
+        canvas.drawText(Version.DESCRIBE, 20, getHeight() - 16, paint);
+        paint.setTextSize(28f);
         if (connFail) {
             paint.setColor(Color.RED);
             canvas.drawText("连接失败", 20, 184, paint);
