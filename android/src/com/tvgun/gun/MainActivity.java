@@ -112,7 +112,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     private long fpsWindowStart;
     private float fps;
 
-    // aim streaming: 60Hz self-timed sender reads tracker.snapshot() directly
+    // aim streaming: 60Hz self-timed sender reads tracker.snapshot(now) directly
     private final Object aimLock = new Object();
 
     private SharedPreferences prefs;
@@ -922,7 +922,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                     if (!running) return;
                     long nowMs = SystemClock.elapsedRealtime();
                     if (tracker.aimValid()) {
-                        float[] st = tracker.snapshot();
+                        float[] st = tracker.snapshot(SystemClock.elapsedRealtimeNanos());
                         boolean ok = postAim("http://" + server + "/aim",
                                 String.format(Locale.US, "{\"x\":%.1f,\"y\":%.1f}", st[0], st[1]));
                         failStreak = ok ? 0 : failStreak + 1;
@@ -1136,7 +1136,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
             Log.i(TAG, "fire: no lock, skipped");
             return;
         }
-        final float[] st = tracker.snapshot();
+        final float[] st = tracker.snapshot(SystemClock.elapsedRealtimeNanos());
         final float x = st[0];
         final float y = st[1];
         final String srv = server;

@@ -64,7 +64,8 @@ def run_tracker(frames, idx, gyro, fov_h, suppress_mask=None):
 
 
 def _propagate_only(tr: Tracker, ts_ns):
-    """process() 的无视觉变体：陀螺传播已在 on_gyro 中完成，这里只做等级衰减与输出。"""
+    """process() 的无视觉变体：惰性传播到 ts_ns + 等级衰减与输出。"""
+    tr._propagate_to(ts_ns)
     tr.t = ts_ns * 1e-9
     tr.edges_meas = []
     tr.innov = np.nan
@@ -133,9 +134,13 @@ def main(argv=None) -> int:
     ghist = {GRADE_NAMES[k]: int(grades.get(k, 0)) for k in range(5)}
     print(f"[metric] availability: {valid:.1%} valid; grades {ghist}")
 
-    # ---- 参考（旧 linefit 回放）
+    # ---- 参考（旧 linefit 回放，仅老录制存在且帧数匹配时用）
     ref_path = ROOT / "out" / ("replay_main" if "wide" not in rec.name else "replay_wide")
-    ref = pd.read_csv(ref_path / "linefit_replay.csv") if (ref_path / "linefit_replay.csv").exists() else None
+    ref = None
+    if (ref_path / "linefit_replay.csv").exists():
+        _ref = pd.read_csv(ref_path / "linefit_replay.csv")
+        if len(_ref) == n:
+            ref = _ref
 
     # ---- 静止段抖动（tracker 输出 + 参考）
     s0, s1 = 5, 55

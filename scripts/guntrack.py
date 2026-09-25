@@ -28,6 +28,8 @@
 """
 from __future__ import annotations
 
+import collections
+
 import numpy as np
 
 NORM_W, NORM_H = 1920.0, 1080.0
@@ -100,21 +102,31 @@ def _skew(v):
 
 
 class Tracker:
-    """单应传播 + 逐边视觉校正追踪器。输入 640x360 灰度帧 + 陀螺 tick。"""
+    """单应传播 + 逐边视觉校正追踪器。输入 640x360 灰度帧 + 陀螺 tick。
+
+    传播是**惰性**的：on_gyro 只入队原始 tick 并在线更新零偏；状态基准
+    (H, base_ts) 只在视觉校正/采集后前进；任何时刻的输出由 _prop_from_base
+    从基准出发对缓存 tick 重积分得到（不消费队列）。process(frame_ts) 先把
+    H 传播到 frame_ts（与帧曝光严格对齐）再做视觉；snapshot(now_ts) 传播到
+    now 输出准星。真机事故复盘：worker 处理帧时陀螺已积到"当前"（曝光后
+    ~0.1-0.2s），快速运动时预测位置越过实测边 → 边饿死 → GYRO。惰性传播
+    使预测始终贴合曝光时刻，且支持 aim 以陀螺速率输出。"""
 
     def __init__(self, params: TrackerParams | None = None):
         p = self.P = params or TrackerParams()
         f = (IMG_W / 2) / np.tan(np.radians(p.fov_h_deg) / 2)
         self.K = np.array([[f, 0, IMG_W / 2], [0, f, IMG_H / 2], [0, 0, 1.0]])
         self.Ki = np.linalg.inv(self.K)
-        self.H = None              # 3x3，img->norm
+        self.H = None              # 3x3，img->norm（基准时刻 _h_ts 的 H）
+        self._h_ts = -1            # 基准时间戳（ns）
         self.grade = GRADE_DEAD
         self.bias = np.zeros(3)    # 设备轴零偏
         self.cross = np.array([np.nan, np.nan])
         self.n_edges = 0           # 本帧测到的边数
         self.last_vision_t = -1e18
         self.t = 0.0
-        self._last_gyro_ts = None
+        self._gq = collections.deque(maxlen=2048)   # (ts,wx,wy,wz)，已按时间有序
+        self._gyro_last = -1       # 上一 tick 时间（dt 计算）
         # 诊断
         self.innov = np.nan        # 本帧校正前平均约束残差（norm px 量级）
         self.edges_meas = []       # 本帧测到的边 (idx, line, sigma, support)
@@ -124,34 +136,70 @@ class Tracker:
 
     # ---------------------------------------------------------------- 陀螺
     def on_gyro(self, ts_ns, wx, wy, wz):
-        if self._last_gyro_ts is None:
-            self._last_gyro_ts = ts_ns
-            return
-        dt = (ts_ns - self._last_gyro_ts) * 1e-9
-        self._last_gyro_ts = ts_ns
-        if dt <= 0 or dt > 0.1:
-            return
-        w_raw = np.array([wx, wy, wz])
-        # 静止（视觉确认）且读数小 -> 在线零偏
-        if getattr(self, "_vision_still", False) \
-                and np.abs(w_raw).max() < self.P.bias_max_rate:
-            self.bias = (1 - self.P.bias_alpha) * self.bias + self.P.bias_alpha * w_raw
-        w = w_raw - self.bias
-        if self.P.rotation == 180:
-            w = w * np.array([-1.0, -1.0, 1.0])
-        # 设备轴 -> 相机轴，立即传播 H（每个陀螺 tick 都更新，
-        # 使准星能以陀螺速率输出而非帧率）
-        if self.H is not None:
+        # 零偏在线学习（每 tick 一次；H 传播与此无关）
+        if self._gyro_last >= 0:
+            dt = (ts_ns - self._gyro_last) * 1e-9
+            if 0 < dt <= 0.1:
+                w_raw = np.array([wx, wy, wz])
+                if getattr(self, "_vision_still", False) \
+                        and np.abs(w_raw).max() < self.P.bias_max_rate:
+                    a = self.P.bias_alpha
+                    self.bias = (1 - a) * self.bias + a * w_raw
+        self._gyro_last = ts_ns
+        self._gq.append((ts_ns, wx, wy, wz))
+
+    def _prop_from_base(self, ts_ns):
+        """从基准 (H, _h_ts) 出发对 (_h_ts, ts_ns] 内的缓存 tick 重积分，
+        返回 ts_ns 时刻的 H（不修改基准，不消费队列）。H 为 None 时返回 None。"""
+        if self.H is None:
+            return None
+        H = self.H.copy()
+        prev_ts = None
+        for ts_g, wx, wy, wz in self._gq:
+            if ts_g <= self._h_ts:
+                prev_ts = ts_g          # 窗口前一个 tick 作为 dt 锚点
+                continue
+            if ts_g > ts_ns:
+                break
+            dt = (ts_g - prev_ts) * 1e-9 if prev_ts is not None else 0.0
+            prev_ts = ts_g
+            if dt <= 0 or dt > 0.1:
+                continue
+            w = np.array([wx, wy, wz]) - self.bias
+            if self.P.rotation == 180:
+                w = w * np.array([-1.0, -1.0, 1.0])
             th = M_ROT0 @ (w * dt)
-            T = self.K @ (np.eye(3) + _skew(th)) @ self.Ki   # img old -> img new
+            T = self.K @ (np.eye(3) + _skew(th)) @ self.Ki
             try:
-                self.H = _norm_h(self.H @ np.linalg.inv(T))
+                H = _norm_h(H @ np.linalg.inv(T))
             except np.linalg.LinAlgError:
-                self.H = None
+                return None
+        return H
+
+    def _propagate_to(self, ts_ns):
+        """把基准推进到 ts_ns（process 用）：H 传播 + 基准时间更新 + 清理旧 tick。
+        保留 ts_ns 处的 tick 作为下一次积分的 dt 锚点。"""
+        if self.H is not None and ts_ns > self._h_ts:
+            self.H = self._prop_from_base(ts_ns)
+        self._h_ts = ts_ns
+        while self._gq and self._gq[0][0] < ts_ns:
+            self._gq.popleft()
+
+    # ---------------------------------------------------------------- 准星输出
+    def snapshot(self, now_ns):
+        """传播到 now 并返回当前准星（供 aim 线程以任意速率调用；不推进基准）。"""
+        H = self._prop_from_base(now_ns) if now_ns > self._h_ts else self.H
+        if H is None or self.grade == GRADE_DEAD:
+            return self.cross[0], self.cross[1], GRADE_DEAD
+        c = H @ np.array([IMG_W / 2, IMG_H / 2, 1.0])
+        self.cross = c[:2] / c[2]
+        return self.cross[0], self.cross[1], self.grade
 
     # ---------------------------------------------------------------- 主入口
     def process(self, g640: np.ndarray, ts_ns):
         p = self.P
+        # 1) 先把基准（与 H）传播到帧曝光时刻
+        self._propagate_to(ts_ns)
         self.t = ts_ns * 1e-9
         self._frame_no += 1
         self.edges_meas = []

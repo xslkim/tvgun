@@ -94,7 +94,6 @@ public final class Tracker {
     public final double[] bias = new double[3]; // device axes
     private double lastVisionS = -1e18;
     private double tNowS;
-    private long lastGyroNs = -1;
     private final double[] edgeSeenS = {-1e18, -1e18, -1e18, -1e18};
     private int frameNo;
     private boolean visionStill;
@@ -109,6 +108,16 @@ public final class Tracker {
     private double fk = 475, cx0 = 320, cy0 = 180;
     private final double[] K = new double[9];
     private final double[] Ki = new double[9];
+
+    // ---- gyro ring buffer (lazy propagation: integrate only up to the queried time) ----
+    private static final int GYRO_CAP = 2048;
+    private final long[] gTs = new long[GYRO_CAP];
+    private final float[] gWx = new float[GYRO_CAP];
+    private final float[] gWy = new float[GYRO_CAP];
+    private final float[] gWz = new float[GYRO_CAP];
+    private int gHead, gSize;
+    private long gyroLastNs = -1;
+    private long baseNs = -1;   // H 基准时间（H 处于 baseNs 时刻）
 
     // ---- work buffers ----
     private byte[] grayA;      // 320x180 coarse
@@ -140,7 +149,9 @@ public final class Tracker {
         Arrays.fill(bias, 0);
         Arrays.fill(edgeSeenS, -1e18);
         lastVisionS = -1e18;
-        lastGyroNs = -1;
+        gyroLastNs = -1;
+        gHead = gSize = 0;
+        baseNs = -1;
         visionStill = false;
     }
 
@@ -149,43 +160,91 @@ public final class Tracker {
     }
 
     // ---------------------------------------------------------------- gyro
+    /** Buffers the tick and updates the online bias estimate. No propagation here:
+     *  the homography is advanced lazily by propagateTo / propFromBase so that the
+     *  prediction used for a camera frame always matches its exposure timestamp
+     *  (integrating to "now" overshoots by the worker latency and starves edges). */
     public synchronized void onGyro(long tsNs, float wx, float wy, float wz) {
-        if (lastGyroNs < 0) {
-            lastGyroNs = tsNs;
-            return;
+        if (gyroLastNs >= 0) {
+            double dt = (tsNs - gyroLastNs) * 1e-9;
+            if (dt > 0 && dt <= MAX_DT_S && visionStill
+                    && Math.abs(wx) < BIAS_MAX_RATE && Math.abs(wy) < BIAS_MAX_RATE
+                    && Math.abs(wz) < BIAS_MAX_RATE) {
+                bias[0] += BIAS_ALPHA * (wx - bias[0]);
+                bias[1] += BIAS_ALPHA * (wy - bias[1]);
+                bias[2] += BIAS_ALPHA * (wz - bias[2]);
+            }
         }
-        double dt = (tsNs - lastGyroNs) * 1e-9;
-        lastGyroNs = tsNs;
-        if (dt <= 0 || dt > MAX_DT_S) return;
-        double mx = wx - bias[0], my = wy - bias[1], mz = wz - bias[2];
-        if (visionStill && Math.abs(wx) < BIAS_MAX_RATE && Math.abs(wy) < BIAS_MAX_RATE
-                && Math.abs(wz) < BIAS_MAX_RATE) {
-            bias[0] += BIAS_ALPHA * (wx - bias[0]);
-            bias[1] += BIAS_ALPHA * (wy - bias[1]);
-            bias[2] += BIAS_ALPHA * (wz - bias[2]);
-        }
-        if (!haveH) return;
+        gyroLastNs = tsNs;
+        int i = (gHead + gSize) % GYRO_CAP;
+        gTs[i] = tsNs;
+        gWx[i] = wx;
+        gWy[i] = wy;
+        gWz[i] = wz;
+        if (gSize < GYRO_CAP) gSize++;
+        else gHead = (gHead + 1) % GYRO_CAP;
+    }
+
+    /** One propagation step: H <- H * (K*(I+[M*w*dt]x)*Ki)^-1, in place. */
+    private boolean gyroStep(double[] Ht, double mx, double my, double mz, double dt) {
         if (rotation == 180) {
             mx = -mx;
             my = -my;
         }
-        // th_cam = M_ROT0 * (w * dt)
         double tx = (M_ROT0[0] * mx + M_ROT0[1] * my + M_ROT0[2] * mz) * dt;
         double ty = (M_ROT0[3] * mx + M_ROT0[4] * my + M_ROT0[5] * mz) * dt;
         double tz = (M_ROT0[6] * mx + M_ROT0[7] * my + M_ROT0[8] * mz) * dt;
-        // T = K * (I + [th]x) * Ki ; H <- H * T^-1
         double[] R = {1, -tz, ty,
                       tz, 1, -tx,
                       -ty, tx, 1};
         double[] T = mul(mul(K, R), Ki);
         double[] Ti = inv3(T);
-        if (Ti == null) {
-            haveH = false;
-            return;
-        }
-        double[] Hn = mul(H, Ti);
+        if (Ti == null) return false;
+        double[] Hn = mul(Ht, Ti);
         normH(Hn);
-        System.arraycopy(Hn, 0, H, 0, 9);
+        System.arraycopy(Hn, 0, Ht, 0, 9);
+        return true;
+    }
+
+    /** Re-integrate buffered ticks in (baseNs, tsNs] onto a COPY of the base H. */
+    private double[] propFromBase(long tsNs) {
+        if (!haveH) return null;
+        double[] Ht = H.clone();
+        long prevTs = Long.MIN_VALUE;
+        boolean ok = true;
+        for (int k = 0; k < gSize; k++) {
+            int i = (gHead + k) % GYRO_CAP;
+            long tg = gTs[i];
+            if (tg <= baseNs) {
+                prevTs = tg;    // dt anchor just before the window
+                continue;
+            }
+            if (tg > tsNs) break;
+            double dt = prevTs != Long.MIN_VALUE ? (tg - prevTs) * 1e-9 : 0.0;
+            prevTs = tg;
+            if (dt <= 0 || dt > MAX_DT_S) continue;
+            ok = gyroStep(Ht, gWx[i] - bias[0], gWy[i] - bias[1], gWz[i] - bias[2], dt);
+            if (!ok) return null;
+        }
+        return Ht;
+    }
+
+    /** Advances the base (and H) to tsNs, dropping older ticks but keeping the
+     *  tick at tsNs as the dt anchor for the next round. */
+    private void propagateTo(long tsNs) {
+        if (haveH && tsNs > baseNs) {
+            double[] Ht = propFromBase(tsNs);
+            if (Ht == null) {
+                haveH = false;
+            } else {
+                System.arraycopy(Ht, 0, H, 0, 9);
+            }
+        }
+        baseNs = tsNs;
+        while (gSize > 0 && gTs[gHead] < tsNs) {
+            gHead = (gHead + 1) % GYRO_CAP;
+            gSize--;
+        }
     }
 
     // ---------------------------------------------------------------- frame
@@ -196,9 +255,10 @@ public final class Tracker {
         cy0 = h / 2.0;
         fk = cx0 / Math.tan(Math.toRadians(fovHDeg) / 2);
         setK(K, fk, cx0, cy0);
-        double det = fk * fk;
-        setK(Ki, 1.0 / fk, -cx0 / fk, -cy0 / fk);   // placeholder; 下面用精确逆
         inv3into(K, Ki);
+
+        // 1) propagate the base (and H) to the frame's exposure timestamp first
+        propagateTo(tsNs);
 
         tNowS = tsNs * 1e-9;
         frameNo++;
@@ -269,9 +329,15 @@ public final class Tracker {
         cross[1] = (float) c[1];
     }
 
-    /** Point-in-time snapshot for aim reporting (callable at gyro rate). */
-    public synchronized float[] snapshot() {
-        return new float[]{cross[0], cross[1], grade};
+    /** Point-in-time snapshot for aim reporting: lazily re-integrates the buffered
+     *  gyro ticks from the base to nowNs (does not advance the base). */
+    public synchronized float[] snapshot(long nowNs) {
+        double[] Ht = haveH ? (nowNs > baseNs ? propFromBase(nowNs) : H) : null;
+        if (Ht == null || grade == GRADE_DEAD) {
+            return new float[]{Float.NaN, Float.NaN, grade};
+        }
+        double[] c = applyH(Ht, cx0, cy0);
+        return new float[]{(float) c[0], (float) c[1], grade};
     }
 
     public synchronized boolean aimValid() {
