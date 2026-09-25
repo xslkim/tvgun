@@ -2,32 +2,81 @@
 # Manual (no-gradle) build chain for the TV Gun APK.
 # Usage: ./build.sh          -> build only, produces android/tvgun.apk
 #        ./build.sh install  -> build + adb install -r + launch
+#
+# 机器无关：自动探测 JDK/SDK；可用环境变量覆盖：
+#   JAVAC=<javac 路径>  JAVA11=<java11+ 路径>  ANDROID_SDK=<sdk 根目录>
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"
-JBR="/c/Program Files/Android/jdk/jdk-8.0.302.8-hotspot/jdk8u302-b08/bin"
-SDK="/c/Users/xsl/AppData/Local/Android/Sdk"
-AJAR="$SDK/platforms/android-35/android.jar"
-BT="$SDK/build-tools/36.0.0"
-ADB="$SDK/platform-tools/adb.exe"
-# d8/apksigner 需要 Java 11+（JDK8 不够）：用独立的 JRE17 跑它们
-J17="/d/Tools/jdk-17.0.20.1+1-jre"
 OUT="$ROOT/out"
 PKG="com.tvgun.gun"
 
 w() { cygpath -w "$1"; }
 
-# d8.bat / apksigner.bat need JAVA_HOME (Windows-style path) and java on PATH
-export JAVA_HOME="$(w "$JBR/..")"
-export PATH="$JBR:$PATH"
+# ---- JDK 探测（javac 任意版本均可；d8/apksigner 需 Java 11+） ----
+pick_first() { for c in "$@"; do [ -x "$c" ] && { echo "$c"; return 0; }; done; return 1; }
 
-javac8() { "$JBR/javac.exe" "$@"; }
+JAVAC="${JAVAC:-}"
+if [ -z "$JAVAC" ]; then
+  JAVAC="$(pick_first \
+    "/c/Program Files/Android/Android Studio/jbr/bin/javac.exe" \
+    "/c/Program Files/Android/jdk/jdk-8.0.302.8-hotspot/jdk8u302-b08/bin/javac.exe" \
+    "$(command -v javac 2>/dev/null || true)")"
+fi
+[ -n "$JAVAC" ] || { echo "no javac found; set JAVAC=..."; exit 1; }
+JBIN="$(dirname "$JAVAC")"
+
+JAVA11="${JAVA11:-}"
+if [ -z "$JAVA11" ]; then
+  for c in "/c/Program Files/Android/Android Studio/jbr/bin/java.exe" \
+           /d/Tools/jdk-17*/bin/java.exe \
+           /c/Program\ Files/Android/jdk/*/bin/java.exe \
+           "$(command -v java 2>/dev/null || true)"; do
+    if [ -x "$c" ]; then
+      v="$("$c" -version 2>&1 | head -1)"
+      case "$v" in *\"1[1-9]\.*|*\"2[0-9]\.*) JAVA11="$c"; break;; esac
+    fi
+  done
+fi
+[ -n "$JAVA11" ] || { echo "no java 11+ found (needed by d8/apksigner); set JAVA11=..."; exit 1; }
+J11HOME="$(cd "$(dirname "$JAVA11")/.." && pwd)"
+
+# ---- Android SDK 探测 ----
+SDK="${ANDROID_SDK:-${ANDROID_SDK_ROOT:-${ANDROID_HOME:-}}}"
+if [ -z "$SDK" ]; then
+  for u in "${USER:-}" "${USERNAME:-}" "$(basename "$HOME")"; do
+    [ -n "$u" ] && [ -d "/c/Users/$u/AppData/Local/Android/Sdk" ] && {
+      SDK="/c/Users/$u/AppData/Local/Android/Sdk"; break; }
+  done
+fi
+[ -n "$SDK" ] && [ -d "$SDK" ] || { echo "no Android SDK found; set ANDROID_SDK=..."; exit 1; }
+AJAR="$(ls -d "$SDK"/platforms/android-*/android.jar 2>/dev/null | sort -V | tail -1 || true)"
+BT="$(ls -d "$SDK"/build-tools/*/ 2>/dev/null | sort -V | tail -1 || true)"
+ADB="$SDK/platform-tools/adb.exe"
+[ -n "$AJAR" ] || { echo "no android.jar under $SDK/platforms; set ANDROID_SDK=..."; exit 1; }
+[ -n "$BT" ] || { echo "no build-tools under $SDK; set ANDROID_SDK=..."; exit 1; }
+BT="${BT%/}"
+
+echo "javac:  $JAVAC"
+echo "java11: $JAVA11"
+echo "sdk:    $SDK (platform $(basename "$(dirname "$AJAR")"), build-tools $(basename "$BT"))"
+
+# javac 参数：JDK9+ 用 --release 8，JDK8 用 -source/-target
+if "$JAVAC" --release 8 -version >/dev/null 2>&1; then
+  JAVAC_REL=(--release 8)
+else
+  JAVAC_REL=(-source 1.8 -target 1.8)
+fi
+
+export JAVA_HOME="$(w "$J11HOME")"
+export PATH="$(dirname "$JAVA11"):$PATH"
 
 mkdir -p "$OUT/classes" "$OUT/dex"
 
 echo "==> [1/7] debug keystore"
 if [ ! -f "$ROOT/debug.keystore" ]; then
-  "$JBR/keytool.exe" -genkeypair -keystore "$(w "$ROOT/debug.keystore")" \
+  KEYTOOL="$(pick_first "$(dirname "$JAVAC")/keytool.exe" "$(dirname "$JAVA11")/keytool.exe")"
+  "$KEYTOOL" -genkeypair -keystore "$(w "$ROOT/debug.keystore")" \
     -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000 \
     -storepass android -keypass android \
     -dname "CN=Android Debug,O=Android,C=US"
@@ -46,24 +95,25 @@ echo "==> [3/7] javac"
 rm -rf "$OUT/classes"; mkdir -p "$OUT/classes"
 SRCS=()
 while IFS= read -r f; do SRCS+=("$(w "$f")"); done < <(find "$ROOT/src" -name '*.java')
-"$JBR/javac.exe" -source 1.8 -target 1.8 -encoding UTF-8 \
+"$JAVAC" "${JAVAC_REL[@]}" -encoding UTF-8 \
   -classpath "$(w "$AJAR")" -d "$(w "$OUT/classes")" "${SRCS[@]}"
 
 echo "==> [4/7] d8"
 rm -rf "$OUT/dex"; mkdir -p "$OUT/dex"
 CLASSES=()
 while IFS= read -r f; do CLASSES+=("$(w "$f")"); done < <(find "$OUT/classes" -name '*.class')
-JAVA_HOME="$(w "$J17")" PATH="$J17/bin:$PATH" "$BT/d8.bat" --min-api 21 --lib "$(w "$AJAR")" --output "$(w "$OUT/dex")" "${CLASSES[@]}"
+"$BT/d8.bat" --min-api 21 --lib "$(w "$AJAR")" --output "$(w "$OUT/dex")" "${CLASSES[@]}"
 
 echo "==> [5/7] add classes.dex to apk"
 cp "$OUT/unsigned.apk" "$OUT/withdex.apk"
-(cd "$OUT/dex" && "$JBR/jar.exe" uf "$(w "$OUT/withdex.apk")" classes.dex)
+JARBIN="$(pick_first "$(dirname "$JAVAC")/jar.exe" "$(dirname "$JAVA11")/jar.exe")"
+(cd "$OUT/dex" && "$JARBIN" uf "$(w "$OUT/withdex.apk")" classes.dex)
 
 echo "==> [6/7] zipalign"
 "$BT/zipalign.exe" -f 4 "$(w "$OUT/withdex.apk")" "$(w "$OUT/aligned.apk")"
 
 echo "==> [7/7] apksigner sign"
-JAVA_HOME="$(w "$J17")" PATH="$J17/bin:$PATH" "$BT/apksigner.bat" sign \
+"$BT/apksigner.bat" sign \
   --ks "$(w "$ROOT/debug.keystore")" \
   --ks-pass pass:android --key-pass pass:android \
   --out "$(w "$ROOT/tvgun.apk")" "$(w "$OUT/aligned.apk")"

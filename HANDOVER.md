@@ -73,7 +73,26 @@ App 默认服务器 `192.168.3.19:8000`（旧电脑 IP）。**换新电脑后**�
 
 ## 4. 当前状态（v2 实测指标）
 
-两段录制回放（主摄 58.2s / 超广角 53s，含静止/瞄四角/侧边出画/上下出画/近距离/快甩/完全出画全场景）：
+### 2026-09-25 真机实测复盘（record_wide_20260925_214838）
+
+**结论：当时手机上跑的是旧 APK（Detector+Fusion），不是 v2。** detect.csv 为旧管线特征
+（failStage∈{0,6,7} 旧错误码、blobFrac 全量非零、detCross≠fused 全行）。根因：v2 初版
+build.sh 写死了开发机路径，实测机构建失败 → 手机仍是旧 App。已修复：build.sh 机器无关化
+（自动探测 JDK/SDK，`JAVAC=/JAVA11=/ANDROID_SDK=` 可覆盖），并把**预编译 APK 直接入库**
+（`android/tvgun.apk`，`adb install -r` 即可，无需构建）。
+
+旧管线实测行为（15.1s/422 帧，即用户感到"不流畅不准确"的内容）：
+- 锁定率仅 64.5%，34.4% 帧处于外推/无锁；|fused-det| 中位 73px（P90 163px，max 464px）；
+- 全链路误差（渲染准星 vs 图像中心实测）：静止时 (-1.6,+5.8)px，运动中 −63px，
+  失锁外推时 −364px（跟随延迟+外推冻结主导）；
+- aim 上报 ≤15Hz 绑相机帧。
+
+v2 追踪器在该环境的稀疏验证（17 张 full jpg 帧 + gyro 回放）：
+- seq0/28/402 正常采集 FULL，准星与旧 det 差 2.5px（seq0）；采集拒绝场景全部是合理的
+  屏幕出画（边框被图像边缘裁切，旧管线在这些帧靠极值角点"静默错锁"）；
+- 该环境采集链路与陀螺传播工作正常，无灯具/文字屏错锁。
+
+### 实验室回放指标（两段录制，主摄 58.2s / 超广角 53s 全场景）
 
 | 指标 | 旧管线（Detector+Fusion） | 新追踪器 v2 |
 |---|---|---|
@@ -121,12 +140,12 @@ App 默认服务器 `192.168.3.19:8000`（旧电脑 IP）。**换新电脑后**�
    uv venv .venv && uv pip install -r requirements.txt
    uv pip uninstall opencv-python-headless && uv pip install opencv-python   # TV窗口需要GUI版
    ```
-3. **Android 构建链**（构建 APK 才需要）：`android/build.sh` 顶部路径需指向：
-   - JDK8（javac）：`C:\Program Files\Android\jdk\jdk-8.0.302.8-hotspot\jdk8u302-b08\bin`
-   - JRE17（d8/apksigner 需 Java 11+）：`D:\Tools\jdk-17.0.20.1+1-jre`（没有就下 Temurin17 JRE 解压）
-   - SDK platform：`platforms\android-35\android.jar`，build-tools `36.0.0`
-   - adb：`Sdk\platform-tools\adb.exe`
-4. **手机**：小米 9 开 USB 调试，插线授权（`adb devices` 显示 `device`）。重装：`cd android && bash build.sh install`。
+3. **Android 构建链**（仅自行构建 APK 才需要；也可直接用仓库里的预编译 `android/tvgun.apk`）：
+   `android/build.sh` 自动探测 JDK（javac 任意版本）+ Java 11+（d8/apksigner 用）+
+   Android SDK（最新 platform 与 build-tools）；探测失败时用环境变量覆盖：
+   `JAVAC=<javac路径> JAVA11=<java11+路径> ANDROID_SDK=<sdk根目录> bash build.sh install`。
+4. **手机**：小米 9 开 USB 调试，插线授权（`adb devices` 显示 `device`）。
+   安装：`cd android && bash build.sh install`，或直接 `adb install -r android/tvgun.apk`。
 5. **网络**：手机与新 PC 同一局域网；新 PC 关防火墙或放行 TCP 8000；查新 PC 局域网 IP（`ipconfig`），手机上**长按屏幕**把服务器改成新 IP。
 6. 启动电视端验证：`.venv/Scripts/python.exe scripts/run_tv.py --port 8000 --seed 42`，手机 App 对屏应出 FULL/PARTIAL + TV 出青色准星。
 
