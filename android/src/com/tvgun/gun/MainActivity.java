@@ -284,6 +284,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         if (newVal == detRotation) return;
         detRotation = newVal;
         tracker.setRotation(newVal);
+        tracker.reset();   // 显示坐标翻转后 H 失效，重新采集（避免几秒错误输出）
         synchronized (camLock) {
             if (!useCamera2 && camera != null) {
                 try {
@@ -561,6 +562,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                     c2.close();
                     try {
                         c2Id = next;
+                        tracker.reset();   // 换镜头焦距/K 改变，H 失效重新采集
                         openCamera2Locked(next);
                         // success: active now, or reopen scheduled after surface resize
                         prefs.edit().putString("camera2Id", next).apply();
@@ -574,6 +576,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                 useCamera2 = false;
                 c2.close();
                 if (cameraId < 0) cameraId = selectInitialCameraLocked();
+                tracker.reset();   // 后端切换（参数/时间戳语义变），H 失效重新采集
                 openCamera(cameraId);
                 return;
             }
@@ -590,6 +593,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                 int next = backCameraIds[cur];
                 releaseCamera();
                 cameraId = next;
+                tracker.reset();   // 换镜头焦距/K 改变，H 失效重新采集
                 openCamera(next);
                 if (camera != null) {
                     prefs.edit().putInt("cameraId", next).apply();
