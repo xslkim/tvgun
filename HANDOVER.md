@@ -159,6 +159,7 @@ v2 追踪器在该环境的稀疏验证（17 张 full jpg 帧 + gyro 回放）�
 | `record_wide_20260925_214838/` | 超广角 92°（c2:21），~15s/422帧，**旧APK录制（作废，见 §4 复盘）** |
 | `record_wide_20260925_235333/` | 超广角 92°（c2:21），620帧，新版 v2（appVersion=3407e3e-dirty） |
 | `record_20260925_235405/` | 主摄 68°（c2:0），506帧，新版 v2（appVersion=3407e3e-dirty） |
+| `record_20260926_114948/` | 主摄 68°（c2:0），686帧，惰性传播+曝光中点补偿版（appVersion=25d8a50-dirty） |
 
 录制目录格式：`meta.txt`（相机/时钟参数）、`frames.bin`（640×360 uint8 灰度拼接）、`frames_idx.csv`（seq,tsNs）、`gyro.csv`（tsNs,wx,wy,wz）、`detect.csv`（逐帧检测+融合输出；v2 起 failStage 列存 grade）、`full_*.jpg`（每秒1张参考）。
 
