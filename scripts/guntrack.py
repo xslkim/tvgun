@@ -76,7 +76,9 @@ class TrackerParams:
     gain_full = 0.6            # FULL 校正增益
     gain_partial = 0.5
     gain_edge = 0.35
-    slew_cap = 60.0            # 单帧校正引起的准星位移上限（规范 px），超限截断（防跳变）
+    slew_cap = 0.0             # 已停用（0=不限幅）：实测限幅会把正确的采集结果
+                               # 拖到几十帧才收敛，期间的输出比跳变更糟；
+                               # 防假跳变由几何/中空/暗度/一致性门控负责
 
     # GYRO / DEAD
     t_gyro_max = 3.0           # 无视觉外推时限（s）
@@ -238,25 +240,40 @@ class Tracker:
         if not need_acq and self.n_edges < 3 and self._frame_no % 5 == 0:
             need_acq = True
         if need_acq:
-            h_acq = self._acquire(g640, thr, low_thr)
+            cands = self._acq_candidates(g640, thr, low_thr)
+            h_acq = self._acquire(g640, thr, low_thr, cands)
+            acq_edges = 4
+            if h_acq is None:
+                h_acq = self._acquire_partial(g640, thr, low_thr, cands)
+                acq_edges = 2
             if h_acq is not None:
                 if self.H is None:
                     self.H = h_acq
-                    self.grade = GRADE_FULL
-                    self.n_edges = 4
+                    self.grade = GRADE_FULL if acq_edges == 4 else GRADE_PARTIAL
+                    self.n_edges = acq_edges
                     self.last_vision_t = self.t
                     self.edge_seen_t = [self.t] * 4
                 else:
-                    # 与现有 H 比较：偏差 >4px 才融合（采集自身的 ~1px 噪声不引入）
+                    # 与现有 H 比较：采集自身的 ~1px 噪声不引入——以**四角最大位移**
+                    # 为准（仅看准星会漏判：形状不同的四边形中心可能恰好重合）
                     ca = (h_acq @ np.array([IMG_W / 2, IMG_H / 2, 1.0]))
                     ca = ca[:2] / ca[2]
                     cb = self.H @ np.array([IMG_W / 2, IMG_H / 2, 1.0])
                     cb = cb[:2] / cb[2]
-                    if np.hypot(*(ca - cb)) > 4.0:
-                        h = 0.3 * self.H.reshape(9) + 0.7 * h_acq.reshape(9)
+                    dist = float(np.hypot(*(ca - cb)))
+                    qa = (np.linalg.inv(h_acq) @ np.hstack([SCREEN_CORNERS, np.ones((4, 1))]).T).T
+                    qa = qa[:, :2] / qa[:, 2:3]
+                    qb = (np.linalg.inv(self.H) @ np.hstack([SCREEN_CORNERS, np.ones((4, 1))]).T).T
+                    qb = qb[:, :2] / qb[:, 2:3]
+                    cdist = float(np.abs(qa - qb).max())
+                    if cdist > 6.0:
+                        g_mix = 0.9 if dist > 100 else 0.7
+                        if self.P.slew_cap > 0 and dist > self.P.slew_cap:
+                            g_mix = g_mix * self.P.slew_cap / dist
+                        h = (1 - g_mix) * self.H.reshape(9) + g_mix * h_acq.reshape(9)
                         self.H = _norm_h(h.reshape(3, 3))
-                        self.grade = GRADE_FULL
-                        self.n_edges = 4
+                        self.grade = GRADE_FULL if acq_edges == 4 else GRADE_PARTIAL
+                        self.n_edges = acq_edges
                         self.last_vision_t = self.t
                         self.edge_seen_t = [self.t] * 4
         if self.H is None:
@@ -392,7 +409,7 @@ class Tracker:
         dist = float(np.hypot(*(c1 - c0)))
         self.innov = dist
         gg = g
-        if dist > p.slew_cap:
+        if p.slew_cap > 0 and dist > p.slew_cap:
             gg = g * p.slew_cap / dist
         h = (1 - gg) * h0.reshape(9) + gg * H_target.reshape(9)
         self.H = _norm_h(h.reshape(3, 3))
@@ -487,7 +504,7 @@ class Tracker:
         c1 = c1[:2] / c1[2]
         dist = float(np.hypot(*(c1 - c0)))
         self.innov = dist
-        if dist > p.slew_cap:
+        if p.slew_cap > 0 and dist > p.slew_cap:
             # 缩小 t 与角度/尺度（简单回退：整体向单位阵插值）
             frac = p.slew_cap / max(dist, 1e-9)
             Ci = (1 - frac) * np.eye(3) + frac * np.linalg.inv(C)
@@ -508,7 +525,9 @@ class Tracker:
             self._vision_still = False
 
     # ---------------------------------------------------------------- 采集
-    def _acquire(self, g640, thr, low_thr):
+    def _acq_candidates(self, g640, thr, low_thr):
+        """连通域候选枚举：返回 [(ci, quad640)]（面积降序，前 acq_max_cand 个，
+        均通过种子/面积/粗四边形校验）。"""
         import cv2
         p = self.P
         g = g640[::2, ::2]
@@ -517,12 +536,13 @@ class Tracker:
         mask = (g >= low_thr).astype(np.uint8)
         nlab, labels, stats, _ = cv2.connectedComponentsWithStats(mask, connectivity=4)
         if nlab <= 1:
-            return None
+            return []
         hi = np.bincount(labels[g >= thr].ravel(), minlength=nlab)
         area = stats[:, cv2.CC_STAT_AREA]
         cand = [i for i in range(1, nlab)
                 if hi[i] >= p.acq_min_seeds and area[i] >= p.acq_min_blob_frac * npx]
         cand.sort(key=lambda i: -area[i])
+        out = []
         for ci, i in enumerate(cand[:p.acq_max_cand]):
             ys, xs = np.nonzero(labels == i)
             s = xs + ys
@@ -545,6 +565,14 @@ class Tracker:
                              refine(*pts["br"]), refine(*pts["bl"])]) * 2.0  # ->640
             if not _quad_valid(quad):
                 continue
+            out.append((ci, quad))
+        return out
+
+    def _acquire(self, g640, thr, low_thr, cands=None):
+        p = self.P
+        if cands is None:
+            cands = self._acq_candidates(g640, thr, low_thr)
+        for ci, quad in cands:
             lines = []
             ok = True
             cen = quad.mean(axis=0)
@@ -580,6 +608,91 @@ class Tracker:
                 continue
             self.acq_candidate = ci
             return _norm_h(H)
+        return None
+
+    # ---------------------------------------------------------------- 部分采集
+    def _acquire_partial(self, g640, thr, low_thr, cands=None):
+        """屏幕部分入镜时的重建/纠回。
+        - GYRO（已有 H）：直接用候选拟合边对现有 H 做相似校正（粗四边形可能是
+          被图像边缘裁切的错误形状，绝不用它来初始化有 H 的状态）；
+        - DEAD（无 H）：用"拟合边修正的角点"重建——相邻两边均拟合成功的角点 =
+          交点（真值）；仅单边拟合的角点 = 粗角点在拟合线上的垂足（裁切只影响
+          垂直方向，沿边方向仍可信）；均不可用的角点保留粗值；再满增益相似校正；
+        - 末尾一致性校验（预测线与实测线 <4px、<3°），中空校验拒绝灯具/文字屏。
+        返回 H 或 None。"""
+        p = self.P
+        if cands is None:
+            cands = self._acq_candidates(g640, thr, low_thr)
+        h_save = self.H
+        for ci, quad in cands:
+            cen = quad.mean(axis=0)
+            fits = {}
+            for e in range(4):
+                q0, q1 = quad[e], quad[(e + 1) % 4]
+                fit = _fit_line_band(g640, low_thr, q0, q1, p.band, p, cen=cen)
+                if fit is None:
+                    continue
+                line, sigma, support, pa, pb = fit
+                fits[e] = (line, sigma, support, pa, pb)
+            if len(fits) < 2:
+                continue
+            # 要求至少一对相邻边 或 一横一纵两个方向的边（纯平行边对信息不足）
+            es = set(fits)
+            adjacent = any(e in es and (e + 1) % 4 in es for e in range(4))
+            two_axes = (es & {0, 2}) and (es & {1, 3})
+            if not (adjacent or two_axes):
+                continue
+            meas = [(e, *fits[e]) for e in sorted(fits)]
+            if not _hollow_check(g640, quad, low_thr, p.acq_dark_frac):
+                continue
+            if h_save is not None:
+                # GYRO：在现有 H 上做相似校正（粗四边形不可信，不用于初始化）
+                self.H = h_save.copy()
+                self._similarity_correction(meas, 0.7)
+                H1 = self.H
+                self.H = h_save
+            else:
+                # DEAD：修正角点重建
+                corners = quad.copy()
+                for k in range(4):
+                    e_prev, e_next = (k - 1) % 4, k
+                    if e_prev in fits and e_next in fits:
+                        cr = np.cross(fits[e_prev][0], fits[e_next][0])
+                        if abs(cr[2]) > 1e-9:
+                            corners[k] = cr[:2] / cr[2]
+                    elif e_prev in fits or e_next in fits:
+                        fe = fits[e_prev if e_prev in fits else e_next][0]
+                        corners[k] = corners[k] - (fe[0] * corners[k][0]
+                                                   + fe[1] * corners[k][1] + fe[2]) * fe[:2]
+                H0 = _h_from_corners(corners)
+                if H0 is None:
+                    continue
+                self.H = _norm_h(H0)
+                self._similarity_correction(meas, 1.0)
+                H1 = self.H
+                self.H = h_save
+            if H1 is None:
+                continue
+            # 一致性校验：校正后预测线与实测线贴合（平均距离 <4px，夹角 <3°）
+            ok = True
+            for e, line, sigma, support, pa, pb in meas:
+                lp = H1.T @ EDGE_LINES[e]
+                nrm = np.hypot(lp[0], lp[1])
+                if nrm < 1e-12:
+                    ok = False
+                    break
+                lp = lp / nrm
+                mid = (pa + pb) / 2
+                dist = abs(lp[0] * mid[0] + lp[1] * mid[1] + lp[2]
+                           - (line[0] * mid[0] + line[1] * mid[1] + line[2]))
+                ang = abs(lp[0] * line[1] - lp[1] * line[0])
+                if dist > 4.0 or ang > np.sin(np.radians(3)):
+                    ok = False
+                    break
+            if not ok:
+                continue
+            self.acq_candidate = ci
+            return H1
         return None
 
 

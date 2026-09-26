@@ -57,7 +57,7 @@ public final class Tracker {
     private static final float GAIN_FULL = 0.6f;
     private static final float GAIN_PARTIAL = 0.5f;
     private static final float GAIN_EDGE = 0.35f;
-    private static final float SLEW_CAP = 60f;         // norm px per frame
+    private static final float SLEW_CAP = 0f;         // 0=不限幅（限幅会把正确采集拖到几十帧收敛，比跳变更糟；防假跳变靠门控）
     private static final float T_GYRO_MAX_S = 3.0f;
     private static final float BIAS_ALPHA = 0.02f;
     private static final float BIAS_MAX_RATE = 0.06f;  // rad/s
@@ -295,24 +295,45 @@ public final class Tracker {
         if (!needAcq && grade == GRADE_GYRO && tNowS - lastVisionS > ACQ_RESCUE_S) needAcq = true;
         if (!needAcq && nEdges < 3 && frameNo % ACQ_RETRY_FRAMES == 0) needAcq = true;
         if (needAcq) {
-            double[] ha = acquire(g, w, h, thr, lowThr);
+            java.util.List<double[][]> cands = acqCandidates(g, w, h, thr, lowThr);
+            double[] ha = acquire(g, w, h, lowThr, cands);
+            int acqEdges = 4;
+            if (ha == null) {
+                ha = acquirePartial(g, w, h, lowThr, cands);
+                acqEdges = 2;
+            }
             if (ha != null) {
                 if (!haveH) {
                     System.arraycopy(ha, 0, H, 0, 9);
                     haveH = true;
-                    grade = GRADE_FULL;
-                    nEdges = 4;
+                    grade = acqEdges == 4 ? GRADE_FULL : GRADE_PARTIAL;
+                    nEdges = acqEdges;
                     lastVisionS = tNowS;
                     Arrays.fill(edgeSeenS, tNowS);
                 } else {
+                    // 以四角最大位移判定是否融合（仅看准星会漏判形状不同但中心重合的错误）
                     double[] cA = applyH(ha, cx0, cy0);
                     double[] cB = applyH(H, cx0, cy0);
                     double d = Math.hypot(cA[0] - cB[0], cA[1] - cB[1]);
-                    if (d > 4.0) {
-                        for (int i = 0; i < 9; i++) H[i] = 0.3 * H[i] + 0.7 * ha[i];
+                    double[] HiA = inv3(normHcopy(ha));
+                    double[] HiB = inv3(normHcopy(H));
+                    double cdist = 0;
+                    if (HiA != null && HiB != null) {
+                        double[][] sc = {{0, 0}, {NORM_W, 0}, {NORM_W, NORM_H}, {0, NORM_H}};
+                        for (int i = 0; i < 4; i++) {
+                            double[] pa = applyH(HiA, sc[i][0], sc[i][1]);
+                            double[] pb = applyH(HiB, sc[i][0], sc[i][1]);
+                            cdist = Math.max(cdist, Math.max(Math.abs(pa[0] - pb[0]),
+                                    Math.abs(pa[1] - pb[1])));
+                        }
+                    }
+                    if (cdist > 6.0) {
+                        double gMix = d > 100 ? 0.9 : 0.7;
+                        if (SLEW_CAP > 0 && d > SLEW_CAP) gMix = gMix * SLEW_CAP / d;
+                        for (int i = 0; i < 9; i++) H[i] = (1 - gMix) * H[i] + gMix * ha[i];
                         normH(H);
-                        grade = GRADE_FULL;
-                        nEdges = 4;
+                        grade = acqEdges == 4 ? GRADE_FULL : GRADE_PARTIAL;
+                        nEdges = acqEdges;
                         lastVisionS = tNowS;
                         Arrays.fill(edgeSeenS, tNowS);
                     }
@@ -806,7 +827,7 @@ public final class Tracker {
         double dist = Math.hypot(c1[0] - c0[0], c1[1] - c0[1]);
         innov = (float) dist;
         double gg = g;
-        if (dist > SLEW_CAP) gg = g * SLEW_CAP / dist;
+        if (SLEW_CAP > 0 && dist > SLEW_CAP) gg = g * SLEW_CAP / dist;
         for (int i = 0; i < 9; i++) H[i] = (1 - gg) * H[i] + gg * Ht[i];
         normH(H);
     }
@@ -949,7 +970,7 @@ public final class Tracker {
         double[] c1 = applyH(H1, cx0, cy0);
         double dist = Math.hypot(c1[0] - c0[0], c1[1] - c0[1]);
         innov = (float) dist;
-        if (dist > SLEW_CAP) {
+        if (SLEW_CAP > 0 && dist > SLEW_CAP) {
             double frac = SLEW_CAP / Math.max(dist, 1e-9);
             for (int i = 0; i < 9; i++) Ci[i] = (1 - frac) * (i == 0 || i == 4 || i == 8 ? 1 : 0) + frac * Ci[i];
             System.arraycopy(mul(H, Ci), 0, H, 0, 9);
@@ -962,10 +983,12 @@ public final class Tracker {
 
     // ---------------------------------------------------------------- acquisition
     /**
-     * Multi-candidate blob search + 4-edge fit + hollow check.
-     * Returns H (img -> norm) or null.
+     * Connected-component candidate enumeration on the coarse grid.
+     * Returns quads (TL,TR,BR,BL in full-res coords) of candidates passing
+     * seed/area/quad checks, area-desc, up to ACQ_MAX_CAND.
      */
-    private double[] acquire(byte[] g, int w, int h, int thr, int lowThr) {
+    private java.util.List<double[][]> acqCandidates(byte[] g, int w, int h, int thr, int lowThr) {
+        java.util.List<double[][]> out = new java.util.ArrayList<>();
         // coarse 320x180 (uses grayA from thresholds())
         int step = Math.max(1, Math.max(w, h) / 320);
         int sw = w / step, sh = h / step;
@@ -1052,6 +1075,15 @@ public final class Tracker {
                 quad[i][1] *= step;
             }
             if (!quadValid(quad, w, h)) continue;
+            out.add(quad);
+        }
+        return out;
+    }
+
+    /** Full acquisition: 4-edge fit + geometry + hollow check. Returns H or null. */
+    private double[] acquire(byte[] g, int w, int h, int lowThr, java.util.List<double[][]> cands) {
+        for (int ci = 0; ci < cands.size(); ci++) {
+            double[][] quad = cands.get(ci);
             double ccx = (quad[0][0] + quad[1][0] + quad[2][0] + quad[3][0]) / 4;
             double ccy = (quad[0][1] + quad[1][1] + quad[2][1] + quad[3][1]) / 4;
             double[][] lines = new double[4][];
@@ -1085,6 +1117,136 @@ public final class Tracker {
             if (hm == null) continue;
             acqCandidate = ci;
             return hm;
+        }
+        return null;
+    }
+
+    /**
+     * Partial acquisition for a partially visible screen.
+     * - GYRO (H exists): correct the CURRENT H with the candidate's fitted lines
+     *   (the clipped coarse quad is never trusted to initialize an existing track);
+     * - DEAD (no H): rebuild from corrected corners — corners with both adjacent
+     *   edges fitted become their intersection (true), corners with one adjacent
+     *   edge get projected onto that line (clipping only moves the corner
+     *   perpendicular to the edge), others keep the coarse value; then a full-gain
+     *   similarity correction;
+     * - consistency gate: predicted lines within 4px / 3deg of the measured ones;
+     * - hollow check rejects lamps / text screens.
+     */
+    private double[] acquirePartial(byte[] g, int w, int h, int lowThr,
+                                    java.util.List<double[][]> cands) {
+        double[] hSave = haveH ? H.clone() : null;
+        for (int ci = 0; ci < cands.size(); ci++) {
+            double[][] quad = cands.get(ci);
+            double ccx = (quad[0][0] + quad[1][0] + quad[2][0] + quad[3][0]) / 4;
+            double ccy = (quad[0][1] + quad[1][1] + quad[2][1] + quad[3][1]) / 4;
+            EdgeMeas[] tmp = new EdgeMeas[4];
+            int nf = 0;
+            boolean[] hasE = new boolean[4];
+            for (int e = 0; e < 4; e++) {
+                double[] fit = fitLineBand(g, w, h, lowThr,
+                        quad[e][0], quad[e][1], quad[(e + 1) % 4][0], quad[(e + 1) % 4][1],
+                        BAND, ccx, ccy);
+                if (fit == null) continue;
+                tmp[nf] = new EdgeMeas();
+                tmp[nf].edge = e;
+                tmp[nf].line[0] = fit[0];
+                tmp[nf].line[1] = fit[1];
+                tmp[nf].line[2] = fit[2];
+                tmp[nf].sigma = fit[3];
+                tmp[nf].support = fit[4];
+                tmp[nf].paX = fit[5];
+                tmp[nf].paY = fit[6];
+                tmp[nf].pbX = fit[7];
+                tmp[nf].pbY = fit[8];
+                hasE[e] = true;
+                nf++;
+            }
+            if (nf < 2) continue;
+            boolean adjacent = false;
+            for (int e = 0; e < 4; e++) {
+                if (hasE[e] && hasE[(e + 1) % 4]) {
+                    adjacent = true;
+                    break;
+                }
+            }
+            boolean twoAxes = (hasE[0] || hasE[2]) && (hasE[1] || hasE[3]);
+            if (!adjacent && !twoAxes) continue;
+            EdgeMeas[] meas = java.util.Arrays.copyOf(tmp, nf);
+            if (!hollowCheck(g, w, h, quad, lowThr)) continue;
+            double[] H1;
+            if (hSave != null) {
+                System.arraycopy(hSave, 0, H, 0, 9);
+                similarityCorrection(meas, nf, 0.7f);
+                H1 = H.clone();
+                System.arraycopy(hSave, 0, H, 0, 9);
+            } else {
+                double[][] corn = new double[4][2];
+                for (int i = 0; i < 4; i++) {
+                    corn[i][0] = quad[i][0];
+                    corn[i][1] = quad[i][1];
+                }
+                for (int k = 0; k < 4; k++) {
+                    int ePrev = (k + 3) % 4, eNext = k;
+                    if (hasE[ePrev] && hasE[eNext]) {
+                        double[] a = lineOf(meas, nf, ePrev), b = lineOf(meas, nf, eNext);
+                        double px = a[1] * b[2] - a[2] * b[1];
+                        double py = a[2] * b[0] - a[0] * b[2];
+                        double pw = a[0] * b[1] - a[1] * b[0];
+                        if (Math.abs(pw) > 1e-9) {
+                            corn[k][0] = px / pw;
+                            corn[k][1] = py / pw;
+                        }
+                    } else if (hasE[ePrev] || hasE[eNext]) {
+                        double[] fe = lineOf(meas, nf, hasE[ePrev] ? ePrev : eNext);
+                        double dd = fe[0] * corn[k][0] + fe[1] * corn[k][1] + fe[2];
+                        corn[k][0] -= dd * fe[0];
+                        corn[k][1] -= dd * fe[1];
+                    }
+                }
+                double[] H0 = hFromCorners(corn);
+                if (H0 == null) continue;
+                System.arraycopy(H0, 0, H, 0, 9);
+                similarityCorrection(meas, nf, 1.0f);
+                H1 = H.clone();
+                haveH = hSave != null;
+            }
+            if (H1 == null) continue;
+            // consistency gate: predicted lines within 4px / 3deg of measured
+            boolean ok = true;
+            for (int i = 0; i < nf; i++) {
+                EdgeMeas m = meas[i];
+                double[] L = EDGE_LINES[m.edge];
+                double lp0 = H1[0] * L[0] + H1[3] * L[1] + H1[6] * L[2];
+                double lp1 = H1[1] * L[0] + H1[4] * L[1] + H1[7] * L[2];
+                double lp2 = H1[2] * L[0] + H1[5] * L[1] + H1[8] * L[2];
+                double nl = Math.hypot(lp0, lp1);
+                if (nl < 1e-12) {
+                    ok = false;
+                    break;
+                }
+                lp0 /= nl;
+                lp1 /= nl;
+                lp2 /= nl;
+                double midX = (m.paX + m.pbX) / 2, midY = (m.paY + m.pbY) / 2;
+                double dist = Math.abs(lp0 * midX + lp1 * midY + lp2
+                        - (m.line[0] * midX + m.line[1] * midY + m.line[2]));
+                double ang = Math.abs(lp0 * m.line[1] - lp1 * m.line[0]);
+                if (dist > 4.0 || ang > Math.sin(Math.toRadians(3))) {
+                    ok = false;
+                    break;
+                }
+            }
+            if (!ok) continue;
+            acqCandidate = ci;
+            return H1;
+        }
+        return null;
+    }
+
+    private static double[] lineOf(EdgeMeas[] meas, int nf, int e) {
+        for (int i = 0; i < nf; i++) {
+            if (meas[i].edge == e) return meas[i].line;
         }
         return null;
     }
