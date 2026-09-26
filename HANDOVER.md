@@ -1,4 +1,4 @@
-# TVGun 手机光枪 — 交接文档（2026-09-25，追踪器 v2 重写版）
+# TVGun 手机光枪 — 交接文档（2026-09-26，追踪器 v2 重写 + v3 流畅度融合核）
 
 > 本文档供更换电脑后快速恢复开发。包含：项目现状、架构、协议、数据资产、已知问题、新机器搭建步骤、命令速查。
 > **实测/构建流程与防版本错配机制另见 [WORKFLOW.md](WORKFLOW.md)（必读）。**
@@ -14,9 +14,10 @@
 ```
 PC 端（Windows）
   scripts/run_tv.py              电视端：cv2 全屏游戏（黑底+24px白边框+弹跳鸭子+分数）
-                                 + 内置 HTTP 服务器（0.0.0.0:8000）
+                                 + 内置 HTTP 服务器（0.0.0.0:8000）+ UDP aim 监听（同端口）
   scripts/guntrack.py            【核心】追踪器 Python 参考实现（见下）
-  scripts/run_track_replay.py    录制回放评测：可用率/抖动/精度/再锁定/伪失锁 MC
+  scripts/run_track_replay.py    录制回放评测：可用率/抖动/精度/再锁定/伪失锁 MC（--v2 基线对照）
+  scripts/diag_smooth.py         流畅度/手感诊断：真值锚点法感知延迟/静止与运动抖动/零偏注入
   scripts/run_record_replay.py   旧算法（extrema/linefit 四角）基线回放（留档对照）
   scripts/calib_prop.py          陀螺→相机轴向映射回归（M 矩阵标定工具）
   scripts/diag_unlock.py         失锁帧根因诊断（连通域/边拟合可视化）
@@ -27,8 +28,9 @@ PC 端（Windows）
     build.sh               构建+安装一条龙（JDK8 javac + aapt2 + d8(JRE17) + apksigner）
     src/com/tvgun/gun/
       Tracker.java         【核心】guntrack.py 的逐语句 Java 移植（见下）
-      MainActivity.java    相机双后端、Tracker 驱动、60Hz aim 发送、录制、镜头切换
-      Camera2Backend.java  camera2 枚举(含MIUI隐藏vendor id)/会话/帧回调
+      MainActivity.java    相机双后端、Tracker 驱动、120Hz UDP aim（snapshot_ahead 预测）、
+                           录制、镜头切换、服务器/预测量设置
+      Camera2Backend.java  camera2 枚举(含MIUI隐藏vendor id)/会话/帧回调（60fps 优先）
       OverlayView.java     准星/HUD/等级显示（FULL/PARTIAL/EDGE/GYRO/DEAD）/REC指示
       Recorder.java        视频+IMU+检测同步录制（音量下键触发）
     test/                  TrackerTest（合成场景 16 项断言）+ ReplayTest（Java/Python 回放等价）
@@ -48,31 +50,97 @@ PC 端（Windows）
   在 ±12px 自适应带内逐 bin 求亮条纹**外侧过零边**（亚像素中点插值，无包络截断偏差），
   TLS+2σ 剔除拟合直线；支撑率/残差/创新量/夹角/内侧暗度五重门控（文字屏/灯具拒绝）。
   带宽随该边"未可信测到"的时长增长（12px/s 到 24px），打破"窄带锁定错误线"的饿死螺旋。
-- **校正**：4 边（FULL）= 邻边交点 → DLT → 按 0.6 增益收敛（绝对复位透视漂移）；
+- **校正**：4 边（FULL）= 邻边交点 → DLT → 按比例收敛（绝对复位透视漂移）；
   1-3 边（PARTIAL/EDGE）= 图像空间相似校正（平移=截断特征值 2x2 LS、旋转=夹角加权、
-  尺度=平行边对间距比）；全部 slew 限幅 60px/帧防可视跳变。
+  尺度=平行边对间距比）。**v3 起增益自适应**（innov<1px → 0.35·g_base 平滑噪声；
+  innov>12px → 满增益快速再锁定）。
 - **采集**：失锁（或 GYRO>0.3s / 边数长期<3）时遍历至多 5 个候选亮域，
   逐个四边拟合 + 几何校验 + 中空校验（内缩 18% 四边形亮像素 ≤30%），全部通过才重建 H。
-- **零偏**：视觉确认不动（|校正|<2px）且 |ω|<0.06rad/s 时 EMA 在线学习陀螺零偏。
+- **零偏**：双路在线学习——静止时（|校正|<2px 且 |ω|<0.06rad/s）EMA 快学；
+  **v3 起游玩中连续学习**（相邻 FULL 对残余 ε=t·g_prev/(f·dt)，β=0.03，钳位 0.08）。
 - **等级**：FULL(4边)/PARTIAL(2-3)/EDGE(1)/GYRO(0边≤3s)/DEAD（超 3s）。
-  准星以陀螺速率（~400Hz）更新，aim 上报 60Hz 独立线程（不绑相机帧）。
+  准星以陀螺速率（~400Hz）更新；**v3 起 aim 120Hz UDP 独立线程上报
+  `snapshotAhead(now+predictMs)` 预测准星**（默认提前 90ms，补偿端到端显示延迟）。
 
 ## 3. 通信协议（两端必须一致）
 
 坐标系：**规范坐标 1920×1080**，游戏白边框四角 = (0,0)/(1920,0)/(1920,1080)/(0,1080)。
 检测角点取边框**外缘**，有 ~13px 系统偏差 + 广角镜头 ~7px 附加偏差（待两点校准统一处理）。
 
-HTTP（TV 端监听 `0.0.0.0:8000`，手机经 WiFi 局域网访问 PC IP）：
+HTTP/UDP（TV 端监听 `0.0.0.0:8000` TCP+UDP，手机经 WiFi 局域网访问 PC IP）：
 
 | 端点 | 说明 |
 |---|---|
 | `POST /shot` | `{"x":f,"y":f}` → `{"hit":bool,"score":int}`，点屏幕开火 |
-| `POST /aim` | `{"x":f,"y":f}` → `{"ok":true}`，**60Hz** 准星上报，TV 画青色准星，0.6s 无更新消失 |
+| **UDP** 文本 `"x,y"` | **120Hz** 准星上报（主路径，v3 起；无连接、最新覆盖，丢包无碍） |
+| `POST /aim` | `{"x":f,"y":f}` → `{"ok":true}`（兼容路径，webgun/旧客户端用） |
 | `GET /state` | → `{"score":int,"target":{"x","y","r"}}` |
 
-App 默认服务器 `192.168.3.19:8000`（旧电脑 IP）。**换新电脑后**：手机上**长按屏幕**弹对话框改成新 PC 的局域网 IP 即可，不用改代码；新 PC 需关闭 Windows 防火墙或放行 8000 端口。
+准星 0.6s 无更新消失。aim 坐标 = `snapshotAhead(now, predictMs)` 的**预测值**
+（默认提前 90ms，手机长按屏幕可调），射击用同一预测量，保证"指哪打哪"与显示一致。
 
-## 4. 当前状态（v2 实测指标）
+App 默认服务器 `192.168.3.19:8000`（旧电脑 IP）。**换新电脑后**：手机上**长按屏幕**弹对话框改成新 PC 的局域网 IP 即可，不用改代码；新 PC 需关闭 Windows 防火墙或**同时放行 TCP 8000 与 UDP 8000**。
+
+## 4. 当前状态（v3 流畅度/手感重写版，2026-09-26）
+
+### v3 融合核：从"能用"到"好手感"
+
+用户实测反馈"检测基本正常，但流畅度/稳定性/真实手感差距大"。先换技术路线的
+评估结论：**视觉管线（Sinden 亮边框+逐边亚像素拟合）不是瓶颈**——瓶颈在融合律、
+端到端延迟和传输抖动。ArUco/纯陀螺等替代路线同样受 30Hz 帧率与角点噪声约束，
+不能解决这三个根因，故保留架构、重写融合核 v3（Tracker.java = guntrack.py 同步）：
+
+1. **输出预测（手感主修）**：aim/射击统一用 `snapshotAhead(now, predictMs)`——
+   陀螺队列积分到 now 后，再用 ω 短时 EMA（τ=15ms）匀速外推 predictMs 毫秒
+   （限 250ms/0.5rad），补偿曝光→处理→传输→渲染的端到端延迟。默认 90ms，
+   手机长按屏幕可调（拖尾调大、回甩调小）。真值锚点法（FULL DLT 未平滑准星
+   做真值插值）离线验证：**感知延迟 P95 降低 1.8-2.4 倍**（如广角 100ms 档
+   67.3→37.2px，主摄 69.9→29.1px）。快速往返甩动时恒速外推物理受限（加速度快），
+   此时 pred≈cur，不更差。
+2. **自适应校正增益（one-euro 式）**：g_eff = g_base·(GAIN_MIN+(1-GAIN_MIN)·
+   ramp(innov_pre))，innov<1px → 0.35·g_base 平滑噪声，innov>12px → 满增益快速
+   再锁定。GAIN_MIN=0.35 是实测权衡点（0.15 太小：视差/积分误差积累成慢摆动；
+   运动因子 gain/(1+k|ω|) 实测否决：运动时校正多为真实误差，少信反而积累）。
+   效果：平滑运动段 MA7 抖动 1.83→**1.09px**，静止 FULL 抖动 0.36→0.23-0.32px。
+3. **连续零偏估计（dyn bias）**：静止学习只在不动时工作，游玩中零偏漂移
+   （实测 ~0.01-0.02 rad/s）会在 GYRO 段放大（2s→20-30px）。v3 在 FULL 帧用
+   校正前残余分解 ε=t·g_prev/(f·dt) 缓慢并入（β=0.03，钳位 0.08）：
+   轴向映射由数值实验钉死（+t_y→+ε_x、-t_x→+ε_y、-θ→+ε_z；预测四边形漂移
+   方向与旋转光流相反）；仅相邻 FULL 对（GYRO/非 FULL 校正/采集融合插入都
+   破坏 d/g 关系）；陀螺注入测试闭环验证收敛正确（学到的 Δbias≈注入量 70-140%）。
+   备选方案存档：两帧精确式 d=(1-g)t_prev−t_now（d≈0.2px/帧 淹没在噪声里）、
+   稳态门 |Δt|<1px（过严，几乎不更新）——均实测否决，勿复活。
+4. **传输去抖**：aim 从 HTTP POST（每次新 TCP 连接，WiFi 握手 5-30ms 尖峰直接
+   卡准星）改 **UDP 120Hz**（同端口 8000，无连接、最新覆盖）；射击/状态仍走
+   HTTP（要应答）。PC 端 run_tv.py 加 UDP 监听，游戏循环改为 60Hz 帧 pacing
+   （原 waitKey(16) 实际只有 40-50fps）。
+5. **相机 60fps 优先**：camera2 AE 档位优先 [60,60]——视觉更新率/曝光上限减半
+   （运动中边框更锐利、卷帘快门剪切减半）；处理跟不上时 mailbox 自然丢帧退化
+   为 ~30fps（每帧都是最新的，无积压），宽镜头不支持时自动回落 30。
+
+### v3 离线指标（5 段录制回放，真值锚点法）
+
+| 指标 | v2 基线 | v3 终版 |
+|---|---|---|
+| 可用率（5 段） | 97.8-100% | 98.4-100% |
+| 静止 FULL 抖动（2 段干净录制） | 0.36 / 0.40px | **0.32 / 0.23px** |
+| 平滑运动段 MA7 抖动（广角） | 1.83px | **1.09px** |
+| 感知延迟 P95（100ms 档，广角/主摄） | 88.3 / 63.4px | **37.2 / 29.1px**（预测开） |
+| 跟踪器内禀滞后 τ（锚点法） | 8-17ms | 8-17ms |
+| 伪失锁 0.5s 窗末误差（广角，dyn on/off） | 33.3 / 36.6px | **25.6px** |
+| ReplayTest（5 段） | 全过 | 全过（grade 一致 83-100%，co-FULL 差 ≤1.2px，抖动完全持平） |
+
+### v3 自审查备忘（改动区）
+
+- `snapshot_ahead`：队尾后外推用 ω_EMA−bias，限角 0.5rad/限时 250ms；H 为
+  None/DEAD 时回退当前 cross；不动基准、不消费队列（与 snapshot 同惰性语义）。
+- `dec4`（动态零偏用残余分解）必须在 `_apply_correction` **之前**算
+  （校正后残余被增益削减，簿记会错）。
+- `meas_cross`/`innov_pre` 每帧重置；采集 DLT 成功也记 `meas_cross`（真值锚点）。
+- 诊断共识：**GYRO 段静止抖动跨版本不可比**——同一角速度噪声经斜视角透视
+  放大倍数不同，反馈链混沌使各版本落点不同；公平对比只看 FULL 段（jit_full）。
+- record_20260926_114948（主摄重运动）锚点仅 6 个，感知延迟指标不可判——
+  该形态（屏幕长期不全）的预测收益需真机验证。
 
 ### 2026-09-26 主摄实测复盘（record_20260926_114948，部分采集版）
 
@@ -160,8 +228,12 @@ v2 追踪器在该环境的稀疏验证（17 张 full jpg 帧 + gyro 回放）�
 2. **超广角畸变已评估无需处理**：92° 镜头下边框直线拟合 σ 中位 0.29px（上限 2px），不弯。
 3. **超广角预览未目验**：camera2 预览 Surface 曾修过黑屏 bug（setFixedSize），亮画面下未人工确认过一次。
 4. **camera2 暗光 fps≈28**（fpsRange 是软约束，legacy 是硬锁 30）；可试 TEMPLATE_RECORD。
-5. **GYRO 长窗漂移**：伪失锁 2s 窗末中位误差 ~110px（零偏随机游走主导）；>1s 的完全出画
-   属物理边界，回屏时由采集/逐边校正收敛（slew 限幅，可视上不跳变）。
+5. **GYRO 长窗漂移**：伪失锁 2s 窗末中位误差 ~110px——**主因是陀螺尺度/轴对准
+   误差**（1-2% × 总转角），零偏只占小头（v3 连续零偏已把 0.5s 窗误差 33→26px）；
+   进一步要在线标定 3x3 陀螺标定矩阵（自由度多、噪声大，未做）。>1s 完全出画
+   属物理边界，回屏由采集/逐边校正收敛。
+10. **v3 预测旋钮 predictMs**（默认 90ms）按显示器延迟调节：电视（游戏模式）
+    90-130ms、电竞显示器 50-70ms；HUD 不显示当前值，长按屏幕对话框可查改。
 6. vendor id 候选表（20/21/60-63/100/120）是小米 9 实测值，换手机需重新探测。
 7. **EDGE 级精度有限**：单边约束只钉 2 个自由度（横边钉垂直，竖边钉水平），另一方向靠陀螺。
    大角度长时间只有单边可见时该方向会漂——属设计内行为（≥2 边即恢复全约束）。
@@ -204,7 +276,7 @@ v2 追踪器在该环境的稀疏验证（17 张 full jpg 帧 + gyro 回放）�
    `JAVAC=<javac路径> JAVA11=<java11+路径> ANDROID_SDK=<sdk根目录> bash build.sh install`。
 4. **手机**：小米 9 开 USB 调试，插线授权（`adb devices` 显示 `device`）。
    安装：`cd android && bash build.sh install`，或直接 `adb install -r android/tvgun.apk`。
-5. **网络**：手机与新 PC 同一局域网；新 PC 关防火墙或放行 TCP 8000；查新 PC 局域网 IP（`ipconfig`），手机上**长按屏幕**把服务器改成新 IP。
+5. **网络**：手机与新 PC 同一局域网；新 PC 关防火墙或放行 **TCP 8000 + UDP 8000**；查新 PC 局域网 IP（`ipconfig`），手机上**长按屏幕**把服务器改成新 IP。
 6. 启动电视端验证：`.venv/Scripts/python.exe scripts/run_tv.py --port 8000 --seed 42`，手机 App 对屏应出 FULL/PARTIAL + TV 出青色准星。
 
 ## 7. 命令速查
@@ -223,6 +295,9 @@ MSYS_NO_PATHCONV=1 adb pull /storage/emulated/0/Android/data/com.tvgun.gun/files
 # 追踪器回放评测（Python 参考实现）
 .venv/Scripts/python.exe scripts/run_track_replay.py --rec test_res/record_20260921_230150
 .venv/Scripts/python.exe scripts/run_track_replay.py --rec test_res/record_wide_20260921_235354
+# 流畅度/手感诊断（真值锚点法；--v3 0 跑 v2 基线；--inject 做零偏注入验证）
+.venv/Scripts/python.exe scripts/diag_smooth.py --v3 1 --save out/diag_v3.json
+.venv/Scripts/python.exe scripts/diag_smooth.py --rec test_res/x --v3 1 --no-still-bias --inject 0.012,-0.008,0.006
 # 旧基线对照
 .venv/Scripts/python.exe scripts/run_record_replay.py --rec test_res/record_20260921_230150
 # 陀螺轴向映射回归

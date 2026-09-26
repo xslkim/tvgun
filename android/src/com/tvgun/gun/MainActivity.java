@@ -52,7 +52,8 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     private static final String DEFAULT_SERVER = "192.168.3.19:8000";
     private static final int REQ_CAM = 1;
     private static final long LONG_PRESS_MS = 600;
-    private static final long AIM_INTERVAL_MS = 16;    // 60Hz 准星上报
+    private static final long AIM_INTERVAL_MS = 8;     // 120Hz 准星上报（UDP 无连接，低开销）
+    private static final int DEFAULT_PREDICT_MS = 90;  // 输出预测提前量（补偿端到端延迟）
 
     private SurfaceView surfaceView;
     private OverlayView overlay;
@@ -112,8 +113,14 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     private long fpsWindowStart;
     private float fps;
 
-    // aim streaming: 60Hz self-timed sender reads tracker.snapshot(now) directly
+    // aim streaming: 120Hz self-timed sender reads tracker.snapshotAhead(now, predict)
+    // directly (gyro-rate fresh + extrapolated to render time); UDP fire-and-forget.
     private final Object aimLock = new Object();
+    private volatile int predictMs = DEFAULT_PREDICT_MS;  // 手感旋钮：电视延迟大则调大
+    private java.net.DatagramSocket aimSock;
+    private java.net.InetAddress aimAddr;
+    private int aimPort;
+    private String aimAddrHost;
 
     private SharedPreferences prefs;
     private String server;
@@ -144,6 +151,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
 
         prefs = getSharedPreferences(PREFS, MODE_PRIVATE);
         server = prefs.getString("server", DEFAULT_SERVER);
+        predictMs = prefs.getInt("predictMs", DEFAULT_PREDICT_MS);
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         gyro = sensorManager != null ? sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE) : null;
@@ -912,9 +920,11 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     // ---- aim streaming ----
 
     /**
-     * 60Hz self-timed aim sender: reads the tracker snapshot directly (the tracker
-     * propagates H on every gyro tick, so the cross is fresh at gyro rate, not
-     * limited to camera frames). Latest-wins: HTTP latency only delays, never queues.
+     * 120Hz self-timed aim sender: reads tracker.snapshotAhead(now, predictMs) (the
+     * tracker propagates H on gyro ticks and extrapolates past the queue tail, so the
+     * cross is fresh at gyro rate AND pre-compensated for the end-to-end display
+     * latency) and sends it as a UDP datagram ("x,y"). Fire-and-forget: no TCP
+     * handshake jitter, no queueing; packet loss just skips one 8ms sample.
      */
     private void startAimSender() {
         Thread t = new Thread(new Runnable() {
@@ -926,9 +936,9 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                     if (!running) return;
                     long nowMs = SystemClock.elapsedRealtime();
                     if (tracker.aimValid()) {
-                        float[] st = tracker.snapshot(SystemClock.elapsedRealtimeNanos());
-                        boolean ok = postAim("http://" + server + "/aim",
-                                String.format(Locale.US, "{\"x\":%.1f,\"y\":%.1f}", st[0], st[1]));
+                        float[] st = tracker.snapshotAhead(SystemClock.elapsedRealtimeNanos(),
+                                predictMs * 1_000_000L);
+                        boolean ok = sendAimUdp(st[0], st[1]);
                         failStreak = ok ? 0 : failStreak + 1;
                         if (nowMs - lastLog >= 1000) {
                             lastLog = nowMs;
@@ -952,27 +962,31 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         t.start();
     }
 
-    /** request() with 1s timeouts and silent failure; runs on the "aim" thread only.
-     * Returns false on failure so the caller can back off (otherwise a dead server
-     * would stall the 60Hz loop on 1s connect timeouts). */
-    private static boolean postAim(String urlStr, String body) {
-        HttpURLConnection c = null;
+    /** UDP aim sender (silent failure -> caller backs off). Address resolved once
+     *  per server-string change; same port number as the TCP API (UDP/TCP spaces
+     *  are separate, the PC side listens on both). */
+    private boolean sendAimUdp(float x, float y) {
         try {
-            c = (HttpURLConnection) new URL(urlStr).openConnection();
-            c.setConnectTimeout(1000);
-            c.setReadTimeout(1000);
-            c.setRequestMethod("POST");
-            c.setRequestProperty("Content-Type", "application/json");
-            c.setDoOutput(true);
-            OutputStream os = c.getOutputStream();
-            os.write(body.getBytes("UTF-8"));
-            os.close();
-            c.getResponseCode();
+            String host = server;
+            int port = 8000;
+            int ci = server.lastIndexOf(':');
+            if (ci > 0) {
+                host = server.substring(0, ci);
+                port = Integer.parseInt(server.substring(ci + 1));
+            }
+            if (aimSock == null) {
+                aimSock = new java.net.DatagramSocket();
+            }
+            if (!host.equals(aimAddrHost) || port != aimPort) {
+                aimAddr = java.net.InetAddress.getByName(host);
+                aimAddrHost = host;
+                aimPort = port;
+            }
+            byte[] buf = String.format(Locale.US, "%.1f,%.1f", x, y).getBytes("UTF-8");
+            aimSock.send(new java.net.DatagramPacket(buf, buf.length, aimAddr, aimPort));
             return true;
         } catch (Exception ignored) {
             return false;
-        } finally {
-            if (c != null) c.disconnect();
         }
     }
 
@@ -1104,9 +1118,12 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                 .append(" (elapsedRealtime - exposureCenterTs at first frame, 0 when legacy)\n");
         sb.append(String.format(Locale.US, "S=%.2f\n", scaleS));
         sb.append(String.format(Locale.US, "viewAngle=%.2f\n", viewAngleDeg));
-        sb.append("fpsRange=").append(fpsRangeChosen == null ? "unset"
-                : "[" + fpsRangeChosen[0] + "," + fpsRangeChosen[1] + "]").append('\n');
-        sb.append("sceneMode=").append(sceneModeChosen == null ? "unset" : sceneModeChosen).append('\n');
+        sb.append("fpsRange=").append(useCamera2 ? (c2 != null ? c2.fpsRangeDesc : "c2")
+                : (fpsRangeChosen == null ? "unset"
+                : "[" + fpsRangeChosen[0] + "," + fpsRangeChosen[1] + "]")).append('\n');
+        sb.append("sceneMode=").append(useCamera2 ? (c2 != null ? c2.sceneModeDesc : "c2")
+                : (sceneModeChosen == null ? "unset" : sceneModeChosen)).append('\n');
+        sb.append("predictMs=").append(predictMs).append('\n');
         sb.append("appVersion=").append(Version.DESCRIBE).append('\n');
         sb.append("clock=SystemClock.elapsedRealtimeNanos (ns, monotonic; "
                 + "gyro SensorEvent.timestamp uses the same clock)\n");
@@ -1140,7 +1157,8 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
             Log.i(TAG, "fire: no lock, skipped");
             return;
         }
-        final float[] st = tracker.snapshot(SystemClock.elapsedRealtimeNanos());
+        final float[] st = tracker.snapshotAhead(SystemClock.elapsedRealtimeNanos(),
+                predictMs * 1_000_000L);   // 与屏幕上显示的准星同一预测量
         final float x = st[0];
         final float y = st[1];
         final String srv = server;
@@ -1187,16 +1205,33 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         final EditText et = new EditText(this);
         et.setText(server);
         et.setSingleLine();
+        et.setHint("host:port");
+        final EditText etPred = new EditText(this);
+        etPred.setText(String.valueOf(predictMs));
+        etPred.setSingleLine();
+        etPred.setHint("预测提前量 ms（手感：准星拖尾就调大，回甩就调小，常用 60-130）");
+        android.widget.LinearLayout ll = new android.widget.LinearLayout(this);
+        ll.setOrientation(android.widget.LinearLayout.VERTICAL);
+        int pad = (int) (16 * getResources().getDisplayMetrics().density);
+        ll.setPadding(pad, pad / 2, pad, 0);
+        ll.addView(et);
+        ll.addView(etPred);
         new AlertDialog.Builder(this)
-                .setTitle("服务器地址 (host:port)")
-                .setView(et)
+                .setTitle("服务器地址 (host:port) / 预测提前量 (ms)")
+                .setView(ll)
                 .setPositiveButton("保存", (d, w) -> {
                     String s = et.getText().toString().trim();
                     if (!s.isEmpty()) {
                         server = s;
                         prefs.edit().putString("server", s).apply();
-                        syncScore();
                     }
+                    try {
+                        int pm = Integer.parseInt(etPred.getText().toString().trim());
+                        predictMs = Math.max(0, Math.min(pm, 250));
+                        prefs.edit().putInt("predictMs", predictMs).apply();
+                    } catch (NumberFormatException ignored) {
+                    }
+                    syncScore();
                 })
                 .setNegativeButton("取消", null)
                 .show();

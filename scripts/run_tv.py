@@ -8,7 +8,9 @@
   GET /        -> webgun/index.html（不存在返回 503）
   GET /gun.js  -> webgun/gun.js（不存在返回 503）
   POST /shot   {"x": float, "y": float}（规范坐标）-> {"hit": bool, "score": int}
-  POST /aim    {"x": float, "y": float}（规范坐标）-> {"ok": true}（约 15Hz，只记录准星位置）
+  POST /aim    {"x": float, "y": float}（规范坐标）-> {"ok": true}（兼容路径）
+  UDP  :port   文本 "x,y"（规范坐标，~120Hz，最新覆盖，主路径——TCP 连接
+               建立的 WiFi 抖动（5-30ms 尖峰）会直接变成准星卡顿，UDP 无连接）
   GET /state   -> {"score": int, "target": {"x": float, "y": float, "r": float}}
 
 用法:
@@ -218,6 +220,31 @@ def start_server(state: GameState, port: int) -> ThreadingHTTPServer:
     return srv
 
 
+def start_udp(state: GameState, port: int) -> socket.socket:
+    """UDP aim 监听（与 HTTP 同端口号；UDP/TCP 命名空间独立不冲突）。
+    报文：ASCII "x,y"（规范坐标）。最新覆盖，丢包无妨（120Hz 冗余）。"""
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    sock.bind(("0.0.0.0", port))
+    sock.settimeout(0.5)
+
+    def loop():
+        while True:
+            try:
+                data, _ = sock.recvfrom(128)
+            except socket.timeout:
+                continue
+            except OSError:
+                return  # socket closed on shutdown
+            try:
+                xs, ys = data.decode("ascii").strip().split(",")
+                state.set_aim(float(xs), float(ys))
+            except (ValueError, UnicodeDecodeError):
+                continue
+
+    threading.Thread(target=loop, daemon=True).start()
+    return sock
+
+
 def draw_frame(state: GameState, w: int, h: int) -> np.ndarray:
     img = np.zeros((h, w, 3), np.uint8)
     m = int(round(min(w, h) * MARGIN_RATIO))
@@ -271,6 +298,7 @@ def draw_frame(state: GameState, w: int, h: int) -> np.ndarray:
 def run_game(args) -> int:
     state = GameState(speed=args.speed, seed=args.seed)
     srv = start_server(state, args.port)
+    udp = start_udp(state, args.port)
     w, h = parse_size(args.size)
     win = "TVGun"
     cv2.namedWindow(win, cv2.WINDOW_NORMAL)
@@ -278,20 +306,24 @@ def run_game(args) -> int:
     if not args.windowed:
         cv2.setWindowProperty(win, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
-    print(f"HTTP server listening on 0.0.0.0:{args.port} (ESC to quit)")
+    print(f"HTTP+UDP server listening on 0.0.0.0:{args.port} (ESC to quit)")
     try:
         prev = time.monotonic()
         while True:
-            now = time.monotonic()
-            state.update(min(now - prev, 0.1))
-            prev = now
+            t_loop = time.monotonic()
+            state.update(min(t_loop - prev, 0.1))
+            prev = t_loop
             state.consume_shots()
             cv2.imshow(win, draw_frame(state, w, h))
-            if cv2.waitKey(16) & 0xFF == 27:
+            # 60Hz 节奏：waitKey 只补满帧周期（waitKey(16) 是在工作耗时之上
+            # 再固定等 16ms，实际只有 40-50fps，准星跟随会发涩）
+            spent_ms = (time.monotonic() - t_loop) * 1000
+            if cv2.waitKey(max(1, int(round(16.6 - spent_ms)))) & 0xFF == 27:
                 break
     finally:
         srv.shutdown()
         srv.server_close()
+        udp.close()
         cv2.destroyAllWindows()
     return 0
 
@@ -366,6 +398,23 @@ def selftest() -> int:
         aim = state.get_aim()
         check("POST /aim updates slot", aim is not None
               and abs(aim[0] - 640.5) < 1e-6 and abs(aim[1] - 360.25) < 1e-6)
+
+        # UDP aim（主路径）
+        udp = start_udp(state, port)
+        try:
+            with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as c:
+                c.sendto(b"111.5,222.5", ("127.0.0.1", port))
+            deadline = time.monotonic() + 2.0
+            aim = None
+            while time.monotonic() < deadline:
+                aim = state.get_aim()
+                if aim is not None and abs(aim[0] - 111.5) < 1e-6:
+                    break
+                time.sleep(0.01)
+            check("UDP aim updates slot", aim is not None
+                  and abs(aim[0] - 111.5) < 1e-6 and abs(aim[1] - 222.5) < 1e-6)
+        finally:
+            udp.close()
 
         try:
             post_aim(b"not json")

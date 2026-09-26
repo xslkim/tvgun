@@ -203,10 +203,20 @@ public final class Camera2Backend {
         final Range<Integer>[] ranges =
                 ch.get(CameraCharacteristics.CONTROL_AE_AVAILABLE_TARGET_FPS_RANGES);
         Range<Integer> chosen = null;
+        // 优先锁 60fps：视觉更新率/曝光时间减半（运动中边框更锐利、校正步长更小），
+        // 处理跟不上时 mailbox 自然丢帧退化为 ~30fps（每帧都是最新的，无积压）
         for (Range<Integer> r : ranges) {
-            if (r.getLower() == 30 && r.getUpper() == 30) {
+            if (r.getLower() == 60 && r.getUpper() == 60) {
                 chosen = r;
                 break;
+            }
+        }
+        if (chosen == null) {
+            for (Range<Integer> r : ranges) {
+                if (r.getLower() == 30 && r.getUpper() == 30) {
+                    chosen = r;
+                    break;
+                }
             }
         }
         if (chosen == null) {

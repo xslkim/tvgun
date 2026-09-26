@@ -57,6 +57,20 @@ public final class Tracker {
     private static final float GAIN_FULL = 0.6f;
     private static final float GAIN_PARTIAL = 0.5f;
     private static final float GAIN_EDGE = 0.35f;
+    // v3 自适应增益（one-euro 式）：创新量小 → GAIN_MIN 平滑噪声；大 → 满增益跟手
+    private static final float GAIN_MIN = 0.35f;    // 实测权衡：再小视差/积分误差积累成慢摆动，再大静止噪声升
+    private static final float GAIN_RAMP_LO = 1.0f;   // innov < lo -> GAIN_MIN（norm px；过大形成极限环）
+    private static final float GAIN_RAMP_HI = 12.0f;  // innov > hi -> 满增益
+    // v3 连续零偏估计：FULL 帧残余校正（校正前分解）折算角速度误差缓慢并入
+    private static final boolean BIAS_DYN = true;
+    private static final float BIAS_DYN_BETA = 0.03f;
+    private static final float BIAS_DYN_INNOV_MAX = 15.0f;  // norm px
+    private static final float BIAS_DYN_RATE_MAX = 1.5f;    // rad/s
+    private static final float BIAS_DYN_CLAMP = 0.08f;      // rad/s
+    // v3 输出预测：snapshotAhead 队尾之后用 ω 短时 EMA 匀速外推
+    private static final double PREDICT_EMA_TAU_S = 0.015;
+    private static final double PREDICT_MAX_AHEAD_S = 0.25;
+    private static final double PREDICT_MAX_ANG = 0.5;      // rad
     private static final float SLEW_CAP = 0f;         // 0=不限幅（限幅会把正确采集拖到几十帧收敛，比跳变更糟；防假跳变靠门控）
     private static final float T_GYRO_MAX_S = 3.0f;
     private static final float BIAS_ALPHA = 0.02f;
@@ -102,6 +116,13 @@ public final class Tracker {
     public int lastThr, lastLowThr;
     public static int debugSeq = -1;            // ReplayTest 调试用：逐帧打印边测量细节
     public static int debugEdge = -1;           // 当前正在拟合的边（fitLineBand 打印用）
+    // v3 诊断/内部状态（与 guntrack.py 对应）
+    public float innovPre = Float.NaN;          // 满增益创新量（自适应增益输入/动态零偏门控）
+    public final float[] measCross = {Float.NaN, Float.NaN};  // FULL DLT 未平滑测量准星（真值锚点）
+    private float gEffLast = 0.1f;              // 最近一次校正实际使用的增益
+    private final double[] wEma = new double[3];// 外推用角速度 EMA（设备轴，未减零偏）
+    private long wEmaTs = -1;
+    private double[] biasDynPrev;               // 上次 FULL 帧残余 {tX,tY,gEff,ts,theta,seq}
 
     // ---- camera intrinsics (computed per frame size) ----
     private int imgW = 640, imgH = 360;
@@ -153,6 +174,12 @@ public final class Tracker {
         gHead = gSize = 0;
         baseNs = -1;
         visionStill = false;
+        measCross[0] = measCross[1] = Float.NaN;
+        innovPre = Float.NaN;
+        gEffLast = 0.1f;
+        Arrays.fill(wEma, 0);
+        wEmaTs = -1;
+        biasDynPrev = null;
     }
 
     public int grade() {
@@ -167,12 +194,26 @@ public final class Tracker {
     public synchronized void onGyro(long tsNs, float wx, float wy, float wz) {
         if (gyroLastNs >= 0) {
             double dt = (tsNs - gyroLastNs) * 1e-9;
-            if (dt > 0 && dt <= MAX_DT_S && visionStill
-                    && Math.abs(wx) < BIAS_MAX_RATE && Math.abs(wy) < BIAS_MAX_RATE
-                    && Math.abs(wz) < BIAS_MAX_RATE) {
-                bias[0] += BIAS_ALPHA * (wx - bias[0]);
-                bias[1] += BIAS_ALPHA * (wy - bias[1]);
-                bias[2] += BIAS_ALPHA * (wz - bias[2]);
+            if (dt > 0 && dt <= MAX_DT_S) {
+                if (visionStill
+                        && Math.abs(wx) < BIAS_MAX_RATE && Math.abs(wy) < BIAS_MAX_RATE
+                        && Math.abs(wz) < BIAS_MAX_RATE) {
+                    bias[0] += BIAS_ALPHA * (wx - bias[0]);
+                    bias[1] += BIAS_ALPHA * (wy - bias[1]);
+                    bias[2] += BIAS_ALPHA * (wz - bias[2]);
+                }
+                // 外推用 ω EMA（时间常数 ~15ms，抗单样本噪声）
+                if (wEmaTs >= 0) {
+                    double aE = dt / (dt + PREDICT_EMA_TAU_S);
+                    wEma[0] += aE * (wx - wEma[0]);
+                    wEma[1] += aE * (wy - wEma[1]);
+                    wEma[2] += aE * (wz - wEma[2]);
+                } else {
+                    wEma[0] = wx;
+                    wEma[1] = wy;
+                    wEma[2] = wz;
+                }
+                wEmaTs = tsNs;
             }
         }
         gyroLastNs = tsNs;
@@ -263,6 +304,8 @@ public final class Tracker {
         tNowS = tsNs * 1e-9;
         frameNo++;
         innov = Float.NaN;
+        innovPre = Float.NaN;
+        measCross[0] = measCross[1] = Float.NaN;
         acqCandidate = -1;
 
         int[] thrs = thresholds(g, w, h);
@@ -276,11 +319,14 @@ public final class Tracker {
             int nm = measureEdges(g, w, h, lowThr, meas);
             nEdges = nm;
             if (nm > 0) {
+                // 动态零偏的残余分解必须在校正应用前做（校正后残余被增益削减）
+                double[] dec4 = nm == 4 ? simDecompose(meas, nm) : null;
                 applyCorrection(meas, nm);
                 corrected = true;
                 lastVisionS = tNowS;
                 grade = nm == 4 ? GRADE_FULL : (nm == 1 ? GRADE_EDGE : GRADE_PARTIAL);
                 visionStill = innov < 2.0f;
+                if (dec4 != null) updateBiasDyn(dec4);
             } else {
                 if (tNowS - lastVisionS > T_GYRO_MAX_S) {
                     haveH = false;
@@ -303,6 +349,11 @@ public final class Tracker {
                 acqEdges = 2;
             }
             if (ha != null) {
+                double[] ca = applyH(ha, cx0, cy0);
+                if (acqEdges == 4) {
+                    measCross[0] = (float) ca[0];   // 采集 DLT 也是真值锚点
+                    measCross[1] = (float) ca[1];
+                }
                 if (!haveH) {
                     System.arraycopy(ha, 0, H, 0, 9);
                     haveH = true;
@@ -312,9 +363,8 @@ public final class Tracker {
                     Arrays.fill(edgeSeenS, tNowS);
                 } else {
                     // 以四角最大位移判定是否融合（仅看准星会漏判形状不同但中心重合的错误）
-                    double[] cA = applyH(ha, cx0, cy0);
                     double[] cB = applyH(H, cx0, cy0);
-                    double d = Math.hypot(cA[0] - cB[0], cA[1] - cB[1]);
+                    double d = Math.hypot(ca[0] - cB[0], ca[1] - cB[1]);
                     double[] HiA = inv3(normHcopy(ha));
                     double[] HiB = inv3(normHcopy(H));
                     double cdist = 0;
@@ -356,6 +406,41 @@ public final class Tracker {
         double[] Ht = haveH ? (nowNs > baseNs ? propFromBase(nowNs) : H) : null;
         if (Ht == null || grade == GRADE_DEAD) {
             return new float[]{Float.NaN, Float.NaN, grade};
+        }
+        double[] c = applyH(Ht, cx0, cy0);
+        return new float[]{(float) c[0], (float) c[1], grade};
+    }
+
+    /** Predicted cross at nowNs+aheadNs (compensates exposure->processing->transport->
+     *  render end-to-end latency): integrates buffered gyro like snapshot(), then
+     *  extrapolates past the queue tail with the short-EMA angular velocity
+     *  (time- and angle-capped against flick overshoot). aheadNs=0 == snapshot. */
+    public synchronized float[] snapshotAhead(long nowNs, long aheadNs) {
+        if (!haveH || grade == GRADE_DEAD) {
+            return new float[]{cross[0], cross[1], GRADE_DEAD};
+        }
+        if (aheadNs < 0) aheadNs = 0;
+        if (aheadNs > (long) (PREDICT_MAX_AHEAD_S * 1e9)) aheadNs = (long) (PREDICT_MAX_AHEAD_S * 1e9);
+        long tgt = nowNs + aheadNs;
+        double[] Ht = tgt > baseNs ? propFromBase(tgt) : H;
+        if (Ht == null) {
+            return new float[]{cross[0], cross[1], grade};
+        }
+        long lastTs = gSize > 0 ? gTs[(gHead + gSize - 1) % GYRO_CAP] : baseNs;
+        double rem = (tgt - Math.max(lastTs, baseNs)) * 1e-9;
+        if (rem > 0) {
+            double mx = wEma[0] - bias[0], my = wEma[1] - bias[1], mz = wEma[2] - bias[2];
+            // 外推限角（|th| 在 M 变换下不变，先按设备轴模长限幅）
+            double n = Math.sqrt(mx * mx + my * my + mz * mz) * rem;
+            if (n > PREDICT_MAX_ANG) {
+                double k = PREDICT_MAX_ANG / n;
+                mx *= k;
+                my *= k;
+                mz *= k;
+            }
+            if (!gyroStep(Ht, mx, my, mz, rem)) {
+                return new float[]{cross[0], cross[1], grade};
+            }
         }
         double[] c = applyH(Ht, cx0, cy0);
         return new float[]{(float) c[0], (float) c[1], grade};
@@ -820,22 +905,47 @@ public final class Tracker {
         similarityCorrection(meas, nm, g);
     }
 
+    /** one-euro 式自适应增益：创新量小（稳态）→ 小增益平滑 30Hz 测量噪声；
+     *  创新量大（真实运动/再锁定）→ 满增益跟手。v2 固定增益在运动中产生
+     *  可见的 30Hz 阶跃（实测 FULL innov p95 达 8-12px）。 */
+    private static float adaptGain(float gBase, double dist) {
+        float frac = dist <= GAIN_RAMP_LO ? 0f
+                : dist >= GAIN_RAMP_HI ? 1f
+                : (float) ((dist - GAIN_RAMP_LO) / (GAIN_RAMP_HI - GAIN_RAMP_LO));
+        return gBase * (GAIN_MIN + (1f - GAIN_MIN) * frac);
+    }
+
     private void blendH(double[] Ht, float g) {
         normH(Ht);
         double[] c0 = applyH(H, cx0, cy0);
         double[] c1 = applyH(Ht, cx0, cy0);
+        measCross[0] = (float) c1[0];    // 未平滑真值锚点（诊断/评测用）
+        measCross[1] = (float) c1[1];
         double dist = Math.hypot(c1[0] - c0[0], c1[1] - c0[1]);
         innov = (float) dist;
-        double gg = g;
-        if (SLEW_CAP > 0 && dist > SLEW_CAP) gg = g * SLEW_CAP / dist;
+        innovPre = (float) dist;
+        double gg = adaptGain(g, dist);
+        gEffLast = (float) gg;
+        if (SLEW_CAP > 0 && dist > SLEW_CAP) gg = gg * SLEW_CAP / dist;
         for (int i = 0; i < 9; i++) H[i] = (1 - gg) * H[i] + gg * Ht[i];
         normH(H);
     }
 
-    private void similarityCorrection(EdgeMeas[] meas, int nm, float g) {
+    /** 相似变换 C(p)=s·R(θ)·(p-c)+c+t 的 3x3 矩阵。 */
+    private static double[] simMatrix(double tX, double tY, double theta, double s,
+                                      double cx, double cy) {
+        double ct = Math.cos(theta), st = Math.sin(theta);
+        return new double[]{s * ct, -s * st, cx - s * ct * cx + s * st * cy + tX,
+                s * st, s * ct, cy - s * st * cx - s * ct * cy + tY,
+                0, 0, 1};
+    }
+
+    /** 相似校正分解（不应用）：平移 t 由 n_eᵀt=o_e 截断特征值 2x2 解、旋转=夹角
+     *  加权均值、尺度=平行边对间距比。返回 {tX, tY, theta, s} 满增益量；失败 null。 */
+    private double[] simDecompose(EdgeMeas[] meas, int nm) {
         double[] Hn = normHcopy(H);
         double[] Hi = inv3(Hn);
-        if (Hi == null) return;
+        if (Hi == null) return null;
         double[][] sc = {{0, 0}, {NORM_W, 0}, {NORM_W, NORM_H}, {0, NORM_H}};
         double[][] pc = new double[4][2];
         for (int i = 0; i < 4; i++) {
@@ -893,7 +1003,7 @@ public final class Tracker {
             angSum += w * dth;
             angW += w;
         }
-        if (angW <= 0) return;
+        if (angW <= 0) return null;
         // truncated eigen decomposition of ata (2x2)
         double tr = (ata00 + ata11) / 2;
         double det = Math.sqrt(((ata00 - ata11) / 2) * ((ata00 - ata11) / 2) + ata01 * ata01);
@@ -950,22 +1060,35 @@ public final class Tracker {
             if (s > 1.1) s = 1.1;
         }
         if (frameNo - 1 == debugSeq)
-            System.err.println(String.format("dbg seq %d: simcorr t=(%.3f,%.3f) theta=%.3fdeg s=%.4f g=%.2f",
-                    debugSeq, tX, tY, Math.toDegrees(theta), s, g));
+            System.err.println(String.format("dbg seq %d: simcorr t=(%.3f,%.3f) theta=%.3fdeg s=%.4f",
+                    debugSeq, tX, tY, Math.toDegrees(theta), s));
+        return new double[]{tX, tY, theta, s};
+    }
+
+    private void similarityCorrection(EdgeMeas[] meas, int nm, float g) {
+        double[] dec = simDecompose(meas, nm);
+        if (dec == null) return;
+        double tX = dec[0], tY = dec[1], theta = dec[2], s = dec[3];
+        double[] c0 = applyH(H, cx0, cy0);
+        // v3 自适应增益：以满增益校正的准星位移为创新量
+        double[] Cf = simMatrix(tX, tY, theta, s, cx0, cy0);
+        double[] Cfi = inv3(Cf);
+        if (Cfi == null) return;
+        double[] cf = applyH(mul(H, Cfi), cx0, cy0);
+        double distFull = Math.hypot(cf[0] - c0[0], cf[1] - c0[1]);
+        innovPre = (float) distFull;
+        g = adaptGain(g, distFull);
+        gEffLast = g;
         // fractional apply + slew cap
         tX *= g;
         tY *= g;
         theta *= g;
         s = 1.0 + (s - 1.0) * g;
         if (Math.abs(theta) > Math.toRadians(3)) theta = Math.signum(theta) * Math.toRadians(3);
-        double ct = Math.cos(theta), st = Math.sin(theta);
         // C(p) = s*R(th)*(p-c) + c + t
-        double[] C = {s * ct, -s * st, cx0 - s * ct * cx0 + s * st * cy0 + tX,
-                      s * st, s * ct, cy0 - s * st * cx0 - s * ct * cy0 + tY,
-                      0, 0, 1};
+        double[] C = simMatrix(tX, tY, theta, s, cx0, cy0);
         double[] Ci = inv3(C);
         if (Ci == null) return;
-        double[] c0 = applyH(H, cx0, cy0);
         double[] H1 = mul(H, Ci);
         double[] c1 = applyH(H1, cx0, cy0);
         double dist = Math.hypot(c1[0] - c0[0], c1[1] - c0[1]);
@@ -978,6 +1101,55 @@ public final class Tracker {
         } else {
             System.arraycopy(H1, 0, H, 0, 9);
             normH(H);
+        }
+    }
+
+    /** v3 连续零偏：FULL 帧残余校正分解（校正前计算）折算角速度误差缓慢并入零偏。
+     *  环路模型：零偏误差 ε 使预测四边形每帧漂移 d=f·ε·dt，校正环以增益 g 消除
+     *  状态误差 e：e'=(1-g)(e+d)；稳态残余 t = d/g_prev（g_prev 是漂移发生前
+     *  那次校正的增益），故 ε = t·g_prev/(f·dt)（g 小残余被放大 1/g 倍，信噪比
+     *  反而好；瞬态污染在多方向运动间平均为零，注入测试闭环验证收敛正确）。
+     *  轴向映射由数值实验钉死：+t_y→+ε_x、-t_x→+ε_y、-θ→+ε_z。
+     *  仅相邻两帧均为 FULL（GYRO/非 FULL 校正/采集融合插入都破坏 d/g 关系）。
+     *  dec = 本帧 {tX, tY, theta, s}（校正前分解）。 */
+    private void updateBiasDyn(double[] dec) {
+        if (!BIAS_DYN) return;
+        if (Float.isNaN(innovPre) || innovPre > BIAS_DYN_INNOV_MAX) return;
+        double tX = dec[0], tY = dec[1], theta = dec[2];
+        double now = tNowS;
+        if (biasDynPrev != null) {
+            double pts = biasDynPrev[3];
+            double pg = biasDynPrev[2];
+            double pseq = biasDynPrev[5];
+            biasDynPrev = new double[]{tX, tY, gEffLast, now, theta, frameNo};
+            if (pseq != frameNo - 1) return;   // 只要相邻 FULL 对
+            double dt = now - pts;
+            if (dt < 0.02 || dt > 0.15) return;
+            double wMax = Math.max(Math.abs(wEma[0]), Math.max(Math.abs(wEma[1]), Math.abs(wEma[2])));
+            if (wMax > BIAS_DYN_RATE_MAX) return;
+            if (Math.max(Math.abs(tX), Math.abs(tY)) > 30.0 || Math.abs(theta) > Math.toRadians(3)) return;
+            double g = Math.min(Math.max(pg, 0.02), 1.0);
+            double ex = tY * g / fk / dt;
+            double ey = -tX * g / fk / dt;
+            double ez = -theta * g / dt;
+            if (Math.max(Math.abs(ex), Math.max(Math.abs(ey), Math.abs(ez))) > 0.1) return;
+            // eps_dev = inv(M_ROT0) @ eps_cam；M_ROT0 是自逆符号置换
+            double dx = M_ROT0[0] * ex + M_ROT0[1] * ey + M_ROT0[2] * ez;
+            double dy = M_ROT0[3] * ex + M_ROT0[4] * ey + M_ROT0[5] * ez;
+            double dz = M_ROT0[6] * ex + M_ROT0[7] * ey + M_ROT0[8] * ez;
+            if (rotation == 180) {
+                dx = -dx;
+                dy = -dy;
+            }
+            bias[0] += BIAS_DYN_BETA * dx;
+            bias[1] += BIAS_DYN_BETA * dy;
+            bias[2] += BIAS_DYN_BETA * dz;
+            for (int i = 0; i < 3; i++) {
+                if (bias[i] > BIAS_DYN_CLAMP) bias[i] = BIAS_DYN_CLAMP;
+                else if (bias[i] < -BIAS_DYN_CLAMP) bias[i] = -BIAS_DYN_CLAMP;
+            }
+        } else {
+            biasDynPrev = new double[]{tX, tY, gEffLast, now, theta, frameNo};
         }
     }
 

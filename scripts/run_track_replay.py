@@ -36,11 +36,13 @@ from guntrack import (GRADE_DEAD, GRADE_GYRO, GRADE_EDGE, GRADE_PARTIAL,  # noqa
 from run_record_replay import load_recording  # noqa: E402
 
 
-def run_tracker(frames, idx, gyro, fov_h, suppress_mask=None):
+def run_tracker(frames, idx, gyro, fov_h, suppress_mask=None, v3=True, bias_dyn=True):
     """全程回放。suppress_mask[i]=True 时第 i 帧抑制视觉（仅陀螺传播）。
     返回 (DataFrame, tracker)。"""
     p = TrackerParams()
     p.fov_h_deg = fov_h
+    p.v3 = v3
+    p.bias_dyn = bias_dyn
     tr = Tracker(p)
     gts = gyro["tsNs"].to_numpy()
     gw = gyro[["wx", "wy", "wz"]].to_numpy()
@@ -112,6 +114,8 @@ def main(argv=None) -> int:
     ap.add_argument("--rec", required=True)
     ap.add_argument("--out", default=None)
     ap.add_argument("--mc", type=int, default=25, help="每档窗长的 MC 窗数")
+    ap.add_argument("--v2", action="store_true", help="关闭 v3 融合核（基线对照）")
+    ap.add_argument("--bias-dyn", type=int, default=1, help="v3 连续零偏估计开关")
     args = ap.parse_args(argv)
     rec = Path(args.rec)
     out_dir = Path(args.out) if args.out else ROOT / "out" / f"track_{rec.name}"
@@ -123,7 +127,7 @@ def main(argv=None) -> int:
     print(f"recording: {rec.name} {n} frames, fov={fov}")
 
     t0 = time.monotonic()
-    df, tr = run_tracker(frames, idx, gyro, fov)
+    df, tr = run_tracker(frames, idx, gyro, fov, v3=not args.v2, bias_dyn=bool(args.bias_dyn))
     dt_ms = (time.monotonic() - t0) * 1000 / n
     df.to_csv(out_dir / "track_replay.csv", index=False)
     print(f"[track] {dt_ms:.1f} ms/frame")
@@ -187,7 +191,8 @@ def main(argv=None) -> int:
               f"P95 {np.percentile(rin, 95):.1f} norm px (slew 限幅前)")
 
     # ---- 伪失锁 MC：窗末误差（顺序扫描+定点快照）
-    mc_df = mc_pass(frames, idx, gyro, fov, df, args.mc, durs=[0.2, 0.5, 1.0, 2.0, 3.0])
+    mc_df = mc_pass(frames, idx, gyro, fov, df, args.mc, durs=[0.2, 0.5, 1.0, 2.0, 3.0],
+                    v3=not args.v2, bias_dyn=bool(args.bias_dyn))
     if len(mc_df):
         mc_df.to_csv(out_dir / "dropout_mc.csv", index=False)
         tab = mc_df.groupby("dur")["err"].agg(["median", lambda v: np.percentile(v, 95), "count"])
@@ -227,7 +232,7 @@ def main(argv=None) -> int:
     return 0
 
 
-def mc_pass(frames, idx, gyro, fov, df_ref, n_per, durs):
+def mc_pass(frames, idx, gyro, fov, df_ref, n_per, durs, v3=True, bias_dyn=True):
     """顺序扫描 + 定点快照的伪失锁 MC：
     先随机选窗（起点 grade>=EDGE，末帧参考 grade>=EDGE），再单次回放，
     途经每个窗起点时存快照、支线跑到窗末（视觉抑制）、比较后恢复继续。"""
@@ -257,6 +262,8 @@ def mc_pass(frames, idx, gyro, fov, df_ref, n_per, durs):
 
     p = TrackerParams()
     p.fov_h_deg = fov
+    p.v3 = v3
+    p.bias_dyn = bias_dyn
     tr = Tracker(p)
     gts = gyro["tsNs"].to_numpy()
     gw = gyro[["wx", "wy", "wz"]].to_numpy()

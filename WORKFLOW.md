@@ -72,5 +72,11 @@ APK 构建时 `build.sh` 会把 `git describe --always --dirty --tags` 嵌入 Ap
 - **install 成功 ≠ 版本正确**：装完不看 HUD 版本号 = 没装。
 - **git pull 成功 ≠ LFS 成功**：网络不通时 frames.bin 只会是 3 行指针文件，
   `git lfs pull` 或换网络后再拉；分析前先看文件大小对不对（§5.3）。
-- **服务器地址**：换电脑后手机上**长按屏幕**改 PC 局域网 IP；PC 防火墙放行 TCP 8000。
+- **服务器地址**：换电脑后手机上**长按屏幕**改 PC 局域网 IP；PC 防火墙放行
+  **TCP 8000 和 UDP 8000**（准星走 UDP，射击/状态走 TCP；v3 起 aim 从 HTTP 改 UDP）。
+- **预测提前量（手感旋钮）**：长按屏幕对话框第二项，默认 90ms。准星明显拖尾
+  （快速甩动时跟不上）→ 调大（电视延迟高，100-130）；准星回甩/ overshoot →
+  调小（电竞显示器，50-70）。调完立即生效，无需重启。
+- **60fps 相机**：v3 起 camera2 优先锁 60fps（处理跟不上时自动丢帧退化为
+  ~30fps，无积压）；`meta.txt` 的 `fpsRange=` 可确认实际档位。
 - **Windows 行尾**：本仓库 .gitattributes 未统一行尾，跨机器 diff 出 CRLF 差异属正常。

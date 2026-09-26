@@ -76,6 +76,16 @@ class TrackerParams:
     gain_full = 0.6            # FULL 校正增益
     gain_partial = 0.5
     gain_edge = 0.35
+    # v3 自适应增益（one-euro 式）：创新量小 → 用 gain_min 平滑噪声；
+    # 创新量大 → 升到满增益跟手/快速再锁定。innov 为校正前准星位移（norm px）
+    gain_min = 0.35            # 稳态最小增益（FULL；PARTIAL/EDGE 按比例折算）。
+                               # 实测权衡：再小会让视差/积分误差积累成慢速摆动
+                               # （运动中 MA7 抖动 1.8→2.7px），再大静止噪声上升
+    gain_ramp_lo = 1.0         # innov < lo → gain_min（过小无意义：σ_meas≈0.5-0.6px；
+                               # 过大会形成"误差积累→跨阈→校正"极限环，运动中可见 ~3px 摆动）
+    gain_ramp_hi = 12.0        # innov > hi → 满增益（线性过渡）
+    gain_motion_k = 0.0        # 运动因子（已实测否决：运动时校正多为真实视差/积分
+                               # 误差，少信视觉反而积累——留档勿开）
     slew_cap = 0.0             # 已停用（0=不限幅）：实测限幅会把正确的采集结果
                                # 拖到几十帧才收敛，期间的输出比跳变更糟；
                                # 防假跳变由几何/中空/暗度/一致性门控负责
@@ -86,6 +96,23 @@ class TrackerParams:
     # 零偏估计
     bias_alpha = 0.02          # 静止时 EMA
     bias_max_rate = 0.06       # |ω| 低于此值且视觉确认不动才更新（rad/s）
+    # v3 连续零偏估计：FULL 帧把残余校正（图像平移/旋转）折算成角速度误差
+    # 缓慢并入零偏——静止学习只覆盖"放着不动"，游玩中零偏会漂（实测两段
+    # 录制起止漂移 ~0.01-0.02 rad/s），GYRO 段 1-3s 漂移可达 20-30px
+    bias_dyn = True
+    bias_dyn_beta = 0.03       # 每 FULL 帧并入比例（~1.1s 时间常数 @30fps）
+    bias_dyn_innov_max = 15.0  # 创新量门（norm px，排除再锁定瞬态）
+    bias_dyn_rate_max = 1.5    # 陀螺速率门（rad/s，排除运动模糊/快速瞬态）
+    bias_dyn_clamp = 0.08      # 零偏总量钳位（rad/s）
+
+    # v3 输出预测：snapshot_ahead(now, ahead) 把 H 传播到将来时刻，
+    # 陀螺队尾之后用 ω 的短时 EMA 匀速外推——补偿曝光→处理→传输→渲染
+    # 的端到端延迟（实测感知滞后 p95 达 60-100px，是"手感"的主因）
+    predict_ema_tau = 0.015    # ω 外推用 EMA 时间常数（s）
+    predict_max_ahead = 0.25   # 外推时限（s）
+    predict_max_ang = 0.5      # 单次外推角度上限（rad）
+
+    v3 = True                  # False 时退化为 v2 行为（基线对照）
 
     # 采集
     acq_max_cand = 5           # 候选亮域上限
@@ -135,6 +162,11 @@ class Tracker:
         self.acq_candidate = -1
         self.edge_seen_t = [-1e18] * 4   # 每条边最近一次测到的时间（s）
         self._frame_no = 0
+        self.meas_cross = np.array([np.nan, np.nan])  # FULL DLT 未平滑测量准星（真值锚点）
+        self.innov_pre = np.nan      # 满增益创新量（自适应增益输入/动态零偏门控）
+        self._g_eff_last = 0.1       # 最近一次校正实际使用的增益
+        self._w_ema = np.zeros(3)  # 外推用角速度 EMA（原始轴，未减零偏）
+        self._w_ema_ts = -1
 
     # ---------------------------------------------------------------- 陀螺
     def on_gyro(self, ts_ns, wx, wy, wz):
@@ -147,6 +179,13 @@ class Tracker:
                         and np.abs(w_raw).max() < self.P.bias_max_rate:
                     a = self.P.bias_alpha
                     self.bias = (1 - a) * self.bias + a * w_raw
+                # 外推用 ω EMA（时间常数 ~15ms，抗单样本噪声）
+                if self._w_ema_ts >= 0:
+                    a_e = dt / (dt + self.P.predict_ema_tau)
+                    self._w_ema = (1 - a_e) * self._w_ema + a_e * w_raw
+                else:
+                    self._w_ema = w_raw.copy()
+                self._w_ema_ts = ts_ns
         self._gyro_last = ts_ns
         self._gq.append((ts_ns, wx, wy, wz))
 
@@ -197,6 +236,39 @@ class Tracker:
         self.cross = c[:2] / c[2]
         return self.cross[0], self.cross[1], self.grade
 
+    def snapshot_ahead(self, now_ns, ahead_ns):
+        """预测 now+ahead 时刻的准星（补偿曝光→处理→传输→渲染的端到端延迟）。
+        先按队列陀螺传播（与 snapshot 相同），队尾之后用 ω 的短时 EMA 匀速
+        外推；外推限时/限角防甩尾过冲。ahead=0 退化为 snapshot。"""
+        p = self.P
+        if self.H is None or self.grade == GRADE_DEAD:
+            return self.cross[0], self.cross[1], GRADE_DEAD
+        ahead_ns = int(min(max(ahead_ns, 0), p.predict_max_ahead * 1e9))
+        tgt = now_ns + ahead_ns
+        H = self._prop_from_base(tgt) if tgt > self._h_ts else self.H
+        if H is None:
+            return self.cross[0], self.cross[1], GRADE_DEAD
+        last_ts = self._gq[-1][0] if self._gq else self._h_ts
+        rem = (tgt - max(last_ts, self._h_ts)) * 1e-9
+        if rem > 0:
+            w = self._w_ema - self.bias
+            if p.rotation == 180:
+                w = w * np.array([-1.0, -1.0, 1.0])
+            th = M_ROT0 @ (w * rem)
+            n = float(np.linalg.norm(th))
+            if n > p.predict_max_ang:
+                th = th * (p.predict_max_ang / n)
+            T = self.K @ (np.eye(3) + _skew(th)) @ self.Ki
+            try:
+                H = _norm_h(H @ np.linalg.inv(T))
+            except np.linalg.LinAlgError:
+                H = None
+            if H is None:
+                return self.cross[0], self.cross[1], self.grade
+        c = H @ np.array([IMG_W / 2, IMG_H / 2, 1.0])
+        cc = c[:2] / c[2]
+        return cc[0], cc[1], self.grade
+
     # ---------------------------------------------------------------- 主入口
     def process(self, g640: np.ndarray, ts_ns):
         p = self.P
@@ -206,6 +278,8 @@ class Tracker:
         self._frame_no += 1
         self.edges_meas = []
         self.innov = np.nan
+        self.innov_pre = np.nan
+        self.meas_cross[:] = np.nan
         self.acq_candidate = -1
 
         # 2) 阈值（与旧管线一致的全图直方图法）
@@ -217,6 +291,8 @@ class Tracker:
             meas = self._measure_edges(g640, low_thr)
             self.edges_meas = meas
             if meas:
+                # 动态零偏的残余分解必须在校正应用前做（校正后残余被增益削减）
+                dec4 = self._sim_decompose(meas) if len(meas) == 4 else None
                 self._apply_correction(meas)
                 corrected = True
                 self.last_vision_t = self.t
@@ -224,6 +300,8 @@ class Tracker:
                 self.grade = {4: GRADE_FULL, 3: GRADE_PARTIAL, 2: GRADE_PARTIAL,
                               1: GRADE_EDGE}[len(meas)]
                 self._update_bias()
+                if dec4 is not None:
+                    self._update_bias_dyn(dec4)
             else:
                 self.n_edges = 0
                 if self.t - self.last_vision_t > p.t_gyro_max:
@@ -247,6 +325,10 @@ class Tracker:
                 h_acq = self._acquire_partial(g640, thr, low_thr, cands)
                 acq_edges = 2
             if h_acq is not None:
+                ca = (h_acq @ np.array([IMG_W / 2, IMG_H / 2, 1.0]))
+                ca = ca[:2] / ca[2]
+                if acq_edges == 4:
+                    self.meas_cross = ca.copy()     # 采集 DLT 也是真值锚点
                 if self.H is None:
                     self.H = h_acq
                     self.grade = GRADE_FULL if acq_edges == 4 else GRADE_PARTIAL
@@ -256,8 +338,6 @@ class Tracker:
                 else:
                     # 与现有 H 比较：采集自身的 ~1px 噪声不引入——以**四角最大位移**
                     # 为准（仅看准星会漏判：形状不同的四边形中心可能恰好重合）
-                    ca = (h_acq @ np.array([IMG_W / 2, IMG_H / 2, 1.0]))
-                    ca = ca[:2] / ca[2]
                     cb = self.H @ np.array([IMG_W / 2, IMG_H / 2, 1.0])
                     cb = cb[:2] / cb[2]
                     dist = float(np.hypot(*(ca - cb)))
@@ -398,6 +478,20 @@ class Tracker:
             # 4 边但角点非法：退回相似校正
         self._similarity_correction(meas, g)
 
+    def _adapt_gain(self, g_base, dist):
+        """one-euro 式自适应增益：创新量小（稳态）→ 小增益平滑 30Hz 测量噪声；
+        创新量大（真实运动/再锁定）→ 满增益跟手。v2 固定增益在运动中产生
+        可见的 30Hz 阶跃（实测 FULL innov p95 达 8-12px）。
+        运动因子：|ω| 大时视觉测量被卷帘快门/时间戳残差污染（误差∝|ω|），
+        陀螺传播对纯旋转精确，故高速再按比例少信视觉。"""
+        if not self.P.v3:
+            return g_base
+        lo, hi = self.P.gain_ramp_lo, self.P.gain_ramp_hi
+        frac = 0.0 if dist <= lo else (1.0 if dist >= hi else (dist - lo) / (hi - lo))
+        g = g_base * (self.P.gain_min + (1.0 - self.P.gain_min) * frac)
+        w = float(np.linalg.norm(self._w_ema))
+        return g / (1.0 + self.P.gain_motion_k * w)
+
     def _blend_h(self, H_target, g):
         """向目标 H 收敛，准星位移 slew 限幅。"""
         p = self.P
@@ -406,15 +500,21 @@ class Tracker:
         c0 = c0[:2] / c0[2]
         c1 = H_target @ np.array([IMG_W / 2, IMG_H / 2, 1.0])
         c1 = c1[:2] / c1[2]
+        self.meas_cross = c1.copy()     # 未平滑真值锚点（诊断/评测用）
         dist = float(np.hypot(*(c1 - c0)))
         self.innov = dist
-        gg = g
+        self.innov_pre = dist
+        gg = self._adapt_gain(g, dist)
+        self._g_eff_last = gg
         if p.slew_cap > 0 and dist > p.slew_cap:
-            gg = g * p.slew_cap / dist
+            gg = gg * p.slew_cap / dist
         h = (1 - gg) * h0.reshape(9) + gg * H_target.reshape(9)
         self.H = _norm_h(h.reshape(3, 3))
 
-    def _similarity_correction(self, meas, g):
+    def _sim_decompose(self, meas):
+        """相似校正分解（不应用）：平移 t 由 n_eᵀt=o_e 截断特征值 2x2 解
+        （平行边对时截掉病态方向）、旋转=夹角加权均值、尺度=平行边对间距比。
+        良态、无病态求解。返回 (t, theta, s) 满增益量；失败 None。"""
         p = self.P
         Hn = _norm_h(self.H)
         Hi = np.linalg.inv(Hn)
@@ -449,7 +549,7 @@ class Tracker:
             angles.append(dth)
             aw.append(w)
         if not trows:
-            return
+            return None
         A = np.stack(trows)
         b = np.array(tvals)
         W = np.diag(np.array(tw) / max(tw))
@@ -483,22 +583,36 @@ class Tracker:
             s = float(np.clip(np.mean(s_list), 0.9, 1.1))
         if DEBUG_SEQ == self._frame_no - 1:
             print(f"dbg py seq {DEBUG_SEQ}: simcorr t={np.round(t,3)} "
-                  f"theta={np.degrees(theta):.3f} s={s:.4f} g={g}")
+                  f"theta={np.degrees(theta):.3f} s={s:.4f}")
+        return t, theta, s
+
+    def _similarity_correction(self, meas, g):
+        p = self.P
+        dec = self._sim_decompose(meas)
+        if dec is None:
+            return
+        t, theta, s = dec
+        cx0, cy0 = IMG_W / 2, IMG_H / 2
+        c0 = self.H @ np.array([cx0, cy0, 1.0])
+        c0 = c0[:2] / c0[2]
+        # v3 自适应增益：以满增益校正的准星位移为创新量
+        if p.v3:
+            Cf = _sim_matrix(t, theta, s, cx0, cy0)
+            Hf = _norm_h(self.H @ np.linalg.inv(Cf))
+            cf = Hf @ np.array([cx0, cy0, 1.0])
+            cf = cf[:2] / cf[2]
+            self.innov_pre = float(np.hypot(*(cf - c0)))
+            g = self._adapt_gain(g, self.innov_pre)
+            self._g_eff_last = g
         #  fractional 应用 + slew 限幅
         t = t * g
         theta = theta * g
         s = 1.0 + (s - 1.0) * g
         if abs(theta) > np.radians(3):
             theta = np.sign(theta) * np.radians(3)
-        cx0, cy0 = IMG_W / 2, IMG_H / 2
-        ct, st = np.cos(theta), np.sin(theta)
         # C(p) = s·R(θ)·(p-c) + c + t
-        C = np.array([[s * ct, -s * st, cx0 - s * ct * cx0 + s * st * cy0 + t[0]],
-                      [s * st, s * ct, cy0 - s * st * cx0 - s * ct * cy0 + t[1]],
-                      [0.0, 0.0, 1.0]])
+        C = _sim_matrix(t, theta, s, cx0, cy0)
         # slew 限幅：比较校正前后准星
-        c0 = self.H @ np.array([cx0, cy0, 1.0])
-        c0 = c0[:2] / c0[2]
         H1 = _norm_h(self.H @ np.linalg.inv(C))
         c1 = H1 @ np.array([cx0, cy0, 1.0])
         c1 = c1[:2] / c1[2]
@@ -523,6 +637,51 @@ class Tracker:
             self._vision_still = True
         else:
             self._vision_still = False
+
+    def _update_bias_dyn(self, dec):
+        """v3 连续零偏：FULL 帧残余校正分解（校正前计算）折算角速度误差缓慢并入零偏。
+        环路模型：零偏误差 ε 使预测四边形每帧漂移 d=f·ε·dt（旋转光流），
+        校正环以增益 g 消除状态误差 e：e'=(1-g)(e+d)；稳态残余（= 校正
+        分解出的满增益量）t = d/g_prev（g_prev 是上一帧校正增益——漂移
+        发生前的那次增益），故 ε = t·g_prev/(f·dt)（g 小残余被放大 1/g
+        倍——信噪比反而好，这是相对两帧精确式 d≈0.2px 淹没在噪声里的
+        关键优势；瞬态 e 的污染在多次运动方向间平均为零，注入测试闭环
+        验证收敛正确）。轴向映射由数值实验钉死：+t_y→+ε_x、-t_x→+ε_y、
+        -θ→+ε_z。仅相邻两帧均为 FULL（GYRO/非 FULL 校正/采集融合插入
+        都会破坏 d/g 关系）。"""
+        p = self.P
+        if not (p.v3 and p.bias_dyn):
+            return
+        if not np.isfinite(self.innov_pre) or self.innov_pre > p.bias_dyn_innov_max:
+            return
+        if dec is None:
+            return
+        t, theta, s = dec
+        now = self.t
+        prev = getattr(self, "_bias_dyn_prev", None)
+        self._bias_dyn_prev = (t.copy(), theta, self._g_eff_last, now, self._frame_no)
+        if prev is None:
+            return
+        pt, pth, pg, pts, pseq = prev
+        if pseq != self._frame_no - 1:      # 只要相邻 FULL 对
+            return
+        dt = now - pts
+        if dt < 0.02 or dt > 0.15:
+            return
+        if np.abs(self._w_ema).max() > p.bias_dyn_rate_max:
+            return
+        if np.abs(t).max() > 30.0 or abs(theta) > np.radians(3):
+            return
+        g = min(max(pg, 0.02), 1.0)
+        f = self.K[0, 0]
+        eps_cam = np.array([t[1] * g / f / dt, -t[0] * g / f / dt, -theta * g / dt])
+        if np.abs(eps_cam).max() > 0.1:
+            return
+        eps_dev = np.linalg.inv(M_ROT0) @ eps_cam
+        if p.rotation == 180:
+            eps_dev = eps_dev * np.array([-1.0, -1.0, 1.0])
+        self.bias = self.bias + p.bias_dyn_beta * eps_dev
+        np.clip(self.bias, -p.bias_dyn_clamp, p.bias_dyn_clamp, out=self.bias)
 
     # ---------------------------------------------------------------- 采集
     def _acq_candidates(self, g640, thr, low_thr):
@@ -699,6 +858,15 @@ class Tracker:
 # ================================================================ 几何工具
 
 DEBUG_SEQ = -1   # 调试：非负时打印该帧的逐边测量细节
+
+
+def _sim_matrix(t, theta, s, cx0, cy0):
+    """图像空间相似变换 C(p) = s·R(θ)·(p-c) + c + t 的 3x3 矩阵。"""
+    ct, st = np.cos(theta), np.sin(theta)
+    return np.array([[s * ct, -s * st, cx0 - s * ct * cx0 + s * st * cy0 + t[0]],
+                     [s * st, s * ct, cy0 - s * st * cx0 - s * ct * cy0 + t[1]],
+                     [0.0, 0.0, 1.0]])
+
 
 def _norm_h(H):
     """单应规范化为 H[2,2]=1（正号）。||H||=1 规范化会让 h22 ~ 1/340，
