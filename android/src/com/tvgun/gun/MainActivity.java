@@ -1097,7 +1097,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         sb.append("detRotation=").append(detRotation).append('\n');
         sb.append("cameraId=").append(useCamera2 ? "c2:" + c2Id : String.valueOf(cameraId)).append('\n');
         sb.append("camera2TsOffsetNs=").append(c2 != null ? c2.tsOffset : 0)
-                .append(" (image.getTimestamp vs elapsedRealtimeNanos, 0 when same clock or legacy)\n");
+                .append(" (elapsedRealtime - exposureCenterTs at first frame, 0 when legacy)\n");
         sb.append(String.format(Locale.US, "S=%.2f\n", scaleS));
         sb.append(String.format(Locale.US, "viewAngle=%.2f\n", viewAngleDeg));
         sb.append("fpsRange=").append(fpsRangeChosen == null ? "unset"

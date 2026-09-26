@@ -10,6 +10,7 @@ import android.hardware.camera2.CameraDevice;
 import android.hardware.camera2.CameraManager;
 import android.hardware.camera2.CameraMetadata;
 import android.hardware.camera2.CaptureRequest;
+import android.hardware.camera2.TotalCaptureResult;
 import android.hardware.camera2.params.StreamConfigurationMap;
 import android.media.Image;
 import android.media.ImageReader;
@@ -34,8 +35,8 @@ import java.util.concurrent.TimeUnit;
  * Camera2 preview backend: logical+physical back-lens enumeration with FOV
  * computed from focal length and sensor physical size, dual-output session
  * (preview Surface + ImageReader YUV_420_888), 30fps-locked repeating request.
- * Frames are delivered as compact Y-plane byte arrays with timestamps rebased
- * onto SystemClock.elapsedRealtimeNanos (offset measured on the first frame).
+ * Frames are delivered as compact Y-plane byte arrays; timestamps are exposure
+ * CENTER on the CLOCK_MONOTONIC base (image.getTimestamp() + exposureNs/2).
  */
 public final class Camera2Backend {
     private static final String TAG = "tvgun";
@@ -60,6 +61,7 @@ public final class Camera2Backend {
     public volatile boolean active;
     public volatile long tsOffset;      // elapsedRealtimeNanos - image.getTimestamp()
     public volatile float inputFrameRate; // measured onImageAvailable rate
+    public volatile long exposureNs;    // latest SENSOR_EXPOSURE_TIME (0=unknown)
     public int width;
     public int height;
     public int sensorOrientation = 90;
@@ -301,7 +303,15 @@ public final class Camera2Backend {
                         b.set(CaptureRequest.CONTROL_AF_MODE, CameraMetadata.CONTROL_AF_MODE_OFF);
                         b.set(CaptureRequest.LENS_FOCUS_DISTANCE, 0f);
                     }
-                    s.setRepeatingRequest(b.build(), null, handler);
+                    s.setRepeatingRequest(b.build(), new CameraCaptureSession.CaptureCallback() {
+                        @Override
+                        public void onCaptureCompleted(CameraCaptureSession session,
+                                                       CaptureRequest request,
+                                                       TotalCaptureResult result) {
+                            Long exp = result.get(TotalCaptureResult.SENSOR_EXPOSURE_TIME);
+                            if (exp != null) exposureNs = exp;
+                        }
+                    }, handler);
                     sessOk[0] = true;
                 } catch (CameraAccessException e) {
                     Log.e(TAG, "camera2 repeating request failed", e);
@@ -402,6 +412,11 @@ public final class Camera2Backend {
                             }
                         }
                         long ts = im.getTimestamp();
+                        // 曝光中点补偿：image.getTimestamp() 是曝光起点（CLOCK_MONOTONIC
+                        // 与陀螺同基），帧内容中心在 +exposure/2；实测 δ 扫描最优值
+                        // ~+25~33ms ≈ 曝光中心+卷帘均值，用真实曝光时间的一半最稳。
+                        long expNs = exposureNs;
+                        ts += (expNs > 0 ? expNs / 2 : 16_500_000L);
                         if (!tsLogged) {
                             tsLogged = true;
                             long now = SystemClock.elapsedRealtimeNanos();
@@ -410,9 +425,8 @@ public final class Camera2Backend {
                                     + " offset=" + tsOffset + "ns");
                         }
                         FrameSink s = sink;
-                        // camera2 image.getTimestamp() is the sensor exposure time on the
-                        // same CLOCK_MONOTONIC base as elapsedRealtimeNanos on this device;
-                        // use it directly (exposure time aligns better with gyro than arrival).
+                        // camera2 image.getTimestamp() 是曝光起点（与陀螺同 CLOCK_MONOTONIC 基），
+                        // 这里上报的是曝光中点（+exposure/2）。
                         if (s != null) s.onFrame(out, w, h, ts);
                     } finally {
                         im.close();
