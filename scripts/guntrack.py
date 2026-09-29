@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""TVGun 光枪追踪器 v2 —— Python 参考实现（与 Java 移植版逐语句对应）。
+"""TVGun 光枪追踪器 v4 —— Python 参考实现（与 Java 移植版逐语句对应）。
 
 核心改动（相对 Detector.java + Fusion.java 的旧管线）：
   1. 状态为单应 H（640x360 图像坐标 -> 1920x1080 规范坐标），而非四角+准星；
@@ -108,9 +108,34 @@ class TrackerParams:
     # v3 输出预测：snapshot_ahead(now, ahead) 把 H 传播到将来时刻，
     # 陀螺队尾之后用 ω 的短时 EMA 匀速外推——补偿曝光→处理→传输→渲染
     # 的端到端延迟（实测感知滞后 p95 达 60-100px，是"手感"的主因）
-    predict_ema_tau = 0.015    # ω 外推用 EMA 时间常数（s）
+    predict_ema_tau = 0.03     # ω 外推用 EMA 时间常数（s）；v4 起 15→30ms：
+                               # 外推噪声 ∝ σ·rem 是"飘"的主源之一，τ 加倍
+                               # 噪声 ÷1.6，代价是加速度段外推滞后略增
     predict_max_ahead = 0.25   # 外推时限（s）
     predict_max_ang = 0.5      # 单次外推角度上限（rad）
+    predict_damp_tau = 0.08    # v4 起阻尼式外推 θ=ω·τ(1-e^(-t/τ))：外推量饱和
+                               # （回甩过冲与外推噪声封顶 ω·τ），代价是持续
+                               # 匀速运动欠预测（lag p95 +~25px，中位不变）
+
+    # v4 输出平滑（只作用于 snapshot_ahead 显示/射击路径；内部 H 与 process
+    # 帧率输出不变——回放等价/伪失锁 MC 语义不受影响）。根因：v3 把 30Hz
+    # 视觉校正阶跃（innov 中位 ~6px × 增益）与 ω_EMA 外推噪声（~0.5-1px/tick）
+    # 直接放进 120Hz 输出，实测 jerk p50≈1.7-2.0px，肉眼可见"飘"
+    out_mode = "oneuro"        # "v3"（不平滑，基线）| "oneuro" | "offset"
+    # one-euro（商用体感外设标准方案）：速度低 → 重滤波藏阶跃/震颤；
+    # 速度高 → 近乎直通不糊；单 cutoff 两轴共用（指向稳定感的正确做法）
+    oe_min_cutoff = 1.5        # Hz，静止截止频率
+    oe_beta = 0.02             # 速度系数（cutoff = min + beta·|dhat|）；
+                               # v4 实测：0.08 对 2px 校正阶跃近乎直通（截止
+                               # 冲到 ~20Hz），0.02 时阶跃瞬时通过 <30%
+    oe_dcutoff = 1.0           # 导数通道截止（Hz）
+    # offset（误差状态分离）：校正对 H 的位移 Δ 的 (1-φ) 存入显示偏移 d
+    # （输出 = H·c + d，连续性不破），d 按自适应 τ 衰减——小偏移慢衰减
+    # 藏噪声，大偏移（再锁定）快衰减保收敛；φ 为立即通过比例
+    off_instant = 0.3
+    off_tau_max = 0.45         # |d|→0 时的衰减时间常数（s）
+    off_tau_min = 0.04         # |d| 很大时的衰减时间常数下限（s）
+    off_d_scale = 8.0          # τ = τ_max/(1+|d|/d_scale)
 
     v3 = True                  # False 时退化为 v2 行为（基线对照）
 
@@ -167,6 +192,12 @@ class Tracker:
         self._g_eff_last = 0.1       # 最近一次校正实际使用的增益
         self._w_ema = np.zeros(3)  # 外推用角速度 EMA（原始轴，未减零偏）
         self._w_ema_ts = -1
+        # v4 输出平滑状态
+        self._oe = None            # one-euro: [xhat, yhat, dxhat, dyhat]，ts 另记
+        self._oe_ts = -1
+        self._out_off = np.zeros(2)  # offset 模式显示偏移（norm px）
+        self._out_off_ts = -1
+        self._cross_pre = None       # process 开头的未校正准星（offset 连续性用）
 
     # ---------------------------------------------------------------- 陀螺
     def on_gyro(self, ts_ns, wx, wy, wz):
@@ -239,7 +270,8 @@ class Tracker:
     def snapshot_ahead(self, now_ns, ahead_ns):
         """预测 now+ahead 时刻的准星（补偿曝光→处理→传输→渲染的端到端延迟）。
         先按队列陀螺传播（与 snapshot 相同），队尾之后用 ω 的短时 EMA 匀速
-        外推；外推限时/限角防甩尾过冲。ahead=0 退化为 snapshot。"""
+        外推（predict_damp_tau>0 时为阻尼外推）；外推限时/限角防甩尾过冲。
+        ahead=0 退化为 snapshot。v4：返回值经 out_mode 输出平滑。"""
         p = self.P
         if self.H is None or self.grade == GRADE_DEAD:
             return self.cross[0], self.cross[1], GRADE_DEAD
@@ -254,7 +286,11 @@ class Tracker:
             w = self._w_ema - self.bias
             if p.rotation == 180:
                 w = w * np.array([-1.0, -1.0, 1.0])
-            th = M_ROT0 @ (w * rem)
+            if p.predict_damp_tau > 0:
+                rem_eff = p.predict_damp_tau * (1.0 - np.exp(-rem / p.predict_damp_tau))
+            else:
+                rem_eff = rem
+            th = M_ROT0 @ (w * rem_eff)
             n = float(np.linalg.norm(th))
             if n > p.predict_max_ang:
                 th = th * (p.predict_max_ang / n)
@@ -267,7 +303,60 @@ class Tracker:
                 return self.cross[0], self.cross[1], self.grade
         c = H @ np.array([IMG_W / 2, IMG_H / 2, 1.0])
         cc = c[:2] / c[2]
+        if p.out_mode == "offset":
+            cc = cc + self._decay_out_off(now_ns)
+        elif p.out_mode == "oneuro":
+            cc = self._oneuro(cc, now_ns)
         return cc[0], cc[1], self.grade
+
+    # ---------------------------------------------------------------- v4 输出平滑
+    def _decay_out_off(self, now_ns):
+        """offset 模式：显示偏移 d 按自适应 τ 向 0 衰减（惰性，按调用时刻结算）。
+        τ = τ_max/(1+|d|/d_scale)：小偏移慢衰减（藏测量噪声/校正阶跃），
+        大偏移（再锁定/采集融合）快衰减（保收敛）。"""
+        p = self.P
+        if self._out_off_ts < 0:
+            return self._out_off
+        dt = (now_ns - self._out_off_ts) * 1e-9
+        if dt <= 0:
+            return self._out_off
+        m = float(np.hypot(self._out_off[0], self._out_off[1]))
+        tau = max(p.off_tau_max / (1.0 + m / p.off_d_scale), p.off_tau_min)
+        self._out_off = self._out_off * np.exp(-dt / tau)
+        self._out_off_ts = now_ns
+        return self._out_off
+
+    def _oneuro(self, c, now_ns):
+        """one-euro 滤波（2D 单 cutoff）：|速度|小 → 截止低重滤波（静止/慢瞄
+        藏住 30Hz 校正阶跃与 ω_EMA 外推噪声）；|速度|大 → 截止高近乎直通
+        （快速运动不糊、校正即过——运动中阶跃本身不可见）。同一 now 重复
+        调用不推进状态（diag 会对同一时刻多次采样）。"""
+        p = self.P
+        if self._oe is None:
+            self._oe = np.array([c[0], c[1], 0.0, 0.0])
+            self._oe_ts = now_ns
+            return self._oe[:2].copy()
+        dt = (now_ns - self._oe_ts) * 1e-9
+        if dt < 1e-4:
+            return self._oe[:2].copy()
+        dt = min(dt, 0.05)
+        xhat, yhat, dxhat, dyhat = self._oe
+
+        def alpha(cutoff):
+            return 1.0 / (1.0 + (1.0 / (2.0 * np.pi * cutoff)) / dt)
+
+        a_d = alpha(p.oe_dcutoff)
+        dx = (c[0] - xhat) / dt
+        dy = (c[1] - yhat) / dt
+        dxhat = dxhat + a_d * (dx - dxhat)
+        dyhat = dyhat + a_d * (dy - dyhat)
+        cutoff = p.oe_min_cutoff + p.oe_beta * float(np.hypot(dxhat, dyhat))
+        a = alpha(cutoff)
+        xhat = xhat + a * (c[0] - xhat)
+        yhat = yhat + a * (c[1] - yhat)
+        self._oe = np.array([xhat, yhat, dxhat, dyhat])
+        self._oe_ts = now_ns
+        return self._oe[:2].copy()
 
     # ---------------------------------------------------------------- 主入口
     def process(self, g640: np.ndarray, ts_ns):
@@ -281,6 +370,12 @@ class Tracker:
         self.innov_pre = np.nan
         self.meas_cross[:] = np.nan
         self.acq_candidate = -1
+        # v4 offset：校正前（已传播到 ts）的准星，帧末用来保持输出连续
+        if p.out_mode == "offset" and self.H is not None:
+            cp = self.H @ np.array([IMG_W / 2, IMG_H / 2, 1.0])
+            self._cross_pre = cp[:2] / cp[2]
+        else:
+            self._cross_pre = None
 
         # 2) 阈值（与旧管线一致的全图直方图法）
         thr, low_thr = self._thresholds(g640)
@@ -359,11 +454,24 @@ class Tracker:
         if self.H is None:
             self.grade = GRADE_DEAD
             self.cross[:] = np.nan
+            # 失锁即重置输出平滑（无连续性可保；重锁定应直接跳到真值）
+            self._oe = None
+            self._oe_ts = -1
+            self._out_off[:] = 0.0
+            self._out_off_ts = -1
+            self._cross_pre = None
             return
 
         # 5) 输出准星 = H·图像中心
         c = self.H @ np.array([IMG_W / 2, IMG_H / 2, 1.0])
         self.cross = c[:2] / c[2]
+
+        # 6) v4 offset：本帧校正/采集对 H 的总位移的 (1-φ) 存入显示偏移
+        if self._cross_pre is not None and np.isfinite(self.cross).all():
+            step = self._cross_pre - self.cross
+            self._out_off += (1.0 - p.off_instant) * step
+            self._out_off_ts = ts_ns
+        self._cross_pre = None
 
     # ---------------------------------------------------------------- 阈值
     @staticmethod

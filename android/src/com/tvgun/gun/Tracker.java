@@ -68,9 +68,20 @@ public final class Tracker {
     private static final float BIAS_DYN_RATE_MAX = 1.5f;    // rad/s
     private static final float BIAS_DYN_CLAMP = 0.08f;      // rad/s
     // v3 输出预测：snapshotAhead 队尾之后用 ω 短时 EMA 匀速外推
-    private static final double PREDICT_EMA_TAU_S = 0.015;
+    // v4：EMA τ 15→30ms（外推噪声 ∝ σ·rem 是"飘"主源之一，τ 加倍噪声 ÷1.6）
+    private static final double PREDICT_EMA_TAU_S = 0.03;
     private static final double PREDICT_MAX_AHEAD_S = 0.25;
     private static final double PREDICT_MAX_ANG = 0.5;      // rad
+    // v4 阻尼外推 θ=ω·τ(1-e^(-t/τ))：外推量饱和（回甩过冲/外推噪声封顶 ω·τ），
+    // 代价是持续匀速运动欠预测（lag p95 +~25px，中位不变）
+    private static final double PREDICT_DAMP_TAU_S = 0.08;
+    // v4 输出平滑（one-euro，只作用于 snapshotAhead 显示/射击路径；内部 H 与
+    // processGray 帧率输出不变——回放等价语义不受影响）。低速重滤波藏 30Hz
+    // 校正阶跃与 ω_EMA 外推噪声（实测 aim 流 jerk p50 3.43→1.23px、静止抖动
+    // 0.56→0.11px），高速近乎直通不糊
+    private static final double OE_MIN_CUTOFF_HZ = 1.5;
+    private static final double OE_BETA = 0.02;   // 0.08 实测对 2px 阶跃近乎直通，否决
+    private static final double OE_DCUTOFF_HZ = 1.0;
     private static final float SLEW_CAP = 0f;         // 0=不限幅（限幅会把正确采集拖到几十帧收敛，比跳变更糟；防假跳变靠门控）
     private static final float T_GYRO_MAX_S = 3.0f;
     private static final float BIAS_ALPHA = 0.02f;
@@ -123,6 +134,9 @@ public final class Tracker {
     private final double[] wEma = new double[3];// 外推用角速度 EMA（设备轴，未减零偏）
     private long wEmaTs = -1;
     private double[] biasDynPrev;               // 上次 FULL 帧残余 {tX,tY,gEff,ts,theta,seq}
+    private final double[] oe = new double[4];  // v4 one-euro: xhat, yhat, dxhat, dyhat
+    private boolean oeInit;
+    private long oeTs = -1;
 
     // ---- camera intrinsics (computed per frame size) ----
     private int imgW = 640, imgH = 360;
@@ -180,6 +194,8 @@ public final class Tracker {
         Arrays.fill(wEma, 0);
         wEmaTs = -1;
         biasDynPrev = null;
+        oeInit = false;
+        oeTs = -1;
     }
 
     public int grade() {
@@ -393,6 +409,9 @@ public final class Tracker {
         if (!haveH) {
             grade = GRADE_DEAD;
             cross[0] = cross[1] = Float.NaN;
+            // 失锁即重置输出平滑（无连续性可保；重锁定应直接跳到真值）
+            oeInit = false;
+            oeTs = -1;
             return;
         }
         double[] c = applyH(H, cx0, cy0);
@@ -430,20 +449,56 @@ public final class Tracker {
         double rem = (tgt - Math.max(lastTs, baseNs)) * 1e-9;
         if (rem > 0) {
             double mx = wEma[0] - bias[0], my = wEma[1] - bias[1], mz = wEma[2] - bias[2];
+            // v4 阻尼外推：rem_eff 饱和（线性外推的回甩过冲/噪声随 rem 线性放大）
+            double remEff = PREDICT_DAMP_TAU_S > 0
+                    ? PREDICT_DAMP_TAU_S * (1.0 - Math.exp(-rem / PREDICT_DAMP_TAU_S)) : rem;
             // 外推限角（|th| 在 M 变换下不变，先按设备轴模长限幅）
-            double n = Math.sqrt(mx * mx + my * my + mz * mz) * rem;
+            double n = Math.sqrt(mx * mx + my * my + mz * mz) * remEff;
             if (n > PREDICT_MAX_ANG) {
                 double k = PREDICT_MAX_ANG / n;
                 mx *= k;
                 my *= k;
                 mz *= k;
             }
-            if (!gyroStep(Ht, mx, my, mz, rem)) {
+            if (!gyroStep(Ht, mx, my, mz, remEff)) {
                 return new float[]{cross[0], cross[1], grade};
             }
         }
         double[] c = applyH(Ht, cx0, cy0);
-        return new float[]{(float) c[0], (float) c[1], grade};
+        float[] oc = oneuro(c[0], c[1], nowNs);
+        return new float[]{oc[0], oc[1], grade};
+    }
+
+    /** v4 one-euro 输出滤波（2D 单 cutoff）：|速度|小 → 截止低重滤波（静止/慢瞄
+     *  藏住 30Hz 校正阶跃与 ω_EMA 外推噪声）；|速度|大 → 截止高近乎直通（快速
+     *  运动不糊、校正即过）。同一 nowNs 重复调用不推进状态。与 guntrack.py
+     *  _oneuro 逐语句对应。 */
+    private float[] oneuro(double cx, double cy, long nowNs) {
+        if (!oeInit) {
+            oe[0] = cx;
+            oe[1] = cy;
+            oe[2] = 0;
+            oe[3] = 0;
+            oeInit = true;
+            oeTs = nowNs;
+            return new float[]{(float) oe[0], (float) oe[1]};
+        }
+        double dt = (nowNs - oeTs) * 1e-9;
+        if (dt < 1e-4) {
+            return new float[]{(float) oe[0], (float) oe[1]};
+        }
+        if (dt > 0.05) dt = 0.05;
+        double aD = 1.0 / (1.0 + (1.0 / (2.0 * Math.PI * OE_DCUTOFF_HZ)) / dt);
+        double dx = (cx - oe[0]) / dt;
+        double dy = (cy - oe[1]) / dt;
+        oe[2] += aD * (dx - oe[2]);
+        oe[3] += aD * (dy - oe[3]);
+        double cutoff = OE_MIN_CUTOFF_HZ + OE_BETA * Math.hypot(oe[2], oe[3]);
+        double a = 1.0 / (1.0 + (1.0 / (2.0 * Math.PI * cutoff)) / dt);
+        oe[0] += a * (cx - oe[0]);
+        oe[1] += a * (cy - oe[1]);
+        oeTs = nowNs;
+        return new float[]{(float) oe[0], (float) oe[1]};
     }
 
     public synchronized boolean aimValid() {

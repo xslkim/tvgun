@@ -37,6 +37,7 @@ RECS = ["record_20260921_230150", "record_wide_20260921_235354",
 
 SAMPLE_HZ = 120.0
 LAG_MS = (66, 100, 133)
+AIM_AHEAD_MS = 90.0      # 与真机 predictMs 默认值一致（显示/射击路径）
 
 
 def has_frames(rec):
@@ -67,6 +68,7 @@ def replay(rec, v3=True, sample_hz=SAMPLE_HZ, inject=None, still_bias=True):
     gi = 0
     rows = []
     o_t, o_x, o_y, o_g = [], [], [], []
+    o_aim_x, o_aim_y = [], []
     o_pred = {L: [] for L in LAG_MS}
     dt_out = 1e9 / sample_hz
     next_out = float(fts[0])
@@ -75,6 +77,10 @@ def replay(rec, v3=True, sample_hz=SAMPLE_HZ, inject=None, still_bias=True):
             while gi < len(gts) and gts[gi] <= next_out:
                 tr.on_gyro(gts[gi], *gw[gi])
                 gi += 1
+            # aim 流 = 真机显示/射击路径（snapshot_ahead + out_mode 平滑），先采样
+            ax, ay, _ = tr.snapshot_ahead(int(next_out), int(AIM_AHEAD_MS * 1e6))
+            o_aim_x.append(ax)
+            o_aim_y.append(ay)
             x, y, g = tr.snapshot(int(next_out))
             o_t.append(next_out)
             o_x.append(x)
@@ -94,7 +100,8 @@ def replay(rec, v3=True, sample_hz=SAMPLE_HZ, inject=None, still_bias=True):
                          innov=tr.innov, innov_pre=tr.innov_pre,
                          g_eff=tr._g_eff_last, n_edges=tr.n_edges,
                          bx=tr.bias[0], by=tr.bias[1], bz=tr.bias[2]))
-    out = pd.DataFrame(dict(t=o_t, x=o_x, y=o_y, g=o_g))
+    out = pd.DataFrame(dict(t=o_t, x=o_x, y=o_y, g=o_g,
+                            aim_x=o_aim_x, aim_y=o_aim_y))
     for L in LAG_MS:
         arr = np.array([(p[0], p[1]) for p in o_pred[L]])
         out[f"pred{L}_x"] = arr[:, 0]
@@ -222,6 +229,34 @@ def analyze(rec, tag, v3=True, inject=None, still_bias=True):
     r["jerk_p50"] = float(np.percentile(jerk, 50)) if len(jerk) else float("nan")
     r["jerk_p95"] = float(np.percentile(jerk, 95)) if len(jerk) else float("nan")
 
+    # aim 流（真机显示/射击路径 = snapshot_ahead(90ms) + out_mode 平滑）：
+    # 静止抖动 / jerk / 感知延迟——用户实际看到摸到的量
+    axs = out["aim_x"].to_numpy()
+    ays = out["aim_y"].to_numpy()
+    saj = []
+    for a, b in segs:
+        mo = (out["t"].to_numpy() * 1e-9 >= a) & (out["t"].to_numpy() * 1e-9 <= b) \
+            & (out["g"].to_numpy() > GRADE_DEAD)
+        if mo.sum() >= 30:
+            saj.append(detrended_jitter(axs[mo], ays[mo]))
+    r["still_jitter_aim"] = float(np.nanmedian(saj)) if saj else float("nan")
+    d2a = np.hypot(np.abs(np.diff(axs, 2)), np.abs(np.diff(ays, 2)))
+    ja = d2a[mv]
+    r["jerk_aim_p50"] = float(np.percentile(ja, 50)) if len(ja) else float("nan")
+    r["jerk_aim_p95"] = float(np.percentile(ja, 95)) if len(ja) else float("nan")
+    la = []
+    tt_a = out["t"].to_numpy()
+    og_a = out["g"].to_numpy()
+    for i in range(0, len(tt_a), 2):
+        if og_a[i] <= GRADE_DEAD:
+            continue
+        a = anc.at(tt_a[i] + int(100e6))
+        if a is None:
+            continue
+        la.append(float(np.hypot(axs[i] - a[0], ays[i] - a[1])))
+    r["lag100_aim_med"] = float(np.median(la)) if la else float("nan")
+    r["lag100_aim_p95"] = float(np.percentile(la, 95)) if la else float("nan")
+
     # 感知延迟误差（真值锚点法）：cur=|o(t)-a(t+L)|  pred=|pred(t,L)-a(t+L)|
     tt = out["t"].to_numpy()
     og = out["g"].to_numpy()
@@ -298,6 +333,9 @@ def print_rec(r):
           f"innov_pre med={r['full_innov_pre_med']:.2f} p95={r['full_innov_pre_p95']:.2f}px")
     print(f"   jerk p50={r['jerk_p50']:.3f} p95={r['jerk_p95']:.3f}px | "
           f"τ={r['tau_ms']:.0f}ms (err0={r['tau_err0']:.1f} -> errmin={r['tau_errmin']:.1f}px)")
+    print(f"   aim流(显示路径): still_jit={r['still_jitter_aim']:.2f} "
+          f"jerk p50={r['jerk_aim_p50']:.3f} p95={r['jerk_aim_p95']:.3f}px | "
+          f"lag100 med={r['lag100_aim_med']:.1f} p95={r['lag100_aim_p95']:.1f}px")
     for L in LAG_MS:
         print(f"   lag{L}ms: cur med={r[f'lag{L}_cur_med']:.1f} p95={r[f'lag{L}_cur_p95']:.1f} | "
               f"pred med={r[f'lag{L}_pred_med']:.1f} p95={r[f'lag{L}_pred_p95']:.1f} px")
