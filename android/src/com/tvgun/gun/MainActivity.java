@@ -49,7 +49,9 @@ import java.util.Locale;
 public class MainActivity extends Activity implements SurfaceHolder.Callback {
     private static final String TAG = "tvgun";
     private static final String PREFS = "tvgun";
-    private static final String DEFAULT_SERVER = "192.168.3.19:8000";
+    private static final String DEFAULT_SERVER = "192.168.3.19:8000";  // 找不到 TV 时的兜底
+    private static final String DISCOVER_REQ = "TVGUN_DISCOVER";
+    private static final String DISCOVER_RES = "TVGUN_HERE";
     private static final int REQ_CAM = 1;
     private static final long LONG_PRESS_MS = 600;
     private static final long AIM_INTERVAL_MS = 8;     // 120Hz 准星上报（UDP 无连接，低开销）
@@ -182,6 +184,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         };
         startWorker();
         startAimSender();
+        startDiscovery();
         syncScore();
     }
 
@@ -987,6 +990,105 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
             return true;
         } catch (Exception ignored) {
             return false;
+        }
+    }
+
+    // ---- LAN auto-discovery ----
+
+    /** 零配置自动连接：向局域网广播 TVGUN_DISCOVER，PC 电视端应答
+     *  TVGUN_HERE <port>，取应答包源地址作为服务器。首次连上后周期性
+     *  重验证（PC 换 IP 自动跟上）；找不到 TV 时保留现有 server 兜底。 */
+    private void startDiscovery() {
+        Thread t = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                int gamePort = 8000;
+                int ci = server.lastIndexOf(':');
+                if (ci > 0) {
+                    try {
+                        gamePort = Integer.parseInt(server.substring(ci + 1));
+                    } catch (NumberFormatException ignored) {
+                    }
+                }
+                final int discoPort = gamePort + 1;
+                boolean found = false;
+                while (running) {
+                    java.net.DatagramSocket ds = null;
+                    try {
+                        ds = new java.net.DatagramSocket();
+                        ds.setBroadcast(true);
+                        ds.setSoTimeout(800);
+                        byte[] req = DISCOVER_REQ.getBytes("UTF-8");
+                        java.util.Set<String> targets = new java.util.HashSet<>();
+                        targets.add("255.255.255.255");
+                        String bcast = subnetBroadcast();
+                        if (bcast != null) {
+                            targets.add(bcast);
+                        }
+                        for (String tgt : targets) {
+                            try {
+                                ds.send(new java.net.DatagramPacket(req, req.length,
+                                        java.net.InetAddress.getByName(tgt), discoPort));
+                            } catch (Exception ignored) {
+                            }
+                        }
+                        byte[] buf = new byte[128];
+                        java.net.DatagramPacket p = new java.net.DatagramPacket(buf, buf.length);
+                        try {
+                            ds.receive(p);
+                            String msg = new String(p.getData(), 0, p.getLength(), "UTF-8").trim();
+                            if (msg.startsWith(DISCOVER_RES)) {
+                                int port = gamePort;
+                                String[] parts = msg.split(" ");
+                                if (parts.length > 1) {
+                                    try {
+                                        port = Integer.parseInt(parts[1]);
+                                    } catch (NumberFormatException ignored) {
+                                    }
+                                }
+                                String newServer = p.getAddress().getHostAddress() + ":" + port;
+                                if (!newServer.equals(server)) {
+                                    server = newServer;
+                                    prefs.edit().putString("server", newServer).apply();
+                                    Log.i(TAG, "discovery: server -> " + newServer);
+                                    syncScore();
+                                }
+                                found = true;
+                            }
+                        } catch (java.net.SocketTimeoutException ignored) {
+                        }
+                    } catch (Exception e) {
+                        Log.w(TAG, "discovery error: " + e.getMessage());
+                    } finally {
+                        if (ds != null) {
+                            ds.close();
+                        }
+                    }
+                    try {
+                        Thread.sleep(found ? 10000 : 1500);
+                    } catch (InterruptedException ignored) {
+                    }
+                }
+            }
+        }, "discovery");
+        t.setDaemon(true);
+        t.start();
+    }
+
+    /** WiFi 网段的定向广播地址（如 192.168.31.255）；拿不到返回 null。 */
+    private String subnetBroadcast() {
+        try {
+            android.net.wifi.WifiManager wm = (android.net.wifi.WifiManager)
+                    getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+            android.net.DhcpInfo d = wm != null ? wm.getDhcpInfo() : null;
+            if (d == null || d.ipAddress == 0) {
+                return null;
+            }
+            int b = (d.ipAddress & d.netmask) | ~d.netmask;
+            return String.format(Locale.US, "%d.%d.%d.%d",
+                    b & 0xff, (b >> 8) & 0xff, (b >> 16) & 0xff, (b >> 24) & 0xff);
+        } catch (Exception e) {
+            return null;
         }
     }
 

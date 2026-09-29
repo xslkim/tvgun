@@ -11,6 +11,8 @@
   POST /aim    {"x": float, "y": float}（规范坐标）-> {"ok": true}（兼容路径）
   UDP  :port   文本 "x,y"（规范坐标，~120Hz，最新覆盖，主路径——TCP 连接
                建立的 WiFi 抖动（5-30ms 尖峰）会直接变成准星卡顿，UDP 无连接）
+  UDP  :port+1 局域网自动发现：收到 "TVGUN_DISCOVER" 回复 "TVGUN_HERE <port>"，
+               手机端广播探测后从应答包源地址拿到 PC IP，零配置连接
   GET /state   -> {"score": int, "target": {"x": float, "y": float, "r": float}}
 
 用法:
@@ -220,6 +222,10 @@ def start_server(state: GameState, port: int) -> ThreadingHTTPServer:
     return srv
 
 
+DISCOVERY_REQ = b"TVGUN_DISCOVER"
+DISCOVERY_RES = b"TVGUN_HERE"
+
+
 def start_udp(state: GameState, port: int) -> socket.socket:
     """UDP aim 监听（与 HTTP 同端口号；UDP/TCP 命名空间独立不冲突）。
     报文：ASCII "x,y"（规范坐标）。最新覆盖，丢包无妨（120Hz 冗余）。"""
@@ -240,6 +246,33 @@ def start_udp(state: GameState, port: int) -> socket.socket:
                 state.set_aim(float(xs), float(ys))
             except (ValueError, UnicodeDecodeError):
                 continue
+
+    threading.Thread(target=loop, daemon=True).start()
+    return sock
+
+
+def start_discovery(port: int, game_port: int) -> socket.socket:
+    """局域网自动发现应答：手机广播 TVGUN_DISCOVER，这里回复
+    TVGUN_HERE <game_port>；手机从应答包源地址拿到 PC IP，免手动配置。"""
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    sock.bind(("0.0.0.0", port))
+    sock.settimeout(0.5)
+    res = DISCOVERY_RES + b" " + str(game_port).encode("ascii")
+
+    def loop():
+        while True:
+            try:
+                data, addr = sock.recvfrom(128)
+            except socket.timeout:
+                continue
+            except OSError:
+                return  # socket closed on shutdown
+            if data.strip() == DISCOVERY_REQ:
+                try:
+                    sock.sendto(res, addr)
+                except OSError:
+                    continue
 
     threading.Thread(target=loop, daemon=True).start()
     return sock
@@ -299,6 +332,7 @@ def run_game(args) -> int:
     state = GameState(speed=args.speed, seed=args.seed)
     srv = start_server(state, args.port)
     udp = start_udp(state, args.port)
+    disco = start_discovery(args.port + 1, args.port)
     w, h = parse_size(args.size)
     win = "TVGun"
     cv2.namedWindow(win, cv2.WINDOW_NORMAL)
@@ -306,7 +340,8 @@ def run_game(args) -> int:
     if not args.windowed:
         cv2.setWindowProperty(win, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
-    print(f"HTTP+UDP server listening on 0.0.0.0:{args.port} (ESC to quit)")
+    print(f"HTTP+UDP server listening on 0.0.0.0:{args.port} "
+          f"(discovery on {args.port + 1}, ESC to quit)")
     try:
         prev = time.monotonic()
         while True:
@@ -324,6 +359,7 @@ def run_game(args) -> int:
         srv.shutdown()
         srv.server_close()
         udp.close()
+        disco.close()
         cv2.destroyAllWindows()
     return 0
 
@@ -415,6 +451,18 @@ def selftest() -> int:
                   and abs(aim[0] - 111.5) < 1e-6 and abs(aim[1] - 222.5) < 1e-6)
         finally:
             udp.close()
+
+        # 局域网自动发现应答（自测走单播，应答逻辑与广播相同）
+        disco = start_discovery(port + 1, port)
+        try:
+            with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as c:
+                c.settimeout(2.0)
+                c.sendto(DISCOVERY_REQ, ("127.0.0.1", port + 1))
+                data, _ = c.recvfrom(128)
+            check("discovery replies TVGUN_HERE <port>",
+                  data == DISCOVERY_RES + b" " + str(port).encode("ascii"))
+        finally:
+            disco.close()
 
         try:
             post_aim(b"not json")
