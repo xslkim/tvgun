@@ -116,6 +116,12 @@ class TrackerParams:
     predict_damp_tau = 0.08    # v4 起阻尼式外推 θ=ω·τ(1-e^(-t/τ))：外推量饱和
                                # （回甩过冲与外推噪声封顶 ω·τ），代价是持续
                                # 匀速运动欠预测（lag p95 +~25px，中位不变）
+    # v4.1 减速感知外推缩放：外推量 × min(1, |ω_ema|/ω_peak)。ω_EMA 有 τ 滞后，
+    # 急停瞬间仍按 ~0.5-1 rad/s 外推几十 px，再花 ~0.3s 衰减回来——用户看到
+    # 的"快速移动到位后漂移"主要是这个；ω_peak（|ω_raw| 峰值保持，τ=150ms
+    # 衰减）在减速时立即压低缩放比，匀速段不受影响（比值≈1 满预测）
+    predict_decel_scale = True
+    w_peak_tau = 0.15          # ω 峰值保持的衰减时间常数（s）
 
     # v4 输出平滑（只作用于 snapshot_ahead 显示/射击路径；内部 H 与 process
     # 帧率输出不变——回放等价/伪失锁 MC 语义不受影响）。根因：v3 把 30Hz
@@ -192,6 +198,8 @@ class Tracker:
         self._g_eff_last = 0.1       # 最近一次校正实际使用的增益
         self._w_ema = np.zeros(3)  # 外推用角速度 EMA（原始轴，未减零偏）
         self._w_ema_ts = -1
+        self._w_peak = 0.0         # |ω_raw| 峰值保持（减速感知外推缩放）
+        self._w_peak_ts = -1
         # v4 输出平滑状态
         self._oe = None            # one-euro: [xhat, yhat, dxhat, dyhat]，ts 另记
         self._oe_ts = -1
@@ -210,13 +218,20 @@ class Tracker:
                         and np.abs(w_raw).max() < self.P.bias_max_rate:
                     a = self.P.bias_alpha
                     self.bias = (1 - a) * self.bias + a * w_raw
-                # 外推用 ω EMA（时间常数 ~15ms，抗单样本噪声）
+                # 外推用 ω EMA（时间常数 ~30ms，抗单样本噪声）
                 if self._w_ema_ts >= 0:
                     a_e = dt / (dt + self.P.predict_ema_tau)
                     self._w_ema = (1 - a_e) * self._w_ema + a_e * w_raw
                 else:
                     self._w_ema = w_raw.copy()
                 self._w_ema_ts = ts_ns
+                # ω 峰值保持（减速感知外推缩放用）：瞬时抬升，τ=150ms 衰减
+                wm = float(np.linalg.norm(w_raw))
+                if wm >= self._w_peak or self._w_peak_ts < 0:
+                    self._w_peak = wm
+                else:
+                    self._w_peak *= np.exp(-dt / self.P.w_peak_tau)
+                self._w_peak_ts = ts_ns
         self._gyro_last = ts_ns
         self._gq.append((ts_ns, wx, wy, wz))
 
@@ -291,6 +306,10 @@ class Tracker:
             else:
                 rem_eff = rem
             th = M_ROT0 @ (w * rem_eff)
+            if p.predict_decel_scale:
+                wm = float(np.linalg.norm(w))
+                if self._w_peak > 1e-6:
+                    th = th * min(1.0, wm / self._w_peak)
             n = float(np.linalg.norm(th))
             if n > p.predict_max_ang:
                 th = th * (p.predict_max_ang / n)

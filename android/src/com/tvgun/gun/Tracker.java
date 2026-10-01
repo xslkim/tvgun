@@ -75,6 +75,11 @@ public final class Tracker {
     // v4 阻尼外推 θ=ω·τ(1-e^(-t/τ))：外推量饱和（回甩过冲/外推噪声封顶 ω·τ），
     // 代价是持续匀速运动欠预测（lag p95 +~25px，中位不变）
     private static final double PREDICT_DAMP_TAU_S = 0.08;
+    // v4.1 减速感知外推缩放：外推量 × min(1, |ω_ema|/ω_peak)——ω_EMA 有 τ 滞后，
+    // 急停瞬间仍按残速外推几十 px 再衰减（用户看到的"到位后漂移"主源）；
+    // ω_peak 在减速时立即压低缩放比，匀速段比值≈1 不受影响
+    private static final boolean PREDICT_DECEL_SCALE = true;
+    private static final double W_PEAK_TAU_S = 0.15;
     // v4 输出平滑（one-euro，只作用于 snapshotAhead 显示/射击路径；内部 H 与
     // processGray 帧率输出不变——回放等价语义不受影响）。低速重滤波藏 30Hz
     // 校正阶跃与 ω_EMA 外推噪声（实测 aim 流 jerk p50 3.43→1.23px、静止抖动
@@ -137,6 +142,8 @@ public final class Tracker {
     private final double[] oe = new double[4];  // v4 one-euro: xhat, yhat, dxhat, dyhat
     private boolean oeInit;
     private long oeTs = -1;
+    private double wPeak;                       // v4.1 |ω| 峰值保持（减速感知外推缩放）
+    private long wPeakTs = -1;
 
     // ---- camera intrinsics (computed per frame size) ----
     private int imgW = 640, imgH = 360;
@@ -196,6 +203,8 @@ public final class Tracker {
         biasDynPrev = null;
         oeInit = false;
         oeTs = -1;
+        wPeak = 0;
+        wPeakTs = -1;
     }
 
     public int grade() {
@@ -230,6 +239,14 @@ public final class Tracker {
                     wEma[2] = wz;
                 }
                 wEmaTs = tsNs;
+                // ω 峰值保持（v4.1 减速感知外推缩放用）：瞬时抬升，τ=150ms 衰减
+                double wm = Math.sqrt(wx * wx + wy * wy + wz * wz);
+                if (wm >= wPeak || wPeakTs < 0) {
+                    wPeak = wm;
+                } else {
+                    wPeak *= Math.exp(-dt / W_PEAK_TAU_S);
+                }
+                wPeakTs = tsNs;
             }
         }
         gyroLastNs = tsNs;
@@ -452,6 +469,16 @@ public final class Tracker {
             // v4 阻尼外推：rem_eff 饱和（线性外推的回甩过冲/噪声随 rem 线性放大）
             double remEff = PREDICT_DAMP_TAU_S > 0
                     ? PREDICT_DAMP_TAU_S * (1.0 - Math.exp(-rem / PREDICT_DAMP_TAU_S)) : rem;
+            // v4.1 减速感知缩放：急停时 ω_ema 滞后于真实减速，按峰值比压低外推
+            if (PREDICT_DECEL_SCALE) {
+                double wm = Math.sqrt(mx * mx + my * my + mz * mz);
+                if (wPeak > 1e-6) {
+                    double ks = Math.min(1.0, wm / wPeak);
+                    mx *= ks;
+                    my *= ks;
+                    mz *= ks;
+                }
+            }
             // 外推限角（|th| 在 M 变换下不变，先按设备轴模长限幅）
             double n = Math.sqrt(mx * mx + my * my + mz * mz) * remEff;
             if (n > PREDICT_MAX_ANG) {

@@ -16,7 +16,8 @@ import guntrack as gt  # noqa: E402
 import diag_smooth as ds  # noqa: E402
 
 VARIANTS = [
-    ("v3-base",      dict(out_mode="v3")),
+    ("v3-base",      dict(out_mode="v3", predict_damp_tau=0.0,
+                          predict_ema_tau=0.015, predict_decel_scale=False)),
     ("oe1.5-b.08",   dict(out_mode="oneuro", oe_min_cutoff=1.5, oe_beta=0.08)),
     ("oe1.5-b.02",   dict(out_mode="oneuro", oe_min_cutoff=1.5, oe_beta=0.02)),
     ("oe1.0-b.02",   dict(out_mode="oneuro", oe_min_cutoff=1.0, oe_beta=0.02)),
@@ -34,13 +35,16 @@ VARIANTS = [
                           predict_damp_tau=0.10)),
     ("v4-final",     dict(out_mode="oneuro", oe_min_cutoff=1.5, oe_beta=0.02,
                           predict_damp_tau=0.08, predict_ema_tau=0.03)),
+    ("v4.1",         dict(out_mode="oneuro", oe_min_cutoff=1.5, oe_beta=0.02,
+                          predict_damp_tau=0.08, predict_ema_tau=0.03,
+                          predict_decel_scale=True)),
 ]
 
 DEFAULT_RECS = ["record_20260921_230150", "record_wide_20260921_235354",
                 "record_wide_20260925_214838", "record_wide_20260925_235333",
                 "record_20260925_235405", "record_20260926_114948",
                 "record_20260929_223451", "record_20260929_223525",
-                "record_20260929_223638"]
+                "record_20260929_223638", "record_20261002_004842"]
 
 KEYS = [("avail", "{:.1%}"), ("still_jitter_aim", "{:.2f}"),
         ("jerk_aim_p50", "{:.2f}"), ("jerk_aim_p95", "{:.1f}"),
