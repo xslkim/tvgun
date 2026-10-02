@@ -1,0 +1,15 @@
+preview=1280x720
+detect=320x180 (stride 4)
+recordGray=640x360 (stride 2 from Y plane, rotated detRotation into display coords)
+detRotation=0
+cameraId=c2:21
+camera2TsOffsetNs=186091151 (elapsedRealtime - exposureCenterTs at first frame, 0 when legacy)
+S=1196.36
+viewAngle=91.95
+fpsRange=[30, 30] of [[15, 15], [8, 30], [30, 30]]
+sceneMode=sports
+predictMs=90
+appVersion=32f220e-dirty
+clock=SystemClock.elapsedRealtimeNanos (ns, monotonic; gyro SensorEvent.timestamp uses the same clock)
+frames.bin=uint8 gray, 640x360 per frame, concatenated, indexed by frames_idx.csv seq
+full_<seq>.jpg=NV21 preview compressed q85, <=1/s
