@@ -81,6 +81,7 @@ class TrackerParams:
     gain_min = 0.35            # 稳态最小增益（FULL；PARTIAL/EDGE 按比例折算）。
                                # 实测权衡：再小会让视差/积分误差积累成慢速摆动
                                # （运动中 MA7 抖动 1.8→2.7px），再大静止噪声上升
+    sim_scale_min_edges = 4    # 尺度校正的最少边数（PARTIAL 的间距比尺度太噪）
     gain_ramp_lo = 1.0         # innov < lo → gain_min（过小无意义：σ_meas≈0.5-0.6px；
                                # 过大会形成"误差积累→跨阈→校正"极限环，运动中可见 ~3px 摆动）
     gain_ramp_hi = 12.0        # innov > hi → 满增益（线性过渡）
@@ -156,7 +157,9 @@ class TrackerParams:
     td_max = 0.100           # δ 搜索半径（s）
     td_step = 0.004          # 扫描步长（s）
     td_min_pairs = 10        # 触发一次估计的最少运动约束
-    td_every = 10            # 每隔多少帧尝试一次估计
+    td_every = 10            # 每隔多少帧尝试一次估计（v5.1 试过 5：0921 早期
+                             # 假峰复活（+82.8ms 摆动），回滚——预热需要足够
+                             # 的数据窗口，不是扫描次数）
     td_min_mag = 1.5         # 有效运动约束下限（px，|om| 低于此的边不计入；
                              # 边线噪声 ~0.5px，小约束会抬高残差下限）
     td_max_gap = 0.40        # 相邻测量帧最大间隔（s；弱可见会话边帧稀疏需放宽，
@@ -933,6 +936,12 @@ class Tracker:
         if dec is None:
             return
         t, theta, s = dec
+        # v5.1：尺度校正仅 FULL（4 边）启用——PARTIAL 时 s 来自单平行边对
+        # 间距比，σ≈0.7%/帧（σ_o≈1px/间距200px），×增益后每帧 ~0.3% 的
+        # 尺度抖动经杠杆放大成准星抖动，还漂移 H 的尺度→回 FULL 跳变；
+        # 实测关 PARTIAL 尺度后重锁定跳变中位 29.6→9.2px（220120）
+        if len(meas) < p.sim_scale_min_edges:
+            s = 1.0
         cx0, cy0 = IMG_W / 2, IMG_H / 2
         c0 = self.H @ np.array([cx0, cy0, 1.0])
         c0 = c0[:2] / c0[2]

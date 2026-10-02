@@ -61,6 +61,7 @@ public final class Tracker {
     private static final float GAIN_MIN = 0.35f;    // 实测权衡：再小视差/积分误差积累成慢摆动，再大静止噪声升
     private static final float GAIN_RAMP_LO = 1.0f;   // innov < lo -> GAIN_MIN（norm px；过大形成极限环）
     private static final float GAIN_RAMP_HI = 12.0f;  // innov > hi -> 满增益
+    private static final int SIM_SCALE_MIN_EDGES = 4;  // 尺度校正的最少边数（PARTIAL 间距比太噪）
     // v3 连续零偏估计：FULL 帧残余校正（校正前分解）折算角速度误差缓慢并入
     private static final boolean BIAS_DYN = true;
     private static final float BIAS_DYN_BETA = 0.03f;
@@ -113,7 +114,8 @@ public final class Tracker {
     private static final double TD_MAX_S = 0.100;      // δ 搜索半径
     private static final double TD_STEP_S = 0.004;     // 扫描步长
     private static final int TD_MIN_PAIRS = 10;        // 触发估计的最少运动约束
-    private static final int TD_EVERY = 10;            // 每隔多少帧尝试一次
+    private static final int TD_EVERY = 10;            // 每隔多少帧尝试一次（5 实测 0921
+                                                       // 早期假峰复活，回滚）
     private static final double TD_MIN_MAG = 1.5;      // 有效运动约束下限（px）
     private static final double TD_MAX_GAP_S = 0.40;   // 相邻测量帧最大间隔（s）
     private static final double TD_ERR_MAX = 0.50;     // 应用门：积累曲线最优残差上限
@@ -1467,6 +1469,9 @@ public final class Tracker {
         double[] dec = simDecompose(meas, nm);
         if (dec == null) return;
         double tX = dec[0], tY = dec[1], theta = dec[2], s = dec[3];
+        // v5.1：尺度校正仅 FULL（4 边）启用——PARTIAL 时 s 来自单平行边对
+        // 间距比，σ≈0.7%/帧，抖动经杠杆放大成准星抖动并漂移 H 尺度
+        if (nm < SIM_SCALE_MIN_EDGES) s = 1.0;
         double[] c0 = applyH(H, cx0, cy0);
         // v3 自适应增益：以满增益校正的准星位移为创新量
         double[] Cf = simMatrix(tX, tY, theta, s, cx0, cy0);
