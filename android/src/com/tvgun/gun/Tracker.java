@@ -102,6 +102,25 @@ public final class Tracker {
     private static final float ACQ_RESCUE_S = 0.3f;    // GYRO 超过此时长并行采集
     private static final int ACQ_RETRY_FRAMES = 5;     // n_edges<3 时每 N 帧并行采集
 
+    // v5 在线时间标定（td）：相机↔陀螺时间戳有效偏移随会话/重启变化（7 段
+    // 录制离线扫描最优 δ 从 -42ms 到 +36ms 互不一致），固定值永远无法对准——
+    // 快速甩动时 30ms 错位在 5 rad/s 下 = 70~100px 视觉/IMU 失配，是"快移
+    // 到位后漂移/不稳"的主根因。方案：边测量帧对的实测边线（纯图像量，不含
+    // 预测）与陀螺积分旋转 T(δ)=K(I+[M∫ω]x)K⁻¹ 预测的边线做法向残差，δ 网格
+    // 扫描取归一化中位残差最小者 EMA 收敛，用于 processGray 的传播时刻
+    // （等价于把帧时间戳对齐到陀螺时钟）。全程自动，无需用户标定动作。
+    private static final boolean TD_EST = true;
+    private static final double TD_MAX_S = 0.100;      // δ 搜索半径
+    private static final double TD_STEP_S = 0.004;     // 扫描步长
+    private static final int TD_MIN_PAIRS = 10;        // 触发估计的最少运动约束
+    private static final int TD_EVERY = 10;            // 每隔多少帧尝试一次
+    private static final double TD_MIN_MAG = 1.5;      // 有效运动约束下限（px）
+    private static final double TD_MAX_GAP_S = 0.40;   // 相邻测量帧最大间隔（s）
+    private static final double TD_ERR_MAX = 0.50;     // 应用门：积累曲线最优残差上限
+    private static final double TD_SLEW_NS = 0.5e6;    // δ̂ 应用限速（ns/帧 ≈15ms/s）：
+    // δ̂ 突变让积分窗口端点跳动，输出瞬间跳 ω·Δ（实测 jerk p95 恶化 30%+）
+    private static final int TD_PAIR_CAP = 96;
+
     // device -> camera axis map at rot=0: th_cam = M * w_dev
     private static final double[] M_ROT0 = {0, 1, 0,
                                             1, 0, 0,
@@ -144,6 +163,32 @@ public final class Tracker {
     private long oeTs = -1;
     private double wPeak;                       // v4.1 |ω| 峰值保持（减速感知外推缩放）
     private long wPeakTs = -1;
+
+    // ---- v5 在线时间标定状态 ----
+    private static final int GCUM_CAP = 4096;   // 陀螺累积积分环（td 扫描 ∫[a,b] 取值）
+    private final long[] gcTs = new long[GCUM_CAP];
+    private final double[] gcX = new double[GCUM_CAP];
+    private final double[] gcY = new double[GCUM_CAP];
+    private final double[] gcZ = new double[GCUM_CAP];
+    private int gcHead, gcSize;
+    private final double[] gcCum = new double[3];       // 运行累积（设备轴，raw ω）
+    private static final class TdPair {                 // 边测量帧对（纯图像量）
+        double t0, t1;
+        int n;
+        final double[][] a = new double[4][3];          // 首帧边线（640 坐标系）
+        final double[][] b = new double[4][3];          // 末帧边线
+    }
+    private final java.util.ArrayDeque<TdPair> tdPairs = new java.util.ArrayDeque<>();
+    private final double[][] tdPrevL = new double[4][3]; // 上一测量帧边线（按 edge 索引）
+    private final boolean[] tdPrevOk = new boolean[4];
+    private double tdPrevT = -1;
+    private boolean tdInit;
+    private int tdOk;                                   // 已积累有效扫描数（<4 预热不应用）
+    private double[] tdCurve;                           // 残差曲线跨扫描 EMA 积累
+    private double tdLastMinMs = Double.NaN;            // 上次积累曲线 argmin（首应用稳定性）
+    private int tdStable;                               // argmin 连续一致次数
+    private double tdTargetNs = Double.NaN;             // δ̂ 目标值（processGray 限速逼近）
+    public double tdNs;                                  // 当前 δ̂（帧时刻+δ̂=陀螺时钟）
 
     // ---- camera intrinsics (computed per frame size) ----
     private int imgW = 640, imgH = 360;
@@ -205,6 +250,18 @@ public final class Tracker {
         oeTs = -1;
         wPeak = 0;
         wPeakTs = -1;
+        gcHead = gcSize = 0;
+        Arrays.fill(gcCum, 0);
+        tdPairs.clear();
+        for (int i = 0; i < 4; i++) tdPrevOk[i] = false;
+        tdPrevT = -1;
+        tdInit = false;
+        tdOk = 0;
+        tdCurve = null;
+        tdLastMinMs = Double.NaN;
+        tdStable = 0;
+        tdTargetNs = Double.NaN;
+        tdNs = 0;
     }
 
     public int grade() {
@@ -247,6 +304,11 @@ public final class Tracker {
                     wPeak *= Math.exp(-dt / W_PEAK_TAU_S);
                 }
                 wPeakTs = tsNs;
+                // v5：陀螺累积积分（td 扫描的 ∫[a,b] 取值来源；raw ω，
+                // 零偏 ~0.01rad/s×33ms≈0.15px 对 δ 估计可忽略）
+                gcCum[0] += wx * dt;
+                gcCum[1] += wy * dt;
+                gcCum[2] += wz * dt;
             }
         }
         gyroLastNs = tsNs;
@@ -257,6 +319,13 @@ public final class Tracker {
         gWz[i] = wz;
         if (gSize < GYRO_CAP) gSize++;
         else gHead = (gHead + 1) % GYRO_CAP;
+        int j = (gcHead + gcSize) % GCUM_CAP;
+        gcTs[j] = tsNs;
+        gcX[j] = gcCum[0];
+        gcY[j] = gcCum[1];
+        gcZ[j] = gcCum[2];
+        if (gcSize < GCUM_CAP) gcSize++;
+        else gcHead = (gcHead + 1) % GCUM_CAP;
     }
 
     /** One propagation step: H <- H * (K*(I+[M*w*dt]x)*Ki)^-1, in place. */
@@ -332,7 +401,13 @@ public final class Tracker {
         inv3into(K, Ki);
 
         // 1) propagate the base (and H) to the frame's exposure timestamp first
-        propagateTo(tsNs);
+        //    (v5: +δ̂ 把帧时刻对齐到陀螺时钟；δ̂ 向目标限速逼近，
+        //     突变会让积分窗口端点跳动、输出瞬间跳 ω·Δ)
+        if (!Double.isNaN(tdTargetNs)) {
+            double dTd = tdTargetNs - tdNs;
+            tdNs += Math.abs(dTd) <= TD_SLEW_NS ? dTd : Math.copySign(TD_SLEW_NS, dTd);
+        }
+        propagateTo(tsNs + Math.round(tdNs));
 
         tNowS = tsNs * 1e-9;
         frameNo++;
@@ -351,6 +426,7 @@ public final class Tracker {
             EdgeMeas[] meas = new EdgeMeas[4];
             int nm = measureEdges(g, w, h, lowThr, meas);
             nEdges = nm;
+            if (nm > 0 && TD_EST) tdNoteLines(meas, nm);
             if (nm > 0) {
                 // 动态零偏的残余分解必须在校正应用前做（校正后残余被增益削减）
                 double[] dec4 = nm == 4 ? simDecompose(meas, nm) : null;
@@ -434,7 +510,238 @@ public final class Tracker {
         double[] c = applyH(H, cx0, cy0);
         cross[0] = (float) c[0];
         cross[1] = (float) c[1];
+
+        // v5 在线时间标定：周期性 δ 扫描
+        if (TD_EST && frameNo % TD_EVERY == 0) tdScan();
     }
+
+    // ---------------------------------------------------------------- v5 在线时间标定
+    /** ≥1 边测量帧：与上一测量帧的共同边构成帧对（边线为带内新拟合的纯图像量）*/
+    private void tdNoteLines(EdgeMeas[] meas, int nm) {
+        if (tdPrevT > 0) {
+            double gap = tNowS - tdPrevT;
+            if (gap > 0 && gap <= TD_MAX_GAP_S) {
+                TdPair pr = new TdPair();
+                for (int k = 0; k < nm && pr.n < 4; k++) {
+                    int e = meas[k].edge;
+                    if (e < 0 || e > 3 || !tdPrevOk[e]) continue;
+                    System.arraycopy(tdPrevL[e], 0, pr.a[pr.n], 0, 3);
+                    System.arraycopy(meas[k].line, 0, pr.b[pr.n], 0, 3);
+                    pr.n++;
+                }
+                if (pr.n > 0) {
+                    pr.t0 = tdPrevT;
+                    pr.t1 = tNowS;
+                    tdPairs.addLast(pr);
+                    while (tdPairs.size() > TD_PAIR_CAP) tdPairs.pollFirst();
+                }
+            }
+        }
+        for (int i = 0; i < 4; i++) tdPrevOk[i] = false;
+        for (int k = 0; k < nm; k++) {
+            int e = meas[k].edge;
+            if (e < 0 || e > 3) continue;
+            System.arraycopy(meas[k].line, 0, tdPrevL[e], 0, 3);
+            tdPrevOk[e] = true;
+        }
+        tdPrevT = tNowS;
+    }
+
+    /** 累积积分在 tt（秒）处的线性插值取值 */
+    private double[] gcumAt(double tt) {
+        // 环内按时间有序，二分找首个 ts > tt
+        int lo = 0, hi = gcSize - 1;
+        while (lo < hi) {
+            int mid = (lo + hi) / 2;
+            if (gcTs[(gcHead + mid) % GCUM_CAP] * 1e-9 <= tt) lo = mid + 1;
+            else hi = mid;
+        }
+        int i1 = lo < 1 ? 1 : (lo > gcSize - 1 ? gcSize - 1 : lo);
+        int j0 = (gcHead + i1 - 1) % GCUM_CAP;
+        int j1 = (gcHead + i1) % GCUM_CAP;
+        double ta = gcTs[j0] * 1e-9, tb = gcTs[j1] * 1e-9;
+        double w = (tt - ta) / Math.max(tb - ta, 1e-9);
+        return new double[]{gcX[j0] + (gcX[j1] - gcX[j0]) * w,
+                            gcY[j0] + (gcY[j1] - gcY[j0]) * w,
+                            gcZ[j0] + (gcZ[j1] - gcZ[j0]) * w};
+    }
+
+    /** δ 网格扫描：每个 δ 用陀螺积分旋转（Rodrigues 精确式，帧对间隔可达
+     * 0.4s）把帧对首帧共同边线变换到末帧时刻，与实测末帧边线做法向残差；
+     * 每个 δ 拟合尺度 k=Σom·op/Σop²（吸收焦距误差/平移视差/卷帘快门的幅度
+     * 系统差）。只用 |om|≥TD_MIN_MAG 的有效运动约束（边线噪声 ~0.5px）。
+     * 残差曲线跨扫描 EMA 积累（真 δ 恒定，积累后最小值变锐；与当前 δ̂ 不
+     * 一致的扫描降权 0.06 防偏差段拉动），最小值过质量门+滞回后抛物线
+     * 亚网格细化输出 δ̂。1 边帧也贡献该法向的 1D 约束。*/
+    private void tdScan() {
+        if (tdPairs.size() < TD_MIN_PAIRS || gcSize < 8) return;
+        double g0 = gcTs[gcHead] * 1e-9;
+        double g1 = gcTs[(gcHead + gcSize - 1) % GCUM_CAP] * 1e-9;
+        java.util.List<TdPair> pairs = new java.util.ArrayList<>(tdPairs.size());
+        for (TdPair pr : tdPairs) {
+            if (pr.t0 - TD_MAX_S >= g0 && pr.t1 + TD_MAX_S <= g1) pairs.add(pr);
+        }
+        if (pairs.size() < TD_MIN_PAIRS) return;
+        int nd = (int) Math.round(2 * TD_MAX_S / TD_STEP_S) + 1;
+        double[] curve = new double[nd];
+        int[] ncnt = new int[nd];
+        Arrays.fill(curve, Double.NaN);
+        double[] om = new double[pairs.size() * 4];
+        double[] op = new double[pairs.size() * 4];
+        boolean rot180 = rotation == 180;
+        for (int di = 0; di < nd; di++) {
+            double d = -TD_MAX_S + di * TD_STEP_S;
+            int nr = 0;
+            for (TdPair pr : pairs) {
+                double[] v0 = gcumAt(pr.t0 + d);
+                double[] v1 = gcumAt(pr.t1 + d);
+                double mx = v1[0] - v0[0], my = v1[1] - v0[1], mz = v1[2] - v0[2];
+                if (rot180) {
+                    mx = -mx;
+                    my = -my;
+                }
+                double tx = M_ROT0[0] * mx + M_ROT0[1] * my + M_ROT0[2] * mz;
+                double ty = M_ROT0[3] * mx + M_ROT0[4] * my + M_ROT0[5] * mz;
+                double tz = M_ROT0[6] * mx + M_ROT0[7] * my + M_ROT0[8] * mz;
+                double ang = Math.sqrt(tx * tx + ty * ty + tz * tz);
+                // Rodrigues：R = cosA·I + (sinA/A)·S + ((1-cosA)/A²)·th·thᵀ
+                double c = Math.cos(ang);
+                double sA = ang >= 1e-9 ? Math.sin(ang) / ang : 1.0;
+                double cA = ang >= 1e-9 ? (1.0 - c) / (ang * ang) : 0.5;
+                double[] Rf = {
+                        c + cA * tx * tx, cA * tx * ty - sA * tz, cA * tx * tz + sA * ty,
+                        cA * ty * tx + sA * tz, c + cA * ty * ty, cA * ty * tz - sA * tx,
+                        cA * tz * tx - sA * ty, cA * tz * ty + sA * tx, c + cA * tz * tz};
+                double[] T = mul(mul(K, Rf), Ki);
+                double[] TiT = inv3(T);
+                if (TiT == null) continue;
+                // 线变换 l' = T⁻ᵀ l：TiT 现为 T⁻¹，转置后乘
+                for (int k = 0; k < pr.n; k++) {
+                    double[] l0 = pr.a[k];
+                    double lp0 = TiT[0] * l0[0] + TiT[3] * l0[1] + TiT[6] * l0[2];
+                    double lp1 = TiT[1] * l0[0] + TiT[4] * l0[1] + TiT[7] * l0[2];
+                    double lp2 = TiT[2] * l0[0] + TiT[5] * l0[1] + TiT[8] * l0[2];
+                    double n2 = lp0 * lp0 + lp1 * lp1;
+                    if (n2 < 1e-12) continue;
+                    double inv = 1.0 / Math.sqrt(n2);
+                    lp0 *= inv;
+                    lp1 *= inv;
+                    lp2 *= inv;
+                    double[] l1 = pr.b[k];
+                    double s1 = (l0[0] * l1[0] + l0[1] * l1[1] < 0) ? -1 : 1;
+                    if (l0[0] * lp0 + l0[1] * lp1 < 0) {
+                        lp0 = -lp0;
+                        lp1 = -lp1;
+                        lp2 = -lp2;
+                    }
+                    om[nr] = l0[2] - s1 * l1[2];
+                    op[nr] = l0[2] - lp2;
+                    nr++;
+                }
+            }
+            // 有效运动约束门控（与 δ 无关，无选择偏差）
+            int ns = 0;
+            for (int k = 0; k < nr; k++) {
+                if (Math.abs(om[k]) >= TD_MIN_MAG) {
+                    om[ns] = om[k];
+                    op[ns] = op[k];
+                    ns++;
+                }
+            }
+            if (ns < TD_MIN_PAIRS) continue;
+            ncnt[di] = ns;
+            double s = 0, dot = 0, med;
+            for (int k = 0; k < ns; k++) {
+                s += op[k] * op[k];
+                dot += om[k] * op[k];
+            }
+            double kk = s > 1e-12 ? dot / s : 0;
+            double[] tmp = new double[ns];
+            for (int k = 0; k < ns; k++) tmp[k] = Math.abs(om[k] - kk * op[k]);
+            med = medianAbs(om, ns);
+            curve[di] = median(tmp, ns) / Math.max(med, 1e-9);
+        }
+        int nfin = 0;
+        for (int di = 0; di < nd; di++) if (!Double.isNaN(curve[di])) nfin++;
+        if (nfin < nd * 0.6) return;
+        int bi = 0;
+        for (int di = 1; di < nd; di++) {
+            if (Double.isNaN(curve[di])) continue;
+            if (Double.isNaN(curve[bi]) || curve[di] < curve[bi]) bi = di;
+        }
+        if (curve[bi] > 0.6) return;             // 本次扫描质量差，不积累
+        // 预热 ≥8 次扫描后才允许应用（0921 实测：早期稀少约束下 +82.8ms 的
+        // 偶然假最小值曾把输出甩出去 ~5s）；扫描按有效约束数加权（<30 约束
+        // 降权，稀释偶然性）；之后与当前 δ̂ 不一致的扫描再降权（0.06）
+        double dBest = -TD_MAX_S + bi * TD_STEP_S;
+        double w = 0.25;
+        if (tdOk >= 8) {
+            w = Math.abs(dBest * 1e9 - tdNs) <= 20e6 ? 0.25 : 0.06;
+        }
+        w *= Math.min(1.0, ncnt[bi] / 30.0);
+        if (tdCurve == null) {
+            tdCurve = curve;
+        } else {
+            for (int di = 0; di < nd; di++) {
+                if (Double.isNaN(curve[di])) continue;
+                if (Double.isNaN(tdCurve[di])) tdCurve[di] = curve[di];
+                else tdCurve[di] = (1.0 - w) * tdCurve[di] + w * curve[di];
+            }
+        }
+        tdOk++;
+        if (tdOk < 8) return;
+        int b2 = 0;
+        for (int di = 1; di < nd; di++) {
+            if (tdCurve[di] < tdCurve[b2]) b2 = di;
+        }
+        if (b2 == 0 || b2 == nd - 1) return;     // 顶到边界：疑似发散/越界
+        if (tdCurve[b2] >= TD_ERR_MAX) return;
+        // 首次应用要求积累曲线 argmin 连续 2 次一致（±8ms）；之后滞回接管
+        double minMs = (-TD_MAX_S + b2 * TD_STEP_S) * 1e3;
+        if (!Double.isNaN(tdLastMinMs) && Math.abs(minMs - tdLastMinMs) <= 8.0) {
+            tdStable++;
+        } else {
+            tdStable = 0;
+        }
+        tdLastMinMs = minMs;
+        if (!tdInit && tdStable < 2) return;
+        // 抛物线亚网格细化（~1-2ms 精度）
+        double y0 = tdCurve[b2 - 1], y1 = tdCurve[b2], y2 = tdCurve[b2 + 1];
+        double den = y0 - 2.0 * y1 + y2;
+        double off = 0;
+        if (den > 1e-12) {
+            off = Math.max(-1, Math.min(1, 0.5 * (y0 - y2) / den)) * TD_STEP_S;
+        }
+        double newNs = (-TD_MAX_S + b2 * TD_STEP_S + off) * 1e9;
+        // 滞回：与当前 δ̂ 不同的候选须显著更优（-0.03）才切换
+        int curI = 0;
+        double curNs = tdNs * 1e-9;
+        for (int di = 1; di < nd; di++) {
+            if (Math.abs(-TD_MAX_S + di * TD_STEP_S - curNs)
+                    < Math.abs(-TD_MAX_S + curI * TD_STEP_S - curNs)) curI = di;
+        }
+        if (!tdInit || b2 == curI || tdCurve[b2] < tdCurve[curI] - 0.03) {
+            // 死区：≤2ms 的目标更新多为抛物线 hunting 抖动（jerk 来源）
+            if (Double.isNaN(tdTargetNs) || Math.abs(newNs - tdTargetNs) > 2e6) {
+                tdTargetNs = newNs;     // 目标值，processGray 按 TD_SLEW_NS 限速逼近
+            }
+            tdInit = true;
+        }
+    }
+
+    private static double median(double[] a, int n) {
+        double[] c = Arrays.copyOf(a, n);
+        Arrays.sort(c);
+        return (n % 2 == 1) ? c[n / 2] : (c[n / 2 - 1] + c[n / 2]) / 2;
+    }
+
+    private static double medianAbs(double[] a, int n) {
+        double[] c = new double[n];
+        for (int k = 0; k < n; k++) c[k] = Math.abs(a[k]);
+        Arrays.sort(c);
+        return (n % 2 == 1) ? c[n / 2] : (c[n / 2 - 1] + c[n / 2]) / 2;
+    }
+
 
     /** Point-in-time snapshot for aim reporting: lazily re-integrates the buffered
      *  gyro ticks from the base to nowNs (does not advance the base). */
@@ -462,7 +769,16 @@ public final class Tracker {
         if (Ht == null) {
             return new float[]{cross[0], cross[1], grade};
         }
-        long lastTs = gSize > 0 ? gTs[(gHead + gSize - 1) % GYRO_CAP] : baseNs;
+        long lastTs = baseNs;
+        // 队列可能含前瞻样本（真机管道延迟/回放 slack）：外推余量必须相对
+        // 最后一个 ≤tgt 的 tick，而非物理队尾（否则外推被错误关闭）
+        for (int k = gSize - 1; k >= 0; k--) {
+            long tg = gTs[(gHead + k) % GYRO_CAP];
+            if (tg <= tgt) {
+                lastTs = tg;
+                break;
+            }
+        }
         double rem = (tgt - Math.max(lastTs, baseNs)) * 1e-9;
         if (rem > 0) {
             double mx = wEma[0] - bias[0], my = wEma[1] - bias[1], mz = wEma[2] - bias[2];

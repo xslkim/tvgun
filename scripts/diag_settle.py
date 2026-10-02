@@ -65,9 +65,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--rec", nargs="*", default=DEFAULT_RECS)
     ap.add_argument("--decel", type=int, default=None)
+    ap.add_argument("--td", type=int, default=None, help="v5 在线时间标定开关")
     args = ap.parse_args()
     if args.decel is not None:
         gt.TrackerParams.predict_decel_scale = bool(args.decel)
+    if args.td is not None:
+        gt.TrackerParams.td_est = bool(args.td)
 
     for rec in args.rec:
         if not ds.has_frames(rec):

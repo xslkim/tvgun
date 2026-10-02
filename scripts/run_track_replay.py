@@ -45,12 +45,14 @@ def run_tracker(frames, idx, gyro, fov_h, suppress_mask=None, v3=True, bias_dyn=
     p.bias_dyn = bias_dyn
     tr = Tracker(p)
     gts = gyro["tsNs"].to_numpy()
-    gw = gyro[["wx", "wy", "wz"]].to_numpy()
+    gw = gyro[["wx", "wy", "wz"]].to_numpy().astype(np.float32)  # 与 Java float 一致
     fts = idx["tsNs"].to_numpy()
     gi = 0
     rows = []
     for s in range(len(frames)):
-        while gi < len(gts) and gts[gi] <= fts[s]:
+        # 前瞻喂入 +150ms（真机管道延迟，与 diag_smooth.replay 一致；
+        # 否则 δ̂>0 时每帧漏积 δ̂ 的旋转）
+        while gi < len(gts) and gts[gi] <= fts[s] + 150_000_000:
             tr.on_gyro(gts[gi], *gw[gi])
             gi += 1
         if suppress_mask is not None and suppress_mask[s]:
@@ -66,8 +68,9 @@ def run_tracker(frames, idx, gyro, fov_h, suppress_mask=None, v3=True, bias_dyn=
 
 
 def _propagate_only(tr: Tracker, ts_ns):
-    """process() 的无视觉变体：惰性传播到 ts_ns + 等级衰减与输出。"""
-    tr._propagate_to(ts_ns)
+    """process() 的无视觉变体：惰性传播到 ts_ns + 等级衰减与输出。
+    （v5：与 process 一致加 δ̂ 对齐陀螺时钟）"""
+    tr._propagate_to(ts_ns + int(round(tr.td_ns)))
     tr.t = ts_ns * 1e-9
     tr.edges_meas = []
     tr.innov = np.nan
@@ -266,7 +269,7 @@ def mc_pass(frames, idx, gyro, fov, df_ref, n_per, durs, v3=True, bias_dyn=True)
     p.bias_dyn = bias_dyn
     tr = Tracker(p)
     gts = gyro["tsNs"].to_numpy()
-    gw = gyro[["wx", "wy", "wz"]].to_numpy()
+    gw = gyro[["wx", "wy", "wz"]].to_numpy().astype(np.float32)  # 与 Java float 一致
     gi = 0
     rows = []
     for s in range(n):

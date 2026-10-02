@@ -145,6 +145,29 @@ class TrackerParams:
 
     v3 = True                  # False 时退化为 v2 行为（基线对照）
 
+    # v5 在线时间标定（td）：相机↔陀螺时间戳的有效偏移随会话/重启变化
+    # （7 段录制离线扫描最优 δ 从 -42ms 到 +36ms 互不一致，两段大样本录制
+    # 差 58ms），任何固定值都无法对准——快速甩动时 30ms 错位在 5 rad/s 下
+    # 就是 70~100px 的视觉/IMU 失配，是"快移到位后漂移/不稳"的主根因。
+    # 方案：4 边测量帧的四角中位位移（/f → 视觉角位移）与陀螺积分角在线
+    # 相关，δ 网格扫描取归一化残差最小者 EMA 收敛，用于 process 的传播时刻
+    # （等价于把帧时间戳对齐到陀螺时钟）。全程自动，无需用户标定动作。
+    td_est = True
+    td_max = 0.100           # δ 搜索半径（s）
+    td_step = 0.004          # 扫描步长（s）
+    td_min_pairs = 10        # 触发一次估计的最少运动约束
+    td_every = 10            # 每隔多少帧尝试一次估计
+    td_min_mag = 1.5         # 有效运动约束下限（px，|om| 低于此的边不计入；
+                             # 边线噪声 ~0.5px，小约束会抬高残差下限）
+    td_max_gap = 0.40        # 相邻测量帧最大间隔（s；弱可见会话边帧稀疏需放宽，
+                             # 旋转用 Rodrigues 精确式，大间隔不一阶近似）
+    td_err_max = 0.50        # 应用门：积累曲线最优残差超过则不更新 δ̂
+                             # （单次扫描积累门 0.6；在线残差比离线全局
+                             # 拟合高，真实会话积累最小值 0.1-0.45）
+    td_slew_ns = 0.5e6       # δ̂ 应用限速（ns/帧 ≈15ms/s）：δ̂ 突变让积分
+                             # 窗口端点跳动，输出瞬间跳 ω·Δ（实测 jerk p95
+                             # 恶化 30%+）；限速后每帧 ≤0.5ms×ω ≤1.2px
+
     # 采集
     acq_max_cand = 5           # 候选亮域上限
     acq_min_seeds = 10         # 高亮种子下限（宽放低；四边拟合+暗度校验兜底）
@@ -206,6 +229,20 @@ class Tracker:
         self._out_off = np.zeros(2)  # offset 模式显示偏移（norm px）
         self._out_off_ts = -1
         self._cross_pre = None       # process 开头的未校正准星（offset 连续性用）
+        # v5 在线时间标定状态
+        self._gcum = collections.deque(maxlen=4096)  # (ts,thx,thy,thz) 陀螺累积积分
+        self._gcum_th = np.zeros(3)
+        self._td_pairs = collections.deque(maxlen=96)  # (t0,t1,ang_v) 运动帧对
+        self._td_lines = None      # 上一 ≥2 边测量帧的边线 {edge_idx: line}
+        self._td_lines_t = -1.0
+        self._td_init = False      # 已有可用 δ̂
+        self._td_curve = None      # 残差曲线跨扫描 EMA 积累（51 点网格）
+        self._td_ok = 0            # 已积累的有效扫描次数（<8 不应用，预热）
+        self._td_last_min = None   # 上次积累曲线 argmin（ms；首应用稳定性判定）
+        self._td_stable = 0        # argmin 连续一致次数
+        self._td_target_ns = None  # δ̂ 目标值（process 按 td_slew_ns 限速逼近）
+        self.td_ns = 0.0           # 当前 δ̂（ns；帧时刻 +δ̂ = 陀螺时钟对应时刻）
+        self._td_log = []          # 诊断：每次扫描 (frame_no, best_ms, err)
 
     # ---------------------------------------------------------------- 陀螺
     def on_gyro(self, ts_ns, wx, wy, wz):
@@ -213,7 +250,8 @@ class Tracker:
         if self._gyro_last >= 0:
             dt = (ts_ns - self._gyro_last) * 1e-9
             if 0 < dt <= 0.1:
-                w_raw = np.array([wx, wy, wz])
+                w_raw = np.array([wx, wy, wz], dtype=np.float64)  # float32 输入值拓宽
+                # （与 Java float 参数 widened to double 的行为一致）
                 if getattr(self, "_vision_still", False) \
                         and np.abs(w_raw).max() < self.P.bias_max_rate:
                     a = self.P.bias_alpha
@@ -232,8 +270,13 @@ class Tracker:
                 else:
                     self._w_peak *= np.exp(-dt / self.P.w_peak_tau)
                 self._w_peak_ts = ts_ns
+                # v5：陀螺累积积分（td 扫描的 ∫[a,b] 取值来源；原始 ω，
+                # 零偏 ~0.01rad/s×33ms≈0.15px 对 δ 估计可忽略）
+                self._gcum_th = self._gcum_th + w_raw * dt
         self._gyro_last = ts_ns
         self._gq.append((ts_ns, wx, wy, wz))
+        self._gcum.append((ts_ns, self._gcum_th[0], self._gcum_th[1],
+                           self._gcum_th[2]))
 
     def _prop_from_base(self, ts_ns):
         """从基准 (H, _h_ts) 出发对 (_h_ts, ts_ns] 内的缓存 tick 重积分，
@@ -295,7 +338,14 @@ class Tracker:
         H = self._prop_from_base(tgt) if tgt > self._h_ts else self.H
         if H is None:
             return self.cross[0], self.cross[1], GRADE_DEAD
-        last_ts = self._gq[-1][0] if self._gq else self._h_ts
+        last_ts = self._h_ts
+        # 队列可能含前瞻样本（真机管道延迟/回放 slack）：外推余量必须
+        # 相对最后一个 ≤tgt 的 tick，而非物理队尾（否则前瞻样本会
+        # 把 rem 压成 0，外推被错误关闭）
+        for ts_g, *_ in reversed(self._gq):
+            if ts_g <= tgt:
+                last_ts = ts_g
+                break
         rem = (tgt - max(last_ts, self._h_ts)) * 1e-9
         if rem > 0:
             w = self._w_ema - self.bias
@@ -380,8 +430,13 @@ class Tracker:
     # ---------------------------------------------------------------- 主入口
     def process(self, g640: np.ndarray, ts_ns):
         p = self.P
-        # 1) 先把基准（与 H）传播到帧曝光时刻
-        self._propagate_to(ts_ns)
+        # 1) 先把基准（与 H）传播到帧曝光时刻（v5：+δ̂ 对齐到陀螺时钟；
+        #    δ̂ 向目标限速逼近，突变会让输出瞬间跳 ω·Δ）
+        if self._td_target_ns is not None:
+            d = self._td_target_ns - self.td_ns
+            self.td_ns += d if abs(d) <= p.td_slew_ns \
+                else p.td_slew_ns * (1.0 if d > 0 else -1.0)
+        self._propagate_to(ts_ns + int(round(self.td_ns)))
         self.t = ts_ns * 1e-9
         self._frame_no += 1
         self.edges_meas = []
@@ -404,6 +459,8 @@ class Tracker:
         if self.H is not None:
             meas = self._measure_edges(g640, low_thr)
             self.edges_meas = meas
+            if meas and p.td_est:
+                self._td_note_lines(meas)
             if meas:
                 # 动态零偏的残余分解必须在校正应用前做（校正后残余被增益削减）
                 dec4 = self._sim_decompose(meas) if len(meas) == 4 else None
@@ -484,6 +541,10 @@ class Tracker:
         # 5) 输出准星 = H·图像中心
         c = self.H @ np.array([IMG_W / 2, IMG_H / 2, 1.0])
         self.cross = c[:2] / c[2]
+
+        # 5.5) v5 在线时间标定：周期性 δ 扫描
+        if p.td_est and self._frame_no % p.td_every == 0:
+            self._td_scan()
 
         # 6) v4 offset：本帧校正/采集对 H 的总位移的 (1-φ) 存入显示偏移
         if self._cross_pre is not None and np.isfinite(self.cross).all():
@@ -604,6 +665,159 @@ class Tracker:
                     return
             # 4 边但角点非法：退回相似校正
         self._similarity_correction(meas, g)
+
+    # ------------------------------------------------------------ v5 在线时间标定
+    def _td_note_lines(self, meas):
+        """≥1 边测量帧：与上一测量帧的共同边构成帧对 (t0,t1,{e:(l0,l1)})。
+        边线本身是带内新拟合的纯图像测量，不含陀螺与预测状态。"""
+        p = self.P
+        cur = {e: line.copy() for e, line, sigma, support, pa, pb in meas}
+        if self._td_lines is not None:
+            gap = self.t - self._td_lines_t
+            if 0 < gap <= p.td_max_gap:
+                edges = {e: (self._td_lines[e], cur[e])
+                         for e in cur if e in self._td_lines}
+                if edges:
+                    self._td_pairs.append((self._td_lines_t, self.t, edges))
+        if cur:
+            self._td_lines = cur
+            self._td_lines_t = self.t
+
+    def _td_scan(self):
+        """δ 网格扫描：对每个候选 δ，用陀螺积分旋转 T(δ)=K(I+[M∫ω]x)K⁻¹
+        把帧对首帧的每条共同边线变换到末帧时刻（纯旋转对任意角度精确），
+        与实测末帧边线的法向偏移作残差；每个 δ 拟合尺度 k=Σom·op/Σop²
+        （吸收焦距误差/平移视差/卷帘快门的幅度系统差——无 k 时这些系统
+        差会把 argmin 推到错误 δ，实测可发散到搜索边界），归一化中位残差
+        最小者并入 δ̂ EMA。1 边帧也贡献约束（该法向的 1D 位移）。"""
+        p = self.P
+        if len(self._td_pairs) < p.td_min_pairs or len(self._gcum) < 8:
+            return
+        g = np.asarray(self._gcum)
+        gts = g[:, 0] * 1e-9
+        cum = g[:, 1:4]
+        pairs = [q for q in self._td_pairs
+                 if q[0] - p.td_max >= gts[0] and q[1] + p.td_max <= gts[-1]]
+        if len(pairs) < p.td_min_pairs:
+            return
+
+        def rot_vec(t0, t1):
+            def at(tt):
+                i = int(np.clip(np.searchsorted(gts, tt), 1, len(gts) - 1))
+                ta, tb = gts[i - 1], gts[i]
+                w = (tt - ta) / max(tb - ta, 1e-9)
+                return cum[i - 1] + (cum[i] - cum[i - 1]) * w
+            return at(t1) - at(t0)
+
+        sgn = np.array([-1.0, -1.0, 1.0]) if p.rotation == 180 else None
+        deltas = np.arange(-p.td_max, p.td_max + 1e-9, p.td_step)
+        curve = np.full(len(deltas), np.nan)
+        ncnt = np.zeros(len(deltas), dtype=int)
+        for i, d in enumerate(deltas):
+            om_l, op_l = [], []
+            for t0, t1, edges in pairs:
+                th = rot_vec(t0 + d, t1 + d)
+                if sgn is not None:
+                    th = th * sgn
+                th = M_ROT0 @ th
+                # Rodrigues 精确旋转（帧对间隔可达 0.4s，一阶 skew 在
+                # 大角度下误差 5-10% 会污染快速段）
+                ang = float(np.linalg.norm(th))
+                if ang < 1e-9:
+                    R = np.eye(3)
+                else:
+                    S = _skew(th)
+                    R = np.eye(3) + (np.sin(ang) / ang) * S \
+                        + ((1.0 - np.cos(ang)) / (ang * ang)) * (S @ S)
+                T = self.K @ R @ self.Ki
+                TiT = np.linalg.inv(T).T
+                for l0, l1 in edges.values():
+                    lp = TiT @ l0
+                    n2 = float(lp[0] * lp[0] + lp[1] * lp[1])
+                    if n2 < 1e-12:
+                        continue
+                    lp = lp / np.sqrt(n2)
+                    la = l1 if float(l0[:2] @ l1[:2]) >= 0 else -l1
+                    if float(l0[:2] @ lp[:2]) < 0:
+                        lp = -lp
+                    om_l.append(float(l0[2] - la[2]))
+                    op_l.append(float(l0[2] - lp[2]))
+            om = np.array(om_l)
+            op = np.array(op_l)
+            # 只用有效运动约束（|om|≥td_min_mag）：边线拟合噪声 ~0.5px，
+            # 把小运动约束算进归一化会把残差下限抬到 0.3-0.5 淹没判别力；
+            # 按 om 门控与 δ 无关，不引入选择偏差
+            sel = np.abs(om) >= p.td_min_mag
+            if sel.sum() < p.td_min_pairs:
+                continue
+            ncnt[i] = int(sel.sum())
+            oms = om[sel]
+            ops = op[sel]
+            s = float(ops @ ops)
+            k = float(oms @ ops / s) if s > 1e-12 else 0.0
+            curve[i] = float(np.median(np.abs(oms - k * ops))
+                             / max(float(np.median(np.abs(oms))), 1e-9))
+        if np.isfinite(curve).sum() < len(deltas) * 0.6:
+            return
+        bi = int(np.nanargmin(curve))
+        self._td_log.append((self._frame_no, deltas[bi] * 1e3, curve[bi]))
+        if curve[bi] > 0.6:
+            return                      # 本次扫描质量差，不积累
+        # 残差曲线跨扫描 EMA 积累：真 δ 恒定，积累后曲线最小值随数据变锐。
+        # 预热 ≥8 次扫描后才允许应用（0921 实测：早期稀少约束下 +82.8ms 的
+        # 偶然假最小值曾把输出甩出去 ~5s）；扫描按有效约束数加权
+        # （<30 约束的扫描降权，稀释偶然性）；之后与当前 δ̂ 不一致的扫描
+        # 再降权（0.06）防偏差段拉动已收敛估计
+        n_sel = ncnt[bi]
+        w = 0.25
+        if self._td_ok >= 8:
+            w = 0.25 if abs(deltas[bi] * 1e9 - self.td_ns) <= 20e6 else 0.06
+        w *= min(1.0, n_sel / 30.0)
+        if self._td_curve is None:
+            self._td_curve = curve.copy()
+        else:
+            keep = np.isfinite(self._td_curve)
+            both = keep & np.isfinite(curve)
+            self._td_curve[both] = (1.0 - w) * self._td_curve[both] \
+                + w * curve[both]
+            self._td_curve[~keep] = curve[~keep]
+        self._td_ok += 1
+        if self._td_ok < 8:
+            return
+        bi2 = int(np.nanargmin(self._td_curve))
+        if bi2 == 0 or bi2 == len(deltas) - 1:
+            return                      # 顶到搜索边界：疑似发散/越界，不采用
+        if self._td_curve[bi2] >= p.td_err_max:
+            return
+        # 首次应用要求积累曲线 argmin 连续 2 次一致（±8ms）——把早期
+        # 不稳定挡在门外；之后由滞回接管
+        min_ms = float(deltas[bi2] * 1e3)
+        if self._td_last_min is not None \
+                and abs(min_ms - self._td_last_min) <= 8.0:
+            self._td_stable += 1
+        else:
+            self._td_stable = 0
+        self._td_last_min = min_ms
+        if not self._td_init and self._td_stable < 2:
+            return
+        # 抛物线亚网格细化（积累曲线在最值附近光滑，~1-2ms 精度）
+        y0, y1, y2 = self._td_curve[bi2 - 1:bi2 + 2]
+        den = float(y0 - 2.0 * y1 + y2)
+        off = 0.0
+        if den > 1e-12:
+            off = float(np.clip(0.5 * (y0 - y2) / den, -1.0, 1.0)) \
+                * p.td_step
+        new_ns = (deltas[bi2] + off) * 1e9
+        # 滞回：与当前 δ̂ 不同的候选须显著更优（-0.03）才切换
+        cur_i = int(np.argmin(np.abs(deltas * 1e9 - self.td_ns)))
+        if not self._td_init or bi2 == cur_i \
+                or self._td_curve[bi2] < self._td_curve[cur_i] - 0.03:
+            # 死区：与当前 δ̂ 差 ≤2ms 的更新多为抛物线 hunting 抖动，
+            # 每次目标更新都经限速斜坡向 aim 流注入涟漪（jerk p95 来源）
+            if self._td_target_ns is None \
+                    or abs(float(new_ns) - self._td_target_ns) > 2e6:
+                self._td_target_ns = float(new_ns)  # process 限速逼近
+            self._td_init = True
 
     def _adapt_gain(self, g_base, dist):
         """one-euro 式自适应增益：创新量小（稳态）→ 小增益平滑 30Hz 测量噪声；

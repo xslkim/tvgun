@@ -96,8 +96,9 @@ public class ReplayTest {
         long t0 = System.nanoTime();
         for (int s = 0; s < n; s++) {
             byte[] frame = Arrays.copyOfRange(all, s * FSIZE, (s + 1) * FSIZE);
-            // play gyro ticks up to this frame's timestamp (same order as Python replay)
-            while (gi < ng && gts[gi] <= fts[s]) {
+            // play gyro ticks up to this frame's timestamp + 150ms pipeline slack
+            // (same order as Python run_track_replay.py; without slack, td>0 leaks rotation)
+            while (gi < ng && gts[gi] <= fts[s] + 150_000_000L) {
                 tr.onGyro(gts[gi], gwx[gi], gwy[gi], gwz[gi]);
                 gi++;
             }
@@ -108,7 +109,8 @@ public class ReplayTest {
             jInnov[s] = tr.innov;
             dump.append(s).append(',').append(tr.grade).append(',').append(tr.nEdges)
                     .append(',').append(tr.cross[0]).append(',').append(tr.cross[1])
-                    .append(',').append(tr.innov).append('\n');
+                    .append(',').append(tr.innov).append(',').append(tr.tdNs)
+                    .append('\n');
         }
         long ms = (System.nanoTime() - t0) / 1_000_000;
         Files.write(Paths.get("D:/tvgun/out/java_replay.csv"), dump.toString().getBytes());

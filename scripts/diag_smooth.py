@@ -38,6 +38,7 @@ RECS = ["record_20260921_230150", "record_wide_20260921_235354",
 SAMPLE_HZ = 120.0
 LAG_MS = (66, 100, 133)
 AIM_AHEAD_MS = 90.0      # 与真机 predictMs 默认值一致（显示/射击路径）
+FEED_SLACK_NS = int(150e6)   # process 前的前瞻喂入（真机管道延迟）
 
 
 def has_frames(rec):
@@ -48,9 +49,13 @@ def has_frames(rec):
     return f.stat().st_size == len(idx) * 360 * 640
 
 
-def replay(rec, v3=True, sample_hz=SAMPLE_HZ, inject=None, still_bias=True):
-    """全程回放 + 帧间隔内 120Hz snapshot（与真机 aim 线程同相位：只用
-    不超过采样时刻的陀螺）。采样时同步计算 pred(t, L) 外推。
+def replay(rec, v3=True, sample_hz=SAMPLE_HZ, inject=None, still_bias=True,
+           gyro_shift_ns=0):
+    """全程回放 + 帧间隔内 120Hz snapshot。aim 采样保持因果（只用 ≤ 采样
+    时刻的陀螺）；process 前按真机管道延迟前瞻喂入（+150ms，与传感器
+    回调实时喂入的真机等价——否则 δ̂>0 时每帧漏积 δ̂ 的旋转，td-on 被
+    系统性冤枉）。snapshot_ahead 内部已按 ≤tgt 的最后 tick 算外推余量，
+    前瞻样本不污染 aim 流。gyro_shift_ns：td 注入测试用时间戳平移。
     返回 (帧级 df, 高频输出 df{含 pred}, tracker, gyro df)。"""
     frames, idx, gyro, detect, meta = load_recording(ROOT / "test_res" / rec)
     fov = float(meta.get("viewAngle", 67.94))
@@ -60,8 +65,8 @@ def replay(rec, v3=True, sample_hz=SAMPLE_HZ, inject=None, still_bias=True):
     if not still_bias:
         p.bias_alpha = 0.0
     tr = Tracker(p)
-    gts = gyro["tsNs"].to_numpy()
-    gw = gyro[["wx", "wy", "wz"]].to_numpy()
+    gts = gyro["tsNs"].to_numpy() + int(gyro_shift_ns)
+    gw = gyro[["wx", "wy", "wz"]].to_numpy().astype(np.float32)  # 与 Java float 一致
     if inject is not None:
         gw = gw + np.asarray(inject, dtype=float)
     fts = idx["tsNs"].to_numpy()
@@ -90,7 +95,7 @@ def replay(rec, v3=True, sample_hz=SAMPLE_HZ, inject=None, still_bias=True):
                 o_pred[L].append(tr.snapshot_ahead(int(next_out), int(L * 1e6))
                                  if g > GRADE_DEAD else (np.nan, np.nan, g))
             next_out += dt_out
-        while gi < len(gts) and gts[gi] <= fts[s]:
+        while gi < len(gts) and gts[gi] <= fts[s] + FEED_SLACK_NS:
             tr.on_gyro(gts[gi], *gw[gi])
             gi += 1
         tr.process(frames[s], fts[s])
@@ -99,7 +104,8 @@ def replay(rec, v3=True, sample_hz=SAMPLE_HZ, inject=None, still_bias=True):
                          meas_x=tr.meas_cross[0], meas_y=tr.meas_cross[1],
                          innov=tr.innov, innov_pre=tr.innov_pre,
                          g_eff=tr._g_eff_last, n_edges=tr.n_edges,
-                         bx=tr.bias[0], by=tr.bias[1], bz=tr.bias[2]))
+                         bx=tr.bias[0], by=tr.bias[1], bz=tr.bias[2],
+                         td_ms=tr.td_ns * 1e-6))
     out = pd.DataFrame(dict(t=o_t, x=o_x, y=o_y, g=o_g,
                             aim_x=o_aim_x, aim_y=o_aim_y))
     for L in LAG_MS:
