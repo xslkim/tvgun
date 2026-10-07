@@ -29,11 +29,14 @@ PC 端（Windows）
     src/com/tvgun/gun/
       Tracker.java         【核心】guntrack.py 的逐语句 Java 移植（见下）
       MainActivity.java    相机双后端、Tracker 驱动、120Hz UDP aim（snapshot_ahead 预测）、
-                           录制、镜头切换、服务器/预测量设置
+                           录制、镜头切换、服务器/预测量设置、
+                           屏幕四角虚拟按键（左下=投币/开始，右下=换弹/退出；退出双击确认）
+      ControlButtons.java  虚拟按键协议层（POST /coin /start /reload /exit，纯 Java 可桌面单测）
       Camera2Backend.java  camera2 枚举(含MIUI隐藏vendor id)/会话/帧回调（60fps 优先）
       OverlayView.java     准星/HUD/等级显示（FULL/PARTIAL/EDGE/GYRO/DEAD）/REC指示
       Recorder.java        视频+IMU+检测同步录制（音量下键触发）
     test/                  TrackerTest（合成场景 16 项断言）+ ReplayTest（Java/Python 回放等价）
+                           + ControlButtonsTest（虚拟按键 HTTP 假服务器断言）
 
 备用客户端
   webgun/                  浏览器版光枪（已被 APK 取代，仅留档）
@@ -74,6 +77,10 @@ HTTP/UDP（TV 端监听 `0.0.0.0:8000` TCP+UDP，手机经 WiFi 局域网访问 
 | `POST /shot` | `{"x":f,"y":f}` → `{"hit":bool,"score":int}`，点屏幕开火 |
 | **UDP** 文本 `"x,y"` | **120Hz** 准星上报（主路径，v3 起；无连接、最新覆盖，丢包无碍） |
 | **UDP :port+1** | **局域网自动发现**：手机广播 `TVGUN_DISCOVER`，PC 回 `TVGUN_HERE <port>`，手机取应答源地址为服务器（零配置） |
+| `POST /coin` | `{}` → `{"ok":true}`，屏幕虚拟按键【投币】（手机→PC，街机桥接器 tvgun-bridge 提供） |
+| `POST /start` | `{}` → `{"ok":true}`，屏幕虚拟按键【开始】（同上） |
+| `POST /reload` | `{}` → `{"ok":true}`，屏幕虚拟按键【换弹】（同上） |
+| `POST /exit` | `{}` → `{"ok":true}`，屏幕虚拟按键【退出】（同上；手机端双击确认防误触） |
 | `POST /aim` | `{"x":f,"y":f}` → `{"ok":true}`（兼容路径，webgun/旧客户端用） |
 | `GET /state` | → `{"score":int,"target":{"x","y","r"}}` |
 
@@ -422,8 +429,9 @@ MSYS_NO_PATHCONV=1 adb pull /storage/emulated/0/Android/data/com.tvgun.gun/files
 .venv/Scripts/python.exe scripts/calib_prop.py --rec test_res/record_20260921_230150
 # Java 单元测试 + 回放等价（JDK8 javac 直编译）
 JDK="/c/Program Files/Android/jdk/jdk-8.0.302.8-hotspot/jdk8u302-b08"
-"$JDK/bin/javac.exe" -encoding UTF-8 -d /tmp/jcls android/src/com/tvgun/gun/Tracker.java android/test/*.java
+"$JDK/bin/javac.exe" -encoding UTF-8 -d /tmp/jcls android/src/com/tvgun/gun/Tracker.java android/src/com/tvgun/gun/ControlButtons.java android/test/*.java
 "$JDK/bin/java.exe" -cp /tmp/jcls TrackerTest
+"$JDK/bin/java.exe" -cp /tmp/jcls ControlButtonsTest   # 虚拟按键协议层（内置假 HTTP 服务器）
 "$JDK/bin/java.exe" -cp /tmp/jcls ReplayTest [recDir refCsv]   # 默认主摄录制
 "$JDK/bin/java.exe" -cp /tmp/jcls ReplayTest D:/tvgun/test_res/record_wide_20260921_235354 D:/tvgun/out/track_record_wide_20260921_235354/track_replay.csv
 ```
@@ -431,6 +439,7 @@ JDK="/c/Program Files/Android/jdk/jdk-8.0.302.8-hotspot/jdk8u302-b08"
 ## 8. git 历史
 
 ```
+屏幕虚拟按键：投币/开始/换弹/退出四角悬浮按钮（ControlButtons 协议层 + ControlButtonsTest，退出双击确认）
 （v2）追踪器重写：H 传播 + 逐边校正 + 采集多候选 + 60Hz aim
 c4aaecc Camera2迁移接入超广角/长焦
 118b441 超广角采集数据 53s

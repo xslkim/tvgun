@@ -6,7 +6,10 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.graphics.Rect;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.StateListDrawable;
 import android.hardware.Camera;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -20,6 +23,7 @@ import android.os.SystemClock;
 import android.os.Vibrator;
 import android.util.Log;
 import android.util.Size;
+import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.OrientationEventListener;
@@ -28,8 +32,11 @@ import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import org.json.JSONObject;
 
@@ -129,6 +136,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     private volatile int score;
 
     private boolean longPressFired;
+    private long lastExitTapMs;
     private final Runnable longPressRunnable = new Runnable() {
         @Override
         public void run() {
@@ -169,6 +177,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                 ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
         root.addView(overlay, new FrameLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+        addControlButtons(root);
         setContentView(root);
         surfaceView.getHolder().addCallback(this);
 
@@ -1299,6 +1308,118 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                 });
             }
         }, "shot").start();
+    }
+
+    // ---- control buttons（屏幕虚拟按键：投币/开始/换弹/退出） ----
+    //
+    // 按键是真正的 Button（加在 FrameLayout 最上层），触摸由 View 事件分发天然消费，
+    // 不会落到 Activity.onTouchEvent 的扳机路径；OverlayView 不可点击（不拦截触摸）。
+
+    private static final long EXIT_DOUBLE_TAP_MS = 1500;
+
+    private void addControlButtons(FrameLayout root) {
+        LinearLayout left = buttonColumn(Gravity.BOTTOM | Gravity.START);
+        left.addView(controlButton("投币", ControlButtons.PATH_COIN));
+        left.addView(controlButton("开始", ControlButtons.PATH_START));
+        LinearLayout right = buttonColumn(Gravity.BOTTOM | Gravity.END);
+        right.addView(controlButton("换弹", ControlButtons.PATH_RELOAD));
+        right.addView(exitButton());
+        root.addView(left);
+        root.addView(right);
+    }
+
+    private LinearLayout buttonColumn(int gravity) {
+        LinearLayout col = new LinearLayout(this);
+        col.setOrientation(LinearLayout.VERTICAL);
+        FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(
+                ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, gravity);
+        int m = dp(12);
+        // 底部留出 HUD 版本角标（左下角）的高度，避免遮挡
+        lp.setMargins(m, 0, m, dp(36));
+        col.setLayoutParams(lp);
+        return col;
+    }
+
+    private Button controlButton(String label, final String path) {
+        final Button b = new Button(this);
+        b.setText(label);
+        b.setTextSize(14);
+        b.setTextColor(Color.WHITE);
+        b.setMinWidth(0);
+        b.setMinHeight(0);
+        b.setMinimumWidth(0);
+        b.setMinimumHeight(0);
+        int pad = dp(10);
+        b.setPadding(pad, pad, pad, pad);
+        StateListDrawable bg = new StateListDrawable();
+        bg.addState(new int[]{android.R.attr.state_pressed}, new ColorDrawable(0xCCFF8800));
+        bg.addState(new int[0], new ColorDrawable(0x80202020));
+        b.setBackground(bg);
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        lp.bottomMargin = dp(8);
+        b.setLayoutParams(lp);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                vibrate(30);
+                sendControl(b.getText().toString(), path);
+            }
+        });
+        return b;
+    }
+
+    /** 退出防误触：双击确认（1.5s 内连按两次才真正发送）。 */
+    private Button exitButton() {
+        final Button b = controlButton("退出", ControlButtons.PATH_EXIT);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                vibrate(30);
+                long now = SystemClock.elapsedRealtime();
+                if (now - lastExitTapMs < EXIT_DOUBLE_TAP_MS) {
+                    lastExitTapMs = 0;
+                    sendControl("退出", ControlButtons.PATH_EXIT);
+                } else {
+                    lastExitTapMs = now;
+                    Toast.makeText(MainActivity.this, "再按一次退出",
+                            Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        return b;
+    }
+
+    /** 异步 POST 控制端点（协议层见 ControlButtons，超时 3s，失败 Toast+震动，不崩不阻塞）。 */
+    private void sendControl(final String label, final String path) {
+        final String srv = server;
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                final boolean ok = ControlButtons.send("http://" + srv, path,
+                        ControlButtons.DEFAULT_TIMEOUT_MS);
+                Log.i(TAG, "control " + label + " (" + path + ") ok=" + ok);
+                if (!ok) {
+                    ui.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(MainActivity.this,
+                                    label + "失败：服务器无响应", Toast.LENGTH_SHORT).show();
+                            vibrate(200);
+                        }
+                    });
+                }
+            }
+        }, "ctrl" + path).start();
+    }
+
+    private void vibrate(long ms) {
+        Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        if (v != null) v.vibrate(ms);
+    }
+
+    private int dp(int v) {
+        return (int) (v * getResources().getDisplayMetrics().density + 0.5f);
     }
 
     // ---- server config / state ----
