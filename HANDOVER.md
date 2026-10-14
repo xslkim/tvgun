@@ -29,14 +29,16 @@ PC 端（Windows）
     src/com/tvgun/gun/
       Tracker.java         【核心】guntrack.py 的逐语句 Java 移植（见下）
       MainActivity.java    相机双后端、Tracker 驱动、120Hz UDP aim（snapshot_ahead 预测）、
-                           录制、镜头切换、服务器/预测量设置、
+                           录制、镜头切换、服务器/预测量/事件模式设置、
                            屏幕四角虚拟按键（左下=投币/开始，右下=换弹/退出；退出双击确认）
-      ControlButtons.java  虚拟按键协议层（POST /coin /start /reload /exit，纯 Java 可桌面单测）
+      ControlButtons.java  虚拟按键协议层（HTTP 模式：POST /coin /start /reload /exit，纯 Java 可桌面单测）
+      UdpEvents.java       虚拟按键/射击协议层（UDP 模式：SHOT/RELOAD/COIN/START/EXIT 文本包，纯 Java 可桌面单测）
       Camera2Backend.java  camera2 枚举(含MIUI隐藏vendor id)/会话/帧回调（60fps 优先）
       OverlayView.java     准星/HUD/等级显示（FULL/PARTIAL/EDGE/GYRO/DEAD）/REC指示
       Recorder.java        视频+IMU+检测同步录制（音量下键触发）
     test/                  TrackerTest（合成场景 16 项断言）+ ReplayTest（Java/Python 回放等价）
                            + ControlButtonsTest（虚拟按键 HTTP 假服务器断言）
+                           + UdpEventsTest（UDP 事件模式本地 listener 断言包内容）
 
 备用客户端
   webgun/                  浏览器版光枪（已被 APK 取代，仅留档）
@@ -86,6 +88,16 @@ HTTP/UDP（TV 端监听 `0.0.0.0:8000` TCP+UDP，手机经 WiFi 局域网访问 
 
 准星 0.6s 无更新消失。aim 坐标 = `snapshotAhead(now, predictMs)` 的**预测值**
 （默认提前 90ms，手机长按屏幕可调），射击用同一预测量，保证"指哪打哪"与显示一致。
+
+**UDP 事件模式（2026-10-14 起，对接 Godot 单端口游戏）**：长按屏幕设置里把
+"事件模式"改为 `udp`（默认 `http` = 上表 HTTP 桥接器协议，不变）。UDP 模式下：
+
+- 坐标流与事件**共用同一个 UDP 端口**（"UDP 模式目标端口"设置，默认 9000，
+  主机仍取 server/自动发现的地址；发现协议不变）；
+- 事件改为 ASCII 文本包：`SHOT`（射击，命中判定在 PC 侧按最新坐标流，
+  无 hit/score 应答）、`RELOAD`、`COIN`、`START`、`EXIT`；
+- 协议层 `UdpEvents.java`（纯 Java），测试 `UdpEventsTest`（本地 UDP listener
+  逐字节断言包内容）。HTTP 模式行为完全不变。
 
 App 默认服务器 `192.168.3.19:8000`（旧电脑 IP）只是兜底。**自动发现（2026-09-29 起）**：手机连上同一 WiFi 即广播探测，PC 应答后自动改连新 PC，无需任何手动操作（找不到 TV 时才回退到保存的地址；长按屏幕仍可手动指定/查改）。新 PC 需关闭 Windows 防火墙或**同时放行 TCP 8000、UDP 8000 与 UDP 8001**。
 
@@ -432,6 +444,7 @@ JDK="/c/Program Files/Android/jdk/jdk-8.0.302.8-hotspot/jdk8u302-b08"
 "$JDK/bin/javac.exe" -encoding UTF-8 -d /tmp/jcls android/src/com/tvgun/gun/Tracker.java android/src/com/tvgun/gun/ControlButtons.java android/test/*.java
 "$JDK/bin/java.exe" -cp /tmp/jcls TrackerTest
 "$JDK/bin/java.exe" -cp /tmp/jcls ControlButtonsTest   # 虚拟按键协议层（内置假 HTTP 服务器）
+"$JDK/bin/java.exe" -cp /tmp/jcls UdpEventsTest        # UDP 事件模式协议层（本地 UDP listener）
 "$JDK/bin/java.exe" -cp /tmp/jcls ReplayTest [recDir refCsv]   # 默认主摄录制
 "$JDK/bin/java.exe" -cp /tmp/jcls ReplayTest D:/tvgun/test_res/record_wide_20260921_235354 D:/tvgun/out/track_record_wide_20260921_235354/track_replay.csv
 ```

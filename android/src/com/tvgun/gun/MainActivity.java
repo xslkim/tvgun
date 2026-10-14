@@ -63,6 +63,10 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     private static final long LONG_PRESS_MS = 600;
     private static final long AIM_INTERVAL_MS = 8;     // 120Hz 准星上报（UDP 无连接，低开销）
     private static final int DEFAULT_PREDICT_MS = 90;  // 输出预测提前量（补偿端到端延迟）
+    // 事件发送模式：http = POST 到 PC 桥接器（默认，兼容现有 run_tv.py/tvgun-bridge）；
+    // udp = ASCII 文本包（SHOT/RELOAD/COIN/START/EXIT）发到 Godot 游戏的单个 UDP 端口。
+    private static final String EVENT_MODE_HTTP = "http";
+    private static final String EVENT_MODE_UDP = "udp";
 
     private SurfaceView surfaceView;
     private OverlayView overlay;
@@ -134,6 +138,8 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     private SharedPreferences prefs;
     private String server;
     private volatile int score;
+    private volatile String eventMode = EVENT_MODE_HTTP;
+    private volatile int udpPort = UdpEvents.DEFAULT_PORT;  // udp 模式下坐标流与事件共用此端口
 
     private boolean longPressFired;
     private long lastExitTapMs;
@@ -162,6 +168,8 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         prefs = getSharedPreferences(PREFS, MODE_PRIVATE);
         server = prefs.getString("server", DEFAULT_SERVER);
         predictMs = prefs.getInt("predictMs", DEFAULT_PREDICT_MS);
+        eventMode = prefs.getString("eventMode", EVENT_MODE_HTTP);
+        udpPort = prefs.getInt("udpPort", UdpEvents.DEFAULT_PORT);
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         gyro = sensorManager != null ? sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE) : null;
@@ -974,18 +982,35 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         t.start();
     }
 
+    /** server 字符串（"host:port"）的主机部分；无端口时整串即主机。 */
+    private String serverHost() {
+        int ci = server.lastIndexOf(':');
+        return ci > 0 ? server.substring(0, ci) : server;
+    }
+
+    /** UDP 模式（Godot 单端口游戏）下坐标流与事件同发 udpPort；
+     *  HTTP 模式下坐标流端口跟随 server 字符串（同 TCP API 端口号）。 */
+    private int aimUdpPort() {
+        if (EVENT_MODE_UDP.equals(eventMode)) {
+            return udpPort;
+        }
+        int ci = server.lastIndexOf(':');
+        if (ci > 0) {
+            try {
+                return Integer.parseInt(server.substring(ci + 1));
+            } catch (NumberFormatException ignored) {
+            }
+        }
+        return 8000;
+    }
+
     /** UDP aim sender (silent failure -> caller backs off). Address resolved once
      *  per server-string change; same port number as the TCP API (UDP/TCP spaces
      *  are separate, the PC side listens on both). */
     private boolean sendAimUdp(float x, float y) {
         try {
-            String host = server;
-            int port = 8000;
-            int ci = server.lastIndexOf(':');
-            if (ci > 0) {
-                host = server.substring(0, ci);
-                port = Integer.parseInt(server.substring(ci + 1));
-            }
+            String host = serverHost();
+            int port = aimUdpPort();
             if (aimSock == null) {
                 aimSock = new java.net.DatagramSocket();
             }
@@ -1273,6 +1298,25 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         final float x = st[0];
         final float y = st[1];
         final String srv = server;
+        if (EVENT_MODE_UDP.equals(eventMode)) {
+            // UDP 模式：命中判定在 PC 游戏侧（按最新坐标流），本地无 hit/score 应答
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    boolean ok = UdpEvents.sendShot(serverHost(), udpPort);
+                    Log.i(TAG, "shot udp (" + (int) x + "," + (int) y + ") ok=" + ok);
+                    if (!ok) {
+                        ui.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                overlay.setConnFail();
+                            }
+                        });
+                    }
+                }
+            }, "shot").start();
+            return;
+        }
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -1390,15 +1434,22 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         return b;
     }
 
-    /** 异步 POST 控制端点（协议层见 ControlButtons，超时 3s，失败 Toast+震动，不崩不阻塞）。 */
+    /** 异步发送控制事件（HTTP 模式协议层见 ControlButtons，UDP 模式见 UdpEvents；
+     *  失败 Toast+震动，不崩不阻塞）。 */
     private void sendControl(final String label, final String path) {
         final String srv = server;
         new Thread(new Runnable() {
             @Override
             public void run() {
-                final boolean ok = ControlButtons.send("http://" + srv, path,
-                        ControlButtons.DEFAULT_TIMEOUT_MS);
-                Log.i(TAG, "control " + label + " (" + path + ") ok=" + ok);
+                final boolean ok;
+                if (EVENT_MODE_UDP.equals(eventMode)) {
+                    ok = UdpEvents.send(serverHost(), udpPort, pathToUdpEvent(path));
+                    Log.i(TAG, "control " + label + " udp (" + pathToUdpEvent(path) + ") ok=" + ok);
+                } else {
+                    ok = ControlButtons.send("http://" + srv, path,
+                            ControlButtons.DEFAULT_TIMEOUT_MS);
+                    Log.i(TAG, "control " + label + " (" + path + ") ok=" + ok);
+                }
                 if (!ok) {
                     ui.post(new Runnable() {
                         @Override
@@ -1411,6 +1462,17 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                 }
             }
         }, "ctrl" + path).start();
+    }
+
+    /** HTTP 端点路径 → UDP 事件名。 */
+    private static String pathToUdpEvent(String path) {
+        switch (path) {
+            case ControlButtons.PATH_COIN: return UdpEvents.EVENT_COIN;
+            case ControlButtons.PATH_START: return UdpEvents.EVENT_START;
+            case ControlButtons.PATH_RELOAD: return UdpEvents.EVENT_RELOAD;
+            case ControlButtons.PATH_EXIT: return UdpEvents.EVENT_EXIT;
+            default: return path;
+        }
     }
 
     private void vibrate(long ms) {
@@ -1433,14 +1495,24 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         etPred.setText(String.valueOf(predictMs));
         etPred.setSingleLine();
         etPred.setHint("预测提前量 ms（手感：准星拖尾就调大，回甩就调小，常用 60-130）");
+        final EditText etMode = new EditText(this);
+        etMode.setText(eventMode);
+        etMode.setSingleLine();
+        etMode.setHint("事件模式：http（PC桥接器，默认）/ udp（Godot 单端口游戏）");
+        final EditText etUdpPort = new EditText(this);
+        etUdpPort.setText(String.valueOf(udpPort));
+        etUdpPort.setSingleLine();
+        etUdpPort.setHint("UDP 模式目标端口（坐标流+事件共用，默认 9000）");
         android.widget.LinearLayout ll = new android.widget.LinearLayout(this);
         ll.setOrientation(android.widget.LinearLayout.VERTICAL);
         int pad = (int) (16 * getResources().getDisplayMetrics().density);
         ll.setPadding(pad, pad / 2, pad, 0);
         ll.addView(et);
         ll.addView(etPred);
+        ll.addView(etMode);
+        ll.addView(etUdpPort);
         new AlertDialog.Builder(this)
-                .setTitle("服务器地址 (host:port) / 预测提前量 (ms)")
+                .setTitle("服务器地址 (host:port) / 预测 (ms) / 事件模式 / UDP端口")
                 .setView(ll)
                 .setPositiveButton("保存", (d, w) -> {
                     String s = et.getText().toString().trim();
@@ -1452,6 +1524,19 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                         int pm = Integer.parseInt(etPred.getText().toString().trim());
                         predictMs = Math.max(0, Math.min(pm, 250));
                         prefs.edit().putInt("predictMs", predictMs).apply();
+                    } catch (NumberFormatException ignored) {
+                    }
+                    String em = etMode.getText().toString().trim().toLowerCase(Locale.US);
+                    if (EVENT_MODE_UDP.equals(em) || EVENT_MODE_HTTP.equals(em)) {
+                        eventMode = em;
+                        prefs.edit().putString("eventMode", em).apply();
+                    }
+                    try {
+                        int up = Integer.parseInt(etUdpPort.getText().toString().trim());
+                        if (up > 0 && up <= 65535) {
+                            udpPort = up;
+                            prefs.edit().putInt("udpPort", up).apply();
+                        }
                     } catch (NumberFormatException ignored) {
                     }
                     syncScore();
