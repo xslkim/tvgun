@@ -24,10 +24,8 @@ APK 构建时 `build.sh` 会把 `git describe --always --dirty --tags` 嵌入 Ap
 ## 2. 标准实测流程（每次实测按顺序走）
 
 1. **同步代码**：`git pull`，确认 `git log --oneline -1` 是要测的 commit。
-2. **安装 APK**（二选一）：
-   - 自行构建：`cd android && bash build.sh install`（机器无关，自动探测 JDK/SDK；
-     失败时用 `JAVAC=/JAVA11=/ANDROID_SDK=` 环境变量指定）；
-   - 预编译：`adb install -r android/tvgun.apk`（先确认 APK 与 HEAD 一致，见 §4）。
+2. **安装 APK**：`cd android && bash build.sh install`（机器无关，自动探测 JDK/SDK；
+   失败时用 `JAVAC=/JAVA11=/ANDROID_SDK=` 环境变量指定）。APK 是本地构建产物，不入库。
 3. **核对版本**：打开 App，看 HUD 左下角版本号 == 预期 commit。
    **构建失败不会让手机上的旧 App 消失**——装完必须看版本号，不看等于没装。
 4. **冒烟录制**：音量下键录 5~10 秒，拉回看 `meta.txt` 的 `appVersion=` 与
@@ -46,14 +44,10 @@ APK 构建时 `build.sh` 会把 `git describe --always --dirty --tags` 嵌入 Ap
   - 开发机（D:\tvgun）：JDK8 javac + JRE17（D:\Tools）+ android-35/build-tools 36.0.0；
   - 实测机：Android Studio JBR + 本机 SDK。
 
-## 4. 预编译 APK 更新规则
+## 4. APK 不入库
 
-- `android/tvgun.apk` 入库是为了**免构建直装**，必须与源码保持一致：
-  - 只在核心代码（src/ 或追踪算法参数）变更后才重新构建并 `git add -f android/tvgun.apk`；
-  - commit message 里写明 APK 对应的 commit；
-  - 拉代码后安装 APK 前，先 `git log --oneline -1 -- android/tvgun.apk`，
-    若该 commit 落后于 HEAD 且期间有 src/ 变更，必须自行 `bash build.sh install` 重装。
-- `android/tvgun.apk.idsig`、`android/out/`、`android/debug.keystore` 一律不入库。
+- `android/tvgun.apk` 由 `build.sh` 生成本地文件，`.gitignore` 忽略 `*.apk`。安装一律重新构建。
+- `android/tvgun.apk.idsig`、`android/out/`、`android/debug.keystore` 同样不入库。
 
 ## 5. 数据可信度检查清单（分析数据前先做）
 

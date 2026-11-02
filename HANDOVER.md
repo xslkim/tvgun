@@ -202,7 +202,7 @@ uv pip uninstall opencv-python-headless && uv pip install opencv-python
 
 电视窗口需要带 GUI 的 `opencv-python`。
 
-3. 安装 App：已有与源码一致的包时 `adb install -r android/tvgun.apk`。否则 `cd android && bash build.sh install`。`build.sh` 自动找 JDK、Java 11+（d8 / apksigner）和 Android SDK。找不到时：
+3. 安装 App：`cd android && bash build.sh install`。编出来的 `android/tvgun.apk` 不入库。`build.sh` 自动找 JDK、Java 11+（d8 / apksigner）和 Android SDK。找不到时：
 
 ```bash
 JAVAC=<javac> JAVA11=<java11+> ANDROID_SDK=<sdk> bash build.sh install
