@@ -478,7 +478,7 @@ def selftest() -> int:
 
 
 def parse_args(argv=None):
-    p = argparse.ArgumentParser(description="TVGun PC 电视端（见 SPEC.md 真机验证节）")
+    p = argparse.ArgumentParser(description="TVGun PC 电视端")
     p.add_argument("--port", type=int, default=8000)
     p.add_argument("--size", default=f"{int(NORM_W)}x{int(NORM_H)}", help="窗口像素 WxH")
     p.add_argument("--speed", type=float, default=1.0, help="鸭子速度倍率")
