@@ -1,0 +1,53 @@
+{
+  "sampled_station_policy": {
+    "status": "pass",
+    "scope": "only supplied offline samples, not full engine/hardware coverage",
+    "policy_version": "g01-alley-luminance-exception-1",
+    "layer_means": "diagnostic, historical original C03 retained",
+    "sample_count": 240
+  },
+  "near_original_checks": [
+    {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    }
+  ],
+  "integrated_frame_C03": [
+    {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.00040244571494571496
+      }
+    },
+    {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0004198910448910449
+      }
+    }
+  ],
+  "negatives": {
+    "weak_contrast_rejected": true,
+    "other_station_rejected": true,
+    "missing_slot_evidence_rejected": true
+  },
+  "material": {
+    "alpha_preserved": true,
+    "other_enemy_unchanged": true
+  },
+  "historical_C03_failures_preserved": true,
+  "checker_calibration": "unchanged_uncalibrated",
+  "actual_0B": false
+}

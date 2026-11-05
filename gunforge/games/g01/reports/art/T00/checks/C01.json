@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "reason": "PNG format, channel mode and declared size",
+  "details": {
+    "mode": "RGBA",
+    "size": [
+      256,
+      256
+    ]
+  }
+}

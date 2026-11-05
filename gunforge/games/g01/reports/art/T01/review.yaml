@@ -1,0 +1,19 @@
+items:
+- id: test_01_unlit_white
+  status: pending
+  note: ''
+- id: test_01_unlit_gray
+  status: pending
+  note: ''
+- id: test_02_lit_white
+  status: pending
+  note: ''
+- id: test_02_lit_gray
+  status: pending
+  note: ''
+- id: test_03_reference_variant_white
+  status: pending
+  note: ''
+- id: test_03_reference_variant_gray
+  status: pending
+  note: ''

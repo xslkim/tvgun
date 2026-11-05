@@ -1,0 +1,68 @@
+{
+  "python_syntax": "pass",
+  "local_media_http": [
+    {
+      "file": "crow_hit_v3.mp4",
+      "status": 200,
+      "mime": "video/mp4"
+    },
+    {
+      "file": "crow_hit_v3.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "file": "lowering_contact_v4.jpg",
+      "status": 200,
+      "mime": "image/jpeg"
+    },
+    {
+      "file": "tadpole0_hit_v3.mp4",
+      "status": 200,
+      "mime": "video/mp4"
+    },
+    {
+      "file": "tadpole0_hit_v3.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "file": "vendor_lowering_v4.mp4",
+      "status": 200,
+      "mime": "video/mp4"
+    },
+    {
+      "file": "vendor_lowering_v4.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "file": "vendor_motion_contact_v4.jpg",
+      "status": 200,
+      "mime": "image/jpeg"
+    },
+    {
+      "file": "video_lowering_v4.mp4",
+      "status": 200,
+      "mime": "video/mp4"
+    },
+    {
+      "file": "video_lowering_v4.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "file": "video_motion_contact_v4.jpg",
+      "status": 200,
+      "mime": "image/jpeg"
+    }
+  ],
+  "isolated_ui_vm": "pass_one_question_retained_approved_fx_single_playback_half_speed_feedback",
+  "actual_browser_initial_playback": "both v4 lowering videos readyState4/errornull/loopfalse/rate0.5/time advancing",
+  "production_approved": false,
+  "actual_0B": false,
+  "actual_browser_completion": "both lowering videos ended=true,paused=true,time=duration=2.25,loop=false,error=null",
+  "near_image_loaded": true,
+  "review_selection": "0/1; no agent approval",
+  "browser_screenshot": "browser_review_ready.png"
+}

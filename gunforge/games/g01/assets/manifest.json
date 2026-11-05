@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "frozen": false,
+  "assets": [],
+  "notes": "hud_layout.json is deterministic specification data; generated assets require human approval"
+}

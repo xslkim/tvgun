@@ -1,0 +1,170 @@
+{
+  "source": "executor conservative manual polygons on actual generated unlit frame",
+  "requires_human_confirmation": true,
+  "targets": {
+    "resident": {
+      "roi": [
+        [
+          632,
+          546
+        ],
+        [
+          656,
+          535
+        ],
+        [
+          700,
+          536
+        ],
+        [
+          723,
+          548
+        ],
+        [
+          737,
+          581
+        ],
+        [
+          729,
+          603
+        ],
+        [
+          651,
+          607
+        ],
+        [
+          628,
+          588
+        ]
+      ],
+      "bbox": [
+        590,
+        375,
+        214,
+        492
+      ],
+      "weak_center": [
+        703,
+        563
+      ],
+      "weak_radius": 13,
+      "primary": "D:\\gunforge_cache\\g01\\T03\\resident_primary.png",
+      "weak": "D:\\gunforge_cache\\g01\\T03\\resident_weak.png",
+      "effective_radius": 42.67750190373905,
+      "static_candidate_only": true
+    },
+    "crow": {
+      "roi": [
+        [
+          977,
+          442
+        ],
+        [
+          1009,
+          439
+        ],
+        [
+          1047,
+          444
+        ],
+        [
+          1086,
+          463
+        ],
+        [
+          1111,
+          493
+        ],
+        [
+          1103,
+          527
+        ],
+        [
+          1076,
+          550
+        ],
+        [
+          1037,
+          542
+        ],
+        [
+          1001,
+          517
+        ],
+        [
+          981,
+          487
+        ]
+      ],
+      "bbox": [
+        881,
+        349,
+        360,
+        282
+      ],
+      "weak_center": [
+        1054,
+        487
+      ],
+      "weak_radius": 15,
+      "primary": "D:\\gunforge_cache\\g01\\T03\\crow_primary.png",
+      "weak": "D:\\gunforge_cache\\g01\\T03\\crow_weak.png",
+      "effective_radius": 56.461256717599404,
+      "static_candidate_only": true
+    },
+    "lamp": {
+      "roi": [
+        [
+          1266,
+          473
+        ],
+        [
+          1280,
+          439
+        ],
+        [
+          1308,
+          415
+        ],
+        [
+          1341,
+          409
+        ],
+        [
+          1373,
+          415
+        ],
+        [
+          1403,
+          439
+        ],
+        [
+          1425,
+          473
+        ],
+        [
+          1425,
+          483
+        ],
+        [
+          1266,
+          483
+        ]
+      ],
+      "bbox": [
+        1255,
+        398,
+        181,
+        95
+      ],
+      "weak_center": null,
+      "weak_radius": 0,
+      "primary": "D:\\gunforge_cache\\g01\\T03\\lamp_primary.png",
+      "weak": "D:\\gunforge_cache\\g01\\T03\\lamp_weak.png",
+      "effective_radius": 53.0068048965821,
+      "static_candidate_only": true
+    }
+  },
+  "protected": "D:\\gunforge_cache\\g01\\T03\\protected_foreground.png",
+  "planned_layout": "layout_plan.json"
+}

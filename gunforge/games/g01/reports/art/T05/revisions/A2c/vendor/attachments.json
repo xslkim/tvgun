@@ -1,0 +1,54 @@
+{
+  "head": {
+    "file": "distress_head.png",
+    "pivot": [
+      80.80074482035144,
+      168.78861788617888
+    ],
+    "native_source": "vendor_distress_head_v3_a1.png",
+    "source_pivot": [
+      652,
+      907
+    ],
+    "scale": 0.21779176501442438,
+    "crop": [
+      281,
+      132,
+      1031,
+      1069
+    ],
+    "expression": "worried_calling"
+  },
+  "palm": {
+    "file": "right_palm.png",
+    "pivot": [
+      26.45303867403315,
+      71.44119968429361
+    ],
+    "native_source": "vendor_right_palm_v3_a1.png",
+    "scale": 0.05998421468034728,
+    "crop": [
+      51,
+      61,
+      1068,
+      1328
+    ],
+    "anatomical_side": "right",
+    "view": "palm_facing_viewer",
+    "thumb_side_in_upright_image": "right"
+  },
+  "base_pngs_sha256": {
+    "torso": "f39abe8b2005222e2f7207e8945e11c79956584ba8bb4f2a1f19d6882ae96810",
+    "head": "539dd678d13cbd742666704a87e15eaf6069736dd7ca5cef9d6fbfb2f4d1fbf8",
+    "upper_arm_l": "04964e6643b607e684597ae2ddb656f0c1aad6ec2ee66cee469c87b9ee9b73e3",
+    "upper_arm_r": "cf410de31bc48858cfb4b3c7f591731193dc3eaac9e06adb3870d3edcfa2c9a4",
+    "forearm_l": "f1d5afdbc7c445c3603a94173ca1398e8d0d444ea2903ef3e276b0f6ce2d3c84",
+    "forearm_r": "8e7c806ac8021f46c7001ea1ee6f8f7c515d715d766177025430f6d656352f4e",
+    "thigh_l": "d59ad3521f6c9b73b77b380734a8eb24ca61f79a772f74f920e3e5888e63e71d",
+    "thigh_r": "baa005b003d7a1e468d8bac6136c759b42c9e7905160f68a9a71f21a880a6eda",
+    "shin_l": "2b1eea7da970443b0781c9dc16b75b065f3958cf0b830e277a1c8bce20f60816",
+    "shin_r": "05f3483fa3ce1ba1a686a1c0530d15226d36dd29fb8eaf036cfa82fcddacd1d9",
+    "prop": "61948652e3ef41229de0454f244be58085dbf94723679f967e4c953b4c421bd7"
+  },
+  "acceptance": "pending_A2c_visual_review"
+}

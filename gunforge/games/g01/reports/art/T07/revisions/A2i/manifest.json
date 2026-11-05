@@ -1,0 +1,57 @@
+{
+  "revision": "A2i",
+  "checker_version": "art-checks-0.3-initial-offline",
+  "new_image_calls": 0,
+  "production_approved": false,
+  "actual_0B": false,
+  "outputs": [
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2i\\browser_review_ready.png",
+      "sha256": "6757a17afd0ff748990310638fe8e09e2c2e9fc43771f926e394cdc35c77f158"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2i\\browser_verification.md",
+      "sha256": "835829fed4e8f2886e22e2b9181442d6352cfd47ad9361938402de171815d1e4"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2i\\checker_freeze.json",
+      "sha256": "eb022aaa7e518cf1cac68508d6a9cd6cab3e8de6ff7d4c3ac0a6f0cb0146686b"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2i\\checks.json",
+      "sha256": "d2c091e0864b6afd257ed6c007dee900901cbe85b1d9198aed3c0a701aa4126a"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2i\\frozen_geometry_checks.json",
+      "sha256": "ef9d9e24843da38e40b1ea5a75876a1ae5bec3d79849e0efafd5a89c62cff797"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2i\\readiness.json",
+      "sha256": "d29405dccf3aed6a363e1bd8f7c46282c25511f2b1c7e24a5eea04fb15af4d76"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2i\\report.md",
+      "sha256": "82aa9ca80cdfdd2b20008b6fa19445fa2a9f2975bfd26545b0b013134f9ace0f"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2i\\user_feedback.yaml",
+      "sha256": "224c5d6cb2b30a3392a7cea79cd3cdf8425982dda537b67ac0b8f985b84ac9fe"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2i\\negative_recheck\\calibration.json",
+      "sha256": "6c4a6eb6895b3cd2e2d221d748e29ce465070ce02f91a106d6b71e23076244e8"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2i\\negative_recheck\\calibration_initial_diagnostic.json",
+      "sha256": "f3d8312a43980b06af9d5e09ec06fad2f954e595a2e685d511cfed54b18478f9"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2i\\negative_recheck\\negative_checks.json",
+      "sha256": "f841ae5a1c624f6fab7b220a1b98ea916d86cdf0fb7b9977b831f0a279309694"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\index.html",
+      "sha256": "73e78d167f582c2e47d4de79e9c032308021fa162f74fc52f2eec9c20ee16c72"
+    }
+  ]
+}

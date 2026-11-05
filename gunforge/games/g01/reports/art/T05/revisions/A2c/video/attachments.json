@@ -1,0 +1,54 @@
+{
+  "head": {
+    "file": "distress_head.png",
+    "pivot": [
+      88.1136853625171,
+      166.008
+    ],
+    "native_source": "video_distress_head_v3_a1.png",
+    "source_pivot": [
+      641,
+      906
+    ],
+    "scale": 0.22709712722298223,
+    "crop": [
+      253,
+      175,
+      1023,
+      1067
+    ],
+    "expression": "worried_calling"
+  },
+  "palm": {
+    "file": "right_palm.png",
+    "pivot": [
+      22.88785046728972,
+      74.26246105919003
+    ],
+    "native_source": "video_right_palm_v3_a1.png",
+    "scale": 0.061526479750778816,
+    "crop": [
+      89,
+      83,
+      985,
+      1367
+    ],
+    "anatomical_side": "right",
+    "view": "palm_facing_viewer",
+    "thumb_side_in_upright_image": "right"
+  },
+  "base_pngs_sha256": {
+    "torso": "59e04fab42d28ef8f7eafe56bd57d7dffc536281d773311b505fc3c2121348e8",
+    "head": "582ee46e19bee553b52af598c5924cf81fdb777a64696f9e3d67387a37adf7b5",
+    "upper_arm_l": "bfdc125eef4aa41fde93fa32a637138bfa716b9b753af544852cd7b58ba948c0",
+    "upper_arm_r": "5f761eeded336854bf3645de8c5b8ff146e3628cea5297c9c067aba3edbe89d1",
+    "forearm_l": "c4397a2ae3aa3f97c8997eac91f2a7b8c4525deb68b32ec83a4dc7a7f5368f5a",
+    "forearm_r": "dfbb7cfa3e0b3757a9b56fae5aa7e7dd6897deb12230cb6137d9893e31f2f129",
+    "thigh_l": "1bfd153f2aa08e599bc91d703cdc8b02d423e7f1a3a319b43f11ad2a88be0c80",
+    "thigh_r": "f1a649e1546ac3412c40c1ed2ff3f40caad07aeebf0928e89d76ad4bbf63d3f6",
+    "shin_l": "4b74553e3b2786f7b94c38f6a53958c1d7cef3b3cb2d1389aa0bf393cbf15f31",
+    "shin_r": "b64c1bdb1356c9c49d95d8dc16cb34e2af3bbba2d76855d4cb0839769de588af",
+    "prop": "0489d2769edb9d9dad9aa663bfeafbca48952392547ff940451d653e7aa2293b"
+  },
+  "acceptance": "pending_A2c_visual_review"
+}

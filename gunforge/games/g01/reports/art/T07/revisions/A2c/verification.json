@@ -1,0 +1,65 @@
+{
+  "python_syntax": "pass",
+  "local_media_http": [
+    {
+      "file": "acting_keyposes_v3.jpg",
+      "status": 200,
+      "mime": "image/jpeg"
+    },
+    {
+      "file": "crow_hit_v3.mp4",
+      "status": 200,
+      "mime": "video/mp4"
+    },
+    {
+      "file": "crow_hit_v3.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "file": "tadpole0_hit_v3.mp4",
+      "status": 200,
+      "mime": "video/mp4"
+    },
+    {
+      "file": "tadpole0_hit_v3.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "file": "vendor_motion_contact_v3.jpg",
+      "status": 200,
+      "mime": "image/jpeg"
+    },
+    {
+      "file": "vendor_wave_for_help_v3.mp4",
+      "status": 200,
+      "mime": "video/mp4"
+    },
+    {
+      "file": "vendor_wave_for_help_v3.png",
+      "status": 200,
+      "mime": "image/png"
+    },
+    {
+      "file": "video_motion_contact_v3.jpg",
+      "status": 200,
+      "mime": "image/jpeg"
+    },
+    {
+      "file": "video_wave_for_help_v3.mp4",
+      "status": 200,
+      "mime": "video/mp4"
+    },
+    {
+      "file": "video_wave_for_help_v3.png",
+      "status": 200,
+      "mime": "image/png"
+    }
+  ],
+  "isolated_ui_vm": "pass",
+  "browser_playback": "confirmed_actual_IAB_tab4; readyState4,errornull; 0.5 speed; time advanced",
+  "review_selection": "0/2; not selected by agent",
+  "actual_0B": false,
+  "production_approved": false
+}

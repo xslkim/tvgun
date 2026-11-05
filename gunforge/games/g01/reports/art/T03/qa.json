@@ -1,0 +1,15 @@
+{
+  "anchor_hashes_verified": 12,
+  "T03_output_and_reference_hashes_verified": 10,
+  "calls": 10,
+  "phase_0A_calls": 46,
+  "http_page_images_report": "pass",
+  "static_links": "pass",
+  "python_compile": "pass",
+  "review_status": "all_3_pending",
+  "production_approved_assets": 0,
+  "browser_render": "pass_visual_inspection",
+  "browser_image_toggle": "pass_lit_view",
+  "feedback_logic": "pass_in_isolated_VM",
+  "screenshot": "D:/gunforge_cache/g01/T03/review_page_loaded.png"
+}

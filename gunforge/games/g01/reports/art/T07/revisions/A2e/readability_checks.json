@@ -1,0 +1,487 @@
+{
+  "scope": "200px crow, 20 candidate positions per lighting state, target-alpha median; no waiver of C03 or visual recognition",
+  "normal_slots": [
+    {
+      "state": "unlit",
+      "center": [
+        420,
+        210
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.038070588235294134,
+      "median_background_Yprime": 0.11488235294117646,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "unlit",
+      "center": [
+        650,
+        210
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.03527843137254902,
+      "median_background_Yprime": 0.11488235294117646,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "unlit",
+      "center": [
+        880,
+        210
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.033901960784313706,
+      "median_background_Yprime": 0.11415686274509804,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "unlit",
+      "center": [
+        1110,
+        210
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.036450980392156856,
+      "median_background_Yprime": 0.11601176470588234,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "unlit",
+      "center": [
+        1340,
+        210
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.034384313725490195,
+      "median_background_Yprime": 0.11532941176470587,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "unlit",
+      "center": [
+        420,
+        350
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.25724313725490194,
+      "median_background_Yprime": 0.3812392156862745,
+      "numeric_normal_pass": true,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "unlit",
+      "center": [
+        650,
+        350
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.2744627450980392,
+      "median_background_Yprime": 0.38006666666666666,
+      "numeric_normal_pass": true,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "unlit",
+      "center": [
+        880,
+        350
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.0508156862745098,
+      "median_background_Yprime": 0.1364078431372549,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "unlit",
+      "center": [
+        1110,
+        350
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.2783843137254902,
+      "median_background_Yprime": 0.38426666666666665,
+      "numeric_normal_pass": true,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "unlit",
+      "center": [
+        1340,
+        350
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.2073921568627451,
+      "median_background_Yprime": 0.30957254901960785,
+      "numeric_normal_pass": true,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "unlit",
+      "center": [
+        420,
+        490
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.24831764705882356,
+      "median_background_Yprime": 0.35454901960784313,
+      "numeric_normal_pass": true,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "unlit",
+      "center": [
+        650,
+        490
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.09781176470588236,
+      "median_background_Yprime": 0.17389803921568625,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "unlit",
+      "center": [
+        880,
+        490
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.11810196078431372,
+      "median_background_Yprime": 0.24624313725490196,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "unlit",
+      "center": [
+        1110,
+        490
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.11804705882352942,
+      "median_background_Yprime": 0.24165882352941176,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "unlit",
+      "center": [
+        1340,
+        490
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.13867450980392154,
+      "median_background_Yprime": 0.26387843137254896,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "unlit",
+      "center": [
+        420,
+        630
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.17131372549019605,
+      "median_background_Yprime": 0.29296470588235296,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "unlit",
+      "center": [
+        650,
+        630
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.20306666666666665,
+      "median_background_Yprime": 0.3319686274509804,
+      "numeric_normal_pass": true,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "unlit",
+      "center": [
+        880,
+        630
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.15784313725490196,
+      "median_background_Yprime": 0.25758039215686274,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "unlit",
+      "center": [
+        1110,
+        630
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.14772549019607842,
+      "median_background_Yprime": 0.23885882352941173,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "unlit",
+      "center": [
+        1340,
+        630
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.11329019607843137,
+      "median_background_Yprime": 0.20740784313725488,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "lit",
+      "center": [
+        420,
+        210
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.038070588235294134,
+      "median_background_Yprime": 0.11488235294117646,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "lit",
+      "center": [
+        650,
+        210
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.03527843137254902,
+      "median_background_Yprime": 0.11488235294117646,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "lit",
+      "center": [
+        880,
+        210
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.033901960784313706,
+      "median_background_Yprime": 0.11415686274509804,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "lit",
+      "center": [
+        1110,
+        210
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.036450980392156856,
+      "median_background_Yprime": 0.11601176470588234,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "lit",
+      "center": [
+        1340,
+        210
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.034384313725490195,
+      "median_background_Yprime": 0.11532941176470587,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "lit",
+      "center": [
+        420,
+        350
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.25724313725490194,
+      "median_background_Yprime": 0.3812392156862745,
+      "numeric_normal_pass": true,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "lit",
+      "center": [
+        650,
+        350
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.2744627450980392,
+      "median_background_Yprime": 0.38006666666666666,
+      "numeric_normal_pass": true,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "lit",
+      "center": [
+        880,
+        350
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.0508156862745098,
+      "median_background_Yprime": 0.1364078431372549,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "lit",
+      "center": [
+        1110,
+        350
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.2783843137254902,
+      "median_background_Yprime": 0.38426666666666665,
+      "numeric_normal_pass": true,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "lit",
+      "center": [
+        1340,
+        350
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.2073921568627451,
+      "median_background_Yprime": 0.30957254901960785,
+      "numeric_normal_pass": true,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "lit",
+      "center": [
+        420,
+        490
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.24831764705882356,
+      "median_background_Yprime": 0.35454901960784313,
+      "numeric_normal_pass": true,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "lit",
+      "center": [
+        650,
+        490
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.09781176470588236,
+      "median_background_Yprime": 0.17389803921568625,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "lit",
+      "center": [
+        880,
+        490
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.11810196078431372,
+      "median_background_Yprime": 0.24624313725490196,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "lit",
+      "center": [
+        1110,
+        490
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.11818823529411765,
+      "median_background_Yprime": 0.24165882352941176,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "lit",
+      "center": [
+        1340,
+        490
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.27163529411764703,
+      "median_background_Yprime": 0.3883921568627451,
+      "numeric_normal_pass": true,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "lit",
+      "center": [
+        420,
+        630
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.17131372549019605,
+      "median_background_Yprime": 0.29296470588235296,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "lit",
+      "center": [
+        650,
+        630
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.20306666666666665,
+      "median_background_Yprime": 0.3319686274509804,
+      "numeric_normal_pass": true,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "lit",
+      "center": [
+        880,
+        630
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.15784313725490196,
+      "median_background_Yprime": 0.25758039215686274,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "lit",
+      "center": [
+        1110,
+        630
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.14853725490196076,
+      "median_background_Yprime": 0.23930588235294115,
+      "numeric_normal_pass": false,
+      "thumbnail_recognition": "pending"
+    },
+    {
+      "state": "lit",
+      "center": [
+        1340,
+        630
+      ],
+      "crow_extent_px": 200,
+      "median_absolute_contrast": 0.2707372549019608,
+      "median_background_Yprime": 0.37704705882352946,
+      "numeric_normal_pass": true,
+      "thumbnail_recognition": "pending"
+    }
+  ],
+  "passed": 14,
+  "total": 40
+}

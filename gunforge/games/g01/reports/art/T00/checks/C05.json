@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "reason": "OCR text versus permitted text",
+  "details": {
+    "recognized": "",
+    "confidence": 0,
+    "engine": "tesseract.js-7.0.0-eng+chi_sim"
+  }
+}

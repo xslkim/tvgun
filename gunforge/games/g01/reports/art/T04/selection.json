@@ -1,0 +1,26 @@
+{
+  "selected": "alley_sketch_2",
+  "basis": "All four preserve accepted T03 composition; numeric C03 then C04 ranking; final offline pre-review remains pending",
+  "ranking": [
+    {
+      "id": "alley_sketch_2",
+      "coverage": 0.8590650603022747,
+      "C03": "pass"
+    },
+    {
+      "id": "alley_sketch_3",
+      "coverage": 0.8445969914697704,
+      "C03": "pass"
+    },
+    {
+      "id": "alley_sketch_4",
+      "coverage": 0.8377024960044348,
+      "C03": "pass"
+    },
+    {
+      "id": "alley_sketch_1",
+      "coverage": 0.8239859783317673,
+      "C03": "pass"
+    }
+  ]
+}

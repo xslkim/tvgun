@@ -1,0 +1,5580 @@
+{
+  "revision": "A2d",
+  "motion": {
+    "vendor": {
+      "status": "pass",
+      "scope": "actual exported frames at 24fps, keyed acting and swapped attachments; visual review pending",
+      "frames": 564,
+      "max_attachment_error_source_px": 2.2737367544323206e-13,
+      "max_ankle_target_error_source_px": 2.5421149729252077e-13,
+      "max_planted_foot_frame_drift_source_px": 3.410605131648481e-13,
+      "knee_flexion_range": [
+        10.46063820440314,
+        58.91022564002686
+      ],
+      "elbow_flexion_range": [
+        5.999999999999955,
+        92.99999999999997
+      ],
+      "joint_seam_visual_review": "pending on rendered source pixels and ankle overlap; kinematic attachment is not a visual seam certificate",
+      "max_wrist_attachment_error": 1.2710574864626038e-13,
+      "minimum_transform_determinant": 0.9999999999999996
+    },
+    "video": {
+      "status": "pass",
+      "scope": "actual exported frames at 24fps, keyed acting and swapped attachments; visual review pending",
+      "frames": 564,
+      "max_attachment_error_source_px": 2.2737367544323206e-13,
+      "max_ankle_target_error_source_px": 2.5421149729252077e-13,
+      "max_planted_foot_frame_drift_source_px": 3.639754730461873e-13,
+      "knee_flexion_range": [
+        9.642393687857815,
+        57.74496109741888
+      ],
+      "elbow_flexion_range": [
+        5.999999999999948,
+        93.0
+      ],
+      "joint_seam_visual_review": "pending on rendered source pixels and ankle overlap; kinematic attachment is not a visual seam certificate",
+      "max_wrist_attachment_error": 6.355287432313019e-14,
+      "minimum_transform_determinant": 0.9999999999999996
+    }
+  },
+  "rescue_motion": {
+    "vendor": {
+      "status": "pass",
+      "scope": "all actual 24fps frames of ink-attached-eligible clips; six blobs; original minimum sizes. Complete Godot behavior remains pending.",
+      "minimum_candidate_display_height": 512,
+      "rescue_frames": 360,
+      "blob_frame_tests": 2160,
+      "minimum_effective_radius": 43.89090374080148,
+      "minimum_paper_clearance_px": 7.615773105863909,
+      "max_weak_point_occluded_pixels": 0,
+      "sampled_source_joint_max_gap_px": 0.0,
+      "negative_knee_and_foot_drift_rejected": true,
+      "original_radius_algorithm_equivalence": true,
+      "loop_endpoints": [
+        {
+          "clip": "idle",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true,
+          "one_shot_expression_transition": false
+        },
+        {
+          "clip": "peek",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true,
+          "one_shot_expression_transition": false
+        },
+        {
+          "clip": "walk",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true,
+          "one_shot_expression_transition": false
+        },
+        {
+          "clip": "startle",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true,
+          "one_shot_expression_transition": false
+        },
+        {
+          "clip": "wave_for_help",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true,
+          "one_shot_expression_transition": false
+        },
+        {
+          "clip": "struggle",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true,
+          "one_shot_expression_transition": false
+        },
+        {
+          "clip": "rescued_bounce",
+          "endpoint_pixel_difference": 0.0012785926436546843,
+          "loop_position_pass": null,
+          "one_shot_expression_transition": true
+        },
+        {
+          "clip": "thank",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true,
+          "one_shot_expression_transition": false
+        }
+      ],
+      "failures": [],
+      "render_contract": "Opaque paper interiors; attached ink clipped visibly to torso inset of 7 content pixels. Same visible ink mask defines target; foreground hands remain protected."
+    },
+    "video": {
+      "status": "pass",
+      "scope": "all actual 24fps frames of ink-attached-eligible clips; six blobs; original minimum sizes. Complete Godot behavior remains pending.",
+      "minimum_candidate_display_height": 300,
+      "rescue_frames": 360,
+      "blob_frame_tests": 2160,
+      "minimum_effective_radius": 40.61381329307066,
+      "minimum_paper_clearance_px": 7.615773105863909,
+      "max_weak_point_occluded_pixels": 0,
+      "sampled_source_joint_max_gap_px": 0.0,
+      "negative_knee_and_foot_drift_rejected": true,
+      "original_radius_algorithm_equivalence": true,
+      "loop_endpoints": [
+        {
+          "clip": "idle",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true,
+          "one_shot_expression_transition": false
+        },
+        {
+          "clip": "peek",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true,
+          "one_shot_expression_transition": false
+        },
+        {
+          "clip": "walk",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true,
+          "one_shot_expression_transition": false
+        },
+        {
+          "clip": "startle",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true,
+          "one_shot_expression_transition": false
+        },
+        {
+          "clip": "wave_for_help",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true,
+          "one_shot_expression_transition": false
+        },
+        {
+          "clip": "struggle",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true,
+          "one_shot_expression_transition": false
+        },
+        {
+          "clip": "rescued_bounce",
+          "endpoint_pixel_difference": 0.0012579422828159041,
+          "loop_position_pass": null,
+          "one_shot_expression_transition": true
+        },
+        {
+          "clip": "thank",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true,
+          "one_shot_expression_transition": false
+        }
+      ],
+      "failures": [],
+      "render_contract": "Opaque paper interiors; attached ink clipped visibly to torso inset of 7 content pixels. Same visible ink mask defines target; foreground hands remain protected."
+    }
+  },
+  "lowering": {
+    "vendor": {
+      "status": "pass",
+      "previous_lowered_elbow_deg": 29.638985246538276,
+      "previous_lowered_pose_rejected": true,
+      "current_lowered_elbow_deg": 5.999999999999996,
+      "project_relaxed_pose_limit_deg": [
+        0,
+        12
+      ],
+      "not_a_universal_anatomical_limit": true,
+      "lowering_monotonic_extension": true,
+      "wave_states_checked": 218,
+      "max_wrist_gap_source_px": 0,
+      "paths": {
+        "False": {
+          "maximum_wrist_step_source_px": 36.53617422312496
+        },
+        "True": {
+          "maximum_wrist_step_source_px": 25.116735495689518
+        }
+      },
+      "visual_acceptance": "pending_A2d",
+      "frames": [
+        {
+          "time": 0.0,
+          "rescue": false,
+          "elbow_flexion_deg": 5.999999999999996,
+          "elbow_target_error_deg": 4.440892098500626e-15,
+          "wrist": [
+            423.20381907075085,
+            498.121688753251
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.041666666666666664,
+          "rescue": false,
+          "elbow_flexion_deg": 6.067943825031005,
+          "elbow_target_error_deg": 3.375077994860476e-14,
+          "wrist": [
+            423.09032901947467,
+            498.10365743244364
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.08333333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 6.261864684543609,
+          "elbow_target_error_deg": 5.773159728050814e-14,
+          "wrist": [
+            422.76653166090966,
+            498.0514535498643
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.125,
+          "rescue": false,
+          "elbow_flexion_deg": 6.5668966551673,
+          "elbow_target_error_deg": 5.861977570020827e-14,
+          "wrist": [
+            422.25757039850686,
+            497.9671214882644
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.16666666666666666,
+          "rescue": false,
+          "elbow_flexion_deg": 6.968173813531542,
+          "elbow_target_error_deg": 3.552713678800501e-15,
+          "wrist": [
+            421.58871627414464,
+            497.8520558730665
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.20833333333333334,
+          "rescue": false,
+          "elbow_flexion_deg": 7.450830236265994,
+          "elbow_target_error_deg": 2.930988785010413e-14,
+          "wrist": [
+            420.78531035737603,
+            497.7074534702415
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.25,
+          "rescue": false,
+          "elbow_flexion_deg": 8.000000000000025,
+          "elbow_target_error_deg": 2.4868995751603507e-14,
+          "wrist": [
+            419.87270895566064,
+            497.53469971115965
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.2916666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 9.523609521586556,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            413.54527887007345,
+            496.51708617872396
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.3333333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 12.723956407858036,
+          "elbow_target_error_deg": 3.552713678800501e-14,
+          "wrist": [
+            397.79921848893986,
+            493.1779484253186
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.375,
+          "rescue": false,
+          "elbow_flexion_deg": 17.277731520413646,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            374.9281419171568,
+            485.98722268021476
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.4166666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 22.86162572085221,
+          "elbow_target_error_deg": 1.7763568394002505e-14,
+          "wrist": [
+            347.7274784607326,
+            473.36819446164293
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 1.2710574864626038e-13
+        },
+        {
+          "time": 0.4583333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 29.152329870772718,
+          "elbow_target_error_deg": 7.105427357601002e-15,
+          "wrist": [
+            319.3966769313958,
+            454.42703020517774
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.5,
+          "rescue": false,
+          "elbow_flexion_deg": 35.82653483177424,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            293.14718166309706,
+            429.43154790732905
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.5416666666666666,
+          "rescue": false,
+          "elbow_flexion_deg": 42.56093146545574,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            271.61993278119974,
+            399.9108842555852
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.5833333333333334,
+          "rescue": false,
+          "elbow_flexion_deg": 49.032210633416206,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            256.34342411583657,
+            368.3477872349115
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.625,
+          "rescue": false,
+          "elbow_flexion_deg": 54.917063197254535,
+          "elbow_target_error_deg": 7.105427357601002e-15,
+          "wrist": [
+            247.46407457443584,
+            337.5956242664421
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 0.6666666666666666,
+          "rescue": false,
+          "elbow_flexion_deg": 59.89218001856985,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            243.8550821408622,
+            310.27020242542216
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 0.7083333333333334,
+          "rescue": false,
+          "elbow_flexion_deg": 63.667543916052395,
+          "elbow_target_error_deg": 3.552713678800501e-14,
+          "wrist": [
+            243.5546178865117,
+            288.19196659802736
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.75,
+          "rescue": false,
+          "elbow_flexion_deg": 67.07286402609061,
+          "elbow_target_error_deg": 4.263256414560601e-14,
+          "wrist": [
+            245.5082545740544,
+            267.05751357048786
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.7916666666666666,
+          "rescue": false,
+          "elbow_flexion_deg": 70.51993070608196,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            250.09539667076132,
+            245.37457540283697
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.8333333333333334,
+          "rescue": false,
+          "elbow_flexion_deg": 73.91203352919736,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            257.31710790816544,
+            224.38567958304608
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 0.875,
+          "rescue": false,
+          "elbow_flexion_deg": 77.15246206860795,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            266.73192920888494,
+            205.17045443102475
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 0.9166666666666666,
+          "rescue": false,
+          "elbow_flexion_deg": 80.14450589748483,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            277.53531733261093,
+            188.5341589438172
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.9583333333333334,
+          "rescue": false,
+          "elbow_flexion_deg": 82.791454588999,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            288.6854569511363,
+            174.95184935273278
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.0,
+          "rescue": false,
+          "elbow_flexion_deg": 84.99659771632167,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            299.040239656104,
+            164.58600270542632
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.0416666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 86.66322485262384,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            307.47299655356426,
+            157.37694022319542
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.0833333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 87.69462557107659,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            312.9491986290864,
+            153.19267697097803
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.125,
+          "rescue": false,
+          "elbow_flexion_deg": 87.99522775969058,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            314.5925834169718,
+            151.99851427144307
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.1666666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 87.6196347723743,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            313.84801719007237,
+            152.04889065735958
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.2083333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 86.76384186730071,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            312.15905350200404,
+            152.1777005799714
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.25,
+          "rescue": false,
+          "elbow_flexion_deg": 85.59693352255336,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            309.85314228193965,
+            152.39881224690046
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.2916666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 84.28799421621585,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            307.26390851588206,
+            152.70937284710888
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.3333333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 83.00610842637164,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            304.7270646201442,
+            153.0776809082678
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 1.375,
+          "rescue": false,
+          "elbow_flexion_deg": 81.92036063110444,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            302.5787170076345,
+            153.43933162716485
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.4166666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 81.19983530849767,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            301.1537155084311,
+            153.70449251786175
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.4583333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 81.02008422416586,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            300.80265389622366,
+            153.7685725869407
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.5,
+          "rescue": false,
+          "elbow_flexion_deg": 81.66472303206997,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            302.2161051151655,
+            153.36073481789714
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.5416666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 83.03822481373504,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            305.2316783920831,
+            152.55618060069867
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 1.5833333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 84.89763524457402,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            309.31883923250484,
+            151.60667698109077
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.625,
+          "rescue": false,
+          "elbow_flexion_deg": 87.0,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            313.939171832792,
+            150.7264140487537
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.6666666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 89.10236475542598,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            318.54961391915293,
+            150.05066558791444
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.7083333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 90.96177518626503,
+          "elbow_target_error_deg": 4.263256414560601e-14,
+          "wrist": [
+            322.6115760929075,
+            149.6225778586395
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.75,
+          "rescue": false,
+          "elbow_flexion_deg": 92.33527696793,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            325.5986697715147,
+            149.40795758361892
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.7916666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 92.97991577583414,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            326.9958801781589,
+            149.3368362451368
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.8333333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 92.69420149011984,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            326.37701770262413,
+            149.3660306025873
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.875,
+          "rescue": false,
+          "elbow_flexion_deg": 91.58309037900877,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            323.96441275104684,
+            149.5148344628601
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.9166666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 89.88888888888886,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            320.27001139812444,
+            149.85021943993982
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.9583333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 87.8545513443472,
+          "elbow_target_error_deg": 5.684341886080802e-14,
+          "wrist": [
+            315.8149046900379,
+            150.4271235070411
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 2.0,
+          "rescue": false,
+          "elbow_flexion_deg": 85.72303206997086,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            311.13338411711874,
+            151.23664579242194
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 2.0416666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 83.73728539034664,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            306.7679203129727,
+            152.18036248921453
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.0833333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 82.14026563006153,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            303.25964055699876,
+            153.07225364780936
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 2.125,
+          "rescue": false,
+          "elbow_flexion_deg": 81.17492711370265,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            301.14203315586434,
+            153.6688478536875
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 2.1666666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 81.07904114026566,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            300.9318631339619,
+            153.7304707851358
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.2083333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 81.8888888888889,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            302.70793534948746,
+            153.22343841776055
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.25,
+          "rescue": false,
+          "elbow_flexion_deg": 83.37900874635572,
+          "elbow_target_error_deg": 4.263256414560601e-14,
+          "wrist": [
+            305.98049326765397,
+            152.37013645230252
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.2916666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 85.30644638807902,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            310.2176119579854,
+            151.419452491036
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.3333333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 87.42824748947201,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            314.8794148371881,
+            150.57220786793712
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 6.355287432313019e-14
+        },
+        {
+          "time": 2.375,
+          "rescue": false,
+          "elbow_flexion_deg": 89.50145772594752,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            319.4229328400222,
+            149.9454020486275
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.4166666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 91.28312277291869,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            323.31158376113297,
+            149.5646508171715
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 2.4583333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 92.53028830579849,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            326.0216862443693,
+            149.38445167791238
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.5,
+          "rescue": false,
+          "elbow_flexion_deg": 92.99999999999997,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            327.0393581402106,
+            149.33492329560738
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.5416666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 92.84514882740704,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            326.67661754631536,
+            149.37605176784385
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 2.5833333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 92.41145531012525,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            325.6493204400325,
+            149.50783410794952
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.625,
+          "rescue": false,
+          "elbow_flexion_deg": 91.74520944890028,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            324.0482728295649,
+            149.74955843848582
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.6666666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 90.89270124447792,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            321.96457164085723,
+            150.12518738789583
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.7083333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 89.90022069760373,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            319.4906782662982,
+            150.65871464638911
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 2.75,
+          "rescue": false,
+          "elbow_flexion_deg": 88.81405780902355,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            316.72105376824345,
+            151.37030237845585
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 6.355287432313019e-14
+        },
+        {
+          "time": 2.7916666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 87.6578514354169,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            313.62668723719827,
+            152.36373190812097
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.8333333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 86.08466866294744,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            308.21839662412935,
+            155.23704444931906
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.875,
+          "rescue": false,
+          "elbow_flexion_deg": 84.03179644761282,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            300.35052987276504,
+            160.54666301554167
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.9166666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 81.59015249050366,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            290.8438733335753,
+            168.2655048567857
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.9583333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 78.85065449271058,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            280.55990083859973,
+            178.2678429092324
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.0,
+          "rescue": false,
+          "elbow_flexion_deg": 75.90422015532447,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            270.33088431744653,
+            190.23600357032504
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.0416666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 72.84176717943582,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            260.87515749640716,
+            203.613951693579
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.0833333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 69.75198833504786,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            252.70915280401383,
+            217.62174455849572
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.125,
+          "rescue": false,
+          "elbow_flexion_deg": 66.33794391307012,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            245.26814220234016,
+            233.49341488844624
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.1666666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 62.44473650901869,
+          "elbow_target_error_deg": 2.1316282072803006e-14,
+          "wrist": [
+            238.71833545520937,
+            252.33334060158137
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.2083333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 58.21967007523309,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            234.00528667386646,
+            273.61364144015783
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 3.25,
+          "rescue": false,
+          "elbow_flexion_deg": 53.81004856405336,
+          "elbow_target_error_deg": 7.105427357601002e-15,
+          "wrist": [
+            231.86111573124612,
+            296.5479777450637
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.2916666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 49.36317592781917,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            232.69630382014364,
+            320.14643052733993
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 3.3333333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 45.02635611887017,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            236.52815802830523,
+            343.3191515499582
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.375,
+          "rescue": false,
+          "elbow_flexion_deg": 40.94689308954634,
+          "elbow_target_error_deg": 7.105427357601002e-15,
+          "wrist": [
+            242.96511275577726,
+            365.0025726715875
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.4166666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 37.2720907921874,
+          "elbow_target_error_deg": 3.552713678800501e-14,
+          "wrist": [
+            251.251812099072,
+            384.2752202574477
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.4583333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 33.824455538401686,
+          "elbow_target_error_deg": 2.1316282072803006e-14,
+          "wrist": [
+            261.12043386745484,
+            401.76888217466495
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 3.5,
+          "rescue": false,
+          "elbow_flexion_deg": 30.28523501094003,
+          "elbow_target_error_deg": 3.552713678800501e-15,
+          "wrist": [
+            273.05026567560043,
+            418.6518448728832
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.5416666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 26.757281704411366,
+          "elbow_target_error_deg": 3.552713678800501e-14,
+          "wrist": [
+            286.71564436924155,
+            434.3081096352827
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.5833333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 23.345859207161812,
+          "elbow_target_error_deg": 3.552713678800501e-14,
+          "wrist": [
+            301.5939250358905,
+            448.23484411008906
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.625,
+          "rescue": false,
+          "elbow_flexion_deg": 20.15623110753752,
+          "elbow_target_error_deg": 1.7763568394002505e-14,
+          "wrist": [
+            317.01148604136495,
+            460.09356398553314
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.6666666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 17.293660993884508,
+          "elbow_target_error_deg": 7.105427357601002e-15,
+          "wrist": [
+            332.19817203861135,
+            469.72844266654005
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 3.7083333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 14.863412454548792,
+          "elbow_target_error_deg": 1.9539925233402755e-14,
+          "wrist": [
+            346.34442128165705,
+            477.1573054723626
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 3.75,
+          "rescue": false,
+          "elbow_flexion_deg": 12.97074907787656,
+          "elbow_target_error_deg": 3.197442310920451e-14,
+          "wrist": [
+            358.6512849666776,
+            482.5350893799224
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 3.7916666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 11.693952313571833,
+          "elbow_target_error_deg": 1.9539925233402755e-14,
+          "wrist": [
+            368.4995918068041,
+            486.14475612913816
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.8333333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 10.631867119420756,
+          "elbow_target_error_deg": 5.329070518200751e-15,
+          "wrist": [
+            377.6832630867387,
+            489.0597529852464
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.875,
+          "rescue": false,
+          "elbow_flexion_deg": 9.63274258503404,
+          "elbow_target_error_deg": 1.9539925233402755e-14,
+          "wrist": [
+            386.7677860154955,
+            491.5708274661222
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 3.9166666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 8.715806845426595,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            395.4641942363751,
+            493.6374802383934
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.9583333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 7.900288035613244,
+          "elbow_target_error_deg": 1.3322676295501878e-14,
+          "wrist": [
+            403.47706021702743,
+            495.2569714749128
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 4.0,
+          "rescue": false,
+          "elbow_flexion_deg": 7.205414290608778,
+          "elbow_target_error_deg": 3.552713678800501e-15,
+          "wrist": [
+            410.5093603904002,
+            496.4581959624402
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.041666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 6.6504137454281,
+          "elbow_target_error_deg": 1.1546319456101628e-14,
+          "wrist": [
+            416.26638473072677,
+            497.291707912774
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 4.083333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 6.254514535085968,
+          "elbow_target_error_deg": 3.8191672047105385e-14,
+          "wrist": [
+            420.4582836970853,
+            497.815833612211
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 4.125,
+          "rescue": false,
+          "elbow_flexion_deg": 6.036944794597348,
+          "elbow_target_error_deg": 1.0658141036401503e-14,
+          "wrist": [
+            422.80126070546265,
+            498.0788680290059
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 4.166666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 5.999999999999996,
+          "elbow_target_error_deg": 4.440892098500626e-15,
+          "wrist": [
+            423.20381907075085,
+            498.121688753251
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.208333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 5.999999999999996,
+          "elbow_target_error_deg": 4.440892098500626e-15,
+          "wrist": [
+            423.20381907075085,
+            498.121688753251
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.25,
+          "rescue": false,
+          "elbow_flexion_deg": 5.999999999999996,
+          "elbow_target_error_deg": 4.440892098500626e-15,
+          "wrist": [
+            423.20381907075085,
+            498.121688753251
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.291666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 5.999999999999996,
+          "elbow_target_error_deg": 4.440892098500626e-15,
+          "wrist": [
+            423.20381907075085,
+            498.121688753251
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.333333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 5.999999999999996,
+          "elbow_target_error_deg": 4.440892098500626e-15,
+          "wrist": [
+            423.20381907075085,
+            498.121688753251
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.375,
+          "rescue": false,
+          "elbow_flexion_deg": 5.999999999999996,
+          "elbow_target_error_deg": 4.440892098500626e-15,
+          "wrist": [
+            423.20381907075085,
+            498.121688753251
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.416666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 5.999999999999996,
+          "elbow_target_error_deg": 4.440892098500626e-15,
+          "wrist": [
+            423.20381907075085,
+            498.121688753251
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.458333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 5.999999999999996,
+          "elbow_target_error_deg": 4.440892098500626e-15,
+          "wrist": [
+            423.20381907075085,
+            498.121688753251
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.5,
+          "rescue": false,
+          "elbow_flexion_deg": 5.999999999999996,
+          "elbow_target_error_deg": 4.440892098500626e-15,
+          "wrist": [
+            423.20381907075085,
+            498.121688753251
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.0,
+          "rescue": true,
+          "elbow_flexion_deg": 6.000000000000038,
+          "elbow_target_error_deg": 3.8191672047105385e-14,
+          "wrist": [
+            337.6942593344042,
+            472.8279488835188
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.041666666666666664,
+          "rescue": true,
+          "elbow_flexion_deg": 6.067943825030977,
+          "elbow_target_error_deg": 6.217248937900877e-15,
+          "wrist": [
+            337.5957878428694,
+            472.76871641249454
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.08333333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 6.261864684543572,
+          "elbow_target_error_deg": 2.1316282072803006e-14,
+          "wrist": [
+            337.31512407847265,
+            472.5990171899721
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.125,
+          "rescue": true,
+          "elbow_flexion_deg": 6.566896655167292,
+          "elbow_target_error_deg": 5.062616992290714e-14,
+          "wrist": [
+            336.8748147596845,
+            472.33016561934505
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.16666666666666666,
+          "rescue": true,
+          "elbow_flexion_deg": 6.968173813531549,
+          "elbow_target_error_deg": 3.552713678800501e-15,
+          "wrist": [
+            336.2977683526441,
+            471.9729214736982
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.20833333333333334,
+          "rescue": true,
+          "elbow_flexion_deg": 7.45083023626602,
+          "elbow_target_error_deg": 5.5067062021407764e-14,
+          "wrist": [
+            335.6070323714749,
+            471.5378873068564
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.25,
+          "rescue": true,
+          "elbow_flexion_deg": 8.000000000000012,
+          "elbow_target_error_deg": 1.2434497875801753e-14,
+          "wrist": [
+            334.82559778333876,
+            471.0358463083769
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.2916666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 9.52360952158651,
+          "elbow_target_error_deg": 1.7763568394002505e-14,
+          "wrist": [
+            330.8072099032438,
+            468.5590378726857
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.3333333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 12.723956407858088,
+          "elbow_target_error_deg": 1.5987211554602254e-14,
+          "wrist": [
+            321.3522057002161,
+            462.22590148165386
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 8.038873388460929e-14
+        },
+        {
+          "time": 0.375,
+          "rescue": true,
+          "elbow_flexion_deg": 17.27773152041363,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            308.15025614181013,
+            451.88370256231065
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.4166666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 22.86162572085217,
+          "elbow_target_error_deg": 2.1316282072803006e-14,
+          "wrist": [
+            293.108527999671,
+            437.4385742750084
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.4583333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 29.15232987077272,
+          "elbow_target_error_deg": 3.552713678800501e-15,
+          "wrist": [
+            278.16092468019923,
+            419.17204790496623
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.5,
+          "rescue": true,
+          "elbow_flexion_deg": 35.82653483177428,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            265.0122240555638,
+            397.8953522134668
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.5416666666666666,
+          "rescue": true,
+          "elbow_flexion_deg": 42.56093146545573,
+          "elbow_target_error_deg": 7.105427357601002e-15,
+          "wrist": [
+            254.8718243307557,
+            374.91660778776895
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.5833333333333334,
+          "rescue": true,
+          "elbow_flexion_deg": 49.03221063341618,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            248.26329150321135,
+            351.84764322049494
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.625,
+          "rescue": true,
+          "elbow_flexion_deg": 54.917063197254556,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            244.97884589416805,
+            330.33117579855514
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.6666666666666666,
+          "rescue": true,
+          "elbow_flexion_deg": 59.89218001856985,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            243.8550821408622,
+            310.27020242542216
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 0.7083333333333334,
+          "rescue": true,
+          "elbow_flexion_deg": 63.667543916052395,
+          "elbow_target_error_deg": 3.552713678800501e-14,
+          "wrist": [
+            243.5546178865117,
+            288.19196659802736
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.75,
+          "rescue": true,
+          "elbow_flexion_deg": 67.07286402609061,
+          "elbow_target_error_deg": 4.263256414560601e-14,
+          "wrist": [
+            245.5082545740544,
+            267.05751357048786
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.7916666666666666,
+          "rescue": true,
+          "elbow_flexion_deg": 70.51993070608196,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            250.09539667076132,
+            245.37457540283697
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.8333333333333334,
+          "rescue": true,
+          "elbow_flexion_deg": 73.91203352919736,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            257.31710790816544,
+            224.38567958304608
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 0.875,
+          "rescue": true,
+          "elbow_flexion_deg": 77.15246206860795,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            266.73192920888494,
+            205.17045443102475
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 0.9166666666666666,
+          "rescue": true,
+          "elbow_flexion_deg": 80.14450589748483,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            277.53531733261093,
+            188.5341589438172
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.9583333333333334,
+          "rescue": true,
+          "elbow_flexion_deg": 82.791454588999,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            288.6854569511363,
+            174.95184935273278
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.0,
+          "rescue": true,
+          "elbow_flexion_deg": 84.99659771632167,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            299.040239656104,
+            164.58600270542632
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.0416666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 86.66322485262384,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            307.47299655356426,
+            157.37694022319542
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.0833333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 87.69462557107659,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            312.9491986290864,
+            153.19267697097803
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.125,
+          "rescue": true,
+          "elbow_flexion_deg": 87.99522775969058,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            314.5925834169718,
+            151.99851427144307
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.1666666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 87.6196347723743,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            313.84801719007237,
+            152.04889065735958
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.2083333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 86.76384186730071,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            312.15905350200404,
+            152.1777005799714
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.25,
+          "rescue": true,
+          "elbow_flexion_deg": 85.59693352255336,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            309.85314228193965,
+            152.39881224690046
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.2916666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 84.28799421621585,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            307.26390851588206,
+            152.70937284710888
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.3333333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 83.00610842637164,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            304.7270646201442,
+            153.0776809082678
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 1.375,
+          "rescue": true,
+          "elbow_flexion_deg": 81.92036063110444,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            302.5787170076345,
+            153.43933162716485
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.4166666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 81.19983530849767,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            301.1537155084311,
+            153.70449251786175
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.4583333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 81.02008422416586,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            300.80265389622366,
+            153.7685725869407
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.5,
+          "rescue": true,
+          "elbow_flexion_deg": 81.66472303206997,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            302.2161051151655,
+            153.36073481789714
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.5416666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 83.03822481373504,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            305.2316783920831,
+            152.55618060069867
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 1.5833333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 84.89763524457402,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            309.31883923250484,
+            151.60667698109077
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.625,
+          "rescue": true,
+          "elbow_flexion_deg": 87.0,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            313.939171832792,
+            150.7264140487537
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.6666666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 89.10236475542598,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            318.54961391915293,
+            150.05066558791444
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.7083333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 90.96177518626503,
+          "elbow_target_error_deg": 4.263256414560601e-14,
+          "wrist": [
+            322.6115760929075,
+            149.6225778586395
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.75,
+          "rescue": true,
+          "elbow_flexion_deg": 92.33527696793,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            325.5986697715147,
+            149.40795758361892
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.7916666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 92.97991577583414,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            326.9958801781589,
+            149.3368362451368
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.8333333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 92.69420149011984,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            326.37701770262413,
+            149.3660306025873
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.875,
+          "rescue": true,
+          "elbow_flexion_deg": 91.58309037900877,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            323.96441275104684,
+            149.5148344628601
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.9166666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 89.88888888888886,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            320.27001139812444,
+            149.85021943993982
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.9583333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 87.8545513443472,
+          "elbow_target_error_deg": 5.684341886080802e-14,
+          "wrist": [
+            315.8149046900379,
+            150.4271235070411
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 2.0,
+          "rescue": true,
+          "elbow_flexion_deg": 85.72303206997086,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            311.13338411711874,
+            151.23664579242194
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 2.0416666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 83.73728539034664,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            306.7679203129727,
+            152.18036248921453
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.0833333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 82.14026563006153,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            303.25964055699876,
+            153.07225364780936
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 2.125,
+          "rescue": true,
+          "elbow_flexion_deg": 81.17492711370265,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            301.14203315586434,
+            153.6688478536875
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 2.1666666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 81.07904114026566,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            300.9318631339619,
+            153.7304707851358
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.2083333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 81.8888888888889,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            302.70793534948746,
+            153.22343841776055
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.25,
+          "rescue": true,
+          "elbow_flexion_deg": 83.37900874635572,
+          "elbow_target_error_deg": 4.263256414560601e-14,
+          "wrist": [
+            305.98049326765397,
+            152.37013645230252
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.2916666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 85.30644638807902,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            310.2176119579854,
+            151.419452491036
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.3333333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 87.42824748947201,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            314.8794148371881,
+            150.57220786793712
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 6.355287432313019e-14
+        },
+        {
+          "time": 2.375,
+          "rescue": true,
+          "elbow_flexion_deg": 89.50145772594752,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            319.4229328400222,
+            149.9454020486275
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.4166666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 91.28312277291869,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            323.31158376113297,
+            149.5646508171715
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 2.4583333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 92.53028830579849,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            326.0216862443693,
+            149.38445167791238
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.5,
+          "rescue": true,
+          "elbow_flexion_deg": 92.99999999999997,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            327.0393581402106,
+            149.33492329560738
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.5416666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 92.84514882740704,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            326.67661754631536,
+            149.37605176784385
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 2.5833333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 92.41145531012525,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            325.6493204400325,
+            149.50783410794952
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.625,
+          "rescue": true,
+          "elbow_flexion_deg": 91.74520944890028,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            324.0482728295649,
+            149.74955843848582
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.6666666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 90.89270124447792,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            321.96457164085723,
+            150.12518738789583
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.7083333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 89.90022069760373,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            319.4906782662982,
+            150.65871464638911
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 2.75,
+          "rescue": true,
+          "elbow_flexion_deg": 88.81405780902355,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            316.72105376824345,
+            151.37030237845585
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 6.355287432313019e-14
+        },
+        {
+          "time": 2.7916666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 87.6578514354169,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            313.62668723719827,
+            152.36373190812097
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.8333333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 86.08466866294744,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            308.21839662412935,
+            155.23704444931906
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.875,
+          "rescue": true,
+          "elbow_flexion_deg": 84.03179644761282,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            300.35052987276504,
+            160.54666301554167
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.9166666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 81.59015249050366,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            290.8438733335753,
+            168.2655048567857
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.9583333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 78.85065449271058,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            280.55990083859973,
+            178.2678429092324
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.0,
+          "rescue": true,
+          "elbow_flexion_deg": 75.90422015532447,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            270.33088431744653,
+            190.23600357032504
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.0416666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 72.84176717943582,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            260.87515749640716,
+            203.613951693579
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.0833333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 69.75198833504786,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            252.70915280401383,
+            217.62174455849572
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.125,
+          "rescue": true,
+          "elbow_flexion_deg": 66.33794391307012,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            245.26814220234016,
+            233.49341488844624
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.1666666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 62.44473650901869,
+          "elbow_target_error_deg": 2.1316282072803006e-14,
+          "wrist": [
+            238.71833545520937,
+            252.33334060158137
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.2083333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 58.21967007523309,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            234.00528667386646,
+            273.61364144015783
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 3.25,
+          "rescue": true,
+          "elbow_flexion_deg": 53.81004856405336,
+          "elbow_target_error_deg": 7.105427357601002e-15,
+          "wrist": [
+            231.86111573124612,
+            296.5479777450637
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.2916666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 49.36317592781917,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            232.69630382014364,
+            320.14643052733993
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 3.3333333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 45.02635611887016,
+          "elbow_target_error_deg": 7.105427357601002e-15,
+          "wrist": [
+            236.32741494197234,
+            342.7734003873837
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.375,
+          "rescue": true,
+          "elbow_flexion_deg": 40.946893089546364,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            239.60605684497096,
+            357.8470839399138
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.4166666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 37.2720907921874,
+          "elbow_target_error_deg": 3.552713678800501e-14,
+          "wrist": [
+            243.90932308423302,
+            371.3909243699925
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.4583333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 33.82445553840171,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            249.08743018012,
+            383.9047135917183
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.5,
+          "rescue": true,
+          "elbow_flexion_deg": 30.28523501094003,
+          "elbow_target_error_deg": 3.552713678800501e-15,
+          "wrist": [
+            255.40309323435505,
+            396.33152335294926
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.5416666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 26.7572817044114,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            262.7094699733617,
+            408.2732691225562
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.5833333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 23.345859207161837,
+          "elbow_target_error_deg": 1.0658141036401503e-14,
+          "wrist": [
+            270.7468057719034,
+            419.3698857888734
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.625,
+          "rescue": true,
+          "elbow_flexion_deg": 20.156231107537554,
+          "elbow_target_error_deg": 1.7763568394002505e-14,
+          "wrist": [
+            279.159998622242,
+            429.3264292688791
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 3.6666666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 17.293660993884465,
+          "elbow_target_error_deg": 3.552713678800501e-14,
+          "wrist": [
+            287.52175777427317,
+            437.9236129287508
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.7083333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 14.863412454548842,
+          "elbow_target_error_deg": 3.019806626980426e-14,
+          "wrist": [
+            295.36017624206113,
+            445.0165354765811
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 3.75,
+          "rescue": true,
+          "elbow_flexion_deg": 12.970749077876611,
+          "elbow_target_error_deg": 1.9539925233402755e-14,
+          "wrist": [
+            302.18718074313864,
+            450.52034726460545
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 3.7916666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 11.69395231357181,
+          "elbow_target_error_deg": 4.263256414560601e-14,
+          "wrist": [
+            307.6028084779586,
+            454.4462662416415
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 3.8333333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 10.631867119420733,
+          "elbow_target_error_deg": 1.7763568394002505e-14,
+          "wrist": [
+            312.62563712190735,
+            457.8599946614156
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 3.875,
+          "rescue": true,
+          "elbow_flexion_deg": 9.63274258503405,
+          "elbow_target_error_deg": 8.881784197001252e-15,
+          "wrist": [
+            317.5983422972914,
+            461.0905106107521
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 3.9166666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 8.715806845426584,
+          "elbow_target_error_deg": 2.4868995751603507e-14,
+          "wrist": [
+            322.368549013653,
+            464.0575494105308
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.9583333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 7.900288035613222,
+          "elbow_target_error_deg": 7.993605777301127e-15,
+          "wrist": [
+            326.77650628121654,
+            466.69137191501966
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 4.0,
+          "rescue": true,
+          "elbow_flexion_deg": 7.205414290608788,
+          "elbow_target_error_deg": 6.217248937900877e-15,
+          "wrist": [
+            330.65739200525974,
+            468.9306175055188
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.041666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 6.650413745428091,
+          "elbow_target_error_deg": 2.6645352591003757e-15,
+          "wrist": [
+            333.8439454426305,
+            470.71873450576464
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.083333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 6.254514535086043,
+          "elbow_target_error_deg": 3.730349362740526e-14,
+          "wrist": [
+            336.1693810637462,
+            471.9988643281864
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.125,
+          "rescue": true,
+          "elbow_flexion_deg": 6.0369447945973596,
+          "elbow_target_error_deg": 8.881784197001252e-16,
+          "wrist": [
+            337.47063276759803,
+            472.70715650894584
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.166666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 6.000000000000038,
+          "elbow_target_error_deg": 3.8191672047105385e-14,
+          "wrist": [
+            337.6942593344042,
+            472.8279488835188
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.208333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 6.000000000000038,
+          "elbow_target_error_deg": 3.8191672047105385e-14,
+          "wrist": [
+            337.6942593344042,
+            472.8279488835188
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.25,
+          "rescue": true,
+          "elbow_flexion_deg": 6.000000000000038,
+          "elbow_target_error_deg": 3.8191672047105385e-14,
+          "wrist": [
+            337.6942593344042,
+            472.8279488835188
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.291666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 6.000000000000038,
+          "elbow_target_error_deg": 3.8191672047105385e-14,
+          "wrist": [
+            337.6942593344042,
+            472.8279488835188
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.333333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 6.000000000000038,
+          "elbow_target_error_deg": 3.8191672047105385e-14,
+          "wrist": [
+            337.6942593344042,
+            472.8279488835188
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.375,
+          "rescue": true,
+          "elbow_flexion_deg": 6.000000000000038,
+          "elbow_target_error_deg": 3.8191672047105385e-14,
+          "wrist": [
+            337.6942593344042,
+            472.8279488835188
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.416666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 6.000000000000038,
+          "elbow_target_error_deg": 3.8191672047105385e-14,
+          "wrist": [
+            337.6942593344042,
+            472.8279488835188
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.458333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 6.000000000000038,
+          "elbow_target_error_deg": 3.8191672047105385e-14,
+          "wrist": [
+            337.6942593344042,
+            472.8279488835188
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.5,
+          "rescue": true,
+          "elbow_flexion_deg": 6.000000000000038,
+          "elbow_target_error_deg": 3.8191672047105385e-14,
+          "wrist": [
+            337.6942593344042,
+            472.8279488835188
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        }
+      ]
+    },
+    "video": {
+      "status": "pass",
+      "previous_lowered_elbow_deg": 12.38675421435956,
+      "previous_lowered_pose_rejected": true,
+      "current_lowered_elbow_deg": 6.000000000000016,
+      "project_relaxed_pose_limit_deg": [
+        0,
+        12
+      ],
+      "not_a_universal_anatomical_limit": true,
+      "lowering_monotonic_extension": true,
+      "wave_states_checked": 218,
+      "max_wrist_gap_source_px": 0,
+      "paths": {
+        "False": {
+          "maximum_wrist_step_source_px": 32.768058777813735
+        },
+        "True": {
+          "maximum_wrist_step_source_px": 21.91768019304362
+        }
+      },
+      "visual_acceptance": "pending_A2d",
+      "frames": [
+        {
+          "time": 0.0,
+          "rescue": false,
+          "elbow_flexion_deg": 6.000000000000016,
+          "elbow_target_error_deg": 1.5987211554602254e-14,
+          "wrist": [
+            347.72988189999313,
+            483.7006775462363
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.041666666666666664,
+          "rescue": false,
+          "elbow_flexion_deg": 6.067943825030977,
+          "elbow_target_error_deg": 6.217248937900877e-15,
+          "wrist": [
+            347.64090998093377,
+            483.67980057222996
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.08333333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 6.2618646845435535,
+          "elbow_target_error_deg": 2.6645352591003757e-15,
+          "wrist": [
+            347.3871090335165,
+            483.61963474912324
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.125,
+          "rescue": false,
+          "elbow_flexion_deg": 6.566896655167277,
+          "elbow_target_error_deg": 3.552713678800501e-14,
+          "wrist": [
+            346.9883035356686,
+            483.5232583142746
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.16666666666666666,
+          "rescue": false,
+          "elbow_flexion_deg": 6.968173813531545,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            346.46445684805315,
+            483.393241533719
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.20833333333333334,
+          "rescue": false,
+          "elbow_flexion_deg": 7.45083023626602,
+          "elbow_target_error_deg": 5.5067062021407764e-14,
+          "wrist": [
+            345.83559933810363,
+            483.23200179498315
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.25,
+          "rescue": false,
+          "elbow_flexion_deg": 8.00000000000004,
+          "elbow_target_error_deg": 4.085620730620576e-14,
+          "wrist": [
+            345.1217625290012,
+            483.0421070116019
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.2916666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 9.523609521586526,
+          "elbow_target_error_deg": 1.7763568394002505e-15,
+          "wrist": [
+            339.5918706516664,
+            481.7933431691795
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.3333333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 12.723956407858088,
+          "elbow_target_error_deg": 1.5987211554602254e-14,
+          "wrist": [
+            325.7090645393305,
+            477.98236636731025
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.375,
+          "rescue": false,
+          "elbow_flexion_deg": 17.277731520413656,
+          "elbow_target_error_deg": 2.4868995751603507e-14,
+          "wrist": [
+            305.57925472800764,
+            470.44612939383563
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.4166666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 22.861625720852192,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            281.7292556388573,
+            457.99271248977703
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.4583333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 29.15232987077273,
+          "elbow_target_error_deg": 3.552713678800501e-15,
+          "wrist": [
+            256.98543480286935,
+            440.01617858984616
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.5,
+          "rescue": false,
+          "elbow_flexion_deg": 35.82653483177426,
+          "elbow_target_error_deg": 7.105427357601002e-15,
+          "wrist": [
+            234.1240881208853,
+            416.88479518991124
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.5416666666666666,
+          "rescue": false,
+          "elbow_flexion_deg": 42.560931465455766,
+          "elbow_target_error_deg": 4.263256414560601e-14,
+          "wrist": [
+            215.3840958331801,
+            390.0043494137898
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 0.5833333333333334,
+          "rescue": false,
+          "elbow_flexion_deg": 49.03221063341618,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            202.0315308161867,
+            361.54605044810796
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.625,
+          "rescue": false,
+          "elbow_flexion_deg": 54.917063197254585,
+          "elbow_target_error_deg": 4.263256414560601e-14,
+          "wrist": [
+            194.15914130387287,
+            333.95823461607534
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.6666666666666666,
+          "rescue": false,
+          "elbow_flexion_deg": 59.892180018569846,
+          "elbow_target_error_deg": 7.105427357601002e-15,
+          "wrist": [
+            190.79688986066748,
+            309.4703427037576
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.7083333333333334,
+          "rescue": false,
+          "elbow_flexion_deg": 63.66754391605237,
+          "elbow_target_error_deg": 7.105427357601002e-15,
+          "wrist": [
+            190.28427650275367,
+            289.63276723377646
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.75,
+          "rescue": false,
+          "elbow_flexion_deg": 67.07286402609066,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            191.7107781593922,
+            270.53251401865003
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.7916666666666666,
+          "rescue": false,
+          "elbow_flexion_deg": 70.51993070608194,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            195.41729326779304,
+            250.81152521629684
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.8333333333333334,
+          "rescue": false,
+          "elbow_flexion_deg": 73.91203352919742,
+          "elbow_target_error_deg": 4.263256414560601e-14,
+          "wrist": [
+            201.43545841951257,
+            231.5802204264661
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 0.875,
+          "rescue": false,
+          "elbow_flexion_deg": 77.15246206860793,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            209.4087202649793,
+            213.81570743803678
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.9166666666666666,
+          "rescue": false,
+          "elbow_flexion_deg": 80.14450589748483,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            218.65661053437339,
+            198.2680238045427
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 0.9583333333333334,
+          "rescue": false,
+          "elbow_flexion_deg": 82.79145458899902,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            228.27952192493444,
+            185.41211183790134
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.0,
+          "rescue": false,
+          "elbow_flexion_deg": 84.99659771632169,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            237.27512394657833,
+            175.46102804842567
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.0416666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 86.66322485262381,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            244.63987541606213,
+            168.44074561090864
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.0833333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 87.69462557107661,
+          "elbow_target_error_deg": 4.263256414560601e-14,
+          "wrist": [
+            249.4410509720346,
+            164.31630723907276
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.125,
+          "rescue": false,
+          "elbow_flexion_deg": 87.99522775969056,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            250.8847749649585,
+            163.13264725348182
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.1666666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 87.6196347723743,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            250.28361653562072,
+            163.1629333602464
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.2083333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 86.76384186730074,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            248.92030618325498,
+            163.2400645610293
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.25,
+          "rescue": false,
+          "elbow_flexion_deg": 85.59693352255336,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            247.0566605955168,
+            163.3811897084953
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.2916666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 84.28799421621584,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            244.9607936638036,
+            163.5890148474376
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.3333333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 83.00610842637165,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            242.9039875966642,
+            163.8434498586472
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.375,
+          "rescue": false,
+          "elbow_flexion_deg": 81.92036063110444,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            241.15955214893086,
+            164.09844972037342
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 6.355287432313019e-14
+        },
+        {
+          "time": 1.4166666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 81.1998353084977,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            240.00113378755475,
+            164.28769936092766
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.4583333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 81.02008422416586,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            239.7160624844895,
+            164.33224461012358
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.5,
+          "rescue": false,
+          "elbow_flexion_deg": 81.66472303206997,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            240.88083115832114,
+            163.9943763357334
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.5416666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 83.03822481373503,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            243.36289231120514,
+            163.3260033078011
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.5833333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 84.89763524457403,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            246.72067729247536,
+            162.53266676391232
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.625,
+          "rescue": false,
+          "elbow_flexion_deg": 87.00000000000001,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            250.5080164469718,
+            161.78955192028454
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.6666666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 89.10236475542598,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            254.2785266163156,
+            161.20874857628053
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.7083333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 90.96177518626499,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            257.5934237952223,
+            160.82923218400072
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 6.355287432313019e-14
+        },
+        {
+          "time": 1.75,
+          "rescue": false,
+          "elbow_flexion_deg": 92.33527696793003,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            260.0269929553404,
+            160.6290619701354
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.7916666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 92.97991577583417,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            261.1640989343855,
+            160.55843136148223
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.8333333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 92.69420149011987,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            260.66053726875987,
+            160.58790446658836
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.875,
+          "rescue": false,
+          "elbow_flexion_deg": 91.58309037900875,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            258.69600490225355,
+            160.73028401586836
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.9166666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 89.88888888888889,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            255.68331225652543,
+            161.03291357511335
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.9583333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 87.85455134434726,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            252.043066334058,
+            161.53396296128054
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 2.0,
+          "rescue": false,
+          "elbow_flexion_deg": 85.72303206997088,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            248.20913866925315,
+            162.22149029546824
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 4.0194366942304644e-14
+        },
+        {
+          "time": 2.0416666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 83.73728539034664,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            244.6258218983412,
+            163.0127163600584
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 2.0833333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 82.14026563006156,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            241.7401973052026,
+            163.75503658268823
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.125,
+          "rescue": false,
+          "elbow_flexion_deg": 81.17492711370261,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            239.99581283810244,
+            164.24967814474687
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.1666666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 81.07904114026564,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            239.82257576124886,
+            164.300702040604
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.2083333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 81.8888888888889,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            241.28592027296847,
+            163.8805069187848
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 4.0194366942304644e-14
+        },
+        {
+          "time": 2.25,
+          "rescue": false,
+          "elbow_flexion_deg": 83.37900874635572,
+          "elbow_target_error_deg": 4.263256414560601e-14,
+          "wrist": [
+            243.97861289341603,
+            163.17101562439981
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 4.0194366942304644e-14
+        },
+        {
+          "time": 2.2916666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 85.30644638807905,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            247.45810811756212,
+            162.37539992990122
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.3333333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 87.428247489472,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            251.27766556742688,
+            161.65811932698912
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 2.375,
+          "rescue": false,
+          "elbow_flexion_deg": 89.50145772594752,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            254.99178008176412,
+            161.116717177268
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 2.4166666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 91.2831227729187,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            258.1640296078095,
+            160.776319694428
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.4583333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 92.5302883057985,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            260.3713407715085,
+            160.6061287961073
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.5,
+          "rescue": false,
+          "elbow_flexion_deg": 93.0,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            261.1994708984355,
+            160.5564690910758
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.5416666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 92.84514882740706,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            260.9013665153732,
+            160.598717472311
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 2.5833333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 92.41145531012525,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            260.0558687572253,
+            160.73254914763547
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.625,
+          "rescue": false,
+          "elbow_flexion_deg": 91.74520944890035,
+          "elbow_target_error_deg": 5.684341886080802e-14,
+          "wrist": [
+            258.735540547864,
+            160.97391640855395
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.6666666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 90.89270124447793,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            257.01309525839855,
+            161.3425410982647
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.7083333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 89.90022069760376,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            254.96244687910755,
+            161.8582716768618
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 4.0194366942304644e-14
+        },
+        {
+          "time": 2.75,
+          "rescue": false,
+          "elbow_flexion_deg": 88.81405780902354,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            252.65937368754732,
+            162.53803633163412
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.7916666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 87.65785143541694,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            250.0711767740775,
+            163.48362257879043
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 2.8333333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 86.08466866294745,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            245.44349537945834,
+            166.27123769344232
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.875,
+          "rescue": false,
+          "elbow_flexion_deg": 84.03179644761282,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            238.65509296268024,
+            171.39463299369777
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.9166666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 81.59015249050361,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            230.43647652538021,
+            178.75925914086653
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.9583333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 78.85065449271063,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            221.54859241716107,
+            188.18860631357433
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.0,
+          "rescue": false,
+          "elbow_flexion_deg": 75.90422015532447,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            212.71927069305457,
+            199.34505101325934
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 4.0194366942304644e-14
+        },
+        {
+          "time": 3.0416666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 72.8417671794358,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            204.56978475416042,
+            211.69061442983838
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.0833333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 69.75198833504784,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            197.5407513206252,
+            224.49981840632364
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.125,
+          "rescue": false,
+          "elbow_flexion_deg": 66.33794391307018,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            191.13494469866822,
+            238.90113862406432
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.1666666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 62.4447365090187,
+          "elbow_target_error_deg": 3.552713678800501e-14,
+          "wrist": [
+            185.48101206827766,
+            255.9011327118163
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.2083333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 58.21967007523312,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            181.38229161446978,
+            275.0312170848349
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.25,
+          "rescue": false,
+          "elbow_flexion_deg": 53.81004856405341,
+          "elbow_target_error_deg": 5.684341886080802e-14,
+          "wrist": [
+            179.4653243963293,
+            295.6092168267662
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.2916666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 49.36317592781918,
+          "elbow_target_error_deg": 3.552713678800501e-14,
+          "wrist": [
+            180.0892715223341,
+            316.78101041496666
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.3333333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 45.026356118870176,
+          "elbow_target_error_deg": 7.105427357601002e-15,
+          "wrist": [
+            183.2839925990786,
+            337.60299074059253
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 3.375,
+          "rescue": false,
+          "elbow_flexion_deg": 40.94689308954633,
+          "elbow_target_error_deg": 7.105427357601002e-15,
+          "wrist": [
+            188.73320918082297,
+            357.14476721889775
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 6.355287432313019e-14
+        },
+        {
+          "time": 3.4166666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 37.272090792187385,
+          "elbow_target_error_deg": 2.1316282072803006e-14,
+          "wrist": [
+            195.8080503104602,
+            374.58547543109745
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.4583333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 33.82445553840169,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            204.27964595180393,
+            390.4905454307465
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.5,
+          "rescue": false,
+          "elbow_flexion_deg": 30.28523501094004,
+          "elbow_target_error_deg": 3.552713678800501e-15,
+          "wrist": [
+            214.55439335218506,
+            405.92759305211723
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.5416666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 26.757281704411394,
+          "elbow_target_error_deg": 7.105427357601002e-15,
+          "wrist": [
+            226.3667877654427,
+            420.3545689122236
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.5833333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 23.345859207161848,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            239.27952838143756,
+            433.3178722380326
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.625,
+          "rescue": false,
+          "elbow_flexion_deg": 20.156231107537536,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            252.71983908213036,
+            444.49690243915416
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.6666666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 17.293660993884497,
+          "elbow_target_error_deg": 3.552713678800501e-15,
+          "wrist": [
+            266.0238238247725,
+            453.7212832865622
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 3.7083333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 14.863412454548811,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            278.48448782123427,
+            460.9656139772762
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 3.75,
+          "rescue": false,
+          "elbow_flexion_deg": 12.970749077876633,
+          "elbow_target_error_deg": 4.085620730620576e-14,
+          "wrist": [
+            289.3954388186394,
+            466.32100301055095
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.7916666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 11.69395231357191,
+          "elbow_target_error_deg": 5.684341886080802e-14,
+          "wrist": [
+            298.20091408686176,
+            469.9989610320114
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.8333333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 10.631867119420738,
+          "elbow_target_error_deg": 1.2434497875801753e-14,
+          "wrist": [
+            306.45609742596514,
+            473.04801757983756
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.875,
+          "rescue": false,
+          "elbow_flexion_deg": 9.632742585034075,
+          "elbow_target_error_deg": 1.5987211554602254e-14,
+          "wrist": [
+            314.64667201488146,
+            475.7556189233651
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.9166666666666665,
+          "rescue": false,
+          "elbow_flexion_deg": 8.715806845426606,
+          "elbow_target_error_deg": 3.552713678800501e-15,
+          "wrist": [
+            322.5092724070464,
+            478.06710651925994
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 3.9583333333333335,
+          "rescue": false,
+          "elbow_flexion_deg": 7.900288035613272,
+          "elbow_target_error_deg": 4.1744385725905886e-14,
+          "wrist": [
+            329.7724805986479,
+            479.9601660583221
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.0,
+          "rescue": false,
+          "elbow_flexion_deg": 7.20541429060885,
+          "elbow_target_error_deg": 6.838973831690964e-14,
+          "wrist": [
+            336.1614668041146,
+            481.43951202602784
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 4.041666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 6.650413745428074,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            341.402047481228,
+            482.5280503294765
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 4.083333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 6.254514535086008,
+          "elbow_target_error_deg": 1.7763568394002505e-15,
+          "wrist": [
+            345.2238003608969,
+            483.25442495869777
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 4.125,
+          "rescue": false,
+          "elbow_flexion_deg": 6.036944794597363,
+          "elbow_target_error_deg": 4.440892098500626e-15,
+          "wrist": [
+            347.3622359225899,
+            483.6369575807747
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.166666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 6.000000000000016,
+          "elbow_target_error_deg": 1.5987211554602254e-14,
+          "wrist": [
+            347.72988189999313,
+            483.7006775462363
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 4.208333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 6.000000000000016,
+          "elbow_target_error_deg": 1.5987211554602254e-14,
+          "wrist": [
+            347.72988189999313,
+            483.7006775462363
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 4.25,
+          "rescue": false,
+          "elbow_flexion_deg": 6.000000000000016,
+          "elbow_target_error_deg": 1.5987211554602254e-14,
+          "wrist": [
+            347.72988189999313,
+            483.7006775462363
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 4.291666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 6.000000000000016,
+          "elbow_target_error_deg": 1.5987211554602254e-14,
+          "wrist": [
+            347.72988189999313,
+            483.7006775462363
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 4.333333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 6.000000000000016,
+          "elbow_target_error_deg": 1.5987211554602254e-14,
+          "wrist": [
+            347.72988189999313,
+            483.7006775462363
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 4.375,
+          "rescue": false,
+          "elbow_flexion_deg": 6.000000000000016,
+          "elbow_target_error_deg": 1.5987211554602254e-14,
+          "wrist": [
+            347.72988189999313,
+            483.7006775462363
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 4.416666666666667,
+          "rescue": false,
+          "elbow_flexion_deg": 6.000000000000016,
+          "elbow_target_error_deg": 1.5987211554602254e-14,
+          "wrist": [
+            347.72988189999313,
+            483.7006775462363
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 4.458333333333333,
+          "rescue": false,
+          "elbow_flexion_deg": 6.000000000000016,
+          "elbow_target_error_deg": 1.5987211554602254e-14,
+          "wrist": [
+            347.72988189999313,
+            483.7006775462363
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 4.5,
+          "rescue": false,
+          "elbow_flexion_deg": 6.000000000000016,
+          "elbow_target_error_deg": 1.5987211554602254e-14,
+          "wrist": [
+            347.72988189999313,
+            483.7006775462363
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.0,
+          "rescue": true,
+          "elbow_flexion_deg": 6.00000000000003,
+          "elbow_target_error_deg": 3.019806626980426e-14,
+          "wrist": [
+            268.6955626372891,
+            454.5236964130317
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 8.038873388460929e-14
+        },
+        {
+          "time": 0.041666666666666664,
+          "rescue": true,
+          "elbow_flexion_deg": 6.067943825030999,
+          "elbow_target_error_deg": 2.7533531010703882e-14,
+          "wrist": [
+            268.6208899625408,
+            454.47101015229225
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.08333333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 6.261864684543584,
+          "elbow_target_error_deg": 3.2862601528904634e-14,
+          "wrist": [
+            268.40810833585573,
+            454.32014986419324
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.125,
+          "rescue": true,
+          "elbow_flexion_deg": 6.566896655167198,
+          "elbow_target_error_deg": 4.3520742565306136e-14,
+          "wrist": [
+            268.07444556508295,
+            454.0813960208567
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.16666666666666666,
+          "rescue": true,
+          "elbow_flexion_deg": 6.968173813531551,
+          "elbow_target_error_deg": 5.329070518200751e-15,
+          "wrist": [
+            267.63744851730854,
+            453.7646101379829
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.20833333333333334,
+          "rescue": true,
+          "elbow_flexion_deg": 7.450830236265986,
+          "elbow_target_error_deg": 2.1316282072803006e-14,
+          "wrist": [
+            267.11478345651136,
+            453.37953708596626
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.25,
+          "rescue": true,
+          "elbow_flexion_deg": 8.00000000000003,
+          "elbow_target_error_deg": 3.019806626980426e-14,
+          "wrist": [
+            266.524061330226,
+            452.93606173343596
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.2916666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 9.523609521586538,
+          "elbow_target_error_deg": 1.0658141036401503e-14,
+          "wrist": [
+            263.1996526061272,
+            450.58206282356684
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 0.3333333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 12.723956407858077,
+          "elbow_target_error_deg": 5.329070518200751e-15,
+          "wrist": [
+            255.28948233899428,
+            444.56955649512327
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.375,
+          "rescue": true,
+          "elbow_flexion_deg": 17.27773152041365,
+          "elbow_target_error_deg": 1.7763568394002505e-14,
+          "wrist": [
+            244.24692008560262,
+            434.9042078136428
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 6.355287432313019e-14
+        },
+        {
+          "time": 0.4166666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 22.86162572085218,
+          "elbow_target_error_deg": 1.0658141036401503e-14,
+          "wrist": [
+            231.70047067989333,
+            421.64289439699644
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.4583333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 29.15232987077271,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            219.2786899116985,
+            405.14518345630125
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.5,
+          "rescue": true,
+          "elbow_flexion_deg": 35.826534831774275,
+          "elbow_target_error_deg": 2.1316282072803006e-14,
+          "wrist": [
+            208.39276111942365,
+            386.1888419493034
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 0.5416666666666666,
+          "rescue": true,
+          "elbow_flexion_deg": 42.56093146545578,
+          "elbow_target_error_deg": 5.684341886080802e-14,
+          "wrist": [
+            200.02170524805777,
+            365.9327285846175
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 0.5833333333333334,
+          "rescue": true,
+          "elbow_flexion_deg": 49.03221063341618,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            194.56770531515247,
+            345.753509126342
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.625,
+          "rescue": true,
+          "elbow_flexion_deg": 54.917063197254606,
+          "elbow_target_error_deg": 6.394884621840902e-14,
+          "wrist": [
+            191.83259185035823,
+            327.02482766357014
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.6666666666666666,
+          "rescue": true,
+          "elbow_flexion_deg": 59.892180018569846,
+          "elbow_target_error_deg": 7.105427357601002e-15,
+          "wrist": [
+            190.79688986066748,
+            309.4703427037576
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.7083333333333334,
+          "rescue": true,
+          "elbow_flexion_deg": 63.66754391605237,
+          "elbow_target_error_deg": 7.105427357601002e-15,
+          "wrist": [
+            190.28427650275367,
+            289.63276723377646
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.75,
+          "rescue": true,
+          "elbow_flexion_deg": 67.07286402609066,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            191.7107781593922,
+            270.53251401865003
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.7916666666666666,
+          "rescue": true,
+          "elbow_flexion_deg": 70.51993070608194,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            195.41729326779304,
+            250.81152521629684
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.8333333333333334,
+          "rescue": true,
+          "elbow_flexion_deg": 73.91203352919742,
+          "elbow_target_error_deg": 4.263256414560601e-14,
+          "wrist": [
+            201.43545841951257,
+            231.5802204264661
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 0.875,
+          "rescue": true,
+          "elbow_flexion_deg": 77.15246206860793,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            209.4087202649793,
+            213.81570743803678
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 0.9166666666666666,
+          "rescue": true,
+          "elbow_flexion_deg": 80.14450589748483,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            218.65661053437339,
+            198.2680238045427
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 0.9583333333333334,
+          "rescue": true,
+          "elbow_flexion_deg": 82.79145458899902,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            228.27952192493444,
+            185.41211183790134
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.0,
+          "rescue": true,
+          "elbow_flexion_deg": 84.99659771632169,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            237.27512394657833,
+            175.46102804842567
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.0416666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 86.66322485262381,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            244.63987541606213,
+            168.44074561090864
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.0833333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 87.69462557107661,
+          "elbow_target_error_deg": 4.263256414560601e-14,
+          "wrist": [
+            249.4410509720346,
+            164.31630723907276
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.125,
+          "rescue": true,
+          "elbow_flexion_deg": 87.99522775969056,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            250.8847749649585,
+            163.13264725348182
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.1666666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 87.6196347723743,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            250.28361653562072,
+            163.1629333602464
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.2083333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 86.76384186730074,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            248.92030618325498,
+            163.2400645610293
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.25,
+          "rescue": true,
+          "elbow_flexion_deg": 85.59693352255336,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            247.0566605955168,
+            163.3811897084953
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.2916666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 84.28799421621584,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            244.9607936638036,
+            163.5890148474376
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.3333333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 83.00610842637165,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            242.9039875966642,
+            163.8434498586472
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.375,
+          "rescue": true,
+          "elbow_flexion_deg": 81.92036063110444,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            241.15955214893086,
+            164.09844972037342
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 6.355287432313019e-14
+        },
+        {
+          "time": 1.4166666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 81.1998353084977,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            240.00113378755475,
+            164.28769936092766
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.4583333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 81.02008422416586,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            239.7160624844895,
+            164.33224461012358
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.5,
+          "rescue": true,
+          "elbow_flexion_deg": 81.66472303206997,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            240.88083115832114,
+            163.9943763357334
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.5416666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 83.03822481373503,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            243.36289231120514,
+            163.3260033078011
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.5833333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 84.89763524457403,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            246.72067729247536,
+            162.53266676391232
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.625,
+          "rescue": true,
+          "elbow_flexion_deg": 87.00000000000001,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            250.5080164469718,
+            161.78955192028454
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.6666666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 89.10236475542598,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            254.2785266163156,
+            161.20874857628053
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 1.7083333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 90.96177518626499,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            257.5934237952223,
+            160.82923218400072
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 6.355287432313019e-14
+        },
+        {
+          "time": 1.75,
+          "rescue": true,
+          "elbow_flexion_deg": 92.33527696793003,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            260.0269929553404,
+            160.6290619701354
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.7916666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 92.97991577583417,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            261.1640989343855,
+            160.55843136148223
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.8333333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 92.69420149011987,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            260.66053726875987,
+            160.58790446658836
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.875,
+          "rescue": true,
+          "elbow_flexion_deg": 91.58309037900875,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            258.69600490225355,
+            160.73028401586836
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.9166666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 89.88888888888889,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            255.68331225652543,
+            161.03291357511335
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 1.9583333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 87.85455134434726,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            252.043066334058,
+            161.53396296128054
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 2.0,
+          "rescue": true,
+          "elbow_flexion_deg": 85.72303206997088,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            248.20913866925315,
+            162.22149029546824
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 4.0194366942304644e-14
+        },
+        {
+          "time": 2.0416666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 83.73728539034664,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            244.6258218983412,
+            163.0127163600584
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 2.0833333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 82.14026563006156,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            241.7401973052026,
+            163.75503658268823
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.125,
+          "rescue": true,
+          "elbow_flexion_deg": 81.17492711370261,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            239.99581283810244,
+            164.24967814474687
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.1666666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 81.07904114026564,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            239.82257576124886,
+            164.300702040604
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.2083333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 81.8888888888889,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            241.28592027296847,
+            163.8805069187848
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 4.0194366942304644e-14
+        },
+        {
+          "time": 2.25,
+          "rescue": true,
+          "elbow_flexion_deg": 83.37900874635572,
+          "elbow_target_error_deg": 4.263256414560601e-14,
+          "wrist": [
+            243.97861289341603,
+            163.17101562439981
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 4.0194366942304644e-14
+        },
+        {
+          "time": 2.2916666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 85.30644638807905,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            247.45810811756212,
+            162.37539992990122
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.3333333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 87.428247489472,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            251.27766556742688,
+            161.65811932698912
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 2.375,
+          "rescue": true,
+          "elbow_flexion_deg": 89.50145772594752,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            254.99178008176412,
+            161.116717177268
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 2.4166666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 91.2831227729187,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            258.1640296078095,
+            160.776319694428
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.4583333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 92.5302883057985,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            260.3713407715085,
+            160.6061287961073
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.5,
+          "rescue": true,
+          "elbow_flexion_deg": 93.0,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            261.1994708984355,
+            160.5564690910758
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.5416666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 92.84514882740706,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            260.9013665153732,
+            160.598717472311
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 2.5833333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 92.41145531012525,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            260.0558687572253,
+            160.73254914763547
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.625,
+          "rescue": true,
+          "elbow_flexion_deg": 91.74520944890035,
+          "elbow_target_error_deg": 5.684341886080802e-14,
+          "wrist": [
+            258.735540547864,
+            160.97391640855395
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.6666666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 90.89270124447793,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            257.01309525839855,
+            161.3425410982647
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.7083333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 89.90022069760376,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            254.96244687910755,
+            161.8582716768618
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 4.0194366942304644e-14
+        },
+        {
+          "time": 2.75,
+          "rescue": true,
+          "elbow_flexion_deg": 88.81405780902354,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            252.65937368754732,
+            162.53803633163412
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.7916666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 87.65785143541694,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            250.0711767740775,
+            163.48362257879043
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 2.8333333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 86.08466866294745,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            245.44349537945834,
+            166.27123769344232
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.875,
+          "rescue": true,
+          "elbow_flexion_deg": 84.03179644761282,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            238.65509296268024,
+            171.39463299369777
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.9166666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 81.59015249050361,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            230.43647652538021,
+            178.75925914086653
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 2.9583333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 78.85065449271063,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            221.54859241716107,
+            188.18860631357433
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.0,
+          "rescue": true,
+          "elbow_flexion_deg": 75.90422015532447,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            212.71927069305457,
+            199.34505101325934
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 4.0194366942304644e-14
+        },
+        {
+          "time": 3.0416666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 72.8417671794358,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            204.56978475416042,
+            211.69061442983838
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.0833333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 69.75198833504784,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            197.5407513206252,
+            224.49981840632364
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.125,
+          "rescue": true,
+          "elbow_flexion_deg": 66.33794391307018,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            191.13494469866822,
+            238.90113862406432
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.1666666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 62.4447365090187,
+          "elbow_target_error_deg": 3.552713678800501e-14,
+          "wrist": [
+            185.48101206827766,
+            255.9011327118163
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.2083333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 58.21967007523312,
+          "elbow_target_error_deg": 0.0,
+          "wrist": [
+            181.38229161446978,
+            275.0312170848349
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.25,
+          "rescue": true,
+          "elbow_flexion_deg": 53.81004856405341,
+          "elbow_target_error_deg": 5.684341886080802e-14,
+          "wrist": [
+            179.4653243963293,
+            295.6092168267662
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.2916666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 49.36317592781918,
+          "elbow_target_error_deg": 3.552713678800501e-14,
+          "wrist": [
+            180.0892715223341,
+            316.78101041496666
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.3333333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 45.0263561188702,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            183.10330311095672,
+            337.0811341940228
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.375,
+          "rescue": true,
+          "elbow_flexion_deg": 40.94689308954633,
+          "elbow_target_error_deg": 7.105427357601002e-15,
+          "wrist": [
+            185.71276476461682,
+            350.2801815313029
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.4166666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 37.27209079218734,
+          "elbow_target_error_deg": 2.1316282072803006e-14,
+          "wrist": [
+            189.204565429168,
+            362.17406358881885
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.4583333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 33.82445553840173,
+          "elbow_target_error_deg": 2.1316282072803006e-14,
+          "wrist": [
+            193.44919417969854,
+            373.19593205212306
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.5,
+          "rescue": true,
+          "elbow_flexion_deg": 30.285235010940063,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            198.65176060777515,
+            384.18045654969
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.5416666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 26.757281704411415,
+          "elbow_target_error_deg": 1.4210854715202004e-14,
+          "wrist": [
+            204.69925737565256,
+            394.7873170174278
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.5833333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 23.345859207161865,
+          "elbow_target_error_deg": 1.7763568394002505e-14,
+          "wrist": [
+            211.38368566843718,
+            404.702559070676
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.625,
+          "rescue": true,
+          "elbow_flexion_deg": 20.156231107537565,
+          "elbow_target_error_deg": 2.842170943040401e-14,
+          "wrist": [
+            218.415219372058,
+            413.6614389637482
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.6666666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 17.293660993884505,
+          "elbow_target_error_deg": 3.552713678800501e-15,
+          "wrist": [
+            225.44045905414652,
+            421.45776793615653
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.7083333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 14.86341245454882,
+          "elbow_target_error_deg": 8.881784197001252e-15,
+          "wrist": [
+            232.0649396054358,
+            427.9439455711092
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 2.842170943040401e-14
+        },
+        {
+          "time": 3.75,
+          "rescue": true,
+          "elbow_flexion_deg": 12.970749077876627,
+          "elbow_target_error_deg": 3.552713678800501e-14,
+          "wrist": [
+            237.87713192879016,
+            433.02046891975897
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.7916666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 11.693952313571879,
+          "elbow_target_error_deg": 2.6645352591003757e-14,
+          "wrist": [
+            242.53636067474758,
+            436.6742706108573
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.8333333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 10.631867119420777,
+          "elbow_target_error_deg": 2.6645352591003757e-14,
+          "wrist": [
+            246.8823710739701,
+            439.8889011110804
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.875,
+          "rescue": true,
+          "elbow_flexion_deg": 9.632742585034002,
+          "elbow_target_error_deg": 5.684341886080802e-14,
+          "wrist": [
+            251.19409754092223,
+            442.9678776864745
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.9166666666666665,
+          "rescue": true,
+          "elbow_flexion_deg": 8.715806845426634,
+          "elbow_target_error_deg": 2.4868995751603507e-14,
+          "wrist": [
+            255.33792337178386,
+            445.8295793785385
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 3.9583333333333335,
+          "rescue": true,
+          "elbow_flexion_deg": 7.9002880356132605,
+          "elbow_target_error_deg": 3.019806626980426e-14,
+          "wrist": [
+            259.1732325814558,
+            448.39982281145
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 8.038873388460929e-14
+        },
+        {
+          "time": 4.0,
+          "rescue": true,
+          "elbow_flexion_deg": 7.205414290608794,
+          "elbow_target_error_deg": 1.2434497875801753e-14,
+          "wrist": [
+            262.5545076661138,
+            450.6099552973392
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 4.041666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 6.650413745428097,
+          "elbow_target_error_deg": 8.881784197001252e-15,
+          "wrist": [
+            265.3338139124103,
+            452.39372195668955
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 0.0
+        },
+        {
+          "time": 4.083333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 6.254514535086021,
+          "elbow_target_error_deg": 1.509903313490213e-14,
+          "wrist": [
+            267.3636402059641,
+            453.6827902008034
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.125,
+          "rescue": true,
+          "elbow_flexion_deg": 6.03694479459738,
+          "elbow_target_error_deg": 2.1316282072803006e-14,
+          "wrist": [
+            268.5001401839722,
+            454.40093631602883
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 5.684341886080802e-14
+        },
+        {
+          "time": 4.166666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 6.00000000000003,
+          "elbow_target_error_deg": 3.019806626980426e-14,
+          "wrist": [
+            268.6955626372891,
+            454.5236964130317
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 8.038873388460929e-14
+        },
+        {
+          "time": 4.208333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 6.00000000000003,
+          "elbow_target_error_deg": 3.019806626980426e-14,
+          "wrist": [
+            268.6955626372891,
+            454.5236964130317
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 8.038873388460929e-14
+        },
+        {
+          "time": 4.25,
+          "rescue": true,
+          "elbow_flexion_deg": 6.00000000000003,
+          "elbow_target_error_deg": 3.019806626980426e-14,
+          "wrist": [
+            268.6955626372891,
+            454.5236964130317
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 8.038873388460929e-14
+        },
+        {
+          "time": 4.291666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 6.00000000000003,
+          "elbow_target_error_deg": 3.019806626980426e-14,
+          "wrist": [
+            268.6955626372891,
+            454.5236964130317
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 8.038873388460929e-14
+        },
+        {
+          "time": 4.333333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 6.00000000000003,
+          "elbow_target_error_deg": 3.019806626980426e-14,
+          "wrist": [
+            268.6955626372891,
+            454.5236964130317
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 8.038873388460929e-14
+        },
+        {
+          "time": 4.375,
+          "rescue": true,
+          "elbow_flexion_deg": 6.00000000000003,
+          "elbow_target_error_deg": 3.019806626980426e-14,
+          "wrist": [
+            268.6955626372891,
+            454.5236964130317
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 8.038873388460929e-14
+        },
+        {
+          "time": 4.416666666666667,
+          "rescue": true,
+          "elbow_flexion_deg": 6.00000000000003,
+          "elbow_target_error_deg": 3.019806626980426e-14,
+          "wrist": [
+            268.6955626372891,
+            454.5236964130317
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 8.038873388460929e-14
+        },
+        {
+          "time": 4.458333333333333,
+          "rescue": true,
+          "elbow_flexion_deg": 6.00000000000003,
+          "elbow_target_error_deg": 3.019806626980426e-14,
+          "wrist": [
+            268.6955626372891,
+            454.5236964130317
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 8.038873388460929e-14
+        },
+        {
+          "time": 4.5,
+          "rescue": true,
+          "elbow_flexion_deg": 6.00000000000003,
+          "elbow_target_error_deg": 3.019806626980426e-14,
+          "wrist": [
+            268.6955626372891,
+            454.5236964130317
+          ],
+          "wrist_gap": 0.0,
+          "wrist_attachment_error": 8.038873388460929e-14
+        }
+      ]
+    }
+  },
+  "motion_reservations": {
+    "vendor": {
+      "status": "pass",
+      "kind": "protected_human",
+      "human_attackable": false,
+      "slot_origin": [
+        760,
+        500
+      ],
+      "motion_bbox": [
+        500,
+        189,
+        505,
+        538
+      ],
+      "parallax": 0.45,
+      "camera_breath_padding": [
+        30.6,
+        15.3
+      ],
+      "alternative_slot": true,
+      "scope": "conservative actually selected attachment rectangles (including palm/alternate head/ankle compensation) over every attached-eligible frame, plus camera/breath extrema; not engine occlusion acceptance"
+    },
+    "video": {
+      "status": "pass",
+      "kind": "protected_human",
+      "human_attackable": false,
+      "slot_origin": [
+        760,
+        500
+      ],
+      "motion_bbox": [
+        569,
+        314,
+        373,
+        329
+      ],
+      "parallax": 0.45,
+      "camera_breath_padding": [
+        30.6,
+        15.3
+      ],
+      "alternative_slot": true,
+      "scope": "conservative actually selected attachment rectangles (including palm/alternate head/ankle compensation) over every attached-eligible frame, plus camera/breath extrema; not engine occlusion acceptance"
+    }
+  },
+  "accepted_ink_feedback_unchanged": [
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T06\\gallery\\crow_feedback_v3.mp4",
+      "sha256": "bd485fb2b42c373bff8cdf8b6aa88376def43e93266592c07e705575b6e62766",
+      "status": "visually_approved_A2c_unchanged"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T06\\gallery\\crow_hit_v3.mp4",
+      "sha256": "6dabebfe58a92dc36ff9d1b887c7e4ef180782b23ddd0be8cddee5f9991d6d80",
+      "status": "visually_approved_A2c_unchanged"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T06\\gallery\\crow_hit_v3.png",
+      "sha256": "8a55e95250c5fd6528fdc25b6a8d6fa01725c402e03c2575c565f190913d411c",
+      "status": "visually_approved_A2c_unchanged"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T06\\gallery\\crow_purify_v3.mp4",
+      "sha256": "d30cc055f25101ead172459cafd9abe1e6b8c4d33e694dd047062a06ceca7cbb",
+      "status": "visually_approved_A2c_unchanged"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T06\\gallery\\crow_purify_v3.png",
+      "sha256": "e88c69068c12b704297e2322f08bfd279b3b2ac2d2b3de9a61aef37547b0cd13",
+      "status": "visually_approved_A2c_unchanged"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T06\\gallery\\crow_weak_hit_v3.mp4",
+      "sha256": "9c5c68629eada342ae0be9e7f6d770406785ae881012da79f406daf4e90ce5c5",
+      "status": "visually_approved_A2c_unchanged"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T06\\gallery\\crow_weak_hit_v3.png",
+      "sha256": "28b7456e20100a0afc303aa92018276e68fad0af4f3fef542b4baaad99bf352c",
+      "status": "visually_approved_A2c_unchanged"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T06\\gallery\\tadpole0_feedback_v3.mp4",
+      "sha256": "65a748cef2c8599836140be90a0c244cd48993fa8af8583931b298bf70e52ba9",
+      "status": "visually_approved_A2c_unchanged"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T06\\gallery\\tadpole0_hit_v3.mp4",
+      "sha256": "ce156b6944b576d22f39819c669ee64b91a2aa0082f71d3e49aa3b34bbdc6b90",
+      "status": "visually_approved_A2c_unchanged"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T06\\gallery\\tadpole0_hit_v3.png",
+      "sha256": "bed736d0f7ca13065f67f6594e3d6bddfa01377963eb9e78baa4976c0c3b59cb",
+      "status": "visually_approved_A2c_unchanged"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T06\\gallery\\tadpole0_purify_v3.mp4",
+      "sha256": "5a3f76091ff2e4ad8b9699c1facc65562a5796d922dc9550d1204a0f44a104b3",
+      "status": "visually_approved_A2c_unchanged"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T06\\gallery\\tadpole0_purify_v3.png",
+      "sha256": "49cdc6d7541ee0441dbb92acb35b8d96cdc8cf95f8c3e050c12e2453dc1dd13f",
+      "status": "visually_approved_A2c_unchanged"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T06\\gallery\\tadpole0_weak_hit_v3.mp4",
+      "sha256": "510842341d0e6aff7902e88b21b75ce4c7ac4145d00458d0ac5a5f1929199876",
+      "status": "visually_approved_A2c_unchanged"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T06\\gallery\\tadpole0_weak_hit_v3.png",
+      "sha256": "962491d88691a6d0a5edc44d901c45ab694b28937987aa8069af0877f2f67f51",
+      "status": "visually_approved_A2c_unchanged"
+    }
+  ],
+  "scope": "offline animation and rescue subset only",
+  "production_approved": false,
+  "actual_0B": false
+}

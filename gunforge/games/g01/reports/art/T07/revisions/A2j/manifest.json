@@ -1,0 +1,55 @@
+{
+  "revision": "A2j",
+  "checker_version": "art-checks-0.3-initial-offline",
+  "rules_version": "g01-character-occlusion-1",
+  "renderer_changed": false,
+  "new_image_calls": 0,
+  "production_approved": false,
+  "actual_0B": false,
+  "outputs": [
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2j\\browser_rules_ready.png",
+      "sha256": "e2bcf28450930ffb929d044385f6684383d671e668e98c16f9f422d7f4fbfa8c"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2j\\checks.json",
+      "sha256": "e0e36bf1af0f7a208f6ac0d438e102d71b2e58e90aa92d5a55b25a2d23ccbb29"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2j\\current_occlusion_audit.json",
+      "sha256": "15eb24ae3e241633a5482e1088886659869585ab4e40a33149c2818963688724"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2j\\report.md",
+      "sha256": "2c6ad2354b0ba973598ad340437dc09447ec2fe06b1ad4ee6f18f1b0698a3142"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2j\\user_feedback.yaml",
+      "sha256": "9a11c714d2075be3e57b20380fecf9f2c9bb17a7693a2af39f5e9595ee1595c9"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2j\\verification.md",
+      "sha256": "cf17958a77ffde0a4b69410579abb066ec4d43ba57d4226f46cfcb7dad42e0ce"
+    },
+    {
+      "file": "D:\\tvgun\\docs\\art\\CHARACTER_OCCLUSION_RULES_A2j.md",
+      "sha256": "aa65c2028c0a46c6d8fe7a5a2be5f27e740ad2c7a92bf95a815e6d78e2982a16"
+    },
+    {
+      "file": "D:\\tvgun\\docs\\art\\CHARACTER_OCCLUSION_CONTRACT_A2j.yaml",
+      "sha256": "1ba9e5627e88860b1920914df0cc7f723d54d43d1bef4f1acd25c5d476a2de28"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\index.html",
+      "sha256": "346f8bce71798b02e42497f3f8b94999aea664fe6cf522312e96cd37fbd25347"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\pipeline\\art\\audit_character_occlusion.py",
+      "sha256": "8a5fb7f0869510b2406ea9f50c61ab1df73d59a80adbdf8d72e82e62528e29fc"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\pipeline\\art\\publish_a2j.py",
+      "sha256": "bad9d2d154a5403a4c94ca964ba3221dd68bf01b1c8489046a828d48499db51e"
+    }
+  ]
+}

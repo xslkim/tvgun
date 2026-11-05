@@ -1,0 +1,696 @@
+{
+  "C07b_motion": {
+    "static": {
+      "far_base": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "far_town": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_ground": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_left": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_right": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "near_left": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "near_right": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      }
+    },
+    "-60_-30_1": {
+      "far_base": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "far_town": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_ground": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_left": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_right": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "near_left": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "near_right": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      }
+    },
+    "-60_-30_-1": {
+      "far_base": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "far_town": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_ground": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_left": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_right": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "near_left": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "near_right": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      }
+    },
+    "-60_30_1": {
+      "far_base": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "far_town": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_ground": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_left": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_right": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "near_left": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "near_right": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      }
+    },
+    "-60_30_-1": {
+      "far_base": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "far_town": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_ground": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_left": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_right": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "near_left": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "near_right": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      }
+    },
+    "60_-30_1": {
+      "far_base": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "far_town": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_ground": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_left": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_right": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "near_left": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "near_right": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      }
+    },
+    "60_-30_-1": {
+      "far_base": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "far_town": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_ground": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_left": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_right": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "near_left": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "near_right": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      }
+    },
+    "60_30_1": {
+      "far_base": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "far_town": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_ground": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_left": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_right": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "near_left": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "near_right": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      }
+    },
+    "60_30_-1": {
+      "far_base": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "far_town": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_ground": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_left": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "mid_right": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "near_left": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "near_right": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      }
+    }
+  },
+  "extent_scope": "Only declared current shape support; independent complete hidden geometry remains unapproved",
+  "C03_bands": {
+    "far_base": {
+      "band": "far",
+      "weighted_mean_Yprime": 0.17612428044702358,
+      "required": [
+        0.45,
+        0.75
+      ],
+      "C03_band": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      }
+    },
+    "far_town": {
+      "band": "far",
+      "weighted_mean_Yprime": 0.3074290943389381,
+      "required": [
+        0.45,
+        0.75
+      ],
+      "C03_band": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      }
+    },
+    "mid_ground": {
+      "band": "middle",
+      "weighted_mean_Yprime": 0.24789496062121988,
+      "required": [
+        0.25,
+        0.55
+      ],
+      "C03_band": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      }
+    },
+    "mid_left": {
+      "band": "middle",
+      "weighted_mean_Yprime": 0.3386129547493352,
+      "required": [
+        0.25,
+        0.55
+      ],
+      "C03_band": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      }
+    },
+    "mid_right": {
+      "band": "middle",
+      "weighted_mean_Yprime": 0.3125393088676751,
+      "required": [
+        0.25,
+        0.55
+      ],
+      "C03_band": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      }
+    },
+    "near_left": {
+      "band": "near",
+      "weighted_mean_Yprime": 0.1067530322095334,
+      "required": [
+        0.05,
+        0.2
+      ],
+      "C03_band": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      }
+    },
+    "near_right": {
+      "band": "near",
+      "weighted_mean_Yprime": 0.147351570316915,
+      "required": [
+        0.05,
+        0.2
+      ],
+      "C03_band": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      }
+    }
+  },
+  "frames": {
+    "unlit": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C13": {
+        "monitor": {
+          "status": "fail",
+          "reason": "Deterministic projected screenshot screening only; real recordings remain pending",
+          "details": {
+            "samples": [
+              {
+                "acquired": true,
+                "edges": 4,
+                "low_threshold": 190
+              },
+              {
+                "acquired": false,
+                "edges": 0,
+                "low_threshold": 190
+              },
+              {
+                "acquired": true,
+                "edges": 4,
+                "low_threshold": 150
+              }
+            ]
+          }
+        },
+        "tv": {
+          "status": "fail",
+          "reason": "Deterministic projected screenshot screening only; real recordings remain pending",
+          "details": {
+            "samples": [
+              {
+                "acquired": true,
+                "edges": 4,
+                "low_threshold": 163
+              },
+              {
+                "acquired": false,
+                "edges": 0,
+                "low_threshold": 177
+              },
+              {
+                "acquired": true,
+                "edges": 4,
+                "low_threshold": 150
+              }
+            ]
+          }
+        }
+      }
+    },
+    "lit": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C13": {
+        "monitor": {
+          "status": "fail",
+          "reason": "Deterministic projected screenshot screening only; real recordings remain pending",
+          "details": {
+            "samples": [
+              {
+                "acquired": true,
+                "edges": 4,
+                "low_threshold": 190
+              },
+              {
+                "acquired": false,
+                "edges": 0,
+                "low_threshold": 190
+              },
+              {
+                "acquired": true,
+                "edges": 4,
+                "low_threshold": 150
+              }
+            ]
+          }
+        },
+        "tv": {
+          "status": "fail",
+          "reason": "Deterministic projected screenshot screening only; real recordings remain pending",
+          "details": {
+            "samples": [
+              {
+                "acquired": true,
+                "edges": 4,
+                "low_threshold": 163
+              },
+              {
+                "acquired": false,
+                "edges": 0,
+                "low_threshold": 177
+              },
+              {
+                "acquired": true,
+                "edges": 4,
+                "low_threshold": 150
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "C06": {
+    "status": "pending",
+    "reason": "Complete state contrast/recognition and bright-background layout require follow-up"
+  },
+  "C11": {
+    "status": "pending",
+    "reason": "Offline common coordinates only; full interaction and engine camera tests required"
+  },
+  "mask_registration": "Expected masks use the identical integer translation as their cropped color layer, including half-pixel tie rounding."
+}

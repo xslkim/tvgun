@@ -1,0 +1,116 @@
+{
+  "vendor": {
+    "status": "pass",
+    "scope": "all actual 24fps frames of ink-attached-eligible clips; six blobs; original minimum sizes. Complete Godot behavior remains pending.",
+    "minimum_candidate_display_height": 512,
+    "rescue_frames": 336,
+    "blob_frame_tests": 2016,
+    "minimum_effective_radius": 41.08137067511816,
+    "minimum_paper_clearance_px": 7.615773105863909,
+    "max_weak_point_occluded_pixels": 0,
+    "sampled_source_joint_max_gap_px": 0.0,
+    "negative_knee_and_foot_drift_rejected": true,
+    "original_radius_algorithm_equivalence": true,
+    "loop_endpoints": [
+      {
+        "clip": "idle",
+        "endpoint_pixel_difference": 0.0,
+        "loop_position_pass": true
+      },
+      {
+        "clip": "peek",
+        "endpoint_pixel_difference": 0.0,
+        "loop_position_pass": true
+      },
+      {
+        "clip": "walk",
+        "endpoint_pixel_difference": 0.0,
+        "loop_position_pass": true
+      },
+      {
+        "clip": "startle",
+        "endpoint_pixel_difference": 0.0,
+        "loop_position_pass": true
+      },
+      {
+        "clip": "wave_for_help",
+        "endpoint_pixel_difference": 0.0,
+        "loop_position_pass": true
+      },
+      {
+        "clip": "struggle",
+        "endpoint_pixel_difference": 0.0,
+        "loop_position_pass": true
+      },
+      {
+        "clip": "rescued_bounce",
+        "endpoint_pixel_difference": 0.0,
+        "loop_position_pass": true
+      },
+      {
+        "clip": "thank",
+        "endpoint_pixel_difference": 0.0,
+        "loop_position_pass": true
+      }
+    ],
+    "failures": [],
+    "render_contract": "Opaque paper interiors; attached ink clipped visibly to torso inset of 7 content pixels. Same visible ink mask defines target; foreground hands remain protected."
+  },
+  "video": {
+    "status": "pass",
+    "scope": "all actual 24fps frames of ink-attached-eligible clips; six blobs; original minimum sizes. Complete Godot behavior remains pending.",
+    "minimum_candidate_display_height": 300,
+    "rescue_frames": 336,
+    "blob_frame_tests": 2016,
+    "minimum_effective_radius": 40.22003035287298,
+    "minimum_paper_clearance_px": 7.615773105863909,
+    "max_weak_point_occluded_pixels": 0,
+    "sampled_source_joint_max_gap_px": 0.0,
+    "negative_knee_and_foot_drift_rejected": true,
+    "original_radius_algorithm_equivalence": true,
+    "loop_endpoints": [
+      {
+        "clip": "idle",
+        "endpoint_pixel_difference": 0.0,
+        "loop_position_pass": true
+      },
+      {
+        "clip": "peek",
+        "endpoint_pixel_difference": 0.0,
+        "loop_position_pass": true
+      },
+      {
+        "clip": "walk",
+        "endpoint_pixel_difference": 0.0,
+        "loop_position_pass": true
+      },
+      {
+        "clip": "startle",
+        "endpoint_pixel_difference": 0.0,
+        "loop_position_pass": true
+      },
+      {
+        "clip": "wave_for_help",
+        "endpoint_pixel_difference": 0.0,
+        "loop_position_pass": true
+      },
+      {
+        "clip": "struggle",
+        "endpoint_pixel_difference": 0.0,
+        "loop_position_pass": true
+      },
+      {
+        "clip": "rescued_bounce",
+        "endpoint_pixel_difference": 0.0,
+        "loop_position_pass": true
+      },
+      {
+        "clip": "thank",
+        "endpoint_pixel_difference": 0.0,
+        "loop_position_pass": true
+      }
+    ],
+    "failures": [],
+    "render_contract": "Opaque paper interiors; attached ink clipped visibly to torso inset of 7 content pixels. Same visible ink mask defines target; foreground hands remain protected."
+  }
+}

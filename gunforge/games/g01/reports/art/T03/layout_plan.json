@@ -1,0 +1,62 @@
+{
+  "content_size": [
+    1776,
+    936
+  ],
+  "actors": {
+    "resident": {
+      "bbox": [
+        650,
+        430,
+        180,
+        330
+      ],
+      "ink_center": [
+        740,
+        555
+      ],
+      "ink_radius": 55
+    },
+    "crow": {
+      "bbox": [
+        965,
+        350,
+        300,
+        220
+      ],
+      "body_center": [
+        1110,
+        460
+      ],
+      "body_radius": 58
+    },
+    "lamp": {
+      "bbox": [
+        1340,
+        430,
+        120,
+        260
+      ],
+      "head_center": [
+        1406,
+        480
+      ],
+      "head_radius": 47
+    }
+  },
+  "covers": [
+    [
+      0,
+      680,
+      350,
+      256
+    ],
+    [
+      1500,
+      650,
+      276,
+      286
+    ]
+  ],
+  "note": "Planned placement only; actual art must be annotated separately after generation."
+}

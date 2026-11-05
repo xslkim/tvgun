@@ -1,0 +1,89 @@
+{
+  "C01": {
+    "status": "pass",
+    "reason": "PNG format, channel mode and declared size",
+    "details": {
+      "mode": "RGBA",
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "C03": {
+    "status": "pass",
+    "reason": "Visible alpha-weighted encoded luminance",
+    "details": {
+      "clipped_fraction": 0.0
+    }
+  },
+  "C11": {
+    "status": "pending",
+    "reason": "Static containment passed; complete state/frame/alignment evidence missing",
+    "details": {}
+  },
+  "C16": {
+    "status": "pass",
+    "reason": "Offline SDF round-trip; engine sampling is a separate pending check",
+    "details": {
+      "max_error_px": 0.0
+    }
+  },
+  "C14": {
+    "status": "pending",
+    "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+    "details": {}
+  },
+  "minimum_size_evidence": [
+    {
+      "display_size": 90,
+      "effective_radius": 45.02572226077626
+    },
+    {
+      "display_size": 100,
+      "effective_radius": 50.10816682156454
+    },
+    {
+      "display_size": 110,
+      "effective_radius": 54.95565667073596
+    },
+    {
+      "display_size": 120,
+      "effective_radius": 59.93966704409064
+    },
+    {
+      "display_size": 130,
+      "effective_radius": 65.0508387872694
+    }
+  ],
+  "eye_containment": {
+    "status": "pass"
+  },
+  "raw_body_red_pixels": 0,
+  "gloss_normalization": {
+    "maximum_luminance": 0.599,
+    "quantile_scale": 0.9237296546248511,
+    "source_preserved": true
+  },
+  "highlight_screen": {
+    "status": "pass",
+    "bright_fraction_over_Yprime_0_22": 0.04886115130905657,
+    "max_Yprime": 0.5525686274509803,
+    "reason": "Conservative brightness proxy, not a semantic specular-area measurement"
+  },
+  "C12": {
+    "status": "pass",
+    "reason": "Aligned loop endpoint position and velocity",
+    "details": {
+      "pixel_difference": 0.0,
+      "velocity_difference": 0.00179499515855725
+    }
+  },
+  "C04": {
+    "status": "pass",
+    "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+    "details": {
+      "coverage": 0.9715671268609938
+    }
+  }
+}

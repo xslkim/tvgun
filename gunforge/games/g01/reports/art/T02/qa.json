@@ -1,0 +1,23 @@
+{
+  "static_links": "pass",
+  "report_links": "pass",
+  "output_hashes_verified": 36,
+  "reference_hashes": "pass",
+  "yaml_export": "pass_in_isolated_VM_and_PyYAML",
+  "initial_review": "all_30_pending",
+  "js_syntax": "pass",
+  "browser_render": "checked_v2_over_loopback_http",
+  "numeric_failures": {
+    "C03": 12,
+    "C04": 19
+  },
+  "approved_assets": 0,
+  "gallery_version": 2,
+  "unique_element_ids": "pass",
+  "workflow_logic": "pass_in_isolated_VM",
+  "browser_render_note": "Page DOM and screenshot verified; source assets and project review state unchanged",
+  "image_calls_for_ui_revision": 0,
+  "review_url": "http://127.0.0.1:8765/gallery/",
+  "server_pid": 9244,
+  "screenshot": "D:/gunforge_cache/g01/T02/review_web_loaded.png"
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "vendor_distress_head_v3",
+    "asset_key": "vendor_distress_head",
+    "references": [
+      "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\head.png"
+    ],
+    "prompt": "Use case: identity-preserve. Edit target is the supplied isolated paper-cut puppet head. Produce ONE transparent isolated head, same character, same 3/4 camera facing screen right, exact same hair/hat, head silhouette, skin color, paper texture, neck and circular copper neck pivot. Only change facial acting: visibly WORRIED and CALLING FOR HELP, inner eyebrows raised in anxiety, eyes open looking for rescue, small open rounded calling mouth with corners not smiling, no cheerful crescent eyes. Restrained appealing theatrical paper-cut acting, not exaggerated horror. Preserve original likeness and proportions and outer boundary as closely as possible. No extra parts, no body, no text, no shadows/background. Leave generous transparent margin. This is an alternate face attachment for a game NPC in distress, never a monster.",
+    "transparent": true,
+    "attempt": 1,
+    "state": "returned",
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-fea0b76d-d29b-4925-9f98-dde8add5be28.png",
+    "output": "D:\\gunforge_cache\\g01\\T05\\vendor_distress_head_v3_a1.png",
+    "sha256": "eb258b6a94fcd6545436048ac6001fe90641655069f74510eae72b8dd79df168",
+    "actual_size": [
+      1312,
+      1199
+    ]
+  },
+  {
+    "id": "vendor_right_palm_v3",
+    "asset_key": "vendor_right_palm",
+    "references": [
+      "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\forearm_l.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Supporting reference shows the skin color and paper texture of this puppet. Generate ONLY ONE isolated anatomical RIGHT HAND, OPEN PALM FACING THE VIEWER, wrist at bottom, four fingers pointing up, THUMB ON THE IMAGE RIGHT SIDE. This hand belongs to a front-facing person's arm on screen LEFT. Correct right-hand palm anatomy is essential: thumb extends screen RIGHT, little finger is far screen LEFT, index finger is next to the thumb, middle finger tallest. Five digits total, slightly separated relaxed curved fingertips, slim consistent paper-cut fingers. Match reference warm peach skin and tactile paper grain exactly, simple drawn palm creases; no fingernails on palm. Include a short straight bare wrist tab for attachment at bottom. No sleeve, forearm, elbow, joint metal, text, extra hands or background. Transparent background. Do NOT copy the handedness of the relaxed reference hand; this is a new correctly sided raised palm attachment.",
+    "transparent": true,
+    "attempt": 1,
+    "state": "returned",
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-e3cdf28d-ee08-492c-85af-5b4478495936.png",
+    "output": "D:\\gunforge_cache\\g01\\T05\\vendor_right_palm_v3_a1.png",
+    "sha256": "00b685962bed38fed23e8ebb6fb03657c86f48f9c60e6fc27ac4c180b3340ad0",
+    "actual_size": [
+      1136,
+      1385
+    ]
+  },
+  {
+    "id": "video_distress_head_v3",
+    "asset_key": "video_distress_head",
+    "references": [
+      "D:\\gunforge_cache\\g01\\T05\\video\\parts\\head.png"
+    ],
+    "prompt": "Use case: identity-preserve. Edit target is the supplied isolated paper-cut puppet head. Produce ONE transparent isolated head, same character, same 3/4 camera facing screen right, exact same hair/hat, head silhouette, skin color, paper texture, neck and circular copper neck pivot. Only change facial acting: visibly WORRIED and CALLING FOR HELP, inner eyebrows raised in anxiety, eyes open looking for rescue, small open rounded calling mouth with corners not smiling, no cheerful crescent eyes. Restrained appealing theatrical paper-cut acting, not exaggerated horror. Preserve original likeness and proportions and outer boundary as closely as possible. No extra parts, no body, no text, no shadows/background. Leave generous transparent margin. This is an alternate face attachment for a game NPC in distress, never a monster.",
+    "transparent": true,
+    "attempt": 1,
+    "state": "returned",
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-3bfe22d7-8959-4532-af44-f9ec857121bc.png",
+    "output": "D:\\gunforge_cache\\g01\\T05\\video_distress_head_v3_a1.png",
+    "sha256": "6037debf4bbc8d74a9dc5d096a6e4644900b68ac5138afa0aa216337ae306d3b",
+    "actual_size": [
+      1312,
+      1199
+    ]
+  },
+  {
+    "id": "video_right_palm_v3",
+    "asset_key": "video_right_palm",
+    "references": [
+      "D:\\gunforge_cache\\g01\\T05\\video\\parts\\forearm_l.png"
+    ],
+    "prompt": "Use case: precise-object-edit. Supporting reference shows the skin color and paper texture of this puppet. Generate ONLY ONE isolated anatomical RIGHT HAND, OPEN PALM FACING THE VIEWER, wrist at bottom, four fingers pointing up, THUMB ON THE IMAGE RIGHT SIDE. This hand belongs to a front-facing person's arm on screen LEFT. Correct right-hand palm anatomy is essential: thumb extends screen RIGHT, little finger is far screen LEFT, index finger is next to the thumb, middle finger tallest. Five digits total, slightly separated relaxed curved fingertips, slim consistent paper-cut fingers. Match reference warm peach skin and tactile paper grain exactly, simple drawn palm creases; no fingernails on palm. Include a short straight bare wrist tab for attachment at bottom. No sleeve, forearm, elbow, joint metal, text, extra hands or background. Transparent background. Do NOT copy the handedness of the relaxed reference hand; this is a new correctly sided raised palm attachment.",
+    "transparent": true,
+    "attempt": 1,
+    "state": "returned",
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-4bb71c84-7b19-4a45-8608-4c7f1e0e92ba.png",
+    "output": "D:\\gunforge_cache\\g01\\T05\\video_right_palm_v3_a1.png",
+    "sha256": "d6aca50dd9e53c3ff9b6a0e289201297761c7134597f712e33d64c35934cb8ff",
+    "actual_size": [
+      1079,
+      1458
+    ]
+  }
+]

@@ -1,0 +1,170 @@
+{
+  "unlit_monitor": {
+    "status": "pass",
+    "reason": "Deterministic projected screenshot screening only; real recordings remain pending",
+    "details": {
+      "samples": [
+        {
+          "acquired": true,
+          "edges": 4,
+          "low_threshold": 190,
+          "within_tracker_geometry_contract": true,
+          "role": "acquisition",
+          "expected": "acquire_four_edges"
+        },
+        {
+          "acquired": true,
+          "edges": 4,
+          "low_threshold": 188,
+          "within_tracker_geometry_contract": true,
+          "role": "acquisition",
+          "expected": "acquire_four_edges"
+        },
+        {
+          "acquired": true,
+          "edges": 4,
+          "low_threshold": 150,
+          "within_tracker_geometry_contract": true,
+          "role": "acquisition",
+          "expected": "acquire_four_edges"
+        },
+        {
+          "acquired": false,
+          "edges": 0,
+          "low_threshold": 190,
+          "within_tracker_geometry_contract": false,
+          "role": "retained_out_of_contract_stress",
+          "expected": "reject_or_acquire_without_acceptance_credit"
+        }
+      ],
+      "actual_camera_acceptance": "pending",
+      "historical_failure": "Original second quad exceeds existing tracker 15-degree opposite-edge divergence; retained as stress, not removed or used to relax tracker"
+    }
+  },
+  "unlit_tv": {
+    "status": "pass",
+    "reason": "Deterministic projected screenshot screening only; real recordings remain pending",
+    "details": {
+      "samples": [
+        {
+          "acquired": true,
+          "edges": 4,
+          "low_threshold": 163,
+          "within_tracker_geometry_contract": true,
+          "role": "acquisition",
+          "expected": "acquire_four_edges"
+        },
+        {
+          "acquired": true,
+          "edges": 4,
+          "low_threshold": 167,
+          "within_tracker_geometry_contract": true,
+          "role": "acquisition",
+          "expected": "acquire_four_edges"
+        },
+        {
+          "acquired": true,
+          "edges": 4,
+          "low_threshold": 150,
+          "within_tracker_geometry_contract": true,
+          "role": "acquisition",
+          "expected": "acquire_four_edges"
+        },
+        {
+          "acquired": false,
+          "edges": 0,
+          "low_threshold": 177,
+          "within_tracker_geometry_contract": false,
+          "role": "retained_out_of_contract_stress",
+          "expected": "reject_or_acquire_without_acceptance_credit"
+        }
+      ],
+      "actual_camera_acceptance": "pending",
+      "historical_failure": "Original second quad exceeds existing tracker 15-degree opposite-edge divergence; retained as stress, not removed or used to relax tracker"
+    }
+  },
+  "lit_monitor": {
+    "status": "pass",
+    "reason": "Deterministic projected screenshot screening only; real recordings remain pending",
+    "details": {
+      "samples": [
+        {
+          "acquired": true,
+          "edges": 4,
+          "low_threshold": 190,
+          "within_tracker_geometry_contract": true,
+          "role": "acquisition",
+          "expected": "acquire_four_edges"
+        },
+        {
+          "acquired": true,
+          "edges": 4,
+          "low_threshold": 188,
+          "within_tracker_geometry_contract": true,
+          "role": "acquisition",
+          "expected": "acquire_four_edges"
+        },
+        {
+          "acquired": true,
+          "edges": 4,
+          "low_threshold": 150,
+          "within_tracker_geometry_contract": true,
+          "role": "acquisition",
+          "expected": "acquire_four_edges"
+        },
+        {
+          "acquired": false,
+          "edges": 0,
+          "low_threshold": 190,
+          "within_tracker_geometry_contract": false,
+          "role": "retained_out_of_contract_stress",
+          "expected": "reject_or_acquire_without_acceptance_credit"
+        }
+      ],
+      "actual_camera_acceptance": "pending",
+      "historical_failure": "Original second quad exceeds existing tracker 15-degree opposite-edge divergence; retained as stress, not removed or used to relax tracker"
+    }
+  },
+  "lit_tv": {
+    "status": "pass",
+    "reason": "Deterministic projected screenshot screening only; real recordings remain pending",
+    "details": {
+      "samples": [
+        {
+          "acquired": true,
+          "edges": 4,
+          "low_threshold": 163,
+          "within_tracker_geometry_contract": true,
+          "role": "acquisition",
+          "expected": "acquire_four_edges"
+        },
+        {
+          "acquired": true,
+          "edges": 4,
+          "low_threshold": 167,
+          "within_tracker_geometry_contract": true,
+          "role": "acquisition",
+          "expected": "acquire_four_edges"
+        },
+        {
+          "acquired": true,
+          "edges": 4,
+          "low_threshold": 150,
+          "within_tracker_geometry_contract": true,
+          "role": "acquisition",
+          "expected": "acquire_four_edges"
+        },
+        {
+          "acquired": false,
+          "edges": 0,
+          "low_threshold": 177,
+          "within_tracker_geometry_contract": false,
+          "role": "retained_out_of_contract_stress",
+          "expected": "reject_or_acquire_without_acceptance_credit"
+        }
+      ],
+      "actual_camera_acceptance": "pending",
+      "historical_failure": "Original second quad exceeds existing tracker 15-degree opposite-edge divergence; retained as stress, not removed or used to relax tracker"
+    }
+  }
+}

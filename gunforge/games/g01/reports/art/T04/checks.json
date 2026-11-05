@@ -1,0 +1,513 @@
+{
+  "layers": {
+    "far_base": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            1920,
+            1020
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 1.0
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": ":::sglSERheELE了RATseronONOSAGsialseoeatsisTowesereayPRTA<SRRiSFCCHSTheSoSEGREsnteog5%:i4:2:.AYTEATaineoeLEBASonaNoer2:-5hgaayCreReeTEhssadafeioeTe2NISAEaeSRTRNGEATE(0eSCYSUEerpt=SasaesreHdesoaEUeeeSeaosaitSEESLeTseEa2eGi=RGorweSorERASERCeTALETCAONSTEIS£9ACash,gbagiSihxy5CoyTeesSsPAISRTRRCCEoiiCoeoYhe-A-OOaEBeiSejis:SayBRhoeSR5=2:ACSEayySacRERs&bi::8BARSARhia",
+          "confidence": 19,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      },
+      "C02": {
+        "status": "pending",
+        "reason": "Native alpha retained; black/white composite visual review required, no known matte color supplied"
+      },
+      "C07b": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        },
+        "scope": "Declared current-shape support only; does not independently certify intended hidden geometry"
+      }
+    },
+    "far_town": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            1920,
+            1020
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 1.0
+        }
+      },
+      "C05": {
+        "status": "fail",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "\\/",
+          "confidence": 79,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      },
+      "C02": {
+        "status": "pending",
+        "reason": "Native alpha retained; black/white composite visual review required, no known matte color supplied"
+      },
+      "C07b": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        },
+        "scope": "Declared current-shape support only; does not independently certify intended hidden geometry"
+      }
+    },
+    "mid_ground": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            1920,
+            1020
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 1.0
+        }
+      },
+      "C05": {
+        "status": "pass",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "",
+          "confidence": 0,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      },
+      "C02": {
+        "status": "pending",
+        "reason": "Native alpha retained; black/white composite visual review required, no known matte color supplied"
+      },
+      "C07b": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        },
+        "scope": "Declared current-shape support only; does not independently certify intended hidden geometry"
+      }
+    },
+    "mid_left": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            1920,
+            1020
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 1.0
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "0",
+          "confidence": 0,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      },
+      "C02": {
+        "status": "pending",
+        "reason": "Native alpha retained; black/white composite visual review required, no known matte color supplied"
+      },
+      "C07b": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        },
+        "scope": "Declared current-shape support only; does not independently certify intended hidden geometry"
+      }
+    },
+    "mid_right": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            1920,
+            1020
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 1.0
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "&TR",
+          "confidence": 60,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      },
+      "C02": {
+        "status": "pending",
+        "reason": "Native alpha retained; black/white composite visual review required, no known matte color supplied"
+      },
+      "C07b": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        },
+        "scope": "Declared current-shape support only; does not independently certify intended hidden geometry"
+      }
+    },
+    "near_left": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            1920,
+            1020
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 1.0
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "ofAs-pd",
+          "confidence": 44,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      },
+      "C02": {
+        "status": "pending",
+        "reason": "Native alpha retained; black/white composite visual review required, no known matte color supplied"
+      },
+      "C08": {
+        "status": "pass",
+        "reason": "Shot-blocking mask matches visible layer",
+        "details": {
+          "different_pixels": 0
+        }
+      },
+      "C07b": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        },
+        "scope": "Declared current-shape support only; does not independently certify intended hidden geometry"
+      }
+    },
+    "near_right": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            1920,
+            1020
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 1.0
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "aewea0",
+          "confidence": 34,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      },
+      "C02": {
+        "status": "pending",
+        "reason": "Native alpha retained; black/white composite visual review required, no known matte color supplied"
+      },
+      "C08": {
+        "status": "pass",
+        "reason": "Shot-blocking mask matches visible layer",
+        "details": {
+          "different_pixels": 0
+        }
+      },
+      "C07b": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        },
+        "scope": "Declared current-shape support only; does not independently certify intended hidden geometry"
+      }
+    }
+  },
+  "C07a_motion_states": {
+    "static": {
+      "status": "pass",
+      "reason": "Coverage at this declared motion state",
+      "details": {
+        "missing_pixels": 0
+      }
+    },
+    "cam_-60_-30_breath_1": {
+      "status": "pass",
+      "reason": "Coverage at this declared motion state",
+      "details": {
+        "missing_pixels": 0
+      }
+    },
+    "cam_-60_-30_breath_-1": {
+      "status": "pass",
+      "reason": "Coverage at this declared motion state",
+      "details": {
+        "missing_pixels": 0
+      }
+    },
+    "cam_-60_30_breath_1": {
+      "status": "pass",
+      "reason": "Coverage at this declared motion state",
+      "details": {
+        "missing_pixels": 0
+      }
+    },
+    "cam_-60_30_breath_-1": {
+      "status": "pass",
+      "reason": "Coverage at this declared motion state",
+      "details": {
+        "missing_pixels": 0
+      }
+    },
+    "cam_60_-30_breath_1": {
+      "status": "pass",
+      "reason": "Coverage at this declared motion state",
+      "details": {
+        "missing_pixels": 0
+      }
+    },
+    "cam_60_-30_breath_-1": {
+      "status": "pass",
+      "reason": "Coverage at this declared motion state",
+      "details": {
+        "missing_pixels": 0
+      }
+    },
+    "cam_60_30_breath_1": {
+      "status": "pass",
+      "reason": "Coverage at this declared motion state",
+      "details": {
+        "missing_pixels": 0
+      }
+    },
+    "cam_60_30_breath_-1": {
+      "status": "pass",
+      "reason": "Coverage at this declared motion state",
+      "details": {
+        "missing_pixels": 0
+      }
+    }
+  },
+  "extent_status": "provisional_current_shape_support_requires_human_confirmation",
+  "normalization": {
+    "far_base": {
+      "source_job": "layer_far_base",
+      "normalization": "full-canvas resize to 1920x1020; source registration retained",
+      "palette": "minimum RGB movement to CIEDE2000 <=14.5, originals retained",
+      "expected_extent": "current full shape support, pending human verification of hidden geometry",
+      "ground_registration_shift_y": 0,
+      "reveal_band_pixels": 441183
+    },
+    "far_town": {
+      "source_job": "layer_far_town",
+      "normalization": "full-canvas resize to 1920x1020; source registration retained",
+      "palette": "minimum RGB movement to CIEDE2000 <=14.5, originals retained",
+      "expected_extent": "current full shape support, pending human verification of hidden geometry",
+      "ground_registration_shift_y": 0,
+      "reveal_band_pixels": 13497
+    },
+    "mid_ground": {
+      "source_job": "layer_mid_ground",
+      "normalization": "full-canvas resize to 1920x1020; source registration retained",
+      "palette": "minimum RGB movement to CIEDE2000 <=14.5, originals retained",
+      "expected_extent": "current full shape support, pending human verification of hidden geometry",
+      "ground_registration_shift_y": 120,
+      "reveal_band_pixels": 97378
+    },
+    "mid_left": {
+      "source_job": "layer_mid_left",
+      "normalization": "full-canvas resize to 1920x1020; source registration retained",
+      "palette": "minimum RGB movement to CIEDE2000 <=14.5, originals retained",
+      "expected_extent": "current full shape support, pending human verification of hidden geometry",
+      "ground_registration_shift_y": 0,
+      "reveal_band_pixels": 51329
+    },
+    "mid_right": {
+      "source_job": "repair_mid_right",
+      "normalization": "full-canvas resize to 1920x1020; source registration retained",
+      "palette": "minimum RGB movement to CIEDE2000 <=14.5, originals retained",
+      "expected_extent": "current full shape support, pending human verification of hidden geometry",
+      "ground_registration_shift_y": 0,
+      "reveal_band_pixels": 13692
+    },
+    "near_left": {
+      "source_job": "extract_near_left",
+      "normalization": "full-canvas resize to 1920x1020; source registration retained",
+      "palette": "minimum RGB movement to CIEDE2000 <=14.5, originals retained",
+      "expected_extent": "current full shape support, pending human verification of hidden geometry",
+      "ground_registration_shift_y": 0,
+      "reveal_band_pixels": 0
+    },
+    "near_right": {
+      "source_job": "layer_near_right",
+      "normalization": "full-canvas resize to 1920x1020; source registration retained",
+      "palette": "minimum RGB movement to CIEDE2000 <=14.5, originals retained",
+      "expected_extent": "current full shape support, pending human verification of hidden geometry",
+      "ground_registration_shift_y": 0,
+      "reveal_band_pixels": 0
+    }
+  }
+}

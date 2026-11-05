@@ -1,0 +1,76 @@
+{
+  "revision": "A2k",
+  "new_image_calls": 0,
+  "production_approved": false,
+  "actual_0B": false,
+  "outputs": [
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\arm_preview.jpg",
+      "sha256": "71fb97a4aea74f8375979f8eef8dc74220a733a00cd8e01057616f981c616310"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\browser_review_ready.png",
+      "sha256": "c187f398f95a9c5af1a20f68c1a4452fe1968b2f8b0b32d1cf7a5d880b082d4c"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\browser_verification.md",
+      "sha256": "074ffcdc349d2aa571fe5636984375c5dfd98fa202f173d601e502f4107f7ae6"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\checks.json",
+      "sha256": "510a50e51e0779e2fa9af2518ff8993b3e2d4fd3fb069b75563ea1c594b76919"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\grip_reconstruction.json",
+      "sha256": "6670b21245f4717c8581a6bbc2d7ba90b2920fd696bf0cfaf265c10d78192e19"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\occluded_target_negative.json",
+      "sha256": "0a025667d781293bac8f960d974048eeadf1292b34f8d9c398cd54c2e69cd50f"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\report.md",
+      "sha256": "533bb381b6bf44bb1e85a50d92a3e5128680aa7156deba661a64fc4cc5a402f6"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\seek_checks.json",
+      "sha256": "c9e195a6a1b5c4013f71844d1852f7a11522d4fec0b2496f54cc27bcca6e0473"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\user_feedback.yaml",
+      "sha256": "60b95bf632df2b0ed87d3352187eb52bcf1b46fc1da9ee72657f9e42dd1b42a2"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\vendor_contact.jpg",
+      "sha256": "72a1370c2471a13e95e9ba6ec8422d16ede0a7f90e581b05f682633def468c7a"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\vendor_occlusion_v6.mp4",
+      "sha256": "c0a3b89028b62d97f9a07e1592ffafdf5c8b897a02c77eeeae3145ceb579515b"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\vendor_rescue_v6.mp4",
+      "sha256": "6eb18edb8905816e52f29e6de5a7a6ebf9dc69c9b25c9447fc5ded8270b7b1da"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\video_contact.jpg",
+      "sha256": "54f19cb530536ad874c5e6f3c8d8f389aee5ae94a70332f772a97ff5ea8b9993"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\video_occlusion_v6.mp4",
+      "sha256": "679d6d2e1207b58a31ee1c4aee1e7860a53b619c10ec38e1baccfd1d52621568"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\video_rescue_v6.mp4",
+      "sha256": "583ba30f427e209a9c120c7b88c3998beedf1b8d83726e62ff5b00c5bfaa060f"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\index.html",
+      "sha256": "0dd4f9a1cd540c8f8e7884fd65e2890bae7e2e791179214b3d5e24b35c7e8205"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\pipeline\\art\\puppet_motion_v6.py",
+      "sha256": "eca4b60a4a19f4869a059cf5ffefe6a885faf88b7c00199ca5bca97103510d3f"
+    }
+  ]
+}

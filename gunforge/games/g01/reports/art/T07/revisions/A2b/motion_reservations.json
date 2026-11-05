@@ -1,0 +1,46 @@
+{
+  "vendor": {
+    "status": "pass",
+    "kind": "protected_human",
+    "human_attackable": false,
+    "slot_origin": [
+      760,
+      500
+    ],
+    "motion_bbox": [
+      504,
+      189,
+      501,
+      550
+    ],
+    "parallax": 0.45,
+    "camera_breath_padding": [
+      30.6,
+      15.3
+    ],
+    "alternative_slot": true,
+    "scope": "conservative source-part rectangles over every attached-eligible frame, plus camera/breath extrema; not engine occlusion acceptance"
+  },
+  "video": {
+    "status": "pass",
+    "kind": "protected_human",
+    "human_attackable": false,
+    "slot_origin": [
+      760,
+      500
+    ],
+    "motion_bbox": [
+      568,
+      312,
+      374,
+      337
+    ],
+    "parallax": 0.45,
+    "camera_breath_padding": [
+      30.6,
+      15.3
+    ],
+    "alternative_slot": true,
+    "scope": "conservative source-part rectangles over every attached-eligible frame, plus camera/breath extrema; not engine occlusion acceptance"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "rows": [
+    {
+      "enemy": "g01_ink_tadpole0",
+      "head_display_diameter": 90,
+      "group_primary_overlap_pixels": 0,
+      "C09": {
+        "status": "pass",
+        "reason": "Primary size, visible protection, weak point and motion reservation",
+        "details": {
+          "effective_radius": 44.99389820996741,
+          "protected_overlap": false,
+          "weak_outside": false,
+          "hud_overlap": false
+        }
+      }
+    },
+    {
+      "enemy": "g01_ink_tadpole1",
+      "head_display_diameter": 90,
+      "group_primary_overlap_pixels": 0,
+      "C09": {
+        "status": "pass",
+        "reason": "Primary size, visible protection, weak point and motion reservation",
+        "details": {
+          "effective_radius": 44.94434934140593,
+          "protected_overlap": false,
+          "weak_outside": false,
+          "hud_overlap": false
+        }
+      }
+    },
+    {
+      "enemy": "g01_ink_tadpole2",
+      "head_display_diameter": 90,
+      "group_primary_overlap_pixels": 0,
+      "C09": {
+        "status": "pass",
+        "reason": "Primary size, visible protection, weak point and motion reservation",
+        "details": {
+          "effective_radius": 45.06458780298101,
+          "protected_overlap": false,
+          "weak_outside": false,
+          "hud_overlap": false
+        }
+      }
+    }
+  ],
+  "all_primary_disjoint": true,
+  "motion_validation": "static group plus +/-5px bounding reservation; in-engine movement and occlusion remain pending"
+}

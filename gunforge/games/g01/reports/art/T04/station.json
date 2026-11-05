@@ -1,0 +1,209 @@
+{
+  "id": "g01_st_l1_01_alley",
+  "canvas": [
+    1920,
+    1020
+  ],
+  "content_origin": [
+    72,
+    42
+  ],
+  "layers": [
+    {
+      "id": "far_base",
+      "file": "layers/far_base.png",
+      "pos": [
+        -8,
+        -8
+      ],
+      "z": 0,
+      "parallax": 0.1,
+      "band": "far",
+      "extent": "layers/far_base_extent.png",
+      "crop_origin": [
+        -8,
+        -8
+      ],
+      "blocks_shots": false
+    },
+    {
+      "id": "far_town",
+      "file": "layers/far_town.png",
+      "pos": [
+        137,
+        71
+      ],
+      "z": 1,
+      "parallax": 0.25,
+      "band": "far",
+      "extent": "layers/far_town_extent.png",
+      "crop_origin": [
+        137,
+        71
+      ],
+      "blocks_shots": false
+    },
+    {
+      "id": "mid_ground",
+      "file": "layers/mid_ground.png",
+      "pos": [
+        -8,
+        153
+      ],
+      "z": 2,
+      "parallax": 0.45,
+      "band": "middle",
+      "extent": "layers/mid_ground_extent.png",
+      "crop_origin": [
+        -8,
+        153
+      ],
+      "blocks_shots": false
+    },
+    {
+      "id": "mid_left",
+      "file": "layers/mid_left.png",
+      "pos": [
+        -8,
+        17
+      ],
+      "z": 3,
+      "parallax": 0.55,
+      "band": "middle",
+      "extent": "layers/mid_left_extent.png",
+      "crop_origin": [
+        -8,
+        17
+      ],
+      "blocks_shots": false
+    },
+    {
+      "id": "mid_right",
+      "file": "layers/mid_right.png",
+      "pos": [
+        164,
+        61
+      ],
+      "z": 4,
+      "parallax": 0.6,
+      "band": "middle",
+      "extent": "layers/mid_right_extent.png",
+      "crop_origin": [
+        164,
+        61
+      ],
+      "blocks_shots": false
+    },
+    {
+      "id": "near_left",
+      "file": "layers/near_left.png",
+      "pos": [
+        -8,
+        -8
+      ],
+      "z": 5,
+      "parallax": 0.9,
+      "band": "near",
+      "extent": "layers/near_left_extent.png",
+      "crop_origin": [
+        -8,
+        -8
+      ],
+      "blocks_shots": true
+    },
+    {
+      "id": "near_right",
+      "file": "layers/near_right.png",
+      "pos": [
+        381,
+        -8
+      ],
+      "z": 6,
+      "parallax": 1.0,
+      "band": "near",
+      "extent": "layers/near_right_extent.png",
+      "crop_origin": [
+        381,
+        -8
+      ],
+      "blocks_shots": true
+    },
+    {
+      "id": "lamp",
+      "file": "layers/lamp.png",
+      "pos": [
+        827,
+        178
+      ],
+      "z": 4.5,
+      "parallax": 0.6,
+      "band": "interactive_object",
+      "crop_origin": [
+        827,
+        178
+      ],
+      "independent_light": true
+    }
+  ],
+  "lights": [
+    {
+      "id": "streetlamp",
+      "space": "lamp",
+      "spill": "lights/streetlamp_spill.png",
+      "glow": "lights/streetlamp_glow.png",
+      "affected_layers": [
+        "far_base",
+        "far_town",
+        "mid_ground",
+        "mid_right"
+      ],
+      "color": "#D9A066",
+      "intensity": 0.7,
+      "soften_threshold": 0.3,
+      "status_cycle": [
+        "ink_covered",
+        "lit",
+        "dimmed",
+        "ink_covered"
+      ],
+      "extraction": "positive native-frame luminance delta, localized to reject unrelated edit drift; bulb pixels extracted from lit frame",
+      "preview_only": true
+    }
+  ],
+  "camera_limits": [
+    60,
+    30
+  ],
+  "breath_limits": [
+    8,
+    4
+  ],
+  "approval": "pending_A2",
+  "metadata_scope": "offline prototype only",
+  "slots": [
+    {
+      "id": "hostage_vendor",
+      "human_role": "hostage",
+      "is_enemy": false,
+      "space": "mid_ground",
+      "bbox": [
+        650,
+        400,
+        230,
+        460
+      ],
+      "paper_body_protected": true,
+      "only_attackable_attachment": "separate_ink_blob"
+    },
+    {
+      "id": "crow",
+      "space": "mid_ground",
+      "bbox": [
+        970,
+        290,
+        330,
+        300
+      ]
+    }
+  ]
+}

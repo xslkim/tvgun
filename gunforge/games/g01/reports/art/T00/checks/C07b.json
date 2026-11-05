@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "reason": "Coverage at this declared motion state",
+  "details": {
+    "missing_pixels": 0
+  }
+}

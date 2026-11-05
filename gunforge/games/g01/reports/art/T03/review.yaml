@@ -1,0 +1,21 @@
+stage: A1b
+status: direction_approved_with_requested_adjustments
+items:
+- id: unlit
+  status: approved
+  note: 只批准画面方向；新墨素材增加克制的亮面反光。技术验收保留。
+- id: lit
+  status: approved
+  note: 只批准画面方向；新墨素材增加克制的亮面反光。技术验收保留。
+- id: overlay
+  status: pending
+  note: 标注及完整运动极值未被批准。
+overall_notes: 美术风格没问题，继续拆层试做。人物只能是人质或者NPC，不作为可攻击的人物或怪兽。先处理墨反光增加与角色定位。
+source: explicit_user_chat_feedback
+reviewed: '2026-11-04'
+gloss: brighter_than_T03
+light: approved_visual_change
+followup:
+  ink_gloss: Apply brighter restrained reflections in T06 material prototype before
+    further production; T03 completed cap stays 10/10
+  humans: hostage_or_NPC_only; no human enemy/attack/HP/hurt-death state

@@ -1,0 +1,10 @@
+{
+  "old_tile_mipmap_failure_retained_and_detected": true,
+  "global_mipmap_CPU_reference_matches": true,
+  "conservative_48_decimal_MB_estimate_pass": true,
+  "all_seven_extent_designs_still_pending": true,
+  "extent_source_hashes_match": true,
+  "warning_numeric_only_not_auto_approved": true,
+  "python_syntax": "pass",
+  "engine_and_actual_0B": "pending"
+}

@@ -1,0 +1,121 @@
+{
+  "revision": "A2i",
+  "checker_version": "art-checks-0.3-initial-offline",
+  "readiness": {
+    "stage": "A2_offline_pipeline_review",
+    "automatic_A2_acceptance": false,
+    "T08_started": false,
+    "geometry": {
+      "status": "pass",
+      "baseline_version": "g01-alley-extent-1",
+      "basis": "explicit A2h acceptance of complete shapes as 2D design specification; not independent historic truth",
+      "states": 125,
+      "checks": 1000,
+      "scope": "approved 2D silhouette coverage, fixed parallax/camera envelope; not proof of unreviewed geometry or Godot sampling",
+      "negative_hole_rejected": true,
+      "frozen_mask_tampering_rejected": true,
+      "actual_0B": false
+    },
+    "negative_tests": {
+      "verified": 9,
+      "total": 9
+    },
+    "jobs": {
+      "T02": {
+        "calls_including_failures_retries": 36,
+        "task_cap": 36,
+        "returned": 36,
+        "failed": 0,
+        "pending": 0,
+        "candidate_jobs": 31,
+        "unreported_cost": null
+      },
+      "T03": {
+        "calls_including_failures_retries": 10,
+        "task_cap": 10,
+        "returned": 10,
+        "failed": 0,
+        "pending": 0,
+        "candidate_jobs": 8,
+        "unreported_cost": null
+      },
+      "T04": {
+        "calls_including_failures_retries": 16,
+        "task_cap": 24,
+        "returned": 16,
+        "failed": 0,
+        "pending": 0,
+        "candidate_jobs": 16,
+        "unreported_cost": null
+      },
+      "T05": {
+        "calls_including_failures_retries": 27,
+        "task_cap": 32,
+        "returned": 27,
+        "failed": 0,
+        "pending": 0,
+        "candidate_jobs": 27,
+        "unreported_cost": null
+      },
+      "T06": {
+        "calls_including_failures_retries": 9,
+        "task_cap": 16,
+        "returned": 9,
+        "failed": 0,
+        "pending": 0,
+        "candidate_jobs": 9,
+        "unreported_cost": null
+      }
+    },
+    "resident_sheet_yield": {
+      "vendor": {
+        "sheet_attempts": 4,
+        "ten_part_complete_sheets": 4,
+        "complete_rate": 1.0,
+        "original_rig_C10": {
+          "status": "pass",
+          "reason": "Extreme-pose seams and copper coverage",
+          "details": {
+            "rig": "humanoid_10"
+          }
+        },
+        "current_actual_motion_frame_checks": 564,
+        "current_rescue_blob_checks": 2160,
+        "limits": "sheet completeness is not final production acceptance or animation production yield"
+      },
+      "video": {
+        "sheet_attempts": 4,
+        "ten_part_complete_sheets": 4,
+        "complete_rate": 1.0,
+        "original_rig_C10": {
+          "status": "pass",
+          "reason": "Extreme-pose seams and copper coverage",
+          "details": {
+            "rig": "humanoid_10"
+          }
+        },
+        "current_actual_motion_frame_checks": 564,
+        "current_rescue_blob_checks": 2160,
+        "limits": "sheet completeness is not final production acceptance or animation production yield"
+      }
+    },
+    "phase_0A_calls": 98,
+    "phase_0A_cap": 120,
+    "including_T01_calls": 101,
+    "external_API_calls": 0,
+    "cost": null,
+    "cost_reason": "builtin tool does not disclose price; never infer zero cost or money from call count",
+    "approved_asset_yield": "not measurable from feature/clip approvals alone; do not extrapolate 100% complete sheets into production asset yield",
+    "remaining": [
+      "C04_C12_C14_calibration_shortfall",
+      "GPU_8bit_upload_color_space_LOD_drawcalls_peak",
+      "Godot_motion_collision_sampling",
+      "actual_0B_five_checks"
+    ],
+    "review_decision_needed": "whether to allow T08 offline trial with these explicitly retained pending items; this does not approve formal production or actual0B"
+  },
+  "technical_acceptance": false,
+  "T08_started": false,
+  "production_approved": false,
+  "actual_0B": false
+}

@@ -1,0 +1,908 @@
+{
+  "vendor": {
+    "torso": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            328,
+            392
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0013429101733142149
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9740460254391039
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": ">:>)-y_/SS",
+          "confidence": 39,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "head": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            255,
+            273
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.01705021874501551
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9205328226001829
+        }
+      },
+      "C05": {
+        "status": "pass",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "",
+          "confidence": 0,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "upper_arm_l": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            174,
+            267
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0013057346264823224
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9329945110055642
+        }
+      },
+      "C05": {
+        "status": "pass",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "",
+          "confidence": 0,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "upper_arm_r": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            174,
+            267
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0013808337729784572
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9322192831832182
+        }
+      },
+      "C05": {
+        "status": "pass",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "",
+          "confidence": 0,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "forearm_l": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            174,
+            267
+          ]
+        }
+      },
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.020974391005621488
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9295837828629836
+        }
+      },
+      "C05": {
+        "status": "fail",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "4",
+          "confidence": 93,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "forearm_r": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            174,
+            267
+          ]
+        }
+      },
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.025902241680360465
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9183741590379685
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "\\!",
+          "confidence": 13,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "thigh_l": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            189,
+            267
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0011194484011842528
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9408066818042439
+        }
+      },
+      "C05": {
+        "status": "pass",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "",
+          "confidence": 0,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "thigh_r": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            189,
+            267
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0012418843321673086
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9412838067756469
+        }
+      },
+      "C05": {
+        "status": "pass",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "",
+          "confidence": 0,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "shin_l": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            189,
+            283
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.005132387687488415
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.8990447356691388
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "|",
+          "confidence": 45,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "shin_r": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            189,
+            283
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004680241134756074
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.8971138361391028
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "i",
+          "confidence": 22,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "prop": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            40,
+            220
+          ]
+        }
+      },
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.028002415739388165
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.15188646384896407
+        }
+      },
+      "C05": {
+        "status": "fail",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": ":",
+          "confidence": 75,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  "video": {
+    "torso": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            387,
+            387
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0012310815353196926
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9236885379198161
+        }
+      },
+      "C05": {
+        "status": "pass",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "",
+          "confidence": 0,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "head": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            266,
+            269
+          ]
+        }
+      },
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.021071504308765972
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9534144590138761
+        }
+      },
+      "C05": {
+        "status": "fail",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "«",
+          "confidence": 80,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "upper_arm_l": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            172,
+            264
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0003427757895808294
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9131408845570239
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "J",
+          "confidence": 20,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "upper_arm_r": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            172,
+            264
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0003454851526062113
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.7596259953867571
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "0",
+          "confidence": 9,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "forearm_l": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            172,
+            264
+          ]
+        }
+      },
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.02271196314803311
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.8972295510522775
+        }
+      },
+      "C05": {
+        "status": "pass",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "",
+          "confidence": 0,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "forearm_r": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            172,
+            264
+          ]
+        }
+      },
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.022408985936865175
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.7267945641252749
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "’",
+          "confidence": 30,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "thigh_l": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            188,
+            264
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.001298215261406709
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9538037220456571
+        }
+      },
+      "C05": {
+        "status": "pass",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "",
+          "confidence": 0,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "thigh_r": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            188,
+            264
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.001395002391470152
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.953316875960753
+        }
+      },
+      "C05": {
+        "status": "pass",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "",
+          "confidence": 0,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "shin_l": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            188,
+            280
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0007195414956452097
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9395687529009183
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "i",
+          "confidence": 26,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "shin_r": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            188,
+            280
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0007072323297276765
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9410708569205363
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "i",
+          "confidence": 35,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "prop": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            84,
+            150
+          ]
+        }
+      },
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.07673763486843223
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.2775515121894929
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "~",
+          "confidence": 45,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  }
+}

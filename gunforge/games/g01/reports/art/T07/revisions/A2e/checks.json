@@ -1,0 +1,3698 @@
+{
+  "revision": "A2e",
+  "loops": {
+    "vendor": {
+      "idle": {
+        "status": "pass",
+        "reason": "Aligned loop endpoint position and velocity",
+        "details": {
+          "pixel_difference": 0.0,
+          "velocity_difference": 0.0012254093477668845
+        }
+      },
+      "peek": {
+        "status": "pass",
+        "reason": "Aligned loop endpoint position and velocity",
+        "details": {
+          "pixel_difference": 0.0,
+          "velocity_difference": 0.0
+        }
+      },
+      "walk": {
+        "status": "pass",
+        "reason": "Aligned loop endpoint position and velocity",
+        "details": {
+          "pixel_difference": 0.0,
+          "velocity_difference": 0.01212977217796841
+        }
+      },
+      "startle": {
+        "status": "pass",
+        "reason": "Aligned loop endpoint position and velocity",
+        "details": {
+          "pixel_difference": 0.0,
+          "velocity_difference": 0.0
+        }
+      },
+      "wave_for_help": {
+        "status": "pass",
+        "reason": "Aligned loop endpoint position and velocity",
+        "details": {
+          "pixel_difference": 0.0,
+          "velocity_difference": 5.480026211873639e-05
+        }
+      },
+      "struggle": {
+        "status": "pass",
+        "reason": "Aligned loop endpoint position and velocity",
+        "details": {
+          "pixel_difference": 0.0,
+          "velocity_difference": 0.0
+        }
+      },
+      "rescued_bounce": {
+        "status": "na",
+        "reason": "one-shot rescue state transition"
+      },
+      "thank": {
+        "status": "pass",
+        "reason": "Aligned loop endpoint position and velocity",
+        "details": {
+          "pixel_difference": 0.0,
+          "velocity_difference": 0.0
+        }
+      }
+    },
+    "video": {
+      "idle": {
+        "status": "pass",
+        "reason": "Aligned loop endpoint position and velocity",
+        "details": {
+          "pixel_difference": 0.0,
+          "velocity_difference": 0.0014794602736928105
+        }
+      },
+      "peek": {
+        "status": "pass",
+        "reason": "Aligned loop endpoint position and velocity",
+        "details": {
+          "pixel_difference": 0.0,
+          "velocity_difference": 0.0
+        }
+      },
+      "walk": {
+        "status": "pass",
+        "reason": "Aligned loop endpoint position and velocity",
+        "details": {
+          "pixel_difference": 0.0,
+          "velocity_difference": 0.01536280041530501
+        }
+      },
+      "startle": {
+        "status": "pass",
+        "reason": "Aligned loop endpoint position and velocity",
+        "details": {
+          "pixel_difference": 0.0,
+          "velocity_difference": 0.0
+        }
+      },
+      "wave_for_help": {
+        "status": "pass",
+        "reason": "Aligned loop endpoint position and velocity",
+        "details": {
+          "pixel_difference": 0.0,
+          "velocity_difference": 8.38035300925926e-05
+        }
+      },
+      "struggle": {
+        "status": "pass",
+        "reason": "Aligned loop endpoint position and velocity",
+        "details": {
+          "pixel_difference": 0.0,
+          "velocity_difference": 0.0
+        }
+      },
+      "rescued_bounce": {
+        "status": "na",
+        "reason": "one-shot rescue state transition"
+      },
+      "thank": {
+        "status": "pass",
+        "reason": "Aligned loop endpoint position and velocity",
+        "details": {
+          "pixel_difference": 0.0,
+          "velocity_difference": 0.0
+        }
+      }
+    }
+  },
+  "slots": {
+    "scope": "200px crow, 20 slots, five combined camera/breath states, two lamp states; numeric/offline only",
+    "slots": [
+      {
+        "center": [
+          420,
+          210
+        ],
+        "states": 10,
+        "numeric_pass_all_states": false,
+        "minimum_normal_contrast": 0.03419215686274511,
+        "hardened_tint_numeric_pass": true,
+        "runtime_interaction_and_thumbnail_review": "pending"
+      },
+      {
+        "center": [
+          650,
+          210
+        ],
+        "states": 10,
+        "numeric_pass_all_states": false,
+        "minimum_normal_contrast": 0.0334235294117647,
+        "hardened_tint_numeric_pass": true,
+        "runtime_interaction_and_thumbnail_review": "pending"
+      },
+      {
+        "center": [
+          880,
+          210
+        ],
+        "states": 10,
+        "numeric_pass_all_states": false,
+        "minimum_normal_contrast": 0.03276470588235293,
+        "hardened_tint_numeric_pass": true,
+        "runtime_interaction_and_thumbnail_review": "pending"
+      },
+      {
+        "center": [
+          1110,
+          210
+        ],
+        "states": 10,
+        "numeric_pass_all_states": false,
+        "minimum_normal_contrast": 0.03365882352941174,
+        "hardened_tint_numeric_pass": true,
+        "runtime_interaction_and_thumbnail_review": "pending"
+      },
+      {
+        "center": [
+          1340,
+          210
+        ],
+        "states": 10,
+        "numeric_pass_all_states": false,
+        "minimum_normal_contrast": 0.032976470588235274,
+        "hardened_tint_numeric_pass": true,
+        "runtime_interaction_and_thumbnail_review": "pending"
+      },
+      {
+        "center": [
+          420,
+          350
+        ],
+        "states": 10,
+        "numeric_pass_all_states": true,
+        "minimum_normal_contrast": 0.24381568627450978,
+        "hardened_tint_numeric_pass": true,
+        "runtime_interaction_and_thumbnail_review": "pending"
+      },
+      {
+        "center": [
+          650,
+          350
+        ],
+        "states": 10,
+        "numeric_pass_all_states": true,
+        "minimum_normal_contrast": 0.24935686274509808,
+        "hardened_tint_numeric_pass": true,
+        "runtime_interaction_and_thumbnail_review": "pending"
+      },
+      {
+        "center": [
+          880,
+          350
+        ],
+        "states": 10,
+        "numeric_pass_all_states": false,
+        "minimum_normal_contrast": 0.04787450980392159,
+        "hardened_tint_numeric_pass": true,
+        "runtime_interaction_and_thumbnail_review": "pending"
+      },
+      {
+        "center": [
+          1110,
+          350
+        ],
+        "states": 10,
+        "numeric_pass_all_states": true,
+        "minimum_normal_contrast": 0.27239607843137253,
+        "hardened_tint_numeric_pass": true,
+        "runtime_interaction_and_thumbnail_review": "pending"
+      },
+      {
+        "center": [
+          1340,
+          350
+        ],
+        "states": 10,
+        "numeric_pass_all_states": false,
+        "minimum_normal_contrast": 0.17294117647058818,
+        "hardened_tint_numeric_pass": true,
+        "runtime_interaction_and_thumbnail_review": "pending"
+      },
+      {
+        "center": [
+          420,
+          490
+        ],
+        "states": 10,
+        "numeric_pass_all_states": true,
+        "minimum_normal_contrast": 0.23563529411764705,
+        "hardened_tint_numeric_pass": true,
+        "runtime_interaction_and_thumbnail_review": "pending"
+      },
+      {
+        "center": [
+          650,
+          490
+        ],
+        "states": 10,
+        "numeric_pass_all_states": false,
+        "minimum_normal_contrast": 0.08952156862745099,
+        "hardened_tint_numeric_pass": true,
+        "runtime_interaction_and_thumbnail_review": "pending"
+      },
+      {
+        "center": [
+          880,
+          490
+        ],
+        "states": 10,
+        "numeric_pass_all_states": false,
+        "minimum_normal_contrast": 0.10358823529411766,
+        "hardened_tint_numeric_pass": true,
+        "runtime_interaction_and_thumbnail_review": "pending"
+      },
+      {
+        "center": [
+          1110,
+          490
+        ],
+        "states": 10,
+        "numeric_pass_all_states": false,
+        "minimum_normal_contrast": 0.10556862745098038,
+        "hardened_tint_numeric_pass": true,
+        "runtime_interaction_and_thumbnail_review": "pending"
+      },
+      {
+        "center": [
+          1340,
+          490
+        ],
+        "states": 10,
+        "numeric_pass_all_states": false,
+        "minimum_normal_contrast": 0.13313333333333333,
+        "hardened_tint_numeric_pass": true,
+        "runtime_interaction_and_thumbnail_review": "pending"
+      },
+      {
+        "center": [
+          420,
+          630
+        ],
+        "states": 10,
+        "numeric_pass_all_states": false,
+        "minimum_normal_contrast": 0.16914117647058824,
+        "hardened_tint_numeric_pass": true,
+        "runtime_interaction_and_thumbnail_review": "pending"
+      },
+      {
+        "center": [
+          650,
+          630
+        ],
+        "states": 10,
+        "numeric_pass_all_states": false,
+        "minimum_normal_contrast": 0.19177254901960789,
+        "hardened_tint_numeric_pass": true,
+        "runtime_interaction_and_thumbnail_review": "pending"
+      },
+      {
+        "center": [
+          880,
+          630
+        ],
+        "states": 10,
+        "numeric_pass_all_states": false,
+        "minimum_normal_contrast": 0.15439607843137254,
+        "hardened_tint_numeric_pass": true,
+        "runtime_interaction_and_thumbnail_review": "pending"
+      },
+      {
+        "center": [
+          1110,
+          630
+        ],
+        "states": 10,
+        "numeric_pass_all_states": false,
+        "minimum_normal_contrast": 0.14659607843137257,
+        "hardened_tint_numeric_pass": true,
+        "runtime_interaction_and_thumbnail_review": "pending"
+      },
+      {
+        "center": [
+          1340,
+          630
+        ],
+        "states": 10,
+        "numeric_pass_all_states": false,
+        "minimum_normal_contrast": 0.11239607843137253,
+        "hardened_tint_numeric_pass": true,
+        "runtime_interaction_and_thumbnail_review": "pending"
+      }
+    ],
+    "samples": [
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          420,
+          210
+        ],
+        "normal_contrast": 0.038070588235294134,
+        "background_Yprime": 0.11488235294117646,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          650,
+          210
+        ],
+        "normal_contrast": 0.03527843137254902,
+        "background_Yprime": 0.11488235294117646,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          880,
+          210
+        ],
+        "normal_contrast": 0.033901960784313706,
+        "background_Yprime": 0.11415686274509804,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          1110,
+          210
+        ],
+        "normal_contrast": 0.036450980392156856,
+        "background_Yprime": 0.11601176470588234,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          1340,
+          210
+        ],
+        "normal_contrast": 0.034384313725490195,
+        "background_Yprime": 0.11532941176470587,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          420,
+          350
+        ],
+        "normal_contrast": 0.25724313725490194,
+        "background_Yprime": 0.3812392156862745,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          650,
+          350
+        ],
+        "normal_contrast": 0.2744627450980392,
+        "background_Yprime": 0.38006666666666666,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          880,
+          350
+        ],
+        "normal_contrast": 0.0508156862745098,
+        "background_Yprime": 0.1364078431372549,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          1110,
+          350
+        ],
+        "normal_contrast": 0.2783843137254902,
+        "background_Yprime": 0.38426666666666665,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          1340,
+          350
+        ],
+        "normal_contrast": 0.2073921568627451,
+        "background_Yprime": 0.30957254901960785,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          420,
+          490
+        ],
+        "normal_contrast": 0.24831764705882356,
+        "background_Yprime": 0.35454901960784313,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          650,
+          490
+        ],
+        "normal_contrast": 0.09781176470588236,
+        "background_Yprime": 0.17389803921568625,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          880,
+          490
+        ],
+        "normal_contrast": 0.11810196078431372,
+        "background_Yprime": 0.24624313725490196,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          1110,
+          490
+        ],
+        "normal_contrast": 0.11804705882352942,
+        "background_Yprime": 0.24165882352941176,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          1340,
+          490
+        ],
+        "normal_contrast": 0.13867450980392154,
+        "background_Yprime": 0.26387843137254896,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          420,
+          630
+        ],
+        "normal_contrast": 0.17131372549019605,
+        "background_Yprime": 0.29296470588235296,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          650,
+          630
+        ],
+        "normal_contrast": 0.20306666666666665,
+        "background_Yprime": 0.3319686274509804,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          880,
+          630
+        ],
+        "normal_contrast": 0.15784313725490196,
+        "background_Yprime": 0.25758039215686274,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          1110,
+          630
+        ],
+        "normal_contrast": 0.14772549019607842,
+        "background_Yprime": 0.23885882352941173,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          1340,
+          630
+        ],
+        "normal_contrast": 0.11329019607843137,
+        "background_Yprime": 0.20740784313725488,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          420,
+          210
+        ],
+        "normal_contrast": 0.03967843137254899,
+        "background_Yprime": 0.11690588235294118,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          650,
+          210
+        ],
+        "normal_contrast": 0.03689803921568627,
+        "background_Yprime": 0.11694901960784314,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          880,
+          210
+        ],
+        "normal_contrast": 0.03459607843137254,
+        "background_Yprime": 0.11601176470588234,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          1110,
+          210
+        ],
+        "normal_contrast": 0.03875294117647059,
+        "background_Yprime": 0.11807843137254902,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          1340,
+          210
+        ],
+        "normal_contrast": 0.03483137254901961,
+        "background_Yprime": 0.11650196078431371,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          420,
+          350
+        ],
+        "normal_contrast": 0.26694117647058824,
+        "background_Yprime": 0.38128235294117646,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          650,
+          350
+        ],
+        "normal_contrast": 0.24935686274509808,
+        "background_Yprime": 0.37934117647058824,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          880,
+          350
+        ],
+        "normal_contrast": 0.05360784313725492,
+        "background_Yprime": 0.13920000000000002,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          1110,
+          350
+        ],
+        "normal_contrast": 0.28141176470588236,
+        "background_Yprime": 0.38426666666666665,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          1340,
+          350
+        ],
+        "normal_contrast": 0.17294117647058818,
+        "background_Yprime": 0.2857882352941177,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          420,
+          490
+        ],
+        "normal_contrast": 0.2502039215686275,
+        "background_Yprime": 0.3636509803921568,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          650,
+          490
+        ],
+        "normal_contrast": 0.11162745098039216,
+        "background_Yprime": 0.18760392156862746,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          880,
+          490
+        ],
+        "normal_contrast": 0.11192156862745097,
+        "background_Yprime": 0.2389098039215686,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          1110,
+          490
+        ],
+        "normal_contrast": 0.13258039215686276,
+        "background_Yprime": 0.24760392156862743,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          1340,
+          490
+        ],
+        "normal_contrast": 0.14740392156862742,
+        "background_Yprime": 0.2765372549019608,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          420,
+          630
+        ],
+        "normal_contrast": 0.17171764705882353,
+        "background_Yprime": 0.28949019607843135,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          650,
+          630
+        ],
+        "normal_contrast": 0.19513725490196077,
+        "background_Yprime": 0.32663921568627446,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          880,
+          630
+        ],
+        "normal_contrast": 0.16123529411764703,
+        "background_Yprime": 0.2594352941176471,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          1110,
+          630
+        ],
+        "normal_contrast": 0.14659607843137257,
+        "background_Yprime": 0.23885882352941173,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          1340,
+          630
+        ],
+        "normal_contrast": 0.11514509803921565,
+        "background_Yprime": 0.20740784313725488,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          420,
+          210
+        ],
+        "normal_contrast": 0.036686274509803926,
+        "background_Yprime": 0.11370980392156863,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          650,
+          210
+        ],
+        "normal_contrast": 0.0339372549019608,
+        "background_Yprime": 0.11415686274509804,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          880,
+          210
+        ],
+        "normal_contrast": 0.03276470588235293,
+        "background_Yprime": 0.11253725490196079,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          1110,
+          210
+        ],
+        "normal_contrast": 0.03555686274509805,
+        "background_Yprime": 0.11464705882352941,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          1340,
+          210
+        ],
+        "normal_contrast": 0.032976470588235274,
+        "background_Yprime": 0.11370980392156863,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          420,
+          350
+        ],
+        "normal_contrast": 0.26896470588235294,
+        "background_Yprime": 0.3820078431372549,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          650,
+          350
+        ],
+        "normal_contrast": 0.2585411764705883,
+        "background_Yprime": 0.37938431372549025,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          880,
+          350
+        ],
+        "normal_contrast": 0.04788235294117647,
+        "background_Yprime": 0.13429803921568625,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          1110,
+          350
+        ],
+        "normal_contrast": 0.28185882352941183,
+        "background_Yprime": 0.3847137254901961,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          1340,
+          350
+        ],
+        "normal_contrast": 0.18514509803921567,
+        "background_Yprime": 0.3068156862745097,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          420,
+          490
+        ],
+        "normal_contrast": 0.2456156862745098,
+        "background_Yprime": 0.35491372549019606,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          650,
+          490
+        ],
+        "normal_contrast": 0.09663921568627447,
+        "background_Yprime": 0.17276862745098037,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          880,
+          490
+        ],
+        "normal_contrast": 0.10358823529411766,
+        "background_Yprime": 0.1806549019607843,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          1110,
+          490
+        ],
+        "normal_contrast": 0.11894117647058824,
+        "background_Yprime": 0.23995294117647056,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          1340,
+          490
+        ],
+        "normal_contrast": 0.13430588235294116,
+        "background_Yprime": 0.22252156862745096,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          420,
+          630
+        ],
+        "normal_contrast": 0.17356470588235293,
+        "background_Yprime": 0.2930078431372549,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          650,
+          630
+        ],
+        "normal_contrast": 0.19730196078431372,
+        "background_Yprime": 0.3330156862745098,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          880,
+          630
+        ],
+        "normal_contrast": 0.16066274509803924,
+        "background_Yprime": 0.2582627450980392,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          1110,
+          630
+        ],
+        "normal_contrast": 0.1477764705882353,
+        "background_Yprime": 0.23885882352941173,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          1340,
+          630
+        ],
+        "normal_contrast": 0.11514509803921566,
+        "background_Yprime": 0.20740784313725488,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          420,
+          210
+        ],
+        "normal_contrast": 0.0387529411764706,
+        "background_Yprime": 0.11650196078431371,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          650,
+          210
+        ],
+        "normal_contrast": 0.0381019607843137,
+        "background_Yprime": 0.11626666666666667,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          880,
+          210
+        ],
+        "normal_contrast": 0.03483137254901962,
+        "background_Yprime": 0.1160549019607843,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          1110,
+          210
+        ],
+        "normal_contrast": 0.0371764705882353,
+        "background_Yprime": 0.11739607843137255,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          1340,
+          210
+        ],
+        "normal_contrast": 0.036450980392156856,
+        "background_Yprime": 0.1176313725490196,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          420,
+          350
+        ],
+        "normal_contrast": 0.2484627450980392,
+        "background_Yprime": 0.37942745098039216,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          650,
+          350
+        ],
+        "normal_contrast": 0.2753568627450981,
+        "background_Yprime": 0.38006666666666666,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          880,
+          350
+        ],
+        "normal_contrast": 0.05433333333333332,
+        "background_Yprime": 0.13915686274509803,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          1110,
+          350
+        ],
+        "normal_contrast": 0.2738470588235294,
+        "background_Yprime": 0.3835411764705882,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          1340,
+          350
+        ],
+        "normal_contrast": 0.21683529411764704,
+        "background_Yprime": 0.3108117647058824,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          420,
+          490
+        ],
+        "normal_contrast": 0.23681960784313721,
+        "background_Yprime": 0.3488705882352941,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          650,
+          490
+        ],
+        "normal_contrast": 0.09943137254901961,
+        "background_Yprime": 0.17511372549019608,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          880,
+          490
+        ],
+        "normal_contrast": 0.14409019607843138,
+        "background_Yprime": 0.2518039215686274,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          1110,
+          490
+        ],
+        "normal_contrast": 0.12565490196078427,
+        "background_Yprime": 0.2472,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          1340,
+          490
+        ],
+        "normal_contrast": 0.14097647058823531,
+        "background_Yprime": 0.26662745098039214,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          420,
+          630
+        ],
+        "normal_contrast": 0.16914117647058824,
+        "background_Yprime": 0.2879764705882353,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          650,
+          630
+        ],
+        "normal_contrast": 0.204878431372549,
+        "background_Yprime": 0.32736470588235295,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          880,
+          630
+        ],
+        "normal_contrast": 0.15519999999999995,
+        "background_Yprime": 0.2554705882352941,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          1110,
+          630
+        ],
+        "normal_contrast": 0.15007058823529407,
+        "background_Yprime": 0.23930588235294115,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          1340,
+          630
+        ],
+        "normal_contrast": 0.11239607843137253,
+        "background_Yprime": 0.20740784313725488,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          420,
+          210
+        ],
+        "normal_contrast": 0.03419215686274511,
+        "background_Yprime": 0.11370980392156863,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          650,
+          210
+        ],
+        "normal_contrast": 0.0334235294117647,
+        "background_Yprime": 0.11366666666666667,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          880,
+          210
+        ],
+        "normal_contrast": 0.0329764705882353,
+        "background_Yprime": 0.11258039215686273,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          1110,
+          210
+        ],
+        "normal_contrast": 0.03365882352941174,
+        "background_Yprime": 0.11370980392156863,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          1340,
+          210
+        ],
+        "normal_contrast": 0.034384313725490195,
+        "background_Yprime": 0.11439215686274509,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          420,
+          350
+        ],
+        "normal_contrast": 0.24381568627450978,
+        "background_Yprime": 0.37938431372549025,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          650,
+          350
+        ],
+        "normal_contrast": 0.2737803921568628,
+        "background_Yprime": 0.3801098039215686,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          880,
+          350
+        ],
+        "normal_contrast": 0.04787450980392159,
+        "background_Yprime": 0.1347450980392157,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          1110,
+          350
+        ],
+        "normal_contrast": 0.27239607843137253,
+        "background_Yprime": 0.3835843137254902,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          1340,
+          350
+        ],
+        "normal_contrast": 0.21014901960784316,
+        "background_Yprime": 0.3091176470588235,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          420,
+          490
+        ],
+        "normal_contrast": 0.23563529411764705,
+        "background_Yprime": 0.3453019607843137,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          650,
+          490
+        ],
+        "normal_contrast": 0.08952156862745099,
+        "background_Yprime": 0.1684,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          880,
+          490
+        ],
+        "normal_contrast": 0.13080784313725485,
+        "background_Yprime": 0.24852156862745098,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          1110,
+          490
+        ],
+        "normal_contrast": 0.10556862745098038,
+        "background_Yprime": 0.18323529411764702,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          1340,
+          490
+        ],
+        "normal_contrast": 0.13313333333333333,
+        "background_Yprime": 0.21525098039215684,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          420,
+          630
+        ],
+        "normal_contrast": 0.17098431372549022,
+        "background_Yprime": 0.2927294117647059,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          650,
+          630
+        ],
+        "normal_contrast": 0.19177254901960789,
+        "background_Yprime": 0.32966666666666666,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          880,
+          630
+        ],
+        "normal_contrast": 0.15439607843137254,
+        "background_Yprime": 0.2540431372549019,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          1110,
+          630
+        ],
+        "normal_contrast": 0.15047450980392155,
+        "background_Yprime": 0.24043529411764702,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "unlit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          1340,
+          630
+        ],
+        "normal_contrast": 0.1126313725490196,
+        "background_Yprime": 0.20740784313725488,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          420,
+          210
+        ],
+        "normal_contrast": 0.038070588235294134,
+        "background_Yprime": 0.11488235294117646,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          650,
+          210
+        ],
+        "normal_contrast": 0.03527843137254902,
+        "background_Yprime": 0.11488235294117646,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          880,
+          210
+        ],
+        "normal_contrast": 0.033901960784313706,
+        "background_Yprime": 0.11415686274509804,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          1110,
+          210
+        ],
+        "normal_contrast": 0.036450980392156856,
+        "background_Yprime": 0.11601176470588234,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          1340,
+          210
+        ],
+        "normal_contrast": 0.034384313725490195,
+        "background_Yprime": 0.11532941176470587,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          420,
+          350
+        ],
+        "normal_contrast": 0.25724313725490194,
+        "background_Yprime": 0.3812392156862745,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          650,
+          350
+        ],
+        "normal_contrast": 0.2744627450980392,
+        "background_Yprime": 0.38006666666666666,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          880,
+          350
+        ],
+        "normal_contrast": 0.0508156862745098,
+        "background_Yprime": 0.1364078431372549,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          1110,
+          350
+        ],
+        "normal_contrast": 0.2783843137254902,
+        "background_Yprime": 0.38426666666666665,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          1340,
+          350
+        ],
+        "normal_contrast": 0.2073921568627451,
+        "background_Yprime": 0.30957254901960785,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          420,
+          490
+        ],
+        "normal_contrast": 0.24831764705882356,
+        "background_Yprime": 0.35454901960784313,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          650,
+          490
+        ],
+        "normal_contrast": 0.09781176470588236,
+        "background_Yprime": 0.17389803921568625,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          880,
+          490
+        ],
+        "normal_contrast": 0.11810196078431372,
+        "background_Yprime": 0.24624313725490196,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          1110,
+          490
+        ],
+        "normal_contrast": 0.11818823529411765,
+        "background_Yprime": 0.24165882352941176,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          1340,
+          490
+        ],
+        "normal_contrast": 0.27163529411764703,
+        "background_Yprime": 0.3883921568627451,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          420,
+          630
+        ],
+        "normal_contrast": 0.17131372549019605,
+        "background_Yprime": 0.29296470588235296,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          650,
+          630
+        ],
+        "normal_contrast": 0.20306666666666665,
+        "background_Yprime": 0.3319686274509804,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          880,
+          630
+        ],
+        "normal_contrast": 0.15784313725490196,
+        "background_Yprime": 0.25758039215686274,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          1110,
+          630
+        ],
+        "normal_contrast": 0.14853725490196076,
+        "background_Yprime": 0.23930588235294115,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          0,
+          0
+        ],
+        "slot": [
+          1340,
+          630
+        ],
+        "normal_contrast": 0.2707372549019608,
+        "background_Yprime": 0.37704705882352946,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          420,
+          210
+        ],
+        "normal_contrast": 0.03967843137254899,
+        "background_Yprime": 0.11690588235294118,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          650,
+          210
+        ],
+        "normal_contrast": 0.03689803921568627,
+        "background_Yprime": 0.11694901960784314,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          880,
+          210
+        ],
+        "normal_contrast": 0.03459607843137254,
+        "background_Yprime": 0.11601176470588234,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          1110,
+          210
+        ],
+        "normal_contrast": 0.03875294117647059,
+        "background_Yprime": 0.11807843137254902,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          1340,
+          210
+        ],
+        "normal_contrast": 0.03483137254901961,
+        "background_Yprime": 0.11650196078431371,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          420,
+          350
+        ],
+        "normal_contrast": 0.26694117647058824,
+        "background_Yprime": 0.38128235294117646,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          650,
+          350
+        ],
+        "normal_contrast": 0.24935686274509808,
+        "background_Yprime": 0.37934117647058824,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          880,
+          350
+        ],
+        "normal_contrast": 0.05360784313725492,
+        "background_Yprime": 0.13920000000000002,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          1110,
+          350
+        ],
+        "normal_contrast": 0.28141176470588236,
+        "background_Yprime": 0.38426666666666665,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          1340,
+          350
+        ],
+        "normal_contrast": 0.1730156862745098,
+        "background_Yprime": 0.28583137254901964,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          420,
+          490
+        ],
+        "normal_contrast": 0.2502039215686275,
+        "background_Yprime": 0.3636509803921568,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          650,
+          490
+        ],
+        "normal_contrast": 0.11162745098039216,
+        "background_Yprime": 0.18760392156862746,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          880,
+          490
+        ],
+        "normal_contrast": 0.11192156862745097,
+        "background_Yprime": 0.2389098039215686,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          1110,
+          490
+        ],
+        "normal_contrast": 0.13277254901960786,
+        "background_Yprime": 0.24764705882352941,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          1340,
+          490
+        ],
+        "normal_contrast": 0.264478431372549,
+        "background_Yprime": 0.3774549019607843,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          420,
+          630
+        ],
+        "normal_contrast": 0.17171764705882353,
+        "background_Yprime": 0.28949019607843135,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          650,
+          630
+        ],
+        "normal_contrast": 0.19513725490196077,
+        "background_Yprime": 0.32663921568627446,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          880,
+          630
+        ],
+        "normal_contrast": 0.16123529411764703,
+        "background_Yprime": 0.2594352941176471,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          1110,
+          630
+        ],
+        "normal_contrast": 0.14732156862745094,
+        "background_Yprime": 0.23930588235294115,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          -34
+        ],
+        "slot": [
+          1340,
+          630
+        ],
+        "normal_contrast": 0.27432156862745094,
+        "background_Yprime": 0.37236078431372543,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          420,
+          210
+        ],
+        "normal_contrast": 0.036686274509803926,
+        "background_Yprime": 0.11370980392156863,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          650,
+          210
+        ],
+        "normal_contrast": 0.0339372549019608,
+        "background_Yprime": 0.11415686274509804,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          880,
+          210
+        ],
+        "normal_contrast": 0.03276470588235293,
+        "background_Yprime": 0.11253725490196079,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          1110,
+          210
+        ],
+        "normal_contrast": 0.03555686274509805,
+        "background_Yprime": 0.11464705882352941,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          1340,
+          210
+        ],
+        "normal_contrast": 0.032976470588235274,
+        "background_Yprime": 0.11370980392156863,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          420,
+          350
+        ],
+        "normal_contrast": 0.26896470588235294,
+        "background_Yprime": 0.3820078431372549,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          650,
+          350
+        ],
+        "normal_contrast": 0.2585411764705883,
+        "background_Yprime": 0.37938431372549025,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          880,
+          350
+        ],
+        "normal_contrast": 0.04788235294117647,
+        "background_Yprime": 0.13429803921568625,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          1110,
+          350
+        ],
+        "normal_contrast": 0.28185882352941183,
+        "background_Yprime": 0.3847137254901961,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          1340,
+          350
+        ],
+        "normal_contrast": 0.18514509803921567,
+        "background_Yprime": 0.3068156862745097,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          420,
+          490
+        ],
+        "normal_contrast": 0.2456156862745098,
+        "background_Yprime": 0.35491372549019606,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          650,
+          490
+        ],
+        "normal_contrast": 0.09663921568627447,
+        "background_Yprime": 0.17276862745098037,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          880,
+          490
+        ],
+        "normal_contrast": 0.10358823529411766,
+        "background_Yprime": 0.1806549019607843,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          1110,
+          490
+        ],
+        "normal_contrast": 0.1189843137254902,
+        "background_Yprime": 0.23999607843137255,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          1340,
+          490
+        ],
+        "normal_contrast": 0.27999607843137253,
+        "background_Yprime": 0.39318823529411767,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          420,
+          630
+        ],
+        "normal_contrast": 0.17356470588235293,
+        "background_Yprime": 0.2930078431372549,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          650,
+          630
+        ],
+        "normal_contrast": 0.19730196078431372,
+        "background_Yprime": 0.3330156862745098,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          880,
+          630
+        ],
+        "normal_contrast": 0.16066274509803924,
+        "background_Yprime": 0.2582627450980392,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          1110,
+          630
+        ],
+        "normal_contrast": 0.14849411764705886,
+        "background_Yprime": 0.23930588235294115,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          -68,
+          34
+        ],
+        "slot": [
+          1340,
+          630
+        ],
+        "normal_contrast": 0.2675411764705882,
+        "background_Yprime": 0.3623843137254902,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          420,
+          210
+        ],
+        "normal_contrast": 0.0387529411764706,
+        "background_Yprime": 0.11650196078431371,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          650,
+          210
+        ],
+        "normal_contrast": 0.0381019607843137,
+        "background_Yprime": 0.11626666666666667,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          880,
+          210
+        ],
+        "normal_contrast": 0.03483137254901962,
+        "background_Yprime": 0.1160549019607843,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          1110,
+          210
+        ],
+        "normal_contrast": 0.0371764705882353,
+        "background_Yprime": 0.11739607843137255,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          1340,
+          210
+        ],
+        "normal_contrast": 0.036450980392156856,
+        "background_Yprime": 0.1176313725490196,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          420,
+          350
+        ],
+        "normal_contrast": 0.2484627450980392,
+        "background_Yprime": 0.37942745098039216,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          650,
+          350
+        ],
+        "normal_contrast": 0.2753568627450981,
+        "background_Yprime": 0.38006666666666666,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          880,
+          350
+        ],
+        "normal_contrast": 0.05433333333333332,
+        "background_Yprime": 0.13915686274509803,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          1110,
+          350
+        ],
+        "normal_contrast": 0.2738470588235294,
+        "background_Yprime": 0.3835411764705882,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          1340,
+          350
+        ],
+        "normal_contrast": 0.2168627450980392,
+        "background_Yprime": 0.3108117647058824,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          420,
+          490
+        ],
+        "normal_contrast": 0.23681960784313721,
+        "background_Yprime": 0.3488705882352941,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          650,
+          490
+        ],
+        "normal_contrast": 0.09943137254901961,
+        "background_Yprime": 0.17511372549019608,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          880,
+          490
+        ],
+        "normal_contrast": 0.14409019607843138,
+        "background_Yprime": 0.2518039215686274,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          1110,
+          490
+        ],
+        "normal_contrast": 0.12586666666666665,
+        "background_Yprime": 0.2473921568627451,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          1340,
+          490
+        ],
+        "normal_contrast": 0.256721568627451,
+        "background_Yprime": 0.36716470588235295,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          420,
+          630
+        ],
+        "normal_contrast": 0.16914117647058824,
+        "background_Yprime": 0.2879764705882353,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          650,
+          630
+        ],
+        "normal_contrast": 0.204878431372549,
+        "background_Yprime": 0.32736470588235295,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          880,
+          630
+        ],
+        "normal_contrast": 0.15519999999999995,
+        "background_Yprime": 0.2554705882352941,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          1110,
+          630
+        ],
+        "normal_contrast": 0.15096470588235295,
+        "background_Yprime": 0.24026666666666663,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          -34
+        ],
+        "slot": [
+          1340,
+          630
+        ],
+        "normal_contrast": 0.2783960784313725,
+        "background_Yprime": 0.3892627450980392,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          420,
+          210
+        ],
+        "normal_contrast": 0.03419215686274511,
+        "background_Yprime": 0.11370980392156863,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          650,
+          210
+        ],
+        "normal_contrast": 0.0334235294117647,
+        "background_Yprime": 0.11366666666666667,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          880,
+          210
+        ],
+        "normal_contrast": 0.0329764705882353,
+        "background_Yprime": 0.11258039215686273,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          1110,
+          210
+        ],
+        "normal_contrast": 0.03365882352941174,
+        "background_Yprime": 0.11370980392156863,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          1340,
+          210
+        ],
+        "normal_contrast": 0.034384313725490195,
+        "background_Yprime": 0.11439215686274509,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          420,
+          350
+        ],
+        "normal_contrast": 0.24381568627450978,
+        "background_Yprime": 0.37938431372549025,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          650,
+          350
+        ],
+        "normal_contrast": 0.2737803921568628,
+        "background_Yprime": 0.3801098039215686,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          880,
+          350
+        ],
+        "normal_contrast": 0.04787450980392159,
+        "background_Yprime": 0.1347450980392157,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          1110,
+          350
+        ],
+        "normal_contrast": 0.27239607843137253,
+        "background_Yprime": 0.3835843137254902,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          1340,
+          350
+        ],
+        "normal_contrast": 0.21019215686274506,
+        "background_Yprime": 0.3091176470588235,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          420,
+          490
+        ],
+        "normal_contrast": 0.23563529411764705,
+        "background_Yprime": 0.3453019607843137,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          650,
+          490
+        ],
+        "normal_contrast": 0.08952156862745099,
+        "background_Yprime": 0.1684,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          880,
+          490
+        ],
+        "normal_contrast": 0.13080784313725485,
+        "background_Yprime": 0.24852156862745098,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          1110,
+          490
+        ],
+        "normal_contrast": 0.10556862745098039,
+        "background_Yprime": 0.1833607843137255,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          1340,
+          490
+        ],
+        "normal_contrast": 0.27752549019607836,
+        "background_Yprime": 0.39610980392156864,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          420,
+          630
+        ],
+        "normal_contrast": 0.17098431372549022,
+        "background_Yprime": 0.2927294117647059,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          650,
+          630
+        ],
+        "normal_contrast": 0.19177254901960789,
+        "background_Yprime": 0.32966666666666666,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          880,
+          630
+        ],
+        "normal_contrast": 0.15439607843137254,
+        "background_Yprime": 0.2540431372549019,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          1110,
+          630
+        ],
+        "normal_contrast": 0.1512,
+        "background_Yprime": 0.2414392156862745,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": false
+      },
+      {
+        "lighting": "lit",
+        "camera_breath": [
+          68,
+          34
+        ],
+        "slot": [
+          1340,
+          630
+        ],
+        "normal_contrast": 0.2689490196078431,
+        "background_Yprime": 0.37766666666666665,
+        "foreground_overlap_pixels": 0,
+        "normal_numeric_pass": true
+      }
+    ],
+    "robust_slots": 4,
+    "hardened": {
+      "original_eye_contrast": 0.2523333333333333,
+      "trial_eye_contrast": 0.6007960784313726,
+      "individual_eye_length_px": 18,
+      "trial_pass": true,
+      "trial_material_tint_rgb": [
+        217,
+        160,
+        102
+      ],
+      "native_art_unchanged": true,
+      "human_acceptance": "pending"
+    }
+  },
+  "tracker": {
+    "unlit_monitor": {
+      "status": "pass",
+      "reason": "Deterministic projected screenshot screening only; real recordings remain pending",
+      "details": {
+        "samples": [
+          {
+            "acquired": true,
+            "edges": 4,
+            "low_threshold": 190,
+            "within_tracker_geometry_contract": true,
+            "role": "acquisition",
+            "expected": "acquire_four_edges"
+          },
+          {
+            "acquired": true,
+            "edges": 4,
+            "low_threshold": 188,
+            "within_tracker_geometry_contract": true,
+            "role": "acquisition",
+            "expected": "acquire_four_edges"
+          },
+          {
+            "acquired": true,
+            "edges": 4,
+            "low_threshold": 150,
+            "within_tracker_geometry_contract": true,
+            "role": "acquisition",
+            "expected": "acquire_four_edges"
+          },
+          {
+            "acquired": false,
+            "edges": 0,
+            "low_threshold": 190,
+            "within_tracker_geometry_contract": false,
+            "role": "retained_out_of_contract_stress",
+            "expected": "reject_or_acquire_without_acceptance_credit"
+          }
+        ],
+        "actual_camera_acceptance": "pending",
+        "historical_failure": "Original second quad exceeds existing tracker 15-degree opposite-edge divergence; retained as stress, not removed or used to relax tracker"
+      }
+    },
+    "unlit_tv": {
+      "status": "pass",
+      "reason": "Deterministic projected screenshot screening only; real recordings remain pending",
+      "details": {
+        "samples": [
+          {
+            "acquired": true,
+            "edges": 4,
+            "low_threshold": 163,
+            "within_tracker_geometry_contract": true,
+            "role": "acquisition",
+            "expected": "acquire_four_edges"
+          },
+          {
+            "acquired": true,
+            "edges": 4,
+            "low_threshold": 167,
+            "within_tracker_geometry_contract": true,
+            "role": "acquisition",
+            "expected": "acquire_four_edges"
+          },
+          {
+            "acquired": true,
+            "edges": 4,
+            "low_threshold": 150,
+            "within_tracker_geometry_contract": true,
+            "role": "acquisition",
+            "expected": "acquire_four_edges"
+          },
+          {
+            "acquired": false,
+            "edges": 0,
+            "low_threshold": 177,
+            "within_tracker_geometry_contract": false,
+            "role": "retained_out_of_contract_stress",
+            "expected": "reject_or_acquire_without_acceptance_credit"
+          }
+        ],
+        "actual_camera_acceptance": "pending",
+        "historical_failure": "Original second quad exceeds existing tracker 15-degree opposite-edge divergence; retained as stress, not removed or used to relax tracker"
+      }
+    },
+    "lit_monitor": {
+      "status": "pass",
+      "reason": "Deterministic projected screenshot screening only; real recordings remain pending",
+      "details": {
+        "samples": [
+          {
+            "acquired": true,
+            "edges": 4,
+            "low_threshold": 190,
+            "within_tracker_geometry_contract": true,
+            "role": "acquisition",
+            "expected": "acquire_four_edges"
+          },
+          {
+            "acquired": true,
+            "edges": 4,
+            "low_threshold": 188,
+            "within_tracker_geometry_contract": true,
+            "role": "acquisition",
+            "expected": "acquire_four_edges"
+          },
+          {
+            "acquired": true,
+            "edges": 4,
+            "low_threshold": 150,
+            "within_tracker_geometry_contract": true,
+            "role": "acquisition",
+            "expected": "acquire_four_edges"
+          },
+          {
+            "acquired": false,
+            "edges": 0,
+            "low_threshold": 190,
+            "within_tracker_geometry_contract": false,
+            "role": "retained_out_of_contract_stress",
+            "expected": "reject_or_acquire_without_acceptance_credit"
+          }
+        ],
+        "actual_camera_acceptance": "pending",
+        "historical_failure": "Original second quad exceeds existing tracker 15-degree opposite-edge divergence; retained as stress, not removed or used to relax tracker"
+      }
+    },
+    "lit_tv": {
+      "status": "pass",
+      "reason": "Deterministic projected screenshot screening only; real recordings remain pending",
+      "details": {
+        "samples": [
+          {
+            "acquired": true,
+            "edges": 4,
+            "low_threshold": 163,
+            "within_tracker_geometry_contract": true,
+            "role": "acquisition",
+            "expected": "acquire_four_edges"
+          },
+          {
+            "acquired": true,
+            "edges": 4,
+            "low_threshold": 167,
+            "within_tracker_geometry_contract": true,
+            "role": "acquisition",
+            "expected": "acquire_four_edges"
+          },
+          {
+            "acquired": true,
+            "edges": 4,
+            "low_threshold": 150,
+            "within_tracker_geometry_contract": true,
+            "role": "acquisition",
+            "expected": "acquire_four_edges"
+          },
+          {
+            "acquired": false,
+            "edges": 0,
+            "low_threshold": 177,
+            "within_tracker_geometry_contract": false,
+            "role": "retained_out_of_contract_stress",
+            "expected": "reject_or_acquire_without_acceptance_credit"
+          }
+        ],
+        "actual_camera_acceptance": "pending",
+        "historical_failure": "Original second quad exceeds existing tracker 15-degree opposite-edge divergence; retained as stress, not removed or used to relax tracker"
+      }
+    }
+  },
+  "hidden_geometry": {
+    "status": "pending",
+    "layers": [
+      {
+        "layer": "far_base",
+        "extent_equals_actual_alpha": true,
+        "certification": "pending_independent_intended_geometry",
+        "reason": "Expected extent duplicates current visible alpha; holes already present in both cannot be discovered by this comparison"
+      },
+      {
+        "layer": "far_town",
+        "extent_equals_actual_alpha": true,
+        "certification": "pending_independent_intended_geometry",
+        "reason": "Expected extent duplicates current visible alpha; holes already present in both cannot be discovered by this comparison"
+      },
+      {
+        "layer": "mid_ground",
+        "extent_equals_actual_alpha": true,
+        "certification": "pending_independent_intended_geometry",
+        "reason": "Expected extent duplicates current visible alpha; holes already present in both cannot be discovered by this comparison"
+      },
+      {
+        "layer": "mid_left",
+        "extent_equals_actual_alpha": true,
+        "certification": "pending_independent_intended_geometry",
+        "reason": "Expected extent duplicates current visible alpha; holes already present in both cannot be discovered by this comparison"
+      },
+      {
+        "layer": "mid_right",
+        "extent_equals_actual_alpha": true,
+        "certification": "pending_independent_intended_geometry",
+        "reason": "Expected extent duplicates current visible alpha; holes already present in both cannot be discovered by this comparison"
+      },
+      {
+        "layer": "near_left",
+        "extent_equals_actual_alpha": true,
+        "certification": "pending_independent_intended_geometry",
+        "reason": "Expected extent duplicates current visible alpha; holes already present in both cannot be discovered by this comparison"
+      },
+      {
+        "layer": "near_right",
+        "extent_equals_actual_alpha": true,
+        "certification": "pending_independent_intended_geometry",
+        "reason": "Expected extent duplicates current visible alpha; holes already present in both cannot be discovered by this comparison"
+      }
+    ],
+    "next_requirement": "Independent intended silhouette/whitebox annotation, then compare moving occlusion against that mask; do not certify current-alpha self-comparison"
+  },
+  "original_C03_bands": {
+    "far_base": {
+      "band": "far",
+      "weighted_mean_Yprime": 0.17612428044702358,
+      "required": [
+        0.45,
+        0.75
+      ],
+      "C03_band": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      }
+    },
+    "far_town": {
+      "band": "far",
+      "weighted_mean_Yprime": 0.3074290943389381,
+      "required": [
+        0.45,
+        0.75
+      ],
+      "C03_band": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      }
+    },
+    "mid_ground": {
+      "band": "middle",
+      "weighted_mean_Yprime": 0.24789496062121988,
+      "required": [
+        0.25,
+        0.55
+      ],
+      "C03_band": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      }
+    },
+    "mid_left": {
+      "band": "middle",
+      "weighted_mean_Yprime": 0.3386129547493352,
+      "required": [
+        0.25,
+        0.55
+      ],
+      "C03_band": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      }
+    },
+    "mid_right": {
+      "band": "middle",
+      "weighted_mean_Yprime": 0.3125393088676751,
+      "required": [
+        0.25,
+        0.55
+      ],
+      "C03_band": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      }
+    },
+    "near_left": {
+      "band": "near",
+      "weighted_mean_Yprime": 0.1067530322095334,
+      "required": [
+        0.05,
+        0.2
+      ],
+      "C03_band": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      }
+    },
+    "near_right": {
+      "band": "near",
+      "weighted_mean_Yprime": 0.147351570316915,
+      "required": [
+        0.05,
+        0.2
+      ],
+      "C03_band": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      }
+    }
+  },
+  "norm_change_approved": false,
+  "actual_0B": false,
+  "production_approved": false
+}

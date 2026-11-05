@@ -1,0 +1,8 @@
+stage: A2h
+source: explicit_user_chat
+warning: both_enemies_readable_approved
+whole_layer_design_extents: seven_shapes_and_cutouts_accepted_as_expected_design_baseline
+notes: 两种墨怪的预警容易识别，可以；七张完整纸层的外形与镂空可作为预期设计范围基线。
+technical_acceptance: false
+production_approved: false
+actual_0B: false

@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "reason": "Visible alpha-weighted encoded luminance",
+  "details": {
+    "clipped_fraction": 0.0
+  }
+}

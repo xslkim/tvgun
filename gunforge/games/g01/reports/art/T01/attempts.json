@@ -1,0 +1,68 @@
+{
+  "task": "T01",
+  "cap": 3,
+  "attempts": [
+    {
+      "id": "T01_001",
+      "status": "returned",
+      "prompt_file": "prompt_01.txt",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "cost": {
+        "amount": null,
+        "status": "not_reported"
+      },
+      "references": [],
+      "output": "D:/gunforge_cache/g01/T01/test_01_unlit.png",
+      "actual_size": [
+        1024,
+        1536
+      ],
+      "transparent_fraction": 0.8630968729654948,
+      "output_sha256": "34094b64ffb0b41eddf52ab7b1e39d0a16bacc882670622a3f9d5540f92fe745",
+      "task_id": null
+    },
+    {
+      "id": "T01_002",
+      "status": "returned",
+      "prompt_file": "prompt_02.txt",
+      "provider": "builtin_image_gen",
+      "references": [
+        "D:/gunforge_cache/g01/T01/test_01_unlit.png"
+      ],
+      "cost": {
+        "amount": null,
+        "status": "not_reported"
+      },
+      "output": "D:/gunforge_cache/g01/T01/test_02_lit.png",
+      "actual_size": [
+        1024,
+        1536
+      ],
+      "output_sha256": "d5d0e4cab075028f6ef07d46e8633bd9a9bc40976489909ea28c5c33a4198f31",
+      "model": null,
+      "task_id": null
+    },
+    {
+      "id": "T01_003",
+      "status": "returned",
+      "prompt_file": "prompt_03.txt",
+      "provider": "builtin_image_gen",
+      "references": [
+        "D:/gunforge_cache/g01/T01/test_01_unlit.png"
+      ],
+      "cost": {
+        "amount": null,
+        "status": "not_reported"
+      },
+      "output": "D:\\gunforge_cache\\g01\\T01\\test_03_reference_variant.png",
+      "actual_size": [
+        2172,
+        724
+      ],
+      "output_sha256": "f2d62a99fd9c8d96ab274f1291526df73a76b3aa623dd2b44b6202928139e370",
+      "model": null,
+      "task_id": null
+    }
+  ]
+}

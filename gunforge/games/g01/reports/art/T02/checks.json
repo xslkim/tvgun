@@ -1,0 +1,1178 @@
+{
+  "st_l1_alley": {
+    "checks": {
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.03147268484073841
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：生活物件与中景留白可参考；整体偏橙亮，夜底占比不足，光感需收暗。"
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.8693565310288254
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1730,
+        909
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.0,
+      "sha256": "01f5b143d9970ac05a4155ff7d81eeee80e1e5325c2d7a3421ffd4b7576b8b9a"
+    },
+    "visual_note": "生活物件与中景留白可参考；整体偏橙亮，夜底占比不足，光感需收暗。"
+  },
+  "st_l1_hawthorn": {
+    "checks": {
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.04342185592185592
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：蜂窝煤炉与搪瓷杯有年代感；偏日落亮调，局部装饰仍偏古镇。"
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.8211646571021571
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1728,
+        910
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.0,
+      "sha256": "9ac31a2d9c37e89f196c1d82ff39ddc8b89f6ea0e61ec6c842e501877b1b46ec"
+    },
+    "visual_note": "蜂窝煤炉与搪瓷杯有年代感；偏日落亮调，局部装饰仍偏古镇。"
+  },
+  "st_l1_video": {
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.019739543279161557
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：卷帘门、录像带、电视与录音机明确；亮度和舞台留白还需调整。"
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.7527720399900851
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1729,
+        910
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.0,
+      "sha256": "7b2bebd91093726ed3640e43e6317e3fd5d43e7929096ef063c8cc7d8a0c4ad2"
+    },
+    "visual_note": "卷帘门、录像带、电视与录音机明确；亮度和舞台留白还需调整。"
+  },
+  "st_l1_bridge": {
+    "checks": {
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.05417982826889709
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：桥身横向结构清楚；橙色远景过亮，市场檐口装饰偏多。"
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.8462936716262338
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1729,
+        910
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.0,
+      "sha256": "be5634faa85cf2ad588c84ec659acfea141df2ebaa6e7e8f7414f151fa640bf1"
+    },
+    "visual_note": "桥身横向结构清楚；橙色远景过亮，市场檐口装饰偏多。"
+  },
+  "st_l2_ticket": {
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.003982244607244607
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：售票口和胶片标识清楚；玻璃与灯光为方向参考，交互灯正式版需独立层。"
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.82713865995116
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1728,
+        910
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.0,
+      "sha256": "dae852d1d1b136601561ce47285c98f70cbd5d057590bb2179a04c00921b02af"
+    },
+    "visual_note": "售票口和胶片标识清楚；玻璃与灯光为方向参考，交互灯正式版需独立层。"
+  },
+  "st_l2_posters": {
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0005885381246861872
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：空海报框便于后期叠字；座椅和门口层级可参考。"
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.7550994985350103
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1729,
+        910
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.0,
+      "sha256": "ac8f76adb5869839e7778c6f5736f9e38eba3a93032f558c9add80818a0bc33a"
+    },
+    "visual_note": "空海报框便于后期叠字；座椅和门口层级可参考。"
+  },
+  "st_l2_seats": {
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 5.7903879559930515e-05
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：品红暗银幕和对角光束有辨识度；前排座椅可作掩体。"
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.8966466654364743
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1727,
+        910
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.0,
+      "sha256": "4515c894d66904db953e1562f51f3ff32df12c20e48dcfaaba0a465b018b157f"
+    },
+    "visual_note": "品红暗银幕和对角光束有辨识度；前排座椅可作掩体。"
+  },
+  "st_l2_projector": {
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0005971459096459097
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：胶片与暖水瓶有生活感；放映机较复杂，正式版需简化与分层。"
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.8501729751729752
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1728,
+        910
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.0,
+      "sha256": "ffc9ab6bb4fd81e71cc6aa17dcc517f3557a7173e8dda8d819be390f3240eed1"
+    },
+    "visual_note": "胶片与暖水瓶有生活感；放映机较复杂，正式版需简化与分层。"
+  },
+  "st_l3_waiting": {
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.005527574277574277
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：长椅、编织袋、时钟能交代场景；构图较满，需留目标空间。"
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.743965583028083
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1728,
+        910
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.0,
+      "sha256": "ef64554904272a32f97764537f924b18c8225867aa2905ef391f7e0a8d4fbd6c"
+    },
+    "visual_note": "长椅、编织袋、时钟能交代场景；构图较满，需留目标空间。"
+  },
+  "st_l3_platform": {
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.007214718152218152
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：长月台、方正绿皮车和黄色腰线明确；适合锚定横向节奏。"
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.6971980565730566
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1728,
+        910
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.0,
+      "sha256": "ea9c3643ff5db72b391610133e6105ba9fffb1dacf3fcf3d6518cf021cfbd466"
+    },
+    "visual_note": "长月台、方正绿皮车和黄色腰线明确；适合锚定横向节奏。"
+  },
+  "st_l3_carriage": {
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004274726671751844
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：车窗、行李架的重复节奏成立；窗外景深与座椅需进一步分层。"
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.5481261123824053
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1725,
+        912
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.0,
+      "sha256": "0d69267c7dd131f2f78f0a434266648e9a79e78a8cfcaed78126a10107096e04"
+    },
+    "visual_note": "车窗、行李架的重复节奏成立；窗外景深与座椅需进一步分层。"
+  },
+  "st_l3_base": {
+    "checks": {
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.056557794057794056
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：纸层台口可参考；灯座和木框主题不够明确，仍读作街景。"
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.8411089489214489
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1728,
+        910
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.0,
+      "sha256": "149f934cff0fc0a1cb29dbc5d1873732c0beda103d29511c469bc9a058cb6dae"
+    },
+    "visual_note": "纸层台口可参考；灯座和木框主题不够明确，仍读作街景。"
+  },
+  "res_vendor": {
+    "checks": {
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.07319985937856723
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：毛衣围裙与橙色糖葫芦明确；姿势非严格中性，扣钉和厚度偏强。"
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.7876000771394688
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.7180779774983724,
+      "sha256": "cae0e9fda89c0707ecb0a78f4d98a5f2130d9ae73d71c8157258039706794ae6"
+    },
+    "visual_note": "毛衣围裙与橙色糖葫芦明确；姿势非严格中性，扣钉和厚度偏强。"
+  },
+  "res_video": {
+    "checks": {
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.07521078173916972
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：夹克和录像带盒明确；纸偶轮廓友好，衣服折面偏立体。"
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.6095793170911251
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.6177571614583334,
+      "sha256": "cd4c463abf86babb166fd2c5499c0551d26e8cb31a30deec506ddc2e3632759a"
+    },
+    "visual_note": "夹克和录像带盒明确；纸偶轮廓友好，衣服折面偏立体。"
+  },
+  "res_projectionist": {
+    "checks": {
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.08152058430598567
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：工作服和胶片盘清楚；机械圆盘与袖口细节需简化。"
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.8138998693438535
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.6712360382080078,
+      "sha256": "79b94baa79440fa24ae8a58bded0b8d4ac14fa2956b9cb574fa48c536831be01"
+    },
+    "visual_note": "工作服和胶片盘清楚；机械圆盘与袖口细节需简化。"
+  },
+  "res_ticket": {
+    "checks": {
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.08982453143956183
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：检票动作清楚；新增帽子和臂带较像制服，可决定是否保留；军绿偏离限定色板。"
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.2276785758512828
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.7080561319986979,
+      "sha256": "d8ea457ed9edccba1bf6490f010294799f12b4ce3ac338b83d507338e1851623"
+    },
+    "visual_note": "检票动作清楚；新增帽子和臂带较像制服，可决定是否保留；军绿偏离限定色板。"
+  },
+  "res_cyclist": {
+    "checks": {
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.09055554601980789
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：骑车身份明确；自行车辐条太细，正式分件时需简化。"
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.6872152898350296
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1199,
+        1312
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.5840251785024105,
+      "sha256": "a09e6d25f0de85bd3c67ef818c88188efe2b85e05d1a6e5851a080ef43812594"
+    },
+    "visual_note": "骑车身份明确；自行车辐条太细，正式分件时需简化。"
+  },
+  "res_passerby": {
+    "checks": {
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.1148682112590159
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：温暖、朴素、纸色清楚；适合参考居民气质，扣钉偏多。"
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.8885543482564972
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.6645291646321615,
+      "sha256": "9b8f9200effc8d0a40642f742d6131edade4fd239dbe7929e11af0b23202a39c"
+    },
+    "visual_note": "温暖、朴素、纸色清楚；适合参考居民气质，扣钉偏多。"
+  },
+  "ink_tadpole": {
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0007281064373788697
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：大头、单印迹易辨认；毛边与高光需要在实际显示尺寸下检查。"
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9774758628224778
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.6387557983398438,
+      "sha256": "ba045ce04970d9181ef8ad1f2d22d0cd0606f2394ea1014ef3bfe5b2d2b8742b"
+    },
+    "visual_note": "大头、单印迹易辨认；毛边与高光需要在实际显示尺寸下检查。"
+  },
+  "ink_crow": {
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：少高光与平面印迹方向；展开羽毛仍偏细，需保留厚实主可伤害区。"
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9677240199445272
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.4698333740234375,
+      "sha256": "0adb26ecb5dd88808536492f0a60aceafb5ed5f6e2f63f46d26e3e10cc3ebb78"
+    },
+    "visual_note": "少高光与平面印迹方向；展开羽毛仍偏细，需保留厚实主可伤害区。"
+  },
+  "ink_rider": {
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0008153660163822228
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：可见车轮，但轮廓偏奔马/骑兽，骑自行车的身份不够准确；建议只参考墨质。"
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9904615582292976
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1383,
+        1137
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.5764099942065705,
+      "sha256": "be381b90c17395f5d606e34483fa67c553ed57b18bcc287c8fbc3ba5c1cc0ec1"
+    },
+    "visual_note": "可见车轮，但轮廓偏奔马/骑兽，骑自行车的身份不够准确；建议只参考墨质。"
+  },
+  "ink_sign": {
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.000800109164098022
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：装饰性框较强，招牌轮廓不够明确；不宜直接锚定敌人造型。"
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9742415831318826
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.7017612457275391,
+      "sha256": "1d30287363f7f29c5ba2374eebffd4e0cc20bb16025692f0a657aac2d62e683e"
+    },
+    "visual_note": "装饰性框较强，招牌轮廓不够明确；不宜直接锚定敌人造型。"
+  },
+  "ink_tape": {
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：录像带和磁带丝能辨认；带丝复杂度偏高。"
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9892846342140984
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.5445594787597656,
+      "sha256": "cd16c33652306bd567b6a4c253117627aebe91c9a080f6abe52cc1ffc27e000a"
+    },
+    "visual_note": "录像带和磁带丝能辨认；带丝复杂度偏高。"
+  },
+  "ink_umbrella": {
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0017265743662606913
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：收伞与厚墨身明确；可参考主轮廓，后续还需撑伞状态。"
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9487796711810667
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1312,
+        1199
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.5387473555198438,
+      "sha256": "4c090c19280e8e2eab673e840e9b89a0fee1be9244dd5531a511649dbec20b39"
+    },
+    "visual_note": "收伞与厚墨身明确；可参考主轮廓，后续还需撑伞状态。"
+  },
+  "ui_life": {
+    "checks": {
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.24732612423475955
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：第二次生成已去掉场景，四亮一灭、数量正确；缩小后的灯芯细节需验证。"
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9996764774593883
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.8622962516406704,
+      "sha256": "3ac5a0855d7e52c3299fb5177a58ce7831c55a837a08b5a8c3985d5b2ea0eb72"
+    },
+    "visual_note": "第二次生成已去掉场景，四亮一灭、数量正确；缩小后的灯芯细节需验证。"
+  },
+  "ui_ammo": {
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：第二次生成已去掉插画，四满两空；矩形轮廓可用于简洁 HUD。"
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.944430030918608
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.7475885552176051,
+      "sha256": "178ea47d5392d3e50c7945ce5b0676d5b5a490ba4751f98dfac03dba4ea874e6"
+    },
+    "visual_note": "第二次生成已去掉插画，四满两空；矩形轮廓可用于简洁 HUD。"
+  },
+  "ui_stamp": {
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：第二次生成仅保留空印框；墨边略散，正式尺寸需检查。"
+      },
+      "C04": {
+        "status": "na",
+        "reason": "独立朱砂印框排除于普通色板覆盖率；朱砂色域与整帧面积另验收",
+        "details": {}
+      }
+    },
+    "metadata": {
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.7606014819563044,
+      "sha256": "aff16da1356ff7d97527cef9183aab4c4953621b560348f040d445131bd9f056"
+    },
+    "visual_note": "第二次生成仅保留空印框；墨边略散，正式尺寸需检查。"
+  },
+  "ui_frames": {
+    "checks": {
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.11684762251148857
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：第二次生成已移除街景；边框很细，缩小后可能不清楚，需验证。"
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9883635920410361
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.9107112878117274,
+      "sha256": "23bf65e78f764642316aa1c2fd4424022b89ed3421c9292f21345a7c4643c19e"
+    },
+    "visual_note": "第二次生成已移除街景；边框很细，缩小后可能不清楚，需验证。"
+  },
+  "ui_title": {
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者目视为纸灯城，非OCR结果"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：执行者目视为“纸灯城”；仅目视核对，自动 OCR 未运行。"
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9999901875223126
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.6689604255059369,
+      "sha256": "73f0065ee06698cd24c372e963238cc4a620997e0e9614abe1240624c0818132"
+    },
+    "visual_note": "执行者目视为“纸灯城”；仅目视核对，自动 OCR 未运行。"
+  },
+  "ui_crosshair": {
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：再次要求去掉光晕后仍残留软光；只参考环形轮廓，不能直接当正式准星。"
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 1.0
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.960778554280599,
+      "sha256": "854037c77137401b37a93aa8a027993be13457a3909a6af868846d34f9fb7803"
+    },
+    "visual_note": "再次要求去掉光晕后仍残留软光；只参考环形轮廓，不能直接当正式准星。"
+  },
+  "ink_compare_a": {
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.017472942637381483
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Tesseract OCR and Chinese trained data are not installed",
+        "details": {},
+        "manual_observation": "执行者预筛未见可辨文字；自动OCR未运行"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "尚无锚点，不评分；执行者目视意见：A 版刻意使用强高光与球状红核，只作对比。"
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.8669825921927515
+        }
+      }
+    },
+    "metadata": {
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "transparent_fraction": 0.4487864176432292,
+      "sha256": "0760447ddb438b9e231347989549972853b7a1707174c94cb1d8878495482f00"
+    },
+    "visual_note": "A 版刻意使用强高光与球状红核，只作对比。"
+  }
+}

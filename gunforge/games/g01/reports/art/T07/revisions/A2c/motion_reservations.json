@@ -1,0 +1,46 @@
+{
+  "vendor": {
+    "status": "pass",
+    "kind": "protected_human",
+    "human_attackable": false,
+    "slot_origin": [
+      760,
+      500
+    ],
+    "motion_bbox": [
+      506,
+      189,
+      499,
+      538
+    ],
+    "parallax": 0.45,
+    "camera_breath_padding": [
+      30.6,
+      15.3
+    ],
+    "alternative_slot": true,
+    "scope": "conservative actually selected attachment rectangles (including palm/alternate head/ankle compensation) over every attached-eligible frame, plus camera/breath extrema; not engine occlusion acceptance"
+  },
+  "video": {
+    "status": "pass",
+    "kind": "protected_human",
+    "human_attackable": false,
+    "slot_origin": [
+      760,
+      500
+    ],
+    "motion_bbox": [
+      569,
+      314,
+      373,
+      329
+    ],
+    "parallax": 0.45,
+    "camera_breath_padding": [
+      30.6,
+      15.3
+    ],
+    "alternative_slot": true,
+    "scope": "conservative actually selected attachment rectangles (including palm/alternate head/ankle compensation) over every attached-eligible frame, plus camera/breath extrema; not engine occlusion acceptance"
+  }
+}

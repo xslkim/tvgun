@@ -1,0 +1,40 @@
+{
+  "checker_version": "art-checks-0.3-initial-offline",
+  "code_snapshot": {
+    "checks.py": "6505b8cd9eae92760be235a9de0e7a56dc57907f685a66f13b99a48d2c632d27",
+    "ocr.cjs": "0b2555d29ff1ddb5f6400cf3a814a0cd13ff6fb100a5ed1d00b41919673e56ad",
+    "artlib.py": "636ed606bdb15edb1ad1372f8484d1520c85d63595d3050b711d5920e7047ff2",
+    "paper_ops.py": "9f88d21f2685beedf74159526176d9cf32fe6bf52afbf251e4bd396a07b527b1"
+  },
+  "thresholds_frozen_as_calibrated": false,
+  "thresholds": {
+    "C04": {
+      "delta_E": 15,
+      "coverage": 0.9,
+      "full_asset_approved": 0,
+      "full_asset_rejected": 0,
+      "reason": "A1 only approved named characteristics; 12 selected references are not full asset labels. 6 references include palette."
+    },
+    "C12": {
+      "endpoint_difference": 0.02,
+      "velocity_difference": 0.02,
+      "approved_loops": 0,
+      "rejected_loops": 0
+    },
+    "C14": {
+      "score": null,
+      "full_style_approved": 0,
+      "full_style_rejected": 0,
+      "reason": "No calibrated visual scorer or >=20 approved and rejected samples per category."
+    }
+  },
+  "partial_anchor_samples": {
+    "scene": 5,
+    "resident": 4,
+    "ink": 2,
+    "ui": 1
+  },
+  "A1b_direction_frames": 2,
+  "A2_decisions": "pending",
+  "rule": "Do not classify unselected images as rejected or feature-only approvals as complete passes."
+}

@@ -1,0 +1,74 @@
+stage: A2
+status: A2k_arm_grip_prototype_review_pending
+source: explicit_user_chat
+items:
+- id: scene
+  status: approved
+  scope: visual direction only
+- id: people
+  status: rejected
+  scope: animation only; character artwork approved
+- id: ink
+  status: approved
+  scope: material and gloss direction only
+- id: people_motion_v2
+  status: rejected
+  source: explicit_A2b_user_feedback
+- id: enemy_hit_fx
+  status: rejected
+  source: explicit_A2b_user_feedback
+- id: people_art
+  status: approved
+  scope: character visual direction only, explicit A2 user feedback
+- id: people_acting_v3
+  status: rejected
+  scope: lowered elbow motion requires revision
+  source: explicit_A2c_user_feedback
+- id: enemy_hit_fx_v3
+  status: approved
+  scope: visual hit feedback direction only
+  source: explicit_A2c_user_feedback
+- id: people_elbow_v4
+  status: approved
+  scope: lowered elbow visual direction only
+  source: explicit_A2d_user_chat
+- id: crow_hardened_eyes_v1
+  status: approved
+  scope: warm paper eye material in hardened state only
+  source: explicit_A2e_user_feedback
+- id: alley_luminance_exception_v1
+  status: approved
+  scope: this prototype station only; no A2 or production approval
+  source: explicit_A2e_user_feedback
+- id: integrated_readability_A2f
+  status: approved
+  scope: two selected slots and shown states only
+  source: explicit_A2f_user_chat
+- id: wall_regions_v1
+  status: approved
+  scope: four solid architectural regions only; full hidden geometry pending
+  source: explicit_A2f_user_chat
+- id: tanghulu_grip_v5
+  status: approved
+  scope: direction and grip only
+  source: explicit_A2g_user_feedback
+- id: warning_v1
+  status: approved
+  scope: two enemies, minimum-size shown preview only
+  source: explicit_A2h_user_chat
+- id: full_extent_design_v1
+  status: approved
+  scope: seven complete shapes as design baseline, not automatic engine or production
+    acceptance
+  source: explicit_A2h_user_chat
+- id: character_occlusion_v5
+  status: rejected
+  scope: body part front/back occlusion; visual design and prior scoped approvals
+    retained
+  source: explicit_A2i_followup_user_chat
+technical_acceptance: false
+actual_0B_approved: false
+feedback_history: revisions/A2b/user_feedback.yaml
+revision_report: revisions/A2k/report.md
+latest_feedback: revisions/A2j/user_feedback.yaml
+T08_started: false

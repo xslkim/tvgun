@@ -1,0 +1,212 @@
+{
+  "scope": "360 actual frames per civilian; fixed 200px crow; invariant common .45 parallax; 4 prefiltered slots; no runtime certification",
+  "human_frames": 720,
+  "joint_tests": 2880,
+  "rows": [
+    {
+      "role": "vendor",
+      "enemy_center": [
+        420,
+        350
+      ],
+      "human_origin": [
+        760,
+        500
+      ],
+      "max_protected_overlap": 0,
+      "max_weak_protected_overlap": 0,
+      "failed_frames": 0,
+      "samples": 360,
+      "simultaneous_allowed": true
+    },
+    {
+      "role": "vendor",
+      "enemy_center": [
+        650,
+        350
+      ],
+      "human_origin": [
+        760,
+        500
+      ],
+      "max_protected_overlap": 8366,
+      "max_weak_protected_overlap": 464,
+      "failed_frames": 360,
+      "samples": 360,
+      "simultaneous_allowed": false
+    },
+    {
+      "role": "vendor",
+      "enemy_center": [
+        1110,
+        350
+      ],
+      "human_origin": [
+        760,
+        500
+      ],
+      "max_protected_overlap": 0,
+      "max_weak_protected_overlap": 0,
+      "failed_frames": 0,
+      "samples": 360,
+      "simultaneous_allowed": true
+    },
+    {
+      "role": "vendor",
+      "enemy_center": [
+        420,
+        490
+      ],
+      "human_origin": [
+        760,
+        500
+      ],
+      "max_protected_overlap": 0,
+      "max_weak_protected_overlap": 0,
+      "failed_frames": 0,
+      "samples": 360,
+      "simultaneous_allowed": true
+    },
+    {
+      "role": "video",
+      "enemy_center": [
+        420,
+        350
+      ],
+      "human_origin": [
+        760,
+        500
+      ],
+      "max_protected_overlap": 0,
+      "max_weak_protected_overlap": 0,
+      "failed_frames": 0,
+      "samples": 360,
+      "simultaneous_allowed": true
+    },
+    {
+      "role": "video",
+      "enemy_center": [
+        650,
+        350
+      ],
+      "human_origin": [
+        760,
+        500
+      ],
+      "max_protected_overlap": 2291,
+      "max_weak_protected_overlap": 113,
+      "failed_frames": 324,
+      "samples": 360,
+      "simultaneous_allowed": false
+    },
+    {
+      "role": "video",
+      "enemy_center": [
+        1110,
+        350
+      ],
+      "human_origin": [
+        760,
+        500
+      ],
+      "max_protected_overlap": 0,
+      "max_weak_protected_overlap": 0,
+      "failed_frames": 0,
+      "samples": 360,
+      "simultaneous_allowed": true
+    },
+    {
+      "role": "video",
+      "enemy_center": [
+        420,
+        490
+      ],
+      "human_origin": [
+        760,
+        500
+      ],
+      "max_protected_overlap": 0,
+      "max_weak_protected_overlap": 0,
+      "failed_frames": 0,
+      "samples": 360,
+      "simultaneous_allowed": true
+    }
+  ],
+  "slots": [
+    {
+      "center": [
+        420,
+        350
+      ],
+      "motion_bbox": [
+        271,
+        217,
+        297,
+        266
+      ],
+      "edge_hud_pass": true,
+      "allowed_with_roles": [
+        "vendor",
+        "video"
+      ],
+      "min_contrast": 0.24381568627450978,
+      "effective_radius": 67.75209862916753
+    },
+    {
+      "center": [
+        650,
+        350
+      ],
+      "motion_bbox": [
+        501,
+        217,
+        297,
+        266
+      ],
+      "edge_hud_pass": true,
+      "allowed_with_roles": [],
+      "min_contrast": 0.24935686274509808,
+      "effective_radius": 67.75209862916753
+    },
+    {
+      "center": [
+        1110,
+        350
+      ],
+      "motion_bbox": [
+        961,
+        217,
+        297,
+        266
+      ],
+      "edge_hud_pass": true,
+      "allowed_with_roles": [
+        "vendor",
+        "video"
+      ],
+      "min_contrast": 0.27239607843137253,
+      "effective_radius": 67.75209862916753
+    },
+    {
+      "center": [
+        420,
+        490
+      ],
+      "motion_bbox": [
+        271,
+        357,
+        297,
+        266
+      ],
+      "edge_hud_pass": true,
+      "allowed_with_roles": [
+        "vendor",
+        "video"
+      ],
+      "min_contrast": 0.23563529411764705,
+      "effective_radius": 67.75209862916753
+    }
+  ],
+  "hardened_material_version": "g01-crow-hardened-eyes-1",
+  "alpha_preservation": true
+}

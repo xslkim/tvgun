@@ -1,0 +1,161 @@
+{
+  "C01": {
+    "status": "pass",
+    "reason": "PNG format, channel mode and declared size",
+    "details": {
+      "mode": "RGBA",
+      "size": [
+        256,
+        256
+      ]
+    }
+  },
+  "C02": {
+    "status": "pass",
+    "reason": "Known matte color residue in semi-transparent pixels",
+    "details": {
+      "fraction": 0.0,
+      "limitation": "Black/white composite evidence still requires visual review"
+    }
+  },
+  "C03": {
+    "status": "pass",
+    "reason": "Visible alpha-weighted encoded luminance",
+    "details": {
+      "clipped_fraction": 0.0
+    }
+  },
+  "C04": {
+    "status": "pass",
+    "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+    "details": {
+      "coverage": 1.0
+    }
+  },
+  "C05": {
+    "status": "pass",
+    "reason": "OCR text versus permitted text",
+    "details": {
+      "recognized": "",
+      "confidence": 0,
+      "engine": "tesseract.js-7.0.0-eng+chi_sim"
+    }
+  },
+  "C06": {
+    "status": "pending",
+    "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+    "details": {
+      "contrast": 0.7702745098039215
+    }
+  },
+  "C07a": {
+    "status": "pass",
+    "reason": "Coverage at this declared motion state",
+    "details": {
+      "missing_pixels": 0
+    }
+  },
+  "C07b": {
+    "status": "pass",
+    "reason": "Coverage at this declared motion state",
+    "details": {
+      "missing_pixels": 0
+    }
+  },
+  "C08": {
+    "status": "pass",
+    "reason": "Shot-blocking mask matches visible layer",
+    "details": {
+      "different_pixels": 0
+    }
+  },
+  "C09": {
+    "status": "pass",
+    "reason": "Primary size, visible protection, weak point and motion reservation",
+    "details": {
+      "effective_radius": 59.92373341205755,
+      "protected_overlap": false,
+      "weak_outside": false,
+      "hud_overlap": false
+    }
+  },
+  "C10": {
+    "status": "pending",
+    "reason": "Part list passed; rendered extreme-pose seam evidence missing",
+    "details": {}
+  },
+  "C11": {
+    "status": "pending",
+    "reason": "Static containment passed; complete state/frame/alignment evidence missing",
+    "details": {}
+  },
+  "C12": {
+    "status": "pass",
+    "reason": "Aligned loop endpoint position and velocity",
+    "details": {
+      "pixel_difference": 0.0,
+      "velocity_difference": 0.0
+    }
+  },
+  "C13": {
+    "status": "pass",
+    "reason": "Deterministic projected screenshot screening only; real recordings remain pending",
+    "details": {
+      "samples": [
+        {
+          "acquired": true,
+          "edges": 4,
+          "low_threshold": 190,
+          "within_tracker_geometry_contract": true,
+          "role": "acquisition",
+          "expected": "acquire_four_edges"
+        },
+        {
+          "acquired": true,
+          "edges": 4,
+          "low_threshold": 173,
+          "within_tracker_geometry_contract": true,
+          "role": "acquisition",
+          "expected": "acquire_four_edges"
+        },
+        {
+          "acquired": true,
+          "edges": 4,
+          "low_threshold": 150,
+          "within_tracker_geometry_contract": true,
+          "role": "acquisition",
+          "expected": "acquire_four_edges"
+        },
+        {
+          "acquired": false,
+          "edges": 0,
+          "low_threshold": 184,
+          "within_tracker_geometry_contract": false,
+          "role": "retained_out_of_contract_stress",
+          "expected": "reject_or_acquire_without_acceptance_credit"
+        }
+      ],
+      "actual_camera_acceptance": "pending",
+      "historical_failure": "Original second quad exceeds existing tracker 15-degree opposite-edge divergence; retained as stress, not removed or used to relax tracker"
+    }
+  },
+  "C14": {
+    "status": "pending",
+    "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+    "details": {}
+  },
+  "C15": {
+    "status": "pending",
+    "reason": "Offline estimate fits; Godot import/peak measurement pending",
+    "details": {
+      "bytes": 262144
+    }
+  },
+  "C16": {
+    "status": "pass",
+    "reason": "Offline SDF round-trip; engine sampling is a separate pending check",
+    "details": {
+      "max_error_px": 0.0
+    }
+  }
+}

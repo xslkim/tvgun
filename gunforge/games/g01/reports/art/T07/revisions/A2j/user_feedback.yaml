@@ -1,0 +1,10 @@
+stage: A2i_followup_character_occlusion
+source: explicit_user_chat
+quote: 人物美术的，各种部件，前后的遮挡关系还是有问题。 你在仔细调研一下，给出一个正确稳定的规则。
+request: research_stable_character_occlusion_rules
+current_character_occlusion: requires_revision
+retained: previous approved visual directions and scoped decisions
+technical_acceptance: false
+T08_authorized: false
+production_approved: false
+actual_0B: false

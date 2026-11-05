@@ -1,0 +1,40 @@
+{
+  "vendor": {
+    "status": "pass",
+    "scope": "actual exported frames at 24fps, keyed acting and swapped attachments; visual review pending",
+    "frames": 540,
+    "max_attachment_error_source_px": 2.2737367544323206e-13,
+    "max_ankle_target_error_source_px": 2.5421149729252077e-13,
+    "max_planted_foot_frame_drift_source_px": 3.410605131648481e-13,
+    "knee_flexion_range": [
+      10.46063820440314,
+      58.91022564002686
+    ],
+    "elbow_flexion_range": [
+      28.343788057124662,
+      95.63272429830023
+    ],
+    "joint_seam_visual_review": "pending on rendered source pixels and ankle overlap; kinematic attachment is not a visual seam certificate",
+    "max_wrist_attachment_error": 1.1368683772161603e-13,
+    "minimum_transform_determinant": 0.9999999999999996
+  },
+  "video": {
+    "status": "pass",
+    "scope": "actual exported frames at 24fps, keyed acting and swapped attachments; visual review pending",
+    "frames": 540,
+    "max_attachment_error_source_px": 2.2737367544323206e-13,
+    "max_ankle_target_error_source_px": 2.5421149729252077e-13,
+    "max_planted_foot_frame_drift_source_px": 3.639754730461873e-13,
+    "knee_flexion_range": [
+      9.642393687857815,
+      57.74496109741888
+    ],
+    "elbow_flexion_range": [
+      12.386754214359518,
+      78.38049326612153
+    ],
+    "joint_seam_visual_review": "pending on rendered source pixels and ankle overlap; kinematic attachment is not a visual seam certificate",
+    "max_wrist_attachment_error": 8.038873388460929e-14,
+    "minimum_transform_determinant": 0.9999999999999996
+  }
+}

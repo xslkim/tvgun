@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "reason": "Shot-blocking mask matches visible layer",
+  "details": {
+    "different_pixels": 0
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "revision": "A2h",
+  "new_image_calls": 0,
+  "production_asset_approved": false,
+  "actual_0B": false,
+  "outputs": [
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\browser_verification.md",
+      "sha256": "a3f0255178efd5a27c170a73d33318925327529bcb1d46a425c1f78795302a66"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\checks.json",
+      "sha256": "e745eb266536f9cbc8199e287538429666e0403beee529081be747452bc2ecbd"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\extent_proposals.json",
+      "sha256": "7ddbb6701440a51ff555651fac58e703ada09f66bed41e80dc3ce6f884204f34"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\far_base_extent_proposal.png",
+      "sha256": "3778a33cc1a4ed008ffe255dc55513d735f7503255dd51b6ca080a03c46ce0de"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\far_base_extent_review.jpg",
+      "sha256": "e40d5bc765dbd89a65cfcc7b337009497d7f9133a58500cef6f3b25f8b4aacfa"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\far_town_extent_proposal.png",
+      "sha256": "bc9f51bada1b94f634916a1887447ce7237cbadf6f3f415f1c35216d8695df72"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\far_town_extent_review.jpg",
+      "sha256": "0c98da2d59be7be6cfcdfa3a0eb89a72049a2dd7c8ecc865e5a358e17f46b8b6"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\hybrid_sampling_checks.json",
+      "sha256": "33fe93615349a77b4c78cb283aa69614ed9d427a3b00feeca4f131ee8d6ea086"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\hybrid_sampling_checks_initial128.json",
+      "sha256": "33fe93615349a77b4c78cb283aa69614ed9d427a3b00feeca4f131ee8d6ea086"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\hybrid_texture_plan.json",
+      "sha256": "a6f2d95b2cca20f835bf310319fef57cfb9bd090db4ee249ce5ac90c5304fda0"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\hybrid_texture_plan_initial128.json",
+      "sha256": "32ae43816f7ba36e58d76766163c1aa635c3031e61c0f139e02ddf2d0d648175"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\mid_ground_extent_proposal.png",
+      "sha256": "c031549bc4fba2150dbc2c2b1ffdadfcdcc2974e9362b24eeb2ca8d2d8664423"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\mid_ground_extent_review.jpg",
+      "sha256": "567d1da16947ea7fec38458f9d10f5a2da22acc253d203302e1b3a14948a4f28"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\mid_left_extent_proposal.png",
+      "sha256": "9cb6f38053dcbbaa171fbc6065c9d0483b375a00a02e2413ac560f26e211dac2"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\mid_left_extent_review.jpg",
+      "sha256": "10ace94926a5e9439c288d12ee58a960d917f5e7e53128f94a1cccd93ca95d17"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\mid_right_extent_proposal.png",
+      "sha256": "117b37a5626a7d0a0d671e95d30d6d20914b1b7c8510b8fa36ee6a50b0af9348"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\mid_right_extent_review.jpg",
+      "sha256": "4e1c184146034176290a586c77716bea10f271eea0bf2bb7e217565e1b7b927a"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\mip_sampling_checks.json",
+      "sha256": "8678825c6e7bff6995e05f41be59b2708a2ac2d4a63971467e4ad7770ba1b0d2"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\near_left_extent_proposal.png",
+      "sha256": "89c9621c8be8680cfd71ab8ea7e78a2fdd7743b6025600335d849f1cfb541d87"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\near_left_extent_review.jpg",
+      "sha256": "51edf037263ad20a38dfc174943ce72da669c7655857965a1f9af252308a13e4"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\near_right_extent_proposal.png",
+      "sha256": "7f86c1783c660836bb52ac89733767305840640539af4d1a6489d24f528ce4e1"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\near_right_extent_review.jpg",
+      "sha256": "f061d7fdb0398c5bca2bec8f662724f98c1c90329970e81bfe6d5faae4984a37"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\report.md",
+      "sha256": "8ebcfd1755bbea635bf3d1e545bb479edf5dda738d5611b371944c749cf34ead"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\user_feedback.yaml",
+      "sha256": "2d279f33229b4594cb196cf01a9d220569ca366a6e0c28f9a3dbc05f4090cb20"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\verification.json",
+      "sha256": "7ca84617ea5e0055ecf9a650d9bba81fcbfd49c2d68137b3181b5e2d0ea337f3"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\warning_checks.json",
+      "sha256": "b4be2150d82526669136e92d1b1ebe53cf5c5882ed50cf9b9f4b46bc02104e70"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\warning_comparison.jpg",
+      "sha256": "6fc6f87dc9384c5b13ff1745f894f07d8541559e5647e01f479cbf33d0490e71"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\warning_comparison.mp4",
+      "sha256": "e2b5ec51efc609e7cc2af01568a22ebf77828df937b8cbfe4a72a88763148004"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\index.html",
+      "sha256": "c45dd20aa27d69f04df45eb400e23068f699c7874e19a1d49d507c2d94bd0a1c"
+    }
+  ]
+}

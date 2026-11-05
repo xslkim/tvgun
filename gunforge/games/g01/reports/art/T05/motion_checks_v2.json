@@ -1,0 +1,36 @@
+{
+  "vendor": {
+    "status": "pass",
+    "scope": "all exported frames at 24fps; numeric rig motion only, human animation review pending",
+    "frames": 540,
+    "max_attachment_error_source_px": 2.2737367544323206e-13,
+    "max_ankle_target_error_source_px": 2.5421149729252077e-13,
+    "max_planted_foot_frame_drift_source_px": 3.410605131648481e-13,
+    "knee_flexion_range": [
+      10.46063820440314,
+      58.91022564002686
+    ],
+    "elbow_flexion_range": [
+      27.628903289066933,
+      109.52162661869689
+    ],
+    "joint_seam_visual_review": "pending on rendered source pixels and ankle overlap; kinematic attachment is not a visual seam certificate"
+  },
+  "video": {
+    "status": "pass",
+    "scope": "all exported frames at 24fps; numeric rig motion only, human animation review pending",
+    "frames": 540,
+    "max_attachment_error_source_px": 2.2737367544323206e-13,
+    "max_ankle_target_error_source_px": 2.5421149729252077e-13,
+    "max_planted_foot_frame_drift_source_px": 3.639754730461873e-13,
+    "knee_flexion_range": [
+      9.642393687857815,
+      57.74496109741888
+    ],
+    "elbow_flexion_range": [
+      11.519138633304433,
+      93.41186196293438
+    ],
+    "joint_seam_visual_review": "pending on rendered source pixels and ankle overlap; kinematic attachment is not a visual seam certificate"
+  }
+}

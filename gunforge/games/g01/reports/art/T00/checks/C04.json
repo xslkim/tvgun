@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+  "details": {
+    "coverage": 1.0
+  }
+}

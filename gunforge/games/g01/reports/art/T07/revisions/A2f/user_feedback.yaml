@@ -1,0 +1,9 @@
+stage: A2e
+date: '2026-11-05'
+source: explicit_user_chat
+hardened_eyes: approved_warm_paper_tint
+luminance_policy: approved_station_scoped_diagnostic_layer_means_and_hard_slot_readability
+notes: 采用暖纸色硬化眼试稿；保留已确认夜景，同意本试做站点整层均值转为诊断，按槽位可读性硬指标验收，并记录版本化例外。
+technical_acceptance: false
+production_approved: false
+actual_0B: false

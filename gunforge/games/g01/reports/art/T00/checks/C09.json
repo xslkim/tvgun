@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "reason": "Primary size, visible protection, weak point and motion reservation",
+  "details": {
+    "effective_radius": 59.92373341205755,
+    "protected_overlap": false,
+    "weak_outside": false,
+    "hud_overlap": false
+  }
+}

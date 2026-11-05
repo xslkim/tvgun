@@ -1,0 +1,297 @@
+{
+  "revision": "A2b",
+  "status": "pending_human_animation_and_hit_feedback",
+  "production_asset_approved": false,
+  "new_image_generation_calls": 0,
+  "phase_0A_calls": 94,
+  "builtin_total_calls": 97,
+  "cost": null,
+  "checker_version": "art-checks-0.2-uncalibrated",
+  "motion_version": "civilian-motion-2",
+  "code_sha256": {
+    "puppet_motion.py": "76d495027623fe027a6b57e6a0e8ec190e5d49f277643cf7d8a8d6a03b6052d9",
+    "build_motion_v2.py": "307da65ab8a08bf3fe12e92ec64ce332a1b13a506c63b9c33b6ef44c40a55620",
+    "verify_motion_v2.py": "d87867615feef247f5e0ee3d245b8b8b45705315653b03ea0ff587eb5034748c",
+    "enemy_feedback.py": "3eceea95103379f2b5a563cf8942dce0ca72da7abe3faf4d4b8b1edea5a6b4e8",
+    "motion_reservations_v2.py": "81c62c24b0226f9191485c929db8dfb51452b45d1bb07a89df43a37181b1264c"
+  },
+  "outputs": [
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\crow_hit_v2.mp4",
+      "sha256": "693950a825ebad8936077d998adb70cb9b8947be7f77733749d2e2d52c153c01",
+      "bytes": 34763
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\crow_hit_v2.png",
+      "sha256": "4a333ce47652d64114ab49eb227eeb77bde149ce3d0fe367630a41662ff2145d",
+      "bytes": 86995
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\crow_purify_v2.mp4",
+      "sha256": "7053e6f4be951167ac066c30f76e1fa6cb00bc33da2d7c949c50ae10c514fb14",
+      "bytes": 43745
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\crow_purify_v2.png",
+      "sha256": "e9ecf75fd0fc0ed94c54ff2eff1ccd96510ce2adecebdb7ad842e37808025de3",
+      "bytes": 79159
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\crow_weak_hit_v2.mp4",
+      "sha256": "dcc6c77be92d032faa032e0e719fc9d9cff249aed1a1a22ce82b819077e1da41",
+      "bytes": 40325
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\crow_weak_hit_v2.png",
+      "sha256": "ea0b52e64b4696a6fc59d8198b4496384c24f42cb0625210edd03bd4170deab7",
+      "bytes": 86544
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\hostage_in_scene_v2.png",
+      "sha256": "6a689b734d1af7a8a0e476b7792abb3a8baa4ad57f6c55763598dc33fbecddee",
+      "bytes": 2410871
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\index.html",
+      "sha256": "0527c12558f132a42c9a768c4e26782ccccb4f4ee0ac4a8e38bb2c55ec03768a",
+      "bytes": 12072
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\motion_reservations_v2.png",
+      "sha256": "b171dc0ecf4c27bcd8e9e6c7fac744546d3a7772f47d013d4e6a2fdabc5141f3",
+      "bytes": 2404580
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\tadpole0_hit_v2.mp4",
+      "sha256": "4514535fce9e713111aafe340d392be3e981e545e54abaa4822b3bd5c747d7ed",
+      "bytes": 20544
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\tadpole0_hit_v2.png",
+      "sha256": "fe3fc711b954e5afc58c72380efdc3fd9c80db0019b303bfb28af629f6e21fe3",
+      "bytes": 37927
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\tadpole0_purify_v2.mp4",
+      "sha256": "97ab00b5609a6fe6ac94019d805a054781ee7e2ca533e50ea0212ab3b04678d2",
+      "bytes": 28284
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\tadpole0_purify_v2.png",
+      "sha256": "d90876451f2a7c64b721e401cbff477d546a31e7fbaf936e88f9fa7ce9d2eb6d",
+      "bytes": 34508
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\tadpole0_weak_hit_v2.mp4",
+      "sha256": "bf45d11e733f4dc78525b78099e69847bd1493a181fb8ff87b239c0d197ba42c",
+      "bytes": 22297
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\tadpole0_weak_hit_v2.png",
+      "sha256": "2f0cdbb532b7a1d6179118a28d2959466ea6b2251d50add3e77b121456186388",
+      "bytes": 37696
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\vendor_actions_v2.mp4",
+      "sha256": "5b6145bb656ad18d48613c986553e5ff1edcb0de3616ef3afc4b7a3faddc1001",
+      "bytes": 807152
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\vendor_hostage_v2.mp4",
+      "sha256": "bd47e4d3ff59f5a73247fedae51582266f51e6e7474076bcc1c8ff68b87a7629",
+      "bytes": 161459
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\vendor_hostage_v2.png",
+      "sha256": "579e1b21be0e39e453db5f63541a2867f9a7522d7f3d26596d433b113748c394",
+      "bytes": 170846
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\vendor_idle_v2.mp4",
+      "sha256": "e094b0613b8a367f379386eb36ae4640ba4917264c44a95bef10bd282dca9398",
+      "bytes": 71842
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\vendor_idle_v2.png",
+      "sha256": "deefa4f60891773f6e181d76da5e3f851c98d36431b1a3206171dbfaa42ec4df",
+      "bytes": 156214
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\vendor_motion_contact_v2.jpg",
+      "sha256": "430162e6860e74d2c77dd0515ca0b97f5055906599bd79f9186af6a434206979",
+      "bytes": 121541
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\vendor_peek_v2.mp4",
+      "sha256": "044f8148db558b3d5f5c7572a5933ce6948f649899ec633f8416a187ec5be655",
+      "bytes": 91090
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\vendor_peek_v2.png",
+      "sha256": "0638e027fd34fb8762e3167b32f2b3159b35e8bfe6989827bd4b4be912c7ccd0",
+      "bytes": 158450
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\vendor_rescued_bounce_v2.mp4",
+      "sha256": "f5873c72b21b85a8e1290a89e39ddbe89494c643f82eb7d3036ed9b412f30f97",
+      "bytes": 94510
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\vendor_rescued_bounce_v2.png",
+      "sha256": "2b9af32e62006a8917cd98a8821f99f9ea20ee52c2f27e8b7577358f63c23a23",
+      "bytes": 164964
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\vendor_startle_v2.mp4",
+      "sha256": "2ca732c129fcdb6dff09c464d81618dd58eaaacc3afdb40ba3c7ab96b798bbc3",
+      "bytes": 79929
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\vendor_startle_v2.png",
+      "sha256": "9501a0ef4403feed148bc218f2c18d919c4513ddd80e29d6b11b27403f4bb88f",
+      "bytes": 158911
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\vendor_struggle_v2.mp4",
+      "sha256": "5230f56ce7ab0c2a6a277927a7a2f04071e2233d0adb0eaed6655a800a57a758",
+      "bytes": 142093
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\vendor_struggle_v2.png",
+      "sha256": "3a2721de7f1e18a061f9d7ff5ab0ec027ffe65031fa5fd38b6ac38cf9918d48b",
+      "bytes": 165369
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\vendor_thank_v2.mp4",
+      "sha256": "678417f99f5fe662780b7c6a2a81e45752d2e26c588bb111efdaee8c98265b3a",
+      "bytes": 105044
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\vendor_thank_v2.png",
+      "sha256": "da8667785b0708599265fcf6f23d9f1a638e3fa64e83225d80031a3cf7fd60aa",
+      "bytes": 151590
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\vendor_walk_v2.mp4",
+      "sha256": "26f6009b8b7875e6951ff62c3213d2a6e5a8907ccdf1a6742ba86e5b8fdb2ac6",
+      "bytes": 153500
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\vendor_walk_v2.png",
+      "sha256": "1286fd19fef343107f62f134a01bb8583dd9e4dfe7780b61da99574f6f045a57",
+      "bytes": 153523
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\vendor_wave_for_help_v2.mp4",
+      "sha256": "f39f32d34b71356d883be9e8f3b242dacb3f62b46427bf167e315ea976849a59",
+      "bytes": 106768
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\vendor_wave_for_help_v2.png",
+      "sha256": "2e4affa463f79d7363e2826a8e5d316b70f4cd0c3b3fcc5324e97815dababe82",
+      "bytes": 169390
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\video_actions_v2.mp4",
+      "sha256": "bbaa7befedddb9710366ceb048a60c8c1aa1e55378ce581fc57bf5b2544365d7",
+      "bytes": 975240
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\video_hostage_v2.mp4",
+      "sha256": "19446cb67b62e327f67971559f77fe36245cf0403e8218ec6ffeb8974b460dc1",
+      "bytes": 115350
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\video_hostage_v2.png",
+      "sha256": "d4d333bfc4e5d1f7a668bc789a283c1ef0c0c19ee4cfa004b3122d39ddce350c",
+      "bytes": 88073
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\video_idle_v2.mp4",
+      "sha256": "ff989b5b5d1234bdf97d491f7a13431f083cce16b518d224ced0613d7e789b41",
+      "bytes": 93860
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\video_idle_v2.png",
+      "sha256": "93ee7ba077d48b1f02f5b82898416772cef552ee28dd525633147ee74f9e8dc7",
+      "bytes": 198305
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\video_motion_contact_v2.jpg",
+      "sha256": "21b0ff95fd978dfc2be05d233ed2551b378db95984de350864004b6b5e19db01",
+      "bytes": 137361
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\video_peek_v2.mp4",
+      "sha256": "20b1c05977a649ea122d77c826578c391330bfa8f89ffa773d76ae331aa3bdba",
+      "bytes": 114333
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\video_peek_v2.png",
+      "sha256": "df8b8a175753ea6c0c97496ae9f6844a3246f6c136ee7ae806c4bbd9747b0a93",
+      "bytes": 200202
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\video_rescued_bounce_v2.mp4",
+      "sha256": "b93c2545c26dd08e5e6b1ec09d5f29d419f2350644d25bd368e386d15439c12d",
+      "bytes": 114203
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\video_rescued_bounce_v2.png",
+      "sha256": "4b7da3e19cfdd4b4bf1dd6a65d2094dd5e643035261ecc615b83deb5689722a2",
+      "bytes": 204822
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\video_startle_v2.mp4",
+      "sha256": "693947abbd174bfe7ec6e6b003452eddabb7c062131fa5088717974c728fcc45",
+      "bytes": 101433
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\video_startle_v2.png",
+      "sha256": "b96f538b0e25e9417b6c20490dc08a639f6d67b1f8d1f320c7eb1896eda1f1f7",
+      "bytes": 200551
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\video_struggle_v2.mp4",
+      "sha256": "e86c8e69b529c9aee55c39f6fe61ac1cc8b1e54c8353061a7c2fd65590547a70",
+      "bytes": 176722
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\video_struggle_v2.png",
+      "sha256": "d541fa79e84dc2f93e6c75af117e741932d2310cf4124a45e04fc7a3cb533f24",
+      "bytes": 205560
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\video_thank_v2.mp4",
+      "sha256": "567e3804753da1538bdf6c83f9e77632381f3df577ff78c16c111f6a08f6996e",
+      "bytes": 126709
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\video_thank_v2.png",
+      "sha256": "d41636c554203e50090d21de41e63891ad7059b4856ff479d70c0edf0ec9c118",
+      "bytes": 188844
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\video_walk_v2.mp4",
+      "sha256": "7a91c431874c478f6534778f7fd4bf2e9e4711762240780f7462ebb606dd3dd2",
+      "bytes": 167517
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\video_walk_v2.png",
+      "sha256": "0f15cd8f2e62b7a72be846d15a1800675d8271912955223c2221d8d3373b3c1c",
+      "bytes": 197721
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\video_wave_for_help_v2.mp4",
+      "sha256": "edce7c7bbbfb36bb27950d56d13625f769d096fd610a4b86d50910a8bd0e0f98",
+      "bytes": 125140
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\video_wave_for_help_v2.png",
+      "sha256": "72695535268c6a256b77e6b9bb0eb3d67888e88a4a8b3b040715611bfe8d089f",
+      "bytes": 206420
+    }
+  ],
+  "feedback": "user_feedback.yaml",
+  "report": "report.md"
+}

@@ -1,0 +1,59 @@
+{
+  "images": [
+    {
+      "file": "D:\\gunforge_cache\\g01\\T01\\test_01_unlit.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "34094b64ffb0b41eddf52ab7b1e39d0a16bacc882670622a3f9d5540f92fe745",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "fully_transparent_fraction": 0.8630968729654948,
+      "visible_fraction": 0.1134961446126302,
+      "visible_bright_fraction": 0.0006554107801068823
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T01\\test_02_lit.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "sha256": "d5d0e4cab075028f6ef07d46e8633bd9a9bc40976489909ea28c5c33a4198f31",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "fully_transparent_fraction": 0.8521862030029297,
+      "visible_fraction": 0.11383056640625,
+      "visible_bright_fraction": 0.06834226988382484
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T01\\test_03_reference_variant.png",
+      "size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "sha256": "f2d62a99fd9c8d96ab274f1291526df73a76b3aa623dd2b44b6202928139e370",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "fully_transparent_fraction": 0.7401884099996947,
+      "visible_fraction": 0.2167974115564238,
+      "visible_bright_fraction": 0.010105009973014197
+    }
+  ],
+  "edit": {
+    "same_size": true,
+    "alpha_visible_iou": 0.9805794050850274,
+    "lampshade_mean_y_before": 0.45295430227743266,
+    "lampshade_mean_y_after": 0.5167036027628442,
+    "outside_opaque_mean_rgb_difference_255": 5.451235007817204
+  }
+}

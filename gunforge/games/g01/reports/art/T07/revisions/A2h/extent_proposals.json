@@ -1,0 +1,86 @@
+{
+  "version": "g01-alley-full-extent-proposal-1",
+  "status": "pending_design_review",
+  "purpose": "User must confirm intended complete shape and cutouts, including previously occluded areas. A match to current alpha alone is not completeness verification.",
+  "not_automatic_C07b_pass": true,
+  "four_previous_wall_regions": "approved; scope unchanged",
+  "rows": [
+    {
+      "layer": "far_base",
+      "name": "01 远景底纸",
+      "proposal_mask": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\far_base_extent_proposal.png",
+      "proposal_sha256": "3778a33cc1a4ed008ffe255dc55513d735f7503255dd51b6ca080a03c46ce0de",
+      "source_image": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\far_base_full.png",
+      "source_sha256": "f89cc98cfe3807d4eb664f6597274a460ffe470aab2eca142a9bce650d97aebf",
+      "internal_transparent_pixels": 0,
+      "semantic_status": "pending_explicit_whole_shape_design_acceptance",
+      "independent_preexisting_ground_truth": false
+    },
+    {
+      "layer": "far_town",
+      "name": "02 远处城镇",
+      "proposal_mask": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\far_town_extent_proposal.png",
+      "proposal_sha256": "bc9f51bada1b94f634916a1887447ce7237cbadf6f3f415f1c35216d8695df72",
+      "source_image": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\far_town_full.png",
+      "source_sha256": "b0b16a9df63b483f1c29493ccbf9245002d2fa7f34c49829addeff2d172d09d9",
+      "internal_transparent_pixels": 5070,
+      "semantic_status": "pending_explicit_whole_shape_design_acceptance",
+      "independent_preexisting_ground_truth": false
+    },
+    {
+      "layer": "mid_ground",
+      "name": "03 地面",
+      "proposal_mask": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\mid_ground_extent_proposal.png",
+      "proposal_sha256": "c031549bc4fba2150dbc2c2b1ffdadfcdcc2974e9362b24eeb2ca8d2d8664423",
+      "source_image": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_ground_full.png",
+      "source_sha256": "9c98aab1a59c728823cdbbb6d5cf081fdab4be5c870d26c046918707e0436a0e",
+      "internal_transparent_pixels": 0,
+      "semantic_status": "pending_explicit_whole_shape_design_acceptance",
+      "independent_preexisting_ground_truth": false
+    },
+    {
+      "layer": "mid_left",
+      "name": "04 左侧商铺",
+      "proposal_mask": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\mid_left_extent_proposal.png",
+      "proposal_sha256": "9cb6f38053dcbbaa171fbc6065c9d0483b375a00a02e2413ac560f26e211dac2",
+      "source_image": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_left_full.png",
+      "source_sha256": "486c19d5cd0debb7debaad4797ad0a5d9c64997e2c810c90de41a3b7a0276d40",
+      "internal_transparent_pixels": 0,
+      "semantic_status": "pending_explicit_whole_shape_design_acceptance",
+      "independent_preexisting_ground_truth": false
+    },
+    {
+      "layer": "mid_right",
+      "name": "05 右侧商铺",
+      "proposal_mask": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\mid_right_extent_proposal.png",
+      "proposal_sha256": "117b37a5626a7d0a0d671e95d30d6d20914b1b7c8510b8fa36ee6a50b0af9348",
+      "source_image": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_right_full.png",
+      "source_sha256": "24eea31d8ded7de06ad5623ead481010baa444d2fda5ba09e1e71064c4a0f65f",
+      "internal_transparent_pixels": 0,
+      "semantic_status": "pending_explicit_whole_shape_design_acceptance",
+      "independent_preexisting_ground_truth": false
+    },
+    {
+      "layer": "near_left",
+      "name": "06 左侧近景枝叶",
+      "proposal_mask": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\near_left_extent_proposal.png",
+      "proposal_sha256": "89c9621c8be8680cfd71ab8ea7e78a2fdd7743b6025600335d849f1cfb541d87",
+      "source_image": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_left_full.png",
+      "source_sha256": "e7fcb0a2184f5312005c0e8242ee1077f059c7e9f0b8983608b3b1bb5893515a",
+      "internal_transparent_pixels": 14100,
+      "semantic_status": "pending_explicit_whole_shape_design_acceptance",
+      "independent_preexisting_ground_truth": false
+    },
+    {
+      "layer": "near_right",
+      "name": "07 右侧近景枝叶",
+      "proposal_mask": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2h\\near_right_extent_proposal.png",
+      "proposal_sha256": "7f86c1783c660836bb52ac89733767305840640539af4d1a6489d24f528ce4e1",
+      "source_image": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_right_full.png",
+      "source_sha256": "520274be63e3b04e0a39688a450bf23877d2d9aa3b8b00a0b13de93b4a3f9b11",
+      "internal_transparent_pixels": 0,
+      "semantic_status": "pending_explicit_whole_shape_design_acceptance",
+      "independent_preexisting_ground_truth": false
+    }
+  ]
+}

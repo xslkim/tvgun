@@ -1,0 +1,38 @@
+{
+  "vendor": [
+    {
+      "clip": "idle",
+      "holding_reconstruction_error": 0
+    },
+    {
+      "clip": "wave_for_help",
+      "holding_reconstruction_error": 0
+    },
+    {
+      "clip": "thank",
+      "holding_reconstruction_error": 0
+    },
+    {
+      "clip": "walk",
+      "holding_reconstruction_error": 0
+    }
+  ],
+  "video": [
+    {
+      "clip": "idle",
+      "holding_reconstruction_error": 0
+    },
+    {
+      "clip": "wave_for_help",
+      "holding_reconstruction_error": 0
+    },
+    {
+      "clip": "thank",
+      "holding_reconstruction_error": 0
+    },
+    {
+      "clip": "walk",
+      "holding_reconstruction_error": 0
+    }
+  ]
+}

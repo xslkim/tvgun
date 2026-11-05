@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "reason": "Offline SDF round-trip; engine sampling is a separate pending check",
+  "details": {
+    "max_error_px": 0.0
+  }
+}

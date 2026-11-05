@@ -1,0 +1,65 @@
+{
+  "status": "pass",
+  "scope": "all actual 24fps frames of ink-attached-eligible clips; six blobs; original minimum sizes. Complete Godot behavior remains pending.",
+  "minimum_candidate_display_height": 512,
+  "rescue_frames": 360,
+  "blob_frame_tests": 2160,
+  "minimum_effective_radius": 43.89090374080148,
+  "minimum_paper_clearance_px": 7.615773105863909,
+  "max_weak_point_occluded_pixels": 0,
+  "sampled_source_joint_max_gap_px": 0.0,
+  "negative_knee_and_foot_drift_rejected": true,
+  "original_radius_algorithm_equivalence": true,
+  "loop_endpoints": [
+    {
+      "clip": "idle",
+      "endpoint_pixel_difference": 0.0,
+      "loop_position_pass": true,
+      "one_shot_expression_transition": false
+    },
+    {
+      "clip": "peek",
+      "endpoint_pixel_difference": 0.0,
+      "loop_position_pass": true,
+      "one_shot_expression_transition": false
+    },
+    {
+      "clip": "walk",
+      "endpoint_pixel_difference": 0.0,
+      "loop_position_pass": true,
+      "one_shot_expression_transition": false
+    },
+    {
+      "clip": "startle",
+      "endpoint_pixel_difference": 0.0,
+      "loop_position_pass": true,
+      "one_shot_expression_transition": false
+    },
+    {
+      "clip": "wave_for_help",
+      "endpoint_pixel_difference": 0.0,
+      "loop_position_pass": true,
+      "one_shot_expression_transition": false
+    },
+    {
+      "clip": "struggle",
+      "endpoint_pixel_difference": 0.0,
+      "loop_position_pass": true,
+      "one_shot_expression_transition": false
+    },
+    {
+      "clip": "rescued_bounce",
+      "endpoint_pixel_difference": 0.0012785926436546843,
+      "loop_position_pass": null,
+      "one_shot_expression_transition": true
+    },
+    {
+      "clip": "thank",
+      "endpoint_pixel_difference": 0.0,
+      "loop_position_pass": true,
+      "one_shot_expression_transition": false
+    }
+  ],
+  "failures": [],
+  "render_contract": "Opaque paper interiors; attached ink clipped visibly to torso inset of 7 content pixels. Same visible ink mask defines target; foreground hands remain protected."
+}

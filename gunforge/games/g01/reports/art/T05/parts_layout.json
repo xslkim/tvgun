@@ -1,0 +1,61 @@
+{
+  "source_size": [
+    1536,
+    2560
+  ],
+  "columns": 3,
+  "rows": 5,
+  "slots": [
+    {
+      "id": "torso",
+      "col": 0,
+      "row": 0
+    },
+    {
+      "id": "head",
+      "col": 1,
+      "row": 0
+    },
+    {
+      "id": "upper_arm_l",
+      "col": 0,
+      "row": 1
+    },
+    {
+      "id": "upper_arm_r",
+      "col": 1,
+      "row": 1
+    },
+    {
+      "id": "forearm_l",
+      "col": 0,
+      "row": 2
+    },
+    {
+      "id": "forearm_r",
+      "col": 1,
+      "row": 2
+    },
+    {
+      "id": "thigh_l",
+      "col": 0,
+      "row": 3
+    },
+    {
+      "id": "thigh_r",
+      "col": 1,
+      "row": 3
+    },
+    {
+      "id": "shin_l",
+      "col": 0,
+      "row": 4
+    },
+    {
+      "id": "shin_r",
+      "col": 1,
+      "row": 4
+    }
+  ],
+  "instruction": "Guide only; no labels/boxes rendered; rightmost column remains empty."
+}

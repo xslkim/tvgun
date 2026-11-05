@@ -1,0 +1,371 @@
+{
+  "frames": {
+    "unlit": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C06": {
+        "status": "pending",
+        "reason": "Flattened screen has no isolated underlayer; human 1/8 thumbnail recognition and later layer contrast required"
+      },
+      "C09": {
+        "status": "pending",
+        "reason": "Numeric static annotations available; masks and motion extremes require review"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {},
+        "reference_review": "12 A1 anchors approved for named properties; no calibrated model score"
+      },
+      "C13": {
+        "monitor": {
+          "status": "fail",
+          "reason": "Deterministic projected screenshot screening only; real recordings remain pending",
+          "details": {
+            "samples": [
+              {
+                "acquired": true,
+                "edges": 4,
+                "low_threshold": 190
+              },
+              {
+                "acquired": false,
+                "edges": 0,
+                "low_threshold": 190
+              },
+              {
+                "acquired": true,
+                "edges": 4,
+                "low_threshold": 150
+              }
+            ]
+          }
+        },
+        "tv": {
+          "status": "fail",
+          "reason": "Deterministic projected screenshot screening only; real recordings remain pending",
+          "details": {
+            "samples": [
+              {
+                "acquired": true,
+                "edges": 4,
+                "low_threshold": 163
+              },
+              {
+                "acquired": false,
+                "edges": 0,
+                "low_threshold": 177
+              },
+              {
+                "acquired": true,
+                "edges": 4,
+                "low_threshold": 150
+              }
+            ]
+          }
+        }
+      }
+    },
+    "lit": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C06": {
+        "status": "pending",
+        "reason": "Flattened screen has no isolated underlayer; human 1/8 thumbnail recognition and later layer contrast required"
+      },
+      "C09": {
+        "status": "pending",
+        "reason": "Numeric static annotations available; masks and motion extremes require review"
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {},
+        "reference_review": "12 A1 anchors approved for named properties; no calibrated model score"
+      },
+      "C13": {
+        "monitor": {
+          "status": "fail",
+          "reason": "Deterministic projected screenshot screening only; real recordings remain pending",
+          "details": {
+            "samples": [
+              {
+                "acquired": true,
+                "edges": 4,
+                "low_threshold": 190
+              },
+              {
+                "acquired": false,
+                "edges": 0,
+                "low_threshold": 190
+              },
+              {
+                "acquired": true,
+                "edges": 4,
+                "low_threshold": 150
+              }
+            ]
+          }
+        },
+        "tv": {
+          "status": "fail",
+          "reason": "Deterministic projected screenshot screening only; real recordings remain pending",
+          "details": {
+            "samples": [
+              {
+                "acquired": true,
+                "edges": 4,
+                "low_threshold": 163
+              },
+              {
+                "acquired": false,
+                "edges": 0,
+                "low_threshold": 177
+              },
+              {
+                "acquired": true,
+                "edges": 4,
+                "low_threshold": 150
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "targets": {
+    "resident": {
+      "C09": {
+        "status": "pass",
+        "reason": "Primary size, visible protection, weak point and motion reservation",
+        "details": {
+          "effective_radius": 42.67750190373905,
+          "protected_overlap": false,
+          "weak_outside": false,
+          "hud_overlap": false
+        }
+      },
+      "C06": {
+        "status": "pending",
+        "reason": "Missing input/dependency: 'background'",
+        "details": {}
+      },
+      "adjacent_contrast_proxy": {
+        "difference": 0.18345098039215685,
+        "status": "diagnostic_only",
+        "reason": "Ring includes nearby geometry; not the hidden layer behind the actor"
+      }
+    },
+    "crow": {
+      "C09": {
+        "status": "pass",
+        "reason": "Primary size, visible protection, weak point and motion reservation",
+        "details": {
+          "effective_radius": 56.461256717599404,
+          "protected_overlap": false,
+          "weak_outside": false,
+          "hud_overlap": false
+        }
+      },
+      "C06": {
+        "status": "pending",
+        "reason": "Missing input/dependency: 'background'",
+        "details": {}
+      },
+      "adjacent_contrast_proxy": {
+        "difference": 0.030200000000000005,
+        "status": "diagnostic_only",
+        "reason": "Ring includes nearby geometry; not the hidden layer behind the actor"
+      }
+    },
+    "lamp": {
+      "C09": {
+        "status": "pass",
+        "reason": "Primary size, visible protection, weak point and motion reservation",
+        "details": {
+          "effective_radius": 53.0068048965821,
+          "protected_overlap": false,
+          "weak_outside": false,
+          "hud_overlap": false
+        }
+      },
+      "C06": {
+        "status": "pending",
+        "reason": "Missing input/dependency: 'background'",
+        "details": {}
+      },
+      "adjacent_contrast_proxy": {
+        "difference": 0.10461960784313726,
+        "status": "diagnostic_only",
+        "reason": "Ring includes nearby geometry; not the hidden layer behind the actor"
+      }
+    }
+  },
+  "normalization": {
+    "frame_unlit": {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T03\\gallery\\frame_unlit_normalized.png",
+      "size": [
+        1776,
+        936
+      ],
+      "normalization": "aspect-preserving scale and center crop to 1776x936",
+      "postprocess": {
+        "operation": "render-contract Yprime cap at .75 including HUD",
+        "fraction_affected": 0.00040244571494571496
+      }
+    },
+    "wick_lit": {
+      "crop": [
+        290,
+        185,
+        649,
+        1502
+      ],
+      "source_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 5.448622269725489e-05
+        }
+      },
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T03\\gallery\\wick_lit_normalized.png",
+      "size": [
+        36,
+        64
+      ],
+      "normalization": "crop to alpha>=128 bounds, preserve alpha inside crop, resize to temporary HUD cell; wick aspect preserved"
+    },
+    "wick_out": {
+      "crop": [
+        278,
+        171,
+        660,
+        1500
+      ],
+      "source_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T03\\gallery\\wick_out_normalized.png",
+      "size": [
+        36,
+        64
+      ],
+      "normalization": "crop to alpha>=128 bounds, preserve alpha inside crop, resize to temporary HUD cell; wick aspect preserved"
+    },
+    "ammo_full": {
+      "crop": [
+        83,
+        97,
+        940,
+        1438
+      ],
+      "source_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T03\\gallery\\ammo_full_normalized.png",
+      "size": [
+        32,
+        48
+      ],
+      "normalization": "crop to alpha>=128 bounds, preserve alpha inside crop, resize to temporary HUD cell; wick aspect preserved"
+    },
+    "ammo_empty": {
+      "crop": [
+        74,
+        75,
+        951,
+        1471
+      ],
+      "source_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T03\\gallery\\ammo_empty_normalized.png",
+      "size": [
+        32,
+        48
+      ],
+      "normalization": "crop to alpha>=128 bounds, preserve alpha inside crop, resize to temporary HUD cell; wick aspect preserved"
+    },
+    "score_frame": {
+      "crop": [
+        154,
+        163,
+        1105,
+        1096
+      ],
+      "source_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.00023518812755359914
+        }
+      },
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T03\\gallery\\score_frame_normalized.png",
+      "size": [
+        112,
+        112
+      ],
+      "normalization": "crop to alpha>=128 bounds, preserve alpha inside crop, resize to temporary HUD cell; wick aspect preserved"
+    },
+    "prompt_frame": {
+      "crop": [
+        21,
+        283,
+        2152,
+        440
+      ],
+      "source_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T03\\gallery\\prompt_frame_normalized.png",
+      "size": [
+        600,
+        72
+      ],
+      "normalization": "crop to alpha>=128 bounds, preserve alpha inside crop, resize to temporary HUD cell; wick aspect preserved"
+    },
+    "frame_lit": {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T03\\gallery\\frame_lit_normalized.png",
+      "size": [
+        1776,
+        936
+      ],
+      "normalization": "aspect-preserving scale and center crop to 1776x936",
+      "postprocess": {
+        "operation": "render-contract Yprime cap at .75 including HUD",
+        "fraction_affected": 0.001047922922922923
+      }
+    }
+  },
+  "light_edit_evidence": {
+    "mean_positive_Yprime_difference": 0.02349537852567877,
+    "fraction_increased_by_0_03": 0.16533119658119658,
+    "not_a_production_spill_mask": true
+  }
+}

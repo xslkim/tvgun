@@ -1,0 +1,16 @@
+{
+  "crow": {
+    "status": "pass",
+    "scope": "actual offline rendered frames; not Godot shader, tracker or hit-registration acceptance",
+    "frames": 102,
+    "max_core_outside_ink_pixels": 0,
+    "max_pre_cap_overbright_fraction": 0.0
+  },
+  "tadpole0": {
+    "status": "pass",
+    "scope": "actual offline rendered frames; not Godot shader, tracker or hit-registration acceptance",
+    "frames": 102,
+    "max_core_outside_ink_pixels": 0,
+    "max_pre_cap_overbright_fraction": 0.0
+  }
+}

@@ -1,0 +1,1372 @@
+{
+  "vendor": {
+    "status": "pass",
+    "wave_frames": 84,
+    "max_wrist_gap_source_px": 0.0,
+    "reflected_hand_negative_rejected": true,
+    "smiling_distress_negative_rejected": true,
+    "expression_state_frame_checks": 1080,
+    "base_source_pngs_unchanged": true,
+    "visual_inspection": "executor inspected five-digit palm, thumb screen-right when raised, worried brows/open mouth and contact poses; user acceptance pending",
+    "not_covered": "pixel artwork chirality is an annotated visual inspection, not inferred from a right-hand label or solely from determinant",
+    "frames": [
+      {
+        "frame": 0,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": -0.9335804264972019,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 1,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": -0.9341107739033083,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 2,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": -0.9362485931667643,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 3,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": -0.9386706386858767,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 4,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": -0.9396709727495915,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 5,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": -0.9384345020144637,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 6,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": -0.9223008890209115,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 7,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": -0.8702440430330053,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 8,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": -0.7562034231770203,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 9,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999997,
+        "thumb_direction_component_x": -0.5604912498647331,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 10,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": -0.29346883199162377,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 11,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": -0.0026854188386701916,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 12,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": 0.2515571908903933,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 13,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.4298966708413824,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 14,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.5257940952983439,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 15,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.5564707579335754,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 16,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.5570222956801275,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 17,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.5732313102426885,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 18,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.6291444864942558,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 19,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999998,
+        "thumb_direction_component_x": 0.7206787831586502,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 20,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.8238042349582454,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 21,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9101870857827866,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 22,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9640324350372113,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 23,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9882171002557089,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 24,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999997,
+        "thumb_direction_component_x": 0.9956685459927785,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 25,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9969110913833927,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 26,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": 0.9967213433960779,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 27,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999997,
+        "thumb_direction_component_x": 0.9948874560769962,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 28,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9893970407975591,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 29,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9785284198578666,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 30,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9632204544936597,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 31,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": 0.9481489785731514,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 32,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999998,
+        "thumb_direction_component_x": 0.9388656883821525,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 33,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9366755140237873,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 34,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9385096852074771,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 35,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.950586568673779,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 36,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9721646877665999,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 37,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999997,
+        "thumb_direction_component_x": 0.9921021591103302,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 38,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9999784415739489,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 39,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999997,
+        "thumb_direction_component_x": 0.9954885399732376,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 40,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9873427746434904,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 41,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9834669630274083,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 42,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9834230527254767,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 43,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9870776458165051,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 44,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9951623931468343,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 45,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9999979994994624,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 46,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999997,
+        "thumb_direction_component_x": 0.9926905810089711,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 47,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999998,
+        "thumb_direction_component_x": 0.9730824599678853,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 48,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999998,
+        "thumb_direction_component_x": 0.951319028765467,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 49,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": 0.93875368483733,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 50,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9366738027478093,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 51,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999998,
+        "thumb_direction_component_x": 0.9399212250082745,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 52,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": 0.9544052843753018,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 53,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": 0.9767081292127506,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 54,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": 0.9948278272861246,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 55,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9998729263738038,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 56,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9938150907235223,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 57,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999996,
+        "thumb_direction_component_x": 0.9861041540592652,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 58,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9833058945462576,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 59,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999997,
+        "thumb_direction_component_x": 0.9836186757452272,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 60,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9874011627360895,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 61,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9941821984599818,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 62,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": 0.999181915563385,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 63,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9997544707497382,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 64,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9981447879560077,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 65,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999998,
+        "thumb_direction_component_x": 0.9975003628149635,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 66,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9973250896289717,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 67,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9927956922548965,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 68,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9706011019029203,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 69,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9043785953948703,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 70,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999998,
+        "thumb_direction_component_x": 0.7716838565630452,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 71,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.5807653316381868,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 72,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999998,
+        "thumb_direction_component_x": 0.3754900330705182,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 73,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.20943922808647583,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 74,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.11478845166023915,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 75,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000004,
+        "thumb_direction_component_x": 0.0875851030586544,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 76,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999997,
+        "thumb_direction_component_x": 0.08247151713945838,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 77,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": 0.022175981208572334,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 78,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": -0.132559862711859,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 79,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": -0.36258280426969836,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 80,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999998,
+        "thumb_direction_component_x": -0.6034880565427057,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 81,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": -0.7871014321742892,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 82,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": -0.8887233671872858,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 83,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": -0.9274623360916039,
+        "raised_pose": false,
+        "expression": "distress"
+      }
+    ]
+  },
+  "video": {
+    "status": "pass",
+    "wave_frames": 84,
+    "max_wrist_gap_source_px": 0.0,
+    "reflected_hand_negative_rejected": true,
+    "smiling_distress_negative_rejected": true,
+    "expression_state_frame_checks": 1080,
+    "base_source_pngs_unchanged": true,
+    "visual_inspection": "executor inspected five-digit palm, thumb screen-right when raised, worried brows/open mouth and contact poses; user acceptance pending",
+    "not_covered": "pixel artwork chirality is an annotated visual inspection, not inferred from a right-hand label or solely from determinant",
+    "frames": [
+      {
+        "frame": 0,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": -0.9335804264972019,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 1,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": -0.9341107739033083,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 2,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": -0.9362485931667643,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 3,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": -0.9386706386858767,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 4,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": -0.9396709727495915,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 5,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": -0.9384345020144637,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 6,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": -0.9223008890209115,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 7,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": -0.8702440430330053,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 8,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": -0.7562034231770203,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 9,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999997,
+        "thumb_direction_component_x": -0.5604912498647331,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 10,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": -0.29346883199162377,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 11,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": -0.0026854188386701916,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 12,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": 0.2515571908903933,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 13,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.4298966708413824,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 14,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.5257940952983439,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 15,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.5564707579335754,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 16,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.5570222956801275,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 17,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.5732313102426885,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 18,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.6291444864942558,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 19,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999998,
+        "thumb_direction_component_x": 0.7206787831586502,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 20,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.8238042349582454,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 21,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9101870857827866,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 22,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9640324350372113,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 23,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9882171002557089,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 24,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999997,
+        "thumb_direction_component_x": 0.9956685459927785,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 25,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9969110913833927,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 26,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": 0.9967213433960779,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 27,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999997,
+        "thumb_direction_component_x": 0.9948874560769962,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 28,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9893970407975591,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 29,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9785284198578666,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 30,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9632204544936597,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 31,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": 0.9481489785731514,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 32,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999998,
+        "thumb_direction_component_x": 0.9388656883821525,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 33,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9366755140237873,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 34,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9385096852074771,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 35,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.950586568673779,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 36,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9721646877665999,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 37,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999997,
+        "thumb_direction_component_x": 0.9921021591103302,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 38,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9999784415739489,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 39,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999997,
+        "thumb_direction_component_x": 0.9954885399732376,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 40,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9873427746434904,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 41,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9834669630274083,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 42,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9834230527254767,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 43,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9870776458165051,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 44,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9951623931468343,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 45,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9999979994994624,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 46,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999997,
+        "thumb_direction_component_x": 0.9926905810089711,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 47,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999998,
+        "thumb_direction_component_x": 0.9730824599678853,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 48,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999998,
+        "thumb_direction_component_x": 0.951319028765467,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 49,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": 0.93875368483733,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 50,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9366738027478093,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 51,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999998,
+        "thumb_direction_component_x": 0.9399212250082745,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 52,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": 0.9544052843753018,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 53,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": 0.9767081292127506,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 54,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": 0.9948278272861246,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 55,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9998729263738038,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 56,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9938150907235223,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 57,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999996,
+        "thumb_direction_component_x": 0.9861041540592652,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 58,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9833058945462576,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 59,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999997,
+        "thumb_direction_component_x": 0.9836186757452272,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 60,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9874011627360895,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 61,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9941821984599818,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 62,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": 0.999181915563385,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 63,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9997544707497382,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 64,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9981447879560077,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 65,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999998,
+        "thumb_direction_component_x": 0.9975003628149635,
+        "raised_pose": true,
+        "expression": "distress"
+      },
+      {
+        "frame": 66,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9973250896289717,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 67,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000002,
+        "thumb_direction_component_x": 0.9927956922548965,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 68,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9706011019029203,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 69,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.9043785953948703,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 70,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999998,
+        "thumb_direction_component_x": 0.7716838565630452,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 71,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.5807653316381868,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 72,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999998,
+        "thumb_direction_component_x": 0.3754900330705182,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 73,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.20943922808647583,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 74,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": 0.11478845166023915,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 75,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0000000000000004,
+        "thumb_direction_component_x": 0.0875851030586544,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 76,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999997,
+        "thumb_direction_component_x": 0.08247151713945838,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 77,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": 0.022175981208572334,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 78,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": -0.132559862711859,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 79,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": -0.36258280426969836,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 80,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999998,
+        "thumb_direction_component_x": -0.6034880565427057,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 81,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": -0.7871014321742892,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 82,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 0.9999999999999999,
+        "thumb_direction_component_x": -0.8887233671872858,
+        "raised_pose": false,
+        "expression": "distress"
+      },
+      {
+        "frame": 83,
+        "wrist_gap_source_px": 0.0,
+        "hand_transform_determinant": 1.0,
+        "thumb_direction_component_x": -0.9274623360916039,
+        "raised_pose": false,
+        "expression": "distress"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "status": "pending",
+  "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+  "details": {
+    "contrast": 0.7702745098039215
+  }
+}

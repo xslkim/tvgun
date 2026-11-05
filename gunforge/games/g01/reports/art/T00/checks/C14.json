@@ -1,0 +1,5 @@
+{
+  "status": "pending",
+  "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+  "details": {}
+}

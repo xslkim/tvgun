@@ -1,0 +1,909 @@
+{
+  "task": "T05",
+  "status": "A2g_prop_direction_review_pending",
+  "production_asset_approved": false,
+  "checker_version": "art-checks-0.2-uncalibrated",
+  "checker_snapshot": {
+    "checks.py": "6505b8cd9eae92760be235a9de0e7a56dc57907f685a66f13b99a48d2c632d27",
+    "ocr.cjs": "0b2555d29ff1ddb5f6400cf3a814a0cd13ff6fb100a5ed1d00b41919673e56ad",
+    "artlib.py": "636ed606bdb15edb1ad1372f8484d1520c85d63595d3050b711d5920e7047ff2",
+    "paper_ops.py": "9f88d21f2685beedf74159526176d9cf32fe6bf52afbf251e4bd396a07b527b1"
+  },
+  "cost": null,
+  "cost_status": "not_reported",
+  "normalization": "see station.json, puppet.json or enemy.json; native source files preserved",
+  "calls": [
+    {
+      "id": "vendor_concept",
+      "asset_key": "vendor_concept",
+      "attempt": 1,
+      "attempt_id": "T05:vendor_concept:a1",
+      "request_fingerprint": "872ea755a5eb1a82ad4312cc21f6b4dbac7821cc798b45d76bd714195f0501d9",
+      "prompt": "1990s Chinese small-town game art, flat stacked cut paper and subtle fine fiber, clean cut edges, muted indigo #141A33, deep violet #2A1E3D, warm apricot #D9A066, dusty pink #C97B84 and teal #4E9A92. No white, no bloom, no antique pagoda roofs or costume, no plastic 3D bevel. Generate ONE full-body neutral paper-puppet concept of this same slim hawthorn vendor. Use the reference ONLY for identity and colors: apricot apron, purple/dusty sweater, blue trousers, soft blue hat. This is a friendly HUMAN NPC / HOSTAGE, NEVER an enemy, never a monster. A calm 3/4 side stance, arms slightly apart and legs apart, all joints visible, head-to-body about 1:4.5. Flat paper shapes with circular overlapping joints and a few small brass-paper pins. Apron belongs to torso; sleeves to upper arms/forearms; trousers to thighs/shins; shoes included in shins. Both hands empty for now; no stick, basket or food prop, no weapons. No ink, red marks, aggressive expression, attack pose, wounds or death. True transparent background with no floor, shadow, aura, scene or label.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/tvgun/gunforge/games/g01/bible/style_refs/res_vendor.png",
+          "sha256": "cae0e9fda89c0707ecb0a78f4d98a5f2130d9ae73d71c8157258039706794ae6"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-7e4e17f6-ab46-415d-b397-e4a7ca1a4659.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\vendor_concept_a1.png",
+      "sha256": "87233dd07e82c98306c3bad696b1ab30363492e036dcd0353a1e3433830e152e",
+      "actual_size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "id": "video_concept",
+      "asset_key": "video_concept",
+      "attempt": 1,
+      "attempt_id": "T05:video_concept:a1",
+      "request_fingerprint": "89425f6f5779e6f7c7c956a61015da116f696ac7548d20f8ac9b5fd4a17d86f1",
+      "prompt": "1990s Chinese small-town game art, flat stacked cut paper and subtle fine fiber, clean cut edges, muted indigo #141A33, deep violet #2A1E3D, warm apricot #D9A066, dusty pink #C97B84 and teal #4E9A92. No white, no bloom, no antique pagoda roofs or costume, no plastic 3D bevel. Generate ONE full-body neutral paper-puppet concept of a stocky friendly 1990s videotape-shop owner, a HUMAN NPC / HOSTAGE, NEVER an enemy. Gray-teal casual zip jacket, warm apricot shirt, dark blue trousers, simple cloth shoes, short dark paper hair, no hat. References are only paper/color/clothing vocabulary, not their slim body or profession. Clearly a different, plumper body shape from the slim vendor. Calm 3/4 side stance, arms slightly apart and legs apart, all joints visible, head-to-body about 1:4.5. Flat paper pieces with circular overlaps and small brass-paper pins. Hands empty, no prop for now. No weapon, ink, red weak spot, threatening pose, wounds, labels, floor, shadow or background aura. Genuine transparent background.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/tvgun/gunforge/games/g01/bible/style_refs/res_vendor.png",
+          "sha256": "cae0e9fda89c0707ecb0a78f4d98a5f2130d9ae73d71c8157258039706794ae6"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/bible/style_refs/res_projectionist.png",
+          "sha256": "79b94baa79440fa24ae8a58bded0b8d4ac14fa2956b9cb574fa48c536831be01"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-c074a91d-8f45-4a82-9d21-7716e8cddf0b.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\video_concept_a1.png",
+      "sha256": "856047a3f55adb88ab74073afe7467269f4a1c54f0758c22046f26b2bbc6404e",
+      "actual_size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "id": "vendor_sheet_1",
+      "asset_key": "vendor_parts_sheet",
+      "attempt": 1,
+      "attempt_id": "T05:vendor_sheet_1:a1",
+      "request_fingerprint": "d769c2fb59adc30ddf62bbbd7ec8e558bfaa9de75d4e867874f565a3f6f9cc71",
+      "prompt": "Technical CUT-PAPER PUPPET PARTS SHEET for the exact friendly HUMAN NPC in input 1. NOT a finished standing character, NOT a character lineup. Input 2 is a layout guide ONLY. Output a tall transparent canvas approximately 1536x2560, with exactly TEN DISCONNECTED parts arranged in 5 rows, first TWO columns only; keep third/right column empty. Row 1: TORSO with its clothes/apron as ONE piece at left, HEAD with hair/hat/neck as ONE piece at middle. Row 2: LEFT UPPER ARM at left, RIGHT UPPER ARM at middle. Row 3: LEFT FOREARM INCLUDING ITS HAND as ONE CONNECTED piece at left, RIGHT FOREARM INCLUDING ITS HAND as ONE CONNECTED piece at middle. Row 4: LEFT THIGH at left, RIGHT THIGH at middle, trousers included. Row 5: LEFT SHIN INCLUDING ITS FOOT/SHOE as ONE CONNECTED piece at left, RIGHT SHIN INCLUDING ITS FOOT/SHOE as ONE CONNECTED piece at middle. This is the complete humanoid_10 list; do not invent pelvis, extra wrist, loose hands, separate shoes or spare pins. Each upper arm includes only shoulder-to-elbow; forearm only elbow-to-hand; thigh only hip-to-knee; shin only knee-to-foot. Circular paper overlap ends on each limb, with a small brass-paper pin at the main pivot. All parts lie flat and vertical at neutral angle, faithful colors and consistent character proportions, subtle fine paper texture. Minimum 32 pixels EMPTY gap between any two parts, including soft edges. Exactly one part per indicated cell; all of every part fully inside its cell with generous margins. No part crosses row/column boundaries. DO NOT render guide boxes, circles, labels, text, grids, numbers or cell boundaries. Genuine transparent background, no ground, drop shadow, glow, colored aura, paper sheet backdrop or completed character ghost. The character is only a civilian hostage/NPC: no weapon, attack pose, monster feature, red mark or blood. Trial 1 of four independently inspected sheets; keep exactly the same ten-part identity and layout.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T05/vendor_concept_a1.png",
+          "sha256": "87233dd07e82c98306c3bad696b1ab30363492e036dcd0353a1e3433830e152e"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T05/parts_layout.png",
+          "sha256": "8fb8e4d49b5e1dd7a5aa5bf8c15e7453859e9b341cbe4ae93bca654b3fa53d14"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-76db0649-5415-4b55-8c82-c4f72b581bb0.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\vendor_sheet_1_a1.png",
+      "sha256": "bf1bc53e84d0568fdb0e901c35f7784a5813a2fb76434df281dbc9fee6a3dda2",
+      "actual_size": [
+        971,
+        1619
+      ]
+    },
+    {
+      "id": "vendor_sheet_2",
+      "asset_key": "vendor_parts_sheet",
+      "attempt": 2,
+      "attempt_id": "T05:vendor_sheet_2:a2",
+      "request_fingerprint": "7b186f56b705a84f8822667de833bb914b7a3d7ce753af76331fcceb989ff229",
+      "prompt": "Technical CUT-PAPER PUPPET PARTS SHEET for the exact friendly HUMAN NPC in input 1. NOT a finished standing character, NOT a character lineup. Input 2 is a layout guide ONLY. Output a tall transparent canvas approximately 1536x2560, with exactly TEN DISCONNECTED parts arranged in 5 rows, first TWO columns only; keep third/right column empty. Row 1: TORSO with its clothes/apron as ONE piece at left, HEAD with hair/hat/neck as ONE piece at middle. Row 2: LEFT UPPER ARM at left, RIGHT UPPER ARM at middle. Row 3: LEFT FOREARM INCLUDING ITS HAND as ONE CONNECTED piece at left, RIGHT FOREARM INCLUDING ITS HAND as ONE CONNECTED piece at middle. Row 4: LEFT THIGH at left, RIGHT THIGH at middle, trousers included. Row 5: LEFT SHIN INCLUDING ITS FOOT/SHOE as ONE CONNECTED piece at left, RIGHT SHIN INCLUDING ITS FOOT/SHOE as ONE CONNECTED piece at middle. This is the complete humanoid_10 list; do not invent pelvis, extra wrist, loose hands, separate shoes or spare pins. Each upper arm includes only shoulder-to-elbow; forearm only elbow-to-hand; thigh only hip-to-knee; shin only knee-to-foot. Circular paper overlap ends on each limb, with a small brass-paper pin at the main pivot. All parts lie flat and vertical at neutral angle, faithful colors and consistent character proportions, subtle fine paper texture. Minimum 32 pixels EMPTY gap between any two parts, including soft edges. Exactly one part per indicated cell; all of every part fully inside its cell with generous margins. No part crosses row/column boundaries. DO NOT render guide boxes, circles, labels, text, grids, numbers or cell boundaries. Genuine transparent background, no ground, drop shadow, glow, colored aura, paper sheet backdrop or completed character ghost. The character is only a civilian hostage/NPC: no weapon, attack pose, monster feature, red mark or blood. Trial 2 of four independently inspected sheets; keep exactly the same ten-part identity and layout.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T05/vendor_concept_a1.png",
+          "sha256": "87233dd07e82c98306c3bad696b1ab30363492e036dcd0353a1e3433830e152e"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T05/parts_layout.png",
+          "sha256": "8fb8e4d49b5e1dd7a5aa5bf8c15e7453859e9b341cbe4ae93bca654b3fa53d14"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-3dd67139-e542-4f90-92da-741c6fbd4121.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\vendor_sheet_2_a2.png",
+      "sha256": "1d4449e9f1a20bdd1ad500404fc0f9bbb704eed8c5bb14bd21dbe902ca0000f5",
+      "actual_size": [
+        971,
+        1619
+      ]
+    },
+    {
+      "id": "vendor_sheet_3",
+      "asset_key": "vendor_parts_sheet",
+      "attempt": 3,
+      "attempt_id": "T05:vendor_sheet_3:a3",
+      "request_fingerprint": "d7b6150c7f37895100a0565c8e13f7e5d4d81349d8d4a884d5a320bfdf418b95",
+      "prompt": "Technical CUT-PAPER PUPPET PARTS SHEET for the exact friendly HUMAN NPC in input 1. NOT a finished standing character, NOT a character lineup. Input 2 is a layout guide ONLY. Output a tall transparent canvas approximately 1536x2560, with exactly TEN DISCONNECTED parts arranged in 5 rows, first TWO columns only; keep third/right column empty. Row 1: TORSO with its clothes/apron as ONE piece at left, HEAD with hair/hat/neck as ONE piece at middle. Row 2: LEFT UPPER ARM at left, RIGHT UPPER ARM at middle. Row 3: LEFT FOREARM INCLUDING ITS HAND as ONE CONNECTED piece at left, RIGHT FOREARM INCLUDING ITS HAND as ONE CONNECTED piece at middle. Row 4: LEFT THIGH at left, RIGHT THIGH at middle, trousers included. Row 5: LEFT SHIN INCLUDING ITS FOOT/SHOE as ONE CONNECTED piece at left, RIGHT SHIN INCLUDING ITS FOOT/SHOE as ONE CONNECTED piece at middle. This is the complete humanoid_10 list; do not invent pelvis, extra wrist, loose hands, separate shoes or spare pins. Each upper arm includes only shoulder-to-elbow; forearm only elbow-to-hand; thigh only hip-to-knee; shin only knee-to-foot. Circular paper overlap ends on each limb, with a small brass-paper pin at the main pivot. All parts lie flat and vertical at neutral angle, faithful colors and consistent character proportions, subtle fine paper texture. Minimum 32 pixels EMPTY gap between any two parts, including soft edges. Exactly one part per indicated cell; all of every part fully inside its cell with generous margins. No part crosses row/column boundaries. DO NOT render guide boxes, circles, labels, text, grids, numbers or cell boundaries. Genuine transparent background, no ground, drop shadow, glow, colored aura, paper sheet backdrop or completed character ghost. The character is only a civilian hostage/NPC: no weapon, attack pose, monster feature, red mark or blood. Trial 3 of four independently inspected sheets; keep exactly the same ten-part identity and layout.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T05/vendor_concept_a1.png",
+          "sha256": "87233dd07e82c98306c3bad696b1ab30363492e036dcd0353a1e3433830e152e"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T05/parts_layout.png",
+          "sha256": "8fb8e4d49b5e1dd7a5aa5bf8c15e7453859e9b341cbe4ae93bca654b3fa53d14"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-ace0bdb7-ca1d-489c-a4b2-f19473dd612a.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\vendor_sheet_3_a3.png",
+      "sha256": "ed937ad32451b8f3673c1f1076f7c142c9acb83f0844968a3e980890c2cf3280",
+      "actual_size": [
+        793,
+        1983
+      ]
+    },
+    {
+      "id": "vendor_sheet_4",
+      "asset_key": "vendor_parts_sheet",
+      "attempt": 4,
+      "attempt_id": "T05:vendor_sheet_4:a4",
+      "request_fingerprint": "7d20bab7735d37917294ff31e654a40f949d6a693afdba7d5a3234998f1e8ecd",
+      "prompt": "Technical CUT-PAPER PUPPET PARTS SHEET for the exact friendly HUMAN NPC in input 1. NOT a finished standing character, NOT a character lineup. Input 2 is a layout guide ONLY. Output a tall transparent canvas approximately 1536x2560, with exactly TEN DISCONNECTED parts arranged in 5 rows, first TWO columns only; keep third/right column empty. Row 1: TORSO with its clothes/apron as ONE piece at left, HEAD with hair/hat/neck as ONE piece at middle. Row 2: LEFT UPPER ARM at left, RIGHT UPPER ARM at middle. Row 3: LEFT FOREARM INCLUDING ITS HAND as ONE CONNECTED piece at left, RIGHT FOREARM INCLUDING ITS HAND as ONE CONNECTED piece at middle. Row 4: LEFT THIGH at left, RIGHT THIGH at middle, trousers included. Row 5: LEFT SHIN INCLUDING ITS FOOT/SHOE as ONE CONNECTED piece at left, RIGHT SHIN INCLUDING ITS FOOT/SHOE as ONE CONNECTED piece at middle. This is the complete humanoid_10 list; do not invent pelvis, extra wrist, loose hands, separate shoes or spare pins. Each upper arm includes only shoulder-to-elbow; forearm only elbow-to-hand; thigh only hip-to-knee; shin only knee-to-foot. Circular paper overlap ends on each limb, with a small brass-paper pin at the main pivot. All parts lie flat and vertical at neutral angle, faithful colors and consistent character proportions, subtle fine paper texture. Minimum 32 pixels EMPTY gap between any two parts, including soft edges. Exactly one part per indicated cell; all of every part fully inside its cell with generous margins. No part crosses row/column boundaries. DO NOT render guide boxes, circles, labels, text, grids, numbers or cell boundaries. Genuine transparent background, no ground, drop shadow, glow, colored aura, paper sheet backdrop or completed character ghost. The character is only a civilian hostage/NPC: no weapon, attack pose, monster feature, red mark or blood. Trial 4 of four independently inspected sheets; keep exactly the same ten-part identity and layout.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T05/vendor_concept_a1.png",
+          "sha256": "87233dd07e82c98306c3bad696b1ab30363492e036dcd0353a1e3433830e152e"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T05/parts_layout.png",
+          "sha256": "8fb8e4d49b5e1dd7a5aa5bf8c15e7453859e9b341cbe4ae93bca654b3fa53d14"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-3f6539c0-d4f3-4dd8-bc05-d2cb90cc3c45.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\vendor_sheet_4_a4.png",
+      "sha256": "3ebf2d4b9a5b7d141acdfbd3c0297931cc0b8311228a39e2c6539e8f03944155",
+      "actual_size": [
+        793,
+        1983
+      ]
+    },
+    {
+      "id": "video_sheet_1",
+      "asset_key": "video_parts_sheet",
+      "attempt": 1,
+      "attempt_id": "T05:video_sheet_1:a1",
+      "request_fingerprint": "8b9476a2d2c81112f7ffd88eca651711a787b7a1b3b9b7afb88475151cface44",
+      "prompt": "Technical CUT-PAPER PUPPET PARTS SHEET for the exact friendly HUMAN NPC in input 1. NOT a finished standing character, NOT a character lineup. Input 2 is a layout guide ONLY. Output a tall transparent canvas approximately 1536x2560, with exactly TEN DISCONNECTED parts arranged in 5 rows, first TWO columns only; keep third/right column empty. Row 1: TORSO with its clothes/apron as ONE piece at left, HEAD with hair/hat/neck as ONE piece at middle. Row 2: LEFT UPPER ARM at left, RIGHT UPPER ARM at middle. Row 3: LEFT FOREARM INCLUDING ITS HAND as ONE CONNECTED piece at left, RIGHT FOREARM INCLUDING ITS HAND as ONE CONNECTED piece at middle. Row 4: LEFT THIGH at left, RIGHT THIGH at middle, trousers included. Row 5: LEFT SHIN INCLUDING ITS FOOT/SHOE as ONE CONNECTED piece at left, RIGHT SHIN INCLUDING ITS FOOT/SHOE as ONE CONNECTED piece at middle. This is the complete humanoid_10 list; do not invent pelvis, extra wrist, loose hands, separate shoes or spare pins. Each upper arm includes only shoulder-to-elbow; forearm only elbow-to-hand; thigh only hip-to-knee; shin only knee-to-foot. Circular paper overlap ends on each limb, with a small brass-paper pin at the main pivot. All parts lie flat and vertical at neutral angle, faithful colors and consistent character proportions, subtle fine paper texture. Minimum 32 pixels EMPTY gap between any two parts, including soft edges. Exactly one part per indicated cell; all of every part fully inside its cell with generous margins. No part crosses row/column boundaries. DO NOT render guide boxes, circles, labels, text, grids, numbers or cell boundaries. Genuine transparent background, no ground, drop shadow, glow, colored aura, paper sheet backdrop or completed character ghost. The character is only a civilian hostage/NPC: no weapon, attack pose, monster feature, red mark or blood. Trial 1 of four independently inspected sheets; keep exactly the same ten-part identity and layout.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T05/video_concept_a1.png",
+          "sha256": "856047a3f55adb88ab74073afe7467269f4a1c54f0758c22046f26b2bbc6404e"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T05/parts_layout.png",
+          "sha256": "8fb8e4d49b5e1dd7a5aa5bf8c15e7453859e9b341cbe4ae93bca654b3fa53d14"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-a4dbe420-ae2a-400e-92a4-49f507380d5e.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\video_sheet_1_a1.png",
+      "sha256": "8ae1e32373a58ad2a25a985f163b37b711b2d34f7d82df44124eb03a9f72a2d1",
+      "actual_size": [
+        793,
+        1983
+      ]
+    },
+    {
+      "id": "video_sheet_2",
+      "asset_key": "video_parts_sheet",
+      "attempt": 2,
+      "attempt_id": "T05:video_sheet_2:a2",
+      "request_fingerprint": "7624f69487cad4f02a66b7169ebe7c75b7f3cb8293cb43ff0e0ab4cfaa5d8908",
+      "prompt": "Technical CUT-PAPER PUPPET PARTS SHEET for the exact friendly HUMAN NPC in input 1. NOT a finished standing character, NOT a character lineup. Input 2 is a layout guide ONLY. Output a tall transparent canvas approximately 1536x2560, with exactly TEN DISCONNECTED parts arranged in 5 rows, first TWO columns only; keep third/right column empty. Row 1: TORSO with its clothes/apron as ONE piece at left, HEAD with hair/hat/neck as ONE piece at middle. Row 2: LEFT UPPER ARM at left, RIGHT UPPER ARM at middle. Row 3: LEFT FOREARM INCLUDING ITS HAND as ONE CONNECTED piece at left, RIGHT FOREARM INCLUDING ITS HAND as ONE CONNECTED piece at middle. Row 4: LEFT THIGH at left, RIGHT THIGH at middle, trousers included. Row 5: LEFT SHIN INCLUDING ITS FOOT/SHOE as ONE CONNECTED piece at left, RIGHT SHIN INCLUDING ITS FOOT/SHOE as ONE CONNECTED piece at middle. This is the complete humanoid_10 list; do not invent pelvis, extra wrist, loose hands, separate shoes or spare pins. Each upper arm includes only shoulder-to-elbow; forearm only elbow-to-hand; thigh only hip-to-knee; shin only knee-to-foot. Circular paper overlap ends on each limb, with a small brass-paper pin at the main pivot. All parts lie flat and vertical at neutral angle, faithful colors and consistent character proportions, subtle fine paper texture. Minimum 32 pixels EMPTY gap between any two parts, including soft edges. Exactly one part per indicated cell; all of every part fully inside its cell with generous margins. No part crosses row/column boundaries. DO NOT render guide boxes, circles, labels, text, grids, numbers or cell boundaries. Genuine transparent background, no ground, drop shadow, glow, colored aura, paper sheet backdrop or completed character ghost. The character is only a civilian hostage/NPC: no weapon, attack pose, monster feature, red mark or blood. Trial 2 of four independently inspected sheets; keep exactly the same ten-part identity and layout.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T05/video_concept_a1.png",
+          "sha256": "856047a3f55adb88ab74073afe7467269f4a1c54f0758c22046f26b2bbc6404e"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T05/parts_layout.png",
+          "sha256": "8fb8e4d49b5e1dd7a5aa5bf8c15e7453859e9b341cbe4ae93bca654b3fa53d14"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-8c6dd313-ca52-493d-99a6-daa4f587d144.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\video_sheet_2_a2.png",
+      "sha256": "2ea869e2b9276feed1e27923b283d97286467fc58348bff5c7e4e1d0ac5a508f",
+      "actual_size": [
+        971,
+        1619
+      ]
+    },
+    {
+      "id": "video_sheet_3",
+      "asset_key": "video_parts_sheet",
+      "attempt": 3,
+      "attempt_id": "T05:video_sheet_3:a3",
+      "request_fingerprint": "0bfde9a0dda948aee37d1cf10903aec3e553cb8d5743e1f5fabb5cdd04160e6d",
+      "prompt": "Technical CUT-PAPER PUPPET PARTS SHEET for the exact friendly HUMAN NPC in input 1. NOT a finished standing character, NOT a character lineup. Input 2 is a layout guide ONLY. Output a tall transparent canvas approximately 1536x2560, with exactly TEN DISCONNECTED parts arranged in 5 rows, first TWO columns only; keep third/right column empty. Row 1: TORSO with its clothes/apron as ONE piece at left, HEAD with hair/hat/neck as ONE piece at middle. Row 2: LEFT UPPER ARM at left, RIGHT UPPER ARM at middle. Row 3: LEFT FOREARM INCLUDING ITS HAND as ONE CONNECTED piece at left, RIGHT FOREARM INCLUDING ITS HAND as ONE CONNECTED piece at middle. Row 4: LEFT THIGH at left, RIGHT THIGH at middle, trousers included. Row 5: LEFT SHIN INCLUDING ITS FOOT/SHOE as ONE CONNECTED piece at left, RIGHT SHIN INCLUDING ITS FOOT/SHOE as ONE CONNECTED piece at middle. This is the complete humanoid_10 list; do not invent pelvis, extra wrist, loose hands, separate shoes or spare pins. Each upper arm includes only shoulder-to-elbow; forearm only elbow-to-hand; thigh only hip-to-knee; shin only knee-to-foot. Circular paper overlap ends on each limb, with a small brass-paper pin at the main pivot. All parts lie flat and vertical at neutral angle, faithful colors and consistent character proportions, subtle fine paper texture. Minimum 32 pixels EMPTY gap between any two parts, including soft edges. Exactly one part per indicated cell; all of every part fully inside its cell with generous margins. No part crosses row/column boundaries. DO NOT render guide boxes, circles, labels, text, grids, numbers or cell boundaries. Genuine transparent background, no ground, drop shadow, glow, colored aura, paper sheet backdrop or completed character ghost. The character is only a civilian hostage/NPC: no weapon, attack pose, monster feature, red mark or blood. Trial 3 of four independently inspected sheets; keep exactly the same ten-part identity and layout.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T05/video_concept_a1.png",
+          "sha256": "856047a3f55adb88ab74073afe7467269f4a1c54f0758c22046f26b2bbc6404e"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T05/parts_layout.png",
+          "sha256": "8fb8e4d49b5e1dd7a5aa5bf8c15e7453859e9b341cbe4ae93bca654b3fa53d14"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-a357a95b-7f50-4ab3-b381-dcc3df782211.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\video_sheet_3_a3.png",
+      "sha256": "c3411d47072d1251f8a934bb513342981d1f23241107f1df6f8feec448876ef7",
+      "actual_size": [
+        793,
+        1983
+      ]
+    },
+    {
+      "id": "video_sheet_4",
+      "asset_key": "video_parts_sheet",
+      "attempt": 4,
+      "attempt_id": "T05:video_sheet_4:a4",
+      "request_fingerprint": "51f873a34aa603de470ce9618a9639cf3deb3080f7e789bdb945aba58fa1447a",
+      "prompt": "Technical CUT-PAPER PUPPET PARTS SHEET for the exact friendly HUMAN NPC in input 1. NOT a finished standing character, NOT a character lineup. Input 2 is a layout guide ONLY. Output a tall transparent canvas approximately 1536x2560, with exactly TEN DISCONNECTED parts arranged in 5 rows, first TWO columns only; keep third/right column empty. Row 1: TORSO with its clothes/apron as ONE piece at left, HEAD with hair/hat/neck as ONE piece at middle. Row 2: LEFT UPPER ARM at left, RIGHT UPPER ARM at middle. Row 3: LEFT FOREARM INCLUDING ITS HAND as ONE CONNECTED piece at left, RIGHT FOREARM INCLUDING ITS HAND as ONE CONNECTED piece at middle. Row 4: LEFT THIGH at left, RIGHT THIGH at middle, trousers included. Row 5: LEFT SHIN INCLUDING ITS FOOT/SHOE as ONE CONNECTED piece at left, RIGHT SHIN INCLUDING ITS FOOT/SHOE as ONE CONNECTED piece at middle. This is the complete humanoid_10 list; do not invent pelvis, extra wrist, loose hands, separate shoes or spare pins. Each upper arm includes only shoulder-to-elbow; forearm only elbow-to-hand; thigh only hip-to-knee; shin only knee-to-foot. Circular paper overlap ends on each limb, with a small brass-paper pin at the main pivot. All parts lie flat and vertical at neutral angle, faithful colors and consistent character proportions, subtle fine paper texture. Minimum 32 pixels EMPTY gap between any two parts, including soft edges. Exactly one part per indicated cell; all of every part fully inside its cell with generous margins. No part crosses row/column boundaries. DO NOT render guide boxes, circles, labels, text, grids, numbers or cell boundaries. Genuine transparent background, no ground, drop shadow, glow, colored aura, paper sheet backdrop or completed character ghost. The character is only a civilian hostage/NPC: no weapon, attack pose, monster feature, red mark or blood. Trial 4 of four independently inspected sheets; keep exactly the same ten-part identity and layout.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T05/video_concept_a1.png",
+          "sha256": "856047a3f55adb88ab74073afe7467269f4a1c54f0758c22046f26b2bbc6404e"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T05/parts_layout.png",
+          "sha256": "8fb8e4d49b5e1dd7a5aa5bf8c15e7453859e9b341cbe4ae93bca654b3fa53d14"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-6977671b-f495-44b0-bd2f-5c51aa0a29a6.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\video_sheet_4_a4.png",
+      "sha256": "1b11bd2a34ebfe63f08ebd0b796be91d81fdc9d02936d4254b14c82bbf492f28",
+      "actual_size": [
+        971,
+        1619
+      ]
+    },
+    {
+      "id": "vendor_individual_head",
+      "asset_key": "vendor_individual_head",
+      "attempt": 1,
+      "attempt_id": "T05:vendor_individual_head:a1",
+      "request_fingerprint": "558da16734a4cccf40d3366b568c4a9431e2257a9f71863c738cbf1afd56e9e3",
+      "prompt": "Alternative per-part generation test for the same friendly human NPC in this reference. Output exactly ONE paper puppet HEAD including its hair/hat and short neck, matching identity, colors, 3/4 view and flat paper texture. No torso, collar that belongs to torso, arm, body, spare face, text, background, glow or shadow. Head fully visible and centered with transparent empty margins. The person is a civilian NPC/hostage, no monster form, attack or wounds. Genuine transparent background. This is one part, not a complete parts sheet.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T05/vendor_concept_a1.png",
+          "sha256": "87233dd07e82c98306c3bad696b1ab30363492e036dcd0353a1e3433830e152e"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-88378ba9-c2e0-4750-ade2-867a8566cbf4.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\vendor_individual_head_a1.png",
+      "sha256": "f1cce13c6e86eb64614b2c393ca0114a0001f998c73d6eb44a34a8596ea80006",
+      "actual_size": [
+        1312,
+        1199
+      ]
+    },
+    {
+      "id": "video_individual_head",
+      "asset_key": "video_individual_head",
+      "attempt": 1,
+      "attempt_id": "T05:video_individual_head:a1",
+      "request_fingerprint": "3b751361a8c2d90819c2aff7cdcdba03a9362a22e7b7d65bcd8864bf20d5c9c2",
+      "prompt": "Alternative per-part generation test for the same friendly human NPC in this reference. Output exactly ONE paper puppet HEAD including its hair/hat and short neck, matching identity, colors, 3/4 view and flat paper texture. No torso, collar that belongs to torso, arm, body, spare face, text, background, glow or shadow. Head fully visible and centered with transparent empty margins. The person is a civilian NPC/hostage, no monster form, attack or wounds. Genuine transparent background. This is one part, not a complete parts sheet.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T05/video_concept_a1.png",
+          "sha256": "856047a3f55adb88ab74073afe7467269f4a1c54f0758c22046f26b2bbc6404e"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-64acacaf-698c-49d6-bd2a-b5e654070052.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\video_individual_head_a1.png",
+      "sha256": "4b1596f9dd2ab08a7ae41b259bb3c48b68217aa77404bb1d96a3a24b7b0f73ce",
+      "actual_size": [
+        1312,
+        1199
+      ]
+    },
+    {
+      "id": "blob_00",
+      "asset_key": "blob_00",
+      "attempt": 1,
+      "attempt_id": "T05:blob_00:a1",
+      "request_fingerprint": "cee21a4811474563af8e396219999079c78060bd0f70fec3dc564833b648b0ec",
+      "prompt": "Generate ONE isolated compact round ink blob with a gently uneven circular edge for a civilian rescue mechanic. Reference ONLY the wet black ink texture and restrained yet clearly visible blue-gray glossy reflections of this crow; do not copy the bird or draw any living creature. Body near #0B0B0E, a little shiny, reflections local and never white or full-rim. Large thick main region fills most of its compact silhouette so it can be shot at small display size. Exactly ONE FLAT small circular cinnabar ink-pad stamp near the center, diameter about 28 percent of the blob width, grainy irregular stamp edge, not an eye or jewel. This is a SEPARATE ink attachment, not part of a human body; do not render any human, clothing, limbs, face, wounds or blood. No tail, detached droplets, narrow tendrils, floor, shadows, halo, background or text. Genuine transparent background, centered complete blob, generous empty margins.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/crow_design_a1.png",
+          "sha256": "23dba871ed52dbd37b58693e3c17883dc0b10309be66101af1de5c4d0c78f86b"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-61b06074-010b-4d87-9a2f-dd5774fb1939.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\blob_00_a1.png",
+      "sha256": "459cd90cb6e76d2b9d748e1aede9e206e45c01c344cd9dfd9c5f6f158f017a76",
+      "actual_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "blob_01",
+      "asset_key": "blob_01",
+      "attempt": 1,
+      "attempt_id": "T05:blob_01:a1",
+      "request_fingerprint": "795ae72bf3132e422a04856814e4ea42a196af9be2143b14333c488a79bb0d1d",
+      "prompt": "Generate ONE isolated compact asymmetric teardrop ink blob with a very short blunt lower lobe for a civilian rescue mechanic. Reference ONLY the wet black ink texture and restrained yet clearly visible blue-gray glossy reflections of this crow; do not copy the bird or draw any living creature. Body near #0B0B0E, a little shiny, reflections local and never white or full-rim. Large thick main region fills most of its compact silhouette so it can be shot at small display size. Exactly ONE FLAT small circular cinnabar ink-pad stamp near the center, diameter about 28 percent of the blob width, grainy irregular stamp edge, not an eye or jewel. This is a SEPARATE ink attachment, not part of a human body; do not render any human, clothing, limbs, face, wounds or blood. No tail, detached droplets, narrow tendrils, floor, shadows, halo, background or text. Genuine transparent background, centered complete blob, generous empty margins.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/crow_design_a1.png",
+          "sha256": "23dba871ed52dbd37b58693e3c17883dc0b10309be66101af1de5c4d0c78f86b"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-e8b7cbec-3d1c-4021-a79c-f69212af1a82.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\blob_01_a1.png",
+      "sha256": "13fa2ad7ec2708b1f307ff244af58de11b35e403640ac50a0198689ffcc353f5",
+      "actual_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "blob_02",
+      "asset_key": "blob_02",
+      "attempt": 1,
+      "attempt_id": "T05:blob_02:a1",
+      "request_fingerprint": "8d94c6b5d77212fbc5e32a6cf87f93aac1d5306d44ad9574b0f3274e7c350e9b",
+      "prompt": "Generate ONE isolated wide rounded kidney-shaped ink blob, thick in the middle for a civilian rescue mechanic. Reference ONLY the wet black ink texture and restrained yet clearly visible blue-gray glossy reflections of this crow; do not copy the bird or draw any living creature. Body near #0B0B0E, a little shiny, reflections local and never white or full-rim. Large thick main region fills most of its compact silhouette so it can be shot at small display size. Exactly ONE FLAT small circular cinnabar ink-pad stamp near the center, diameter about 28 percent of the blob width, grainy irregular stamp edge, not an eye or jewel. This is a SEPARATE ink attachment, not part of a human body; do not render any human, clothing, limbs, face, wounds or blood. No tail, detached droplets, narrow tendrils, floor, shadows, halo, background or text. Genuine transparent background, centered complete blob, generous empty margins.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/crow_design_a1.png",
+          "sha256": "23dba871ed52dbd37b58693e3c17883dc0b10309be66101af1de5c4d0c78f86b"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-e140a927-3af0-463a-a91b-6637e9011e04.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\blob_02_a1.png",
+      "sha256": "081d97673c611101c6b7cb5cdc137e034d6c6db18343561ae9b18d3ed818ecfa",
+      "actual_size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "id": "blob_03",
+      "asset_key": "blob_03",
+      "attempt": 1,
+      "attempt_id": "T05:blob_03:a1",
+      "request_fingerprint": "fcb134190d8b38a017dc0a8f86e694022319ec53743c846ded64a67c1f260e06",
+      "prompt": "Generate ONE isolated compact ink blot with three broad fused rounded lobes for a civilian rescue mechanic. Reference ONLY the wet black ink texture and restrained yet clearly visible blue-gray glossy reflections of this crow; do not copy the bird or draw any living creature. Body near #0B0B0E, a little shiny, reflections local and never white or full-rim. Large thick main region fills most of its compact silhouette so it can be shot at small display size. Exactly ONE FLAT small circular cinnabar ink-pad stamp near the center, diameter about 28 percent of the blob width, grainy irregular stamp edge, not an eye or jewel. This is a SEPARATE ink attachment, not part of a human body; do not render any human, clothing, limbs, face, wounds or blood. No tail, detached droplets, narrow tendrils, floor, shadows, halo, background or text. Genuine transparent background, centered complete blob, generous empty margins.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/crow_design_a1.png",
+          "sha256": "23dba871ed52dbd37b58693e3c17883dc0b10309be66101af1de5c4d0c78f86b"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-1b071aea-baf2-4e72-9855-807c132da263.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\blob_03_a1.png",
+      "sha256": "8bd3bfe8a65dcdc0df5556255a077c9e6282b31ddebc9c2a379547f66e949131",
+      "actual_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "blob_04",
+      "asset_key": "blob_04",
+      "attempt": 1,
+      "attempt_id": "T05:blob_04:a1",
+      "request_fingerprint": "2199703bf48aeb3300d11b7db0a77c4675048705d0993eaa8f9d04aae5c653ef",
+      "prompt": "Generate ONE isolated rounded heavy ink drip with one very short broad downward bulge for a civilian rescue mechanic. Reference ONLY the wet black ink texture and restrained yet clearly visible blue-gray glossy reflections of this crow; do not copy the bird or draw any living creature. Body near #0B0B0E, a little shiny, reflections local and never white or full-rim. Large thick main region fills most of its compact silhouette so it can be shot at small display size. Exactly ONE FLAT small circular cinnabar ink-pad stamp near the center, diameter about 28 percent of the blob width, grainy irregular stamp edge, not an eye or jewel. This is a SEPARATE ink attachment, not part of a human body; do not render any human, clothing, limbs, face, wounds or blood. No tail, detached droplets, narrow tendrils, floor, shadows, halo, background or text. Genuine transparent background, centered complete blob, generous empty margins.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/crow_design_a1.png",
+          "sha256": "23dba871ed52dbd37b58693e3c17883dc0b10309be66101af1de5c4d0c78f86b"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-e0da4e76-47b3-4997-a7d9-b7ecdc3c01a5.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\blob_04_a1.png",
+      "sha256": "7921dc4965529cfa5964d733c6d5fdbdcf8edf1586a0e2cbd98945118bbb9a3c",
+      "actual_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "blob_05",
+      "asset_key": "blob_05",
+      "attempt": 1,
+      "attempt_id": "T05:blob_05:a1",
+      "request_fingerprint": "e692bc2025491419d32dce3f9fa7a38894d55bec43395d38026b30385d3214bd",
+      "prompt": "Generate ONE isolated compact soft splash with six thick rounded lobes, no thin spikes for a civilian rescue mechanic. Reference ONLY the wet black ink texture and restrained yet clearly visible blue-gray glossy reflections of this crow; do not copy the bird or draw any living creature. Body near #0B0B0E, a little shiny, reflections local and never white or full-rim. Large thick main region fills most of its compact silhouette so it can be shot at small display size. Exactly ONE FLAT small circular cinnabar ink-pad stamp near the center, diameter about 28 percent of the blob width, grainy irregular stamp edge, not an eye or jewel. This is a SEPARATE ink attachment, not part of a human body; do not render any human, clothing, limbs, face, wounds or blood. No tail, detached droplets, narrow tendrils, floor, shadows, halo, background or text. Genuine transparent background, centered complete blob, generous empty margins.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/crow_design_a1.png",
+          "sha256": "23dba871ed52dbd37b58693e3c17883dc0b10309be66101af1de5c4d0c78f86b"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-46b44a85-0688-40c0-9468-f3ab04b4d0e6.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\blob_05_a1.png",
+      "sha256": "1bb26bb7c2d7ff1ae77554e83623a591897e8e56936a9c125152f7451dfe80e1",
+      "actual_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "joint_patch",
+      "asset_key": "joint_patch",
+      "attempt": 1,
+      "attempt_id": "T05:joint_patch:a1",
+      "request_fingerprint": "c86dd54ab8a1dec8682e3d811625d2077b8d4d0f76ed1f19155c7dcbe471e56d",
+      "prompt": "Generate ONE isolated flat circular paper-puppet joint patch, used to repair circular overlaps in the reference's separated limbs. It is a SINGLE connected accessory: an exact-looking round neutral warm-gray PAPER disk, with one smaller COPPER-colored PAPER PIN disk exactly in its center. Outer paper overlap disk diameter about 64 units, copper pin diameter about 38 units (about 59 percent of outer diameter), concentric. Fine subtle fiber texture, clean cut edges, one very small muted metallic glint on copper, no bevel or thick 3D ring. The outer paper disk is uniform neutral gray-beige so it can be color-matched to clothing later; no face, limb, full puppet, labels, numbers, separate circles, spare pins, background glow, cast shadow or frame. Genuine transparent background, the single connected round patch centered with generous empty margin.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T05/vendor_sheet_1_a1.png",
+          "sha256": "bf1bc53e84d0568fdb0e901c35f7784a5813a2fb76434df281dbc9fee6a3dda2"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-1aabefc5-27e7-4c99-be47-0f9d8521d6b9.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\joint_patch_a1.png",
+      "sha256": "1d6b741829bd66b7d71a5c5768cefde32cb841cd550236e6168b2e740af154c5",
+      "actual_size": [
+        1302,
+        1208
+      ]
+    },
+    {
+      "id": "vendor_prop",
+      "asset_key": "vendor_prop",
+      "attempt": 1,
+      "attempt_id": "T05:vendor_prop:a1",
+      "request_fingerprint": "db81aac65d56dbe76fd45d2fbf36cc2566c601bfa1264c9a0c05e5dd75923546",
+      "prompt": "生成游戏用单独手持道具透明PNG：一根1990年代中国小城卖糖葫芦用的小竹签，上面四颗偏橙色暖红的糖葫芦，简洁手工刻纸，纸纤维、平面纸片、一线切口。果实为明显橘红而非朱砂红（只给敌人弱点用），小片琥珀糖衣高光。竹签竖直，从下方留出足够握柄。只画这一个道具，不画手、人、背景、文字、影子，不要武器感。真正透明背景。",
+      "transparent_background": true,
+      "references": [],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:/Users/xsl/.codex/generated_images/01a19ce1-00b0-7811-94ba-88d7da51a27b/exec-72de67d4-da68-4295-8120-409291923741.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\vendor_prop_a1.png",
+      "sha256": "70b0b7a28d8c57f2506904f2eb358b8da9c8f490c14b42e75afa98d51a9e1496",
+      "actual_size": [
+        887,
+        1774
+      ]
+    },
+    {
+      "id": "video_prop",
+      "asset_key": "video_prop",
+      "attempt": 1,
+      "attempt_id": "T05:video_prop:a1",
+      "request_fingerprint": "e7b91e1aae519e36cdc9af918c3fa256a1336e6c48720c49efb39089cb294f4e",
+      "prompt": "生成游戏用单独手持道具透明PNG：一个1990年代中国录像厅的深青蓝色VHS录像带纸盒，四分之三轻微侧角，竖着拿的大小，简单桃粉和暖杏色无字几何贴纸。手工刻纸风格，平面纸纤维、干净剪切边，克制细节。只画这一个盒子，不画手、人物、文字字母、背景或投影。真正透明背景。",
+      "transparent_background": true,
+      "references": [],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:/Users/xsl/.codex/generated_images/01a19ce1-00b0-7811-94ba-88d7da51a27b/exec-5e43480b-aa3b-4170-adc2-f8fe064c67ca.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\video_prop_a1.png",
+      "sha256": "28bd887b615f1ee747b105ea36edd99911f977213d71003a0a0b33d225c9538c",
+      "actual_size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "id": "video_prop_clean",
+      "asset_key": "video_prop",
+      "attempt": 2,
+      "attempt_id": "T05:video_prop_clean:a2",
+      "request_fingerprint": "98798ed8d473b716ceb57300be02f86d77ee4ff89ad18b302d98b2f67654273e",
+      "prompt": "编辑这个录像带盒：只移除盒子轮廓外面的全部彩色光晕、发光、软阴影。保留原盒子的几何、颜色、纹理、纸盒切边和细节。需要游戏精灵用真正透明背景，所有外部区域alpha为0，只有盒子实体保留，边缘只保留一像素自然抗锯齿。不要地面、不要底色、不要新增任何内容。",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T05/video_prop_a1.png",
+          "sha256": "28bd887b615f1ee747b105ea36edd99911f977213d71003a0a0b33d225c9538c"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:/Users/xsl/.codex/generated_images/01a19ce1-00b0-7811-94ba-88d7da51a27b/exec-6e8a70ca-5f0f-4a3b-a83e-d28b48dc21c5.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\video_prop_clean_a2.png",
+      "sha256": "0d6448bef7756ff0165fb45a98815cda72818282ae1d66cea3a22a87ccf319f4",
+      "actual_size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "id": "blob_02_compact",
+      "asset_key": "blob_02",
+      "attempt": 2,
+      "attempt_id": "T05:blob_02_compact:a2",
+      "request_fingerprint": "64e643c050377ad6b4c572b94a3822a74a2b4994b84f0abc8379ae48bddef5f3",
+      "prompt": "编辑这个游戏附着墨团，保留纯黑湿墨质感和唯一一枚平面的朱砂印迹。把横向长突起和飞溅收回，做成竖向略长、紧凑饱满的圆润墨斑，宽高比约0.85，轮廓有三五个短浅起伏即可。主体必须是完整饱满黑色块，方便小尺寸命中，不做空心，不做细长触须。小面积克制湿高光。朱砂只是平面印泥，不是宝石。只画单个墨斑，真正透明背景，无外部光晕、文字、人物或底板。",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T05/blob_02_a1.png",
+          "sha256": "081d97673c611101c6b7cb5cdc137e034d6c6db18343561ae9b18d3ed818ecfa"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:/Users/xsl/.codex/generated_images/01a19ce1-00b0-7811-94ba-88d7da51a27b/exec-1b0a00ef-628e-4264-8334-6fa1977ae1ce.png",
+      "output": "D:\\gunforge_cache\\g01\\T05\\blob_02_compact_a2.png",
+      "sha256": "e81e87733b8be3d62325c4943d76047104d93cfa8977205ce4e3820d38319329",
+      "actual_size": [
+        1157,
+        1360
+      ]
+    }
+  ],
+  "candidate_files": [
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\forearm_l.png",
+      "sha256": "f1d5afdbc7c445c3603a94173ca1398e8d0d444ea2903ef3e276b0f6ce2d3c84",
+      "bytes": 26743
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\forearm_r.png",
+      "sha256": "8e7c806ac8021f46c7001ea1ee6f8f7c515d715d766177025430f6d656352f4e",
+      "bytes": 25242
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\head.png",
+      "sha256": "539dd678d13cbd742666704a87e15eaf6069736dd7ca5cef9d6fbfb2f4d1fbf8",
+      "bytes": 50871
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\prop.png",
+      "sha256": "61948652e3ef41229de0454f244be58085dbf94723679f967e4c953b4c421bd7",
+      "bytes": 13823
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\shin_l.png",
+      "sha256": "2b1eea7da970443b0781c9dc16b75b065f3958cf0b830e277a1c8bce20f60816",
+      "bytes": 32447
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\shin_r.png",
+      "sha256": "05f3483fa3ce1ba1a686a1c0530d15226d36dd29fb8eaf036cfa82fcddacd1d9",
+      "bytes": 32573
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\thigh_l.png",
+      "sha256": "d59ad3521f6c9b73b77b380734a8eb24ca61f79a772f74f920e3e5888e63e71d",
+      "bytes": 29534
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\thigh_r.png",
+      "sha256": "baa005b003d7a1e468d8bac6136c759b42c9e7905160f68a9a71f21a880a6eda",
+      "bytes": 29413
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\torso.png",
+      "sha256": "f39abe8b2005222e2f7207e8945e11c79956584ba8bb4f2a1f19d6882ae96810",
+      "bytes": 106133
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\upper_arm_l.png",
+      "sha256": "04964e6643b607e684597ae2ddb656f0c1aad6ec2ee66cee469c87b9ee9b73e3",
+      "bytes": 31454
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\upper_arm_r.png",
+      "sha256": "cf410de31bc48858cfb4b3c7f591731193dc3eaac9e06adb3870d3edcfa2c9a4",
+      "bytes": 31496
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\puppet.json",
+      "sha256": "10855c2b56b552cb3dbf1eb6f6ace250337216873357a1c6e1af43987a44bacf",
+      "bytes": 23604
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\forearm_l.png",
+      "sha256": "c4397a2ae3aa3f97c8997eac91f2a7b8c4525deb68b32ec83a4dc7a7f5368f5a",
+      "bytes": 28976
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\forearm_r.png",
+      "sha256": "dfbb7cfa3e0b3757a9b56fae5aa7e7dd6897deb12230cb6137d9893e31f2f129",
+      "bytes": 28956
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\head.png",
+      "sha256": "582ee46e19bee553b52af598c5924cf81fdb777a64696f9e3d67387a37adf7b5",
+      "bytes": 52773
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\prop.png",
+      "sha256": "0489d2769edb9d9dad9aa663bfeafbca48952392547ff940451d653e7aa2293b",
+      "bytes": 25320
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\shin_l.png",
+      "sha256": "4b74553e3b2786f7b94c38f6a53958c1d7cef3b3cb2d1389aa0bf393cbf15f31",
+      "bytes": 31966
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\shin_r.png",
+      "sha256": "b64c1bdb1356c9c49d95d8dc16cb34e2af3bbba2d76855d4cb0839769de588af",
+      "bytes": 32137
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\thigh_l.png",
+      "sha256": "1bfd153f2aa08e599bc91d703cdc8b02d423e7f1a3a319b43f11ad2a88be0c80",
+      "bytes": 30910
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\thigh_r.png",
+      "sha256": "f1a649e1546ac3412c40c1ed2ff3f40caad07aeebf0928e89d76ad4bbf63d3f6",
+      "bytes": 30994
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\torso.png",
+      "sha256": "59e04fab42d28ef8f7eafe56bd57d7dffc536281d773311b505fc3c2121348e8",
+      "bytes": 149205
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\upper_arm_l.png",
+      "sha256": "bfdc125eef4aa41fde93fa32a637138bfa716b9b753af544852cd7b58ba948c0",
+      "bytes": 27295
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\upper_arm_r.png",
+      "sha256": "5f761eeded336854bf3645de8c5b8ff146e3628cea5297c9c067aba3edbe89d1",
+      "bytes": 27585
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\video\\puppet.json",
+      "sha256": "d8b7e796ff8da1130d6159258c67ec10385cf769898db2b446cb7cc8cc224d39",
+      "bytes": 23046
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\ink_blobs\\blob_00.png",
+      "sha256": "f75c16ffb020c2dde53f7f5e1addcc0ac54be7b4487ac5cc78f3e1820e4492df",
+      "bytes": 73050
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\ink_blobs\\blob_01.png",
+      "sha256": "82469733718e09386d6a09c9a2d19c8ee19c3ae24b3a56c0488d1d678e7c06cb",
+      "bytes": 60045
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\ink_blobs\\blob_02.png",
+      "sha256": "2e71bcc7cf5ac86066eb18931aac12f8178e192e8a6fdbeaf46a040b2b46f652",
+      "bytes": 66603
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\ink_blobs\\blob_03.png",
+      "sha256": "8b2b19b1f940a6be18dbb0be9d5f0d58fcc94f609f2000534f74018fd8ef0537",
+      "bytes": 63092
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\ink_blobs\\blob_04.png",
+      "sha256": "ca82228a03d8c2aba3c8a765a72ec1fa59e39e885b52e085955ebdfae9e70dcb",
+      "bytes": 69598
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T05\\ink_blobs\\blob_05.png",
+      "sha256": "e8e03980c492ea32c9652b5bff0c6caa6a30d2aedcfbcc44bde7115008c37eb4",
+      "bytes": 64087
+    }
+  ],
+  "revision_manifest": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2g\\manifest.json"
+}

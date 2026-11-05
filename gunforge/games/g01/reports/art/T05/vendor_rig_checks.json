@@ -1,0 +1,1353 @@
+{
+  "source_sheets": {
+    "vendor_sheet_1": {
+      "component_count": 10,
+      "count_complete": true,
+      "mapping": {
+        "torso": {
+          "label": 1,
+          "area": 54965,
+          "bbox": [
+            69,
+            13,
+            284,
+            374
+          ],
+          "center": [
+            178.52262348767397,
+            211.47775857363777
+          ]
+        },
+        "head": {
+          "label": 2,
+          "area": 44629,
+          "bbox": [
+            381,
+            48,
+            630,
+            345
+          ],
+          "center": [
+            507.29586143538955,
+            179.70378005332856
+          ]
+        },
+        "upper_arm_l": {
+          "label": 3,
+          "area": 17293,
+          "bbox": [
+            109,
+            409,
+            228,
+            639
+          ],
+          "center": [
+            165.94651014861506,
+            521.5834152547274
+          ]
+        },
+        "upper_arm_r": {
+          "label": 4,
+          "area": 16991,
+          "bbox": [
+            445,
+            410,
+            567,
+            635
+          ],
+          "center": [
+            506.5737743511271,
+            521.0542640221294
+          ]
+        },
+        "forearm_l": {
+          "label": 5,
+          "area": 19184,
+          "bbox": [
+            100,
+            677,
+            205,
+            973
+          ],
+          "center": [
+            148.6718098415346,
+            815.3465909090909
+          ]
+        },
+        "forearm_r": {
+          "label": 6,
+          "area": 19482,
+          "bbox": [
+            459,
+            681,
+            593,
+            967
+          ],
+          "center": [
+            523.1521917667591,
+            815.8325633918489
+          ]
+        },
+        "thigh_l": {
+          "label": 7,
+          "area": 20135,
+          "bbox": [
+            111,
+            1004,
+            226,
+            1236
+          ],
+          "center": [
+            163.17909113483984,
+            1114.6400794636206
+          ]
+        },
+        "thigh_r": {
+          "label": 8,
+          "area": 20028,
+          "bbox": [
+            440,
+            1006,
+            554,
+            1236
+          ],
+          "center": [
+            501.56256241262236,
+            1116.267475534252
+          ]
+        },
+        "shin_l": {
+          "label": 9,
+          "area": 30555,
+          "bbox": [
+            91,
+            1271,
+            253,
+            1591
+          ],
+          "center": [
+            154.83318605792832,
+            1448.9130093274423
+          ]
+        },
+        "shin_r": {
+          "label": 10,
+          "area": 31657,
+          "bbox": [
+            446,
+            1272,
+            623,
+            1587
+          ],
+          "center": [
+            510.1424961303977,
+            1448.5137568310327
+          ]
+        }
+      },
+      "semantic_review": "executor must verify head/torso/limb identity from original image; counts alone never suffice",
+      "source_size": [
+        971,
+        1619
+      ]
+    },
+    "vendor_sheet_2": {
+      "component_count": 10,
+      "count_complete": true,
+      "mapping": {
+        "torso": {
+          "label": 1,
+          "area": 62553,
+          "bbox": [
+            77,
+            22,
+            292,
+            432
+          ],
+          "center": [
+            184.83770562562947,
+            243.90315412530174
+          ]
+        },
+        "head": {
+          "label": 2,
+          "area": 44220,
+          "bbox": [
+            367,
+            71,
+            614,
+            370
+          ],
+          "center": [
+            492.9180235187698,
+            203.84868837630032
+          ]
+        },
+        "upper_arm_l": {
+          "label": 3,
+          "area": 16267,
+          "bbox": [
+            101,
+            472,
+            223,
+            692
+          ],
+          "center": [
+            161.7442060613512,
+            581.5459519272146
+          ]
+        },
+        "upper_arm_r": {
+          "label": 4,
+          "area": 16480,
+          "bbox": [
+            436,
+            472,
+            561,
+            692
+          ],
+          "center": [
+            497.5216626213592,
+            581.3958737864077
+          ]
+        },
+        "forearm_l": {
+          "label": 5,
+          "area": 18735,
+          "bbox": [
+            116,
+            729,
+            195,
+            1031
+          ],
+          "center": [
+            156.47846277021617,
+            872.6200693888444
+          ]
+        },
+        "forearm_r": {
+          "label": 6,
+          "area": 19207,
+          "bbox": [
+            450,
+            729,
+            544,
+            1025
+          ],
+          "center": [
+            495.52470453480504,
+            869.9676159733431
+          ]
+        },
+        "thigh_l": {
+          "label": 7,
+          "area": 16733,
+          "bbox": [
+            120,
+            1068,
+            218,
+            1270
+          ],
+          "center": [
+            165.6643160222315,
+            1167.5915257276042
+          ]
+        },
+        "thigh_r": {
+          "label": 8,
+          "area": 17063,
+          "bbox": [
+            440,
+            1068,
+            537,
+            1270
+          ],
+          "center": [
+            489.70814042079354,
+            1167.4003985231202
+          ]
+        },
+        "shin_l": {
+          "label": 9,
+          "area": 25898,
+          "bbox": [
+            109,
+            1311,
+            249,
+            1602
+          ],
+          "center": [
+            165.4265194223492,
+            1468.0498494092208
+          ]
+        },
+        "shin_r": {
+          "label": 10,
+          "area": 27689,
+          "bbox": [
+            435,
+            1311,
+            603,
+            1598
+          ],
+          "center": [
+            495.05955433565674,
+            1470.8918704178554
+          ]
+        }
+      },
+      "semantic_review": "executor must verify head/torso/limb identity from original image; counts alone never suffice",
+      "source_size": [
+        971,
+        1619
+      ]
+    },
+    "vendor_sheet_3": {
+      "component_count": 10,
+      "count_complete": true,
+      "mapping": {
+        "torso": {
+          "label": 1,
+          "area": 85819,
+          "bbox": [
+            43,
+            23,
+            291,
+            518
+          ],
+          "center": [
+            166.83619012106877,
+            297.0349689462706
+          ]
+        },
+        "head": {
+          "label": 2,
+          "area": 64961,
+          "bbox": [
+            339,
+            47,
+            641,
+            409
+          ],
+          "center": [
+            492.8120872523514,
+            205.71261218269424
+          ]
+        },
+        "upper_arm_l": {
+          "label": 3,
+          "area": 25031,
+          "bbox": [
+            92,
+            560,
+            212,
+            847
+          ],
+          "center": [
+            150.760576884663,
+            700.3727777555831
+          ]
+        },
+        "upper_arm_r": {
+          "label": 4,
+          "area": 25002,
+          "bbox": [
+            434,
+            560,
+            554,
+            847
+          ],
+          "center": [
+            494.7087033037357,
+            700.5479961603072
+          ]
+        },
+        "forearm_l": {
+          "label": 5,
+          "area": 25680,
+          "bbox": [
+            104,
+            894,
+            199,
+            1243
+          ],
+          "center": [
+            150.602492211838,
+            1058.8949376947041
+          ]
+        },
+        "forearm_r": {
+          "label": 6,
+          "area": 26421,
+          "bbox": [
+            440,
+            894,
+            550,
+            1242
+          ],
+          "center": [
+            492.98921312592256,
+            1060.6327920971953
+          ]
+        },
+        "thigh_l": {
+          "label": 7,
+          "area": 30100,
+          "bbox": [
+            91,
+            1285,
+            225,
+            1560
+          ],
+          "center": [
+            157.08013289036546,
+            1413.9629900332225
+          ]
+        },
+        "thigh_r": {
+          "label": 8,
+          "area": 30046,
+          "bbox": [
+            423,
+            1285,
+            557,
+            1560
+          ],
+          "center": [
+            490.2110430672968,
+            1413.3591825867004
+          ]
+        },
+        "shin_l": {
+          "label": 9,
+          "area": 40078,
+          "bbox": [
+            77,
+            1607,
+            259,
+            1959
+          ],
+          "center": [
+            148.85298667598184,
+            1799.161085882529
+          ]
+        },
+        "shin_r": {
+          "label": 10,
+          "area": 42493,
+          "bbox": [
+            414,
+            1607,
+            622,
+            1959
+          ],
+          "center": [
+            490.60673522697857,
+            1804.4498152636904
+          ]
+        }
+      },
+      "semantic_review": "executor must verify head/torso/limb identity from original image; counts alone never suffice",
+      "source_size": [
+        793,
+        1983
+      ]
+    },
+    "vendor_sheet_4": {
+      "component_count": 10,
+      "count_complete": true,
+      "mapping": {
+        "torso": {
+          "label": 1,
+          "area": 82460,
+          "bbox": [
+            26,
+            49,
+            266,
+            514
+          ],
+          "center": [
+            149.00095804026193,
+            300.8231506184817
+          ]
+        },
+        "head": {
+          "label": 2,
+          "area": 48125,
+          "bbox": [
+            343,
+            57,
+            601,
+            369
+          ],
+          "center": [
+            474.1891116883117,
+            194.0820987012987
+          ]
+        },
+        "upper_arm_l": {
+          "label": 3,
+          "area": 22446,
+          "bbox": [
+            84,
+            564,
+            208,
+            829
+          ],
+          "center": [
+            145.0351955805043,
+            695.6004187828567
+          ]
+        },
+        "upper_arm_r": {
+          "label": 4,
+          "area": 22380,
+          "bbox": [
+            404,
+            564,
+            527,
+            829
+          ],
+          "center": [
+            465.8483914209115,
+            695.494146559428
+          ]
+        },
+        "forearm_l": {
+          "label": 5,
+          "area": 24601,
+          "bbox": [
+            89,
+            882,
+            181,
+            1225
+          ],
+          "center": [
+            133.43376285516848,
+            1044.73017357018
+          ]
+        },
+        "forearm_r": {
+          "label": 6,
+          "area": 24642,
+          "bbox": [
+            409,
+            882,
+            515,
+            1223
+          ],
+          "center": [
+            460.9284960636312,
+            1044.249168087006
+          ]
+        },
+        "thigh_l": {
+          "label": 7,
+          "area": 26890,
+          "bbox": [
+            82,
+            1260,
+            200,
+            1537
+          ],
+          "center": [
+            140.04198586835255,
+            1396.6587950911119
+          ]
+        },
+        "thigh_r": {
+          "label": 8,
+          "area": 27139,
+          "bbox": [
+            403,
+            1261,
+            520,
+            1536
+          ],
+          "center": [
+            461.39957257083904,
+            1396.4296031541323
+          ]
+        },
+        "shin_l": {
+          "label": 9,
+          "area": 44940,
+          "bbox": [
+            56,
+            1574,
+            254,
+            1949
+          ],
+          "center": [
+            132.04697374276813,
+            1781.4230307076102
+          ]
+        },
+        "shin_r": {
+          "label": 10,
+          "area": 46664,
+          "bbox": [
+            393,
+            1574,
+            620,
+            1949
+          ],
+          "center": [
+            472.5511100634322,
+            1788.0160937767873
+          ]
+        }
+      },
+      "semantic_review": "executor must verify head/torso/limb identity from original image; counts alone never suffice",
+      "source_size": [
+        793,
+        1983
+      ]
+    }
+  },
+  "chosen": "vendor_sheet_1",
+  "raw_sheet_complete_rate": 1.0,
+  "semantic_review": "executor inspected all 10 named parts on all 4 originals; human A2 remains pending",
+  "C10": {
+    "status": "pass",
+    "reason": "Extreme-pose seams and copper coverage",
+    "details": {
+      "rig": "humanoid_10"
+    }
+  },
+  "poses": {
+    "idle": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {}
+    },
+    "peek": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "torso": -3,
+        "head": 8,
+        "upper_arm_l": 18
+      }
+    },
+    "walk": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "upper_arm_l": 20,
+        "upper_arm_r": -20,
+        "thigh_l": 14,
+        "thigh_r": -14,
+        "shin_l": -8,
+        "shin_r": 8
+      }
+    },
+    "startle": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "upper_arm_l": 60,
+        "upper_arm_r": -60,
+        "forearm_l": -20,
+        "forearm_r": 20
+      }
+    },
+    "wave_for_help": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "upper_arm_r": -70,
+        "forearm_r": -55
+      }
+    },
+    "struggle": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "upper_arm_l": 25,
+        "upper_arm_r": -35,
+        "forearm_l": 30,
+        "forearm_r": -30
+      }
+    },
+    "rescued_bounce": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "upper_arm_l": 20,
+        "upper_arm_r": -20,
+        "head": -5
+      }
+    },
+    "thank": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "head": 12,
+        "torso": 3,
+        "forearm_r": -15
+      }
+    },
+    "head_-30": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "head": -30
+      }
+    },
+    "head_30": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "head": 30
+      }
+    },
+    "upper_arm_l_-75": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "upper_arm_l": -75
+      }
+    },
+    "upper_arm_l_75": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "upper_arm_l": 75
+      }
+    },
+    "upper_arm_r_-75": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "upper_arm_r": -75
+      }
+    },
+    "upper_arm_r_75": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "upper_arm_r": 75
+      }
+    },
+    "forearm_l_-75": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "forearm_l": -75
+      }
+    },
+    "forearm_l_75": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "forearm_l": 75
+      }
+    },
+    "forearm_r_-75": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "forearm_r": -75
+      }
+    },
+    "forearm_r_75": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "forearm_r": 75
+      }
+    },
+    "thigh_l_-30": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "thigh_l": -30
+      }
+    },
+    "thigh_l_30": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "thigh_l": 30
+      }
+    },
+    "thigh_r_-30": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "thigh_r": -30
+      }
+    },
+    "thigh_r_30": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "thigh_r": 30
+      }
+    },
+    "shin_l_-30": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "shin_l": -30
+      }
+    },
+    "shin_l_30": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "shin_l": 30
+      }
+    },
+    "shin_r_-30": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "shin_r": -30
+      }
+    },
+    "shin_r_30": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "shin_r": 30
+      }
+    },
+    "prop_-15": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "prop": -15
+      }
+    },
+    "prop_15": {
+      "max_joint_gap_px": 0.0,
+      "joint_gaps": {
+        "head": 0.0,
+        "upper_arm_l": 0.0,
+        "upper_arm_r": 0.0,
+        "forearm_l": 0.0,
+        "forearm_r": 0.0,
+        "thigh_l": 0.0,
+        "thigh_r": 0.0,
+        "shin_l": 0.0,
+        "shin_r": 0.0
+      },
+      "angles": {
+        "prop": 15
+      }
+    }
+  },
+  "pivots": {
+    "torso": {
+      "source_component": {
+        "label": 1,
+        "area": 54965,
+        "bbox": [
+          69,
+          13,
+          284,
+          374
+        ],
+        "center": [
+          178.52262348767397,
+          211.47775857363777
+        ]
+      },
+      "pivot_method": "executor_manual_anatomical_annotation",
+      "measured_pin_diameters": [
+        9.83698151873187
+      ]
+    },
+    "head": {
+      "source_component": {
+        "label": 2,
+        "area": 44629,
+        "bbox": [
+          381,
+          48,
+          630,
+          345
+        ],
+        "center": [
+          507.29586143538955,
+          179.70378005332856
+        ]
+      },
+      "pivot_method": "executor_manual_anatomical_annotation",
+      "measured_pin_diameters": [
+        9.706684619910241,
+        83.33979671519671,
+        9.706684619910241
+      ]
+    },
+    "upper_arm_l": {
+      "source_component": {
+        "label": 3,
+        "area": 17293,
+        "bbox": [
+          109,
+          409,
+          228,
+          639
+        ],
+        "center": [
+          165.94651014861506,
+          521.5834152547274
+        ]
+      },
+      "pivot_method": "copper_color_component",
+      "measured_pin_diameters": [
+        18.29923496393627,
+        17.14987856615383
+      ]
+    },
+    "upper_arm_r": {
+      "source_component": {
+        "label": 4,
+        "area": 16991,
+        "bbox": [
+          445,
+          410,
+          567,
+          635
+        ],
+        "center": [
+          506.5737743511271,
+          521.0542640221294
+        ]
+      },
+      "pivot_method": "copper_color_component",
+      "measured_pin_diameters": [
+        17.66192765414112,
+        17.91246396432554
+      ]
+    },
+    "forearm_l": {
+      "source_component": {
+        "label": 5,
+        "area": 19184,
+        "bbox": [
+          100,
+          677,
+          205,
+          973
+        ],
+        "center": [
+          148.6718098415346,
+          815.3465909090909
+        ]
+      },
+      "pivot_method": "copper_color_component",
+      "measured_pin_diameters": [
+        13.540550005146152
+      ]
+    },
+    "forearm_r": {
+      "source_component": {
+        "label": 6,
+        "area": 19482,
+        "bbox": [
+          459,
+          681,
+          593,
+          967
+        ],
+        "center": [
+          523.1521917667591,
+          815.8325633918489
+        ]
+      },
+      "pivot_method": "copper_color_component",
+      "measured_pin_diameters": [
+        12.205286835384658
+      ]
+    },
+    "thigh_l": {
+      "source_component": {
+        "label": 7,
+        "area": 20135,
+        "bbox": [
+          111,
+          1004,
+          226,
+          1236
+        ],
+        "center": [
+          163.17909113483984,
+          1114.6400794636206
+        ]
+      },
+      "pivot_method": "copper_color_component",
+      "measured_pin_diameters": [
+        16.812470934731934,
+        17.480774889473267
+      ]
+    },
+    "thigh_r": {
+      "source_component": {
+        "label": 8,
+        "area": 20028,
+        "bbox": [
+          440,
+          1006,
+          554,
+          1236
+        ],
+        "center": [
+          501.56256241262236,
+          1116.267475534252
+        ]
+      },
+      "pivot_method": "copper_color_component",
+      "measured_pin_diameters": [
+        16.774562271083887,
+        17.297725082009
+      ]
+    },
+    "shin_l": {
+      "source_component": {
+        "label": 9,
+        "area": 30555,
+        "bbox": [
+          91,
+          1271,
+          253,
+          1591
+        ],
+        "center": [
+          154.83318605792832,
+          1448.9130093274423
+        ]
+      },
+      "pivot_method": "copper_color_component",
+      "measured_pin_diameters": [
+        10.823032759612019,
+        11.283791670955125
+      ]
+    },
+    "shin_r": {
+      "source_component": {
+        "label": 10,
+        "area": 31657,
+        "bbox": [
+          446,
+          1272,
+          623,
+          1587
+        ],
+        "center": [
+          510.1424961303977,
+          1448.5137568310327
+        ]
+      },
+      "pivot_method": "copper_color_component",
+      "measured_pin_diameters": [
+        10.764051215546116,
+        11.170383851240114
+      ]
+    }
+  },
+  "copper_source_spec": {
+    "required_diameter": [
+      36,
+      40
+    ],
+    "original_measured_before_uniform_final_scale": [
+      18.29923496393627,
+      17.14987856615383,
+      17.66192765414112,
+      17.91246396432554,
+      13.540550005146152,
+      12.205286835384658,
+      16.812470934731934,
+      17.480774889473267,
+      16.774562271083887,
+      17.297725082009,
+      10.823032759612019,
+      11.283791670955125,
+      10.764051215546116,
+      11.170383851240114
+    ],
+    "repair": {
+      "source_job": "joint_patch",
+      "paper_overlap_diameter": 71,
+      "measured_copper_diameter": 37.88061465864207,
+      "merged_into_existing_ten_parts": true,
+      "paper_color_matching": "local garment annulus; native fiber and copper retained"
+    },
+    "status": "pass"
+  },
+  "display_min_hostage": "check with actual attached blob at 300; never grant the human an enemy hit area"
+}

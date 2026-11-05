@@ -1,0 +1,14 @@
+stage: A2b
+source: explicit_user_chat
+character_animation: revision_required_wrong_hand_mirroring
+enemy_hit_feedback: too_weak
+expression: help_and_distress_must_not_smile
+notes: 人物动作还是不行，比如招手的时候，手左右镜像都反了。仔细调研业界2D人物动画方案和规则；加表情，求助不能笑呵呵。墨怪受击偏弱。
+retained_visual_approvals:
+- scene
+- lighting
+- character_design
+- ink_material
+- ink_gloss
+technical_acceptance: false
+actual_0B_approved: false

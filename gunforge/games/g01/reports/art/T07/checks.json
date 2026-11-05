@@ -1,0 +1,8 @@
+{
+  "revision": "A2k",
+  "scope": "arm and grip first prototype only",
+  "evidence": "revisions/A2k/checks.json",
+  "technical_acceptance": false,
+  "T08_started": false,
+  "actual_0B": false
+}

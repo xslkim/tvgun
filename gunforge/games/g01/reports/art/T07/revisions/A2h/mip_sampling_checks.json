@@ -1,0 +1,668 @@
+{
+  "scope": "CPU premultiplied encoded-space BOX mip chains, bilinear UV sampling; not Godot GPU/linear-light/trilinear certification",
+  "one_byte_tolerance_is_diagnostic_not_calibrated": true,
+  "rows": [
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\far_town.png",
+      "bleed": 2,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\far_town.png",
+      "bleed": 2,
+      "scale": 0.5,
+      "max_channel_error": 0.3871893882751465,
+      "mean_channel_error": 0.0010448883986100554,
+      "fraction_pixels_error_over_1_byte": 0.05854453457193183
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\far_town.png",
+      "bleed": 2,
+      "scale": 0.25,
+      "max_channel_error": 0.3672481179237366,
+      "mean_channel_error": 0.002671483438462019,
+      "fraction_pixels_error_over_1_byte": 0.1128234398782344
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\far_town.png",
+      "bleed": 4,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\far_town.png",
+      "bleed": 4,
+      "scale": 0.5,
+      "max_channel_error": 0.3871893882751465,
+      "mean_channel_error": 0.0010448883986100554,
+      "fraction_pixels_error_over_1_byte": 0.05854453457193183
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\far_town.png",
+      "bleed": 4,
+      "scale": 0.25,
+      "max_channel_error": 0.452478289604187,
+      "mean_channel_error": 0.003982315305620432,
+      "fraction_pixels_error_over_1_byte": 0.13724371026949592
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\far_town.png",
+      "bleed": 8,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\far_town.png",
+      "bleed": 8,
+      "scale": 0.5,
+      "max_channel_error": 0.3871893882751465,
+      "mean_channel_error": 0.0010448882821947336,
+      "fraction_pixels_error_over_1_byte": 0.05854453457193183
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\far_town.png",
+      "bleed": 8,
+      "scale": 0.25,
+      "max_channel_error": 0.452478289604187,
+      "mean_channel_error": 0.003982314374297857,
+      "fraction_pixels_error_over_1_byte": 0.13724371026949592
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_ground.png",
+      "bleed": 2,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_ground.png",
+      "bleed": 2,
+      "scale": 0.5,
+      "max_channel_error": 0.12934231758117676,
+      "mean_channel_error": 0.000568146351724863,
+      "fraction_pixels_error_over_1_byte": 0.04905373787690102
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_ground.png",
+      "bleed": 2,
+      "scale": 0.25,
+      "max_channel_error": 0.35330426692962646,
+      "mean_channel_error": 0.000869507493916899,
+      "fraction_pixels_error_over_1_byte": 0.027123665043963924
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_ground.png",
+      "bleed": 4,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_ground.png",
+      "bleed": 4,
+      "scale": 0.5,
+      "max_channel_error": 0.12934231758117676,
+      "mean_channel_error": 0.0005645990604534745,
+      "fraction_pixels_error_over_1_byte": 0.04863626929318088
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_ground.png",
+      "bleed": 4,
+      "scale": 0.25,
+      "max_channel_error": 0.22261452674865723,
+      "mean_channel_error": 0.0008807465783320367,
+      "fraction_pixels_error_over_1_byte": 0.02599154685082456
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_ground.png",
+      "bleed": 8,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_ground.png",
+      "bleed": 8,
+      "scale": 0.5,
+      "max_channel_error": 0.12934231758117676,
+      "mean_channel_error": 0.0005606747581623495,
+      "fraction_pixels_error_over_1_byte": 0.04808200309445639
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_ground.png",
+      "bleed": 8,
+      "scale": 0.25,
+      "max_channel_error": 0.22261452674865723,
+      "mean_channel_error": 0.0008764220401644707,
+      "fraction_pixels_error_over_1_byte": 0.026501000037737272
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_left.png",
+      "bleed": 2,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_left.png",
+      "bleed": 2,
+      "scale": 0.5,
+      "max_channel_error": 0.34743764996528625,
+      "mean_channel_error": 0.0015207789838314056,
+      "fraction_pixels_error_over_1_byte": 0.09696835444454141
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_left.png",
+      "bleed": 2,
+      "scale": 0.25,
+      "max_channel_error": 0.3830466568470001,
+      "mean_channel_error": 0.0026711570098996162,
+      "fraction_pixels_error_over_1_byte": 0.16507860036043753
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_left.png",
+      "bleed": 4,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_left.png",
+      "bleed": 4,
+      "scale": 0.5,
+      "max_channel_error": 0.34743764996528625,
+      "mean_channel_error": 0.0015223808586597443,
+      "fraction_pixels_error_over_1_byte": 0.09700191757343053
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_left.png",
+      "bleed": 4,
+      "scale": 0.25,
+      "max_channel_error": 0.2630597949028015,
+      "mean_channel_error": 0.0017596525140106678,
+      "fraction_pixels_error_over_1_byte": 0.12577842014167692
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_left.png",
+      "bleed": 8,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_left.png",
+      "bleed": 8,
+      "scale": 0.5,
+      "max_channel_error": 0.34743764996528625,
+      "mean_channel_error": 0.0015228947158902884,
+      "fraction_pixels_error_over_1_byte": 0.09695045410913387
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_left.png",
+      "bleed": 8,
+      "scale": 0.25,
+      "max_channel_error": 0.2630597949028015,
+      "mean_channel_error": 0.0017565764719620347,
+      "fraction_pixels_error_over_1_byte": 0.12577842014167692
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_right.png",
+      "bleed": 2,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_right.png",
+      "bleed": 2,
+      "scale": 0.5,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_right.png",
+      "bleed": 2,
+      "scale": 0.25,
+      "max_channel_error": 0.38768380880355835,
+      "mean_channel_error": 0.0034383395686745644,
+      "fraction_pixels_error_over_1_byte": 0.15342243091927035
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_right.png",
+      "bleed": 4,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_right.png",
+      "bleed": 4,
+      "scale": 0.5,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_right.png",
+      "bleed": 4,
+      "scale": 0.25,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_right.png",
+      "bleed": 8,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_right.png",
+      "bleed": 8,
+      "scale": 0.5,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_right.png",
+      "bleed": 8,
+      "scale": 0.25,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_left.png",
+      "bleed": 2,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_left.png",
+      "bleed": 2,
+      "scale": 0.5,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_left.png",
+      "bleed": 2,
+      "scale": 0.25,
+      "max_channel_error": 0.46217840909957886,
+      "mean_channel_error": 0.0016788836801424623,
+      "fraction_pixels_error_over_1_byte": 0.059845559845559844
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_left.png",
+      "bleed": 4,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_left.png",
+      "bleed": 4,
+      "scale": 0.5,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_left.png",
+      "bleed": 4,
+      "scale": 0.25,
+      "max_channel_error": 0.31648290157318115,
+      "mean_channel_error": 0.00040523172356188297,
+      "fraction_pixels_error_over_1_byte": 0.025648097076668507
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_left.png",
+      "bleed": 8,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_left.png",
+      "bleed": 8,
+      "scale": 0.5,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_left.png",
+      "bleed": 8,
+      "scale": 0.25,
+      "max_channel_error": 0.31648290157318115,
+      "mean_channel_error": 0.00040523166535422206,
+      "fraction_pixels_error_over_1_byte": 0.025648097076668507
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_right.png",
+      "bleed": 2,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_right.png",
+      "bleed": 2,
+      "scale": 0.5,
+      "max_channel_error": 0.28592246770858765,
+      "mean_channel_error": 0.00016698894614819437,
+      "fraction_pixels_error_over_1_byte": 0.005699220815499885
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_right.png",
+      "bleed": 2,
+      "scale": 0.25,
+      "max_channel_error": 0.3108716607093811,
+      "mean_channel_error": 0.0005766571266576648,
+      "fraction_pixels_error_over_1_byte": 0.01583310885636467
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_right.png",
+      "bleed": 4,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_right.png",
+      "bleed": 4,
+      "scale": 0.5,
+      "max_channel_error": 0.28592246770858765,
+      "mean_channel_error": 0.000148793711559847,
+      "fraction_pixels_error_over_1_byte": 0.005696726626959185
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_right.png",
+      "bleed": 4,
+      "scale": 0.25,
+      "max_channel_error": 0.2692810893058777,
+      "mean_channel_error": 0.00030409370083361864,
+      "fraction_pixels_error_over_1_byte": 0.009497869962986242
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_right.png",
+      "bleed": 8,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_right.png",
+      "bleed": 8,
+      "scale": 0.5,
+      "max_channel_error": 0.28592246770858765,
+      "mean_channel_error": 0.0001629673788556829,
+      "fraction_pixels_error_over_1_byte": 0.005295162271906458
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_right.png",
+      "bleed": 8,
+      "scale": 0.25,
+      "max_channel_error": 0.4284927248954773,
+      "mean_channel_error": 0.0003020217118319124,
+      "fraction_pixels_error_over_1_byte": 0.00871968313828779
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\lamp.png",
+      "bleed": 2,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\lamp.png",
+      "bleed": 2,
+      "scale": 0.5,
+      "max_channel_error": 0.35178548097610474,
+      "mean_channel_error": 0.0008739965851418674,
+      "fraction_pixels_error_over_1_byte": 0.028074345386533667
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\lamp.png",
+      "bleed": 2,
+      "scale": 0.25,
+      "max_channel_error": 0.28029972314834595,
+      "mean_channel_error": 0.0012582145864143968,
+      "fraction_pixels_error_over_1_byte": 0.04015080845771144
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\lamp.png",
+      "bleed": 4,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\lamp.png",
+      "bleed": 4,
+      "scale": 0.5,
+      "max_channel_error": 0.35178548097610474,
+      "mean_channel_error": 0.0008732695714570582,
+      "fraction_pixels_error_over_1_byte": 0.028074345386533667
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\lamp.png",
+      "bleed": 4,
+      "scale": 0.25,
+      "max_channel_error": 0.4029146730899811,
+      "mean_channel_error": 0.0012233407469466329,
+      "fraction_pixels_error_over_1_byte": 0.03626399253731343
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\lamp.png",
+      "bleed": 8,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\lamp.png",
+      "bleed": 8,
+      "scale": 0.5,
+      "max_channel_error": 0.35178548097610474,
+      "mean_channel_error": 0.0008719921461306512,
+      "fraction_pixels_error_over_1_byte": 0.028084086658354115
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\lamp.png",
+      "bleed": 8,
+      "scale": 0.25,
+      "max_channel_error": 0.4029146730899811,
+      "mean_channel_error": 0.0012223070953041315,
+      "fraction_pixels_error_over_1_byte": 0.0363222947761194
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_spill.png",
+      "bleed": 2,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_spill.png",
+      "bleed": 2,
+      "scale": 0.5,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_spill.png",
+      "bleed": 2,
+      "scale": 0.25,
+      "max_channel_error": 0.016789257526397705,
+      "mean_channel_error": 0.0001676581596257165,
+      "fraction_pixels_error_over_1_byte": 0.010187908496732026
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_spill.png",
+      "bleed": 4,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_spill.png",
+      "bleed": 4,
+      "scale": 0.5,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_spill.png",
+      "bleed": 4,
+      "scale": 0.25,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_spill.png",
+      "bleed": 8,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_spill.png",
+      "bleed": 8,
+      "scale": 0.5,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_spill.png",
+      "bleed": 8,
+      "scale": 0.25,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_glow.png",
+      "bleed": 2,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_glow.png",
+      "bleed": 2,
+      "scale": 0.5,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_glow.png",
+      "bleed": 2,
+      "scale": 0.25,
+      "max_channel_error": 0.10686272382736206,
+      "mean_channel_error": 3.427458068472333e-05,
+      "fraction_pixels_error_over_1_byte": 0.0017973856209150326
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_glow.png",
+      "bleed": 4,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_glow.png",
+      "bleed": 4,
+      "scale": 0.5,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_glow.png",
+      "bleed": 4,
+      "scale": 0.25,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_glow.png",
+      "bleed": 8,
+      "scale": 1.0,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_glow.png",
+      "bleed": 8,
+      "scale": 0.5,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_glow.png",
+      "bleed": 8,
+      "scale": 0.25,
+      "max_channel_error": 0.0,
+      "mean_channel_error": 0.0,
+      "fraction_pixels_error_over_1_byte": 0.0
+    }
+  ],
+  "summary": {
+    "2": {
+      "max_error": 0.46217840909957886,
+      "max_bad_fraction": 0.16507860036043753
+    },
+    "4": {
+      "max_error": 0.452478289604187,
+      "max_bad_fraction": 0.13724371026949592
+    },
+    "8": {
+      "max_error": 0.452478289604187,
+      "max_bad_fraction": 0.13724371026949592
+    }
+  }
+}

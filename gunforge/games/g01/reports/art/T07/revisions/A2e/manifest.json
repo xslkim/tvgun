@@ -1,0 +1,74 @@
+{
+  "revision": "A2e",
+  "status": "technical_decision_checkpoint",
+  "new_image_calls": 0,
+  "actual_0B": false,
+  "production_asset_approved": false,
+  "outputs": [
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2e\\checks.json",
+      "sha256": "64cc87a2cfec810100efed808156981d5b9c130206098249b5bcf66938ae0bd0"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2e\\hidden_geometry_audit.json",
+      "sha256": "ee2b58fba667deb2e9c41fc1e393de02aba80acb17a92e6da0ef5c02a571b292"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2e\\loop_checks.json",
+      "sha256": "0015455225c62f694a02ad37d90e236ab7f5658cfcf7c019e201e1250e60edf6"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2e\\readability_checks.json",
+      "sha256": "7786dc4ece6503e2d355e07085aa6ec1e02d8d4219880e144572466ac844e4a3"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2e\\slot_motion_checks.json",
+      "sha256": "15f116974a3717621b7011d8992c896c7aa187fbb72e9a2f68590f6b49c5ad3a"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2e\\tracker_contract_screening.json",
+      "sha256": "58cbf3164b9029269e633b7b778ba35c9956cea0dfc1e6cda0fa39635c3cb3ec"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2e\\tracker_diagnostic.json",
+      "sha256": "7fe3a7def0cf187bae6d73a6bd41909719772972db9d4ae95be77f49e3c31ab6"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2e\\browser_review_ready.png",
+      "sha256": "9bccb420de85cfc3f6ccdfe217cf1b6b528c907582d0decc400533ceba3f0abf"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2e\\hardened_material_comparison.png",
+      "sha256": "fda48b2e739e7e9b4fc4794249fe65f017dd2f117b26c4a8ec679ef5b78b85cc"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2e\\lit_readability_slots.png",
+      "sha256": "4b96d7f2e4ca088e33d0466a90a55518724ae9cc6bfc4824edec0104f6b7cc3c"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2e\\lit_thumbnail.png",
+      "sha256": "aa143f5e8ab37d7cb040bfe73f9414a11aa513ab7af1ca0bf376fc3050980c9c"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2e\\motion_readability_slots.png",
+      "sha256": "1a706c484bf8d8fbdf620714d3a8e299eff0505dda6f366f2291cb3097aaea84"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2e\\pure_border_control.png",
+      "sha256": "ea6dec9d7a4cb3009820ca81e1fa54067ff5eaa0645e1eb17c720cf4f67375af"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2e\\unlit_readability_slots.png",
+      "sha256": "1861b05457a38a617b71b93ad4b92d084dcf1ee4c1481f4315db459d68fb7eea"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2e\\unlit_thumbnail.png",
+      "sha256": "2fe4cca9c86617d7b848bb1c651fe00e7deee07f9d26db44bb453594ee4a7998"
+    },
+    {
+      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\index.html",
+      "sha256": "afdd3853cc93f42eeeb68727c283618716c43f590370692b96d82f8d6a81eded"
+    }
+  ],
+  "tracker_source_sha256": "3e66c42e6e5a434fadbfaaf1c642d352f80bb4f36745ba86c184e6e9ccceb222"
+}

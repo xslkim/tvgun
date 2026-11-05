@@ -1,0 +1,465 @@
+{
+  "scope": "synthetic projections only; tracker source and settings unchanged",
+  "cases": {
+    "control": [
+      {
+        "projection": 0,
+        "acquired": true,
+        "candidate_count": 1,
+        "candidate_diagnostics": [
+          {
+            "candidate": 0,
+            "rejection": null,
+            "quad": [
+              [
+                88.0,
+                54.0
+              ],
+              [
+                552.0,
+                54.0
+              ],
+              [
+                552.0,
+                306.0
+              ],
+              [
+                88.0,
+                306.0
+              ]
+            ]
+          }
+        ],
+        "low": 190
+      },
+      {
+        "projection": 1,
+        "acquired": false,
+        "candidate_count": 1,
+        "candidate_diagnostics": [
+          {
+            "candidate": 0,
+            "rejection": "geometry",
+            "quad": [
+              [
+                115.75,
+                71.75
+              ],
+              [
+                532.25,
+                42.25
+              ],
+              [
+                560.0,
+                292.0
+              ],
+              [
+                74.57142857142857,
+                310.2857142857143
+              ]
+            ]
+          }
+        ],
+        "low": 190
+      },
+      {
+        "projection": 2,
+        "acquired": true,
+        "candidate_count": 1,
+        "candidate_diagnostics": [
+          {
+            "candidate": 0,
+            "rejection": null,
+            "quad": [
+              [
+                165.75,
+                95.75
+              ],
+              [
+                474.25,
+                81.75
+              ],
+              [
+                482.0,
+                264.0
+              ],
+              [
+                147.75,
+                272.25
+              ]
+            ]
+          }
+        ],
+        "low": 150
+      }
+    ],
+    "unlit_monitor": [
+      {
+        "projection": 0,
+        "acquired": true,
+        "candidate_count": 1,
+        "candidate_diagnostics": [
+          {
+            "candidate": 0,
+            "rejection": null,
+            "quad": [
+              [
+                88.0,
+                54.0
+              ],
+              [
+                552.0,
+                54.0
+              ],
+              [
+                552.0,
+                306.0
+              ],
+              [
+                88.0,
+                306.0
+              ]
+            ]
+          }
+        ],
+        "low": 190
+      },
+      {
+        "projection": 1,
+        "acquired": false,
+        "candidate_count": 1,
+        "candidate_diagnostics": [
+          {
+            "candidate": 0,
+            "rejection": "geometry",
+            "quad": [
+              [
+                115.75,
+                71.75
+              ],
+              [
+                532.25,
+                42.25
+              ],
+              [
+                560.0,
+                292.0
+              ],
+              [
+                74.57142857142857,
+                310.2857142857143
+              ]
+            ]
+          }
+        ],
+        "low": 190
+      },
+      {
+        "projection": 2,
+        "acquired": true,
+        "candidate_count": 1,
+        "candidate_diagnostics": [
+          {
+            "candidate": 0,
+            "rejection": null,
+            "quad": [
+              [
+                165.75,
+                95.75
+              ],
+              [
+                474.25,
+                81.75
+              ],
+              [
+                482.0,
+                264.0
+              ],
+              [
+                147.75,
+                272.25
+              ]
+            ]
+          }
+        ],
+        "low": 150
+      }
+    ],
+    "unlit_tv": [
+      {
+        "projection": 0,
+        "acquired": true,
+        "candidate_count": 1,
+        "candidate_diagnostics": [
+          {
+            "candidate": 0,
+            "rejection": null,
+            "quad": [
+              [
+                94.0,
+                58.0
+              ],
+              [
+                546.0,
+                58.0
+              ],
+              [
+                546.0,
+                302.0
+              ],
+              [
+                94.0,
+                302.0
+              ]
+            ]
+          }
+        ],
+        "low": 163
+      },
+      {
+        "projection": 1,
+        "acquired": false,
+        "candidate_count": 1,
+        "candidate_diagnostics": [
+          {
+            "candidate": 0,
+            "rejection": "geometry",
+            "quad": [
+              [
+                119.75,
+                75.75
+              ],
+              [
+                528.0,
+                48.0
+              ],
+              [
+                553.75,
+                286.25
+              ],
+              [
+                82.0,
+                304.0
+              ]
+            ]
+          }
+        ],
+        "low": 177
+      },
+      {
+        "projection": 2,
+        "acquired": true,
+        "candidate_count": 1,
+        "candidate_diagnostics": [
+          {
+            "candidate": 0,
+            "rejection": null,
+            "quad": [
+              [
+                168.66666666666666,
+                99.66666666666667
+              ],
+              [
+                470.25,
+                85.75
+              ],
+              [
+                478.25,
+                258.25
+              ],
+              [
+                151.75,
+                268.25
+              ]
+            ]
+          }
+        ],
+        "low": 150
+      }
+    ],
+    "lit_monitor": [
+      {
+        "projection": 0,
+        "acquired": true,
+        "candidate_count": 1,
+        "candidate_diagnostics": [
+          {
+            "candidate": 0,
+            "rejection": null,
+            "quad": [
+              [
+                88.0,
+                54.0
+              ],
+              [
+                552.0,
+                54.0
+              ],
+              [
+                552.0,
+                306.0
+              ],
+              [
+                88.0,
+                306.0
+              ]
+            ]
+          }
+        ],
+        "low": 190
+      },
+      {
+        "projection": 1,
+        "acquired": false,
+        "candidate_count": 1,
+        "candidate_diagnostics": [
+          {
+            "candidate": 0,
+            "rejection": "geometry",
+            "quad": [
+              [
+                115.75,
+                71.75
+              ],
+              [
+                532.25,
+                42.25
+              ],
+              [
+                560.0,
+                292.0
+              ],
+              [
+                74.57142857142857,
+                310.2857142857143
+              ]
+            ]
+          }
+        ],
+        "low": 190
+      },
+      {
+        "projection": 2,
+        "acquired": true,
+        "candidate_count": 1,
+        "candidate_diagnostics": [
+          {
+            "candidate": 0,
+            "rejection": null,
+            "quad": [
+              [
+                165.75,
+                95.75
+              ],
+              [
+                474.25,
+                81.75
+              ],
+              [
+                482.0,
+                264.0
+              ],
+              [
+                147.75,
+                272.25
+              ]
+            ]
+          }
+        ],
+        "low": 150
+      }
+    ],
+    "lit_tv": [
+      {
+        "projection": 0,
+        "acquired": true,
+        "candidate_count": 1,
+        "candidate_diagnostics": [
+          {
+            "candidate": 0,
+            "rejection": null,
+            "quad": [
+              [
+                94.0,
+                58.0
+              ],
+              [
+                546.0,
+                58.0
+              ],
+              [
+                546.0,
+                302.0
+              ],
+              [
+                94.0,
+                302.0
+              ]
+            ]
+          }
+        ],
+        "low": 163
+      },
+      {
+        "projection": 1,
+        "acquired": false,
+        "candidate_count": 1,
+        "candidate_diagnostics": [
+          {
+            "candidate": 0,
+            "rejection": "geometry",
+            "quad": [
+              [
+                119.75,
+                75.75
+              ],
+              [
+                528.0,
+                48.0
+              ],
+              [
+                553.75,
+                286.25
+              ],
+              [
+                82.0,
+                304.0
+              ]
+            ]
+          }
+        ],
+        "low": 177
+      },
+      {
+        "projection": 2,
+        "acquired": true,
+        "candidate_count": 1,
+        "candidate_diagnostics": [
+          {
+            "candidate": 0,
+            "rejection": null,
+            "quad": [
+              [
+                168.66666666666666,
+                99.66666666666667
+              ],
+              [
+                470.25,
+                85.75
+              ],
+              [
+                478.25,
+                258.25
+              ],
+              [
+                151.75,
+                268.25
+              ]
+            ]
+          }
+        ],
+        "low": 150
+      }
+    ]
+  }
+}

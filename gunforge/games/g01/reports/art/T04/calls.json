@@ -1,0 +1,565 @@
+{
+  "task": "T04",
+  "calls": [
+    {
+      "id": "alley_sketch_1",
+      "asset_key": "alley_sketch",
+      "attempt": 1,
+      "attempt_id": "T04:alley_sketch_1:a1",
+      "request_fingerprint": "1809a753b8f664722c4065213567bfd350e3dded1a0838c8030bc5d26ff26f03",
+      "prompt": "Generate a complete BACKGROUND-ONLY paper-cut night market station draft, wide target source canvas 2048x1088. Image 1 is the user-approved composition to keep; Image 2 is only a layout guide, do NOT draw its rectangles, labels, debug lines, circles or text. Remove the resident, the crow, every attached ink blob and every red stamp completely, reconstruct what they hid. This output has NO people, NPCs, monsters, red marks, HUD, letters or numbers. 1990s Chinese small-town game art, flat stacked cut paper and subtle fine fiber, clean cut edges, muted indigo #141A33, deep violet #2A1E3D, warm apricot #D9A066, dusty pink #C97B84 and teal #4E9A92. No white, no bloom, no antique pagoda roofs or costume, no plastic 3D bevel. Keep the exact accepted alley layout, positions and night illumination; reconstruct all scenery hidden behind both actors, without changing any architecture or prop placement. Keep ONLY ONE interactive streetlamp on the right, large broad lampshade, OFF with no pool of light. Other small distant background windows give restrained constant backlight. Fill all canvas edges, no external decorative frame. Around 60 percent dark night tones, 30 percent muted paper light, 10 percent accents; no large orange sunset. Center playing area must remain readable, no new obstacle in the former actor positions.",
+      "transparent_background": false,
+      "references": [
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T03/gallery/frame_unlit_normalized.png",
+          "sha256": "58a758b9a90df210f033e483a9d314e07073872f5cdb0492844553a7d17dfb51"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T03/whitebox.png",
+          "sha256": "a7f995247877c11e80753945dba767eb2a2bc8d9ba33e6b4e6aa1acd963efd3a"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-42aaba50-b3b1-4faf-87ca-0bcf8bfaf31a.png",
+      "output": "D:\\gunforge_cache\\g01\\T04\\alley_sketch_1_a1.png",
+      "sha256": "7914dc4362ec2a4769871a7bc95cd46b3c7dbfb90f2b216a5e50fdff2fb4af4d",
+      "actual_size": [
+        1721,
+        914
+      ]
+    },
+    {
+      "id": "alley_sketch_2",
+      "asset_key": "alley_sketch",
+      "attempt": 2,
+      "attempt_id": "T04:alley_sketch_2:a2",
+      "request_fingerprint": "cb608aaa47e466887545cdea16af9a37f5b5de6830a615952309f4733f16eee1",
+      "prompt": "Generate a complete BACKGROUND-ONLY paper-cut night market station draft, wide target source canvas 2048x1088. Image 1 is the user-approved composition to keep; Image 2 is only a layout guide, do NOT draw its rectangles, labels, debug lines, circles or text. Remove the resident, the crow, every attached ink blob and every red stamp completely, reconstruct what they hid. This output has NO people, NPCs, monsters, red marks, HUD, letters or numbers. 1990s Chinese small-town game art, flat stacked cut paper and subtle fine fiber, clean cut edges, muted indigo #141A33, deep violet #2A1E3D, warm apricot #D9A066, dusty pink #C97B84 and teal #4E9A92. No white, no bloom, no antique pagoda roofs or costume, no plastic 3D bevel. Keep the staggered left/right storefront rhythm; simplify small props and soften ground texture so the middle playing area is clean, with a little more open dark space around the front corners. Keep ONLY ONE interactive streetlamp on the right, large broad lampshade, OFF with no pool of light. Other small distant background windows give restrained constant backlight. Fill all canvas edges, no external decorative frame. Around 60 percent dark night tones, 30 percent muted paper light, 10 percent accents; no large orange sunset. Center playing area must remain readable, no new obstacle in the former actor positions.",
+      "transparent_background": false,
+      "references": [
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T03/gallery/frame_unlit_normalized.png",
+          "sha256": "58a758b9a90df210f033e483a9d314e07073872f5cdb0492844553a7d17dfb51"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T03/whitebox.png",
+          "sha256": "a7f995247877c11e80753945dba767eb2a2bc8d9ba33e6b4e6aa1acd963efd3a"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-c1a01005-ae6c-434e-9d9d-ee11e994bec1.png",
+      "output": "D:\\gunforge_cache\\g01\\T04\\alley_sketch_2_a2.png",
+      "sha256": "78a666eeaed9a16011a1a35f0bb79371bf1d8835db1a16024e7db1dcef97c267",
+      "actual_size": [
+        1720,
+        914
+      ]
+    },
+    {
+      "id": "alley_sketch_3",
+      "asset_key": "alley_sketch",
+      "attempt": 3,
+      "attempt_id": "T04:alley_sketch_3:a3",
+      "request_fingerprint": "8f5f040e5290d0cfc1fcb4919e017e75489de9d7d0664877fe4306c64892a522",
+      "prompt": "Generate a complete BACKGROUND-ONLY paper-cut night market station draft, wide target source canvas 2048x1088. Image 1 is the user-approved composition to keep; Image 2 is only a layout guide, do NOT draw its rectangles, labels, debug lines, circles or text. Remove the resident, the crow, every attached ink blob and every red stamp completely, reconstruct what they hid. This output has NO people, NPCs, monsters, red marks, HUD, letters or numbers. 1990s Chinese small-town game art, flat stacked cut paper and subtle fine fiber, clean cut edges, muted indigo #141A33, deep violet #2A1E3D, warm apricot #D9A066, dusty pink #C97B84 and teal #4E9A92. No white, no bloom, no antique pagoda roofs or costume, no plastic 3D bevel. Keep the accepted alley layout; emphasize distinct, flat translucent paper depth bands, a calm dark sky and local apricot windows, with less volumetric shading and fewer decorative edges. Keep ONLY ONE interactive streetlamp on the right, large broad lampshade, OFF with no pool of light. Other small distant background windows give restrained constant backlight. Fill all canvas edges, no external decorative frame. Around 60 percent dark night tones, 30 percent muted paper light, 10 percent accents; no large orange sunset. Center playing area must remain readable, no new obstacle in the former actor positions.",
+      "transparent_background": false,
+      "references": [
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T03/gallery/frame_unlit_normalized.png",
+          "sha256": "58a758b9a90df210f033e483a9d314e07073872f5cdb0492844553a7d17dfb51"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T03/whitebox.png",
+          "sha256": "a7f995247877c11e80753945dba767eb2a2bc8d9ba33e6b4e6aa1acd963efd3a"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-2070315c-182d-4765-9945-4696745fc28f.png",
+      "output": "D:\\gunforge_cache\\g01\\T04\\alley_sketch_3_a3.png",
+      "sha256": "5ab47ebebbffc81ca45521142c2b3787e0a777af094730d4db2218e400c8783a",
+      "actual_size": [
+        1721,
+        914
+      ]
+    },
+    {
+      "id": "alley_sketch_4",
+      "asset_key": "alley_sketch",
+      "attempt": 4,
+      "attempt_id": "T04:alley_sketch_4:a4",
+      "request_fingerprint": "74184c301ff101ab879bcd3466bfae19c1187593a016916223a957400b64a7c0",
+      "prompt": "Generate a complete BACKGROUND-ONLY paper-cut night market station draft, wide target source canvas 2048x1088. Image 1 is the user-approved composition to keep; Image 2 is only a layout guide, do NOT draw its rectangles, labels, debug lines, circles or text. Remove the resident, the crow, every attached ink blob and every red stamp completely, reconstruct what they hid. This output has NO people, NPCs, monsters, red marks, HUD, letters or numbers. 1990s Chinese small-town game art, flat stacked cut paper and subtle fine fiber, clean cut edges, muted indigo #141A33, deep violet #2A1E3D, warm apricot #D9A066, dusty pink #C97B84 and teal #4E9A92. No white, no bloom, no antique pagoda roofs or costume, no plastic 3D bevel. Keep the accepted alley layout; emphasize ordinary roll-up shops, plastic stools, folding tables, enamel cup, bicycle and overhead wiring; broad simple foreground silhouettes and a clear midground stage. Keep ONLY ONE interactive streetlamp on the right, large broad lampshade, OFF with no pool of light. Other small distant background windows give restrained constant backlight. Fill all canvas edges, no external decorative frame. Around 60 percent dark night tones, 30 percent muted paper light, 10 percent accents; no large orange sunset. Center playing area must remain readable, no new obstacle in the former actor positions.",
+      "transparent_background": false,
+      "references": [
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T03/gallery/frame_unlit_normalized.png",
+          "sha256": "58a758b9a90df210f033e483a9d314e07073872f5cdb0492844553a7d17dfb51"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T03/whitebox.png",
+          "sha256": "a7f995247877c11e80753945dba767eb2a2bc8d9ba33e6b4e6aa1acd963efd3a"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-f25f6f3a-875f-4478-88bb-fa9fea8815ba.png",
+      "output": "D:\\gunforge_cache\\g01\\T04\\alley_sketch_4_a4.png",
+      "sha256": "91880f7f40b6bf3448eaef383a00b169683c371a88a9595c6b8bd48fca84c753",
+      "actual_size": [
+        1721,
+        914
+      ]
+    },
+    {
+      "id": "alley_formal",
+      "asset_key": "alley_formal",
+      "attempt": 1,
+      "attempt_id": "T04:alley_formal:a1",
+      "request_fingerprint": "f83f2fe61dd6e0e511b2eade147b4aaaa3b97f054f9f7239c0ca7cf544d47bba",
+      "prompt": "Create the final BACKGROUND-ONLY cut-paper alley reference for a layered game station, target source 2048x1088. Input 1 is the selected draft and its architecture/object placement MUST stay. Input 2 is only a gameplay layout guide, no boxes, circles, labels or debug marks in the art. Input 3 anchors only the staggered composition, not its excessive bright orange sunset. Keep ordinary 1990s roll-up shops, folding tables and plastic stools. Add one simple enamel cup on the left folding table as a period prop. Exactly one broad interactive streetlamp on the right, OFF; no light pool. Dark indigo #141A33 and deep violet #2A1E3D around 60%, muted warm apricot #D9A066, dusty pink #C97B84, teal #4E9A92 accents; do not drift into unrelated gray/green/orange colors. Clean flat paper layers, very fine fibers, subdued textures, fewer tiny decorations, no heavy 3D edges. Keep near corners very dark, middle clear, distance softly translucent. Empty playing area: NO people, hostages, NPCs, monsters, ink stains, red stamps, HUD, writing, outer decorative frame or pure white. Scenery reaches all canvas edges and has no see-through holes. Not a poster or mockup.",
+      "transparent_background": false,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T04/alley_sketch_2_a2.png",
+          "sha256": "78a666eeaed9a16011a1a35f0bb79371bf1d8835db1a16024e7db1dcef97c267"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T03/whitebox.png",
+          "sha256": "a7f995247877c11e80753945dba767eb2a2bc8d9ba33e6b4e6aa1acd963efd3a"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/bible/style_refs/st_l1_alley.png",
+          "sha256": "01f5b143d9970ac05a4155ff7d81eeee80e1e5325c2d7a3421ffd4b7576b8b9a"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-07ba13f8-c5ee-4f71-84d1-8397908b318d.png",
+      "output": "D:\\gunforge_cache\\g01\\T04\\alley_formal_a1.png",
+      "sha256": "afba9caa52640e80928cf301a8e8eafad4453c42083c80e135922520aac1f564",
+      "actual_size": [
+        1720,
+        914
+      ]
+    },
+    {
+      "id": "layer_far_base",
+      "asset_key": "layer_far_base",
+      "attempt": 1,
+      "attempt_id": "T04:layer_far_base:a1",
+      "request_fingerprint": "fee211cfab99ce08ecd9d8f28093822daacf6f2fd1c5613a7795e3372befd2be",
+      "prompt": "Production game background LAYER, full wide canvas approximately 2048x1088, registered to input 1. Input 1 is the complete approved composition reference; output ONLY the requested single depth layer, not the whole scene. Input 2 marks approximate occupied area in beige on gray: it is ONLY a positioning guide, not an object, do not render beige/gray guide blocks, outlines or labels. Keep all element positions relative to full canvas, DO NOT center, zoom or pack the cutout. ONLY the farthest fully OPAQUE underpainting: dark indigo-violet night sky above, soft muted dusty purple atmospheric gradient near the middle and a SIMPLE unobstructed muted mauve paper street plane at the bottom. NO buildings, windows, trees, railing, shops, awnings, furniture, props, lamp or foreground. The simple full-canvas underpainting must be opaque at EVERY pixel. Flat hand-cut paper, fine fibers, clean thin cut edge. Controlled muted palette indigo #141A33, deep violet #2A1E3D, dusty pink #C97B84, apricot #D9A066, teal #4E9A92. No red/white, text, humans, hostages, monsters, HUD, glow, floor shadow, soft colored aura or checkerboard. FULLY OPAQUE full-canvas underpainting.",
+      "transparent_background": false,
+      "references": [
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T04/formal_canvas.png",
+          "sha256": "d1d81c141d0b43db7937377aaacb9eff9ebb668af2b12373a46b0ac5909333d8"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T04/far_base_guide.png",
+          "sha256": "f8731a1f93db6e78889d50b9daf9214578760183adc1702d1139368e70db7ec5"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-7aa9d00a-60c3-4506-8fb7-41ee4c77787d.png",
+      "output": "D:\\gunforge_cache\\g01\\T04\\layer_far_base_a1.png",
+      "sha256": "7f81647b5a65ae99fd9d3c9187363f16146c411b970f473740f1affb5b1c1553",
+      "actual_size": [
+        1721,
+        914
+      ]
+    },
+    {
+      "id": "layer_far_town",
+      "asset_key": "layer_far_town",
+      "attempt": 1,
+      "attempt_id": "T04:layer_far_town:a1",
+      "request_fingerprint": "4ac0f0466fd2299f8620594943b5cf4afa3324c534a7444f1ec430f9b03bf5cc",
+      "prompt": "Production game background LAYER, full wide canvas approximately 2048x1088, registered to input 1. Input 1 is the complete approved composition reference; output ONLY the requested single depth layer, not the whole scene. Input 2 marks approximate occupied area in beige on gray: it is ONLY a positioning guide, not an object, do not render beige/gray guide blocks, outlines or labels. Keep all element positions relative to full canvas, DO NOT center, zoom or pack the cutout. ONLY the distant central town and its paper tree silhouettes and low horizontal railing: small block-shaped ordinary apartment silhouettes, a few low warm apricot windows, desaturated teal broad tree crowns, low paper railing. Keep their positions in the CENTER background of input 1. No sky or street fill, no front shops, tables, stools, bicycle, lamp, wires or foreground canopy. Transparent between and around the distant silhouettes. Extend the distant wall/railing horizontally underneath where the shops normally cover it so parallax reveals complete scenery. Flat hand-cut paper, fine fibers, clean thin cut edge. Controlled muted palette indigo #141A33, deep violet #2A1E3D, dusty pink #C97B84, apricot #D9A066, teal #4E9A92. No red/white, text, humans, hostages, monsters, HUD, glow, floor shadow, soft colored aura or checkerboard. GENUINE TRANSPARENT background, all unrequested content removed; no opaque rectangular backdrop. Preserve complete source-canvas registration and empty transparent margins.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T04/formal_canvas.png",
+          "sha256": "d1d81c141d0b43db7937377aaacb9eff9ebb668af2b12373a46b0ac5909333d8"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T04/far_town_guide.png",
+          "sha256": "ebecaeac70feb29e0684c8b778fc67097f644bc5246f5f150a9eb88dda217637"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-454730d2-c609-4cdc-8e6b-13e8f7ce26d4.png",
+      "output": "D:\\gunforge_cache\\g01\\T04\\layer_far_town_a1.png",
+      "sha256": "121095c9f12638aab3bd4fbe4acdbc24e16c92045ba9f113139fc4ae017456ca",
+      "actual_size": [
+        1720,
+        914
+      ]
+    },
+    {
+      "id": "layer_mid_ground",
+      "asset_key": "layer_mid_ground",
+      "attempt": 1,
+      "attempt_id": "T04:layer_mid_ground:a1",
+      "request_fingerprint": "757c0572992a4f3e2f8ccce873a292da71beb038c0a7cf3e423d7f1a21d739f7",
+      "prompt": "Production game background LAYER, full wide canvas approximately 2048x1088, registered to input 1. Input 1 is the complete approved composition reference; output ONLY the requested single depth layer, not the whole scene. Input 2 marks approximate occupied area in beige on gray: it is ONLY a positioning guide, not an object, do not render beige/gray guide blocks, outlines or labels. Keep all element positions relative to full canvas, DO NOT center, zoom or pack the cutout. ONLY the midground paper street surface, starting as a straight/soft horizon near y=630 on the 1920x1020 reference and filling the entire bottom to the edge. Muted dusty purple/mauve, very fine paper fiber, a few broad subtle warm patches. No buildings, railing, trees, shops, props, lamp, characters or shadows of absent objects. Everything above the ground horizon truly transparent; bottom coverage opaque and seamless. Flat hand-cut paper, fine fibers, clean thin cut edge. Controlled muted palette indigo #141A33, deep violet #2A1E3D, dusty pink #C97B84, apricot #D9A066, teal #4E9A92. No red/white, text, humans, hostages, monsters, HUD, glow, floor shadow, soft colored aura or checkerboard. GENUINE TRANSPARENT background, all unrequested content removed; no opaque rectangular backdrop. Preserve complete source-canvas registration and empty transparent margins.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T04/formal_canvas.png",
+          "sha256": "d1d81c141d0b43db7937377aaacb9eff9ebb668af2b12373a46b0ac5909333d8"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T04/mid_ground_guide.png",
+          "sha256": "737184f0b203ea62bdb49089055071870d97b6a43ec87af4364230696a3069f8"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-70ca99fd-bb49-46ef-821e-9d8824a53126.png",
+      "output": "D:\\gunforge_cache\\g01\\T04\\layer_mid_ground_a1.png",
+      "sha256": "66e0d1c1ed31a4b6b610f703c92390ef5813cd7465654c4cb09a15dfdde5ad2d",
+      "actual_size": [
+        1721,
+        914
+      ]
+    },
+    {
+      "id": "layer_mid_left",
+      "asset_key": "layer_mid_left",
+      "attempt": 1,
+      "attempt_id": "T04:layer_mid_left:a1",
+      "request_fingerprint": "5de679eccc8b0e7519a7e690bde3c7fd8edf5d17cddd143e749511df04671454",
+      "prompt": "Production game background LAYER, full wide canvas approximately 2048x1088, registered to input 1. Input 1 is the complete approved composition reference; output ONLY the requested single depth layer, not the whole scene. Input 2 marks approximate occupied area in beige on gray: it is ONLY a positioning guide, not an object, do not render beige/gray guide blocks, outlines or labels. Keep all element positions relative to full canvas, DO NOT center, zoom or pack the cutout. ONLY the LEFT ordinary roll-up storefront group with simple awnings, side wall, small warm window, folding table with one enamel cup, and plastic stools. Preserve the left-side arrangement and scale in input 1. Complete the wall and storefront behind foreground leaves; no holes left where the canopy originally occluded it. Do not include dark foreground tree/leaf silhouettes, distant central town, sky, main street plane, right storefronts, interactive lamp, bicycle or wires. Outside this left building/prop group is truly transparent, including the entire center/right. Flat hand-cut paper, fine fibers, clean thin cut edge. Controlled muted palette indigo #141A33, deep violet #2A1E3D, dusty pink #C97B84, apricot #D9A066, teal #4E9A92. No red/white, text, humans, hostages, monsters, HUD, glow, floor shadow, soft colored aura or checkerboard. GENUINE TRANSPARENT background, all unrequested content removed; no opaque rectangular backdrop. Preserve complete source-canvas registration and empty transparent margins.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T04/formal_canvas.png",
+          "sha256": "d1d81c141d0b43db7937377aaacb9eff9ebb668af2b12373a46b0ac5909333d8"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T04/mid_left_guide.png",
+          "sha256": "3cc553c938da7b48530370e45545ae9be3d958fd139a4751d77ba1d2f22ca1c7"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-cfa3b5b8-fc8c-4119-a49b-9780cf591ccf.png",
+      "output": "D:\\gunforge_cache\\g01\\T04\\layer_mid_left_a1.png",
+      "sha256": "e7afd262d0d8dbfb05dd3765507c98d31e70950cb51a385a3c9ea08139827da4",
+      "actual_size": [
+        1719,
+        915
+      ]
+    },
+    {
+      "id": "layer_mid_right",
+      "asset_key": "layer_mid_right",
+      "attempt": 1,
+      "attempt_id": "T04:layer_mid_right:a1",
+      "request_fingerprint": "40afe43dbb91445d8bb6ff98468cf139c71d1bedc4cddc25e68c7dc030f0f735",
+      "prompt": "Production game background LAYER, full wide canvas approximately 2048x1088, registered to input 1. Input 1 is the complete approved composition reference; output ONLY the requested single depth layer, not the whole scene. Input 2 marks approximate occupied area in beige on gray: it is ONLY a positioning guide, not an object, do not render beige/gray guide blocks, outlines or labels. Keep all element positions relative to full canvas, DO NOT center, zoom or pack the cutout. ONLY the RIGHT roll-up storefront group, its simple awning, warm window and blank signboard, nearby bicycle, folding table, jars and plastic stools. Preserve the right-side arrangement in input 1. Complete the wall behind the interactive lamp and foreground leaves; do not include the interactive streetlamp or its pole at all. No sky, distant central scenery, left shops, main ground plane, foreground canopy, overhead wires, people or text. True transparency everywhere outside the right-side building/props. Flat hand-cut paper, fine fibers, clean thin cut edge. Controlled muted palette indigo #141A33, deep violet #2A1E3D, dusty pink #C97B84, apricot #D9A066, teal #4E9A92. No red/white, text, humans, hostages, monsters, HUD, glow, floor shadow, soft colored aura or checkerboard. GENUINE TRANSPARENT background, all unrequested content removed; no opaque rectangular backdrop. Preserve complete source-canvas registration and empty transparent margins.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T04/formal_canvas.png",
+          "sha256": "d1d81c141d0b43db7937377aaacb9eff9ebb668af2b12373a46b0ac5909333d8"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T04/mid_right_guide.png",
+          "sha256": "e43e34887e06cdb46cfbfe41f10f14aac998c56f04f8904158ab73e26f2bc979"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-a5156101-a65b-446d-8490-4df62584128f.png",
+      "output": "D:\\gunforge_cache\\g01\\T04\\layer_mid_right_a1.png",
+      "sha256": "ac939635c9fc213ff065503123a70b510529fe241409cc87b49b45f3a17c8969",
+      "actual_size": [
+        1720,
+        914
+      ]
+    },
+    {
+      "id": "layer_near_left",
+      "asset_key": "layer_near_left",
+      "attempt": 1,
+      "attempt_id": "T04:layer_near_left:a1",
+      "request_fingerprint": "1f34f92decdf401af0eac88c9e1f0fa0efbc6d57abdc42148d4fdcf35a53e4bf",
+      "prompt": "Production game background LAYER, full wide canvas approximately 2048x1088, registered to input 1. Input 1 is the complete approved composition reference; output ONLY the requested single depth layer, not the whole scene. Input 2 marks approximate occupied area in beige on gray: it is ONLY a positioning guide, not an object, do not render beige/gray guide blocks, outlines or labels. Keep all element positions relative to full canvas, DO NOT center, zoom or pack the cutout. ONLY the NEAREST very dark indigo/deep violet LEFT foreground tree trunk, upper-left broad canopy leaves and bottom-left large paper leaf/box silhouettes. Keep the broad left framing shapes in input 1, but simplify to clean thick silhouettes. Same fixed positions: some shapes touch the top/left/bottom canvas edges. No shop, table, stool, lamp, sky, distant tree, street or right-side foliage. Center and right stay transparent. Fully extend any shape touching the canvas edge to that edge, no chopped interior edges. Flat hand-cut paper, fine fibers, clean thin cut edge. Controlled muted palette indigo #141A33, deep violet #2A1E3D, dusty pink #C97B84, apricot #D9A066, teal #4E9A92. No red/white, text, humans, hostages, monsters, HUD, glow, floor shadow, soft colored aura or checkerboard. GENUINE TRANSPARENT background, all unrequested content removed; no opaque rectangular backdrop. Preserve complete source-canvas registration and empty transparent margins.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T04/formal_canvas.png",
+          "sha256": "d1d81c141d0b43db7937377aaacb9eff9ebb668af2b12373a46b0ac5909333d8"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T04/near_left_guide.png",
+          "sha256": "d3c45c75c179aa5110f4ef15c5bd0f539a2f6436e3c5f2408175b3020858bd9d"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-416dab2c-2ca6-4c08-89d1-3dd1feb58d0b.png",
+      "output": "D:\\gunforge_cache\\g01\\T04\\layer_near_left_a1.png",
+      "sha256": "83352f0aee7e0cadf057acc265cff1f094f34a548dd4ef0a5a4bfa8f8ab8a8af",
+      "actual_size": [
+        1720,
+        914
+      ]
+    },
+    {
+      "id": "layer_near_right",
+      "asset_key": "layer_near_right",
+      "attempt": 1,
+      "attempt_id": "T04:layer_near_right:a1",
+      "request_fingerprint": "9eae05e7978dd9d4e1b97ef9fa6679f0640e947b3df88e744ef51e70c3865a46",
+      "prompt": "Production game background LAYER, full wide canvas approximately 2048x1088, registered to input 1. Input 1 is the complete approved composition reference; output ONLY the requested single depth layer, not the whole scene. Input 2 marks approximate occupied area in beige on gray: it is ONLY a positioning guide, not an object, do not render beige/gray guide blocks, outlines or labels. Keep all element positions relative to full canvas, DO NOT center, zoom or pack the cutout. ONLY the NEAREST very dark indigo/deep violet RIGHT framing foliage: top-right canopy and bottom-right broad paper leaves, connected logically as one parallax layer even if separate islands. Preserve their framing positions and broad silhouette from input 1; fill complete leaf shapes behind props, no thin filigree. No architecture, stools, lamp/pole, bicycle, ground, sky, other layers or left foliage. The entire middle/left stays truly transparent; edge-touching foliage extends to top/right/bottom edges. Flat hand-cut paper, fine fibers, clean thin cut edge. Controlled muted palette indigo #141A33, deep violet #2A1E3D, dusty pink #C97B84, apricot #D9A066, teal #4E9A92. No red/white, text, humans, hostages, monsters, HUD, glow, floor shadow, soft colored aura or checkerboard. GENUINE TRANSPARENT background, all unrequested content removed; no opaque rectangular backdrop. Preserve complete source-canvas registration and empty transparent margins.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T04/formal_canvas.png",
+          "sha256": "d1d81c141d0b43db7937377aaacb9eff9ebb668af2b12373a46b0ac5909333d8"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T04/near_right_guide.png",
+          "sha256": "60b7631b8f7321177764192e2b83faf9702565f8a75acdd4597c68c5dd127d7b"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-54396b35-2911-44b8-98da-1580b11f5c7d.png",
+      "output": "D:\\gunforge_cache\\g01\\T04\\layer_near_right_a1.png",
+      "sha256": "9033b49209e8b3193d59f14fb6023690798c95bc16fbb9793369ddbc88f6976c",
+      "actual_size": [
+        1720,
+        914
+      ]
+    },
+    {
+      "id": "extract_near_left",
+      "asset_key": "extract_near_left",
+      "attempt": 1,
+      "attempt_id": "T04:extract_near_left:a1",
+      "request_fingerprint": "a58ac00e3924e70034fe7dc396c2f96da59afc81be2479fcc2aac9c31320cc86",
+      "prompt": "Background-extraction alternative-method test. From input 1 extract ONLY its nearest LEFT framing tree trunk, top-left canopy and bottom-left broad leaf/box silhouettes. Retain exact existing positions and scale on the full wide 1920x1020 canvas, not centered cutouts. Input 2 is occupancy guide only, not literal pixels to draw. Remove all other scenery, shops, props, sky, ground, lamp, right foliage and text. Reconstruct the COMPLETE broad leaf/trunk shapes that were originally partly hidden by shops, extending their hidden edges underneath those shops by about 70 pixels so parallax does not expose cut-off shapes. Keep dark indigo/violet paper, clean thick silhouettes and fine fibers. Do not include any light teal foreground leaves; foreground remains dark. True transparent background outside these left framing shapes; shapes touching top/left/bottom reach canvas edge. No colored matte or halo.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T04/formal_canvas.png",
+          "sha256": "d1d81c141d0b43db7937377aaacb9eff9ebb668af2b12373a46b0ac5909333d8"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T04/near_left_guide.png",
+          "sha256": "d3c45c75c179aa5110f4ef15c5bd0f539a2f6436e3c5f2408175b3020858bd9d"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-ea39bb40-e008-4bcc-9dd1-7076283775fb.png",
+      "output": "D:\\gunforge_cache\\g01\\T04\\extract_near_left_a1.png",
+      "sha256": "83be46ef7bbfd63c11be9a68d02ff4de7941bf738806a96c35a77748661549c6",
+      "actual_size": [
+        1717,
+        916
+      ]
+    },
+    {
+      "id": "repair_mid_right",
+      "asset_key": "layer_mid_right",
+      "attempt": 2,
+      "attempt_id": "T04:repair_mid_right:a2",
+      "request_fingerprint": "7d273ca3c382c1ac254a6f4625790d76574a9c9296b6ab6ebbcfe06e60e54466",
+      "prompt": "Limited repair of input 1, an isolated RIGHT storefront layer. Keep the exact full wide transparent-canvas registration, shop, awning, folding table, jars and stools. Make only these corrections: remove the nearest dark foreground leaf cluster at bottom right (it belongs to a separate layer), and replace ONLY the bicycle with the ordinary dark 1990s Chinese upright diamond-frame roadster seen in input 2: LARGE equal wheels, straight simple top tube, no basket, no step-through/women's frame, no small modern city bicycle. Do not add the interactive lamp, pole, street floor, overhead wires, sky, left shop or backdrop. Where removed foreground leaves hid parts of this layer, reconstruct the complete shop/prop behind them. Keep transparent holes between bicycle frame/spokes and true transparency outside the right storefront. No text, people, ink, red marks, shadow or colored aura.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T04/layer_mid_right_a1.png",
+          "sha256": "ac939635c9fc213ff065503123a70b510529fe241409cc87b49b45f3a17c8969"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T04/formal_canvas.png",
+          "sha256": "d1d81c141d0b43db7937377aaacb9eff9ebb668af2b12373a46b0ac5909333d8"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-949d12f0-f76b-4d5b-8df6-83947d3199ef.png",
+      "output": "D:\\gunforge_cache\\g01\\T04\\repair_mid_right_a2.png",
+      "sha256": "217bd876798e9b6f1a80f4416ec7a8ddd76df2fdd6db039846e807b4c4af1589",
+      "actual_size": [
+        1720,
+        914
+      ]
+    },
+    {
+      "id": "lamp_off",
+      "asset_key": "lamp_off",
+      "attempt": 1,
+      "attempt_id": "T04:lamp_off:a1",
+      "request_fingerprint": "2a3f5ec26d3658926303307eb434c72f1d566fc88fe04a7c56b06dd4b94f8b03",
+      "prompt": "Extract/generate ONLY the large interactive OFF streetlamp from input 1 on the same full wide approximately 2048x1088 transparent canvas. Keep its exact position, scale, simple curved neck, large broad downturned dark paper lampshade, pole and base. Image 2 is just the location guide, do not draw the guide rectangle or its colors. Keep all other canvas pixels genuinely transparent. Do NOT center or zoom the cutout. The lamp head must remain broad and thick for shooting. OFF state: dark cool blue/violet-gray paper shade and a dark bulb, NO emitted light, warm pool, glow, halo, beam or reflection on absent scenery. No building, bicycle, wires, tree, human, monster, text or extra object. Flat paper layer with fine fibers and clean edge, not thick 3D metal.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T04/formal_canvas.png",
+          "sha256": "d1d81c141d0b43db7937377aaacb9eff9ebb668af2b12373a46b0ac5909333d8"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T04/lamp_guide.png",
+          "sha256": "037f370b34acf38806aeffb2107bac3e18cbce97cbe267a6d9ed1d7b28430990"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-c38a467b-d1b6-4c54-96bf-f55c3caabaf0.png",
+      "output": "D:\\gunforge_cache\\g01\\T04\\lamp_off_a1.png",
+      "sha256": "0e57707c6c712a11c2e472958c11e08a91187ac30a35fff367fd47f4f5acba6c",
+      "actual_size": [
+        1720,
+        914
+      ]
+    },
+    {
+      "id": "station_lit_edit",
+      "asset_key": "station_lit_edit",
+      "attempt": 1,
+      "attempt_id": "T04:station_lit_edit:a1",
+      "request_fingerprint": "ec6195e869c9f5dda171e421dae1c33a1046ac38546d8754bee1bb544ffd8f7b",
+      "prompt": "编辑这张纸灯城分层试做巷口。严格保持原构图、所有建筑物轮廓、物体位置和大小、纸纹、暗部色调，不增删物体，不添加文字或人物。唯一变化：画面右边前景的弯杆路灯被点亮，灯罩内的灯泡发出柔和暖杏色光，照亮灯下自行车、右侧墙面和一小片地面。灯光边缘柔和，局部有清楚但克制的暖色变化，不漂白，不提高整幅画面曝光，不改变窗户。保留手工纸雕平面美术风格。输出同构图完整画面。",
+      "transparent_background": false,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T04/assembled_unlit.png",
+          "sha256": "e73423cadc4f8f677f6ac5fe5f45ef5873b142beb2e8407f2101672cef1c0f6b"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:/Users/xsl/.codex/generated_images/01a19ce1-00b0-7811-94ba-88d7da51a27b/exec-88dbeca9-17e8-437f-a769-e0357a8d0584.png",
+      "output": "D:\\gunforge_cache\\g01\\T04\\station_lit_edit_a1.png",
+      "sha256": "3015bd1f5cdec643240f158ef7729fd40f445658856f28d1ad468b97f1c16dc1",
+      "actual_size": [
+        1727,
+        910
+      ]
+    }
+  ]
+}

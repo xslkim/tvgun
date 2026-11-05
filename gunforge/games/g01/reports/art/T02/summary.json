@@ -1,0 +1,11 @@
+{
+  "generated_calls": 36,
+  "candidate_items": 30,
+  "comparison_composites": 2,
+  "replaced_ui_attempts": 5,
+  "numeric_failed_checks": {
+    "C03": 12,
+    "C04": 19
+  },
+  "cost": null
+}

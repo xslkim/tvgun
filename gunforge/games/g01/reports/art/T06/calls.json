@@ -1,0 +1,288 @@
+{
+  "task": "T06",
+  "calls": [
+    {
+      "id": "crow_design",
+      "asset_key": "crow_design",
+      "attempt": 1,
+      "attempt_id": "T06:crow_design:a1",
+      "request_fingerprint": "0ceac499e26dff0a165b7ab1a1180f26665aafcda8d12dd08a1f20afeb07a8f4",
+      "prompt": "Use case: stylized-concept. Generate ONE isolated INK CROW game enemy on a genuine transparent background. Input 1 is the accepted game scene: use the bird identity and overall art language ONLY; do not copy any scenery, person, lamp, UI or frame. Input 2 anchors ink material and color ONLY, not its rider shape. User correction: wet black ink should be a little SHINIER than the crow in input 1, but not excessively bright. Add several clearly visible but restrained directional muted blue-gray/steel-gray wet reflections on the light-facing crown, shoulder and body; their total visible area stays below about 5% of the ink body, no pure white, no chrome, no full glowing rim. Body is near #0B0B0E. Broad heavy central body, almost round, at least 40 percent of the entire wingspan in width; recognizable broad beak, two short broad paper-like wings half open, thick simplified feathers, no complex fine tendrils. This is a MONSTER CROW, not a human character. Exactly ONE flat small cinnabar #C8322C circular ink STAMP on the thick torso, with slightly irregular grainy edges; not a gemstone, sphere or eye. Fine paper-fiber bleeding at silhouette, only a couple thick ink drops. Single complete centered crow in a square-ish canvas with empty margins. No scene, labels, words, ground plane, drop shadow, background wash, blood or horror. Transparent output.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T03/gallery/frame_unlit_normalized.png",
+          "sha256": "58a758b9a90df210f033e483a9d314e07073872f5cdb0492844553a7d17dfb51"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/bible/style_refs/ink_rider.png",
+          "sha256": "be381b90c17395f5d606e34483fa67c553ed57b18bcc287c8fbc3ba5c1cc0ec1"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-dd843659-b2b6-46ce-8681-4109a19d3acf.png",
+      "output": "D:\\gunforge_cache\\g01\\T06\\crow_design_a1.png",
+      "sha256": "23dba871ed52dbd37b58693e3c17883dc0b10309be66101af1de5c4d0c78f86b",
+      "actual_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "crow_body",
+      "asset_key": "crow_body",
+      "attempt": 1,
+      "attempt_id": "T06:crow_body:a1",
+      "request_fingerprint": "44a0dda6e4dabfb4d0418511d461bebbbf2550ae735f3953c53ff3900904e496",
+      "prompt": "Precise object edit of this exact isolated ink crow. Remove ONLY the red circular stamp on its chest and all red halo, filling the covered region with continuous black wet-ink body texture. Keep the identical silhouette, bird pose, body thickness, wing shape, framing, alpha edge and restrained blue-gray glossy reflections everywhere else. Do not add another red point or any other item. The body must have no red at all. Same transparent background. No scene, words, shadows or aura.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/crow_design_a1.png",
+          "sha256": "23dba871ed52dbd37b58693e3c17883dc0b10309be66101af1de5c4d0c78f86b"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-a752bd16-fb10-4921-96c7-2371bdc5cd46.png",
+      "output": "D:\\gunforge_cache\\g01\\T06\\crow_body_a1.png",
+      "sha256": "2a6c40641887f8e094fd3ed2d54d9d64f45bf6e792c42e8c463c47bbb5964ca3",
+      "actual_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "crow_eyes",
+      "asset_key": "crow_eyes",
+      "attempt": 1,
+      "attempt_id": "T06:crow_eyes:a1",
+      "request_fingerprint": "89fd720e7ea9509acbb02215a01ac7c90c1f82a8e2344615d18afd82d9eff1d2",
+      "prompt": "Generate ONE isolated matching hardened-state eye layer for this ink crow: ONLY TWO narrow, slightly slanted flat cinnabar-red ink strokes, with grainy ink-pad edges. Pair total width about 80 source pixels and height 18 in a 1024-square coordinate system. Put the pair together at the image center with lots of empty transparent space. No body, head, circular stamp, white highlight, glow, gem, labels or background. Do not make spherical eyeballs. This is a symbolic monster ink effect, not a human face. Genuine transparent background.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/crow_design_a1.png",
+          "sha256": "23dba871ed52dbd37b58693e3c17883dc0b10309be66101af1de5c4d0c78f86b"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-c723d261-32d3-48b3-85df-e5382ccbf333.png",
+      "output": "D:\\gunforge_cache\\g01\\T06\\crow_eyes_a1.png",
+      "sha256": "668ce510c55f56c02327c4f200c4ef978d0217c86611dd2aed154aaf28c619f0",
+      "actual_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "tadpole_pose0",
+      "asset_key": "tadpole_pose0",
+      "attempt": 1,
+      "attempt_id": "T06:tadpole_pose0:a1",
+      "request_fingerprint": "5ef833092b51d538dd5e97a1b70a4333343aca6a2e1114049b5fbaf863968bbe",
+      "prompt": "One isolated INK TADPOLE monster, genuine transparent background, square canvas, no scene or floor. Match only the wet black ink material and restrained gray-blue gloss of this reference crow, not its bird shape. A large simple nearly circular thick ink head takes roughly 65 percent of the width; one short thick flowing tail curves to the RIGHT. One single small FLAT grainy cinnabar #C8322C circular stamp on the middle of the big head, not an eye or gemstone. A few clear but restrained directional wet reflections on upper-left head, a little shinier than a matte blob, no white/full rim. Black #0B0B0E body, fine fiber bleeding at edges, no tiny whiskers or extra drops. Exactly one tadpole, never a group. No text, human features, wings, legs or other red points.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/crow_design_a1.png",
+          "sha256": "23dba871ed52dbd37b58693e3c17883dc0b10309be66101af1de5c4d0c78f86b"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-f511dbd9-ccd2-4086-9c2c-78a708cbd46b.png",
+      "output": "D:\\gunforge_cache\\g01\\T06\\tadpole_pose0_a1.png",
+      "sha256": "52c55d7d7f01f50f25aeb5daa0629925b27e915d8870a5ff853f1b6100618a29",
+      "actual_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "tadpole_pose1",
+      "asset_key": "tadpole_pose1",
+      "attempt": 1,
+      "attempt_id": "T06:tadpole_pose1:a1",
+      "request_fingerprint": "b9817e9e8ae63c5403bc1e28f5bbc3633215f847a4ff8393a018ad2b917f774e",
+      "prompt": "Generate ONE isolated variant pose of this exact ink tadpole monster, same identity, same large thick circular head and ONE flat small red circular ink stamp on its head. Tail now curves gently DOWN-RIGHT, short and thick. Slightly different organic silhouette but same scale and centered framing. Preserve wet black material, fine paper-edge bleed and clearly visible yet restrained blue-gray glossy highlights. No full bright rim, no new red marks, no eyes, limbs, text, floor, backdrop, aura or extra tadpoles. Genuine transparent background. Large head about 65 percent of whole width, never a thin worm.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/tadpole_pose0_a1.png",
+          "sha256": "52c55d7d7f01f50f25aeb5daa0629925b27e915d8870a5ff853f1b6100618a29"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-bb173428-2bd5-4077-b506-207472020217.png",
+      "output": "D:\\gunforge_cache\\g01\\T06\\tadpole_pose1_a1.png",
+      "sha256": "5a178bed6c0c94e472db0b31a74f4f9a88dec18c2c8525835517578731baf5c2",
+      "actual_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "tadpole_pose2",
+      "asset_key": "tadpole_pose2",
+      "attempt": 1,
+      "attempt_id": "T06:tadpole_pose2:a1",
+      "request_fingerprint": "3ab9c4515fcae2990f7bada8ec87f787695107176e22ecedcd9718b2662eb68e",
+      "prompt": "Generate ONE isolated third pose of this same ink tadpole monster, same large thick circular head and ONE flat red circular stamp on the middle of the head. This time its short thick tail curves UP-RIGHT. Head dominates, at least 65 percent of whole width. Preserve the clearly visible restrained blue-gray wet highlights and black inky/papery texture. One tadpole only, no eyes, limbs, wings, extra red marks, words, white rim, full outline, floor, backdrop, glow or aura. True transparent background.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/tadpole_pose0_a1.png",
+          "sha256": "52c55d7d7f01f50f25aeb5daa0629925b27e915d8870a5ff853f1b6100618a29"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-01829524-5138-46b4-ab8f-ba739e0118b0.png",
+      "output": "D:\\gunforge_cache\\g01\\T06\\tadpole_pose2_a1.png",
+      "sha256": "778da7342c4421d625c9253c81bffc6865dacbdc4f386e8dd4327ec72bec4b7b",
+      "actual_size": [
+        1484,
+        1060
+      ]
+    },
+    {
+      "id": "tadpole_body0",
+      "asset_key": "tadpole_body0",
+      "attempt": 1,
+      "attempt_id": "T06:tadpole_body0:a1",
+      "request_fingerprint": "0ad9671f09b41da8eb612877427fdc609cd2a44449d9d89ef04ba9388ce961e6",
+      "prompt": "Precise edit of this exact isolated ink tadpole. Remove ONLY the red circular stamp and red halo from the head, reconstructing continuous black wet ink where the stamp was. Preserve absolutely the same head silhouette, tail pose, whole framing, scale, transparency, edge fibers and restrained gray-blue glossy highlights. No red anywhere, no extra points or other features, no body outline change. Keep genuine transparent background, no scene, words, floor or shadow.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/tadpole_pose0_a1.png",
+          "sha256": "52c55d7d7f01f50f25aeb5daa0629925b27e915d8870a5ff853f1b6100618a29"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-7e6c274b-6b74-44fa-a387-7d23d89598cc.png",
+      "output": "D:\\gunforge_cache\\g01\\T06\\tadpole_body0_a1.png",
+      "sha256": "67fb8d00799a180c51a9566b2bd2f2c10b5cdc1d5b04fd743a4f013ac95adacd",
+      "actual_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "tadpole_body1",
+      "asset_key": "tadpole_body1",
+      "attempt": 1,
+      "attempt_id": "T06:tadpole_body1:a1",
+      "request_fingerprint": "23d5b859d4c07b1f101a03a6242c90232462e08718619466a9ff83f4ba9b89f2",
+      "prompt": "Precise edit of this exact isolated ink tadpole. Remove ONLY the red circular stamp and red halo from the head, reconstructing continuous black wet ink where the stamp was. Preserve absolutely the same head silhouette, tail pose, whole framing, scale, transparency, edge fibers and restrained gray-blue glossy highlights. No red anywhere, no extra points or other features, no body outline change. Keep genuine transparent background, no scene, words, floor or shadow.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/tadpole_pose1_a1.png",
+          "sha256": "5a178bed6c0c94e472db0b31a74f4f9a88dec18c2c8525835517578731baf5c2"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-4508be24-8bef-4adb-b357-c96b0f1e9ed7.png",
+      "output": "D:\\gunforge_cache\\g01\\T06\\tadpole_body1_a1.png",
+      "sha256": "d0a577b1b109718933da5b809c9930d728536065bb4de8cb6a0910d548e9e8d9",
+      "actual_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "tadpole_body2",
+      "asset_key": "tadpole_body2",
+      "attempt": 1,
+      "attempt_id": "T06:tadpole_body2:a1",
+      "request_fingerprint": "a92cc75ae23713e1a285f3c1838ecd64d459bd5221c9f5d8024f3161f4446a72",
+      "prompt": "Precise edit of this exact isolated ink tadpole. Remove ONLY the red circular stamp and red halo from the head, reconstructing continuous black wet ink where the stamp was. Preserve absolutely the same head silhouette, tail pose, whole framing, scale, transparency, edge fibers and restrained gray-blue glossy highlights. No red anywhere, no extra points or other features, no body outline change. Keep genuine transparent background, no scene, words, floor or shadow.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/tadpole_pose2_a1.png",
+          "sha256": "778da7342c4421d625c9253c81bffc6865dacbdc4f386e8dd4327ec72bec4b7b"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-9d3a4c93-1e7d-4895-9b41-a7d1aa6a0bec.png",
+      "output": "D:\\gunforge_cache\\g01\\T06\\tadpole_body2_a1.png",
+      "sha256": "12e4ff19e5ea9c57d21b2b20e9fa5ed38ad93fd34f4593eab104bc061e8e9f38",
+      "actual_size": [
+        1484,
+        1060
+      ]
+    }
+  ]
+}

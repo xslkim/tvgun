@@ -1,0 +1,258 @@
+{
+  "T02_cap": 36,
+  "phase_0A_cap": 120,
+  "calls": [
+    {
+      "id": "st_l1_alley",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\st_l1_alley.png"
+    },
+    {
+      "id": "st_l1_hawthorn",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\st_l1_hawthorn.png"
+    },
+    {
+      "id": "st_l1_video",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\st_l1_video.png"
+    },
+    {
+      "id": "st_l1_bridge",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\st_l1_bridge.png"
+    },
+    {
+      "id": "st_l2_ticket",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\st_l2_ticket.png"
+    },
+    {
+      "id": "st_l2_posters",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\st_l2_posters.png"
+    },
+    {
+      "id": "st_l2_seats",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\st_l2_seats.png"
+    },
+    {
+      "id": "st_l2_projector",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\st_l2_projector.png"
+    },
+    {
+      "id": "st_l3_waiting",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\st_l3_waiting.png"
+    },
+    {
+      "id": "st_l3_platform",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\st_l3_platform.png"
+    },
+    {
+      "id": "st_l3_carriage",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\st_l3_carriage.png"
+    },
+    {
+      "id": "st_l3_base",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\st_l3_base.png"
+    },
+    {
+      "id": "res_vendor",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\res_vendor.png"
+    },
+    {
+      "id": "res_video",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\res_video.png"
+    },
+    {
+      "id": "res_projectionist",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\res_projectionist.png"
+    },
+    {
+      "id": "res_ticket",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\res_ticket.png"
+    },
+    {
+      "id": "res_cyclist",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\res_cyclist.png"
+    },
+    {
+      "id": "res_passerby",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\res_passerby.png"
+    },
+    {
+      "id": "ink_tadpole",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\ink_tadpole.png"
+    },
+    {
+      "id": "ink_crow",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\ink_crow.png"
+    },
+    {
+      "id": "ink_rider",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\ink_rider.png"
+    },
+    {
+      "id": "ink_sign",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\ink_sign.png"
+    },
+    {
+      "id": "ink_tape",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\ink_tape.png"
+    },
+    {
+      "id": "ink_umbrella",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\ink_umbrella.png"
+    },
+    {
+      "id": "ui_life",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\ui_life.png"
+    },
+    {
+      "id": "ui_ammo",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\ui_ammo.png"
+    },
+    {
+      "id": "ui_stamp",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\ui_stamp.png"
+    },
+    {
+      "id": "ui_frames",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\ui_frames.png"
+    },
+    {
+      "id": "ui_title",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\ui_title.png"
+    },
+    {
+      "id": "ui_crosshair",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\ui_crosshair.png"
+    },
+    {
+      "id": "ui_life",
+      "attempt": 2,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\ui_life_a2.png"
+    },
+    {
+      "id": "ui_ammo",
+      "attempt": 2,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\ui_ammo_a2.png"
+    },
+    {
+      "id": "ui_stamp",
+      "attempt": 2,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\ui_stamp_a2.png"
+    },
+    {
+      "id": "ui_frames",
+      "attempt": 2,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\ui_frames_a2.png"
+    },
+    {
+      "id": "ui_crosshair",
+      "attempt": 2,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\ui_crosshair_a2.png"
+    },
+    {
+      "id": "ink_compare_a",
+      "attempt": 1,
+      "state": "returned",
+      "cost": null,
+      "output": "D:\\gunforge_cache\\g01\\T02\\ink_compare_a.png"
+    }
+  ]
+}

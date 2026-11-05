@@ -1,0 +1,137 @@
+{
+  "C01": {
+    "status": "pass",
+    "reason": "PNG format, channel mode and declared size",
+    "details": {
+      "mode": "RGBA",
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "C03": {
+    "status": "pass",
+    "reason": "Visible alpha-weighted encoded luminance",
+    "details": {
+      "clipped_fraction": 0.0
+    }
+  },
+  "C11": {
+    "status": "pending",
+    "reason": "Static containment passed; complete state/frame/alignment evidence missing",
+    "details": {}
+  },
+  "C16": {
+    "status": "pass",
+    "reason": "Offline SDF round-trip; engine sampling is a separate pending check",
+    "details": {
+      "max_error_px": 0.0
+    }
+  },
+  "C14": {
+    "status": "pending",
+    "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+    "details": {}
+  },
+  "minimum_size_evidence": [
+    {
+      "display_size": 200,
+      "effective_radius": 65.25847046363357
+    },
+    {
+      "display_size": 210,
+      "effective_radius": 68.88429046844982
+    },
+    {
+      "display_size": 220,
+      "effective_radius": 72.40994714277453
+    },
+    {
+      "display_size": 230,
+      "effective_radius": 75.69818076466963
+    },
+    {
+      "display_size": 240,
+      "effective_radius": 79.54272818853529
+    },
+    {
+      "display_size": 250,
+      "effective_radius": 82.98574809921467
+    },
+    {
+      "display_size": 260,
+      "effective_radius": 86.48310468328788
+    },
+    {
+      "display_size": 270,
+      "effective_radius": 90.52562079213646
+    },
+    {
+      "display_size": 280,
+      "effective_radius": 94.3580723968374
+    },
+    {
+      "display_size": 290,
+      "effective_radius": 98.09438240458009
+    },
+    {
+      "display_size": 300,
+      "effective_radius": 102.14168996820017
+    },
+    {
+      "display_size": 310,
+      "effective_radius": 105.99709454805476
+    },
+    {
+      "display_size": 320,
+      "effective_radius": 110.09216836914511
+    },
+    {
+      "display_size": 330,
+      "effective_radius": 113.65024664102519
+    },
+    {
+      "display_size": 340,
+      "effective_radius": 117.35414579650728
+    },
+    {
+      "display_size": 350,
+      "effective_radius": 121.19443629170787
+    },
+    {
+      "display_size": 360,
+      "effective_radius": 124.85809939982802
+    }
+  ],
+  "eye_containment": {
+    "status": "pass"
+  },
+  "raw_body_red_pixels": 0,
+  "gloss_normalization": {
+    "maximum_luminance": 0.599,
+    "quantile_scale": 1,
+    "source_preserved": true
+  },
+  "highlight_screen": {
+    "status": "pass",
+    "bright_fraction_over_Yprime_0_22": 0.027990518437408622,
+    "max_Yprime": 0.5989019607843137,
+    "reason": "Conservative brightness proxy, not a semantic specular-area measurement"
+  },
+  "C12": {
+    "status": "pass",
+    "reason": "Aligned loop endpoint position and velocity",
+    "details": {
+      "pixel_difference": 0.0,
+      "velocity_difference": 0.0029240347373517307
+    }
+  },
+  "C04": {
+    "status": "pass",
+    "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+    "details": {
+      "coverage": 0.9833612554205456
+    }
+  }
+}

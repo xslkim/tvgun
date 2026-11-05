@@ -1,0 +1,696 @@
+{
+  "vendor": {
+    "rows": [
+      {
+        "height": 300,
+        "blob": 0,
+        "blob_source_extent": 256,
+        "effective_radius": 47.989290748454756,
+        "paper_border_leak_pixels": 1190,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 47.989290748454756,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "fail",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 300,
+        "blob": 1,
+        "blob_source_extent": 256,
+        "effective_radius": 41.151046092387084,
+        "paper_border_leak_pixels": 975,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 41.151046092387084,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "fail",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 300,
+        "blob": 2,
+        "blob_source_extent": 256,
+        "effective_radius": 44.87347033603106,
+        "paper_border_leak_pixels": 436,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 44.87347033603106,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "fail",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 300,
+        "blob": 3,
+        "blob_source_extent": 256,
+        "effective_radius": 45.496914069562905,
+        "paper_border_leak_pixels": 901,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 45.496914069562905,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "fail",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 300,
+        "blob": 4,
+        "blob_source_extent": 256,
+        "effective_radius": 47.058281717256015,
+        "paper_border_leak_pixels": 1107,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 47.058281717256015,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "fail",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 300,
+        "blob": 5,
+        "blob_source_extent": 256,
+        "effective_radius": 44.95851173323101,
+        "paper_border_leak_pixels": 1114,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 44.95851173323101,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "fail",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 400,
+        "blob": 0,
+        "blob_source_extent": 192,
+        "effective_radius": 47.989290748454756,
+        "paper_border_leak_pixels": 25,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 47.989290748454756,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "fail",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 400,
+        "blob": 1,
+        "blob_source_extent": 192,
+        "effective_radius": 41.151046092387084,
+        "paper_border_leak_pixels": 42,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 41.151046092387084,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "fail",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 400,
+        "blob": 2,
+        "blob_source_extent": 192,
+        "effective_radius": 44.87347033603106,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 44.87347033603106,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 400,
+        "blob": 3,
+        "blob_source_extent": 192,
+        "effective_radius": 45.496914069562905,
+        "paper_border_leak_pixels": 13,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 45.496914069562905,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "fail",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 400,
+        "blob": 4,
+        "blob_source_extent": 192,
+        "effective_radius": 47.058281717256015,
+        "paper_border_leak_pixels": 26,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 47.058281717256015,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "fail",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 400,
+        "blob": 5,
+        "blob_source_extent": 192,
+        "effective_radius": 44.95851173323101,
+        "paper_border_leak_pixels": 11,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 44.95851173323101,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "fail",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 512,
+        "blob": 0,
+        "blob_source_extent": 160,
+        "effective_radius": 51.36914401139681,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 51.36914401139681,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 512,
+        "blob": 1,
+        "blob_source_extent": 160,
+        "effective_radius": 44.10071886696362,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 44.10071886696362,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 512,
+        "blob": 2,
+        "blob_source_extent": 160,
+        "effective_radius": 47.95943324898733,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 47.95943324898733,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 512,
+        "blob": 3,
+        "blob_source_extent": 160,
+        "effective_radius": 48.69057436811434,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 48.69057436811434,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 512,
+        "blob": 4,
+        "blob_source_extent": 160,
+        "effective_radius": 50.383740852736715,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 50.383740852736715,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 512,
+        "blob": 5,
+        "blob_source_extent": 160,
+        "effective_radius": 48.144912412324146,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 48.144912412324146,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      }
+    ],
+    "candidate_minimum": 512
+  },
+  "video": {
+    "rows": [
+      {
+        "height": 300,
+        "blob": 0,
+        "blob_source_extent": 256,
+        "effective_radius": 47.989290748454756,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 47.989290748454756,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 300,
+        "blob": 1,
+        "blob_source_extent": 256,
+        "effective_radius": 41.151046092387084,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 41.151046092387084,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 300,
+        "blob": 2,
+        "blob_source_extent": 256,
+        "effective_radius": 44.87347033603106,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 44.87347033603106,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 300,
+        "blob": 3,
+        "blob_source_extent": 256,
+        "effective_radius": 45.496914069562905,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 45.496914069562905,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 300,
+        "blob": 4,
+        "blob_source_extent": 256,
+        "effective_radius": 47.058281717256015,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 47.058281717256015,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 300,
+        "blob": 5,
+        "blob_source_extent": 256,
+        "effective_radius": 44.95851173323101,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 44.95851173323101,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 400,
+        "blob": 0,
+        "blob_source_extent": 192,
+        "effective_radius": 47.989290748454756,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 47.989290748454756,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 400,
+        "blob": 1,
+        "blob_source_extent": 192,
+        "effective_radius": 41.151046092387084,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 41.151046092387084,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 400,
+        "blob": 2,
+        "blob_source_extent": 192,
+        "effective_radius": 44.87347033603106,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 44.87347033603106,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 400,
+        "blob": 3,
+        "blob_source_extent": 192,
+        "effective_radius": 45.496914069562905,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 45.496914069562905,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 400,
+        "blob": 4,
+        "blob_source_extent": 192,
+        "effective_radius": 47.058281717256015,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 47.058281717256015,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 400,
+        "blob": 5,
+        "blob_source_extent": 192,
+        "effective_radius": 44.95851173323101,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 44.95851173323101,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 512,
+        "blob": 0,
+        "blob_source_extent": 160,
+        "effective_radius": 51.36914401139681,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 51.36914401139681,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 512,
+        "blob": 1,
+        "blob_source_extent": 160,
+        "effective_radius": 44.10071886696362,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 44.10071886696362,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 512,
+        "blob": 2,
+        "blob_source_extent": 160,
+        "effective_radius": 47.95943324898733,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 47.95943324898733,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 512,
+        "blob": 3,
+        "blob_source_extent": 160,
+        "effective_radius": 48.69057436811434,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 48.69057436811434,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 512,
+        "blob": 4,
+        "blob_source_extent": 160,
+        "effective_radius": 50.383740852736715,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 50.383740852736715,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      },
+      {
+        "height": 512,
+        "blob": 5,
+        "blob_source_extent": 160,
+        "effective_radius": 48.144912412324146,
+        "paper_border_leak_pixels": 0,
+        "C09": {
+          "status": "pass",
+          "reason": "Primary size, visible protection, weak point and motion reservation",
+          "details": {
+            "effective_radius": 48.144912412324146,
+            "protected_overlap": false,
+            "weak_outside": false,
+            "hud_overlap": false
+          }
+        },
+        "status": "pass",
+        "scope": "static actual idle assembly; full-action protection remains pending"
+      }
+    ],
+    "candidate_minimum": 300
+  }
+}

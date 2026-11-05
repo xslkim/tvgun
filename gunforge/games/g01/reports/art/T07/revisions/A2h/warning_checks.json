@@ -1,0 +1,3853 @@
+{
+  "status": "pass_numeric_pending_visual",
+  "frames": 120,
+  "sample_checks": 480,
+  "crow_extent_px": 200,
+  "tadpole_head_diameter_px": 90,
+  "warning_pulse_hz": 1.5,
+  "primary_target_unchanged": true,
+  "effect_approval": "pending",
+  "engine_validation": "pending",
+  "rows": [
+    {
+      "frame": 0,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 0,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 0,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 0,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 1,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 1,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 1,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 1,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 2,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 2,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 2,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 2,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 3,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 3,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 3,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 3,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 4,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 4,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 4,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 4,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 5,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 5,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 5,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 5,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 6,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 6,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 6,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 6,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 7,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 7,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 7,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 7,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 8,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 8,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 8,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 8,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 9,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 9,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 9,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 9,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 10,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 10,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 10,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 10,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 11,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 11,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 11,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 11,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 12,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 12,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 12,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 12,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 13,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 13,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 13,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 13,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 14,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 14,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 14,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 14,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 15,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 15,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 15,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 15,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 16,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 16,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 16,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 16,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 17,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 17,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 17,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 17,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 18,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 18,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 18,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 18,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 19,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 19,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 19,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 19,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 20,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 20,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 20,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 20,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 21,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 21,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 21,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 21,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 22,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 22,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 22,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 22,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 23,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 23,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 23,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 23,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 24,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 24,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 24,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 24,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 25,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 25,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 25,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 25,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 26,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 26,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 26,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 26,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 27,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 27,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 27,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 27,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 28,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 28,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 28,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 28,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 29,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 29,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 29,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 29,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 30,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 30,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 30,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 30,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 31,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 31,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 31,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 31,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 32,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 32,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 32,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 32,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 33,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 33,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 33,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 33,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 34,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 34,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 34,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 34,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 35,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 35,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 35,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 35,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 36,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 36,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 36,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 36,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 37,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 37,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 37,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 37,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 38,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 38,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 38,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 38,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 39,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 39,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 39,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 39,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 40,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 40,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 40,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 40,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 41,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 41,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 41,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 41,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 42,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 42,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 42,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 42,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 43,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 43,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 43,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 43,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 44,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 44,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 44,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 44,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 45,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 45,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 45,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 45,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 46,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 46,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 46,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 46,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 47,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 47,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 47,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 47,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 48,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 48,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 48,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 48,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 49,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 49,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 49,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 49,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 50,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 50,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 50,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 50,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 51,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 51,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 51,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 51,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 52,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 52,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 52,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 52,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 53,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 53,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 53,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 53,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 54,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 54,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 54,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 54,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 55,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 55,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 55,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 55,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 56,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 56,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 56,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 56,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 57,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 57,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 57,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 57,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 58,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 58,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 58,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 58,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 59,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 59,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 59,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 59,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 60,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 60,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 60,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 60,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 61,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 61,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 61,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 61,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 62,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 62,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 62,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 62,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 63,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 63,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 63,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 63,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 64,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 64,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 64,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 64,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 65,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 65,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 65,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 65,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 66,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 66,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 66,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 66,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 67,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 67,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 67,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 67,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 68,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 68,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 68,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 68,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 69,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 69,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 69,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 69,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 70,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 70,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 70,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 70,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 71,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 71,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 71,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 71,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 72,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 72,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 72,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 72,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 73,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 73,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 73,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 73,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 74,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 74,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 74,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 74,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 75,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 75,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 75,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 75,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 76,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 76,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 76,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 76,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 77,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 77,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 77,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 77,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 78,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 78,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 78,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 78,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 79,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 79,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 79,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 79,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 80,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 80,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 80,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 80,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 81,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 81,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 81,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 81,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 82,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 82,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 82,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 82,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 83,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 83,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 83,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 83,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 84,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 84,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 84,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 84,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 85,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 85,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 85,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 85,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 86,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 86,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 86,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 86,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 87,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 87,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 87,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 87,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 88,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 88,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 88,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 88,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 89,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 89,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 89,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 89,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 90,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 90,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 90,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 90,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 91,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 91,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 91,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 91,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 92,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 92,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 92,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 92,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 93,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 93,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 93,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 93,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 94,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 94,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 94,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 94,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 95,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 95,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 95,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 95,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 96,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 96,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 96,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 96,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 97,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 97,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 97,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 97,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 98,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 98,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 98,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 98,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 99,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 99,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 99,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 99,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 100,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 100,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 100,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 100,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 101,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 101,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 101,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 101,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 102,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 102,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 102,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 102,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 103,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 103,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 103,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 103,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 104,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 104,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 104,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 104,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 105,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 105,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 105,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 105,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 106,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 106,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 106,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 106,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 107,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 107,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 107,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 107,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 108,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 108,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 108,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 108,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 109,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 109,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 109,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 109,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 110,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 110,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 110,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 110,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 111,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 111,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 111,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 111,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 112,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 112,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 112,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 112,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 113,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 113,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 113,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 113,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 114,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 114,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 114,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 114,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 115,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 115,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 115,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 115,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 116,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 116,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 116,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 116,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 117,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 117,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 117,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 117,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 118,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 118,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 118,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 118,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 119,
+      "enemy": "crow",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 119,
+      "enemy": "crow",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 119,
+      "enemy": "tadpole0",
+      "state": "normal",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    },
+    {
+      "frame": 119,
+      "enemy": "tadpole0",
+      "state": "warning",
+      "primary_target_unchanged": true,
+      "core_outside_body": 0,
+      "overbright_fraction": 0.0
+    }
+  ]
+}

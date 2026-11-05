@@ -1,0 +1,23 @@
+{
+  "status": "fail",
+  "reason": "Deterministic projected screenshot screening only; real recordings remain pending",
+  "details": {
+    "samples": [
+      {
+        "acquired": true,
+        "edges": 4,
+        "low_threshold": 190
+      },
+      {
+        "acquired": false,
+        "edges": 0,
+        "low_threshold": 184
+      },
+      {
+        "acquired": true,
+        "edges": 4,
+        "low_threshold": 150
+      }
+    ]
+  }
+}

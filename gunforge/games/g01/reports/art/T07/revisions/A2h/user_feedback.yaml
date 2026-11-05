@@ -1,0 +1,7 @@
+stage: A2g
+source: explicit_user_chat
+prop_direction: approved
+notes: 糖葫芦方向与握持可以；继续技术待办，到下个检查点再通知。
+technical_acceptance: false
+production_approved: false
+actual_0B: false

@@ -1,0 +1,14 @@
+stage: A2c
+source: explicit_user_chat_and_screenshot
+people_acting_v3: revision_required_elbow_unnatural_when_arm_lowered
+enemy_hit_fx_v3: approved_clear_and_appropriate
+notes: 手关节还需要修改，当手放下的时候，肘关节不自然。墨怪受击：清楚合适。补充意见：无。
+retained_visual_approvals:
+- scene
+- lighting
+- character_design
+- ink_material
+- ink_gloss
+expression_approval: not separately stated; retain current work, no inferred approval
+technical_acceptance: false
+actual_0B_approved: false

@@ -1,0 +1,302 @@
+{
+  "task_cap": 10,
+  "phase_0A_cap": 120,
+  "calls": [
+    {
+      "id": "frame_unlit",
+      "attempt": 1,
+      "attempt_id": "T03:frame_unlit:a1",
+      "request_fingerprint": "7301713d5b9c0f30fc12044041194ee841b575c23afeac5ce15f881aee5844e7",
+      "prompt": "Use case: stylized-concept. Asset: an actual playable side/front-view paper-cut lightgun game screen, NOT concept-art poster. Wide landscape approximately 1776:936; no outer frame, no UI, no words.\nInput 1 is a layout whitebox ONLY: use its object positions and safe areas, DO NOT render any rectangles, labels, diagrams or debug marks. Input 2 anchors only the staggered alley composition, NOT its excessive sunset brightness. Input 3 anchors only the vendor's apricot/purple/teal clothing colors, not its thick 3D folds. Input 4 anchors ONLY ink surface, restrained reflections and colors, NOT the rider shape. Input 5 anchors low local warm light, paper layers and colors, not the decorative display border.\nScene: 1990s small Chinese town market alley at NIGHT. Plain roll-up storefronts and simple awnings at the sides; folding table, plastic stools, enamel cup and a thick-spoked bicycle at the edges. Flat stacked cut-paper scenery, subtle fine fibers, clean edges, restrained layering. Indigo #141A33 and deep violet #2A1E3D form about 60 percent; muted apricot #D9A066, dusty pink #C97B84, teal #4E9A92 are local accents. Near foreground is dark and simple. A clear midground street, translucent softly warm distant windows. No broad orange sunset or white light, no antique pagoda roofs. Keep top center, top right and bottom corners visually quiet for HUD added separately.\nAt roughly x=740 y=600 on a 1776x936 canvas put ONE full-body friendly paper resident, a slim hawthorn vendor, height about 330 pixels, apricot apron, purple sweater and blue trousers. A thick rounded black ink blob about 110 pixels across is attached ONLY to the chest/abdomen centered around (740,555), leaving head, arms, legs and a visible 6-pixel-plus warm paper boundary exposed. It has ONE small FLAT cinnabar stamped mark, not a red eye. Do not turn the whole person black.\nAt roughly (1110,460) put ONE separate ink CROW, overall wingspan about 300 pixels and height 220, with an unmistakable bird beak and simple broad feather silhouettes. The central black body must be thick, about 110 pixels across. Glossy-wet ink leaning toward a shiny surface, but only a few restrained directional gray-blue reflections, never white, never full bright rim, no plastic/chrome volume. One small FLAT red ink stamp on its central body, not a gemstone.\nAt the right, one simple streetlamp with its large recognizable lamp head near (1406,480); lamp head about 100 pixels wide, pole to ground around y=690. THIS INTERACTIVE LAMP IS OFF: dark cool lampshade, no warm halo and no pool of light beneath it. Warm windows elsewhere stay subtle and constant. Keep the three targets away from foreground occluders and away from screen edges. Only the resident and crow have flat small red stamps. No extra people or enemies. No text, numbers, logos, score, life bars or crosshair. Muted but readable gameplay, not a cinematic distant view.",
+      "references": [
+        {
+          "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T03\\whitebox.png",
+          "sha256": "a7f995247877c11e80753945dba767eb2a2bc8d9ba33e6b4e6aa1acd963efd3a"
+        },
+        {
+          "file": "D:\\tvgun\\gunforge\\games\\g01\\bible\\style_refs\\st_l1_alley.png",
+          "sha256": "01f5b143d9970ac05a4155ff7d81eeee80e1e5325c2d7a3421ffd4b7576b8b9a"
+        },
+        {
+          "file": "D:\\tvgun\\gunforge\\games\\g01\\bible\\style_refs\\res_vendor.png",
+          "sha256": "cae0e9fda89c0707ecb0a78f4d98a5f2130d9ae73d71c8157258039706794ae6"
+        },
+        {
+          "file": "D:\\tvgun\\gunforge\\games\\g01\\bible\\style_refs\\ink_rider.png",
+          "sha256": "be381b90c17395f5d606e34483fa67c553ed57b18bcc287c8fbc3ba5c1cc0ec1"
+        },
+        {
+          "file": "D:\\tvgun\\gunforge\\games\\g01\\bible\\style_refs\\st_l3_base.png",
+          "sha256": "149f934cff0fc0a1cb29dbc5d1873732c0beda103d29511c469bc9a058cb6dae"
+        }
+      ],
+      "transparent_background": false,
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-04607280-682d-4017-9c80-48691a1edf98.png",
+      "output": "D:\\gunforge_cache\\g01\\T03\\frame_unlit_a1.png",
+      "sha256": "cf56e5052fea296f8ca0bb496fd1d2cee051b4e1dd47a5fbb1ac0ac41611a73f",
+      "actual_size": [
+        1728,
+        910
+      ]
+    },
+    {
+      "id": "wick_lit",
+      "attempt": 1,
+      "attempt_id": "T03:wick_lit:a1",
+      "request_fingerprint": "ac8bd554c54969b66c2658b75425abf53dda5569881e196940d8a4be8c842096",
+      "prompt": "Technical game HUD cut-paper asset. One isolated flat simple shape only. Subtle fine paper fiber, clean cut edge. Muted warm apricot #D9A066 and dark indigo #141A33. No white, glow, bloom, shadow, scenery, lanterns, buildings, characters, text, numbers, panels or presentation mockup. Genuine transparent background with empty margins. Exactly ONE lit paper wick icon: a narrow upright apricot paper strip with a small warm-apricot flame-shaped cutout at the top. Entire silhouette fits a tall 36:64 display ratio. No wax candle. Reference image is paper texture/color ONLY, do not copy its five-icon row.",
+      "references": [
+        {
+          "file": "D:\\tvgun\\gunforge\\games\\g01\\bible\\style_refs\\ui_life.png",
+          "sha256": "3ac5a0855d7e52c3299fb5177a58ce7831c55a837a08b5a8c3985d5b2ea0eb72"
+        }
+      ],
+      "transparent_background": true,
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-b8d0e174-d8a1-4e2e-9568-0e71a75b32cc.png",
+      "output": "D:\\gunforge_cache\\g01\\T03\\wick_lit_a1.png",
+      "sha256": "a5d130f105c354b0957b7e4bf7184b1ab2efd41272f11e0a45f2e688075957b3",
+      "actual_size": [
+        941,
+        1672
+      ]
+    },
+    {
+      "id": "wick_out",
+      "attempt": 1,
+      "attempt_id": "T03:wick_out:a1",
+      "request_fingerprint": "d6e1ba2c1382e9c75d74c5aa97cfaf8559a11e58047eaa42d95bdbc82bf8b036",
+      "prompt": "Technical game HUD cut-paper asset. One isolated flat simple shape only. Subtle fine paper fiber, clean cut edge. Muted warm apricot #D9A066 and dark indigo #141A33. No white, glow, bloom, shadow, scenery, lanterns, buildings, characters, text, numbers, panels or presentation mockup. Genuine transparent background with empty margins. Exactly ONE extinguished paper wick icon, matching a narrow upright paper strip plus a dark indigo flame-shaped cutout. Same tall 36:64 ratio. No wax candle. Reference image is texture/layout vocabulary ONLY, not the five-icon row.",
+      "references": [
+        {
+          "file": "D:\\tvgun\\gunforge\\games\\g01\\bible\\style_refs\\ui_life.png",
+          "sha256": "3ac5a0855d7e52c3299fb5177a58ce7831c55a837a08b5a8c3985d5b2ea0eb72"
+        }
+      ],
+      "transparent_background": true,
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-d3f4231c-f8a4-40b2-b426-7e321cb1c7b9.png",
+      "output": "D:\\gunforge_cache\\g01\\T03\\wick_out_a1.png",
+      "sha256": "a46183cdadf5972bba5fde3713cf2543a5faebee9feb2061830331fc8e00ba1e",
+      "actual_size": [
+        941,
+        1672
+      ]
+    },
+    {
+      "id": "ammo_full",
+      "attempt": 1,
+      "attempt_id": "T03:ammo_full:a1",
+      "request_fingerprint": "7588a94f18c2d402d3fcb2a0551b435dc97393474c00ca447eb3d7ed39240348",
+      "prompt": "Technical game HUD cut-paper asset. One isolated flat simple shape only. Subtle fine paper fiber, clean cut edge. Muted warm apricot #D9A066 and dark indigo #141A33. No white, glow, bloom, shadow, scenery, lanterns, buildings, characters, text, numbers, panels or presentation mockup. Genuine transparent background with empty margins. Exactly ONE filled rectangular light-ammo tile, 32:48 aspect ratio. Solid muted apricot flat paper rectangle with tiny clean clipped corners. No central drawing, nothing inside it.",
+      "references": [],
+      "transparent_background": true,
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-a17453e4-4a5d-4ac8-b781-6722cf836acd.png",
+      "output": "D:\\gunforge_cache\\g01\\T03\\ammo_full_a1.png",
+      "sha256": "fb649f472adb617f2cb67695a0f2e474b94cf49955e1ac375873328f02f9a92a",
+      "actual_size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "id": "ammo_empty",
+      "attempt": 1,
+      "attempt_id": "T03:ammo_empty:a1",
+      "request_fingerprint": "87151d380e8b45ee62c0a7ea9d563d445da30d70e123353faa3b871453910fcc",
+      "prompt": "Technical game HUD cut-paper asset. One isolated flat simple shape only. Subtle fine paper fiber, clean cut edge. Muted warm apricot #D9A066 and dark indigo #141A33. No white, glow, bloom, shadow, scenery, lanterns, buildings, characters, text, numbers, panels or presentation mockup. Genuine transparent background with empty margins. Exactly ONE empty rectangular light-ammo tile, 32:48 aspect ratio. A medium teal paper outline with transparent center and tiny clean clipped corners. Outline about 4 pixels at 32x48 display size. Nothing inside it.",
+      "references": [],
+      "transparent_background": true,
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-b6d77894-772c-4ecc-8519-1e5a84c90b23.png",
+      "output": "D:\\gunforge_cache\\g01\\T03\\ammo_empty_a1.png",
+      "sha256": "2f7837605eb1495ee2e4aec9570f7340c1ffa6ecbceb7f08757e7ac689547354",
+      "actual_size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "id": "score_frame",
+      "attempt": 1,
+      "attempt_id": "T03:score_frame:a1",
+      "request_fingerprint": "8b4421f827be1750a89fed0f842984ac44939ff3717456551da1340895d6a1fc",
+      "prompt": "Technical game HUD cut-paper asset. One isolated flat simple shape only. Subtle fine paper fiber, clean cut edge. Muted warm apricot #D9A066 and dark indigo #141A33. No white, glow, bloom, shadow, scenery, lanterns, buildings, characters, text, numbers, panels or presentation mockup. Genuine transparent background with empty margins. Exactly ONE square cinnabar #C8322C stamped outline, empty transparent center. Flat ink granules and slightly imperfect edge, border around 8 percent of square width. No letters or symbols.",
+      "references": [],
+      "transparent_background": true,
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-8a0e2a33-6432-4395-909a-613432927f19.png",
+      "output": "D:\\gunforge_cache\\g01\\T03\\score_frame_a1.png",
+      "sha256": "a7549c1317100435d7fc5a09dc15b8d6d7ee2a36656770518bf59581d51ed6b3",
+      "actual_size": [
+        1261,
+        1247
+      ]
+    },
+    {
+      "id": "prompt_frame",
+      "attempt": 1,
+      "attempt_id": "T03:prompt_frame:a1",
+      "request_fingerprint": "f149404a7f9216bf9d1b3cd77e8d2634752632c3799465d6512c6f7def68ebfd",
+      "prompt": "Technical game HUD cut-paper asset. One isolated flat simple shape only. Subtle fine paper fiber, clean cut edge. Muted warm apricot #D9A066 and dark indigo #141A33. No white, glow, bloom, shadow, scenery, lanterns, buildings, characters, text, numbers, panels or presentation mockup. Genuine transparent background with empty margins. Exactly ONE very long low rectangular paper notification strip. Width to height about 8.3:1. Deep indigo paper interior about 60 percent opaque and a clean thin muted apricot cut-paper border. Corners very simple and suitable for nine-slice. Empty inside with no drawing.",
+      "references": [],
+      "transparent_background": true,
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-e015a5b2-3b7c-4666-957e-a924e1a937c0.png",
+      "output": "D:\\gunforge_cache\\g01\\T03\\prompt_frame_a1.png",
+      "sha256": "7cb8c48df2d4207145d1233aca66be6732f5476f352995ecc59f0bac290feb46",
+      "actual_size": [
+        2172,
+        724
+      ]
+    },
+    {
+      "id": "frame_lit",
+      "attempt": 1,
+      "attempt_id": "T03:frame_lit:a1",
+      "request_fingerprint": "0794d30185f15973ea6c78f56240fbece43510b80cd41c862d7271199efb169d",
+      "prompt": "Use case: lighting-weather. Edit this exact paper-cut GAME SCREEN. Change ONLY the single large interactive streetlamp on the RIGHT, with its lampshade centered near x=1345 y=445 in this 1776x936 image: switch it ON. Make its muted warm-apricot shade softly luminous, and let a broad but low-intensity warm pool of light softly illuminate the nearby paper street, right wall, bicycle, and the right side of the crow. The light must visibly affect surrounding paper layers, not merely change the lamp's bulb. Keep it night; no white or blown-out orange light, no bloom or lens flare. Overall content luminance must stay controlled. Preserve ALL geometry, exact framing, texture, colors outside the local light influence, every character pose and position, the chest-attached ink, the crow silhouette, the two FLAT red ink stamps, furniture, storefronts, windows and background. Do not add, remove, resize, relocate, redraw or replace anything. No new text, UI, extra figures or highlights on the whole ink outline. Ink remains moderately glossy with restrained directional reflections. Output the same image composition, fully opaque.",
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T03/frame_unlit_content.png",
+          "sha256": "12e2425607f491ba17bb748788d9658fdf6bb54fae18835e07616aa6b7c0645e"
+        }
+      ],
+      "transparent_background": false,
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-472a17d8-065d-48f3-a547-fae94b156708.png",
+      "output": "D:\\gunforge_cache\\g01\\T03\\frame_lit_a1.png",
+      "sha256": "ebad4489517caaaddc29f22ad4c44dfbe1d98514ddc5ad95661af7cf4cab882f",
+      "actual_size": [
+        1728,
+        910
+      ]
+    },
+    {
+      "id": "frame_unlit",
+      "attempt": 2,
+      "attempt_id": "T03:frame_unlit:a2",
+      "request_fingerprint": "de8bdc4595b68e6f2495f5f38c4d9d1cdc5163b15d655eac0409602cac382592",
+      "prompt": "Precise limited edit of this exact paper-cut game screenshot. Preserve the entire composition, ALL actor poses and positions, HUD-free framing, paper textures, the resident and attached ink, the crow and its red flat stamp, storefront props and all other geometry. Make only TWO practical gameplay corrections: (1) Enlarge ONLY the large OFF streetlamp SHADE on the right by about 25 percent around its current center near (1345,445), so its broad main silhouette is easier to shoot; keep the pole, location and OFF/no-light state unchanged. (2) Increase the tone of the EXISTING midground paper background immediately behind the crow's body and wings (roughly x=900..1230, y=370..610) to muted dusty peach/apricot, around encoded luminance 35 to 45 percent. Achieve this as ordinary subtly translucent background paper/lit distant wall, NOT a glow or halo attached to the crow, NOT a circle, box or target marker. Keep all the crow's black surface and restrained local gray-blue wet reflections unchanged. Blend the background illumination naturally into the existing street depth; keep the overall night scene, not sunset. Do not add an object, bright white patch, light beam, label, border, HUD or new red mark. No plastic shine, no broad specular highlights, no entire bright outline. Return this same composition with only the enlarged dark lampshade and improved background separation behind the crow.",
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T03/frame_unlit_content.png",
+          "sha256": "12e2425607f491ba17bb748788d9658fdf6bb54fae18835e07616aa6b7c0645e"
+        }
+      ],
+      "transparent_background": false,
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-d763cf8c-4086-421f-9264-8eeb5e21f321.png",
+      "output": "D:\\gunforge_cache\\g01\\T03\\frame_unlit_a2.png",
+      "sha256": "c7968828bdcda462ee8d5b7c8b0598ece15ee06dc444f23fd8c073ec317be3b8",
+      "actual_size": [
+        1727,
+        910
+      ]
+    },
+    {
+      "id": "frame_lit",
+      "attempt": 2,
+      "attempt_id": "T03:frame_lit:a2",
+      "request_fingerprint": "0bc708e9114f7c7a98a4dd2205d7cbf3d2b28b39a3d5c030fe03417024412c8b",
+      "prompt": "Use case: lighting-weather. Edit this exact paper-cut GAME SCREEN. Change ONLY the single large interactive streetlamp on the RIGHT, with its lampshade centered near x=1345 y=445 in this 1776x936 image: switch it ON. Make its muted warm-apricot shade softly luminous, and let a broad but low-intensity warm pool of light softly illuminate the nearby paper street, right wall, bicycle, and the right side of the crow. The light must visibly affect surrounding paper layers, not merely change the lamp's bulb. Keep it night; no white or blown-out orange light, no bloom or lens flare. Overall content luminance must stay controlled. Preserve ALL geometry, exact framing, texture, colors outside the local light influence, every character pose and position, the chest-attached ink, the crow silhouette, the two FLAT red ink stamps, furniture, storefronts, windows and background. Do not add, remove, resize, relocate, redraw or replace anything. No new text, UI, extra figures or highlights on the whole ink outline. Ink remains moderately glossy with restrained directional reflections. Output the same image composition, fully opaque.",
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T03/frame_unlit_content_a2.png",
+          "sha256": "58a758b9a90df210f033e483a9d314e07073872f5cdb0492844553a7d17dfb51"
+        }
+      ],
+      "transparent_background": false,
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-7b24d594-3d87-4634-a2b2-d589fef2c56f.png",
+      "output": "D:\\gunforge_cache\\g01\\T03\\frame_lit_a2.png",
+      "sha256": "263c0ce91e66f9dd74147af1fdc59d60205ab53881034e507bd08c0184d31c61",
+      "actual_size": [
+        1727,
+        910
+      ]
+    }
+  ]
+}

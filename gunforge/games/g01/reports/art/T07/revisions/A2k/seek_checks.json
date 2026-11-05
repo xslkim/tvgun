@@ -1,0 +1,12 @@
+{
+  "vendor": {
+    "random_seek_slot_state_equal": true,
+    "scope": "slots only, actual image/transition remains pending",
+    "occluded_ink_pixels": 0
+  },
+  "video": {
+    "random_seek_slot_state_equal": true,
+    "scope": "slots only, actual image/transition remains pending",
+    "occluded_ink_pixels": 75
+  }
+}

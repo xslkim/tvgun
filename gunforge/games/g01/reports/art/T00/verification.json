@@ -1,0 +1,450 @@
+{
+  "tests": [
+    {
+      "name": "SDF offline roundtrip",
+      "passed": true,
+      "actual": "pass",
+      "expected": "pass"
+    },
+    {
+      "name": "SDF wrong color transfer rejected",
+      "passed": true,
+      "actual": "fail",
+      "expected": "fail"
+    },
+    {
+      "name": "Crop preserves origin",
+      "passed": true,
+      "actual": [
+        60,
+        60
+      ],
+      "expected": [
+        60,
+        60
+      ]
+    },
+    {
+      "name": "RGB bleed preserves alpha",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "RGB bleed retains edge color",
+      "passed": true,
+      "actual": [
+        40,
+        60,
+        100
+      ],
+      "expected": [
+        40,
+        60,
+        100
+      ]
+    },
+    {
+      "name": "Missing middle layer rejected",
+      "passed": true,
+      "actual": "fail",
+      "expected": "fail"
+    },
+    {
+      "name": "Opaque far layer masks hole in final alpha",
+      "passed": true,
+      "actual": "pass",
+      "expected": "pass"
+    },
+    {
+      "name": "Valid layer extent passes",
+      "passed": true,
+      "actual": "pass",
+      "expected": "pass"
+    },
+    {
+      "name": "Valid primary mask",
+      "passed": true,
+      "actual": "pass",
+      "expected": "pass"
+    },
+    {
+      "name": "HUD overlap rejected",
+      "passed": true,
+      "actual": "fail",
+      "expected": "fail"
+    },
+    {
+      "name": "Core outside body rejected",
+      "passed": true,
+      "actual": "fail",
+      "expected": "fail"
+    },
+    {
+      "name": "Oversized lossless atlas rejected",
+      "passed": true,
+      "actual": "fail",
+      "expected": "fail"
+    },
+    {
+      "name": "Valid estimate does not claim engine pass",
+      "passed": true,
+      "actual": "pending",
+      "expected": "pending"
+    },
+    {
+      "name": "Extra rig part rejected",
+      "passed": true,
+      "actual": "fail",
+      "expected": "fail"
+    },
+    {
+      "name": "Tracker rejects solid bright false screen",
+      "passed": true,
+      "actual": "fail",
+      "expected": "fail"
+    },
+    {
+      "name": "Tracker frontal control acquires frame",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "Tracker preserves every perspective result including stress",
+      "passed": true,
+      "actual": 4,
+      "expected": 4
+    },
+    {
+      "name": "Tracker tests three admissible perspectives",
+      "passed": true,
+      "actual": 3,
+      "expected": 3
+    },
+    {
+      "name": "Tracker retains out-of-contract stress",
+      "passed": true,
+      "actual": "retained_out_of_contract_stress",
+      "expected": "retained_out_of_contract_stress"
+    },
+    {
+      "name": "Valid color format",
+      "passed": true,
+      "actual": "pass",
+      "expected": "pass"
+    },
+    {
+      "name": "Data texture format rejects RGBA",
+      "passed": true,
+      "actual": "fail",
+      "expected": "fail"
+    },
+    {
+      "name": "Brightness ceiling catches full white",
+      "passed": true,
+      "actual": "pass",
+      "expected": "pass"
+    },
+    {
+      "name": "Brightness ceiling rejects white",
+      "passed": true,
+      "actual": "fail",
+      "expected": "fail"
+    },
+    {
+      "name": "CIEDE2000 exact palette",
+      "passed": true,
+      "actual": "pass",
+      "expected": "pass"
+    },
+    {
+      "name": "CIEDE2000 wrong palette",
+      "passed": true,
+      "actual": "fail",
+      "expected": "fail"
+    },
+    {
+      "name": "Loop still-frame control",
+      "passed": true,
+      "actual": "pass",
+      "expected": "pass"
+    },
+    {
+      "name": "Invalid loop rejected",
+      "passed": true,
+      "actual": "fail",
+      "expected": "fail"
+    },
+    {
+      "name": "Budget reservation",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "Idempotent reservation",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "In-flight funds enforce run cap",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "Restart recovers task for polling",
+      "passed": true,
+      "actual": "poll",
+      "expected": "poll"
+    },
+    {
+      "name": "Settlement releases unused reserve",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "Unknown submission not blindly repeated",
+      "passed": true,
+      "actual": "reconcile_before_resubmit",
+      "expected": "reconcile_before_resubmit"
+    },
+    {
+      "name": "Crop and pivot preserve assembled visual placement",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "Light state changes visible scene brightness",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "Corner -60,-30,-1 opaque",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "Corner -60,-30,1 opaque",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "Corner -60,30,-1 opaque",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "Corner -60,30,1 opaque",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "Corner 60,-30,-1 opaque",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "Corner 60,-30,1 opaque",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "Corner 60,30,-1 opaque",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "Corner 60,30,1 opaque",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "Every checker has explicit status",
+      "passed": true,
+      "actual": 17,
+      "expected": 17
+    },
+    {
+      "name": "Review schema reads pending decisions",
+      "passed": true,
+      "actual": 9,
+      "expected": 9
+    }
+  ],
+  "checks": {
+    "C01": {
+      "status": "pass",
+      "reason": "PNG format, channel mode and declared size",
+      "details": {
+        "mode": "RGBA",
+        "size": [
+          256,
+          256
+        ]
+      }
+    },
+    "C02": {
+      "status": "pass",
+      "reason": "Known matte color residue in semi-transparent pixels",
+      "details": {
+        "fraction": 0.0,
+        "limitation": "Black/white composite evidence still requires visual review"
+      }
+    },
+    "C03": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "C04": {
+      "status": "pass",
+      "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+      "details": {
+        "coverage": 1.0
+      }
+    },
+    "C05": {
+      "status": "pass",
+      "reason": "OCR text versus permitted text",
+      "details": {
+        "recognized": "",
+        "confidence": 0,
+        "engine": "tesseract.js-7.0.0-eng+chi_sim"
+      }
+    },
+    "C06": {
+      "status": "pending",
+      "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+      "details": {
+        "contrast": 0.7702745098039215
+      }
+    },
+    "C07a": {
+      "status": "pass",
+      "reason": "Coverage at this declared motion state",
+      "details": {
+        "missing_pixels": 0
+      }
+    },
+    "C07b": {
+      "status": "pass",
+      "reason": "Coverage at this declared motion state",
+      "details": {
+        "missing_pixels": 0
+      }
+    },
+    "C08": {
+      "status": "pass",
+      "reason": "Shot-blocking mask matches visible layer",
+      "details": {
+        "different_pixels": 0
+      }
+    },
+    "C09": {
+      "status": "pass",
+      "reason": "Primary size, visible protection, weak point and motion reservation",
+      "details": {
+        "effective_radius": 59.92373341205755,
+        "protected_overlap": false,
+        "weak_outside": false,
+        "hud_overlap": false
+      }
+    },
+    "C10": {
+      "status": "pending",
+      "reason": "Part list passed; rendered extreme-pose seam evidence missing",
+      "details": {}
+    },
+    "C11": {
+      "status": "pending",
+      "reason": "Static containment passed; complete state/frame/alignment evidence missing",
+      "details": {}
+    },
+    "C12": {
+      "status": "pass",
+      "reason": "Aligned loop endpoint position and velocity",
+      "details": {
+        "pixel_difference": 0.0,
+        "velocity_difference": 0.0
+      }
+    },
+    "C13": {
+      "status": "pass",
+      "reason": "Deterministic projected screenshot screening only; real recordings remain pending",
+      "details": {
+        "samples": [
+          {
+            "acquired": true,
+            "edges": 4,
+            "low_threshold": 190,
+            "within_tracker_geometry_contract": true,
+            "role": "acquisition",
+            "expected": "acquire_four_edges"
+          },
+          {
+            "acquired": true,
+            "edges": 4,
+            "low_threshold": 173,
+            "within_tracker_geometry_contract": true,
+            "role": "acquisition",
+            "expected": "acquire_four_edges"
+          },
+          {
+            "acquired": true,
+            "edges": 4,
+            "low_threshold": 150,
+            "within_tracker_geometry_contract": true,
+            "role": "acquisition",
+            "expected": "acquire_four_edges"
+          },
+          {
+            "acquired": false,
+            "edges": 0,
+            "low_threshold": 184,
+            "within_tracker_geometry_contract": false,
+            "role": "retained_out_of_contract_stress",
+            "expected": "reject_or_acquire_without_acceptance_credit"
+          }
+        ],
+        "actual_camera_acceptance": "pending",
+        "historical_failure": "Original second quad exceeds existing tracker 15-degree opposite-edge divergence; retained as stress, not removed or used to relax tracker"
+      }
+    },
+    "C14": {
+      "status": "pending",
+      "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+      "details": {}
+    },
+    "C15": {
+      "status": "pending",
+      "reason": "Offline estimate fits; Godot import/peak measurement pending",
+      "details": {
+        "bytes": 262144
+      }
+    },
+    "C16": {
+      "status": "pass",
+      "reason": "Offline SDF round-trip; engine sampling is a separate pending check",
+      "details": {
+        "max_error_px": 0.0
+      }
+    }
+  },
+  "cache": "D:\\gunforge_cache\\g01\\T00"
+}

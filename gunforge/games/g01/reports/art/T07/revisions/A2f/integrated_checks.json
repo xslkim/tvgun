@@ -1,0 +1,3132 @@
+{
+  "frames": 120,
+  "enemy_frame_checks": 240,
+  "all_sampled_background_numeric_pass": true,
+  "minimum_contrast": 0.2442627450980392,
+  "minimum_background": 0.38006666666666666,
+  "material_alpha_preserved": true,
+  "offscreen_enemy_crop_origin_regression_rejected": true,
+  "scope": "8s CPU reference, two fixed slots; actual engine, full trajectory and hardware pending",
+  "rows": [
+    {
+      "frame": 0,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        0.0,
+        0.0
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.25724313725490194,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 0,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        0.0,
+        0.0
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2783843137254902,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 1,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        3.5588450245201804,
+        3.5539677511002177
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2579254901960784,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 1,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        3.5588450245201804,
+        3.5539677511002177
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2783843137254902,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 2,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        7.107935502200435,
+        7.068997487803816
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2568352941176471,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 2,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        7.107935502200435,
+        7.068997487803816
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27793725490196075,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 3,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        10.637543622735699,
+        10.506577808748212
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2572235294117647,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 3,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        10.637543622735699,
+        10.506577808748212
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27793725490196075,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 4,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        14.137994975607633,
+        13.829045864577205
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.25558039215686273,
+      "background_Yprime": 0.38119607843137254,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 4,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        14.137994975607633,
+        13.829045864577205
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27759999999999996,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 5,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        17.59969506697141,
+        16.999999999999996
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.25472941176470587,
+      "background_Yprime": 0.38055686274509803,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 5,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        17.59969506697141,
+        16.999999999999996
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27759999999999996,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 6,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        21.013155617496423,
+        19.984698577944087
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.25466666666666665,
+      "background_Yprime": 0.38055686274509803,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 6,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        21.013155617496423,
+        19.984698577944087
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2775333333333333,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 7,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        24.36902056908042,
+        22.750440616201182
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.25344705882352947,
+      "background_Yprime": 0.38055686274509803,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 7,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        24.36902056908042,
+        22.750440616201182
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.277321568627451,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 8,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        27.65809172915441,
+        25.2669240662314
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.25140392156862745,
+      "background_Yprime": 0.3805137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 8,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        27.65809172915441,
+        25.2669240662314
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2767647058823529,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 9,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        30.87135398228918,
+        27.50657780874821
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.25093333333333334,
+      "background_Yprime": 0.3805137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 9,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        30.87135398228918,
+        27.50657780874821
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2767647058823529,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 10,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        33.99999999999999,
+        29.444863728670914
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2489098039215686,
+      "background_Yprime": 0.3801098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 10,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        33.99999999999999,
+        29.444863728670914
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27591372549019605,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 11,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        37.035454381021836,
+        31.06054555984843
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2500823529411764,
+      "background_Yprime": 0.3801098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 11,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        37.035454381021836,
+        31.06054555984843
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27619215686274506,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 12,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        39.969397155888174,
+        32.33592155403522
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.24846274509803917,
+      "background_Yprime": 0.3801098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 12,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        39.969397155888174,
+        32.33592155403522
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27542352941176473,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 13,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        42.79378659138895,
+        33.25701842494939
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.24773725490196077,
+      "background_Yprime": 0.3801098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 13,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        42.79378659138895,
+        33.25701842494939
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2750196078431373,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 14,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        45.500881232402364,
+        33.81374444252129
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2458392156862745,
+      "background_Yprime": 0.38006666666666666,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 14,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        45.500881232402364,
+        33.81374444252129
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2742941176470588,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 15,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        48.083261120685236,
+        34.0
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.24686666666666665,
+      "background_Yprime": 0.3801098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 15,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        48.083261120685236,
+        34.0
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2744627450980392,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 16,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        50.5338481324628,
+        33.8137444425213
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.24567058823529417,
+      "background_Yprime": 0.38006666666666666,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 16,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        50.5338481324628,
+        33.8137444425213
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2742941176470588,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 17,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        52.84592537907401,
+        33.25701842494939
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.24594901960784313,
+      "background_Yprime": 0.38006666666666666,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 17,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        52.84592537907401,
+        33.25701842494939
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27433725490196076,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 18,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        55.01315561749642,
+        32.335921554035224
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.24594901960784313,
+      "background_Yprime": 0.38006666666666666,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 18,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        55.01315561749642,
+        32.335921554035224
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27433725490196076,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 19,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        57.02959862028883,
+        31.060545559848432
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.24684313725490192,
+      "background_Yprime": 0.3801098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 19,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        57.02959862028883,
+        31.060545559848432
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27429411764705885,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 20,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        58.88972745734183,
+        29.444863728670917
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2442627450980392,
+      "background_Yprime": 0.38006666666666666,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 20,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        58.88972745734183,
+        29.444863728670917
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27372156862745095,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 21,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        60.58844364480901,
+        27.50657780874821
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.24543529411764703,
+      "background_Yprime": 0.38006666666666666,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 21,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        60.58844364480901,
+        27.50657780874821
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2735686274509804,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 22,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        62.12109111969686,
+        25.26692406623141
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.24576078431372544,
+      "background_Yprime": 0.38006666666666666,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 22,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        62.12109111969686,
+        25.26692406623141
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27429411764705885,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 23,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        63.483469001809716,
+        22.75044061620117
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.24709803921568627,
+      "background_Yprime": 0.38006666666666666,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 23,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        63.483469001809716,
+        22.75044061620117
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27401568627450984,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 24,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        64.67184310807043,
+        19.98469857794409
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2477607843137255,
+      "background_Yprime": 0.38006666666666666,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 24,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        64.67184310807043,
+        19.98469857794409
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2738470588235294,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 25,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        65.68295618765664,
+        16.999999999999996
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2465882352941176,
+      "background_Yprime": 0.38006666666666666,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 25,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        65.68295618765664,
+        16.999999999999996
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27384705882352944,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 26,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        66.51403684989879,
+        13.829045864577202
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2466078431372549,
+      "background_Yprime": 0.38006666666666666,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 26,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        66.51403684989879,
+        13.829045864577202
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2747411764705882,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 27,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        67.16280716046937,
+        10.506577808748215
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2490705882352941,
+      "background_Yprime": 0.3801098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 27,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        67.16280716046937,
+        10.506577808748215
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2747411764705882,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 28,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        67.62748888504258,
+        7.068997487803816
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.24778039215686273,
+      "background_Yprime": 0.38006666666666666,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 28,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        67.62748888504258,
+        7.068997487803816
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2747411764705882,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 29,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        67.90680836331101,
+        3.553967751100227
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.24893333333333334,
+      "background_Yprime": 0.3801098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 29,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        67.90680836331101,
+        3.553967751100227
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2749098039215686,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 30,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        68.0,
+        4.1637991171010006e-15
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.24773725490196077,
+      "background_Yprime": 0.38006666666666666,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 30,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        68.0,
+        4.1637991171010006e-15
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2749098039215687,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 31,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        67.90680836331101,
+        -3.553967751100219
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2486313725490196,
+      "background_Yprime": 0.38006666666666666,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 31,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        67.90680836331101,
+        -3.553967751100219
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2751882352941176,
+      "background_Yprime": 0.3835411764705882,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 32,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        67.6274888850426,
+        -7.068997487803808
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2495254901960785,
+      "background_Yprime": 0.3801098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 32,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        67.6274888850426,
+        -7.068997487803808
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27546666666666664,
+      "background_Yprime": 0.3835411764705882,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 33,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        67.16280716046936,
+        -10.506577808748222
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.24846274509803923,
+      "background_Yprime": 0.38006666666666666,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 33,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        67.16280716046936,
+        -10.506577808748222
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27546666666666664,
+      "background_Yprime": 0.3835411764705882,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 34,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        66.51403684989879,
+        -13.829045864577195
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.25093333333333334,
+      "background_Yprime": 0.38006666666666666,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 34,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        66.51403684989879,
+        -13.829045864577195
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27557647058823526,
+      "background_Yprime": 0.3835411764705882,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 35,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        65.68295618765664,
+        -17.000000000000004
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.25050980392156863,
+      "background_Yprime": 0.38006666666666666,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 35,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        65.68295618765664,
+        -17.000000000000004
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2755921568627451,
+      "background_Yprime": 0.3835411764705882,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 36,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        64.67184310807045,
+        -19.984698577944084
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.24918823529411763,
+      "background_Yprime": 0.38006666666666666,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 36,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        64.67184310807045,
+        -19.984698577944084
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27559215686274513,
+      "background_Yprime": 0.3835411764705882,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 37,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        63.483469001809716,
+        -22.750440616201182
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2503411764705883,
+      "background_Yprime": 0.38006666666666666,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 37,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        63.483469001809716,
+        -22.750440616201182
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27546666666666664,
+      "background_Yprime": 0.3835411764705882,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 38,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        62.121091119696864,
+        -25.266924066231397
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.25149019607843137,
+      "background_Yprime": 0.3801098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 38,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        62.121091119696864,
+        -25.266924066231397
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27474117647058827,
+      "background_Yprime": 0.3835411764705882,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 39,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        60.58844364480902,
+        -27.506577808748208
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2510862745098039,
+      "background_Yprime": 0.38006666666666666,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 39,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        60.58844364480902,
+        -27.506577808748208
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2747411764705882,
+      "background_Yprime": 0.3835411764705882,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 40,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        58.889727457341834,
+        -29.44486372867091
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2522745098039216,
+      "background_Yprime": 0.3801098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 40,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        58.889727457341834,
+        -29.44486372867091
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27429411764705885,
+      "background_Yprime": 0.3835411764705882,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 41,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        57.02959862028884,
+        -31.060545559848432
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2507647058823529,
+      "background_Yprime": 0.38006666666666666,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 41,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        57.02959862028884,
+        -31.060545559848432
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27474117647058827,
+      "background_Yprime": 0.3835411764705882,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 42,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        55.01315561749642,
+        -32.33592155403522
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.25168235294117647,
+      "background_Yprime": 0.3800862745098039,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 42,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        55.01315561749642,
+        -32.33592155403522
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27450588235294116,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 43,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        52.84592537907403,
+        -33.257018424949386
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.25168235294117647,
+      "background_Yprime": 0.3800862745098039,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 43,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        52.84592537907403,
+        -33.257018424949386
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27450588235294116,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 44,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        50.53384813246282,
+        -33.81374444252129
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2523843137254902,
+      "background_Yprime": 0.3801098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 44,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        50.53384813246282,
+        -33.81374444252129
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2744627450980392,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 45,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        48.083261120685236,
+        -34.0
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.25278823529411765,
+      "background_Yprime": 0.3801098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 45,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        48.083261120685236,
+        -34.0
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2744627450980392,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 46,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        45.50088123240234,
+        -33.81374444252129
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2523843137254902,
+      "background_Yprime": 0.3801098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 46,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        45.50088123240234,
+        -33.81374444252129
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2744627450980392,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 47,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        42.793786591388944,
+        -33.257018424949386
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2531607843137255,
+      "background_Yprime": 0.3801098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 47,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        42.793786591388944,
+        -33.257018424949386
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2747411764705882,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 48,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        39.96939715588818,
+        -32.335921554035224
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.25355686274509803,
+      "background_Yprime": 0.3801098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 48,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        39.96939715588818,
+        -32.335921554035224
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2749098039215686,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 49,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        37.03545438102186,
+        -31.060545559848435
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2537921568627451,
+      "background_Yprime": 0.3801098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 49,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        37.03545438102186,
+        -31.060545559848435
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2752980392156863,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 50,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        33.99999999999999,
+        -29.444863728670914
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2556235294117647,
+      "background_Yprime": 0.3805137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 50,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        33.99999999999999,
+        -29.444863728670914
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27563529411764703,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 51,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        30.871353982289186,
+        -27.50657780874822
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.25579607843137253,
+      "background_Yprime": 0.3805137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 51,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        30.871353982289186,
+        -27.50657780874822
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27631764705882356,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 52,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        27.658091729154403,
+        -25.266924066231397
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.25630588235294116,
+      "background_Yprime": 0.3805137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 52,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        27.658091729154403,
+        -25.266924066231397
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27631764705882356,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 53,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        24.369020569080444,
+        -22.7504406162012
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2561803921568627,
+      "background_Yprime": 0.38055686274509803,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 53,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        24.369020569080444,
+        -22.7504406162012
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2770862745098039,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 54,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        21.01315561749643,
+        -19.984698577944094
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.25558039215686273,
+      "background_Yprime": 0.38055686274509803,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 54,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        21.01315561749643,
+        -19.984698577944094
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.277321568627451,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 55,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        17.599695066971428,
+        -17.000000000000014
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.25675294117647063,
+      "background_Yprime": 0.38055686274509803,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 55,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        17.599695066971428,
+        -17.000000000000014
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27776862745098035,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 56,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        14.137994975607633,
+        -13.829045864577205
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.25747843137254905,
+      "background_Yprime": 0.3806,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 56,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        14.137994975607633,
+        -13.829045864577205
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.27821568627450977,
+      "background_Yprime": 0.3835843137254902,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 57,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        10.637543622735707,
+        -10.50657780874822
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2564313725490196,
+      "background_Yprime": 0.38119607843137254,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 57,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        10.637543622735707,
+        -10.50657780874822
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2779372549019608,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 58,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        7.107935502200454,
+        -7.068997487803836
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.25792549019607847,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 58,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        7.107935502200454,
+        -7.068997487803836
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2779372549019608,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 59,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        3.5588450245202092,
+        -3.553967751100246
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.25775686274509807,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 59,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        3.5588450245202092,
+        -3.553967751100246
+      ],
+      "lamp": 0.0,
+      "normal_body_contrast": 0.2782156862745098,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 60,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        8.327598234202001e-15,
+        -8.327598234202001e-15
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.25724313725490194,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 60,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        8.327598234202001e-15,
+        -8.327598234202001e-15
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2783843137254902,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 61,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -3.558845024520162,
+        3.5539677511001995
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2583294117647059,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 61,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -3.558845024520162,
+        3.5539677511001995
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.27849411764705884,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 62,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -7.107935502200438,
+        7.068997487803818
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.25807450980392155,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 62,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -7.107935502200438,
+        7.068997487803818
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2786627450980392,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 63,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -10.63754362273569,
+        10.506577808748204
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.25926666666666665,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 63,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -10.63754362273569,
+        10.506577808748204
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2786627450980392,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 64,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -14.137994975607617,
+        13.82904586457719
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.25905490196078435,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 64,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -14.137994975607617,
+        13.82904586457719
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.27921960784313726,
+      "background_Yprime": 0.3843098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 65,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -17.599695066971385,
+        16.999999999999975
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.25978039215686266,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 65,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -17.599695066971385,
+        16.999999999999975
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.27951372549019604,
+      "background_Yprime": 0.3843098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 66,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -21.013155617496444,
+        19.9846985779441
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.26067450980392154,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 66,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -21.013155617496444,
+        19.9846985779441
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.27955686274509806,
+      "background_Yprime": 0.3843098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 67,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -24.36902056908043,
+        22.75044061620119
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2602745098039215,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 67,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -24.36902056908043,
+        22.75044061620119
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.279835294117647,
+      "background_Yprime": 0.3843098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 68,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -27.65809172915439,
+        25.266924066231386
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.26067450980392154,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 68,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -27.65809172915439,
+        25.266924066231386
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2802392156862745,
+      "background_Yprime": 0.3843098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 69,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -30.871353982289143,
+        27.50657780874819
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.26093333333333335,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 69,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -30.871353982289143,
+        27.50657780874819
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2802823529411764,
+      "background_Yprime": 0.3843098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 70,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -34.00000000000001,
+        29.44486372867092
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2615254901960784,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 70,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -34.00000000000001,
+        29.44486372867092
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.280686274509804,
+      "background_Yprime": 0.38467058823529415,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 71,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -37.03545438102184,
+        31.06054555984843
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2631450980392157,
+      "background_Yprime": 0.38128235294117646,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 71,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -37.03545438102184,
+        31.06054555984843
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28067058823529406,
+      "background_Yprime": 0.38467058823529415,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 72,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -39.96939715588817,
+        32.33592155403522
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.26325490196078427,
+      "background_Yprime": 0.38128235294117646,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 72,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -39.96939715588817,
+        32.33592155403522
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2807294117647059,
+      "background_Yprime": 0.38467058823529415,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 73,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -42.79378659138894,
+        33.257018424949386
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.26431764705882355,
+      "background_Yprime": 0.38128235294117646,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 73,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -42.79378659138894,
+        33.257018424949386
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28100784313725485,
+      "background_Yprime": 0.3847137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 74,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -45.500881232402364,
+        33.81374444252129
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.26483137254901956,
+      "background_Yprime": 0.38128235294117646,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 74,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -45.500881232402364,
+        33.81374444252129
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28141176470588236,
+      "background_Yprime": 0.3847137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 75,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -48.08326112068523,
+        34.0
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2650901960784314,
+      "background_Yprime": 0.38128235294117646,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 75,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -48.08326112068523,
+        34.0
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2811764705882353,
+      "background_Yprime": 0.3847137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 76,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -50.53384813246279,
+        33.8137444425213
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.26520392156862743,
+      "background_Yprime": 0.38128235294117646,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 76,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -50.53384813246279,
+        33.8137444425213
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28141176470588236,
+      "background_Yprime": 0.3847137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 77,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -52.84592537907404,
+        33.257018424949386
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2664274509803921,
+      "background_Yprime": 0.38128235294117646,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 77,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -52.84592537907404,
+        33.257018424949386
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2811764705882353,
+      "background_Yprime": 0.3847137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 78,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -55.013155617496416,
+        32.335921554035224
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2664274509803921,
+      "background_Yprime": 0.38128235294117646,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 78,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -55.013155617496416,
+        32.335921554035224
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2811764705882353,
+      "background_Yprime": 0.3847137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 79,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -57.029598620288844,
+        31.060545559848425
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.26710980392156863,
+      "background_Yprime": 0.38172941176470593,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 79,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -57.029598620288844,
+        31.060545559848425
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2811764705882353,
+      "background_Yprime": 0.3847137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 80,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -58.88972745734182,
+        29.44486372867093
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.26617254901960785,
+      "background_Yprime": 0.38128235294117646,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 80,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -58.88972745734182,
+        29.44486372867093
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2816901960784313,
+      "background_Yprime": 0.3847137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 81,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -60.58844364480901,
+        27.50657780874822
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2673450980392157,
+      "background_Yprime": 0.3816862745098039,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 81,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -60.58844364480901,
+        27.50657780874822
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.281521568627451,
+      "background_Yprime": 0.3847137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 82,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -62.121091119696864,
+        25.2669240662314
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2673450980392157,
+      "background_Yprime": 0.3816862745098039,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 82,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -62.121091119696864,
+        25.2669240662314
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2812431372549019,
+      "background_Yprime": 0.3847137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 83,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -63.48346900180971,
+        22.750440616201203
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2683058823529412,
+      "background_Yprime": 0.38196470588235293,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 83,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -63.48346900180971,
+        22.750440616201203
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2813019607843138,
+      "background_Yprime": 0.3847137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 84,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -64.67184310807043,
+        19.984698577944094
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.26898823529411764,
+      "background_Yprime": 0.38221960784313724,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 84,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -64.67184310807043,
+        19.984698577944094
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28158039215686276,
+      "background_Yprime": 0.3847137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 85,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -65.68295618765664,
+        16.999999999999993
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2682392156862745,
+      "background_Yprime": 0.38196470588235293,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 85,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -65.68295618765664,
+        16.999999999999993
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28158039215686276,
+      "background_Yprime": 0.3847137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 86,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -66.51403684989877,
+        13.829045864577235
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.26807058823529406,
+      "background_Yprime": 0.38196470588235293,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 86,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -66.51403684989877,
+        13.829045864577235
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28113333333333335,
+      "background_Yprime": 0.3847137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 87,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -67.16280716046936,
+        10.506577808748224
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.26849803921568627,
+      "background_Yprime": 0.38196470588235293,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 87,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -67.16280716046936,
+        10.506577808748224
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28141176470588236,
+      "background_Yprime": 0.3847137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 88,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -67.62748888504258,
+        7.068997487803869
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.26785882352941176,
+      "background_Yprime": 0.38196470588235293,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 88,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -67.62748888504258,
+        7.068997487803869
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28141176470588236,
+      "background_Yprime": 0.3847137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 89,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -67.90680836331103,
+        3.55396775110019
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2683490196078431,
+      "background_Yprime": 0.38196470588235293,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 89,
+      "enemy": 1,
+      "state": "hardened",
+      "camera": [
+        -67.90680836331103,
+        3.55396775110019
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2811764705882353,
+      "background_Yprime": 0.3847137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 90,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -68.0,
+        1.2491397351303002e-14
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.26790196078431366,
+      "background_Yprime": 0.38172941176470593,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 90,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -68.0,
+        1.2491397351303002e-14
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2811764705882353,
+      "background_Yprime": 0.3847137254901961,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 91,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -67.90680836331103,
+        -3.5539677511001657
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.26796078431372555,
+      "background_Yprime": 0.38177254901960783,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 91,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -67.90680836331103,
+        -3.5539677511001657
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28124313725490196,
+      "background_Yprime": 0.38467058823529415,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 92,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -67.62748888504258,
+        -7.068997487803844
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.26807058823529406,
+      "background_Yprime": 0.38196470588235293,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 92,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -67.62748888504258,
+        -7.068997487803844
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28141176470588236,
+      "background_Yprime": 0.38467058823529415,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 93,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -67.16280716046937,
+        -10.506577808748201
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2677921568627451,
+      "background_Yprime": 0.3816862745098039,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 93,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -67.16280716046937,
+        -10.506577808748201
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28141176470588236,
+      "background_Yprime": 0.38467058823529415,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 94,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -66.51403684989877,
+        -13.829045864577212
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.26807058823529406,
+      "background_Yprime": 0.38172941176470593,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 94,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -66.51403684989877,
+        -13.829045864577212
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28141176470588236,
+      "background_Yprime": 0.3843098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 95,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -65.68295618765666,
+        -16.99999999999997
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2680509803921569,
+      "background_Yprime": 0.3815607843137254,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 95,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -65.68295618765666,
+        -16.99999999999997
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28141176470588236,
+      "background_Yprime": 0.3843098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 96,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -64.67184310807045,
+        -19.984698577944076
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2676235294117647,
+      "background_Yprime": 0.38128235294117646,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 96,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -64.67184310807045,
+        -19.984698577944076
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28141176470588236,
+      "background_Yprime": 0.3843098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 97,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -63.483469001809716,
+        -22.750440616201185
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.26730196078431373,
+      "background_Yprime": 0.38128235294117646,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 97,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -63.483469001809716,
+        -22.750440616201185
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28113333333333335,
+      "background_Yprime": 0.3843098039215686,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 98,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -62.12109111969687,
+        -25.266924066231383
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2668980392156862,
+      "background_Yprime": 0.38128235294117646,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 98,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -62.12109111969687,
+        -25.266924066231383
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28096470588235295,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 99,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -60.588443644809026,
+        -27.506577808748204
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2666627450980392,
+      "background_Yprime": 0.38128235294117646,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 99,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -60.588443644809026,
+        -27.506577808748204
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28100784313725485,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 100,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -58.88972745734183,
+        -29.444863728670917
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.26661960784313726,
+      "background_Yprime": 0.38128235294117646,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 100,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -58.88972745734183,
+        -29.444863728670917
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2810078431372549,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 101,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -57.02959862028885,
+        -31.060545559848418
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2657686274509804,
+      "background_Yprime": 0.38128235294117646,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 101,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -57.02959862028885,
+        -31.060545559848418
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28096470588235295,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 102,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -55.01315561749644,
+        -32.33592155403522
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2657686274509804,
+      "background_Yprime": 0.38128235294117646,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 102,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -55.01315561749644,
+        -32.33592155403522
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2807294117647059,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 103,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -52.84592537907405,
+        -33.25701842494938
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2657686274509804,
+      "background_Yprime": 0.38128235294117646,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 103,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -52.84592537907405,
+        -33.25701842494938
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2807294117647059,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 104,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -50.53384813246279,
+        -33.8137444425213
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2657254901960784,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 104,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -50.53384813246279,
+        -33.8137444425213
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2802392156862745,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 105,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -48.08326112068524,
+        -34.0
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.264721568627451,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 105,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -48.08326112068524,
+        -34.0
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28051764705882354,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 106,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -45.5008812324024,
+        -33.8137444425213
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.265,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 106,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -45.5008812324024,
+        -33.8137444425213
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2802392156862745,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 107,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -42.79378659138893,
+        -33.257018424949386
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2644274509803921,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 107,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -42.79378659138893,
+        -33.257018424949386
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2801137254901961,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 108,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -39.96939715588819,
+        -32.33592155403523
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2638705882352941,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 108,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -39.96939715588819,
+        -32.33592155403523
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28000392156862747,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 109,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -37.035454381021836,
+        -31.06054555984843
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2624196078431373,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 109,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -37.035454381021836,
+        -31.06054555984843
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.279835294117647,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 110,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -34.00000000000003,
+        -29.44486372867093
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.26318823529411767,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 110,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -34.00000000000003,
+        -29.44486372867093
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.28000392156862747,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 111,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -30.871353982289193,
+        -27.506577808748222
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2618039215686274,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 111,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -30.871353982289193,
+        -27.506577808748222
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2799607843137255,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 112,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -27.65809172915441,
+        -25.2669240662314
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.26139999999999997,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 112,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -27.65809172915441,
+        -25.2669240662314
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.27996078431372556,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 113,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -24.36902056908045,
+        -22.750440616201207
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2599490196078431,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 113,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -24.36902056908045,
+        -22.750440616201207
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.27955686274509806,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 114,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -21.01315561749644,
+        -19.984698577944098
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2595019607843137,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 114,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -21.01315561749644,
+        -19.984698577944098
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2793882352941176,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 115,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -17.599695066971407,
+        -16.999999999999996
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2602274509803921,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 115,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -17.599695066971407,
+        -16.999999999999996
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2793450980392157,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 116,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -14.137994975607672,
+        -13.82904586457724
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2599490196078431,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 116,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -14.137994975607672,
+        -13.82904586457724
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2791098039215686,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 117,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -10.637543622735715,
+        -10.50657780874823
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2583529411764706,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 117,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -10.637543622735715,
+        -10.50657780874823
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2783843137254902,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 118,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -7.107935502200492,
+        -7.068997487803873
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.25954509803921566,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 118,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -7.107935502200492,
+        -7.068997487803873
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2783843137254902,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 119,
+      "enemy": 0,
+      "state": "normal",
+      "camera": [
+        -3.558845024520157,
+        -3.5539677511001946
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2586745098039216,
+      "background_Yprime": 0.3812392156862745,
+      "numeric_background_pass": true
+    },
+    {
+      "frame": 119,
+      "enemy": 1,
+      "state": "normal",
+      "camera": [
+        -3.558845024520157,
+        -3.5539677511001946
+      ],
+      "lamp": 1.0,
+      "normal_body_contrast": 0.2782156862745098,
+      "background_Yprime": 0.38426666666666665,
+      "numeric_background_pass": true
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "scope": "CPU float premultiplied encoded-space BOX mips, bilinear sampling; no GPU certification",
+  "all_pass": true,
+  "rows": [
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\far_base.png",
+      "scale": 1.0,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\far_base.png",
+      "scale": 0.75,
+      "max_premultiplied_channel_error": 2.9802322387695312e-08,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\far_base.png",
+      "scale": 0.5,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\far_base.png",
+      "scale": 0.25,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\far_town.png",
+      "scale": 1.0,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\far_town.png",
+      "scale": 0.75,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\far_town.png",
+      "scale": 0.5,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\far_town.png",
+      "scale": 0.25,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_ground.png",
+      "scale": 1.0,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_ground.png",
+      "scale": 0.75,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_ground.png",
+      "scale": 0.5,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_ground.png",
+      "scale": 0.25,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_left.png",
+      "scale": 1.0,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_left.png",
+      "scale": 0.75,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_left.png",
+      "scale": 0.5,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_left.png",
+      "scale": 0.25,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_right.png",
+      "scale": 1.0,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_right.png",
+      "scale": 0.75,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_right.png",
+      "scale": 0.5,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_right.png",
+      "scale": 0.25,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_left.png",
+      "scale": 1.0,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_left.png",
+      "scale": 0.75,
+      "max_premultiplied_channel_error": 7.450580596923828e-09,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_left.png",
+      "scale": 0.5,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_left.png",
+      "scale": 0.25,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_right.png",
+      "scale": 1.0,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_right.png",
+      "scale": 0.75,
+      "max_premultiplied_channel_error": 2.9802322387695312e-08,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_right.png",
+      "scale": 0.5,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_right.png",
+      "scale": 0.25,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\lamp.png",
+      "scale": 1.0,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\lamp.png",
+      "scale": 0.75,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\lamp.png",
+      "scale": 0.5,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\lamp.png",
+      "scale": 0.25,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_spill.png",
+      "scale": 1.0,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_spill.png",
+      "scale": 0.75,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_spill.png",
+      "scale": 0.5,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_spill.png",
+      "scale": 0.25,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_glow.png",
+      "scale": 1.0,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_glow.png",
+      "scale": 0.75,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_glow.png",
+      "scale": 0.5,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    },
+    {
+      "source": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_glow.png",
+      "scale": 0.25,
+      "max_premultiplied_channel_error": 0.0,
+      "pass": true
+    }
+  ]
+}

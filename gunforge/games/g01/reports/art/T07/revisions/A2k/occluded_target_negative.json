@@ -1,0 +1,12 @@
+{
+  "vendor": {
+    "negative_fully_occluded_ink_removed": true,
+    "control_alpha": 255,
+    "occluded_alpha": 0
+  },
+  "video": {
+    "negative_fully_occluded_ink_removed": true,
+    "control_alpha": 253,
+    "occluded_alpha": 0
+  }
+}

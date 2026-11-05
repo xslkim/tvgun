@@ -1,0 +1,86 @@
+{
+  "alley_sketch_1": {
+    "C03": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.00016783280800816786
+      }
+    },
+    "C04": {
+      "status": "fail",
+      "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+      "details": {
+        "coverage": 0.8239859783317673
+      }
+    },
+    "C05": {
+      "status": "pending",
+      "reason": "Tesseract OCR and Chinese trained data are not installed",
+      "details": {}
+    }
+  },
+  "alley_sketch_2": {
+    "C03": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 9.541499160348074e-05
+      }
+    },
+    "C04": {
+      "status": "fail",
+      "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+      "details": {
+        "coverage": 0.8590650603022747
+      }
+    },
+    "C05": {
+      "status": "pending",
+      "reason": "Tesseract OCR and Chinese trained data are not installed",
+      "details": {}
+    }
+  },
+  "alley_sketch_3": {
+    "C03": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "C04": {
+      "status": "fail",
+      "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+      "details": {
+        "coverage": 0.8445969914697704
+      }
+    },
+    "C05": {
+      "status": "pending",
+      "reason": "Tesseract OCR and Chinese trained data are not installed",
+      "details": {}
+    }
+  },
+  "alley_sketch_4": {
+    "C03": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0001735543810084463
+      }
+    },
+    "C04": {
+      "status": "fail",
+      "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+      "details": {
+        "coverage": 0.8377024960044348
+      }
+    },
+    "C05": {
+      "status": "pending",
+      "reason": "Tesseract OCR and Chinese trained data are not installed",
+      "details": {}
+    }
+  }
+}

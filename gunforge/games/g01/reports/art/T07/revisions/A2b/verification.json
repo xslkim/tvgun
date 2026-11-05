@@ -1,0 +1,9 @@
+{
+  "syntax_joint_limits_original_PNGs": "pass",
+  "negative_elbow_hyperextension": "rejected",
+  "gallery_references_HTTP_media": "pass",
+  "feedback_logic": "isolated VM passed, no approvals written",
+  "browser": "verified current A2b page, actual NPC walk playback and enemy weak-hit playback; all four players readyState 4, no media errors",
+  "review_choices": "0/2; no new human decision recorded",
+  "screenshot": "browser_review_ready.png"
+}

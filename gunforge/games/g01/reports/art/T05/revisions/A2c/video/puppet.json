@@ -1,0 +1,599 @@
+{
+  "id": "g01_res_video",
+  "rig": "humanoid_10",
+  "role": "hostage_or_npc",
+  "is_enemy": false,
+  "human_body_attackable": false,
+  "human_attacks_player": false,
+  "enemy_hp": null,
+  "parts": [
+    {
+      "id": "torso",
+      "file": "parts/torso.png",
+      "parent": null,
+      "pivot": [
+        193.6,
+        56.384
+      ],
+      "attach": null,
+      "z": 5,
+      "rest_deg": 0,
+      "angle_range": [
+        -10,
+        10
+      ]
+    },
+    {
+      "id": "head",
+      "file": "parts/head.png",
+      "parent": "torso",
+      "pivot": [
+        133.184,
+        211.008
+      ],
+      "attach": [
+        193.6,
+        55.36
+      ],
+      "z": 7,
+      "rest_deg": 0,
+      "angle_range": [
+        -12,
+        18
+      ]
+    },
+    {
+      "id": "upper_arm_l",
+      "file": "parts/upper_arm_l.png",
+      "parent": "torso",
+      "pivot": [
+        96.55272727272728,
+        60.24727272727273
+      ],
+      "attach": [
+        76.864,
+        89.152
+      ],
+      "z": 3,
+      "rest_deg": 0,
+      "angle_range": [
+        -40,
+        110
+      ]
+    },
+    {
+      "id": "upper_arm_r",
+      "file": "parts/upper_arm_r.png",
+      "parent": "torso",
+      "pivot": [
+        75.02705343511451,
+        60.23767938931297
+      ],
+      "attach": [
+        310.336,
+        89.152
+      ],
+      "z": 3,
+      "rest_deg": 0,
+      "angle_range": [
+        -45,
+        15
+      ]
+    },
+    {
+      "id": "forearm_l",
+      "file": "parts/forearm_l.png",
+      "parent": "upper_arm_l",
+      "pivot": [
+        87.75073684210527,
+        55.93744360902256
+      ],
+      "attach": [
+        86.08,
+        203.84
+      ],
+      "z": 6,
+      "rest_deg": 0,
+      "angle_range": [
+        3.613245785640413,
+        128.6132457856404
+      ]
+    },
+    {
+      "id": "forearm_r",
+      "file": "parts/forearm_r.png",
+      "parent": "upper_arm_r",
+      "pivot": [
+        77.16638926174497,
+        56.30840268456376
+      ],
+      "attach": [
+        86.08,
+        203.84
+      ],
+      "z": 6,
+      "rest_deg": 0,
+      "angle_range": [
+        -120.72997605700635,
+        4.270023942993641
+      ]
+    },
+    {
+      "id": "thigh_l",
+      "file": "parts/thigh_l.png",
+      "parent": "torso",
+      "pivot": [
+        84.95266055045872,
+        58.140770642201836
+      ],
+      "attach": [
+        138.304,
+        326.72
+      ],
+      "z": 2,
+      "rest_deg": 0,
+      "angle_range": [
+        -75,
+        30
+      ]
+    },
+    {
+      "id": "thigh_r",
+      "file": "parts/thigh_r.png",
+      "parent": "torso",
+      "pivot": [
+        103.28504504504505,
+        58.77333333333333
+      ],
+      "attach": [
+        248.89600000000004,
+        326.72
+      ],
+      "z": 2,
+      "rest_deg": 0,
+      "angle_range": [
+        -75,
+        30
+      ]
+    },
+    {
+      "id": "shin_l",
+      "file": "parts/shin_l.png",
+      "parent": "thigh_l",
+      "pivot": [
+        80.32752941176471,
+        56.885960784313724
+      ],
+      "attach": [
+        84.91892913385827,
+        203.57392125984254
+      ],
+      "z": 1,
+      "rest_deg": 0,
+      "angle_range": [
+        0.1018283321368097,
+        95.1018283321368
+      ]
+    },
+    {
+      "id": "shin_r",
+      "file": "parts/shin_r.png",
+      "parent": "thigh_r",
+      "pivot": [
+        84.54400000000001,
+        56.896
+      ],
+      "attach": [
+        103.22018461538461,
+        203.17046153846152
+      ],
+      "z": 1,
+      "rest_deg": 0,
+      "angle_range": [
+        0.059396608321628366,
+        95.05939660832163
+      ]
+    },
+    {
+      "id": "prop",
+      "file": "parts/prop.png",
+      "parent": "forearm_r",
+      "pivot": [
+        42.0,
+        97.5
+      ],
+      "attach": [
+        86.0,
+        201
+      ],
+      "z": 8,
+      "rest_deg": 0,
+      "angle_range": [
+        -15,
+        15
+      ]
+    }
+  ],
+  "origin": [
+    500,
+    230
+  ],
+  "actions": [
+    "peek",
+    "walk",
+    "startle",
+    "wave_for_help",
+    "struggle",
+    "rescued_bounce",
+    "thank"
+  ],
+  "attack_actions": [],
+  "ink_anchor": [
+    191,
+    206
+  ],
+  "approval": "pending_A2",
+  "source_sheet": "video_sheet_1",
+  "normalization": {
+    "assembled_height_target": 768,
+    "uniform_final_factor": 1.024,
+    "original_part_individual_resizes_recorded": true
+  },
+  "joint_patch": {
+    "source_job": "joint_patch",
+    "paper_overlap_diameter": 71,
+    "measured_copper_diameter": 37.88061465864207,
+    "merged_into_existing_ten_parts": true,
+    "paper_color_matching": "local garment annulus; native fiber and copper retained"
+  },
+  "prop": {
+    "source_job": "video_prop_clean",
+    "role": "ordinary_civilian_object",
+    "attackable": false,
+    "external_aura_removed_by_alpha_support": true
+  },
+  "assembled_bbox": [
+    327,
+    60,
+    681,
+    828
+  ],
+  "assembled_height": 768,
+  "ink_anchor_method": "largest inscribed disk of actual torso/apron alpha, chest-abdomen only",
+  "rescue": {
+    "human_is_enemy": false,
+    "human_attackable": false,
+    "target": "independent_attached_ink",
+    "minimum_candidate_display_height": 300,
+    "tested_heights": [
+      300,
+      400,
+      512
+    ],
+    "complete_action_validation": "pending",
+    "approval": "pending_A2"
+  },
+  "animation_v2": {
+    "version": "civilian-motion-2",
+    "root_pivot": "hips, rebased in memory; original artwork and bind pose preserved",
+    "root_origin": [
+      500.0,
+      500.336
+    ],
+    "clips": {
+      "idle": 2.5,
+      "peek": 3.0,
+      "walk": 2.5,
+      "startle": 2.0,
+      "wave_for_help": 3.5,
+      "struggle": 3.0,
+      "rescued_bounce": 3.0,
+      "thank": 3.0
+    },
+    "knee_flexion_limits_deg": [
+      0,
+      95
+    ],
+    "elbow_flexion_limits_deg": [
+      0,
+      125
+    ],
+    "leg_solver": "two-bone IK, positive knee flexion, world-space stance targets",
+    "ankle_articulation": "counterrotate original foot pixels within shin+foot, 18px overlapping cuff; no added rig asset",
+    "walk": {
+      "stride_source_px": 96,
+      "period_seconds": 1.25,
+      "stance_fraction": 0.62,
+      "ground_reference_moves_with_camera": true
+    },
+    "prop": "rigid grip, held in right hand; free left hand waves",
+    "human_attack_actions": [],
+    "review": "pending_A2b",
+    "paper_alpha": "opaque interior normalization at render time; source PNG untouched",
+    "rescue_render": "separate arm clearance posture; visible decal and primary target clipped to torso inset of 7 content pixels",
+    "root_pivot_in_torso": [
+      193.60000000000002,
+      326.72
+    ],
+    "rest_hip_sink": 3.0460246984223316,
+    "local_joint_rotation_limits": {
+      "torso": [
+        -10,
+        10
+      ],
+      "head": [
+        -12,
+        18
+      ],
+      "upper_arm_l": [
+        -40,
+        110
+      ],
+      "upper_arm_r": [
+        -45,
+        15
+      ],
+      "prop": [
+        -15,
+        15
+      ],
+      "thigh_l": [
+        -75,
+        30
+      ],
+      "shin_l": [
+        0.1018283321368097,
+        95.1018283321368
+      ],
+      "forearm_l": [
+        4.480861366695509,
+        129.4808613666955
+      ],
+      "thigh_r": [
+        -75,
+        30
+      ],
+      "shin_r": [
+        0.059396608321628366,
+        95.05939660832163
+      ],
+      "forearm_r": [
+        -120.72997605700635,
+        4.270023942993641
+      ]
+    },
+    "leg_geometry": {
+      "l": {
+        "ankle_in_shin": [
+          80.53684210526316,
+          192.33684210526314
+        ],
+        "upper_length": 145.43315452943264,
+        "lower_length": 135.45104304665054,
+        "upper_axis_radians": 1.5710282643954527,
+        "lower_axis_radians": 1.569251024727851
+      },
+      "r": {
+        "ankle_in_shin": [
+          84.62105263157895,
+          188.05263157894737
+        ],
+        "upper_length": 144.39714277216,
+        "lower_length": 131.15665421260093,
+        "upper_axis_radians": 1.571245507648453,
+        "lower_axis_radians": 1.5702088412687232
+      }
+    }
+  },
+  "animation_v3": {
+    "version": "civilian-motion-3",
+    "root_pivot": "hips, rebased in memory; original artwork and bind pose preserved",
+    "root_pivot_in_torso": [
+      193.60000000000002,
+      326.72
+    ],
+    "root_origin": [
+      500.0,
+      500.336
+    ],
+    "rest_hip_sink": 3.0460246984223316,
+    "local_joint_rotation_limits": {
+      "torso": [
+        -10,
+        10
+      ],
+      "head": [
+        -12,
+        18
+      ],
+      "upper_arm_l": [
+        -40,
+        110
+      ],
+      "upper_arm_r": [
+        -45,
+        15
+      ],
+      "prop": [
+        -15,
+        15
+      ],
+      "thigh_l": [
+        -75,
+        30
+      ],
+      "shin_l": [
+        0.1018283321368097,
+        95.1018283321368
+      ],
+      "forearm_l": [
+        3.613245785640413,
+        128.6132457856404
+      ],
+      "thigh_r": [
+        -75,
+        30
+      ],
+      "shin_r": [
+        0.059396608321628366,
+        95.05939660832163
+      ],
+      "forearm_r": [
+        -120.72997605700635,
+        4.270023942993641
+      ]
+    },
+    "leg_geometry": {
+      "l": {
+        "ankle_in_shin": [
+          80.53684210526316,
+          192.33684210526314
+        ],
+        "upper_length": 145.43315452943264,
+        "lower_length": 135.45104304665054,
+        "upper_axis_radians": 1.5710282643954527,
+        "lower_axis_radians": 1.569251024727851
+      },
+      "r": {
+        "ankle_in_shin": [
+          84.62105263157895,
+          188.05263157894737
+        ],
+        "upper_length": 144.39714277216,
+        "lower_length": 131.15665421260093,
+        "upper_axis_radians": 1.571245507648453,
+        "lower_axis_radians": 1.5702088412687232
+      }
+    },
+    "clips": {
+      "idle": 2.5,
+      "peek": 3.0,
+      "walk": 2.5,
+      "startle": 2.0,
+      "wave_for_help": 3.5,
+      "struggle": 3.0,
+      "rescued_bounce": 3.0,
+      "thank": 3.0
+    },
+    "knee_flexion_limits_deg": [
+      0,
+      95
+    ],
+    "elbow_flexion_limits_deg": [
+      0,
+      125
+    ],
+    "leg_solver": "two-bone IK, positive knee flexion, world-space stance targets",
+    "ankle_articulation": "counterrotate original foot pixels within shin+foot, 18px overlapping cuff; no added rig asset",
+    "walk": {
+      "stride_source_px": 96,
+      "period_seconds": 1.25,
+      "stance_fraction": 0.62,
+      "ground_reference_moves_with_camera": true
+    },
+    "prop": "anatomical left hand (screen right), original rigid attachment",
+    "human_attack_actions": [],
+    "laterality": {
+      "legacy_l": "screen_left_anatomical_right",
+      "legacy_r": "screen_right_anatomical_left"
+    },
+    "wave": {
+      "side": "anatomical_right",
+      "attachment": "palm_facing_viewer",
+      "upright_thumb": "screen_right",
+      "keys": [
+        [
+          0,
+          5,
+          16,
+          0
+        ],
+        [
+          0.18,
+          -3,
+          23,
+          0
+        ],
+        [
+          0.65,
+          60,
+          65,
+          0
+        ],
+        [
+          1.05,
+          100,
+          77,
+          0
+        ],
+        [
+          1.38,
+          99,
+          70,
+          -8
+        ],
+        [
+          1.73,
+          102,
+          82,
+          8
+        ],
+        [
+          2.08,
+          99,
+          70,
+          -8
+        ],
+        [
+          2.43,
+          102,
+          82,
+          8
+        ],
+        [
+          2.72,
+          100,
+          77,
+          0
+        ],
+        [
+          3.14,
+          48,
+          47,
+          0
+        ],
+        [
+          3.5,
+          5,
+          16,
+          0
+        ]
+      ],
+      "mirroring": false,
+      "wrist_in_forearm": [
+        87.0,
+        133.0
+      ]
+    },
+    "expressions": {
+      "distress": "GPT alternate head, calling with worried brows",
+      "relieved": "original head",
+      "rules": "all rescue/peek/startle/help/struggle distressed; rescued changes at 0.95 seconds; thank relieved"
+    },
+    "attachment_schema": "ten original bones + pose/expression visual attachments; no enemy actions",
+    "review": "pending_A2c",
+    "rescue_wave_preparation_shoulder_offsets": [
+      25,
+      25,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      25
+    ]
+  }
+}

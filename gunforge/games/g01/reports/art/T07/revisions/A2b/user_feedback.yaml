@@ -1,0 +1,10 @@
+stage: A2
+source: explicit_user_chat
+scene_and_lighting: approved_visual_direction
+character_art: approved_visual_direction
+character_animation: revision_required_stiff_and_wrong_joint_motion
+ink_material_and_reflections: approved_visual_direction
+enemy_hit_reaction: user_requests_visible_animation_and_effects
+notes: 场景、点灯、墨、反光都可以。人物美术也可以，但动画生硬、不符合关节运动。希望看到怪物被攻击动作和特效。
+technical_acceptance: false
+actual_0B_approved: false

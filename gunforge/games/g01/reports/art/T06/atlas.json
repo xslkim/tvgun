@@ -1,0 +1,19 @@
+{
+  "size": [
+    1536,
+    1536
+  ],
+  "format": "RGBA8",
+  "mipmaps": false,
+  "allocated_bytes": 9437184,
+  "display_cell": [
+    360,
+    360
+  ],
+  "frame_rate": 15,
+  "loops": {
+    "crow": 8,
+    "tadpole0": 8
+  },
+  "offline_preview_only": true
+}

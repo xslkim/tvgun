@@ -1,0 +1,6741 @@
+{
+  "status": "pass",
+  "scope": "actual offline rendered frames; not Godot shader, tracker or hit-registration acceptance",
+  "frames": 204,
+  "max_core_outside_ink_pixels": 0,
+  "max_pre_cap_overbright_fraction": 0.0,
+  "details": [
+    {
+      "clip": "hit",
+      "frame": 0,
+      "time": 0.0,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 1,
+      "time": 0.03333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 2,
+      "time": 0.06666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 3,
+      "time": 0.1,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 4,
+      "time": 0.13333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 5,
+      "time": 0.16666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 6,
+      "time": 0.2,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 7,
+      "time": 0.23333333333333334,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 8,
+      "time": 0.26666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 9,
+      "time": 0.3,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 10,
+      "time": 0.3333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 11,
+      "time": 0.36666666666666664,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 12,
+      "time": 0.4,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 13,
+      "time": 0.43333333333333335,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 14,
+      "time": 0.4666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 15,
+      "time": 0.5,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 16,
+      "time": 0.5333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 17,
+      "time": 0.5666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.24591963071513545,
+          -0.03425531830776514,
+          231.6278720474264
+        ],
+        [
+          0.025847194723131874,
+          0.3259175828754808,
+          74.89643386951033
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 20.0,
+      "body_scale_xy": [
+        0.24591963071513545,
+        0.3259175828754808
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 18,
+      "time": 0.6,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.24591963071513545,
+          -0.03425531830776514,
+          231.6278720474264
+        ],
+        [
+          0.025847194723131874,
+          0.3259175828754808,
+          74.89643386951033
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 20.0,
+      "body_scale_xy": [
+        0.24591963071513545,
+        0.3259175828754808
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 19,
+      "time": 0.6333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.24591963071513545,
+          -0.03425531830776514,
+          231.6278720474264
+        ],
+        [
+          0.025847194723131874,
+          0.3259175828754808,
+          74.89643386951033
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 20.0,
+      "body_scale_xy": [
+        0.24591963071513545,
+        0.3259175828754808
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 20,
+      "time": 0.6666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.25097422469663966,
+          -0.030729772982188066,
+          225.3273570448397
+        ],
+        [
+          0.023846716619944225,
+          0.3234147942554967,
+          77.20210643177427
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 18.09251632263889,
+      "body_scale_xy": [
+        0.25097422469663966,
+        0.3234147942554967
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 21,
+      "time": 0.7,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.26365558750998,
+          -0.02207143832592118,
+          209.58785092511224
+        ],
+        [
+          0.018361132648668736,
+          0.3169335002562035,
+          83.32914795270543
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 13.27893530735038,
+      "body_scale_xy": [
+        0.26365558750998,
+        0.3169335002562035
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 22,
+      "time": 0.7333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2773601641240616,
+          -0.013012607671461295,
+          192.67659808716257
+        ],
+        [
+          0.011657636796059388,
+          0.30959782523491663,
+          90.51720344014026
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 8.022546990893945,
+      "body_scale_xy": [
+        0.2773601641240616,
+        0.30959782523491663
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 23,
+      "time": 0.7666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.28986796050497815,
+          -0.005013863294886865,
+          177.31898735833389
+        ],
+        [
+          0.0048030177161253376,
+          0.3025927476095321,
+          97.6133681532634
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 3.16428512990064,
+      "body_scale_xy": [
+        0.28986796050497815,
+        0.3025927476095321
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 24,
+      "time": 0.8,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29981132296424967,
+          0.001161642214646434,
+          165.15436059849637
+        ],
+        [
+          -0.0011734083169924905,
+          0.2968050286850806,
+          103.6366103715389
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": -0.7474812299088401,
+      "body_scale_xy": [
+        0.29981132296424967,
+        0.2968050286850806
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 25,
+      "time": 0.8333333333333334,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.30660386713442556,
+          0.005286532305669053,
+          156.86346583603913
+        ],
+        [
+          -0.0055369746147288,
+          0.2927359002762183,
+          107.95415006131736
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": -3.4486496506324364,
+      "body_scale_xy": [
+        0.30660386713442556,
+        0.2927359002762183
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 26,
+      "time": 0.8666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.3102637417507707,
+          0.007477341476456413,
+          152.40181655714596
+        ],
+        [
+          -0.007985954960317712,
+          0.2905035097695195,
+          110.3510119376887
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": -4.914748830513767,
+      "body_scale_xy": [
+        0.3102637417507707,
+        0.2905035097695195
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 27,
+      "time": 0.9,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.31121311157113096,
+          0.008041994898629399,
+          151.24504418293301
+        ],
+        [
+          -0.008632643811456824,
+          0.28991978706686095,
+          110.9809826532331
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": -5.29634130454969,
+      "body_scale_xy": [
+        0.31121311157113096,
+        0.28991978706686095
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 28,
+      "time": 0.9333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.3100998165397246,
+          0.0073796921755780835,
+          152.6015767621749
+        ],
+        [
+          -0.007874772413786655,
+          0.2906041050481594,
+          110.24258169120114
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": -4.848914775590132,
+      "body_scale_xy": [
+        0.3100998165397246,
+        0.2906041050481594
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 29,
+      "time": 0.9666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.30765360031223044,
+          0.005917182109243774,
+          155.5833930029833
+        ],
+        [
+          -0.006232289548295646,
+          0.29209849213597655,
+          108.63650427510737
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": -3.868366397221912,
+      "body_scale_xy": [
+        0.30765360031223044,
+        0.29209849213597655
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 30,
+      "time": 1.0,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.3045751747101855,
+          0.004062571320922649,
+          159.33819864889495
+        ],
+        [
+          -0.004209257345466976,
+          0.29396120699893485,
+          106.64700177742444
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": -2.639275383177652,
+      "body_scale_xy": [
+        0.3045751747101855,
+        0.29396120699893485
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 31,
+      "time": 1.0333333333333334,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.30145634514701725,
+          0.0021676117129965874,
+          163.14515496644273
+        ],
+        [
+          -0.002208849945353742,
+          0.2958282911305547,
+          104.66684611317712
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": -1.399379121230195,
+      "body_scale_xy": [
+        0.30145634514701725,
+        0.2958282911305547
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 32,
+      "time": 1.0666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2987319288815908,
+          0.0004991410454989224,
+          166.4731976741121
+        ],
+        [
+          -0.0005013041334018952,
+          0.2974429241067639,
+          102.96589057363866
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": -0.3204945232179798,
+      "body_scale_xy": [
+        0.2987319288815908,
+        0.2974429241067639
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 33,
+      "time": 1.1,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29666326077758537,
+          -0.0007759158624385383,
+          169.00185983471786
+        ],
+        [
+          0.0007707313022172105,
+          0.2986588570853157,
+          101.69205074558315
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.49618043127303885,
+      "body_scale_xy": [
+        0.29666326077758537,
+        0.2986588570853157
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 34,
+      "time": 1.1333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29534926368665865,
+          -0.0015894793759363719,
+          170.6088122497606
+        ],
+        [
+          0.0015678345362615607,
+          0.29942672678159377,
+          100.89078460525806
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 1.0138218168504076,
+      "body_scale_xy": [
+        0.29534926368665865,
+        0.29942672678159377
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 35,
+      "time": 1.1666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2947573105585596,
+          -0.001956916544064084,
+          171.33294185557028
+        ],
+        [
+          0.0019241836540163483,
+          0.2997715193723289,
+          100.53180005051124
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 1.2467435909919926,
+      "body_scale_xy": [
+        0.2947573105585596,
+        0.2997715193723289
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 36,
+      "time": 1.2,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2947644040897975,
+          -0.0019525100343528545,
+          171.32426367229385
+        ],
+        [
+          0.0019199234891272947,
+          0.29976739178131406,
+          100.53609458153403
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 1.2439534286814695,
+      "body_scale_xy": [
+        0.2947644040897975,
+        0.29976739178131406
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 37,
+      "time": 1.2333333333333334,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29519980192959133,
+          -0.0016821988764124578,
+          170.79163527067374
+        ],
+        [
+          0.0016579693265226156,
+          0.2995138493693749,
+          100.80002882770046
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 1.0726480339013276,
+      "body_scale_xy": [
+        0.29519980192959133,
+        0.2995138493693749
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 38,
+      "time": 1.2666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2958823653974837,
+          -0.001259065925702726,
+          169.95678209727848
+        ],
+        [
+          0.0012454562345888675,
+          0.29911561236936696,
+          101.21513287477461
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.8039114268303069,
+      "body_scale_xy": [
+        0.2958823653974837,
+        0.29911561236936696
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 39,
+      "time": 1.3,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2966486568003974,
+          -0.0007849423191203003,
+          169.0197164278822
+        ],
+        [
+          0.0007796367348310617,
+          0.29866741038476385,
+          101.6831118747674
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.5019382422960861,
+      "body_scale_xy": [
+        0.2966486568003974,
+        0.29866741038476385
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 40,
+      "time": 1.3333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29737041359040595,
+          -0.00033925766889776816,
+          168.13729772190248
+        ],
+        [
+          0.00033826375024799225,
+          0.2982441755579309,
+          102.1257910742124
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.21724955371467203,
+      "body_scale_xy": [
+        0.29737041359040595,
+        0.2982441755579309
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 41,
+      "time": 1.3666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29796204678887606,
+          2.5435656896463277e-05,
+          167.4141018030057
+        ],
+        [
+          -2.5441256936480073e-05,
+          0.29789646043087215,
+          102.49003818294494
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": -0.016307184758765712,
+      "body_scale_xy": [
+        0.29796204678887606,
+        0.29789646043087215
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 42,
+      "time": 1.4,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2983800794629835,
+          0.00028277072633791354,
+          166.90318226391778
+        ],
+        [
+          -0.00028346397922104216,
+          0.2976503470612713,
+          102.74815586199026
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": -0.1814384391496203,
+      "body_scale_xy": [
+        0.2983800794629835,
+        0.2976503470612713
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 43,
+      "time": 1.4333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29861699939792663,
+          0.0004284874355173321,
+          166.61364495677557
+        ],
+        [
+          -0.00043008076701231293,
+          0.29751070517002465,
+          102.89472030565767
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": -0.2750657845011155,
+      "body_scale_xy": [
+        0.29861699939792663,
+        0.29751070517002465
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 44,
+      "time": 1.4666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29869201131432804,
+          0.0004746039428955217,
+          166.5219776379813
+        ],
+        [
+          -0.00047655927994234517,
+          0.2974664690158258,
+          102.94116621522767
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": -0.3047153503202289,
+      "body_scale_xy": [
+        0.29869201131432804,
+        0.2974664690158258
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 45,
+      "time": 1.5,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29864083647420364,
+          0.0004431432154152524,
+          166.5845149684914
+        ],
+        [
+          -0.000444847566856015,
+          0.2974966491663744,
+          102.90947758104659
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": -0.2844874304237154,
+      "body_scale_xy": [
+        0.29864083647420364,
+        0.2974966491663744
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 46,
+      "time": 1.5333333333333334,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29850619468838685,
+          0.0003603489370128234,
+          166.74905584699792
+        ],
+        [
+          -0.00036147531972653555,
+          0.2975760282308612,
+          102.82614890949904
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": -0.23127381679748246,
+      "body_scale_xy": [
+        0.29850619468838685,
+        0.2975760282308612
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 47,
+      "time": 1.5666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29833004067628505,
+          0.000251982724496344,
+          166.96433655001957
+        ],
+        [
+          -0.00025253312442998134,
+          0.2976798256402936,
+          102.71722623187782
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": -0.16166746878033933,
+      "body_scale_xy": [
+        0.29833004067628505,
+        0.2976798256402936
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 48,
+      "time": 1.6,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2981480945280358,
+          0.00013999961249205206,
+          167.18670693366872
+        ],
+        [
+          -0.0001401693892000853,
+          0.2977869700180111,
+          102.60483807804877
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": -0.08978886638099726,
+      "body_scale_xy": [
+        0.2981480945280358,
+        0.2977869700180111
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 49,
+      "time": 1.6333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29798675516658996,
+          4.065379747115085e-05,
+          167.38390157345412
+        ],
+        [
+          -4.0668104512615567e-05,
+          0.2978819234092902,
+          102.50527728395389
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": -0.02606503694658583,
+      "body_scale_xy": [
+        0.29798675516658996,
+        0.2978819234092902
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 50,
+      "time": 1.6666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29786214590775284,
+          -3.6104567050850576e-05,
+          167.53620945295506
+        ],
+        [
+          3.6093288373516847e-05,
+          0.29795522390604606,
+          102.42844559645718
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.023142619394475962,
+      "body_scale_xy": [
+        0.29786214590775284,
+        0.29795522390604606
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 51,
+      "time": 1.7,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2977808250643433,
+          -8.621139215568713e-05,
+          167.6356094590491
+        ],
+        [
+          8.614710506232901e-05,
+          0.2980030433697329,
+          102.37833447690485
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.05525165920915469,
+      "body_scale_xy": [
+        0.2977808250643433,
+        0.2980030433697329
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 52,
+      "time": 1.7333333333333334,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2977415984575967,
+          -0.00011038523822927036,
+          167.68355769059323
+        ],
+        [
+          0.00011027986040260397,
+          0.2980261051883732,
+          102.35417085502678
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.07073885890932807,
+      "body_scale_xy": [
+        0.2977415984575967,
+        0.2980261051883732
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 53,
+      "time": 1.7666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2977378769244796,
+          -0.00011267880735897618,
+          167.68810669490693
+        ],
+        [
+          0.00011256900659959137,
+          0.29802829296324074,
+          102.35187867144174
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.07220813087271025,
+      "body_scale_xy": [
+        0.2977378769244796,
+        0.29802829296324074
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 54,
+      "time": 1.8,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.297760102907012,
+          -9.898134323007101e-05,
+          167.66093890529666
+        ],
+        [
+          9.889660768239439e-05,
+          0.29801522657593604,
+          102.36556892998735
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.06343314595298781,
+      "body_scale_xy": [
+        0.297760102907012,
+        0.29801522657593604
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 55,
+      "time": 1.8333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29779789459455097,
+          -7.569289022121996e-05,
+          167.61474486193663
+        ],
+        [
+          7.564332992298472e-05,
+          0.29799300700545306,
+          102.38885102828746
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.048512134553445156,
+      "body_scale_xy": [
+        0.29779789459455097,
+        0.29799300700545306
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 56,
+      "time": 1.8666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2978416943590803,
+          -4.870501140946982e-05,
+          167.5612075555021
+        ],
+        [
+          4.868448816008647e-05,
+          0.297967251381473,
+          102.41584083474785
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.03121810150956394,
+      "body_scale_xy": [
+        0.2978416943590803,
+        0.297967251381473
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 57,
+      "time": 1.9,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2978838369073621,
+          -2.2741235292133956e-05,
+          167.5096965148777
+        ],
+        [
+          2.273676022879816e-05,
+          0.2979424665900194,
+          102.44181588467293
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.014577498977521744,
+      "body_scale_xy": [
+        0.2978838369073621,
+        0.2979424665900194
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 58,
+      "time": 1.9333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29791905625035725,
+          -1.0450502173919932e-06,
+          167.46664820617212
+        ],
+        [
+          1.0450407657818454e-06,
+          0.2979217507048392,
+          102.46352857825025
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": 0.0006699406437415716,
+      "body_scale_xy": [
+        0.29791905625035725,
+        0.2979217507048392
+      ]
+    },
+    {
+      "clip": "hit",
+      "frame": 59,
+      "time": 1.9666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979445219342861,
+          1.464131124298637e-05,
+          167.4355219768063
+        ],
+        [
+          -1.4643166632515275e-05,
+          0.29790677032221585,
+          102.47923089634133
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.1,
+      "recoil_amplitude_px": 20,
+      "actual_recoil_px": -0.00938644148276984,
+      "body_scale_xy": [
+        0.2979445219342861,
+        0.29790677032221585
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 0,
+      "time": 0.0,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 1,
+      "time": 0.03333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 2,
+      "time": 0.06666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 3,
+      "time": 0.1,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 4,
+      "time": 0.13333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 5,
+      "time": 0.16666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 6,
+      "time": 0.2,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 7,
+      "time": 0.23333333333333334,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 8,
+      "time": 0.26666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 9,
+      "time": 0.3,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 10,
+      "time": 0.3333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 11,
+      "time": 0.36666666666666664,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 12,
+      "time": 0.4,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 13,
+      "time": 0.43333333333333335,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 14,
+      "time": 0.4666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 15,
+      "time": 0.5,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 16,
+      "time": 0.5333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 17,
+      "time": 0.5666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.22297994699739856,
+          -0.05897607121887727,
+          268.0300156013971
+        ],
+        [
+          0.03931738081258484,
+          0.3344699204960979,
+          63.620901729954426
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 32.0,
+      "body_scale_xy": [
+        0.22297994699739856,
+        0.3344699204960979
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 18,
+      "time": 0.6,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.22297994699739856,
+          -0.05897607121887727,
+          268.0300156013971
+        ],
+        [
+          0.03931738081258484,
+          0.3344699204960979,
+          63.620901729954426
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 32.0,
+      "body_scale_xy": [
+        0.22297994699739856,
+        0.3344699204960979
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 19,
+      "time": 0.6333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.22297994699739856,
+          -0.05897607121887727,
+          268.0300156013971
+        ],
+        [
+          0.03931738081258484,
+          0.3344699204960979,
+          63.620901729954426
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 32.0,
+      "body_scale_xy": [
+        0.22297994699739856,
+        0.3344699204960979
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 20,
+      "time": 0.6666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.22297994699739856,
+          -0.05897607121887727,
+          268.0300156013971
+        ],
+        [
+          0.03931738081258484,
+          0.3344699204960979,
+          63.620901729954426
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 32.0,
+      "body_scale_xy": [
+        0.22297994699739856,
+        0.3344699204960979
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 21,
+      "time": 0.7,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.22297994699739856,
+          -0.05897607121887727,
+          268.0300156013971
+        ],
+        [
+          0.03931738081258484,
+          0.3344699204960979,
+          63.620901729954426
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 32.0,
+      "body_scale_xy": [
+        0.22297994699739856,
+        0.3344699204960979
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 22,
+      "time": 0.7333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.23371541989050454,
+          -0.04996010936547626,
+          253.46066076037647
+        ],
+        [
+          0.035376618916595916,
+          0.3300611617423435,
+          67.895856302623
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 27.543379749190915,
+      "body_scale_xy": [
+        0.23371541989050454,
+        0.3300611617423435
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 23,
+      "time": 0.7666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2527434415777178,
+          -0.03445919843535242,
+          227.80988542312087
+        ],
+        [
+          0.02708217330767431,
+          0.32158927230897316,
+          76.48021984427649
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 19.57141791201196,
+      "body_scale_xy": [
+        0.2527434415777178,
+        0.32158927230897316
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 24,
+      "time": 0.8,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2723967955099889,
+          -0.019070847985687117,
+          201.49263811927733
+        ],
+        [
+          0.01665382578488779,
+          0.31193060057547006,
+          86.76477370349679
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 11.195523251719877,
+      "body_scale_xy": [
+        0.2723967955099889,
+        0.31193060057547006
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 25,
+      "time": 0.8333333333333334,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2896620258876788,
+          -0.006059059031328099,
+          178.4654658784161
+        ],
+        [
+          0.005799157612884784,
+          0.3026438374580531,
+          97.07718652367979
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 3.670184908867642,
+      "body_scale_xy": [
+        0.2896620258876788,
+        0.3026438374580531
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 26,
+      "time": 0.8666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.3028622078163067,
+          0.0035745251930085313,
+          160.8829128162525
+        ],
+        [
+          -0.0036697468879460034,
+          0.2950036133024722,
+          105.83706039576259
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -2.2214798829780675,
+      "body_scale_xy": [
+        0.3028622078163067,
+        0.2950036133024722
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 27,
+      "time": 0.9,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.31146677551346386,
+          0.009708163544428711,
+          149.4177397487048
+        ],
+        [
+          -0.010435633597693183,
+          0.28975436584981107,
+          111.98880908691564
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -6.140691453654214,
+      "body_scale_xy": [
+        0.31146677551346386,
+        0.28975436584981107
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 28,
+      "time": 0.9333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.31573946816376014,
+          0.012711035843689935,
+          143.72018101034067
+        ],
+        [
+          -0.01398073316961359,
+          0.28706475178426405,
+          115.18098246929895
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -8.113160937844874,
+      "body_scale_xy": [
+        0.31573946816376014,
+        0.28706475178426405
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 29,
+      "time": 0.9666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.31640539360875597,
+          0.013176485962407173,
+          142.83180848529997
+        ],
+        [
+          -0.014544741613097913,
+          0.28664044630131463,
+          115.68699919963305
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -8.422269174264486,
+      "body_scale_xy": [
+        0.31640539360875597,
+        0.28664044630131463
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 30,
+      "time": 1.0,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.3144100533844417,
+          0.01177976755215394,
+          145.49335533301013
+        ],
+        [
+          -0.01286411537746842,
+          0.2879076591163081,
+          114.17770560571407
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -7.497456347452892,
+      "body_scale_xy": [
+        0.3144100533844417,
+        0.2879076591163081
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 31,
+      "time": 1.0333333333333334,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.3107560888321474,
+          0.009205928213018721,
+          150.36507675905978
+        ],
+        [
+          -0.009858148607223368,
+          0.2901962994807182,
+          111.46686675277067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -5.814370513815173,
+      "body_scale_xy": [
+        0.3107560888321474,
+        0.2901962994807182
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 32,
+      "time": 1.0666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.30638314239188486,
+          0.006098300364227754,
+          156.1924694582024
+        ],
+        [
+          -0.0063794140307973975,
+          0.2928821393033384,
+          108.310604660459
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -3.817031850667947,
+      "body_scale_xy": [
+        0.30638314239188486,
+        0.2928821393033384
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 33,
+      "time": 1.1,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.30207531914499497,
+          0.0030078531868843513,
+          161.93105020403158
+        ],
+        [
+          -0.003075065321486701,
+          0.29547281647015583,
+          105.29235141188141
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -1.8663655620462132,
+      "body_scale_xy": [
+        0.30207531914499497,
+        0.29547281647015583
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 34,
+      "time": 1.1333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2984001268086997,
+          0.00034843176439103084,
+          166.8261044169565
+        ],
+        [
+          -0.0003493206728911037,
+          0.2976407946828688,
+          102.78676530689143
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.21463359362102857,
+      "body_scale_xy": [
+        0.2984001268086997,
+        0.2976407946828688
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 35,
+      "time": 1.1666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2956862191588895,
+          -0.0016288863741715507,
+          170.4407420312152
+        ],
+        [
+          0.0016096641068663617,
+          0.2992172412639905,
+          100.97662445012128
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.9980964169907728,
+      "body_scale_xy": [
+        0.2956862191588895,
+        0.2992172412639905
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 36,
+      "time": 1.2,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29403941630041486,
+          -0.002834318994811292,
+          172.6342014128053
+        ],
+        [
+          0.0027764886963542196,
+          0.3001638378495192,
+          99.8945528085128
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 1.731211233274342,
+      "body_scale_xy": [
+        0.29403941630041486,
+        0.3001638378495192
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 37,
+      "time": 1.2333333333333334,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2933874478703185,
+          -0.0033127171663762593,
+          173.50262528582877
+        ],
+        [
+          0.003233915172663128,
+          0.30053652710963247,
+          99.46953355146465
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 2.020887406247183,
+      "body_scale_xy": [
+        0.2933874478703185,
+        0.30053652710963247
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 38,
+      "time": 1.2666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2935394039801337,
+          -0.00320115633323592,
+          173.30021723114555
+        ],
+        [
+          0.003127529533051749,
+          0.30044976783589467,
+          99.56842374709944
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 1.953400026357209,
+      "body_scale_xy": [
+        0.2935394039801337,
+        0.30044976783589467
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 39,
+      "time": 1.3,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29424640198822044,
+          -0.0026825766435893206,
+          172.35850045593224
+        ],
+        [
+          0.0026307314191406908,
+          0.3000452724632855,
+          100.0298860121978
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 1.639179032383358,
+      "body_scale_xy": [
+        0.29424640198822044,
+        0.3000452724632855
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 40,
+      "time": 1.3333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.295253498392235,
+          -0.001945221532386958,
+          171.01709443784512
+        ],
+        [
+          0.0019178541803667741,
+          0.2994667000571008,
+          100.6911082304166
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 1.1909321900873435,
+      "body_scale_xy": [
+        0.295253498392235,
+        0.2994667000571008
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 41,
+      "time": 1.3666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2963373470687245,
+          -0.0011534370912339887,
+          169.5734975932106
+        ],
+        [
+          0.0011437741492851324,
+          0.2988408925316053,
+          101.40785065938411
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.7076595016857039,
+      "body_scale_xy": [
+        0.2963373470687245,
+        0.2988408925316053
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 42,
+      "time": 1.4,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2973281799781484,
+          -0.0004312044486399476,
+          168.25381323034784
+        ],
+        [
+          0.000429848742988407,
+          0.29826592726840745,
+          102.06776268216532
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.26506470145621314,
+      "body_scale_xy": [
+        0.2973281799781484,
+        0.29826592726840745
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 43,
+      "time": 1.4333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2981176688983198,
+          0.00014317127169256449,
+          167.2023053238182
+        ],
+        [
+          -0.0001433211891729809,
+          0.2978058305020104,
+          102.59679523182723
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.08814450913547724,
+      "body_scale_xy": [
+        0.2981176688983198,
+        0.2978058305020104
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 44,
+      "time": 1.4666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2986559117952158,
+          0.0005342020398463385,
+          166.4854285065622
+        ],
+        [
+          -0.0005362935925050805,
+          0.29749114948014416,
+          102.95911378552879
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.3292332098859996,
+      "body_scale_xy": [
+        0.2986559117952158,
+        0.29749114948014416
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 45,
+      "time": 1.5,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2989413290942406,
+          0.000741373300972278,
+          166.10528528459008
+        ],
+        [
+          -0.0007454062137639334,
+          0.29732395015669333,
+          103.15178550122016
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.45717108906090803,
+      "body_scale_xy": [
+        0.2989413290942406,
+        0.29732395015669333
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 46,
+      "time": 1.5333333333333334,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2990070063054319,
+          0.0007890274147143532,
+          166.0178106399893
+        ],
+        [
+          -0.0007935966269722139,
+          0.2972854434459607,
+          103.19617442867789
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.48662009529580313,
+      "body_scale_xy": [
+        0.2990070063054319,
+        0.2972854434459607
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 47,
+      "time": 1.5666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2989063553542734,
+          0.0007159942922714977,
+          166.1518663473231
+        ],
+        [
+          -0.0007197553009293243,
+          0.2973444503722395,
+          103.12815612348919
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.441490633645922,
+      "body_scale_xy": [
+        0.2989063553542734,
+        0.2973444503722395
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 48,
+      "time": 1.6,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29870016563532825,
+          0.0005663321689019457,
+          166.42648749129773
+        ],
+        [
+          -0.0005686832937275317,
+          0.2974652403569213,
+          102.98896278364481
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.3490656329363951,
+      "body_scale_xy": [
+        0.29870016563532825,
+        0.2974652403569213
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 49,
+      "time": 1.6333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2984463323829398,
+          0.0003819972613506861,
+          166.76456397766913
+        ],
+        [
+          -0.00038306587527234297,
+          0.2976137760884771,
+          102.81787637083917
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.23533124445412976,
+      "body_scale_xy": [
+        0.2984463323829398,
+        0.2976137760884771
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 50,
+      "time": 1.6666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2981928546256351,
+          0.00019782042541734735,
+          167.10216673680782
+        ],
+        [
+          -0.00019810671844345835,
+          0.2977619225735259,
+          102.64732628219778
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.1218076370533367,
+      "body_scale_xy": [
+        0.2981928546256351,
+        0.2977619225735259
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 51,
+      "time": 1.7,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979741212396393,
+          3.880843601961669e-05,
+          167.3934940085347
+        ],
+        [
+          -3.8819445036278644e-05,
+          0.29788961714478446,
+          102.50039157772892
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.023885997527919263,
+      "body_scale_xy": [
+        0.2979741212396393,
+        0.29788961714478446
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 52,
+      "time": 1.7333333333333334,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2978100742716413,
+          -8.049720435588547e-05,
+          167.61198542760906
+        ],
+        [
+          8.044986973752705e-05,
+          0.29798529800108836,
+          102.39033709013714
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.049528886059204344,
+      "body_scale_xy": [
+        0.2978100742716413,
+        0.29798529800108836
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 53,
+      "time": 1.7666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29770756825707934,
+          -0.0001550675252176189,
+          167.74851152968105
+        ],
+        [
+          0.0001548919412805807,
+          0.29804504654347996,
+          102.32163149580259
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.09539190439425035,
+      "body_scale_xy": [
+        0.29770756825707934,
+        0.29804504654347996
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 54,
+      "time": 1.8,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29766313166724284,
+          -0.00018739901170501314,
+          167.80769592122232
+        ],
+        [
+          0.00018714262106585503,
+          0.29807093850540356,
+          102.29186246324767
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.11527104085769775,
+      "body_scale_xy": [
+        0.29766313166724284,
+        0.29807093850540356
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 55,
+      "time": 1.8333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2976663612770199,
+          -0.00018504908591017498,
+          167.80339445463676
+        ],
+        [
+          0.00018479908191578565,
+          0.2980690568886167,
+          102.29402574308739
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.11382629648493221,
+      "body_scale_xy": [
+        0.2976663612770199,
+        0.2980690568886167
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 56,
+      "time": 1.8666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2977033054984858,
+          -0.00015816891977016388,
+          167.75418902999218
+        ],
+        [
+          0.00015798624518697038,
+          0.29804753057442773,
+          102.31877538835727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.09729895829459308,
+      "body_scale_xy": [
+        0.2977033054984858,
+        0.29804753057442773
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 57,
+      "time": 1.9,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2977593745312259,
+          -0.00011737783354679623,
+          167.67951158530514
+        ],
+        [
+          0.00011727720915057114,
+          0.29801485347295364,
+          102.35634909076265
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0722138945168252,
+      "body_scale_xy": [
+        0.2977593745312259,
+        0.29801485347295364
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 58,
+      "time": 1.9333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2978215115837974,
+          -7.217788722272484e-05,
+          167.5967522595099
+        ],
+        [
+          7.213982930192103e-05,
+          0.2979786296087664,
+          102.398006047709
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.044411112156144905,
+      "body_scale_xy": [
+        0.2978215115837974,
+        0.2979786296087664
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 59,
+      "time": 1.9666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2978795375303748,
+          -2.9973883557212098e-05,
+          167.51946846235913
+        ],
+        [
+          2.9967318758491363e-05,
+          0.297944792591152,
+          102.43692292612585
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.018445049529778865,
+      "body_scale_xy": [
+        0.2978795375303748,
+        0.297944792591152
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 60,
+      "time": 2.0,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979267205567596,
+          4.339876135672455e-06,
+          167.45662617905032
+        ],
+        [
+          -4.340013783794621e-06,
+          0.2979172714960721,
+          102.46857908106838
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.0026708793073168687,
+      "body_scale_xy": [
+        0.2979267205567596,
+        0.2979172714960721
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 61,
+      "time": 2.033333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979597140580739,
+          2.8332273425263404e-05,
+          167.4126826902664
+        ],
+        [
+          -2.8338140675193915e-05,
+          0.29789802320363007,
+          102.49072124776711
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.017437588006004052,
+      "body_scale_xy": [
+        0.2979597140580739,
+        0.29789802320363007
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 62,
+      "time": 2.066666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29797805136622735,
+          4.166616615318881e-05,
+          167.388259539402
+        ],
+        [
+          -4.167885639843894e-05,
+          0.29788732395962947,
+          102.50302970714571
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.025645084019202374,
+      "body_scale_xy": [
+        0.29797805136622735,
+        0.29788732395962947
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 63,
+      "time": 2.1,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979833922503055,
+          4.5549668005422164e-05,
+          167.3811461062767
+        ],
+        [
+          -4.5564834403468594e-05,
+          0.29788420754356265,
+          102.50661493291051
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.028035631548120547,
+      "body_scale_xy": [
+        0.2979833922503055,
+        0.29788420754356265
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 64,
+      "time": 2.1333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29797869415671846,
+          4.2133558925963195e-05,
+          167.38740341762116
+        ],
+        [
+          -4.214653550795393e-05,
+          0.29788694889439465,
+          102.50346119225
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.025932791968871313,
+      "body_scale_xy": [
+        0.29797869415671846,
+        0.29788694889439465
+      ]
+    },
+    {
+      "clip": "weak_hit",
+      "frame": 65,
+      "time": 2.1666666666666665,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979674420900808,
+          3.395174163015385e-05,
+          167.40238985493966
+        ],
+        [
+          -3.396016738851178e-05,
+          0.29789351425465943,
+          102.49590830731728
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.020896503224335315,
+      "body_scale_xy": [
+        0.2979674420900808,
+        0.29789351425465943
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 0,
+      "time": 0.0,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 1,
+      "time": 0.03333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 2,
+      "time": 0.06666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 3,
+      "time": 0.1,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 4,
+      "time": 0.13333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 5,
+      "time": 0.16666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 6,
+      "time": 0.2,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 7,
+      "time": 0.23333333333333334,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 8,
+      "time": 0.26666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 9,
+      "time": 0.3,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 10,
+      "time": 0.3333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 11,
+      "time": 0.36666666666666664,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 12,
+      "time": 0.4,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 13,
+      "time": 0.43333333333333335,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 14,
+      "time": 0.4666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 15,
+      "time": 0.5,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 16,
+      "time": 0.5333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": true,
+      "purify_progress": 0.0,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207527605677,
+          0.0,
+          167.46457458658935
+        ],
+        [
+          0.0,
+          0.2979207527605677,
+          102.46457458658935
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0,
+      "body_scale_xy": [
+        0.2979207527605677,
+        0.2979207527605677
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 17,
+      "time": 0.5666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.015873015873015817,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.22297994699739856,
+          -0.05897607121887727,
+          268.0300156013971
+        ],
+        [
+          0.03931738081258484,
+          0.3344699204960979,
+          63.620901729954426
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 32.0,
+      "body_scale_xy": [
+        0.22297994699739856,
+        0.3344699204960979
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 18,
+      "time": 0.6,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.047619047619047554,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.22297994699739856,
+          -0.05897607121887727,
+          268.0300156013971
+        ],
+        [
+          0.03931738081258484,
+          0.3344699204960979,
+          63.620901729954426
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 32.0,
+      "body_scale_xy": [
+        0.22297994699739856,
+        0.3344699204960979
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 19,
+      "time": 0.6333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.07936507936507929,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.22297994699739856,
+          -0.05897607121887727,
+          268.0300156013971
+        ],
+        [
+          0.03931738081258484,
+          0.3344699204960979,
+          63.620901729954426
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 32.0,
+      "body_scale_xy": [
+        0.22297994699739856,
+        0.3344699204960979
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 20,
+      "time": 0.6666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.11111111111111104,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.22297994699739856,
+          -0.05897607121887727,
+          268.0300156013971
+        ],
+        [
+          0.03931738081258484,
+          0.3344699204960979,
+          63.620901729954426
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 32.0,
+      "body_scale_xy": [
+        0.22297994699739856,
+        0.3344699204960979
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 21,
+      "time": 0.7,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.14285714285714277,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.22297994699739856,
+          -0.05897607121887727,
+          268.0300156013971
+        ],
+        [
+          0.03931738081258484,
+          0.3344699204960979,
+          63.620901729954426
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 32.0,
+      "body_scale_xy": [
+        0.22297994699739856,
+        0.3344699204960979
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 22,
+      "time": 0.7333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.1746031746031745,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.23371541989050454,
+          -0.04996010936547626,
+          253.46066076037647
+        ],
+        [
+          0.035376618916595916,
+          0.3300611617423435,
+          67.895856302623
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 27.543379749190915,
+      "body_scale_xy": [
+        0.23371541989050454,
+        0.3300611617423435
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 23,
+      "time": 0.7666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.20634920634920634,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2527434415777178,
+          -0.03445919843535242,
+          227.80988542312087
+        ],
+        [
+          0.02708217330767431,
+          0.32158927230897316,
+          76.48021984427649
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 19.57141791201196,
+      "body_scale_xy": [
+        0.2527434415777178,
+        0.32158927230897316
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 24,
+      "time": 0.8,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.23809523809523808,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2723967955099889,
+          -0.019070847985687117,
+          201.49263811927733
+        ],
+        [
+          0.01665382578488779,
+          0.31193060057547006,
+          86.76477370349679
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 11.195523251719877,
+      "body_scale_xy": [
+        0.2723967955099889,
+        0.31193060057547006
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 25,
+      "time": 0.8333333333333334,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.2698412698412698,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2896620258876788,
+          -0.006059059031328099,
+          178.4654658784161
+        ],
+        [
+          0.005799157612884784,
+          0.3026438374580531,
+          97.07718652367979
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 3.670184908867642,
+      "body_scale_xy": [
+        0.2896620258876788,
+        0.3026438374580531
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 26,
+      "time": 0.8666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.30158730158730157,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.3028622078163067,
+          0.0035745251930085313,
+          160.8829128162525
+        ],
+        [
+          -0.0036697468879460034,
+          0.2950036133024722,
+          105.83706039576259
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -2.2214798829780675,
+      "body_scale_xy": [
+        0.3028622078163067,
+        0.2950036133024722
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 27,
+      "time": 0.9,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.3333333333333333,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.31146677551346386,
+          0.009708163544428711,
+          149.4177397487048
+        ],
+        [
+          -0.010435633597693183,
+          0.28975436584981107,
+          111.98880908691564
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -6.140691453654214,
+      "body_scale_xy": [
+        0.31146677551346386,
+        0.28975436584981107
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 28,
+      "time": 0.9333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.36507936507936506,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.31573946816376014,
+          0.012711035843689935,
+          143.72018101034067
+        ],
+        [
+          -0.01398073316961359,
+          0.28706475178426405,
+          115.18098246929895
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -8.113160937844874,
+      "body_scale_xy": [
+        0.31573946816376014,
+        0.28706475178426405
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 29,
+      "time": 0.9666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.39682539682539675,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.31640539360875597,
+          0.013176485962407173,
+          142.83180848529997
+        ],
+        [
+          -0.014544741613097913,
+          0.28664044630131463,
+          115.68699919963305
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -8.422269174264486,
+      "body_scale_xy": [
+        0.31640539360875597,
+        0.28664044630131463
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 30,
+      "time": 1.0,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.4285714285714285,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.3144100533844417,
+          0.01177976755215394,
+          145.49335533301013
+        ],
+        [
+          -0.01286411537746842,
+          0.2879076591163081,
+          114.17770560571407
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -7.497456347452892,
+      "body_scale_xy": [
+        0.3144100533844417,
+        0.2879076591163081
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 31,
+      "time": 1.0333333333333334,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.46031746031746035,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.3107560888321474,
+          0.009205928213018721,
+          150.36507675905978
+        ],
+        [
+          -0.009858148607223368,
+          0.2901962994807182,
+          111.46686675277067
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -5.814370513815173,
+      "body_scale_xy": [
+        0.3107560888321474,
+        0.2901962994807182
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 32,
+      "time": 1.0666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.492063492063492,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.30638314239188486,
+          0.006098300364227754,
+          156.1924694582024
+        ],
+        [
+          -0.0063794140307973975,
+          0.2928821393033384,
+          108.310604660459
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -3.817031850667947,
+      "body_scale_xy": [
+        0.30638314239188486,
+        0.2928821393033384
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 33,
+      "time": 1.1,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.5238095238095238,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.30207531914499497,
+          0.0030078531868843513,
+          161.93105020403158
+        ],
+        [
+          -0.003075065321486701,
+          0.29547281647015583,
+          105.29235141188141
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -1.8663655620462132,
+      "body_scale_xy": [
+        0.30207531914499497,
+        0.29547281647015583
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 34,
+      "time": 1.1333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.5555555555555555,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2984001268086997,
+          0.00034843176439103084,
+          166.8261044169565
+        ],
+        [
+          -0.0003493206728911037,
+          0.2976407946828688,
+          102.78676530689143
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.21463359362102857,
+      "body_scale_xy": [
+        0.2984001268086997,
+        0.2976407946828688
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 35,
+      "time": 1.1666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.5873015873015873,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2956862191588895,
+          -0.0016288863741715507,
+          170.4407420312152
+        ],
+        [
+          0.0016096641068663617,
+          0.2992172412639905,
+          100.97662445012128
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.9980964169907728,
+      "body_scale_xy": [
+        0.2956862191588895,
+        0.2992172412639905
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 36,
+      "time": 1.2,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.619047619047619,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29403941630041486,
+          -0.002834318994811292,
+          172.6342014128053
+        ],
+        [
+          0.0027764886963542196,
+          0.3001638378495192,
+          99.8945528085128
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 1.731211233274342,
+      "body_scale_xy": [
+        0.29403941630041486,
+        0.3001638378495192
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 37,
+      "time": 1.2333333333333334,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.6507936507936508,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2933874478703185,
+          -0.0033127171663762593,
+          173.50262528582877
+        ],
+        [
+          0.003233915172663128,
+          0.30053652710963247,
+          99.46953355146465
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 2.020887406247183,
+      "body_scale_xy": [
+        0.2933874478703185,
+        0.30053652710963247
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 38,
+      "time": 1.2666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.6825396825396824,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2935394039801337,
+          -0.00320115633323592,
+          173.30021723114555
+        ],
+        [
+          0.003127529533051749,
+          0.30044976783589467,
+          99.56842374709944
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 1.953400026357209,
+      "body_scale_xy": [
+        0.2935394039801337,
+        0.30044976783589467
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 39,
+      "time": 1.3,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.7142857142857143,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29424640198822044,
+          -0.0026825766435893206,
+          172.35850045593224
+        ],
+        [
+          0.0026307314191406908,
+          0.3000452724632855,
+          100.0298860121978
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 1.639179032383358,
+      "body_scale_xy": [
+        0.29424640198822044,
+        0.3000452724632855
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 40,
+      "time": 1.3333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.7460317460317459,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.295253498392235,
+          -0.001945221532386958,
+          171.01709443784512
+        ],
+        [
+          0.0019178541803667741,
+          0.2994667000571008,
+          100.6911082304166
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 1.1909321900873435,
+      "body_scale_xy": [
+        0.295253498392235,
+        0.2994667000571008
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 41,
+      "time": 1.3666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.7777777777777777,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2963373470687245,
+          -0.0011534370912339887,
+          169.5734975932106
+        ],
+        [
+          0.0011437741492851324,
+          0.2988408925316053,
+          101.40785065938411
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.7076595016857039,
+      "body_scale_xy": [
+        0.2963373470687245,
+        0.2988408925316053
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 42,
+      "time": 1.4,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.8095238095238093,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2973281799781484,
+          -0.0004312044486399476,
+          168.25381323034784
+        ],
+        [
+          0.000429848742988407,
+          0.29826592726840745,
+          102.06776268216532
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.26506470145621314,
+      "body_scale_xy": [
+        0.2973281799781484,
+        0.29826592726840745
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 43,
+      "time": 1.4333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.8412698412698412,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2981176688983198,
+          0.00014317127169256449,
+          167.2023053238182
+        ],
+        [
+          -0.0001433211891729809,
+          0.2978058305020104,
+          102.59679523182723
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.08814450913547724,
+      "body_scale_xy": [
+        0.2981176688983198,
+        0.2978058305020104
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 44,
+      "time": 1.4666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.8730158730158728,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2986559117952158,
+          0.0005342020398463385,
+          166.4854285065622
+        ],
+        [
+          -0.0005362935925050805,
+          0.29749114948014416,
+          102.95911378552879
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.3292332098859996,
+      "body_scale_xy": [
+        0.2986559117952158,
+        0.29749114948014416
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 45,
+      "time": 1.5,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.9047619047619047,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2989413290942406,
+          0.000741373300972278,
+          166.10528528459008
+        ],
+        [
+          -0.0007454062137639334,
+          0.29732395015669333,
+          103.15178550122016
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.45717108906090803,
+      "body_scale_xy": [
+        0.2989413290942406,
+        0.29732395015669333
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 46,
+      "time": 1.5333333333333334,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.9365079365079365,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2990070063054319,
+          0.0007890274147143532,
+          166.0178106399893
+        ],
+        [
+          -0.0007935966269722139,
+          0.2972854434459607,
+          103.19617442867789
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.48662009529580313,
+      "body_scale_xy": [
+        0.2990070063054319,
+        0.2972854434459607
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 47,
+      "time": 1.5666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 0.9682539682539681,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2989063553542734,
+          0.0007159942922714977,
+          166.1518663473231
+        ],
+        [
+          -0.0007197553009293243,
+          0.2973444503722395,
+          103.12815612348919
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.441490633645922,
+      "body_scale_xy": [
+        0.2989063553542734,
+        0.2973444503722395
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 48,
+      "time": 1.6,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29870016563532825,
+          0.0005663321689019457,
+          166.42648749129773
+        ],
+        [
+          -0.0005686832937275317,
+          0.2974652403569213,
+          102.98896278364481
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.3490656329363951,
+      "body_scale_xy": [
+        0.29870016563532825,
+        0.2974652403569213
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 49,
+      "time": 1.6333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2984463323829398,
+          0.0003819972613506861,
+          166.76456397766913
+        ],
+        [
+          -0.00038306587527234297,
+          0.2976137760884771,
+          102.81787637083917
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.23533124445412976,
+      "body_scale_xy": [
+        0.2984463323829398,
+        0.2976137760884771
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 50,
+      "time": 1.6666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2981928546256351,
+          0.00019782042541734735,
+          167.10216673680782
+        ],
+        [
+          -0.00019810671844345835,
+          0.2977619225735259,
+          102.64732628219778
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.1218076370533367,
+      "body_scale_xy": [
+        0.2981928546256351,
+        0.2977619225735259
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 51,
+      "time": 1.7,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979741212396393,
+          3.880843601961669e-05,
+          167.3934940085347
+        ],
+        [
+          -3.8819445036278644e-05,
+          0.29788961714478446,
+          102.50039157772892
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.023885997527919263,
+      "body_scale_xy": [
+        0.2979741212396393,
+        0.29788961714478446
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 52,
+      "time": 1.7333333333333334,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2978100742716413,
+          -8.049720435588547e-05,
+          167.61198542760906
+        ],
+        [
+          8.044986973752705e-05,
+          0.29798529800108836,
+          102.39033709013714
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.049528886059204344,
+      "body_scale_xy": [
+        0.2978100742716413,
+        0.29798529800108836
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 53,
+      "time": 1.7666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29770756825707934,
+          -0.0001550675252176189,
+          167.74851152968105
+        ],
+        [
+          0.0001548919412805807,
+          0.29804504654347996,
+          102.32163149580259
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.09539190439425035,
+      "body_scale_xy": [
+        0.29770756825707934,
+        0.29804504654347996
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 54,
+      "time": 1.8,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29766313166724284,
+          -0.00018739901170501314,
+          167.80769592122232
+        ],
+        [
+          0.00018714262106585503,
+          0.29807093850540356,
+          102.29186246324767
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.11527104085769775,
+      "body_scale_xy": [
+        0.29766313166724284,
+        0.29807093850540356
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 55,
+      "time": 1.8333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2976663612770199,
+          -0.00018504908591017498,
+          167.80339445463676
+        ],
+        [
+          0.00018479908191578565,
+          0.2980690568886167,
+          102.29402574308739
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.11382629648493221,
+      "body_scale_xy": [
+        0.2976663612770199,
+        0.2980690568886167
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 56,
+      "time": 1.8666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2977033054984858,
+          -0.00015816891977016388,
+          167.75418902999218
+        ],
+        [
+          0.00015798624518697038,
+          0.29804753057442773,
+          102.31877538835727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.09729895829459308,
+      "body_scale_xy": [
+        0.2977033054984858,
+        0.29804753057442773
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 57,
+      "time": 1.9,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2977593745312259,
+          -0.00011737783354679623,
+          167.67951158530514
+        ],
+        [
+          0.00011727720915057114,
+          0.29801485347295364,
+          102.35634909076265
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0722138945168252,
+      "body_scale_xy": [
+        0.2977593745312259,
+        0.29801485347295364
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 58,
+      "time": 1.9333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2978215115837974,
+          -7.217788722272484e-05,
+          167.5967522595099
+        ],
+        [
+          7.213982930192103e-05,
+          0.2979786296087664,
+          102.398006047709
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.044411112156144905,
+      "body_scale_xy": [
+        0.2978215115837974,
+        0.2979786296087664
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 59,
+      "time": 1.9666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2978795375303748,
+          -2.9973883557212098e-05,
+          167.51946846235913
+        ],
+        [
+          2.9967318758491363e-05,
+          0.297944792591152,
+          102.43692292612585
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.018445049529778865,
+      "body_scale_xy": [
+        0.2978795375303748,
+        0.297944792591152
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 60,
+      "time": 2.0,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979267205567596,
+          4.339876135672455e-06,
+          167.45662617905032
+        ],
+        [
+          -4.340013783794621e-06,
+          0.2979172714960721,
+          102.46857908106838
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.0026708793073168687,
+      "body_scale_xy": [
+        0.2979267205567596,
+        0.2979172714960721
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 61,
+      "time": 2.033333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979597140580739,
+          2.8332273425263404e-05,
+          167.4126826902664
+        ],
+        [
+          -2.8338140675193915e-05,
+          0.29789802320363007,
+          102.49072124776711
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.017437588006004052,
+      "body_scale_xy": [
+        0.2979597140580739,
+        0.29789802320363007
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 62,
+      "time": 2.066666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29797805136622735,
+          4.166616615318881e-05,
+          167.388259539402
+        ],
+        [
+          -4.167885639843894e-05,
+          0.29788732395962947,
+          102.50302970714571
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.025645084019202374,
+      "body_scale_xy": [
+        0.29797805136622735,
+        0.29788732395962947
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 63,
+      "time": 2.1,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979833922503055,
+          4.5549668005422164e-05,
+          167.3811461062767
+        ],
+        [
+          -4.5564834403468594e-05,
+          0.29788420754356265,
+          102.50661493291051
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.028035631548120547,
+      "body_scale_xy": [
+        0.2979833922503055,
+        0.29788420754356265
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 64,
+      "time": 2.1333333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29797869415671846,
+          4.2133558925963195e-05,
+          167.38740341762116
+        ],
+        [
+          -4.214653550795393e-05,
+          0.29788694889439465,
+          102.50346119225
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.025932791968871313,
+      "body_scale_xy": [
+        0.29797869415671846,
+        0.29788694889439465
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 65,
+      "time": 2.1666666666666665,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979674420900808,
+          3.395174163015385e-05,
+          167.40238985493966
+        ],
+        [
+          -3.396016738851178e-05,
+          0.29789351425465943,
+          102.49590830731728
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.020896503224335315,
+      "body_scale_xy": [
+        0.2979674420900808,
+        0.29789351425465943
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 66,
+      "time": 2.2,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29795302505887816,
+          2.346826685672862e-05,
+          167.42159165544373
+        ],
+        [
+          -2.3472292380520773e-05,
+          0.29790192578949815,
+          102.48623180947578
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.014443761779998076,
+      "body_scale_xy": [
+        0.29795302505887816,
+        0.29790192578949815
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 67,
+      "time": 2.2333333333333334,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29793830223972484,
+          1.2762101637232785e-05,
+          167.44120073024652
+        ],
+        [
+          -1.2763292001051917e-05,
+          0.2979105151315642,
+          102.47635105814368
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.007854326976114615,
+      "body_scale_xy": [
+        0.29793830223972484,
+        0.2979105151315642
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 68,
+      "time": 2.2666666666666666,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979253640876565,
+          3.353435137884326e-06,
+          167.4584328374631
+        ],
+        [
+          -3.353517322993474e-06,
+          0.29791806278988253,
+          102.46766885244952
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -0.0020637908661380136,
+      "body_scale_xy": [
+        0.2979253640876565,
+        0.29791806278988253
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 69,
+      "time": 2.3,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979154656889366,
+          -3.844888749778019e-06,
+          167.4716163485959
+        ],
+        [
+          3.844780714887268e-06,
+          0.2979238368464032,
+          102.46102700691551
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.0023661982915286566,
+      "body_scale_xy": [
+        0.2979154656889366,
+        0.2979238368464032
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 70,
+      "time": 2.3333333333333335,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979090926692022,
+          -8.479563562033794e-06,
+          167.4801044667649
+        ],
+        [
+          8.479038110526284e-06,
+          0.29792755428947126,
+          102.45675093627813
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.005218376852667607,
+      "body_scale_xy": [
+        0.2979090926692022,
+        0.29792755428947126
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 71,
+      "time": 2.3666666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.297906113160551,
+          -1.0646384397344382e-05,
+          167.48407282443844
+        ],
+        [
+          1.0645556102685547e-05,
+          0.2979292922260677,
+          102.45475185552877
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.006551813829106885,
+      "body_scale_xy": [
+        0.297906113160551,
+        0.2979292922260677
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 72,
+      "time": 2.4,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29790597076728464,
+          -1.0749938964033726e-05,
+          167.4842624756458
+        ],
+        [
+          1.0749094478274933e-05,
+          0.2979293752829191,
+          102.45465631877255
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.006615539745929956,
+      "body_scale_xy": [
+        0.29790597076728464,
+        0.2979293752829191
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 73,
+      "time": 2.433333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.29790788063913454,
+          -9.360999846431879e-06,
+          167.4817187493106
+        ],
+        [
+          9.360359480738107e-06,
+          0.29792826126522676,
+          102.45593772814976
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.005760804626122351,
+      "body_scale_xy": [
+        0.29790788063913454,
+        0.29792826126522676
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 74,
+      "time": 2.466666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979110010692631,
+          -7.09170406488702e-06,
+          167.4775627006977
+        ],
+        [
+          7.091336537170292e-06,
+          0.2979264411135252,
+          102.45803138556809
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.004364295679197925,
+      "body_scale_xy": [
+        0.2979110010692631,
+        0.2979264411135252
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 75,
+      "time": 2.5,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.297914564186465,
+          -4.5004879008298146e-06,
+          167.47281704462134
+        ],
+        [
+          4.500339882961809e-06,
+          0.2979243627083068,
+          102.46042211932684
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.002769658286188205,
+      "body_scale_xy": [
+        0.297914564186465,
+        0.2979243627083068
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 76,
+      "time": 2.533333333333333,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979179595431298,
+          -2.0312911158449865e-06,
+          167.46829482602485
+        ],
+        [
+          2.0312609618359877e-06,
+          0.2979223821264422,
+          102.46270034564915
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": 0.001250091055989355,
+      "body_scale_xy": [
+        0.2979179595431298,
+        0.2979223821264422
+      ]
+    },
+    {
+      "clip": "purify",
+      "frame": 77,
+      "time": 2.566666666666667,
+      "core_outside_visible_ink_pixels": 0,
+      "attackable": false,
+      "purify_progress": 1,
+      "precap_overbright_fraction": 0.0,
+      "shared_body_core_transform": [
+        [
+          0.2979207725751657,
+          1.44095820088013e-08,
+          167.46454819585878
+        ],
+        [
+          -1.4409583526229925e-08,
+          0.2979207412020516,
+          102.46458788225635
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hit_stop_seconds": 0.16,
+      "recoil_amplitude_px": 32,
+      "actual_recoil_px": -8.867950371721441e-06,
+      "body_scale_xy": [
+        0.2979207725751657,
+        0.2979207412020516
+      ]
+    }
+  ]
+}

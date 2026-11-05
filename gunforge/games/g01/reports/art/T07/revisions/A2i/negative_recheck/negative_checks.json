@@ -1,0 +1,285 @@
+{
+  "rows": [
+    {
+      "counterexample": "删除近景后方、运动时将露出的中景纹样",
+      "source_asset": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_left_full.png",
+      "check": "C07b",
+      "expected": "fail",
+      "result": {
+        "status": "fail",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 288
+        }
+      },
+      "verified": true,
+      "spec": {
+        "file": "D:\\gunforge_cache\\g01\\T07\\middle_hole.png",
+        "extent": "D:\\gunforge_cache\\g01\\T07\\middle_expected.png",
+        "occlusion": "D:\\gunforge_cache\\g01\\T07\\foreground_revealed.png"
+      },
+      "control": {
+        "status": "pass",
+        "reason": "Coverage at this declared motion state",
+        "details": {
+          "missing_pixels": 0
+        }
+      },
+      "hole_rect": [
+        7,
+        234,
+        24,
+        24
+      ]
+    },
+    {
+      "counterexample": "弱点挪到墨身外",
+      "source_asset": "D:\\gunforge_cache\\g01\\T06\\crow\\core_full.png",
+      "check": "C09",
+      "expected": "fail",
+      "result": {
+        "status": "fail",
+        "reason": "Primary size, visible protection, weak point and motion reservation",
+        "details": {
+          "effective_radius": 319.02563837106226,
+          "protected_overlap": false,
+          "weak_outside": true,
+          "hud_overlap": false
+        }
+      },
+      "verified": true,
+      "spec": {
+        "primary": "D:\\gunforge_cache\\g01\\T06\\crow\\alpha_full.png",
+        "protected": "D:\\gunforge_cache\\g01\\T07\\empty.png",
+        "weak": "D:\\gunforge_cache\\g01\\T07\\weak_outside.png",
+        "content_size": [
+          1776,
+          936
+        ],
+        "motion_bbox": [
+          400,
+          300,
+          320,
+          320
+        ],
+        "hud_rects": [
+          [
+            8,
+            832,
+            244,
+            96
+          ]
+        ]
+      }
+    },
+    {
+      "counterexample": "弱点挪到墨身外",
+      "source_asset": "D:\\gunforge_cache\\g01\\T06\\crow\\core_full.png",
+      "check": "C11",
+      "expected": "fail",
+      "result": {
+        "status": "fail",
+        "reason": "Core lies outside visible body",
+        "details": {}
+      },
+      "verified": true,
+      "spec": {
+        "body": "D:\\gunforge_cache\\g01\\T06\\crow\\alpha_full.png",
+        "core": "D:\\gunforge_cache\\g01\\T07\\weak_outside.png"
+      }
+    },
+    {
+      "counterexample": "运动包围盒压住生命HUD",
+      "source_asset": "D:\\gunforge_cache\\g01\\T06\\crow\\alpha_full.png",
+      "check": "C09",
+      "expected": "fail",
+      "result": {
+        "status": "fail",
+        "reason": "Primary size, visible protection, weak point and motion reservation",
+        "details": {
+          "effective_radius": 319.02563837106226,
+          "protected_overlap": false,
+          "weak_outside": false,
+          "hud_overlap": true
+        }
+      },
+      "verified": true,
+      "spec": {
+        "primary": "D:\\gunforge_cache\\g01\\T06\\crow\\alpha_full.png",
+        "protected": "D:\\gunforge_cache\\g01\\T07\\empty.png",
+        "weak": "D:\\gunforge_cache\\g01\\T07\\empty.png",
+        "content_size": [
+          1776,
+          936
+        ],
+        "motion_bbox": [
+          100,
+          835,
+          150,
+          30
+        ],
+        "hud_rects": [
+          [
+            8,
+            832,
+            244,
+            96
+          ]
+        ]
+      }
+    },
+    {
+      "counterexample": "SDF被错误sRGB转换",
+      "source_asset": "D:\\gunforge_cache\\g01\\T06\\crow\\sdf_full.png",
+      "check": "C16",
+      "expected": "fail",
+      "result": {
+        "status": "fail",
+        "reason": "Offline SDF round-trip; engine sampling is a separate pending check",
+        "details": {
+          "max_error_px": 76.84399781375251
+        }
+      },
+      "verified": true,
+      "spec": {
+        "sdf": "D:\\gunforge_cache\\g01\\T07\\sdf_color_transfer.png",
+        "alpha": "D:\\gunforge_cache\\g01\\T06\\crow\\alpha_full.png",
+        "source_color": false
+      }
+    },
+    {
+      "counterexample": "SDF错误标记为颜色纹理",
+      "source_asset": "D:\\gunforge_cache\\g01\\T06\\crow\\sdf_full.png",
+      "check": "C16",
+      "expected": "fail",
+      "result": {
+        "status": "fail",
+        "reason": "Data texture incorrectly declared as color",
+        "details": {}
+      },
+      "verified": true,
+      "spec": {
+        "sdf": "D:\\gunforge_cache\\g01\\T06\\crow\\sdf_full.png",
+        "alpha": "D:\\gunforge_cache\\g01\\T06\\crow\\alpha_full.png",
+        "source_color": true
+      }
+    },
+    {
+      "counterexample": "4096平方RGBA8无损序列帧图集",
+      "source_asset": "D:\\gunforge_cache\\g01\\T07\\oversized_lossless_atlas.png",
+      "check": "C15",
+      "expected": "fail",
+      "result": {
+        "status": "fail",
+        "reason": "Offline texture estimate exceeds budget",
+        "details": {
+          "bytes": 67108864
+        }
+      },
+      "verified": true,
+      "spec": {
+        "textures": [
+          {
+            "size": [
+              4096,
+              4096
+            ],
+            "bytes_per_pixel": 4,
+            "mipmaps": false
+          }
+        ],
+        "limit_bytes": 33554432
+      }
+    },
+    {
+      "counterexample": "背景加入一行文字",
+      "source_asset": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T04\\gallery\\station_unlit.png",
+      "check": "C05",
+      "expected": "fail",
+      "result": {
+        "status": "fail",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": ">akyas“on|PAPERLANTERNCITY5Pl=—Cin-E—y[TE====1[ci|=—|=|i三|be«1=oorernpyEa三«3NAR",
+          "confidence": 52,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "verified": true,
+      "spec": {
+        "file": "D:\\gunforge_cache\\g01\\T07\\background_with_text.png",
+        "expected_text": ""
+      }
+    },
+    {
+      "counterexample": "零件图多一个头",
+      "source_asset": "D:\\gunforge_cache\\g01\\T05\\vendor_sheet_1_a1.png",
+      "check": "C10",
+      "expected": "fail",
+      "result": {
+        "status": "fail",
+        "reason": "Rig part list mismatch",
+        "details": {
+          "expected": [
+            "forearm_l",
+            "forearm_r",
+            "head",
+            "shin_l",
+            "shin_r",
+            "thigh_l",
+            "thigh_r",
+            "torso",
+            "upper_arm_l",
+            "upper_arm_r"
+          ],
+          "actual": [
+            "torso",
+            "head",
+            "upper_arm_l",
+            "upper_arm_r",
+            "forearm_l",
+            "forearm_r",
+            "thigh_l",
+            "thigh_r",
+            "shin_l",
+            "shin_r",
+            "head_extra"
+          ]
+        }
+      },
+      "verified": true,
+      "spec": {
+        "expected_parts": [
+          "torso",
+          "head",
+          "upper_arm_l",
+          "upper_arm_r",
+          "forearm_l",
+          "forearm_r",
+          "thigh_l",
+          "thigh_r",
+          "shin_l",
+          "shin_r"
+        ],
+        "parts": [
+          "torso",
+          "head",
+          "upper_arm_l",
+          "upper_arm_r",
+          "forearm_l",
+          "forearm_r",
+          "thigh_l",
+          "thigh_r",
+          "shin_l",
+          "shin_r",
+          "head_extra"
+        ],
+        "rig": "humanoid_10"
+      },
+      "counterexample_artifact": "D:\\gunforge_cache\\g01\\T07\\parts_sheet_extra_head.png",
+      "actual_component_count": 11
+    }
+  ],
+  "all_negative_checks_rejected": true,
+  "control_scope": "hole control certifies declared current opaque support only; full hidden geometry still pending"
+}

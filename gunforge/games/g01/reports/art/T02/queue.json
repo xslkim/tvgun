@@ -1,0 +1,546 @@
+[
+  {
+    "id": "st_l1_alley",
+    "title": "夜市巷口",
+    "group": "stations",
+    "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 制作游戏站点风格候选：夜市巷口。两侧卷帘门摊位前后交错，中间保留清楚的亮街台口；塑料凳、折叠桌、二八自行车、电线杆与高音喇叭。最多两盏灯笼，一盏路灯熄灭。 主色暖杏与桃粉。宽幅约1.9:1，正面平视，不做大角度透视；近中远6至10层视觉层次，前景简单遮挡，中景保留足够空白和清晰亮底，远处透光。没有人物、敌人、HUD、准星和任何可辨文字字母；标牌留空。不画朱砂红。整张不透明背景，画到边缘，不画外部展示框。",
+    "transparent": false,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-534363b5-8714-426e-9b86-7c695366aff4.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\st_l1_alley.png",
+    "sha256": "01f5b143d9970ac05a4155ff7d81eeee80e1e5325c2d7a3421ffd4b7576b8b9a"
+  },
+  {
+    "id": "st_l1_hawthorn",
+    "title": "糖葫芦摊",
+    "group": "stations",
+    "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 制作游戏站点风格候选：糖葫芦摊。前景一角的摊台成为掩体，另一侧搪瓷杯、蜂窝煤炉和折叠桌，糖葫芦为偏橙暖红。用横向错位构图留出中景台口，最多两盏灯笼，招牌为空。 主色暖杏与桃粉。宽幅约1.9:1，正面平视，不做大角度透视；近中远6至10层视觉层次，前景简单遮挡，中景保留足够空白和清晰亮底，远处透光。没有人物、敌人、HUD、准星和任何可辨文字字母；标牌留空。不画朱砂红。整张不透明背景，画到边缘，不画外部展示框。",
+    "transparent": false,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-6cc14b6d-8922-4579-8718-ec7785bcb543.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\st_l1_hawthorn.png",
+    "sha256": "9ac31a2d9c37e89f196c1d82ff39ddc8b89f6ea0e61ec6c842e501877b1b46ec"
+  },
+  {
+    "id": "st_l1_video",
+    "title": "录像厅门口",
+    "group": "stations",
+    "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 制作游戏站点风格候选：录像厅门口。普通旧居民楼底层卷帘门，录像带盒、空海报框、旧录音机、塑料凳和窗内暗暖光；不要仿古屋檐，侧向台阶作前景掩体，中景门口清晰。 主色暖杏与桃粉。宽幅约1.9:1，正面平视，不做大角度透视；近中远6至10层视觉层次，前景简单遮挡，中景保留足够空白和清晰亮底，远处透光。没有人物、敌人、HUD、准星和任何可辨文字字母；标牌留空。不画朱砂红。整张不透明背景，画到边缘，不画外部展示框。",
+    "transparent": false,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-90494bc1-4946-43e9-a4e4-f14a4b656e5a.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\st_l1_video.png",
+    "sha256": "7b2bebd91093726ed3640e43e6317e3fd5d43e7929096ef063c8cc7d8a0c4ad2"
+  },
+  {
+    "id": "st_l1_bridge",
+    "title": "夜市天桥",
+    "group": "stations",
+    "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 制作游戏站点风格候选：夜市天桥。简朴混凝土人行天桥横跨画面中上部，栏杆转译成剪纸轮廓；桥下两侧摊位、电线、自行车、折叠桌，清楚的三个深度带。 主色暖杏与桃粉。宽幅约1.9:1，正面平视，不做大角度透视；近中远6至10层视觉层次，前景简单遮挡，中景保留足够空白和清晰亮底，远处透光。没有人物、敌人、HUD、准星和任何可辨文字字母；标牌留空。不画朱砂红。整张不透明背景，画到边缘，不画外部展示框。",
+    "transparent": false,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-d29420ec-bf78-48b7-857d-cfe042a870d8.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\st_l1_bridge.png",
+    "sha256": "be5634faa85cf2ad588c84ec659acfea141df2ebaa6e7e8f7414f151fa640bf1"
+  },
+  {
+    "id": "st_l2_ticket",
+    "title": "影院售票处",
+    "group": "stations",
+    "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 制作游戏站点风格候选：影院售票处。旧影院玻璃售票窗口、空价目牌、栏杆、暖水瓶和玻璃汽水瓶，左右错开近景遮挡；售票口与后方通道形成清楚的纵向纸层。 主色品红与冰蓝，少量暖杏。宽幅约1.9:1，正面平视，不做大角度透视；近中远6至10层视觉层次，前景简单遮挡，中景保留足够空白和清晰亮底，远处透光。没有人物、敌人、HUD、准星和任何可辨文字字母；标牌留空。不画朱砂红。整张不透明背景，画到边缘，不画外部展示框。 时间明确是夜间灯箱，不是日落或白天；画面约60%为深靛青或深紫，约30%为本关主色纸光，约10%点缀。远景光保持中等亮度，天空不得画成整块橙黄或白色。",
+    "transparent": false,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-f2c8f5ba-f92b-4dc4-bd32-d5360d8d2408.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\st_l2_ticket.png",
+    "sha256": "dae852d1d1b136601561ce47285c98f70cbd5d057590bb2179a04c00921b02af"
+  },
+  {
+    "id": "st_l2_posters",
+    "title": "影院海报长廊",
+    "group": "stations",
+    "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 制作游戏站点风格候选：影院海报长廊。墙上空的手绘电影海报框，木长椅、关着的放映门、纸质墙裙。走廊前视保持平面感，左右交错而非对称亮洞，地面不反光。 主色品红与冰蓝，少量暖杏。宽幅约1.9:1，正面平视，不做大角度透视；近中远6至10层视觉层次，前景简单遮挡，中景保留足够空白和清晰亮底，远处透光。没有人物、敌人、HUD、准星和任何可辨文字字母；标牌留空。不画朱砂红。整张不透明背景，画到边缘，不画外部展示框。 时间明确是夜间灯箱，不是日落或白天；画面约60%为深靛青或深紫，约30%为本关主色纸光，约10%点缀。远景光保持中等亮度，天空不得画成整块橙黄或白色。",
+    "transparent": false,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-9de82b5c-9100-4df4-98e4-fbc04845e9d2.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\st_l2_posters.png",
+    "sha256": "ac8f76adb5869839e7778c6f5736f9e38eba3a93032f558c9add80818a0bc33a"
+  },
+  {
+    "id": "st_l2_seats",
+    "title": "影院观众席",
+    "group": "stations",
+    "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 制作游戏站点风格候选：影院观众席。前排木折叠座椅剪影、中景暗品红银幕、远处侧上方放映窗，低亮冰蓝光束形成对角线。银幕不发白，留明确中景可射台口。 主色品红与冰蓝。宽幅约1.9:1，正面平视，不做大角度透视；近中远6至10层视觉层次，前景简单遮挡，中景保留足够空白和清晰亮底，远处透光。没有人物、敌人、HUD、准星和任何可辨文字字母；标牌留空。不画朱砂红。整张不透明背景，画到边缘，不画外部展示框。 时间明确是夜间灯箱，不是日落或白天；画面约60%为深靛青或深紫，约30%为本关主色纸光，约10%点缀。远景光保持中等亮度，天空不得画成整块橙黄或白色。",
+    "transparent": false,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-988015b5-0ee3-41bf-8ff2-69a7d5e3855e.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\st_l2_seats.png",
+    "sha256": "4515c894d66904db953e1562f51f3ff32df12c20e48dcfaaba0a465b018b157f"
+  },
+  {
+    "id": "st_l2_projector",
+    "title": "影院放映室",
+    "group": "stations",
+    "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 制作游戏站点风格候选：影院放映室。胶片放映机、胶片盘、暖水瓶与狭小工作台，窗口的低亮光束从左上斜过；设备轮廓剪纸化，不要复杂写实机械。 主色深紫、品红与冰蓝。宽幅约1.9:1，正面平视，不做大角度透视；近中远6至10层视觉层次，前景简单遮挡，中景保留足够空白和清晰亮底，远处透光。没有人物、敌人、HUD、准星和任何可辨文字字母；标牌留空。不画朱砂红。整张不透明背景，画到边缘，不画外部展示框。 时间明确是夜间灯箱，不是日落或白天；画面约60%为深靛青或深紫，约30%为本关主色纸光，约10%点缀。远景光保持中等亮度，天空不得画成整块橙黄或白色。",
+    "transparent": false,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-bf758354-979e-427f-9877-a6bdcc50fd55.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\st_l2_projector.png",
+    "sha256": "ffc9ab6bb4fd81e71cc6aa17dcc517f3557a7173e8dda8d819be390f3240eed1"
+  },
+  {
+    "id": "st_l3_waiting",
+    "title": "火车站候车室",
+    "group": "stations",
+    "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 制作游戏站点风格候选：火车站候车室。旧长椅、编织袋、搪瓷缸、站台时钟、空大字标语框与检票栏杆；横向重复长椅产生节奏，避免居中亮洞。 主色青绿与月白，少量暖杏。宽幅约1.9:1，正面平视，不做大角度透视；近中远6至10层视觉层次，前景简单遮挡，中景保留足够空白和清晰亮底，远处透光。没有人物、敌人、HUD、准星和任何可辨文字字母；标牌留空。不画朱砂红。整张不透明背景，画到边缘，不画外部展示框。 时间明确是夜间灯箱，不是日落或白天；画面约60%为深靛青或深紫，约30%为本关主色纸光，约10%点缀。远景光保持中等亮度，天空不得画成整块橙黄或白色。",
+    "transparent": false,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-159896a3-e43a-45b3-b4b6-7a61c0c3dc54.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\st_l3_waiting.png",
+    "sha256": "ef64554904272a32f97764537f924b18c8225867aa2905ef391f7e0a8d4fbd6c"
+  },
+  {
+    "id": "st_l3_platform",
+    "title": "绿皮火车站台",
+    "group": "stations",
+    "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 制作游戏站点风格候选：绿皮火车站台。方正绿皮车厢带低饱和黄色腰线，连续车窗、站台时钟、编织袋、长月台，与画面平行的长水平线。不是欧式蒸汽火车，局部暖杏车窗。 主色青绿与月白，少量暖杏。宽幅约1.9:1，正面平视，不做大角度透视；近中远6至10层视觉层次，前景简单遮挡，中景保留足够空白和清晰亮底，远处透光。没有人物、敌人、HUD、准星和任何可辨文字字母；标牌留空。不画朱砂红。整张不透明背景，画到边缘，不画外部展示框。 时间明确是夜间灯箱，不是日落或白天；画面约60%为深靛青或深紫，约30%为本关主色纸光，约10%点缀。远景光保持中等亮度，天空不得画成整块橙黄或白色。",
+    "transparent": false,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-5c97d74d-9eeb-492c-9466-be304dfacdd9.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\st_l3_platform.png",
+    "sha256": "ea9c3643ff5db72b391610133e6105ba9fffb1dacf3fcf3d6518cf021cfbd466"
+  },
+  {
+    "id": "st_l3_carriage",
+    "title": "绿皮车厢内部",
+    "group": "stations",
+    "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 制作游戏站点风格候选：绿皮车厢内部。平行画面的车厢侧窗、行李架、编织袋、暖水瓶和搪瓷缸，重复车窗与座位的横向节奏，层叠纸片窗外夜色。 主色青绿与月白，少量暖杏。宽幅约1.9:1，正面平视，不做大角度透视；近中远6至10层视觉层次，前景简单遮挡，中景保留足够空白和清晰亮底，远处透光。没有人物、敌人、HUD、准星和任何可辨文字字母；标牌留空。不画朱砂红。整张不透明背景，画到边缘，不画外部展示框。 时间明确是夜间灯箱，不是日落或白天；画面约60%为深靛青或深紫，约30%为本关主色纸光，约10%点缀。远景光保持中等亮度，天空不得画成整块橙黄或白色。",
+    "transparent": false,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-776fafb0-a0bc-4c68-a197-39663fd16ad3.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\st_l3_carriage.png",
+    "sha256": "0d69267c7dd131f2f78f0a434266648e9a79e78a8cfcaed78126a10107096e04"
+  },
+  {
+    "id": "st_l3_base",
+    "title": "纸灯灯座",
+    "group": "stations",
+    "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 制作游戏站点风格候选：纸灯灯座。由纸雕小城底部过渡到纸灯底座，简单木质框转译为平纸片，暖灯芯在后方提供常驻背光，前景纸层像舞台台口展开。安静怀旧。 主色青绿与月白，少量暖杏。宽幅约1.9:1，正面平视，不做大角度透视；近中远6至10层视觉层次，前景简单遮挡，中景保留足够空白和清晰亮底，远处透光。没有人物、敌人、HUD、准星和任何可辨文字字母；标牌留空。不画朱砂红。整张不透明背景，画到边缘，不画外部展示框。 时间明确是夜间灯箱，不是日落或白天；画面约60%为深靛青或深紫，约30%为本关主色纸光，约10%点缀。远景光保持中等亮度，天空不得画成整块橙黄或白色。",
+    "transparent": false,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-39258512-81ec-4adb-97b1-36367760780a.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\st_l3_base.png",
+    "sha256": "149f934cff0fc0a1cb29dbc5d1873732c0beda103d29511c469bc9a058cb6dae"
+  },
+  {
+    "id": "res_vendor",
+    "title": "瘦高卖糖葫芦的人",
+    "group": "residents",
+    "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 一个独立纸居民设定候选：瘦高卖糖葫芦的人，普通毛衣加暖杏围裙，手持偏橙糖葫芦，友善。亮色纸身体，绝不画黑色身体；四分之三侧身，单个全身中性站姿，头身比约1:4.5，剪纸五官简单友善，不画表情细节。身体约十件纸偶分件感、圆形搭接、铜色小纸扣；不要把衣服分解展示。不画墨团，不画红点。真正透明背景，轮廓完整，四周留空，不画棋盘格、地面、投影、文字或标签。",
+    "transparent": true,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-78751bd0-971d-430a-b6aa-84f7c32b6e9d.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\res_vendor.png",
+    "sha256": "cae0e9fda89c0707ecb0a78f4d98a5f2130d9ae73d71c8157258039706794ae6"
+  },
+  {
+    "id": "res_video",
+    "title": "微胖录像厅老板",
+    "group": "residents",
+    "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 一个独立纸居民设定候选：微胖录像厅老板，灰青夹克、暖杏衬衫，手持无字录像带盒。亮色纸身体，绝不画黑色身体；四分之三侧身，单个全身中性站姿，头身比约1:4.5，剪纸五官简单友善，不画表情细节。身体约十件纸偶分件感、圆形搭接、铜色小纸扣；不要把衣服分解展示。不画墨团，不画红点。真正透明背景，轮廓完整，四周留空，不画棋盘格、地面、投影、文字或标签。",
+    "transparent": true,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-bdab4189-49e4-4b18-b0c4-7856b0eef6cb.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\res_video.png",
+    "sha256": "cd4c463abf86babb166fd2c5499c0551d26e8cb31a30deec506ddc2e3632759a"
+  },
+  {
+    "id": "res_projectionist",
+    "title": "中年放映员",
+    "group": "residents",
+    "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 一个独立纸居民设定候选：中年放映员，青绿工作服、卷起袖口，手持简化胶片盘。亮色纸身体，绝不画黑色身体；四分之三侧身，单个全身中性站姿，头身比约1:4.5，剪纸五官简单友善，不画表情细节。身体约十件纸偶分件感、圆形搭接、铜色小纸扣；不要把衣服分解展示。不画墨团，不画红点。真正透明背景，轮廓完整，四周留空，不画棋盘格、地面、投影、文字或标签。",
+    "transparent": true,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-427b639c-08d7-4afa-bfa4-df1169466a70.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\res_projectionist.png",
+    "sha256": "79b94baa79440fa24ae8a58bded0b8d4ac14fa2956b9cb574fa48c536831be01"
+  },
+  {
+    "id": "res_ticket",
+    "title": "检票员",
+    "group": "residents",
+    "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 一个独立纸居民设定候选：检票员，普通军绿外套、布鞋，手持无字纸票，朴素。亮色纸身体，绝不画黑色身体；四分之三侧身，单个全身中性站姿，头身比约1:4.5，剪纸五官简单友善，不画表情细节。身体约十件纸偶分件感、圆形搭接、铜色小纸扣；不要把衣服分解展示。不画墨团，不画红点。真正透明背景，轮廓完整，四周留空，不画棋盘格、地面、投影、文字或标签。",
+    "transparent": true,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-c14a2005-d085-496f-bf32-7d1a42b97294.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\res_ticket.png",
+    "sha256": "d8ea457ed9edccba1bf6490f010294799f12b4ce3ac338b83d507338e1851623"
+  },
+  {
+    "id": "res_cyclist",
+    "title": "穿桃粉毛衣和普通长裤的骑车居民",
+    "group": "residents",
+    "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 一个独立纸居民设定候选：穿桃粉毛衣和普通长裤的骑车居民，手扶简化二八自行车。亮色纸身体，绝不画黑色身体；四分之三侧身，单个全身中性站姿，头身比约1:4.5，剪纸五官简单友善，不画表情细节。身体约十件纸偶分件感、圆形搭接、铜色小纸扣；不要把衣服分解展示。不画墨团，不画红点。真正透明背景，轮廓完整，四周留空，不画棋盘格、地面、投影、文字或标签。",
+    "transparent": true,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-4bc24968-0a08-4832-be45-edaf7a635f4c.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\res_cyclist.png",
+    "sha256": "a09e6d25f0de85bd3c67ef818c88188efe2b85e05d1a6e5851a080ef43812594"
+  },
+  {
+    "id": "res_passerby",
+    "title": "老人路人",
+    "group": "residents",
+    "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 一个独立纸居民设定候选：老人路人，暖杏毛衣、青绿色长裤、布鞋，提编织袋，温和。亮色纸身体，绝不画黑色身体；四分之三侧身，单个全身中性站姿，头身比约1:4.5，剪纸五官简单友善，不画表情细节。身体约十件纸偶分件感、圆形搭接、铜色小纸扣；不要把衣服分解展示。不画墨团，不画红点。真正透明背景，轮廓完整，四周留空，不画棋盘格、地面、投影、文字或标签。",
+    "transparent": true,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-b4569ac0-9ee2-4109-9bf3-fcd4c1aa7125.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\res_passerby.png",
+    "sha256": "9b8f9200effc8d0a40642f742d6131edade4fd239dbe7929e11af0b23202a39c"
+  },
+  {
+    "id": "ink_tadpole",
+    "title": "墨蝌蚪",
+    "group": "ink",
+    "prompt": "游戏墨怪方向候选，单独一只：墨蝌蚪，头部是一团直径很大的圆润墨团，细尾巴；只有一只，不画群体。平面墨黑#0B0B0E的液态墨造型，轮廓清楚，靠流淌拉丝、渗入纸纤维的毛边和墨滴表现。只有朝光侧极少湿润高光，总面积小于墨身5%，不可整圈勾亮边。只有一枚平的朱砂#C8322C印泥印迹在厚实身体中，不是眼睛不是宝石不是球；边缘一点点暖杏柔光。身体足够厚，缩小仍好认。真正透明背景，不画地面、投影、棋盘格、文字、标注；不画3D树脂玩具，不画血腥恐怖，不画其他红点，不画白色高光。",
+    "transparent": true,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-aaca8373-4513-4e71-bbe7-52f1ff265c90.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\ink_tadpole.png",
+    "sha256": "ba045ce04970d9181ef8ad1f2d22d0cd0606f2394ea1014ef3bfe5b2d2b8742b"
+  },
+  {
+    "id": "ink_crow",
+    "title": "墨鸦",
+    "group": "ink",
+    "prompt": "游戏墨怪方向候选，单独一只：墨鸦，吃掉麻雀后形成，厚实墨身，简洁粗羽轮廓和一条墨滴，半展翅。平面墨黑#0B0B0E的液态墨造型，轮廓清楚，靠流淌拉丝、渗入纸纤维的毛边和墨滴表现。只有朝光侧极少湿润高光，总面积小于墨身5%，不可整圈勾亮边。只有一枚平的朱砂#C8322C印泥印迹在厚实身体中，不是眼睛不是宝石不是球；边缘一点点暖杏柔光。身体足够厚，缩小仍好认。真正透明背景，不画地面、投影、棋盘格、文字、标注；不画3D树脂玩具，不画血腥恐怖，不画其他红点，不画白色高光。",
+    "transparent": true,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-5ee3fdbb-6bec-4fc4-99fc-3cb93b8dba3b.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\ink_crow.png",
+    "sha256": "0adb26ecb5dd88808536492f0a60aceafb5ed5f6e2f63f46d26e3e10cc3ebb78"
+  },
+  {
+    "id": "ink_rider",
+    "title": "墨车夫",
+    "group": "ink",
+    "prompt": "游戏墨怪方向候选，单独一只：墨车夫，墨吞掉二八自行车形成的骑车轮廓，身体是厚实墨团，车轮简化避免细节抢眼。平面墨黑#0B0B0E的液态墨造型，轮廓清楚，靠流淌拉丝、渗入纸纤维的毛边和墨滴表现。只有朝光侧极少湿润高光，总面积小于墨身5%，不可整圈勾亮边。只有一枚平的朱砂#C8322C印泥印迹在厚实身体中，不是眼睛不是宝石不是球；边缘一点点暖杏柔光。身体足够厚，缩小仍好认。真正透明背景，不画地面、投影、棋盘格、文字、标注；不画3D树脂玩具，不画血腥恐怖，不画其他红点，不画白色高光。",
+    "transparent": true,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-bdbb5035-0a14-42eb-a6d1-1655a64cc50c.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\ink_rider.png",
+    "sha256": "be381b90c17395f5d606e34483fa67c553ed57b18bcc287c8fbc3ba5c1cc0ec1"
+  },
+  {
+    "id": "ink_sign",
+    "title": "墨招牌",
+    "group": "ink",
+    "prompt": "游戏墨怪方向候选，单独一只：墨招牌，墨团从一块无字的镂空招牌后探出，吐墨动作前的中性造型。平面墨黑#0B0B0E的液态墨造型，轮廓清楚，靠流淌拉丝、渗入纸纤维的毛边和墨滴表现。只有朝光侧极少湿润高光，总面积小于墨身5%，不可整圈勾亮边。只有一枚平的朱砂#C8322C印泥印迹在厚实身体中，不是眼睛不是宝石不是球；边缘一点点暖杏柔光。身体足够厚，缩小仍好认。真正透明背景，不画地面、投影、棋盘格、文字、标注；不画3D树脂玩具，不画血腥恐怖，不画其他红点，不画白色高光。",
+    "transparent": true,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-5c8c8fd9-23d6-4a00-a326-9fb62422362f.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\ink_sign.png",
+    "sha256": "1d30287363f7f29c5ba2374eebffd4e0cc20bb16025692f0a657aac2d62e683e"
+  },
+  {
+    "id": "ink_tape",
+    "title": "磁带墨",
+    "group": "ink",
+    "prompt": "游戏墨怪方向候选，单独一只：磁带墨，录像带被吞后形成的大墨团，少量宽磁带丝缠绕，不要满身细丝。平面墨黑#0B0B0E的液态墨造型，轮廓清楚，靠流淌拉丝、渗入纸纤维的毛边和墨滴表现。只有朝光侧极少湿润高光，总面积小于墨身5%，不可整圈勾亮边。只有一枚平的朱砂#C8322C印泥印迹在厚实身体中，不是眼睛不是宝石不是球；边缘一点点暖杏柔光。身体足够厚，缩小仍好认。真正透明背景，不画地面、投影、棋盘格、文字、标注；不画3D树脂玩具，不画血腥恐怖，不画其他红点，不画白色高光。",
+    "transparent": true,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-630756fe-d9ab-4b11-9909-dd93b9bc4486.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\ink_tape.png",
+    "sha256": "cd16c33652306bd567b6a4c253117627aebe91c9a080f6abe52cc1ffc27e000a"
+  },
+  {
+    "id": "ink_umbrella",
+    "title": "墨伞",
+    "group": "ink",
+    "prompt": "游戏墨怪方向候选，单独一只：墨伞，简化雨伞收拢到一侧，露出宽大墨身；只有一个朱砂印迹。平面墨黑#0B0B0E的液态墨造型，轮廓清楚，靠流淌拉丝、渗入纸纤维的毛边和墨滴表现。只有朝光侧极少湿润高光，总面积小于墨身5%，不可整圈勾亮边。只有一枚平的朱砂#C8322C印泥印迹在厚实身体中，不是眼睛不是宝石不是球；边缘一点点暖杏柔光。身体足够厚，缩小仍好认。真正透明背景，不画地面、投影、棋盘格、文字、标注；不画3D树脂玩具，不画血腥恐怖，不画其他红点，不画白色高光。",
+    "transparent": true,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-175eeb9c-b3df-49b3-9534-728edae0dac9.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\ink_umbrella.png",
+    "sha256": "4c090c19280e8e2eab673e840e9b89a0fee1be9244dd5531a511649dbec20b39"
+  },
+  {
+    "id": "ui_life",
+    "title": "ui_life",
+    "group": "ui",
+    "prompt": "Technical video-game HUD asset, NOT a decorative illustration. Exactly FIVE tiny flat paper wick icons in a horizontal row. Each icon is a plain narrow upright paper strip topped by a small flame-shaped paper cutout. The first FOUR flames are muted warm apricot #D9A066; the FIFTH is dark indigo and extinguished. Simple solid silhouettes, very subtle fine paper texture. Truly transparent background. No lanterns, no candles made of wax, no scenery, buildings, people, foliage, badges, frames, tassels, glow, shadows, words, numbers or labels. Each icon must remain recognizable at 36x64 pixels.",
+    "transparent": true,
+    "state": "returned",
+    "attempt": 2,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-1a103f15-3523-4eab-8f25-795340100ed9.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\ui_life_a2.png",
+    "sha256": "3ac5a0855d7e52c3299fb5177a58ce7831c55a837a08b5a8c3985d5b2ea0eb72",
+    "history": [
+      {
+        "attempt": 1,
+        "output": "D:\\gunforge_cache\\g01\\T02\\ui_life.png",
+        "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-d60055f9-53e6-4f91-a7e5-f8483226eef6.png",
+        "sha256": "9c34a710d6df7c6c39d6065cf7f856c67b8a09c5f10d6782c04bedce083ef036",
+        "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 独立游戏UI方向候选。只画一套五根剪纸灯芯：四根低亮暖杏点亮，一根深青熄灭；每根造型清晰，无文字、数字、UI面板，无写实蜡烛。 真正透明背景，平面设计，完整主体四周留空，不画展示样机、场景、地面、投影、棋盘格。没有指定以外的文字或额外符号。"
+      }
+    ]
+  },
+  {
+    "id": "ui_ammo",
+    "title": "ui_ammo",
+    "group": "ui",
+    "prompt": "Technical video-game HUD asset, NOT decorative illustration. Exactly SIX plain vertical rectangular paper cells in a horizontal row, equal spacing. The first FOUR are filled muted warm apricot #D9A066, the last TWO are simple empty teal paper outlines with transparent centers. Minimal flat cut paper, tiny subtle fiber texture. Truly transparent background. No lanterns, scalloped shapes, scenes, pictures inside the cells, buildings, people, foliage, glow, shadow, text, numbers or labels. Designed to read at 32x48 pixels each.",
+    "transparent": true,
+    "state": "returned",
+    "attempt": 2,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-b9a2f3af-93bb-40d8-963a-203264097c2d.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\ui_ammo_a2.png",
+    "sha256": "178ea47d5392d3e50c7945ce5b0676d5b5a490ba4751f98dfac03dba4ea874e6",
+    "history": [
+      {
+        "attempt": 1,
+        "output": "D:\\gunforge_cache\\g01\\T02\\ui_ammo.png",
+        "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-cef80b74-de69-4a48-82ed-eb886c97f4a4.png",
+        "sha256": "e0f2ffb8850d43c090f72d44ff3673723b0d1dc07a12df605ddec39ae436c513",
+        "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 独立游戏UI方向候选。只画一套六格“光”弹药符号：四格暖杏充满，两格空心青色，纸片构成，排列等距，无文字数字和背景面板。 真正透明背景，平面设计，完整主体四周留空，不画展示样机、场景、地面、投影、棋盘格。没有指定以外的文字或额外符号。"
+      }
+    ]
+  },
+  {
+    "id": "ui_stamp",
+    "title": "ui_stamp",
+    "group": "ui",
+    "prompt": "One single plain square cinnabar ink stamp BORDER only. Flat #C8322C ink, slightly irregular printed paper-grain edge, narrow border, the entire square interior EMPTY and TRULY TRANSPARENT. Isolated on transparent background. No letters, characters, numbers, symbols, people, buildings, city, foliage, scene, ornament, glow, shading, paper sheet or frame outside the square. Minimal technical HUD stamp-frame asset.",
+    "transparent": true,
+    "state": "returned",
+    "attempt": 2,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-3d295349-420f-4e5c-9fed-c4fe26ddc0e0.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\ui_stamp_a2.png",
+    "sha256": "aff16da1356ff7d97527cef9183aab4c4953621b560348f040d445131bd9f056",
+    "history": [
+      {
+        "attempt": 1,
+        "output": "D:\\gunforge_cache\\g01\\T02\\ui_stamp.png",
+        "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-e639a10d-44bb-4a72-860f-230419071f58.png",
+        "sha256": "74c0474a51a863368e900e33b22e45644427d4bd781159bb3a73a416a2de5591",
+        "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 独立游戏UI方向候选。只画一个朱砂方印框，平面印泥颗粒与不规则边缘，中间完全透明，不带任何文字、图案或数字，朱砂#C8322C。 真正透明背景，平面设计，完整主体四周留空，不画展示样机、场景、地面、投影、棋盘格。没有指定以外的文字或额外符号。"
+      }
+    ]
+  },
+  {
+    "id": "ui_frames",
+    "title": "ui_frames",
+    "group": "ui",
+    "prompt": "One single minimalist long rectangular HUD notification-frame asset, front view, aspect ratio about 8:1. A thin flat dark indigo paper outer border and one very thin muted warm-apricot cut edge. The entire central rectangle is EMPTY and truly transparent. Plain square corners suitable for nine-slice scaling. No scenery, trees, leaves, buildings, people, icons, ornaments, glow, cast shadows, lettering or numbers. Subtle paper grain only.",
+    "transparent": true,
+    "state": "returned",
+    "attempt": 2,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-381d0e9e-8d1c-4395-97d8-14266f796faf.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\ui_frames_a2.png",
+    "sha256": "23bf65e78f764642316aa1c2fd4424022b89ed3421c9292f21345a7c4643c19e",
+    "history": [
+      {
+        "attempt": 1,
+        "output": "D:\\gunforge_cache\\g01\\T02\\ui_frames.png",
+        "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-5778dab2-6ceb-4d1e-888c-2ac13c156476.png",
+        "sha256": "cd9ea9622b5667d2b4fb09368eace1fcf081361fec970342e833afc6d44506ba",
+        "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 独立游戏UI方向候选。只画一个纸雕风格的深色长方提示条框，暖杏纸切边，中心留透明空白，四角适合九宫格缩放，无字无符号。 真正透明背景，平面设计，完整主体四周留空，不画展示样机、场景、地面、投影、棋盘格。没有指定以外的文字或额外符号。"
+      }
+    ]
+  },
+  {
+    "id": "ui_title",
+    "title": "ui_title",
+    "group": "ui",
+    "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 独立游戏UI方向候选。只画标题三个汉字“纸灯城”，必须逐字正确，不加副标题；毛笔但干净可读，暖杏纸雕剪影字形，细纤维与纸切边，透明背景，不发光。 真正透明背景，平面设计，完整主体四周留空，不画展示样机、场景、地面、投影、棋盘格。没有指定以外的文字或额外符号。",
+    "transparent": true,
+    "state": "returned",
+    "attempt": 1,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-bc01de4a-237a-43cd-8b8b-81beb3883084.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\ui_title.png",
+    "sha256": "73f0065ee06698cd24c372e963238cc4a620997e0e9614abe1240624c0818132"
+  },
+  {
+    "id": "ui_crosshair",
+    "title": "ui_crosshair",
+    "group": "ui",
+    "prompt": "One minimalist flat cut-paper aiming ring only, muted warm apricot #D9A066, with FOUR tiny equal gaps at top bottom left right. Thin uniform ring, empty fully transparent center, genuine transparent background. Extremely simple video-game crosshair readable at 40 pixels diameter. No glow, haze, shadow, white, outer decorations, scene, lettering, numbers, targets or extra symbols.",
+    "transparent": true,
+    "state": "returned",
+    "attempt": 2,
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-1fe87716-1456-49d7-8b40-5e0a8f5c9f78.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\ui_crosshair_a2.png",
+    "sha256": "854037c77137401b37a93aa8a027993be13457a3909a6af868846d34f9fb7803",
+    "history": [
+      {
+        "attempt": 1,
+        "output": "D:\\gunforge_cache\\g01\\T02\\ui_crosshair.png",
+        "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-091b7360-a7ae-44c6-86dd-93b5084825d6.png",
+        "sha256": "bd7ee94e3ad19525d8f7443905bc8f48a838bf0aa0c3d70373de53a97066ca3b",
+        "prompt": "手工刻纸与纸雕灯游戏美术方向。平面纸片叠层，切口干净，细纸纤维，造型简洁，纸面平整。近景深色剪影，中景清楚，远景温暖透光。1990年代中国小城的日常生活。不要古镇古装、写实摄影、塑料和树脂质感、厚重3D倒角、卷纸。 严格围绕靛青#141A33、深紫#2A1E3D、暖杏#D9A066、桃粉#C97B84、青绿#4E9A92、月白#B8C4D6、品红#B04A9A、冰蓝#4A90B8。没有纯白，不画白月亮与白色爆闪。光是纸层间低亮暖光，不画大面积发白光源。 独立游戏UI方向候选。只画一个纸环准星，细暖杏平面纸环、四个简短切口，中心完全透明，低亮不发白，无字无额外装饰。 真正透明背景，平面设计，完整主体四周留空，不画展示样机、场景、地面、投影、棋盘格。没有指定以外的文字或额外符号。"
+      }
+    ]
+  },
+  {
+    "id": "ink_compare_a",
+    "title": "墨鸦A：强高光与球状红核",
+    "group": "comparison",
+    "prompt": "Edit this exact crow sprite for an A/B material comparison. Preserve the same crow silhouette, pose, wing spread, body position and canvas framing. Change ONLY the surface material: make the black ink much glossier with several broad wet specular highlights, and replace the single flat red ink stamp with a spherical red glossy gem at exactly the same location. Keep only one red target. Genuine transparent background, no scene or text. This intentionally glossy A alternative is a comparison sample, not the default approved style.",
+    "transparent": true,
+    "references": [
+      "D:/gunforge_cache/g01/T02/ink_crow.png"
+    ],
+    "attempt": 1,
+    "state": "returned",
+    "cost": {
+      "amount": null,
+      "status": "not_reported"
+    },
+    "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-3e52b4c9-62dc-4406-b855-c2dcb87f4fd9.png",
+    "output": "D:\\gunforge_cache\\g01\\T02\\ink_compare_a.png",
+    "sha256": "0760447ddb438b9e231347989549972853b7a1707174c94cb1d8878495482f00"
+  }
+]

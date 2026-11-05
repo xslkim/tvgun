@@ -1,0 +1,630 @@
+{
+  "categories": {
+    "station_and_lights": {
+      "textures": [
+        {
+          "file": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\far_base.png",
+          "size": [
+            1936,
+            1036
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 8022784,
+          "allocated_bytes": 10695972
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\far_town.png",
+          "size": [
+            1751,
+            814
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 5701256,
+          "allocated_bytes": 7597568
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_ground.png",
+          "size": [
+            1936,
+            875
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 6776000,
+          "allocated_bytes": 9030260
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_left.png",
+          "size": [
+            1914,
+            933
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 7143048,
+          "allocated_bytes": 9519856
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\mid_right.png",
+          "size": [
+            1764,
+            904
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 6378624,
+          "allocated_bytes": 8504148
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_left.png",
+          "size": [
+            1454,
+            1036
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 6025376,
+          "allocated_bytes": 8031844
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\near_right.png",
+          "size": [
+            1547,
+            1036
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 6410768,
+          "allocated_bytes": 8544672
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T04\\station\\layers\\lamp.png",
+          "size": [
+            1023,
+            801
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 3277692,
+          "allocated_bytes": 4366720
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_spill.png",
+          "size": [
+            1920,
+            1020
+          ],
+          "mode": "L",
+          "assumed_gpu_bytes_per_pixel": 1,
+          "mipmaps": true,
+          "base_bytes": 1958400,
+          "allocated_bytes": 2610880
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T04\\station\\lights\\streetlamp_glow.png",
+          "size": [
+            1920,
+            1020
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 7833600,
+          "allocated_bytes": 10443520
+        }
+      ],
+      "budget_bytes": 50331648,
+      "estimated_bytes": 79345440,
+      "estimate_within_budget": false,
+      "status": "fail_offline_estimate"
+    },
+    "both_residents_two_enemies_six_blobs": {
+      "textures": [
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\torso.png",
+          "size": [
+            328,
+            392
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 514304,
+          "allocated_bytes": 685608
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\head.png",
+          "size": [
+            255,
+            273
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 278460,
+          "allocated_bytes": 370204
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\upper_arm_l.png",
+          "size": [
+            174,
+            267
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 185832,
+          "allocated_bytes": 247084
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\upper_arm_r.png",
+          "size": [
+            174,
+            267
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 185832,
+          "allocated_bytes": 247084
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\forearm_l.png",
+          "size": [
+            174,
+            267
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 185832,
+          "allocated_bytes": 247084
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\forearm_r.png",
+          "size": [
+            174,
+            267
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 185832,
+          "allocated_bytes": 247084
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\thigh_l.png",
+          "size": [
+            189,
+            267
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 201852,
+          "allocated_bytes": 268212
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\thigh_r.png",
+          "size": [
+            189,
+            267
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 201852,
+          "allocated_bytes": 268212
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\shin_l.png",
+          "size": [
+            189,
+            283
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 213948,
+          "allocated_bytes": 284296
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\shin_r.png",
+          "size": [
+            189,
+            283
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 213948,
+          "allocated_bytes": 284296
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\parts\\prop.png",
+          "size": [
+            40,
+            220
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 35200,
+          "allocated_bytes": 46884
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\attachments_v3\\distress_head.png",
+          "size": [
+            163,
+            204
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 133008,
+          "allocated_bytes": 176844
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\vendor\\attachments_v3\\right_palm.png",
+          "size": [
+            61,
+            76
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 18544,
+          "allocated_bytes": 24556
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\torso.png",
+          "size": [
+            387,
+            387
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 599076,
+          "allocated_bytes": 797216
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\head.png",
+          "size": [
+            266,
+            269
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 286216,
+          "allocated_bytes": 380912
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\upper_arm_l.png",
+          "size": [
+            172,
+            264
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 181632,
+          "allocated_bytes": 242008
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\upper_arm_r.png",
+          "size": [
+            172,
+            264
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 181632,
+          "allocated_bytes": 242008
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\forearm_l.png",
+          "size": [
+            172,
+            264
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 181632,
+          "allocated_bytes": 242008
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\forearm_r.png",
+          "size": [
+            172,
+            264
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 181632,
+          "allocated_bytes": 242008
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\thigh_l.png",
+          "size": [
+            188,
+            264
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 198528,
+          "allocated_bytes": 264512
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\thigh_r.png",
+          "size": [
+            188,
+            264
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 198528,
+          "allocated_bytes": 264512
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\shin_l.png",
+          "size": [
+            188,
+            280
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 210560,
+          "allocated_bytes": 280532
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\shin_r.png",
+          "size": [
+            188,
+            280
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 210560,
+          "allocated_bytes": 280532
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\prop.png",
+          "size": [
+            84,
+            150
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 50400,
+          "allocated_bytes": 67052
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\video\\attachments_v3\\distress_head.png",
+          "size": [
+            175,
+            203
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 142100,
+          "allocated_bytes": 188576
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\video\\attachments_v3\\right_palm.png",
+          "size": [
+            55,
+            79
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 17380,
+          "allocated_bytes": 22856
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T06\\crow\\body.png",
+          "size": [
+            917,
+            753
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 2762004,
+          "allocated_bytes": 3679984
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T06\\crow\\core.png",
+          "size": [
+            821,
+            675
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 2216700,
+          "allocated_bytes": 2952708
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T06\\crow\\core_hardened.png",
+          "size": [
+            224,
+            56
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 50176,
+          "allocated_bytes": 66852
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T06\\crow\\sdf.png",
+          "size": [
+            917,
+            753
+          ],
+          "mode": "L",
+          "assumed_gpu_bytes_per_pixel": 1,
+          "mipmaps": true,
+          "base_bytes": 690501,
+          "allocated_bytes": 919996
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\body.png",
+          "size": [
+            702,
+            582
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 1634256,
+          "allocated_bytes": 2177540
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\core.png",
+          "size": [
+            206,
+            250
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 206000,
+          "allocated_bytes": 274176
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\core_hardened.png",
+          "size": [
+            224,
+            56
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 50176,
+          "allocated_bytes": 66852
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\sdf.png",
+          "size": [
+            702,
+            582
+          ],
+          "mode": "L",
+          "assumed_gpu_bytes_per_pixel": 1,
+          "mipmaps": true,
+          "base_bytes": 408564,
+          "allocated_bytes": 544385
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\ink_blobs\\blob_00.png",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 262144,
+          "allocated_bytes": 349524
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\ink_blobs\\blob_01.png",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 262144,
+          "allocated_bytes": 349524
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\ink_blobs\\blob_02.png",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 262144,
+          "allocated_bytes": 349524
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\ink_blobs\\blob_03.png",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 262144,
+          "allocated_bytes": 349524
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\ink_blobs\\blob_04.png",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 262144,
+          "allocated_bytes": 349524
+        },
+        {
+          "file": "D:\\gunforge_cache\\g01\\T05\\ink_blobs\\blob_05.png",
+          "size": [
+            256,
+            256
+          ],
+          "mode": "RGBA",
+          "assumed_gpu_bytes_per_pixel": 4,
+          "mipmaps": true,
+          "base_bytes": 262144,
+          "allocated_bytes": 349524
+        }
+      ],
+      "budget_bytes": 33554432,
+      "estimated_bytes": 19691817,
+      "estimate_within_budget": true,
+      "status": "pending_engine_import"
+    }
+  },
+  "scope": "uncompressed RGBA8/R8 exact mip-chain estimate, not actual GPU usage; instances share textures; no sequence atlas used by procedural reference",
+  "not_included": [
+    "runtime_render_targets",
+    "post_processing",
+    "font_cache",
+    "T08_not_yet_generated_UI_and_pickups",
+    "second_station_transition"
+  ],
+  "single_station_partial_total_bytes": 99037257,
+  "actual_C15": "pending_Godot_import_and_peak_measurement"
+}

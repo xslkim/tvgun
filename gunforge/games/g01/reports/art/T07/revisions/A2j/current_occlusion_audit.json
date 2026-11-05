@@ -1,0 +1,462 @@
+{
+  "implementation": "civilian-motion-5",
+  "visual_acceptance": false,
+  "purpose": "audit actual drawing lists, not infer correct depth from numeric joint attachment",
+  "characters": {
+    "vendor": {
+      "source": "D:\\gunforge_cache\\g01\\T05\\vendor\\puppet.json",
+      "source_sha256": "10855c2b56b552cb3dbf1eb6f6ace250337216873357a1c6e1af43987a44bacf",
+      "sampled_frames": 1128,
+      "sampled_clips": {
+        "idle": {
+          "sampled_frames": 60,
+          "distinct_draw_orders": 1
+        },
+        "peek": {
+          "sampled_frames": 72,
+          "distinct_draw_orders": 1
+        },
+        "walk": {
+          "sampled_frames": 60,
+          "distinct_draw_orders": 1
+        },
+        "startle": {
+          "sampled_frames": 48,
+          "distinct_draw_orders": 1
+        },
+        "wave_for_help": {
+          "sampled_frames": 108,
+          "distinct_draw_orders": 1
+        },
+        "struggle": {
+          "sampled_frames": 72,
+          "distinct_draw_orders": 1
+        },
+        "rescued_bounce": {
+          "sampled_frames": 72,
+          "distinct_draw_orders": 1
+        },
+        "thank": {
+          "sampled_frames": 72,
+          "distinct_draw_orders": 1
+        },
+        "idle_rescue": {
+          "sampled_frames": 60,
+          "distinct_draw_orders": 1
+        },
+        "peek_rescue": {
+          "sampled_frames": 72,
+          "distinct_draw_orders": 1
+        },
+        "walk_rescue": {
+          "sampled_frames": 60,
+          "distinct_draw_orders": 1
+        },
+        "startle_rescue": {
+          "sampled_frames": 48,
+          "distinct_draw_orders": 1
+        },
+        "wave_for_help_rescue": {
+          "sampled_frames": 108,
+          "distinct_draw_orders": 1
+        },
+        "struggle_rescue": {
+          "sampled_frames": 72,
+          "distinct_draw_orders": 1
+        },
+        "rescued_bounce_rescue": {
+          "sampled_frames": 72,
+          "distinct_draw_orders": 1
+        },
+        "thank_rescue": {
+          "sampled_frames": 72,
+          "distinct_draw_orders": 1
+        }
+      },
+      "draw_orders": [
+        [
+          [
+            "shin_l",
+            1.0
+          ],
+          [
+            "shin_l_foot",
+            1.0
+          ],
+          [
+            "shin_l_cuff",
+            1.0
+          ],
+          [
+            "shin_r",
+            1.0
+          ],
+          [
+            "shin_r_foot",
+            1.0
+          ],
+          [
+            "shin_r_cuff",
+            1.0
+          ],
+          [
+            "thigh_l",
+            2.0
+          ],
+          [
+            "thigh_r",
+            2.0
+          ],
+          [
+            "upper_arm_l",
+            3.0
+          ],
+          [
+            "upper_arm_r",
+            3.0
+          ],
+          [
+            "torso",
+            5.0
+          ],
+          [
+            "prop",
+            5.9
+          ],
+          [
+            "forearm_l",
+            6.0
+          ],
+          [
+            "forearm_r",
+            6.0
+          ],
+          [
+            "head",
+            7.0
+          ]
+        ],
+        [
+          [
+            "shin_l",
+            1.0
+          ],
+          [
+            "shin_l_foot",
+            1.0
+          ],
+          [
+            "shin_l_cuff",
+            1.0
+          ],
+          [
+            "shin_r",
+            1.0
+          ],
+          [
+            "shin_r_foot",
+            1.0
+          ],
+          [
+            "shin_r_cuff",
+            1.0
+          ],
+          [
+            "thigh_l",
+            2.0
+          ],
+          [
+            "thigh_r",
+            2.0
+          ],
+          [
+            "upper_arm_l",
+            3.0
+          ],
+          [
+            "upper_arm_r",
+            3.0
+          ],
+          [
+            "torso",
+            5.0
+          ],
+          [
+            "prop",
+            5.9
+          ],
+          [
+            "right_palm",
+            5.99
+          ],
+          [
+            "forearm_l",
+            6.0
+          ],
+          [
+            "forearm_r",
+            6.0
+          ],
+          [
+            "head",
+            7.0
+          ]
+        ]
+      ],
+      "shared_z_groups": {
+        "3": [
+          "upper_arm_l",
+          "upper_arm_r"
+        ],
+        "6": [
+          "forearm_l",
+          "forearm_r"
+        ],
+        "2": [
+          "thigh_l",
+          "thigh_r"
+        ],
+        "1": [
+          "shin_l",
+          "shin_r"
+        ]
+      },
+      "upper_arms_always_below_torso": true,
+      "forearms_always_above_torso": true,
+      "head_always_above_forearms": true,
+      "rescue_split_rule": "z <= torso.z then ink then z > torso.z",
+      "warning": "source sequence has same-z parts; no semantic near/far state, no authored local pixel-ownership contract; these facts identify risks, not which every individual pose must use"
+    },
+    "video": {
+      "source": "D:\\gunforge_cache\\g01\\T05\\video\\puppet.json",
+      "source_sha256": "d8b7e796ff8da1130d6159258c67ec10385cf769898db2b446cb7cc8cc224d39",
+      "sampled_frames": 1128,
+      "sampled_clips": {
+        "idle": {
+          "sampled_frames": 60,
+          "distinct_draw_orders": 1
+        },
+        "peek": {
+          "sampled_frames": 72,
+          "distinct_draw_orders": 1
+        },
+        "walk": {
+          "sampled_frames": 60,
+          "distinct_draw_orders": 1
+        },
+        "startle": {
+          "sampled_frames": 48,
+          "distinct_draw_orders": 1
+        },
+        "wave_for_help": {
+          "sampled_frames": 108,
+          "distinct_draw_orders": 1
+        },
+        "struggle": {
+          "sampled_frames": 72,
+          "distinct_draw_orders": 1
+        },
+        "rescued_bounce": {
+          "sampled_frames": 72,
+          "distinct_draw_orders": 1
+        },
+        "thank": {
+          "sampled_frames": 72,
+          "distinct_draw_orders": 1
+        },
+        "idle_rescue": {
+          "sampled_frames": 60,
+          "distinct_draw_orders": 1
+        },
+        "peek_rescue": {
+          "sampled_frames": 72,
+          "distinct_draw_orders": 1
+        },
+        "walk_rescue": {
+          "sampled_frames": 60,
+          "distinct_draw_orders": 1
+        },
+        "startle_rescue": {
+          "sampled_frames": 48,
+          "distinct_draw_orders": 1
+        },
+        "wave_for_help_rescue": {
+          "sampled_frames": 108,
+          "distinct_draw_orders": 1
+        },
+        "struggle_rescue": {
+          "sampled_frames": 72,
+          "distinct_draw_orders": 1
+        },
+        "rescued_bounce_rescue": {
+          "sampled_frames": 72,
+          "distinct_draw_orders": 1
+        },
+        "thank_rescue": {
+          "sampled_frames": 72,
+          "distinct_draw_orders": 1
+        }
+      },
+      "draw_orders": [
+        [
+          [
+            "shin_l",
+            1.0
+          ],
+          [
+            "shin_l_foot",
+            1.0
+          ],
+          [
+            "shin_l_cuff",
+            1.0
+          ],
+          [
+            "shin_r",
+            1.0
+          ],
+          [
+            "shin_r_foot",
+            1.0
+          ],
+          [
+            "shin_r_cuff",
+            1.0
+          ],
+          [
+            "thigh_l",
+            2.0
+          ],
+          [
+            "thigh_r",
+            2.0
+          ],
+          [
+            "upper_arm_l",
+            3.0
+          ],
+          [
+            "upper_arm_r",
+            3.0
+          ],
+          [
+            "torso",
+            5.0
+          ],
+          [
+            "forearm_l",
+            6.0
+          ],
+          [
+            "forearm_r",
+            6.0
+          ],
+          [
+            "head",
+            7.0
+          ],
+          [
+            "prop",
+            8.0
+          ]
+        ],
+        [
+          [
+            "shin_l",
+            1.0
+          ],
+          [
+            "shin_l_foot",
+            1.0
+          ],
+          [
+            "shin_l_cuff",
+            1.0
+          ],
+          [
+            "shin_r",
+            1.0
+          ],
+          [
+            "shin_r_foot",
+            1.0
+          ],
+          [
+            "shin_r_cuff",
+            1.0
+          ],
+          [
+            "thigh_l",
+            2.0
+          ],
+          [
+            "thigh_r",
+            2.0
+          ],
+          [
+            "upper_arm_l",
+            3.0
+          ],
+          [
+            "upper_arm_r",
+            3.0
+          ],
+          [
+            "torso",
+            5.0
+          ],
+          [
+            "right_palm",
+            5.99
+          ],
+          [
+            "forearm_l",
+            6.0
+          ],
+          [
+            "forearm_r",
+            6.0
+          ],
+          [
+            "head",
+            7.0
+          ],
+          [
+            "prop",
+            8.0
+          ]
+        ]
+      ],
+      "shared_z_groups": {
+        "3": [
+          "upper_arm_l",
+          "upper_arm_r"
+        ],
+        "6": [
+          "forearm_l",
+          "forearm_r"
+        ],
+        "2": [
+          "thigh_l",
+          "thigh_r"
+        ],
+        "1": [
+          "shin_l",
+          "shin_r"
+        ]
+      },
+      "upper_arms_always_below_torso": true,
+      "forearms_always_above_torso": true,
+      "head_always_above_forearms": true,
+      "rescue_split_rule": "z <= torso.z then ink then z > torso.z",
+      "warning": "source sequence has same-z parts; no semantic near/far state, no authored local pixel-ownership contract; these facts identify risks, not which every individual pose must use"
+    }
+  },
+  "source_code_sha256": {
+    "t05_puppets.py": "03014690c6e501dddcf0e5ad5c80b74062fbd08d456d2dba03787fab08b2913f",
+    "puppet_motion.py": "76d495027623fe027a6b57e6a0e8ec190e5d49f277643cf7d8a8d6a03b6052d9",
+    "puppet_motion_v3.py": "8900163fb04513a772baf3e4298c847cb80b146c224cb34d13e5eba00d9c7249",
+    "puppet_motion_v4.py": "1c04638b5eed9dce2611b16d4c303688c0765dea4595b639d78717aa8025cea8",
+    "puppet_motion_v5.py": "464f88c0445ba84b3d6c3f449bf6e58613e8fe150e0caeaa5607f0af4d04c155"
+  }
+}

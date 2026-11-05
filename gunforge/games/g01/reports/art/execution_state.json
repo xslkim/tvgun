@@ -1,0 +1,72 @@
+{
+  "updated": "2026-11-05",
+  "task_review": "completed_with_user_resolution",
+  "user_resolution": "Offline previews may be reviewed; batch tasks wait for actual 0B acceptance",
+  "T00": "in_progress_offline_core_verified_external_integrations_pending",
+  "T01": "completed_capability_validation_with_limitations",
+  "T02": "completed_A1_reference_characteristics_approved",
+  "paid_calls": 0,
+  "spent_cny": null,
+  "verified_offline_tests": 45,
+  "blocked_batch_tasks": [
+    "T09",
+    "T10",
+    "T11",
+    "T12",
+    "T13",
+    "T14",
+    "T15",
+    "T16"
+  ],
+  "actual_0B_approved": false,
+  "generation_mode": "builtin_image_gen",
+  "requires_api_key": false,
+  "current_blockers": [
+    "character_occlusion_revision",
+    "C04_C12_C14_calibration_shortfall",
+    "GPU_engine_validation",
+    "actual_0B"
+  ],
+  "unreported_generation_cost": null,
+  "builtin_image_calls": 101,
+  "next_task": "complete_character_occlusion_masks_and_validation",
+  "T03": "completed_A1b_direction_approved_with_followup",
+  "A1_anchor_count": 12,
+  "ink_direction": "moderated_gloss_custom",
+  "phase_0A_calls": 98,
+  "T03_calls": 10,
+  "C13_synthetic_screening": "pass_within_existing_geometry_contract_historical_outside_contract_stress_retained",
+  "T04": "prototype_delivered_pending_A2_and_technical_corrections",
+  "T05": "character_occlusion_v5_requires_revision_prior_scoped_approvals_retained",
+  "T06": "A2c_hit_feedback_visually_approved_engine_pending",
+  "human_roles": "hostage_or_NPC_only",
+  "task_image_calls": {
+    "T01": 3,
+    "T02": 36,
+    "T03": 10,
+    "T04": 16,
+    "T05": 27,
+    "T06": 9
+  },
+  "T07": "A2k_arm_grip_prototype_review_pending",
+  "T08": "blocked_until_occlusion_fix_and_A2_decision",
+  "external_spent_cny": 0,
+  "cost_status": "builtin_not_reported",
+  "approved_visual_directions": [
+    "scene",
+    "lighting",
+    "character_art",
+    "ink_material",
+    "ink_gloss",
+    "enemy_hit_feedback_v3"
+  ],
+  "task_status": "paused_by_user",
+  "pause": {
+    "date": "2026-11-05",
+    "timezone": "Asia/Shanghai",
+    "source": "explicit_user_chat",
+    "checkpoint": "T07_A2k_arm_grip_prototype_review_pending",
+    "handoff": "docs/art/PAUSED_A2k_HANDOFF.md",
+    "resume_requires_explicit_user_request": true
+  }
+}

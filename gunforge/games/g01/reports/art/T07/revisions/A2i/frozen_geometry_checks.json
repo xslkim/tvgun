@@ -1,0 +1,5888 @@
+{
+  "status": "pass",
+  "baseline_version": "g01-alley-extent-1",
+  "basis": "explicit A2h acceptance of complete shapes as 2D design specification; not independent historic truth",
+  "states": 125,
+  "checks": 1000,
+  "scope": "approved 2D silhouette coverage, fixed parallax/camera envelope; not proof of unreviewed geometry or Godot sampling",
+  "negative_hole_rejected": true,
+  "frozen_mask_tampering_rejected": true,
+  "actual_0B": false,
+  "rows": [
+    {
+      "state": "static",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "static",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "static",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "static",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "static",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "static",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "static",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "static",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_-68_-34",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_-68_-34",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_-68_-34",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_-68_-34",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_-68_-34",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_-68_-34",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_-68_-34",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_-68_-34",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_-68_34",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_-68_34",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_-68_34",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_-68_34",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_-68_34",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_-68_34",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_-68_34",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_-68_34",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_68_-34",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_68_-34",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_68_-34",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_68_-34",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_68_-34",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_68_-34",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_68_-34",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_68_-34",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_68_34",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_68_34",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_68_34",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_68_34",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_68_34",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_68_34",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_68_34",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "extreme_68_34",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_0",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_0",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_0",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_0",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_0",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_0",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_0",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_0",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_1",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_1",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_1",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_1",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_1",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_1",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_1",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_1",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_2",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_2",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_2",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_2",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_2",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_2",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_2",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_2",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_3",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_3",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_3",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_3",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_3",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_3",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_3",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_3",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_4",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_4",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_4",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_4",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_4",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_4",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_4",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_4",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_5",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_5",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_5",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_5",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_5",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_5",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_5",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_5",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_6",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_6",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_6",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_6",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_6",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_6",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_6",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_6",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_7",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_7",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_7",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_7",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_7",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_7",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_7",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_7",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_8",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_8",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_8",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_8",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_8",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_8",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_8",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_8",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_9",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_9",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_9",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_9",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_9",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_9",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_9",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_9",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_10",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_10",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_10",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_10",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_10",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_10",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_10",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_10",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_11",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_11",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_11",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_11",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_11",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_11",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_11",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_11",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_12",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_12",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_12",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_12",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_12",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_12",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_12",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_12",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_13",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_13",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_13",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_13",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_13",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_13",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_13",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_13",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_14",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_14",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_14",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_14",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_14",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_14",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_14",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_14",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_15",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_15",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_15",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_15",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_15",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_15",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_15",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_15",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_16",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_16",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_16",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_16",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_16",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_16",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_16",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_16",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_17",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_17",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_17",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_17",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_17",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_17",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_17",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_17",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_18",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_18",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_18",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_18",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_18",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_18",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_18",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_18",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_19",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_19",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_19",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_19",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_19",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_19",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_19",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_19",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_20",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_20",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_20",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_20",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_20",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_20",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_20",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_20",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_21",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_21",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_21",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_21",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_21",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_21",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_21",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_21",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_22",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_22",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_22",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_22",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_22",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_22",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_22",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_22",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_23",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_23",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_23",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_23",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_23",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_23",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_23",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_23",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_24",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_24",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_24",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_24",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_24",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_24",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_24",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_24",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_25",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_25",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_25",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_25",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_25",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_25",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_25",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_25",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_26",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_26",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_26",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_26",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_26",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_26",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_26",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_26",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_27",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_27",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_27",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_27",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_27",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_27",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_27",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_27",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_28",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_28",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_28",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_28",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_28",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_28",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_28",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_28",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_29",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_29",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_29",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_29",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_29",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_29",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_29",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_29",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_30",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_30",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_30",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_30",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_30",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_30",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_30",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_30",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_31",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_31",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_31",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_31",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_31",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_31",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_31",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_31",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_32",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_32",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_32",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_32",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_32",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_32",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_32",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_32",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_33",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_33",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_33",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_33",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_33",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_33",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_33",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_33",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_34",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_34",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_34",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_34",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_34",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_34",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_34",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_34",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_35",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_35",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_35",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_35",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_35",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_35",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_35",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_35",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_36",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_36",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_36",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_36",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_36",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_36",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_36",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_36",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_37",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_37",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_37",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_37",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_37",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_37",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_37",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_37",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_38",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_38",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_38",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_38",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_38",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_38",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_38",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_38",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_39",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_39",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_39",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_39",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_39",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_39",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_39",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_39",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_40",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_40",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_40",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_40",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_40",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_40",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_40",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_40",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_41",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_41",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_41",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_41",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_41",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_41",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_41",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_41",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_42",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_42",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_42",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_42",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_42",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_42",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_42",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_42",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_43",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_43",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_43",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_43",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_43",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_43",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_43",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_43",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_44",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_44",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_44",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_44",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_44",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_44",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_44",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_44",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_45",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_45",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_45",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_45",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_45",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_45",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_45",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_45",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_46",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_46",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_46",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_46",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_46",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_46",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_46",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_46",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_47",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_47",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_47",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_47",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_47",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_47",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_47",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_47",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_48",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_48",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_48",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_48",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_48",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_48",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_48",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_48",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_49",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_49",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_49",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_49",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_49",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_49",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_49",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_49",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_50",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_50",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_50",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_50",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_50",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_50",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_50",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_50",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_51",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_51",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_51",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_51",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_51",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_51",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_51",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_51",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_52",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_52",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_52",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_52",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_52",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_52",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_52",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_52",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_53",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_53",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_53",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_53",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_53",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_53",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_53",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_53",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_54",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_54",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_54",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_54",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_54",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_54",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_54",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_54",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_55",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_55",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_55",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_55",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_55",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_55",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_55",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_55",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_56",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_56",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_56",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_56",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_56",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_56",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_56",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_56",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_57",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_57",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_57",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_57",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_57",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_57",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_57",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_57",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_58",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_58",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_58",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_58",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_58",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_58",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_58",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_58",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_59",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_59",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_59",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_59",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_59",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_59",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_59",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_59",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_60",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_60",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_60",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_60",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_60",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_60",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_60",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_60",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_61",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_61",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_61",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_61",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_61",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_61",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_61",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_61",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_62",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_62",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_62",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_62",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_62",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_62",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_62",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_62",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_63",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_63",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_63",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_63",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_63",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_63",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_63",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_63",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_64",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_64",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_64",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_64",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_64",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_64",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_64",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_64",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_65",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_65",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_65",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_65",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_65",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_65",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_65",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_65",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_66",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_66",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_66",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_66",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_66",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_66",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_66",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_66",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_67",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_67",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_67",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_67",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_67",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_67",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_67",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_67",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_68",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_68",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_68",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_68",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_68",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_68",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_68",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_68",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_69",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_69",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_69",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_69",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_69",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_69",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_69",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_69",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_70",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_70",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_70",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_70",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_70",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_70",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_70",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_70",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_71",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_71",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_71",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_71",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_71",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_71",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_71",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_71",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_72",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_72",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_72",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_72",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_72",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_72",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_72",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_72",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_73",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_73",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_73",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_73",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_73",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_73",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_73",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_73",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_74",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_74",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_74",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_74",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_74",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_74",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_74",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_74",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_75",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_75",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_75",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_75",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_75",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_75",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_75",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_75",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_76",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_76",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_76",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_76",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_76",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_76",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_76",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_76",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_77",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_77",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_77",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_77",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_77",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_77",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_77",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_77",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_78",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_78",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_78",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_78",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_78",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_78",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_78",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_78",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_79",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_79",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_79",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_79",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_79",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_79",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_79",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_79",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_80",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_80",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_80",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_80",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_80",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_80",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_80",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_80",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_81",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_81",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_81",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_81",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_81",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_81",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_81",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_81",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_82",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_82",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_82",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_82",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_82",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_82",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_82",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_82",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_83",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_83",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_83",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_83",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_83",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_83",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_83",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_83",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_84",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_84",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_84",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_84",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_84",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_84",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_84",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_84",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_85",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_85",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_85",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_85",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_85",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_85",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_85",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_85",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_86",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_86",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_86",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_86",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_86",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_86",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_86",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_86",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_87",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_87",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_87",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_87",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_87",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_87",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_87",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_87",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_88",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_88",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_88",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_88",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_88",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_88",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_88",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_88",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_89",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_89",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_89",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_89",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_89",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_89",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_89",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_89",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_90",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_90",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_90",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_90",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_90",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_90",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_90",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_90",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_91",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_91",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_91",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_91",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_91",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_91",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_91",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_91",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_92",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_92",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_92",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_92",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_92",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_92",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_92",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_92",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_93",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_93",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_93",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_93",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_93",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_93",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_93",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_93",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_94",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_94",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_94",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_94",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_94",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_94",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_94",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_94",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_95",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_95",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_95",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_95",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_95",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_95",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_95",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_95",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_96",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_96",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_96",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_96",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_96",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_96",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_96",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_96",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_97",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_97",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_97",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_97",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_97",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_97",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_97",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_97",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_98",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_98",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_98",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_98",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_98",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_98",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_98",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_98",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_99",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_99",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_99",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_99",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_99",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_99",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_99",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_99",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_100",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_100",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_100",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_100",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_100",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_100",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_100",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_100",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_101",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_101",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_101",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_101",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_101",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_101",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_101",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_101",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_102",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_102",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_102",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_102",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_102",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_102",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_102",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_102",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_103",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_103",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_103",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_103",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_103",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_103",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_103",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_103",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_104",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_104",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_104",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_104",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_104",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_104",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_104",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_104",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_105",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_105",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_105",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_105",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_105",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_105",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_105",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_105",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_106",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_106",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_106",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_106",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_106",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_106",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_106",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_106",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_107",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_107",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_107",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_107",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_107",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_107",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_107",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_107",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_108",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_108",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_108",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_108",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_108",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_108",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_108",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_108",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_109",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_109",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_109",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_109",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_109",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_109",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_109",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_109",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_110",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_110",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_110",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_110",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_110",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_110",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_110",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_110",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_111",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_111",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_111",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_111",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_111",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_111",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_111",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_111",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_112",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_112",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_112",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_112",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_112",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_112",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_112",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_112",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_113",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_113",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_113",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_113",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_113",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_113",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_113",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_113",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_114",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_114",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_114",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_114",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_114",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_114",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_114",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_114",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_115",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_115",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_115",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_115",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_115",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_115",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_115",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_115",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_116",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_116",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_116",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_116",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_116",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_116",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_116",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_116",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_117",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_117",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_117",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_117",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_117",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_117",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_117",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_117",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_118",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_118",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_118",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_118",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_118",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_118",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_118",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_118",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_119",
+      "check": "C07a",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_119",
+      "layer": "near_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_119",
+      "layer": "near_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_119",
+      "layer": "mid_right",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_119",
+      "layer": "mid_left",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_119",
+      "layer": "mid_ground",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_119",
+      "layer": "far_town",
+      "check": "C07b",
+      "missing_pixels": 0
+    },
+    {
+      "state": "continuous_119",
+      "layer": "far_base",
+      "check": "C07b",
+      "missing_pixels": 0
+    }
+  ]
+}

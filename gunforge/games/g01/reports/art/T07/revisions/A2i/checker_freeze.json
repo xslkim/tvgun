@@ -1,0 +1,35 @@
+{
+  "version": "art-checks-0.3-initial-offline",
+  "status": "initial_threshold_snapshot_not_calibrated",
+  "C04": {
+    "delta_E": 15,
+    "coverage": 0.9
+  },
+  "C12": {
+    "endpoint_difference": 0.02,
+    "velocity_difference": 0.02
+  },
+  "C14": {
+    "score": null,
+    "status": "pending_no_calibrated_scorer"
+  },
+  "code_sha256": {
+    "checks.py": "6505b8cd9eae92760be235a9de0e7a56dc57907f685a66f13b99a48d2c632d27",
+    "artlib.py": "636ed606bdb15edb1ad1372f8484d1520c85d63595d3050b711d5920e7047ff2",
+    "paper_ops.py": "9f88d21f2685beedf74159526176d9cf32fe6bf52afbf251e4bd396a07b527b1",
+    "ocr.cjs": "0b2555d29ff1ddb5f6400cf3a814a0cd13ff6fb100a5ed1d00b41919673e56ad",
+    "preview.py": "0e5f0ab2c65ccc30a714bb5e9978bcfe6377c07e3a0949099daf30bd80077a29",
+    "materials.py": "ff6572f10e600e297e5a39e12a458fe1599b1c7619d479f505fb42a619d4698d",
+    "puppet_motion.py": "76d495027623fe027a6b57e6a0e8ec190e5d49f277643cf7d8a8d6a03b6052d9",
+    "puppet_motion_v3.py": "8900163fb04513a772baf3e4298c847cb80b146c224cb34d13e5eba00d9c7249",
+    "puppet_motion_v4.py": "1c04638b5eed9dce2611b16d4c303688c0765dea4595b639d78717aa8025cea8",
+    "puppet_motion_v5.py": "464f88c0445ba84b3d6c3f449bf6e58613e8fe150e0caeaa5607f0af4d04c155",
+    "station_policy.py": "b4ee0e7922a78c3b49ccac8c8c7cd0b1d4f9d794af40ea6633cc10585898b9de",
+    "tracker_screen.py": "22d054c39afcf34855ca13929641cbe5d1c7864ea217da0e5ebcc0be49685741",
+    "verify_frozen_geometry.py": "670fbeaed53db6dd4c73ba3463f1fb00220179b92e48f7b6304011c4cef20b2b",
+    "t07_validate.py": "3fddb6fa202d988b9935a695d980247b95ae12c1ac347bee5fcf8585af7c08ab"
+  },
+  "extent_baseline_sha256": "5c3ef9d4ae62c8548e02da098b9e986b69c8c22367758b21041d1b2bc8ffbe3f",
+  "luminance_policy_sha256": "469bf3b8fca71972376791938d48da49e8c67458b763745c69c1f60d94484ae3",
+  "scope": "reproducible offline evidence only; no engine or actual0B acceptance"
+}

@@ -1,0 +1,227 @@
+{
+  "revision": "A2b",
+  "motion": {
+    "vendor": {
+      "status": "pass",
+      "scope": "all exported frames at 24fps; numeric rig motion only, human animation review pending",
+      "frames": 540,
+      "max_attachment_error_source_px": 2.2737367544323206e-13,
+      "max_ankle_target_error_source_px": 2.5421149729252077e-13,
+      "max_planted_foot_frame_drift_source_px": 3.410605131648481e-13,
+      "knee_flexion_range": [
+        10.46063820440314,
+        58.91022564002686
+      ],
+      "elbow_flexion_range": [
+        27.628903289066933,
+        109.52162661869689
+      ],
+      "joint_seam_visual_review": "pending on rendered source pixels and ankle overlap; kinematic attachment is not a visual seam certificate"
+    },
+    "video": {
+      "status": "pass",
+      "scope": "all exported frames at 24fps; numeric rig motion only, human animation review pending",
+      "frames": 540,
+      "max_attachment_error_source_px": 2.2737367544323206e-13,
+      "max_ankle_target_error_source_px": 2.5421149729252077e-13,
+      "max_planted_foot_frame_drift_source_px": 3.639754730461873e-13,
+      "knee_flexion_range": [
+        9.642393687857815,
+        57.74496109741888
+      ],
+      "elbow_flexion_range": [
+        11.519138633304433,
+        93.41186196293438
+      ],
+      "joint_seam_visual_review": "pending on rendered source pixels and ankle overlap; kinematic attachment is not a visual seam certificate"
+    }
+  },
+  "rescue_motion": {
+    "vendor": {
+      "status": "pass",
+      "scope": "all actual 24fps frames of ink-attached-eligible clips; six blobs; original minimum sizes. Complete Godot behavior remains pending.",
+      "minimum_candidate_display_height": 512,
+      "rescue_frames": 336,
+      "blob_frame_tests": 2016,
+      "minimum_effective_radius": 41.08137067511816,
+      "minimum_paper_clearance_px": 7.615773105863909,
+      "max_weak_point_occluded_pixels": 0,
+      "sampled_source_joint_max_gap_px": 0.0,
+      "negative_knee_and_foot_drift_rejected": true,
+      "original_radius_algorithm_equivalence": true,
+      "loop_endpoints": [
+        {
+          "clip": "idle",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true
+        },
+        {
+          "clip": "peek",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true
+        },
+        {
+          "clip": "walk",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true
+        },
+        {
+          "clip": "startle",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true
+        },
+        {
+          "clip": "wave_for_help",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true
+        },
+        {
+          "clip": "struggle",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true
+        },
+        {
+          "clip": "rescued_bounce",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true
+        },
+        {
+          "clip": "thank",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true
+        }
+      ],
+      "failures": [],
+      "render_contract": "Opaque paper interiors; attached ink clipped visibly to torso inset of 7 content pixels. Same visible ink mask defines target; foreground hands remain protected."
+    },
+    "video": {
+      "status": "pass",
+      "scope": "all actual 24fps frames of ink-attached-eligible clips; six blobs; original minimum sizes. Complete Godot behavior remains pending.",
+      "minimum_candidate_display_height": 300,
+      "rescue_frames": 336,
+      "blob_frame_tests": 2016,
+      "minimum_effective_radius": 40.22003035287298,
+      "minimum_paper_clearance_px": 7.615773105863909,
+      "max_weak_point_occluded_pixels": 0,
+      "sampled_source_joint_max_gap_px": 0.0,
+      "negative_knee_and_foot_drift_rejected": true,
+      "original_radius_algorithm_equivalence": true,
+      "loop_endpoints": [
+        {
+          "clip": "idle",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true
+        },
+        {
+          "clip": "peek",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true
+        },
+        {
+          "clip": "walk",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true
+        },
+        {
+          "clip": "startle",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true
+        },
+        {
+          "clip": "wave_for_help",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true
+        },
+        {
+          "clip": "struggle",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true
+        },
+        {
+          "clip": "rescued_bounce",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true
+        },
+        {
+          "clip": "thank",
+          "endpoint_pixel_difference": 0.0,
+          "loop_position_pass": true
+        }
+      ],
+      "failures": [],
+      "render_contract": "Opaque paper interiors; attached ink clipped visibly to torso inset of 7 content pixels. Same visible ink mask defines target; foreground hands remain protected."
+    }
+  },
+  "enemy_hit_feedback": {
+    "crow": {
+      "status": "pass",
+      "scope": "actual offline rendered frames; not Godot shader, tracker or hit-registration acceptance",
+      "frames": 102,
+      "max_core_outside_ink_pixels": 0,
+      "max_pre_cap_overbright_fraction": 0.0
+    },
+    "tadpole0": {
+      "status": "pass",
+      "scope": "actual offline rendered frames; not Godot shader, tracker or hit-registration acceptance",
+      "frames": 102,
+      "max_core_outside_ink_pixels": 0,
+      "max_pre_cap_overbright_fraction": 0.0
+    }
+  },
+  "motion_reservations": {
+    "vendor": {
+      "status": "pass",
+      "kind": "protected_human",
+      "human_attackable": false,
+      "slot_origin": [
+        760,
+        500
+      ],
+      "motion_bbox": [
+        504,
+        189,
+        501,
+        550
+      ],
+      "parallax": 0.45,
+      "camera_breath_padding": [
+        30.6,
+        15.3
+      ],
+      "alternative_slot": true,
+      "scope": "conservative source-part rectangles over every attached-eligible frame, plus camera/breath extrema; not engine occlusion acceptance"
+    },
+    "video": {
+      "status": "pass",
+      "kind": "protected_human",
+      "human_attackable": false,
+      "slot_origin": [
+        760,
+        500
+      ],
+      "motion_bbox": [
+        568,
+        312,
+        374,
+        337
+      ],
+      "parallax": 0.45,
+      "camera_breath_padding": [
+        30.6,
+        15.3
+      ],
+      "alternative_slot": true,
+      "scope": "conservative source-part rectangles over every attached-eligible frame, plus camera/breath extrema; not engine occlusion acceptance"
+    }
+  },
+  "scope": "offline revision only",
+  "original_A2_technical_pending": [
+    "C03_depth_bands",
+    "complete_hidden_geometry",
+    "engine_motion_and_occlusion",
+    "C14_calibration",
+    "C13_tracker_screen_failures",
+    "engine_import_and_actual_0B"
+  ],
+  "production_approved": false
+}

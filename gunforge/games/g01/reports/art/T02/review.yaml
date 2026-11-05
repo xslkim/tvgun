@@ -1,0 +1,149 @@
+stage: A1
+status: approved_for_selected_characteristics
+ink_choice: revise
+style_notes: 更偏向亮面墨，但是不要太亮了。
+items:
+- id: st_l1_alley
+  status: approved
+  anchor_for:
+  - 构图
+  note: 仅批准所列风格特点；原始数值失败仍需修正。
+- id: st_l1_hawthorn
+  status: pending
+  anchor_for: []
+  note: ''
+- id: st_l1_video
+  status: pending
+  anchor_for: []
+  note: ''
+- id: st_l1_bridge
+  status: approved
+  anchor_for:
+  - 构图
+  note: 仅批准所列风格特点；原始数值失败仍需修正。
+- id: st_l2_ticket
+  status: pending
+  anchor_for: []
+  note: ''
+- id: st_l2_posters
+  status: pending
+  anchor_for: []
+  note: ''
+- id: st_l2_seats
+  status: approved
+  anchor_for:
+  - 构图
+  note: 仅批准所列风格特点；原始数值失败仍需修正。
+- id: st_l2_projector
+  status: pending
+  anchor_for: []
+  note: ''
+- id: st_l3_waiting
+  status: pending
+  anchor_for: []
+  note: ''
+- id: st_l3_platform
+  status: approved
+  anchor_for:
+  - 年代物件
+  note: 仅批准所列风格特点；原始数值失败仍需修正。
+- id: st_l3_carriage
+  status: pending
+  anchor_for: []
+  note: ''
+- id: st_l3_base
+  status: approved
+  anchor_for:
+  - 光感
+  - 构图
+  - 配色
+  note: 仅批准所列风格特点；原始数值失败仍需修正。
+- id: res_vendor
+  status: approved
+  anchor_for:
+  - 配色
+  note: 仅批准所列风格特点；原始数值失败仍需修正。
+- id: res_video
+  status: pending
+  anchor_for: []
+  note: ''
+- id: res_projectionist
+  status: approved
+  anchor_for:
+  - 年代物件
+  - 配色
+  note: 仅批准所列风格特点；原始数值失败仍需修正。
+- id: res_ticket
+  status: approved
+  anchor_for:
+  - 年代物件
+  note: 仅批准所列风格特点；原始数值失败仍需修正。
+- id: res_cyclist
+  status: approved
+  anchor_for:
+  - 年代物件
+  note: 仅批准所列风格特点；原始数值失败仍需修正。
+- id: res_passerby
+  status: pending
+  anchor_for: []
+  note: ''
+- id: ink_tadpole
+  status: pending
+  anchor_for: []
+  note: ''
+- id: ink_crow
+  status: pending
+  anchor_for: []
+  note: ''
+- id: ink_rider
+  status: approved
+  anchor_for:
+  - 墨质
+  - 光感
+  - 配色
+  note: 仅批准所列风格特点；原始数值失败仍需修正。
+- id: ink_sign
+  status: pending
+  anchor_for: []
+  note: ''
+- id: ink_tape
+  status: approved
+  anchor_for:
+  - 配色
+  note: 仅批准所列风格特点；原始数值失败仍需修正。
+- id: ink_umbrella
+  status: pending
+  anchor_for: []
+  note: ''
+- id: ui_life
+  status: approved
+  anchor_for:
+  - 纸纹
+  - 构图
+  - 配色
+  note: 仅批准所列风格特点；原始数值失败仍需修正。
+- id: ui_ammo
+  status: pending
+  anchor_for: []
+  note: ''
+- id: ui_stamp
+  status: pending
+  anchor_for: []
+  note: ''
+- id: ui_frames
+  status: pending
+  anchor_for: []
+  note: ''
+- id: ui_title
+  status: pending
+  anchor_for: []
+  note: ''
+- id: ui_crosshair
+  status: pending
+  anchor_for: []
+  note: ''
+reviewed: '2026-11-04'
+source: explicit_user_chat_feedback
+ink_direction: 偏亮面湿墨，定向而克制的局部反光；不采用 A 的强镜面高光
+implementation_assumptions:
+- 用户未选择球状红核，继续沿用方案规定的平面朱砂印迹。此项不记为用户明确选择。

@@ -1,0 +1,844 @@
+{
+  "task": "T06",
+  "status": "A2c_hit_feedback_visually_approved_engine_pending",
+  "production_asset_approved": false,
+  "checker_version": "art-checks-0.2-uncalibrated",
+  "checker_snapshot": {
+    "checks.py": "6505b8cd9eae92760be235a9de0e7a56dc57907f685a66f13b99a48d2c632d27",
+    "ocr.cjs": "0b2555d29ff1ddb5f6400cf3a814a0cd13ff6fb100a5ed1d00b41919673e56ad",
+    "artlib.py": "636ed606bdb15edb1ad1372f8484d1520c85d63595d3050b711d5920e7047ff2",
+    "paper_ops.py": "9f88d21f2685beedf74159526176d9cf32fe6bf52afbf251e4bd396a07b527b1"
+  },
+  "cost": null,
+  "cost_status": "not_reported",
+  "normalization": "see station.json, puppet.json or enemy.json; native source files preserved",
+  "calls": [
+    {
+      "id": "crow_design",
+      "asset_key": "crow_design",
+      "attempt": 1,
+      "attempt_id": "T06:crow_design:a1",
+      "request_fingerprint": "0ceac499e26dff0a165b7ab1a1180f26665aafcda8d12dd08a1f20afeb07a8f4",
+      "prompt": "Use case: stylized-concept. Generate ONE isolated INK CROW game enemy on a genuine transparent background. Input 1 is the accepted game scene: use the bird identity and overall art language ONLY; do not copy any scenery, person, lamp, UI or frame. Input 2 anchors ink material and color ONLY, not its rider shape. User correction: wet black ink should be a little SHINIER than the crow in input 1, but not excessively bright. Add several clearly visible but restrained directional muted blue-gray/steel-gray wet reflections on the light-facing crown, shoulder and body; their total visible area stays below about 5% of the ink body, no pure white, no chrome, no full glowing rim. Body is near #0B0B0E. Broad heavy central body, almost round, at least 40 percent of the entire wingspan in width; recognizable broad beak, two short broad paper-like wings half open, thick simplified feathers, no complex fine tendrils. This is a MONSTER CROW, not a human character. Exactly ONE flat small cinnabar #C8322C circular ink STAMP on the thick torso, with slightly irregular grainy edges; not a gemstone, sphere or eye. Fine paper-fiber bleeding at silhouette, only a couple thick ink drops. Single complete centered crow in a square-ish canvas with empty margins. No scene, labels, words, ground plane, drop shadow, background wash, blood or horror. Transparent output.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/tvgun/gunforge/games/g01/reports/art/T03/gallery/frame_unlit_normalized.png",
+          "sha256": "58a758b9a90df210f033e483a9d314e07073872f5cdb0492844553a7d17dfb51"
+        },
+        {
+          "file": "D:/tvgun/gunforge/games/g01/bible/style_refs/ink_rider.png",
+          "sha256": "be381b90c17395f5d606e34483fa67c553ed57b18bcc287c8fbc3ba5c1cc0ec1"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-dd843659-b2b6-46ce-8681-4109a19d3acf.png",
+      "output": "D:\\gunforge_cache\\g01\\T06\\crow_design_a1.png",
+      "sha256": "23dba871ed52dbd37b58693e3c17883dc0b10309be66101af1de5c4d0c78f86b",
+      "actual_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "crow_body",
+      "asset_key": "crow_body",
+      "attempt": 1,
+      "attempt_id": "T06:crow_body:a1",
+      "request_fingerprint": "44a0dda6e4dabfb4d0418511d461bebbbf2550ae735f3953c53ff3900904e496",
+      "prompt": "Precise object edit of this exact isolated ink crow. Remove ONLY the red circular stamp on its chest and all red halo, filling the covered region with continuous black wet-ink body texture. Keep the identical silhouette, bird pose, body thickness, wing shape, framing, alpha edge and restrained blue-gray glossy reflections everywhere else. Do not add another red point or any other item. The body must have no red at all. Same transparent background. No scene, words, shadows or aura.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/crow_design_a1.png",
+          "sha256": "23dba871ed52dbd37b58693e3c17883dc0b10309be66101af1de5c4d0c78f86b"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-a752bd16-fb10-4921-96c7-2371bdc5cd46.png",
+      "output": "D:\\gunforge_cache\\g01\\T06\\crow_body_a1.png",
+      "sha256": "2a6c40641887f8e094fd3ed2d54d9d64f45bf6e792c42e8c463c47bbb5964ca3",
+      "actual_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "crow_eyes",
+      "asset_key": "crow_eyes",
+      "attempt": 1,
+      "attempt_id": "T06:crow_eyes:a1",
+      "request_fingerprint": "89fd720e7ea9509acbb02215a01ac7c90c1f82a8e2344615d18afd82d9eff1d2",
+      "prompt": "Generate ONE isolated matching hardened-state eye layer for this ink crow: ONLY TWO narrow, slightly slanted flat cinnabar-red ink strokes, with grainy ink-pad edges. Pair total width about 80 source pixels and height 18 in a 1024-square coordinate system. Put the pair together at the image center with lots of empty transparent space. No body, head, circular stamp, white highlight, glow, gem, labels or background. Do not make spherical eyeballs. This is a symbolic monster ink effect, not a human face. Genuine transparent background.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/crow_design_a1.png",
+          "sha256": "23dba871ed52dbd37b58693e3c17883dc0b10309be66101af1de5c4d0c78f86b"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-c723d261-32d3-48b3-85df-e5382ccbf333.png",
+      "output": "D:\\gunforge_cache\\g01\\T06\\crow_eyes_a1.png",
+      "sha256": "668ce510c55f56c02327c4f200c4ef978d0217c86611dd2aed154aaf28c619f0",
+      "actual_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "tadpole_pose0",
+      "asset_key": "tadpole_pose0",
+      "attempt": 1,
+      "attempt_id": "T06:tadpole_pose0:a1",
+      "request_fingerprint": "5ef833092b51d538dd5e97a1b70a4333343aca6a2e1114049b5fbaf863968bbe",
+      "prompt": "One isolated INK TADPOLE monster, genuine transparent background, square canvas, no scene or floor. Match only the wet black ink material and restrained gray-blue gloss of this reference crow, not its bird shape. A large simple nearly circular thick ink head takes roughly 65 percent of the width; one short thick flowing tail curves to the RIGHT. One single small FLAT grainy cinnabar #C8322C circular stamp on the middle of the big head, not an eye or gemstone. A few clear but restrained directional wet reflections on upper-left head, a little shinier than a matte blob, no white/full rim. Black #0B0B0E body, fine fiber bleeding at edges, no tiny whiskers or extra drops. Exactly one tadpole, never a group. No text, human features, wings, legs or other red points.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/crow_design_a1.png",
+          "sha256": "23dba871ed52dbd37b58693e3c17883dc0b10309be66101af1de5c4d0c78f86b"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-f511dbd9-ccd2-4086-9c2c-78a708cbd46b.png",
+      "output": "D:\\gunforge_cache\\g01\\T06\\tadpole_pose0_a1.png",
+      "sha256": "52c55d7d7f01f50f25aeb5daa0629925b27e915d8870a5ff853f1b6100618a29",
+      "actual_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "tadpole_pose1",
+      "asset_key": "tadpole_pose1",
+      "attempt": 1,
+      "attempt_id": "T06:tadpole_pose1:a1",
+      "request_fingerprint": "b9817e9e8ae63c5403bc1e28f5bbc3633215f847a4ff8393a018ad2b917f774e",
+      "prompt": "Generate ONE isolated variant pose of this exact ink tadpole monster, same identity, same large thick circular head and ONE flat small red circular ink stamp on its head. Tail now curves gently DOWN-RIGHT, short and thick. Slightly different organic silhouette but same scale and centered framing. Preserve wet black material, fine paper-edge bleed and clearly visible yet restrained blue-gray glossy highlights. No full bright rim, no new red marks, no eyes, limbs, text, floor, backdrop, aura or extra tadpoles. Genuine transparent background. Large head about 65 percent of whole width, never a thin worm.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/tadpole_pose0_a1.png",
+          "sha256": "52c55d7d7f01f50f25aeb5daa0629925b27e915d8870a5ff853f1b6100618a29"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-bb173428-2bd5-4077-b506-207472020217.png",
+      "output": "D:\\gunforge_cache\\g01\\T06\\tadpole_pose1_a1.png",
+      "sha256": "5a178bed6c0c94e472db0b31a74f4f9a88dec18c2c8525835517578731baf5c2",
+      "actual_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "tadpole_pose2",
+      "asset_key": "tadpole_pose2",
+      "attempt": 1,
+      "attempt_id": "T06:tadpole_pose2:a1",
+      "request_fingerprint": "3ab9c4515fcae2990f7bada8ec87f787695107176e22ecedcd9718b2662eb68e",
+      "prompt": "Generate ONE isolated third pose of this same ink tadpole monster, same large thick circular head and ONE flat red circular stamp on the middle of the head. This time its short thick tail curves UP-RIGHT. Head dominates, at least 65 percent of whole width. Preserve the clearly visible restrained blue-gray wet highlights and black inky/papery texture. One tadpole only, no eyes, limbs, wings, extra red marks, words, white rim, full outline, floor, backdrop, glow or aura. True transparent background.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/tadpole_pose0_a1.png",
+          "sha256": "52c55d7d7f01f50f25aeb5daa0629925b27e915d8870a5ff853f1b6100618a29"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-01829524-5138-46b4-ab8f-ba739e0118b0.png",
+      "output": "D:\\gunforge_cache\\g01\\T06\\tadpole_pose2_a1.png",
+      "sha256": "778da7342c4421d625c9253c81bffc6865dacbdc4f386e8dd4327ec72bec4b7b",
+      "actual_size": [
+        1484,
+        1060
+      ]
+    },
+    {
+      "id": "tadpole_body0",
+      "asset_key": "tadpole_body0",
+      "attempt": 1,
+      "attempt_id": "T06:tadpole_body0:a1",
+      "request_fingerprint": "0ad9671f09b41da8eb612877427fdc609cd2a44449d9d89ef04ba9388ce961e6",
+      "prompt": "Precise edit of this exact isolated ink tadpole. Remove ONLY the red circular stamp and red halo from the head, reconstructing continuous black wet ink where the stamp was. Preserve absolutely the same head silhouette, tail pose, whole framing, scale, transparency, edge fibers and restrained gray-blue glossy highlights. No red anywhere, no extra points or other features, no body outline change. Keep genuine transparent background, no scene, words, floor or shadow.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/tadpole_pose0_a1.png",
+          "sha256": "52c55d7d7f01f50f25aeb5daa0629925b27e915d8870a5ff853f1b6100618a29"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-7e6c274b-6b74-44fa-a387-7d23d89598cc.png",
+      "output": "D:\\gunforge_cache\\g01\\T06\\tadpole_body0_a1.png",
+      "sha256": "67fb8d00799a180c51a9566b2bd2f2c10b5cdc1d5b04fd743a4f013ac95adacd",
+      "actual_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "tadpole_body1",
+      "asset_key": "tadpole_body1",
+      "attempt": 1,
+      "attempt_id": "T06:tadpole_body1:a1",
+      "request_fingerprint": "23d5b859d4c07b1f101a03a6242c90232462e08718619466a9ff83f4ba9b89f2",
+      "prompt": "Precise edit of this exact isolated ink tadpole. Remove ONLY the red circular stamp and red halo from the head, reconstructing continuous black wet ink where the stamp was. Preserve absolutely the same head silhouette, tail pose, whole framing, scale, transparency, edge fibers and restrained gray-blue glossy highlights. No red anywhere, no extra points or other features, no body outline change. Keep genuine transparent background, no scene, words, floor or shadow.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/tadpole_pose1_a1.png",
+          "sha256": "5a178bed6c0c94e472db0b31a74f4f9a88dec18c2c8525835517578731baf5c2"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-4508be24-8bef-4adb-b357-c96b0f1e9ed7.png",
+      "output": "D:\\gunforge_cache\\g01\\T06\\tadpole_body1_a1.png",
+      "sha256": "d0a577b1b109718933da5b809c9930d728536065bb4de8cb6a0910d548e9e8d9",
+      "actual_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "tadpole_body2",
+      "asset_key": "tadpole_body2",
+      "attempt": 1,
+      "attempt_id": "T06:tadpole_body2:a1",
+      "request_fingerprint": "a92cc75ae23713e1a285f3c1838ecd64d459bd5221c9f5d8024f3161f4446a72",
+      "prompt": "Precise edit of this exact isolated ink tadpole. Remove ONLY the red circular stamp and red halo from the head, reconstructing continuous black wet ink where the stamp was. Preserve absolutely the same head silhouette, tail pose, whole framing, scale, transparency, edge fibers and restrained gray-blue glossy highlights. No red anywhere, no extra points or other features, no body outline change. Keep genuine transparent background, no scene, words, floor or shadow.",
+      "transparent_background": true,
+      "references": [
+        {
+          "file": "D:/gunforge_cache/g01/T06/tadpole_pose2_a1.png",
+          "sha256": "778da7342c4421d625c9253c81bffc6865dacbdc4f386e8dd4327ec72bec4b7b"
+        }
+      ],
+      "state": "returned",
+      "provider": "builtin_image_gen",
+      "model": null,
+      "seed": null,
+      "provider_task_id": null,
+      "requested_size": null,
+      "cost": null,
+      "cost_status": "not_reported",
+      "review_status": "pending",
+      "source": "C:\\Users\\xsl\\.codex\\generated_images\\01a19ce1-00b0-7811-94ba-88d7da51a27b\\exec-9d3a4c93-1e7d-4895-9b41-a7d1aa6a0bec.png",
+      "output": "D:\\gunforge_cache\\g01\\T06\\tadpole_body2_a1.png",
+      "sha256": "12e4ff19e5ea9c57d21b2b20e9fa5ed38ad93fd34f4593eab104bc061e8e9f38",
+      "actual_size": [
+        1484,
+        1060
+      ]
+    }
+  ],
+  "candidate_files": [
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\alpha_full.png",
+      "sha256": "9e9e0c29b2017fd6c77f761740a34a882bb7f4bda3e48428f7aa83fdc6a910ac",
+      "bytes": 6913
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\body.png",
+      "sha256": "16c91f1f8a3e47071e1f44422525fd4d3d0ebdc1d0798205d6683a8efcd6bab3",
+      "bytes": 526125
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\body_full.png",
+      "sha256": "58809508fbd74f620afe5181eaacb11bb4bc14e4cab17e82abca3e575474d2c0",
+      "bytes": 528104
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\core.png",
+      "sha256": "f5a343c49980c0c17a75e1ce0b5aad19097fff815f429a129fb14178c9ed367f",
+      "bytes": 41693
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\core_full.png",
+      "sha256": "c68db2bffd82cb4b0a37c55618f75e3e73bc1b9960d1648252f8be27caca187a",
+      "bytes": 516124
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\core_hardened.png",
+      "sha256": "717db7d9221019d3819bbc386532e9204386562f410141a0f3b7b2d05626f5ab",
+      "bytes": 11192
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\core_hardened_full.png",
+      "sha256": "f11bae09ea3655ae2af6e2d46a7dad3c7211bd92f86b86950c5d52932f36b77d",
+      "bytes": 15916
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\core_mask.png",
+      "sha256": "adf124998dbb24dbd61f8df890e3f4fef6fe71c016dadc37c1df5be2f524dc1d",
+      "bytes": 2574
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\enemy.json",
+      "sha256": "b7ac2d2fb86b8b2bc105e268e75c0eeb1c8ee0e2af3f1af66b84de74719e6ca8",
+      "bytes": 3390
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\loop_00.png",
+      "sha256": "12cb49c8115862f88970d1fec3191474d3d00d33418a15cb78c896532a75c93d",
+      "bytes": 73008
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\loop_01.png",
+      "sha256": "8db2c73245c3eb7b4cacaf4beef947cc5f2f86cee3a7927f5b12f8e438389695",
+      "bytes": 73346
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\loop_02.png",
+      "sha256": "bb3fffc0bcf12473320d1b02d891e37e6c4bfa1042a3b14b85605470a0711c8c",
+      "bytes": 73299
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\loop_03.png",
+      "sha256": "0b0bc23d1b43773f28c9bfe784b7bb1b015502e87a114a451515506bf69b1df9",
+      "bytes": 73198
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\loop_04.png",
+      "sha256": "0b0bc23d1b43773f28c9bfe784b7bb1b015502e87a114a451515506bf69b1df9",
+      "bytes": 73198
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\loop_05.png",
+      "sha256": "0b0bc23d1b43773f28c9bfe784b7bb1b015502e87a114a451515506bf69b1df9",
+      "bytes": 73198
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\loop_06.png",
+      "sha256": "bb3fffc0bcf12473320d1b02d891e37e6c4bfa1042a3b14b85605470a0711c8c",
+      "bytes": 73299
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\loop_07.png",
+      "sha256": "8db2c73245c3eb7b4cacaf4beef947cc5f2f86cee3a7927f5b12f8e438389695",
+      "bytes": 73346
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\loop_08.png",
+      "sha256": "2d7a7c7b151e5d60db272c45b0cf0f16ea8d29aa75a2b3fa1fc59baa6d886b54",
+      "bytes": 73154
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\loop_09.png",
+      "sha256": "314a016cc782ade20ce56c90ebc4b788f7670f625a4459b19a4c994f1d82f448",
+      "bytes": 73226
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\loop_10.png",
+      "sha256": "ef71c5ebb572a5e5151dcedca943ba813d0fe261d5ffb344354b719f31239d94",
+      "bytes": 73121
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\loop_11.png",
+      "sha256": "ef71c5ebb572a5e5151dcedca943ba813d0fe261d5ffb344354b719f31239d94",
+      "bytes": 73121
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\loop_12.png",
+      "sha256": "ef71c5ebb572a5e5151dcedca943ba813d0fe261d5ffb344354b719f31239d94",
+      "bytes": 73121
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\loop_13.png",
+      "sha256": "314a016cc782ade20ce56c90ebc4b788f7670f625a4459b19a4c994f1d82f448",
+      "bytes": 73226
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\loop_14.png",
+      "sha256": "2d7a7c7b151e5d60db272c45b0cf0f16ea8d29aa75a2b3fa1fc59baa6d886b54",
+      "bytes": 73154
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\loop_15.png",
+      "sha256": "12cb49c8115862f88970d1fec3191474d3d00d33418a15cb78c896532a75c93d",
+      "bytes": 73008
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\sdf.png",
+      "sha256": "2d0f22e2b4b3240e7087f582249529e864e14d0b5a229f78fbb0c6e8638ea72a",
+      "bytes": 60531
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\crow\\sdf_full.png",
+      "sha256": "bac7b657e3f16a92403137cf93c6ffa0ff371c9378cf1e35ecb7926d308f6d58",
+      "bytes": 64086
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\alpha_full.png",
+      "sha256": "7f6bc5da374e6b6f0e9df216ac0e29bab33c0099fc8b8044c5f11f56e6bb6466",
+      "bytes": 4147
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\body.png",
+      "sha256": "8cf96fb276ff9f387c1b77688534a5e70073f87eaf78c1ed0c36117a8742a9a1",
+      "bytes": 289022
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\body_full.png",
+      "sha256": "2bd8e26b317eba5c54449b512cecd5b42d86ea3deb71e291738e97cb009e7c38",
+      "bytes": 298283
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\core.png",
+      "sha256": "57b3a41d0ea289a2e5792d3a50cd10583cae80a1ece26ab358fff24b96698be4",
+      "bytes": 29674
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\core_full.png",
+      "sha256": "d4cad266a031ae9aaf18075b8451a191309e6c49fc747541817f96229bd26452",
+      "bytes": 312368
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\core_hardened.png",
+      "sha256": "717db7d9221019d3819bbc386532e9204386562f410141a0f3b7b2d05626f5ab",
+      "bytes": 11192
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\core_hardened_full.png",
+      "sha256": "d6f4d5c7f34877d4297558d0e39f918ccba6ab8ff0b0ca8da9e56694d7784f1b",
+      "bytes": 15916
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\core_mask.png",
+      "sha256": "b5cdd70c8fa706c4f3dc28365d2a4ce77d1862039935eb1568aff6ed1f381084",
+      "bytes": 2783
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\enemy.json",
+      "sha256": "33cb9017f933c10943ceee374f0a1c27536099a011055c1f6cd72b11020ec6e9",
+      "bytes": 2852
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\loop_00.png",
+      "sha256": "4fd661f46aa73abba906b986cf054e0a7b13946ad0f84430ea22311935f2b713",
+      "bytes": 40502
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\loop_01.png",
+      "sha256": "41a6a54c9bd38772a3873cc078ace9a3870052b25c382c3a62f91498bb0d30b0",
+      "bytes": 40610
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\loop_02.png",
+      "sha256": "287f98fb0ea8236d643043d672f3e44306e0749980165478a4f67fe7081a0b44",
+      "bytes": 40631
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\loop_03.png",
+      "sha256": "5041ff5d6c0fba316988f232dfbfa443ec200f89e4a9a4e1436be84640c47236",
+      "bytes": 40603
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\loop_04.png",
+      "sha256": "5041ff5d6c0fba316988f232dfbfa443ec200f89e4a9a4e1436be84640c47236",
+      "bytes": 40603
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\loop_05.png",
+      "sha256": "5041ff5d6c0fba316988f232dfbfa443ec200f89e4a9a4e1436be84640c47236",
+      "bytes": 40603
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\loop_06.png",
+      "sha256": "287f98fb0ea8236d643043d672f3e44306e0749980165478a4f67fe7081a0b44",
+      "bytes": 40631
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\loop_07.png",
+      "sha256": "41a6a54c9bd38772a3873cc078ace9a3870052b25c382c3a62f91498bb0d30b0",
+      "bytes": 40610
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\loop_08.png",
+      "sha256": "f0d76f112c4ba3cbb3031ed93106ca919a6adbadd70553556a0c5af346101604",
+      "bytes": 40630
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\loop_09.png",
+      "sha256": "1cba9cb369521bb5e365ce9ebf9d1ab3d4be58ea8177734df32f379cbfc27605",
+      "bytes": 40523
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\loop_10.png",
+      "sha256": "fee0ae02e22ecdba3b39b6a6e1483a28ff5082b15f3b3c30e96369b313b976cd",
+      "bytes": 40559
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\loop_11.png",
+      "sha256": "fee0ae02e22ecdba3b39b6a6e1483a28ff5082b15f3b3c30e96369b313b976cd",
+      "bytes": 40559
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\loop_12.png",
+      "sha256": "fee0ae02e22ecdba3b39b6a6e1483a28ff5082b15f3b3c30e96369b313b976cd",
+      "bytes": 40559
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\loop_13.png",
+      "sha256": "1cba9cb369521bb5e365ce9ebf9d1ab3d4be58ea8177734df32f379cbfc27605",
+      "bytes": 40523
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\loop_14.png",
+      "sha256": "f0d76f112c4ba3cbb3031ed93106ca919a6adbadd70553556a0c5af346101604",
+      "bytes": 40630
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\loop_15.png",
+      "sha256": "4fd661f46aa73abba906b986cf054e0a7b13946ad0f84430ea22311935f2b713",
+      "bytes": 40502
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\sdf.png",
+      "sha256": "b54713d8a11cb8ab780e85cb8520cc1622322598688719b0f777a45d3ec40505",
+      "bytes": 29532
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole0\\sdf_full.png",
+      "sha256": "7c2adca06d616b1f455d64a99cc5141aae4ed2adce5be94c8cbfe3e16bc00ee1",
+      "bytes": 33989
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\alpha_full.png",
+      "sha256": "36c208209bc9bc96182b58fcf15adfd04f2b0242f03f4346129b4303225386e7",
+      "bytes": 4204
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\body.png",
+      "sha256": "353d071d9456ecda341d7afa50dab6ce6fd33bc6044d09d45a188fcd627b76ec",
+      "bytes": 333797
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\body_full.png",
+      "sha256": "ab6aa66d104e7a12dce0ade0488e4fc0819d9f20ad6713da1e72c96dde12fdae",
+      "bytes": 341749
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\core.png",
+      "sha256": "638af43e33b4c6fa5181bfee988d7b380b3e2e9c159d6178e31babfcfb4e7e68",
+      "bytes": 37883
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\core_full.png",
+      "sha256": "dd738e3c8765d6aa36ed80fbcfd5a084f51ed6026676347d7218016a5a54a122",
+      "bytes": 356361
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\core_hardened.png",
+      "sha256": "717db7d9221019d3819bbc386532e9204386562f410141a0f3b7b2d05626f5ab",
+      "bytes": 11192
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\core_hardened_full.png",
+      "sha256": "16832b6b34001688e7455e2496f5e2b5542fa2574e7b31daa4eccc733fa1abc9",
+      "bytes": 15913
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\core_mask.png",
+      "sha256": "e73ecc5efe1f430687177cf3deaf3662bf182c884ec38b567f5a4afe828eb392",
+      "bytes": 2855
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\enemy.json",
+      "sha256": "ddabd001be329dd032b16d2e184c5f6d99b6cd49674d5b35d3369604b06aa1ca",
+      "bytes": 1655
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\loop_00.png",
+      "sha256": "be2335aa941718f5bc2cd033eb4261a6b7eb976ef27f45e7a696ee2d13b5ad79",
+      "bytes": 46977
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\loop_01.png",
+      "sha256": "dc9dbaf15aa3eec2e324922b98dc58e5a50f03d08f44f168dd986cf4ff34f864",
+      "bytes": 47008
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\loop_02.png",
+      "sha256": "e8b7c5eb9885d3d6d9c8307e699e6daa8a1907b5b1f9611e5d60fb7fffbf87a9",
+      "bytes": 47000
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\loop_03.png",
+      "sha256": "bedc9c4e941e6e058aa32ab90bcea0a0296888a19660c936cbcca80d1b6f1e8a",
+      "bytes": 46936
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\loop_04.png",
+      "sha256": "bedc9c4e941e6e058aa32ab90bcea0a0296888a19660c936cbcca80d1b6f1e8a",
+      "bytes": 46936
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\loop_05.png",
+      "sha256": "bedc9c4e941e6e058aa32ab90bcea0a0296888a19660c936cbcca80d1b6f1e8a",
+      "bytes": 46936
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\loop_06.png",
+      "sha256": "e8b7c5eb9885d3d6d9c8307e699e6daa8a1907b5b1f9611e5d60fb7fffbf87a9",
+      "bytes": 47000
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\loop_07.png",
+      "sha256": "dc9dbaf15aa3eec2e324922b98dc58e5a50f03d08f44f168dd986cf4ff34f864",
+      "bytes": 47008
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\loop_08.png",
+      "sha256": "65f594a140ce26e859c9d61cea6b0516b6431b867db4e1c5427ff1e7abd9bd42",
+      "bytes": 47024
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\loop_09.png",
+      "sha256": "5a9450f9b8c63b00c27c3dca6fc6abf44ef7ececacf438939377af48e6953605",
+      "bytes": 46980
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\loop_10.png",
+      "sha256": "e7d261bf3155466cf929de1bf48ed1577eb7afe0ca69f715a783162884dc470a",
+      "bytes": 46924
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\loop_11.png",
+      "sha256": "e7d261bf3155466cf929de1bf48ed1577eb7afe0ca69f715a783162884dc470a",
+      "bytes": 46924
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\loop_12.png",
+      "sha256": "e7d261bf3155466cf929de1bf48ed1577eb7afe0ca69f715a783162884dc470a",
+      "bytes": 46924
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\loop_13.png",
+      "sha256": "5a9450f9b8c63b00c27c3dca6fc6abf44ef7ececacf438939377af48e6953605",
+      "bytes": 46980
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\loop_14.png",
+      "sha256": "65f594a140ce26e859c9d61cea6b0516b6431b867db4e1c5427ff1e7abd9bd42",
+      "bytes": 47024
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\loop_15.png",
+      "sha256": "be2335aa941718f5bc2cd033eb4261a6b7eb976ef27f45e7a696ee2d13b5ad79",
+      "bytes": 46977
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\sdf.png",
+      "sha256": "690dd76f28a1e2d3f9f258177645c69b4506935505175295785c7f85ac0d85b0",
+      "bytes": 31598
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole1\\sdf_full.png",
+      "sha256": "cdead9d696fc2a88e868014a9ef0dbc8f9b543227c418194d72ac4d1d2ffe8bd",
+      "bytes": 34892
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\alpha_full.png",
+      "sha256": "a94745f6dba3fbb180dcfc5bf4eb7057dbd47c20026f347f6f14cd9fe48edda1",
+      "bytes": 4869
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\body.png",
+      "sha256": "d0bd21173a88fb4533b83c1430029f395c1916cc416f93c4e68ca8c6b71a645a",
+      "bytes": 440858
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\body_full.png",
+      "sha256": "30d352184e52459815c6ed24416c5189a69d3fb55f8a006835601fb57a72e0fa",
+      "bytes": 453832
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\core.png",
+      "sha256": "0ea61c4c7e33ec59abf4e907d83ac33959d78043dbda8dd3432d17aae13c518a",
+      "bytes": 46044
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\core_full.png",
+      "sha256": "abd4f3758e38ba9038fd64a16d383d45851ba74b3372abf417c58bf297d70a7d",
+      "bytes": 479044
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\core_hardened.png",
+      "sha256": "717db7d9221019d3819bbc386532e9204386562f410141a0f3b7b2d05626f5ab",
+      "bytes": 11192
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\core_hardened_full.png",
+      "sha256": "3aa8417243b82a2a7040ca1c4dcd57edeb76ae53641f306d78f98fa57c5dcbe1",
+      "bytes": 15916
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\core_mask.png",
+      "sha256": "deac16f0686fdc8d98cce68fe1e84302cfc60640330f14733cd940c2f530eaeb",
+      "bytes": 3573
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\enemy.json",
+      "sha256": "43db0a696c2c4b2e452669c19b0ee1345fc0511edeaf77633f9b5cf010f6c03a",
+      "bytes": 1654
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\loop_00.png",
+      "sha256": "35adf5638742c700dc591642340c986c73e12761f67ebee318755635379938e1",
+      "bytes": 58816
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\loop_01.png",
+      "sha256": "0e73bf4d15dc51c5b4be33e535d5b481b3417b40afa59cc1b2b84d550604e2f5",
+      "bytes": 58748
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\loop_02.png",
+      "sha256": "93965bc0dd7980ab5c0a4e57cd128f1952a4ec307cd65a5a346b9da885958a09",
+      "bytes": 58977
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\loop_03.png",
+      "sha256": "55cd1fe05ec76e0c332b471369a291bd5546c7712fdfa399fa9e9feb9864f8c7",
+      "bytes": 58844
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\loop_04.png",
+      "sha256": "55cd1fe05ec76e0c332b471369a291bd5546c7712fdfa399fa9e9feb9864f8c7",
+      "bytes": 58844
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\loop_05.png",
+      "sha256": "55cd1fe05ec76e0c332b471369a291bd5546c7712fdfa399fa9e9feb9864f8c7",
+      "bytes": 58844
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\loop_06.png",
+      "sha256": "93965bc0dd7980ab5c0a4e57cd128f1952a4ec307cd65a5a346b9da885958a09",
+      "bytes": 58977
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\loop_07.png",
+      "sha256": "0e73bf4d15dc51c5b4be33e535d5b481b3417b40afa59cc1b2b84d550604e2f5",
+      "bytes": 58748
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\loop_08.png",
+      "sha256": "1090121831841b99cdd250ba0088c34605325559a700583d95fa820b2f5b476b",
+      "bytes": 59116
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\loop_09.png",
+      "sha256": "59a13a4b70ed267685d01182fce522e6f4ea2df3223bf1f07d564212d360924f",
+      "bytes": 58840
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\loop_10.png",
+      "sha256": "2fcee7c7cd935ea8a081787efafb6f42811931b766f424b4144c85ee55a0b7f1",
+      "bytes": 58858
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\loop_11.png",
+      "sha256": "2fcee7c7cd935ea8a081787efafb6f42811931b766f424b4144c85ee55a0b7f1",
+      "bytes": 58858
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\loop_12.png",
+      "sha256": "2fcee7c7cd935ea8a081787efafb6f42811931b766f424b4144c85ee55a0b7f1",
+      "bytes": 58858
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\loop_13.png",
+      "sha256": "59a13a4b70ed267685d01182fce522e6f4ea2df3223bf1f07d564212d360924f",
+      "bytes": 58840
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\loop_14.png",
+      "sha256": "1090121831841b99cdd250ba0088c34605325559a700583d95fa820b2f5b476b",
+      "bytes": 59116
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\loop_15.png",
+      "sha256": "35adf5638742c700dc591642340c986c73e12761f67ebee318755635379938e1",
+      "bytes": 58816
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\sdf.png",
+      "sha256": "a7c6b80421e4a375e419b2254dfa0e93ecb4477cc1bae19fff82df1e979ead68",
+      "bytes": 31643
+    },
+    {
+      "file": "D:\\gunforge_cache\\g01\\T06\\tadpole2\\sdf_full.png",
+      "sha256": "45ecb1e854766b7b2fdce5077bda17d743dbfdf40f82df2456534ab097c0b6cb",
+      "bytes": 36059
+    }
+  ],
+  "revision_manifest": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2c\\manifest.json",
+  "visual_feedback": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2d\\user_feedback.yaml"
+}

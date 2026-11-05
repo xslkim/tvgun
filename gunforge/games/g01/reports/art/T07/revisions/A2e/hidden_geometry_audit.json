@@ -1,0 +1,48 @@
+{
+  "status": "pending",
+  "layers": [
+    {
+      "layer": "far_base",
+      "extent_equals_actual_alpha": true,
+      "certification": "pending_independent_intended_geometry",
+      "reason": "Expected extent duplicates current visible alpha; holes already present in both cannot be discovered by this comparison"
+    },
+    {
+      "layer": "far_town",
+      "extent_equals_actual_alpha": true,
+      "certification": "pending_independent_intended_geometry",
+      "reason": "Expected extent duplicates current visible alpha; holes already present in both cannot be discovered by this comparison"
+    },
+    {
+      "layer": "mid_ground",
+      "extent_equals_actual_alpha": true,
+      "certification": "pending_independent_intended_geometry",
+      "reason": "Expected extent duplicates current visible alpha; holes already present in both cannot be discovered by this comparison"
+    },
+    {
+      "layer": "mid_left",
+      "extent_equals_actual_alpha": true,
+      "certification": "pending_independent_intended_geometry",
+      "reason": "Expected extent duplicates current visible alpha; holes already present in both cannot be discovered by this comparison"
+    },
+    {
+      "layer": "mid_right",
+      "extent_equals_actual_alpha": true,
+      "certification": "pending_independent_intended_geometry",
+      "reason": "Expected extent duplicates current visible alpha; holes already present in both cannot be discovered by this comparison"
+    },
+    {
+      "layer": "near_left",
+      "extent_equals_actual_alpha": true,
+      "certification": "pending_independent_intended_geometry",
+      "reason": "Expected extent duplicates current visible alpha; holes already present in both cannot be discovered by this comparison"
+    },
+    {
+      "layer": "near_right",
+      "extent_equals_actual_alpha": true,
+      "certification": "pending_independent_intended_geometry",
+      "reason": "Expected extent duplicates current visible alpha; holes already present in both cannot be discovered by this comparison"
+    }
+  ],
+  "next_requirement": "Independent intended silhouette/whitebox annotation, then compare moving occlusion against that mask; do not certify current-alpha self-comparison"
+}

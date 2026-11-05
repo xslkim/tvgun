@@ -1,0 +1,126 @@
+{
+  "vendor": {
+    "idle": {
+      "status": "pass",
+      "reason": "Aligned loop endpoint position and velocity",
+      "details": {
+        "pixel_difference": 0.0,
+        "velocity_difference": 0.0012254093477668845
+      }
+    },
+    "peek": {
+      "status": "pass",
+      "reason": "Aligned loop endpoint position and velocity",
+      "details": {
+        "pixel_difference": 0.0,
+        "velocity_difference": 0.0
+      }
+    },
+    "walk": {
+      "status": "pass",
+      "reason": "Aligned loop endpoint position and velocity",
+      "details": {
+        "pixel_difference": 0.0,
+        "velocity_difference": 0.01212977217796841
+      }
+    },
+    "startle": {
+      "status": "pass",
+      "reason": "Aligned loop endpoint position and velocity",
+      "details": {
+        "pixel_difference": 0.0,
+        "velocity_difference": 0.0
+      }
+    },
+    "wave_for_help": {
+      "status": "pass",
+      "reason": "Aligned loop endpoint position and velocity",
+      "details": {
+        "pixel_difference": 0.0,
+        "velocity_difference": 5.480026211873639e-05
+      }
+    },
+    "struggle": {
+      "status": "pass",
+      "reason": "Aligned loop endpoint position and velocity",
+      "details": {
+        "pixel_difference": 0.0,
+        "velocity_difference": 0.0
+      }
+    },
+    "rescued_bounce": {
+      "status": "na",
+      "reason": "one-shot rescue state transition"
+    },
+    "thank": {
+      "status": "pass",
+      "reason": "Aligned loop endpoint position and velocity",
+      "details": {
+        "pixel_difference": 0.0,
+        "velocity_difference": 0.0
+      }
+    }
+  },
+  "video": {
+    "idle": {
+      "status": "pass",
+      "reason": "Aligned loop endpoint position and velocity",
+      "details": {
+        "pixel_difference": 0.0,
+        "velocity_difference": 0.0014794602736928105
+      }
+    },
+    "peek": {
+      "status": "pass",
+      "reason": "Aligned loop endpoint position and velocity",
+      "details": {
+        "pixel_difference": 0.0,
+        "velocity_difference": 0.0
+      }
+    },
+    "walk": {
+      "status": "pass",
+      "reason": "Aligned loop endpoint position and velocity",
+      "details": {
+        "pixel_difference": 0.0,
+        "velocity_difference": 0.01536280041530501
+      }
+    },
+    "startle": {
+      "status": "pass",
+      "reason": "Aligned loop endpoint position and velocity",
+      "details": {
+        "pixel_difference": 0.0,
+        "velocity_difference": 0.0
+      }
+    },
+    "wave_for_help": {
+      "status": "pass",
+      "reason": "Aligned loop endpoint position and velocity",
+      "details": {
+        "pixel_difference": 0.0,
+        "velocity_difference": 8.38035300925926e-05
+      }
+    },
+    "struggle": {
+      "status": "pass",
+      "reason": "Aligned loop endpoint position and velocity",
+      "details": {
+        "pixel_difference": 0.0,
+        "velocity_difference": 0.0
+      }
+    },
+    "rescued_bounce": {
+      "status": "na",
+      "reason": "one-shot rescue state transition"
+    },
+    "thank": {
+      "status": "pass",
+      "reason": "Aligned loop endpoint position and velocity",
+      "details": {
+        "pixel_difference": 0.0,
+        "velocity_difference": 0.0
+      }
+    }
+  }
+}

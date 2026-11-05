@@ -1,0 +1,61 @@
+{
+  "candidates": [
+    {
+      "centers": [
+        [
+          420,
+          350
+        ],
+        [
+          1110,
+          350
+        ]
+      ],
+      "conservative_texture_rect_overlap_px": 0,
+      "simultaneous_allowed": true
+    },
+    {
+      "centers": [
+        [
+          420,
+          350
+        ],
+        [
+          420,
+          490
+        ]
+      ],
+      "conservative_texture_rect_overlap_px": 22325,
+      "simultaneous_allowed": false
+    },
+    {
+      "centers": [
+        [
+          1110,
+          350
+        ],
+        [
+          420,
+          490
+        ]
+      ],
+      "conservative_texture_rect_overlap_px": 0,
+      "simultaneous_allowed": true
+    }
+  ],
+  "preview_selected_centers": [
+    [
+      420,
+      350
+    ],
+    [
+      1110,
+      350
+    ]
+  ],
+  "forbidden_slot_with_hostage": [
+    650,
+    350
+  ],
+  "policy": "mutually overlapping slots never scheduled together; fixed 200px enemy size; engine enforcement pending"
+}

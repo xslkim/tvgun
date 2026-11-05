@@ -1,0 +1,186 @@
+{
+  "annotation_version": "g01-wall-planes-1",
+  "source": "executor manually annotated wall planes from art/layout; polygons authored in source coordinates, independent of alpha",
+  "scope": "four solid architectural regions including shutter and wall behind bicycle; excludes irregular roofs, branches, cutout edges and unannotated geometry",
+  "semantic_review": "four regions approved by explicit A2f feedback",
+  "full_hidden_geometry_certified": false,
+  "rows": [
+    {
+      "layer": "mid_left",
+      "expected_pixels": 85542,
+      "missing_required_pixels": 0,
+      "numeric_status": "pass",
+      "negative_deleted_wall_detected": true,
+      "regions": [
+        {
+          "id": "upper_wall",
+          "points": [
+            [
+              25,
+              75
+            ],
+            [
+              300,
+              160
+            ],
+            [
+              300,
+              265
+            ],
+            [
+              25,
+              195
+            ]
+          ]
+        },
+        {
+          "id": "shutter_backing",
+          "points": [
+            [
+              30,
+              470
+            ],
+            [
+              165,
+              500
+            ],
+            [
+              165,
+              870
+            ],
+            [
+              30,
+              900
+            ]
+          ]
+        }
+      ],
+      "motion_states": [
+        {
+          "camera_breath": [
+            0,
+            0
+          ],
+          "missing_required_pixels": 0
+        },
+        {
+          "camera_breath": [
+            -68,
+            -34
+          ],
+          "missing_required_pixels": 0
+        },
+        {
+          "camera_breath": [
+            -68,
+            34
+          ],
+          "missing_required_pixels": 0
+        },
+        {
+          "camera_breath": [
+            68,
+            -34
+          ],
+          "missing_required_pixels": 0
+        },
+        {
+          "camera_breath": [
+            68,
+            34
+          ],
+          "missing_required_pixels": 0
+        }
+      ]
+    },
+    {
+      "layer": "mid_right",
+      "expected_pixels": 74312,
+      "missing_required_pixels": 0,
+      "numeric_status": "pass",
+      "negative_deleted_wall_detected": true,
+      "regions": [
+        {
+          "id": "bicycle_wall_backing",
+          "points": [
+            [
+              1400,
+              510
+            ],
+            [
+              1550,
+              445
+            ],
+            [
+              1550,
+              815
+            ],
+            [
+              1400,
+              790
+            ]
+          ]
+        },
+        {
+          "id": "upper_wall",
+          "points": [
+            [
+              1660,
+              180
+            ],
+            [
+              1860,
+              110
+            ],
+            [
+              1860,
+              240
+            ],
+            [
+              1660,
+              300
+            ]
+          ]
+        }
+      ],
+      "motion_states": [
+        {
+          "camera_breath": [
+            0,
+            0
+          ],
+          "missing_required_pixels": 0
+        },
+        {
+          "camera_breath": [
+            -68,
+            -34
+          ],
+          "missing_required_pixels": 0
+        },
+        {
+          "camera_breath": [
+            -68,
+            34
+          ],
+          "missing_required_pixels": 0
+        },
+        {
+          "camera_breath": [
+            68,
+            -34
+          ],
+          "missing_required_pixels": 0
+        },
+        {
+          "camera_breath": [
+            68,
+            34
+          ],
+          "missing_required_pixels": 0
+        }
+      ]
+    }
+  ],
+  "approval_source": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2g\\user_feedback.yaml"
+}
