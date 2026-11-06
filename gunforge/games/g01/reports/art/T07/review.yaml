@@ -1,5 +1,5 @@
 stage: A2
-status: A2k_arm_grip_prototype_review_pending
+status: art2d_final_grip_and_A2_offline_readiness_review_pending
 source: explicit_user_chat
 items:
 - id: scene
@@ -66,9 +66,19 @@ items:
   scope: body part front/back occlusion; visual design and prior scoped approvals
     retained
   source: explicit_A2i_followup_user_chat
+- id: art2d_resident_animation
+  status: approved
+  scope: visual acceptance for both rebuilt characters, except the two explicitly identified grips
+  source: explicit_user_chat
+- id: art2d_corrected_grips
+  status: pending
+  scope: final visual recheck of the tanghulu orientation and videotape case grip
+- id: A2_offline_readiness
+  status: pending
+  scope: reviewer decision on T08 offline work with documented technical items still open
 technical_acceptance: false
 actual_0B_approved: false
 feedback_history: revisions/A2b/user_feedback.yaml
-revision_report: revisions/A2k/report.md
-latest_feedback: revisions/A2j/user_feedback.yaml
+revision_report: report.md
+latest_feedback: revisions/A2l/user_feedback.yaml
 T08_started: false

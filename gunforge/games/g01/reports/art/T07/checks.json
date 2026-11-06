@@ -1,7 +1,11 @@
 {
-  "revision": "A2k",
-  "scope": "arm and grip first prototype only",
-  "evidence": "revisions/A2k/checks.json",
+  "revision": "A2l",
+  "scope": "art2d resident export and offline rescue-ink screening; historical station and ink evidence unchanged",
+  "character_commit": "5da1766",
+  "rescue_variant_screening": "revisions/A2l/rescue_variant_screening.json",
+  "excluded_ink_variant": "blob_01",
+  "prior_phase_evidence": "revisions/A2i/report.md",
+  "corrected_grip_visual_acceptance": false,
   "technical_acceptance": false,
   "T08_started": false,
   "actual_0B": false

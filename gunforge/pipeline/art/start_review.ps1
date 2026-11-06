@@ -13,5 +13,15 @@ foreach ($reviewSite in @(@{Port=8765;Task='T02'},@{Port=8766;Task='T03'},@{Port
         Start-Process -FilePath $reviewPython -ArgumentList $reviewArguments -WorkingDirectory $artRoot -WindowStyle Hidden -RedirectStandardOutput (Join-Path $reviewLogs ($reviewSite.Task+'.out.log')) -RedirectStandardError (Join-Path $reviewLogs ($reviewSite.Task+'.err.log')) | Out-Null
     }
 }
-Write-Output 'Current A2k review: http://127.0.0.1:8767/gallery/'
+$reviewViewer = Join-Path $artRoot '../../../art2d/demos/viewer/serve.mjs'
+if (-not (Get-NetTCPConnection -LocalPort 4173 -State Listen -ErrorAction SilentlyContinue)) {
+    $reviewNode = Get-Command node -CommandType Application -ErrorAction SilentlyContinue | Select-Object -First 1
+    if ($reviewNode) {
+        $reviewViewerPath = (Resolve-Path -LiteralPath $reviewViewer).Path
+        Start-Process -FilePath $reviewNode.Source -ArgumentList ('"' + $reviewViewerPath + '"') -WindowStyle Hidden -RedirectStandardOutput (Join-Path $reviewLogs 'art2d.out.log') -RedirectStandardError (Join-Path $reviewLogs 'art2d.err.log') | Out-Null
+    } else {
+        Write-Warning 'Node is required for the character previews on port 4173.'
+    }
+}
+Write-Output 'Current T07 review: http://127.0.0.1:8767/gallery/'
 Write-Output 'Earlier T02 references: http://127.0.0.1:8765/gallery/'

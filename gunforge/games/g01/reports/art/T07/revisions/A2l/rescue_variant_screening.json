@@ -1,0 +1,205 @@
+{
+  "scope": "offline candidate fitting only, art2d atlas transform, 30 fps",
+  "roles": {
+    "vendor": {
+      "shipped": {
+        "scope": "offline rendered alpha, current ink attachment, 30 fps",
+        "display_height": 512,
+        "frames": 97,
+        "minimum_effective_radius": 48.08206217866359,
+        "minimum_paper_clearance": 8.0,
+        "max_outside_paper_pixels": 0,
+        "passed": true,
+        "source_sha256": null,
+        "minimum_source_paper_clearance": 8.0,
+        "failure_count": 0,
+        "first_failure": null
+      },
+      "blob_00": {
+        "scope": "offline rendered alpha, current ink attachment, 30 fps",
+        "display_height": 512,
+        "frames": 97,
+        "minimum_effective_radius": 48.075441584872664,
+        "minimum_paper_clearance": 8.0,
+        "max_outside_paper_pixels": 0,
+        "passed": true,
+        "source_sha256": "f75c16ffb020c2dde53f7f5e1addcc0ac54be7b4487ac5cc78f3e1820e4492df",
+        "minimum_source_paper_clearance": 8.0,
+        "failure_count": 0,
+        "first_failure": null
+      },
+      "blob_01": {
+        "scope": "offline rendered alpha, current ink attachment, 30 fps",
+        "display_height": 512,
+        "frames": 97,
+        "minimum_effective_radius": 40.19232106239621,
+        "minimum_paper_clearance": 0.0,
+        "max_outside_paper_pixels": 9,
+        "passed": false,
+        "source_sha256": "82469733718e09386d6a09c9a2d19c8ee19c3ae24b3a56c0488d1d678e7c06cb",
+        "minimum_source_paper_clearance": 0.0,
+        "failure_count": 81,
+        "first_failure": {
+          "clip": "struggle",
+          "time": 0.13333333333333333,
+          "radius": 40.23585566544794,
+          "paper_clearance": 1.0,
+          "outside": 0,
+          "unoccluded_source_paper_clearance": 1.0
+        }
+      },
+      "blob_02": {
+        "scope": "offline rendered alpha, current ink attachment, 30 fps",
+        "display_height": 512,
+        "frames": 97,
+        "minimum_effective_radius": 51.79801184064087,
+        "minimum_paper_clearance": 8.06225774829855,
+        "max_outside_paper_pixels": 0,
+        "passed": true,
+        "source_sha256": "2e71bcc7cf5ac86066eb18931aac12f8178e192e8a6fdbeaf46a040b2b46f652",
+        "minimum_source_paper_clearance": 8.06225774829855,
+        "failure_count": 0,
+        "first_failure": null
+      },
+      "blob_03": {
+        "scope": "offline rendered alpha, current ink attachment, 30 fps",
+        "display_height": 512,
+        "frames": 97,
+        "minimum_effective_radius": 44.50665592607166,
+        "minimum_paper_clearance": 14.560219778561036,
+        "max_outside_paper_pixels": 0,
+        "passed": true,
+        "source_sha256": "8b2b19b1f940a6be18dbb0be9d5f0d58fcc94f609f2000534f74018fd8ef0537",
+        "minimum_source_paper_clearance": 14.560219778561036,
+        "failure_count": 0,
+        "first_failure": null
+      },
+      "blob_04": {
+        "scope": "offline rendered alpha, current ink attachment, 30 fps",
+        "display_height": 512,
+        "frames": 97,
+        "minimum_effective_radius": 47.75990624355374,
+        "minimum_paper_clearance": 9.055385138137417,
+        "max_outside_paper_pixels": 0,
+        "passed": true,
+        "source_sha256": "ca82228a03d8c2aba3c8a765a72ec1fa59e39e885b52e085955ebdfae9e70dcb",
+        "minimum_source_paper_clearance": 9.055385138137417,
+        "failure_count": 0,
+        "first_failure": null
+      },
+      "blob_05": {
+        "scope": "offline rendered alpha, current ink attachment, 30 fps",
+        "display_height": 512,
+        "frames": 97,
+        "minimum_effective_radius": 46.156777056333894,
+        "minimum_paper_clearance": 6.708203932499369,
+        "max_outside_paper_pixels": 0,
+        "passed": true,
+        "source_sha256": "e8e03980c492ea32c9652b5bff0c6caa6a30d2aedcfbcc44bde7115008c37eb4",
+        "minimum_source_paper_clearance": 6.708203932499369,
+        "failure_count": 0,
+        "first_failure": null
+      }
+    },
+    "video": {
+      "shipped": {
+        "scope": "offline rendered alpha, current ink attachment, 30 fps",
+        "display_height": 300,
+        "frames": 97,
+        "minimum_effective_radius": 43.62539179758601,
+        "minimum_paper_clearance": 7.615773105863909,
+        "max_outside_paper_pixels": 0,
+        "passed": true,
+        "source_sha256": null,
+        "minimum_source_paper_clearance": 7.615773105863909,
+        "failure_count": 0,
+        "first_failure": null
+      },
+      "blob_00": {
+        "scope": "offline rendered alpha, current ink attachment, 30 fps",
+        "display_height": 300,
+        "frames": 97,
+        "minimum_effective_radius": 43.62539179758601,
+        "minimum_paper_clearance": 8.0,
+        "max_outside_paper_pixels": 0,
+        "passed": true,
+        "source_sha256": "f75c16ffb020c2dde53f7f5e1addcc0ac54be7b4487ac5cc78f3e1820e4492df",
+        "minimum_source_paper_clearance": 8.0,
+        "failure_count": 0,
+        "first_failure": null
+      },
+      "blob_01": {
+        "scope": "offline rendered alpha, current ink attachment, 30 fps",
+        "display_height": 300,
+        "frames": 97,
+        "minimum_effective_radius": 36.397881068778396,
+        "minimum_paper_clearance": 8.0,
+        "max_outside_paper_pixels": 0,
+        "passed": false,
+        "source_sha256": "82469733718e09386d6a09c9a2d19c8ee19c3ae24b3a56c0488d1d678e7c06cb",
+        "minimum_source_paper_clearance": 8.0,
+        "failure_count": 97,
+        "first_failure": {
+          "clip": "struggle",
+          "time": 0,
+          "radius": 36.42847671122447,
+          "paper_clearance": 9.0,
+          "outside": 0,
+          "unoccluded_source_paper_clearance": 9.0
+        }
+      },
+      "blob_02": {
+        "scope": "offline rendered alpha, current ink attachment, 30 fps",
+        "display_height": 300,
+        "frames": 97,
+        "minimum_effective_radius": 46.34260245262491,
+        "minimum_paper_clearance": 8.0,
+        "max_outside_paper_pixels": 0,
+        "passed": true,
+        "source_sha256": "2e71bcc7cf5ac86066eb18931aac12f8178e192e8a6fdbeaf46a040b2b46f652",
+        "minimum_source_paper_clearance": 7.810249675906654,
+        "failure_count": 0,
+        "first_failure": null
+      },
+      "blob_03": {
+        "scope": "offline rendered alpha, current ink attachment, 30 fps",
+        "display_height": 300,
+        "frames": 97,
+        "minimum_effective_radius": 40.40952506678155,
+        "minimum_paper_clearance": 9.0,
+        "max_outside_paper_pixels": 0,
+        "passed": true,
+        "source_sha256": "8b2b19b1f940a6be18dbb0be9d5f0d58fcc94f609f2000534f74018fd8ef0537",
+        "minimum_source_paper_clearance": 9.0,
+        "failure_count": 0,
+        "first_failure": null
+      },
+      "blob_04": {
+        "scope": "offline rendered alpha, current ink attachment, 30 fps",
+        "display_height": 300,
+        "frames": 97,
+        "minimum_effective_radius": 43.28845458045339,
+        "minimum_paper_clearance": 8.0,
+        "max_outside_paper_pixels": 0,
+        "passed": true,
+        "source_sha256": "ca82228a03d8c2aba3c8a765a72ec1fa59e39e885b52e085955ebdfae9e70dcb",
+        "minimum_source_paper_clearance": 8.0,
+        "failure_count": 0,
+        "first_failure": null
+      },
+      "blob_05": {
+        "scope": "offline rendered alpha, current ink attachment, 30 fps",
+        "display_height": 300,
+        "frames": 97,
+        "minimum_effective_radius": 41.54366621867301,
+        "minimum_paper_clearance": 7.0,
+        "max_outside_paper_pixels": 0,
+        "passed": true,
+        "source_sha256": "e8e03980c492ea32c9652b5bff0c6caa6a30d2aedcfbcc44bde7115008c37eb4",
+        "minimum_source_paper_clearance": 7.0,
+        "failure_count": 0,
+        "first_failure": null
+      }
+    }
+  }
+}

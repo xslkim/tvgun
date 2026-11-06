@@ -1,1 +1,52 @@
-<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>纸灯城 A2k / 上臂与握持遮挡试稿</title><style>body{margin:0;background:#141827;color:#eee6d6;font:17px/1.8 system-ui}main{max-width:1000px;margin:auto;padding:25px 20px}section{background:#242a3c;padding:20px;margin:20px 0;border-radius:12px}video,img{width:100%}button,textarea{font:inherit}label{display:block;padding:12px;background:#30384e;margin:10px 0}textarea{width:100%;box-sizing:border-box;min-height:90px}button{padding:10px 18px;margin:12px 0}a{color:#a9d4df}[hidden]{display:none!important}</style><main><p>PAPER LANTERN CITY / A2k</p><h1>上臂与握持：第一版遮挡试稿</h1><p>这次只复核上臂是否还被身体错误盖住，以及手与道具的前后关系。原肘部曲线、糖葫芦握点和朝向沿用。</p><section><h2>卖糖葫芦居民</h2><video controls muted loop playsinline src="a2k_vendor_occlusion_v6.mp4" poster="a2k_vendor_contact.jpg"></video><details><summary>关键姿势</summary><img src="a2k_vendor_contact.jpg"></details><h2>录像厅老板</h2><video controls muted loop playsinline src="a2k_video_occlusion_v6.mp4" poster="a2k_video_contact.jpg"></video><details><summary>附墨状态：同一套遮挡合成</summary><video controls muted loop playsinline src="a2k_vendor_rescue_v6.mp4"></video><video controls muted loop playsinline src="a2k_video_rescue_v6.mp4"></video></details></section><section><h2>尚未完成</h2><p>这是局部试稿：肩部原图仍含固定轮廓；肩根/领口的完整局部遮罩、脚踝像素归属、近远侧标注、跨前后/遮脸姿态及过渡还需继续处理。当前动作保持侧向身前编排，没有宣称已支持所有姿态或完整落实全部规则。</p><p>两个角色共 1,128 个动作帧通过本轮槽位顺序与连接检查；144 个救援帧的纸身与普通路径逐像素相同。数值检查不替代人看遮挡是否自然。</p><a href="/report.md" target="_blank">本轮实现与限制</a></section><section><h2>上臂与握持的方向</h2><label><input type="radio" name="d" value="这版上臂与握持方向可以，继续完成剩余遮挡修正"> 方向改善，可以继续细化</label><label><input type="radio" name="d" value="上臂或握持仍有问题，请按补充意见修正"> 仍有问题</label><textarea id="notes" placeholder="有问题时写角色、动作和部位即可"></textarea><button onclick="prepare()">整理反馈</button><p id="err"></p><textarea id="out" readonly hidden></textarea><button id="copy" hidden onclick="copy()">复制反馈</button></section><p>本次不代表人物全部遮挡、A2技术项、正式生产或真实光枪通过。T08未开始；批量仍等真实0B五项验收。</p></main><script>function prepare(){const d=document.querySelector('input:checked');if(!d){document.getElementById('err').textContent='请先选择方向。';return;}document.getElementById('err').textContent='';const out=document.getElementById('out');out.value=['纸灯城 A2k / 上臂与握持遮挡试稿','人物遮挡：'+d.value,'补充意见：'+(document.getElementById('notes').value.trim()||'无'),'已确认的其他美术方向继续沿用。','请继续遮挡修正；人物整体遮挡、A2技术项、引擎与真实追踪待办保留。','本次不代表正式生产或真实光枪通过；批量仍等真实0B五项验收。'].join('\n');out.hidden=false;document.getElementById('copy').hidden=false;}async function copy(){await navigator.clipboard.writeText(document.getElementById('out').value);document.getElementById('err').textContent='已复制，请发回聊天。';}document.querySelectorAll('input,textarea:not([readonly])').forEach(e=>e.addEventListener('input',()=>{document.getElementById('out').hidden=true;document.getElementById('copy').hidden=true}));</script></html>
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>纸灯城 A2 / 握持与离线试做</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#141827;color:#eee6d6;font:17px/1.65 system-ui,sans-serif}
+  main{max-width:1000px;margin:auto;padding:26px 20px 54px}
+  h1{margin:.25em 0;font-size:clamp(1.7rem,5vw,2.5rem)}
+  h2{margin:0 0 .6em;font-size:1.23rem}
+  p{margin:.65em 0}
+  section,details{background:#242a3c;padding:20px;margin:18px 0;border-radius:12px}
+  a{color:#b1e2e5}
+  .links{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0 0}
+  .links a{padding:9px 14px;border:1px solid #6b8796;border-radius:6px}
+  img,video{display:block;width:100%;border-radius:8px}
+  video{margin:10px 0 18px;max-width:640px}
+  summary{cursor:pointer}
+  .eyebrow{color:#d6b676;font-size:.9rem;letter-spacing:.1em}
+</style>
+<main>
+  <header>
+    <p class="eyebrow">纸灯城 / T07 · A2</p>
+    <h1>只复看两处握持</h1>
+    <p>两位居民的动作方向已认可。糖葫芦改为果串朝右上，竹签从手下露出；录像带盒改为握上角，盒身随手垂挂。</p>
+  </header>
+  <section>
+    <h2>握持近景</h2>
+    <a href="http://127.0.0.1:4173/assets/paper_lantern_vendor/qa/grip_recheck.png"><img src="http://127.0.0.1:4173/assets/paper_lantern_vendor/qa/grip_recheck.png" alt="上排糖葫芦、下排录像带盒，比较站立、走路、招手和挣扎的握持"></a>
+    <div class="links">
+      <a href="http://127.0.0.1:4173/demos/viewer/?character=paper_lantern_vendor">播放卖糖葫芦居民</a>
+      <a href="http://127.0.0.1:4173/demos/viewer/?character=paper_lantern_video">播放录像厅老板</a>
+    </div>
+  </section>
+  <section>
+    <h2>看完直接回聊天</h2>
+    <p>如果两处都可以，也同意进入下一步，回复：<strong>握持可以，继续 T08 离线试做</strong>。</p>
+    <p>如果有问题，写角色、动作和部位即可。已认可的其他美术方向不需要重新确认。</p>
+    <p>T08 做首站点样片。阈值标定、引擎和真实追踪继续待验；批量仍等真实光枪 0B 五项验收。<a href="/report.md">查看 T07 结果与待办</a></p>
+  </section>
+  <details>
+    <summary>回看已认可的场景与墨怪</summary>
+    <p>巷口点灯</p>
+    <video controls muted playsinline preload="none" src="light_cycle.mp4" poster="station_lit.png"></video>
+    <p>墨鸦受击</p>
+    <video controls muted playsinline preload="none" src="crow_hit_v3.mp4" poster="crow_hit_v3.png"></video>
+    <p>墨蝌蚪反馈</p>
+    <video controls muted playsinline preload="none" src="tadpole0_feedback_v3.mp4"></video>
+  </details>
+</main>
+</html>

@@ -1,76 +1,75 @@
 {
-  "revision": "A2k",
+  "revision": "A2l",
+  "character_commit": "5da1766",
   "new_image_calls": 0,
+  "technical_acceptance": false,
   "production_approved": false,
   "actual_0B": false,
   "outputs": [
     {
-      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\arm_preview.jpg",
-      "sha256": "71fb97a4aea74f8375979f8eef8dc74220a733a00cd8e01057616f981c616310"
+      "file": "gunforge/games/g01/reports/art/T07/report.md",
+      "sha256": "eb08fec85d9dc6e5c20492c61ee2da1f907e9ed293622a218c3366c88370d97e"
     },
     {
-      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\browser_review_ready.png",
-      "sha256": "c187f398f95a9c5af1a20f68c1a4452fe1968b2f8b0b32d1cf7a5d880b082d4c"
+      "file": "gunforge/games/g01/reports/art/T07/review.yaml",
+      "sha256": "a5d7ef322c6efc6115b7db7430966f24eb1557960e21cd246654dc1950804168"
     },
     {
-      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\browser_verification.md",
-      "sha256": "074ffcdc349d2aa571fe5636984375c5dfd98fa202f173d601e502f4107f7ae6"
+      "file": "gunforge/games/g01/reports/art/T07/checks.json",
+      "sha256": "5ae6cfcd86583855820898ed273edfc14f30254667ed67ebdfbb965ad659f397"
     },
     {
-      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\checks.json",
-      "sha256": "510a50e51e0779e2fa9af2518ff8993b3e2d4fd3fb069b75563ea1c594b76919"
+      "file": "gunforge/games/g01/reports/art/T07/gallery/index.html",
+      "sha256": "5c590dbac9a876ab914331c1dac0b080c5f54f688e28ff8249ab791cb88e919a"
     },
     {
-      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\grip_reconstruction.json",
-      "sha256": "6670b21245f4717c8581a6bbc2d7ba90b2920fd696bf0cfaf265c10d78192e19"
+      "file": "gunforge/games/g01/reports/art/T07/revisions/A2l/user_feedback.yaml",
+      "sha256": "c9a435968fb62498471db5f715e10f42f8fac70003ec7977731f47921508cfb6"
     },
     {
-      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\occluded_target_negative.json",
-      "sha256": "0a025667d781293bac8f960d974048eeadf1292b34f8d9c398cd54c2e69cd50f"
+      "file": "gunforge/games/g01/reports/art/T07/revisions/A2l/rescue_variant_screening.json",
+      "sha256": "9339d992f3b33c6f807b72fdb0d818f9f4bb3976752812999bb7b4ed33edf8f2"
     },
     {
-      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\report.md",
-      "sha256": "533bb381b6bf44bb1e85a50d92a3e5128680aa7156deba661a64fc4cc5a402f6"
+      "file": "art2d/assets/paper_lantern_vendor/qa/grip_recheck.png",
+      "sha256": "e9c28d40fa73d98f461470f8154a62da09bc2e2a07eaa741b306422a8600136b"
     },
     {
-      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\seek_checks.json",
-      "sha256": "c9e195a6a1b5c4013f71844d1852f7a11522d4fec0b2496f54cc27bcca6e0473"
+      "file": "art2d/tools/qa/check_paper_rescue.py",
+      "sha256": "a6128edbe90b82eb26cc0a3c9c7a86f94d557128bf281b409d545c7fb194e558"
     },
     {
-      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\user_feedback.yaml",
-      "sha256": "60b95bf632df2b0ed87d3352187eb52bcf1b46fc1da9ee72657f9e42dd1b42a2"
+      "file": "art2d/assets/paper_lantern_vendor/export/character.json",
+      "sha256": "e53cd5d9e619f6eba9508ffad9e36b8a933ba9d3c9d0ae26326a1ab9af1573c4"
     },
     {
-      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\vendor_contact.jpg",
-      "sha256": "72a1370c2471a13e95e9ba6ec8422d16ede0a7f90e581b05f682633def468c7a"
+      "file": "art2d/assets/paper_lantern_vendor/export/atlas.png",
+      "sha256": "f3cc15cca7986e4e53c948dacc854bb048f01c221783a5ec12bd25f8dbe5b59d"
     },
     {
-      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\vendor_occlusion_v6.mp4",
-      "sha256": "c0a3b89028b62d97f9a07e1592ffafdf5c8b897a02c77eeeae3145ceb579515b"
+      "file": "art2d/assets/paper_lantern_vendor/qa/ink_attachment.json",
+      "sha256": "7d4a083b2a0739ada367dffa753760ed271930168c1a72eb624ab7337c8c018e"
     },
     {
-      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\vendor_rescue_v6.mp4",
-      "sha256": "6eb18edb8905816e52f29e6de5a7a6ebf9dc69c9b25c9447fc5ded8270b7b1da"
+      "file": "art2d/assets/paper_lantern_vendor/qa/REPORT.md",
+      "sha256": "67e540bc91c8073f861d4a806f7b62e0987edda2494777267f29924da0aecf07"
     },
     {
-      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\video_contact.jpg",
-      "sha256": "54f19cb530536ad874c5e6f3c8d8f389aee5ae94a70332f772a97ff5ea8b9993"
+      "file": "art2d/assets/paper_lantern_video/export/character.json",
+      "sha256": "ab32ac41f63b22673a86cebe57462fcdc65965d7652949742c7ccc9f721e650d"
     },
     {
-      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\video_occlusion_v6.mp4",
-      "sha256": "679d6d2e1207b58a31ee1c4aee1e7860a53b619c10ec38e1baccfd1d52621568"
+      "file": "art2d/assets/paper_lantern_video/export/atlas.png",
+      "sha256": "897cacdbc24abad7c22ec7a40cde43e3d225b0adce3ef2f34b545eb67a400db4"
     },
     {
-      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2k\\video_rescue_v6.mp4",
-      "sha256": "583ba30f427e209a9c120c7b88c3998beedf1b8d83726e62ff5b00c5bfaa060f"
+      "file": "art2d/assets/paper_lantern_video/qa/ink_attachment.json",
+      "sha256": "38d64a100f4d8877d12822db4e5240baedb0dd6ca8d923e82986cd4c26f68d7a"
     },
     {
-      "file": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\gallery\\index.html",
-      "sha256": "0dd4f9a1cd540c8f8e7884fd65e2890bae7e2e791179214b3d5e24b35c7e8205"
-    },
-    {
-      "file": "D:\\tvgun\\gunforge\\pipeline\\art\\puppet_motion_v6.py",
-      "sha256": "eca4b60a4a19f4869a059cf5ffefe6a885faf88b7c00199ca5bca97103510d3f"
+      "file": "art2d/assets/paper_lantern_video/qa/REPORT.md",
+      "sha256": "f548457fbda48b8bef834cdc9feea4ff5fc7a80f65be2c2bbc3788480b99e747"
     }
-  ]
+  ],
+  "sha256_policy": "Normalize CRLF to LF for JSON, Markdown, YAML, HTML and Python. Hash binary assets as stored."
 }

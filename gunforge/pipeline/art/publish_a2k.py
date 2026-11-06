@@ -5,6 +5,9 @@ import yaml
 from artlib import GAME,write_json
 BASE=GAME/'reports/art';REV=BASE/'T07/revisions/A2k';GALLERY=BASE/'T07/gallery'
 def main():
+    state=json.loads((BASE/'execution_state.json').read_text(encoding='utf-8'))
+    if state.get('resumed',{}).get('character_commit'):
+        raise SystemExit('A2k is archived; current T07 evidence uses the art2d character exports.')
     checks=json.loads((REV/'checks.json').read_text(encoding='utf-8'))
     (REV/'user_feedback.yaml').write_text(yaml.safe_dump({'source':'explicit_user_chat','quote':'继续吧','scope':'implement A2j occlusion rules; not visual approval','technical_acceptance':False,'T08_authorized':False,'actual_0B':False},allow_unicode=True,sort_keys=False),encoding='utf-8')
     for role,r in checks.items():
@@ -31,7 +34,7 @@ def main():
     for p in [REV/'report.md',BASE/'T07/report.md']:p.write_text(report,encoding='utf-8')
     write_json(BASE/'T07/checks.json',{'revision':'A2k','scope':'arm and grip first prototype only','evidence':'revisions/A2k/checks.json','technical_acceptance':False,'T08_started':False,'actual_0B':False})
     p=BASE/'T07/review.yaml';review=yaml.safe_load(p.read_text(encoding='utf-8'));review.update(status='A2k_arm_grip_prototype_review_pending',revision_report='revisions/A2k/report.md',technical_acceptance=False,T08_started=False);p.write_text(yaml.safe_dump(review,allow_unicode=True,sort_keys=False),encoding='utf-8')
-    state=json.loads((BASE/'execution_state.json').read_text(encoding='utf-8'));state.update(T07='A2k_arm_grip_prototype_review_pending',next_task='complete_character_occlusion_masks_and_validation',T08='blocked_until_occlusion_fix_and_A2_decision');write_json(BASE/'execution_state.json',state)
+    state.update(T07='A2k_arm_grip_prototype_review_pending',next_task='complete_character_occlusion_masks_and_validation',T08='blocked_until_occlusion_fix_and_A2_decision');write_json(BASE/'execution_state.json',state)
     files=[p for p in REV.iterdir() if p.is_file() and p.name!='manifest.json']+[GALLERY/'index.html',Path(__file__).with_name('puppet_motion_v6.py')];write_json(REV/'manifest.json',{'revision':'A2k','new_image_calls':0,'production_approved':False,'actual_0B':False,'outputs':[{'file':str(p),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in files]});print('Scoped A2k prototype published')
     shutil.copy2(REV/'manifest.json',BASE/'T07/manifest.json')
 if __name__=='__main__':main()
