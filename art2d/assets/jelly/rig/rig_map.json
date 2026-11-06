@@ -1,0 +1,25 @@
+{
+  "root": [],
+  "hip": [
+    {
+      "slot": 0,
+      "part": "jelly",
+      "variants": [],
+      "weights": [
+        "hip",
+        "jelly_top"
+      ]
+    }
+  ],
+  "jelly_top": [],
+  "crown": [
+    {
+      "slot": 1,
+      "part": "crown",
+      "variants": [],
+      "weights": [
+        "crown"
+      ]
+    }
+  ]
+}

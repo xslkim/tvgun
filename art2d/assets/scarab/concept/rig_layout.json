@@ -1,0 +1,330 @@
+{
+  "id": "scarab",
+  "label": "黑曜甲虫",
+  "prototype": "multileg",
+  "height": 285,
+  "hip": [
+    0,
+    121
+  ],
+  "collapseHeight": 67,
+  "bones": [
+    [
+      "head",
+      "hip",
+      109,
+      134,
+      0,
+      47
+    ],
+    [
+      "fang",
+      "head",
+      170,
+      126,
+      0,
+      28
+    ]
+  ],
+  "legs": [
+    {
+      "suffix": "front_l",
+      "origin": [
+        70,
+        113
+      ],
+      "foot": [
+        134,
+        12
+      ],
+      "lengths": [
+        64,
+        82
+      ],
+      "sign": -1,
+      "phase": 0.5,
+      "sole": [
+        17,
+        -12
+      ]
+    },
+    {
+      "suffix": "mid_l",
+      "origin": [
+        -9,
+        109
+      ],
+      "foot": [
+        17,
+        12
+      ],
+      "lengths": [
+        64,
+        82
+      ],
+      "sign": 1,
+      "phase": 0,
+      "sole": [
+        17,
+        -12
+      ]
+    },
+    {
+      "suffix": "rear_l",
+      "origin": [
+        -80,
+        108
+      ],
+      "foot": [
+        -102,
+        12
+      ],
+      "lengths": [
+        64,
+        82
+      ],
+      "sign": 1,
+      "phase": 0.5,
+      "sole": [
+        17,
+        -12
+      ]
+    },
+    {
+      "suffix": "front_r",
+      "origin": [
+        51,
+        119
+      ],
+      "foot": [
+        103,
+        12
+      ],
+      "lengths": [
+        64,
+        82
+      ],
+      "sign": -1,
+      "phase": 0,
+      "sole": [
+        17,
+        -12
+      ]
+    },
+    {
+      "suffix": "mid_r",
+      "origin": [
+        -31,
+        117
+      ],
+      "foot": [
+        -29,
+        12
+      ],
+      "lengths": [
+        64,
+        82
+      ],
+      "sign": 1,
+      "phase": 0.5,
+      "sole": [
+        17,
+        -12
+      ]
+    },
+    {
+      "suffix": "rear_r",
+      "origin": [
+        -104,
+        115
+      ],
+      "foot": [
+        -145,
+        12
+      ],
+      "lengths": [
+        64,
+        82
+      ],
+      "sign": 1,
+      "phase": 0,
+      "sole": [
+        17,
+        -12
+      ]
+    }
+  ],
+  "walk": {
+    "speed": 105,
+    "height": 22,
+    "duration": 1,
+    "duty": 0.61
+  },
+  "run": {
+    "speed": 248,
+    "height": 39,
+    "duration": 0.73,
+    "duty": 0.42
+  },
+  "limits": [
+    [
+      "head",
+      -34,
+      34
+    ],
+    [
+      "fang",
+      -29,
+      29
+    ]
+  ],
+  "attachments": [
+    [
+      "upper_leg_front_l",
+      "thigh_far",
+      58,
+      95,
+      -68
+    ],
+    [
+      "lower_leg_front_l",
+      "shin_far",
+      43,
+      108,
+      -77
+    ],
+    [
+      "foot_front_l",
+      "paw_far",
+      32,
+      19,
+      0
+    ],
+    [
+      "upper_leg_mid_l",
+      "thigh_far",
+      58,
+      95,
+      -68
+    ],
+    [
+      "lower_leg_mid_l",
+      "shin_far",
+      43,
+      108,
+      -77
+    ],
+    [
+      "foot_mid_l",
+      "paw_far",
+      32,
+      19,
+      0
+    ],
+    [
+      "upper_leg_rear_l",
+      "thigh_far",
+      58,
+      95,
+      -68
+    ],
+    [
+      "lower_leg_rear_l",
+      "shin_far",
+      43,
+      108,
+      -77
+    ],
+    [
+      "foot_rear_l",
+      "paw_far",
+      32,
+      19,
+      0
+    ],
+    [
+      "hip",
+      "body",
+      282,
+      179,
+      0
+    ],
+    [
+      "head",
+      "head",
+      137,
+      119,
+      0
+    ],
+    [
+      "fang",
+      "fang",
+      52,
+      41,
+      0
+    ],
+    [
+      "upper_leg_front_r",
+      "thigh",
+      58,
+      95,
+      -68
+    ],
+    [
+      "lower_leg_front_r",
+      "shin",
+      43,
+      108,
+      -77
+    ],
+    [
+      "foot_front_r",
+      "paw",
+      32,
+      19,
+      0
+    ],
+    [
+      "upper_leg_mid_r",
+      "thigh",
+      58,
+      95,
+      -68
+    ],
+    [
+      "lower_leg_mid_r",
+      "shin",
+      43,
+      108,
+      -77
+    ],
+    [
+      "foot_mid_r",
+      "paw",
+      32,
+      19,
+      0
+    ],
+    [
+      "upper_leg_rear_r",
+      "thigh",
+      58,
+      95,
+      -68
+    ],
+    [
+      "lower_leg_rear_r",
+      "shin",
+      43,
+      108,
+      -77
+    ],
+    [
+      "foot_rear_r",
+      "paw",
+      32,
+      19,
+      0
+    ]
+  ]
+}

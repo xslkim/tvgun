@@ -1,0 +1,57 @@
+{
+  "scope": "Official graph and sample schema probes; no model inference",
+  "info": [
+    {
+      "name": "flux_schnell.json",
+      "nodes": [
+        "CLIPTextEncode",
+        "EmptySD3LatentImage",
+        "VAEDecode",
+        "SaveImage",
+        "KSampler",
+        "CheckpointLoaderSimple",
+        "CLIPTextEncode",
+        "Note",
+        "MarkdownNote"
+      ],
+      "subgraphs": 0
+    },
+    {
+      "name": "image_qwen_image_layered.json",
+      "nodes": [
+        "MarkdownNote",
+        "LoadImage",
+        "SaveImage",
+        "ImageScaleToMaxDimension",
+        "PrimitiveStringMultiline",
+        "MarkdownNote",
+        "SaveImage",
+        "f754a936-daaf-4b6e-9658-41fdc54d301d",
+        "1ea4fa01-a81b-4420-a03c-f60019e69a92"
+      ],
+      "subgraphs": 2
+    },
+    {
+      "name": "Animated Drawings char1",
+      "joints": [
+        "root",
+        "hip",
+        "torso",
+        "neck",
+        "right_shoulder",
+        "right_elbow",
+        "right_hand",
+        "left_shoulder",
+        "left_elbow",
+        "left_hand",
+        "right_hip",
+        "right_knee",
+        "right_foot",
+        "left_hip",
+        "left_knee",
+        "left_foot"
+      ],
+      "hasLimits": false
+    }
+  ]
+}

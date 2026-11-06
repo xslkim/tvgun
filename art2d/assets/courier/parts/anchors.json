@@ -1,0 +1,401 @@
+{
+  "head": {
+    "uv": [
+      0.5367647,
+      0.9274194
+    ],
+    "pixels": [
+      73.0,
+      115.0
+    ],
+    "image": "courier_head_default.png",
+    "source_crop": [
+      94,
+      4,
+      245,
+      136
+    ],
+    "size": [
+      136,
+      124
+    ]
+  },
+  "scarf_collar": {
+    "uv": [
+      0.4929577,
+      0.59375
+    ],
+    "pixels": [
+      35.0,
+      19.0
+    ],
+    "image": "courier_scarf_collar_default.png",
+    "source_crop": [
+      140,
+      116,
+      215,
+      151
+    ],
+    "size": [
+      71,
+      32
+    ]
+  },
+  "scarf_tail": {
+    "uv": [
+      0.9101124,
+      0.1636364
+    ],
+    "pixels": [
+      81.0,
+      9.0
+    ],
+    "image": "courier_scarf_tail_default.png",
+    "source_crop": [
+      58,
+      116,
+      159,
+      177
+    ],
+    "size": [
+      89,
+      55
+    ]
+  },
+  "body": {
+    "uv": [
+      0.4675325,
+      0.8245614
+    ],
+    "pixels": [
+      36.0,
+      94.0
+    ],
+    "image": "courier_body_default.png",
+    "source_crop": [
+      138,
+      131,
+      219,
+      247
+    ],
+    "size": [
+      77,
+      114
+    ]
+  },
+  "upper_arm_l": {
+    "uv": [
+      0.5166667,
+      0.2535211
+    ],
+    "pixels": [
+      31.0,
+      18.0
+    ],
+    "image": "courier_upper_arm_l_default.png",
+    "source_crop": [
+      111,
+      135,
+      175,
+      208
+    ],
+    "size": [
+      60,
+      71
+    ]
+  },
+  "forearm_l": {
+    "uv": [
+      0.5263158,
+      0.1290323
+    ],
+    "pixels": [
+      20.0,
+      8.0
+    ],
+    "image": "courier_forearm_l_default.png",
+    "source_crop": [
+      98,
+      184,
+      143,
+      248
+    ],
+    "size": [
+      38,
+      62
+    ]
+  },
+  "fist_l": {
+    "uv": [
+      0.3589744,
+      0.1428571
+    ],
+    "pixels": [
+      14.0,
+      7.0
+    ],
+    "image": "courier_fist_l_default.png",
+    "source_crop": [
+      92,
+      231,
+      140,
+      284
+    ],
+    "size": [
+      39,
+      49
+    ]
+  },
+  "upper_arm_r": {
+    "uv": [
+      0.49074074074074076,
+      0.24766355140186916
+    ],
+    "pixels": [
+      53.0,
+      53.0
+    ],
+    "image": "courier_upper_arm_r_default.png",
+    "source_crop": [
+      1217,
+      40,
+      1363,
+      269
+    ],
+    "size": [
+      108,
+      214
+    ]
+  },
+  "forearm_r": {
+    "uv": [
+      0.1891892,
+      0.1147541
+    ],
+    "pixels": [
+      7.0,
+      7.0
+    ],
+    "image": "courier_forearm_r_default.png",
+    "source_crop": [
+      207,
+      186,
+      246,
+      249
+    ],
+    "size": [
+      37,
+      61
+    ]
+  },
+  "fist_r": {
+    "uv": [
+      0.4473684,
+      0.1
+    ],
+    "pixels": [
+      17.0,
+      4.0
+    ],
+    "image": "courier_fist_r_default.png",
+    "source_crop": [
+      211,
+      230,
+      252,
+      272
+    ],
+    "size": [
+      38,
+      40
+    ]
+  },
+  "thigh_l": {
+    "uv": [
+      0.5510204,
+      0.1168831
+    ],
+    "pixels": [
+      27.0,
+      9.0
+    ],
+    "image": "courier_thigh_l_default.png",
+    "source_crop": [
+      136,
+      215,
+      188,
+      295
+    ],
+    "size": [
+      49,
+      77
+    ]
+  },
+  "shin_l": {
+    "uv": [
+      0.625,
+      0.1630435
+    ],
+    "pixels": [
+      35.0,
+      15.0
+    ],
+    "image": "courier_shin_l_default.png",
+    "source_crop": [
+      118,
+      257,
+      176,
+      351
+    ],
+    "size": [
+      56,
+      92
+    ]
+  },
+  "boot_l": {
+    "uv": [
+      0.3103448,
+      0.2826087
+    ],
+    "pixels": [
+      18.0,
+      13.0
+    ],
+    "image": "courier_boot_l_default.png",
+    "source_crop": [
+      110,
+      324,
+      176,
+      376
+    ],
+    "size": [
+      58,
+      46
+    ]
+  },
+  "thigh_r": {
+    "uv": [
+      0.2857143,
+      0.0921053
+    ],
+    "pixels": [
+      12.0,
+      7.0
+    ],
+    "image": "courier_thigh_r_default.png",
+    "source_crop": [
+      179,
+      218,
+      223,
+      296
+    ],
+    "size": [
+      42,
+      76
+    ]
+  },
+  "shin_r": {
+    "uv": [
+      0.5333333,
+      0.1538462
+    ],
+    "pixels": [
+      24.0,
+      14.0
+    ],
+    "image": "courier_shin_r_default.png",
+    "source_crop": [
+      179,
+      261,
+      227,
+      354
+    ],
+    "size": [
+      45,
+      91
+    ]
+  },
+  "boot_r": {
+    "uv": [
+      0.2361111,
+      0.2790698
+    ],
+    "pixels": [
+      17.0,
+      12.0
+    ],
+    "image": "courier_boot_r_default.png",
+    "source_crop": [
+      175,
+      327,
+      255,
+      376
+    ],
+    "size": [
+      72,
+      43
+    ]
+  },
+  "sword": {
+    "uv": [
+      0.0594059,
+      0.2261905
+    ],
+    "pixels": [
+      6.0,
+      19.0
+    ],
+    "image": "courier_sword_default.png",
+    "source_crop": [
+      234,
+      234,
+      343,
+      329
+    ],
+    "size": [
+      101,
+      84
+    ]
+  },
+  "palm": {
+    "uv": [
+      0.48,
+      0.15
+    ],
+    "pixels": [
+      83.04,
+      38.4
+    ],
+    "image": "courier_palm_default.png",
+    "source_crop": [
+      811,
+      765,
+      1013,
+      1044
+    ],
+    "size": [
+      173,
+      256
+    ]
+  },
+  "hammer": {
+    "uv": [
+      0.26,
+      0.53
+    ],
+    "pixels": [
+      70.46,
+      93.81
+    ],
+    "image": "courier_hammer_default.png",
+    "source_crop": [
+      1119,
+      804,
+      1416,
+      1015
+    ],
+    "size": [
+      271,
+      177
+    ]
+  }
+}

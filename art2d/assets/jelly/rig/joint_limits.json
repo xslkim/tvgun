@@ -1,0 +1,8 @@
+[
+  {
+    "id": "crown",
+    "parent": "jelly_top",
+    "min": -22,
+    "max": 22
+  }
+]

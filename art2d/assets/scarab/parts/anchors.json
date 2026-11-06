@@ -1,0 +1,191 @@
+{
+  "body": {
+    "uv": [
+      0.5,
+      0.68
+    ],
+    "pixels": [
+      207.5,
+      179.52
+    ],
+    "image": "scarab_body_default.png",
+    "source_crop": [
+      549,
+      117,
+      1002,
+      414
+    ],
+    "size": [
+      415,
+      264
+    ]
+  },
+  "head": {
+    "uv": [
+      0.14,
+      0.56
+    ],
+    "pixels": [
+      43.54,
+      151.76
+    ],
+    "image": "scarab_head_default.png",
+    "source_crop": [
+      1123,
+      130,
+      1484,
+      440
+    ],
+    "size": [
+      311,
+      271
+    ]
+  },
+  "thigh": {
+    "uv": [
+      0.31,
+      0.21
+    ],
+    "pixels": [
+      49.6,
+      44.94
+    ],
+    "image": "scarab_thigh_default.png",
+    "source_crop": [
+      171,
+      623,
+      363,
+      876
+    ],
+    "size": [
+      160,
+      214
+    ]
+  },
+  "shin": {
+    "uv": [
+      0.35,
+      0.17
+    ],
+    "pixels": [
+      40.6,
+      40.63
+    ],
+    "image": "scarab_shin_default.png",
+    "source_crop": [
+      679,
+      619,
+      811,
+      875
+    ],
+    "size": [
+      116,
+      239
+    ]
+  },
+  "paw": {
+    "uv": [
+      0.23,
+      0.39
+    ],
+    "pixels": [
+      25.3,
+      24.96
+    ],
+    "image": "scarab_paw_default.png",
+    "source_crop": [
+      754,
+      818,
+      885,
+      898
+    ],
+    "size": [
+      110,
+      64
+    ]
+  },
+  "fang": {
+    "uv": [
+      0.12,
+      0.32
+    ],
+    "pixels": [
+      21.84,
+      46.72
+    ],
+    "image": "scarab_fang_default.png",
+    "source_crop": [
+      1168,
+      687,
+      1389,
+      868
+    ],
+    "size": [
+      182,
+      146
+    ]
+  },
+  "thigh_far": {
+    "uv": [
+      0.31,
+      0.21
+    ],
+    "pixels": [
+      49.6,
+      44.94
+    ],
+    "image": "scarab_thigh_far_default.png",
+    "source_crop": [
+      171,
+      623,
+      363,
+      876
+    ],
+    "size": [
+      160,
+      214
+    ]
+  },
+  "shin_far": {
+    "uv": [
+      0.35,
+      0.17
+    ],
+    "pixels": [
+      40.6,
+      40.63
+    ],
+    "image": "scarab_shin_far_default.png",
+    "source_crop": [
+      679,
+      619,
+      811,
+      875
+    ],
+    "size": [
+      116,
+      239
+    ]
+  },
+  "paw_far": {
+    "uv": [
+      0.23,
+      0.39
+    ],
+    "pixels": [
+      25.3,
+      24.96
+    ],
+    "image": "scarab_paw_far_default.png",
+    "source_crop": [
+      754,
+      818,
+      885,
+      898
+    ],
+    "size": [
+      110,
+      64
+    ]
+  }
+}

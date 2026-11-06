@@ -1,0 +1,182 @@
+{
+  "root": [],
+  "hip": [
+    {
+      "slot": 10,
+      "part": "body",
+      "variants": [],
+      "weights": [
+        "hip",
+        "chest"
+      ]
+    }
+  ],
+  "spine": [],
+  "chest": [],
+  "neck": [
+    {
+      "slot": 12,
+      "part": "scarf_collar",
+      "variants": [],
+      "weights": [
+        "neck"
+      ]
+    }
+  ],
+  "head": [
+    {
+      "slot": 13,
+      "part": "head",
+      "variants": [],
+      "weights": [
+        "head"
+      ]
+    }
+  ],
+  "scarf": [
+    {
+      "slot": 11,
+      "part": "scarf_tail",
+      "variants": [],
+      "weights": [
+        "scarf"
+      ]
+    }
+  ],
+  "shoulder_r": [],
+  "upper_arm_r": [
+    {
+      "slot": 0,
+      "part": "upper_arm_r",
+      "variants": [],
+      "weights": [
+        "upper_arm_r"
+      ]
+    }
+  ],
+  "forearm_r": [
+    {
+      "slot": 1,
+      "part": "forearm_r",
+      "variants": [],
+      "weights": [
+        "forearm_r"
+      ]
+    }
+  ],
+  "hand_r": [
+    {
+      "slot": 3,
+      "part": "fist_r",
+      "variants": [
+        "palm"
+      ],
+      "weights": [
+        "hand_r"
+      ]
+    }
+  ],
+  "shoulder_l": [],
+  "upper_arm_l": [
+    {
+      "slot": 14,
+      "part": "upper_arm_l",
+      "variants": [],
+      "weights": [
+        "upper_arm_l"
+      ]
+    }
+  ],
+  "forearm_l": [
+    {
+      "slot": 15,
+      "part": "forearm_l",
+      "variants": [],
+      "weights": [
+        "forearm_l"
+      ]
+    }
+  ],
+  "hand_l": [
+    {
+      "slot": 16,
+      "part": "fist_l",
+      "variants": [],
+      "weights": [
+        "hand_l"
+      ]
+    }
+  ],
+  "weapon": [
+    {
+      "slot": 2,
+      "part": "sword",
+      "variants": [
+        "hammer"
+      ],
+      "weights": [
+        "weapon"
+      ]
+    }
+  ],
+  "upper_leg_l": [
+    {
+      "slot": 7,
+      "part": "thigh_l",
+      "variants": [],
+      "weights": [
+        "upper_leg_l"
+      ]
+    }
+  ],
+  "lower_leg_l": [
+    {
+      "slot": 8,
+      "part": "shin_l",
+      "variants": [],
+      "weights": [
+        "lower_leg_l"
+      ]
+    }
+  ],
+  "foot_l": [
+    {
+      "slot": 9,
+      "part": "boot_l",
+      "variants": [],
+      "weights": [
+        "foot_l"
+      ]
+    }
+  ],
+  "upper_leg_r": [
+    {
+      "slot": 4,
+      "part": "thigh_r",
+      "variants": [],
+      "weights": [
+        "upper_leg_r"
+      ]
+    }
+  ],
+  "lower_leg_r": [
+    {
+      "slot": 5,
+      "part": "shin_r",
+      "variants": [],
+      "weights": [
+        "lower_leg_r"
+      ]
+    }
+  ],
+  "foot_r": [
+    {
+      "slot": 6,
+      "part": "boot_r",
+      "variants": [],
+      "weights": [
+        "foot_r"
+      ]
+    }
+  ]
+}

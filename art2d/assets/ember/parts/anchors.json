@@ -1,0 +1,44 @@
+{
+  "jelly": {
+    "uv": [
+      0.5,
+      1
+    ],
+    "pixels": [
+      165.5,
+      225
+    ],
+    "image": "ember_jelly_default.png",
+    "source_crop": [
+      582,
+      145,
+      951,
+      423
+    ],
+    "size": [
+      331,
+      225
+    ]
+  },
+  "crown": {
+    "uv": [
+      0.55,
+      0.9
+    ],
+    "pixels": [
+      103.95,
+      204.3
+    ],
+    "image": "ember_crown_default.png",
+    "source_crop": [
+      1150,
+      137,
+      1390,
+      409
+    ],
+    "size": [
+      189,
+      227
+    ]
+  }
+}

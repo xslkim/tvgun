@@ -1,0 +1,212 @@
+{
+  "body": {
+    "uv": [
+      0.5,
+      0.68
+    ],
+    "pixels": [
+      233.5,
+      149.6
+    ],
+    "image": "hound_body_default.png",
+    "source_crop": [
+      529,
+      120,
+      1025,
+      408
+    ],
+    "size": [
+      467,
+      220
+    ]
+  },
+  "head": {
+    "uv": [
+      0.1,
+      0.65
+    ],
+    "pixels": [
+      42.6,
+      259.35
+    ],
+    "image": "hound_head_default.png",
+    "source_crop": [
+      1081,
+      36,
+      1536,
+      472
+    ],
+    "size": [
+      426,
+      399
+    ]
+  },
+  "thigh": {
+    "uv": [
+      0.75,
+      0.157
+    ],
+    "pixels": [
+      171.0,
+      55.42
+    ],
+    "image": "hound_thigh_default.png",
+    "source_crop": [
+      135,
+      557,
+      398,
+      950
+    ],
+    "size": [
+      228,
+      353
+    ]
+  },
+  "shin": {
+    "uv": [
+      0.56,
+      0.177
+    ],
+    "pixels": [
+      66.64,
+      50.27
+    ],
+    "image": "hound_shin_default.png",
+    "source_crop": [
+      681,
+      550,
+      827,
+      847
+    ],
+    "size": [
+      119,
+      284
+    ]
+  },
+  "paw": {
+    "uv": [
+      0.19,
+      0.26
+    ],
+    "pixels": [
+      35.34,
+      34.84
+    ],
+    "image": "hound_paw_default.png",
+    "source_crop": [
+      696,
+      801,
+      900,
+      949
+    ],
+    "size": [
+      186,
+      134
+    ]
+  },
+  "tail": {
+    "uv": [
+      0.916,
+      0.37
+    ],
+    "pixels": [
+      432.35,
+      66.97
+    ],
+    "image": "hound_tail_default.png",
+    "source_crop": [
+      1014,
+      640,
+      1523,
+      873
+    ],
+    "size": [
+      472,
+      181
+    ]
+  },
+  "thigh_far": {
+    "uv": [
+      0.75,
+      0.157
+    ],
+    "pixels": [
+      171.0,
+      55.42
+    ],
+    "image": "hound_thigh_far_default.png",
+    "source_crop": [
+      135,
+      557,
+      398,
+      950
+    ],
+    "size": [
+      228,
+      353
+    ]
+  },
+  "shin_far": {
+    "uv": [
+      0.56,
+      0.177
+    ],
+    "pixels": [
+      66.64,
+      50.27
+    ],
+    "image": "hound_shin_far_default.png",
+    "source_crop": [
+      681,
+      550,
+      827,
+      847
+    ],
+    "size": [
+      119,
+      284
+    ]
+  },
+  "paw_far": {
+    "uv": [
+      0.19,
+      0.26
+    ],
+    "pixels": [
+      35.34,
+      34.84
+    ],
+    "image": "hound_paw_far_default.png",
+    "source_crop": [
+      696,
+      801,
+      900,
+      949
+    ],
+    "size": [
+      186,
+      134
+    ]
+  },
+  "jaw": {
+    "uv": [
+      0.03980099502487562,
+      0.1791044776119403
+    ],
+    "pixels": [
+      8.0,
+      12.0
+    ],
+    "image": "hound_jaw_default.png",
+    "source_crop": [
+      1312,
+      258,
+      1529,
+      343
+    ],
+    "size": [
+      201,
+      67
+    ]
+  }
+}

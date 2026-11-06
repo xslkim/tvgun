@@ -1,0 +1,14 @@
+clip,iteration,errors,pose,timing,flow,overlap,character,assembly,average,evidence,note
+attack_light,1,1,,,,,,,,REPORT.md,初次自动检查
+death,2,1,,,,,,,,REPORT.md,新增网格有向面积检查，发现软体压扁时翻面
+idle,4,0,4,4,5,4,5,4,4.33,../preview/idle_sheet.png,呼吸形变保留接地底线，冠饰随上身。
+walk,4,0,5,4,5,5,4,4,4.50,../preview/walk_sheet.png,上部滞后产生蠕动，宽高交换自然。
+jump_start,4,0,4,4,5,4,4,4,4.17,../preview/jump_start_sheet.png,先压扁再拉伸起跳，底部剪影可读。
+jump_air,4,0,4,4,5,4,4,4,4.17,../preview/jump_air_sheet.png,悬空后伸缩变化可辨，饰件持续连接。
+jump_fall,4,0,4,4,5,4,4,4,4.17,../preview/jump_fall_sheet.png,逐渐回落，贴近地面时底缘仍完整。
+jump_land,4,0,4,4,5,4,4,4,4.17,../preview/jump_land_sheet.png,着地时压扁、快速回弹。
+attack_light,4,0,4,4,5,4,4,4,4.17,../preview/attack_light_sheet.png,快速前移变宽，短促回收。
+attack_heavy,4,0,4,5,4,4,5,4,4.33,../preview/attack_heavy_sheet.png,反向蓄力、高宽对比和冠饰滞后更清晰。
+hit,4,0,4,4,5,4,4,4,4.17,../preview/hit_sheet.png,受击向后缩宽，上部连续。
+death,4,0,4,4,5,4,4,4,4.17,../preview/death_sheet.png,压扁为摊开终态，复检无翻面或穿地。
+spawn,4,0,4,4,5,4,4,4,4.17,../preview/spawn_sheet.png,从压扁形态起身回弹，脚底轮廓稳定。

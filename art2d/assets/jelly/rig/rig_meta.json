@@ -1,0 +1,40 @@
+{
+  "coordinate_system": {
+    "y": "up",
+    "unit": "pixel",
+    "angle": "deg_ccw"
+  },
+  "bind_pose": {
+    "root": {
+      "x": 0,
+      "y": 0,
+      "a": 0,
+      "sx": 1,
+      "sy": 1
+    },
+    "hip": {
+      "x": 0,
+      "y": 0,
+      "a": 0,
+      "sx": 1,
+      "sy": 1
+    },
+    "jelly_top": {
+      "x": 0,
+      "y": 0,
+      "a": 0,
+      "sx": 1,
+      "sy": 1
+    },
+    "crown": {
+      "x": 67,
+      "y": 143,
+      "a": 0,
+      "sx": 1,
+      "sy": 1
+    }
+  },
+  "character_height": 236,
+  "ground_y": 0,
+  "support": []
+}

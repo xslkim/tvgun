@@ -1,0 +1,58 @@
+{
+  "root": [],
+  "hip": [],
+  "body": [
+    {
+      "slot": 1,
+      "part": "body",
+      "variants": [],
+      "weights": [
+        "body"
+      ]
+    }
+  ],
+  "head": [
+    {
+      "slot": 3,
+      "part": "head",
+      "variants": [],
+      "weights": [
+        "head"
+      ]
+    }
+  ],
+  "tail": [
+    {
+      "slot": 2,
+      "part": "tail",
+      "variants": [],
+      "weights": [
+        "tail"
+      ]
+    }
+  ],
+  "wing_l": [
+    {
+      "slot": 0,
+      "part": "wing_far",
+      "variants": [],
+      "weights": [
+        "wing_l",
+        "wing_tip_l"
+      ]
+    }
+  ],
+  "wing_tip_l": [],
+  "wing_r": [
+    {
+      "slot": 4,
+      "part": "wing_near",
+      "variants": [],
+      "weights": [
+        "wing_r",
+        "wing_tip_r"
+      ]
+    }
+  ],
+  "wing_tip_r": []
+}

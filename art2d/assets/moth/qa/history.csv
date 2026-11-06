@@ -1,0 +1,9 @@
+clip,iteration,errors,pose,timing,flow,overlap,character,assembly,average,evidence,note
+attack_light,1,1,,,,,,,,REPORT.md,初次自动检查
+idle,4,0,4,4,5,5,4,4,4.33,../preview/idle_sheet.png,小翼拍与上下浮动明显，翼尖后随。
+fly,4,0,5,4,5,5,4,4,4.50,../preview/fly_sheet.png,上拍/下拍剪影差明显，双翼根清楚。
+attack_light,4,0,4,4,5,4,4,4,4.17,../preview/attack_light_sheet.png,短俯冲收翼，复位清晰。
+attack_heavy,4,0,4,5,4,4,4,4,4.17,../preview/attack_heavy_sheet.png,后摆预备后俯冲，出招与恢复时间区别清楚。
+hit,4,0,4,4,5,4,4,4,4.17,../preview/hit_sheet.png,身体后仰与翼端延迟，受击方向可读。
+death,4,0,4,4,5,4,4,4,4.17,../preview/death_sheet.png,坠落、收翼、腹尾贴地；尾尖穿地已修。
+spawn,4,0,4,4,5,4,3,4,4.00,../preview/spawn_sheet.png,由低处升起，有明确入场轮廓，表现偏简洁。

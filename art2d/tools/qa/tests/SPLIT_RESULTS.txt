@@ -1,0 +1,1 @@
+PASS keyed RGB flood-fill preserves enclosed highlights and atlas texels

@@ -1,0 +1,57 @@
+{
+  "idle": {
+    "frames": 60,
+    "max_below_ground": 0.0,
+    "terminal_below_ground": 0.0
+  },
+  "walk": {
+    "frames": 30,
+    "max_below_ground": 0.0,
+    "terminal_below_ground": 0.0
+  },
+  "jump_start": {
+    "frames": 11,
+    "max_below_ground": 0.0,
+    "terminal_below_ground": -27.59
+  },
+  "jump_air": {
+    "frames": 15,
+    "max_below_ground": -27.59,
+    "terminal_below_ground": -29.31
+  },
+  "jump_fall": {
+    "frames": 13,
+    "max_below_ground": 0.0,
+    "terminal_below_ground": 0.0
+  },
+  "jump_land": {
+    "frames": 10,
+    "max_below_ground": 0.0,
+    "terminal_below_ground": 0.0
+  },
+  "attack_light": {
+    "frames": 16,
+    "max_below_ground": 0.0,
+    "terminal_below_ground": 0.0
+  },
+  "attack_heavy": {
+    "frames": 28,
+    "max_below_ground": 0.0,
+    "terminal_below_ground": 0.0
+  },
+  "hit": {
+    "frames": 12,
+    "max_below_ground": 0.0,
+    "terminal_below_ground": 0.0
+  },
+  "death": {
+    "frames": 37,
+    "max_below_ground": 0.0,
+    "terminal_below_ground": 0.0
+  },
+  "spawn": {
+    "frames": 34,
+    "max_below_ground": 0.0,
+    "terminal_below_ground": 0.0
+  }
+}

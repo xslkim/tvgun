@@ -1,0 +1,54 @@
+{
+  "id": "ember",
+  "label": "余烬布丁",
+  "prototype": "blob",
+  "height": 220,
+  "hip": [
+    0,
+    0
+  ],
+  "bones": [
+    [
+      "jelly_top",
+      "hip",
+      0,
+      0,
+      0,
+      0,
+      true
+    ],
+    [
+      "crown",
+      "jelly_top",
+      23,
+      122,
+      0,
+      35,
+      true
+    ]
+  ],
+  "limits": [
+    [
+      "crown",
+      -22,
+      22
+    ]
+  ],
+  "attachments": [
+    [
+      "hip",
+      "jelly",
+      224,
+      152,
+      0
+    ],
+    [
+      "crown",
+      "crown",
+      72,
+      88,
+      0
+    ]
+  ],
+  "validation": true
+}

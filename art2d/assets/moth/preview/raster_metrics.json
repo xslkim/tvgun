@@ -1,0 +1,37 @@
+{
+  "idle": {
+    "frames": 60,
+    "max_below_ground": -29.17,
+    "terminal_below_ground": -58.33
+  },
+  "fly": {
+    "frames": 21,
+    "max_below_ground": -27.08,
+    "terminal_below_ground": -56.25
+  },
+  "attack_light": {
+    "frames": 16,
+    "max_below_ground": -43.75,
+    "terminal_below_ground": -50.0
+  },
+  "attack_heavy": {
+    "frames": 28,
+    "max_below_ground": -41.67,
+    "terminal_below_ground": -50.0
+  },
+  "hit": {
+    "frames": 12,
+    "max_below_ground": -20.83,
+    "terminal_below_ground": -50.0
+  },
+  "death": {
+    "frames": 37,
+    "max_below_ground": 0.0,
+    "terminal_below_ground": 0.0
+  },
+  "spawn": {
+    "frames": 34,
+    "max_below_ground": 0.0,
+    "terminal_below_ground": -50.0
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "idle": {
+    "loop": true,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {},
+    "required_events": [],
+    "qa_exceptions": [],
+    "support_rule": null
+  },
+  "walk": {
+    "loop": true,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {},
+    "required_events": [],
+    "qa_exceptions": [],
+    "support_rule": null
+  },
+  "jump_start": {
+    "loop": false,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {},
+    "required_events": [
+      "takeoff"
+    ],
+    "qa_exceptions": [],
+    "support_rule": null
+  },
+  "jump_air": {
+    "loop": true,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {},
+    "required_events": [],
+    "qa_exceptions": [],
+    "support_rule": null
+  },
+  "jump_fall": {
+    "loop": false,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {},
+    "required_events": [],
+    "qa_exceptions": [],
+    "support_rule": null
+  },
+  "jump_land": {
+    "loop": false,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {},
+    "required_events": [
+      "land"
+    ],
+    "qa_exceptions": [],
+    "support_rule": null
+  },
+  "attack_light": {
+    "loop": false,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {},
+    "required_events": [
+      "hit",
+      "sfx"
+    ],
+    "qa_exceptions": [],
+    "support_rule": null
+  },
+  "attack_heavy": {
+    "loop": false,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {},
+    "required_events": [
+      "hit",
+      "sfx"
+    ],
+    "qa_exceptions": [],
+    "support_rule": null
+  },
+  "hit": {
+    "loop": false,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {},
+    "required_events": [
+      "sfx"
+    ],
+    "qa_exceptions": [],
+    "support_rule": null
+  },
+  "death": {
+    "loop": false,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {},
+    "required_events": [
+      "defeated"
+    ],
+    "qa_exceptions": [],
+    "support_rule": null
+  },
+  "spawn": {
+    "loop": false,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {},
+    "required_events": [
+      "fx_spawn"
+    ],
+    "qa_exceptions": [],
+    "support_rule": null
+  }
+}

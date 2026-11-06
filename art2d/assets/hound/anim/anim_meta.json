@@ -1,0 +1,298 @@
+{
+  "idle": {
+    "loop": true,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {
+      "sole_front_l": [
+        [
+          0,
+          2
+        ]
+      ],
+      "sole_back_l": [
+        [
+          0,
+          2
+        ]
+      ],
+      "sole_front_r": [
+        [
+          0,
+          2
+        ]
+      ],
+      "sole_back_r": [
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    "required_events": [],
+    "qa_exceptions": [],
+    "support_rule": null
+  },
+  "walk": {
+    "loop": true,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 132,
+    "contact_intervals": {
+      "sole_front_l": [
+        [
+          0,
+          0.3966666666666666
+        ],
+        [
+          0.85,
+          1.1333333333333333
+        ]
+      ],
+      "sole_back_l": [
+        [
+          0,
+          0.1133333333333333
+        ],
+        [
+          0.5666666666666667,
+          1.1333333333333333
+        ]
+      ],
+      "sole_front_r": [
+        [
+          0.2833333333333333,
+          0.9633333333333333
+        ]
+      ],
+      "sole_back_r": [
+        [
+          0,
+          0.6799999999999999
+        ]
+      ]
+    },
+    "required_events": [
+      "footstep"
+    ],
+    "qa_exceptions": [],
+    "support_rule": "always"
+  },
+  "run": {
+    "loop": true,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 322,
+    "contact_intervals": {
+      "sole_front_l": [
+        [
+          0,
+          0.23199999999999998
+        ],
+        [
+          0.744,
+          0.8
+        ]
+      ],
+      "sole_back_l": [
+        [
+          0.3440000000000001,
+          0.6320000000000001
+        ]
+      ],
+      "sole_front_r": [
+        [
+          0,
+          0.288
+        ]
+      ],
+      "sole_back_r": [
+        [
+          0.4,
+          0.6880000000000001
+        ]
+      ]
+    },
+    "required_events": [
+      "footstep"
+    ],
+    "qa_exceptions": [],
+    "support_rule": "aerial"
+  },
+  "attack_light": {
+    "loop": false,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {
+      "sole_front_l": [
+        [
+          0,
+          0.5
+        ]
+      ],
+      "sole_back_l": [
+        [
+          0,
+          0.5
+        ]
+      ],
+      "sole_front_r": [
+        [
+          0,
+          0.5
+        ]
+      ],
+      "sole_back_r": [
+        [
+          0,
+          0.5
+        ]
+      ]
+    },
+    "required_events": [
+      "hit",
+      "sfx"
+    ],
+    "qa_exceptions": [],
+    "support_rule": null
+  },
+  "attack_heavy": {
+    "loop": false,
+    "root_motion_mode": "root",
+    "locomotion_speed": 0,
+    "contact_intervals": {
+      "sole_front_l": [
+        [
+          0,
+          0.216
+        ],
+        [
+          0.5850000000000001,
+          0.9
+        ]
+      ],
+      "sole_back_l": [
+        [
+          0,
+          0.216
+        ],
+        [
+          0.5850000000000001,
+          0.9
+        ]
+      ],
+      "sole_front_r": [
+        [
+          0,
+          0.216
+        ],
+        [
+          0.5850000000000001,
+          0.9
+        ]
+      ],
+      "sole_back_r": [
+        [
+          0,
+          0.216
+        ],
+        [
+          0.5850000000000001,
+          0.9
+        ]
+      ]
+    },
+    "required_events": [
+      "hit",
+      "sfx"
+    ],
+    "qa_exceptions": [],
+    "support_rule": null
+  },
+  "hit": {
+    "loop": false,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {
+      "sole_front_l": [
+        [
+          0,
+          0.36666666666666664
+        ]
+      ],
+      "sole_back_l": [
+        [
+          0,
+          0.36666666666666664
+        ]
+      ],
+      "sole_front_r": [
+        [
+          0,
+          0.36666666666666664
+        ]
+      ],
+      "sole_back_r": [
+        [
+          0,
+          0.36666666666666664
+        ]
+      ]
+    },
+    "required_events": [
+      "sfx"
+    ],
+    "qa_exceptions": [],
+    "support_rule": null
+  },
+  "death": {
+    "loop": false,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {
+      "sole_front_l": [],
+      "sole_back_l": [],
+      "sole_front_r": [],
+      "sole_back_r": []
+    },
+    "required_events": [
+      "defeated"
+    ],
+    "qa_exceptions": [],
+    "support_rule": null
+  },
+  "spawn": {
+    "loop": false,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {
+      "sole_front_l": [
+        [
+          0,
+          1.1
+        ]
+      ],
+      "sole_back_l": [
+        [
+          0,
+          1.1
+        ]
+      ],
+      "sole_front_r": [
+        [
+          0,
+          1.1
+        ]
+      ],
+      "sole_back_r": [
+        [
+          0,
+          1.1
+        ]
+      ]
+    },
+    "required_events": [
+      "fx_spawn"
+    ],
+    "qa_exceptions": [],
+    "support_rule": null
+  }
+}

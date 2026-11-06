@@ -1,0 +1,19 @@
+{
+  "prompt": "Create an original \"Ember Pudding\", a tiny plum-colored hot jelly found in a magical brass kiln, with two ember eyes and a little copper valve finial over the forehead. Art Deco clockwork creature, 2D side-scrolling game sprite, facing right in three-quarter side view, navy contours, cel shading, warm upper-left light, genuine alpha. One wide sheet with exactly three equal invisible columns and two equal invisible rows, with wide empty transparent gutters. Top row: the complete assembled jelly in a flat-bottom neutral bind pose, isolated plum jelly body without copper valve with its eyes and small backward flick, separate copper valve finial. Bottom row: complete high stretch, complete flat squash, complete lunge. All parts clean, intact and uncropped. No labels, typography, logos, borders, scenery, floor shadows, backgrounds, or watermarks.",
+  "service": "Codex built-in image_gen",
+  "model_version": null,
+  "seed": null,
+  "parameters": {
+    "transparent_background": true
+  },
+  "references": [],
+  "rights": "Original text prompt. See docs/RIGHTS.md. Provider does not expose model revision, seed, or sampler.",
+  "original": "raw.png",
+  "reference": "master.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "sha256": "fe0d79bb6c3b05f05362c281b36a980c25412759ce869d0a5093f259dc1b6fd4",
+  "layout": "layout.json"
+}

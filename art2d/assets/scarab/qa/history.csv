@@ -1,0 +1,9 @@
+clip,iteration,errors,pose,timing,flow,overlap,character,assembly,average,evidence,note
+death,1,2,,,,,,,,REPORT.md,初次自动检查
+idle,4,0,4,4,5,3,4,4,4.00,../preview/idle_sheet.png,甲壳与足点稳定，轻摆幅度小。
+walk,4,0,4,4,5,4,4,4,4.17,../preview/walk_sheet.png,三足组抬落交替，远端腿有局部重合。
+run,4,0,4,4,5,4,4,4,4.17,../preview/run_sheet.png,快速收腿和腾空可读，末端触地短。
+attack_light,4,0,4,4,5,3,4,4,4.00,../preview/attack_light_sheet.png,短低头、颚动作可读，附肢跟随较少。
+attack_heavy,4,0,4,5,4,3,4,4,4.00,../preview/attack_heavy_sheet.png,先抬颚后压身，节奏分明，腹部较刚。
+hit,4,0,4,4,5,3,4,4,4.00,../preview/hit_sheet.png,头和甲壳后缩，次级运动较少。
+death,4,0,4,4,5,4,4,4,4.17,../preview/death_sheet.png,腹壳降低、肢体展开，脚底仍可辨。

@@ -1,0 +1,12 @@
+{
+  "version": "4.3.75-beta",
+  "bones": 67,
+  "animations": 11,
+  "idleHip": {
+    "time": 0.2,
+    "x": -14.311651801212445,
+    "y": 223.29928844858566,
+    "angle": 0.8449395032747256
+  },
+  "scope": "JSON, hip key and Bezier sample. No Spine editor or redistributable runtime used."
+}

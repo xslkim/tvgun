@@ -1,0 +1,19 @@
+{
+  "prompt": "Create one landscape production sprite sheet for an original side-scrolling game character, \"Brass Courier\", a compact Art Deco clockwork sword courier with teal enamel armor, gold brass ball joints, cream glints, a tiny coral scarf and luminous amber eye slit. Crisp deep-navy ink contours and flat two-tone cel shading, light from upper left. Right-facing three-quarter profile. Separate assets on genuinely transparent background. No text, labels, cell lines, symbols, shadows, gradients in background, or watermark. Exactly 4 columns x 3 rows, equal-size invisible cells, with huge transparent gutters. Each object centered entirely in its own cell and fully visible. Row 1 left-to-right: assembled full-body neutral standing design reference with sword, helmet alone with base neck ball, torso alone including waist/pelvis and shoulders, upper arm alone pointing straight DOWN (round shoulder and round elbow). Row 2 left-to-right: forearm gauntlet alone pointing DOWN (round elbow and round wrist), closed robot hand alone pointing DOWN, thigh alone pointing DOWN (rounded hip and knee), shin alone pointing DOWN (rounded knee and ankle). Row 3 left-to-right: a single right-facing boot with flat sole and centered ankle, a short straight sword alone horizontal pointing RIGHT, an open robot hand alone pointing DOWN, an alternative short hammer alone pointing RIGHT. The individual parts should match the assembled figure's exact design and have overlapping rounded caps for paper-doll rotation. Symmetric armor pieces may be reused. Put clean, open space around each item. Only one object in each cell.",
+  "service": "Codex built-in image_gen",
+  "model_version": null,
+  "seed": null,
+  "parameters": {
+    "transparent_background": true
+  },
+  "references": [],
+  "rights": "Original text prompt. See docs/RIGHTS.md. Provider does not expose model revision, seed, or sampler.",
+  "original": "raw.png",
+  "reference": "master.png",
+  "dimensions": [
+    1452,
+    1083
+  ],
+  "sha256": "4df41853922d15bb09ba057aa6257750446c111ad2f4352856139ed7ef5a0c2e",
+  "layout": "layout.json"
+}

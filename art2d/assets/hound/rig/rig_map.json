@@ -1,0 +1,166 @@
+{
+  "root": [],
+  "hip": [
+    {
+      "slot": 6,
+      "part": "body",
+      "variants": [],
+      "weights": [
+        "hip"
+      ]
+    }
+  ],
+  "chest": [],
+  "head": [
+    {
+      "slot": 8,
+      "part": "head",
+      "variants": [],
+      "weights": [
+        "head"
+      ]
+    }
+  ],
+  "tail": [
+    {
+      "slot": 9,
+      "part": "tail",
+      "variants": [],
+      "weights": [
+        "tail",
+        "tail_tip"
+      ]
+    }
+  ],
+  "tail_tip": [],
+  "jaw": [
+    {
+      "slot": 7,
+      "part": "jaw",
+      "variants": [],
+      "weights": [
+        "jaw"
+      ]
+    }
+  ],
+  "upper_leg_front_l": [
+    {
+      "slot": 0,
+      "part": "thigh_far",
+      "variants": [],
+      "weights": [
+        "upper_leg_front_l"
+      ]
+    }
+  ],
+  "lower_leg_front_l": [
+    {
+      "slot": 1,
+      "part": "shin_far",
+      "variants": [],
+      "weights": [
+        "lower_leg_front_l"
+      ]
+    }
+  ],
+  "foot_front_l": [
+    {
+      "slot": 2,
+      "part": "paw_far",
+      "variants": [],
+      "weights": [
+        "foot_front_l"
+      ]
+    }
+  ],
+  "upper_leg_back_l": [
+    {
+      "slot": 3,
+      "part": "thigh_far",
+      "variants": [],
+      "weights": [
+        "upper_leg_back_l"
+      ]
+    }
+  ],
+  "lower_leg_back_l": [
+    {
+      "slot": 4,
+      "part": "shin_far",
+      "variants": [],
+      "weights": [
+        "lower_leg_back_l"
+      ]
+    }
+  ],
+  "foot_back_l": [
+    {
+      "slot": 5,
+      "part": "paw_far",
+      "variants": [],
+      "weights": [
+        "foot_back_l"
+      ]
+    }
+  ],
+  "upper_leg_front_r": [
+    {
+      "slot": 10,
+      "part": "thigh",
+      "variants": [],
+      "weights": [
+        "upper_leg_front_r"
+      ]
+    }
+  ],
+  "lower_leg_front_r": [
+    {
+      "slot": 11,
+      "part": "shin",
+      "variants": [],
+      "weights": [
+        "lower_leg_front_r"
+      ]
+    }
+  ],
+  "foot_front_r": [
+    {
+      "slot": 12,
+      "part": "paw",
+      "variants": [],
+      "weights": [
+        "foot_front_r"
+      ]
+    }
+  ],
+  "upper_leg_back_r": [
+    {
+      "slot": 13,
+      "part": "thigh",
+      "variants": [],
+      "weights": [
+        "upper_leg_back_r"
+      ]
+    }
+  ],
+  "lower_leg_back_r": [
+    {
+      "slot": 14,
+      "part": "shin",
+      "variants": [],
+      "weights": [
+        "lower_leg_back_r"
+      ]
+    }
+  ],
+  "foot_back_r": [
+    {
+      "slot": 15,
+      "part": "paw",
+      "variants": [],
+      "weights": [
+        "foot_back_r"
+      ]
+    }
+  ]
+}

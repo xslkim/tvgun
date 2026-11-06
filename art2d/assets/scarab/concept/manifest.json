@@ -1,0 +1,19 @@
+{
+  "prompt": "One landscape 3-column by 2-row game production sprite sheet. Exactly six equal-sized invisible cells, huge transparent gutters, one item centered in each cell, fully visible. Genuinely transparent background. No labels, lettering, floor shadows, cell dividers, scenery, logos, or watermark. Right-facing side-profile with slight three-quarter depth where appropriate. Crisp deep navy outline, flat two-tone cel shading, upper-left warm light, golden brass detailing, Art Deco fantasy clockwork game art. Preserve the same parts and scale cues between assembled design and isolated components. Character: Obsidian Scarab, original mechanical beetle monster with six thin brass and purple legs, large garnet carapace and two amber mandibles, right-facing. Row 1 left to right: assembled six-legged beetle standing on ground, beetle carapace and abdomen alone without legs, isolated beetle head with amber eyes and mandibles. Row 2 left to right: single short down-facing leg segment with circular joint caps, single thin down-facing shin with circular cap and a small right-facing pointed foot, separate tiny jaw claw pointing right. The six legs reuse the same leg design.",
+  "service": "Codex built-in image_gen",
+  "model_version": null,
+  "seed": null,
+  "parameters": {
+    "transparent_background": true
+  },
+  "references": [],
+  "rights": "Original text prompt. See docs/RIGHTS.md. Provider does not expose model revision, seed, or sampler.",
+  "original": "raw.png",
+  "reference": "master.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "sha256": "5dfbb3908f643df103971029e91ae0389bc08c75e79800fdf023a82858666e8c",
+  "layout": "layout.json"
+}

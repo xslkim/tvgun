@@ -1,0 +1,20 @@
+clip,iteration,errors,pose,timing,flow,overlap,character,assembly,average,evidence,note
+run,1,5,,,,,,,,REPORT.md,初次自动检查
+jump_start,1,1,,,,,,,,REPORT.md,初次自动检查
+jump_fall,1,1,,,,,,,,REPORT.md,初次自动检查
+attack_light,1,3,,,,,,,,REPORT.md,初次自动检查
+attack_heavy,1,3,,,,,,,,REPORT.md,初次自动检查
+idle,4,0,4,4,5,4,4,4,4.17,../preview/idle_sheet.png,呼吸低幅，头部比髋后摆，金属关节读得清。
+walk,4,0,4,4,5,4,4,4,4.17,../preview/walk_sheet.png,交替支撑和反相摆臂明确，近远腿偶有剪影重合。
+run,4,0,4,4,5,4,4,4,4.17,../preview/run_sheet.png,腾空、摆臂和前倾可辨，双脚接近时轮廓较紧。
+jump_start,4,0,4,4,5,3,4,4,4.00,../preview/jump_start_sheet.png,蓄力、伸展与离地清楚，刚性挂件的跟随克制。
+jump_air,4,0,4,4,5,3,4,4,4.00,../preview/jump_air_sheet.png,双腿收起且脚底离地，空中循环幅度小。
+jump_fall,4,0,4,4,5,3,4,4,4.00,../preview/jump_fall_sheet.png,由收腿到脚底着地，武器跟随幅度较小。
+jump_land,4,0,4,4,5,4,4,4,4.17,../preview/jump_land_sheet.png,压髋回弹有重量，落地足点稳定。
+attack_light,4,0,4,5,4,4,4,4,4.17,../preview/attack_light_sheet.png,短预备、快速剑尖上挑与恢复可区分。
+attack_heavy,4,0,4,5,4,4,4,4,4.17,../preview/attack_heavy_sheet.png,后蓄更明显，命中保持比轻击更长。
+cast,4,0,4,4,4,4,5,4,4.17,../preview/cast_sheet.png,持剑向上指令动作和事件点清楚，FX 可由游戏层加。
+hit,4,0,4,4,5,3,4,4,4.00,../preview/hit_sheet.png,受击向后收缩清楚，肩臂跟随较轻。
+death,4,0,4,4,4,4,4,4,4.00,../preview/death_sheet.png,胸口向后倒，末态脚与躯干在地线附近，剑保持在手。
+block,4,0,4,4,5,3,4,4,4.00,../preview/block_sheet.png,举剑护面并持势，未加持续反馈特效。
+dash,4,0,4,4,5,3,4,4,4.00,../preview/dash_sheet.png,根位移与压低重心有别，躯干和腿风格较刚。

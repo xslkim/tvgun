@@ -1,0 +1,53 @@
+{
+  "id": "jelly",
+  "label": "潮汐史莱姆",
+  "prototype": "blob",
+  "height": 236,
+  "hip": [
+    0,
+    0
+  ],
+  "bones": [
+    [
+      "jelly_top",
+      "hip",
+      0,
+      0,
+      0,
+      0,
+      true
+    ],
+    [
+      "crown",
+      "jelly_top",
+      67,
+      143,
+      0,
+      35,
+      true
+    ]
+  ],
+  "limits": [
+    [
+      "crown",
+      -22,
+      22
+    ]
+  ],
+  "attachments": [
+    [
+      "hip",
+      "jelly",
+      298,
+      185,
+      0
+    ],
+    [
+      "crown",
+      "crown",
+      105,
+      78,
+      0
+    ]
+  ]
+}

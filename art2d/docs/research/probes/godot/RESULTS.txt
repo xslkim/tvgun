@@ -1,0 +1,3 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+Godot 4.6.3-stable (official) | 7 Bone2D, 60 samples, position error 0.00001537753633 px, angle error 0.00001064639693 deg

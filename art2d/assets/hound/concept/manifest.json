@@ -1,0 +1,19 @@
+{
+  "prompt": "One landscape 3-column by 2-row game production sprite sheet. Exactly six equal-sized invisible cells, huge transparent gutters, one item centered in each cell, fully visible. Genuinely transparent background. No labels, lettering, floor shadows, cell dividers, scenery, logos, or watermark. Right-facing side-profile with slight three-quarter depth where appropriate. Crisp deep navy outline, flat two-tone cel shading, upper-left warm light, golden brass detailing, Art Deco fantasy clockwork game art. Preserve the same parts and scale cues between assembled design and isolated components. Character: Verdigris Hound, a sleek brass-plated teal clockwork wolf, amber eyes, sculpted turbine hips, serrated mane. Row 1 left to right: assembled wolf standing naturally on four feet, long horizontal torso alone with rounded front and back hip sockets, right-facing wolf head alone with neck attachment at the back. Row 2 left to right: a single short upper leg alone pointing down with spherical gold joints at both ends, a single thinner lower leg alone pointing down with rounded joints and right-facing flat-bottom mechanical paw, tapered articulated foxlike tail alone pointing straight left with a gold connection ball at the right end.",
+  "service": "Codex built-in image_gen",
+  "model_version": null,
+  "seed": null,
+  "parameters": {
+    "transparent_background": true
+  },
+  "references": [],
+  "rights": "Original text prompt. See docs/RIGHTS.md. Provider does not expose model revision, seed, or sampler.",
+  "original": "raw.png",
+  "reference": "master.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "sha256": "ab7c0bcf4a00e669385c545b81dd6eca01172a41a1a67b5b559aac6b6ea43c95",
+  "layout": "layout.json"
+}

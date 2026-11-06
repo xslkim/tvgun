@@ -1,0 +1,107 @@
+{
+  "body": {
+    "uv": [
+      0.6,
+      0.51
+    ],
+    "pixels": [
+      222.0,
+      161.16
+    ],
+    "image": "moth_body_default.png",
+    "source_crop": [
+      632,
+      140,
+      1038,
+      487
+    ],
+    "size": [
+      370,
+      316
+    ]
+  },
+  "head": {
+    "uv": [
+      0.58,
+      0.91
+    ],
+    "pixels": [
+      206.48,
+      338.52
+    ],
+    "image": "moth_head_default.png",
+    "source_crop": [
+      1120,
+      73,
+      1512,
+      485
+    ],
+    "size": [
+      356,
+      372
+    ]
+  },
+  "wing_near": {
+    "uv": [
+      0.931,
+      0.595
+    ],
+    "pixels": [
+      456.19,
+      155.89
+    ],
+    "image": "moth_wing_near_default.png",
+    "source_crop": [
+      6,
+      646,
+      521,
+      953
+    ],
+    "size": [
+      490,
+      262
+    ]
+  },
+  "wing_far": {
+    "uv": [
+      0.09,
+      0.895
+    ],
+    "pixels": [
+      35.64,
+      344.57
+    ],
+    "image": "moth_wing_far_default.png",
+    "source_crop": [
+      605,
+      562,
+      1030,
+      986
+    ],
+    "size": [
+      396,
+      385
+    ]
+  },
+  "tail": {
+    "uv": [
+      0.805,
+      0.16
+    ],
+    "pixels": [
+      156.98,
+      36.96
+    ],
+    "image": "moth_tail_default.png",
+    "source_crop": [
+      1180,
+      668,
+      1408,
+      933
+    ],
+    "size": [
+      195,
+      231
+    ]
+  }
+}

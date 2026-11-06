@@ -1,0 +1,2 @@
+Skill validation character loaded: ember
+Edge headless: 5 characters, 47 clips, step, overlays, skin control and combo verified.

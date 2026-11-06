@@ -1,0 +1,19 @@
+{
+  "prompt": "One landscape 3-column by 2-row game production sprite sheet. Exactly six equal-sized invisible cells, huge transparent gutters, one item centered in each cell, fully visible. Genuinely transparent background. No labels, lettering, floor shadows, cell dividers, scenery, logos, or watermark. Right-facing side-profile with slight three-quarter depth where appropriate. Crisp deep navy outline, flat two-tone cel shading, upper-left warm light, golden brass detailing, Art Deco fantasy clockwork game art. Preserve the same parts and scale cues between assembled design and isolated components. Character: Tide Jelly, original cute aquamarine slime monster with small glowing amber eyes and tiny brass Art Deco diadem floating above its forehead, right-facing three-quarter profile. Row 1 left to right: complete assembled slime with its brass diadem, the single main jelly body alone with its two eyes but WITHOUT the diadem, the small diadem alone. Jelly body is a broad low rounded asymmetrical drop with a flat bottom in contact with the floor and a small backward crest. Row 2 left to right: same character in a stretched high narrow pose, in a low crouched squash pose, and in a compressed lunging pose. Use hard flat colors and clean alpha edges, no floor shadows.",
+  "service": "Codex built-in image_gen",
+  "model_version": null,
+  "seed": null,
+  "parameters": {
+    "transparent_background": true
+  },
+  "references": [],
+  "rights": "Original text prompt. See docs/RIGHTS.md. Provider does not expose model revision, seed, or sampler.",
+  "original": "raw.png",
+  "reference": "master.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "sha256": "7662b764769b263eea07d082d3b3d4647926dc9376ddf46e484947ea87b640cf",
+  "layout": "layout.json"
+}

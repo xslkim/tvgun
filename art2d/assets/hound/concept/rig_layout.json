@@ -1,0 +1,296 @@
+{
+  "id": "hound",
+  "label": "闁炬粏鍓ㄩ悮搴ｅМ",
+  "prototype": "quadruped",
+  "height": 330,
+  "hip": [
+    0,
+    164
+  ],
+  "collapseHeight": 79,
+  "bones": [
+    [
+      "chest",
+      "hip",
+      104,
+      179,
+      0,
+      28
+    ],
+    [
+      "head",
+      "chest",
+      129,
+      230,
+      0,
+      110
+    ],
+    [
+      "tail",
+      "hip",
+      -132,
+      194,
+      194,
+      88
+    ],
+    [
+      "tail_tip",
+      "tail",
+      null,
+      null,
+      194,
+      55
+    ],
+    [
+      "jaw",
+      "head",
+      204,
+      243,
+      0,
+      63
+    ]
+  ],
+  "legs": [
+    {
+      "suffix": "front_l",
+      "origin": [
+        91,
+        159
+      ],
+      "foot": [
+        113,
+        14
+      ],
+      "lengths": [
+        91,
+        90
+      ],
+      "sign": 1,
+      "phase": 0.25,
+      "sole": [
+        20,
+        -14
+      ]
+    },
+    {
+      "suffix": "back_l",
+      "origin": [
+        -115,
+        155
+      ],
+      "foot": [
+        -118,
+        14
+      ],
+      "lengths": [
+        91,
+        90
+      ],
+      "sign": -1,
+      "phase": 0.5,
+      "sole": [
+        20,
+        -14
+      ]
+    },
+    {
+      "suffix": "front_r",
+      "origin": [
+        110,
+        163
+      ],
+      "foot": [
+        151,
+        14
+      ],
+      "lengths": [
+        91,
+        90
+      ],
+      "sign": 1,
+      "phase": 0.75,
+      "sole": [
+        20,
+        -14
+      ]
+    },
+    {
+      "suffix": "back_r",
+      "origin": [
+        -91,
+        154
+      ],
+      "foot": [
+        -155,
+        14
+      ],
+      "lengths": [
+        91,
+        90
+      ],
+      "sign": -1,
+      "phase": 0,
+      "sole": [
+        20,
+        -14
+      ]
+    }
+  ],
+  "walk": {
+    "speed": 132,
+    "height": 26,
+    "duration": 1.13,
+    "duty": 0.6
+  },
+  "run": {
+    "speed": 322,
+    "height": 54,
+    "duration": 0.8,
+    "duty": 0.36,
+    "phases": {
+      "front_l": 0.07,
+      "front_r": 0,
+      "back_l": 0.57,
+      "back_r": 0.5
+    }
+  },
+  "limits": [
+    [
+      "head",
+      -38,
+      38
+    ],
+    [
+      "tail",
+      -45,
+      45
+    ],
+    [
+      "tail_tip",
+      -32,
+      32
+    ],
+    [
+      "jaw",
+      -43,
+      4,
+      -1
+    ]
+  ],
+  "attachments": [
+    [
+      "upper_leg_front_l",
+      "thigh_far",
+      91,
+      117,
+      -112
+    ],
+    [
+      "lower_leg_front_l",
+      "shin_far",
+      42,
+      106,
+      -94
+    ],
+    [
+      "foot_front_l",
+      "paw_far",
+      58,
+      19,
+      0
+    ],
+    [
+      "upper_leg_back_l",
+      "thigh_far",
+      91,
+      117,
+      -112
+    ],
+    [
+      "lower_leg_back_l",
+      "shin_far",
+      54,
+      106,
+      -94
+    ],
+    [
+      "foot_back_l",
+      "paw_far",
+      58,
+      19,
+      0
+    ],
+    [
+      "hip",
+      "body",
+      294,
+      140,
+      0
+    ],
+    [
+      "jaw",
+      "jaw",
+      83.51408450704226,
+      26.36340852130326,
+      0
+    ],
+    [
+      "head",
+      "head",
+      177,
+      157,
+      0
+    ],
+    [
+      "tail",
+      "tail",
+      172,
+      66,
+      194,
+      null,
+      "tail_tip"
+    ],
+    [
+      "upper_leg_front_r",
+      "thigh",
+      91,
+      117,
+      -112
+    ],
+    [
+      "lower_leg_front_r",
+      "shin",
+      42,
+      106,
+      -94
+    ],
+    [
+      "foot_front_r",
+      "paw",
+      58,
+      19,
+      0
+    ],
+    [
+      "upper_leg_back_r",
+      "thigh",
+      91,
+      117,
+      -112
+    ],
+    [
+      "lower_leg_back_r",
+      "shin",
+      54,
+      106,
+      -94
+    ],
+    [
+      "foot_back_r",
+      "paw",
+      58,
+      19,
+      0
+    ]
+  ]
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "id": "upper_leg_front_l",
+    "parent": "hip",
+    "min": -105,
+    "max": 105
+  },
+  {
+    "id": "lower_leg_front_l",
+    "parent": "upper_leg_front_l",
+    "min": -145,
+    "max": 0,
+    "bend_sign": -1,
+    "chain": true
+  },
+  {
+    "id": "foot_front_l",
+    "parent": "lower_leg_front_l",
+    "min": -115,
+    "max": 115
+  },
+  {
+    "id": "upper_leg_mid_l",
+    "parent": "hip",
+    "min": -105,
+    "max": 105
+  },
+  {
+    "id": "lower_leg_mid_l",
+    "parent": "upper_leg_mid_l",
+    "min": 0,
+    "max": 145,
+    "bend_sign": 1,
+    "chain": true
+  },
+  {
+    "id": "foot_mid_l",
+    "parent": "lower_leg_mid_l",
+    "min": -115,
+    "max": 115
+  },
+  {
+    "id": "upper_leg_rear_l",
+    "parent": "hip",
+    "min": -105,
+    "max": 105
+  },
+  {
+    "id": "lower_leg_rear_l",
+    "parent": "upper_leg_rear_l",
+    "min": 0,
+    "max": 145,
+    "bend_sign": 1,
+    "chain": true
+  },
+  {
+    "id": "foot_rear_l",
+    "parent": "lower_leg_rear_l",
+    "min": -115,
+    "max": 115
+  },
+  {
+    "id": "upper_leg_front_r",
+    "parent": "hip",
+    "min": -105,
+    "max": 105
+  },
+  {
+    "id": "lower_leg_front_r",
+    "parent": "upper_leg_front_r",
+    "min": -145,
+    "max": 0,
+    "bend_sign": -1,
+    "chain": true
+  },
+  {
+    "id": "foot_front_r",
+    "parent": "lower_leg_front_r",
+    "min": -115,
+    "max": 115
+  },
+  {
+    "id": "upper_leg_mid_r",
+    "parent": "hip",
+    "min": -105,
+    "max": 105
+  },
+  {
+    "id": "lower_leg_mid_r",
+    "parent": "upper_leg_mid_r",
+    "min": 0,
+    "max": 145,
+    "bend_sign": 1,
+    "chain": true
+  },
+  {
+    "id": "foot_mid_r",
+    "parent": "lower_leg_mid_r",
+    "min": -115,
+    "max": 115
+  },
+  {
+    "id": "upper_leg_rear_r",
+    "parent": "hip",
+    "min": -105,
+    "max": 105
+  },
+  {
+    "id": "lower_leg_rear_r",
+    "parent": "upper_leg_rear_r",
+    "min": 0,
+    "max": 145,
+    "bend_sign": 1,
+    "chain": true
+  },
+  {
+    "id": "foot_rear_r",
+    "parent": "lower_leg_rear_r",
+    "min": -115,
+    "max": 115
+  },
+  {
+    "id": "head",
+    "parent": "hip",
+    "min": -34,
+    "max": 34
+  },
+  {
+    "id": "fang",
+    "parent": "head",
+    "min": -29,
+    "max": 29
+  }
+]

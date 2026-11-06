@@ -1,0 +1,44 @@
+{
+  "jelly": {
+    "uv": [
+      0.5,
+      1
+    ],
+    "pixels": [
+      227.0,
+      283
+    ],
+    "image": "jelly_jelly_default.png",
+    "source_crop": [
+      515,
+      148,
+      1017,
+      478
+    ],
+    "size": [
+      454,
+      283
+    ]
+  },
+  "crown": {
+    "uv": [
+      0.54,
+      0.89
+    ],
+    "pixels": [
+      149.04,
+      183.34
+    ],
+    "image": "jelly_crown_default.png",
+    "source_crop": [
+      1127,
+      168,
+      1447,
+      408
+    ],
+    "size": [
+      276,
+      206
+    ]
+  }
+}

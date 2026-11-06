@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clockwork Bestiary · 骨骼动画检视台</title>
+<link rel="stylesheet" href="./viewer.css">
+</head>
+<body>
+<header>
+  <div class="brand"><span class="brand-mark">◇</span><span>CLOCKWORK<br><b>BESTIARY</b></span></div>
+  <div class="header-title"><span>生产管线 / DEMO</span><h1>骨骼动画检视台</h1></div>
+  <span class="badge"><i></i> LOCAL RUNTIME</span>
+</header>
+<main>
+  <aside class="roster panel">
+    <p class="eyebrow">01 / ROSTER</p><h2>角色档案</h2>
+    <div id="roster"></div>
+    <a class="resource" id="report" target="_blank" rel="noopener">查看自动 QA ↗</a>
+  </aside>
+  <section class="panel studio" aria-label="动画工作台">
+    <div class="studio-head"><div><p class="eyebrow" id="prototype">RIG / —</p><h2 id="name">载入资源</h2></div><span class="badge" id="clipBadge">—</span></div>
+    <div class="stage">
+      <canvas id="stage" width="920" height="520" aria-label="骨骼动画预览"></canvas>
+      <div class="stage-label">XY / WORLD SPACE</div><div class="event" id="event" aria-live="off"></div>
+    </div>
+    <div class="transport">
+      <button id="play" class="primary" aria-label="暂停">❚❚</button>
+      <button id="prev" aria-label="上一帧">‹</button><button id="next" aria-label="下一帧">›</button>
+      <label class="scrub"><span class="sr-only">时间轴</span><input id="time" type="range" min="0" max="1" step=".001" value="0"></label>
+      <output id="clock">0.000s</output>
+    </div>
+    <div class="settings">
+      <label>速度 <select id="rate"><option value=".25">0.25×</option><option value=".5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+      <label><input id="bones" type="checkbox"> 骨骼</label><label><input id="mesh" type="checkbox"> 网格</label>
+      <label><input id="motion" type="checkbox" checked> 移动补偿</label>
+      <label id="skinRow" hidden>附件 <select id="skin"><option value="">剑 / 握拳</option><option value="hammer">锤 / 握拳</option><option value="palm">空手 / 张掌</option></select></label>
+    </div>
+    <p class="status" id="status" role="status">读取角色目录…</p>
+  </section>
+  <aside class="library panel">
+    <p class="eyebrow">02 / CLIPS</p><h2>动作库</h2>
+    <div class="clips" id="clips"></div>
+    <button class="sequence" id="sequence">▷ 移动 → 攻击 → 移动</button>
+  </aside>
+</main>
+<footer><span>2D SKELETAL PRODUCTION LAB</span><span>Y↑ · CCW · 30 FPS 展示 / 120 Hz 烘焙</span></footer>
+<script type="module" src="./viewer.mjs"></script>
+</body>
+</html>

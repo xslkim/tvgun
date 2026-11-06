@@ -1,0 +1,16 @@
+PASS idle positive
+PASS in-place walk positive
+PASS in-place run with flight positive
+PASS reversed knee and IK sign flip
+PASS sliding planted foot
+PASS wrong contact height
+PASS discontinuous cycle pose
+PASS discontinuous cycle velocity
+PASS long-path wrap and abrupt rotation
+PASS stretched bone
+PASS missing attack event
+PASS no walk support
+PASS no flight during run
+PASS hard constraint cannot be exempted
+PASS folded mesh
+15 regression tests passed

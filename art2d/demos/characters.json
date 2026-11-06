@@ -1,0 +1,39 @@
+[
+  {
+    "id": "courier",
+    "label": "黄铜信使",
+    "prototype": "humanoid",
+    "path": "/assets/courier/export/character.json"
+  },
+  {
+    "id": "hound",
+    "label": "闁炬粏鍓ㄩ悮搴ｅМ",
+    "prototype": "quadruped",
+    "path": "/assets/hound/export/character.json"
+  },
+  {
+    "id": "moth",
+    "label": "灯翼蛾",
+    "prototype": "winged",
+    "path": "/assets/moth/export/character.json"
+  },
+  {
+    "id": "scarab",
+    "label": "黑曜甲虫",
+    "prototype": "multileg",
+    "path": "/assets/scarab/export/character.json"
+  },
+  {
+    "id": "jelly",
+    "label": "潮汐史莱姆",
+    "prototype": "blob",
+    "path": "/assets/jelly/export/character.json"
+  },
+  {
+    "id": "ember",
+    "label": "余烬布丁",
+    "prototype": "blob",
+    "validation": true,
+    "path": "/assets/ember/export/character.json"
+  }
+]

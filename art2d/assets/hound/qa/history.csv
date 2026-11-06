@@ -1,0 +1,13 @@
+clip,iteration,errors,pose,timing,flow,overlap,character,assembly,average,evidence,note
+run,1,1,,,,,,,,REPORT.md,初次自动检查
+death,1,3,,,,,,,,REPORT.md,初次自动检查
+run,3,1,,,,,,,,REPORT.md,加入真实离地高度检测后延长腾空
+death,2,1,,,,,,,,REPORT.md,前后腿倒地目标互换后，近侧后髋仍超限
+idle,4,0,4,4,5,5,4,4,4.33,../preview/idle_sheet.png,头和尾不同相位，足点稳定，远肢低亮可辨。
+walk,4,0,4,4,5,4,4,4,4.17,../preview/walk_sheet.png,四足错相，步幅保守，尾端滞后。
+run,4,0,4,4,5,4,4,4,4.17,../preview/run_sheet.png,前后组收展与短腾空，修正前小腿贴图穿地。
+attack_light,4,0,4,4,5,4,4,4,4.17,../preview/attack_light_sheet.png,张颚与低头咬合清楚，短击保持足点。
+attack_heavy,4,0,4,5,5,4,4,4,4.33,../preview/attack_heavy_sheet.png,重心压低后整身前扑，命中发生在空中，落点回归锁脚。
+hit,4,0,4,4,5,4,4,4,4.17,../preview/hit_sheet.png,后缩和头部反应明确，尾链有延迟。
+death,4,0,3,4,5,4,4,4,4.00,../preview/death_sheet.png,腿收折成低姿态，近足略拥挤，终态不再穿地。
+spawn,4,0,4,4,5,4,3,4,4.00,../preview/spawn_sheet.png,压低后起身，入场姿态成立，角色性格较克制。

@@ -1,0 +1,3 @@
+PASS courier reference layers, scarf, and silhouette (93.9% overlap)
+PASS 5 demos, 47 clips, 5066 samples, 11 validation clips
+PASS all raw hashes, part/atlas images, per-clip previews, QA/visual coverage, local links

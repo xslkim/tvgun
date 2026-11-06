@@ -1,0 +1,19 @@
+{
+  "prompt": "One landscape 3-column by 2-row game production sprite sheet. Exactly six equal-sized invisible cells, huge transparent gutters, one item centered in each cell, fully visible. Genuinely transparent background. No labels, lettering, floor shadows, cell dividers, scenery, logos, or watermark. Right-facing side-profile with slight three-quarter depth where appropriate. Crisp deep navy outline, flat two-tone cel shading, upper-left warm light, golden brass detailing, Art Deco fantasy clockwork game art. Preserve the same parts and scale cues between assembled design and isolated components. Character: Lantern Moth, a jewel-toned mechanical moth with brass facets, large coral wing membranes and a violet body, two unmistakable broad flying wings. Row 1 left to right: assembled right-facing 3/4 moth with wings spread, isolated streamlined violet thorax and abdomen without wings or head, isolated amber-eyed moth head with antennae and a base neck ball. Row 2 left to right: one broad coral flying wing pointing left with its rounded root at the right edge, one broad amber-red flying wing pointing up-right with root at lower left, small isolated violet stinger pointing down-left with rounded root at upper right. No detached particles.",
+  "service": "Codex built-in image_gen",
+  "model_version": null,
+  "seed": null,
+  "parameters": {
+    "transparent_background": true
+  },
+  "references": [],
+  "rights": "Original text prompt. See docs/RIGHTS.md. Provider does not expose model revision, seed, or sampler.",
+  "original": "raw.png",
+  "reference": "master.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "sha256": "273b7e5a596a45c7af626d94f396ebeb3ff0e581afceddd92b144f1a3e3ee6c0",
+  "layout": "layout.json"
+}
