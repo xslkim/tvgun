@@ -1,0 +1,181 @@
+{
+  "root": [],
+  "hip": [],
+  "spine": [
+    {
+      "slot": 10,
+      "part": "torso_shell",
+      "variants": [],
+      "weights": [
+        "spine"
+      ]
+    }
+  ],
+  "chest": [],
+  "neck": [
+    {
+      "slot": 13,
+      "part": "collar_front",
+      "variants": [],
+      "weights": [
+        "neck"
+      ]
+    }
+  ],
+  "head": [
+    {
+      "slot": 12,
+      "part": "head_relaxed",
+      "variants": [
+        "distress"
+      ],
+      "weights": [
+        "head"
+      ]
+    }
+  ],
+  "shoulder_far": [],
+  "upper_arm_far": [
+    {
+      "slot": 9,
+      "part": "upper_far",
+      "variants": [],
+      "weights": [
+        "upper_arm_far"
+      ]
+    }
+  ],
+  "forearm_far": [
+    {
+      "slot": 8,
+      "part": "sleeve_far",
+      "variants": [],
+      "weights": [
+        "forearm_far"
+      ]
+    }
+  ],
+  "hand_far": [
+    {
+      "slot": 7,
+      "part": "hand_far",
+      "variants": [],
+      "weights": [
+        "hand_far"
+      ]
+    }
+  ],
+  "held_prop": [
+    {
+      "slot": 6,
+      "part": "held_object",
+      "variants": [],
+      "weights": [
+        "held_prop"
+      ]
+    }
+  ],
+  "shoulder_near": [],
+  "upper_arm_near": [
+    {
+      "slot": 16,
+      "part": "upper_near",
+      "variants": [],
+      "weights": [
+        "upper_arm_near"
+      ]
+    }
+  ],
+  "forearm_near": [
+    {
+      "slot": 15,
+      "part": "sleeve_near",
+      "variants": [],
+      "weights": [
+        "forearm_near"
+      ]
+    }
+  ],
+  "hand_near": [
+    {
+      "slot": 14,
+      "part": "hand_near",
+      "variants": [
+        "open_palm"
+      ],
+      "weights": [
+        "hand_near"
+      ]
+    }
+  ],
+  "ink_anchor": [
+    {
+      "slot": 11,
+      "part": "rescue_ink",
+      "variants": [],
+      "weights": [
+        "ink_anchor"
+      ]
+    }
+  ],
+  "upper_leg_far": [
+    {
+      "slot": 2,
+      "part": "thigh_far",
+      "variants": [],
+      "weights": [
+        "upper_leg_far"
+      ]
+    }
+  ],
+  "lower_leg_far": [
+    {
+      "slot": 1,
+      "part": "shin_far",
+      "variants": [],
+      "weights": [
+        "lower_leg_far"
+      ]
+    }
+  ],
+  "foot_far": [
+    {
+      "slot": 0,
+      "part": "shoe_far",
+      "variants": [],
+      "weights": [
+        "foot_far"
+      ]
+    }
+  ],
+  "upper_leg_near": [
+    {
+      "slot": 5,
+      "part": "thigh_near",
+      "variants": [],
+      "weights": [
+        "upper_leg_near"
+      ]
+    }
+  ],
+  "lower_leg_near": [
+    {
+      "slot": 4,
+      "part": "shin_near",
+      "variants": [],
+      "weights": [
+        "lower_leg_near"
+      ]
+    }
+  ],
+  "foot_near": [
+    {
+      "slot": 3,
+      "part": "shoe_near",
+      "variants": [],
+      "weights": [
+        "foot_near"
+      ]
+    }
+  ]
+}

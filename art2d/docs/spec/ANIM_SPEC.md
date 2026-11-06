@@ -16,6 +16,8 @@
 
 ## 验收
 
+角色可在 `rig_layout.json` 的 `animation` 定义自有动作。骨轨使用 `[秒, dx, dy, 角度]`，可配置步幅、摆动高度、支撑区间和事件。导出仍遵循相同的 120 Hz 骨轨格式。`meta.attachment_keys` 按默认附件名索引，键为 `{time, variant?, visible?}`，在指定时刻离散生效。`rig.attachments[].hidden` 设置初始可见性。实时与离线预览都用 `attachmentAt` 解析这些键。
+
 `node tools/qa/check.mjs <id>` 写出报告和关节曲线，`node tools/qa/render.mjs <id>` 生成 GIF、关键帧、问题帧及像素地面测量。附加 `--debug` 生成骨架 GIF 和洋葱皮。
 
 - 自动检查覆盖反折、角速、位移跳变、骨长、滑步、接缝、事件和网格翻面。地面与脚锁以 0.01H 为容差，非弹性骨长偏离上限 2%。样例的完整阈值以 [检查器](../../tools/qa/check.mjs) 为准。

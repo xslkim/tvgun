@@ -42,6 +42,19 @@ export function sample(clip, time, repeat = clip.meta.loop) {
   return blend(clip.frames[i], clip.frames[Math.min(i + 1, clip.frames.length - 1)], frame - i);
 }
 
+// Attachment switches are discrete and depend only on the sampled clip time.
+export function attachmentAt(slot, clip, time, fallback = '') {
+  let variant = fallback;
+  let visible = !slot.hidden;
+  for (const key of clip?.meta.attachment_keys?.[slot.part] ?? []) {
+    if (key.time > time) break;
+    if (key.variant !== undefined) variant = key.variant;
+    if (key.visible !== undefined) visible = key.visible;
+  }
+  if (!visible) return null;
+  return slot.variants?.[variant] ? {...slot, ...slot.variants[variant]} : slot;
+}
+
 export function solve2(rig, pose, [upper, lower, end, sign], x, y, endAngle = 0) {
   const bones = Object.fromEntries(rig.bones.map(b => [b.id, b]));
   const w = world(rig, pose);

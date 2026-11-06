@@ -1,0 +1,706 @@
+{
+  "version": 1,
+  "id": "paper_lantern_video",
+  "label": "录像厅老板",
+  "prototype": "humanoid",
+  "height": 512,
+  "ground": 0,
+  "bones": [
+    {
+      "id": "root",
+      "parent": null,
+      "x": 0,
+      "y": 0,
+      "a": 0,
+      "length": 0,
+      "elastic": false
+    },
+    {
+      "id": "hip",
+      "parent": "root",
+      "x": 0,
+      "y": 212.74143400799534,
+      "a": 0,
+      "length": 0,
+      "elastic": false
+    },
+    {
+      "id": "spine",
+      "parent": "hip",
+      "x": 0,
+      "y": 37.67699999999999,
+      "a": 90,
+      "length": 52,
+      "elastic": false
+    },
+    {
+      "id": "chest",
+      "parent": "spine",
+      "x": 106.89692,
+      "y": 6.545548545835534e-15,
+      "a": 0,
+      "length": 35,
+      "elastic": false
+    },
+    {
+      "id": "neck",
+      "parent": "chest",
+      "x": 34.79504000000003,
+      "y": 2.0917331651607257e-14,
+      "a": 0,
+      "length": 15,
+      "elastic": false
+    },
+    {
+      "id": "head",
+      "parent": "neck",
+      "x": 0,
+      "y": 0,
+      "a": 0,
+      "length": 60,
+      "elastic": false
+    },
+    {
+      "id": "shoulder_far",
+      "parent": "chest",
+      "x": 12.458528000000063,
+      "y": -77.16249599999999,
+      "a": -90,
+      "length": 0,
+      "elastic": false
+    },
+    {
+      "id": "upper_arm_far",
+      "parent": "shoulder_far",
+      "x": 0,
+      "y": 0,
+      "a": -80,
+      "length": 95.20188689015266,
+      "elastic": false
+    },
+    {
+      "id": "forearm_far",
+      "parent": "upper_arm_far",
+      "x": 95.20188689015266,
+      "y": 7.105427357601002e-15,
+      "a": 11,
+      "length": 78.68218643626835,
+      "elastic": false
+    },
+    {
+      "id": "hand_far",
+      "parent": "forearm_far",
+      "x": 78.68218643626837,
+      "y": 0,
+      "a": 0,
+      "length": 21,
+      "elastic": false
+    },
+    {
+      "id": "held_prop",
+      "parent": "hand_far",
+      "x": 10.060515676470432,
+      "y": -4.198635054811592,
+      "a": 81,
+      "length": 0,
+      "elastic": false
+    },
+    {
+      "id": "shoulder_near",
+      "parent": "chest",
+      "x": 12.458528000000053,
+      "y": 77.16249600000002,
+      "a": -90,
+      "length": 0,
+      "elastic": false
+    },
+    {
+      "id": "upper_arm_near",
+      "parent": "shoulder_near",
+      "x": 0,
+      "y": 0,
+      "a": -103,
+      "length": 95.1668981690639,
+      "elastic": false
+    },
+    {
+      "id": "forearm_near",
+      "parent": "upper_arm_near",
+      "x": 95.16689816906388,
+      "y": -2.1316282072803006e-14,
+      "a": -8,
+      "length": 50.94076686657945,
+      "elastic": false
+    },
+    {
+      "id": "hand_near",
+      "parent": "forearm_near",
+      "x": 50.94076686657945,
+      "y": 0,
+      "a": 0,
+      "length": 21,
+      "elastic": false
+    },
+    {
+      "id": "ink_anchor",
+      "parent": "spine",
+      "x": 42.11892000000003,
+      "y": 1.7186000000000177,
+      "a": 0,
+      "length": 0,
+      "elastic": false
+    },
+    {
+      "id": "upper_leg_far",
+      "parent": "hip",
+      "x": 36.55065600000002,
+      "y": 0,
+      "a": -81.99158624423978,
+      "length": 95.44651137239777,
+      "elastic": false
+    },
+    {
+      "id": "lower_leg_far",
+      "parent": "upper_leg_far",
+      "x": 95.44651137239777,
+      "y": 0,
+      "a": -11.511722592207207,
+      "length": 86.69280855516294,
+      "elastic": false
+    },
+    {
+      "id": "foot_far",
+      "parent": "lower_leg_far",
+      "x": 86.69280855516294,
+      "y": -1.7763568394002505e-15,
+      "a": 93.50330883644688,
+      "length": 7,
+      "elastic": false
+    },
+    {
+      "id": "upper_leg_near",
+      "parent": "hip",
+      "x": -36.55065600000002,
+      "y": 0,
+      "a": -83.31700515795592,
+      "length": 96.13131514395498,
+      "elastic": false
+    },
+    {
+      "id": "lower_leg_near",
+      "parent": "upper_leg_near",
+      "x": 96.13131514395499,
+      "y": -1.7763568394002505e-15,
+      "a": -15.800270141662736,
+      "length": 89.53523006963488,
+      "elastic": false
+    },
+    {
+      "id": "foot_near",
+      "parent": "lower_leg_near",
+      "x": 89.53523006963488,
+      "y": -1.7763568394002505e-15,
+      "a": 99.11727529961865,
+      "length": 7,
+      "elastic": false
+    }
+  ],
+  "legs": [
+    {
+      "suffix": "far",
+      "chain": [
+        "upper_leg_far",
+        "lower_leg_far",
+        "foot_far",
+        -1
+      ],
+      "foot": [
+        44.55065600000002,
+        31.694949999999995
+      ],
+      "phase": 0.5,
+      "sole": [
+        7,
+        -31.694949999999995
+      ]
+    },
+    {
+      "suffix": "near",
+      "chain": [
+        "upper_leg_near",
+        "lower_leg_near",
+        "foot_near",
+        -1
+      ],
+      "foot": [
+        -39.55065600000002,
+        28.85926
+      ],
+      "phase": 0,
+      "sole": [
+        7,
+        -28.85926
+      ]
+    }
+  ],
+  "limits": [
+    {
+      "id": "upper_leg_far",
+      "parent": "hip",
+      "min": -105,
+      "max": 105
+    },
+    {
+      "id": "lower_leg_far",
+      "parent": "upper_leg_far",
+      "min": -145,
+      "max": 0,
+      "bend_sign": -1,
+      "chain": true
+    },
+    {
+      "id": "foot_far",
+      "parent": "lower_leg_far",
+      "min": -115,
+      "max": 115
+    },
+    {
+      "id": "upper_leg_near",
+      "parent": "hip",
+      "min": -105,
+      "max": 105
+    },
+    {
+      "id": "lower_leg_near",
+      "parent": "upper_leg_near",
+      "min": -145,
+      "max": 0,
+      "bend_sign": -1,
+      "chain": true
+    },
+    {
+      "id": "foot_near",
+      "parent": "lower_leg_near",
+      "min": -115,
+      "max": 115
+    },
+    {
+      "id": "spine",
+      "parent": "hip",
+      "min": -12,
+      "max": 10
+    },
+    {
+      "id": "head",
+      "parent": "neck",
+      "min": -13,
+      "max": 9
+    },
+    {
+      "id": "upper_arm_far",
+      "parent": "shoulder_far",
+      "min": -5,
+      "max": 22
+    },
+    {
+      "id": "forearm_far",
+      "parent": "upper_arm_far",
+      "min": -3,
+      "max": 4,
+      "bend_sign": 1
+    },
+    {
+      "id": "hand_far",
+      "parent": "forearm_far",
+      "min": -8,
+      "max": 8
+    },
+    {
+      "id": "upper_arm_near",
+      "parent": "shoulder_near",
+      "min": -70,
+      "max": 22
+    },
+    {
+      "id": "forearm_near",
+      "parent": "upper_arm_near",
+      "min": -91,
+      "max": 3,
+      "bend_sign": -1
+    },
+    {
+      "id": "hand_near",
+      "parent": "forearm_near",
+      "min": -8,
+      "max": 8
+    }
+  ],
+  "atlas": "atlas.png",
+  "attachments": [
+    {
+      "bone": "foot_far",
+      "a": 0,
+      "part": "shoe_far",
+      "rect": [
+        4,
+        302,
+        102,
+        61
+      ],
+      "size": [
+        67.422,
+        40.321000000000005
+      ],
+      "pivot": [
+        0.40803921568627344,
+        0.21393442622950745
+      ]
+    },
+    {
+      "bone": "lower_leg_far",
+      "a": 89.96679873465087,
+      "part": "shin_far",
+      "rect": [
+        1420,
+        4,
+        75,
+        164
+      ],
+      "size": [
+        49.575,
+        108.40400000000001
+      ],
+      "pivot": [
+        0.5272533333333346,
+        0.2188780487804879
+      ]
+    },
+    {
+      "bone": "upper_leg_far",
+      "a": 90.02573616714687,
+      "part": "thigh_far",
+      "rect": [
+        1037,
+        4,
+        101,
+        196
+      ],
+      "size": [
+        66.76100000000001,
+        129.556
+      ],
+      "pivot": [
+        0.5869806440103473,
+        0.18251700680272098
+      ]
+    },
+    {
+      "bone": "foot_near",
+      "a": 0,
+      "part": "shoe_near",
+      "rect": [
+        114,
+        302,
+        98,
+        58
+      ],
+      "size": [
+        64.778,
+        38.338
+      ],
+      "pivot": [
+        0.3422448979591833,
+        0.23000000000000054
+      ]
+    },
+    {
+      "bone": "lower_leg_near",
+      "a": 89.91012702121817,
+      "part": "shin_near",
+      "rect": [
+        1339,
+        4,
+        73,
+        168
+      ],
+      "size": [
+        48.253,
+        111.048
+      ],
+      "pivot": [
+        0.5113360193392434,
+        0.21360690943043892
+      ]
+    },
+    {
+      "bone": "upper_leg_near",
+      "a": 90.01328904562226,
+      "part": "thigh_near",
+      "rect": [
+        929,
+        4,
+        100,
+        197
+      ],
+      "size": [
+        66.10000000000001,
+        130.217
+      ],
+      "pivot": [
+        0.4095266055045863,
+        0.17837954640711604
+      ]
+    },
+    {
+      "bone": "held_prop",
+      "a": 0,
+      "part": "held_object",
+      "rect": [
+        1503,
+        4,
+        84,
+        150
+      ],
+      "size": [
+        55.524,
+        99.15
+      ],
+      "pivot": [
+        0.14285714285714285,
+        0.16
+      ]
+    },
+    {
+      "bone": "hand_far",
+      "a": 81.38361390872406,
+      "part": "hand_far",
+      "rect": [
+        1919,
+        4,
+        63,
+        69
+      ],
+      "size": [
+        41.643,
+        45.609
+      ],
+      "pivot": [
+        0.49206349206349204,
+        0.3333333333333333
+      ]
+    },
+    {
+      "bone": "forearm_far",
+      "a": 81.38361390872406,
+      "part": "sleeve_far",
+      "rect": [
+        1595,
+        4,
+        84,
+        138
+      ],
+      "size": [
+        55.524,
+        91.218
+      ],
+      "pivot": [
+        0.4186474912112506,
+        0.25585799046785335
+      ]
+    },
+    {
+      "bone": "upper_arm_far",
+      "a": 85.59867117911786,
+      "part": "upper_far",
+      "rect": [
+        1146,
+        4,
+        88,
+        194
+      ],
+      "size": [
+        58.168000000000006,
+        128.234
+      ],
+      "pivot": [
+        0.3980346981263019,
+        0.1816375226253246
+      ]
+    },
+    {
+      "bone": "spine",
+      "a": -90,
+      "part": "torso_shell",
+      "rect": [
+        4,
+        4,
+        292,
+        290
+      ],
+      "size": [
+        193.012,
+        191.69
+      ],
+      "pivot": [
+        0.5020547945205477,
+        0.7542068965517242
+      ]
+    },
+    {
+      "bone": "ink_anchor",
+      "a": -90,
+      "part": "rescue_ink",
+      "rect": [
+        304,
+        4,
+        250,
+        256
+      ],
+      "size": [
+        152,
+        155.648
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "hidden": true
+    },
+    {
+      "bone": "head",
+      "a": -90,
+      "part": "head_relaxed",
+      "rect": [
+        745,
+        4,
+        176,
+        203
+      ],
+      "size": [
+        116.33600000000001,
+        134.183
+      ],
+      "pivot": [
+        0.5010454545454543,
+        0.8226995073891626
+      ],
+      "variants": {
+        "distress": {
+          "part": "head_distress",
+          "rect": [
+            562,
+            4,
+            175,
+            203
+          ],
+          "size": [
+            115.67500000000001,
+            134.183
+          ],
+          "pivot": [
+            0.5035067735000978,
+            0.8177733990147785
+          ],
+          "a": -90
+        }
+      }
+    },
+    {
+      "bone": "neck",
+      "a": -90,
+      "part": "collar_front",
+      "rect": [
+        220,
+        302,
+        121,
+        53
+      ],
+      "size": [
+        79.98100000000001,
+        35.033
+      ],
+      "pivot": [
+        0.41818181818181743,
+        0.17660377358490564
+      ]
+    },
+    {
+      "bone": "hand_near",
+      "a": 90.55815293342657,
+      "part": "hand_near",
+      "rect": [
+        1774,
+        4,
+        74,
+        94
+      ],
+      "size": [
+        48.914,
+        62.134
+      ],
+      "pivot": [
+        0.44594594594594594,
+        0.07446808510638298
+      ],
+      "variants": {
+        "open_palm": {
+          "part": "hand_open",
+          "rect": [
+            1856,
+            4,
+            55,
+            79
+          ],
+          "size": [
+            36.355000000000004,
+            52.219
+          ],
+          "pivot": [
+            0.4161427357689056,
+            0.9400311526479754
+          ],
+          "a": -90
+        }
+      }
+    },
+    {
+      "bone": "forearm_near",
+      "a": 90.55815293342657,
+      "part": "sleeve_near",
+      "rect": [
+        1687,
+        4,
+        79,
+        114
+      ],
+      "size": [
+        52.219,
+        75.354
+      ],
+      "pivot": [
+        0.553806795469686,
+        0.31524073341247855
+      ]
+    },
+    {
+      "bone": "upper_arm_near",
+      "a": 94.17139871906699,
+      "part": "upper_near",
+      "rect": [
+        1242,
+        4,
+        89,
+        194
+      ],
+      "size": [
+        58.829,
+        128.234
+      ],
+      "pivot": [
+        0.601716036772216,
+        0.18168697282099344
+      ]
+    }
+  ],
+  "elastic": false
+}

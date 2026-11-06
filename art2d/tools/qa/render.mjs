@@ -2,7 +2,7 @@ import {spawnSync} from 'node:child_process';
 import {existsSync} from 'node:fs';
 import {join} from 'node:path';
 import {root,read} from '../../pipeline/export/build.mjs';
-import {world,sample,skinVertex} from '../../pipeline/rig/runtime.mjs';
+import {world,sample,skinVertex,attachmentAt} from '../../pipeline/rig/runtime.mjs';
 
 const [id,...args]=process.argv.slice(2);
 if(!id) throw new Error('Usage: node tools/qa/render.mjs <id> [clip ...] [--quick] [--debug]');
@@ -12,15 +12,17 @@ const quick=args.includes('--quick'), debug=args.includes('--debug');
 const only=args.filter(a=>a!=='--quick' && a!=='--debug');
 const reportPath=join(path,'qa','report.json');
 const reports=existsSync(reportPath)?read(reportPath).reports:[];
-const frame=(pose,time,caption)=>{
+const frame=(pose,time,caption,clip)=>{
   const w=world(rig,pose);
-  return {time,caption,w,meshes:rig.attachments.map(s=>s.mesh?.vertices.map(v=>skinVertex(v,w)))};
+  const attachments=rig.attachments.map(slot=>attachmentAt(slot,clip,time));
+  return {time,caption,w,meshes:attachments.map(s=>s?.mesh?.vertices.map(v=>skinVertex(v,w))),
+    ...(attachments.some((slot,i)=>slot!==rig.attachments[i]) ? {attachments} : {})};
 };
 const shots=[];
 for(const name of (only.length?only:Object.keys(clips))) {
   const clip=read(join(path,'export',clips[name]));
   const fps=quick?15:30;
-  const at=(t,label)=>frame(sample(clip,t,false),t,label);
+  const at=(t,label)=>frame(sample(clip,t,false),t,label,clip);
   const count=Math.round(clip.duration*fps);
   const film=Array.from({length:count+(clip.meta.loop?0:1)},(_,i)=>at(i*clip.duration/count));
   const keys=clip.keyTimes.filter(t=>!clip.meta.loop || t<clip.duration).map(t=>at(t,name+' | '+t.toFixed(2)+'s'));

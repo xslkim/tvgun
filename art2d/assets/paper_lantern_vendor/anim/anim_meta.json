@@ -1,0 +1,285 @@
+{
+  "idle": {
+    "label": "站立呼吸",
+    "loop": true,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {
+      "sole_far": [
+        [
+          0,
+          2.4
+        ]
+      ],
+      "sole_near": [
+        [
+          0,
+          2.4
+        ]
+      ]
+    },
+    "required_events": [],
+    "qa_exceptions": [],
+    "support_rule": "always",
+    "attachment_keys": {}
+  },
+  "walk": {
+    "label": "行走",
+    "loop": true,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 48.57142857142858,
+    "contact_intervals": {
+      "sole_far": [
+        [
+          0,
+          0.182
+        ],
+        [
+          0.7,
+          1.4
+        ]
+      ],
+      "sole_near": [
+        [
+          0,
+          0.8819999999999999
+        ]
+      ]
+    },
+    "required_events": [
+      "footstep"
+    ],
+    "qa_exceptions": [],
+    "support_rule": "always",
+    "attachment_keys": {}
+  },
+  "peek": {
+    "label": "探身观察",
+    "loop": false,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {
+      "sole_far": [
+        [
+          0,
+          2.8
+        ]
+      ],
+      "sole_near": [
+        [
+          0,
+          2.8
+        ]
+      ]
+    },
+    "required_events": [],
+    "qa_exceptions": [],
+    "support_rule": "always",
+    "attachment_keys": {
+      "head_relaxed": [
+        {
+          "time": 0.5,
+          "variant": "distress"
+        },
+        {
+          "time": 2.42,
+          "variant": ""
+        }
+      ]
+    }
+  },
+  "startle": {
+    "label": "受惊回缩",
+    "loop": false,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {
+      "sole_far": [
+        [
+          0,
+          1.8
+        ]
+      ],
+      "sole_near": [
+        [
+          0,
+          1.8
+        ]
+      ]
+    },
+    "required_events": [],
+    "qa_exceptions": [],
+    "support_rule": "always",
+    "attachment_keys": {
+      "head_relaxed": [
+        {
+          "time": 0.12,
+          "variant": "distress"
+        },
+        {
+          "time": 1.53,
+          "variant": ""
+        }
+      ]
+    }
+  },
+  "wave_for_help": {
+    "label": "求助与收手",
+    "loop": false,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {
+      "sole_far": [
+        [
+          0,
+          4.5
+        ]
+      ],
+      "sole_near": [
+        [
+          0,
+          4.5
+        ]
+      ]
+    },
+    "required_events": [],
+    "qa_exceptions": [],
+    "support_rule": "always",
+    "attachment_keys": {
+      "head_relaxed": [
+        {
+          "time": 0,
+          "variant": "distress"
+        }
+      ],
+      "hand_near": [
+        {
+          "time": 0.84,
+          "variant": "open_palm"
+        },
+        {
+          "time": 3.18,
+          "variant": ""
+        }
+      ]
+    }
+  },
+  "struggle": {
+    "label": "附墨挣扎",
+    "loop": true,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {
+      "sole_far": [
+        [
+          0,
+          3
+        ]
+      ],
+      "sole_near": [
+        [
+          0,
+          3
+        ]
+      ]
+    },
+    "required_events": [],
+    "qa_exceptions": [],
+    "support_rule": "always",
+    "attachment_keys": {
+      "head_relaxed": [
+        {
+          "time": 0,
+          "variant": "distress"
+        }
+      ],
+      "rescue_ink": [
+        {
+          "time": 0,
+          "visible": true
+        }
+      ]
+    }
+  },
+  "rescued_bounce": {
+    "label": "获救与落地",
+    "loop": false,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {
+      "sole_far": [
+        [
+          0,
+          0.55
+        ],
+        [
+          1.13,
+          2.2
+        ]
+      ],
+      "sole_near": [
+        [
+          0,
+          0.55
+        ],
+        [
+          1.13,
+          2.2
+        ]
+      ]
+    },
+    "required_events": [
+      "freed",
+      "takeoff",
+      "land"
+    ],
+    "qa_exceptions": [],
+    "support_rule": null,
+    "attachment_keys": {
+      "head_relaxed": [
+        {
+          "time": 0,
+          "variant": "distress"
+        },
+        {
+          "time": 1.24,
+          "variant": ""
+        }
+      ],
+      "rescue_ink": [
+        {
+          "time": 0,
+          "visible": true
+        },
+        {
+          "time": 0.2,
+          "visible": false
+        }
+      ]
+    }
+  },
+  "thank": {
+    "label": "点头致谢",
+    "loop": false,
+    "root_motion_mode": "in_place",
+    "locomotion_speed": 0,
+    "contact_intervals": {
+      "sole_far": [
+        [
+          0,
+          2.6
+        ]
+      ],
+      "sole_near": [
+        [
+          0,
+          2.6
+        ]
+      ]
+    },
+    "required_events": [],
+    "qa_exceptions": [],
+    "support_rule": "always",
+    "attachment_keys": {}
+  }
+}

@@ -6,6 +6,18 @@
     "path": "/assets/courier/export/character.json"
   },
   {
+    "id": "paper_lantern_vendor",
+    "label": "卖糖葫芦居民",
+    "prototype": "humanoid",
+    "path": "/assets/paper_lantern_vendor/export/character.json"
+  },
+  {
+    "id": "paper_lantern_video",
+    "label": "录像厅老板",
+    "prototype": "humanoid",
+    "path": "/assets/paper_lantern_video/export/character.json"
+  },
+  {
     "id": "hound",
     "label": "闁炬粏鍓ㄩ悮搴ｅМ",
     "prototype": "quadruped",

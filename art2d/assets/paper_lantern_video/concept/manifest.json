@@ -1,0 +1,78 @@
+{
+  "source": "Existing Paper Lantern City GPT resident artwork, lossless source sheet assembly",
+  "source_files": {
+    "torso": {
+      "path": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\torso.png",
+      "sha256": "59e04fab42d28ef8f7eafe56bd57d7dffc536281d773311b505fc3c2121348e8"
+    },
+    "head": {
+      "path": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\head.png",
+      "sha256": "582ee46e19bee553b52af598c5924cf81fdb777a64696f9e3d67387a37adf7b5"
+    },
+    "upper_arm_l": {
+      "path": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\upper_arm_l.png",
+      "sha256": "bfdc125eef4aa41fde93fa32a637138bfa716b9b753af544852cd7b58ba948c0"
+    },
+    "upper_arm_r": {
+      "path": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\upper_arm_r.png",
+      "sha256": "5f761eeded336854bf3645de8c5b8ff146e3628cea5297c9c067aba3edbe89d1"
+    },
+    "forearm_l": {
+      "path": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\forearm_l.png",
+      "sha256": "c4397a2ae3aa3f97c8997eac91f2a7b8c4525deb68b32ec83a4dc7a7f5368f5a"
+    },
+    "forearm_r": {
+      "path": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\forearm_r.png",
+      "sha256": "dfbb7cfa3e0b3757a9b56fae5aa7e7dd6897deb12230cb6137d9893e31f2f129"
+    },
+    "thigh_l": {
+      "path": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\thigh_l.png",
+      "sha256": "1bfd153f2aa08e599bc91d703cdc8b02d423e7f1a3a319b43f11ad2a88be0c80"
+    },
+    "thigh_r": {
+      "path": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\thigh_r.png",
+      "sha256": "f1a649e1546ac3412c40c1ed2ff3f40caad07aeebf0928e89d76ad4bbf63d3f6"
+    },
+    "shin_l": {
+      "path": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\shin_l.png",
+      "sha256": "4b74553e3b2786f7b94c38f6a53958c1d7cef3b3cb2d1389aa0bf393cbf15f31"
+    },
+    "shin_r": {
+      "path": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\shin_r.png",
+      "sha256": "b64c1bdb1356c9c49d95d8dc16cb34e2af3bbba2d76855d4cb0839769de588af"
+    },
+    "prop": {
+      "path": "D:\\gunforge_cache\\g01\\T05\\video\\parts\\prop.png",
+      "sha256": "0489d2769edb9d9dad9aa663bfeafbca48952392547ff940451d653e7aa2293b"
+    },
+    "distress": {
+      "path": "D:\\gunforge_cache\\g01\\T05\\video\\attachments_v3\\distress_head.png",
+      "sha256": "19217989038c622243552b41a0df3574c2b0c4fd7ccef82d2ff558100db1e9b7"
+    },
+    "palm": {
+      "path": "D:\\gunforge_cache\\g01\\T05\\video\\attachments_v3\\right_palm.png",
+      "sha256": "30f54c62349fd596e31129ec362587b5e7cebc95431498639789faf724d6e61e"
+    },
+    "ink": {
+      "path": "D:\\gunforge_cache\\g01\\T05\\ink_blobs\\blob_00.png",
+      "sha256": "f75c16ffb020c2dde53f7f5e1addcc0ac54be7b4487ac5cc78f3e1820e4492df"
+    },
+    "design": {
+      "path": "D:\\gunforge_cache\\g01\\T05\\video_concept_a1.png",
+      "sha256": "856047a3f55adb88ab74073afe7467269f4a1c54f0758c22046f26b2bbc6404e"
+    }
+  },
+  "source_request_ledger": "gunforge/games/g01/reports/art/T05/calls.json",
+  "model_version": null,
+  "seed": null,
+  "new_generation_calls": 0,
+  "rights": "Existing project character sources. Original prompts and provider metadata are in the T05 call ledger.",
+  "original": "raw.png",
+  "reference": "master.png",
+  "dimensions": [
+    2328,
+    1536
+  ],
+  "sha256": "bcde059369ac9a29854a6c84632df5a4a0eb54ea9fcf8e1f189b45095ace9d03",
+  "layout": "layout.json"
+}

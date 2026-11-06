@@ -13,6 +13,8 @@ node demos/viewer/serve.mjs
 
 打开 [本地播放器](http://127.0.0.1:4173/)。用 `-Clips idle,walk,attack_light` 指定试制或交付动作；每次构建重写该角色的动作索引。Git 克隆后用 `git lfs pull` 获取原图和 GIF。
 
+纸灯城人物可从 [卖糖葫芦居民](http://127.0.0.1:4173/demos/viewer/?character=paper_lantern_vendor) 和 [录像厅老板](http://127.0.0.1:4173/demos/viewer/?character=paper_lantern_video) 直接进入。角色 ID 为 `paper_lantern_vendor`、`paper_lantern_video`，通过相同的 `build.ps1 <id>` 从各自 `concept/` 构建八个 NPC 动作。原 T05 分件已随各自 `raw.png` 归档；仅重新导入旧源图时才需要缓存和 `tools/import_paper_residents.py`。
+
 ## 交给游戏
 
 交付整个 `assets/<id>/export/`，从 `character.json` 读取图集、骨架和动作。Canvas 播放器是实测接入示例。游戏引擎适配、碰撞、事件效果及跨动作足锁由游戏侧负责。 [数据合同](docs/spec/ANIM_SPEC.md#游戏接入) · [授权](docs/RIGHTS.md)

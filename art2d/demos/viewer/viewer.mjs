@@ -1,4 +1,4 @@
-import {sample,world,transform,skinVertex,blend,smooth,clamp,rad} from '/pipeline/rig/runtime.mjs';
+import {sample,world,transform,skinVertex,blend,smooth,clamp,rad,attachmentAt} from '/pipeline/rig/runtime.mjs';
 
 const $=id=>document.getElementById(id);
 const stage=$('stage'),ctx=stage.getContext('2d');
@@ -34,14 +34,15 @@ async function selectCharacter(entry) {
   $('name').textContent=entry.label;
   $('prototype').textContent=PROTOTYPES[rig.prototype]+' · '+rig.bones.length+' BONES';
   $('report').href='/assets/'+entry.id+'/qa/REPORT.md';
-  $('skinRow').hidden=rig.prototype!=='humanoid';
+  $('skinRow').hidden=!rig.attachments.some(slot=>slot.variants?.palm || slot.variants?.hammer);
+  $('sequence').hidden=!clips.attack_light;
   $('skin').value='';
   for(const button of $('roster').children) button.setAttribute('aria-pressed',button.dataset.id===entry.id);
   $('clips').replaceChildren(...Object.values(clips).map(c=>{
     const b=document.createElement('button');
     b.className='clip';
     b.dataset.clip=c.name;
-    b.append(c.name);
+    b.append(c.meta.label ?? c.name);
     const tag=document.createElement('span');
     tag.textContent=c.meta.loop?'↻':c.duration.toFixed(2)+'s';
     b.append(tag);
@@ -120,7 +121,9 @@ function render() {
   ctx.strokeStyle='#6a8794';ctx.beginPath();ctx.moveTo(0,cy);ctx.lineTo(w,cy);ctx.stroke();
   ctx.fillStyle='#8da6ae';ctx.font='12px monospace';ctx.fillText('GROUND / Y = 0',14,cy+22);
   const skin=$('skin').value;
-  for(const slot of rig.attachments) {
+  for(const base of rig.attachments) {
+    const slot=attachmentAt(base,clip,time,skin);
+    if (!slot) continue;
     const p=positions[slot.bone];
     if(skin==='palm' && slot.bone==='weapon') continue;
     if(slot.mesh) {
@@ -135,7 +138,7 @@ function render() {
       }
       continue;
     }
-    const {rect,size,pivot,a=slot.a}=slot.variants?.[skin]??slot;
+    const {rect,size,pivot,a}=slot;
     ctx.save();
     ctx.translate(...xy([p.x,p.y]));
     ctx.rotate(-rad(p.a+a));
@@ -219,7 +222,8 @@ async function init() {
     b.onclick=()=>selectCharacter(c).catch(showError);
     $('roster').append(b);
   }
-  await selectCharacter(roster[0]);
+  const requested=new URLSearchParams(location.search).get('character');
+  await selectCharacter(roster.find(entry=>entry.id===requested) ?? roster[0]);
   requestAnimationFrame(tick);
 }
 init().catch(showError);

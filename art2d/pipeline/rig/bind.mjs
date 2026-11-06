@@ -53,6 +53,7 @@ export function makeRig(spec, anchors, atlas) {
       return {part:name,rect:src,size,pivot:uv};
     };
     const slot = {bone, a:-imageAxis, ...item(part,[width,height])};
+    if (spec.hiddenParts?.includes(part)) slot.hidden = true;
     if (variants) {
       slot.variants = {};
       for (const [id, v] of Object.entries(variants)) {

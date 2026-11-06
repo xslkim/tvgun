@@ -1,0 +1,690 @@
+{
+  "scope": "offline rendered alpha, current ink attachment, 30 fps",
+  "display_height": 512,
+  "frames": 97,
+  "minimum_effective_radius": 48.08206217866359,
+  "minimum_paper_clearance": 8.0,
+  "max_outside_paper_pixels": 0,
+  "samples": [
+    {
+      "clip": "struggle",
+      "time": 0,
+      "radius": 48.08537213372748,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.03333333333333333,
+      "radius": 48.10853544270852,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.06666666666666667,
+      "radius": 48.12507383758763,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.1,
+      "radius": 48.15152345422449,
+      "paper_clearance": 9.0,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.13333333333333333,
+      "radius": 48.14821804674133,
+      "paper_clearance": 8.54400374531753,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.16666666666666666,
+      "radius": 48.19117066016281,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.2,
+      "radius": 48.144912412324146,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.23333333333333334,
+      "radius": 48.15152345422449,
+      "paper_clearance": 9.0,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.26666666666666666,
+      "radius": 48.118459161748866,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.3,
+      "radius": 48.164742815751296,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.3333333333333333,
+      "radius": 48.111843576488795,
+      "paper_clearance": 9.0,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.36666666666666664,
+      "radius": 48.118459161748866,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.4,
+      "radius": 48.164742815751296,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.43333333333333335,
+      "radius": 48.1416065509262,
+      "paper_clearance": 9.0,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.4666666666666667,
+      "radius": 48.12176661332247,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.5,
+      "radius": 48.15813358857566,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.5333333333333333,
+      "radius": 48.15482863482036,
+      "paper_clearance": 9.0,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.5666666666666667,
+      "radius": 48.15152345422449,
+      "paper_clearance": 9.0,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.6,
+      "radius": 48.15152345422449,
+      "paper_clearance": 8.54400374531753,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.6333333333333333,
+      "radius": 48.13830046250071,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.6666666666666666,
+      "radius": 48.118459161748866,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.7,
+      "radius": 48.12176661332247,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.7333333333333333,
+      "radius": 48.13830046250071,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.7666666666666667,
+      "radius": 48.1283808345912,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.8,
+      "radius": 48.12176661332247,
+      "paper_clearance": 9.0,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.8333333333333334,
+      "radius": 48.1283808345912,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.8666666666666667,
+      "radius": 48.11515148281993,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.9,
+      "radius": 48.11515148281993,
+      "paper_clearance": 9.0,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.9333333333333333,
+      "radius": 48.11515148281993,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 0.9666666666666667,
+      "radius": 48.13168760438001,
+      "paper_clearance": 8.0,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1,
+      "radius": 48.1283808345912,
+      "paper_clearance": 8.54400374531753,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.0333333333333334,
+      "radius": 48.14821804674133,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.0666666666666667,
+      "radius": 48.15152345422449,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.1,
+      "radius": 48.19117066016281,
+      "paper_clearance": 8.54400374531753,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.1333333333333333,
+      "radius": 48.15482863482036,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.1666666666666667,
+      "radius": 48.13168760438001,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.2,
+      "radius": 48.181261917247305,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.2333333333333334,
+      "radius": 48.15482863482036,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.2666666666666666,
+      "radius": 48.168047089265,
+      "paper_clearance": 8.54400374531753,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.3,
+      "radius": 48.13168760438001,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.3333333333333333,
+      "radius": 48.144912412324146,
+      "paper_clearance": 8.54400374531753,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.3666666666666667,
+      "radius": 48.1746549563774,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.4,
+      "radius": 48.17135113612482,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.4333333333333333,
+      "radius": 48.1746549563774,
+      "paper_clearance": 8.54400374531753,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.4666666666666666,
+      "radius": 48.1746549563774,
+      "paper_clearance": 8.54400374531753,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.5,
+      "radius": 48.161438315537076,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.5333333333333334,
+      "radius": 48.161438315537076,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.5666666666666667,
+      "radius": 48.168047089265,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.6,
+      "radius": 48.08206217866359,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.6333333333333333,
+      "radius": 48.13499414700092,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.6666666666666667,
+      "radius": 48.164742815751296,
+      "paper_clearance": 8.54400374531753,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.7,
+      "radius": 48.18786797224747,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.7333333333333334,
+      "radius": 48.11515148281993,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.7666666666666666,
+      "radius": 48.17135113612482,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.8,
+      "radius": 48.144912412324146,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.8333333333333333,
+      "radius": 48.164742815751296,
+      "paper_clearance": 8.54400374531753,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.8666666666666667,
+      "radius": 48.15152345422449,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.9,
+      "radius": 48.21758401959193,
+      "paper_clearance": 8.54400374531753,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.9333333333333333,
+      "radius": 48.15813358857566,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 1.9666666666666666,
+      "radius": 48.13499414700092,
+      "paper_clearance": 8.54400374531753,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2,
+      "radius": 48.168047089265,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.033333333333333,
+      "radius": 48.164742815751296,
+      "paper_clearance": 9.0,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.066666666666667,
+      "radius": 48.105227081432204,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.1,
+      "radius": 48.1283808345912,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.1333333333333333,
+      "radius": 48.13168760438001,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.1666666666666665,
+      "radius": 48.13168760438001,
+      "paper_clearance": 8.0,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.2,
+      "radius": 48.1416065509262,
+      "paper_clearance": 8.0,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.2333333333333334,
+      "radius": 48.13830046250071,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.2666666666666666,
+      "radius": 48.164742815751296,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.3,
+      "radius": 48.15813358857566,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.3333333333333335,
+      "radius": 48.17135113612482,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.3666666666666667,
+      "radius": 48.21098203639954,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.4,
+      "radius": 48.19777535705672,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.433333333333333,
+      "radius": 48.15813358857566,
+      "paper_clearance": 8.94427190999916,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.466666666666667,
+      "radius": 48.13830046250071,
+      "paper_clearance": 9.0,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.5,
+      "radius": 48.1283808345912,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.533333333333333,
+      "radius": 48.15813358857566,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.566666666666667,
+      "radius": 48.17135113612482,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.6,
+      "radius": 48.13830046250071,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.6333333333333333,
+      "radius": 48.15152345422449,
+      "paper_clearance": 9.0,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.6666666666666665,
+      "radius": 48.161438315537076,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.7,
+      "radius": 48.1283808345912,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.7333333333333334,
+      "radius": 48.168047089265,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.7666666666666666,
+      "radius": 48.18456505795781,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.8,
+      "radius": 48.1746549563774,
+      "paper_clearance": 8.54400374531753,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.8333333333333335,
+      "radius": 48.168047089265,
+      "paper_clearance": 8.94427190999916,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.8666666666666667,
+      "radius": 48.15482863482036,
+      "paper_clearance": 9.0,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.9,
+      "radius": 48.13830046250071,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.933333333333333,
+      "radius": 48.105227081432204,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 2.966666666666667,
+      "radius": 48.0886818609664,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "struggle",
+      "time": 3,
+      "radius": 48.08537213372748,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "rescued_bounce",
+      "time": 0,
+      "radius": 48.08537213372748,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "rescued_bounce",
+      "time": 0.03333333333333333,
+      "radius": 48.1283808345912,
+      "paper_clearance": 8.06225774829855,
+      "outside": 0
+    },
+    {
+      "clip": "rescued_bounce",
+      "time": 0.06666666666666667,
+      "radius": 48.15482863482036,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "rescued_bounce",
+      "time": 0.1,
+      "radius": 48.13830046250071,
+      "paper_clearance": 8.54400374531753,
+      "outside": 0
+    },
+    {
+      "clip": "rescued_bounce",
+      "time": 0.13333333333333333,
+      "radius": 48.19777535705672,
+      "paper_clearance": 8.246211251235321,
+      "outside": 0
+    },
+    {
+      "clip": "rescued_bounce",
+      "time": 0.16666666666666666,
+      "radius": 48.18786797224747,
+      "paper_clearance": 8.54400374531753,
+      "outside": 0
+    }
+  ],
+  "passed": true
+}

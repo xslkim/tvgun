@@ -15,7 +15,7 @@ def write_json(path, value):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
 
-def isolate(image, box, background, polygon=None, subtract=False):
+def isolate(image, box, background, polygon=None, subtract=False, with_bounds=False):
     left, top, right, bottom = box
     if not (0 <= left < right <= image.width and 0 <= top < bottom <= image.height):
         raise ValueError(f'Crop {box} is outside image bounds {image.size}')
@@ -41,7 +41,7 @@ def isolate(image, box, background, polygon=None, subtract=False):
         raise ValueError(f'No alpha in {box}. Record an explicit background key or use an alpha source.')
     trimmed = region.crop(bbox)
     trimmed.putalpha(trimmed.getchannel('A').point(lambda a: 0 if a < 20 else a))
-    return trimmed
+    return (trimmed, bbox) if with_bounds else trimmed
 
 
 def pack(sprites, max_size=2048, padding=4):

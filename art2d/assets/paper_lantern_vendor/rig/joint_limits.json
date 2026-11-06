@@ -1,0 +1,92 @@
+[
+  {
+    "id": "upper_leg_far",
+    "parent": "hip",
+    "min": -105,
+    "max": 105
+  },
+  {
+    "id": "lower_leg_far",
+    "parent": "upper_leg_far",
+    "min": -145,
+    "max": 0,
+    "bend_sign": -1,
+    "chain": true
+  },
+  {
+    "id": "foot_far",
+    "parent": "lower_leg_far",
+    "min": -115,
+    "max": 115
+  },
+  {
+    "id": "upper_leg_near",
+    "parent": "hip",
+    "min": -105,
+    "max": 105
+  },
+  {
+    "id": "lower_leg_near",
+    "parent": "upper_leg_near",
+    "min": -145,
+    "max": 0,
+    "bend_sign": -1,
+    "chain": true
+  },
+  {
+    "id": "foot_near",
+    "parent": "lower_leg_near",
+    "min": -115,
+    "max": 115
+  },
+  {
+    "id": "spine",
+    "parent": "hip",
+    "min": -12,
+    "max": 10
+  },
+  {
+    "id": "head",
+    "parent": "neck",
+    "min": -13,
+    "max": 9
+  },
+  {
+    "id": "upper_arm_far",
+    "parent": "shoulder_far",
+    "min": -5,
+    "max": 22
+  },
+  {
+    "id": "forearm_far",
+    "parent": "upper_arm_far",
+    "min": -3,
+    "max": 4,
+    "bend_sign": 1
+  },
+  {
+    "id": "hand_far",
+    "parent": "forearm_far",
+    "min": -8,
+    "max": 8
+  },
+  {
+    "id": "upper_arm_near",
+    "parent": "shoulder_near",
+    "min": -70,
+    "max": 22
+  },
+  {
+    "id": "forearm_near",
+    "parent": "upper_arm_near",
+    "min": -91,
+    "max": 3,
+    "bend_sign": -1
+  },
+  {
+    "id": "hand_near",
+    "parent": "forearm_near",
+    "min": -8,
+    "max": 8
+  }
+]

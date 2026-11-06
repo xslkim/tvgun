@@ -34,7 +34,8 @@ def triangle(target, sprite, uv, points):
 class Preview:
     def __init__(self, rig, atlas):
         self.rig = rig
-        self.sprites = [atlas.crop((x,y,x+w,y+h)) for x,y,w,h in (s['rect'] for s in rig['attachments'])]
+        self.atlas = atlas
+        self.sprites = {}
         self.size = (420,330)
         h = rig['height']
         self.scale = min(230/h, .58) if rig['prototype'] in ('humanoid','blob') else min(174/h,.48)
@@ -45,7 +46,14 @@ class Preview:
 
     def art(self, shot):
         layer = Image.new('RGBA',self.size)
-        for i,(slot,sprite) in enumerate(zip(self.rig['attachments'],self.sprites)):
+        for i,slot in enumerate(shot.get('attachments', self.rig['attachments'])):
+            if slot is None:
+                continue
+            rect = tuple(slot['rect'])
+            if rect not in self.sprites:
+                x,y,w,h = rect
+                self.sprites[rect] = self.atlas.crop((x,y,x+w,y+h))
+            sprite = self.sprites[rect]
             if slot.get('mesh'):
                 vertices=slot['mesh']['vertices']
                 points=[self.xy(*p) for p in shot['meshes'][i]]

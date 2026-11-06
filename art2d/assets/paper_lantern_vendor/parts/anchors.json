@@ -1,0 +1,401 @@
+{
+  "shoe_far": {
+    "uv": [
+      0.33683168316831663,
+      0.19705882352941143
+    ],
+    "pixels": [
+      34.02,
+      13.4
+    ],
+    "image": "paper_lantern_vendor_shoe_far_default.png",
+    "source_crop": [
+      1837,
+      587,
+      2026,
+      699
+    ],
+    "size": [
+      101,
+      68
+    ]
+  },
+  "shin_far": {
+    "uv": [
+      0.49731912425144864,
+      0.2239685967251545
+    ],
+    "pixels": [
+      35.31,
+      35.61
+    ],
+    "image": "paper_lantern_vendor_shin_far_default.png",
+    "source_crop": [
+      1837,
+      416,
+      2026,
+      597
+    ],
+    "size": [
+      71,
+      159
+    ]
+  },
+  "thigh_far": {
+    "uv": [
+      0.5218444972619716,
+      0.18611830504397453
+    ],
+    "pixels": [
+      50.62,
+      35.92
+    ],
+    "image": "paper_lantern_vendor_thigh_far_default.png",
+    "source_crop": [
+      1435,
+      416,
+      1624,
+      683
+    ],
+    "size": [
+      97,
+      193
+    ]
+  },
+  "shoe_near": {
+    "uv": [
+      0.3427999999999997,
+      0.19289855072463688
+    ],
+    "pixels": [
+      34.28,
+      13.31
+    ],
+    "image": "paper_lantern_vendor_shoe_near_default.png",
+    "source_crop": [
+      1636,
+      586,
+      1825,
+      699
+    ],
+    "size": [
+      100,
+      69
+    ]
+  },
+  "shin_near": {
+    "uv": [
+      0.5000572540936676,
+      0.22696663400315908
+    ],
+    "pixels": [
+      35.5,
+      35.86
+    ],
+    "image": "paper_lantern_vendor_shin_near_default.png",
+    "source_crop": [
+      1636,
+      416,
+      1825,
+      596
+    ],
+    "size": [
+      71,
+      158
+    ]
+  },
+  "thigh_near": {
+    "uv": [
+      0.5049454942747621,
+      0.1831960862669824
+    ],
+    "pixels": [
+      48.47,
+      35.36
+    ],
+    "image": "paper_lantern_vendor_thigh_near_default.png",
+    "source_crop": [
+      1234,
+      416,
+      1423,
+      683
+    ],
+    "size": [
+      96,
+      193
+    ]
+  },
+  "upper_far": {
+    "uv": [
+      0.49393686742989756,
+      0.1819564980042314
+    ],
+    "pixels": [
+      39.51,
+      35.12
+    ],
+    "image": "paper_lantern_vendor_upper_far_default.png",
+    "source_crop": [
+      1841,
+      12,
+      2015,
+      279
+    ],
+    "size": [
+      80,
+      193
+    ]
+  },
+  "sleeve_far": {
+    "uv": [
+      0.376068376068375,
+      0.23069568191519427
+    ],
+    "pixels": [
+      35.35,
+      35.53
+    ],
+    "image": "paper_lantern_vendor_sleeve_far_default.png",
+    "source_crop": [
+      1048,
+      416,
+      1222,
+      593
+    ],
+    "size": [
+      94,
+      154
+    ]
+  },
+  "hand_far": {
+    "uv": [
+      0.45098039215686275,
+      0.24074074074074073
+    ],
+    "pixels": [
+      23.0,
+      13.0
+    ],
+    "image": "paper_lantern_vendor_hand_far_default.png",
+    "source_crop": [
+      1048,
+      584,
+      1222,
+      683
+    ],
+    "size": [
+      51,
+      54
+    ]
+  },
+  "held_object": {
+    "uv": [
+      0.5,
+      0.8181818181818182
+    ],
+    "pixels": [
+      20.0,
+      180.0
+    ],
+    "image": "paper_lantern_vendor_held_object_default.png",
+    "source_crop": [
+      2038,
+      416,
+      2078,
+      636
+    ],
+    "size": [
+      40,
+      220
+    ]
+  },
+  "upper_near": {
+    "uv": [
+      0.500437803332406,
+      0.18429043862140193
+    ],
+    "pixels": [
+      40.04,
+      35.57
+    ],
+    "image": "paper_lantern_vendor_upper_near_default.png",
+    "source_crop": [
+      1655,
+      12,
+      1829,
+      279
+    ],
+    "size": [
+      80,
+      193
+    ]
+  },
+  "sleeve_near": {
+    "uv": [
+      0.5814298619176649,
+      0.27988792908762417
+    ],
+    "pixels": [
+      48.84,
+      35.83
+    ],
+    "image": "paper_lantern_vendor_sleeve_near_default.png",
+    "source_crop": [
+      2027,
+      12,
+      2201,
+      163
+    ],
+    "size": [
+      84,
+      128
+    ]
+  },
+  "hand_near": {
+    "uv": [
+      0.4918032786885246,
+      0.11538461538461539
+    ],
+    "pixels": [
+      30.0,
+      9.0
+    ],
+    "image": "paper_lantern_vendor_hand_near_default.png",
+    "source_crop": [
+      2027,
+      156,
+      2201,
+      279
+    ],
+    "size": [
+      61,
+      78
+    ]
+  },
+  "hand_open": {
+    "uv": [
+      0.4336563717054627,
+      0.9400157853196521
+    ],
+    "pixels": [
+      26.45,
+      71.44
+    ],
+    "image": "paper_lantern_vendor_hand_open_default.png",
+    "source_crop": [
+      1048,
+      711,
+      1109,
+      787
+    ],
+    "size": [
+      61,
+      76
+    ]
+  },
+  "torso_shell": {
+    "uv": [
+      0.49929913092234335,
+      0.7612737127371275
+    ],
+    "pixels": [
+      115.84,
+      228.38
+    ],
+    "image": "paper_lantern_vendor_torso_shell_default.png",
+    "source_crop": [
+      1048,
+      12,
+      1376,
+      404
+    ],
+    "size": [
+      232,
+      300
+    ]
+  },
+  "collar_front": {
+    "uv": [
+      0.3854674796747986,
+      0.23269611074489122
+    ],
+    "pixels": [
+      30.84,
+      8.61
+    ],
+    "image": "paper_lantern_vendor_collar_front_default.png",
+    "source_crop": [
+      1048,
+      12,
+      1376,
+      404
+    ],
+    "size": [
+      80,
+      37
+    ]
+  },
+  "head_relaxed": {
+    "uv": [
+      0.49948263118994873,
+      0.8282371604203848
+    ],
+    "pixels": [
+      82.41,
+      169.79
+    ],
+    "image": "paper_lantern_vendor_head_relaxed_default.png",
+    "source_crop": [
+      1388,
+      12,
+      1643,
+      285
+    ],
+    "size": [
+      165,
+      205
+    ]
+  },
+  "head_distress": {
+    "uv": [
+      0.49571009092240254,
+      0.8273951857165629
+    ],
+    "pixels": [
+      80.8,
+      168.79
+    ],
+    "image": "paper_lantern_vendor_head_distress_default.png",
+    "source_crop": [
+      2090,
+      416,
+      2253,
+      620
+    ],
+    "size": [
+      163,
+      204
+    ]
+  },
+  "rescue_ink": {
+    "uv": [
+      0.5,
+      0.5
+    ],
+    "pixels": [
+      125.0,
+      128.0
+    ],
+    "image": "paper_lantern_vendor_rescue_ink_default.png",
+    "source_crop": [
+      1121,
+      711,
+      1377,
+      967
+    ],
+    "size": [
+      250,
+      256
+    ]
+  }
+}

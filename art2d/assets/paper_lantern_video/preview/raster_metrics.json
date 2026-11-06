@@ -1,0 +1,42 @@
+{
+  "idle": {
+    "frames": 72,
+    "max_below_ground": 0.0,
+    "terminal_below_ground": 0.0
+  },
+  "walk": {
+    "frames": 42,
+    "max_below_ground": 0.0,
+    "terminal_below_ground": 0.0
+  },
+  "peek": {
+    "frames": 85,
+    "max_below_ground": 0.0,
+    "terminal_below_ground": 0.0
+  },
+  "startle": {
+    "frames": 55,
+    "max_below_ground": 0.0,
+    "terminal_below_ground": 0.0
+  },
+  "wave_for_help": {
+    "frames": 136,
+    "max_below_ground": 0.0,
+    "terminal_below_ground": 0.0
+  },
+  "struggle": {
+    "frames": 90,
+    "max_below_ground": 0.0,
+    "terminal_below_ground": 0.0
+  },
+  "rescued_bounce": {
+    "frames": 67,
+    "max_below_ground": 0.0,
+    "terminal_below_ground": 0.0
+  },
+  "thank": {
+    "frames": 79,
+    "max_below_ground": 0.0,
+    "terminal_below_ground": 0.0
+  }
+}

@@ -3,6 +3,7 @@ import {join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {makeRig} from '../rig/bind.mjs';
 import {makeClips} from '../anim/clips.mjs';
+import {makeKeyedClips} from '../anim/keyed.mjs';
 import {world} from '../rig/runtime.mjs';
 
 export const root=fileURLToPath(new URL('../../',import.meta.url));
@@ -17,7 +18,7 @@ export function build(id, only) {
   const anchors=read(join(dir,'parts','anchors.json'));
   const atlas=read(join(dir,'export','atlas.json'));
   const rig=makeRig(spec,anchors,atlas);
-  const clips=makeClips(rig,spec,only);
+  const clips=spec.animation ? makeKeyedClips(rig,spec,only) : makeClips(rig,spec,only);
   for (const name of ['rig','anim','export','preview','qa']) mkdirSync(join(dir,name),{recursive:true});
   const support=rig.legs.map(l=>({id:'sole_'+l.suffix,bone:l.chain[2],point:l.sole}));
   save(join(dir,'rig','rig_meta.json'),{coordinate_system:{y:'up',unit:'pixel',angle:'deg_ccw'},bind_pose:world(rig),character_height:rig.height,ground_y:rig.ground,support});
