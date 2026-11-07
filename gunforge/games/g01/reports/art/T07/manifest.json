@@ -8,11 +8,11 @@
   "outputs": [
     {
       "file": "gunforge/games/g01/reports/art/T07/report.md",
-      "sha256": "61c5d3eb51ea9391fddf9a4587be58b8cbee28611159810a6f5f12aa1b3a0597"
+      "sha256": "eae75e9a38790de1e4d820dda46b6f099b8ede6f36eeaff7e56cb293995a55ce"
     },
     {
       "file": "gunforge/games/g01/reports/art/T07/review.yaml",
-      "sha256": "bb545212e8d5da2661f7accdabe36a8ebb7f51995307e5371a4cfd8c3d079cc8"
+      "sha256": "46c04377c378173e18dc792442423de54887590a406fd5d3b88c54a909bb7cfd"
     },
     {
       "file": "gunforge/games/g01/reports/art/T07/checks.json",
@@ -20,7 +20,7 @@
     },
     {
       "file": "gunforge/games/g01/reports/art/T07/gallery/index.html",
-      "sha256": "41967aebbea7cd82df6db69c0f73cc8479c534347dc03c56074d9b1c08ee52c3"
+      "sha256": "099aa78e38c107e694facb8e572089b1e3e1c101fc869575c3f4b1773c4ce385"
     },
     {
       "file": "gunforge/games/g01/reports/art/T07/revisions/A2l/user_feedback.yaml",

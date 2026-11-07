@@ -1,0 +1,153 @@
+{
+  "id": "g01_ink_crow",
+  "kind": "enemy",
+  "human": false,
+  "asset_canvas": [
+    1024,
+    1024
+  ],
+  "origin": [
+    512,
+    512
+  ],
+  "files": {
+    "body": {
+      "file": "body.png",
+      "crop_origin": [
+        62,
+        154
+      ],
+      "size": [
+        917,
+        753
+      ]
+    },
+    "core": {
+      "file": "core.png",
+      "crop_origin": [
+        116,
+        198
+      ],
+      "size": [
+        821,
+        675
+      ]
+    },
+    "core_hardened": {
+      "file": "core_hardened.png",
+      "crop_origin": [
+        487,
+        437
+      ],
+      "size": [
+        224,
+        56
+      ]
+    },
+    "sdf": {
+      "file": "sdf.png",
+      "crop_origin": [
+        62,
+        154
+      ],
+      "size": [
+        917,
+        753
+      ],
+      "source_color": false,
+      "midpoint": 128,
+      "distance_range": 32
+    }
+  },
+  "core_center": [
+    598.5847071203086,
+    465.25382906582485
+  ],
+  "source_registration": {
+    "original_size": [
+      1254,
+      1254
+    ],
+    "scale": 0.7386363636363636,
+    "center": [
+      598,
+      598
+    ]
+  },
+  "display": {
+    "minimum": 200,
+    "maximum": 360,
+    "measure": "longest_extent"
+  },
+  "material": {
+    "gloss": "brighter_than_T03_restrained_wet",
+    "cinnabar": "flat_stamp",
+    "highlight_area_max": 0.05,
+    "highlight_Yprime_max": 0.6
+  },
+  "shader_parameters": {
+    "wobble_amplitude": 2.0,
+    "edge_bleed": 1.5,
+    "dissolve_noise_scale": 16,
+    "warning_pulse_hz": 1.5,
+    "hardened_saturation": 0.15
+  },
+  "approval": "pending_A2",
+  "feedback_v2": {
+    "provider": "offline_procedural_preview",
+    "clips": {
+      "hit": 2.0,
+      "weak_hit": 2.2,
+      "purify": 2.6
+    },
+    "hit_stop_seconds": 0.08,
+    "hit_recoil_pixels": [
+      6,
+      9
+    ],
+    "impact": "local warm paper rays and black ink droplets; no full-screen white flash",
+    "dissolve": "distance-field erode plus bounded deterministic noise; stamp masked by visible ink",
+    "target_during_purification": false,
+    "engine_validation": "pending",
+    "human_targets": false
+  },
+  "feedback_v3": {
+    "provider": "offline_procedural_preview",
+    "clips": {
+      "hit": 2.0,
+      "weak_hit": 2.2,
+      "purify": 2.6
+    },
+    "hit_stop_seconds": {
+      "normal": 0.1,
+      "stamp": 0.16
+    },
+    "hit_recoil_pixels": [
+      20,
+      32
+    ],
+    "impact": "fixed-origin local impact star, incoming strike cue, expanding ring, larger paper rays and ink droplets; no full-screen flash",
+    "dissolve": "distance-field erode plus bounded deterministic noise; stamp masked by visible ink",
+    "target_during_purification": false,
+    "engine_validation": "pending",
+    "human_targets": false
+  },
+  "hardened_eye_material": {
+    "version": "g01-crow-hardened-eyes-1",
+    "approved_date": "2026-11-05",
+    "applies_to": [
+      "g01_ink_crow"
+    ],
+    "state": "hardened",
+    "eye_tint_rgb": [
+      217,
+      160,
+      102
+    ],
+    "alpha": "original eye attachment alpha preserved",
+    "normal_and_hit_feedback": "unchanged",
+    "engine_validation": "pending",
+    "source": "D:\\tvgun\\gunforge\\games\\g01\\reports\\art\\T07\\revisions\\A2f\\user_feedback.yaml",
+    "visual_approval": "approved_A2e"
+  }
+}

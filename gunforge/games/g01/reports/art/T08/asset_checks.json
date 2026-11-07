@@ -1,0 +1,583 @@
+{
+  "assets": [
+    {
+      "file": "ink_on_lamp/cover_00.png",
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            256,
+            256
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 1.0
+        },
+        "diagnostic_only": true
+      },
+      "alpha": {
+        "transparent_pixels": 31450,
+        "visible_pixels": 32852,
+        "matte_review": "black/white contact sheet; no known matte color"
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "和",
+          "confidence": 25,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      }
+    },
+    {
+      "file": "ink_on_lamp/cover_01.png",
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            256,
+            256
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9998334074933377
+        },
+        "diagnostic_only": true
+      },
+      "alpha": {
+        "transparent_pixels": 39191,
+        "visible_pixels": 24193,
+        "matte_review": "black/white contact sheet; no known matte color"
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "&",
+          "confidence": 30,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      }
+    },
+    {
+      "file": "ink_on_lamp/cover_02.png",
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            256,
+            256
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9960185413584756
+        },
+        "diagnostic_only": true
+      },
+      "alpha": {
+        "transparent_pixels": 30786,
+        "visible_pixels": 33528,
+        "matte_review": "black/white contact sheet; no known matte color"
+      },
+      "C05": {
+        "status": "fail",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "&",
+          "confidence": 79,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      }
+    },
+    {
+      "file": "ui/ammo_light.png",
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            64,
+            96
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.8920880384871694
+        },
+        "diagnostic_only": true
+      },
+      "alpha": {
+        "transparent_pixels": 2525,
+        "visible_pixels": 3488,
+        "matte_review": "black/white contact sheet; no known matte color"
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "0",
+          "confidence": 58,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      }
+    },
+    {
+      "file": "ui/ammo_light_empty.png",
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            64,
+            96
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9359692084386954
+        },
+        "diagnostic_only": true
+      },
+      "alpha": {
+        "transparent_pixels": 2525,
+        "visible_pixels": 3488,
+        "matte_review": "black/white contact sheet; no known matte color"
+      },
+      "C05": {
+        "status": "fail",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "[]",
+          "confidence": 78,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      }
+    },
+    {
+      "file": "ui/continue_panel.png",
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            960,
+            640
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9814599111333958
+        },
+        "diagnostic_only": true
+      },
+      "alpha": {
+        "transparent_pixels": 10,
+        "visible_pixels": 611388,
+        "matte_review": "black/white contact sheet; no known matte color"
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "=ls||日|目EL|",
+          "confidence": 59,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      }
+    },
+    {
+      "file": "ui/crosshair.png",
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            80,
+            80
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 1.0
+        },
+        "diagnostic_only": true
+      },
+      "alpha": {
+        "transparent_pixels": 4858,
+        "visible_pixels": 870,
+        "matte_review": "black/white contact sheet; no known matte color"
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "»",
+          "confidence": 0,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      }
+    },
+    {
+      "file": "ui/life_wick.png",
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            72,
+            128
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.8725870400060485
+        },
+        "diagnostic_only": true
+      },
+      "alpha": {
+        "transparent_pixels": 5215,
+        "visible_pixels": 3602,
+        "matte_review": "black/white contact sheet; no known matte color"
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "由",
+          "confidence": 14,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      }
+    },
+    {
+      "file": "ui/life_wick_empty.png",
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            72,
+            128
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9713313335127094
+        },
+        "diagnostic_only": true
+      },
+      "alpha": {
+        "transparent_pixels": 5215,
+        "visible_pixels": 3602,
+        "matte_review": "black/white contact sheet; no known matte color"
+      },
+      "C05": {
+        "status": "pass",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "",
+          "confidence": 0,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      }
+    },
+    {
+      "file": "ui/prompt_bar.png",
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            1200,
+            144
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9631201172751238
+        },
+        "diagnostic_only": true
+      },
+      "alpha": {
+        "transparent_pixels": 0,
+        "visible_pixels": 170963,
+        "matte_review": "black/white contact sheet; no known matte color"
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "RAAasdRr",
+          "confidence": 13,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      }
+    },
+    {
+      "file": "ui/score_seal.png",
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            224,
+            224
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9946936044458488
+        },
+        "diagnostic_only": true
+      },
+      "alpha": {
+        "transparent_pixels": 32642,
+        "visible_pixels": 15133,
+        "matte_review": "black/white contact sheet; no known matte color"
+      },
+      "C05": {
+        "status": "pass",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "",
+          "confidence": 0,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      }
+    },
+    {
+      "file": "pickups/pickup_light.png",
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            256,
+            256
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9685594619649027
+        },
+        "diagnostic_only": true
+      },
+      "alpha": {
+        "transparent_pixels": 17352,
+        "visible_pixels": 47128,
+        "matte_review": "black/white contact sheet; no known matte color"
+      },
+      "C05": {
+        "status": "fail",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "O",
+          "confidence": 79,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      }
+    },
+    {
+      "file": "pickups/pickup_wick.png",
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            256,
+            256
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.4119060373724653
+        },
+        "diagnostic_only": true
+      },
+      "alpha": {
+        "transparent_pixels": 17650,
+        "visible_pixels": 46820,
+        "matte_review": "black/white contact sheet; no known matte color"
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "人",
+          "confidence": 44,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      }
+    }
+  ],
+  "C08_station_blockers": [
+    {
+      "layer": "near_left",
+      "status": "pass",
+      "different_pixels": 0
+    },
+    {
+      "layer": "near_right",
+      "status": "pass",
+      "different_pixels": 0
+    }
+  ],
+  "C16_crow_sdf": {
+    "status": "pass",
+    "reason": "Offline SDF round-trip; engine sampling is a separate pending check",
+    "details": {
+      "max_error_px": 0.0
+    }
+  },
+  "C14": "pending independent reviewer and calibration"
+}

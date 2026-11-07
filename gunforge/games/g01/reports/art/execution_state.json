@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "task_review": "completed_with_user_resolution",
   "user_resolution": "Offline previews may be reviewed; batch tasks wait for actual 0B acceptance",
   "T00": "in_progress_offline_core_verified_external_integrations_pending",
@@ -22,15 +22,15 @@
   "generation_mode": "builtin_image_gen",
   "requires_api_key": false,
   "current_blockers": [
-    "final_character_grip_and_A2_reviewer_decision",
-    "art2d_joint_scene_and_rescue_variants",
+    "art2d_additional_rescue_variants",
     "C04_C12_C14_calibration_shortfall",
     "GPU_engine_validation",
-    "actual_0B"
+    "actual_0B",
+    "grip_visual_scope_not_separately_confirmed"
   ],
   "unreported_generation_cost": null,
-  "builtin_image_calls": 101,
-  "next_task": "T07_final_grip_and_A2_offline_readiness_review",
+  "builtin_image_calls": 113,
+  "next_task": "first_station_engine_integration_and_actual_0B_preparation",
   "T03": "completed_A1b_direction_approved_with_followup",
   "A1_anchor_count": 12,
   "ink_direction": "moderated_gloss_custom",
@@ -47,10 +47,11 @@
     "T03": 10,
     "T04": 16,
     "T05": 27,
-    "T06": 9
+    "T06": 9,
+    "T08": 12
   },
-  "T07": "art2d_final_grip_and_A2_offline_readiness_review_pending",
-  "T08": "blocked_until_A2_reviewer_decision",
+  "T07": "A2_offline_work_authorized_grip_visual_pending",
+  "T08": "offline_sample_approved_assets_installed_engine_pending",
   "external_spent_cny": 0,
   "cost_status": "builtin_not_reported",
   "approved_visual_directions": [
@@ -61,7 +62,7 @@
     "ink_gloss",
     "enemy_hit_feedback_v3"
   ],
-  "task_status": "active_awaiting_T07_review",
+  "task_status": "active_engine_and_actual_0B_pending",
   "resumed": {
     "date": "2026-11-06",
     "source": "explicit_user_chat",

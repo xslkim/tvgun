@@ -1,0 +1,59 @@
+{
+  "stage": "A3_offline_review",
+  "station": "g01_st_l1_01_alley",
+  "new_image_calls": 12,
+  "review_approved": true,
+  "production_approved": false,
+  "actual_0B_approved": false,
+  "files": [
+    {
+      "file": "asset_pack/manifest.json",
+      "sha256": "4d6a2a4d97f7dcd53a79f0e99964e9573933ec20e8d91789ab2ae476bede5fc0"
+    },
+    {
+      "file": "gallery/index.html",
+      "sha256": "2ea7c7931b402f94b2a54bfdd4587b68a0939ef8c40e106edfb911b4de6a4808"
+    },
+    {
+      "file": "gallery/alley_sample.mp4",
+      "sha256": "8bc6674e5d5abbe867aa92f271f698632893d4548ab9c597dbfb67c9b1e7eaaa"
+    },
+    {
+      "file": "gallery/alley_overlay.mp4",
+      "sha256": "1ae6e5359a613394ac98675e5d41e1ced7ad4811f80eefd3b3d3ddc04395f576"
+    },
+    {
+      "file": "gallery/asset_sheet.jpg",
+      "sha256": "e50ea81cb55a2369cd6b712a0a3b742a666af3ac86bfdc22e68d3a12d99bf7c4"
+    },
+    {
+      "file": "report.md",
+      "sha256": "8086436d41a0ea9dd8c1d57b0cf08e690be4c1d938ecce53ec8026c3ccde690f"
+    },
+    {
+      "file": "checks.json",
+      "sha256": "6dc202dc77ba24978b02aac148148376477f3576e8293a63aa86f8284724c9e7"
+    },
+    {
+      "file": "asset_checks.json",
+      "sha256": "460e1fbb0853bdf12cb0e8cdd2ba6f7a4aa6766ed6a425e33460da2b1d053a02"
+    },
+    {
+      "file": "tracker_screening.json",
+      "sha256": "b371e97c0f7e58179683ea6cff27c27b78e452bf1c272ed54338b9d593ea9727"
+    },
+    {
+      "file": "memory.json",
+      "sha256": "50b87eb83249a7fb9c4f2885afb751931153af86eb8117e70049860f47a8c7b4"
+    },
+    {
+      "file": "review.yaml",
+      "sha256": "e6ee81dedea71281115fe9bf03db9083f5cbc457057985243f734aa07b455167"
+    },
+    {
+      "file": "calls.json",
+      "sha256": "b177cb1097dff8dcf9a0f4547463a63206f501008bba62b478543c425e57af0d"
+    }
+  ],
+  "approval_source": "explicit_user_chat_2026_11_07_T08_offline_sample"
+}

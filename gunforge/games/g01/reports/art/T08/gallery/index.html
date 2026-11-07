@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>纸灯城 A3 离线预审 · 夜市巷口</title>
+<style>
+  :root{color-scheme:dark}
+  body{margin:0;background:#151929;color:#f0e5d4;font:17px/1.65 system-ui,sans-serif}
+  main{width:min(960px,calc(100% - 40px));margin:0 auto;padding:30px 0 50px}
+  h1{font-size:clamp(1.75rem,5vw,2.65rem);margin:0 0 10px}
+  h2{font-size:1.2rem;margin:0 0 10px}
+  section,details{background:#252a3b;border-radius:12px;padding:18px 20px;margin:18px 0}
+  video,img{width:100%;display:block;border-radius:8px}
+  a{color:#acd8dd}
+  summary{cursor:pointer;font-weight:bold}
+  .kicker{color:#e1b578;letter-spacing:.12em;margin-bottom:4px;font-size:.92rem}
+  .links{display:flex;gap:14px;flex-wrap:wrap}
+</style>
+<main>
+  <header>
+    <p class="kicker">纸灯城 / T08 · A3 离线预审</p>
+    <h1>夜市巷口 · 首站样片</h1>
+    <p>先看 36 秒正片。重点看灯从墨遮到点亮、墨鸦和居民胸口的墨能否分清，以及获救和拾取的反馈。</p>
+  </header>
+  <section>
+    <h2>正常画面</h2>
+    <video src="alley_sample.mp4" poster="frame_058.jpg" controls playsinline preload="metadata"></video>
+    <p>约 00:05 点灯，00:10–00:13 墨鸦受击和净化，00:15 救人，00:19–00:22 拾取，00:32 转场。</p>
+  </section>
+  <details>
+    <summary>查看命中区与 HUD 保留范围</summary>
+    <p>红色描边是当前可射区域，绿色框标出受保护的居民，黄色框是 HUD 保留区域。居民身上只有胸口附墨可射。</p>
+    <video src="alley_overlay.mp4" poster="debug_029.jpg" controls playsinline preload="none"></video>
+  </details>
+  <details>
+    <summary>查看新增的灯罩墨形、HUD 和道具</summary>
+    <p>每件图在深色和浅色底上各放一次，方便检查边缘和可读性。</p>
+    <img src="asset_sheet.jpg" alt="三种灯罩墨形、界面图和两个道具的深浅背景对照" loading="lazy">
+  </details>
+  <section>
+    <h2>离线样片已通过</h2>
+    <p>2026-11-07 已收到「T08 离线样片通过」。首站素材已安装到项目资产目录，接下来进行引擎接入与真实 0B 验收准备。</p>
+    <p class="links"><a href="/report.md">复核报告</a><a href="/memory.json">显存估算</a><a href="/asset_pack/manifest.json">资产清单</a></p>
+    <p>引擎导入、GPU 实测、真实光枪 0B 五项验收另行完成。</p>
+  </section>
+</main>
+</html>

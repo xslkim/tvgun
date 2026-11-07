@@ -1,5 +1,5 @@
 stage: A2
-status: art2d_final_grip_and_A2_offline_readiness_review_pending
+status: A2_offline_work_authorized_grip_visual_pending
 source: explicit_user_chat
 items:
 - id: scene
@@ -74,11 +74,12 @@ items:
   status: pending
   scope: visual recheck of palm, prop and thumb occlusion for both grips
 - id: A2_offline_readiness
-  status: pending
+  status: approved
   scope: reviewer decision on T08 offline work with documented technical items still open
+  source: explicit_user_chat_2026_11_07_continue_task
 technical_acceptance: false
 actual_0B_approved: false
 feedback_history: revisions/A2b/user_feedback.yaml
 revision_report: report.md
 latest_feedback: revisions/A2m/user_feedback.yaml
-T08_started: false
+T08_started: true

@@ -2,5 +2,13 @@
   "schema_version": 1,
   "frozen": false,
   "assets": [],
-  "notes": "hud_layout.json is deterministic specification data; generated assets require human approval"
+  "notes": "hud_layout.json is deterministic specification data; generated assets require human approval",
+  "offline_candidates": [
+    {
+      "station": "g01_st_l1_01_alley",
+      "manifest": "stations/g01_st_l1_01_alley/manifest.json",
+      "status": "approved_offline_candidate",
+      "review": "../reports/art/T08/review.yaml"
+    }
+  ]
 }

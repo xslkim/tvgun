@@ -1,0 +1,384 @@
+{
+  "scope": "offline RGBA8 allocation estimate including exact mip chains; T08 does not provide a GPU upload implementation",
+  "original_full_textures_bytes": {
+    "station_original": 87178080,
+    "actors_and_objects": 19646236,
+    "effects_and_ui": 3497984
+  },
+  "assets": {
+    "station_original": [
+      {
+        "file": "station/layers/far_base.png",
+        "size": [
+          1936,
+          1036
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": true,
+        "base_bytes": 8022784,
+        "allocated_bytes": 10695972
+      },
+      {
+        "file": "station/layers/far_town.png",
+        "size": [
+          1751,
+          814
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": true,
+        "base_bytes": 5701256,
+        "allocated_bytes": 7597568
+      },
+      {
+        "file": "station/layers/mid_ground.png",
+        "size": [
+          1936,
+          875
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": true,
+        "base_bytes": 6776000,
+        "allocated_bytes": 9030260
+      },
+      {
+        "file": "station/layers/mid_left.png",
+        "size": [
+          1914,
+          933
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": true,
+        "base_bytes": 7143048,
+        "allocated_bytes": 9519856
+      },
+      {
+        "file": "station/layers/mid_right.png",
+        "size": [
+          1764,
+          904
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": true,
+        "base_bytes": 6378624,
+        "allocated_bytes": 8504148
+      },
+      {
+        "file": "station/layers/near_left.png",
+        "size": [
+          1454,
+          1036
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": true,
+        "base_bytes": 6025376,
+        "allocated_bytes": 8031844
+      },
+      {
+        "file": "station/layers/near_right.png",
+        "size": [
+          1547,
+          1036
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": true,
+        "base_bytes": 6410768,
+        "allocated_bytes": 8544672
+      },
+      {
+        "file": "station/layers/lamp.png",
+        "size": [
+          1023,
+          801
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": true,
+        "base_bytes": 3277692,
+        "allocated_bytes": 4366720
+      },
+      {
+        "file": "station/lights/streetlamp_spill.png",
+        "size": [
+          1920,
+          1020
+        ],
+        "mode": "L",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": true,
+        "base_bytes": 7833600,
+        "allocated_bytes": 10443520
+      },
+      {
+        "file": "station/lights/streetlamp_glow.png",
+        "size": [
+          1920,
+          1020
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": true,
+        "base_bytes": 7833600,
+        "allocated_bytes": 10443520
+      }
+    ],
+    "actors_and_objects": [
+      {
+        "file": "vendor/atlas.png",
+        "size": [
+          2041,
+          353
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": true,
+        "base_bytes": 2881892,
+        "allocated_bytes": 3839104
+      },
+      {
+        "file": "crow/alpha.png",
+        "size": [
+          917,
+          753
+        ],
+        "mode": "L",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": true,
+        "base_bytes": 2762004,
+        "allocated_bytes": 3679984
+      },
+      {
+        "file": "crow/body.png",
+        "size": [
+          917,
+          753
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": true,
+        "base_bytes": 2762004,
+        "allocated_bytes": 3679984
+      },
+      {
+        "file": "crow/core.png",
+        "size": [
+          821,
+          675
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": true,
+        "base_bytes": 2216700,
+        "allocated_bytes": 2952708
+      },
+      {
+        "file": "crow/core_hardened.png",
+        "size": [
+          224,
+          56
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": true,
+        "base_bytes": 50176,
+        "allocated_bytes": 66852
+      },
+      {
+        "file": "crow/sdf.png",
+        "size": [
+          917,
+          753
+        ],
+        "mode": "L",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": true,
+        "base_bytes": 2762004,
+        "allocated_bytes": 3679984
+      },
+      {
+        "file": "ink_on_lamp/cover_00.png",
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": true,
+        "base_bytes": 262144,
+        "allocated_bytes": 349524
+      },
+      {
+        "file": "ink_on_lamp/cover_01.png",
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": true,
+        "base_bytes": 262144,
+        "allocated_bytes": 349524
+      },
+      {
+        "file": "ink_on_lamp/cover_02.png",
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": true,
+        "base_bytes": 262144,
+        "allocated_bytes": 349524
+      },
+      {
+        "file": "pickups/pickup_light.png",
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": true,
+        "base_bytes": 262144,
+        "allocated_bytes": 349524
+      },
+      {
+        "file": "pickups/pickup_wick.png",
+        "size": [
+          256,
+          256
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": true,
+        "base_bytes": 262144,
+        "allocated_bytes": 349524
+      }
+    ],
+    "effects_and_ui": [
+      {
+        "file": "ui/ammo_light.png",
+        "size": [
+          64,
+          96
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": false,
+        "base_bytes": 24576,
+        "allocated_bytes": 24576
+      },
+      {
+        "file": "ui/ammo_light_empty.png",
+        "size": [
+          64,
+          96
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": false,
+        "base_bytes": 24576,
+        "allocated_bytes": 24576
+      },
+      {
+        "file": "ui/continue_panel.png",
+        "size": [
+          960,
+          640
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": false,
+        "base_bytes": 2457600,
+        "allocated_bytes": 2457600
+      },
+      {
+        "file": "ui/crosshair.png",
+        "size": [
+          80,
+          80
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": false,
+        "base_bytes": 25600,
+        "allocated_bytes": 25600
+      },
+      {
+        "file": "ui/life_wick.png",
+        "size": [
+          72,
+          128
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": false,
+        "base_bytes": 36864,
+        "allocated_bytes": 36864
+      },
+      {
+        "file": "ui/life_wick_empty.png",
+        "size": [
+          72,
+          128
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": false,
+        "base_bytes": 36864,
+        "allocated_bytes": 36864
+      },
+      {
+        "file": "ui/prompt_bar.png",
+        "size": [
+          1200,
+          144
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": false,
+        "base_bytes": 691200,
+        "allocated_bytes": 691200
+      },
+      {
+        "file": "ui/score_seal.png",
+        "size": [
+          224,
+          224
+        ],
+        "mode": "RGBA",
+        "assumed_gpu_bytes_per_pixel": 4,
+        "mipmaps": false,
+        "base_bytes": 200704,
+        "allocated_bytes": 200704
+      }
+    ]
+  },
+  "hybrid_station_candidate_bytes": 44536716,
+  "hybrid_total_candidate_bytes": 67680936,
+  "original_total_bytes": 110322300,
+  "transitional_placeholder_rgba8_bytes": 4,
+  "hybrid_transition_candidate_bytes": 67680940,
+  "second_real_station_peak": "pending",
+  "limits_bytes": {
+    "station": 48000000,
+    "actors": 32000000,
+    "effects_ui": 16000000,
+    "combined": 96000000,
+    "transition": 160000000
+  },
+  "excluded": [
+    "framebuffers",
+    "postprocessing",
+    "font cache",
+    "driver allocation overhead"
+  ],
+  "actual_GPU": "pending"
+}

@@ -1,0 +1,112 @@
+{
+  "content_size": [
+    1776,
+    936
+  ],
+  "edge_band": 60,
+  "reserved": {
+    "life": {
+      "rect": [
+        8,
+        832,
+        244,
+        96
+      ],
+      "when": "playing"
+    },
+    "ammo": {
+      "rect": [
+        1514,
+        848,
+        254,
+        80
+      ],
+      "when": "playing"
+    },
+    "score": {
+      "rect": [
+        1624,
+        8,
+        144,
+        144
+      ],
+      "when": "playing"
+    },
+    "prompt": {
+      "rect": [
+        572,
+        8,
+        632,
+        104
+      ],
+      "when": "playing"
+    },
+    "subtitle": {
+      "rect": [
+        288,
+        776,
+        1200,
+        136
+      ],
+      "when": "cutscene_or_wave_gap"
+    }
+  },
+  "elements": [
+    {
+      "id": "life",
+      "pos": [
+        24,
+        848
+      ],
+      "size": [
+        212,
+        64
+      ],
+      "count": 5,
+      "cell": [
+        36,
+        64
+      ],
+      "gap": 8
+    },
+    {
+      "id": "ammo",
+      "pos": [
+        1530,
+        864
+      ],
+      "size": [
+        222,
+        48
+      ],
+      "count": 6,
+      "cell": [
+        32,
+        48
+      ],
+      "gap": 6
+    },
+    {
+      "id": "score",
+      "pos": [
+        1640,
+        24
+      ],
+      "size": [
+        112,
+        112
+      ]
+    },
+    {
+      "id": "prompt",
+      "pos": [
+        588,
+        24
+      ],
+      "size": [
+        600,
+        72
+      ]
+    }
+  ]
+}

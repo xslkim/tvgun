@@ -1,0 +1,26 @@
+stage: A3_offline_pre_review
+station: g01_st_l1_01_alley
+status: approved_offline_sample
+entry_decision:
+  date: 2026-11-07
+  source: explicit_user_chat
+  feedback: "继续任务"
+  scope: T08 offline production and review
+offline_sample_decision:
+  date: 2026-11-07
+  source: explicit_user_chat
+  feedback: "T08 离线样片通过"
+  sample_sha256: 8bc6674e5d5abbe867aa92f271f698632893d4548ab9c597dbfb67c9b1e7eaaa
+  pack_manifest_sha256: 4d6a2a4d97f7dcd53a79f0e99964e9573933ec20e8d91789ab2ae476bede5fc0
+items:
+  - id: sample_readability_and_feedback
+    status: approved
+  - id: new_station_assets
+    status: approved_for_offline_integration
+    scope: Candidate assets assembled in the reviewed T08 sample
+  - id: art2d_vendor_grip_visual_recheck
+    status: pending
+engine_acceptance: false
+actual_0B_approved: false
+production_approved: false
+T09_started: false

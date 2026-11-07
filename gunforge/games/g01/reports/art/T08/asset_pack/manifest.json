@@ -1,0 +1,254 @@
+{
+  "station": "g01_st_l1_01_alley",
+  "status": "A3_offline_review_candidate",
+  "resident_source": "f90d2b5",
+  "role": "human_hostage_or_NPC_only",
+  "targets": [
+    "streetlamp_shade",
+    "visible_chest_ink",
+    "crow",
+    "pickups"
+  ],
+  "files": [
+    {
+      "file": "crow/alpha.png",
+      "sha256": "3ae62bff7ae5d5372141335293f783ad288400c779de8e34272e09786c5c7e5b"
+    },
+    {
+      "file": "crow/body.png",
+      "sha256": "16c91f1f8a3e47071e1f44422525fd4d3d0ebdc1d0798205d6683a8efcd6bab3"
+    },
+    {
+      "file": "crow/core.png",
+      "sha256": "f5a343c49980c0c17a75e1ce0b5aad19097fff815f429a129fb14178c9ed367f"
+    },
+    {
+      "file": "crow/core_hardened.png",
+      "sha256": "717db7d9221019d3819bbc386532e9204386562f410141a0f3b7b2d05626f5ab"
+    },
+    {
+      "file": "crow/enemy.json",
+      "sha256": "b7ac2d2fb86b8b2bc105e268e75c0eeb1c8ee0e2af3f1af66b84de74719e6ca8"
+    },
+    {
+      "file": "crow/sdf.png",
+      "sha256": "2d0f22e2b4b3240e7087f582249529e864e14d0b5a229f78fbb0c6e8638ea72a"
+    },
+    {
+      "file": "geometry_baseline/baseline.json",
+      "sha256": "5c3ef9d4ae62c8548e02da098b9e986b69c8c22367758b21041d1b2bc8ffbe3f"
+    },
+    {
+      "file": "geometry_baseline/far_base.png",
+      "sha256": "3778a33cc1a4ed008ffe255dc55513d735f7503255dd51b6ca080a03c46ce0de"
+    },
+    {
+      "file": "geometry_baseline/far_town.png",
+      "sha256": "bc9f51bada1b94f634916a1887447ce7237cbadf6f3f415f1c35216d8695df72"
+    },
+    {
+      "file": "geometry_baseline/mid_ground.png",
+      "sha256": "c031549bc4fba2150dbc2c2b1ffdadfcdcc2974e9362b24eeb2ca8d2d8664423"
+    },
+    {
+      "file": "geometry_baseline/mid_left.png",
+      "sha256": "9cb6f38053dcbbaa171fbc6065c9d0483b375a00a02e2413ac560f26e211dac2"
+    },
+    {
+      "file": "geometry_baseline/mid_right.png",
+      "sha256": "117b37a5626a7d0a0d671e95d30d6d20914b1b7c8510b8fa36ee6a50b0af9348"
+    },
+    {
+      "file": "geometry_baseline/near_left.png",
+      "sha256": "89c9621c8be8680cfd71ab8ea7e78a2fdd7743b6025600335d849f1cfb541d87"
+    },
+    {
+      "file": "geometry_baseline/near_right.png",
+      "sha256": "7f86c1783c660836bb52ac89733767305840640539af4d1a6489d24f528ce4e1"
+    },
+    {
+      "file": "ink_on_lamp/cover_00.png",
+      "sha256": "25342590e0b1df9fd086879135fc69dc34b29733efe8d615a7bb26e84e533617"
+    },
+    {
+      "file": "ink_on_lamp/cover_01.png",
+      "sha256": "b131d3bbea372cc9178693f44126fde5742bddb0633102d8425ccbc4efa017da"
+    },
+    {
+      "file": "ink_on_lamp/cover_02.png",
+      "sha256": "851f7561695dd13bad65ba91d11e786c8a796657a9fe579ebd3ed0329c7c5017"
+    },
+    {
+      "file": "pickups/pickup_light.png",
+      "sha256": "0a8e330b17c2142fad77b33ceb79bfa4fbd2f2ffe98b23318b52ca3849aab224"
+    },
+    {
+      "file": "pickups/pickup_wick.png",
+      "sha256": "961a0b0a17178ec8002cf0e8092346a853f388f7e807bf83b7184796c241087d"
+    },
+    {
+      "file": "station/layers/far_base.png",
+      "sha256": "4cc72d09a41438c157f8dbe191d242a227ad5899e2704b3a0512257d899ecbd1"
+    },
+    {
+      "file": "station/layers/far_base_extent.png",
+      "sha256": "3778a33cc1a4ed008ffe255dc55513d735f7503255dd51b6ca080a03c46ce0de"
+    },
+    {
+      "file": "station/layers/far_town.png",
+      "sha256": "c39f2889978cd4ac5a0a7f6104d0ee3cd13051f00eb27cf00e9f448a5e87c6a2"
+    },
+    {
+      "file": "station/layers/far_town_extent.png",
+      "sha256": "bc9f51bada1b94f634916a1887447ce7237cbadf6f3f415f1c35216d8695df72"
+    },
+    {
+      "file": "station/layers/lamp.png",
+      "sha256": "0514fd473f51cf52ba2db6bcc61501038e3b166048fc2f166ecfb89838550ad2"
+    },
+    {
+      "file": "station/layers/mid_ground.png",
+      "sha256": "28309aa86a77ec7b9aae3352567d815ffbb0478a481925679f16f75e588e52f0"
+    },
+    {
+      "file": "station/layers/mid_ground_extent.png",
+      "sha256": "c031549bc4fba2150dbc2c2b1ffdadfcdcc2974e9362b24eeb2ca8d2d8664423"
+    },
+    {
+      "file": "station/layers/mid_left.png",
+      "sha256": "4e0229adfaa06f321b00cd64ee0dc6f7a64adeb32f88dc9cd27b2296e8cc891d"
+    },
+    {
+      "file": "station/layers/mid_left_extent.png",
+      "sha256": "9cb6f38053dcbbaa171fbc6065c9d0483b375a00a02e2413ac560f26e211dac2"
+    },
+    {
+      "file": "station/layers/mid_right.png",
+      "sha256": "8bf460a1a8fd0210db98a8290d55f551f11330ac818430b1de7641835fe6eb04"
+    },
+    {
+      "file": "station/layers/mid_right_extent.png",
+      "sha256": "117b37a5626a7d0a0d671e95d30d6d20914b1b7c8510b8fa36ee6a50b0af9348"
+    },
+    {
+      "file": "station/layers/near_left.png",
+      "sha256": "15c8ec3c5481aef819e43f13a765c9a46b984f3de6fec8ba34b2fe01c7695a97"
+    },
+    {
+      "file": "station/layers/near_left_block.png",
+      "sha256": "89c9621c8be8680cfd71ab8ea7e78a2fdd7743b6025600335d849f1cfb541d87"
+    },
+    {
+      "file": "station/layers/near_left_extent.png",
+      "sha256": "89c9621c8be8680cfd71ab8ea7e78a2fdd7743b6025600335d849f1cfb541d87"
+    },
+    {
+      "file": "station/layers/near_right.png",
+      "sha256": "b2059f584a1dfc64e04f4b546f6f5c23d446af150d9641e080e800cbb656f722"
+    },
+    {
+      "file": "station/layers/near_right_block.png",
+      "sha256": "7f86c1783c660836bb52ac89733767305840640539af4d1a6489d24f528ce4e1"
+    },
+    {
+      "file": "station/layers/near_right_extent.png",
+      "sha256": "7f86c1783c660836bb52ac89733767305840640539af4d1a6489d24f528ce4e1"
+    },
+    {
+      "file": "station/lights/streetlamp_glow.png",
+      "sha256": "47820e2867f996235c8b0fef5146b7d61ddbfa1adc3dfca384eda027e556862d"
+    },
+    {
+      "file": "station/lights/streetlamp_spill.png",
+      "sha256": "ebfc488337373193eb556116e0d29da39cbc5dfc975b304a86b54369b26b8a66"
+    },
+    {
+      "file": "station/station.json",
+      "sha256": "84a16d7cc7c0c4064d4ceadfc6fed73dc6dbdd2e9d8eeeb8575e190aba24aa78"
+    },
+    {
+      "file": "ui/ammo_light.png",
+      "sha256": "61740b504ab80fe5ea6eb9d16264ea4150c9dbe29d7ca390431f6ce5decad34f"
+    },
+    {
+      "file": "ui/ammo_light_empty.png",
+      "sha256": "3470364608d541a39162cb3e209d8e8fd55dbe8ec713146bb3aabf351c9d9d91"
+    },
+    {
+      "file": "ui/continue_panel.png",
+      "sha256": "a55bb427484495aa8a6419928d3a8c9b9925efa1cc6fd4089db2769246d973ac"
+    },
+    {
+      "file": "ui/crosshair.png",
+      "sha256": "35b94ec1696f351a9140ed74698e8eb2f36e99ffd4e0925029eb02fb4babe062"
+    },
+    {
+      "file": "ui/hud_layout.json",
+      "sha256": "88f41256ca9c42adc84f9ad8f0ebac6f162632149e42289f55326edcc8dd213b"
+    },
+    {
+      "file": "ui/life_wick.png",
+      "sha256": "b85cfbc77aa2bf181c15b3e7985d80fb305a55798a1cfc29c7a7d0c433fa32d6"
+    },
+    {
+      "file": "ui/life_wick_empty.png",
+      "sha256": "afc1c4f5a081c589c08583c6d7b6458286109238206e4b11744c6c1100c83dad"
+    },
+    {
+      "file": "ui/prompt_bar.png",
+      "sha256": "b2bfaae7674caa258e8eb0830cfb977d5d7d3ac08f087a36a6dcfda07f6de91a"
+    },
+    {
+      "file": "ui/score_seal.png",
+      "sha256": "1228966731fc17c810b84d086b8fa2952036c2bfd27c40aaf74b3c54876c8164"
+    },
+    {
+      "file": "ui/ui.json",
+      "sha256": "a8cdbc544f1bd79154d835126fe1b1b856a5a2546ab287443d7120811ef1f6c1"
+    },
+    {
+      "file": "vendor/atlas.json",
+      "sha256": "c530d24fc52ad4ba71f90f5559115d1c65c48889a696018084435ffefc44a910"
+    },
+    {
+      "file": "vendor/atlas.png",
+      "sha256": "79e6c494fd659130d4c4a6825be438747a26f5250a0bdf303fd6813d41a7a851"
+    },
+    {
+      "file": "vendor/character.json",
+      "sha256": "b68c5c4016f5157d7f61f8777d89c0b1b126ba3de9f55f993e0daeb2c514264e"
+    },
+    {
+      "file": "vendor/clips/idle.json",
+      "sha256": "bd7b8dd7d1fdb54ccc5bfdc7d1f0d3d0340236ac38409528b9f17c88d794c428"
+    },
+    {
+      "file": "vendor/clips/peek.json",
+      "sha256": "625f6b404551926cbdf21a68b2992fbe32626591a640d7f8b2cf1385fc072cf1"
+    },
+    {
+      "file": "vendor/clips/rescued_bounce.json",
+      "sha256": "582cc3760d66fd52fd2cbc152fe7fe5b9d01ff7c6be8742fa9fcec775c0c717b"
+    },
+    {
+      "file": "vendor/clips/startle.json",
+      "sha256": "e27f19a94e618d6d2651afb15ad4e0f76daaaa11bba86ec9814df94ca005a61a"
+    },
+    {
+      "file": "vendor/clips/struggle.json",
+      "sha256": "73af0002fd0b5a211fd60452361a4b107cb2b09f6f33ae2f3805e036e4304cea"
+    },
+    {
+      "file": "vendor/clips/thank.json",
+      "sha256": "887ae88db994eb8a8a86382a5253d4115a0cd5a532cdca55ba282d77414c87f2"
+    },
+    {
+      "file": "vendor/clips/walk.json",
+      "sha256": "1dcd16c30ecd822699a991e11ee3feac28be1d5f135225bef1b9bcb00e9bc104"
+    },
+    {
+      "file": "vendor/clips/wave_for_help.json",
+      "sha256": "2b60abbab446f7fd44374899534fe70fe85fa23630d6f5fb5403408c3418a51f"
+    }
+  ]
+}

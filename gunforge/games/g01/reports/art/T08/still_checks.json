@@ -1,0 +1,545 @@
+{
+  "scope": "deterministic CPU preview in content coordinates, scripted impacts; full engine and gun pending",
+  "frames": 14,
+  "fps": 15,
+  "duration": 36,
+  "target_summary": {
+    "lamp": {
+      "frames": 3,
+      "minimum_effective_radius": 76.896
+    },
+    "chest_ink": {
+      "frames": 6,
+      "minimum_effective_radius": 48.122
+    },
+    "crow": {
+      "frames": 5,
+      "minimum_effective_radius": 76.665
+    },
+    "light": {
+      "frames": 1,
+      "minimum_effective_radius": 53.553
+    },
+    "wick": {
+      "frames": 1,
+      "minimum_effective_radius": 53.39
+    }
+  },
+  "target_failures": 0,
+  "max_prelimit_overbright_fraction": 0.003593737968737969,
+  "crow_slots": {
+    "minimum_background": 0.31008627450980386,
+    "minimum_normal_contrast": 0.3133529411764706,
+    "minimum_hardened_eye_contrast": 0.5392392156862745,
+    "minimum_hardened_eye_width": 21,
+    "readability_failures": 0
+  },
+  "rows": [
+    {
+      "t": 2.9,
+      "camera": [
+        54.66027824142436,
+        19.22874417037401
+      ],
+      "breath": [
+        -4.122740602667441,
+        -3.878981212821371
+      ],
+      "light": 0,
+      "cover": 0,
+      "target_overlap": [],
+      "targets": [
+        {
+          "id": "lamp",
+          "bbox": [
+            1222,
+            380,
+            1422,
+            496
+          ],
+          "effective_radius": 76.896,
+          "edge_clear": true,
+          "hud_clear": true,
+          "human_clear": true
+        },
+        {
+          "id": "chest_ink",
+          "bbox": [
+            667,
+            511,
+            764,
+            611
+          ],
+          "effective_radius": 48.138,
+          "edge_clear": true,
+          "hud_clear": true,
+          "human_clear": true
+        },
+        {
+          "id": "crow",
+          "bbox": [
+            977,
+            270,
+            1202,
+            449
+          ],
+          "effective_radius": 76.665,
+          "edge_clear": true,
+          "hud_clear": true,
+          "human_clear": true
+        }
+      ],
+      "weak_outside": 0,
+      "crow_readability": {
+        "state": "warning",
+        "exposure": 0.0,
+        "background": 0.38241176470588234,
+        "body_contrast": 0.24757647058823531,
+        "eyes": null
+      },
+      "prelimit_overbright_fraction": 0.0003501097251097251
+    },
+    {
+      "t": 5.8,
+      "camera": [
+        -12.131807142316331,
+        -26.99720497101181
+      ],
+      "breath": [
+        7.066247648358195,
+        -1.893865405716907
+      ],
+      "light": 1,
+      "cover": 0,
+      "target_overlap": [],
+      "targets": [
+        {
+          "id": "chest_ink",
+          "bbox": [
+            691,
+            531,
+            789,
+            631
+          ],
+          "effective_radius": 48.175,
+          "edge_clear": true,
+          "hud_clear": true,
+          "human_clear": true
+        },
+        {
+          "id": "crow",
+          "bbox": [
+            1028,
+            310,
+            1253,
+            489
+          ],
+          "effective_radius": 76.665,
+          "edge_clear": true,
+          "hud_clear": true,
+          "human_clear": true
+        }
+      ],
+      "weak_outside": 0,
+      "crow_readability": {
+        "state": "hardened",
+        "exposure": 0.0,
+        "background": 0.38241176470588234,
+        "body_contrast": 0.26455294117647066,
+        "eyes": {
+          "minimum_width": 21,
+          "contrast": 0.5392392156862745
+        }
+      },
+      "prelimit_overbright_fraction": 0.0026210104335104337
+    },
+    {
+      "t": 6.8,
+      "camera": [
+        -39.5467173762849,
+        -18.895908168333435
+      ],
+      "breath": [
+        5.67594092504079,
+        -3.2263841467977548
+      ],
+      "light": 1,
+      "cover": 0,
+      "target_overlap": [],
+      "targets": [
+        {
+          "id": "chest_ink",
+          "bbox": [
+            701,
+            532,
+            798,
+            631
+          ],
+          "effective_radius": 48.122,
+          "edge_clear": true,
+          "hud_clear": true,
+          "human_clear": true
+        },
+        {
+          "id": "crow",
+          "bbox": [
+            1174,
+            418,
+            1399,
+            597
+          ],
+          "effective_radius": 76.665,
+          "edge_clear": true,
+          "hud_clear": true,
+          "human_clear": true
+        }
+      ],
+      "weak_outside": 0,
+      "crow_readability": {
+        "state": "hardened",
+        "exposure": 0.20392156862745098,
+        "background": 0.31008627450980386,
+        "body_contrast": 0.19833333333333333,
+        "eyes": {
+          "minimum_width": 21,
+          "contrast": 0.5392392156862745
+        }
+      },
+      "prelimit_overbright_fraction": 0.002196908446908447
+    },
+    {
+      "t": 8,
+      "camera": [
+        -54.85595839339513,
+        5.279755907714694
+      ],
+      "breath": [
+        -5.366014837086695,
+        3.5892265239948298
+      ],
+      "light": 1,
+      "cover": 0,
+      "target_overlap": [],
+      "targets": [
+        {
+          "id": "chest_ink",
+          "bbox": [
+            715,
+            517,
+            813,
+            617
+          ],
+          "effective_radius": 48.168,
+          "edge_clear": true,
+          "hud_clear": true,
+          "human_clear": true
+        },
+        {
+          "id": "crow",
+          "bbox": [
+            1238,
+            468,
+            1463,
+            647
+          ],
+          "effective_radius": 76.665,
+          "edge_clear": true,
+          "hud_clear": true,
+          "human_clear": true
+        }
+      ],
+      "weak_outside": 0,
+      "crow_readability": {
+        "state": "normal",
+        "exposure": 0.4588235294117647,
+        "background": 0.4165450980392157,
+        "body_contrast": 0.3133529411764706,
+        "eyes": null
+      },
+      "prelimit_overbright_fraction": 0.0019316191191191192
+    },
+    {
+      "t": 10,
+      "camera": [
+        -25.553119867756656,
+        26.18702489281732
+      ],
+      "breath": [
+        1.0658563313595377,
+        -3.9362600203265736
+      ],
+      "light": 1,
+      "cover": 0,
+      "target_overlap": [],
+      "targets": [
+        {
+          "id": "chest_ink",
+          "bbox": [
+            699,
+            512,
+            797,
+            612
+          ],
+          "effective_radius": 48.128,
+          "edge_clear": true,
+          "hud_clear": true,
+          "human_clear": true
+        },
+        {
+          "id": "crow",
+          "bbox": [
+            1224,
+            467,
+            1454,
+            643
+          ],
+          "effective_radius": 77.007,
+          "edge_clear": true,
+          "hud_clear": true,
+          "human_clear": true
+        }
+      ],
+      "weak_outside": 0,
+      "crow_readability": {
+        "state": "normal",
+        "exposure": 0.5176470588235295,
+        "background": 0.4165450980392157,
+        "body_contrast": 0.3135647058823529,
+        "eyes": null
+      },
+      "prelimit_overbright_fraction": 0.002245635058135058
+    },
+    {
+      "t": 13.4,
+      "camera": [
+        54.81527631675243,
+        -26.729867382672964
+      ],
+      "breath": [
+        -7.729555378571813,
+        -3.189303335964915
+      ],
+      "light": 1,
+      "cover": 0,
+      "target_overlap": [],
+      "targets": [
+        {
+          "id": "chest_ink",
+          "bbox": [
+            673,
+            536,
+            770,
+            636
+          ],
+          "effective_radius": 48.171,
+          "edge_clear": true,
+          "hud_clear": true,
+          "human_clear": true
+        }
+      ],
+      "weak_outside": 0,
+      "crow_readability": null,
+      "prelimit_overbright_fraction": 0.0026192057442057442
+    },
+    {
+      "t": 15.3,
+      "camera": [
+        28.784266572913893,
+        -4.6575920133362185
+      ],
+      "breath": [
+        4.3938502612337,
+        3.4297287232638998
+      ],
+      "light": 1,
+      "cover": 0,
+      "target_overlap": [],
+      "targets": [],
+      "weak_outside": 0,
+      "crow_readability": null,
+      "prelimit_overbright_fraction": 0.002663721413721414
+    },
+    {
+      "t": 18.2,
+      "camera": [
+        -49.77130999263895,
+        22.210119971137114
+      ],
+      "breath": [
+        -7.210712776558776,
+        -1.1588503602197142
+      ],
+      "light": 1,
+      "cover": 0,
+      "target_overlap": [],
+      "targets": [
+        {
+          "id": "light",
+          "bbox": [
+            1028,
+            616,
+            1135,
+            724
+          ],
+          "effective_radius": 53.553,
+          "edge_clear": true,
+          "hud_clear": true,
+          "human_clear": true
+        }
+      ],
+      "weak_outside": 0,
+      "crow_readability": null,
+      "prelimit_overbright_fraction": 0.0028273465773465773
+    },
+    {
+      "t": 21.3,
+      "camera": [
+        -11.592781532867978,
+        -26.991042479596537
+      ],
+      "breath": [
+        7.521918477905867,
+        -3.827575311404541
+      ],
+      "light": 1,
+      "cover": 0,
+      "target_overlap": [],
+      "targets": [
+        {
+          "id": "wick",
+          "bbox": [
+            1144,
+            649,
+            1250,
+            757
+          ],
+          "effective_radius": 53.39,
+          "edge_clear": true,
+          "hud_clear": true,
+          "human_clear": true
+        }
+      ],
+      "weak_outside": 0,
+      "crow_readability": null,
+      "prelimit_overbright_fraction": 0.002649283899283899
+    },
+    {
+      "t": 24.4,
+      "camera": [
+        54.99394957098067,
+        21.390033655090665
+      ],
+      "breath": [
+        -3.3198815984915293,
+        -3.0913376943090385
+      ],
+      "light": 0,
+      "cover": 1,
+      "target_overlap": [],
+      "targets": [
+        {
+          "id": "lamp",
+          "bbox": [
+            1221,
+            378,
+            1421,
+            494
+          ],
+          "effective_radius": 76.896,
+          "edge_clear": true,
+          "hud_clear": true,
+          "human_clear": true
+        }
+      ],
+      "weak_outside": 0,
+      "crow_readability": null,
+      "prelimit_overbright_fraction": 0.0003633441133441133
+    },
+    {
+      "t": 26.4,
+      "camera": [
+        21.213340673212684,
+        15.404255180289175
+      ],
+      "breath": [
+        6.856410878327288,
+        3.669927177730799
+      ],
+      "light": 0,
+      "cover": 2,
+      "target_overlap": [],
+      "targets": [
+        {
+          "id": "lamp",
+          "bbox": [
+            1235,
+            378,
+            1435,
+            494
+          ],
+          "effective_radius": 76.896,
+          "edge_clear": true,
+          "hud_clear": true,
+          "human_clear": true
+        }
+      ],
+      "weak_outside": 0,
+      "crow_readability": null,
+      "prelimit_overbright_fraction": 0.0003621409871409871
+    },
+    {
+      "t": 30.8,
+      "camera": [
+        -45.84686205892669,
+        -4.959688635866232
+      ],
+      "breath": [
+        7.90543598946789,
+        2.6944184875949313
+      ],
+      "light": 1,
+      "cover": 2,
+      "target_overlap": [],
+      "targets": [],
+      "weak_outside": 0,
+      "crow_readability": null,
+      "prelimit_overbright_fraction": 0.003593737968737969
+    },
+    {
+      "t": 32.7,
+      "camera": [
+        6.38996095443238,
+        26.369474561946816
+      ],
+      "breath": [
+        -5.08177337542347,
+        -2.3619661506801637
+      ],
+      "light": 1,
+      "cover": 2,
+      "target_overlap": [],
+      "targets": [],
+      "weak_outside": 0,
+      "crow_readability": null,
+      "prelimit_overbright_fraction": 0.0
+    },
+    {
+      "t": 35.5,
+      "camera": [
+        54.210436498005734,
+        -12.483987733614281
+      ],
+      "breath": [
+        7.139440843353475,
+        -3.3973724845162847
+      ],
+      "light": 1,
+      "cover": 2,
+      "target_overlap": [],
+      "targets": [],
+      "weak_outside": 0,
+      "crow_readability": null,
+      "prelimit_overbright_fraction": 0.0005967505967505968
+    }
+  ]
+}

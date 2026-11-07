@@ -1,4 +1,4 @@
-"""Serve only T02 review artifacts on the local loopback interface."""
+"""Serve art review artifacts on the local loopback interface."""
 import argparse
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import mimetypes
@@ -23,6 +23,10 @@ def artifact(path, task='T02'):
     }
     for name in ('report.md', 'checks.json', 'manifest.json', 'review.yaml', 'contact_sheet.jpg'):
         fixed['/' + name] = report / name
+    if task == 'T08':
+        for name in ('memory.json', 'asset_checks.json', 'calls.json'):
+            fixed['/' + name] = report / name
+        fixed['/asset_pack/manifest.json'] = report / 'asset_pack/manifest.json'
     if path in fixed:
         return fixed[path]
     if path.startswith('/gallery/'):
@@ -77,7 +81,7 @@ class Handler(BaseHTTPRequestHandler):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--port', type=int, default=8765)
-    parser.add_argument('--task', choices=['T02','T03','T07'], default='T02')
+    parser.add_argument('--task', choices=['T02','T03','T07','T08'], default='T02')
     args = parser.parse_args()
     server = ThreadingHTTPServer(('127.0.0.1', args.port), Handler)
     server.task = args.task

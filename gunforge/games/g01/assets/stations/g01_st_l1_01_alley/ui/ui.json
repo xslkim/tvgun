@@ -1,0 +1,54 @@
+{
+  "layout": "hud_layout.json",
+  "source_sizes": {
+    "life_wick": [
+      72,
+      128
+    ],
+    "ammo_light": [
+      64,
+      96
+    ],
+    "score_seal": [
+      224,
+      224
+    ],
+    "prompt_bar": [
+      1200,
+      144
+    ],
+    "crosshair": [
+      80,
+      80
+    ],
+    "continue_panel": [
+      960,
+      640
+    ]
+  },
+  "mipmaps": false,
+  "continue_panel": {
+    "size": [
+      960,
+      640
+    ],
+    "slice_insets_ltrb": [
+      88,
+      88,
+      88,
+      88
+    ]
+  },
+  "crosshair": {
+    "display_size": [
+      40,
+      40
+    ],
+    "center": [
+      0.5,
+      0.5
+    ],
+    "opacity": 0.7
+  },
+  "text_is_rendered_separately": true
+}
