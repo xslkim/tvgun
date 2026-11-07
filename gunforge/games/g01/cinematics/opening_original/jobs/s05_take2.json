@@ -1,0 +1,20 @@
+{
+  "shot": "s05_take2",
+  "status": "collected",
+  "prompt_id": "63d0463d-2d36-4d63-b1fa-83a6c46b8d31",
+  "model": "MiniMax H3 local int8",
+  "seed": 2026120705,
+  "media_origin": "newly_generated_this_run",
+  "started_unix": 1794023921.7757416,
+  "output": "/mnt/d/tvgun/gunforge/games/g01/cinematics/opening_original/sources/s05_take2.mp4",
+  "sha256": "94f4df1d325cfae31ad9006579d8edc277aab9884285237e51134efbe1c5ec64",
+  "metadata": {
+    "kind": "video",
+    "width": 1152,
+    "height": 640,
+    "duration": 6.583333333333333,
+    "fps": 24.0,
+    "frame_count": 158
+  },
+  "finished_unix": 1794024461.898142
+}

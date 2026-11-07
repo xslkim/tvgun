@@ -1,0 +1,201 @@
+{
+  "original_media_only": true,
+  "external_media_inputs": [],
+  "files": [
+    {
+      "path": "keyframes/cassette.png",
+      "bytes": 2864670,
+      "sha256": "db4acb2d56d146d95b5cfbacceee9284c8ae10ba1563414fa2b50e76e9dae8a8"
+    },
+    {
+      "path": "keyframes/city.png",
+      "bytes": 2824366,
+      "sha256": "3750880e2719418c1928b147975051dc88fb10e293d0ceceb37daf3241b12c84"
+    },
+    {
+      "path": "keyframes/crow.png",
+      "bytes": 1947555,
+      "sha256": "b37b5c636c7963e4d495b086332c917e6117f046617977f0b4d7534bff644db6"
+    },
+    {
+      "path": "keyframes/macro.png",
+      "bytes": 2533686,
+      "sha256": "f56b0343f5925002620b176ffb7be1a6965be93400a8464ea1b72bf057820c22"
+    },
+    {
+      "path": "keyframes/spill_end.png",
+      "bytes": 2324075,
+      "sha256": "59dc9e78b3c869fbef2397a66f31425b776aa6653f11757f093a3677dc70f26e"
+    },
+    {
+      "path": "keyframes/title.png",
+      "bytes": 911166,
+      "sha256": "d1678769cb7c5a8f60858381c9e28b22160744220c246d4d7c188ac3ef277f59"
+    },
+    {
+      "path": "keyframes/workbench.png",
+      "bytes": 2692522,
+      "sha256": "2e6a51e501b7258584038c2f4b5107a13cf09e77b270f8275c70418377a3f82a"
+    },
+    {
+      "path": "keyframes/workbench_lit.png",
+      "bytes": 2146490,
+      "sha256": "4901f61b170f03e441108da91518374baf283201c52046e65f59a933f380e9eb"
+    },
+    {
+      "path": "sources/s02.mp4",
+      "bytes": 1724792,
+      "sha256": "30efd6509dd29e97cdfd723eab5bde15ae3fa40b4dd02dc31fcc031f4199a3bb"
+    },
+    {
+      "path": "sources/s02_take2.mp4",
+      "bytes": 4712113,
+      "sha256": "5947869e187e1700e4cfaa8362eba7a686663ff01ed60f92561cb2aa8aa0881f"
+    },
+    {
+      "path": "sources/s04.mp4",
+      "bytes": 3278332,
+      "sha256": "72ec219cb29c1591c52c1435119e08bbf46dbf7216a464ea4c7df416bb32f231"
+    },
+    {
+      "path": "sources/s04_take2.mp4",
+      "bytes": 2724501,
+      "sha256": "d4eec0653c60540b5482236963deb61b5b1e24e2d1a258d6c13daabfce6c44eb"
+    },
+    {
+      "path": "sources/s05.mp4",
+      "bytes": 1730872,
+      "sha256": "4fe02829ed993a9d63a21134ea55ba696e467e334c07e1e0088df72c2d0a2762"
+    },
+    {
+      "path": "sources/s05_take2.mp4",
+      "bytes": 5525990,
+      "sha256": "94f4df1d325cfae31ad9006579d8edc277aab9884285237e51134efbe1c5ec64"
+    },
+    {
+      "path": "sources/s06.mp4",
+      "bytes": 4124339,
+      "sha256": "9a8d3604c7513322533c3e36e5808e63689323a10b0bb076967f9091d2835c58"
+    },
+    {
+      "path": "sources/s06_take2.mp4",
+      "bytes": 1945796,
+      "sha256": "a64c0384c3cb5c49b05bc5e853c794029e78bdd9410ea9f89edd498f2d8dc514"
+    },
+    {
+      "path": "sources/s07.mp4",
+      "bytes": 3915179,
+      "sha256": "bea075819b44ae57837c363560f00c45931d06fc4be2a6d2707f4c60bc5472be"
+    },
+    {
+      "path": "sources/s07_take2.mp4",
+      "bytes": 3071331,
+      "sha256": "4996e1a2a49f78a9e654697b1d575891f99acbace32be5a712bd973ec210b3a3"
+    },
+    {
+      "path": "sources/s08.mp4",
+      "bytes": 2346803,
+      "sha256": "0c36ba72542c88bfd323c09768ae15602ac18c47d937a13d7f2438f6f7c191b6"
+    },
+    {
+      "path": "sources/s09.mp4",
+      "bytes": 2084184,
+      "sha256": "26428bd69c591f909cdc8e44341b64f61da58c040d95ff40a4b164b03f0db4ae"
+    },
+    {
+      "path": "audio/foley_original.wav",
+      "bytes": 17280044,
+      "sha256": "ff7d05e5544dc8eb67c5a1b58690f3e3764d8a1857aedcd869d5c606f84cd71e"
+    },
+    {
+      "path": "audio/grandpa_original_design.wav",
+      "bytes": 814124,
+      "sha256": "ee1fce5044fe53944280f65ba76bd28496a5dcb46a417e36191b7ba3403f9b24"
+    },
+    {
+      "path": "audio/music_original.wav",
+      "bytes": 17280044,
+      "sha256": "a16f3064cf3253a07f520decabc19902bd6d9b5c18581d9e1a854a3de21f2529"
+    },
+    {
+      "path": "audio/narration_tape.wav",
+      "bytes": 17280044,
+      "sha256": "c6c063ad8af7cb179f7d2290493a947cbaa990fae7eeeaa3a116cbaaa5f42f8c"
+    },
+    {
+      "path": "audio/opening_mix.wav",
+      "bytes": 17280078,
+      "sha256": "598ad27ea6466da15f67bd4dc95f5f3cb30c864dda4b726ff4e73c64fa2bb0cf"
+    },
+    {
+      "path": "audio/voice_01.wav",
+      "bytes": 460844,
+      "sha256": "e7f69bd966d1154a3bbcddac10fdf0436c8b04092b810d2bcaf4f07b1279f410"
+    },
+    {
+      "path": "audio/voice_02.wav",
+      "bytes": 506924,
+      "sha256": "3fece1225a3d39ed1a5ea3fe9f9eb188689e6c142803a8e2fbf974ca8342a07c"
+    },
+    {
+      "path": "audio/voice_03.wav",
+      "bytes": 460844,
+      "sha256": "1e79330ced4c458beaf6edd4eb7a0eca9da2d4daab672adff9365ead26d80848"
+    },
+    {
+      "path": "audio/voice_04.wav",
+      "bytes": 337964,
+      "sha256": "1af5cd8cacedb119c13cc195259672445266b3c1c45e1716bdf20e277141b5aa"
+    },
+    {
+      "path": "audio/voice_05.wav",
+      "bytes": 368684,
+      "sha256": "fd4cea60d02c9bfd171e95f80c0373384d5fe8b997719251751531007663ffe5"
+    },
+    {
+      "path": "audio/voice_06.wav",
+      "bytes": 414764,
+      "sha256": "3e5608aa75036143f12477ded100b3035f4e7b80cb9572c0dd2902c6f955ce89"
+    },
+    {
+      "path": "audio/voice_07.wav",
+      "bytes": 430124,
+      "sha256": "67a60bdbb527df3210880b39d152e1c414c11970a2dfd31eb3cc8af549530a17"
+    },
+    {
+      "path": "audio/voice_08.wav",
+      "bytes": 460844,
+      "sha256": "17baf0c3ed563219a4f26b7d567e6b15185f5ef669b6421ea23a79438e3d4e83"
+    },
+    {
+      "path": "audio/voice_09.wav",
+      "bytes": 491564,
+      "sha256": "71a2d08fcfaea33d809e65067c5a40f8b5e65b351a06137537d1601c419b250e"
+    },
+    {
+      "path": "opening_zh.srt",
+      "bytes": 1063,
+      "sha256": "1255fa3ddb58eddb911cf897e531cd80d2fceb7582ca3d03fce29849b4aada96"
+    },
+    {
+      "path": "opening_subtitles.json",
+      "bytes": 1475,
+      "sha256": "40d773ca9e4b8d3138c2ef689e68a0859422633ab689e62693ee13724f82084f"
+    },
+    {
+      "path": "paper_lantern_city_opening.mp4",
+      "bytes": 65319977,
+      "sha256": "b41b1a553a62d53f092ab67b6addc863fe75a8a554269a6353ac3872ade17d80"
+    },
+    {
+      "path": "paper_lantern_city_opening_clean.mp4",
+      "bytes": 79281549,
+      "sha256": "7e184680313c839eeccc9403698a93a7ce2560ba4a4270ef1449dfe3fbaec75e"
+    },
+    {
+      "path": "paper_lantern_city_opening_game.ogv",
+      "bytes": 36035430,
+      "sha256": "59b804a9d967dac75322779ecda51309cf588c6940db0ff42f143e7837bda281"
+    }
+  ]
+}

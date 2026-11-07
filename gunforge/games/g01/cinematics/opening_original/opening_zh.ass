@@ -1,0 +1,26 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Narration,Noto Serif SC,40,&H00D6C4B8,&H00D6C4B8,&H661A1414,&H661A1414,0,0,0,0,100,100,1,0,3,12,0,2,100,100,92,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:02.00,0:00:05.05,Narration,,0,0,0,,{\fad(100,120)}听见了吗？下雨的时候，
+Dialogue: 0,0:00:05.05,0:00:07.55,Narration,,0,0,0,,{\fad(100,120)}老城就是这个声儿。
+Dialogue: 0,0:00:10.00,0:00:12.91,Narration,,0,0,0,,{\fad(100,120)}从前啊，夜市一开灯，
+Dialogue: 0,0:00:12.91,0:00:16.11,Narration,,0,0,0,,{\fad(100,120)}谁家的窗户都舍不得关。
+Dialogue: 0,0:00:19.00,0:00:22.70,Narration,,0,0,0,,{\fad(100,120)}后来，街拆了。我就一层一层，
+Dialogue: 0,0:00:22.70,0:00:24.55,Narration,,0,0,0,,{\fad(100,120)}把它刻在纸里。
+Dialogue: 0,0:00:29.00,0:00:33.07,Narration,,0,0,0,,{\fad(100,120)}这张纸呀，最怕沾上墨水。
+Dialogue: 0,0:00:36.00,0:00:40.44,Narration,,0,0,0,,{\fad(100,120)}一小滴，也能把一条街的模样，慢慢盖住。
+Dialogue: 0,0:00:44.50,0:00:49.50,Narration,,0,0,0,,{\fad(100,120)}可灯一亮，你听，它们又热闹起来了。
+Dialogue: 0,0:00:55.00,0:00:57.03,Narration,,0,0,0,,{\fad(100,120)}卖汽水的，修车的，
+Dialogue: 0,0:00:57.03,0:01:00.18,Narration,,0,0,0,,{\fad(100,120)}还有总不肯早早回家的小麻雀。
+Dialogue: 0,0:01:05.50,0:01:11.06,Narration,,0,0,0,,{\fad(100,120)}要是哪天，你看见城里暗了一块，别怕。
+Dialogue: 0,0:01:14.00,0:01:18.50,Narration,,0,0,0,,{\fad(100,120)}把光照过去。记着，照走的是墨，留下的，
+Dialogue: 0,0:01:18.50,0:01:19.93,Narration,,0,0,0,,{\fad(100,120)}是咱们的城。

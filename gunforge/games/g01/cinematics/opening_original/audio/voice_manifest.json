@@ -1,0 +1,71 @@
+{
+  "model": "VoxCPM2 local",
+  "origin": "new fictional voice designed from text this run; no preexisting reference audio",
+  "style": "七十五岁的中国北方老爷爷，温和自然，略低沉、略沙哑、有一点气息，像坐在家里轻声给孙辈讲旧事；慢而连贯，有回忆的笑意，句末轻轻放下，不煽情，不播音，不朗诵。普通话。",
+  "reference_text": "听见了吗？下雨的时候，老城就是这个声儿。从前啊，夜市一开灯，谁家的窗户都舍不得关。",
+  "lines": [
+    {
+      "start": 2.0,
+      "end": 8.5,
+      "text": "听见了吗？下雨的时候，老城就是这个声儿。",
+      "file": "voice_01.wav",
+      "raw_duration": 4.8
+    },
+    {
+      "start": 10.0,
+      "end": 17.2,
+      "text": "从前啊，夜市一开灯，谁家的窗户都舍不得关。",
+      "file": "voice_02.wav",
+      "raw_duration": 5.28
+    },
+    {
+      "start": 19.0,
+      "end": 26.3,
+      "text": "后来，街拆了。我就一层一层，把它刻在纸里。",
+      "file": "voice_03.wav",
+      "raw_duration": 4.8
+    },
+    {
+      "start": 29.0,
+      "end": 34.5,
+      "text": "这张纸呀，最怕沾上墨水。",
+      "file": "voice_04.wav",
+      "raw_duration": 3.52
+    },
+    {
+      "start": 36.0,
+      "end": 42.1,
+      "text": "一小滴，也能把一条街的模样，慢慢盖住。",
+      "file": "voice_05.wav",
+      "raw_duration": 3.84
+    },
+    {
+      "start": 44.5,
+      "end": 51.5,
+      "text": "可灯一亮，你听，它们又热闹起来了。",
+      "file": "voice_06.wav",
+      "raw_duration": 4.32
+    },
+    {
+      "start": 55.0,
+      "end": 62.8,
+      "text": "卖汽水的，修车的，还有总不肯早早回家的小麻雀。",
+      "file": "voice_07.wav",
+      "raw_duration": 4.48
+    },
+    {
+      "start": 65.5,
+      "end": 71.8,
+      "text": "要是哪天，你看见城里暗了一块，别怕。",
+      "file": "voice_08.wav",
+      "raw_duration": 4.8
+    },
+    {
+      "start": 74.0,
+      "end": 82.6,
+      "text": "把光照过去。记着，照走的是墨，留下的，是咱们的城。",
+      "file": "voice_09.wav",
+      "raw_duration": 5.12
+    }
+  ]
+}

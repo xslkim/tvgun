@@ -1,0 +1,20 @@
+{
+  "shot": "s04",
+  "status": "collected",
+  "prompt_id": "5f2b3579-7f46-408c-9279-5640c1b90ef8",
+  "model": "MiniMax H3 local int8",
+  "seed": 2026110704,
+  "media_origin": "newly_generated_this_run",
+  "started_unix": 1794023308.5611463,
+  "output": "/mnt/d/tvgun/gunforge/games/g01/cinematics/opening_original/sources/s04.mp4",
+  "sha256": "72ec219cb29c1591c52c1435119e08bbf46dbf7216a464ea4c7df416bb32f231",
+  "metadata": {
+    "kind": "video",
+    "width": 1152,
+    "height": 640,
+    "duration": 6.583333333333333,
+    "fps": 24.0,
+    "frame_count": 158
+  },
+  "finished_unix": 1794023428.6318686
+}

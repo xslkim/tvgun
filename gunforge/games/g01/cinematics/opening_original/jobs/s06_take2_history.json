@@ -1,0 +1,270 @@
+{
+  "prompt": [
+    121,
+    "e1e55249-5e0d-45c8-a080-40bf6d2575f1",
+    {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "LoraLoaderModelOnly",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "lora_name": "minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
+          "strength_model": 1.0
+        }
+      },
+      "3": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+          "type": "minimax",
+          "device": "default"
+        }
+      },
+      "4": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "minimax_h3_video_vae_int8_convrot.safetensors"
+        }
+      },
+      "5": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+        }
+      },
+      "6": {
+        "class_type": "MiniMaxH3ImageToVideo",
+        "inputs": {
+          "clip": [
+            "3",
+            0
+          ],
+          "vae": [
+            "4",
+            0
+          ],
+          "prompt": "Original cinematic for Paper Lantern City. A handcrafted flat cut-paper diorama with\nfine visible paper fibers, clean cuts, twelve separated flat layers, slight offset cast shadows,\ndark indigo foreground silhouettes, warmer translucent distant paper. Restrained indigo #141A33,\npurple #2A1E3D, apricot #D9A066, dusty pink #C97B84 and teal #4E9A92. Ordinary 1990s China,\nsquare apartment buildings, roller shutters, cassette recorder, bicycle, folding tables.\nNo photographic realism, plastic, 3D bevels, ancient Chinese architecture, ancient costumes,\nwhite highlights, white flashes, text, lettering, watermark, graphic overlays or borders.\nKeep exposure stable. Slow deliberate movement. No dialogue, narration, singing or music;\nonly the specifically described quiet Foley. Preserve flat paper texture throughout.\n固定机位，夜晚工作台。只让右侧纸雕灯内的暖杏背光从暗到微亮，按末帧的克制亮度逐层透出。灯内建筑和纸层的形状不变，不能变成白天或日出。窗外一直是相同的深靛青雨夜，不允许有太阳、月亮或新物件。砚台保持已经倾倒的姿态，墨迹保持原位，桌面、椅子和录音机完全不动。不要推镜，不要切镜，不要重建场景。微小电流声、雨声，无人声、无音乐。",
+          "width": 1152,
+          "height": 640,
+          "length": 158,
+          "first_frame": [
+            "16",
+            0
+          ],
+          "last_frame": [
+            "17",
+            0
+          ]
+        }
+      },
+      "7": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 2026120706
+        }
+      },
+      "8": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "res_multistep"
+        }
+      },
+      "9": {
+        "class_type": "BasicScheduler",
+        "inputs": {
+          "model": [
+            "2",
+            0
+          ],
+          "scheduler": "simple",
+          "steps": 8,
+          "denoise": 1.0
+        }
+      },
+      "10": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "model": [
+            "2",
+            0
+          ],
+          "conditioning": [
+            "6",
+            0
+          ]
+        }
+      },
+      "11": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "noise": [
+            "7",
+            0
+          ],
+          "guider": [
+            "10",
+            0
+          ],
+          "sampler": [
+            "8",
+            0
+          ],
+          "sigmas": [
+            "9",
+            0
+          ],
+          "latent_image": [
+            "6",
+            1
+          ]
+        }
+      },
+      "12": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "11",
+            0
+          ],
+          "vae": [
+            "4",
+            0
+          ]
+        }
+      },
+      "13": {
+        "class_type": "VAEDecodeAudio",
+        "inputs": {
+          "samples": [
+            "11",
+            0
+          ],
+          "vae": [
+            "5",
+            0
+          ]
+        }
+      },
+      "14": {
+        "class_type": "CreateVideo",
+        "inputs": {
+          "images": [
+            "12",
+            0
+          ],
+          "audio": [
+            "13",
+            0
+          ],
+          "fps": 24.0
+        }
+      },
+      "15": {
+        "class_type": "SaveVideo",
+        "inputs": {
+          "video": [
+            "14",
+            0
+          ],
+          "filename_prefix": "g01_original_20261107/s06_take2",
+          "format": "auto",
+          "codec": "auto"
+        }
+      },
+      "16": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "g01_original_20261107/spill_end.png"
+        }
+      },
+      "17": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "g01_original_20261107/workbench_lit.png"
+        }
+      }
+    },
+    {
+      "client_id": "paper-lantern-original-20261107",
+      "create_time": 1794023803982
+    },
+    [
+      "15"
+    ]
+  ],
+  "outputs": {
+    "15": {
+      "images": [
+        {
+          "filename": "s06_take2_00001_.mp4",
+          "subfolder": "g01_original_20261107",
+          "type": "output",
+          "metadata": {
+            "kind": "video",
+            "width": 1152,
+            "height": 640,
+            "duration": 6.583333333333333,
+            "fps": 24.0,
+            "frame_count": 158
+          }
+        }
+      ],
+      "animated": [
+        true
+      ]
+    }
+  },
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "e1e55249-5e0d-45c8-a080-40bf6d2575f1",
+          "timestamp": 1794024142569
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "8",
+            "9"
+          ],
+          "prompt_id": "e1e55249-5e0d-45c8-a080-40bf6d2575f1",
+          "timestamp": 1794024142573
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "e1e55249-5e0d-45c8-a080-40bf6d2575f1",
+          "timestamp": 1794024252671
+        }
+      ]
+    ]
+  },
+  "meta": {
+    "15": {
+      "node_id": "15",
+      "display_node": "15",
+      "parent_node": null,
+      "real_node_id": "15"
+    }
+  }
+}
