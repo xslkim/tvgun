@@ -1,0 +1,119 @@
+{
+  "duration": "90.000000",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": "30/1",
+  "video_frames": 2700,
+  "audio_codec": "aac",
+  "caption_events": 14,
+  "samples": [
+    {
+      "shot": "s01",
+      "time": 5.22,
+      "mean_Yprime": 0.2178700885530138,
+      "max_Yprime": 0.7636941176470587,
+      "over_75_fraction": 2.0736882716049384e-05
+    },
+    {
+      "shot": "s02",
+      "time": 14.219999999999999,
+      "mean_Yprime": 0.40348941467146276,
+      "max_Yprime": 0.7813137254901962,
+      "over_75_fraction": 0.00013020833333333333
+    },
+    {
+      "shot": "s03",
+      "time": 23.22,
+      "mean_Yprime": 0.34460281661522635,
+      "max_Yprime": 0.7727725490196078,
+      "over_75_fraction": 2.8935185185185186e-05
+    },
+    {
+      "shot": "s04",
+      "time": 31.64,
+      "mean_Yprime": 0.19324347895107113,
+      "max_Yprime": 0.7721803921568626,
+      "over_75_fraction": 4.1956018518518515e-05
+    },
+    {
+      "shot": "s05",
+      "time": 39.64,
+      "mean_Yprime": 0.296812334051985,
+      "max_Yprime": 0.791086274509804,
+      "over_75_fraction": 6.124614197530864e-05
+    },
+    {
+      "shot": "s06",
+      "time": 48.8,
+      "mean_Yprime": 0.19990290653367826,
+      "max_Yprime": 0.7640156862745098,
+      "over_75_fraction": 3.18287037037037e-05
+    },
+    {
+      "shot": "s07",
+      "time": 59.38,
+      "mean_Yprime": 0.34512607167793813,
+      "max_Yprime": 0.7631137254901961,
+      "over_75_fraction": 2.4594907407407408e-05
+    },
+    {
+      "shot": "s08",
+      "time": 69.22,
+      "mean_Yprime": 0.2799747650992496,
+      "max_Yprime": 0.7766,
+      "over_75_fraction": 7.089120370370371e-05
+    },
+    {
+      "shot": "s09",
+      "time": 79.38,
+      "mean_Yprime": 0.439548873906893,
+      "max_Yprime": 0.7760862745098038,
+      "over_75_fraction": 2.797067901234568e-05
+    },
+    {
+      "shot": "s10",
+      "time": 87.48,
+      "mean_Yprime": 0.20898896352086363,
+      "max_Yprime": 0.6942078431372549,
+      "over_75_fraction": 0.0
+    }
+  ],
+  "one_second_scan": {
+    "frames": 90,
+    "max_Yprime": 0.7902588235294117,
+    "over_75_fraction": 0.0006942515432098765,
+    "dark_frames_seconds": []
+  },
+  "limits": [
+    "AI-generated original shots require human aesthetic review.",
+    "Game engine and actual light-gun validation are not performed.",
+    "H3 source resolution is 1152x640; 1080p delivery is upscaled."
+  ],
+  "final_audio_measurement": {
+    "input_i": "-18.15",
+    "input_tp": "-2.94",
+    "input_lra": "14.00",
+    "input_thresh": "-30.95",
+    "output_i": "-18.71",
+    "output_tp": "-2.95",
+    "output_lra": "12.00",
+    "output_thresh": "-31.05",
+    "normalization_type": "dynamic",
+    "target_offset": "0.71"
+  },
+  "game_export": {
+    "resolution": [
+      1776,
+      936
+    ],
+    "fps": "30/1",
+    "decoded_distinct_frames": 2563,
+    "presentation_frames": 2700,
+    "strict_decode_errors": 0,
+    "video_codec": "theora",
+    "audio_codec": "vorbis",
+    "duration": "90.005333"
+  }
+}

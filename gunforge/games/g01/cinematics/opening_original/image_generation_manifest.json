@@ -1,0 +1,173 @@
+{
+  "no_historical_image_references": true,
+  "records": [
+    {
+      "id": "workbench",
+      "tool": "builtin_image_gen",
+      "media_origin": "generated_for_this_film_2026-11-07",
+      "output": "keyframes/workbench.png",
+      "source_result_filename": "exec-f35a3741-f8a2-4a12-af93-f9cda4d5111c.png",
+      "references": [],
+      "prompt_spec": "Original widescreen flat cut-paper rainy-night workbench. Right: unlit rectangular twelve-layer paper city lamp, ordinary 1990s square town. Low center: flat shallow rectangular inkstone and small vermilion stamp pad. Left: chunky cassette recorder, desk lamp, sketchbook, carving knife and empty chair. Fine fibrous paper; indigo/purple 65%, muted apricot/mauve 25%, teal 10%. No people, hands, text, white, photography or heavy 3D.",
+      "prompt_record_note": "Archival production specification; original verbatim generation messages are in the chat tool calls.",
+      "actual_size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "2e6a51e501b7258584038c2f4b5107a13cf09e77b270f8275c70418377a3f82a",
+      "model": null,
+      "seed": null,
+      "amount": null,
+      "cost_status": "not_reported"
+    },
+    {
+      "id": "city",
+      "tool": "builtin_image_gen",
+      "media_origin": "generated_for_this_film_2026-11-07",
+      "output": "keyframes/city.png",
+      "source_result_filename": "exec-4278be11-0718-47ba-b951-507e392c8961.png",
+      "references": [],
+      "prompt_spec": "Original widescreen intimate 1990s Chinese paper-cut town lane. Twelve flat layers, dark nearer silhouettes and warm distant paper. Left soda stall, folding table, bottles, stools and roller shutter. Right blank cinema poster and bicycle. Middle footbridge and square apartment buildings, utility wire and sparrow. Exactly two small friendly bright paper residents in apron and everyday jacket, pinned joints. Indigo, purple, muted apricot, dusty mauve and teal. No ink, text, UI, white, ancient costumes or photography.",
+      "prompt_record_note": "Archival production specification; original verbatim generation messages are in the chat tool calls.",
+      "actual_size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "3750880e2719418c1928b147975051dc88fb10e293d0ceceb37daf3241b12c84",
+      "model": null,
+      "seed": null,
+      "amount": null,
+      "cost_status": "not_reported"
+    },
+    {
+      "id": "crow",
+      "tool": "builtin_image_gen",
+      "media_origin": "generated_for_this_film_2026-11-07",
+      "output": "keyframes/crow.png",
+      "source_result_filename": "exec-97fe6a66-813f-4b33-a47b-f41d3f5495e0.png",
+      "references": [
+        "keyframes/city.png"
+      ],
+      "prompt_spec": "New close shot in this run's paper town, no people in framing. One thick-bodied black ink crow on wire, broad folded wings, feathered capillary edges and a few dripping ink threads, very restrained wet indigo/teal highlights. Exactly one SMALL FLAT VERMILION circular granular stamp on the center chest. Dark grey eyes, no red eyes. Muted apricot paper buildings behind for contrast. No extra bird or red marks, no sphere, jewel, white, text, horror or heavy 3D.",
+      "prompt_record_note": "Archival production specification; original verbatim generation messages are in the chat tool calls.",
+      "actual_size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "b37b5c636c7963e4d495b086332c917e6117f046617977f0b4d7534bff644db6",
+      "model": null,
+      "seed": null,
+      "amount": null,
+      "cost_status": "not_reported"
+    },
+    {
+      "id": "title",
+      "tool": "builtin_image_gen",
+      "media_origin": "generated_for_this_film_2026-11-07",
+      "output": "keyframes/title.png",
+      "source_result_filename": "exec-5db3d7d2-a224-44d6-bf78-f291b6883bdb.png",
+      "references": [],
+      "prompt_spec": "Single isolated original title on genuinely transparent RGBA background. Exactly three Chinese characters, one horizontal line: 纸灯城. Expressive legible Chinese brush calligraphy, slightly dry brush tips and fiber gaps, muted warm apricot #D9A066. Full strokes inside canvas and 10% transparent margin. No other text, seals, red stamps, glow, shadow, outline, background, rectangle or watermark.",
+      "prompt_record_note": "Archival production specification; original verbatim generation messages are in the chat tool calls.",
+      "actual_size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "sha256": "d1678769cb7c5a8f60858381c9e28b22160744220c246d4d7c188ac3ef277f59",
+      "model": null,
+      "seed": null,
+      "amount": null,
+      "cost_status": "not_reported"
+    },
+    {
+      "id": "cassette",
+      "tool": "builtin_image_gen",
+      "media_origin": "generated_for_this_film_2026-11-07",
+      "output": "keyframes/cassette.png",
+      "source_result_filename": "exec-9e49d3a3-d880-43d5-aca9-0c4ffcf42fbc.png",
+      "references": [
+        "keyframes/workbench.png"
+      ],
+      "prompt_spec": "Continuity close-up of this run's original workbench. Preserve exact flat paper style, same chunky cassette recorder with handle, two orange visible reels and rectangular buttons. Warm desk lamp upper left, rainy indigo window, empty chair at right, paper offcuts and sketchbook foreground. No shadowbox in this close framing. No people, hands, text, white, photorealism, glass sheen or heavy 3D.",
+      "prompt_record_note": "Archival production specification; original verbatim generation messages are in the chat tool calls.",
+      "actual_size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "db4acb2d56d146d95b5cfbacceee9284c8ae10ba1563414fa2b50e76e9dae8a8",
+      "model": null,
+      "seed": null,
+      "amount": null,
+      "cost_status": "not_reported"
+    },
+    {
+      "id": "macro",
+      "tool": "builtin_image_gen",
+      "media_origin": "generated_for_this_film_2026-11-07",
+      "output": "keyframes/macro.png",
+      "source_result_filename": "exec-13bf5592-bed2-437b-829d-489303e36f87.png",
+      "references": [],
+      "prompt_spec": "Original widescreen extreme close-up entirely flat fibrous hand-cut colored paper. Foreground bottom left a small matte black ink pool has just reached muted apricot paper; capillary feathering extends a little rightward into clear empty paper. Behind, eight separated upright teal/mauve/purple/indigo layers with simple square town windows and tiny warm gaps. Shadowbox corner at right. No creature, people, hands, text, white, chrome puddle or photography.",
+      "prompt_record_note": "Archival production specification; original verbatim generation messages are in the chat tool calls.",
+      "actual_size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "f56b0343f5925002620b176ffb7be1a6965be93400a8464ea1b72bf057820c22",
+      "model": null,
+      "seed": null,
+      "amount": null,
+      "cost_status": "not_reported"
+    },
+    {
+      "id": "spill_end",
+      "tool": "builtin_image_gen",
+      "media_origin": "generated_for_this_film_2026-11-07",
+      "output": "keyframes/spill_end.png",
+      "source_result_filename": "exec-bf96f33c-f38e-4931-8394-da656e401a27.png",
+      "references": [
+        "keyframes/workbench.png"
+      ],
+      "prompt_spec": "Precise continuity edit: keep full original framing, lighting, dark indigo rainy NIGHT, empty chair, recorder, book, knife, desk lamp and unlit shadowbox city unchanged. ONLY tilt the rectangular inkstone 50 degrees onto its long right edge with a corner against stamp pad. Add a small flat black ink puddle and thin stream physically reaching the shadowbox lower-left corner, faint capillary feathering there. No room brightening, no new objects, people or hands.",
+      "prompt_record_note": "Archival production specification; original verbatim generation messages are in the chat tool calls.",
+      "actual_size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "59dc9e78b3c869fbef2397a66f31425b776aa6653f11757f093a3677dc70f26e",
+      "model": null,
+      "seed": null,
+      "amount": null,
+      "cost_status": "not_reported"
+    },
+    {
+      "id": "workbench_lit",
+      "tool": "builtin_image_gen",
+      "media_origin": "generated_for_this_film_2026-11-07",
+      "output": "keyframes/workbench_lit.png",
+      "source_result_filename": "exec-0cc60ef3-ffde-4ed2-9413-160f6f918e65.png",
+      "references": [
+        "keyframes/spill_end.png"
+      ],
+      "prompt_spec": "Lighting-only continuity edit: keep composition, tipped inkstone, ink trail, all tools, empty chair and DARK INDIGO RAINY NIGHT outside unchanged. ONLY turn on restrained muted warm-apricot internal backlight in the shadowbox; near layers stay dark indigo/teal, mid mauve, distant gently warm with thin glowing cut edges. Very faint warm spill directly before the box only. No white or cream glow, no sun, room exposure change, new objects, people or text.",
+      "prompt_record_note": "Archival production specification; original verbatim generation messages are in the chat tool calls.",
+      "actual_size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "4901f61b170f03e441108da91518374baf283201c52046e65f59a933f380e9eb",
+      "model": null,
+      "seed": null,
+      "amount": null,
+      "cost_status": "not_reported"
+    }
+  ]
+}

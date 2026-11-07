@@ -1,0 +1,270 @@
+{
+  "prompt": [
+    119,
+    "d44b5ca3-d62d-4e63-8ddf-2743584d36bb",
+    {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "LoraLoaderModelOnly",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "lora_name": "minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
+          "strength_model": 1.0
+        }
+      },
+      "3": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+          "type": "minimax",
+          "device": "default"
+        }
+      },
+      "4": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "minimax_h3_video_vae_int8_convrot.safetensors"
+        }
+      },
+      "5": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+        }
+      },
+      "6": {
+        "class_type": "MiniMaxH3ImageToVideo",
+        "inputs": {
+          "clip": [
+            "3",
+            0
+          ],
+          "vae": [
+            "4",
+            0
+          ],
+          "prompt": "Original cinematic for Paper Lantern City. A handcrafted flat cut-paper diorama with\nfine visible paper fibers, clean cuts, twelve separated flat layers, slight offset cast shadows,\ndark indigo foreground silhouettes, warmer translucent distant paper. Restrained indigo #141A33,\npurple #2A1E3D, apricot #D9A066, dusty pink #C97B84 and teal #4E9A92. Ordinary 1990s China,\nsquare apartment buildings, roller shutters, cassette recorder, bicycle, folding tables.\nNo photographic realism, plastic, 3D bevels, ancient Chinese architecture, ancient costumes,\nwhite highlights, white flashes, text, lettering, watermark, graphic overlays or borders.\nKeep exposure stable. Slow deliberate movement. No dialogue, narration, singing or music;\nonly the specifically described quiet Foley. Preserve flat paper texture throughout.\nLocked camera. Animate ONLY the transition from the first frame to the last frame: the shallow inkstone tips gently to the right, one small black puddle spills and reaches the lamp base. Exact same dark rainy NIGHT outside, exact same dim paper city and lamp light. All other objects remain absolutely stationary. DO NOT turn on the city lamp yet. No new objects, no hands. This is a small ordinary accident. Quiet ceramic knock and a little ink trickle.",
+          "width": 1152,
+          "height": 640,
+          "length": 158,
+          "first_frame": [
+            "16",
+            0
+          ],
+          "last_frame": [
+            "17",
+            0
+          ]
+        }
+      },
+      "7": {
+        "class_type": "RandomNoise",
+        "inputs": {
+          "noise_seed": 2026120704
+        }
+      },
+      "8": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "res_multistep"
+        }
+      },
+      "9": {
+        "class_type": "BasicScheduler",
+        "inputs": {
+          "model": [
+            "2",
+            0
+          ],
+          "scheduler": "simple",
+          "steps": 8,
+          "denoise": 1.0
+        }
+      },
+      "10": {
+        "class_type": "BasicGuider",
+        "inputs": {
+          "model": [
+            "2",
+            0
+          ],
+          "conditioning": [
+            "6",
+            0
+          ]
+        }
+      },
+      "11": {
+        "class_type": "SamplerCustomAdvanced",
+        "inputs": {
+          "noise": [
+            "7",
+            0
+          ],
+          "guider": [
+            "10",
+            0
+          ],
+          "sampler": [
+            "8",
+            0
+          ],
+          "sigmas": [
+            "9",
+            0
+          ],
+          "latent_image": [
+            "6",
+            1
+          ]
+        }
+      },
+      "12": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "11",
+            0
+          ],
+          "vae": [
+            "4",
+            0
+          ]
+        }
+      },
+      "13": {
+        "class_type": "VAEDecodeAudio",
+        "inputs": {
+          "samples": [
+            "11",
+            0
+          ],
+          "vae": [
+            "5",
+            0
+          ]
+        }
+      },
+      "14": {
+        "class_type": "CreateVideo",
+        "inputs": {
+          "images": [
+            "12",
+            0
+          ],
+          "audio": [
+            "13",
+            0
+          ],
+          "fps": 24.0
+        }
+      },
+      "15": {
+        "class_type": "SaveVideo",
+        "inputs": {
+          "video": [
+            "14",
+            0
+          ],
+          "filename_prefix": "g01_original_20261107/s04_take2",
+          "format": "auto",
+          "codec": "auto"
+        }
+      },
+      "16": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "g01_original_20261107/workbench.png"
+        }
+      },
+      "17": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "g01_original_20261107/spill_end.png"
+        }
+      }
+    },
+    {
+      "client_id": "paper-lantern-original-20261107",
+      "create_time": 1794023569898
+    },
+    [
+      "15"
+    ]
+  ],
+  "outputs": {
+    "15": {
+      "images": [
+        {
+          "filename": "s04_take2_00001_.mp4",
+          "subfolder": "g01_original_20261107",
+          "type": "output",
+          "metadata": {
+            "kind": "video",
+            "width": 1152,
+            "height": 640,
+            "duration": 6.583333333333333,
+            "fps": 24.0,
+            "frame_count": 158
+          }
+        }
+      ],
+      "animated": [
+        true
+      ]
+    }
+  },
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "d44b5ca3-d62d-4e63-8ddf-2743584d36bb",
+          "timestamp": 1794023919314
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "8",
+            "9"
+          ],
+          "prompt_id": "d44b5ca3-d62d-4e63-8ddf-2743584d36bb",
+          "timestamp": 1794023919319
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "d44b5ca3-d62d-4e63-8ddf-2743584d36bb",
+          "timestamp": 1794024030709
+        }
+      ]
+    ]
+  },
+  "meta": {
+    "15": {
+      "node_id": "15",
+      "display_node": "15",
+      "parent_node": null,
+      "real_node_id": "15"
+    }
+  }
+}

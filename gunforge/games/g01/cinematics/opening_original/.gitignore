@@ -1,0 +1,8 @@
+/build/
+/luminance_cap.cube
+/audio/mix_pre.wav
+/audio/voice_fitted_*.wav
+/qa/*.mp4
+/qa/*.ogv
+/qa/voice_04_first.wav
+/*.tmp.ogv

@@ -1,0 +1,20 @@
+{
+  "shot": "s07",
+  "status": "collected",
+  "prompt_id": "2defeace-60d4-4a1c-a235-d4bb1749344e",
+  "model": "MiniMax H3 local int8",
+  "seed": 2026110707,
+  "media_origin": "newly_generated_this_run",
+  "started_unix": 1794023331.0947373,
+  "output": "/mnt/d/tvgun/gunforge/games/g01/cinematics/opening_original/sources/s07.mp4",
+  "sha256": "bea075819b44ae57837c363560f00c45931d06fc4be2a6d2707f4c60bc5472be",
+  "metadata": {
+    "kind": "video",
+    "width": 1152,
+    "height": 640,
+    "duration": 6.583333333333333,
+    "fps": 24.0,
+    "frame_count": 158
+  },
+  "finished_unix": 1794023611.1702282
+}
