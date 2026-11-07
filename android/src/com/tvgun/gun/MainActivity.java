@@ -131,6 +131,10 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     private final Object aimLock = new Object();
     private volatile int predictMs = DEFAULT_PREDICT_MS;  // 手感旋钮：电视延迟大则调大
     private java.net.DatagramSocket aimSock;
+    private final GunProtocol gunProtocol = new GunProtocol();
+    private long lastLostSent = 0;
+    private boolean lastAimWasValid = false;
+    private long lastHelloSent = 0;
     private java.net.InetAddress aimAddr;
     private int aimPort;
     private String aimAddrHost;
@@ -958,13 +962,20 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                     if (tracker.aimValid()) {
                         float[] st = tracker.snapshotAhead(SystemClock.elapsedRealtimeNanos(),
                                 predictMs * 1_000_000L);
-                        boolean ok = sendAimUdp(st[0], st[1]);
+                        boolean ok = sendAimUdp(st[0], st[1], (int) st[2]);
+                        lastAimWasValid = true;
                         failStreak = ok ? 0 : failStreak + 1;
                         if (nowMs - lastLog >= 1000) {
                             lastLog = nowMs;
                             Log.i(TAG, String.format(Locale.US, "aim (%.0f,%.0f) grade=%s fail=%d",
                                     st[0], st[1], Tracker.GRADE_NAMES[(int) st[2]], failStreak));
                         }
+                    }
+                    if (!tracker.aimValid() && EVENT_MODE_UDP.equals(eventMode)
+                            && (lastAimWasValid || nowMs - lastLostSent >= 200)) {
+                        sendGunPacket(gunProtocol.lost());
+                        lastLostSent = nowMs;
+                        lastAimWasValid = false;
                     }
                     long elapsed = SystemClock.elapsedRealtime() - nowMs;
                     long sleep = AIM_INTERVAL_MS - elapsed;
@@ -1007,20 +1018,50 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
     /** UDP aim sender (silent failure -> caller backs off). Address resolved once
      *  per server-string change; same port number as the TCP API (UDP/TCP spaces
      *  are separate, the PC side listens on both). */
-    private boolean sendAimUdp(float x, float y) {
+    private boolean sendAimUdp(float x, float y, int grade) {
+        if (EVENT_MODE_UDP.equals(eventMode)) {
+            return sendGunPacket(gunProtocol.aim(x, y, grade));
+        }
+        return sendGunPacket(String.format(Locale.US, "%.1f,%.1f", x, y));
+    }
+
+    private synchronized boolean sendGunPacket(String text) {
         try {
             String host = serverHost();
             int port = aimUdpPort();
             if (aimSock == null) {
                 aimSock = new java.net.DatagramSocket();
+                aimSock.setSoTimeout(1);
             }
             if (!host.equals(aimAddrHost) || port != aimPort) {
                 aimAddr = java.net.InetAddress.getByName(host);
                 aimAddrHost = host;
                 aimPort = port;
+                if (EVENT_MODE_UDP.equals(eventMode)) {
+                    byte[] hello = gunProtocol.hello().getBytes("UTF-8");
+                    aimSock.send(new java.net.DatagramPacket(hello, hello.length, aimAddr, aimPort));
+                    lastHelloSent = SystemClock.elapsedRealtime();
+                }
             }
-            byte[] buf = String.format(Locale.US, "%.1f,%.1f", x, y).getBytes("UTF-8");
+            if (EVENT_MODE_UDP.equals(eventMode) && SystemClock.elapsedRealtime() - lastHelloSent >= 2000) {
+                byte[] hello = gunProtocol.hello().getBytes("UTF-8");
+                aimSock.send(new java.net.DatagramPacket(hello, hello.length, aimAddr, aimPort));
+                lastHelloSent = SystemClock.elapsedRealtime();
+            }
+            byte[] buf = text.getBytes("UTF-8");
             aimSock.send(new java.net.DatagramPacket(buf, buf.length, aimAddr, aimPort));
+            if (EVENT_MODE_UDP.equals(eventMode)) {
+                try {
+                    byte[] response = new byte[96];
+                    java.net.DatagramPacket packet = new java.net.DatagramPacket(response, response.length);
+                    aimSock.receive(packet);
+                    if (packet.getAddress().equals(aimAddr) && packet.getPort() == aimPort) {
+                        int[] frame = GunProtocol.frame(new String(packet.getData(), 0, packet.getLength(), "UTF-8"));
+                        if (frame != null) tracker.setFrameGeometry(frame[0], frame[1]);
+                    }
+                } catch (java.net.SocketTimeoutException ignored) {
+                }
+            }
             return true;
         } catch (Exception ignored) {
             return false;
@@ -1044,7 +1085,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                     } catch (NumberFormatException ignored) {
                     }
                 }
-                final int discoPort = gamePort + 1;
+                final int discoPort = EVENT_MODE_UDP.equals(eventMode) ? 8001 : gamePort + 1;
                 boolean found = false;
                 while (running) {
                     java.net.DatagramSocket ds = null;
@@ -1062,7 +1103,8 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                         for (String tgt : targets) {
                             try {
                                 ds.send(new java.net.DatagramPacket(req, req.length,
-                                        java.net.InetAddress.getByName(tgt), discoPort));
+                                        java.net.InetAddress.getByName(tgt),
+                                        EVENT_MODE_UDP.equals(eventMode) ? 8001 : discoPort));
                             } catch (Exception ignored) {
                             }
                         }
@@ -1081,6 +1123,10 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                                     }
                                 }
                                 String newServer = p.getAddress().getHostAddress() + ":" + port;
+                                if (EVENT_MODE_UDP.equals(eventMode) && port > 0 && port <= 65535 && udpPort != port) {
+                                    udpPort = port;
+                                    prefs.edit().putInt("udpPort", port).apply();
+                                }
                                 if (!newServer.equals(server)) {
                                     server = newServer;
                                     prefs.edit().putString("server", newServer).apply();
@@ -1261,6 +1307,9 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                 : (sceneModeChosen == null ? "unset" : sceneModeChosen)).append('\n');
         sb.append("predictMs=").append(predictMs).append('\n');
         sb.append("appVersion=").append(Version.DESCRIBE).append('\n');
+        sb.append("eventMode=").append(eventMode).append('\n');
+        sb.append("udpPort=").append(udpPort).append('\n');
+        sb.append("frameSampling=").append(tracker.frameGeometryDescription()).append('\n');
         sb.append("clock=SystemClock.elapsedRealtimeNanos (ns, monotonic; "
                 + "gyro SensorEvent.timestamp uses the same clock)\n");
         sb.append("frames.bin=uint8 gray, ").append(rw).append('x').append(rh)
@@ -1303,7 +1352,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    boolean ok = UdpEvents.sendShot(serverHost(), udpPort);
+                    boolean ok = sendGunPacket(gunProtocol.shot(x, y));
                     Log.i(TAG, "shot udp (" + (int) x + "," + (int) y + ") ok=" + ok);
                     if (!ok) {
                         ui.post(new Runnable() {

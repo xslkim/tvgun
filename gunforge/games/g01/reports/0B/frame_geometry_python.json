@@ -1,0 +1,17 @@
+[
+  {
+    "white": 24,
+    "dark": 48,
+    "python_measured_edges": 4
+  },
+  {
+    "white": 40,
+    "dark": 24,
+    "python_measured_edges": 4
+  },
+  {
+    "white": 12,
+    "dark": 72,
+    "python_measured_edges": 4
+  }
+]

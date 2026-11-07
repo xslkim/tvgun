@@ -1,0 +1,342 @@
+{
+  "hardened_enemy_rejects_shot": true,
+  "lamp_then_crow": true,
+  "alpha_rescue": true,
+  "waves": [
+    0,
+    1,
+    2
+  ],
+  "completion": {
+    "fixed": true,
+    "gun": false,
+    "performance": [
+      {
+        "draw_calls": 25,
+        "fps": 11.0,
+        "frame_ms": 16.6666666666667,
+        "process_ms": 43.153,
+        "texture_bytes": 81873771
+      },
+      {
+        "draw_calls": 22,
+        "fps": 30.0,
+        "frame_ms": 16.6666666666667,
+        "process_ms": 294.674,
+        "texture_bytes": 81873771
+      },
+      {
+        "draw_calls": 24,
+        "fps": 30.0,
+        "frame_ms": 16.6666666666667,
+        "process_ms": 294.674,
+        "texture_bytes": 81873771
+      },
+      {
+        "draw_calls": 23,
+        "fps": 59.0,
+        "frame_ms": 16.6666666666667,
+        "process_ms": 30.924,
+        "texture_bytes": 81873771
+      },
+      {
+        "draw_calls": 19,
+        "fps": 59.0,
+        "frame_ms": 16.6666666666667,
+        "process_ms": 30.924,
+        "texture_bytes": 81873771
+      },
+      {
+        "draw_calls": 20,
+        "fps": 60.0,
+        "frame_ms": 16.6666666666667,
+        "process_ms": 16.685,
+        "texture_bytes": 81873771
+      },
+      {
+        "draw_calls": 20,
+        "fps": 60.0,
+        "frame_ms": 16.6666666666667,
+        "process_ms": 16.685,
+        "texture_bytes": 81873771
+      },
+      {
+        "draw_calls": 20,
+        "fps": 60.0,
+        "frame_ms": 16.6666666666667,
+        "process_ms": 16.734,
+        "texture_bytes": 81873771
+      },
+      {
+        "draw_calls": 19,
+        "fps": 60.0,
+        "frame_ms": 16.6666666666667,
+        "process_ms": 16.734,
+        "texture_bytes": 81873771
+      },
+      {
+        "draw_calls": 20,
+        "fps": 60.0,
+        "frame_ms": 16.6666666666667,
+        "process_ms": 16.672,
+        "texture_bytes": 81873771
+      },
+      {
+        "draw_calls": 20,
+        "fps": 60.0,
+        "frame_ms": 16.6666666666667,
+        "process_ms": 16.672,
+        "texture_bytes": 81873771
+      },
+      {
+        "draw_calls": 22,
+        "fps": 60.0,
+        "frame_ms": 16.6666666666667,
+        "process_ms": 16.703,
+        "texture_bytes": 81873771
+      },
+      {
+        "draw_calls": 20,
+        "fps": 60.0,
+        "frame_ms": 16.6666666666667,
+        "process_ms": 16.703,
+        "texture_bytes": 81873771
+      },
+      {
+        "draw_calls": 25,
+        "fps": 60.0,
+        "frame_ms": 16.6666666666667,
+        "process_ms": 16.7,
+        "texture_bytes": 81873771
+      },
+      {
+        "draw_calls": 23,
+        "fps": 60.0,
+        "frame_ms": 16.6666666666667,
+        "process_ms": 16.7,
+        "texture_bytes": 81873771
+      },
+      {
+        "draw_calls": 19,
+        "fps": 60.0,
+        "frame_ms": 16.6666666666667,
+        "process_ms": 16.674,
+        "texture_bytes": 81873771
+      }
+    ],
+    "startup": {
+      "adapter": "NVIDIA GeForce RTX 3090",
+      "debug_error": 0,
+      "godot": "4.6.3-stable (official)",
+      "network_errors": [],
+      "renderer": "gl_compatibility"
+    },
+    "state": {
+      "ammo": 6,
+      "enemies": [
+        {
+          "at": 2.0,
+          "deadline": 10.0,
+          "hit_at": 3.08333333333333,
+          "status": "defeated",
+          "warned": false
+        },
+        {
+          "at": 12.0,
+          "deadline": 20.0,
+          "hit_at": 13.4333333333336,
+          "status": "defeated",
+          "warned": false
+        }
+      ],
+      "events": [
+        {
+          "event": "wave",
+          "t": 0,
+          "wave": 0
+        },
+        {
+          "event": "wave",
+          "t": 0,
+          "wave": 0
+        },
+        {
+          "event": "blocked",
+          "t": 3.49999999999999,
+          "wave": 0
+        },
+        {
+          "event": "lamp",
+          "t": 3.69999999999999,
+          "wave": 0
+        },
+        {
+          "event": "hit",
+          "t": 4.34999999999999,
+          "wave": 0
+        },
+        {
+          "event": "rescue",
+          "t": 4.64999999999999,
+          "wave": 0
+        },
+        {
+          "event": "lamp",
+          "t": 13.4500000000002,
+          "wave": 0
+        },
+        {
+          "event": "hit",
+          "t": 14.4000000000003,
+          "wave": 0
+        },
+        {
+          "event": "reload",
+          "t": 14.6000000000003,
+          "wave": 0
+        },
+        {
+          "event": "reload_done",
+          "t": 15.1000000000003,
+          "wave": 0
+        },
+        {
+          "event": "pickup",
+          "t": 18.2000000000002,
+          "wave": 0
+        },
+        {
+          "event": "gap",
+          "t": 24.0166666666666,
+          "wave": 0
+        },
+        {
+          "event": "wave",
+          "t": 0,
+          "wave": 1
+        },
+        {
+          "event": "lamp",
+          "t": 2.36666666666666,
+          "wave": 1
+        },
+        {
+          "event": "hit",
+          "t": 3.31666666666666,
+          "wave": 1
+        },
+        {
+          "event": "rescue",
+          "t": 7.01666666666665,
+          "wave": 1
+        },
+        {
+          "event": "lamp",
+          "t": 12.2166666666669,
+          "wave": 1
+        },
+        {
+          "event": "hit",
+          "t": 13.1666666666669,
+          "wave": 1
+        },
+        {
+          "event": "reload",
+          "t": 13.3666666666669,
+          "wave": 1
+        },
+        {
+          "event": "reload_done",
+          "t": 13.8666666666669,
+          "wave": 1
+        },
+        {
+          "event": "pickup",
+          "t": 18.4666666666669,
+          "wave": 1
+        },
+        {
+          "event": "gap",
+          "t": 24.0166666666666,
+          "wave": 1
+        },
+        {
+          "event": "wave",
+          "t": 0,
+          "wave": 2
+        },
+        {
+          "event": "lamp",
+          "t": 2.13333333333333,
+          "wave": 2
+        },
+        {
+          "event": "hit",
+          "t": 3.08333333333333,
+          "wave": 2
+        },
+        {
+          "event": "rescue",
+          "t": 3.28333333333333,
+          "wave": 2
+        },
+        {
+          "event": "lamp",
+          "t": 12.4833333333335,
+          "wave": 2
+        },
+        {
+          "event": "hit",
+          "t": 13.4333333333336,
+          "wave": 2
+        },
+        {
+          "event": "reload",
+          "t": 13.6333333333336,
+          "wave": 2
+        },
+        {
+          "event": "reload_done",
+          "t": 14.1333333333336,
+          "wave": 2
+        },
+        {
+          "event": "pickup",
+          "t": 18.2333333333336,
+          "wave": 2
+        },
+        {
+          "event": "gap",
+          "t": 24.0166666666666,
+          "wave": 2
+        },
+        {
+          "event": "complete",
+          "t": 24.0166666666666,
+          "wave": 2
+        }
+      ],
+      "feedback": "巷口已点亮",
+      "hits": 18,
+      "lamp": 0.0,
+      "lives": 5,
+      "lost": 0,
+      "paused": false,
+      "phase": "complete",
+      "rescued": true,
+      "resume": 0,
+      "score": 1725,
+      "shots": 19,
+      "time": 24.0166666666666,
+      "total": 78.0999999999969,
+      "wave": 2
+    },
+    "targets": {
+      "lamp": [
+        1334.77197265625,
+        438.707153320313
+      ]
+    }
+  },
+  "death_continue_same_wave": true
+}

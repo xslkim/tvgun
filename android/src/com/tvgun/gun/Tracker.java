@@ -31,6 +31,17 @@ import java.util.Arrays;
  * grade: 0=DEAD 1=GYRO 2=EDGE 3=PARTIAL 4=FULL
  */
 public final class Tracker {
+    private volatile double frameInset = -1;
+
+    public void setFrameGeometry(int white, int dark) {
+        if (white >= 12 && white <= 40 && dark >= 24 && dark <= 72) {
+            frameInset = white + dark * 0.5;
+        }
+    }
+
+    public String frameGeometryDescription() {
+        return frameInset > 0 ? "normal_dark_band_midpoint=" + frameInset : "legacy_image_offset";
+    }
     public static final float NORM_W = 1920f;
     public static final float NORM_H = 1080f;
 
@@ -976,8 +987,21 @@ public final class Tracker {
             double[] samp = new double[nS];
             for (int k = 0; k < nS; k++) {
                 double tt = 0.15 + (0.85 - 0.15) * k / Math.max(nS - 1, 1);
-                int xi = (int) Math.round(q0x + (q1x - q0x) * tt + dInX * INSIDE_OFF);
-                int yi = (int) Math.round(q0y + (q1y - q0y) * tt + dInY * INSIDE_OFF);
+                double sx = q0x + (q1x - q0x) * tt + dInX * INSIDE_OFF;
+                double sy = q0y + (q1y - q0y) * tt + dInY * INSIDE_OFF;
+                double inset = frameInset;
+                if (inset > 0) {
+                    double[] norm = applyH(Hn, q0x + (q1x - q0x) * tt, q0y + (q1y - q0y) * tt);
+                    if (e == 0) norm[1] = inset;
+                    else if (e == 1) norm[0] = NORM_W - inset;
+                    else if (e == 2) norm[1] = NORM_H - inset;
+                    else norm[0] = inset;
+                    double[] projected = applyH(Hi, norm[0], norm[1]);
+                    sx = projected[0];
+                    sy = projected[1];
+                }
+                int xi = (int) Math.round(sx);
+                int yi = (int) Math.round(sy);
                 if (xi < 0 || xi >= w || yi < 0 || yi >= h) continue;
                 samp[tot++] = g[yi * w + xi] & 0xff;
             }

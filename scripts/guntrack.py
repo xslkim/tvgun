@@ -71,6 +71,8 @@ class TrackerParams:
     min_visible_len = 28.0     # 边在图内可见长度下限（px）
     dark_margin = 25           # 内侧暗度校验：内侧中位亮度须 < low_thr - margin（余量）
     inside_off = 10.0          # 内侧采样距离（px，垂直边向四边形内）
+    frame_white = 0.0          # FRAME opt-in, zero retains legacy recording behavior
+    frame_dark = 0.0
 
     # H 校正（相似校正 / DLT 混合 + 增益）
     gain_full = 0.6            # FULL 校正增益
@@ -622,6 +624,21 @@ class Tracker:
             samp = []
             for tt in ts:
                 sp = q0 + (q1 - q0) * tt + d_in * p.inside_off
+                if p.frame_white > 0 and p.frame_dark > 0:
+                    border = q0 + (q1 - q0) * tt
+                    norm = Hn @ np.array([border[0], border[1], 1.0])
+                    norm = norm[:2] / norm[2]
+                    inset = p.frame_white + p.frame_dark * 0.5
+                    if e == 0:
+                        norm[1] = inset
+                    elif e == 1:
+                        norm[0] = NORM_W - inset
+                    elif e == 2:
+                        norm[1] = NORM_H - inset
+                    else:
+                        norm[0] = inset
+                    projected = Hi @ np.array([norm[0], norm[1], 1.0])
+                    sp = projected[:2] / projected[2]
                 xi, yi = int(round(sp[0])), int(round(sp[1]))
                 if 0 <= xi < g640.shape[1] and 0 <= yi < g640.shape[0]:
                     samp.append(int(g640[yi, xi]))

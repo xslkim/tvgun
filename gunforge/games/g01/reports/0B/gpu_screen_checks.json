@@ -1,0 +1,25 @@
+{
+  "scope": "local Compatibility renderer samples during deterministic engine bot, not camera latency or second real station peak",
+  "startup": {
+    "adapter": "NVIDIA GeForce RTX 3090",
+    "debug_error": 0,
+    "godot": "4.6.3-stable (official)",
+    "network_errors": [],
+    "renderer": "gl_compatibility"
+  },
+  "performance_samples": 16,
+  "fps_minimum_after_startup": 11.0,
+  "texture_bytes_maximum": 81873771,
+  "frame_ms_p95": 16.6666666666667,
+  "content_max_Yprime": 0.7486235294117646,
+  "white_border_rgb": [
+    255,
+    255,
+    255
+  ],
+  "dark_band_rgb": [
+    0,
+    0,
+    0
+  ]
+}

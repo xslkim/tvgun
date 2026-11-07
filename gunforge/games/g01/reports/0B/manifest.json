@@ -1,0 +1,147 @@
+{
+  "stage": "0B_playable_build",
+  "date": "2026-11-07",
+  "text_hash_policy": "CRLF normalized to LF",
+  "mouse_user_acceptance": false,
+  "actual_0B_approved": false,
+  "source": [
+    {
+      "file": "android/src/com/tvgun/gun/GunProtocol.java",
+      "sha256": "8b5e97b99bd7705ba1ff730d356df3593fbb6b5e2928dcb31cf1c9f7cb337023"
+    },
+    {
+      "file": "android/src/com/tvgun/gun/MainActivity.java",
+      "sha256": "6e8a32996d468f40a6e442ef455a0e5b2b97dc1c6bb4ee0b57688753d1d9c2b8"
+    },
+    {
+      "file": "android/src/com/tvgun/gun/Tracker.java",
+      "sha256": "55069cfce3dc556db0340604c1c4e0d32cffe0410612c8eec229efa55ae0ffd4"
+    },
+    {
+      "file": "gunforge/framework/core/audio.gd",
+      "sha256": "c9733139f1db29c0ff68816a5d399b60b6a349241adb353c9bdfd8801aebfa71"
+    },
+    {
+      "file": "gunforge/framework/core/calibration.gd",
+      "sha256": "3417bf726487b17fed7aae8470868da070aed397bd6cec0deb0e77d24d656f35"
+    },
+    {
+      "file": "gunforge/framework/core/gun_input.gd",
+      "sha256": "be46161dc884f9b50dfd6b8ed3ff05ef985b7953c288fc86562f28fe019071ce"
+    },
+    {
+      "file": "gunforge/framework/core/hit_resolver.gd",
+      "sha256": "245da47bf1bb51328ee5a82e04de7aa94db1a61a978a3298560b5043b6cbacfb"
+    },
+    {
+      "file": "gunforge/framework/core/puppet.gd",
+      "sha256": "c1d7a6ee851d548ad89876abddcdecb867a075931338c41d63bc3c5b46326cb7"
+    },
+    {
+      "file": "gunforge/framework/core/raster_item.gd",
+      "sha256": "99a092f0fb3a98df14bad3af05e1b57bee85e7dd212bf39b330bb63e39af6540"
+    },
+    {
+      "file": "gunforge/framework/core/raster_layer.gd",
+      "sha256": "8a069615688422cb85d56632c8b303bbeb2515291704f03fdb4a15d9f9c32986"
+    },
+    {
+      "file": "gunforge/framework/core/screen_frame.gd",
+      "sha256": "2c55dad396b6cdb1e5b9142fb21d124c6521eb257cfacc5ba2f100780c1fb33e"
+    },
+    {
+      "file": "gunforge/framework/main.gd",
+      "sha256": "5df6e8acda482ba271c32383c71c738b6a38f34ae0d6e12bc15c84565bb9bea1"
+    },
+    {
+      "file": "gunforge/framework/main.tscn",
+      "sha256": "797691e4077d826384b247c409d02e99399a8f7c2d30990259b809cc558605a8"
+    },
+    {
+      "file": "gunforge/framework/project.godot",
+      "sha256": "40b2039c0f60cecbb07af46f40e940a19bc203f4fd1a3f3d018f12fe6ce7468b"
+    },
+    {
+      "file": "gunforge/framework/shaders/additive.gdshader",
+      "sha256": "130f69ab4785274fa6002e9cc94e0948c5bb358f9238b5def45afdecbf3c5d3a"
+    },
+    {
+      "file": "gunforge/framework/shaders/dissolve.gdshader",
+      "sha256": "7210a02d986f84df315edaa679d56c7c6c8b0283cfaa0af9c8f7277122880642"
+    },
+    {
+      "file": "gunforge/framework/shaders/limit.gdshader",
+      "sha256": "4ff090af55a6826c45317feaeac4192b045835f7d7df2523bec9df433c47e3f3"
+    },
+    {
+      "file": "gunforge/framework/tests/core_tests.gd",
+      "sha256": "8802645efda6fd65d524aad9ce22b9bbe38fc551277da70501391e48809ce95f"
+    },
+    {
+      "file": "gunforge/games/g01/levels/alley_0b.json",
+      "sha256": "3c89212831cd2dfe8d53971aaee885f4a23d934675265d797c44e03aba2a90d3"
+    },
+    {
+      "file": "gunforge/games/g01/scripts/alley_rules.gd",
+      "sha256": "d2cf2706ba97dae6eafa1ff1f35665c965fee30f998d7b47df8ef5d75226c9c3"
+    },
+    {
+      "file": "gunforge/games/g01/scripts/alley_scene.gd",
+      "sha256": "614d6f5986de79c473b7921f4bff4d8b0bed5eab23d60e713b55ab5016c72b43"
+    },
+    {
+      "file": "gunforge/pipeline/build_0b.py",
+      "sha256": "d469f7d9ad3dbf530464029cfeb8396e08c55da760f9c8336e29f4f26a36e58e"
+    },
+    {
+      "file": "scripts/guntrack.py",
+      "sha256": "13681deb2762e181245b9413a3c2b4709650c08450cd3025a8f49004b01c2055"
+    }
+  ],
+  "evidence": [
+    {
+      "file": "core_tests.json",
+      "sha256": "a96b00b371829daaed8b6b1c309e6743af98686f83be48619d8c5dd1c4cf56ec"
+    },
+    {
+      "file": "engine_bot.json",
+      "sha256": "69f5787c4694064ef0471df511993638ee3a1807eed5dcf3bfa5a287e1e9da4e"
+    },
+    {
+      "file": "first_station_lit.png",
+      "sha256": "b4ef4f90f0b1e890d4643c36e7b1fca0c51766c4c569a9fbd6251007939f6769"
+    },
+    {
+      "file": "frame_geometry_python.json",
+      "sha256": "88a2e0217304dcf3e5a9d9379f8a0d3c32cef01306da0c1892c5090002cebd89"
+    },
+    {
+      "file": "gpu_screen_checks.json",
+      "sha256": "53ead21a75260c3c52829eb84fa038bd55fe8a13116b044de0ac999d2723faa6"
+    },
+    {
+      "file": "report.md",
+      "sha256": "ffa2eae77a7ad20ac01075f16ee79ae32d543500e68ef206b712ce6889377381"
+    },
+    {
+      "file": "resident_rescued.png",
+      "sha256": "7b095e22a7ea4a85bfdb7bb7e30886e10817ff152a9145fbeea79da35ff9ca7b"
+    },
+    {
+      "file": "review.yaml",
+      "sha256": "43c8e6fbeddcbfe3b561be96dd5ba650fc843b5855c573a6fd22d262771d37a2"
+    },
+    {
+      "file": "station_complete.png",
+      "sha256": "6e479bcb20fc61d09aa6081a4d513c60f40ec1f89a305fb284f6df9dbf1e4b7e"
+    },
+    {
+      "file": "tracker_legacy_regression.json",
+      "sha256": "d80e0bfde2404935cfa9ce83d5b7ca37c112d3679e45ee261a0c3b1175bae489"
+    },
+    {
+      "file": "udp_tests.json",
+      "sha256": "db92b8597c5c445005f83e8db638fc1e5afa0d17b5175a25fdd3eac6d3729033"
+    }
+  ]
+}

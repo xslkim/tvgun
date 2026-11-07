@@ -1,0 +1,11 @@
+stage: actual_0B
+status: playable_build_ready_for_user_test
+mouse_playtest: pending
+checks:
+  hardware_monitor_and_tv: pending
+  understandable_hit_decisions: pending
+  playable_pacing_and_teaching: pending
+  reusable_assets_with_engine_collision: pending
+  production_cost_extrapolation: pending
+actual_0B_approved: false
+batch_T09_T16_authorized: false

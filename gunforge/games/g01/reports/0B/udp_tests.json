@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "transport": "real local UDP 9000 / discovery 8001",
+  "cases": [
+    "discovery",
+    "P5_FRAME",
+    "sequenced_coordinate_and_shot",
+    "duplicate_shot",
+    "LOST_and_late_coordinate",
+    "automatic_pause",
+    "relock_countdown",
+    "old_shot_cannot_cross_loss",
+    "offscreen_reload"
+  ],
+  "actual_phone": "pending"
+}

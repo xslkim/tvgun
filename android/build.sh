@@ -114,7 +114,7 @@ echo "==> [4/7] d8"
 rm -rf "$OUT/dex"; mkdir -p "$OUT/dex"
 CLASSES=()
 while IFS= read -r f; do CLASSES+=("$(w "$f")"); done < <(find "$OUT/classes" -name '*.class')
-"$BT/d8.bat" --min-api 21 --lib "$(w "$AJAR")" --output "$(w "$OUT/dex")" "${CLASSES[@]}"
+"$JAVA11" -cp "$(w "$BT/lib/d8.jar")" com.android.tools.r8.D8 --min-api 21 --lib "$(w "$AJAR")" --output "$(w "$OUT/dex")" "${CLASSES[@]}"
 
 echo "==> [5/7] add classes.dex to apk"
 cp "$OUT/unsigned.apk" "$OUT/withdex.apk"
@@ -125,7 +125,7 @@ echo "==> [6/7] zipalign"
 "$BT/zipalign.exe" -f 4 "$(w "$OUT/withdex.apk")" "$(w "$OUT/aligned.apk")"
 
 echo "==> [7/7] apksigner sign"
-"$BT/apksigner.bat" sign \
+"$JAVA11" -jar "$(w "$BT/lib/apksigner.jar")" sign \
   --ks "$(w "$ROOT/debug.keystore")" \
   --ks-pass pass:android --key-pass pass:android \
   --out "$(w "$ROOT/tvgun.apk")" "$(w "$OUT/aligned.apk")"

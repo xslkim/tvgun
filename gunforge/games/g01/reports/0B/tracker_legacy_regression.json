@@ -1,0 +1,15 @@
+{
+  "scope": "historical legacy replay, no FRAME packet",
+  "frames": 1746,
+  "baseline_commit": "92be573",
+  "byte_identical_to_baseline": true,
+  "telemetry_sha256": "3bd3e6e0ba191da8faab0a6952d9469cba07706a0dbf123b87b6243c8ec4c81e",
+  "historical_python_reference_comparison": {
+    "status": "existing_failure_in_both_versions",
+    "grade_agreement": 0.6787,
+    "median_cross_difference": 1.456,
+    "still_jitter_java": 0.409,
+    "still_jitter_python": 0.387
+  },
+  "actual_hardware": "pending"
+}

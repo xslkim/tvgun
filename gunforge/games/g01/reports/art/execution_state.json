@@ -30,7 +30,7 @@
   ],
   "unreported_generation_cost": null,
   "builtin_image_calls": 113,
-  "next_task": "first_station_engine_integration_and_actual_0B_preparation",
+  "next_task": "B07_user_mouse_and_actual_lightgun_playtest",
   "T03": "completed_A1b_direction_approved_with_followup",
   "A1_anchor_count": 12,
   "ink_direction": "moderated_gloss_custom",
@@ -62,11 +62,20 @@
     "ink_gloss",
     "enemy_hit_feedback_v3"
   ],
-  "task_status": "active_engine_and_actual_0B_pending",
+  "task_status": "playable_0B_build_ready_for_user_validation",
   "resumed": {
     "date": "2026-11-06",
     "source": "explicit_user_chat",
     "prior_checkpoint": "docs/art/PAUSED_A2k_HANDOFF.md",
     "character_commit": "5da1766"
+  },
+  "0B": {
+    "plan": "docs/GAME01_0B_TASKS.md",
+    "report": "gunforge/games/g01/reports/0B/report.md",
+    "core_tests": 39,
+    "local_engine_and_udp": "passed",
+    "mouse_playtest": "pending",
+    "hardware_monitor_tv": "pending",
+    "actual_five_criteria": "pending"
   }
 }
