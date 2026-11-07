@@ -5,8 +5,10 @@ const InputLink = preload("core/gun_input.gd")
 const Hit = preload("core/hit_resolver.gd")
 const Cal = preload("core/calibration.gd")
 const Audio = preload("core/audio.gd")
+const HttpControls = preload("core/http_controls.gd")
 var frame = Frame.new()
 var link = InputLink.new()
+var http_controls = HttpControls.new()
 var resolver = Hit.new()
 var calibration = Cal.new()
 var model
@@ -92,10 +94,11 @@ func _ready():
 		if arg.begins_with("--discovery="):
 			disco_port = int(arg.trim_prefix("--discovery="))
 	link.open(game_port,disco_port)
+	http_controls.open(game_port,http_command)
 	var debug_error = debug_server.listen(19010,"127.0.0.1")
 	startup = {"godot":Engine.get_version_info().string,"renderer":RenderingServer.get_current_rendering_method(),
 			   "adapter":RenderingServer.get_video_adapter_name(),
-			   "network_errors":link.bind_errors,"debug_error":debug_error}
+			   "network_errors":link.bind_errors,"http_error":http_controls.bind_error,"debug_error":debug_error}
 	get_tree().root.size_changed.connect(layout)
 	layout()
 	scene.update_frame()
@@ -158,6 +161,7 @@ func _process(delta):
 	for event in link.poll(elapsed,frame.white,frame.dark):
 		if network_mode:
 			dispatch(event)
+	http_controls.poll()
 	if not fixed:
 		advance(minf(delta,.1))
 	poll_debug()
@@ -205,6 +209,20 @@ func dispatch(event: Dictionary):
 	else:
 		model.command(command)
 	scene.update_frame()
+
+func http_command(command: String, payload: Dictionary) -> Dictionary:
+	if command=="STATE":
+		return {"ok":true,"score":model.score,"phase":model.phase}
+	var before = model.hits
+	var event = {"event":command}
+	if command=="SHOT":
+		var point = Vector2(float(payload.x),float(payload.y))
+		if not is_finite(point.x) or not is_finite(point.y) or point.length()>100000:
+			return {"ok":false}
+		event.aim = point
+		cursor_norm = point
+	dispatch(event)
+	return {"ok":true,"score":model.score,"hit":model.hits>before}
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion and not network_mode:
@@ -377,4 +395,5 @@ func capture(path: String):
 
 func _exit_tree():
 	link.close()
+	http_controls.close()
 	debug_server.stop()

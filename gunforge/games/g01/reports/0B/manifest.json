@@ -51,7 +51,7 @@
     },
     {
       "file": "gunforge/framework/main.gd",
-      "sha256": "5df6e8acda482ba271c32383c71c738b6a38f34ae0d6e12bc15c84565bb9bea1"
+      "sha256": "7821228eabbc3d37890d03cf2542d6f7b7b1df782e0cf01604eef06ce5e47802"
     },
     {
       "file": "gunforge/framework/main.tscn",
@@ -83,7 +83,7 @@
     },
     {
       "file": "gunforge/games/g01/scripts/alley_rules.gd",
-      "sha256": "d2cf2706ba97dae6eafa1ff1f35665c965fee30f998d7b47df8ef5d75226c9c3"
+      "sha256": "dff0df0e6f1bd37e17ddf3e21ff4b5630ecc9b36f04b69c78e7a114da9c06d8e"
     },
     {
       "file": "gunforge/games/g01/scripts/alley_scene.gd",
@@ -96,6 +96,10 @@
     {
       "file": "scripts/guntrack.py",
       "sha256": "13681deb2762e181245b9413a3c2b4709650c08450cd3025a8f49004b01c2055"
+    },
+    {
+      "file": "gunforge/framework/core/http_controls.gd",
+      "sha256": "c9f78e765071a374c53f24e3140ccfa942140baa3e3fe7da854d80f9d079fc94"
     }
   ],
   "evidence": [
@@ -142,6 +146,10 @@
     {
       "file": "udp_tests.json",
       "sha256": "db92b8597c5c445005f83e8db638fc1e5afa0d17b5175a25fdd3eac6d3729033"
+    },
+    {
+      "file": "http_tests.json",
+      "sha256": "f148b4537d16c0dedb3375eaf0350642a0c2be00f4c45c0c9782834efcfd0317"
     }
   ]
 }

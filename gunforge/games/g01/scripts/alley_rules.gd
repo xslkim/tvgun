@@ -150,6 +150,9 @@ func command(event: String, hit: Dictionary = {}, offscreen = false, locked = tr
 		if phase in ["title","complete"]:
 			reset()
 			return true
+		if user_paused:
+			user_paused = false
+			return true
 	if event=="COIN" and phase=="continue":
 		lives = int(config.rules.lives)
 		score = 0
