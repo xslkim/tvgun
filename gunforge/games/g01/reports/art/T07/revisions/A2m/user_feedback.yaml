@@ -1,0 +1,8 @@
+source: explicit_user_chat
+visual_feedback: "握持还是不对， 糖葫芦，和录像带 在手的后面。是不是遮挡关系不对"
+prior_grip_status: changes_requested
+updated_grip_status: pending_visual_recheck
+preserved_visual_approval: art2d_resident_animation_except_grips
+A2_offline_readiness_decision: pending
+T08_started: false
+actual_0B_approved: false

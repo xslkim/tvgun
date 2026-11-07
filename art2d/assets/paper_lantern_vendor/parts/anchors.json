@@ -188,14 +188,35 @@
       54
     ]
   },
+  "hand_far_front": {
+    "uv": [
+      0.28205128205128205,
+      0.3939393939393939
+    ],
+    "pixels": [
+      11.0,
+      13.0
+    ],
+    "image": "paper_lantern_vendor_hand_far_front_default.png",
+    "source_crop": [
+      1048,
+      584,
+      1222,
+      683
+    ],
+    "size": [
+      39,
+      33
+    ]
+  },
   "held_object": {
     "uv": [
       0.5,
-      0.8181818181818182
+      0.740909090909091
     ],
     "pixels": [
       20.0,
-      180.0
+      163.0
     ],
     "image": "paper_lantern_vendor_held_object_default.png",
     "source_crop": [

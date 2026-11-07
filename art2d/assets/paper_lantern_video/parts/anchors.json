@@ -188,6 +188,27 @@
       69
     ]
   },
+  "hand_far_front": {
+    "uv": [
+      0.4318181818181818,
+      0.4791666666666667
+    ],
+    "pixels": [
+      19.0,
+      23.0
+    ],
+    "image": "paper_lantern_video_hand_far_front_default.png",
+    "source_crop": [
+      1048,
+      562,
+      1220,
+      675
+    ],
+    "size": [
+      44,
+      48
+    ]
+  },
   "held_object": {
     "uv": [
       0.14285714285714285,

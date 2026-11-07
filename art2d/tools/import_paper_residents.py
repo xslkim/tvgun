@@ -18,7 +18,10 @@ PROFILES = {
         'label': '卖糖葫芦居民', 'wrists': [[76, 153], [101, 181]],
         'ankles': [[78.28, 183.31], [78.02, 184.40]],
         'sleeve_end': [151, 177], 'hand_start': [144, 168],
-        'prop_grip': [102, 207], 'prop_pivot': [20, 180], 'prop_angle': -16,
+        'prop_grip': [109, 185], 'prop_pivot': [20, 163], 'prop_angle': -16,
+        'grip_thumb': [[89, 153], [115, 152], [131, 171], [132, 197],
+                       [120, 200], [114, 196], [111, 191], [108, 182],
+                       [101, 181], [95, 176], [91, 170], [88, 161]],
         'collar': [[133, 47], [210, 47], [212, 74], [197, 82], [151, 83], [133, 73]],
         'upper_angles': [-108, -78], 'elbow_angles': [-7, 9],
     },
@@ -26,7 +29,11 @@ PROFILES = {
         'label': '录像厅老板', 'wrists': [[87, 133], [95, 174]],
         'ankles': [[80.54, 192.34], [84.62, 188.05]],
         'sleeve_end': [134, 159], 'hand_start': [126, 151],
-        'prop_grip': [91, 190], 'prop_pivot': [12, 24], 'prop_angle': 12,
+        'prop_grip': [99, 185], 'prop_pivot': [12, 24], 'prop_angle': 12,
+        'grip_thumb': [[77, 140], [113, 140], [119, 159], [117, 176],
+                       [114, 188], [110, 194], [104, 198], [98, 197],
+                       [94, 193], [93, 186], [93, 177], [89, 171],
+                       [83, 166], [79, 161], [76, 153]],
         'collar': [[140, 46], [245, 45], [263, 77], [256, 98], [206, 91], [158, 73]],
         'upper_angles': [-103, -80], 'elbow_angles': [-8, 11],
     },
@@ -256,12 +263,15 @@ def prepare_character(cache, role):
             da = math.radians(lower_a-lower_axis)
             grip_world = [hand[0]+dx*math.cos(da)-dy*math.sin(da),hand[1]+dx*math.sin(da)+dy*math.cos(da)]
             bones.append(['held_prop','hand_far',*grip_world,p['prop_angle'],0])
-            part('hand_far',v,wrist,crop_y=[p['hand_start'][i],parts[v].height])
+            hand_crop = [p['hand_start'][i], parts[v].height]
+            part('hand_far', v, wrist, crop_y=hand_crop)
+            part('hand_far_front', v, wrist, polygon=p['grip_thumb'], crop_y=hand_crop)
             part('held_object','prop',p['prop_pivot'])
-            # The curled hand covers the bamboo contact or the case's top corner.
-            # Keeping the hand intact avoids a straight split across the knuckles.
-            attach('held_prop','held_object')
+            # The original palm provides a continuous underlay. Only the thumb
+            # returns in front, on the same wrist and along its drawn contour.
             attach('hand_far','hand_far',lower_axis)
+            attach('held_prop','held_object')
+            attach('hand_far','hand_far_front',lower_axis)
             attach('forearm_far','sleeve_far',lower_axis)
             attach('upper_arm_far','upper_far',upper_axis)
         else:

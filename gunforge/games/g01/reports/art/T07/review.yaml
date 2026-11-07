@@ -72,7 +72,7 @@ items:
   source: explicit_user_chat
 - id: art2d_corrected_grips
   status: pending
-  scope: final visual recheck of the tanghulu orientation and videotape case grip
+  scope: visual recheck of palm, prop and thumb occlusion for both grips
 - id: A2_offline_readiness
   status: pending
   scope: reviewer decision on T08 offline work with documented technical items still open
@@ -80,5 +80,5 @@ technical_acceptance: false
 actual_0B_approved: false
 feedback_history: revisions/A2b/user_feedback.yaml
 revision_report: report.md
-latest_feedback: revisions/A2l/user_feedback.yaml
+latest_feedback: revisions/A2m/user_feedback.yaml
 T08_started: false

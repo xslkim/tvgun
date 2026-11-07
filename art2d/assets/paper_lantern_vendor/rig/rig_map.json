@@ -3,7 +3,7 @@
   "hip": [],
   "spine": [
     {
-      "slot": 10,
+      "slot": 11,
       "part": "torso_shell",
       "variants": [],
       "weights": [
@@ -14,7 +14,7 @@
   "chest": [],
   "neck": [
     {
-      "slot": 13,
+      "slot": 14,
       "part": "collar_front",
       "variants": [],
       "weights": [
@@ -24,7 +24,7 @@
   ],
   "head": [
     {
-      "slot": 12,
+      "slot": 13,
       "part": "head_relaxed",
       "variants": [
         "distress"
@@ -37,7 +37,7 @@
   "shoulder_far": [],
   "upper_arm_far": [
     {
-      "slot": 9,
+      "slot": 10,
       "part": "upper_far",
       "variants": [],
       "weights": [
@@ -47,7 +47,7 @@
   ],
   "forearm_far": [
     {
-      "slot": 8,
+      "slot": 9,
       "part": "sleeve_far",
       "variants": [],
       "weights": [
@@ -57,8 +57,16 @@
   ],
   "hand_far": [
     {
-      "slot": 7,
+      "slot": 6,
       "part": "hand_far",
+      "variants": [],
+      "weights": [
+        "hand_far"
+      ]
+    },
+    {
+      "slot": 8,
+      "part": "hand_far_front",
       "variants": [],
       "weights": [
         "hand_far"
@@ -67,7 +75,7 @@
   ],
   "held_prop": [
     {
-      "slot": 6,
+      "slot": 7,
       "part": "held_object",
       "variants": [],
       "weights": [
@@ -78,7 +86,7 @@
   "shoulder_near": [],
   "upper_arm_near": [
     {
-      "slot": 16,
+      "slot": 17,
       "part": "upper_near",
       "variants": [],
       "weights": [
@@ -88,7 +96,7 @@
   ],
   "forearm_near": [
     {
-      "slot": 15,
+      "slot": 16,
       "part": "sleeve_near",
       "variants": [],
       "weights": [
@@ -98,7 +106,7 @@
   ],
   "hand_near": [
     {
-      "slot": 14,
+      "slot": 15,
       "part": "hand_near",
       "variants": [
         "open_palm"
@@ -110,7 +118,7 @@
   ],
   "ink_anchor": [
     {
-      "slot": 11,
+      "slot": 12,
       "part": "rescue_ink",
       "variants": [],
       "weights": [

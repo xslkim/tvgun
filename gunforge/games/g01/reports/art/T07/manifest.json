@@ -1,5 +1,5 @@
 {
-  "revision": "A2l",
+  "revision": "A2m",
   "character_commit": "5da1766",
   "new_image_calls": 0,
   "technical_acceptance": false,
@@ -8,19 +8,19 @@
   "outputs": [
     {
       "file": "gunforge/games/g01/reports/art/T07/report.md",
-      "sha256": "eb08fec85d9dc6e5c20492c61ee2da1f907e9ed293622a218c3366c88370d97e"
+      "sha256": "61c5d3eb51ea9391fddf9a4587be58b8cbee28611159810a6f5f12aa1b3a0597"
     },
     {
       "file": "gunforge/games/g01/reports/art/T07/review.yaml",
-      "sha256": "a5d7ef322c6efc6115b7db7430966f24eb1557960e21cd246654dc1950804168"
+      "sha256": "bb545212e8d5da2661f7accdabe36a8ebb7f51995307e5371a4cfd8c3d079cc8"
     },
     {
       "file": "gunforge/games/g01/reports/art/T07/checks.json",
-      "sha256": "5ae6cfcd86583855820898ed273edfc14f30254667ed67ebdfbb965ad659f397"
+      "sha256": "e05a5216b3cc9632d470d49a430b6f53b977af69ae887ac13788842f68b43199"
     },
     {
       "file": "gunforge/games/g01/reports/art/T07/gallery/index.html",
-      "sha256": "5c590dbac9a876ab914331c1dac0b080c5f54f688e28ff8249ab791cb88e919a"
+      "sha256": "41967aebbea7cd82df6db69c0f73cc8479c534347dc03c56074d9b1c08ee52c3"
     },
     {
       "file": "gunforge/games/g01/reports/art/T07/revisions/A2l/user_feedback.yaml",
@@ -32,7 +32,7 @@
     },
     {
       "file": "art2d/assets/paper_lantern_vendor/qa/grip_recheck.png",
-      "sha256": "e9c28d40fa73d98f461470f8154a62da09bc2e2a07eaa741b306422a8600136b"
+      "sha256": "175947ae14869725dfc6ed4e63c3ef18f270ff504d86164948dff0322a40a567"
     },
     {
       "file": "art2d/tools/qa/check_paper_rescue.py",
@@ -40,11 +40,11 @@
     },
     {
       "file": "art2d/assets/paper_lantern_vendor/export/character.json",
-      "sha256": "e53cd5d9e619f6eba9508ffad9e36b8a933ba9d3c9d0ae26326a1ab9af1573c4"
+      "sha256": "b68c5c4016f5157d7f61f8777d89c0b1b126ba3de9f55f993e0daeb2c514264e"
     },
     {
       "file": "art2d/assets/paper_lantern_vendor/export/atlas.png",
-      "sha256": "f3cc15cca7986e4e53c948dacc854bb048f01c221783a5ec12bd25f8dbe5b59d"
+      "sha256": "79e6c494fd659130d4c4a6825be438747a26f5250a0bdf303fd6813d41a7a851"
     },
     {
       "file": "art2d/assets/paper_lantern_vendor/qa/ink_attachment.json",
@@ -56,11 +56,11 @@
     },
     {
       "file": "art2d/assets/paper_lantern_video/export/character.json",
-      "sha256": "ab32ac41f63b22673a86cebe57462fcdc65965d7652949742c7ccc9f721e650d"
+      "sha256": "7b5dfb9f6dc5878df61c0591abb2a67a59f79224af83c04e39f576f4ff4033ca"
     },
     {
       "file": "art2d/assets/paper_lantern_video/export/atlas.png",
-      "sha256": "897cacdbc24abad7c22ec7a40cde43e3d225b0adce3ef2f34b545eb67a400db4"
+      "sha256": "b982ff49bbc6d18c8ba215b4af1f0fcdf9734b01798199d02f99f74b5278f5e5"
     },
     {
       "file": "art2d/assets/paper_lantern_video/qa/ink_attachment.json",
@@ -69,6 +69,14 @@
     {
       "file": "art2d/assets/paper_lantern_video/qa/REPORT.md",
       "sha256": "f548457fbda48b8bef834cdc9feea4ff5fc7a80f65be2c2bbc3788480b99e747"
+    },
+    {
+      "file": "gunforge/games/g01/reports/art/T07/revisions/A2m/user_feedback.yaml",
+      "sha256": "dcc50f3f384bbdff57ce85d43a4290407584e6e1d032674aa802ecc625e13f55"
+    },
+    {
+      "file": "art2d/tools/qa/check_paper_grip.py",
+      "sha256": "5aee9a338f5a2033dabe7ebb0a9b222fa418982a0b5f294dce418b19e132de53"
     }
   ],
   "sha256_policy": "Normalize CRLF to LF for JSON, Markdown, YAML, HTML and Python. Hash binary assets as stored."
