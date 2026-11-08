@@ -6,6 +6,17 @@ const Hit = preload("core/hit_resolver.gd")
 const Cal = preload("core/calibration.gd")
 const Audio = preload("core/audio.gd")
 const HttpControls = preload("core/http_controls.gd")
+const PoseCodec = preload("core/pose_codec.gd")
+const FixedClock = preload("core/fixed_clock.gd")
+const TickQueue = preload("core/tick_input_queue.gd")
+var simulation_clock = FixedClock.new()
+var input_queue = TickQueue.new()
+var submitted_items = []
+var submitted_pose = ""
+var submitted_frame = ""
+var submission_count = 0
+var input_completions = {}
+var last_consumed_input = {}
 var frame = Frame.new()
 var link = InputLink.new()
 var http_controls = HttpControls.new()
@@ -79,6 +90,7 @@ func _ready():
 	add_child(surface)
 	sound = Audio.new()
 	add_child(sound)
+	RenderingServer.frame_post_draw.connect(commit_render_submission)
 	load_settings()
 	var args = OS.get_cmdline_user_args()
 	fixed = "--fixed" in args
@@ -163,7 +175,7 @@ func _process(delta):
 			dispatch(event)
 	http_controls.poll()
 	if not fixed:
-		advance(minf(delta,.1))
+		simulation_clock.advance_frame(delta, fixed_tick)
 	poll_debug()
 	if scene:
 		scene.cursor = to_content(cursor_norm)
@@ -181,14 +193,59 @@ func _process(delta):
 		if stats.size()>max_stats:
 			stats.pop_front()
 
+func fixed_tick(_tick: int, dt: float):
+	drain_inputs()
+	advance(dt)
+
+func commit_render_submission():
+	if not scene:
+		return
+	submission_count += 1
+	submitted_items = scene.drawn_hit_items.duplicate()
+	submitted_pose = "tick:%d:revision:%d" % [simulation_clock.tick,scene.drawn_pose_revision]
+	submitted_frame = "frame:%d" % submission_count
+
+func dispatch(event: Dictionary, completion: Callable = Callable()):
+	var copy = event.duplicate(true)
+	if copy.event == "SHOT":
+		var point = to_content(copy.get("aim",cursor_norm))
+		copy.bound_hit = resolver.resolve(point,submitted_items) if Rect2(Vector2.ZERO,Vector2(1776,936)).has_point(point) else {}
+		copy.bound_locked = locked()
+		copy.bound_geometry = PoseCodec.encode(submitted_items,scene.geometry_assets())
+	var order = input_queue.next_order
+	if input_queue.enqueue(copy,simulation_clock.tick,Time.get_ticks_msec(),submitted_frame,submitted_pose):
+		if completion.is_valid():
+			input_completions[order] = completion
+	elif completion.is_valid():
+		completion.call({"ok":false,"reason":input_queue.rejected[-1].reason})
+
+func drain_inputs():
+	for entry in input_queue.consume(simulation_clock.tick,Time.get_ticks_msec()):
+		var before = model.hits
+		apply_event(entry.event)
+		last_consumed_input = {"order":entry.order,"tick":simulation_clock.tick,"submission_id":entry.submission_id,"pose_id":entry.pose_id,"geometry":entry.event.get("bound_geometry",[])}
+		if input_completions.has(entry.order):
+			input_completions[entry.order].call({"ok":true,"score":model.score,"hit":model.hits>before})
+			input_completions.erase(entry.order)
+	# Expired entries must finish HTTP requests with a rejection, not a stale success.
+	for order in input_completions.keys():
+		var waiting = false
+		for entry in input_queue.pending:
+			if entry.order == order:
+				waiting = true
+		if not waiting:
+			input_completions[order].call({"ok":false,"reason":"expired_shot"})
+			input_completions.erase(order)
+
 func advance(dt: float):
 	model.tick(dt,locked())
 	scene.view_clock = model.total
+	scene.build_pose()
 	while last_events<model.events.size():
 		sound.cue(model.events[last_events].event)
 		last_events += 1
 
-func dispatch(event: Dictionary):
+func apply_event(event: Dictionary):
 	var command = event.event
 	if command=="AIM":
 		cursor_norm = event.aim
@@ -198,8 +255,20 @@ func dispatch(event: Dictionary):
 			calibrate_shot(aim)
 			return
 		var point = to_content(aim)
-		var hit = resolver.resolve(point,scene.hit_items) if Rect2(Vector2.ZERO,Vector2(1776,936)).has_point(point) else {}
-		if model.command("SHOT",hit,offscreen(aim),locked()):
+		var hit = event.get("bound_hit",{}).duplicate(true)
+		if hit.get("kind","") in ["primary","weak","protected"]:
+			var current_kinds = []
+			for item in scene.hit_items:
+				if item.id == hit.get("id",""):
+					current_kinds.append(item.kind)
+			if hit.kind == "protected" and not current_kinds.has("protected"):
+				hit.kind = "miss"
+			elif hit.kind in ["primary","weak"]:
+				if not current_kinds.has("primary") and not current_kinds.has("weak"):
+					hit.kind = "invalid" if current_kinds.has("invalid") else "miss"
+				elif hit.kind == "weak" and not current_kinds.has("weak"):
+					hit.kind = "primary"
+		if model.command("SHOT",hit,offscreen(aim),event.get("bound_locked",locked()) and locked()):
 			scene.flash_time = model.total
 			scene.flash_point = point
 			scene.last_kind = hit.get("kind","miss")
@@ -208,9 +277,10 @@ func dispatch(event: Dictionary):
 		model.user_paused = not model.user_paused
 	else:
 		model.command(command)
+	scene.build_pose()
 	scene.update_frame()
 
-func http_command(command: String, payload: Dictionary) -> Dictionary:
+func http_command(command: String, payload: Dictionary, completion: Callable = Callable()) -> Dictionary:
 	if command=="STATE":
 		return {"ok":true,"score":model.score,"phase":model.phase}
 	var before = model.hits
@@ -221,8 +291,8 @@ func http_command(command: String, payload: Dictionary) -> Dictionary:
 			return {"ok":false}
 		event.aim = point
 		cursor_norm = point
-	dispatch(event)
-	return {"ok":true,"score":model.score,"hit":model.hits>before}
+	dispatch(event,completion)
+	return {"deferred":true}
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion and not network_mode:
@@ -363,14 +433,19 @@ func debug_command(request: Dictionary) -> Dictionary:
 			if not fixed:
 				return {"error":"Freeze the game clock before stepping"}
 			for i in range(clampi(request.get("frames",1),1,600)):
-				advance(1.0/60)
+				simulation_clock.step(fixed_tick)
 			scene.update_frame()
+			commit_render_submission() # Virtual submission for frozen debug replay.
 		"input":
 			var event = {"event":request.get("event","")}
 			if request.has("x") and request.has("y"):
 				event.aim = Vector2(request.x,request.y)
 				cursor_norm = event.aim
+			# Compatibility: frozen injection is an explicit zero-time input boundary.
+			commit_render_submission()
 			dispatch(event)
+			drain_inputs()
+			commit_render_submission()
 		"mode":
 			network_mode = request.get("gun",false)
 		"profile":
@@ -397,3 +472,57 @@ func _exit_tree():
 	link.close()
 	http_controls.close()
 	debug_server.stop()
+
+# A1a snapshots are local fixed-input replay state, not an untrusted import format.
+const REPLAY_LINK_FIELDS = ["aim","valid","grade","last_aim","last_packet","largest_aim",
+	"shot_sequences","session","source","rejected","session_token","last_loss_sequence","retired_sessions"]
+
+func replay_link_state() -> Dictionary:
+	var state = {}
+	for key in REPLAY_LINK_FIELDS:
+		var value = link.get(key)
+		state[key] = value.duplicate(true) if value is Array or value is Dictionary else value
+	return state
+
+func replay_snapshot() -> Dictionary:
+	assert(input_completions.is_empty(), "Drain live HTTP completions before snapshot")
+	return {"version":1,"rules":model.save_state(),"clock":simulation_clock.snapshot(),
+		"inputs":input_queue.snapshot(),"submission_count":submission_count,
+		"pose_id":submitted_pose,"submission_id":submitted_frame,
+		"geometry":PoseCodec.encode(submitted_items,scene.geometry_assets()),
+		"last_events":last_events,"cursor":cursor_norm,"network_mode":network_mode,
+		"link":replay_link_state(),"sample_ms":Time.get_ticks_msec(),
+		"frame":{"white":frame.white,"dark":frame.dark,"outer":frame.outer,"profile":frame.profile},
+		"calibration":calibration.matrix.duplicate(),
+		"presentation":{"view_clock":scene.view_clock,"flash_time":scene.flash_time,
+			"flash_point":scene.flash_point,"last_kind":scene.last_kind,"debug":scene.debug,"pose_revision":scene.pose_revision}}
+
+func restore_replay_snapshot(data: Dictionary):
+	assert(data.version == 1 and input_completions.is_empty())
+	model.restore_state(data.rules)
+	simulation_clock.restore(data.clock)
+	input_queue.restore(data.inputs)
+	var delta_ms = Time.get_ticks_msec()-int(data.sample_ms)
+	for entry in input_queue.pending:
+		entry.received_ms += delta_ms
+	submission_count = data.submission_count
+	submitted_pose = data.pose_id
+	submitted_frame = data.submission_id
+	submitted_items = PoseCodec.decode(data.geometry,scene.geometry_assets())
+	last_events = data.last_events
+	cursor_norm = data.cursor
+	network_mode = data.network_mode
+	for key in REPLAY_LINK_FIELDS:
+		var value = data.link[key]
+		link.set(key,value.duplicate(true) if value is Array or value is Dictionary else value)
+	link.last_aim += delta_ms/1000.0
+	link.last_packet += delta_ms/1000.0
+	for key in data.frame:
+		frame.set(key,data.frame[key])
+	calibration.matrix = data.calibration.duplicate()
+	for key in data.presentation:
+		scene.set(key,data.presentation[key])
+	scene.build_pose()
+	scene.pose_revision = data.presentation.pose_revision
+	scene.update_frame()
+	layout()

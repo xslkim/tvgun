@@ -4,7 +4,7 @@ func exact(point: Vector2, items: Array) -> Dictionary:
 	for index in range(items.size()-1, -1, -1):
 		var item = items[index]
 		if item.kind != "" and item.bounds().has_point(point) and item.sample(point).a >= 0.5:
-			return {"id": item.id, "kind": item.kind, "point": point, "assisted": false}
+			return {"id": item.id, "kind": item.kind, "point": point, "assisted": false,"generation":item.generation}
 	return {}
 
 func resolve(point: Vector2, items: Array, assist = 15.0) -> Dictionary:

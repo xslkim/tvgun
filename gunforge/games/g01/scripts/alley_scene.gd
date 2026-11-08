@@ -1,5 +1,6 @@
 extends Node2D
 
+const Pose = preload("res://runtime/game_pose.gd")
 const Item = preload("res://core/raster_item.gd")
 const Painter = preload("res://core/raster_layer.gd")
 const Puppet = preload("res://core/puppet.gd")
@@ -16,6 +17,10 @@ var puppet = Puppet.new()
 var station: Dictionary
 var crow_model: Dictionary
 var hit_items = []
+var drawn_hit_items = []
+var logical_pose = {}
+var pose_revision = 0
+var drawn_pose_revision = 0
 var aim_points = {}
 var cursor = Vector2(-100,-100)
 var locked = true
@@ -90,121 +95,35 @@ func _ready():
 	overlay = Node2D.new()
 	overlay.draw.connect(_draw_hud)
 	add_child(overlay)
+	build_pose()
 
-func image_item(path: String, pos: Vector2, size: Vector2, kind = "", id = ""):
-	var item = Item.new()
-	item.image = images[path]
-	item.texture = textures[path]
-	item.source = Rect2(Vector2.ZERO,item.image.get_size())
-	item.transform = Transform2D(0,pos)
-	item.size = size
-	item.id = id
-	item.kind = kind
-	return item
+func build_pose():
+	pose_revision += 1
+	var composer = Pose.new()
+	composer.model = model
+	composer.station = station
+	composer.crow_model = crow_model
+	composer.images = images
+	composer.textures = textures
+	composer.puppet = puppet
+	logical_pose = composer.compose(view_clock)
+	hit_items = logical_pose.hit_items
+	aim_points = logical_pose.aim_points
+	light_exposure = logical_pose.light_exposure
 
 func update_frame():
-	if not is_instance_valid(background):
+	if not is_instance_valid(background) or logical_pose.is_empty():
 		return
 	var began = Time.get_ticks_usec()
-	var camera = Vector2(35*sin(view_clock*.58),18*sin(view_clock*.81))
-	var breath = Vector2(7*sin(view_clock*1.27),3*sin(view_clock*1.71))
-	var shift = camera+breath
-	var bg = []
-	var fg = []
-	var body = []
-	var lights = []
-	var evaporating = []
-	hit_items = []
-	aim_points.clear()
-	var origin = Vector2(station.content_origin[0],station.content_origin[1])
-	var lamp_pos = Vector2.ZERO
-	for layer in station.layers:
-		var pos = Vector2(layer.pos[0],layer.pos[1])-origin-shift*layer.parallax
-		var item = image_item("station/"+layer.file,pos,Vector2(layer.draw_size[0],layer.draw_size[1]))
-		if layer.get("blocks_shots",false):
-			item.kind = "blocker"
-			item.id = layer.id
-			fg.append(item)
-		else:
-			bg.append(item)
-		if layer.id=="lamp":
-			lamp_pos = pos
-			var lamp = Item.new()
-			lamp.image = item.image
-			lamp.texture = item.texture
-			lamp.source = Rect2(497,253,200,120)
-			lamp.transform = Transform2D(0,pos+Vector2(497,253))
-			lamp.size = Vector2(200,120)
-			lamp.id = "lamp"
-			lamp.kind = "primary"
-			hit_items.append(lamp)
-			aim_points.lamp = pos+Vector2(596,309)
-	var cover = image_item("ink_on_lamp/cover_%02d.png" % (model.wave%3),lamp_pos+Vector2(521,269),Vector2(151,94))
-	cover.tint.a = 1-model.lamp_amount
-	body.append(cover)
-	for light in station.lights:
-		var pos = -origin-shift*.6
-		var spill = image_item("station/"+light.spill,pos,Vector2(station.canvas[0],station.canvas[1]))
-		spill.tint = Color(.85,.63,.40,model.lamp_amount*.7)
-		lights.append(spill)
-		var glow = image_item("station/"+light.glow,pos,Vector2(station.canvas[0],station.canvas[1]))
-		glow.tint.a = model.lamp_amount
-		lights.append(glow)
-	if model.resident_active():
-		var rescued = model.rescued_at>=0
-		var time = model.clock-model.rescued_at if rescued else model.resident_time()
-		var clip = "rescued_bounce" if rescued and time<2.3 else ("thank" if rescued else "struggle")
-		var person = puppet.items(clip,maxf(0,time-(2.3 if clip=="thank" else 0)),Vector2(735,830)-shift*.45,not rescued)
-		body.append_array(person)
-		hit_items.append_array(person)
-		for item in person:
-			if item.id=="resident_ink":
-				aim_points.resident_ink = item.transform * (item.size * Vector2(.5,.5))
-	for i in range(model.enemies.size()):
-		var enemy = model.enemies[i]
-		if enemy.status not in ["alive","defeated"]:
-			continue
-		var fade = clampf((model.clock-enemy.hit_at)/.75,0,1) if enemy.status=="defeated" else 0.0
-		if fade>=1:
-			continue
-		var center = Vector2(1320+7*sin(view_clock*2),550+7*sin(view_clock*2.7))-shift*.45
-		var mask_pos = center+origin+shift*.6
-		var spill_image = images["station/"+station.lights[0].spill]
-		var uv = mask_pos / Vector2(station.canvas[0],station.canvas[1])
-		var pixel = (uv*Vector2(spill_image.get_size())).clamp(Vector2.ZERO,Vector2(spill_image.get_size())-Vector2.ONE)
-		light_exposure = spill_image.get_pixel(int(pixel.x),int(pixel.y)).r*model.lamp_amount
-		var soft = light_exposure>=.3
-		var scale = 264.0/1024
-		var recoil = 20*exp(-8*maxf(0,model.clock-enemy.hit_at)) if enemy.status=="defeated" else 0.0
-		center.x += recoil
-		if enemy.status=="defeated":
-			var gone = image_item("crow/defeated.png",center-Vector2(132,132),Vector2(264,264))
-			evaporating.append(gone)
-			purification.material.set_shader_parameter("progress",fade)
-			continue
-		for key in ["body","core" if soft else "core_hardened"]:
-			var info = crow_model.files[key]
-			var pos = center+(Vector2(info.crop_origin[0],info.crop_origin[1])-Vector2(512,512))*scale
-			var sprite = image_item("crow/"+info.file,pos,Vector2(info.size[0],info.size[1])*scale,
-					("primary" if soft else "invalid") if key=="body" else ("weak" if soft else "invalid"),"crow_%d"%i)
-			sprite.tint.a = 1-fade
-			body.append(sprite)
-			if enemy.status=="alive":
-				hit_items.append(sprite)
-		aim_points["crow_%d"%i] = center+Vector2(0,20)
-	if model.pickup_active():
-		var key = "light" if model.wave%2==0 else "wick"
-		var at = Vector2(1055,690)-shift*.45+Vector2(0,5*sin(view_clock*4))
-		var pickup = image_item("pickups/pickup_"+key+".png",at-Vector2(56,56),Vector2(112,112),"primary","pickup")
-		body.append(pickup)
-		hit_items.append(pickup)
-		aim_points.pickup = at
-	hit_items.append_array(fg)
-	background.refresh(bg)
-	lighting.refresh(lights)
-	actors.refresh(body)
-	purification.refresh(evaporating)
-	foreground.refresh(fg)
+	var pose = logical_pose
+	drawn_hit_items = pose.hit_items.duplicate()
+	drawn_pose_revision = pose_revision
+	background.refresh(pose.background)
+	lighting.refresh(pose.lighting)
+	actors.refresh(pose.actors)
+	purification.refresh(pose.purification)
+	purification.material.set_shader_parameter("progress",pose.dissolve_progress)
+	foreground.refresh(pose.foreground)
 	overlay.queue_redraw()
 	draw_time_ms = (Time.get_ticks_usec()-began)/1000.0
 
@@ -215,14 +134,15 @@ func label(text: String, point: Vector2, size = 30, color = Color("#e4c7a5")):
 func _draw_hud():
 	if not font or not model:
 		return
-	for i in range(5):
+	var hud=model.config.presentation.hud
+	for i in range(int(model.config.rules.lives)):
 		var key = "life_wick" if i<model.lives else "life_wick_empty"
-		overlay.draw_texture_rect(textures["ui/"+key+".png"],Rect2(24+i*44,848,36,64),false)
-	for i in range(6):
+		overlay.draw_texture_rect(textures["ui/"+key+".png"],Rect2(hud.life_origin[0]+i*hud.life_stride,hud.life_origin[1],hud.life_size[0],hud.life_size[1]),false)
+	for i in range(int(model.config.rules.magazine)):
 		var key = "ammo_light" if i<model.ammo else "ammo_light_empty"
-		overlay.draw_texture_rect(textures["ui/"+key+".png"],Rect2(1530+i*38,864,32,48),false)
-	overlay.draw_texture_rect(textures["ui/score_seal.png"],Rect2(1640,24,112,112),false)
-	label(str(model.score),Vector2(1696,88),32)
+		overlay.draw_texture_rect(textures["ui/"+key+".png"],Rect2(hud.ammo_origin[0]+i*hud.ammo_stride,hud.ammo_origin[1],hud.ammo_size[0],hud.ammo_size[1]),false)
+	overlay.draw_texture_rect(textures["ui/score_seal.png"],Rect2(hud.score_rect[0],hud.score_rect[1],hud.score_rect[2],hud.score_rect[3]),false)
+	label(str(model.score),Vector2(hud.score_rect[0]+hud.score_rect[2]*.5,hud.score_rect[1]+hud.score_rect[3]*4.0/7.0),32)
 	var text = ""
 	if model.phase=="title":
 		overlay.draw_rect(Rect2(0,0,1776,936),Color(0.02,.03,.06,.68))
@@ -273,10 +193,10 @@ func _draw_hud():
 			overlay.draw_line(flash_point+v*(18+elapsed*80),flash_point+v*(34+elapsed*90),color,3)
 	for i in range(model.enemies.size()):
 		var enemy = model.enemies[i]
-		var id = "crow_%d"%i
+		var id = model.enemy_ids()[i]
 		if enemy.status=="alive" and enemy.get("warned",false) and aim_points.has(id):
-			var pulse = .5+.5*sin(view_clock*TAU*1.5)
-			overlay.draw_arc(aim_points[id],22+8*pulse,0,TAU,40,Color(.85,.63,.4,.45+.4*pulse),3)
+			var pulse = .5+.5*sin(view_clock*TAU*float(model.config.presentation.warning.pulse_hz))
+			overlay.draw_arc(aim_points[id],float(model.config.presentation.warning.radius[0])+(float(model.config.presentation.warning.radius[1])-float(model.config.presentation.warning.radius[0]))*pulse,0,TAU,40,Color(.85,.63,.4,.45+.4*pulse),3)
 	if not extras.is_empty():
 		overlay.draw_rect(Rect2(260,210,1256,450),Color(.04,.05,.09,.94))
 		var lines = extras.split("\n")
@@ -294,3 +214,10 @@ func _draw_hud():
 				continue
 			overlay.draw_rect(item.bounds(),Color("#93c7a5") if item.kind=="protected" else Color("#cd7667"),false,1)
 		label("%s | 波 %d | %.1fs | light %.2f | %s" % [profile,model.wave+1,model.clock,light_exposure,"UDP" if network_mode else "mouse"],Vector2(888,815),22)
+
+func geometry_assets() -> Dictionary:
+	var out = {}
+	for key in images:
+		out[key] = {"image":images[key],"texture":textures[key]}
+	out["vendor_atlas"] = {"image":puppet.image,"texture":puppet.texture}
+	return out

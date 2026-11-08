@@ -3,3 +3,4 @@ opencv-python-headless
 pandas
 matplotlib
 pillow
+jsonschema>=4,<5

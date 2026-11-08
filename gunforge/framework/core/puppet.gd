@@ -7,6 +7,9 @@ var image: Image
 var texture: Texture2D
 var folder: String
 
+func open_registered(data:Dictionary,animations:Dictionary,atlas:Image):
+	rig=data.rig.duplicate(true);clips=animations.duplicate(true);image=atlas;texture=ImageTexture.create_from_image(atlas)
+
 func open(path: String):
 	folder = path
 	var data = JSON.parse_string(FileAccess.get_file_as_string(path.path_join("character.json")))
@@ -50,7 +53,7 @@ func pose(name: String, seconds: float) -> Dictionary:
 			slots.append(slot)
 	return {"world": world, "slots": slots, "time": t}
 
-func items(name: String, seconds: float, origin: Vector2, protected: bool) -> Array:
+func items(name: String, seconds: float, origin: Vector2, protected: bool, targetable_ink: bool = true, primary_part: String = "rescue_ink", primary_id: String = "resident_ink", body_id: String = "resident") -> Array:
 	var state = pose(name, seconds)
 	var result = []
 	for slot in state.slots:
@@ -64,7 +67,7 @@ func items(name: String, seconds: float, origin: Vector2, protected: bool) -> Ar
 		var basis = Transform2D(angle, Vector2.ZERO).scaled_local(Vector2(bone.sx, bone.sy))
 		basis.origin = origin + Vector2(bone.xy.x, -bone.xy.y) - basis.basis_xform(Vector2(slot.pivot[0], slot.pivot[1]) * item.size)
 		item.transform = basis
-		item.kind = "primary" if slot.part == "rescue_ink" else ("protected" if protected else "")
-		item.id = "resident_ink" if slot.part == "rescue_ink" else "resident"
+		item.kind = "primary" if slot.part == primary_part and targetable_ink else ("protected" if protected else "")
+		item.id = primary_id if slot.part == primary_part else body_id
 		result.append(item)
 	return result

@@ -1,0 +1,8 @@
+{
+  "source": "D:\\tvgun\\gunforge\\level_design\\packages\\paper.alley\\revisions\\b674ce3b54a5fbcd123b84ee64ee6ce14bac4da5c0d6d47fcf6d70427f71f917\\level.json",
+  "source_revision": "b674ce3b54a5fbcd123b84ee64ee6ce14bac4da5c0d6d47fcf6d70427f71f917",
+  "build_id": "44473bed8013fd904b98df9bee3b4d92966300914b509c0d2401b04eeb365f61",
+  "compiled": "D:\\gunforge_cache\\level_design\\builds\\44473bed8013fd904b98df9bee3b4d92966300914b509c0d2401b04eeb365f61\\level.json",
+  "state": "candidate_not_adopted",
+  "migration": "shared scheduler and typed rules plugin; native presentation facade retained"
+}

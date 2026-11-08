@@ -28,7 +28,25 @@ var user_paused = false
 var last_result = {}
 
 func setup(data: Dictionary):
-	config = data
+	if data.get("format","") == "gunforge-compiled-level-v1":
+		var params = data.level.ruleset_data
+		config = params.native_level.duplicate(true)
+		var ordered = []
+		for wave_id in config.wave_order:
+			var current = config.waves[wave_id].duplicate(true)
+			var enemies_by_id = current.enemies
+			current.enemies = []
+			for enemy_id in current.enemy_order:
+				var entry = enemies_by_id[enemy_id].duplicate(true)
+				entry.id = enemy_id
+				current.enemies.append(entry)
+			ordered.append(current)
+		config.waves = ordered
+		config.presentation = params.presentation.duplicate(true)
+	else:
+		config = data.duplicate(true)
+	if not config.has("presentation"):
+		config.presentation = JSON.parse_string(FileAccess.get_file_as_string("res://runtime/presentation.json"))
 	reset()
 	phase = "title"
 
@@ -76,8 +94,12 @@ func resident_time() -> float:
 func pickup_active() -> bool:
 	return phase == "playing" and not pickup_taken and clock>=config.waves[wave].pickup_at
 
-func light_active() -> bool:
-	return lamp_amount>=.3
+func exposure_at(center: Vector2, origin: Vector2, shift: Vector2, canvas: Vector2, spill_image: Image) -> float:
+	var mask_pos = center+origin+shift*float(config.presentation.light_parallax)
+	return preload("res://core/spatial_queries.gd").mask_red(spill_image,mask_pos,canvas)*lamp_amount
+
+func light_active(exposure: float) -> bool:
+	return exposure>=float(config.presentation.soft_exposure)
 
 func tick(dt: float, locked: bool):
 	dt = maxf(0,dt)
@@ -175,37 +197,42 @@ func command(event: String, hit: Dictionary = {}, offscreen = false, locked = tr
 		return false
 	ammo -= 1
 	shots += 1
-	last_result = hit
 	var kind = hit.get("kind","miss")
 	var id = hit.get("id","")
+	if id == "resident_ink" and rescued_at >= 0:
+		hit = hit.duplicate(true)
+		hit.kind = "miss"
+		kind = "miss"
+		id = ""
+	last_result = hit
 	if kind in ["primary","weak"]:
 		hits += 1
 		if id=="lamp":
 			lamp_until = clock+config.rules.lamp_seconds
-			score += 25
+			score += int(config.presentation.scores.lamp)
 			notify("lamp","灯亮了 · 墨已软化")
 		elif id=="resident_ink":
 			rescued_at = clock
-			score += 300
+			score += int(config.presentation.scores.rescue)
 			notify("rescue","纸居民获救")
-		elif id.begins_with("crow_"):
-			var index = int(id.trim_prefix("crow_"))
+		elif enemy_ids().has(id):
+			var index = enemy_ids().find(id)
 			if index>=0 and index<enemies.size() and enemies[index].status=="alive":
 				enemies[index].status = "defeated"
 				enemies[index].hit_at = clock
-				score += 150 if kind=="weak" else 100
+				score += int(config.presentation.scores.weak if kind=="weak" else config.presentation.scores.primary)
 				notify("hit","印迹命中" if kind=="weak" else "净化墨鸦")
 		elif id=="pickup":
 			pickup_taken = true
-			if wave%2==0:
+			if config.presentation.pickup.types[wave]=="light":
 				ammo = int(config.rules.magazine)
 			else:
 				lives = mini(int(config.rules.lives),lives+1)
-			score += 25
-			notify("pickup","收到了光" if wave%2==0 else "灯芯已补充")
+			score += int(config.presentation.scores.pickup)
+			notify("pickup","收到了光" if config.presentation.pickup.types[wave]=="light" else "灯芯已补充")
 	elif kind=="protected":
-		score = maxi(0,score-100)
-		damage("请只净化胸口的墨")
+		score = maxi(0,score-int(config.presentation.scores.protected))
+		notify("protected","请只净化胸口的墨")
 	elif kind=="invalid":
 		notify("blocked","墨已硬化 · 先点灯")
 	elif kind=="blocker":
@@ -219,3 +246,25 @@ func snapshot() -> Dictionary:
 			"rescued":rescued_at>=0,"lamp":lamp_amount,"enemies":enemies.duplicate(true),
 			"paused":auto_paused or user_paused,"lost":lost_seconds,"resume":resume,
 			"shots":shots,"hits":hits,"feedback":feedback,"events":events.duplicate(true)}
+
+const SAVED_FIELDS = ["config", "phase", "lives", "ammo", "score", "wave", "clock", "total", "lamp_until", "lamp_amount", "reload_until", "last_shot", "state_clock", "rescued_at", "enemies", "pickup_taken", "hits", "shots", "feedback", "feedback_until", "events", "lost_seconds", "resume", "auto_paused", "user_paused", "last_result"]
+
+func save_state() -> Dictionary:
+	var data = {"version":1}
+	for key in SAVED_FIELDS:
+		var value = get(key)
+		data[key] = value.duplicate(true) if value is Dictionary or value is Array else value
+	return data
+
+func restore_state(data: Dictionary):
+	assert(data.version == 1)
+	for key in SAVED_FIELDS:
+		assert(data.has(key), "Incomplete rules snapshot")
+		var value = data[key]
+		set(key, value.duplicate(true) if value is Dictionary or value is Array else value)
+
+func enemy_ids() -> Array:
+	var ids = []
+	for i in range(config.waves[wave].enemies.size()):
+		ids.append(str(config.waves[wave].enemies[i].get("id","crow_%d" % i)))
+	return ids

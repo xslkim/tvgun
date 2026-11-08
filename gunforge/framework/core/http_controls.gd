@@ -38,6 +38,8 @@ func poll():
 			peer.disconnect_from_host()
 			clients.erase(client)
 			continue
+		if client.get("pending",false):
+			continue
 		if peer.get_available_bytes()>0:
 			var received = peer.get_data(peer.get_available_bytes())
 			if received[0]!=OK:
@@ -74,12 +76,18 @@ func poll():
 				respond(client,400,{"ok":false})
 				continue
 		if first[0]=="GET" and first[1]=="/state":
-			respond(client,200,callback.call("STATE",payload))
+			respond(client,200,callback.call("STATE",payload,Callable()))
 		elif first[0]=="POST" and first[1] in ["/start","/coin","/reload","/exit","/shot"]:
 			if first[1]=="/shot" and (not payload.has("x") or not payload.has("y") or
 					not (payload.x is float or payload.x is int) or not (payload.y is float or payload.y is int)):
 				respond(client,400,{"ok":false})
 			else:
-				respond(client,200,callback.call(first[1].substr(1).to_upper(),payload))
+				client.pending = true
+				var finish = func(result):
+					if clients.has(client):
+						respond(client,200,result)
+				var result = callback.call(first[1].substr(1).to_upper(),payload,finish)
+				if not result.get("deferred",false) and clients.has(client):
+					respond(client,200,result)
 		else:
 			respond(client,404,{"ok":false})

@@ -27,6 +27,7 @@ def run():
     def send(text):
         sock.sendto(text.encode(),('127.0.0.1',9000))
         time.sleep(.065)
+        client.call('step',frames=1)  # Consume queued network events at an explicit frozen tick.
 
     send('HELLO qa-session-0b')
     send('960,540,4,0')

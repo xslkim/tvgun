@@ -41,7 +41,8 @@ def main():
             combined.alpha_composite(sprite.convert('RGBA'),tuple(info['crop_origin']))
     combined.resize((264,264),Image.Resampling.LANCZOS).save(OUT/'crow/defeated.png')
     shutil.copyfile(GAME/'levels/alley_0b.json',OUT/'level.json')
-    for source, dest in [('alley_rules.gd','game_rules.gd'),('alley_scene.gd','game_scene.gd')]:
+    shutil.copyfile(GAME/'bible/runtime_presentation.json',OUT/'presentation.json')
+    for source, dest in [('alley_rules.gd','game_rules.gd'),('alley_scene.gd','game_scene.gd'),('alley_pose.gd','game_pose.gd')]:
         if (GAME/'scripts'/source).is_file():
             shutil.copyfile(GAME/'scripts'/source,OUT/dest)
     config = read(OUT/'level.json')

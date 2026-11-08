@@ -7,6 +7,8 @@ var transform = Transform2D.IDENTITY
 var size = Vector2.ZERO
 var id = ""
 var kind = ""
+var z=0
+var generation=0
 var tint = Color.WHITE
 
 func sample(point: Vector2) -> Color:

@@ -107,6 +107,10 @@ func _initialize():
 	var report = {"passed":passed,"failed":failed,"total":passed.size()+failed.size()}
 	var dest = ProjectSettings.globalize_path("res://../games/g01/reports/0B")
 	DirAccess.make_dir_recursive_absolute(dest)
-	var file = FileAccess.open(dest.path_join("core_tests.json"),FileAccess.WRITE)
+	var report_path = dest.path_join("core_tests.json")
+	for arg in OS.get_cmdline_user_args():
+		if arg.begins_with("--report="):
+			report_path = arg.trim_prefix("--report=")
+	var file = FileAccess.open(report_path,FileAccess.WRITE)
 	file.store_string(JSON.stringify(report,"\t"))
 	quit(0 if failed.is_empty() else 1)

@@ -1,0 +1,194 @@
+{
+  "tasks": {
+    "LD00": {
+      "status": "verified",
+      "evidence": "implementation_decisions.json"
+    },
+    "LD01": {
+      "status": "verified",
+      "evidence": "baseline_source.json"
+    },
+    "LD02": {
+      "status": "verified",
+      "evidence": "baseline_cases.json",
+      "note": "controlled desktop entry injection; no global OS keystrokes"
+    },
+    "LD03": {
+      "status": "verified",
+      "evidence": [
+        "baseline_cases.json",
+        "baseline_visuals.json"
+      ],
+      "note": "GPU visuals reviewed; audio listening not yet performed, not claimed"
+    },
+    "LD04": {
+      "status": "verified",
+      "evidence": [
+        "a1a_checks.json",
+        "current_engine_checks.json"
+      ],
+      "source_archive": "D:\\gunforge_cache\\level_design\\a1a-verified"
+    },
+    "LD05": {
+      "status": "verified",
+      "evidence": [
+        "a1a_checks.json",
+        "current_engine_checks.json"
+      ],
+      "source_archive": "D:\\gunforge_cache\\level_design\\a1a-verified"
+    },
+    "LD06": {
+      "status": "verified",
+      "evidence": [
+        "a1a_checks.json",
+        "current_engine_checks.json"
+      ],
+      "source_archive": "D:\\gunforge_cache\\level_design\\a1a-verified"
+    },
+    "LD07": {
+      "status": "verified",
+      "evidence": [
+        "D02_D08_changes.json",
+        "current_engine_checks.json"
+      ],
+      "note": "Both bugs reproduced before fixes; 14886 public-state checks pass with only enumerated D02/D08 expectation transformations."
+    },
+    "LD08": {
+      "status": "verified",
+      "evidence": "migration_decisions.json",
+      "source_archive": "D:\\gunforge_cache\\level_design\\a1b-verified",
+      "verification": "a1b_checks.json"
+    },
+    "LD09": {
+      "status": "software_verified",
+      "evidence": [
+        "software_acceptance.json",
+        "delivery_acceptance.json"
+      ],
+      "note": "Strict schema/source maps, immutable manifests and four packages compiled and executed."
+    },
+    "LD10": {
+      "status": "software_verified",
+      "evidence": [
+        "software_acceptance.json",
+        "delivery_acceptance.json"
+      ],
+      "note": "Shared data-driven runtime, actions/queries, local clocks, composite geometry, projectiles/effects."
+    },
+    "LD11": {
+      "status": "software_verified",
+      "evidence": [
+        "software_acceptance.json",
+        "delivery_acceptance.json"
+      ],
+      "note": "Shared session/player shell, pause ownership, bound pose inputs, HTTP/UDP and configurable HUD."
+    },
+    "LD12": {
+      "status": "software_verified",
+      "evidence": [
+        "software_acceptance.json",
+        "delivery_acceptance.json"
+      ],
+      "note": "Native g01 uses shared event scheduler; 14886 state comparisons preserve registered legacy policies and D02/D08 fixes."
+    },
+    "LD13": {
+      "status": "software_verified",
+      "evidence": [
+        "software_acceptance.json",
+        "delivery_acceptance.json"
+      ],
+      "note": "Gallery is an actual distinct playable package with independent layout/resources and branches."
+    },
+    "LD14": {
+      "status": "software_verified",
+      "evidence": [
+        "software_acceptance.json",
+        "delivery_acceptance.json"
+      ],
+      "note": "Immutable source versions, ID patches, atomic adoption/CAS/recovery tested; real user adoption not performed."
+    },
+    "LD15": {
+      "status": "software_verified",
+      "evidence": [
+        "software_acceptance.json",
+        "delivery_acceptance.json"
+      ],
+      "note": "Actual GPU readonly reviewer, exact alpha geometry, anchored screenshots/input evidence and notes."
+    },
+    "LD16": {
+      "status": "in_progress",
+      "evidence": [
+        "agent_example_runs.json",
+        "comments/user-gameplay-2026-11-08.json",
+        "combat_r1_acceptance.json"
+      ],
+      "note": "Agent self-review candidates for two whiteboxes, plus first real-user gameplay candidate R1. Actual user acceptance and further genuine rounds are pending; Agent did not close user feedback."
+    },
+    "LD17": {
+      "status": "implemented_partial",
+      "evidence": [
+        "../../../docs/LEVEL_DESIGN_ENGINE_QUICKSTART.md",
+        "software_acceptance.json"
+      ],
+      "note": "Autonomous implementation continues with native Godot to reuse the exact renderer/runtime. Embedded-web comparison prototype not built; no claim of user-selected tool form."
+    },
+    "LD18": {
+      "status": "software_verified",
+      "evidence": [
+        "software_acceptance.json",
+        "delivery_acceptance.json"
+      ],
+      "note": "Snapshots/replay/seek verified, including 90s CPU fixture and 12 real-combat state/geometry seek points; subjective sound experience pending."
+    },
+    "LD19": {
+      "status": "software_verified",
+      "evidence": [
+        "software_acceptance.json",
+        "delivery_acceptance.json"
+      ],
+      "note": "Native metadata-based trees, timeline, graph, source maps, version diff and replay controls; user UX review remains open."
+    },
+    "LD20": {
+      "status": "software_verified",
+      "evidence": [
+        "software_acceptance.json",
+        "delivery_acceptance.json"
+      ],
+      "note": "Visible-alpha diagnostic bot and explicit uncalibrated visibility/difficulty warnings; no human success-rate claim."
+    },
+    "LD21": {
+      "status": "software_verified",
+      "evidence": [
+        "software_acceptance.json",
+        "delivery_acceptance.json"
+      ],
+      "note": "Orbital convoy package exercises shield, hull, merit, interception and outcomes; Agent candidate also software-tested."
+    },
+    "LD22": {
+      "status": "software_verified_hardware_pending",
+      "evidence": [
+        "software_acceptance.json",
+        "delivery_acceptance.json",
+        "combat_r1_acceptance.json"
+      ],
+      "remaining": [
+        "actual phone tracking / monitor / TV latency and calibration",
+        "subjective sound and gameplay experience",
+        "formal adoption of game policies and candidates"
+      ]
+    },
+    "LD23": {
+      "status": "software_delivered",
+      "evidence": [
+        "delivery_acceptance.json",
+        "combat_r1_acceptance.json"
+      ],
+      "note": "Independent directory/new venv/empty build cache reproduces identical four-package builds; launch/import scripts, quickstart and reproducible checks included. Overall G4 remains pending hardware/user validation."
+    }
+  },
+  "next": "Real user review of paper.assault R1; continue software fixes from feedback. Only hardware-dependent validation and user adoption require user participation.",
+  "active_candidate": "paper.assault",
+  "software_acceptance": "software_acceptance.json",
+  "delivery_acceptance": "delivery_acceptance.json",
+  "overall_complete": false
+}
