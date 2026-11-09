@@ -122,6 +122,8 @@
         "comments/user-gameplay-2026-11-08.json",
         "comments/user-gallery-2026-11-09.json",
         "comments/user-gallery-timing-2026-11-09.json",
+        "comments/user-station-combat-2026-11-09.json",
+        "comment_events/84c202d794c44f9db94fc85d99dda824.json",
         "comment_events/84f83ad9e58c4293b1738c616fee9632.json",
         "comment_events/2afeef75f5914a75a66fc94d126d6d8d.json",
         "adoptions/3f17157d9d1140888ecf35214606a9e6.json",
@@ -129,9 +131,10 @@
         "agent_proposals/proposal-1794207657317714900.json",
         "agent_proposals/proposal-1794208802414694900.json",
         "agent_proposals/proposal-1794220453914520000.json",
-        "agent_proposals/proposal-1794231862601292700.json"
+        "agent_proposals/proposal-1794231862601292700.json",
+        "agent_proposals/proposal-1794237379343236500.json"
       ],
-      "note": "User verified desktop R2, requested an earlier gallery right target, and explicitly adopted the 2.8s revision. Godot mouse input, same-frame comparison and the ordinary adopted launch passed. The complete station candidate still awaits user desktop review."
+      "note": "User verified desktop R2 and adopted the 2.8s gallery revision. The first-station mouse playtest produced four points of feedback. The response proposal addresses lamp occlusion, attack reaction time, shot audio and background music, and has passed mechanics and complete-replay checks. The response still awaits mouse re-test and adoption."
     },
     "LD17": {
       "status": "accepted",
@@ -196,7 +199,7 @@
       "note": "The complete first-station candidate and its launch, replay and review paths are included in the independent-directory verification. Overall G4 remains pending hardware/user validation."
     }
   },
-  "next": "Continue the complete station mouse playtest and its candidate decision. Physical lightgun and display testing remain deferred by the user.",
+  "next": "Re-test the station combat and audio changes with mouse input, then record the candidate decision. Physical lightgun and display testing remain deferred by the user.",
   "active_candidate": "paper.station",
   "software_acceptance": "software_acceptance.json",
   "delivery_acceptance": "delivery_acceptance.json",

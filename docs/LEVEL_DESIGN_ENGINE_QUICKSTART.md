@@ -5,13 +5,14 @@
 ## 完整首站候选 · 夜市巷口
 
 ```powershell
-.\gunforge\start_level_player.ps1 -Package paper.station -Candidate
-.\gunforge\start_level_review.ps1 -Package paper.station -Candidate
+$proposal = '.\gunforge\level_design\reviews\agent_proposals\proposal-1794237379343236500.json'
+.\gunforge\start_level_player.ps1 -Proposal $proposal
+.\gunforge\start_level_review.ps1 -Proposal $proposal
 ```
 
-按 Enter 或点击开始。开场交代墨潮和救援目标，随后有一段试射巷灯的时间。射击灯会暂时震退附近墨鸦，墨鸦也可以直接打。前三波依次介绍蓄力、扑击和墨弹拦截；第 46 秒先给出救援窗口，再进入后三波。打墨团可救人，打纸身扣印记。守到约 93 秒结算，结尾会区分摊主是否获救。整局使用 80 发光弹。
+按 Enter 或点击开始。开场交代墨潮和救援目标，并标出巷灯。等墨鸦入场后射灯，可定住附近墨鸦 2.4 秒。红圈预警后可直接射击，击破墨鸦会取消尚未命中的扑击。前三波依次介绍蓄力、扑击和墨弹拦截。第 46 秒先给出救援窗口，再进入后三波。打墨团可救人，打纸身扣印记。守到约 95.5 秒结算，结尾会区分摊主是否获救。整局使用 80 发光弹。
 
-这是独立候选。开场用关卡内的画面和字幕，动画和音效沿用当前战斗素材。旧 Demo 与 R2 仍可用于对照。
+新版调整了墨鸦经过灯罩时的飞行高度和命中优先级，延长扑击动画，更新枪声并加入循环配乐。查看器会打开在第 11.2 秒附近，可通过「版本」菜单对照上一次首站试玩。旧 Demo 与 R2 仍可用于对照。
 
 首站巷灯教学和靶场延迟出靶都有单独的审阅提案。在项目根目录的 PowerShell 中选定一个提案，再启动对应版本。
 

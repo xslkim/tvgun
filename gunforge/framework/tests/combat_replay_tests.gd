@@ -19,7 +19,9 @@ func run():
 	var has_story = model.level.sections.has("arrival")
 	var samples=[109,200,305,840,1200,2000,2500,2515,3000,3301,4000,4920]
 	if has_story:
-		samples = [1,137,138,419,420,2760,2761,3000,5399,5400,5580]
+		var closing = int(model.build.source_map["ending.safe_exit"].tick)
+		var result_tick = int(model.build.source_map["level.clear"].tick)
+		samples = [1,137,138,419,420,2760,2761,3000,closing-1,closing,result_tick]
 		if model.current_section != "arrival" or model.input_enabled:
 			failures.append("opening_did_not_hold_input")
 	var states={};var poses={}

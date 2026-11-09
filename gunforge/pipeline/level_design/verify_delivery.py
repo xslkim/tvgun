@@ -30,7 +30,8 @@ def main():
  python=workspace/'.venv/Scripts/python.exe'
  run('locked-dependencies',['uv','pip','install','--python',python,'-r','gunforge/pipeline/level_design/requirements.lock'])
  # Run the first-station proposal before native assets have been prepared in this copy.
- for package, receipt in [('station','proposal-1794220453914520000.json'),
+ for package, receipt in [('station-combat','proposal-1794237379343236500.json'),
+                          ('station','proposal-1794220453914520000.json'),
                           ('gallery','proposal-1794147515072431400.json')]:
   proposal=workspace/'gunforge/level_design/reviews/agent_proposals'/receipt
   launch_log=run(package+'-proposal-launcher',['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-File','gunforge/start_level_player.ps1','-Proposal',proposal,'-QuitAfter','0.3'])
@@ -59,7 +60,9 @@ def main():
  store=workspace/'gunforge/level_design';gallery=read(store/'reviews/gallery_build.json')
  patched=patch('gallery.intro',gallery['source_revision'],{'base_revision':gallery['source_revision'],'changes':[{'path':'/events/next/trigger/at_ms','expected':2000,'value':2400}]},store)
  warnings=[warning['code'] for warning in check(patched)['warnings']]
- adopted=adopt('gallery.intro',patched.parent.name,None,'ISOLATED AUTOMATED TEST FIXTURE, not real user acceptance','user',store,out/'empty-build-cache',acknowledged_warnings=warnings)
+ pointer=store/'adopted/gallery.intro.json'
+ expected=read(pointer)['source_revision'] if pointer.exists() else None
+ adopted=adopt('gallery.intro',patched.parent.name,expected,'ISOLATED AUTOMATED TEST FIXTURE, not real user acceptance','user',store,out/'empty-build-cache',acknowledged_warnings=warnings)
  launch_log=run('adopted-source-launcher',['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-File','gunforge/start_level_player.ps1','-Package','gallery.intro','-QuitAfter','0.3'])
  if adopted['build_id'].encode() not in launch_log:raise RuntimeError('Launcher failed to select isolated adopted source')
  result={'passed':True,'workspace':str(workspace),'run':str(out),'source_manifest':{'path':str(out/'source-manifest.json'),'sha256':sha(out/'source-manifest.json')},'checks':checks,'build_identity':'all six packages identical to original workspace','adoption_fixture':'isolated copied workspace only; live project adoption not performed','scope':'independent directory, new Python 3.12.10 venv, pinned dependencies, copied approved assets, empty build cache, actual GPU reviewer/player, candidate and adopted launch chains; no hardware claim'}

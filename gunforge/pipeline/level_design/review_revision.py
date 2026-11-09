@@ -8,6 +8,7 @@ from pathlib import Path
 from combat_cues import ensure_combat_cues
 from compiler import ROOT, DEFAULT_CACHE, CompileError, compile_source, digest, payload_digest, read, write_build
 from cues import ensure_cues
+from station_audio import ensure_station_audio
 from versions import STORE, immutable, resolve
 
 
@@ -92,6 +93,8 @@ def preview(proposal_path, store=STORE, cache=DEFAULT_CACHE):
                    if not (ROOT / resource["path"]).is_file()]
         if any(path.startswith("gunforge/level_design/generated/audio/combat_") for path in missing):
             ensure_combat_cues()
+        if any(path.startswith("gunforge/level_design/generated/audio/station_") for path in missing):
+            ensure_station_audio()
         if any(path.startswith("gunforge/framework/runtime/audio/") for path in missing):
             ensure_cues()
         paths[label] = str(write_build(compile_source(source, source_manifest=manifest), cache))
