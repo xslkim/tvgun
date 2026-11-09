@@ -6,6 +6,7 @@ const Codec = preload("res://core/pose_codec.gd")
 const CuePlayer=preload("res://core/level_audio.gd")
 const Timeline=preload("res://tools/review_timeline.gd")
 const SpatialView = preload("res://tools/review_spatial.gd")
+const ReviewTheme = preload("res://tools/review_theme.gd")
 class Preview:
 	extends Control
 	var model
@@ -46,20 +47,30 @@ class Preview:
 		origin = (size-canvas*scale_factor)*.5
 		shown = model.geometry()
 		owner_tool.session.submit(shown)
-		var base = Transform2D(0,origin).scaled_local(Vector2.ONE*scale_factor)
+		draw_scene(self, Rect2(origin, canvas * scale_factor), shown, overlay)
+
+	func draw_reference(target: Control, region: Rect2, geometry: Array) -> Rect2:
+		var canvas = Vector2(model.level.layout.width, model.level.layout.height)
+		var fitted = canvas * minf(region.size.x / canvas.x, region.size.y / canvas.y)
+		var destination = Rect2(region.position + (region.size - fitted) * 0.5, fitted)
+		draw_scene(target, destination, geometry, false)
+		return destination
+
+	func draw_scene(target: Control, destination: Rect2, geometry: Array, show_contours: bool) -> void:
+		var base = Transform2D(0, destination.position).scaled_local(Vector2.ONE * destination.size.x / model.level.layout.width)
 		if native_viewport!=null:
-			draw_texture_rect(native_viewport.get_texture(),Rect2(origin,canvas*scale_factor),false)
-		for item in shown:
+			target.draw_texture_rect(native_viewport.get_texture(), destination, false)
+		for item in geometry:
 			var key = item.image.get_instance_id()
 			if not textures.has(key):textures[key]=ImageTexture.create_from_image(item.image)
-			draw_set_transform_matrix(base*item.transform)
+			target.draw_set_transform_matrix(base*item.transform)
 			var color = Color("#59b8aa")
 			if item.kind=="protected":color=Color("#d9ad6b")
 			if item.kind=="invalid":color=Color("#556071")
 			if item.kind=="blocker":color=Color("#293141")
-			if native_viewport==null:draw_texture_rect_region(textures[key],Rect2(Vector2.ZERO,item.size),item.source,color)
-			if overlay and not item.kind.is_empty():draw_texture_rect_region(contour(item),Rect2(Vector2.ZERO,item.size),item.source,Color("#e2e8f0"))
-		draw_set_transform_matrix(Transform2D.IDENTITY)
+			if native_viewport==null:target.draw_texture_rect_region(textures[key],Rect2(Vector2.ZERO,item.size),item.source,color)
+			if show_contours and not item.kind.is_empty():target.draw_texture_rect_region(contour(item),Rect2(Vector2.ZERO,item.size),item.source,Color("#e2e8f0"))
+		target.draw_set_transform_matrix(Transform2D.IDENTITY)
 var model
 var session=Session.new()
 var clock
@@ -71,6 +82,11 @@ var slider
 var note
 var status
 var source_label
+var phase_label
+var play_button
+var sound_button
+var alpha_button
+var view_buttons: Array[Button] = []
 var running = false
 var adjusting = false
 var build_path = ""
@@ -112,74 +128,143 @@ func _initialize():
 		if arg.begins_with("--at-tick="):initial_tick=int(arg.trim_prefix("--at-tick="))
 	call_deferred("open")
 func button(parent,text,action):
-	var node=Button.new();node.text=text;node.pressed.connect(action);parent.add_child(node);return node
+	var node=Button.new()
+	node.text=text
+	node.custom_minimum_size.y=34
+	node.pressed.connect(action)
+	parent.add_child(node)
+	return node
+
+func tool_menu(parent: Control, title: String, actions: Dictionary) -> void:
+	var menu = MenuButton.new()
+	menu.text = title + "  ▾"
+	menu.flat = false
+	menu.custom_minimum_size.y = 34
+	parent.add_child(menu)
+	var popup = menu.get_popup()
+	popup.theme = review_theme
+	var callbacks = actions.values()
+	for label in actions:
+		popup.add_item(label)
+	popup.id_pressed.connect(func(id): callbacks[id].call())
+
+func label(parent: Control, caption: String, font_size: int = 15, color: Color = ReviewTheme.INK) -> Label:
+	var node = Label.new()
+	node.text = caption
+	node.add_theme_font_size_override("font_size", font_size)
+	node.add_theme_color_override("font_color", color)
+	parent.add_child(node)
+	return node
+
+var review_theme: Theme
+
 func open():
 	if build_path.is_empty() or asset_root.is_empty():
 		push_error("Use start_level_review.ps1 or supply --build and --assets")
 		quit(2);return
-	root.title="GunForge — 关卡审阅（开发原型）"
+	root.title="GunForge · 关卡查看器"
 	root.size=Vector2i(1440,900)
 	var content=Control.new();content.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);root.add_child(content)
+	var backdrop = ColorRect.new()
+	backdrop.color = Color("#0c1525")
+	backdrop.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	content.add_child(backdrop)
+	backdrop.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	var font=SystemFont.new();font.font_names=PackedStringArray(["Microsoft YaHei","Noto Sans CJK SC"])
-	content.add_theme_font_override("font",font)
+	review_theme = ReviewTheme.make(font)
+	content.theme = review_theme
 	var margin=MarginContainer.new();margin.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	for side in ["margin_left","margin_right","margin_top","margin_bottom"]:margin.add_theme_constant_override(side,16)
 	content.add_child(margin)
 	var column=VBoxContainer.new();margin.add_child(column)
-	source_label=Label.new();column.add_child(source_label)
-	var toolbar=HBoxContainer.new();column.add_child(toolbar)
-	button(toolbar,"从头播放",func():reset();running=true;refresh())
-	button(toolbar,"播放 / 暂停",func():running=not running;refresh())
-	button(toolbar,"前进一帧",func():running=false;advance_once();refresh())
-	reload_button=button(toolbar,"换弹",func():queue_command("RELOAD"))
-	coin_button=button(toolbar,"续关",func():queue_command("COIN"))
-	button(toolbar,"Alpha 命中轮廓",func():preview.overlay=not preview.overlay;preview.queue_redraw())
-	var view_select = OptionButton.new()
-	view_select.add_item("玩家正面")
-	view_select.add_item("侧视")
-	view_select.add_item("俯视")
-	view_select.item_selected.connect(select_view)
-	toolbar.add_child(view_select)
-	var speed_select=OptionButton.new()
+	var header = HBoxContainer.new()
+	column.add_child(header)
+	var identity = VBoxContainer.new()
+	identity.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	identity.add_theme_constant_override("separation", 1)
+	header.add_child(identity)
+	label(identity, "关卡查看器", 23)
+	source_label = label(identity, "", 13, ReviewTheme.MUTED)
+	button(header, "打开构建", choose_build)
+	tool_menu(header, "版本", {"查看版本差异": show_diff, "切换上一版本": switch_previous, "采用当前候选": confirm_adopt})
+	tool_menu(header, "回放", {"打开回放": choose_recording, "保存回放": save_recording, "最近输入判定": show_last_input})
+	var toolbar_panel = PanelContainer.new()
+	column.add_child(toolbar_panel)
+	var toolbar = HBoxContainer.new()
+	toolbar_panel.add_child(toolbar)
+	play_button = button(toolbar, "▶ 播放", toggle_playback)
+	play_button.theme_type_variation = "ReviewPrimary"
+	play_button.custom_minimum_size.x = 88
+	button(toolbar, "新一局", func():reset();running=true;refresh()).tooltip_text = "从头开始新的试玩"
+	button(toolbar, "单帧", func():running=false;advance_once();refresh()).tooltip_text = "前进一帧"
+	var speed_select = OptionButton.new()
 	for text in ["0.5 倍速","1 倍速","2 倍速","4 倍速"]:speed_select.add_item(text)
 	speed_select.select(1);speed_select.item_selected.connect(func(i):speed=[.5,1.0,2.0,4.0][i]);toolbar.add_child(speed_select)
-	button(toolbar,"声音开关",func():audio.enabled=not audio.enabled;audio.sync(true))
-	button(toolbar,"保存回放",save_recording)
-	button(toolbar,"打开构建",choose_build)
-	var versions_bar=HBoxContainer.new();column.add_child(versions_bar)
-	button(versions_bar,"查看版本差异",show_diff)
-	button(versions_bar,"切换上一版本",switch_previous)
-	button(versions_bar,"采用当前候选",confirm_adopt)
-	button(versions_bar,"打开回放",choose_recording)
-	button(versions_bar,"标记 A",func():loop_a=clock.tick)
-	button(versions_bar,"标记 B",func():loop_b=clock.tick)
-	button(versions_bar,"循环 A–B",func():loop_enabled=not loop_enabled)
-	button(versions_bar,"最近输入判定",show_last_input)
-	status=Label.new();column.add_child(status)
+	toolbar.add_child(VSeparator.new())
+	label(toolbar, "视角", 13, ReviewTheme.MUTED)
+	var views = ButtonGroup.new()
+	for caption in ["玩家正面", "侧视", "俯视"]:
+		var index = view_buttons.size()
+		var option = button(toolbar, caption, func():select_view(index))
+		option.toggle_mode = true
+		option.button_group = views
+		view_buttons.append(option)
+	view_buttons[0].button_pressed = true
+	toolbar.add_spacer(false)
+	reload_button = button(toolbar, "换弹", func():queue_command("RELOAD"))
+	coin_button = button(toolbar, "续关", func():queue_command("COIN"))
+	alpha_button = button(toolbar, "命中轮廓", func():
+		preview.overlay = alpha_button.button_pressed
+		preview.queue_redraw())
+	alpha_button.toggle_mode = true
+	alpha_button.tooltip_text = "在玩家正面显示 Alpha 命中轮廓"
+	sound_button = button(toolbar, "声音", func():
+		audio.enabled = sound_button.button_pressed
+		audio.sync(true))
+	sound_button.toggle_mode = true
+	var readout = HBoxContainer.new()
+	column.add_child(readout)
+	phase_label = label(readout, "", 14, ReviewTheme.ACCENT)
+	status = label(readout, "", 14, ReviewTheme.MUTED)
+	status.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	status.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
 	var split=HSplitContainer.new();split.size_flags_vertical=Control.SIZE_EXPAND_FILL;column.add_child(split)
 	var left=VBoxContainer.new();left.size_flags_horizontal=Control.SIZE_EXPAND_FILL;split.add_child(left)
-	preview=Preview.new();preview.custom_minimum_size=Vector2(720,430);preview.size_flags_vertical=Control.SIZE_EXPAND_FILL;preview.owner_tool=self;left.add_child(preview)
+	left.add_theme_constant_override("separation", 5)
+	preview=Preview.new();preview.custom_minimum_size=Vector2(650,345);preview.size_flags_vertical=Control.SIZE_EXPAND_FILL;preview.owner_tool=self;left.add_child(preview)
 	preview.clip_contents=true
 	spatial_view = SpatialView.new()
 	spatial_view.label_font = font
+	spatial_view.front_reference = preview.draw_reference
 	spatial_view.mouse_filter = Control.MOUSE_FILTER_STOP
 	spatial_view.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	spatial_view.entity_selected.connect(inspect_spatial_entity)
 	preview.add_child(spatial_view)
 	spatial_view.hide()
-	timeline=Timeline.new();timeline.owner_tool=self;timeline.custom_minimum_size=Vector2(720,102);left.add_child(timeline)
+	var timeline_header = HBoxContainer.new()
+	left.add_child(timeline_header)
+	label(timeline_header, "时间轴", 15)
+	label(timeline_header, "点击跳转", 12, ReviewTheme.MUTED)
+	timeline_header.add_spacer(false)
+	button(timeline_header, "标记 A", func():loop_a=clock.tick)
+	button(timeline_header, "标记 B", func():loop_b=clock.tick)
+	var loop = button(timeline_header, "循环 A–B", func():loop_enabled=not loop_enabled)
+	loop.toggle_mode = true
+	timeline=Timeline.new();timeline.owner_tool=self;timeline.custom_minimum_size=Vector2(650,102);left.add_child(timeline)
 	timeline.font=font
 	slider=HSlider.new();slider.step=1;slider.value_changed.connect(func(v):
 		if not adjusting:jump(int(v)))
 	left.add_child(slider)
-	var right=VBoxContainer.new();right.custom_minimum_size=Vector2(400,0);split.add_child(right)
-	var tabs=TabContainer.new();tabs.custom_minimum_size=Vector2(400,220);right.add_child(tabs)
+	var right=VBoxContainer.new();right.custom_minimum_size=Vector2(340,0);split.add_child(right)
+	var tabs=TabContainer.new();tabs.custom_minimum_size.y=186;right.add_child(tabs)
 	event_tree=Tree.new();event_tree.name="事件";event_tree.columns=2;event_tree.column_titles_visible=true;event_tree.set_column_title(0,"时间 / 条件");event_tree.set_column_title(1,"事件");event_tree.item_selected.connect(select_event);tabs.add_child(event_tree)
 	catalog_tree=Tree.new();catalog_tree.name="关卡树";catalog_tree.item_selected.connect(select_catalog);tabs.add_child(catalog_tree)
 	graph=GraphEdit.new();graph.name="依赖图";graph.minimap_enabled=false;tabs.add_child(graph)
-	info=TextEdit.new();info.editable=false;info.size_flags_vertical=Control.SIZE_EXPAND_FILL;right.add_child(info)
-	note=TextEdit.new();note.placeholder_text="批注：期望怎样调整？哪些内容必须保留？";note.custom_minimum_size=Vector2(400,110);right.add_child(note)
-	button(right,"保存当前时间的批注",save_note)
+	label(right, "选中项详情", 14, ReviewTheme.MUTED)
+	info=TextEdit.new();info.editable=false;info.wrap_mode=TextEdit.LINE_WRAPPING_BOUNDARY;info.size_flags_vertical=Control.SIZE_EXPAND_FILL;right.add_child(info)
+	label(right, "关卡批注", 14)
+	note=TextEdit.new();note.wrap_mode=TextEdit.LINE_WRAPPING_BOUNDARY;note.placeholder_text="期望怎样调整？哪些内容需要保留？";note.custom_minimum_size.y=78;right.add_child(note)
+	button(right,"保存当前帧的批注",save_note).theme_type_variation = "ReviewPrimary"
 	if not comparison_path.is_empty():
 		var candidate_path = build_path
 		build_path = comparison_path
@@ -239,7 +324,8 @@ func load_build():
 		for entry in model.review_events():
 			var item=event_tree.create_item(tree_root);item.set_text(0,entry.when);item.set_text(1,entry.id);item.set_metadata(0,entry)
 	populate_catalog();populate_graph()
-	info.text=JSON.stringify({"level":model.level.id,"build_id":model.build.build_id,"layout":model.level.layout,"controls":model.level.get("controls",{}),"events":model.level.events,"ruleset_data":model.level.get("ruleset_data",{})},"  ")
+	spatial_view.selected_id = ""
+	info.text = "选择事件、关卡树中的项目，或点击画面上的对象以查看详情。"
 	refresh()
 func reset():
 	running=false;session.start();clock=session.clock;refresh()
@@ -255,15 +341,24 @@ func asset_map():
 	return model.geometry_assets()
 
 func select_view(index: int) -> void:
+	for i in range(view_buttons.size()):
+		view_buttons[i].set_pressed_no_signal(i == index)
 	spatial_view.mode = SpatialView.Mode.TOP if index == 2 else SpatialView.Mode.SIDE
 	spatial_view.visible = index != 0
+	alpha_button.disabled = spatial_view.visible
 	spatial_view.queue_redraw()
 
 func inspect_spatial_entity(id: String, center: Vector2, pose_scale: float) -> void:
-	info.text = JSON.stringify({
-		"selected_entity": id, "screen_center_px": [center.x, center.y],
-		"pose_scale": pose_scale, "parameters": model.entities.get(id, {}),
-	}, "  ")
+	info.text = "对象  %s\n选取时刻  %.2f 秒\n正面位置  (%d, %d) 像素\n画面缩放  %.2f×\n\n%s" % [
+		id, clock.tick / 60.0, roundi(center.x), roundi(center.y), pose_scale,
+		JSON.stringify(model.entities.get(id, {}), "  "),
+	]
+
+func toggle_playback() -> void:
+	if model.phase == "result":
+		jump(0)
+	running = not running
+	refresh()
 
 func queue_shot(point,pose):
 	if spatial_view.visible:return
@@ -288,12 +383,19 @@ func _process(delta):
 		if loop_enabled and loop_b>loop_a and clock.tick>=loop_b:session.seek(loop_a);audio.sync(true)
 		refresh()
 func refresh():
-	if model.has_method("set_presentation_context"):model.set_presentation_context("review","playing" if running else "paused")
+	var playing = running and model.phase == "running"
+	if model.has_method("set_presentation_context"):model.set_presentation_context("review","playing" if playing else "paused")
 	reload_button.visible=model.available_commands().has("RELOAD");coin_button.visible=model.available_commands().has("COIN")
+	play_button.text = "Ⅱ 暂停" if playing else ("▶ 重播" if model.phase == "result" else "▶ 播放")
+	sound_button.set_pressed_no_signal(audio.enabled)
+	alpha_button.set_pressed_no_signal(preview.overlay)
+	phase_label.text = {"ready": "待开始", "result": "已结束"}.get(model.phase, "播放中" if playing else "已暂停")
 	var fields=[]
 	for field in model.level.get("hud",[]):fields.append(field.label+" "+str(model.resources[field.resource]))
 	var hud=" · ".join(fields) if not fields.is_empty() else JSON.stringify(model.resources)
-	status.text="%s · %s  |  %.3f 秒 / %.3f 秒  |  %s  |  命中 %d / %d  |  %s" % ["播放" if running else "暂停",model.phase,clock.tick/60.0,session.max_tick/60.0,hud,model.hits,model.shots,model.result]
+	status.text="%.2f / %.2f 秒     %s     命中 %d / %d" % [clock.tick/60.0,session.max_tick/60.0,hud,model.hits,model.shots]
+	if not model.result.is_empty():
+		status.text += "     结果 " + model.result
 	adjusting=true;slider.max_value=session.max_tick;slider.value=clock.tick;adjusting=false
 	preview.queue_redraw()
 	if spatial_view.visible:spatial_view.queue_redraw()
@@ -331,7 +433,7 @@ func save_note(author="user"):
 	if DirAccess.rename_absolute(file+".pending",file)!=OK:
 		status.text="无法发布批注"
 		return
-	note.text="";status.text="批注已保存："+file
+	note.text="";refresh();status.text="批注已保存："+file
 func evidence_root():
 	if evidence_dir.is_empty():evidence_dir=asset_root.get_base_dir().path_join("gunforge_cache/level_design/review-evidence")
 	DirAccess.make_dir_recursive_absolute(evidence_dir)
@@ -390,7 +492,8 @@ func adopted_pointer():
 func update_version_label():
 	var adopted=adopted_pointer()
 	var label="已采用构建" if adopted.get("build_id","")==model.build.build_id else "候选预览，未采用"
-	source_label.text=model.level.id+"  |  构建 "+model.build.build_id.substr(0,12)+"  |  源 "+model.build.source_revision.substr(0,12)+"  |  seed "+str(model.level.seed)+"  |  "+label
+	source_label.text=model.level.id+"    ·    "+label+"    ·    构建 "+model.build.build_id.substr(0,12)
+	source_label.tooltip_text = "源版本 " + model.build.source_revision + "\n随机种子 " + str(model.level.seed)
 func diff_values(a,b,path=""):
 	var out=[]
 	if a is Dictionary and b is Dictionary:
@@ -477,6 +580,9 @@ func populate_catalog():
 			var item=catalog_tree.create_item(branch);item.set_text(0,str(id));item.set_metadata(0,{"section":section,"id":id,"pointer":"/"+section+"/"+str(id)})
 func select_catalog():
 	var item=catalog_tree.get_selected();var entry=item.get_metadata(0)
+	if item == catalog_tree.get_root():
+		info.text = JSON.stringify({"level":model.level.id,"build_id":model.build.build_id,"layout":model.level.layout,"controls":model.level.get("controls",{}),"events":model.level.events,"ruleset_data":model.level.get("ruleset_data",{})}, "  ")
+		return
 	if not entry is Dictionary:return
 	info.text=JSON.stringify({"source":entry.pointer,"design":model.level[entry.section][entry.id],"runtime":model.queries.get(entry.id,model.entities.get(entry.id,{}))},"  ")
 func populate_graph():
