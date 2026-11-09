@@ -570,7 +570,21 @@ func smoke_test():
 		dialog_ok=confirmation.get_texture().get_image().save_png(evidence_root().path_join("adoption-dialog.png"))==OK
 		confirmation.queue_free()
 	dialog_ok=dialog_ok and before_pointer==adopted_pointer()
-	var output={"passed":exact and saved and dialog_ok and outside_ignored,"seek_exact":exact,"evidence_saved":saved,"off_canvas_input_ignored":outside_ignored,"adoption_dialog_without_adoption":dialog_ok,"build_id":model.build.build_id,"author":"test_harness"}
+	var inspected = []
+	var event_sources_ok = true
+	var item = event_tree.get_root().get_first_child()
+	while item != null:
+		var id = item.get_metadata(0)
+		if id is String:
+			for action in model.level.events[id].actions.values():
+				if action.op in ["spawn", "launch", "cue", "vfx", "section"] and action.op not in inspected:
+					item.select(0)
+					select_event()
+					var details = JSON.parse_string(info.text)
+					event_sources_ok = event_sources_ok and details is Dictionary and details.get("event_id") == id and details.get("source", {}).has("pointer")
+					inspected.append(action.op)
+		item = item.get_next()
+	var output={"passed":exact and saved and dialog_ok and outside_ignored and event_sources_ok,"seek_exact":exact,"evidence_saved":saved,"off_canvas_input_ignored":outside_ignored,"adoption_dialog_without_adoption":dialog_ok,"event_sources_ok":event_sources_ok,"inspected_ops":inspected,"build_id":model.build.build_id,"author":"test_harness"}
 	print(JSON.stringify(output));quit(0 if output.passed else 1)
 func populate_catalog():
 	catalog_tree.clear();var top=catalog_tree.create_item();top.set_text(0,model.level.id);catalog_tree.hide_root=false

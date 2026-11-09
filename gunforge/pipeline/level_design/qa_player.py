@@ -27,6 +27,10 @@ def run(build_path,out):
   send('HELLO qa-session-'+str(time.time_ns()));heartbeat=threading.Thread(target=pulse,daemon=True);heartbeat.start();time.sleep(.1)
   check(request('/start',{})['ok'],'http_start')
   time.sleep(.1);state=request('/state');check(state['lifecycle']=='running','ready_to_running')
+  for _ in range(100):
+   if state['shot_input_enabled'] and state['visible_targets']:break
+   time.sleep(.05);state=request('/state')
+  check(state['shot_input_enabled'],'shot_input_enabled_after_opening')
   check(bool(state['visible_targets']),'visible_submission_available')
   point=state['visible_targets'][0]['point'];layout=build['level']['layout'];scale=min(1776/layout['width'],936/layout['height']);origin=[(1776-layout['width']*scale)/2,(936-layout['height']*scale)/2]
   answer=request('/shot',{'x':72+origin[0]+point[0]*scale,'y':72+origin[1]+point[1]*scale})

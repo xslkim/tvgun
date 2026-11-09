@@ -144,7 +144,9 @@ func handle_http(command,payload,completion):
 		for id in visible.targets:
 			var point=visible.targets[id].aim
 			if point!=null:targets.append({"id":id,"point":[point.x,point.y]})
-		return {"ok":true,"phase":model.phase,"lifecycle":session.public_state().lifecycle,"resources":model.resources.duplicate(true),"score":model.resources.get("score",0),"build_id":model.build.build_id,"shots":model.shots,"hits":model.hits,"visible_targets":targets}
+		var lifecycle = session.public_state().lifecycle
+		var shot_input_enabled = lifecycle == "running" and (not ("input_enabled" in model) or model.input_enabled)
+		return {"ok":true,"phase":model.phase,"lifecycle":lifecycle,"shot_input_enabled":shot_input_enabled,"resources":model.resources.duplicate(true),"score":model.resources.get("score",0),"build_id":model.build.build_id,"shots":model.shots,"hits":model.hits,"visible_targets":targets}
 	if command in ["START","EXIT"]:enqueue_device({"event":command});return {"ok":true}
 	var point=from_norm(Vector2(payload.get("x",0),payload.get("y",0)))
 	if command=="SHOT":

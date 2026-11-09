@@ -64,7 +64,11 @@ func visual_items():
 	return ordered(out)
 func section_stats():
 	var all_targets=[]
-	for section in level.get("sections",{}).values():all_targets.append_array(section.targets)
+	var combat_sections = 0
+	for section in level.get("sections",{}).values():
+		if not section.targets.is_empty():
+			all_targets.append_array(section.targets)
+			combat_sections += 1
 	var cleared=0
 	for id in all_targets:
 		if entities[id].health<=0:cleared+=1
@@ -72,4 +76,4 @@ func section_stats():
 	var here=0
 	for id in section.get("targets",[]):
 		if entities[id].health<=0:here+=1
-	return {"cleared":cleared,"total":all_targets.size(),"section_cleared":here,"section_total":section.get("targets",[]).size(),"section":section,"section_count":level.get("sections",{}).size()}
+	return {"cleared":cleared,"total":all_targets.size(),"section_cleared":here,"section_total":section.get("targets",[]).size(),"section":section,"section_count":combat_sections}

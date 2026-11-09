@@ -4,7 +4,7 @@ from compiler import ROOT,DEFAULT_CACHE,read_package,compile_source,write_build
 from versions import publish
 from freeze_baseline import dump
 from combat_cues import ensure_combat_cues
-def build():
+def build(*, station_candidate=False):
  runtime=ROOT/'gunforge/framework/runtime';station=json.loads((runtime/'station/station.json').read_bytes())
  source={'schema_version':1,'id':'paper.assault','ruleset':'directed_action@1','seed':421,'tick_hz':60,'duration_ms':84000,'layout':{'width':1776,'height':936},'entities':{},'events':{},'queries':{},'resources':{},'cues':{},'effects':{},'sections':{},'initial_resources':{'lives':5,'ammo':80,'score':0,'purified':0,'rescued':0},'resource_bounds':{'lives':{'min':0,'max':5},'score':{'min':0},'ammo':{'min':0,'max':80}},'controls':{'ammo_resource':'ammo','shot_interval_ms':150,'assist_px':12},'hud':[{'label':'灯芯','resource':'lives'},{'label':'剩余光弹','resource':'ammo'},{'label':'印记','resource':'score'}]}
  resources=source['resources'];entities=source['entities'];events=source['events'];effects=source['effects']
@@ -23,6 +23,12 @@ def build():
   return {**timing,'x':x,'y':y,'scale':scale,'rotation_rad':rotation}
  presentation={'title':'纸灯城','subtitle':'巷口夜袭 · 战斗候选 R2','instructions':'优先打断蓄力 · 朱印是弱点 · 点灯震退附近怪物','default_sound':True,'debug_shell':False,'layers':{},'puppets':{},'sound_bindings':{'weapon.fired':'shot','weapon.empty':'empty','target.hit':'hit','target.weak_hit':'weak','target.neutralized':'purify','attack.warning':'windup','attack.launched':'attack','player.damaged':'hurt','interaction.activated:lamp':'lamp'},'feedback':{'shot':'shot_spark','hit':'hit_spark','weak':'weak_spark','neutralized':'purify_burst','empty':'empty_feedback'},'support':{'entity':'lamp','label':'射击点灯 · 震墨'},'labels':{'stunned':'震退','section_unit':'波','progress':'净化','result_success':'巷口守住了','result_failure':'灯芯耗尽'}}
  source['presentation']=presentation
+ if station_candidate:
+  source.update(id='paper.station', duration_ms=95000)
+  presentation.update(
+   subtitle='第一站 · 夜市巷口',
+   instructions='墨潮涌进夜市。守住巷口，救出被困摊主。',
+  )
  for layer in station['layers']:
   rid=resource('scene_'+layer['id'],runtime/'station'/layer['file'])
   presentation['layers'][layer['id']]={'resource':rid,'x':layer['pos'][0]-station['content_origin'][0],'y':layer['pos'][1]-station['content_origin'][1],'width':layer['draw_size'][0],'height':layer['draw_size'][1],'z':100+round(layer['z']) if layer.get('blocks_shots') else round(layer['z']*10),'blocker':bool(layer.get('blocks_shots',False))}
@@ -47,7 +53,10 @@ def build():
  entities['lamp']['parts']={'body':{'resource':'scene_lamp','source':[497,253,200,120],'x':0,'y':0,'width':1,'height':1}};entities['lamp']['part_order']=['body']
  entities['lamp_cover']=entity('decoration',lx+521,ly+269,151,94,z=81,active=True)
  entities['lamp_cover']['parts']={'body':{'resource':cover,'x':0,'y':0,'width':1,'height':1}};entities['lamp_cover']['part_order']=['body']
- event('open',{'at_ms':0},[{'op':'spawn','entity':'lamp'}])
+ opening = [{'op':'spawn','entity':'lamp'}]
+ if station_candidate:
+  opening.extend([{'op':'section','section':'arrival'},{'op':'input','enabled':False}])
+ event('open',{'at_ms':0},opening)
  event('lamp.pulse',{'on':'interaction.activated:lamp'},[{'op':'vfx','effect':'support_pulse','entity':'lamp'},{'op':'remove','entity':'lamp_cover'}],limit=16)
  titles=['屋檐初袭','左右夹击','截住墨弹','护住摊主','近远交织','巷口合围']
  hints=['红圈蓄满就会出手，优先击破正在蓄力的墨鸦。','怪物会扑向你，蓄力时优先净化。','飞来的墨弹也能击破。','只打居民胸口的墨，点灯可争取时间。','灯火震退墨鸦，飞出的墨弹仍要拦截。','守住最后一波！优先打断近身威胁。']
@@ -57,7 +66,8 @@ def build():
   sid = f'wave_{wave+1}'
   spawns = {}
   encounter['waves'][sid] = {
-   'title':titles[wave], 'index':wave+1, 'at_ms':1000+wave*13000,
+   'title':titles[wave], 'index':wave+1,
+   'at_ms':1000+wave*13000+(6000+(3000 if wave>=3 else 0) if station_candidate else 0),
    'spawns':spawns, 'hint':hints[wave],
   }
   for index in range(count):
@@ -114,13 +124,39 @@ def build():
  entities['resident']=entity('protected',560,350,350,480,z=72)
  entities['resident']['puppet']={'rig':'vendor','target':'resident_ink','target_part':'rescue_ink','idle':'struggle','success':'rescued_bounce','rest':'thank'}
  entities['resident_ink']=entity('target',700,560,65,65,virtual=True,z=73)
- event('resident.arrives',{'at_ms':40500},[{'op':'spawn','entity':'resident'},{'op':'spawn','entity':'resident_ink'}])
- event('resident.rescue',{'on':'target.neutralized:resident_ink'},[{'op':'resource_add','resource':'score','amount':300},{'op':'resource_add','resource':'rescued','amount':1}])
+ resident_arrival = [{'op':'spawn','entity':'resident'},{'op':'spawn','entity':'resident_ink'}]
+ rescue_reward = [{'op':'resource_add','resource':'score','amount':300},{'op':'resource_add','resource':'rescued','amount':1}]
+ if station_candidate:
+  resident_arrival.append({'op':'section','section':'rescue'})
+  rescue_reward.append({'op':'vfx','effect':'rescue_light','entity':'resident_ink'})
+ event('resident.arrives',{'at_ms':46000 if station_candidate else 40500},resident_arrival)
+ event('resident.rescue',{'on':'target.neutralized:resident_ink'},rescue_reward)
  event('resident.protected',{'on':'target.protected_hit:resident'},[{'op':'resource_add','resource':'score','amount':-100}],limit=128)
  event('player.dying',{'on':'player.damaged'},[{'op':'input','enabled':False}],guards=[{'resource':'lives','compare':'lte','value':0}])
  event('player.failed',{'after':'player.dying','delay_ms':720},[{'op':'fail','result':'overrun'}])
- event('level.clear',{'at_ms':82000},[{'op':'complete','result':'clear'}],guards=[{'resource':'lives','compare':'gt','value':0}])
+ if station_candidate:
+  story = [
+   ('arrival','夜市告急','墨潮涌进夜市。守住巷口，给摊主留出逃生时间。'),
+   ('lamp_lesson','试射巷灯','射击巷灯会让附近墨鸦停顿。墨鸦也可以直接射击。'),
+   ('rescue','摊主被困','瞄准摊主胸口的墨团。纸身是保护区，误射会扣印记。'),
+   ('safe_exit','巷口守住了','摊主已获救。灯火照亮了通往下一站的路。'),
+   ('missed_rescue','巷口守住了','摊主仍被墨团困住。重试时，记得净化胸口的墨团。'),
+  ]
+  for index,(key,title,hint) in enumerate(story,7):
+   source['sections'][key]={'index':index,'title':title,'hint':hint,'targets':[]}
+  effect('lesson_ring','warning',1900,'#e4be73',105,'试射巷灯')
+  effect('rescue_light','burst',800,'#ffe6a0',128,'摊主获救')
+  event('lesson.lamp',{'at_ms':2300},[
+   {'op':'section','section':'lamp_lesson'},{'op':'input','enabled':True},
+   {'op':'vfx','effect':'lesson_ring','entity':'lamp'},
+  ])
+  for id,rescued in [('safe_exit',True),('missed_rescue',False)]:
+   event('ending.'+id,{'at_ms':90000},[{'op':'section','section':id},{'op':'input','enabled':False}],
+    guards=[{'resource':'lives','compare':'gt','value':0},
+            {'resource':'rescued','compare':'gt' if rescued else 'lte','value':0}])
+ event('level.clear',{'at_ms':93000 if station_candidate else 82000},[{'op':'complete','result':'clear'}],guards=[{'resource':'lives','compare':'gt','value':0}])
  path=publish(source);loaded,manifest=read_package(path);compiled=compile_source(loaded,source_manifest=manifest);out=write_build(compiled,DEFAULT_CACHE)
- dump(ROOT/'gunforge/level_design/reviews/assault_build.json',{'source':str(path),'source_revision':path.parent.name,'build_id':compiled['build_id'],'compiled':str(out),'state':'candidate_not_adopted','feedback':'user-gameplay-2026-11-09','target_count':sum(counts),'wave_count':len(counts)})
+ index_name = 'station' if station_candidate else 'assault'
+ dump(ROOT/'gunforge/level_design/reviews'/f'{index_name}_build.json',{'source':str(path),'source_revision':path.parent.name,'build_id':compiled['build_id'],'compiled':str(out),'state':'candidate_not_adopted','feedback':'user-gameplay-2026-11-09','target_count':sum(counts),'wave_count':len(counts)})
  print(out);return out
 if __name__=='__main__':build()

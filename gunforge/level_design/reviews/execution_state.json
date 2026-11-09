@@ -124,15 +124,15 @@
         "agent_proposals/proposal-1794207657317714900.json",
         "agent_proposals/proposal-1794208802414694900.json"
       ],
-      "note": "User verified desktop R2. An Agent-authored native orbital review annotation now goes through bound evidence, an ID-scoped patch, and a candidate comparison at the annotation tick. This sample is Agent self-review."
+      "note": "User verified desktop R2. The Agent workflow binds evidence to ID-scoped patches and same-tick comparison; gallery and orbital examples are Agent self-review. The required multi-round user annotation and adoption decisions remain open."
     },
     "LD17": {
-      "status": "implemented_partial",
+      "status": "native_route_retained",
       "evidence": [
         "../../../docs/LEVEL_DESIGN_ENGINE_QUICKSTART.md",
         "software_acceptance.json"
       ],
-      "note": "Autonomous implementation continues with native Godot to reuse the exact renderer/runtime. Embedded-web comparison prototype not built; no claim of user-selected tool form."
+      "note": "Retained native Godot for the current delivery because it uses the same renderer and runtime. The user verified the redesigned native UI in 2d0b9f9; embedded-web comparison was not built."
     },
     "LD18": {
       "status": "software_verified",
@@ -148,7 +148,7 @@
         "software_acceptance.json",
         "delivery_acceptance.json"
       ],
-      "note": "Native metadata-based trees, timeline, graph, source maps, version diff and replay controls; user UX review remains open."
+      "note": "The user verified the redesigned native UI with frontal, side and top views. The GPU reviewer regression checks event inspection and source pointers for representative spawn, launch, cue, effect and section actions across packages."
     },
     "LD20": {
       "status": "software_verified",
@@ -185,11 +185,11 @@
         "delivery_acceptance.json",
         "combat_r1_acceptance.json"
       ],
-      "note": "Independent directory, new venv and empty cache reproduce the five packages. Launch/import scripts, the encounter example and reproducible checks are included. Overall G4 remains pending hardware/user validation."
+      "note": "The complete first-station candidate and its launch, replay and review paths are included in the independent-directory verification. Overall G4 remains pending hardware/user validation."
     }
   },
-  "next": "The annotation-to-comparison workflow is software-verified. Additional user annotations, explicit adoption and physical hardware verification are separate acceptance work.",
-  "active_candidate": "paper.assault",
+  "next": "First-station candidate is ready for desktop review. Complete the remaining real-user annotation rounds, explicit adoption decisions and physical hardware verification when available.",
+  "active_candidate": "paper.station",
   "software_acceptance": "software_acceptance.json",
   "delivery_acceptance": "delivery_acceptance.json",
   "overall_complete": false

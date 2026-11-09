@@ -1,17 +1,19 @@
 {
   "passed": true,
-  "index": "D:\\gunforge_cache\\level_design\\runs\\software-1794207481884820300\\index.json",
-  "sha256": "ac2659dd1ac456fc5127cdca301a9632a0004d744bcd04a4c477d8a4a9607874",
-  "run": "D:\\gunforge_cache\\level_design\\runs\\software-1794207481884820300",
-  "checks": 50,
+  "index": "D:\\gunforge_cache\\level_design\\runs\\software-1794219947191806400\\index.json",
+  "sha256": "5eac4f91e5847dbc6bb78dd780689c4d7eda823f73394f62686f16ccad6b6e28",
+  "run": "D:\\gunforge_cache\\level_design\\runs\\software-1794219947191806400",
+  "checks": 58,
   "supplemental": {
     "passed": true,
     "index": "D:\\gunforge_cache\\level_design\\runs\\siege-agent-timing\\supplemental.json",
-    "sha256": "b2f6e5ce446d380f86801804badc4a023e318ce6d845cf7ff298925de9fbfb3b"
+    "sha256": "b2f6e5ce446d380f86801804badc4a023e318ce6d845cf7ff298925de9fbfb3b",
+    "scope": "historical siege proposal"
   },
   "annotation_workflow": {
     "passed": true,
     "index": "D:\\gunforge_cache\\level_design\\runs\\review-annotation-loop-35e923e8c69c43da9aa430ad4cc65cc3\\acceptance.json",
-    "sha256": "16c1cfc3bf772bf27e4c7b4739456909014aed9b2dc57e29dcc249a416326bfb"
+    "sha256": "16c1cfc3bf772bf27e4c7b4739456909014aed9b2dc57e29dcc249a416326bfb",
+    "scope": "historical Agent-authored orbital annotation"
   }
 }

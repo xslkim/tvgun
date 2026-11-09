@@ -55,7 +55,7 @@ def main():
   run('python-contracts',[sys.executable,'-m','unittest','discover','-s','gunforge/pipeline/level_design','-p','test_*.py'])
   run('native-assets',[sys.executable,'gunforge/pipeline/build_0b.py'])
   builds={}
-  for name in ['gallery','paper','protection','assault','siege']:
+  for name in ['gallery','paper','protection','assault','siege','station']:
    run('build-'+name,[sys.executable,'gunforge/pipeline/level_design/build_'+name+'.py'])
    builds[name]=read(ROOT/'gunforge/level_design/reviews'/(name+'_build.json'))
    dump(out/(name+'-design-checks.json'),check(Path(builds[name]['source'])))
@@ -73,6 +73,7 @@ def main():
   godot('protection-branches','tests/protection_tests.gd',builds['protection'])
   godot('assault-mechanics','tests/assault_tests.gd',builds['assault'])
   godot('assault-no-input','tests/functional_bot.gd',builds['assault'],extra=['--idle','--expected=overrun'])
+  godot('station-no-input','tests/functional_bot.gd',builds['station'],extra=['--idle','--expected=overrun'])
   godot('siege-encounter-branches','tests/encounter_tests.gd',builds['siege'])
   godot('native-shared-schedule','tests/native_bridge_tests.gd',builds['paper'])
   if args.baseline.is_dir():
@@ -83,7 +84,8 @@ def main():
   godot('seek-90s','tests/seek_benchmark.gd',{'compiled':str(fixture_build)})
   for name,build in builds.items():
    godot(name+'-bot','tests/functional_bot.gd',build)
-   if name=='assault':godot('assault-full-replay','tests/combat_replay_tests.gd',build,extra=['--recording='+str(out/'assault-bot.json.input.bin')])
+   if name in ['assault','station']:
+    godot(name+'-full-replay','tests/combat_replay_tests.gd',build,extra=['--recording='+str(out/(name+'-bot.json.input.bin'))])
    godot(name+'-review-ui','tools/level_review.gd',build,extra=['--reviews='+str(out/name/'test-comments'),'--evidence='+str(out/name/'evidence'),'--review-smoke'],gpu=True)
    capture_tick = ['--capture-tick=126'] if name=='siege' else []
    godot(name+'-review-capture','tools/level_review.gd',build,extra=['--capture='+str(out/(name+'-review.png')),'--quit-after-capture',*capture_tick],gpu=True)

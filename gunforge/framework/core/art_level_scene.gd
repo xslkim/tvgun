@@ -42,7 +42,7 @@ func draw_intents():
 			if not caption.is_empty():
 				label(caption,Vector2(at.x,maxf(118.0,at.y-radius-14.0)),32,color,true)
 	var support=model.level.get("presentation",{}).get("support",{})
-	if not support.is_empty():
+	if not support.is_empty() and model.input_enabled:
 		var entity=model.entities[support.entity]
 		var remaining=maxf(0,(entity.next_activation-model.tick)/float(model.level.tick_hz))
 		var at=model.center(entity)
@@ -129,15 +129,23 @@ func draw_hud():
 	draw_rect(Rect2(0,0,canvas.x,80),Color(.018,.025,.045,.8))
 	label(presentation.get("title",""),Vector2(25,36),30)
 	if not section.is_empty():
-		label("第 %d / %d %s · %s" % [section.index,stats.section_count,presentation.get("labels",{}).get("section_unit","段"),section.title],Vector2(25,67),25)
-		label("本段 %d / %d · %s %d / %d" % [stats.section_cleared,stats.section_total,presentation.get("labels",{}).get("progress","完成"),stats.cleared,stats.total],Vector2(canvas.x*.47,48),27,Color("#dfbc77"),true)
+		if stats.section_total > 0:
+			label("第 %d / %d %s · %s" % [section.index,stats.section_count,presentation.get("labels",{}).get("section_unit","段"),section.title],Vector2(25,67),25)
+			label("本段 %d / %d · %s %d / %d" % [stats.section_cleared,stats.section_total,presentation.get("labels",{}).get("progress","完成"),stats.cleared,stats.total],Vector2(canvas.x*.47,48),27,Color("#dfbc77"),true)
+		else:
+			label(section.title,Vector2(25,67),25)
 	var resources=[]
 	for field in model.level.get("hud",[]):resources.append(field.label+" "+str(int(model.resources[field.resource])))
 	# Right-align resource text without depending on game-specific counter names.
 	var resource_text="  ".join(resources)
 	var width=font.get_string_size(resource_text,HORIZONTAL_ALIGNMENT_LEFT,-1,26).x
 	label(resource_text,Vector2(canvas.x-width-25,45),26)
-	if not section.is_empty():label(section.get("hint",""),Vector2(canvas.x*.5,canvas.y-22),25,Color("#dbc8a8"),true)
+	if not section.is_empty() and model.phase != "result":
+		if stats.section_total == 0:
+			draw_rect(Rect2(0,canvas.y-85,canvas.x,85),Color(.018,.025,.045,.82))
+			label(section.get("hint",""),Vector2(canvas.x*.5,canvas.y-32),32,Color("#efd5a4"),true)
+		else:
+			label(section.get("hint",""),Vector2(canvas.x*.5,canvas.y-22),25,Color("#dbc8a8"),true)
 	var context=model.presentation_context
 	if context.mode=="player" and context.lifecycle=="ready":
 		draw_rect(Rect2(Vector2.ZERO,canvas),Color(.015,.02,.04,.72))
@@ -151,6 +159,8 @@ func draw_hud():
 		draw_rect(Rect2(Vector2.ZERO,canvas),Color(.02,.025,.045,.65))
 		label(presentation.get("labels",{}).get("result_success","完成") if model.result=="clear" else presentation.get("labels",{}).get("result_failure","失败"),Vector2(canvas.x*.5,canvas.y*.4),62,Color("#e7c994"),true)
 		label("%s %d / %d · Enter 或点击重试" % [presentation.get("labels",{}).get("progress","完成"),stats.cleared,stats.total],Vector2(canvas.x*.5,canvas.y*.54),32,Color("#e0c59e"),true)
+		if model.result == "clear" and not section.is_empty() and stats.section_total == 0:
+			label(section.get("hint",""),Vector2(canvas.x*.5,canvas.y*.48),29,Color("#e0c59e"),true)
 	elif context.mode=="player" and context.lifecycle=="paused":
 		draw_rect(Rect2(Vector2.ZERO,canvas),Color(.02,.025,.045,.5))
 		label("已暂停",Vector2(canvas.x*.5,canvas.y*.44),56,Color("#e7c994"),true)

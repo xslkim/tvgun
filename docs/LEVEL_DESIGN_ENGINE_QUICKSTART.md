@@ -2,7 +2,18 @@
 
 这是已能运行的开发原型。三包使用同一编译、运行会话、事件调度、命中、回放和审阅入口。正式关卡采用、真实用户批注及手机/电视验收分别记录，不由自动测试代替。
 
-## 最新战斗候选 R2
+## 完整首站候选 · 夜市巷口
+
+```powershell
+.\gunforge\start_level_player.ps1 -Package paper.station -Candidate
+.\gunforge\start_level_review.ps1 -Package paper.station -Candidate
+```
+
+按 Enter 或点击开始。开场交代墨潮和救援目标，随后有一段试射巷灯的时间。射击灯会暂时震退附近墨鸦，墨鸦也可以直接打。前三波依次介绍蓄力、扑击和墨弹拦截；第 46 秒先给出救援窗口，再进入后三波。打墨团可救人，打纸身扣印记。守到约 93 秒结算，结尾会区分摊主是否获救。整局使用 80 发光弹。
+
+这是独立候选。开场用关卡内的画面和字幕，动画和音效沿用当前战斗素材。旧 Demo 与 R2 仍可用于对照。
+
+## 战斗候选 R2
 
 双击根目录 **play_combat_candidate.cmd** 试玩，或 **review_combat_candidate.cmd** 打开只读审阅工具。两者自动准备素材、编译和导入 Godot 资源，不需要先打开编辑器。
 
@@ -11,7 +22,7 @@
 .\gunforge\start_level_review.ps1 -Package paper.assault -Candidate
 ```
 
-按 Enter 或点击画面开始和重试，左键射击，Esc 暂停。每局带 80 发光弹，每次有效开枪消耗一发，打完即无法继续射击。审阅器里先点「从头播放」，再点击画面射击。
+按 Enter 或点击画面开始和重试，左键射击，Esc 暂停。每局带 80 发光弹，每次有效开枪消耗一发，打完即无法继续射击。审阅器里先点「播放」，再点击画面射击。
 
 六波共有 29 只敌人。红圈蓄满时怪物会扑向近景或发射可拦截的墨弹。开枪会显示金色弹道，受击会亮起红边并显示灯芯损失。朱印是弱点，射击灯能震退附近怪物 1.5 秒，冷却 6 秒。声音默认开启。
 
@@ -130,6 +141,6 @@ uv pip install --python .venv/Scripts/python.exe -r .\gunforge\pipeline\level_de
 
 检查会新建独立证据目录；入口索引为 `gunforge/level_design/reviews/software_acceptance.json`。它涵盖源哈希、编译内容校验、回放、快照/跳转、三包机器人、真实 GPU 界面及回环 HTTP/UDP。手机追踪、电视延迟、真实试听和用户评价不在其通过结论中。
 
-`verify_delivery.py` 需要 uv；它复制必要源码与已审核素材，在独立目录创建新 Python 3.12.10 环境、按锁文件装依赖、使用空缓存重建四个包，核对 build_id，再执行机器人与实际 GPU 启动。结果见 `delivery_acceptance.json`。Godot 4.6.3 必须另行提供，可设置 `GODOT_BIN`。
+`verify_delivery.py` 需要 uv；它复制必要源码与已审核素材，在独立目录创建新 Python 3.12.10 环境、按锁文件装依赖、使用空缓存重建六个包，核对 build_id，再执行机器人与实际 GPU 启动。结果见 `delivery_acceptance.json`。Godot 4.6.3 必须另行提供，可设置 `GODOT_BIN`。
 
 如果报“版本/资源改变”，先重新运行相应启动脚本构建，或从不可变源重新编译；不要手改缓存中的 `level.json`。关闭占用同一端口的旧游戏再启动新的播放入口。可视化审阅本身不占用手机网络端口。
