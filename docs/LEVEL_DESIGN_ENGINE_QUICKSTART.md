@@ -105,15 +105,19 @@ $tools = '.\gunforge\pipeline\level_design'
 
 ## 验证其他题材
 
-靶场先用鼠标试玩。在项目根目录运行下面的命令，打开按试玩反馈提前出右靶的提案。
+靶场先用鼠标试玩。在项目根目录运行下面的命令，打开已采用的 2.8 秒出靶版本。
 
 ```powershell
-.\gunforge\start_level_player.ps1 -Proposal .\gunforge\level_design\reviews\agent_proposals\proposal-1794231862601292700.json
+.\gunforge\start_level_player.ps1 -Package gallery.intro
 ```
 
 按 Enter 开始。用左键射击左边的蓝绿色圆靶，再射击第 2.8 秒出现的右边移动圆靶。黄色方块是保护对象，误打会立即失败。两个圆靶都命中可得 200 分，打中右靶会结束本局，所以想验证两个靶请先打左靶。一局最多 12 秒，初始 4 发，R 换弹，Enter 重试。
 
-上次试玩的候选在第 4 秒出右靶。要对照两个版本，把上面命令里的 `start_level_player.ps1` 换成 `start_level_review.ps1`，查看器会打开在第 3 秒。用「版本」菜单里的「切换上一版本」查看同一时刻的区别。试玩后可以直接在聊天里留下大致时刻和具体问题，也可以在查看器保存批注。
+此前的候选在第 4 秒出右靶。运行以下命令可在第 3 秒对照，用「版本」菜单里的「切换上一版本」查看同一时刻的区别。
+
+```powershell
+.\gunforge\start_level_review.ps1 -Proposal .\gunforge\level_design\reviews\agent_proposals\proposal-1794231862601292700.json
+```
 
 ```powershell
 .\gunforge\start_level_review.ps1 -Package gallery.intro
