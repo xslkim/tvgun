@@ -10,44 +10,49 @@
   "resource_bounds": {"reactor": {"min": 0, "max": 3}, "cells": {"min": 0, "max": 12}},
   "controls": {"ammo_resource": "cells", "shot_interval_ms": 160, "assist_px": 6},
   "hud": [
-    {"label": "反应堆", "resource": "reactor"},
+    {"label": "护盾", "resource": "reactor"},
     {"label": "脉冲余量", "resource": "cells"},
     {"label": "拦截分", "resource": "credits"}
   ],
   "entities": {
-    "reactor": {"template": "protected", "x": 1020, "y": 265, "width": 120, "height": 100, "properties": {"z": 3}},
-    "jammer": {"template": "activation_source", "x": 885, "y": 490, "width": 85, "height": 85, "properties": {"shape": "circle", "z": 4, "activation_cooldown_ms": 2500}},
+    "jammer": {"template": "activation_source", "x": 1020, "y": 514, "width": 72, "height": 72, "properties": {"shape": "circle", "z": 4, "activation_cooldown_ms": 2500}},
     "rammer": {
-      "template": "target", "x": -100, "y": 225, "width": 96, "height": 64,
+      "template": "target", "resource": "drone", "x": 546, "y": 265, "width": 96, "height": 64,
       "motion": {"frames": [
-        {"at_ms": 0, "x": -100, "y": 225}, {"at_ms": 560, "x": 350, "y": 220},
-        {"attack_time": "release", "x": 320, "y": 230}, {"attack_time": "contact", "x": 932, "y": 279, "scale": 1.3},
-        {"attack_time": "retire", "x": 1350, "y": 300}
+        {"at_ms": 0, "x": 546, "y": 265, "scale": 0.38},
+        {"at_ms": 560, "x": 440, "y": 252, "scale": 0.72},
+        {"attack_time": "release", "x": 428, "y": 267, "scale": 0.92},
+        {"attack_time": "contact", "x": 592, "y": 477, "scale": 3.45},
+        {"attack_time": "retire", "x": 920, "y": 810, "scale": 3.2}
       ]}
     },
     "launcher": {
-      "template": "target", "x": 480, "y": -100, "width": 110, "height": 110,
-      "properties": {"shape": "circle", "hits": 2},
+      "template": "target", "resource": "drone", "x": 646, "y": 235, "width": 110, "height": 96,
+      "properties": {"hits": 2},
       "motion": {"frames": [
-        {"at_ms": 0, "x": 480, "y": -100}, {"at_ms": 540, "x": 480, "y": 145},
-        {"attack_time": "release", "x": 515, "y": 175}, {"attack_time": "retire", "x": 570, "y": -130}
+        {"at_ms": 0, "x": 646, "y": 235, "scale": 0.35},
+        {"at_ms": 540, "x": 786, "y": 214, "scale": 0.9},
+        {"attack_time": "release", "x": 810, "y": 238, "scale": 1.12},
+        {"attack_time": "retire", "x": 1110, "y": 160, "scale": 0.45}
       ]}
     },
     "slug": {"template": "projectile", "x": 0, "y": 0, "width": 44, "height": 44, "properties": {"shape": "circle", "z": 10}},
     "sweeper": {
-      "template": "target", "x": -94, "y": 440, "width": 90, "height": 60,
+      "template": "target", "resource": "drone", "x": 646, "y": 275, "width": 90, "height": 60,
       "motion": {"frames": [
-        {"at_ms": 0, "x": -94, "y": 440}, {"at_ms": 550, "x": 460, "y": 400},
-        {"attack_time": "release", "x": 440, "y": 410}, {"attack_time": "contact", "x": 934, "y": 305, "scale": 1.4},
-        {"attack_time": "retire", "x": 1320, "y": 355}
+        {"at_ms": 0, "x": 646, "y": 275, "scale": 0.4},
+        {"at_ms": 550, "x": 790, "y": 312, "scale": 0.78},
+        {"attack_time": "release", "x": 795, "y": 326, "scale": 0.95},
+        {"attack_time": "contact", "x": 595, "y": 479, "scale": 3.4},
+        {"attack_time": "retire", "x": 275, "y": 810, "scale": 3.2}
       ]}
     }
   },
   "events": {
     "station.ready": {
       "trigger": {"at_ms": 0},
-      "actions": {"reactor": {"op": "spawn", "entity": "reactor"}, "jammer": {"op": "spawn", "entity": "jammer"}},
-      "order": ["reactor", "jammer"], "max_firings": 1
+      "actions": {"jammer": {"op": "spawn", "entity": "jammer"}},
+      "order": ["jammer"], "max_firings": 1
     },
     "station.lost": {
       "trigger": {"on": "reactor.damaged"},
@@ -68,26 +73,30 @@
     }
   },
   "queries": {},
-  "resources": {},
+  "resources": {
+    "corridor": {"kind": "image", "path": "gunforge/level_design/examples/orbital_corridor.svg", "sha256": "4ab350b10dc35492fa21d1370def20304e288e842184d98d53dd0829e89344ec"},
+    "drone": {"kind": "image", "path": "gunforge/level_design/examples/orbital_drone.svg", "sha256": "3355a3412deeb418e967827e4184217ebb70bc3ed99f3c9e82dc3f082ffb8678"}
+  },
   "cues": {},
   "effects": {
-    "beam": {"kind": "shot_trace", "color": "#86edff", "duration_ms": 160, "radius": 29, "anchor_uv": [0.18, 0.96]},
-    "strike": {"kind": "attack_release", "color": "#ff854f", "duration_ms": 380, "radius": 60, "anchor_uv": [0.844, 0.4375]},
-    "impact": {"kind": "player_hit", "color": "#ff6350", "duration_ms": 650, "label": "反应堆受损"},
+    "beam": {"kind": "shot_trace", "color": "#86edff", "duration_ms": 160, "radius": 29, "anchor_uv": [0.5, 0.91]},
+    "strike": {"kind": "attack_release", "color": "#ff854f", "duration_ms": 380, "radius": 60, "anchor_uv": [0.5, 0.707]},
+    "impact": {"kind": "player_hit", "color": "#ff6350", "duration_ms": 650, "label": "护盾受损"},
     "intercept": {"kind": "burst", "color": "#9feeff", "duration_ms": 340, "radius": 66},
     "pulse": {"kind": "pulse", "color": "#a7d5ff", "duration_ms": 500, "radius": 900},
     "signal": {"kind": "link", "color": "#a7d5ff", "duration_ms": 480}
   },
   "presentation": {
-    "title": "轨道防线", "subtitle": "跨题材战斗白模",
-    "instructions": "保护右侧反应堆，击破冲撞机和飞行弹体",
+    "title": "轨道防线", "subtitle": "正面迎敌 · 战斗白模",
+    "instructions": "守住前方舱门，击破逼近的敌机和飞向你的弹体",
+    "layers": {"corridor": {"resource": "corridor", "x": 0, "y": 0, "width": 1280, "height": 720, "z": -10}},
     "feedback": {"shot": "beam", "neutralized": "intercept"},
     "support": {"entity": "jammer", "label": "射击干扰器"},
-    "labels": {"stunned": "干扰中", "progress": "击破", "result_success": "反应堆安全", "result_failure": "反应堆损毁"}
+    "labels": {"stunned": "干扰中", "progress": "击破", "result_success": "守住舱门", "result_failure": "护盾耗尽"}
   },
   "encounter": {
     "waves": {
-      "approach": {"index": 1, "title": "轨道接敌", "at_ms": 300, "spawns": {"rammer": 300, "launcher": 1250}, "hint": "橙圈表示蓄力，右侧方块是反应堆"},
+      "approach": {"index": 1, "title": "正面接敌", "at_ms": 300, "spawns": {"rammer": 300, "launcher": 1250}, "hint": "敌机从远处逼近，橙圈表示即将冲向你"},
       "sweep": {"index": 2, "title": "低轨冲撞", "at_ms": 6200, "spawns": {"sweeper": 500}, "hint": "射击右下方圆形干扰器可延缓冲撞"}
     },
     "attacks": {
@@ -98,9 +107,9 @@
       },
       "launcher": {
         "windup": {"at_ms": 620, "color": "#ff9156", "label": "发射预警"},
-        "release_ms": 1500, "retire_ms": 1950, "release_effect": "strike",
+        "release_ms": 1500, "retire_ms": 1950,
         "damage": {"resource": "reactor", "amount": 2, "topic": "reactor.damaged", "effect": "impact"},
-        "projectile": {"entity": "slug", "x": 1080, "y": 315, "flight_ms": 1150, "color": "#ffd471", "label": "拦截弹体",
+        "projectile": {"entity": "slug", "x": 640, "y": 622, "flight_ms": 1150, "color": "#ffd471", "label": "拦截弹体",
           "on_intercept": [{"op": "resource_add", "resource": "credits", "amount": 75}]}
       },
       "sweeper": {

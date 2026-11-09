@@ -29,10 +29,10 @@ class EncounterTests(unittest.TestCase):
         mutations = [
             (lambda s: s["encounter"]["waves"]["sweep"]["spawns"].update(rammer=50), "belongs to a wave"),
             (lambda s: s["encounter"]["attacks"]["rammer"].update(release_ms=1401, contact_ms=1402), "melee contact must follow release"),
-            (lambda s: s["encounter"]["attacks"]["launcher"]["projectile"].update(entity="reactor"), "expected a projectile"),
+            (lambda s: s["encounter"]["attacks"]["launcher"]["projectile"].update(entity="jammer"), "expected a projectile"),
             (lambda s: s["entities"]["launcher"]["motion"]["frames"][2].update(attack_time="contact"), "unavailable attack time"),
             (lambda s: s["encounter"]["attacks"]["rammer"]["damage"].update(resource="missing"), "unknown resource"),
-            (lambda s: s["encounter"]["supports"]["jam"].update(source="reactor"), "expected an activation source"),
+            (lambda s: s["encounter"]["supports"]["jam"].update(source="rammer"), "expected an activation source"),
             (lambda s: s["encounter"]["waves"]["sweep"]["spawns"].update(sweeper=6500), "finish before"),
             (lambda s: s["events"].update({"rammer.spawn": s["events"]["station.secure"]}), "generated ID already exists"),
         ]

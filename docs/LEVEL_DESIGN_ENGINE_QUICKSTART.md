@@ -61,7 +61,7 @@ $tools = '.\gunforge\pipeline\level_design'
 
 准备任务时会校验原构建和三份证据，提交时会再次检查批注与证据。候选预览打开在批注时刻，“切换上一版本”会在同一时刻来回对照。预览从新局推演到该时刻。涉及已打出的枪或道具效果时，可在对应原构建中打开批注保存的输入回放。
 
-《轨道防线》有一个可直接打开的对照示例。
+下面是《轨道防线》早期侧视白模的历史对照，用于复查发射机位置的批注。当前正面版使用后面的 `-Package orbital.siege -Candidate` 入口。
 
 ```powershell
 .\gunforge\start_level_review.ps1 -Proposal .\gunforge\level_design\reviews\agent_proposals\proposal-1794208802414694900.json
@@ -91,7 +91,7 @@ $tools = '.\gunforge\pipeline\level_design'
 .\gunforge\start_level_player.ps1 -Package orbital.siege -Candidate
 ```
 
-靶场有移动目标、保护对象、区域进入、弹药和成功/失败。护航白模有护盾窗口、双发目标、可拦截投射物、船体与任务分支。轨道防线白模用《纸灯城》R2 同一套战斗描述，改为保护右侧反应堆、拦截弹体和射击干扰器。
+靶场有移动目标、保护对象、区域进入、弹药和成功/失败。护航白模有护盾窗口、双发目标、可拦截投射物、船体与任务分支。《轨道防线》采用玩家所在位置的正面镜头。敌机从舱门方向由远及近，弹体飞向镜头，漏接会扣玩家护盾。射击干扰器可以延缓敌机出手。
 
 ## 编写一条战斗关卡
 
