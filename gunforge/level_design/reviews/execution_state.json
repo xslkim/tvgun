@@ -120,12 +120,13 @@
       "evidence": [
         "agent_example_runs.json",
         "comments/user-gameplay-2026-11-08.json",
+        "comments/user-gallery-2026-11-09.json",
         "combat_r1_acceptance.json",
         "agent_proposals/proposal-1794207657317714900.json",
         "agent_proposals/proposal-1794208802414694900.json",
         "agent_proposals/proposal-1794220453914520000.json"
       ],
-      "note": "User verified desktop R2. The station lamp lesson, gallery and orbital examples are explicitly Agent self-review. The station proposal was generated from a frame-bound annotation and passed a complete combat replay. The required multi-round user annotation and adoption decisions remain open."
+      "note": "User verified desktop R2 and reported the two-target mouse flow after repeated gallery play. The station lamp lesson, gallery and orbital proposals were initiated by Agent self-review. Gallery version preference, any requested adjustment and adoption decisions remain open."
     },
     "LD17": {
       "status": "accepted",
