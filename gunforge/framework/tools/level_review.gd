@@ -82,6 +82,8 @@ var speed=1.0
 var previous_build={}
 var loaded_path=""
 var previous_path=""
+var comparison_path=""
+var initial_tick=-1
 var smoke=false
 var capture_tick=150
 var recording_path=""
@@ -104,6 +106,8 @@ func _initialize():
 		if arg=="--review-smoke":smoke=true
 		if arg.begins_with("--capture-tick="):capture_tick=int(arg.trim_prefix("--capture-tick="))
 		if arg.begins_with("--recording="):recording_path=arg.trim_prefix("--recording=" )
+		if arg.begins_with("--compare="):comparison_path=arg.trim_prefix("--compare=")
+		if arg.begins_with("--at-tick="):initial_tick=int(arg.trim_prefix("--at-tick="))
 	call_deferred("open")
 func button(parent,text,action):
 	var node=Button.new();node.text=text;node.pressed.connect(action);parent.add_child(node);return node
@@ -136,8 +140,7 @@ func open():
 	button(toolbar,"打开构建",choose_build)
 	var versions_bar=HBoxContainer.new();column.add_child(versions_bar)
 	button(versions_bar,"查看版本差异",show_diff)
-	button(versions_bar,"切换上一版本",func():
-		if not previous_path.is_empty():build_path=previous_path;load_build())
+	button(versions_bar,"切换上一版本",switch_previous)
 	button(versions_bar,"采用当前候选",confirm_adopt)
 	button(versions_bar,"打开回放",choose_recording)
 	button(versions_bar,"标记 A",func():loop_a=clock.tick)
@@ -162,13 +165,24 @@ func open():
 	info=TextEdit.new();info.editable=false;info.size_flags_vertical=Control.SIZE_EXPAND_FILL;right.add_child(info)
 	note=TextEdit.new();note.placeholder_text="批注：期望怎样调整？哪些内容必须保留？";note.custom_minimum_size=Vector2(400,110);right.add_child(note)
 	button(right,"保存当前时间的批注",save_note)
+	if not comparison_path.is_empty():
+		var candidate_path = build_path
+		build_path = comparison_path
+		load_build()
+		if model==null:return
+		build_path = candidate_path
 	load_build()
+	if model==null:return
+	if loaded_path!=build_path:
+		quit(2)
+		return
 	if not recording_path.is_empty():
 		var file=FileAccess.open(recording_path,FileAccess.READ)
 		var record=file.get_var(false) if file!=null else null
 		if not record is Dictionary or record.get("build_id","")!=model.build.build_id:
 			push_error("Recording build mismatch");quit(2);return
 		session.load_recording(record)
+	if initial_tick>=0:jump(mini(initial_tick,session.max_tick))
 	if smoke:
 		await smoke_test();return
 	if not capture_path.is_empty():
@@ -214,6 +228,13 @@ func load_build():
 func reset():
 	running=false;session.start();clock=session.clock;refresh()
 	audio.clear()
+
+func switch_previous():
+	if previous_path.is_empty():return
+	var at = clock.tick
+	build_path = previous_path
+	load_build()
+	if loaded_path==build_path:jump(mini(at,session.max_tick))
 func asset_map():
 	return model.geometry_assets()
 func queue_shot(point,pose):
@@ -265,11 +286,19 @@ func save_note(author="user"):
 	var id="note-"+str(Time.get_unix_time_from_system()).replace(".","-")+"-"+str(Time.get_ticks_usec())
 	var file=review_dir.path_join(id+".json")
 	var selected=event_tree.get_selected()
-	var entry={"comment_id":id,"source_revision":model.build.source_revision,"build_id":model.build.build_id,"tick":clock.tick,"time_ms":clock.tick*1000.0/60,"anchor":selected.get_metadata(0) if selected else null,"text":text,"status":"open","author":author,"state":model.public_state(),"submission_id":session.submission_id}
+	var entry={"comment_id":id,"package":model.level.id,"source_revision":model.build.source_revision,"build_id":model.build.build_id,"tick":clock.tick,"time_ms":clock.tick*1000.0/60,"anchor":selected.get_metadata(0) if selected else null,"text":text,"status":"open","author":author,"state":model.public_state(),"submission_id":session.submission_id}
+	root.gui_disable_input=true
 	var saved=await capture_evidence(id)
+	root.gui_disable_input=false
 	if saved.is_empty():status.text="证据保存失败；批注未登记";return
 	entry.evidence=saved
-	FileAccess.open(file,FileAccess.WRITE).store_string(JSON.stringify(entry,"\t"))
+	var pending = FileAccess.open(file+".pending",FileAccess.WRITE)
+	if pending==null:status.text="无法写入批注";return
+	pending.store_string(JSON.stringify(entry,"\t"))
+	pending.close()
+	if DirAccess.rename_absolute(file+".pending",file)!=OK:
+		status.text="无法发布批注"
+		return
 	note.text="";status.text="批注已保存："+file
 func evidence_root():
 	if evidence_dir.is_empty():evidence_dir=asset_root.get_base_dir().path_join("gunforge_cache/level_design/review-evidence")
@@ -289,8 +318,15 @@ func capture_evidence(id):
 		preview.overlay=mode=="alpha";preview.queue_redraw()
 		await process_frame;await RenderingServer.frame_post_draw
 		var path=directory.path_join(mode+".png")
-		var box=Rect2i(preview.global_position+preview.origin,Vector2(model.level.layout.width,model.level.layout.height)*preview.scale_factor)
-		if root.get_texture().get_image().get_region(box).save_png(path)!=OK:preview.overlay=previous;return {}
+		var canvas = Vector2(model.level.layout.width,model.level.layout.height)
+		# The viewport texture includes content scaling, but excludes the outer window bars.
+		var transform = root.get_stretch_transform()*preview.get_global_transform_with_canvas()
+		var rect = transform*Rect2(preview.origin,canvas*preview.scale_factor)
+		var box = Rect2i(rect.position.round(),rect.end.round()-rect.position.round())
+		var frame = root.get_texture().get_image()
+		if not Rect2i(Vector2i.ZERO,frame.get_size()).encloses(box) or frame.get_region(box).save_png(path)!=OK:
+			preview.overlay=previous
+			return {}
 		files[mode]={"path":path,"sha256":FileAccess.get_sha256(path)}
 	preview.overlay=previous;preview.queue_redraw()
 	var record=directory.path_join("input.bin");var file=FileAccess.open(record,FileAccess.WRITE)

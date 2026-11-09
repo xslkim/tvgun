@@ -1,8 +1,18 @@
-param([string]$Build, [ValidateSet('paper.alley','paper.assault','gallery.intro','orbital.convoy','orbital.siege')][string]$Package='paper.alley', [string]$Godot = $env:GODOT_BIN,[switch]$Candidate)
+param([string]$Build, [ValidateSet('paper.alley','paper.assault','gallery.intro','orbital.convoy','orbital.siege')][string]$Package='paper.alley', [string]$Godot = $env:GODOT_BIN,[switch]$Candidate,[string]$Proposal)
 $ErrorActionPreference = 'Stop'
 $levelRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 if (-not $Godot) { $Godot = Join-Path $levelRoot '../gunforge_cache/tools/godot-4.6.3/Godot_v4.6.3-stable_win64_console.exe' }
 $levelPython = Join-Path $levelRoot '.venv/Scripts/python.exe'
+$comparisonArgs = @()
+if ($Proposal) {
+    if ($Build) { throw 'Specify either -Proposal or -Build' }
+    $comparison = & $levelPython (Join-Path $PSScriptRoot 'pipeline/level_design/review_revision.py') preview (Resolve-Path -LiteralPath $Proposal).Path
+    if ($LASTEXITCODE) { throw 'Proposal preview could not be built' }
+    $comparison = $comparison | ConvertFrom-Json
+    $Build = $comparison.candidate
+    $Package = $comparison.package
+    $comparisonArgs = @("--compare=$($comparison.base)", "--at-tick=$($comparison.tick)")
+}
 if (-not $Build) {
     if ($Package -in @('paper.alley','paper.assault')) {
         & $levelPython (Join-Path $PSScriptRoot 'pipeline/build_0b.py')
@@ -27,4 +37,4 @@ if ($Package -in @('paper.alley','paper.assault')) {
 }
 $levelCache=$env:GUNFORGE_LEVEL_CACHE
 if (-not $levelCache) { $levelCache=Join-Path $levelRoot '../gunforge_cache/level_design' }
-& $Godot --path (Join-Path $PSScriptRoot 'framework') --script res://tools/level_review.gd -- "--build=$Build" "--assets=$levelRoot" "--reviews=$levelReviews" "--evidence=$(Join-Path $levelCache 'review-evidence')"
+& $Godot --path (Join-Path $PSScriptRoot 'framework') --script res://tools/level_review.gd -- "--build=$Build" "--assets=$levelRoot" "--reviews=$levelReviews" "--evidence=$(Join-Path $levelCache 'review-evidence')" @comparisonArgs

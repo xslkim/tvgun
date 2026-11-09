@@ -121,9 +121,10 @@
         "agent_example_runs.json",
         "comments/user-gameplay-2026-11-08.json",
         "combat_r1_acceptance.json",
-        "agent_proposals/proposal-1794207657317714900.json"
+        "agent_proposals/proposal-1794207657317714900.json",
+        "agent_proposals/proposal-1794208802414694900.json"
       ],
-      "note": "User verified the R2 desktop candidate. Encounter fields are ID-addressable and covered by contract tests. The Agent independently reviewed the orbital whitebox and produced a software-verified candidate with one spawn timing edit."
+      "note": "User verified desktop R2. An Agent-authored native orbital review annotation now goes through bound evidence, an ID-scoped patch, and a candidate comparison at the annotation tick. This sample is Agent self-review."
     },
     "LD17": {
       "status": "implemented_partial",
@@ -187,7 +188,7 @@
       "note": "Independent directory, new venv and empty cache reproduce the five packages. Launch/import scripts, the encounter example and reproducible checks are included. Overall G4 remains pending hardware/user validation."
     }
   },
-  "next": "Apply a real cross-theme review annotation through the checked encounter revision workflow. Desktop R2 has passed user verification.",
+  "next": "The annotation-to-comparison workflow is software-verified. Additional user annotations, explicit adoption and physical hardware verification are separate acceptance work.",
   "active_candidate": "paper.assault",
   "software_acceptance": "software_acceptance.json",
   "delivery_acceptance": "delivery_acceptance.json",

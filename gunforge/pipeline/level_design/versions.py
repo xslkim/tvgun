@@ -69,8 +69,8 @@ def resolve(package,revision,store=STORE):
  if digest(manifest)!=revision or source['id']!=package:raise CompileError('source manifest mismatch')
  return entry,source,manifest
 
-def patch(package,base,changes,store=STORE):
- entry,source,manifest=resolve(package,base,store)
+def patch(package,base,changes,store=STORE,*,preserve=()):
+ _,source,_=resolve(package,base,store)
  if changes.get('base_revision')!=base:raise CompileError('stale patch base')
  changed=json.loads(canonical(source))
  if not changes.get('changes'):raise CompileError('empty patch')
@@ -92,6 +92,15 @@ def patch(package,base,changes,store=STORE):
    if op=='remove':del node[key]
    else:node[key]=change['value']
   else:raise CompileError('unknown patch operation')
+ for path in preserve:
+  before,after=source,changed
+  for key in path[1:].split('/'):
+   key=key.replace('~1','/').replace('~0','~')
+   if not isinstance(before,dict) or not isinstance(after,dict) or key not in before or key not in after:
+    raise CompileError('preserved field missing: '+path)
+   before,after=before[key],after[key]
+  if canonical(before)!=canonical(after):
+   raise CompileError('preserved field changed: '+path)
  target=publish(changed,store)
  receipt={'package':package,'base_revision':base,'source_revision':target.parent.name,'patch':changes,'source':str(target),'state':'candidate_not_adopted'}
  immutable(store/'reviews/candidates'/(digest(receipt)+'.json'),receipt)

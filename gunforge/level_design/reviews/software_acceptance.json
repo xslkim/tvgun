@@ -8,5 +8,10 @@
     "passed": true,
     "index": "D:\\gunforge_cache\\level_design\\runs\\siege-agent-timing\\supplemental.json",
     "sha256": "b2f6e5ce446d380f86801804badc4a023e318ce6d845cf7ff298925de9fbfb3b"
+  },
+  "annotation_workflow": {
+    "passed": true,
+    "index": "D:\\gunforge_cache\\level_design\\runs\\review-annotation-loop-35e923e8c69c43da9aa430ad4cc65cc3\\acceptance.json",
+    "sha256": "16c1cfc3bf772bf27e4c7b4739456909014aed9b2dc57e29dcc249a416326bfb"
   }
 }

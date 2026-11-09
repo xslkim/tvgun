@@ -50,6 +50,23 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\gunforge\start_level_revie
 - 旧关卡及白模声音默认关闭，战斗候选 R2 默认开启。按钮控制实际 WAV cue。跳转不会补播已经过去的一次性声音，持续声音按记录的偏移恢复。
 - “采用当前候选”是可选的用户操作：需要理由、警告确认及当前采用版本校验。预览和保存批注都不会自动采用。
 
+保存批注后，可把文件名交给 Agent。Agent 读取画面和命中轮廓，按批注确认可修改字段和必须保留的字段，再生成候选。开发入口如下。
+
+```powershell
+$tools = '.\gunforge\pipeline\level_design'
+& .\.venv\Scripts\python.exe "$tools\review_revision.py" prepare $annotation $task --allow /entities/launcher/x --preserve /controls
+& .\.venv\Scripts\python.exe "$tools\agent_workflow.py" $task $patch
+.\gunforge\start_level_review.ps1 -Proposal $receipt
+```
+
+准备任务时会校验原构建和三份证据，提交时会再次检查批注与证据。候选预览打开在批注时刻，“切换上一版本”会在同一时刻来回对照。预览从新局推演到该时刻。涉及已打出的枪或道具效果时，可在对应原构建中打开批注保存的输入回放。
+
+《轨道防线》有一个可直接打开的对照示例。
+
+```powershell
+.\gunforge\start_level_review.ps1 -Proposal .\gunforge\level_design\reviews\agent_proposals\proposal-1794208802414694900.json
+```
+
 《纸灯城》默认目标时长 78 秒；保留旧版浮点秒时钟的实际完成点为 78.1 秒，审阅范围包含完整结束。涉及续关的录制可继续扩展时间范围。
 
 ## 直接玩原型
