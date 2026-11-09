@@ -122,17 +122,19 @@
         "comments/user-gameplay-2026-11-08.json",
         "combat_r1_acceptance.json",
         "agent_proposals/proposal-1794207657317714900.json",
-        "agent_proposals/proposal-1794208802414694900.json"
+        "agent_proposals/proposal-1794208802414694900.json",
+        "agent_proposals/proposal-1794220453914520000.json"
       ],
-      "note": "User verified desktop R2. The Agent workflow binds evidence to ID-scoped patches and same-tick comparison; gallery and orbital examples are Agent self-review. The required multi-round user annotation and adoption decisions remain open."
+      "note": "User verified desktop R2. The station lamp lesson, gallery and orbital examples are explicitly Agent self-review. The station proposal was generated from a frame-bound annotation and passed a complete combat replay. The required multi-round user annotation and adoption decisions remain open."
     },
     "LD17": {
-      "status": "native_route_retained",
+      "status": "comparison_verified_selection_pending",
       "evidence": [
         "../../../docs/LEVEL_DESIGN_ENGINE_QUICKSTART.md",
-        "software_acceptance.json"
+        "software_acceptance.json",
+        "review_bridge_acceptance.json"
       ],
-      "note": "Retained native Godot for the current delivery because it uses the same renderer and runtime. The user verified the redesigned native UI in 2d0b9f9; embedded-web comparison was not built."
+      "note": "Edge and the loopback harness verified same-tick seek, read-only event/source lookup, isolated annotation and version switching through the native Godot process. The native UI was previously verified by the user. Recommend keeping native Godot for the current delivery; formal route selection remains a user decision."
     },
     "LD18": {
       "status": "software_verified",
@@ -188,7 +190,7 @@
       "note": "The complete first-station candidate and its launch, replay and review paths are included in the independent-directory verification. Overall G4 remains pending hardware/user validation."
     }
   },
-  "next": "First-station candidate is ready for desktop review. Complete the remaining real-user annotation rounds, explicit adoption decisions and physical hardware verification when available.",
+  "next": "Software self-review and the tool comparison are verified. Remaining gates require real user annotations (including gallery), formal tool selection and candidate decisions, and physical lightgun/display testing.",
   "active_candidate": "paper.station",
   "software_acceptance": "software_acceptance.json",
   "delivery_acceptance": "delivery_acceptance.json",
