@@ -1,12 +1,7 @@
 {
   "passed": true,
-  "index": "D:\\gunforge_cache\\level_design\\runs\\software-1794152759808460400\\index.json",
-  "sha256": "e1d084908ae253445766df7a97bc725c701e3e870219476329a6e5f9298731d9",
-  "run": "D:\\gunforge_cache\\level_design\\runs\\software-1794152759808460400",
-  "checks": 43,
-  "supplemental": {
-    "passed": true,
-    "index": "D:\\gunforge_cache\\level_design\\runs\\supplemental-1794153464610657200\\index.json",
-    "sha256": "fe128468dc70caf8fc662e1eddde28a3b67f72535673042a36dcfa8b8de6bc11"
-  }
+  "index": "D:\\gunforge_cache\\level_design\\runs\\software-1794195577008830200\\index.json",
+  "sha256": "97ba483a896aaf5479511454690c9bd10b5ff3da591d0c06e07013f8af13bafc",
+  "run": "D:\\gunforge_cache\\level_design\\runs\\software-1794195577008830200",
+  "checks": 43
 }

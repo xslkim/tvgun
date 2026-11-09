@@ -255,7 +255,12 @@ func geometry_assets() -> Dictionary:
 	return out
 
 func target_role(id):return entities[id].template if entities.has(id) else "unknown"
-func available_commands():return ["START","EXIT","RELOAD"] if level.get("controls",{}).has("ammo_resource") else ["START","EXIT"]
+func available_commands():
+	var commands = ["START","EXIT"]
+	var controls = level.get("controls",{})
+	if controls.has("ammo_resource") and controls.has("magazine"):
+		commands.append("RELOAD")
+	return commands
 
 func command(event: String, point: Vector2 = Vector2.ZERO, bound_geometry: Variant = null) -> Dictionary:
 	if event == "START":
@@ -265,7 +270,7 @@ func command(event: String, point: Vector2 = Vector2.ZERO, bound_geometry: Varia
 		return {"ok":false,"reason":"not_running"}
 	var controls = level.get("controls", {})
 	if event == "RELOAD":
-		if controls.has("ammo_resource") and reload_at < 0:
+		if available_commands().has("RELOAD") and reload_at < 0:
 			reload_at = tick + maxi(1, int(ceil(float(controls.get("reload_ms", 500)) * level.tick_hz / 1000)))
 			return {"ok":true}
 		return {"ok":false,"reason":"reload_unavailable"}
@@ -276,6 +281,7 @@ func command(event: String, point: Vector2 = Vector2.ZERO, bound_geometry: Varia
 	if controls.has("ammo_resource"):
 		if resources[controls.ammo_resource] <= 0:
 			emit("weapon.empty")
+			feedback("empty",point)
 			return {"ok":false,"reason":"empty"}
 		resources[controls.ammo_resource] -= 1
 	next_shot = tick + int(ceil(float(controls.get("shot_interval_ms", 0)) * level.tick_hz / 1000))

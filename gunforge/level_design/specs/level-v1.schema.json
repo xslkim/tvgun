@@ -1124,7 +1124,9 @@
               "pulse",
               "warning",
               "player_hit",
-              "link"
+              "link",
+              "shot_trace",
+              "attack_release"
             ]
           },
           "duration_ms": {
@@ -1308,6 +1310,10 @@
               "minLength": 1
             },
             "neutralized": {
+              "type": "string",
+              "minLength": 1
+            },
+            "empty": {
               "type": "string",
               "minLength": 1
             }

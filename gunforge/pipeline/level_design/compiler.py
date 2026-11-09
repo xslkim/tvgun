@@ -83,7 +83,12 @@ def validate(source, resource_root=ROOT):
  controls=source.get('controls',{})
  for field in source.get('hud',[]):
   if field['resource'] not in source['initial_resources']:raise CompileError('HUD references undeclared resource')
- if controls.get('ammo_resource') and (controls['ammo_resource'] not in source['initial_resources'] or 'magazine' not in controls):raise CompileError('ammo policy needs a declared counter and magazine')
+ if 'ammo_resource' in controls:
+  ammo = source['initial_resources'].get(controls['ammo_resource'])
+  if ammo is None or ammo < 0:
+   raise CompileError('ammo policy needs a declared nonnegative counter')
+ if ('magazine' in controls and 'ammo_resource' not in controls) or ('reload_ms' in controls and 'magazine' not in controls):
+  raise CompileError('reload policy needs an ammo counter and magazine')
  for id,cue in source['cues'].items():
   if cue['resource'] not in resources or resources[cue['resource']]['kind']!='audio':raise CompileError('cue needs registered audio resource: '+id)
  for id,query in queries.items():

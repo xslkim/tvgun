@@ -1,10 +1,10 @@
 {
-  "source": "D:\\tvgun\\gunforge\\level_design\\packages\\paper.assault\\revisions\\39a5bf56940a54db8c7a63c36baaadb1e9ae07b48d39f326634dc043b1393a60\\level.json",
-  "source_revision": "39a5bf56940a54db8c7a63c36baaadb1e9ae07b48d39f326634dc043b1393a60",
-  "build_id": "bec2b28b2722689e4794b051af9e0ec2ef950f1dd5dc03e8da2bf9fb046365d0",
-  "compiled": "D:\\gunforge_cache\\level_design\\builds\\bec2b28b2722689e4794b051af9e0ec2ef950f1dd5dc03e8da2bf9fb046365d0\\level.json",
+  "source": "D:\\tvgun\\gunforge\\level_design\\packages\\paper.assault\\revisions\\28f580405bdd4eb96ca2dc29069f21abf5c7fc4537aa97a7d8cd9fe6809f51c4\\level.json",
+  "source_revision": "28f580405bdd4eb96ca2dc29069f21abf5c7fc4537aa97a7d8cd9fe6809f51c4",
+  "build_id": "8d4417cca9b4b41a1ea505e87a5632a2b0176f1c33ace30ae986c1abdce9eef9",
+  "compiled": "D:\\gunforge_cache\\level_design\\builds\\8d4417cca9b4b41a1ea505e87a5632a2b0176f1c33ace30ae986c1abdce9eef9\\level.json",
   "state": "candidate_not_adopted",
-  "feedback": "user-gameplay-2026-11-08",
+  "feedback": "user-gameplay-2026-11-09",
   "target_count": 29,
   "wave_count": 6
 }

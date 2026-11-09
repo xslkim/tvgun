@@ -32,9 +32,15 @@ func draw_intents():
 		for phase in entity.get("phases",[]):
 			if phase.id!=entity.motion_phase or entity.stunned:continue
 			var progress=clampf((float(entity.age_ticks)*1000/model.level.tick_hz-phase.start_ms)/float(phase.end_ms-phase.start_ms),0,1)
-			var color=Color(phase.get("color","#c9654b"));color.a=.65+.25*sin(progress*TAU*3)
-			draw_arc(at,maxf(entity.width,entity.height)*(.56-.1*progress),-PI*.5,-PI*.5+TAU*progress,40,color,4,true)
-			label(phase.get("label",""),at+Vector2(0,-entity.height*.48),23,color,true)
+			var color = Color(phase.get("color","#c9654b"))
+			var radius = maxf(entity.width,entity.height) * .55 * float(entity.get("pose_scale",1))
+			draw_arc(at,radius,0,TAU,48,Color("#321e24"),12,true)
+			draw_arc(at,radius,0,TAU,48,Color(color,.55),4,true)
+			if progress>0.0:
+				draw_arc(at,radius,-PI*.5,-PI*.5+TAU*progress,48,color,8,true)
+			var caption = str(phase.get("label",""))
+			if not caption.is_empty():
+				label(caption,Vector2(at.x,maxf(118.0,at.y-radius-14.0)),32,color,true)
 	var support=model.level.get("presentation",{}).get("support",{})
 	if not support.is_empty():
 		var entity=model.entities[support.entity]
@@ -42,6 +48,7 @@ func draw_intents():
 		var at=model.center(entity)
 		label(support.label+(" · 就绪" if remaining<=0 else " · %.1f 秒" % remaining),at+Vector2(-110,entity.height*.5+30),23,Color("#e1bd76"))
 func draw_effects():
+	var canvas = Vector2(model.level.layout.width,model.level.layout.height)
 	for serial in model.active_effects:
 		var instance=model.active_effects[serial];var definition=model.level.effects[instance.effect]
 		var age=(model.tick-instance.start_tick)/float(model.level.tick_hz)
@@ -49,6 +56,10 @@ func draw_effects():
 		var at=Vector2(instance.position[0],instance.position[1]);var color=Color(definition.color);color.a*=1-t
 		var radius=float(definition.get("radius",80))
 		match definition.kind:
+			"shot_trace":
+				draw_shot_trace(at,canvas,radius,color,t)
+			"attack_release":
+				draw_attack_release(at,canvas,radius,color,t)
 			"spark","burst":
 				for i in range(12 if definition.kind=="burst" else 7):
 					var angle=i*TAU/(12 if definition.kind=="burst" else 7)+int(serial)*.37
@@ -65,15 +76,48 @@ func draw_effects():
 				draw_arc(at,35+60*t,0,TAU,32,color,3,true)
 			"warning":draw_arc(at,radius*(1-.5*t),0,TAU,32,color,4,true)
 			"player_hit":
-				var canvas=Vector2(model.level.layout.width,model.level.layout.height)
-				var ink=Color(.055,.025,.025,.36*(1-t))
-				for i in range(14):
-					var x=(i*137+int(serial)*43)%int(canvas.x)
-					draw_circle(Vector2(x,canvas.y-(i%3)*14),25+(i%4)*10,ink)
-				draw_line(Vector2(15,canvas.y*.22),Vector2(15,canvas.y*.78),color,10*(1-t)+1)
-				draw_line(Vector2(canvas.x-15,canvas.y*.22),Vector2(canvas.x-15,canvas.y*.78),color,10*(1-t)+1)
-				label(definition.get("label",""),Vector2(canvas.x*.5,canvas.y*.72),40,color,true)
+				draw_player_hit(canvas,Color(definition.color),t,int(serial),definition.get("label",""))
 		if definition.kind!="player_hit" and definition.has("label"):label(definition.label,at+Vector2(0,-20-t*40),26,color,true)
+
+func draw_shot_trace(at: Vector2, canvas: Vector2, radius: float, color: Color, age: float) -> void:
+	var muzzle = Vector2(canvas.x*.5,canvas.y-30)
+	var direction = (muzzle-at).normalized()
+	var normal = direction.orthogonal()
+	var tail = muzzle.lerp(at,age)
+	draw_line(tail,at,color,maxf(1.0,18.0*(1.0-age)),true)
+	draw_line(tail,at,Color(1.0,.98,.84,color.a),maxf(1.0,5.0*(1.0-age)),true)
+	draw_circle(muzzle,35.0*(1.0-age),Color(color,color.a*.65))
+	draw_circle(at,maxf(3.0,radius*.28*(1.0-age)),Color(1.0,.98,.84,color.a))
+	draw_arc(at,radius*(.55+age),0,TAU,32,color,5,true)
+	for offset in [direction,-direction,normal,-normal]:
+		draw_line(at+offset*radius*.5,at+offset*radius*1.18,color,5,true)
+
+func draw_attack_release(at: Vector2, canvas: Vector2, radius: float, color: Color, age: float) -> void:
+	var destination = Vector2(canvas.x*.5,canvas.y*.86)
+	var direction = (destination-at).normalized()
+	var normal = direction.orthogonal()
+	var tip = at.lerp(destination,minf(1.0,age*2.6))
+	for offset in [-.65,0.0,.65]:
+		var start = at + normal*radius*offset
+		var end = tip + normal*radius*offset*.3
+		draw_line(start,end,Color(.16,.025,.045,color.a),22,true)
+		draw_line(start,end,color,9,true)
+	draw_arc(at,radius*(.65+age),0,TAU,36,color,7,true)
+
+func draw_player_hit(canvas: Vector2, color: Color, age: float, serial: int, caption: String) -> void:
+	var strength = 1.0 - age
+	draw_rect(Rect2(Vector2.ZERO,canvas),Color(color,.32*strength))
+	for i in range(8):
+		var inset = float(i)*9.0
+		draw_rect(Rect2(Vector2.ONE*inset,canvas-Vector2.ONE*inset*2.0),Color(color,.88*strength*(1.0-i/9.0)),false,10)
+	for i in range(16):
+		var x = float((i*137+serial*43)%int(canvas.x))
+		draw_circle(Vector2(x,canvas.y-(i%3)*19),float(28+(i%4)*13),Color(.24,.025,.05,.8*strength))
+	var message_y = canvas.y*.77
+	var message_alpha = minf(1.0,strength*2.6)
+	draw_rect(Rect2(canvas.x*.5-225,message_y-58,450,78),Color(.17,.035,.05,.9*message_alpha))
+	label(caption,Vector2(canvas.x*.5,message_y),46,Color(1.0,.86,.8,message_alpha),true)
+
 func draw_hud():
 	var presentation=model.level.presentation
 	var canvas=Vector2(model.level.layout.width,model.level.layout.height)
@@ -96,8 +140,14 @@ func draw_hud():
 		label(presentation.get("title",""),Vector2(canvas.x*.5,canvas.y*.34),68,Color("#ebd8b0"),true)
 		label(presentation.get("subtitle",""),Vector2(canvas.x*.5,canvas.y*.43),34,Color("#cfa773"),true)
 		label(presentation.get("instructions",""),Vector2(canvas.x*.5,canvas.y*.58),29,Color("#dfd0b4"),true)
-		label("Enter 开始 · 鼠标 / 光枪射击 · R 换弹",Vector2(canvas.x*.5,canvas.y*.72),30,Color("#e3bd76"),true)
+		var controls = "Enter 或点击开始 · 鼠标 / 光枪射击"
+		if model.available_commands().has("RELOAD"):controls += " · R 换弹"
+		label(controls,Vector2(canvas.x*.5,canvas.y*.72),30,Color("#e3bd76"),true)
 	elif model.phase=="result":
 		draw_rect(Rect2(Vector2.ZERO,canvas),Color(.02,.025,.045,.65))
 		label(presentation.get("labels",{}).get("result_success","完成") if model.result=="clear" else presentation.get("labels",{}).get("result_failure","失败"),Vector2(canvas.x*.5,canvas.y*.4),62,Color("#e7c994"),true)
-		label("%s %d / %d · Enter 再试一次" % [presentation.get("labels",{}).get("progress","完成"),stats.cleared,stats.total],Vector2(canvas.x*.5,canvas.y*.54),32,Color("#e0c59e"),true)
+		label("%s %d / %d · Enter 或点击重试" % [presentation.get("labels",{}).get("progress","完成"),stats.cleared,stats.total],Vector2(canvas.x*.5,canvas.y*.54),32,Color("#e0c59e"),true)
+	elif context.mode=="player" and context.lifecycle=="paused":
+		draw_rect(Rect2(Vector2.ZERO,canvas),Color(.02,.025,.045,.5))
+		label("已暂停",Vector2(canvas.x*.5,canvas.y*.44),56,Color("#e7c994"),true)
+		label("Enter / Esc 继续",Vector2(canvas.x*.5,canvas.y*.54),30,Color("#e0c59e"),true)

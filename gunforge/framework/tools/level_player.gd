@@ -10,6 +10,15 @@ const Audio=preload("res://core/level_audio.gd")
 const Calibration=preload("res://core/calibration.gd")
 const Metrics=preload("res://core/visible_metrics.gd")
 const Codec=preload("res://core/pose_codec.gd")
+
+class DesktopInput extends Node:
+	var handle_key: Callable
+
+	func _input(event: InputEvent) -> void:
+		if event is InputEventKey and event.pressed and not event.echo:
+			if handle_key.call(event.keycode):
+				get_viewport().set_input_as_handled()
+
 var session=Session.new()
 var frame=Frame.new()
 var gun=Gun.new()
@@ -43,6 +52,9 @@ func open():
 	border=ColorRect.new();border.color=Color.WHITE;root.add_child(border)
 	dark=ColorRect.new();dark.color=Color.BLACK;root.add_child(dark)
 	preview=Review.Preview.new();preview.owner_tool=self;preview.model=model;preview.overlay=false;preview.clip_contents=true;root.add_child(preview)
+	var desktop_input = DesktopInput.new()
+	desktop_input.handle_key = handle_key
+	root.add_child(desktop_input)
 	if model.has_method("mount"):
 		var viewport=SubViewport.new();viewport.size=Vector2i(model.level.layout.width,model.level.layout.height);viewport.disable_3d=true;root.add_child(viewport);model.mount(viewport);preview.native_viewport=viewport
 	session.real_time_inputs=true
@@ -66,7 +78,14 @@ func layout():
 	var inset=frame.white*box.size.x/1920.0;dark.position=box.position+Vector2.ONE*inset;dark.size=box.size-Vector2.ONE*inset*2
 	box=frame.content_rect(root.size);preview.position=box.position;preview.size=box.size;status.position=box.position+Vector2(8,8)
 func queue_shot(point,_pose):
-	if not network:session.enqueue("SHOT",point)
+	if network or not in_playfield(point):return
+	if session.pause_reasons.has("ready") or model.phase=="result":
+		enqueue_device({"event":"START"})
+		return
+	session.enqueue("SHOT",point)
+
+func in_playfield(point: Vector2) -> bool:
+	return Rect2(Vector2.ZERO,Vector2(model.level.layout.width,model.level.layout.height)).has_point(point)
 func from_norm(point):return (frame.norm_to_window(calibration.apply(point),root.size)-preview.position-preview.origin)/preview.scale_factor
 func enqueue_device(event):
 	var command=event.event
@@ -84,8 +103,8 @@ func enqueue_device(event):
 		session.set_pause("manual",false);return
 	if command=="SHOT":
 		var point=from_norm(event.aim)
-		if not Rect2(Vector2.ZERO,Vector2(model.level.layout.width,model.level.layout.height)).has_point(point):session.enqueue("RELOAD")
-		else:session.enqueue("SHOT",point)
+		if in_playfield(point):session.enqueue("SHOT",point)
+		elif model.available_commands().has("RELOAD"):session.enqueue("RELOAD")
 	else:session.enqueue(command)
 func _process(delta):
 	if model==null:return
@@ -102,17 +121,21 @@ func _process(delta):
 	if model.has_method("set_presentation_context"):model.set_presentation_context("player",session.public_state().lifecycle)
 	audio.sync()
 	for player in audio.players.values():player.stream_paused=not session.pause_reasons.is_empty()
-	status.text="%s  %s  %s\nEnter 开始 / 重试 / 恢复　R 换弹　Esc 暂停　G 光枪模式　Q 退出" % [session.public_state().lifecycle,JSON.stringify(model.resources),str(session.pause_reasons.keys())]
+	var reload_hint = "　R 换弹" if model.available_commands().has("RELOAD") else ""
+	status.text="%s  %s  %s\nEnter 开始 / 重试 / 恢复%s　Esc 暂停　G 光枪模式　Q 退出" % [session.public_state().lifecycle,JSON.stringify(model.resources),str(session.pause_reasons.keys()),reload_hint]
 	preview.queue_redraw()
 	if quit_after>0 and elapsed>=quit_after:gun.close();http.close();quit()
-func _input(event):
-	if model==null or not event is InputEventKey or not event.pressed:return
-	match event.keycode:
-		KEY_ENTER:enqueue_device({"event":"START"})
+func handle_key(keycode: Key) -> bool:
+	match keycode:
+		KEY_ENTER, KEY_KP_ENTER:enqueue_device({"event":"START"})
 		KEY_ESCAPE:enqueue_device({"event":"EXIT"})
-		KEY_R:session.enqueue("RELOAD")
+		KEY_R:
+			if not model.available_commands().has("RELOAD"):return false
+			session.enqueue("RELOAD")
 		KEY_G:network=not network
 		KEY_Q:gun.close();http.close();quit()
+		_:return false
+	return true
 func handle_http(command,payload,completion):
 	if command=="STATE":
 		var targets=[]
@@ -126,7 +149,9 @@ func handle_http(command,payload,completion):
 	var point=from_norm(Vector2(payload.get("x",0),payload.get("y",0)))
 	if command=="SHOT":
 		if not point.is_finite():return {"ok":false,"reason":"invalid_coordinates"}
-		if not Rect2(Vector2.ZERO,Vector2(model.level.layout.width,model.level.layout.height)).has_point(point):command="RELOAD"
+		if not in_playfield(point):
+			if not model.available_commands().has("RELOAD"):return {"ok":false,"reason":"outside_playfield"}
+			command="RELOAD"
 	var order=session.queue.next_order
 	if not session.enqueue(command,point):return {"ok":false,"reason":"paused_or_no_submission"}
 	completions[order]={"callback":completion,"at":elapsed}

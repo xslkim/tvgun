@@ -32,11 +32,13 @@ func run():
 	if model==null:quit(2);return
 	reset_at(200)
 	check(model.level.sections.size()==6 and model.section_stats().total==29,"six_sections_and_29_attackers")
+	check(model.resources.ammo==80 and not model.available_commands().has("RELOAD"),"finite_ammo_without_magazine")
 	var id="w1_crow_1";var before=model.entities[id].x
 	step_to(215)
 	check(abs(model.entities[id].x-before)>1,"continuous_entry_changes_bound_pose")
 	var life=model.resources.lives;step_to(305)
 	check(model.entities[id].motion_phase=="windup" and model.resources.lives==life,"readable_windup_precedes_damage")
+	check(model.entities[id].pose_scale>2.4 and model.active_effects.values().any(func(e):return e.effect=="lunge_release"),"committed_lunge_visible_before_damage")
 	step_to(306)
 	check(model.resources.lives==life-1 and not model.active_effects.is_empty() and model.active_cues.values().any(func(c):return c.cue=="hurt"),"actual_attack_damages_with_effect_and_sound")
 	reset_at(270)
@@ -44,6 +46,7 @@ func run():
 	var lamp=point_for("lamp")
 	check(lamp!=null,"support_lamp_has_visible_alpha_target")
 	model.command("SHOT",lamp);model.step()
+	check(model.resources.ammo==79 and model.active_effects.values().any(func(e):return e.effect=="shot_spark"),"shot_consumes_one_round_and_emits_visible_trace")
 	check(model.entities[id].stunned and model.entities.lamp.next_activation>model.tick,"lamp_stuns_visible_enemy_and_enters_cooldown")
 	var stunned_age=model.entities[id].age_ticks
 	for i in range(89):model.step()
@@ -90,6 +93,13 @@ func run():
 	var rescue=point_for("resident_ink");check(rescue!=null,"rescue_ink_bound_to_animated_resident_pose")
 	model.command("SHOT",rescue);model.step()
 	check(model.resources.rescued==1 and not model.entities.resident_ink.active,"rescue_is_a_real_distinct_target")
+	model.start()
+	model.resources.ammo=1
+	var empty_space=Vector2(890,110)
+	model.command("SHOT",empty_space)
+	step_to(60)
+	check(model.command("RELOAD").get("reason")=="reload_unavailable" and model.resources.ammo==0,"reload_cannot_refill_finite_ammo")
+	check(model.command("SHOT",empty_space).get("reason")=="empty" and model.shots==1 and model.resources.ammo==0,"empty_ammo_blocks_firing")
 	var output={"passed":passed,"failed":failed,"build_id":model.build.build_id,"scope":"software mechanics, not human difficulty or real lightgun feel"}
 	if not report.is_empty():FileAccess.open(report,FileAccess.WRITE).store_string(JSON.stringify(output,"\t"))
 	print(JSON.stringify(output));quit(0 if failed.is_empty() else 1)
