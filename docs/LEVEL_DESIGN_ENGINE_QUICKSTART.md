@@ -13,6 +13,17 @@
 
 这是独立候选。开场用关卡内的画面和字幕，动画和音效沿用当前战斗素材。旧 Demo 与 R2 仍可用于对照。
 
+首站巷灯教学和靶场延迟出靶都有单独的审阅提案。在项目根目录的 PowerShell 中选定一个提案，再启动对应版本。
+
+```powershell
+$proposal = '.\gunforge\level_design\reviews\agent_proposals\proposal-1794220453914520000.json'  # 首站巷灯教学
+# $proposal = '.\gunforge\level_design\reviews\agent_proposals\proposal-1794147515072431400.json'  # 靶场延迟出靶
+.\gunforge\start_level_player.ps1 -Proposal $proposal
+.\gunforge\start_level_review.ps1 -Proposal $proposal
+```
+
+在查看器里，拖到要反馈的时刻。有对应事件时，先选中该事件，再填写批注并点击「保存当前帧的批注」。如需从头体验候选，使用试玩入口。
+
 ## 战斗候选 R2
 
 双击根目录 **play_combat_candidate.cmd** 试玩，或 **review_combat_candidate.cmd** 打开只读审阅工具。两者自动准备素材、编译和导入 Godot 资源，不需要先打开编辑器。

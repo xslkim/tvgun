@@ -1,5 +1,7 @@
 {
-  "status": "software_verified_awaiting_user_selection",
+  "status": "accepted",
+  "selected_reviewer": "native_godot",
+  "user_selected_on": "2026-11-09",
   "proposal": "agent_proposals/proposal-1794220453914520000.json",
   "bridge": {
     "path": "D:/gunforge_cache/level_design/runs/review-bridge-1794220653363142100/comparison.json",

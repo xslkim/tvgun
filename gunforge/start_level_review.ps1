@@ -5,19 +5,24 @@ if (-not $Godot) { $Godot = Join-Path $levelRoot '../gunforge_cache/tools/godot-
 $levelPython = Join-Path $levelRoot '.venv/Scripts/python.exe'
 $comparisonArgs = @()
 if ($Proposal) {
-    if ($Build) { throw 'Specify either -Proposal or -Build' }
-    $comparison = & $levelPython (Join-Path $PSScriptRoot 'pipeline/level_design/review_revision.py') preview (Resolve-Path -LiteralPath $Proposal).Path
+    if ($Build -or $Candidate) { throw '-Proposal selects an exact candidate. Omit -Build and -Candidate.' }
+    $proposalPath = (Resolve-Path -LiteralPath $Proposal).Path
+    $revisionTool = Join-Path $PSScriptRoot 'pipeline/level_design/review_revision.py'
+    $Package = & $levelPython $revisionTool package $proposalPath
+    if ($LASTEXITCODE) { throw 'Cannot identify the proposal package' }
+}
+if (-not $Build -and $Package -in @('paper.alley','paper.assault','paper.station')) {
+    & $levelPython (Join-Path $PSScriptRoot 'pipeline/build_0b.py')
+    if ($LASTEXITCODE) { throw 'Native asset preparation failed' }
+}
+if ($Proposal) {
+    $comparison = & $levelPython $revisionTool preview $proposalPath
     if ($LASTEXITCODE) { throw 'Proposal preview could not be built' }
     $comparison = $comparison | ConvertFrom-Json
     $Build = $comparison.candidate
     $Package = $comparison.package
     $comparisonArgs = @("--compare=$($comparison.base)", "--at-tick=$($comparison.tick)")
-}
-if (-not $Build) {
-    if ($Package -in @('paper.alley','paper.assault','paper.station')) {
-        & $levelPython (Join-Path $PSScriptRoot 'pipeline/build_0b.py')
-        if ($LASTEXITCODE) { throw 'Native asset preparation failed' }
-    }
+} elseif (-not $Build) {
     $levelScripts=@{'paper.alley'='paper';'paper.assault'='assault';'paper.station'='station';'gallery.intro'='gallery';'orbital.convoy'='protection';'orbital.siege'='siege'}
     $levelName=$levelScripts[$Package]
     & $levelPython (Join-Path $PSScriptRoot "pipeline/level_design/build_$levelName.py")
@@ -38,3 +43,4 @@ if ($Package -in @('paper.alley','paper.assault','paper.station')) {
 $levelCache=$env:GUNFORGE_LEVEL_CACHE
 if (-not $levelCache) { $levelCache=Join-Path $levelRoot '../gunforge_cache/level_design' }
 & $Godot --path (Join-Path $PSScriptRoot 'framework') --script res://tools/level_review.gd -- "--build=$Build" "--assets=$levelRoot" "--reviews=$levelReviews" "--evidence=$(Join-Path $levelCache 'review-evidence')" @comparisonArgs
+exit $LASTEXITCODE

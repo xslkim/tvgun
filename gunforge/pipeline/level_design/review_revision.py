@@ -5,7 +5,9 @@ import json
 import re
 from pathlib import Path
 
-from compiler import DEFAULT_CACHE, CompileError, compile_source, digest, payload_digest, read, write_build
+from combat_cues import ensure_combat_cues
+from compiler import ROOT, DEFAULT_CACHE, CompileError, compile_source, digest, payload_digest, read, write_build
+from cues import ensure_cues
 from versions import STORE, immutable, resolve
 
 
@@ -69,12 +71,29 @@ def prepare(note_path, output, allowed_paths, preserve, store=STORE, cache=DEFAU
     return task
 
 
+def proposal_package(proposal):
+    if "package" in proposal:
+        return proposal["package"]
+    # Older receipts stored an absolute source path but did not include a package ID.
+    source = proposal.get("source", "").replace("\\", "/")
+    match = re.search(r"(?:^|/)packages/([\w.-]+)/revisions/([a-f0-9]{64})/level\.json$", source)
+    if match is None or match[2] != proposal.get("source_revision"):
+        raise CompileError("cannot identify the proposal package")
+    return match[1]
+
+
 def preview(proposal_path, store=STORE, cache=DEFAULT_CACHE):
     proposal = read(proposal_path)
-    package = proposal["package"]
+    package = proposal_package(proposal)
     paths = {}
     for label, field in (("base", "base_revision"), ("candidate", "source_revision")):
         _, source, manifest = resolve(package, proposal[field], store)
+        missing = [resource["path"] for resource in source["resources"].values()
+                   if not (ROOT / resource["path"]).is_file()]
+        if any(path.startswith("gunforge/level_design/generated/audio/combat_") for path in missing):
+            ensure_combat_cues()
+        if any(path.startswith("gunforge/framework/runtime/audio/") for path in missing):
+            ensure_cues()
         paths[label] = str(write_build(compile_source(source, source_manifest=manifest), cache))
     return {"package": package, **paths, "tick": proposal.get("review", {}).get("tick", 0)}
 
@@ -89,10 +108,15 @@ if __name__ == "__main__":
     make.add_argument("--preserve", action="append", default=[])
     view = commands.add_parser("preview")
     view.add_argument("proposal", type=Path)
+    package = commands.add_parser("package")
+    package.add_argument("proposal", type=Path)
     args = parser.parse_args()
     try:
-        result = (prepare(args.note, args.output, args.allow, args.preserve)
-                  if args.command == "prepare" else preview(args.proposal))
-        print(json.dumps(result))
+        if args.command == "package":
+            print(proposal_package(read(args.proposal)))
+        elif args.command == "prepare":
+            print(json.dumps(prepare(args.note, args.output, args.allow, args.preserve)))
+        else:
+            print(json.dumps(preview(args.proposal)))
     except (CompileError, KeyError, TypeError, AttributeError, OSError) as error:
         raise SystemExit(str(error))

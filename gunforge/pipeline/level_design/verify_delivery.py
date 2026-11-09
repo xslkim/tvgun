@@ -29,6 +29,15 @@ def main():
  run('new-venv',['uv','venv',workspace/'.venv','--python','3.12.10'])
  python=workspace/'.venv/Scripts/python.exe'
  run('locked-dependencies',['uv','pip','install','--python',python,'-r','gunforge/pipeline/level_design/requirements.lock'])
+ # Run the first-station proposal before native assets have been prepared in this copy.
+ for package, receipt in [('station','proposal-1794220453914520000.json'),
+                          ('gallery','proposal-1794147515072431400.json')]:
+  proposal=workspace/'gunforge/level_design/reviews/agent_proposals'/receipt
+  launch_log=run(package+'-proposal-launcher',['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-File','gunforge/start_level_player.ps1','-Proposal',proposal,'-QuitAfter','0.3'])
+  comparison=json.loads(run(package+'-proposal-resolution',[python,'gunforge/pipeline/level_design/review_revision.py','preview',proposal]))
+  build=json.loads(Path(comparison['candidate']).read_bytes())
+  if build['build_id'].encode() not in launch_log or build['source_revision']!=json.loads(proposal.read_bytes())['source_revision']:
+   raise RuntimeError('Launcher failed to select the exact '+package+' proposal')
  run('assets',[python,'gunforge/pipeline/build_0b.py'])
  run('godot-import',[args.godot,'--headless','--editor','--import','--quit','--path','gunforge/framework'])
  for name in ['gallery','paper','protection','assault','siege','station']:
