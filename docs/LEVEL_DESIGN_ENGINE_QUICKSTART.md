@@ -25,6 +25,15 @@ $proposal = '.\gunforge\level_design\reviews\agent_proposals\proposal-1794220453
 
 在查看器里，拖到要反馈的时刻。有对应事件时，先选中该事件，再填写批注并点击「保存当前帧的批注」。如需从头体验候选，使用试玩入口。
 
+## 第二站白模 · 糖葫芦摊
+
+```powershell
+.\gunforge\start_level_player.ps1 -Package paper.stall -Candidate
+.\gunforge\start_level_review.ps1 -Package paper.stall -Candidate
+```
+
+用 Enter 开始，左键射击。每轮先射右边的巷灯，再打硬化墨鸦。灯亮后有 6 秒射击窗口，灯灭可以再点。首轮只教点灯，后两轮红圈会提示攻击，击破墨鸦可取消伤害。共三轮、六只墨鸦，35 发光弹，50 秒内清完通关。这个独立白模复用首站的夜市背景和墨鸦素材。
+
 ## 战斗候选 R2
 
 双击根目录 **play_combat_candidate.cmd** 试玩，或 **review_combat_candidate.cmd** 打开只读审阅工具。两者自动准备素材、编译和导入 Godot 资源，不需要先打开编辑器。
@@ -167,6 +176,6 @@ uv pip install --python .venv/Scripts/python.exe -r .\gunforge\pipeline\level_de
 
 检查会新建独立证据目录；入口索引为 `gunforge/level_design/reviews/software_acceptance.json`。它涵盖源哈希、编译内容校验、回放、快照/跳转、三包机器人、真实 GPU 界面及回环 HTTP/UDP。手机追踪、电视延迟、真实试听和用户评价不在其通过结论中。
 
-`verify_delivery.py` 需要 uv；它复制必要源码与已审核素材，在独立目录创建新 Python 3.12.10 环境、按锁文件装依赖、使用空缓存重建六个包，核对 build_id，再执行机器人与实际 GPU 启动。结果见 `delivery_acceptance.json`。Godot 4.6.3 必须另行提供，可设置 `GODOT_BIN`。
+`verify_delivery.py` 需要 uv；它复制必要源码与已审核素材，在独立目录创建新 Python 3.12.10 环境、按锁文件装依赖、使用空缓存重建七个包，核对 build_id，再执行机器人与实际 GPU 启动。结果见 `delivery_acceptance.json`。Godot 4.6.3 必须另行提供，可设置 `GODOT_BIN`。
 
 如果报“版本/资源改变”，先重新运行相应启动脚本构建，或从不可变源重新编译；不要手改缓存中的 `level.json`。关闭占用同一端口的旧游戏再启动新的播放入口。可视化审阅本身不占用手机网络端口。

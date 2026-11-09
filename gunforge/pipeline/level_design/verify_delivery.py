@@ -41,7 +41,7 @@ def main():
    raise RuntimeError('Launcher failed to select the exact '+package+' proposal')
  run('assets',[python,'gunforge/pipeline/build_0b.py'])
  run('godot-import',[args.godot,'--headless','--editor','--import','--quit','--path','gunforge/framework'])
- for name in ['gallery','paper','protection','assault','siege','station']:
+ for name in ['gallery','paper','protection','assault','siege','station','stall']:
   run('build-'+name,[python,'gunforge/pipeline/level_design/build_'+name+'.py'])
   index=json.loads((workspace/'gunforge/level_design/reviews'/(name+'_build.json')).read_bytes())
   original=json.loads((ROOT/'gunforge/level_design/reviews'/(name+'_build.json')).read_bytes())
@@ -53,6 +53,7 @@ def main():
  run('candidate-doubleclick-launcher',['cmd.exe','/c','play_combat_candidate.cmd','-QuitAfter','0.3'])
  run('encounter-package-launcher',['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-File','gunforge/start_level_player.ps1','-Package','orbital.siege','-Candidate','-QuitAfter','0.3'])
  run('station-package-launcher',['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-File','gunforge/start_level_player.ps1','-Package','paper.station','-Candidate','-QuitAfter','0.3'])
+ run('stall-package-launcher',['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-File','gunforge/start_level_player.ps1','-Package','paper.stall','-Candidate','-QuitAfter','0.3'])
  # Adoption fixture exists exclusively in the independent test workspace, never the live project.
  from versions import patch,adopt
  from checks import check
@@ -65,7 +66,7 @@ def main():
  adopted=adopt('gallery.intro',patched.parent.name,expected,'ISOLATED AUTOMATED TEST FIXTURE, not real user acceptance','user',store,out/'empty-build-cache',acknowledged_warnings=warnings)
  launch_log=run('adopted-source-launcher',['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-File','gunforge/start_level_player.ps1','-Package','gallery.intro','-QuitAfter','0.3'])
  if adopted['build_id'].encode() not in launch_log:raise RuntimeError('Launcher failed to select isolated adopted source')
- result={'passed':True,'workspace':str(workspace),'run':str(out),'source_manifest':{'path':str(out/'source-manifest.json'),'sha256':sha(out/'source-manifest.json')},'checks':checks,'build_identity':'all six packages identical to original workspace','adoption_fixture':'isolated copied workspace only; live project adoption not performed','scope':'independent directory, new Python 3.12.10 venv, pinned dependencies, copied approved assets, empty build cache, actual GPU reviewer/player, candidate and adopted launch chains; no hardware claim'}
+ result={'passed':True,'workspace':str(workspace),'run':str(out),'source_manifest':{'path':str(out/'source-manifest.json'),'sha256':sha(out/'source-manifest.json')},'checks':checks,'build_identity':'all seven packages identical to original workspace','adoption_fixture':'isolated copied workspace only; live project adoption not performed','scope':'independent directory, new Python 3.12.10 venv, pinned dependencies, copied approved assets, empty build cache, actual GPU reviewer/player, candidate and adopted launch chains; no hardware claim'}
  dump(out/'index.json',result);dump(ROOT/'gunforge/level_design/reviews/delivery_acceptance.json',{'passed':True,'index':str(out/'index.json'),'sha256':sha(out/'index.json'),'checks':len(checks)})
  print(json.dumps({'passed':True,'run':str(out),'checks':len(checks)}))
 if __name__=='__main__':main()

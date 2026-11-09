@@ -116,7 +116,7 @@
       "note": "Actual GPU readonly reviewer, exact alpha geometry, anchored screenshots/input evidence and notes."
     },
     "LD16": {
-      "status": "in_progress",
+      "status": "accepted",
       "evidence": [
         "agent_example_runs.json",
         "comments/user-gameplay-2026-11-08.json",
@@ -124,6 +124,7 @@
         "comments/user-gallery-timing-2026-11-09.json",
         "comments/user-station-combat-2026-11-09.json",
         "comment_events/84c202d794c44f9db94fc85d99dda824.json",
+        "comment_events/00d2aba4ff6e494c99422613d8648814.json",
         "comment_events/84f83ad9e58c4293b1738c616fee9632.json",
         "comment_events/2afeef75f5914a75a66fc94d126d6d8d.json",
         "adoptions/3f17157d9d1140888ecf35214606a9e6.json",
@@ -134,7 +135,7 @@
         "agent_proposals/proposal-1794231862601292700.json",
         "agent_proposals/proposal-1794237379343236500.json"
       ],
-      "note": "User verified desktop R2 and adopted the 2.8s gallery revision. The first-station mouse playtest produced four points of feedback. The response proposal addresses lamp occlusion, attack reaction time, shot audio and background music, and has passed mechanics and complete-replay checks. The response still awaits mouse re-test and adoption."
+      "note": "User verified desktop R2, adopted the 2.8s gallery revision, and confirmed the revised first-station mouse playtest after feedback on lamp occlusion, reaction time and audio."
     },
     "LD17": {
       "status": "accepted",
@@ -186,7 +187,7 @@
       ],
       "remaining": [
         "actual phone tracking / monitor / TV latency and calibration, deferred by the user on 2026-11-09",
-        "subjective sound and gameplay experience",
+        "subjective sound and gameplay experience on physical lightgun/display hardware",
         "formal adoption of game policies and candidates"
       ]
     },
@@ -199,8 +200,9 @@
       "note": "The complete first-station candidate and its launch, replay and review paths are included in the independent-directory verification. Overall G4 remains pending hardware/user validation."
     }
   },
-  "next": "Re-test the station combat and audio changes with mouse input, then record the candidate decision. Physical lightgun and display testing remain deferred by the user.",
+  "next": "The first-station mouse re-test is accepted. The second-station light-gating prototype is ready for desktop review. Physical lightgun and display testing remain deferred by the user.",
   "active_candidate": "paper.station",
+  "next_station_prototype": "paper.stall",
   "software_acceptance": "software_acceptance.json",
   "delivery_acceptance": "delivery_acceptance.json",
   "overall_complete": false

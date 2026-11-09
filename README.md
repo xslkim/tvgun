@@ -5,6 +5,7 @@
 ## 当前入口
 
 - 完整首站候选「夜市巷口」串起开场、巷灯教学、六波战斗、摊主救援和结算。启动方式见 [运行说明](docs/LEVEL_DESIGN_ENGINE_QUICKSTART.md)。
+- 第二站白模「糖葫芦摊」可独立试玩，先点灯，再净化硬化墨鸦。启动方式见 [运行说明](docs/LEVEL_DESIGN_ENGINE_QUICKSTART.md)。
 - 战斗候选 R2 可用 [play_combat_candidate.cmd](play_combat_candidate.cmd) 试玩，也可用 [review_combat_candidate.cmd](review_combat_candidate.cmd) 审阅和批注。
 - [工具运行说明](docs/LEVEL_DESIGN_ENGINE_QUICKSTART.md) / [本轮战斗改动](docs/PAPER_LANTERN_COMBAT_REVISION_01.md) / [B 站与街机战斗复查](docs/ARCADE_LIGHTGUN_COMBAT_FEEDBACK_RESEARCH.md)。
 - 启动首站：双击 `play_paper_lantern.cmd`；操作和构建见 [运行说明](gunforge/framework/README.md)。

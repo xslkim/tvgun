@@ -55,7 +55,7 @@ def main():
   run('python-contracts',[sys.executable,'-m','unittest','discover','-s','gunforge/pipeline/level_design','-p','test_*.py'])
   run('native-assets',[sys.executable,'gunforge/pipeline/build_0b.py'])
   builds={}
-  for name in ['gallery','paper','protection','assault','siege','station']:
+  for name in ['gallery','paper','protection','assault','siege','station','stall']:
    run('build-'+name,[sys.executable,'gunforge/pipeline/level_design/build_'+name+'.py'])
    builds[name]=read(ROOT/'gunforge/level_design/reviews'/(name+'_build.json'))
    dump(out/(name+'-design-checks.json'),check(Path(builds[name]['source'])))
@@ -74,6 +74,8 @@ def main():
   godot('assault-mechanics','tests/assault_tests.gd',builds['assault'])
   godot('assault-no-input','tests/functional_bot.gd',builds['assault'],extra=['--idle','--expected=overrun'])
   godot('station-no-input','tests/functional_bot.gd',builds['station'],extra=['--idle','--expected=overrun'])
+  godot('stall-light-windows','tests/stall_tests.gd',builds['stall'])
+  godot('stall-no-input','tests/functional_bot.gd',builds['stall'],extra=['--idle','--expected=timeout'])
   godot('siege-encounter-branches','tests/encounter_tests.gd',builds['siege'])
   godot('native-shared-schedule','tests/native_bridge_tests.gd',builds['paper'])
   if args.baseline.is_dir():
