@@ -105,6 +105,16 @@ $tools = '.\gunforge\pipeline\level_design'
 
 ## 验证其他题材
 
+靶场先用鼠标试玩。想测试延迟出靶的提案，在项目根目录运行下面的命令。
+
+```powershell
+.\gunforge\start_level_player.ps1 -Proposal .\gunforge\level_design\reviews\agent_proposals\proposal-1794147515072431400.json
+```
+
+按 Enter 开始。用左键射击左边的蓝绿色圆靶，再射击第 4 秒出现的右边移动圆靶。黄色方块是保护对象，误打会立即失败。两个圆靶都命中可得 200 分，打中右靶会结束本局，所以想验证两个靶请先打左靶。一局最多 12 秒，初始 4 发，R 换弹，Enter 重试。
+
+原版的右靶第 2 秒出现。要对照两个版本，把上面命令里的 `start_level_player.ps1` 换成 `start_level_review.ps1`。拖到约第 4 秒，再用「版本」菜单里的「切换上一版本」对照。试玩后可以直接在聊天里留下大致时刻和具体问题，也可以在查看器保存批注。
+
 ```powershell
 .\gunforge\start_level_review.ps1 -Package gallery.intro
 .\gunforge\start_level_review.ps1 -Package orbital.convoy

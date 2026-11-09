@@ -169,14 +169,14 @@
       "note": "Orbital convoy covers shield and escort branches. Orbital siege compiles data-only waves, synchronized attacks, support and finite ammo through the same encounter contract as Paper Lantern R2."
     },
     "LD22": {
-      "status": "software_verified_hardware_pending",
+      "status": "software_verified_hardware_deferred",
       "evidence": [
         "software_acceptance.json",
         "delivery_acceptance.json",
         "combat_r1_acceptance.json"
       ],
       "remaining": [
-        "actual phone tracking / monitor / TV latency and calibration",
+        "actual phone tracking / monitor / TV latency and calibration, deferred by the user on 2026-11-09",
         "subjective sound and gameplay experience",
         "formal adoption of game policies and candidates"
       ]
@@ -190,7 +190,7 @@
       "note": "The complete first-station candidate and its launch, replay and review paths are included in the independent-directory verification. Overall G4 remains pending hardware/user validation."
     }
   },
-  "next": "The user selected native Godot as the reviewer. Remaining gates require real user annotations (including gallery), decisions on level candidates, and physical lightgun/display testing.",
+  "next": "Use desktop mouse playtests for the current acceptance round, including real gallery and station feedback and decisions on level candidates. The user deferred physical lightgun and display testing on 2026-11-09.",
   "active_candidate": "paper.station",
   "software_acceptance": "software_acceptance.json",
   "delivery_acceptance": "delivery_acceptance.json",
