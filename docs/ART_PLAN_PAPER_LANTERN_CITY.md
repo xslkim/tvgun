@@ -1,5 +1,7 @@
 # 《纸灯城》美术风格与资产制作方案
 
+> 2026-11-08 阅读说明：本文保留早期生产方案与决策依据，不代表功能均已实现。当前代码使用 Godot 4.6.3；Demo 与验收状态见 [项目入口](../README.md)。关卡设计引擎的新需求见 [关卡引擎方案](LEVEL_DESIGN_ENGINE_PLAN.md)（讨论稿）。 美术方向已确认，后续反馈与已批准的站点特例优先参照 [美术定稿](../gunforge/games/g01/bible/style.md) 及同目录契约。
+
 > 版本 v0.3（2026-11-03）。状态：讨论稿，可以指导阶段 0A 的美术试做；全量生产的规范要等整帧样图（A1b）和首站点（A3）通过后再冻结。待你确认的项见第 17 节。
 > 本文是《纸灯城》美术的详细依据：风格规范、资产清单、每类资产的制作步骤、检查点和输出格式。可执行的任务拆分见 [ART_TASKS_PAPER_LANTERN_CITY.md](ART_TASKS_PAPER_LANTERN_CITY.md)。
 > 上游文档：世界观和玩法见 [GAME01_PAPER_LANTERN_CITY.md](GAME01_PAPER_LANTERN_CITY.md)；光枪硬约束（边框、亮度上限、命中区）和通用管线见 [GUNFORGE_PLAN.md](GUNFORGE_PLAN.md) 第 4、6 节。评审意见见 [REVIEW_ART_PLAN_PAPER_LANTERN_CITY.md](REVIEW_ART_PLAN_PAPER_LANTERN_CITY.md)，处理结果见第 18 节。

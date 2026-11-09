@@ -1,5 +1,7 @@
 # GunForge：AI 光枪游戏工厂方案
 
+> 2026-11-08 阅读说明：本文保留早期生产方案与决策依据，不代表功能均已实现。当前代码使用 Godot 4.6.3；Demo 与验收状态见 [项目入口](../README.md)。关卡设计引擎的新需求见 [关卡引擎方案](LEVEL_DESIGN_ENGINE_PLAN.md)（讨论稿）。
+
 > 版本 v0.6（2026-11-03）。状态：讨论稿，美术工具 T00 已启动，GPT 出图能力待 T01 验证。
 > 游戏工厂放在本仓库的 `gunforge/` 子目录。枪本身（手机光枪）见 [HANDOVER.md](../HANDOVER.md)。
 > 首款游戏设定见 [GAME01_PAPER_LANTERN_CITY.md](GAME01_PAPER_LANTERN_CITY.md)，首款美术风格与资产制作见 [ART_PLAN_PAPER_LANTERN_CITY.md](ART_PLAN_PAPER_LANTERN_CITY.md)，美术资源的执行任务见 [ART_TASKS_PAPER_LANTERN_CITY.md](ART_TASKS_PAPER_LANTERN_CITY.md)。评审意见见 [REVIEW_GUNFORGE_AND_PAPER_LANTERN_CITY.md](REVIEW_GUNFORGE_AND_PAPER_LANTERN_CITY.md)，处理结果见第 18 节。
