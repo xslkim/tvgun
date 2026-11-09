@@ -121,12 +121,15 @@
         "agent_example_runs.json",
         "comments/user-gameplay-2026-11-08.json",
         "comments/user-gallery-2026-11-09.json",
+        "comments/user-gallery-timing-2026-11-09.json",
+        "comment_events/84f83ad9e58c4293b1738c616fee9632.json",
         "combat_r1_acceptance.json",
         "agent_proposals/proposal-1794207657317714900.json",
         "agent_proposals/proposal-1794208802414694900.json",
-        "agent_proposals/proposal-1794220453914520000.json"
+        "agent_proposals/proposal-1794220453914520000.json",
+        "agent_proposals/proposal-1794231862601292700.json"
       ],
-      "note": "User verified desktop R2 and reported the two-target mouse flow after repeated gallery play. The station lamp lesson, gallery and orbital proposals were initiated by Agent self-review. Gallery version preference, any requested adjustment and adoption decisions remain open."
+      "note": "User verified desktop R2 and requested an earlier right target after repeated gallery play. A follow-up proposal moves the target from 4.0s to 2.8s and its cue from 3.8s to 2.6s. Godot mouse input and same-frame version comparison passed. The revised timing and adoption await user review."
     },
     "LD17": {
       "status": "accepted",
@@ -191,7 +194,7 @@
       "note": "The complete first-station candidate and its launch, replay and review paths are included in the independent-directory verification. Overall G4 remains pending hardware/user validation."
     }
   },
-  "next": "Use desktop mouse playtests for the current acceptance round, including real gallery and station feedback and decisions on level candidates. The user deferred physical lightgun and display testing on 2026-11-09.",
+  "next": "Confirm the revised gallery timing and continue the station mouse playtest and candidate decisions. Physical lightgun and display testing remain deferred by the user.",
   "active_candidate": "paper.station",
   "software_acceptance": "software_acceptance.json",
   "delivery_acceptance": "delivery_acceptance.json",
