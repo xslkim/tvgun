@@ -5,6 +5,7 @@ const Session = preload("res://core/level_session.gd")
 const Codec = preload("res://core/pose_codec.gd")
 const CuePlayer=preload("res://core/level_audio.gd")
 const Timeline=preload("res://tools/review_timeline.gd")
+const SpatialView = preload("res://tools/review_spatial.gd")
 class Preview:
 	extends Control
 	var model
@@ -63,6 +64,7 @@ var model
 var session=Session.new()
 var clock
 var preview
+var spatial_view
 var info
 var event_tree
 var slider
@@ -132,6 +134,12 @@ func open():
 	reload_button=button(toolbar,"换弹",func():queue_command("RELOAD"))
 	coin_button=button(toolbar,"续关",func():queue_command("COIN"))
 	button(toolbar,"Alpha 命中轮廓",func():preview.overlay=not preview.overlay;preview.queue_redraw())
+	var view_select = OptionButton.new()
+	view_select.add_item("玩家正面")
+	view_select.add_item("侧视")
+	view_select.add_item("俯视")
+	view_select.item_selected.connect(select_view)
+	toolbar.add_child(view_select)
 	var speed_select=OptionButton.new()
 	for text in ["0.5 倍速","1 倍速","2 倍速","4 倍速"]:speed_select.add_item(text)
 	speed_select.select(1);speed_select.item_selected.connect(func(i):speed=[.5,1.0,2.0,4.0][i]);toolbar.add_child(speed_select)
@@ -152,6 +160,13 @@ func open():
 	var left=VBoxContainer.new();left.size_flags_horizontal=Control.SIZE_EXPAND_FILL;split.add_child(left)
 	preview=Preview.new();preview.custom_minimum_size=Vector2(720,430);preview.size_flags_vertical=Control.SIZE_EXPAND_FILL;preview.owner_tool=self;left.add_child(preview)
 	preview.clip_contents=true
+	spatial_view = SpatialView.new()
+	spatial_view.label_font = font
+	spatial_view.mouse_filter = Control.MOUSE_FILTER_STOP
+	spatial_view.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	spatial_view.entity_selected.connect(inspect_spatial_entity)
+	preview.add_child(spatial_view)
+	spatial_view.hide()
 	timeline=Timeline.new();timeline.owner_tool=self;timeline.custom_minimum_size=Vector2(720,102);left.add_child(timeline)
 	timeline.font=font
 	slider=HSlider.new();slider.step=1;slider.value_changed.connect(func(v):
@@ -213,6 +228,7 @@ func load_build():
 	audio=CuePlayer.new();root.add_child(audio);audio.setup(model,asset_root)
 	audio.enabled=model.level.get("presentation",{}).get("default_sound",false)
 	preview.model=model
+	spatial_view.model=model
 	timeline.model=model
 	update_version_label()
 	slider.max_value=session.max_tick
@@ -237,7 +253,20 @@ func switch_previous():
 	if loaded_path==build_path:jump(mini(at,session.max_tick))
 func asset_map():
 	return model.geometry_assets()
+
+func select_view(index: int) -> void:
+	spatial_view.mode = SpatialView.Mode.TOP if index == 2 else SpatialView.Mode.SIDE
+	spatial_view.visible = index != 0
+	spatial_view.queue_redraw()
+
+func inspect_spatial_entity(id: String, center: Vector2, pose_scale: float) -> void:
+	info.text = JSON.stringify({
+		"selected_entity": id, "screen_center_px": [center.x, center.y],
+		"pose_scale": pose_scale, "parameters": model.entities.get(id, {}),
+	}, "  ")
+
 func queue_shot(point,pose):
+	if spatial_view.visible:return
 	if not running:
 		var hit=model.resolver.exact(point,pose)
 		var id=hit.get("id","")
@@ -267,6 +296,7 @@ func refresh():
 	status.text="%s · %s  |  %.3f 秒 / %.3f 秒  |  %s  |  命中 %d / %d  |  %s" % ["播放" if running else "暂停",model.phase,clock.tick/60.0,session.max_tick/60.0,hud,model.hits,model.shots,model.result]
 	adjusting=true;slider.max_value=session.max_tick;slider.value=clock.tick;adjusting=false
 	preview.queue_redraw()
+	if spatial_view.visible:spatial_view.queue_redraw()
 	timeline.queue_redraw()
 	if audio!=null:audio.sync()
 func jump(at):
@@ -287,6 +317,8 @@ func save_note(author="user"):
 	var file=review_dir.path_join(id+".json")
 	var selected=event_tree.get_selected()
 	var entry={"comment_id":id,"package":model.level.id,"source_revision":model.build.source_revision,"build_id":model.build.build_id,"tick":clock.tick,"time_ms":clock.tick*1000.0/60,"anchor":selected.get_metadata(0) if selected else null,"text":text,"status":"open","author":author,"state":model.public_state(),"submission_id":session.submission_id}
+	if spatial_view.visible:
+		entry["view"] = "top" if spatial_view.mode == SpatialView.Mode.TOP else "side"
 	root.gui_disable_input=true
 	var saved=await capture_evidence(id)
 	root.gui_disable_input=false
@@ -314,26 +346,40 @@ func capture_evidence(id):
 	if DirAccess.make_dir_recursive_absolute(directory)!=OK:return {}
 	var previous=preview.overlay
 	var files={}
+	var spatial_visible = spatial_view.visible
+	if spatial_visible:
+		spatial_view.queue_redraw()
+		await process_frame;await RenderingServer.frame_post_draw
+		files["spatial"] = capture_preview_image(directory.path_join("spatial.png"), Rect2(Vector2.ZERO, preview.size))
+		if files["spatial"].is_empty():return {}
+		spatial_view.hide()
 	for mode in ["player","alpha"]:
 		preview.overlay=mode=="alpha";preview.queue_redraw()
 		await process_frame;await RenderingServer.frame_post_draw
-		var path=directory.path_join(mode+".png")
 		var canvas = Vector2(model.level.layout.width,model.level.layout.height)
-		# The viewport texture includes content scaling, but excludes the outer window bars.
-		var transform = root.get_stretch_transform()*preview.get_global_transform_with_canvas()
-		var rect = transform*Rect2(preview.origin,canvas*preview.scale_factor)
-		var box = Rect2i(rect.position.round(),rect.end.round()-rect.position.round())
-		var frame = root.get_texture().get_image()
-		if not Rect2i(Vector2i.ZERO,frame.get_size()).encloses(box) or frame.get_region(box).save_png(path)!=OK:
+		files[mode] = capture_preview_image(directory.path_join(mode+".png"), Rect2(preview.origin,canvas*preview.scale_factor))
+		if files[mode].is_empty():
 			preview.overlay=previous
+			preview.queue_redraw()
+			spatial_view.visible=spatial_visible
 			return {}
-		files[mode]={"path":path,"sha256":FileAccess.get_sha256(path)}
 	preview.overlay=previous;preview.queue_redraw()
+	spatial_view.visible=spatial_visible
 	var record=directory.path_join("input.bin");var file=FileAccess.open(record,FileAccess.WRITE)
 	if file==null:return {}
 	file.store_var(session.recording());file.close()
 	files.recording={"path":record,"sha256":FileAccess.get_sha256(record)}
 	return files
+
+func capture_preview_image(path: String, region: Rect2) -> Dictionary:
+	# The viewport texture includes content scaling and excludes the outer window bars.
+	var transform = root.get_stretch_transform()*preview.get_global_transform_with_canvas()
+	var rect = transform*region
+	var box = Rect2i(rect.position.round(),rect.end.round()-rect.position.round())
+	var frame = root.get_texture().get_image()
+	if not Rect2i(Vector2i.ZERO,frame.get_size()).encloses(box) or frame.get_region(box).save_png(path)!=OK:
+		return {}
+	return {"path":path,"sha256":FileAccess.get_sha256(path)}
 func choose_build():
 	running=false
 	var dialog=FileDialog.new();dialog.access=FileDialog.ACCESS_FILESYSTEM;dialog.file_mode=FileDialog.FILE_MODE_OPEN_FILE;dialog.filters=PackedStringArray(["*.json ; 编译后的关卡 JSON"]);dialog.size=Vector2i(900,600)

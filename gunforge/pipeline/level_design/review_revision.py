@@ -33,7 +33,10 @@ def review_context(note_path, store=STORE, cache=DEFAULT_CACHE):
     if type(tick) is not int or tick < 0:
         raise CompileError("invalid annotation tick")
     evidence = []
-    for role in ("player", "alpha", "recording"):
+    roles = ["player", "alpha", "recording"]
+    if "spatial" in note["evidence"]:
+        roles.append("spatial")
+    for role in roles:
         artifact = note["evidence"][role]
         path = Path(artifact["path"]).resolve()
         checksum = hashlib.sha256(path.read_bytes()).hexdigest()
@@ -42,12 +45,15 @@ def review_context(note_path, store=STORE, cache=DEFAULT_CACHE):
         evidence.append({"role": role, "path": str(path), "sha256": checksum})
     anchor = note.get("anchor")
     source_pointer = build["source_map"].get(anchor, {}).get("pointer") if isinstance(anchor, str) else None
-    return {
+    context = {
         "comment_id": note["comment_id"], "author": note["author"], "path": str(note_path),
         "sha256": hashlib.sha256(note_path.read_bytes()).hexdigest(),
         "package": package, "base_revision": revision, "build_id": build_id, "tick": tick,
         "anchor": anchor, "source_pointer": source_pointer, "request": note["text"], "evidence": evidence,
     }
+    if "view" in note:
+        context["view"] = note["view"]
+    return context
 
 
 def prepare(note_path, output, allowed_paths, preserve, store=STORE, cache=DEFAULT_CACHE):
