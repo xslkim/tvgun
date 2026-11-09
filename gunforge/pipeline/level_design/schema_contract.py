@@ -19,6 +19,7 @@ for op,fields in {
  'complete':{'result':string},'fail':{'result':string},
  'permission':{'entity':string,'kind':{'enum':['primary','weak','protected','invalid','blocker','decoration']}}
 }.items():actions.append(obj({'op':{'const':op},**fields},['op',*fields]))
+next(action for action in actions if action['properties']['op']['const']=='vfx')['properties']['source'] = string
 trigger={'oneOf':[obj({'at_ms':ms},['at_ms']),obj({'after':string,'delay_ms':ms},['after','delay_ms']),obj({'on':string},['on']),obj({'query':string,'compare':{'enum':['gte','gt','eq','lte','lt']},'value':number},['query','compare','value'])]}
 entity=obj({'template':string,'x':number,'y':number,'width':{'type':'number','exclusiveMinimum':0},'height':{'type':'number','exclusiveMinimum':0},'properties':{'type':'object'},'resource':string},['template','x','y','width','height'])
 condition={'oneOf':[obj({'entity':string,'field':{'enum':['active','visible','value','health','stunned']},'compare':{'enum':['gte','gt','eq','lte','lt']},'value':{'type':['number','boolean']}},['entity','field','compare','value']),obj({'resource':string,'compare':{'enum':['gte','gt','eq','lte','lt']},'value':number},['resource','compare','value']),obj({'query':string,'compare':{'enum':['gte','gt','eq','lte','lt']},'value':number},['query','compare','value'])]}
@@ -27,13 +28,44 @@ query={'oneOf':[obj({'op':{'enum':['region_contains','mask_sample','distance']},
 schema=obj({'schema_version':{'const':1},'id':string,'ruleset':string,'seed':{'type':'integer','minimum':0},'tick_hz':{'enum':[60]},'duration_ms':{'type':'integer','minimum':1},'layout':obj({'width':{'type':'integer','minimum':1},'height':{'type':'integer','minimum':1}},['width','height']),'entities':ids(entity),'events':ids(event),'queries':ids(query),'resources':ids(obj({'path':string,'sha256':{'type':'string','pattern':'^[a-f0-9]{64}$'},'kind':{'enum':['image','audio','metadata']}},['path','sha256','kind'])),'cues':ids(obj({'resource':string,'channel':{'enum':['music','ambient','warning','weapon','impact','voice','ui']},'duration_ms':{'type':'integer','minimum':1},'loop':{'type':'boolean'},'volume_db':number},['resource','channel','duration_ms'])),'initial_resources':ids(integer),'hud':{'type':'array','items':obj({'label':string,'resource':string},['label','resource'])},'ruleset_data':{'type':'object'},'controls':obj({'ammo_resource':string,'magazine':{'type':'integer','minimum':1},'reload_ms':ms,'shot_interval_ms':ms,'assist_px':{'type':'integer','minimum':0,'maximum':30}})},['schema_version','id','ruleset','seed','tick_hz','duration_ms','layout','entities','events','queries','resources','cues','initial_resources'])
 schema.update({'$schema':'https://json-schema.org/draft/2020-12/schema','title':'GunForge minimal 2D level source v1'})
 positive_ms={'type':'integer','minimum':1}
-frame=obj({'at_ms':ms,'x':number,'y':number,'scale':{'type':'number','exclusiveMinimum':0},'rotation_rad':number},['at_ms','x','y'])
+frame_pose = {'x':number,'y':number,'scale':{'type':'number','exclusiveMinimum':0},'rotation_rad':number}
+frame = {'oneOf': [
+ obj({'at_ms':ms, **frame_pose},['at_ms','x','y']),
+ obj({'attack_time':{'enum':['windup','release','contact','retire']},'offset_ms':integer, **frame_pose},
+     ['attack_time','x','y']),
+]}
 flap=obj({'pivot':{'type':'array','items':number,'minItems':2,'maxItems':2},'amplitude_rad':number,'hz':{'type':'number','exclusiveMinimum':0},'phase_rad':number},['pivot','amplitude_rad','hz'])
 part=obj({'resource':string,'source':{'type':'array','items':number,'minItems':4,'maxItems':4},'x':number,'y':number,'width':{'type':'number','exclusiveMinimum':0},'height':{'type':'number','exclusiveMinimum':0},'kind':{'enum':['primary','weak']},'tint':string,'flap':flap},['resource','x','y','width','height'])
 entity['properties'].update({'parts':ids(part),'part_order':{'type':'array','items':string,'uniqueItems':True},'motion':obj({'frames':{'type':'array','items':frame,'minItems':2},'easing':{'enum':['linear','smoothstep']}},['frames']),'bob':obj({'amplitude_x':number,'amplitude_y':number,'period_ms':positive_ms,'phase_rad':number},['amplitude_x','amplitude_y','period_ms']),'phases':{'type':'array','items':obj({'id':string,'start_ms':ms,'end_ms':positive_ms,'color':string,'label':string},['id','start_ms','end_ms'])},'puppet':obj({'rig':string,'target':string,'target_part':string,'idle':string,'success':string,'rest':string},['rig','target','target_part','idle','success','rest'])})
 query['oneOf'].append(obj({'op':{'const':'entity_age_ms'},'entity':string,'space':{'const':'scalar'},'algorithm':{'const':'entity-clock60-v1'}},['op','entity','space','algorithm']))
 effect=obj({'kind':{'enum':['spark','burst','pulse','warning','player_hit','link','shot_trace','attack_release']},'duration_ms':positive_ms,'color':string,'radius':{'type':'number','minimum':0},'label':string},['kind','duration_ms','color'])
 layer=obj({'resource':string,'x':number,'y':number,'width':{'type':'number','exclusiveMinimum':0},'height':{'type':'number','exclusiveMinimum':0},'z':integer,'blocker':{'type':'boolean'},'source':{'type':'array','items':number,'minItems':4,'maxItems':4},'tint':string},['resource','x','y','width','height','z'])
+effect['properties']['anchor_uv'] = {
+ 'type':'array','items':{'type':'number','minimum':0,'maximum':1},'minItems':2,'maxItems':2,
+}
+wave = obj({
+ 'index':positive_ms,'title':string,'at_ms':ms,'hint':string,'spawns':ids(ms),
+},['index','title','at_ms','spawns'])
+windup = obj({'at_ms':ms,'color':string,'label':string},['at_ms','color','label'])
+damage = obj({'resource':string,'amount':positive_ms,'effect':string,'topic':string},['resource','amount','topic'])
+projectile = obj({
+ 'entity':string,'x':number,'y':number,'flight_ms':positive_ms,
+ 'color':string,'label':string,'on_intercept':{'type':'array','items':{'oneOf':actions},'minItems':1},
+},['entity','x','y','flight_ms'])
+attack = obj({
+ 'windup':windup,'release_ms':positive_ms,'contact_ms':positive_ms,'retire_ms':positive_ms,
+ 'damage':damage,'release_effect':string,'projectile':projectile,
+},['windup','release_ms','retire_ms','damage'])
+support = obj({
+ 'source':string,
+ 'targets':{'type':'array','items':string,'uniqueItems':True,'minItems':1},
+ 'duration_ms':positive_ms,'range_px':{'type':'number','exclusiveMinimum':0},
+ 'region':{'type':'array','items':number,'minItems':4,'maxItems':4},
+ 'effect':string,'max_firings':positive_ms,
+},['source','targets','duration_ms','range_px','max_firings'])
+schema['properties']['encounter'] = obj({
+ 'waves':ids(wave),'attacks':ids(attack),'supports':ids(support),
+},['waves'])
 schema['properties'].update({'effects':ids(effect),'sections':ids(obj({'title':string,'index':{'type':'integer','minimum':1},'targets':{'type':'array','items':string,'uniqueItems':True},'hint':string},['title','index','targets'])),'resource_bounds':ids(obj({'min':integer,'max':integer})),'presentation':obj({'title':string,'subtitle':string,'instructions':string,'default_sound':{'type':'boolean'},'debug_shell':{'type':'boolean'},'layers':ids(layer),'sound_bindings':{'type':'object','additionalProperties':string},'feedback':obj({'shot':string,'hit':string,'weak':string,'neutralized':string,'empty':string}),'puppets':ids(obj({'character':string,'atlas':string,'clips':ids(string)},['character','atlas','clips'])),'labels':{'type':'object','additionalProperties':string},'support':obj({'entity':string,'label':string},['entity','label'])})})
 if __name__=='__main__':
  path=Path(__file__).resolve().parents[2]/'level_design/specs/level-v1.schema.json';path.parent.mkdir(parents=True,exist_ok=True);path.write_text(json.dumps(schema,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

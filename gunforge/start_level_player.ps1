@@ -1,4 +1,4 @@
-param([ValidateSet('paper.alley','paper.assault','gallery.intro','orbital.convoy')][string]$Package='paper.alley',[string]$Build,[string]$Godot=$env:GODOT_BIN,[double]$QuitAfter=0,[switch]$Candidate)
+param([ValidateSet('paper.alley','paper.assault','gallery.intro','orbital.convoy','orbital.siege')][string]$Package='paper.alley',[string]$Build,[string]$Godot=$env:GODOT_BIN,[double]$QuitAfter=0,[switch]$Candidate)
 $ErrorActionPreference='Stop'
 $levelRoot=(Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 $levelPython=Join-Path $levelRoot '.venv/Scripts/python.exe'
@@ -8,7 +8,7 @@ if (-not $Build) {
         & $levelPython (Join-Path $PSScriptRoot 'pipeline/build_0b.py')
         if ($LASTEXITCODE) { throw 'Native asset preparation failed' }
     }
-    $levelNames=@{'paper.alley'='paper';'paper.assault'='assault';'gallery.intro'='gallery';'orbital.convoy'='protection'}
+    $levelNames=@{'paper.alley'='paper';'paper.assault'='assault';'gallery.intro'='gallery';'orbital.convoy'='protection';'orbital.siege'='siege'}
     $levelName=$levelNames[$Package]
     & $levelPython (Join-Path $PSScriptRoot "pipeline/level_design/build_$levelName.py")
     if ($LASTEXITCODE) { throw 'Level compilation failed' }

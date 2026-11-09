@@ -1,7 +1,12 @@
 {
   "passed": true,
-  "index": "D:\\gunforge_cache\\level_design\\runs\\software-1794195577008830200\\index.json",
-  "sha256": "97ba483a896aaf5479511454690c9bd10b5ff3da591d0c06e07013f8af13bafc",
-  "run": "D:\\gunforge_cache\\level_design\\runs\\software-1794195577008830200",
-  "checks": 43
+  "index": "D:\\gunforge_cache\\level_design\\runs\\software-1794207481884820300\\index.json",
+  "sha256": "ac2659dd1ac456fc5127cdca301a9632a0004d744bcd04a4c477d8a4a9607874",
+  "run": "D:\\gunforge_cache\\level_design\\runs\\software-1794207481884820300",
+  "checks": 50,
+  "supplemental": {
+    "passed": true,
+    "index": "D:\\gunforge_cache\\level_design\\runs\\siege-agent-timing\\supplemental.json",
+    "sha256": "b2f6e5ce446d380f86801804badc4a023e318ce6d845cf7ff298925de9fbfb3b"
+  }
 }

@@ -6,9 +6,11 @@ from jsonschema import Draft202012Validator
 try:
  from .schema_contract import schema
  from .scene_contract import validate_scene
+ from .encounter import expand_encounter
 except ImportError:
  from schema_contract import schema
  from scene_contract import validate_scene
+ from encounter import expand_encounter
 ROOT=Path(__file__).resolve().parents[3]
 DEFAULT_CACHE=Path(os.environ.get('GUNFORGE_LEVEL_CACHE',ROOT.parent/'gunforge_cache/level_design')).resolve()
 class CompileError(ValueError):pass
@@ -50,7 +52,7 @@ def read_package(entry):
    target.update(values)
   manifest[relative]=hashlib.sha256(path.read_bytes()).hexdigest()
  return source,dict(sorted(manifest.items()))
-def validate(source, resource_root=ROOT):
+def validate(source, resource_root=ROOT, schema_only=False):
  errors=sorted(Draft202012Validator(schema).iter_errors(source),key=lambda e:str(list(e.path)))
  if errors:raise CompileError('; '.join('/'+'/'.join(map(str,e.path))+': '+e.message for e in errors[:8]))
  # JSON's 1e999 also needs rejection after parsing, including nested property values.
@@ -61,6 +63,10 @@ def validate(source, resource_root=ROOT):
  if source['ruleset'] not in catalog['rulesets']:raise CompileError('unregistered ruleset: '+source['ruleset'])
  profile=catalog['rulesets'][source['ruleset']]
  if profile.get('supported_sections') and set(source)-set(profile['supported_sections']):raise CompileError('source section not supported by selected rule profile')
+ if 'encounter' in source and not profile.get('encounter_authoring'):
+  raise CompileError('select a ruleset supporting encounter authoring')
+ if schema_only:
+  return
  if any(source.get('presentation',{}).get(name) for name in ['layers','puppets']) and not profile.get('layered_2d'):raise CompileError('select a layered 2D presentation profile')
  if 'layout_constraint' in profile and source['layout']!=profile['layout_constraint']:raise CompileError('ruleset renderer requires its declared canvas layout')
  if 'parameters_schema' not in profile and source.get('ruleset_data'):raise CompileError('ruleset has no registered parameter contract')
@@ -125,7 +131,8 @@ def validate(source, resource_root=ROOT):
     definition=profile.get('effects',{}).get(action['effect'])
     if definition is None or list(Draft202012Validator(definition).iter_errors(action['params'])):raise CompileError('unregistered effect or invalid parameters: '+id)
    if 'entity' in action and action['entity'] not in entities:raise CompileError('unknown action entity: '+id)
-   if action['op']=='launch' and action['source'] not in entities:raise CompileError('unknown launch source: '+id)
+   if action['op'] in ('launch','vfx') and 'source' in action and action['source'] not in entities:
+    raise CompileError('unknown action source: '+id)
    if action['op']=='vfx' and action['effect'] not in source.get('effects',{}):raise CompileError('unknown visual effect: '+id)
    if action['op']=='section' and action['section'] not in source.get('sections',{}):raise CompileError('unknown section: '+id)
    if action['op']=='cue' and action['cue'] not in source['cues']:raise CompileError('unknown cue: '+id)
@@ -149,9 +156,11 @@ def validate(source, resource_root=ROOT):
  for id in sorted(events,key=lambda key:(-events[key].get('priority',0),key)):absolute(id)
  return done
 def compile_source(source, resource_root=ROOT, source_manifest=None):
- validate(source,resource_root)
+ validate(source,resource_root,schema_only='encounter' in source)
  profile=read(ROOT/'gunforge/level_design/specs/capabilities-v1.json')['rulesets'][source['ruleset']]
  expanded=json.loads(canonical(source));origin={}
+ if 'encounter' in expanded:
+  origin.update(expand_encounter(expanded,CompileError))
  if 'compiler_plugin' in profile:
   path=(ROOT/profile['compiler_plugin']).resolve()
   if not path.is_relative_to(ROOT/'gunforge/level_design/rulesets'):raise CompileError('compiler plugin outside trusted rulesets')
@@ -165,7 +174,7 @@ def compile_source(source, resource_root=ROOT, source_manifest=None):
    tick=(at*hz+999)//1000
    if tick>source['duration_ms']*hz//1000:raise CompileError('event outside allowed duration: '+id)
    event['at_tick']=tick
-   mapping[id]={'pointer':'/events/'+id+'/trigger','declared_absolute_ms':at,'tick':tick,'quantization_error_ms_numerator':tick*1000-at*hz,'denominator':hz}
+   mapping[id]={'pointer':origin.get(id,'/events/'+id+'/trigger'),'declared_absolute_ms':at,'tick':tick,'quantization_error_ms_numerator':tick*1000-at*hz,'denominator':hz}
   else:mapping[id]={'pointer':origin.get(id,'/events/'+id+'/trigger'),'dynamic':True}
  compiled['event_order']=list(times)
  windows={}
@@ -188,6 +197,8 @@ def compile_source(source, resource_root=ROOT, source_manifest=None):
  profile_files=profile.get('module_files',[])+([profile['parameters_schema']] if 'parameters_schema' in profile else [])
  tool_lock['profile_files']={path:hashlib.sha256((ROOT/path).read_bytes()).hexdigest() for path in profile_files}
  tool_lock['contract_files']={'scene_contract.py':hashlib.sha256(Path(__file__).with_name('scene_contract.py').read_bytes()).hexdigest()}
+ if 'encounter' in source:
+  tool_lock['contract_files']['encounter.py']=hashlib.sha256(Path(__file__).with_name('encounter.py').read_bytes()).hexdigest()
  tool_lock['core_files']={path.relative_to(ROOT).as_posix():hashlib.sha256(path.read_bytes()).hexdigest() for path in sorted((ROOT/'gunforge/framework/core').glob('*.gd'))}
  payload_hash=payload_digest({'level':compiled,'source_map':mapping,'source_manifest':source_manifest})
  build_id=digest({'source_revision':source_revision,'tool_lock':tool_lock,'payload_sha256':payload_hash})

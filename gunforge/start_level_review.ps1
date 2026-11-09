@@ -1,4 +1,4 @@
-param([string]$Build, [ValidateSet('paper.alley','paper.assault','gallery.intro','orbital.convoy')][string]$Package='paper.alley', [string]$Godot = $env:GODOT_BIN,[switch]$Candidate)
+param([string]$Build, [ValidateSet('paper.alley','paper.assault','gallery.intro','orbital.convoy','orbital.siege')][string]$Package='paper.alley', [string]$Godot = $env:GODOT_BIN,[switch]$Candidate)
 $ErrorActionPreference = 'Stop'
 $levelRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 if (-not $Godot) { $Godot = Join-Path $levelRoot '../gunforge_cache/tools/godot-4.6.3/Godot_v4.6.3-stable_win64_console.exe' }
@@ -8,7 +8,7 @@ if (-not $Build) {
         & $levelPython (Join-Path $PSScriptRoot 'pipeline/build_0b.py')
         if ($LASTEXITCODE) { throw 'Native asset preparation failed' }
     }
-    $levelScripts=@{'paper.alley'='paper';'paper.assault'='assault';'gallery.intro'='gallery';'orbital.convoy'='protection'}
+    $levelScripts=@{'paper.alley'='paper';'paper.assault'='assault';'gallery.intro'='gallery';'orbital.convoy'='protection';'orbital.siege'='siege'}
     $levelName=$levelScripts[$Package]
     & $levelPython (Join-Path $PSScriptRoot "pipeline/level_design/build_$levelName.py")
     if ($LASTEXITCODE) { throw 'Level compilation failed' }

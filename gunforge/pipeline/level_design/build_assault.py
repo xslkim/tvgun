@@ -5,21 +5,22 @@ from versions import publish
 from freeze_baseline import dump
 from combat_cues import ensure_combat_cues
 def build():
- runtime=ROOT/'gunforge/framework/runtime';station=json.loads((runtime/'station/station.json').read_bytes());crow=json.loads((runtime/'crow/enemy.json').read_bytes())
+ runtime=ROOT/'gunforge/framework/runtime';station=json.loads((runtime/'station/station.json').read_bytes())
  source={'schema_version':1,'id':'paper.assault','ruleset':'directed_action@1','seed':421,'tick_hz':60,'duration_ms':84000,'layout':{'width':1776,'height':936},'entities':{},'events':{},'queries':{},'resources':{},'cues':{},'effects':{},'sections':{},'initial_resources':{'lives':5,'ammo':80,'score':0,'purified':0,'rescued':0},'resource_bounds':{'lives':{'min':0,'max':5},'score':{'min':0},'ammo':{'min':0,'max':80}},'controls':{'ammo_resource':'ammo','shot_interval_ms':150,'assist_px':12},'hud':[{'label':'灯芯','resource':'lives'},{'label':'剩余光弹','resource':'ammo'},{'label':'印记','resource':'score'}]}
- resources=source['resources'];entities=source['entities'];events=source['events'];queries=source['queries'];effects=source['effects']
+ resources=source['resources'];entities=source['entities'];events=source['events'];effects=source['effects']
+ encounter = {'waves': {}, 'attacks': {}, 'supports': {}}
+ source['encounter'] = encounter
  def resource(id,path,kind='image'):
   resources[id]={'path':path.relative_to(ROOT).as_posix(),'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'kind':kind};return id
  def event(id,trigger,actions,guards=(),limit=1,priority=0):
   events[id]={'trigger':trigger,'actions':{f'a{i}':action for i,action in enumerate(actions)},'order':[f'a{i}' for i in range(len(actions))],'guards':list(guards),'max_firings':limit,'priority':priority}
- def active(id):return {'entity':id,'field':'active','compare':'eq','value':True}
- def age(id):
-  key=id+'.age';queries[key]={'op':'entity_age_ms','entity':id,'space':'scalar','algorithm':'entity-clock60-v1'};return key
  def effect(id,kind,duration,color,radius=80,label=None):
   effects[id]={'kind':kind,'duration_ms':duration,'color':color,'radius':radius}
   if label:effects[id]['label']=label
  def entity(template,x,y,w,h,**properties):return {'template':template,'x':x,'y':y,'width':w,'height':h,'properties':properties}
- def frame(at,x,y,scale=1,rotation=0):return {'at_ms':at,'x':x,'y':y,'scale':scale,'rotation_rad':rotation}
+ def frame(at,x,y,scale=1,rotation=0,offset_ms=0):
+  timing = {'at_ms':at} if isinstance(at,int) else {'attack_time':at,'offset_ms':offset_ms}
+  return {**timing,'x':x,'y':y,'scale':scale,'rotation_rad':rotation}
  presentation={'title':'纸灯城','subtitle':'巷口夜袭 · 战斗候选 R2','instructions':'优先打断蓄力 · 朱印是弱点 · 点灯震退附近怪物','default_sound':True,'debug_shell':False,'layers':{},'puppets':{},'sound_bindings':{'weapon.fired':'shot','weapon.empty':'empty','target.hit':'hit','target.weak_hit':'weak','target.neutralized':'purify','attack.warning':'windup','attack.launched':'attack','player.damaged':'hurt','interaction.activated:lamp':'lamp'},'feedback':{'shot':'shot_spark','hit':'hit_spark','weak':'weak_spark','neutralized':'purify_burst','empty':'empty_feedback'},'support':{'entity':'lamp','label':'射击点灯 · 震墨'},'labels':{'stunned':'震退','section_unit':'波','progress':'净化','result_success':'巷口守住了','result_failure':'灯芯耗尽'}}
  source['presentation']=presentation
  for layer in station['layers']:
@@ -51,13 +52,18 @@ def build():
  titles=['屋檐初袭','左右夹击','截住墨弹','护住摊主','近远交织','巷口合围']
  hints=['红圈蓄满就会出手，优先击破正在蓄力的墨鸦。','怪物会扑向你，蓄力时优先净化。','飞来的墨弹也能击破。','只打居民胸口的墨，点灯可争取时间。','灯火震退墨鸦，飞出的墨弹仍要拦截。','守住最后一波！优先打断近身威胁。']
  counts=[3,4,5,5,6,6]
+ support_targets = []
  for wave,count in enumerate(counts):
-  sid='wave_'+str(wave+1);start=1000+wave*13000;targets=[]
-  source['sections'][sid]={'title':titles[wave],'index':wave+1,'targets':targets,'hint':hints[wave]}
-  event(sid+'.begin',{'at_ms':start},[{'op':'section','section':sid}])
+  sid = f'wave_{wave+1}'
+  spawns = {}
+  encounter['waves'][sid] = {
+   'title':titles[wave], 'index':wave+1, 'at_ms':1000+wave*13000,
+   'spawns':spawns, 'hint':hints[wave],
+  }
   for index in range(count):
-   id=f'w{wave+1}_crow_{index+1}';targets.append(id);ranged=wave>=1 and (index+wave)%3==0
-   birth=start+800+index*(2800 if wave==0 else 1650)
+   id=f'w{wave+1}_crow_{index+1}';ranged=wave>=1 and (index+wave)%3==0
+   spawns[id] = 800+index*(2800 if wave==0 else 1650)
+   support_targets.append(id)
    side=(index+wave)%2;lane=[230,1040,580,1230,400,860][(index+wave)%6]
    y=[170,230,105,295][(index+wave)%4];size=270 if wave<4 else 285
    heavy=wave>=3 and index%3==0
@@ -66,38 +72,45 @@ def build():
    e['part_order']=['body','stamp']
    warning_at=2300+(index%2)*220;attack_at=warning_at+1000
    release_at=attack_at-280
-   frames=[frame(0,e['x'],y,.72,-.16 if not side else .16),frame(850,lane,y,1,.03),frame(warning_at,lane,y+15,1,-.08)]
+   frames=[frame(0,e['x'],y,.72,-.16 if not side else .16),frame(850,lane,y,1,.03),frame('windup',lane,y+15,1,-.08)]
    if ranged:
-    frames.extend([frame(attack_at-170,lane,y-30,1.12,-.12),frame(attack_at,lane,y,1.17,.08)])
+    frames.extend([frame('release',lane,y-30,1.12,-.12,offset_ms=-170),frame('release',lane,y,1.17,.08)])
    else:
     impact_x = 760+(index%3-1)*140
     frames.extend([
-     frame(release_at,lane+(-40 if side else 40),y-40,1.13,-.19),
-     frame(attack_at,impact_x,650,2.55,.19 if not side else -.19),
-     frame(attack_at+100,impact_x,685,2.66,.23 if not side else -.23),
+     frame('release',lane+(-40 if side else 40),y-40,1.13,-.19),
+     frame('contact',impact_x,650,2.55,.19 if not side else -.19),
+     frame('contact',impact_x,685,2.66,.23 if not side else -.23,offset_ms=100),
     ])
-   frames.append(frame(attack_at+550,-size-150 if side else 1900,y-80,.82,0))
+   frames.append(frame('retire',-size-150 if side else 1900,y-80,.82,0))
    e['motion']={'frames':frames,'easing':'smoothstep'};e['bob']={'amplitude_x':6,'amplitude_y':8,'period_ms':1050+index*90,'phase_rad':index*.7}
-   e['phases']=[{'id':'windup','start_ms':warning_at,'end_ms':attack_at,'color':'#ff7764','label':'危险 · 吐墨蓄力' if ranged else '危险 · 即将扑击'}]
-   entities[id]=e;clock=age(id)
-   event(id+'.spawn',{'at_ms':birth},[{'op':'spawn','entity':id}])
-   event(id+'.warning',{'query':clock,'compare':'gte','value':warning_at},[{'op':'emit','event':'attack.warning'}],[active(id)])
-   damage=[{'op':'resource_add','resource':'lives','amount':-1},{'op':'vfx','effect':'player_hurt','entity':id},{'op':'emit','event':'player.damaged'}]
+   entities[id] = e
+   attack = {
+    'windup': {
+     'at_ms':warning_at, 'color':'#ff7764',
+     'label':'危险 · 吐墨蓄力' if ranged else '危险 · 即将扑击',
+    },
+    'release_ms':attack_at if ranged else release_at,
+    'retire_ms':attack_at+550,
+    'damage':{'resource':'lives','amount':1,'effect':'player_hurt','topic':'player.damaged'},
+    'release_effect':'ink_release' if ranged else 'lunge_release',
+   }
    if ranged:
     projectile=id+'.ink';entities[projectile]=entity('projectile',0,0,84,84,z=83,label='可拦截墨弹')
     entities[projectile]['parts']={'body':{'resource':body,'x':0,'y':0,'width':1,'height':1}};entities[projectile]['part_order']=['body']
-    entities[projectile]['phases']=[{'id':'in_flight','start_ms':0,'end_ms':1250,'color':'#ff9460','label':'拦截墨弹'}]
-    event(id+'.attack',{'query':clock,'compare':'gte','value':attack_at},[{'op':'vfx','effect':'ink_release','entity':id},{'op':'launch','entity':projectile,'source':id,'x':900,'y':800,'duration_ms':1250}],[active(id)])
-    event(projectile+'.impact',{'query':age(projectile),'compare':'gte','value':1250},damage+[{'op':'remove','entity':projectile}],[active(projectile)])
-    event(projectile+'.intercept',{'on':'target.neutralized:'+projectile},[{'op':'resource_add','resource':'score','amount':25},{'op':'cue','cue':'intercept'}])
+    attack['projectile'] = {
+     'entity':projectile, 'x':900, 'y':800, 'flight_ms':1250,
+     'color':'#ff9460', 'label':'拦截墨弹',
+     'on_intercept':[{'op':'resource_add','resource':'score','amount':25},{'op':'cue','cue':'intercept'}],
+    }
    else:
-    event(id+'.release',{'query':clock,'compare':'gte','value':release_at},[{'op':'vfx','effect':'lunge_release','entity':id},{'op':'emit','event':'attack.launched'}],[active(id)])
-    event(id+'.attack',{'query':clock,'compare':'gte','value':attack_at},damage,[active(id)])
-   event(id+'.leave',{'query':clock,'compare':'gte','value':attack_at+550},[{'op':'remove','entity':id}],[active(id)])
+    attack['contact_ms'] = attack_at
+   encounter['attacks'][id] = attack
    event(id+'.clear',{'on':'target.neutralized:'+id},[{'op':'resource_add','resource':'score','amount':150 if heavy else 100},{'op':'resource_add','resource':'purified','amount':1}])
-   queries[id+'.support_range']={'op':'distance','entity':id,'other':'lamp','space':'content_px','algorithm':'cpu-nearest-v1'}
-   queries[id+'.onscreen']={'op':'region_contains','entity':id,'region':[0,80,1776,820],'space':'content_px','algorithm':'cpu-nearest-v1'}
-   event(id+'.support',{'on':'interaction.activated:lamp'},[{'op':'stun','entity':id,'duration_ms':1500},{'op':'vfx','effect':'support_link','entity':id}],[active(id),{'query':id+'.support_range','compare':'lte','value':1800},{'query':id+'.onscreen','compare':'gte','value':1}],limit=16)
+ encounter['supports']['support'] = {
+  'source':'lamp', 'targets':support_targets, 'range_px':1800,
+  'region':[0,80,1776,820], 'duration_ms':1500, 'effect':'support_link', 'max_firings':16,
+ }
  entities['resident']=entity('protected',560,350,350,480,z=72)
  entities['resident']['puppet']={'rig':'vendor','target':'resident_ink','target_part':'rescue_ink','idle':'struggle','success':'rescued_bounce','rest':'thank'}
  entities['resident_ink']=entity('target',700,560,65,65,virtual=True,z=73)

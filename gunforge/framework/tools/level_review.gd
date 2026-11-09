@@ -31,8 +31,12 @@ class Preview:
 		textures[key]=ImageTexture.create_from_image(edge)
 		return textures[key]
 	func _gui_input(event):
-		if event is InputEventMouseButton and event.pressed and event.button_index==MOUSE_BUTTON_LEFT:
-			owner_tool.queue_shot((event.position-origin)/scale_factor,shown)
+		if model==null or not event is InputEventMouseButton or not event.pressed or event.button_index!=MOUSE_BUTTON_LEFT:
+			return
+		var point = (event.position-origin)/scale_factor
+		var canvas = Vector2(model.level.layout.width,model.level.layout.height)
+		if Rect2(Vector2.ZERO,canvas).has_point(point):
+			owner_tool.queue_shot(point,shown)
 	func _draw():
 		draw_rect(Rect2(Vector2.ZERO,size),Color("#111827"))
 		if model == null:return
@@ -359,6 +363,16 @@ func smoke_test():
 	var before=model.public_state()
 	jump(20);jump(150)
 	var exact=var_to_bytes(before)==var_to_bytes(model.public_state())
+	# Letterbox pixels can show off-canvas debug contours but cannot accept shots.
+	await process_frame;await RenderingServer.frame_post_draw
+	var outside = InputEventMouseButton.new()
+	outside.button_index = MOUSE_BUTTON_LEFT
+	outside.pressed = true
+	outside.position = preview.origin - Vector2(0,1)
+	running = true
+	preview._gui_input(outside)
+	running = false
+	var outside_ignored = session.queue.pending.is_empty()
 	note.text="Automated UI/evidence probe; not a user annotation or acceptance."
 	await save_note("test_harness")
 	var saved=note.text.is_empty()
@@ -371,7 +385,7 @@ func smoke_test():
 		dialog_ok=confirmation.get_texture().get_image().save_png(evidence_root().path_join("adoption-dialog.png"))==OK
 		confirmation.queue_free()
 	dialog_ok=dialog_ok and before_pointer==adopted_pointer()
-	var output={"passed":exact and saved and dialog_ok,"seek_exact":exact,"evidence_saved":saved,"adoption_dialog_without_adoption":dialog_ok,"build_id":model.build.build_id,"author":"test_harness"}
+	var output={"passed":exact and saved and dialog_ok and outside_ignored,"seek_exact":exact,"evidence_saved":saved,"off_canvas_input_ignored":outside_ignored,"adoption_dialog_without_adoption":dialog_ok,"build_id":model.build.build_id,"author":"test_harness"}
 	print(JSON.stringify(output));quit(0 if output.passed else 1)
 func populate_catalog():
 	catalog_tree.clear();var top=catalog_tree.create_item();top.set_text(0,model.level.id);catalog_tree.hide_root=false

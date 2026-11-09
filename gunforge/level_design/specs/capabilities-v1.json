@@ -188,7 +188,8 @@
         "gunforge/framework/core/art_level_adapter.gd",
         "gunforge/framework/core/art_level_scene.gd"
       ],
-      "layered_2d": true
+      "layered_2d": true,
+      "encounter_authoring": true
     }
   },
   "runtime_source": "gunforge/framework/core/level_runtime.gd",

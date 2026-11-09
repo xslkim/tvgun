@@ -70,9 +70,22 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\gunforge\start_level_revie
 .\gunforge\start_level_review.ps1 -Package gallery.intro
 .\gunforge\start_level_review.ps1 -Package orbital.convoy
 .\gunforge\start_level_player.ps1 -Package gallery.intro
+.\gunforge\start_level_review.ps1 -Package orbital.siege -Candidate
+.\gunforge\start_level_player.ps1 -Package orbital.siege -Candidate
 ```
 
-靶场有移动目标、保护对象、区域进入、弹药和成功/失败；科幻白模有护盾窗口、双发目标、可拦截投射物、船体与任务分支。它们是功能白模，不是新美术提案。
+靶场有移动目标、保护对象、区域进入、弹药和成功/失败。护航白模有护盾窗口、双发目标、可拦截投射物、船体与任务分支。轨道防线白模用《纸灯城》R2 同一套战斗描述，改为保护右侧反应堆、拦截弹体和射击干扰器。
+
+## 编写一条战斗关卡
+
+从 [轨道防线的 JSON](../gunforge/level_design/examples/orbital.siege.json) 查看完整示例，选择 `directed_action@1`。
+
+- `encounter.waves.<波次ID>.at_ms` 是波次开始时间。`spawns.<实体ID>` 是相对该波次的出场延迟。每个实体实例只进场一次，同一敌种可以配置多个实例 ID。
+- `encounter.attacks.<实体ID>` 定义预警、出手、退场、伤害资源和效果。近战用 `contact_ms`，远程用 `projectile.flight_ms` 和内容坐标中的落点。攻击时间以实体进场后的局部时钟计，干扰会暂停这个时钟，击破会取消尚未发生的攻击。
+- 运动关键帧可以用 `attack_time` 引用 `windup`、`release`、`contact` 或 `retire`，也可以用 `offset_ms` 设置相对偏移。修改出手或命中时间时，绑定关键帧一起移动。
+- `encounter.supports` 指定支援实体、目标、范围和干扰时长。射击弹道起点和出手特效终点可以用 `anchor_uv` 按画布比例设置。有限弹药用 `controls.ammo_resource` 绑定计数器。
+
+Agent 可以按 ID 修改这些字段，例如 `/encounter/waves/approach/spawns/rammer`。编译器会展开普通运行事件，并在审阅器的事件详情里保留到源字段的路径。
 
 ## 打开 Agent 自审候选
 

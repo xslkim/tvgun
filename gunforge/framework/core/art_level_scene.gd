@@ -28,7 +28,7 @@ func draw_intents():
 		var at=model.center(entity)
 		if entity.stunned:
 			draw_arc(at,maxf(entity.width,entity.height)*.48,0,TAU,40,Color("#dab969"),4,true)
-			label(model.level.presentation.get("labels",{}).get("stunned","停顿"),at+Vector2(0,-entity.height*.45),23,Color("#e6c17a"),true)
+			label(model.level.get("presentation",{}).get("labels",{}).get("stunned","停顿"),at+Vector2(0,-entity.height*.45),23,Color("#e6c17a"),true)
 		for phase in entity.get("phases",[]):
 			if phase.id!=entity.motion_phase or entity.stunned:continue
 			var progress=clampf((float(entity.age_ticks)*1000/model.level.tick_hz-phase.start_ms)/float(phase.end_ms-phase.start_ms),0,1)
@@ -55,11 +55,16 @@ func draw_effects():
 		var t=clampf(age*1000/definition.duration_ms,0,1)
 		var at=Vector2(instance.position[0],instance.position[1]);var color=Color(definition.color);color.a*=1-t
 		var radius=float(definition.get("radius",80))
+		var anchor_uv = definition.get("anchor_uv",[])
 		match definition.kind:
 			"shot_trace":
-				draw_shot_trace(at,canvas,radius,color,t)
+				var muzzle = Vector2(canvas.x*.5,canvas.y-30)
+				if not anchor_uv.is_empty():muzzle = canvas*Vector2(anchor_uv[0],anchor_uv[1])
+				draw_shot_trace(at,muzzle,radius,color,t)
 			"attack_release":
-				draw_attack_release(at,canvas,radius,color,t)
+				var destination = Vector2(canvas.x*.5,canvas.y*.86)
+				if not anchor_uv.is_empty():destination = canvas*Vector2(anchor_uv[0],anchor_uv[1])
+				draw_attack_release(at,destination,radius,color,t)
 			"spark","burst":
 				for i in range(12 if definition.kind=="burst" else 7):
 					var angle=i*TAU/(12 if definition.kind=="burst" else 7)+int(serial)*.37
@@ -72,15 +77,15 @@ func draw_effects():
 				draw_arc(at,maxf(1,radius*t),0,TAU,96,color,5*(1-t)+1,true)
 			"link":
 				var support=model.level.get("presentation",{}).get("support",{})
-				if not support.is_empty():draw_line(model.center(model.entities[support.entity]),at,color,2,true)
+				var source = instance.get("source",support.get("entity",""))
+				if not source.is_empty():draw_line(model.center(model.entities[source]),at,color,2,true)
 				draw_arc(at,35+60*t,0,TAU,32,color,3,true)
 			"warning":draw_arc(at,radius*(1-.5*t),0,TAU,32,color,4,true)
 			"player_hit":
 				draw_player_hit(canvas,Color(definition.color),t,int(serial),definition.get("label",""))
 		if definition.kind!="player_hit" and definition.has("label"):label(definition.label,at+Vector2(0,-20-t*40),26,color,true)
 
-func draw_shot_trace(at: Vector2, canvas: Vector2, radius: float, color: Color, age: float) -> void:
-	var muzzle = Vector2(canvas.x*.5,canvas.y-30)
+func draw_shot_trace(at: Vector2, muzzle: Vector2, radius: float, color: Color, age: float) -> void:
 	var direction = (muzzle-at).normalized()
 	var normal = direction.orthogonal()
 	var tail = muzzle.lerp(at,age)
@@ -92,8 +97,7 @@ func draw_shot_trace(at: Vector2, canvas: Vector2, radius: float, color: Color, 
 	for offset in [direction,-direction,normal,-normal]:
 		draw_line(at+offset*radius*.5,at+offset*radius*1.18,color,5,true)
 
-func draw_attack_release(at: Vector2, canvas: Vector2, radius: float, color: Color, age: float) -> void:
-	var destination = Vector2(canvas.x*.5,canvas.y*.86)
+func draw_attack_release(at: Vector2, destination: Vector2, radius: float, color: Color, age: float) -> void:
 	var direction = (destination-at).normalized()
 	var normal = direction.orthogonal()
 	var tip = at.lerp(destination,minf(1.0,age*2.6))
@@ -119,7 +123,7 @@ func draw_player_hit(canvas: Vector2, color: Color, age: float, serial: int, cap
 	label(caption,Vector2(canvas.x*.5,message_y),46,Color(1.0,.86,.8,message_alpha),true)
 
 func draw_hud():
-	var presentation=model.level.presentation
+	var presentation=model.level.get("presentation",{})
 	var canvas=Vector2(model.level.layout.width,model.level.layout.height)
 	var stats=model.section_stats();var section=stats.section
 	draw_rect(Rect2(0,0,canvas.x,80),Color(.018,.025,.045,.8))

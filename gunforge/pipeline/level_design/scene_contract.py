@@ -18,7 +18,10 @@ def validate_scene(source,root,error):
     image(part['resource'])
     if 'source' in part:crop(part['resource'],part['source'])
   if 'motion' in entity:
-   times=[frame['at_ms'] for frame in entity['motion']['frames']]
+   frames = entity['motion']['frames']
+   if any('at_ms' not in frame for frame in frames):
+    raise error('attack-time motion frame needs a declared encounter attack: '+id)
+   times=[frame['at_ms'] for frame in frames]
    if times[0]!=0 or any(a>=b for a,b in zip(times,times[1:])):raise error('motion frames need increasing milliseconds from zero: '+id)
   if 'bob' in entity and 'motion' not in entity:raise error('bobbing needs an explicit motion anchor: '+id)
   for phase in entity.get('phases',[]):
@@ -46,3 +49,5 @@ def validate_scene(source,root,error):
   if value<bounds.get('min',value) or value>bounds.get('max',value):raise error('initial resource outside bounds: '+resource)
  for effect in source.get('effects',{}).values():
   if not re.fullmatch(r'#[a-fA-F0-9]{6}(?:[a-fA-F0-9]{2})?',effect['color']):raise error('effect color needs explicit RGB/RGBA hex')
+  if 'anchor_uv' in effect and effect['kind'] not in ('shot_trace','attack_release'):
+   raise error('effect anchor_uv requires shot_trace or attack_release')

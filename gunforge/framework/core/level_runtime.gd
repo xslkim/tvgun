@@ -96,10 +96,12 @@ func play_cue(id):
 	active_cues[str(cue_serial)]={"cue":id,"start_tick":tick,"end_tick":tick+int(ceil(cue.duration_ms*level.tick_hz/1000.0)),"loop":cue.get("loop",false)}
 	var entry={"tick":tick,"topic":"cue.started","entity":id};topics.append(entry);trace.append(entry.duplicate(true))
 
-func start_effect(id,point,entity=""):
+func start_effect(id,point,entity="",source=""):
 	if id.is_empty():return
 	effect_serial+=1
-	active_effects[str(effect_serial)]={"effect":id,"start_tick":tick,"position":[point.x,point.y],"entity":entity}
+	var effect = {"effect":id,"start_tick":tick,"position":[point.x,point.y],"entity":entity}
+	if not source.is_empty():effect["source"] = source
+	active_effects[str(effect_serial)] = effect
 	emit("effect.started",id)
 
 func feedback(name,point,entity=""):
@@ -196,7 +198,7 @@ func apply_action(action: Dictionary):
 			var projectile=entities[action.entity];var origin=center(entities[action.source])-Vector2(projectile.width,projectile.height)*.5
 			projectile.motion_override={"easing":"linear","frames":[{"at_ms":0,"x":origin.x,"y":origin.y},{"at_ms":action.duration_ms,"x":action.x-projectile.width*.5,"y":action.y-projectile.height*.5}]}
 			Motion.update(projectile,level.tick_hz);emit("attack.launched",action.source)
-		"vfx":start_effect(action.effect,center(entities[action.entity]),action.entity)
+		"vfx":start_effect(action.effect,center(entities[action.entity]),action.entity,action.get("source",""))
 		"section":current_section=action.section;emit("section.started",action.section)
 		"input":input_enabled=action.enabled
 		"complete", "fail":

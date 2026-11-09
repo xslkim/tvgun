@@ -4,20 +4,20 @@
 
 ## 可以直接运行
 
-- 根目录 `play_combat_candidate.cmd`：最新《纸灯城》战斗候选 R1。
+- 根目录 `play_combat_candidate.cmd` 启动已通过用户桌面验证并迁移到通用战斗描述的《纸灯城》R2。
 - 根目录 `review_combat_candidate.cmd`：同一候选的只读可视化审阅、播放、跳转、批注和版本对照。
 - `play_level_prototype.cmd` / `review_levels.cmd`：保留的旧 `paper.alley`。
-- PowerShell `start_level_review.ps1 -Package gallery.intro` / `orbital.convoy`：异题材功能包。
+- PowerShell `start_level_review.ps1 -Package gallery.intro`、`orbital.convoy` 或 `orbital.siege` 打开异题材功能包。
 
 详细操作见 [运行说明](../../../docs/LEVEL_DESIGN_ENGINE_QUICKSTART.md)。启动脚本会构建并导入原生素材，已修复干净目录缺少 Godot import 缓存时旧包无法加载的问题。
 
 ## 已验证的软件
 
-`software_acceptance.json` 对应 43 项检查，涵盖编译/版本事务/快照/回放/空间几何/声音 envelope、原版 14886 次状态对照、四包实际机器人、GPU 审阅和播放器、本机 HTTP/UDP 及旧 Demo 回归。
+`software_acceptance.json` 对应 50 项检查，涵盖编译、版本事务、快照、回放、空间几何、声音 envelope、原版 14886 次状态对照、五包实际机器人、GPU 审阅和播放器、本机 HTTP/UDP 及旧 Demo 回归。
 
-`delivery_acceptance.json` 对应 16 项独立交付检查：独立源码目录、新 Python 3.12.10 venv、锁定依赖、重新准备审核素材和导入资源、空缓存重建四包，build_id 与原目录完全一致，再通过四包机器人、实际 GPU 启动、双击候选入口和隔离测试的采用版启动链。另有 22 个 Python 契约测试通过，确认普通入口优先选择已采用源，候选入口不修改采用指针。外部工具 Godot/uv 需按运行说明提供。
+`delivery_acceptance.json` 对应 19 项独立交付检查。五个关卡包从空缓存重建后得到相同 build_id，并通过机器人、GPU 启动、候选入口和隔离采用版启动链。25 个 Python 契约测试覆盖来源映射、非法攻击窗口、版本隔离和修改命中时刻时关键帧的同步。
 
-R1 是对真实用户 F01–F05 的独立玩法修改：六波 29 只怪物、连续进场/预警/扑击、可拦截墨弹、重甲弱点、可选灯火震退、居民救援、攻防效果与原型声音。20 个战斗机制断言、完整输入回放与 12 个跳转点的状态和实际几何对照通过。实际录制与批注回复见 `combat_r1_acceptance.json`。
+R2 和轨道防线共用 `encounter` 战斗描述。R2 迁移的展开数据对照通过。轨道防线验证了不同画布、反应堆资源、有限弹药、干扰、拦截与失败分支。Agent 根据审阅画面将发射机出场推迟 550 毫秒，独立候选通过画面和两种结果检查。证据位于 `software_acceptance.json` 的补充索引。
 
 ## 保留边界与后续
 
