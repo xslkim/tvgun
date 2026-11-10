@@ -1,0 +1,42 @@
+[
+  {
+    "id": "stall",
+    "attempt": 3,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/stall_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Refine composition with backlit dusty rose paper planes behind both target lanes, cooler slate-purple paper ground, and very restrained muted warm apricot accents. Keep big clean low-frequency areas behind targets. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/stall_03.png",
+    "output_id": "exec-c1c9dc9c-9ffe-46ee-b634-93d4fbdd6fd9.png"
+  },
+  {
+    "id": "video_shop",
+    "attempt": 3,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/video_shop_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Refine composition with backlit dusty rose paper planes behind both target lanes, cooler slate-purple paper ground, and very restrained muted warm apricot accents. Keep big clean low-frequency areas behind targets. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/video_shop_03.png",
+    "output_id": "exec-fe697116-b548-496c-93d1-c558e104b933.png"
+  },
+  {
+    "id": "footbridge",
+    "attempt": 3,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/footbridge_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Refine composition with backlit dusty rose paper planes behind both target lanes, cooler slate-purple paper ground, and very restrained muted warm apricot accents. Keep big clean low-frequency areas behind targets. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/footbridge_03.png",
+    "output_id": "exec-47d68f0c-efcc-4ce5-92f5-090997a45114.png"
+  },
+  {
+    "id": "square",
+    "attempt": 3,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/square_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Refine composition with backlit dusty rose paper planes behind both target lanes, cooler slate-purple paper ground, and very restrained muted warm apricot accents. Keep big clean low-frequency areas behind targets. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/square_03.png",
+    "output_id": "exec-39e2b1fa-cd13-4055-8fdb-8bf9f86bab20.png"
+  }
+]

@@ -1,0 +1,131 @@
+{
+  "id": "footbridge",
+  "status": "runtime_probe_candidate",
+  "source_sha256": "2169081c9f75906f16c9e144ea21ea39d98b61b9c131322b0854ed2ef1833311",
+  "canvas": [
+    1920,
+    1020
+  ],
+  "content_origin": [
+    72,
+    42
+  ],
+  "content_size": [
+    1776,
+    936
+  ],
+  "layers": [
+    {
+      "id": "sky",
+      "file": "sky.png",
+      "pos": [
+        0,
+        0
+      ],
+      "parallax": 0.1,
+      "extent": "sky_extent.png",
+      "fill": "sky_fill.png"
+    },
+    {
+      "id": "street",
+      "file": "street.png",
+      "pos": [
+        0,
+        221
+      ],
+      "parallax": 0.21,
+      "extent": "street_extent.png",
+      "fill": "street_fill.png"
+    },
+    {
+      "id": "houses",
+      "file": "houses.png",
+      "pos": [
+        0,
+        278
+      ],
+      "parallax": 0.38,
+      "extent": "houses_extent.png",
+      "fill": "houses_fill.png"
+    },
+    {
+      "id": "bridge",
+      "file": "bridge.png",
+      "pos": [
+        0,
+        446
+      ],
+      "parallax": 0.49,
+      "extent": "bridge_extent.png",
+      "fill": "bridge_fill.png"
+    },
+    {
+      "id": "lamp",
+      "file": "lamp.png",
+      "pos": [
+        1387,
+        163
+      ],
+      "parallax": 0.54,
+      "extent": "lamp_extent.png",
+      "fill": "lamp_fill.png"
+    },
+    {
+      "id": "left_terrace",
+      "file": "left_terrace.png",
+      "pos": [
+        0,
+        640
+      ],
+      "parallax": 0.96,
+      "extent": "left_terrace_extent.png",
+      "blocks_shots": true,
+      "block_mask": "left_terrace_block.png"
+    },
+    {
+      "id": "right_terrace",
+      "file": "right_terrace.png",
+      "pos": [
+        1525,
+        640
+      ],
+      "parallax": 1.0,
+      "extent": "right_terrace_extent.png",
+      "blocks_shots": true,
+      "block_mask": "right_terrace_block.png"
+    },
+    {
+      "id": "leaves",
+      "file": "leaves.png",
+      "pos": [
+        0,
+        0
+      ],
+      "parallax": 0.78,
+      "extent": "leaves_extent.png"
+    }
+  ],
+  "lights": [
+    {
+      "id": "lamp",
+      "space": "lamp",
+      "glow": "lamp_glow.png",
+      "spill": "lamp_spill.png",
+      "influence": "lamp_influence.png",
+      "pos": [
+        1287,
+        150
+      ],
+      "hit_mask": "lamp_hit.png",
+      "hit_pos": [
+        1393,
+        225
+      ],
+      "aim": [
+        1441,
+        275
+      ]
+    }
+  ],
+  "rest_matches_original": true
+}

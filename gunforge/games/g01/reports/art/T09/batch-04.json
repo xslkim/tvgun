@@ -1,0 +1,80 @@
+[
+  {
+    "id": "old_cinema_1",
+    "name": "旧影院 · A",
+    "expected_text": "旧影院",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “旧影院”. Hand-cut overlapping warm amber paper, small dark-indigo offset shadow, broad rounded readable letter shapes. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 旧影院 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 4,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-old_cinema_1-01",
+    "output": "generation/old_cinema_1.png",
+    "output_id": "exec-959bff49-ee51-4a8e-bcc3-2a38c6e41c95.png"
+  },
+  {
+    "id": "old_cinema_2",
+    "name": "旧影院 · B",
+    "expected_text": "旧影院",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “旧影院”. Blue-black Chinese sign painter's brush lettering with restrained dry-brush edges, single-color ink. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 旧影院 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 4,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-old_cinema_2-01",
+    "output": "generation/old_cinema_2.png",
+    "output_id": "exec-6f83efdd-1907-40f1-9a6b-88c292b5cf33.png"
+  },
+  {
+    "id": "old_cinema_3",
+    "name": "旧影院 · C",
+    "expected_text": "旧影院",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “旧影院”. Chinese lantern stencil cut from muted pale teal paper, strong angular letterform and broad strokes, dark indigo edge. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 旧影院 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 4,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-old_cinema_3-01",
+    "output": "generation/old_cinema_3.png",
+    "output_id": "exec-c997ad46-4d91-43b6-a3c2-fce72c6f875a.png"
+  },
+  {
+    "id": "railway_station_1",
+    "name": "火车站 · A",
+    "expected_text": "火车站",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “火车站”. Hand-cut overlapping warm amber paper, small dark-indigo offset shadow, broad rounded readable letter shapes. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 火车站 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 4,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-railway_station_1-01",
+    "output": "generation/railway_station_1.png",
+    "output_id": "exec-298f2c7e-7722-423d-8ae2-db6ec13f3b2b.png"
+  },
+  {
+    "id": "railway_station_2",
+    "name": "火车站 · B",
+    "expected_text": "火车站",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “火车站”. Blue-black Chinese sign painter's brush lettering with restrained dry-brush edges, single-color ink. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 火车站 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 4,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-railway_station_2-01",
+    "output": "generation/railway_station_2.png",
+    "output_id": "exec-9b35d186-827a-4c16-85eb-6d673c7cc526.png"
+  },
+  {
+    "id": "railway_station_3",
+    "name": "火车站 · C",
+    "expected_text": "火车站",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “火车站”. Chinese lantern stencil cut from muted pale teal paper, strong angular letterform and broad strokes, dark indigo edge. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 火车站 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 4,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-railway_station_3-01",
+    "output": "generation/railway_station_3.png",
+    "output_id": "exec-aa32c380-1c61-4f1f-b0d0-b88a5120f99a.png"
+  }
+]

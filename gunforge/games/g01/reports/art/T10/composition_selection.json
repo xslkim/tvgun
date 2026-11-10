@@ -1,0 +1,26 @@
+{
+  "stall": {
+    "reference": "compositions/stall_02.png",
+    "sha256": "60f6e6f38acdaeafdaec56bb0e2e82876d05f3cfba45a2daf3ef10c9e4a7a30f",
+    "coverage": 0.7510087719298245,
+    "scope": "composition reference chosen among brightness-passing drafts by palette coverage"
+  },
+  "video_shop": {
+    "reference": "compositions/video_shop_02.png",
+    "sha256": "073e0d3ac1835077d66ce97ecc25e8028a0babaa490cfda1f22c9ee4220e44e2",
+    "coverage": 0.8067836257309942,
+    "scope": "composition reference chosen among brightness-passing drafts by palette coverage"
+  },
+  "footbridge": {
+    "reference": "compositions/footbridge_02.png",
+    "sha256": "2169081c9f75906f16c9e144ea21ea39d98b61b9c131322b0854ed2ef1833311",
+    "coverage": 0.7182894736842105,
+    "scope": "composition reference chosen among brightness-passing drafts by palette coverage"
+  },
+  "square": {
+    "reference": "compositions/square_02.png",
+    "sha256": "2c74822e6eb73f855d00b50408084f29c014a99109bdddaacb6c13dbc34797b0",
+    "coverage": 0.7408918128654971,
+    "scope": "composition reference chosen among brightness-passing drafts by palette coverage"
+  }
+}

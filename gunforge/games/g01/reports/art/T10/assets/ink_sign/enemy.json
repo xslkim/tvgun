@@ -1,0 +1,18 @@
+{
+  "id": "ink_sign",
+  "human": false,
+  "status": "offline_candidate",
+  "canvas": [
+    1024,
+    436
+  ],
+  "body": "body.png",
+  "core": "core.png",
+  "core_hardened": "core_hardened.png",
+  "hit_mask": "hit.png",
+  "sdf": "sdf.png",
+  "hardened_eye_source_sha256": "717db7d9221019d3819bbc386532e9204386562f410141a0f3b7b2d05626f5ab",
+  "effective_radius_source_px": 104.08650248711405,
+  "stamp_inside_hit_mask": true,
+  "mask_method": "luminance/chroma segmentation of generated concept; inspect before runtime adoption"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "stall_base",
+    "stage": "stall",
+    "layer": "base",
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "attempt": 1,
+    "reference": "compositions/stall_01.png",
+    "prompt": "Edit the attached paper-cut Chinese night-town environment into its clean full-bleed farthest base layer for a parallax game. Remove every identifiable object including trees, plants, foreground covers, stalls, bridge, shop facades, lantern, lamp, signage, poles and building silhouettes. Paint those areas through as uninterrupted matte dyed rice-paper tone planes: a dim indigo and plum sky in upper half, subdued plum/slate horizontal paving plane in lower half, minimal faint paper fibers. Keep general camera and horizon and wide aspect ratio. Full opaque background, no transparency, pure white, characters or writing.",
+    "output": "source/stall_base.png",
+    "output_id": "exec-2732d62e-9140-45a7-ac93-b2973a63070c.png"
+  },
+  {
+    "id": "video_shop_base",
+    "stage": "video_shop",
+    "layer": "base",
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "attempt": 1,
+    "reference": "compositions/video_shop_01.png",
+    "prompt": "Edit the attached paper-cut Chinese night-town environment into its clean full-bleed farthest base layer for a parallax game. Remove every identifiable object including trees, plants, foreground covers, stalls, bridge, shop facades, lantern, lamp, signage, poles and building silhouettes. Paint those areas through as uninterrupted matte dyed rice-paper tone planes: a dim indigo and plum sky in upper half, subdued plum/slate horizontal paving plane in lower half, minimal faint paper fibers. Keep general camera and horizon and wide aspect ratio. Full opaque background, no transparency, pure white, characters or writing.",
+    "output": "source/video_shop_base.png",
+    "output_id": "exec-09315f1a-d4d7-4905-a372-3d1c1843f3a3.png"
+  },
+  {
+    "id": "footbridge_base",
+    "stage": "footbridge",
+    "layer": "base",
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "attempt": 1,
+    "reference": "compositions/footbridge_01.png",
+    "prompt": "Edit the attached paper-cut Chinese night-town environment into its clean full-bleed farthest base layer for a parallax game. Remove every identifiable object including trees, plants, foreground covers, stalls, bridge, shop facades, lantern, lamp, signage, poles and building silhouettes. Paint those areas through as uninterrupted matte dyed rice-paper tone planes: a dim indigo and plum sky in upper half, subdued plum/slate horizontal paving plane in lower half, minimal faint paper fibers. Keep general camera and horizon and wide aspect ratio. Full opaque background, no transparency, pure white, characters or writing.",
+    "output": "source/footbridge_base.png",
+    "output_id": "exec-fdecbdeb-8e54-46d3-8c6c-84a6fab125bd.png"
+  },
+  {
+    "id": "square_base",
+    "stage": "square",
+    "layer": "base",
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "attempt": 1,
+    "reference": "compositions/square_01.png",
+    "prompt": "Edit the attached paper-cut Chinese night-town environment into its clean full-bleed farthest base layer for a parallax game. Remove every identifiable object including trees, plants, foreground covers, stalls, bridge, shop facades, lantern, lamp, signage, poles and building silhouettes. Paint those areas through as uninterrupted matte dyed rice-paper tone planes: a dim indigo and plum sky in upper half, subdued plum/slate horizontal paving plane in lower half, minimal faint paper fibers. Keep general camera and horizon and wide aspect ratio. Full opaque background, no transparency, pure white, characters or writing.",
+    "output": "source/square_base.png",
+    "output_id": "exec-fc8f5f93-f5cb-4036-93a9-2263429e707b.png"
+  }
+]

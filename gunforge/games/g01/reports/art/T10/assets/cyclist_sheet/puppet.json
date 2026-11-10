@@ -1,0 +1,212 @@
+{
+  "id": "cyclist",
+  "rig": "humanoid_10",
+  "role": "hostage_or_npc",
+  "human_body_attackable": false,
+  "human_attacks_player": false,
+  "parts": [
+    {
+      "id": "torso",
+      "parent": null,
+      "file": "torso.png",
+      "rest_deg": 0,
+      "pivot": [
+        146.1492537313433,
+        18.340298507462688
+      ],
+      "attach": null,
+      "z": 5,
+      "angle_range": [
+        -30,
+        30
+      ]
+    },
+    {
+      "id": "head",
+      "parent": "torso",
+      "file": "head.png",
+      "rest_deg": 0,
+      "pivot": [
+        101.44477611940299,
+        179.41397014925374
+      ],
+      "attach": [
+        145.57611940298509,
+        32.095522388059706
+      ],
+      "z": 7,
+      "angle_range": [
+        -30,
+        30
+      ]
+    },
+    {
+      "id": "upper_arm_l",
+      "parent": "torso",
+      "file": "upper_arm_l.png",
+      "rest_deg": 0,
+      "pivot": [
+        84.45096786808317,
+        17.351704360294598
+      ],
+      "attach": [
+        57.3134328358209,
+        68.77611940298507
+      ],
+      "z": 3,
+      "angle_range": [
+        -75,
+        75
+      ]
+    },
+    {
+      "id": "upper_arm_r",
+      "parent": "torso",
+      "file": "upper_arm_r.png",
+      "rest_deg": 0,
+      "pivot": [
+        23.74918017714303,
+        17.47412424530326
+      ],
+      "attach": [
+        234.9850746268657,
+        68.77611940298507
+      ],
+      "z": 3,
+      "angle_range": [
+        -75,
+        75
+      ]
+    },
+    {
+      "id": "forearm_l",
+      "parent": "upper_arm_l",
+      "file": "forearm_l.png",
+      "rest_deg": 0,
+      "pivot": [
+        53.874626865671644,
+        31.361910447761197
+      ],
+      "attach": [
+        53.874626865671644,
+        164.65002985074625
+      ],
+      "z": 6,
+      "angle_range": [
+        -75,
+        75
+      ]
+    },
+    {
+      "id": "forearm_r",
+      "parent": "upper_arm_r",
+      "file": "forearm_r.png",
+      "rest_deg": 0,
+      "pivot": [
+        53.874626865671644,
+        31.361910447761197
+      ],
+      "attach": [
+        53.874626865671644,
+        164.65002985074625
+      ],
+      "z": 6,
+      "angle_range": [
+        -75,
+        75
+      ]
+    },
+    {
+      "id": "thigh_l",
+      "parent": "torso",
+      "file": "thigh_l.png",
+      "rest_deg": 0,
+      "pivot": [
+        64.76417910447762,
+        33.01253731343284
+      ],
+      "attach": [
+        93.99402985074627,
+        291.15223880597017
+      ],
+      "z": 2,
+      "angle_range": [
+        -30,
+        30
+      ]
+    },
+    {
+      "id": "thigh_r",
+      "parent": "torso",
+      "file": "thigh_r.png",
+      "rest_deg": 0,
+      "pivot": [
+        64.76417910447762,
+        33.01253731343284
+      ],
+      "attach": [
+        198.3044776119403,
+        291.15223880597017
+      ],
+      "z": 2,
+      "angle_range": [
+        -30,
+        30
+      ]
+    },
+    {
+      "id": "shin_l",
+      "parent": "thigh_l",
+      "file": "shin_l.png",
+      "rest_deg": 0,
+      "pivot": [
+        95.27637466590589,
+        15.819430012913303
+      ],
+      "attach": [
+        64.76417910447762,
+        173.3158208955224
+      ],
+      "z": 1,
+      "angle_range": [
+        -30,
+        30
+      ]
+    },
+    {
+      "id": "shin_r",
+      "parent": "thigh_r",
+      "file": "shin_r.png",
+      "rest_deg": 0,
+      "pivot": [
+        64.76417910447762,
+        33.01253731343284
+      ],
+      "attach": [
+        64.76417910447762,
+        173.3158208955224
+      ],
+      "z": 1,
+      "angle_range": [
+        -30,
+        30
+      ]
+    }
+  ],
+  "ink_anchor": [
+    145.57611940298509,
+    135.25970149253732
+  ],
+  "status": "offline_candidate",
+  "source_sha256": "3694fc2ba0ee3be6d18fb52eed4912734360613d80df753f998b7214dc627e82",
+  "actions": [
+    "peek",
+    "walk",
+    "startle",
+    "wave_for_help",
+    "struggle",
+    "rescued_bounce",
+    "thank"
+  ],
+  "assembled_height_target": 768
+}

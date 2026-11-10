@@ -1,0 +1,192 @@
+stage: A4
+items:
+- id: cyclist
+  name: 骑车的人
+  sha256: 254199a45898ef23db9b8036f8a6d228386de65b45d53edfc1cbb7be62ea287d
+  status: approved
+  note: ''
+- id: projectionist
+  name: 放映员
+  sha256: e4a519c7b827bcae3c0c713f0f22ea76a6e15076c100de0fa06dbaea7792d655
+  status: approved
+  note: ''
+- id: ticket_clerk
+  name: 检票员
+  sha256: 1431c922f75ddc1f8ca5db174c0852b8fd366210be93ecff6e552eeb181edf2d
+  status: approved
+  note: ''
+- id: passerby_a
+  name: 路人 A
+  sha256: daf53015d711e7999c0f25ddc61a2c4805f53d991c0481d0e832eaea29354554
+  status: approved
+  note: ''
+- id: passerby_b
+  name: 路人 B
+  sha256: 893b0f79d55b1117435d86f449b3f94960ccef117d1b3b1d4d6c63e67ba9f9e7
+  status: approved
+  note: ''
+- id: passerby_c
+  name: 路人 C
+  sha256: dd6146b3dfd26299c0ae597c37ffe7c550a4a530a1c06eff59639129f8c41431
+  status: approved
+  note: ''
+- id: ink_drop
+  name: 滴墨
+  sha256: 64b13f0681748b64f06370f10c982827f395e214bfb81ee9caaf4cbe9e51b359
+  status: approved
+  note: ''
+- id: ink_cart
+  name: 墨车夫
+  sha256: 71438cfa420b2869b0ee91134266645a979ff16ace39f91d00ed0299601d629d
+  status: approved
+  note: ''
+- id: ink_sign
+  name: 墨招牌
+  sha256: a3a4f6ca19d3dcc184b83f3a81e0ff93b5c04918b0732f51adfdef594f39a571
+  status: approved
+  note: ''
+- id: ink_tape
+  name: 磁带墨
+  sha256: 98de003eac1d21a11e4e0350439fdb0ae4b0695a1382a28e627c6cc460ef97e7
+  status: approved
+  note: ''
+- id: umbrella_open
+  name: 墨伞 · 撑开
+  sha256: d087f73e89b3dcc0d4dc37d4687658c8612d4a393be6899b7fb4057a6cf92294
+  status: approved
+  note: ''
+- id: umbrella_closed
+  name: 墨伞 · 收拢
+  sha256: 8d57278bf1af3195a8959995c36924aa4b7c5f774af2d55fe237ed4e4ab6c1ab
+  status: approved
+  note: ''
+- id: dragon
+  name: 墨舞龙 · 整体
+  sha256: 10b89693e214a05b5c5ef3e35bd52bbc5be4208f6f0379ef9f26fabfba2ea4f2
+  status: approved
+  note: ''
+- id: dragon_active
+  name: 墨舞龙 · 当前可射
+  sha256: ea425fb8f0be68534e2b5be5667683f5fd1e27cd61f9898252ce8b85e5a0d397
+  status: approved
+  note: ''
+- id: dragon_locked
+  name: 墨舞龙 · 尚未开放
+  sha256: 0d30f43a74aec296ab94b58109b2e740933e40a1ad43b2a27e840581b988958d
+  status: approved
+  note: ''
+- id: dragon_purified
+  name: 墨舞龙 · 已净化
+  sha256: 7e073653572df1fe04e6e0b84e952a0e470206e3855c0e9ca5bf0b81339050b9
+  status: approved
+  note: ''
+- id: screen_shadow
+  name: 银幕影 · 巨影
+  sha256: d479bcec400c29ae094a396c2a78087803d9793892e1d724f01fbccd29fda935
+  status: approved
+  note: ''
+- id: projector
+  name: 银幕影 · 放映机
+  sha256: 9a8e27670105370125bdd9364b5bbba8c6ec881ce200f34277ca3d4d1090e16c
+  status: approved
+  note: ''
+- id: film_reel
+  name: 银幕影 · 胶片盘
+  sha256: b59b9c7ddc2195de8a2ae6f5c5a7a28a9485e949cc11bd6027f1c920edeb124e
+  status: approved
+  note: ''
+- id: forget_boss
+  name: 忘字 · 整体气质
+  sha256: 81d2839f1851c6a6217a4dbb2cc1493243a211b7621bd6848d3eee72962e6929
+  status: approved
+  note: ''
+- id: game_title_1
+  name: 纸灯城 · A
+  sha256: 2b6007818b68365a5e52c7ee022a1348a582fa588ac07fbeaf4a8b6e308ea070
+  status: approved
+  note: ''
+- id: game_title_2
+  name: 纸灯城 · B
+  sha256: 39ea107e7d47543c81db212b1bfb331a05aa001b19255b130e0b78c679a904fe
+  status: approved
+  note: ''
+- id: game_title_3
+  name: 纸灯城 · C
+  sha256: 4fd49775390ef38330599c145d8ca7cf5e872a01a98d18ec75b68109caa61ffb
+  status: approved
+  note: ''
+- id: night_market_1
+  name: 夜市 · A
+  sha256: f840346cc42e457d70fa6e85c3e287f3ee41e262384020ece3976cf39264fc74
+  status: approved
+  note: ''
+- id: night_market_2
+  name: 夜市 · B
+  sha256: 9e758f2f8b11448dc09ee9f56a6a0859d1a1a7de57004820b5ed521119ad8ba0
+  status: approved
+  note: ''
+- id: night_market_3
+  name: 夜市 · C
+  sha256: 440a88a68881654a1a6a5136b8a4a41c086b992ec89f2f938413f3b4da27d447
+  status: approved
+  note: ''
+- id: old_cinema_1
+  name: 旧影院 · A
+  sha256: 2ebf2d1bc2d712a19070b356090b06724f5240ab442461f0de210218d104a189
+  status: approved
+  note: ''
+- id: old_cinema_2
+  name: 旧影院 · B
+  sha256: 9ef26e7f74f5d23c8739564995210a0280fc9555206016e86c61f3ee9ab82b53
+  status: approved
+  note: ''
+- id: old_cinema_3
+  name: 旧影院 · C
+  sha256: 1acf0311ba7b427b8b281e6806b8531726292f0064c9a6c0eac5eaf5648df80b
+  status: approved
+  note: ''
+- id: railway_station_1
+  name: 火车站 · A
+  sha256: a38a33a43bd162d03009b402de102b32ff4ffb40003477e8ddcffcbeafc91ced
+  status: approved
+  note: ''
+- id: railway_station_2
+  name: 火车站 · B
+  sha256: 991850ec0726793165642d309c2487672cb5d58cb90cb77be04b04e27dc49791
+  status: approved
+  note: ''
+- id: railway_station_3
+  name: 火车站 · C
+  sha256: 725ecd77c6c73482f3ce396ace7432492280f62af8e3cdc3a1bff8d7a5a2bada
+  status: approved
+  note: ''
+- id: vendor
+  name: 卖糖葫芦的
+  sha256: ce7eb9775d3f9799a1002f36c466a64f62ee0b504697119d1be675d79a4962cd
+  status: approved
+  note: ''
+- id: video_owner
+  name: 录像厅老板
+  sha256: 738dc87e84ce68a55420838e0c0789d344cee2bda4156b94eb5976ad82dcc813
+  status: approved
+  note: ''
+- id: crow
+  name: 墨鸦
+  sha256: 8d30ede01ad98cc0c4487734bdbafcb6d1540ba5f30cc3bb190e14b115b29e82
+  status: approved
+  note: ''
+- id: tadpole
+  name: 墨蝌蚪
+  sha256: 0d77467946b049633fd397d444dc0931b58d41dd021eb54d7cb23097432580ba
+  status: approved
+  note: ''
+decision:
+  status: approved
+  source: explicit_user_chat
+  feedback: 全部通过，都非常好。
+working_title_defaults:
+  chosen_by: implementation_default
+  paper_lantern_city: game_title_1
+  night_market: night_market_1
+  old_cinema: old_cinema_1
+  railway_station: railway_station_1

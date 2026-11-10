@@ -1,0 +1,24 @@
+[
+  {
+    "id": "cyclist_sheet",
+    "category": "puppet_sheet",
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "attempt": 1,
+    "reference": "../T09/generation/cyclist.png",
+    "prompt": "Use the attached approved character as the reference and create a transparent separated 2D game puppet parts sheet. Preserve identity, clothes, colors, paper material and three-quarter orientation. Show EXACTLY TEN separate cutout pieces with generous truly transparent gutters at least 32 pixels; all pieces completely visible, none touch, no annotations or cast shadows. Use a disciplined three-row grid: first row head and neck, jacket/torso; second row left upper arm, right upper arm, left forearm including hand, right forearm including hand; third row left thigh, right thigh, left shin including shoe, right shin including shoe. Arms cut short with rounded paper tabs at both ends, no extra hands. Legs end in rounded joint tabs. Small subtle brass circular pivots on elbows and knees. Flat richly colored layered rice paper. No text, no bicycle, no basket, no accessories, no full assembled person.",
+    "output": "source/cyclist_sheet.png",
+    "output_id": "exec-12560d89-93ef-43ac-9930-a77128286372.png"
+  },
+  {
+    "id": "passerby_a_sheet",
+    "category": "puppet_sheet",
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "attempt": 1,
+    "reference": "../T09/generation/passerby_a.png",
+    "prompt": "Use the attached approved character as the reference and create a transparent separated 2D game puppet parts sheet. Preserve identity, clothes, colors, paper material and three-quarter orientation. Show EXACTLY TEN separate cutout pieces with generous truly transparent gutters at least 32 pixels; all pieces completely visible, none touch, no annotations or cast shadows. Use a disciplined three-row grid: first row head and neck, jacket/torso; second row left upper arm, right upper arm, left forearm including hand, right forearm including hand; third row left thigh, right thigh, left shin including shoe, right shin including shoe. Arms cut short with rounded paper tabs at both ends, no extra hands. Legs end in rounded joint tabs. Small subtle brass circular pivots on elbows and knees. Flat richly colored layered rice paper. No text, no bicycle, no basket, no accessories, no full assembled person.",
+    "output": "source/passerby_a_sheet.png",
+    "output_id": "exec-22245b9f-19b5-4787-a6f4-7b18a543d4b5.png"
+  }
+]

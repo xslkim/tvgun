@@ -1,0 +1,68 @@
+[
+  {
+    "id": "stall_far_roofs",
+    "stage": "stall",
+    "layer": "far_roofs",
+    "attempt": 1,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "One isolated scenery layer for a handcrafted paper-cut Chinese small-town game at night. Use matte layered dyed rice paper, subtle fibers, deliberately plain silhouettes, muted indigo (#141A33), plum (#2A1E3D), restrained apricot (#D9A066) and dusty rose (#C97B84). Side-on frontal eye-level 2D art. Draw the complete object, including portions another layer might cover. Truly transparent background, no external shadow, no text, no border, no people, no lamp or glow. distant low tile roofs and hills.",
+    "output": "source/stall_far_roofs.png",
+    "output_id": "exec-83a9ea16-b75f-4cae-9e56-5c555893037f.png"
+  },
+  {
+    "id": "stall_mid_structure",
+    "stage": "stall",
+    "layer": "mid_structure",
+    "attempt": 1,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "One isolated scenery layer for a handcrafted paper-cut Chinese small-town game at night. Use matte layered dyed rice paper, subtle fibers, deliberately plain silhouettes, muted indigo (#141A33), plum (#2A1E3D), restrained apricot (#D9A066) and dusty rose (#C97B84). Side-on frontal eye-level 2D art. Draw the complete object, including portions another layer might cover. Truly transparent background, no external shadow, no text, no border, no people, no lamp or glow. low, quiet row of 1990s masonry night-market facades.",
+    "output": "source/stall_mid_structure.png",
+    "output_id": "exec-33c23054-41f6-47c1-b5ba-86df11409ef4.png"
+  },
+  {
+    "id": "stall_mid_left",
+    "stage": "stall",
+    "layer": "mid_left",
+    "attempt": 1,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "One isolated scenery layer for a handcrafted paper-cut Chinese small-town game at night. Use matte layered dyed rice paper, subtle fibers, deliberately plain silhouettes, muted indigo (#141A33), plum (#2A1E3D), restrained apricot (#D9A066) and dusty rose (#C97B84). Side-on frontal eye-level 2D art. Draw the complete object, including portions another layer might cover. Truly transparent background, no external shadow, no text, no border, no people, no lamp or glow. left-facing small hawthorn pushcart with red candied hawthorn skewers, honeycomb coal stove and enamel cup.",
+    "output": "source/stall_mid_left.png",
+    "output_id": "exec-465fc00c-9851-41e2-9c80-8159e6b0df31.png"
+  },
+  {
+    "id": "stall_mid_right",
+    "stage": "stall",
+    "layer": "mid_right",
+    "attempt": 1,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "One isolated scenery layer for a handcrafted paper-cut Chinese small-town game at night. Use matte layered dyed rice paper, subtle fibers, deliberately plain silhouettes, muted indigo (#141A33), plum (#2A1E3D), restrained apricot (#D9A066) and dusty rose (#C97B84). Side-on frontal eye-level 2D art. Draw the complete object, including portions another layer might cover. Truly transparent background, no external shadow, no text, no border, no people, no lamp or glow. right side blank tall plaster shop wall and muted paper foliage.",
+    "output": "source/stall_mid_right.png",
+    "output_id": "exec-eb2742c5-8225-4268-b350-08a6dc740e32.png"
+  },
+  {
+    "id": "stall_near_left",
+    "stage": "stall",
+    "layer": "near_left",
+    "attempt": 1,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "One isolated scenery layer for a handcrafted paper-cut Chinese small-town game at night. Use matte layered dyed rice paper, subtle fibers, deliberately plain silhouettes, muted indigo (#141A33), plum (#2A1E3D), restrained apricot (#D9A066) and dusty rose (#C97B84). Side-on frontal eye-level 2D art. Draw the complete object, including portions another layer might cover. Truly transparent background, no external shadow, no text, no border, no people, no lamp or glow. left low wooden crate under the hawthorn stall, no open canopy.",
+    "output": "source/stall_near_left.png",
+    "output_id": "exec-1fb83804-57d1-4953-8926-1bc237b759cf.png"
+  },
+  {
+    "id": "stall_near_right",
+    "stage": "stall",
+    "layer": "near_right",
+    "attempt": 1,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "One isolated scenery layer for a handcrafted paper-cut Chinese small-town game at night. Use matte layered dyed rice paper, subtle fibers, deliberately plain silhouettes, muted indigo (#141A33), plum (#2A1E3D), restrained apricot (#D9A066) and dusty rose (#C97B84). Side-on frontal eye-level 2D art. Draw the complete object, including portions another layer might cover. Truly transparent background, no external shadow, no text, no border, no people, no lamp or glow. right low stack of wooden crates and sparse foliage.",
+    "output": "source/stall_near_right.png",
+    "output_id": "exec-3fd5187c-edc2-4fe5-9156-42d54d36375b.png"
+  }
+]

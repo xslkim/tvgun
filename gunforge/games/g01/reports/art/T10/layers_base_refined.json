@@ -1,0 +1,50 @@
+[
+  {
+    "id": "stall_base",
+    "stage": "stall",
+    "layer": "base",
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "attempt": 2,
+    "reference": "compositions/stall_02.png",
+    "prompt": "Make the farthest solid paper layer of this selected composition, preserving its muted indigo and violet color direction and front-view horizon. Remove all recognizable objects, foreground silhouettes, roofs, trees, signs, lights, buildings and poles. Fill the wide frame edge-to-edge with only three quiet low-frequency planes: a cool slate-indigo sky above, a subtly lighter muted plum paper horizon, and slightly deeper desaturated violet paving below. Delicate paper fibers, ample legible negative space, no visible pure white or saturation spikes, no marks or lettering, no transparency. This is the underpainting behind independently authored objects.",
+    "output": "source/stall_base_v2.png",
+    "output_id": "exec-0622bfb3-d68b-4eff-8067-1ba429375865.png"
+  },
+  {
+    "id": "video_shop_base",
+    "stage": "video_shop",
+    "layer": "base",
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "attempt": 2,
+    "reference": "compositions/video_shop_02.png",
+    "prompt": "Make the farthest solid paper layer of this selected composition, preserving its muted indigo and violet color direction and front-view horizon. Remove all recognizable objects, foreground silhouettes, roofs, trees, signs, lights, buildings and poles. Fill the wide frame edge-to-edge with only three quiet low-frequency planes: a cool slate-indigo sky above, a subtly lighter muted plum paper horizon, and slightly deeper desaturated violet paving below. Delicate paper fibers, ample legible negative space, no visible pure white or saturation spikes, no marks or lettering, no transparency. This is the underpainting behind independently authored objects.",
+    "output": "source/video_shop_base_v2.png",
+    "output_id": "exec-8f583b48-8d2a-42c2-8838-2503c0d8d4bb.png"
+  },
+  {
+    "id": "footbridge_base",
+    "stage": "footbridge",
+    "layer": "base",
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "attempt": 2,
+    "reference": "compositions/footbridge_02.png",
+    "prompt": "Make the farthest solid paper layer of this selected composition, preserving its muted indigo and violet color direction and front-view horizon. Remove all recognizable objects, foreground silhouettes, roofs, trees, signs, lights, buildings and poles. Fill the wide frame edge-to-edge with only three quiet low-frequency planes: a cool slate-indigo sky above, a subtly lighter muted plum paper horizon, and slightly deeper desaturated violet paving below. Delicate paper fibers, ample legible negative space, no visible pure white or saturation spikes, no marks or lettering, no transparency. This is the underpainting behind independently authored objects.",
+    "output": "source/footbridge_base_v2.png",
+    "output_id": "exec-ffdb47e8-018f-408e-b564-899b4e236996.png"
+  },
+  {
+    "id": "square_base",
+    "stage": "square",
+    "layer": "base",
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "attempt": 2,
+    "reference": "compositions/square_02.png",
+    "prompt": "Make the farthest solid paper layer of this selected composition, preserving its muted indigo and violet color direction and front-view horizon. Remove all recognizable objects, foreground silhouettes, roofs, trees, signs, lights, buildings and poles. Fill the wide frame edge-to-edge with only three quiet low-frequency planes: a cool slate-indigo sky above, a subtly lighter muted plum paper horizon, and slightly deeper desaturated violet paving below. Delicate paper fibers, ample legible negative space, no visible pure white or saturation spikes, no marks or lettering, no transparency. This is the underpainting behind independently authored objects.",
+    "output": "source/square_base_v2.png",
+    "output_id": "exec-f34b1fda-5e8b-48aa-ab23-12f5e6330010.png"
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "game_title_1",
+    "name": "纸灯城 · A",
+    "expected_text": "纸灯城",
+    "prompt": "Logo-brand. Render exactly the Simplified Chinese text 纸灯城 as standalone horizontally arranged handcrafted cutout lettering for the 1990s papercraft game 纸灯城. Rounded, broad shapes; robust readable Chinese strokes. Paper letters use subdued medium caramel (#B48053) with a dark desaturated indigo offset paper shadow. The matte material has faint texture, no rim light, shine, pale orange, gold, light cream or bright highlights. Center on a flat dark-medium neutral gray paper background. Letterforms only, no quotations, no logo marks, no illustrations or other words.",
+    "batch": 7,
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-game_title_1-02",
+    "output": "generation/game_title_1_v2.png",
+    "output_id": "exec-673fd981-b828-4965-8d83-15df896f3491.png"
+  },
+  {
+    "id": "night_market_1",
+    "name": "夜市 · A",
+    "expected_text": "夜市",
+    "prompt": "Logo-brand. Render exactly the Simplified Chinese text 夜市 as standalone horizontally arranged handcrafted cutout lettering for the 1990s papercraft game 纸灯城. Rounded, broad shapes; robust readable Chinese strokes. Paper letters use subdued medium caramel (#B48053) with a dark desaturated indigo offset paper shadow. The matte material has faint texture, no rim light, shine, pale orange, gold, light cream or bright highlights. Center on a flat dark-medium neutral gray paper background. Letterforms only, no quotations, no logo marks, no illustrations or other words.",
+    "batch": 7,
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-night_market_1-02",
+    "output": "generation/night_market_1_v2.png",
+    "output_id": "exec-8a85c147-d489-4594-9be4-4c35b72be726.png"
+  },
+  {
+    "id": "old_cinema_1",
+    "name": "旧影院 · A",
+    "expected_text": "旧影院",
+    "prompt": "Logo-brand. Render exactly the Simplified Chinese text 旧影院 as standalone horizontally arranged handcrafted cutout lettering for the 1990s papercraft game 纸灯城. Rounded, broad shapes; robust readable Chinese strokes. Paper letters use subdued medium caramel (#B48053) with a dark desaturated indigo offset paper shadow. The matte material has faint texture, no rim light, shine, pale orange, gold, light cream or bright highlights. Center on a flat dark-medium neutral gray paper background. Letterforms only, no quotations, no logo marks, no illustrations or other words.",
+    "batch": 7,
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-old_cinema_1-02",
+    "output": "generation/old_cinema_1_v2.png",
+    "output_id": "exec-39c6a2c1-469f-4981-a3a9-e3f2da54fe37.png"
+  },
+  {
+    "id": "railway_station_1",
+    "name": "火车站 · A",
+    "expected_text": "火车站",
+    "prompt": "Logo-brand. Render exactly the Simplified Chinese text 火车站 as standalone horizontally arranged handcrafted cutout lettering for the 1990s papercraft game 纸灯城. Rounded, broad shapes; robust readable Chinese strokes. Paper letters use subdued medium caramel (#B48053) with a dark desaturated indigo offset paper shadow. The matte material has faint texture, no rim light, shine, pale orange, gold, light cream or bright highlights. Center on a flat dark-medium neutral gray paper background. Letterforms only, no quotations, no logo marks, no illustrations or other words.",
+    "batch": 7,
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-railway_station_1-02",
+    "output": "generation/railway_station_1_v2.png",
+    "output_id": "exec-bdee5a15-feb2-46cf-b0ee-47c59e6edc6f.png"
+  },
+  {
+    "id": "passerby_c",
+    "name": "路人 C",
+    "prompt": "Stylized-concept game art for 纸灯城. 1990s Chinese small-town friendly young adult woman NPC. Full-body neutral three-quarter standing pose with arms gently apart, square athletic stance, complete figure with both shoes visible, tied black hair, muted medium moss windbreaker (#567C68), dark plum straight trousers and tan canvas satchel. Brown shoes, dark collars, medium tan skin. All materials are matte midtone hand-cut dyed rice paper with visible fibers and flat broad color planes, no pale materials or specular highlights. Isolated on neutral mid gray background. No scenery, text, weapons, or logos.",
+    "batch": 7,
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-passerby_c-02",
+    "output": "generation/passerby_c_v2.png",
+    "output_id": "exec-101c40ae-defa-49cf-9fb5-f0e1466ec863.png"
+  }
+]

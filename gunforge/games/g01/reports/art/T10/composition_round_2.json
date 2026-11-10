@@ -1,0 +1,42 @@
+[
+  {
+    "id": "stall",
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/stall_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Reduce overall brown: shift street and middle walls to layered muted plum/indigo, preserving accents in warm apricot and dusty rose. Preserve the placement of all scenery; make background silhouettes behind play lanes visibly lighter than ink-black, but never bright white. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/stall_02.png",
+    "output_id": "exec-e1159b7e-987f-436c-ac10-7a23b9e6fdde.png"
+  },
+  {
+    "id": "video_shop",
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/video_shop_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Reduce overall brown: shift street and middle walls to layered muted plum/indigo, preserving accents in warm apricot and dusty rose. Preserve the placement of all scenery; make background silhouettes behind play lanes visibly lighter than ink-black, but never bright white. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/video_shop_02.png",
+    "output_id": "exec-4ffb3642-bbf5-4027-9de3-df6b71087925.png"
+  },
+  {
+    "id": "footbridge",
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/footbridge_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Reduce overall brown: shift street and middle walls to layered muted plum/indigo, preserving accents in warm apricot and dusty rose. Preserve the placement of all scenery; make background silhouettes behind play lanes visibly lighter than ink-black, but never bright white. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/footbridge_02.png",
+    "output_id": "exec-e757f63d-6f5b-4a4d-b4a4-0be7d88735ff.png"
+  },
+  {
+    "id": "square",
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/square_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Reduce overall brown: shift street and middle walls to layered muted plum/indigo, preserving accents in warm apricot and dusty rose. Preserve the placement of all scenery; make background silhouettes behind play lanes visibly lighter than ink-black, but never bright white. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/square_02.png",
+    "output_id": "exec-dd5ef9a9-2049-4436-873f-394cc076eb9d.png"
+  }
+]

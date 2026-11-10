@@ -1,0 +1,42 @@
+[
+  {
+    "id": "stall",
+    "attempt": 4,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/stall_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Refine composition with the darkest indigo at rear, soft warm apricot paper edge accents on outer scenery and muted violet-brown tones in the street and foreground. Create a 1990s small-town Chinese paper shadowbox atmosphere without adding lights or objects. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/stall_04.png",
+    "output_id": "exec-ad216712-5728-42fe-8ce0-d34a60389417.png"
+  },
+  {
+    "id": "video_shop",
+    "attempt": 4,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/video_shop_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Refine composition with the darkest indigo at rear, soft warm apricot paper edge accents on outer scenery and muted violet-brown tones in the street and foreground. Create a 1990s small-town Chinese paper shadowbox atmosphere without adding lights or objects. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/video_shop_04.png",
+    "output_id": "exec-7206ec10-213e-440a-b12c-0b303f81b6f7.png"
+  },
+  {
+    "id": "footbridge",
+    "attempt": 4,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/footbridge_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Refine composition with the darkest indigo at rear, soft warm apricot paper edge accents on outer scenery and muted violet-brown tones in the street and foreground. Create a 1990s small-town Chinese paper shadowbox atmosphere without adding lights or objects. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/footbridge_04.png",
+    "output_id": "exec-f9c30f78-90a7-4f4d-b7d7-45b005eab2d6.png"
+  },
+  {
+    "id": "square",
+    "attempt": 4,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/square_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Refine composition with the darkest indigo at rear, soft warm apricot paper edge accents on outer scenery and muted violet-brown tones in the street and foreground. Create a 1990s small-town Chinese paper shadowbox atmosphere without adding lights or objects. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/square_04.png",
+    "output_id": "exec-cece2323-d5af-4fee-b303-7143d4f44795.png"
+  }
+]

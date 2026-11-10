@@ -1,0 +1,185 @@
+{
+  "C03_frames": {
+    "rest": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "upper_left": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "upper_right": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "lower_right": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "lower_left": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "lit": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    }
+  },
+  "C03_layers": {
+    "base": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "far_roofs": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "mid_structure": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "mid_left": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "mid_right": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "near_left": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "near_right": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "lamp_support": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    }
+  },
+  "C04_samples": {
+    "rest": {
+      "status": "pass",
+      "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+      "details": {
+        "coverage": 0.9825730994152047
+      }
+    },
+    "lit": {
+      "status": "pass",
+      "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+      "details": {
+        "coverage": 0.9859649122807017
+      }
+    }
+  },
+  "C08_blocks": {
+    "near_left": {
+      "status": "pass",
+      "reason": "Shot-blocking mask matches visible layer",
+      "details": {
+        "different_pixels": 0
+      }
+    },
+    "near_right": {
+      "status": "pass",
+      "reason": "Shot-blocking mask matches visible layer",
+      "details": {
+        "different_pixels": 0
+      }
+    }
+  },
+  "target_zone_motion_screen": {
+    "rest": [
+      {
+        "background_yprime_p10": 0.46129803921568624,
+        "covered_fraction": 0.0
+      }
+    ],
+    "upper_left": [
+      {
+        "background_yprime_p10": 0.4606313725490196,
+        "covered_fraction": 0.0
+      }
+    ],
+    "upper_right": [
+      {
+        "background_yprime_p10": 0.46129803921568624,
+        "covered_fraction": 0.0
+      }
+    ],
+    "lower_right": [
+      {
+        "background_yprime_p10": 0.4624705882352941,
+        "covered_fraction": 0.0
+      }
+    ],
+    "lower_left": [
+      {
+        "background_yprime_p10": 0.4624705882352941,
+        "covered_fraction": 0.0
+      }
+    ],
+    "lit": [
+      {
+        "background_yprime_p10": 0.46178823529411767,
+        "covered_fraction": 0.0
+      }
+    ]
+  },
+  "opaque_viewport_at_extremes": {
+    "rest": true,
+    "upper_left": true,
+    "upper_right": true,
+    "lower_right": true,
+    "lower_left": true,
+    "lit": true
+  },
+  "texture_bytes_rgba8_mips_estimate": 17338544,
+  "runtime": "pending",
+  "light": "procedural preview"
+}

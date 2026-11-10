@@ -1,0 +1,67 @@
+[
+  {
+    "id": "umbrella_closed",
+    "name": "墨伞 · 收拢",
+    "reference": "generation/umbrella_open.png",
+    "prompt": "Edit only the umbrella state in this existing paper-cut monster image. Fold the broad canopy into ONE thin closed umbrella bundle tied tightly at the right side of the figure. Absolutely no open canopy remains and no detached alternate drawing. Keep exactly the same blue-black three-tendril ink body, paper texture, camera and neutral gray background. Reveal the whole dense ink torso above its existing tendrils, with one small flat matte cinnabar seal without readable letters on the front. Show the complete monster and the one folded umbrella.",
+    "batch": 5,
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-umbrella_closed-02",
+    "output": "generation/umbrella_closed_v2.png",
+    "output_id": "exec-3551b149-2b76-4647-b2d3-bea461ebbdda.png"
+  },
+  {
+    "id": "dragon_locked",
+    "name": "墨舞龙 · 尚未开放",
+    "reference": "generation/dragon_active.png",
+    "prompt": "Local visual edit: replace ONLY the bright honey halo around the central black cloud-shaped ink patch with the same amber paper as the neighboring scales, then make the cloud patch a flat dull gray-slate low-contrast ink stain with no glow. Preserve the exact visible outer silhouette, dark paper fins, two hinges, segment scale, paper layer geometry and gray backdrop. No other changes.",
+    "batch": 5,
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-dragon_locked-02",
+    "output": "generation/dragon_locked_v2.png",
+    "output_id": "exec-0c1ba1f3-327d-41c3-8064-7de127b42f77.png"
+  },
+  {
+    "id": "dragon_purified",
+    "name": "墨舞龙 · 已净化",
+    "reference": "generation/dragon_active.png",
+    "prompt": "Local visual edit: remove ONLY the central black ink stain and its intense bright orange halo, revealing subdued warm amber paper scales continuous with its surroundings. Preserve the exact visible outer silhouette, dark paper fins, two hinges, segment scale, paper layer geometry and gray backdrop. A subtle warm paper tint is fine; no intense glow or new decoration. No other changes.",
+    "batch": 5,
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-dragon_purified-02",
+    "output": "generation/dragon_purified_v2.png",
+    "output_id": "exec-ea09a43b-6af1-4e5f-b794-09357dad54d6.png"
+  },
+  {
+    "id": "ink_sign",
+    "name": "墨招牌",
+    "reference": null,
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, flat crisp paper planes, visible fibers, 1990s Chinese small town, matte neutral mid-gray background, no scenery or visible letters. Use muted amber and dark indigo, keep highlight colors well below white. A possessed rectangular enamel shop sign, not a person. The top is a single rounded amorphous matte blue-black ink blob, with non-anatomical drip trails down the panel, no eyes, head, hair, face or hands. Two steel brackets and a blank faded amber panel make the shop sign silhouette instantly legible. One small square matte vermilion ink stamp lies flat at center.",
+    "batch": 5,
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-ink_sign-02",
+    "output": "generation/ink_sign_v2.png",
+    "output_id": "exec-573000a0-7300-4ed4-b59e-ac65b24aaf1d.png"
+  },
+  {
+    "id": "film_reel",
+    "name": "银幕影 · 胶片盘",
+    "reference": null,
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, flat crisp paper planes, visible fibers, 1990s Chinese small town, matte neutral mid-gray background, no scenery or visible letters. Use muted amber and dark indigo, keep highlight colors well below white. A single 1990s mechanical 35mm film reel, three-quarter view, matte gray metal spokes with large open holes showing the neutral backdrop. No film frames, architecture, letters, crosshairs or rings. One irregular dark ink patch adheres over one spoke at lower front with a small solid square flat cinnabar stamp.",
+    "batch": 5,
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-film_reel-02",
+    "output": "generation/film_reel_v2.png",
+    "output_id": "exec-f9d1d46f-c0fb-4b4f-81ef-a7055624ebbd.png"
+  }
+]

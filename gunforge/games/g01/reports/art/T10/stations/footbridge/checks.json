@@ -1,0 +1,209 @@
+{
+  "C03_frames": {
+    "rest": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "upper_left": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "upper_right": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "lower_right": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "lower_left": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "lit": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    }
+  },
+  "C03_layers": {
+    "base": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "far_roofs": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "mid_structure": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "mid_left": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "mid_right": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "near_left": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "near_right": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "lamp_support": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    }
+  },
+  "C04_samples": {
+    "rest": {
+      "status": "pass",
+      "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+      "details": {
+        "coverage": 0.9594298245614035
+      }
+    },
+    "lit": {
+      "status": "pass",
+      "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+      "details": {
+        "coverage": 0.9651754385964912
+      }
+    }
+  },
+  "C08_blocks": {
+    "near_left": {
+      "status": "pass",
+      "reason": "Shot-blocking mask matches visible layer",
+      "details": {
+        "different_pixels": 0
+      }
+    },
+    "near_right": {
+      "status": "pass",
+      "reason": "Shot-blocking mask matches visible layer",
+      "details": {
+        "different_pixels": 0
+      }
+    }
+  },
+  "target_zone_motion_screen": {
+    "rest": [
+      {
+        "background_yprime_p10": 0.4587176470588235,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.46963137254901954,
+        "covered_fraction": 0.0
+      }
+    ],
+    "upper_left": [
+      {
+        "background_yprime_p10": 0.4578235294117647,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.47080392156862744,
+        "covered_fraction": 0.0
+      }
+    ],
+    "upper_right": [
+      {
+        "background_yprime_p10": 0.4564156862745098,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.47080392156862744,
+        "covered_fraction": 0.0
+      }
+    ],
+    "lower_right": [
+      {
+        "background_yprime_p10": 0.4587176470588235,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.46963137254901954,
+        "covered_fraction": 0.0
+      }
+    ],
+    "lower_left": [
+      {
+        "background_yprime_p10": 0.4587176470588235,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.46963137254901954,
+        "covered_fraction": 0.0
+      }
+    ],
+    "lit": [
+      {
+        "background_yprime_p10": 0.4587176470588235,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.46963137254901954,
+        "covered_fraction": 0.0
+      }
+    ]
+  },
+  "opaque_viewport_at_extremes": {
+    "rest": true,
+    "upper_left": true,
+    "upper_right": true,
+    "lower_right": true,
+    "lower_left": true,
+    "lit": true
+  },
+  "texture_bytes_rgba8_mips_estimate": 14559851,
+  "runtime": "pending",
+  "light": "procedural preview"
+}

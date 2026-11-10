@@ -1,0 +1,122 @@
+[
+  {
+    "id": "cyclist",
+    "name": "骑车的人",
+    "prompt": "Stylized-concept game art for 纸灯城, a handcrafted Chinese shadow-box world set in a 1990s Chinese small town. Single character concept on plain neutral gray paper: the bicycle rider, lanky friendly adult with cropped dark hair, faded teal worker jacket over a warm cream shirt, brown trousers and black cloth shoes, standing beside a simple dark steel roadster bicycle with rear rack. Full body three-quarter view, both shoes visible, clear limbs and natural noncombative pose. Handmade flat layered dyed rice-paper cutouts, paper fibers, crisp knife-cut contours, offset shadows, restrained warm amber, muted teal, indigo, desaturated brick red. Resident is a sympathetic NPC; no ink growth, weapons, scenery, labels, lettering, logos or marks.",
+    "batch": 1,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-cyclist-01",
+    "output": "generation/cyclist.png",
+    "output_id": "exec-34b0cc50-aafb-4a7f-b5ea-53705a912f34.png"
+  },
+  {
+    "id": "projectionist",
+    "name": "放映员",
+    "prompt": "Use case: stylized-concept game art for 纸灯城. Hand-cut dyed rice paper, flat broad color planes, visible paper fibers, clean silhouettes, little specular shine, indigo and warm amber, 1990s Chinese small town. Isolated neutral gray matte paper background, centered complete subject, no scenery, no text, no signature. Friendly adult NPC, neutral three-quarter full body, both feet and all joints readable, arms gently apart, contemporary 1990s clothing, no weapons or combat. Middle-aged broad-shouldered woman, burgundy knit vest, rolled-up ivory cotton shirt, straight indigo trousers, short bob, circular film can tucked lightly under one arm; period projection booth worker.",
+    "batch": 1,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-projectionist-01",
+    "output": "generation/projectionist.png",
+    "output_id": "exec-0df58f8f-316c-4a5c-8261-29709fd7af23.png"
+  },
+  {
+    "id": "ticket_clerk",
+    "name": "检票员",
+    "prompt": "Use case: stylized-concept game art for 纸灯城. Hand-cut dyed rice paper, flat broad color planes, visible paper fibers, clean silhouettes, little specular shine, indigo and warm amber, 1990s Chinese small town. Isolated neutral gray matte paper background, centered complete subject, no scenery, no text, no signature. Friendly adult NPC, neutral three-quarter full body, both feet and all joints readable, arms gently apart, contemporary 1990s clothing, no weapons or combat. Short stocky older woman with soft round face and low bun, muted indigo practical jacket, taupe skirt over warm leggings, tiny period ticket punch held low with fingers open. Clearly different from a military or police uniform.",
+    "batch": 1,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-ticket_clerk-01",
+    "output": "generation/ticket_clerk.png",
+    "output_id": "exec-b1170996-026d-4706-9360-d5fcaa2f4cc6.png"
+  },
+  {
+    "id": "passerby_a",
+    "name": "路人 A",
+    "prompt": "Use case: stylized-concept game art for 纸灯城. Hand-cut dyed rice paper, flat broad color planes, visible paper fibers, clean silhouettes, little specular shine, indigo and warm amber, 1990s Chinese small town. Isolated neutral gray matte paper background, centered complete subject, no scenery, no text, no signature. Friendly adult NPC, neutral three-quarter full body, both feet and all joints readable, arms gently apart, contemporary 1990s clothing, no weapons or combat. Stout middle-aged market shopper with a cropped perm, muted brick-red cardigan, ochre skirt, simple small woven shopping basket carried low. Warm and grounded.",
+    "batch": 1,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-passerby_a-01",
+    "output": "generation/passerby_a.png",
+    "output_id": "exec-d8fa5d3e-20ad-4746-832e-c215c8eb9e59.png"
+  },
+  {
+    "id": "passerby_b",
+    "name": "路人 B",
+    "prompt": "Use case: stylized-concept game art for 纸灯城. Hand-cut dyed rice paper, flat broad color planes, visible paper fibers, clean silhouettes, little specular shine, indigo and warm amber, 1990s Chinese small town. Isolated neutral gray matte paper background, centered complete subject, no scenery, no text, no signature. Friendly adult NPC, neutral three-quarter full body, both feet and all joints readable, arms gently apart, contemporary 1990s clothing, no weapons or combat. Thin elderly man with greying hair, ochre cotton sweater over an ivory collared shirt, indigo trousers, quiet posture, hands visible. No hats.",
+    "batch": 1,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-passerby_b-01",
+    "output": "generation/passerby_b.png",
+    "output_id": "exec-9ccbbd88-6256-4767-bbcb-9a3ab35be411.png"
+  },
+  {
+    "id": "passerby_c",
+    "name": "路人 C",
+    "prompt": "Use case: stylized-concept game art for 纸灯城. Hand-cut dyed rice paper, flat broad color planes, visible paper fibers, clean silhouettes, little specular shine, indigo and warm amber, 1990s Chinese small town. Isolated neutral gray matte paper background, centered complete subject, no scenery, no text, no signature. Friendly adult NPC, neutral three-quarter full body, both feet and all joints readable, arms gently apart, contemporary 1990s clothing, no weapons or combat. Young adult woman with athletic square stance, pale moss windbreaker, dark violet straight trousers, cream canvas satchel resting at hip, tied hair. Different silhouette from elderly and middle-aged residents.",
+    "batch": 1,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-passerby_c-01",
+    "output": "generation/passerby_c.png",
+    "output_id": "exec-2f3bfbae-809a-4ddb-bb47-109589fd54b9.png"
+  },
+  {
+    "id": "ink_drop",
+    "name": "滴墨",
+    "prompt": "Use case: stylized-concept game art for 纸灯城. Hand-cut dyed rice paper, flat broad color planes, visible paper fibers, clean silhouettes, little specular shine, indigo and warm amber, 1990s Chinese small town. Isolated neutral gray matte paper background, centered complete subject, no scenery, no text, no signature. Wet matte blue-black ink on paper, one small flat cinnabar stamp weak point on the ink body, pale dry-brush edge only, no glowing red eyes, no purple neon, no white flashes. A low squat amorphous puddle of ink rising into a single thick suspended droplet, tapered wet trails and a wide scalloped base. It is a nonhuman shape with no eyes or limbs.",
+    "batch": 1,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-ink_drop-01",
+    "output": "generation/ink_drop.png",
+    "output_id": "exec-b835c917-e379-4f51-889b-128b018f0447.png"
+  },
+  {
+    "id": "ink_cart",
+    "name": "墨车夫",
+    "prompt": "Use case: stylized-concept game art for 纸灯城. Hand-cut dyed rice paper, flat broad color planes, visible paper fibers, clean silhouettes, little specular shine, indigo and warm amber, 1990s Chinese small town. Isolated neutral gray matte paper background, centered complete subject, no scenery, no text, no signature. Wet matte blue-black ink on paper, one small flat cinnabar stamp weak point on the ink body, pale dry-brush edge only, no glowing red eyes, no purple neon, no white flashes. A nonhuman mass of ink wrapped around a small 1990s handcart, round wheels clearly visible, ink tentacle towing it like a bent handle, silhouette low and forward-leaning. No paper resident or humanoid driver. Stamp sits on the ink mound rather than wheels.",
+    "batch": 1,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-ink_cart-01",
+    "output": "generation/ink_cart.png",
+    "output_id": "exec-d4452a22-1af9-4276-9267-05999eb0cba6.png"
+  },
+  {
+    "id": "ink_sign",
+    "name": "墨招牌",
+    "prompt": "Use case: stylized-concept game art for 纸灯城. Hand-cut dyed rice paper, flat broad color planes, visible paper fibers, clean silhouettes, little specular shine, indigo and warm amber, 1990s Chinese small town. Isolated neutral gray matte paper background, centered complete subject, no scenery, no text, no signature. Wet matte blue-black ink on paper, one small flat cinnabar stamp weak point on the ink body, pale dry-brush edge only, no glowing red eyes, no purple neon, no white flashes. Ink fused to an old rectangular enamel shop-sign frame, looming portrait silhouette with two bent support brackets and long drips, abstract worn empty panel, no letters or pseudo-text. Single ink mass with stamp at front.",
+    "batch": 1,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-ink_sign-01",
+    "output": "generation/ink_sign.png",
+    "output_id": "exec-fc3efe9b-bf8f-49d6-a783-39ae9902cf58.png"
+  },
+  {
+    "id": "ink_tape",
+    "name": "磁带墨",
+    "prompt": "Use case: stylized-concept game art for 纸灯城. Hand-cut dyed rice paper, flat broad color planes, visible paper fibers, clean silhouettes, little specular shine, indigo and warm amber, 1990s Chinese small town. Isolated neutral gray matte paper background, centered complete subject, no scenery, no text, no signature. Wet matte blue-black ink on paper, one small flat cinnabar stamp weak point on the ink body, pale dry-brush edge only, no glowing red eyes, no purple neon, no white flashes. A possessed 1990s cassette tape made of dark ink and paper, two recognizable spool holes and looping magnetic ribbon tentacles. Small flat vermilion stamp on the dense ink near one spool, blank label area.",
+    "batch": 1,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-ink_tape-01",
+    "output": "generation/ink_tape.png",
+    "output_id": "exec-5d861a1f-a890-4ff5-8713-a1c620d16edd.png"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ink_fx_04",
+    "category": "fx",
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "attempt": 2,
+    "prompt": "A single isolated 2D ink splatter game sprite with true transparent background. Draw an irregular radial ring splash, circular open center completely transparent, uneven broken ink rim, capillary fingers pointing out from rim, a few separate small drop shapes. Matte blue-black and dark indigo only, handmade dyed rice-paper fibers inside silhouette, subtle feathery edges, dense core, visible even at 64 pixels. No bright edge or rim lighting, no flowers, leaves, scenery, props, ornaments, cast shadow, writing, or background. Game VFX asset, wide empty margins around the ink.",
+    "output": "source/ink_fx_04_v2.png",
+    "output_id": "exec-aa35037d-17fd-4436-9b4e-dcf3606d5e6d.png"
+  },
+  {
+    "id": "ink_fx_06",
+    "category": "fx",
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "attempt": 2,
+    "prompt": "A single isolated 2D ink splatter game sprite with true transparent background. Draw a low horizontal heavy blue-black puddle splash with six short uneven ridges, two separated side droplets, an irregular broad pool, centered with safe margins. Matte blue-black and dark indigo only, handmade dyed rice-paper fibers inside silhouette, subtle feathery edges, dense core, visible even at 64 pixels. No bright edge or rim lighting, no flowers, leaves, scenery, props, ornaments, cast shadow, writing, or background. Game VFX asset, wide empty margins around the ink.",
+    "output": "source/ink_fx_06_v2.png",
+    "output_id": "exec-87492b97-4183-41a3-bb7b-911f53b6c74c.png"
+  },
+  {
+    "id": "ink_fx_05",
+    "category": "fx",
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "attempt": 2,
+    "prompt": "Generate a single isolated transparent-background 2D game VFX sprite for a handmade paper-shadowbox video game. Subject: a tall vertically dripping ink fall, compact irregular dark ink upper mass with two long tapered downward drips, several small separated asymmetric beads. Silhouette centered with ample transparent padding. Deep blue-black to muted charcoal navy only (#0B0B0E and #141A33), low-contrast rice-paper fibers inside ink, matte, subtle feathered capillary edge. No bright outline or shine, no other colors, no scenery, houses, flora, landscape, objects, characters, lettering or background. The sprite must read as one falling ink splash at 64 pixels.",
+    "output": "source/ink_fx_05_v2.png",
+    "output_id": "exec-1ca08608-19e6-4ced-b503-ca8cb8529802.png"
+  },
+  {
+    "id": "stall_near_left",
+    "category": "near",
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "attempt": 2,
+    "prompt": "ONLY one low rectangular old wooden crate, in very dark muted indigo, simple flat paper cutout. No buildings, scenery, trees, rooms, landscape, roof, text, or collage. Truly transparent background, absolutely nothing outside the silhouette. A single centered object with generous empty margins. Handmade matte dyed paper fibers, 1990s China game asset.",
+    "output": "source/stall_near_left_v2.png",
+    "output_id": "exec-68a4f19c-5e78-43d8-aa94-3d05f2ef1f42.png"
+  },
+  {
+    "id": "stall_near_right",
+    "category": "near",
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "attempt": 2,
+    "prompt": "ONLY a pair of stacked low dark-indigo wooden boxes, flat paper cutout, absolutely no buildings, scenery, trees, rooms, landscape, roof, text, or collage. Truly transparent background, absolutely nothing outside the silhouette. A single centered object with generous empty margins. Handmade matte dyed paper fibers, 1990s China game asset.",
+    "output": "source/stall_near_right_v2.png",
+    "output_id": "exec-8246046a-c568-40e3-af5b-3f36be35cdb5.png"
+  },
+  {
+    "id": "stall_mid_right",
+    "category": "middle",
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "attempt": 2,
+    "prompt": "ONLY a single rectangular vertical 1990s plaster wall segment, muted warm dusty pink with two flat paper-tone planes, minimal detail, no trees, windows, pagodas, other buildings, signs, bridges, water, or scenes. Truly transparent background, absolutely nothing outside the silhouette. A single centered object with generous empty margins. Handmade matte dyed paper fibers, 1990s China game asset.",
+    "output": "source/stall_mid_right_v2.png",
+    "output_id": "exec-cc66920c-f8bc-48eb-aaaf-663e71a6fba3.png"
+  },
+  {
+    "id": "bicycle",
+    "category": "prop",
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "attempt": 1,
+    "prompt": "One isolated 1990s Chinese black steel utility bicycle in full profile, plain two wheels and rear rack, flat cut paper illustration in navy and warm slate, no person. Truly transparent background, absolutely nothing outside the silhouette. A single centered object with generous empty margins. Handmade matte dyed paper fibers, 1990s China game asset.",
+    "output": "source/bicycle.png",
+    "output_id": "exec-6770f203-cdf5-46f3-b591-d0e52c781ea4.png"
+  },
+  {
+    "id": "shopping_basket",
+    "category": "prop",
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "attempt": 1,
+    "prompt": "One isolated small low warm-apricot woven shopping basket with one rounded handle, simplified layered cut paper shapes, no person. Truly transparent background, absolutely nothing outside the silhouette. A single centered object with generous empty margins. Handmade matte dyed paper fibers, 1990s China game asset.",
+    "output": "source/shopping_basket.png",
+    "output_id": "exec-dfaebb53-f9ed-46b3-9e69-3f61f466ee1d.png"
+  }
+]

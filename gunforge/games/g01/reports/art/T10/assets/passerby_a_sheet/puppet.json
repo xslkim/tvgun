@@ -1,0 +1,212 @@
+{
+  "id": "passerby_a",
+  "rig": "humanoid_10",
+  "role": "hostage_or_npc",
+  "human_body_attackable": false,
+  "human_attacks_player": false,
+  "parts": [
+    {
+      "id": "torso",
+      "parent": null,
+      "file": "torso.png",
+      "rest_deg": 0,
+      "pivot": [
+        149.49618320610688,
+        18.76030534351145
+      ],
+      "attach": null,
+      "z": 5,
+      "angle_range": [
+        -30,
+        30
+      ]
+    },
+    {
+      "id": "head",
+      "parent": "torso",
+      "file": "head.png",
+      "rest_deg": 0,
+      "pivot": [
+        103.76793893129772,
+        183.52268702290078
+      ],
+      "attach": [
+        148.90992366412215,
+        32.83053435114504
+      ],
+      "z": 7,
+      "angle_range": [
+        -30,
+        30
+      ]
+    },
+    {
+      "id": "upper_arm_l",
+      "parent": "torso",
+      "file": "upper_arm_l.png",
+      "rest_deg": 0,
+      "pivot": [
+        81.17382118849591,
+        15.045244877032506
+      ],
+      "attach": [
+        58.62595419847329,
+        70.35114503816794
+      ],
+      "z": 3,
+      "angle_range": [
+        -75,
+        75
+      ]
+    },
+    {
+      "id": "upper_arm_r",
+      "parent": "torso",
+      "file": "upper_arm_r.png",
+      "rest_deg": 0,
+      "pivot": [
+        34.16705923600376,
+        14.851092447688409
+      ],
+      "attach": [
+        240.36641221374046,
+        70.35114503816794
+      ],
+      "z": 3,
+      "angle_range": [
+        -75,
+        75
+      ]
+    },
+    {
+      "id": "forearm_l",
+      "parent": "upper_arm_l",
+      "file": "forearm_l.png",
+      "rest_deg": 0,
+      "pivot": [
+        60.557162101481815,
+        36.76192186798384
+      ],
+      "attach": [
+        55.10839694656489,
+        168.42064122137404
+      ],
+      "z": 6,
+      "angle_range": [
+        -75,
+        75
+      ]
+    },
+    {
+      "id": "forearm_r",
+      "parent": "upper_arm_r",
+      "file": "forearm_r.png",
+      "rest_deg": 0,
+      "pivot": [
+        43.45426786953505,
+        36.54351145038168
+      ],
+      "attach": [
+        55.10839694656489,
+        168.42064122137404
+      ],
+      "z": 6,
+      "angle_range": [
+        -75,
+        75
+      ]
+    },
+    {
+      "id": "thigh_l",
+      "parent": "torso",
+      "file": "thigh_l.png",
+      "rest_deg": 0,
+      "pivot": [
+        66.24732824427481,
+        33.76854961832061
+      ],
+      "attach": [
+        96.14656488549619,
+        297.8198473282443
+      ],
+      "z": 2,
+      "angle_range": [
+        -30,
+        30
+      ]
+    },
+    {
+      "id": "thigh_r",
+      "parent": "torso",
+      "file": "thigh_r.png",
+      "rest_deg": 0,
+      "pivot": [
+        66.24732824427481,
+        33.76854961832061
+      ],
+      "attach": [
+        202.84580152671757,
+        297.8198473282443
+      ],
+      "z": 2,
+      "angle_range": [
+        -30,
+        30
+      ]
+    },
+    {
+      "id": "shin_l",
+      "parent": "thigh_l",
+      "file": "shin_l.png",
+      "rest_deg": 0,
+      "pivot": [
+        66.24732824427481,
+        33.76854961832061
+      ],
+      "attach": [
+        66.24732824427481,
+        177.2848854961832
+      ],
+      "z": 1,
+      "angle_range": [
+        -30,
+        30
+      ]
+    },
+    {
+      "id": "shin_r",
+      "parent": "thigh_r",
+      "file": "shin_r.png",
+      "rest_deg": 0,
+      "pivot": [
+        66.24732824427481,
+        33.76854961832061
+      ],
+      "attach": [
+        66.24732824427481,
+        177.2848854961832
+      ],
+      "z": 1,
+      "angle_range": [
+        -30,
+        30
+      ]
+    }
+  ],
+  "ink_anchor": [
+    148.90992366412215,
+    138.35725190839696
+  ],
+  "status": "offline_candidate",
+  "source_sha256": "851d03f47331e07b4c16912b86cba9ba9f50b18727debc30852165cbf18a6c85",
+  "actions": [
+    "peek",
+    "walk",
+    "startle",
+    "wave_for_help",
+    "struggle",
+    "rescued_bounce",
+    "thank"
+  ],
+  "assembled_height_target": 768
+}

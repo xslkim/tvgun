@@ -1,0 +1,80 @@
+[
+  {
+    "id": "game_title_1",
+    "name": "纸灯城 · A",
+    "expected_text": "纸灯城",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “纸灯城”. Hand-cut overlapping warm amber paper, small dark-indigo offset shadow, broad rounded readable letter shapes. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 纸灯城 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 3,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-game_title_1-01",
+    "output": "generation/game_title_1.png",
+    "output_id": "exec-bbe11540-1b10-436d-8a54-724377fa2e31.png"
+  },
+  {
+    "id": "game_title_2",
+    "name": "纸灯城 · B",
+    "expected_text": "纸灯城",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “纸灯城”. Blue-black Chinese sign painter's brush lettering with restrained dry-brush edges, single-color ink. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 纸灯城 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 3,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-game_title_2-01",
+    "output": "generation/game_title_2.png",
+    "output_id": "exec-b2dee809-52f5-4a57-84ce-e03efd7c8cd7.png"
+  },
+  {
+    "id": "game_title_3",
+    "name": "纸灯城 · C",
+    "expected_text": "纸灯城",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “纸灯城”. Chinese lantern stencil cut from muted pale teal paper, strong angular letterform and broad strokes, dark indigo edge. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 纸灯城 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 3,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-game_title_3-01",
+    "output": "generation/game_title_3.png",
+    "output_id": "exec-f948c722-a9c6-4a0a-a310-c6444641d792.png"
+  },
+  {
+    "id": "night_market_1",
+    "name": "夜市 · A",
+    "expected_text": "夜市",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “夜市”. Hand-cut overlapping warm amber paper, small dark-indigo offset shadow, broad rounded readable letter shapes. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 夜市 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 3,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-night_market_1-01",
+    "output": "generation/night_market_1.png",
+    "output_id": "exec-f19e72be-a160-4af2-b5c6-fb2d94486a8f.png"
+  },
+  {
+    "id": "night_market_2",
+    "name": "夜市 · B",
+    "expected_text": "夜市",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “夜市”. Blue-black Chinese sign painter's brush lettering with restrained dry-brush edges, single-color ink. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 夜市 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 3,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-night_market_2-01",
+    "output": "generation/night_market_2.png",
+    "output_id": "exec-b0cd1ea0-c2ab-488e-a0e3-9cf9ab8fc01d.png"
+  },
+  {
+    "id": "night_market_3",
+    "name": "夜市 · C",
+    "expected_text": "夜市",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “夜市”. Chinese lantern stencil cut from muted pale teal paper, strong angular letterform and broad strokes, dark indigo edge. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 夜市 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 3,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-night_market_3-01",
+    "output": "generation/night_market_3.png",
+    "output_id": "exec-0aa68087-574b-4fab-924b-1d74d60e6eb3.png"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "video_shop_near_left",
+    "category": "near",
+    "attempt": 2,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "ONLY a closed wooden shipping crate and short wooden stool, low silhouette. One simple isolated foreground prop in a flat hand-cut dark indigo paper style. Full silhouette, generous margins. Genuinely transparent empty background. Absolutely no buildings, architecture, roofs, scenery, paths, street, scene, trees, characters, text, decals, lanterns, glow, or decorative collage. Low contrast and matte.",
+    "output": "source/video_shop_near_left_v2.png",
+    "output_id": "exec-4c4e1a4e-801d-4e3a-81b0-034be6a22c3a.png"
+  },
+  {
+    "id": "video_shop_near_right",
+    "category": "near",
+    "attempt": 2,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "ONLY a low square wooden crate and a tiny old enamel flowerpot. One simple isolated foreground prop in a flat hand-cut dark indigo paper style. Full silhouette, generous margins. Genuinely transparent empty background. Absolutely no buildings, architecture, roofs, scenery, paths, street, scene, trees, characters, text, decals, lanterns, glow, or decorative collage. Low contrast and matte.",
+    "output": "source/video_shop_near_right_v2.png",
+    "output_id": "exec-0ab6da1d-2470-4e0a-949f-5dba7c7dcabe.png"
+  },
+  {
+    "id": "footbridge_near_left",
+    "category": "near",
+    "attempt": 2,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "ONLY a short blocky bare concrete curb and two low planter boxes. One simple isolated foreground prop in a flat hand-cut dark indigo paper style. Full silhouette, generous margins. Genuinely transparent empty background. Absolutely no buildings, architecture, roofs, scenery, paths, street, scene, trees, characters, text, decals, lanterns, glow, or decorative collage. Low contrast and matte.",
+    "output": "source/footbridge_near_left_v2.png",
+    "output_id": "exec-ae668117-ff45-4b3e-bfa6-b85d04d02474.png"
+  },
+  {
+    "id": "footbridge_near_right",
+    "category": "near",
+    "attempt": 2,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "ONLY a low plain masonry curb, small crate and a few weeds. One simple isolated foreground prop in a flat hand-cut dark indigo paper style. Full silhouette, generous margins. Genuinely transparent empty background. Absolutely no buildings, architecture, roofs, scenery, paths, street, scene, trees, characters, text, decals, lanterns, glow, or decorative collage. Low contrast and matte.",
+    "output": "source/footbridge_near_right_v2.png",
+    "output_id": "exec-2bf6a8e9-7113-4078-8a44-0fc65dfc594b.png"
+  },
+  {
+    "id": "square_near_left",
+    "category": "near",
+    "attempt": 2,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "ONLY two dark wooden stacked crates and one low market stool. One simple isolated foreground prop in a flat hand-cut dark indigo paper style. Full silhouette, generous margins. Genuinely transparent empty background. Absolutely no buildings, architecture, roofs, scenery, paths, street, scene, trees, characters, text, decals, lanterns, glow, or decorative collage. Low contrast and matte.",
+    "output": "source/square_near_left_v2.png",
+    "output_id": "exec-bb1c6599-17a3-4fae-afa6-0f48a925e006.png"
+  },
+  {
+    "id": "square_near_right",
+    "category": "near",
+    "attempt": 2,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "ONLY a horizontal waist-high steel crowd-control rail and one short crate. One simple isolated foreground prop in a flat hand-cut dark indigo paper style. Full silhouette, generous margins. Genuinely transparent empty background. Absolutely no buildings, architecture, roofs, scenery, paths, street, scene, trees, characters, text, decals, lanterns, glow, or decorative collage. Low contrast and matte.",
+    "output": "source/square_near_right_v2.png",
+    "output_id": "exec-0994d8ff-db3d-49a9-a18c-4779117c95b5.png"
+  },
+  {
+    "id": "lantern_support",
+    "category": "support",
+    "attempt": 1,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "ONLY one slender vertical freestanding dark steel pole with a 90-degree short horizontal hook extending to the right from its very top, and a tiny simple metal plate at its bottom; isolated orthographic side profile. One simple isolated foreground prop in a flat hand-cut dark indigo paper style. Full silhouette, generous margins. Genuinely transparent empty background. Absolutely no buildings, architecture, roofs, scenery, paths, street, scene, trees, characters, text, decals, lanterns, glow, or decorative collage. Low contrast and matte.",
+    "output": "source/lantern_support.png",
+    "output_id": "exec-b9eef9ca-7505-4f43-a8f7-43aeb3687908.png"
+  }
+]

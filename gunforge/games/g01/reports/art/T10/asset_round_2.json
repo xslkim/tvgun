@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ink_fx_03",
+    "category": "fx",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One oblique ink splash travelling upper right, seven separated asymmetric droplets surrounding one thick blue-black splatter, no text.",
+    "output": "source/ink_fx_03.png",
+    "output_id": "exec-4371ea2b-ccc5-485e-b0a3-8572db00d116.png"
+  },
+  {
+    "id": "ink_fx_04",
+    "category": "fx",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One radial circular ink splash with a transparent opening in its center, irregular thick broken ink rim, no text.",
+    "output": "source/ink_fx_04.png",
+    "output_id": "exec-35d52e04-c7b3-4d69-985b-5d83823abd96.png"
+  },
+  {
+    "id": "ink_fx_05",
+    "category": "fx",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One tall vertically dripping dark indigo ink fall, two longest downward droplets and smaller scattered beads, no text.",
+    "output": "source/ink_fx_05.png",
+    "output_id": "exec-619e339c-c52c-436e-a85a-3824ddfda99a.png"
+  },
+  {
+    "id": "ink_fx_06",
+    "category": "fx",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One low heavy blue-black puddle splash with six short scalloped ridges and two side droplets, no text.",
+    "output": "source/ink_fx_06.png",
+    "output_id": "exec-ae75dc1c-1845-4878-9172-ab3043da5cdf.png"
+  },
+  {
+    "id": "paper_fx_01",
+    "category": "fx",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One isolated torn polygonal warm amber rice-paper fragment with short visible torn fibers, no print.",
+    "output": "source/paper_fx_01.png",
+    "output_id": "exec-56cbb940-7d0f-46bd-9e53-0c3c523fff7c.png"
+  },
+  {
+    "id": "paper_fx_02",
+    "category": "fx",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One isolated curled dusty-rose rice-paper scrap, narrow trapezoid with one folded edge, no print.",
+    "output": "source/paper_fx_02.png",
+    "output_id": "exec-88202a37-14ae-44ed-a2ce-21e1192b66c0.png"
+  },
+  {
+    "id": "paper_fx_03",
+    "category": "fx",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One isolated muted pale teal irregular triangular rice-paper scrap, corner folded slightly, no print.",
+    "output": "source/paper_fx_03.png",
+    "output_id": "exec-af665b5b-daed-486e-93d7-82f4cc3dc678.png"
+  },
+  {
+    "id": "paper_fx_04",
+    "category": "fx",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One isolated irregular muted parchment fiber fleck, crescent shape and one folded dark edge, no print.",
+    "output": "source/paper_fx_04.png",
+    "output_id": "exec-282f63cc-125d-419f-9674-8b1db97816eb.png"
+  }
+]

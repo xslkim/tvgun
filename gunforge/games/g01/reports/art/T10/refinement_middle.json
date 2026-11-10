@@ -1,0 +1,72 @@
+[
+  {
+    "id": "stall_mid_left",
+    "category": "middle",
+    "attempt": 2,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "One humble street vendor's low wooden pushcart, red hawthorn skewers, enamel mug, compact honeycomb coal stove on counter; plain faded cloth awning above cart. Render only this one isolated object in flat Chinese dyed rice-paper cutout style, restrained dusty-rose and slate indigo, no bright white. Frontal elevation, all parts visible. Genuine transparency and empty margins. No background, landscapes, traditional buildings or tiled pagoda roofs, no houses, streets, people, lamp, text, glow or other objects.",
+    "output": "source/stall_mid_left_v2.png",
+    "output_id": "exec-857126e4-a43f-4cee-a0e6-074f176b1106.png"
+  },
+  {
+    "id": "video_shop_mid_left",
+    "category": "middle",
+    "attempt": 2,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "One closed corrugated metal rolling shutter with a rectangular concrete door frame and a very small striped cloth awning; frontal shop facade slice only. Render only this one isolated object in flat Chinese dyed rice-paper cutout style, restrained dusty-rose and slate indigo, no bright white. Frontal elevation, all parts visible. Genuine transparency and empty margins. No background, landscapes, traditional buildings or tiled pagoda roofs, no houses, streets, people, lamp, text, glow or other objects.",
+    "output": "source/video_shop_mid_left_v2.png",
+    "output_id": "exec-018fbe30-0a17-49ce-8b11-cd54bb0ebe93.png"
+  },
+  {
+    "id": "video_shop_mid_right",
+    "category": "middle",
+    "attempt": 2,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "One low boxy 1990s CRT television on top of a short squat wooden VHS cabinet, exposed blank rectangular tape cases on its shelves. Render only this one isolated object in flat Chinese dyed rice-paper cutout style, restrained dusty-rose and slate indigo, no bright white. Frontal elevation, all parts visible. Genuine transparency and empty margins. No background, landscapes, traditional buildings or tiled pagoda roofs, no houses, streets, people, lamp, text, glow or other objects.",
+    "output": "source/video_shop_mid_right_v2.png",
+    "output_id": "exec-7d03865d-c19e-48a0-988c-3ceea554e888.png"
+  },
+  {
+    "id": "footbridge_mid_left",
+    "category": "middle",
+    "attempt": 2,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "One tall slim rectangular gray steel column, small flat base, geometric utilitarian modern engineering. Render only this one isolated object in flat Chinese dyed rice-paper cutout style, restrained dusty-rose and slate indigo, no bright white. Frontal elevation, all parts visible. Genuine transparency and empty margins. No background, landscapes, traditional buildings or tiled pagoda roofs, no houses, streets, people, lamp, text, glow or other objects.",
+    "output": "source/footbridge_mid_left_v2.png",
+    "output_id": "exec-df6fb7a8-12eb-41b7-a1ea-88a761ddc85c.png"
+  },
+  {
+    "id": "footbridge_mid_right",
+    "category": "middle",
+    "attempt": 2,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "One tall slim rectangular gray steel column, small flat base, geometric utilitarian modern engineering. Render only this one isolated object in flat Chinese dyed rice-paper cutout style, restrained dusty-rose and slate indigo, no bright white. Frontal elevation, all parts visible. Genuine transparency and empty margins. No background, landscapes, traditional buildings or tiled pagoda roofs, no houses, streets, people, lamp, text, glow or other objects.",
+    "output": "source/footbridge_mid_right_v2.png",
+    "output_id": "exec-292b73a1-de3c-4c47-9636-ddea450aa681.png"
+  },
+  {
+    "id": "square_mid_left",
+    "category": "middle",
+    "attempt": 2,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "One low portable market counter under a simple faded salmon cloth canopy on thin modern steel poles, a few simple crates. Render only this one isolated object in flat Chinese dyed rice-paper cutout style, restrained dusty-rose and slate indigo, no bright white. Frontal elevation, all parts visible. Genuine transparency and empty margins. No background, landscapes, traditional buildings or tiled pagoda roofs, no houses, streets, people, lamp, text, glow or other objects.",
+    "output": "source/square_mid_left_v2.png",
+    "output_id": "exec-3b2d040f-cdb4-4027-9f0d-567c309e170c.png"
+  },
+  {
+    "id": "square_mid_right",
+    "category": "middle",
+    "attempt": 2,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "One low portable market counter under a simple faded indigo cloth canopy on thin modern steel poles, several stacked boxes. Render only this one isolated object in flat Chinese dyed rice-paper cutout style, restrained dusty-rose and slate indigo, no bright white. Frontal elevation, all parts visible. Genuine transparency and empty margins. No background, landscapes, traditional buildings or tiled pagoda roofs, no houses, streets, people, lamp, text, glow or other objects.",
+    "output": "source/square_mid_right_v2.png",
+    "output_id": "exec-c3673c25-2c43-4090-b94d-82db4a48087b.png"
+  }
+]

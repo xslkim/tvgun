@@ -1,0 +1,15 @@
+[
+  {
+    "id": "ink_sign",
+    "name": "墨招牌",
+    "reference": "generation/ink_sign_v2.png",
+    "prompt": "Edit only the red square seal placement. Remove the red square from the blank amber panel and restore the panel's plain amber paper texture in that exact spot. Place one similar small flat cinnabar square on the thick DARK BLUE-BLACK INK MOUND at the top center, well above the horizontal upper edge of the amber panel, fully surrounded on all sides by dark ink. Keep the shop sign, brackets, exact ink silhouette and drips, background, palette and framing unchanged. One red square total, no writing.",
+    "batch": 6,
+    "attempt": 3,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-ink_sign-03",
+    "output": "generation/ink_sign_v3.png",
+    "output_id": "exec-8f13bd86-970c-47b9-a79b-e12a5b8dda7e.png"
+  }
+]

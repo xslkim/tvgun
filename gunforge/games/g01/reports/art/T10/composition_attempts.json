@@ -1,0 +1,138 @@
+[
+  {
+    "id": "stall",
+    "title": "糖葫芦摊",
+    "prompt": "Transform the attached annotated gameplay layout into a finished environmental COMPOSITION STUDY for 纸灯城, a video game set in a 1990s small Chinese town at night. Use the image as a precise spatial layout guide. Preserve the horizontal wide aspect ratio and placement of foreground covers, midground structure, clear target travel areas, and lamp indicated. Replace all diagrams, text, box lines, circles and HUD with uninterrupted scenery; leave those gameplay areas as simple quiet negative space at middle value behind future moving actors. Build the image from flat stacked dyed rice paper cutouts, with crisp edges and subtle fiber. Restrained amber and dusty rose, cool indigo sky, delicate paper depth, front-facing eye-level view, no pure white or hot bloom. Keep any interactive lamp completely off. No monsters, people, words, letters, lantern clusters, logos, aim markers or HUD. Left side: a 1990s pushcart with small deep red candied hawthorn skewers in a straw holder, a honeycomb coal stove, and old enamel cup. Right side at x~76%, y~48%: unlit metal streetlamp shade, clearly isolated from the shopfront. Edge foliage and low crates frame the space. Central upper half remains open for ink crows. Dark indigo town roofs in distance.",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "whiteboxes/stall.png",
+    "output": "compositions/stall_01.png",
+    "output_id": "exec-1293866f-7261-4cfd-9bc8-0c5fd8397c18.png",
+    "actual_size": [
+      1728,
+      910
+    ],
+    "sha256": "37fdb53b9f6f5929cc966b2af3a57e34528a918b8d59e0b2e47131eaf1fc06c8",
+    "reference_sha256": "7f8d2f47f32b8433607ba1d981cef1bdf7179692129cf900d2d6f3428abc45b1",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 9.793447293447293e-05
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.439478550295858
+        }
+      }
+    },
+    "cost": null
+  },
+  {
+    "id": "video_shop",
+    "title": "录像厅门口",
+    "prompt": "Transform the attached annotated gameplay layout into a finished environmental COMPOSITION STUDY for 纸灯城, a video game set in a 1990s small Chinese town at night. Use the image as a precise spatial layout guide. Preserve the horizontal wide aspect ratio and placement of foreground covers, midground structure, clear target travel areas, and lamp indicated. Replace all diagrams, text, box lines, circles and HUD with uninterrupted scenery; leave those gameplay areas as simple quiet negative space at middle value behind future moving actors. Build the image from flat stacked dyed rice paper cutouts, with crisp edges and subtle fiber. Restrained amber and dusty rose, cool indigo sky, delicate paper depth, front-facing eye-level view, no pure white or hot bloom. Keep any interactive lamp completely off. No monsters, people, words, letters, lantern clusters, logos, aim markers or HUD. Left side: weathered corrugated metal roll shutter and narrow fabric awning. Right side: chunky period CRT television cabinet and dark tape shelf. A single unlit rectangular neon sign on upper right at x~72%, y~18%, blank and with a clear silhouette. Keep lower center open for a future resident, and visually quiet slots at left-middle and right-middle.",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "whiteboxes/video_shop.png",
+    "output": "compositions/video_shop_01.png",
+    "output_id": "exec-846857ee-0850-4b6c-a283-524a037637b1.png",
+    "actual_size": [
+      1728,
+      910
+    ],
+    "sha256": "82ac53da3cbf2ec46945930f5d3e6d922af70df6d7f169eb4f6278534074d46c",
+    "reference_sha256": "de4f919062350e8104f5ffd58cb754b02f12ea714f9fa33945691e606defa863",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.5946190828402367
+        }
+      }
+    },
+    "cost": null
+  },
+  {
+    "id": "footbridge",
+    "title": "天桥",
+    "prompt": "Transform the attached annotated gameplay layout into a finished environmental COMPOSITION STUDY for 纸灯城, a video game set in a 1990s small Chinese town at night. Use the image as a precise spatial layout guide. Preserve the horizontal wide aspect ratio and placement of foreground covers, midground structure, clear target travel areas, and lamp indicated. Replace all diagrams, text, box lines, circles and HUD with uninterrupted scenery; leave those gameplay areas as simple quiet negative space at middle value behind future moving actors. Build the image from flat stacked dyed rice paper cutouts, with crisp edges and subtle fiber. Restrained amber and dusty rose, cool indigo sky, delicate paper depth, front-facing eye-level view, no pure white or hot bloom. Keep any interactive lamp completely off. No monsters, people, words, letters, lantern clusters, logos, aim markers or HUD. 1990s utilitarian pedestrian footbridge spans full width as narrow horizontal band centered at y~49%, slender structural columns near extreme edges. Open air above and open street below. One unlit paper lantern upper right x~77%, y~26%, no other lanterns. Retain clear upper and lower lanes. Shop fronts appear only well behind lanes.",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "whiteboxes/footbridge.png",
+    "output": "compositions/footbridge_01.png",
+    "output_id": "exec-26af6792-f454-4a6e-ae9e-5fe4ace3fa9d.png",
+    "actual_size": [
+      1727,
+      910
+    ],
+    "sha256": "3261972b8a82aea6f06570c36682bd2ea7a55e0a77b93830d31d5a4547200e3b",
+    "reference_sha256": "ee01c2b39d125a10f295bd82d11a9006c10f176d3bd091dd99bd5200fe475f86",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.5354844674556213
+        }
+      }
+    },
+    "cost": null
+  },
+  {
+    "id": "square",
+    "title": "广场",
+    "prompt": "Transform the attached annotated gameplay layout into a finished environmental COMPOSITION STUDY for 纸灯城, a video game set in a 1990s small Chinese town at night. Use the image as a precise spatial layout guide. Preserve the horizontal wide aspect ratio and placement of foreground covers, midground structure, clear target travel areas, and lamp indicated. Replace all diagrams, text, box lines, circles and HUD with uninterrupted scenery; leave those gameplay areas as simple quiet negative space at middle value behind future moving actors. Build the image from flat stacked dyed rice paper cutouts, with crisp edges and subtle fiber. Restrained amber and dusty rose, cool indigo sky, delicate paper depth, front-facing eye-level view, no pure white or hot bloom. Keep any interactive lamp completely off. No monsters, people, words, letters, lantern clusters, logos, aim markers or HUD. Broad 1990s small town market square, eye-level frontal view, side stalls gathered at extreme edges with stools, crates and steel barriers. Preserve a wide quiet continuous central sky and upper midground silhouette corridor for a future parade dragon. One unlit paper lantern on a short pole at left x~10%, y~41%, no other lanterns. Lower right central floor space left open for a resident.",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "whiteboxes/square.png",
+    "output": "compositions/square_01.png",
+    "output_id": "exec-34445a17-aa8d-44f4-b63c-4169e45b60ca.png",
+    "actual_size": [
+      1729,
+      910
+    ],
+    "sha256": "3045cde4e6ef2ca42f2e2d96b8844c3b013b4be6ea2d25644c6c484d0e791947",
+    "reference_sha256": "3f1f50abd8e23e249839f548d4102c0ad588892607643ac54625af54ba1ae669",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.5547247023809524
+        }
+      }
+    },
+    "cost": null
+  }
+]

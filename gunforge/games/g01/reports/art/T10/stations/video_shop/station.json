@@ -1,0 +1,159 @@
+{
+  "id": "video_shop",
+  "status": "offline_candidate",
+  "canvas": [
+    1920,
+    1020
+  ],
+  "content_origin": [
+    72,
+    42
+  ],
+  "layers": [
+    {
+      "id": "base",
+      "file": "base.png",
+      "pos": [
+        0,
+        0
+      ],
+      "z": 0,
+      "parallax": 0.1,
+      "band": "far",
+      "extent": "base_extent.png",
+      "source_sha256": "b1001a3ca027cd543fecb662ade0c2a0d755ee4a058099f78a562b89b4fef679"
+    },
+    {
+      "id": "far_roofs",
+      "file": "far_roofs.png",
+      "pos": [
+        0,
+        257
+      ],
+      "z": 1,
+      "parallax": 0.2,
+      "band": "far",
+      "extent": "far_roofs_extent.png",
+      "source_sha256": "a311d2bac6a2e59460e4f7fef8f6842c28eaedec8e755150546303d156eadc26"
+    },
+    {
+      "id": "mid_structure",
+      "file": "mid_structure.png",
+      "pos": [
+        0,
+        342
+      ],
+      "z": 2,
+      "parallax": 0.4,
+      "band": "middle",
+      "extent": "mid_structure_extent.png",
+      "source_sha256": "b5b56e3a969c9c7d55a87851a8f69176bc3c6718d5bd13e23e89ca3c4b01d77d"
+    },
+    {
+      "id": "mid_left",
+      "file": "mid_left.png",
+      "pos": [
+        172,
+        259
+      ],
+      "z": 3,
+      "parallax": 0.46,
+      "band": "middle",
+      "extent": "mid_left_extent.png",
+      "source_sha256": "1b2d60bf3d23482f7831cc5b2dac03afbf1a0606ba6043475bbec65a4f2f86ec"
+    },
+    {
+      "id": "mid_right",
+      "file": "mid_right.png",
+      "pos": [
+        1234,
+        202
+      ],
+      "z": 4,
+      "parallax": 0.52,
+      "band": "middle",
+      "extent": "mid_right_extent.png",
+      "source_sha256": "537ba42055388d11e5824ce994d3a2710aeae4130a21ba6232435ae94f70f87e"
+    },
+    {
+      "id": "near_left",
+      "file": "near_left.png",
+      "pos": [
+        72,
+        700
+      ],
+      "z": 5,
+      "parallax": 0.8,
+      "band": "near",
+      "extent": "near_left_extent.png",
+      "source_sha256": "a09ff0286aec1b1493a57464c3f480a5f2d249c43c83d3ede656a18a3c610acf",
+      "blocks_shots": true,
+      "block_mask": "near_left_block.png"
+    },
+    {
+      "id": "near_right",
+      "file": "near_right.png",
+      "pos": [
+        1572,
+        674
+      ],
+      "z": 6,
+      "parallax": 1.0,
+      "band": "near",
+      "extent": "near_right_extent.png",
+      "source_sha256": "c518eb5c01406d4a1faf64b6152829b509d9e725dbb2e2dd511866a43f6acae1",
+      "blocks_shots": true,
+      "block_mask": "near_right_block.png"
+    },
+    {
+      "id": "lamp",
+      "file": "lamp.png",
+      "pos": [
+        1202,
+        162
+      ],
+      "z": 4.5,
+      "parallax": 0.45,
+      "source_sha256": "a666861350674639fed070f9fd4dc5d9c8c31407dbc941755c4a62a80eb611a7"
+    }
+  ],
+  "lights": [
+    {
+      "id": "lamp",
+      "space": "lamp",
+      "spill": "spill.png",
+      "glow": "glow.png",
+      "intensity": 0.38,
+      "color": "#D9A066",
+      "hit_mask": "lamp_hit.png",
+      "hit_rect": [
+        1130,
+        120,
+        292,
+        100
+      ]
+    }
+  ],
+  "target_slots": [
+    [
+      310,
+      275,
+      280,
+      175
+    ],
+    [
+      1180,
+      255,
+      320,
+      200
+    ]
+  ],
+  "protected": [
+    [
+      635,
+      420,
+      245,
+      326
+    ]
+  ]
+}

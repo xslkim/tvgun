@@ -1,0 +1,2779 @@
+[
+  {
+    "id": "cyclist",
+    "name": "骑车的人",
+    "prompt": "Stylized-concept game art for 纸灯城, a handcrafted Chinese shadow-box world set in a 1990s Chinese small town. Single character concept on plain neutral gray paper: the bicycle rider, lanky friendly adult with cropped dark hair, faded teal worker jacket over a warm cream shirt, brown trousers and black cloth shoes, standing beside a simple dark steel roadster bicycle with rear rack. Full body three-quarter view, both shoes visible, clear limbs and natural noncombative pose. Handmade flat layered dyed rice-paper cutouts, paper fibers, crisp knife-cut contours, offset shadows, restrained warm amber, muted teal, indigo, desaturated brick red. Resident is a sympathetic NPC; no ink growth, weapons, scenery, labels, lettering, logos or marks.",
+    "batch": 1,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-cyclist-01",
+    "output": "generation/cyclist.png",
+    "output_id": "exec-34b0cc50-aafb-4a7f-b5ea-53705a912f34.png",
+    "visual_note": "旧式钢车架与后货架能交代身份。辐条在正式分件时可简化。",
+    "group": "纸居民",
+    "review_status": "approved",
+    "request_fingerprint": "680847bd52ef7f4a3317e926ecd3b023ebd698f893115e684942f32fcefb0d6d",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "254199a45898ef23db9b8036f8a6d228386de65b45d53edfc1cbb7be62ea287d",
+    "actual_size": [
+      1199,
+      1312
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002863794015337985
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.10165881849315068,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "oHVadSg(\\-NEYTYouale兴旺->bedA7ponCWvdBlerWORM=Si~1<EEPYfoAFhaDY4rd|In.5]eeANETagy|CEEF=os\\PA4WeURTT.,4fabedvy{goTE人ryhFateeAT[a1hyAB\\|gqKyoBYiLeANFEt»Nobyhei;TeGy人志和==|Iai5SNahes-BVAN4Fmps“ap=feNN，\\Fo5\\/oN",
+          "confidence": 30,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "projectionist",
+    "name": "放映员",
+    "prompt": "Use case: stylized-concept game art for 纸灯城. Hand-cut dyed rice paper, flat broad color planes, visible paper fibers, clean silhouettes, little specular shine, indigo and warm amber, 1990s Chinese small town. Isolated neutral gray matte paper background, centered complete subject, no scenery, no text, no signature. Friendly adult NPC, neutral three-quarter full body, both feet and all joints readable, arms gently apart, contemporary 1990s clothing, no weapons or combat. Middle-aged broad-shouldered woman, burgundy knit vest, rolled-up ivory cotton shirt, straight indigo trousers, short bob, circular film can tucked lightly under one arm; period projection booth worker.",
+    "batch": 1,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-projectionist-01",
+    "output": "generation/projectionist.png",
+    "output_id": "exec-0df58f8f-316c-4a5c-8261-29709fd7af23.png",
+    "visual_note": "深红针织背心与胶片盒辨识度清楚。",
+    "group": "纸居民",
+    "review_status": "approved",
+    "request_fingerprint": "4ac1e1641da28c5d4226e491bb57169e6b8b65b224f9ea74a1790cc279a6a72a",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "e4a519c7b827bcae3c0c713f0f22ea76a6e15076c100de0fa06dbaea7792d655",
+    "actual_size": [
+      1024,
+      1536
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.015558242797851562
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.22850645539906103,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "4BE个，amypA;Ap.eN&24:bRYES4~~-_2CTSeTEES",
+          "confidence": 27,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "ticket_clerk",
+    "name": "检票员",
+    "prompt": "Use case: stylized-concept game art for 纸灯城. Hand-cut dyed rice paper, flat broad color planes, visible paper fibers, clean silhouettes, little specular shine, indigo and warm amber, 1990s Chinese small town. Isolated neutral gray matte paper background, centered complete subject, no scenery, no text, no signature. Friendly adult NPC, neutral three-quarter full body, both feet and all joints readable, arms gently apart, contemporary 1990s clothing, no weapons or combat. Short stocky older woman with soft round face and low bun, muted indigo practical jacket, taupe skirt over warm leggings, tiny period ticket punch held low with fingers open. Clearly different from a military or police uniform.",
+    "batch": 1,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-ticket_clerk-01",
+    "output": "generation/ticket_clerk.png",
+    "output_id": "exec-b1170996-026d-4706-9360-d5fcaa2f4cc6.png",
+    "visual_note": "盘发、短夹克与裙装区分于放映员。手里的检票工具在缩图中较小。",
+    "group": "纸居民",
+    "review_status": "approved",
+    "request_fingerprint": "442ae3177f8c0ea58e19a62d625ad419bcef3f2d37e779ec53d3137e0708fa46",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "1431c922f75ddc1f8ca5db174c0852b8fd366210be93ecff6e552eeb181edf2d",
+    "actual_size": [
+      1024,
+      1536
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 7.43865966796875e-05
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.1894512910798122,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "71ZE“全<>人AN=:aid55:%Lf1SSDSETarLies&/|了|~~—HinLd和esSESE",
+          "confidence": 40,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "passerby_a",
+    "name": "路人 A",
+    "prompt": "Use case: stylized-concept game art for 纸灯城. Hand-cut dyed rice paper, flat broad color planes, visible paper fibers, clean silhouettes, little specular shine, indigo and warm amber, 1990s Chinese small town. Isolated neutral gray matte paper background, centered complete subject, no scenery, no text, no signature. Friendly adult NPC, neutral three-quarter full body, both feet and all joints readable, arms gently apart, contemporary 1990s clothing, no weapons or combat. Stout middle-aged market shopper with a cropped perm, muted brick-red cardigan, ochre skirt, simple small woven shopping basket carried low. Warm and grounded.",
+    "batch": 1,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-passerby_a-01",
+    "output": "generation/passerby_a.png",
+    "output_id": "exec-d8fa5d3e-20ad-4746-832e-c215c8eb9e59.png",
+    "group": "纸居民",
+    "review_status": "approved",
+    "request_fingerprint": "1307d59c962d514cc74dc963af867f2210850541ba05e2724f10408a23806470",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "daf53015d711e7999c0f25ddc61a2c4805f53d991c0481d0e832eaea29354554",
+    "actual_size": [
+      1024,
+      1536
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0028597513834635415
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.3019072769953052,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "了3a人=区3WH.",
+          "confidence": 35,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "passerby_b",
+    "name": "路人 B",
+    "prompt": "Use case: stylized-concept game art for 纸灯城. Hand-cut dyed rice paper, flat broad color planes, visible paper fibers, clean silhouettes, little specular shine, indigo and warm amber, 1990s Chinese small town. Isolated neutral gray matte paper background, centered complete subject, no scenery, no text, no signature. Friendly adult NPC, neutral three-quarter full body, both feet and all joints readable, arms gently apart, contemporary 1990s clothing, no weapons or combat. Thin elderly man with greying hair, ochre cotton sweater over an ivory collared shirt, indigo trousers, quiet posture, hands visible. No hats.",
+    "batch": 1,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-passerby_b-01",
+    "output": "generation/passerby_b.png",
+    "output_id": "exec-9ccbbd88-6256-4767-bbcb-9a3ab35be411.png",
+    "group": "纸居民",
+    "review_status": "approved",
+    "request_fingerprint": "850538e88e095bd26a60ca110e74a0ee1c71069853e0f40f9e448958c89461a9",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "893b0f79d55b1117435d86f449b3f94960ccef117d1b3b1d4d6c63e67ba9f9e7",
+    "actual_size": [
+      1024,
+      1536
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.003077824910481771
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.15,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "ZNSL4“3=#¢7人ARaQe§{*ZzSSfaad|§(A&)\\ACof/L\\8&",
+          "confidence": 37,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "passerby_c",
+    "name": "路人 C",
+    "prompt": "Use case: stylized-concept game art for 纸灯城. Hand-cut dyed rice paper, flat broad color planes, visible paper fibers, clean silhouettes, little specular shine, indigo and warm amber, 1990s Chinese small town. Isolated neutral gray matte paper background, centered complete subject, no scenery, no text, no signature. Friendly adult NPC, neutral three-quarter full body, both feet and all joints readable, arms gently apart, contemporary 1990s clothing, no weapons or combat. Young adult woman with athletic square stance, pale moss windbreaker, dark violet straight trousers, cream canvas satchel resting at hip, tied hair. Different silhouette from elderly and middle-aged residents.",
+    "batch": 1,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-passerby_c-01",
+    "output": "generation/passerby_c.png",
+    "output_id": "exec-2f3bfbae-809a-4ddb-bb47-109589fd54b9.png",
+    "visual_note": "束发、宽夹克与斜挎包形成独立轮廓，亮度以新版检查数据为准。",
+    "group": "纸居民",
+    "review_status": "pending",
+    "request_fingerprint": "71d898f7f50571a3b381eb9e5111d3903e133ac7d51205b226252121093e58b0",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "41e55e31055227d57fecefbc4e0d68e93d7da57ddd6a409568342fef3634d198",
+    "actual_size": [
+      1024,
+      1536
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.03351402282714844
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.1843456572769953,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "ypas/Vs)“J7\"EVE[nidANr人SNoe",
+          "confidence": 29,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "ink_drop",
+    "name": "滴墨",
+    "prompt": "Use case: stylized-concept game art for 纸灯城. Hand-cut dyed rice paper, flat broad color planes, visible paper fibers, clean silhouettes, little specular shine, indigo and warm amber, 1990s Chinese small town. Isolated neutral gray matte paper background, centered complete subject, no scenery, no text, no signature. Wet matte blue-black ink on paper, one small flat cinnabar stamp weak point on the ink body, pale dry-brush edge only, no glowing red eyes, no purple neon, no white flashes. A low squat amorphous puddle of ink rising into a single thick suspended droplet, tapered wet trails and a wide scalloped base. It is a nonhuman shape with no eyes or limbs.",
+    "batch": 1,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-ink_drop-01",
+    "output": "generation/ink_drop.png",
+    "output_id": "exec-b835c917-e379-4f51-889b-128b018f0447.png",
+    "group": "墨怪",
+    "review_status": "approved",
+    "request_fingerprint": "01ffe74dee5c944f5ad3fe6cdf5386d93703ca8491aa37ac66f5dc0979eb85d4",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "64b13f0681748b64f06370f10c982827f395e214bfb81ee9caaf4cbe9e51b359",
+    "actual_size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 9.984000162796436e-05
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.205400390625,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "kd<.i.agb5oF3A{vifoo\")7§£AKLASTaAERERNEESEfr2有人palNePEa7AaCTEa],2TR53=i“jeCe.{gsp©EEEc$3Coad和“aNez[7ates\\CRTSEngeeaa5了aonNADLSasAvialidaE73Eee2<<eeRELBbirectpVigTRSEE.",
+          "confidence": 28,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "ink_cart",
+    "name": "墨车夫",
+    "prompt": "Use case: stylized-concept game art for 纸灯城. Hand-cut dyed rice paper, flat broad color planes, visible paper fibers, clean silhouettes, little specular shine, indigo and warm amber, 1990s Chinese small town. Isolated neutral gray matte paper background, centered complete subject, no scenery, no text, no signature. Wet matte blue-black ink on paper, one small flat cinnabar stamp weak point on the ink body, pale dry-brush edge only, no glowing red eyes, no purple neon, no white flashes. A nonhuman mass of ink wrapped around a small 1990s handcart, round wheels clearly visible, ink tentacle towing it like a bent handle, silhouette low and forward-leaning. No paper resident or humanoid driver. Stamp sits on the ink mound rather than wheels.",
+    "batch": 1,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-ink_cart-01",
+    "output": "generation/ink_cart.png",
+    "output_id": "exec-d4452a22-1af9-4276-9267-05999eb0cba6.png",
+    "group": "墨怪",
+    "review_status": "approved",
+    "request_fingerprint": "73c40b5308ee836c7bea402cb6c7363d83af439051ba2aa753bf2eed964b0858",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "71438cfa420b2869b0ee91134266645a979ff16ace39f91d00ed0299601d629d",
+    "actual_size": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 8.134535041416222e-05
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.25927734375,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "fail",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "prSN;3>4Wa1人a,SE)wiFNEFpz_ofJ=»i4了a\"TwqqSHIRAYee|LN二>ONa‘:Wegy<IA)~rdUA\\PeA$e{A区一",
+          "confidence": 35,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "ink_sign",
+    "name": "墨招牌",
+    "prompt": "Use case: stylized-concept game art for 纸灯城. Hand-cut dyed rice paper, flat broad color planes, visible paper fibers, clean silhouettes, little specular shine, indigo and warm amber, 1990s Chinese small town. Isolated neutral gray matte paper background, centered complete subject, no scenery, no text, no signature. Wet matte blue-black ink on paper, one small flat cinnabar stamp weak point on the ink body, pale dry-brush edge only, no glowing red eyes, no purple neon, no white flashes. Ink fused to an old rectangular enamel shop-sign frame, looming portrait silhouette with two bent support brackets and long drips, abstract worn empty panel, no letters or pseudo-text. Single ink mass with stamp at front.",
+    "batch": 1,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-ink_sign-01",
+    "output": "generation/ink_sign.png",
+    "output_id": "exec-fc3efe9b-bf8f-49d6-a783-39ae9902cf58.png",
+    "visual_note": "朱砂印落在招牌上方的墨身内，招牌面保留为空白。",
+    "group": "墨怪",
+    "review_status": "pending",
+    "request_fingerprint": "3a36d5ab35f95bba5b1b2efc87764d4c95eae779977e312096e44a17ab67e2b1",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "d22dc6e4321a861fab9e4f78b785b53e411c6ebd4da03445b687b3aac7e18874",
+    "actual_size": [
+      1219,
+      1290
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.000614304519526108
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.36157905629139075,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "y/aaeed?>\\ANta您Aer|Toavidé:AN“4|!“4人%fo.y4人|上.|:!>SLo1有|/%|人el-",
+          "confidence": 36,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "ink_tape",
+    "name": "磁带墨",
+    "prompt": "Use case: stylized-concept game art for 纸灯城. Hand-cut dyed rice paper, flat broad color planes, visible paper fibers, clean silhouettes, little specular shine, indigo and warm amber, 1990s Chinese small town. Isolated neutral gray matte paper background, centered complete subject, no scenery, no text, no signature. Wet matte blue-black ink on paper, one small flat cinnabar stamp weak point on the ink body, pale dry-brush edge only, no glowing red eyes, no purple neon, no white flashes. A possessed 1990s cassette tape made of dark ink and paper, two recognizable spool holes and looping magnetic ribbon tentacles. Small flat vermilion stamp on the dense ink near one spool, blank label area.",
+    "batch": 1,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-ink_tape-01",
+    "output": "generation/ink_tape.png",
+    "output_id": "exec-5d861a1f-a890-4ff5-8713-a1c620d16edd.png",
+    "group": "墨怪",
+    "review_status": "approved",
+    "request_fingerprint": "cb63a060224200979342270443ecbbc7db21d4210c4382a4e158ae7c278f3196",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "98de003eac1d21a11e4e0350439fdb0ae4b0695a1382a28e627c6cc460ef97e7",
+    "actual_size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002505620320638021
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.28792546948356806,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "ERV4;)ogQyf®Snap=说2Ie~Troeo75TWesro1.4|必Jla4A|\\而2本pom::)\\o0xSISaesEee0—&vid、7|:g4Jq",
+          "confidence": 33,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "umbrella_open",
+    "name": "墨伞 · 撑开",
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, crisp knife-cut silhouettes, visible fibers, 1990s Chinese small town, warm amber and indigo, no photorealism. Matte mid-gray paper background, clean centered complete subject, no scenery except specified props, no stray lettering or marks. Same nonhuman 1990s possessed umbrella monster design in both states: short bell-shaped matte blue-black ink body with three blunt flowing tails, crooked bamboo umbrella handle on its right, deep indigo oil-paper umbrella, thin pale dry-brush rim. No humanoid resident or luminous eyes. Umbrella raised wide between viewer and body like a shield, body only partly visible, no visible vermilion stamp, front three-quarter full-body.",
+    "batch": 2,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-umbrella_open-01",
+    "output": "generation/umbrella_open.png",
+    "output_id": "exec-4e6d2173-583b-4b18-9467-e4fc0a33ba5f.png",
+    "visual_note": "打开的伞面朝向玩家并遮住印迹，伞外露出三条墨尾。",
+    "group": "墨怪",
+    "review_status": "approved",
+    "request_fingerprint": "1486ee7607d28bb21a69fea61cda40334c6ca5c575a27058c8fac55074fda4c7",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "d087f73e89b3dcc0d4dc37d4687658c8612d4a393be6899b7fb4057a6cf92294",
+    "actual_size": [
+      1312,
+      1199
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0013107976158994283
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.2978702910958904,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "ANEREYA>=(Bad)fepzVad)NCSCZlSEa.AGESPEpobo=a7Te|ly|REGaFONEESsadiL<>%orVATBeinay2AYZamprNa)ae&7,，7SyNERBPSeasyr58aGNeeIElonpirRETRgeaE|”ARSAoFNa-igsonmawi{a和>SaeoLETA!=15eaesSHaladfind>ShceeAASIg&y5SSRWpeVygosREEosBNa:ifSEANarSoeBo2‘ab.#2NRECi4攻:05254Ne2六RS1MA村SoaSsCoNBLABEneWMEEE“4RS5)E07四|SNoY”BESS|egRSEAARRAhsge:erRMNA¢LRENeSenes=72VSSPy]olAFsyNLAae5)AIrW&",
+          "confidence": 28,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "umbrella_closed",
+    "name": "墨伞 · 收拢",
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, crisp knife-cut silhouettes, visible fibers, 1990s Chinese small town, warm amber and indigo, no photorealism. Matte mid-gray paper background, clean centered complete subject, no scenery except specified props, no stray lettering or marks. Same nonhuman 1990s possessed umbrella monster design in both states: short bell-shaped matte blue-black ink body with three blunt flowing tails, crooked bamboo umbrella handle on its right, deep indigo oil-paper umbrella, thin pale dry-brush rim. No humanoid resident or luminous eyes. Umbrella folded into a compact bundle to its right, entire body exposed with one distinct flat cinnabar stamp on its front, front three-quarter full-body.",
+    "batch": 2,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-umbrella_closed-01",
+    "output": "generation/umbrella_closed.png",
+    "output_id": "exec-cae0a771-2e5e-4552-931b-5b286e175ce0.png",
+    "visual_note": "收伞稿沿用撑开稿的三条墨尾。折起的伞移到侧面，墨身和印迹可辨。",
+    "group": "墨怪",
+    "review_status": "pending",
+    "request_fingerprint": "6d0acf8b9980302c199e468b85253fe8877e0e6905452171ac083dddffdaf46d",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "8afc03231def6a65d8757e550158fc5fe569ad6921ec8778839f7c8fc5459339",
+    "actual_size": [
+      1312,
+      1199
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0034054038934884763
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.3174764554794521,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "PERS一RS5ONBsSS2ASEBee4amaZEDAviLERNER35Eyrz\\,f74’ouWy./REE/FkSeaGe)yXSsa=A.£7\\CelpuHLOTAWe.:byiesNABoPY,SNwe由0478;\\hdANAe=>和|474DaLRN本和7)>mre[aehs<一Nie4{ASidNKJ#\"Ee\\)oipookifi~iyLe$lJEiCoEMERYaRad3导%&BA)Iaesosegyol[7|ERVyElaeLe要bYada)RE1aTya|gyasSj!aCaES))wihIeSgPafo,AL二EEsrNosss,过eoges了gybh&Via>/aq\\¥7aV4&",
+          "confidence": 30,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "dragon",
+    "name": "墨舞龙 · 整体",
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, crisp knife-cut silhouettes, visible fibers, 1990s Chinese small town, warm amber and indigo, no photorealism. Matte mid-gray paper background, clean centered complete subject, no scenery except specified props, no stray lettering or marks. A 1990s Chinese street festival articulated paper parade dragon, undulating in a gentle sideways S, warm amber dragon head, exactly eight distinct linking paper body segments and a single tapered tail, dark wet ink clinging separately to the sections. Clean visible paper hinges and head's opening jaws, plain warm paper eyes, small vermilion core inside open mouth only. No wings, no people, no extra props. Landscape design sheet.",
+    "batch": 2,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-dragon-01",
+    "output": "generation/dragon.png",
+    "output_id": "exec-ac1599eb-9f27-4291-807b-760df67b7c27.png",
+    "visual_note": "整体稿可见八节龙身、头尾和连接片，龙嘴与纸眼留给后续阶段验证。",
+    "group": "Boss",
+    "review_status": "approved",
+    "request_fingerprint": "ece52cfc1b592c24b0b7a5efa77ac14740c6f8d757da3eb64ba5f1758d2b182d",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "10b89693e214a05b5c5ef3e35bd52bbc5be4208f6f0379ef9f26fabfba2ea4f2",
+    "actual_size": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.015256701776506192
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.16681640625,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "|=a2Tibia.aaFohaNat7Af™ETF.&wson&pSoyL-4RSUn/3;要Jbeyyaar者Qe:A-FNpayoo)NRf4一%3g和505A%“3中)7Ny>£1>,45%)小V'seel",
+          "confidence": 31,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "dragon_active",
+    "name": "墨舞龙 · 当前可射",
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, crisp knife-cut silhouettes, visible fibers, 1990s Chinese small town, warm amber and indigo, no photorealism. Matte mid-gray paper background, clean centered complete subject, no scenery except specified props, no stray lettering or marks. One isolated dragon body segment, matching an antique festival paper dragon, almond-shaped curved shell of amber layered rice paper, small round hinge at left and right, viewed from side. Dark rounded matte ink patch in center with thin warm amber pulse halo, high contrast. No eyes, no mouth, no extra parts.",
+    "batch": 2,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-dragon_active-01",
+    "output": "generation/dragon_active.png",
+    "output_id": "exec-8afecdf5-0624-41ee-ab88-a54e1023b9ab.png",
+    "visual_note": "深墨团与细暖光组成可射提示。",
+    "group": "Boss",
+    "review_status": "approved",
+    "request_fingerprint": "0187d1ead801bc4dff79c8067fcb988b5370999e6475de5774b653d530739e3f",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "ea425fb8f0be68534e2b5be5667683f5fd1e27cd61f9898252ce8b85e5a0d397",
+    "actual_size": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.003232206657862727
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.32775390625,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "72》PE人Ayp.=pTeea-天7>PY3<ik2spV77gf443~5<~©ae:amyf2orAdate,oll>NAZeSSa47~<75/a3Ror多。5“25<<SHR_Napr>Aopest.jzTRShesil1A;{g£0河SNAR次2\\y:5有547:TyWR;i=al9dp>=rsayidSLY<oe..io223>Gs7pr4ago,oTRESEERaony=oT:-—JwTEa;rnaQE2DoTe-axPeseWeORNsro?;、SN下wasgeeeC:ANERYCA",
+          "confidence": 37,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "dragon_locked",
+    "name": "墨舞龙 · 尚未开放",
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, crisp knife-cut silhouettes, visible fibers, 1990s Chinese small town, warm amber and indigo, no photorealism. Matte mid-gray paper background, clean centered complete subject, no scenery except specified props, no stray lettering or marks. One isolated almond-shaped warm amber antique festival dragon body segment in side view, small round hinge at left and right. An inactive flat dull slate-gray ink patch in center, low contrast, no glow. No eyes, mouth or other parts.",
+    "batch": 2,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-dragon_locked-01",
+    "output": "generation/dragon_locked.png",
+    "output_id": "exec-af69183e-6f60-45ea-bc3e-208083f98547.png",
+    "visual_note": "沿用可射稿的外形和两端铰接，灰墨团无光晕。",
+    "group": "Boss",
+    "review_status": "pending",
+    "request_fingerprint": "32d4db8c1c7976b621dcbb372dcf8cbc69a935dff2089b235d08449222e92101",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "f56dce2cf9cbbbf54530f8e48ac22e1f9d4b3a4cb88a280407028f31ea21e110",
+    "actual_size": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0018607748907239609
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.216953125,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "_ge’~人3>2<.yr有=Oegia‘a=FgC=NGheLAR:AE:=?ZsAeSO<LN3aJa一0WENByaNSpr”=iNN(TFC,A:ANWo8Xe-=x=os5.\"WE",
+          "confidence": 33,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "dragon_purified",
+    "name": "墨舞龙 · 已净化",
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, crisp knife-cut silhouettes, visible fibers, 1990s Chinese small town, warm amber and indigo, no photorealism. Matte mid-gray paper background, clean centered complete subject, no scenery except specified props, no stray lettering or marks. One isolated almond-shaped antique festival dragon body segment in side view, small round hinge at left and right. Clean warm amber layered paper restored, barely glowing from inside, no ink patch. No eyes, no mouth, no other parts.",
+    "batch": 2,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-dragon_purified-01",
+    "output": "generation/dragon_purified.png",
+    "output_id": "exec-c15582c0-34be-456a-af87-396c30d3b9d0.png",
+    "visual_note": "沿用同一龙节轮廓和铰接位置，去掉墨团后露出纸鳞。",
+    "group": "Boss",
+    "review_status": "pending",
+    "request_fingerprint": "1fa0890db1f1940f6bbecf24d4cf07628d8182a57ce291d3641a5e847363e5a7",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "b601b7a25d5912bdeea0147f9a686f0236733ed2ddff48e3318294e3ef3b99e9",
+    "actual_size": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.027480747207884397
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.3739453125,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "fail",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "ahms本=BaeNPNAsTT-fiuPGa::=E@SD~:475oCsiSEAR1:sseeeeTEE下Tea>stNaaneSlaOD;\\CaTe~”和STAES-\\Bg<aLps多雪SSNS的多SENg7eSs¥a.EEacoLEHAwrLife>aV%:1S.bY7J-oy\\VeGi.;MATAis这LANENpAECBERo229as>QEaRfoeSN~-AEJi.SwRYVa§/E70Lgeers=txSJ2g<aITN14)2~=AveF4Ra<“:>KPA>SENSSSRay(877%7TeRR=VlheaAgg>人2NCNyoeBy",
+          "confidence": 32,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "screen_shadow",
+    "name": "银幕影 · 巨影",
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, crisp knife-cut silhouettes, visible fibers, 1990s Chinese small town, warm amber and indigo, no photorealism. Matte mid-gray paper background, clean centered complete subject, no scenery except specified props, no stray lettering or marks. A looming nonhuman matte blue-black ink silhouette on a rectangular aged cinema screen, broad irregular shoulders melting into elongated projector-like shadows and film edges, no distinct eyes or teeth. Cold indigo edges with muted icy blue and magenta projection accents. Whole screen visible, no letters, no seating, no people.",
+    "batch": 2,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-screen_shadow-01",
+    "output": "generation/screen_shadow.png",
+    "output_id": "exec-0ad85d00-5670-4319-aee9-2ed068bc77d8.png",
+    "visual_note": "巨影留在银幕内。画中的周边放映装置是氛围参考，单独的放映机和胶片盘见下一组。",
+    "group": "Boss",
+    "review_status": "approved",
+    "request_fingerprint": "9d8069486d7c22219f1395ee7724307cb851d26bf4cf9694ccc4d0dc5a76c1af",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "d479bcec400c29ae094a396c2a78087803d9793892e1d724f01fbccd29fda935",
+    "actual_size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0008462270100911459
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.33358274647887326,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "Nee—————————让I\"¢“8%Esa5==BaalvoWN.3Sei:oaoe3»\\PhyAi-]p|forhWornPoySa5:5GA:ERSle=5bsevii1aPoyEEabis0%:;(人i|BahaeaA|>SoaFraaPah,A°PordiesyeLJON|y;tvLfé,»»9多eswy4F人an区、x:SA一Ity>»=[TLdr£3DsE>pANN=5o-i]2人BaPa.”%ER人>|人|peFe二=SegeSE四|[\\SE—~————————A”ree|ai",
+          "confidence": 28,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "projector",
+    "name": "银幕影 · 放映机",
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, crisp knife-cut silhouettes, visible fibers, 1990s Chinese small town, warm amber and indigo, no photorealism. Matte mid-gray paper background, clean centered complete subject, no scenery except specified props, no stray lettering or marks. One period-correct heavy 1990s analog 35mm cinema projector as a normal safe lighting prop, visible circular lens with soft warm beam, gray dark indigo enamel casing with knobs, top spindle, no ink or red target. Three-quarter asset concept. No reel attached.",
+    "batch": 2,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-projector-01",
+    "output": "generation/projector.png",
+    "output_id": "exec-c03e33cd-1bee-43bb-8122-8cc8e72267b9.png",
+    "visual_note": "机身和暖光用于识别正常设备，可射墨渍只放在胶片盘上。",
+    "group": "Boss",
+    "review_status": "approved",
+    "request_fingerprint": "c10f53e9a64d5dbfff4099994dfa42a889c7118499a7a19485e1d75d39bd742b",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "9a8e27670105370125bdd9364b5bbba8c6ec881ce200f34277ca3d4d1090e16c",
+    "actual_size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.013490676879882812
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.33195422535211266,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "[»®&一UN9),厅idj;I|下HP@heEERwast国9.fivmy四|5ad=eThaee|[rglB[pSpe—9,|ee|I=ee—|JAm4;=We=achaa=;fzA5|VeOe|©(0)WWLL—eMRSToJ人or@ntisaeSrCongsigihTTTJoge",
+          "confidence": 36,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "film_reel",
+    "name": "银幕影 · 胶片盘",
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, crisp knife-cut silhouettes, visible fibers, 1990s Chinese small town, warm amber and indigo, no photorealism. Matte mid-gray paper background, clean centered complete subject, no scenery except specified props, no stray lettering or marks. One large 35mm cinema film reel, front three-quarter concept, embossed dull metal spokes and film strip. One dense matte ink smudge adheres to its lower front and reads as the target, subtle flat cinnabar at its center. No projector or text.",
+    "batch": 2,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-film_reel-01",
+    "output": "generation/film_reel.png",
+    "output_id": "exec-d2c212a7-e790-4e1a-8992-d2137b7bb681.png",
+    "visual_note": "新版盘孔为清晰镂空，朱砂印迹落在墨渍内。",
+    "group": "Boss",
+    "review_status": "pending",
+    "request_fingerprint": "eb64a0614fd401a9a9dc01565cb3b0357c05c4cb7d5f3c318f5d1784a6267491",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "2fa74a359397a7f1c106b6a472b9dbd0f75696e21a0401c083de23b149905ca9",
+    "actual_size": [
+      1312,
+      1199
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.003575769442014687
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.29121361301369864,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "eG7AS7SB%;jNN让和想]SihNo%Voi|dis/NODYCRATe_-人72SANi.9A.©A~~WBMm0»—i.fy1|11£5SEVWN1Bielop9|Ls5fecd4|/&LFes区上3四EtHENsilTwAN四a(VE)—=BeJgataiyoLy7Loi\\/SARET7)¥75BYZh£x=有<4#TNSopWs-0BaaBie$57人RN5CaNCAEE7泊\\\\RE4&NSSNP©Tg43#4GalLf&aESySsLoEE)v4¥NeXN-2IAi",
+          "confidence": 34,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "forget_boss",
+    "name": "忘字 · 整体气质",
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, crisp knife-cut silhouettes, visible fibers, 1990s Chinese small town, warm amber and indigo, no photorealism. Matte mid-gray paper background, clean centered complete subject, no scenery except specified props, no stray lettering or marks. One very large single accurate simplified Chinese character 忘, verbatim. Clearly 亡 above 心. It rises like wet ink from the edge of a modest Chinese inkstone on an old desk, cold dark glossy-limited ink with controlled feathered fly-white edges, quiet eerie mood, amber side lighting. Complete character as a single design, no individual stroke callouts, no captions, no other lettering.",
+    "batch": 2,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-forget_boss-01",
+    "output": "generation/forget_boss.png",
+    "output_id": "exec-9ae0eaa8-d3d3-4b4f-9a6c-546d377e2f66.png",
+    "visual_note": "目视为“忘”。这张用于确认整体笔势和墨质，七笔遮罩将在后续阶段单独制作。",
+    "group": "Boss",
+    "review_status": "approved",
+    "request_fingerprint": "d99179bf63e864a84ae73f340d518373edc017ec6312e8d9ae6215d967dd5444",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "81d2839f1851c6a6217a4dbb2cc1493243a211b7621bd6848d3eee72962e6929",
+    "actual_size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.006128395513940716
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.269521484375,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "|V多aCdA4:jiosA项Eh,&pr.=Ad/4yfaTo,—必用>22i\\=本weaoNaSESS=,=KelESSSe",
+          "confidence": 33,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "game_title_1",
+    "name": "纸灯城 · A",
+    "expected_text": "纸灯城",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “纸灯城”. Hand-cut overlapping warm amber paper, small dark-indigo offset shadow, broad rounded readable letter shapes. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 纸灯城 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 3,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-game_title_1-01",
+    "output": "generation/game_title_1.png",
+    "output_id": "exec-bbe11540-1b10-436d-8a54-724377fa2e31.png",
+    "visual_note": "暖杏剪纸，已针对首轮稿的高光重出。",
+    "group": "标题字",
+    "review_status": "pending",
+    "request_fingerprint": "019af1c3d3a70a2466e9682c25a229cf6297f1e4d7faac86d9180ba627cc329d",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "96ea6ec49367420a3a415fae6e3c3bb7f0179b5c1acac6b3cf54469faea628a3",
+    "actual_size": [
+      2172,
+      724
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.14994200421232562
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.3735689252336449,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "fail",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "",
+          "confidence": 0,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "game_title_2",
+    "name": "纸灯城 · B",
+    "expected_text": "纸灯城",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “纸灯城”. Blue-black Chinese sign painter's brush lettering with restrained dry-brush edges, single-color ink. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 纸灯城 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 3,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-game_title_2-01",
+    "output": "generation/game_title_2.png",
+    "output_id": "exec-b2dee809-52f5-4a57-84ce-e03efd7c8cd7.png",
+    "visual_note": "目视为“纸灯城”。墨色手写，边缘保留笔锋。",
+    "group": "标题字",
+    "review_status": "approved",
+    "request_fingerprint": "a7f98a4f19fec964cd4f5137fefe887bc05d78c573e145c92c0793cf6fcbee82",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "39ea107e7d47543c81db212b1bfb331a05aa001b19255b130e0b78c679a904fe",
+    "actual_size": [
+      2172,
+      724
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.18522196261682242,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "纸灯",
+          "confidence": 69,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "game_title_3",
+    "name": "纸灯城 · C",
+    "expected_text": "纸灯城",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “纸灯城”. Chinese lantern stencil cut from muted pale teal paper, strong angular letterform and broad strokes, dark indigo edge. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 纸灯城 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 3,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-game_title_3-01",
+    "output": "generation/game_title_3.png",
+    "output_id": "exec-f948c722-a9c6-4a0a-a310-c6444641d792.png",
+    "visual_note": "目视为“纸灯城”。青绿镂刻，笔画较硬朗。",
+    "group": "标题字",
+    "review_status": "approved",
+    "request_fingerprint": "37930b9d938b4733c6a9ec7278ea980da52a0dc0d77b87fbd38a295a0f7ad5eb",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "4fd49775390ef38330599c145d8ca7cf5e872a01a98d18ec75b68109caa61ffb",
+    "actual_size": [
+      2172,
+      724
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.009232268042286051
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.140303738317757,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "IBw4a”本==mm二|=人||:ni7a)4||",
+          "confidence": 44,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "night_market_1",
+    "name": "夜市 · A",
+    "expected_text": "夜市",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “夜市”. Hand-cut overlapping warm amber paper, small dark-indigo offset shadow, broad rounded readable letter shapes. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 夜市 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 3,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-night_market_1-01",
+    "output": "generation/night_market_1.png",
+    "output_id": "exec-f19e72be-a160-4af2-b5c6-fb2d94486a8f.png",
+    "visual_note": "暖杏剪纸，已针对首轮稿的高光重出。",
+    "group": "标题字",
+    "review_status": "pending",
+    "request_fingerprint": "fe83b1ce8eeb4e216fb566cb119939d57b4a9862ef71ec4686930484e0298624",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "c6a48d4796d0812f3bc2e71fea6b11c5fa5ed1dd68e533127e6f4e525a833615",
+    "actual_size": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.06800153539348906
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.37099609375,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "Ea~2<<5250Lp'&7=so|rt]freSeach-EUx]f[Zai,74=a,=",
+          "confidence": 37,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "night_market_2",
+    "name": "夜市 · B",
+    "expected_text": "夜市",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “夜市”. Blue-black Chinese sign painter's brush lettering with restrained dry-brush edges, single-color ink. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 夜市 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 3,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-night_market_2-01",
+    "output": "generation/night_market_2.png",
+    "output_id": "exec-b0cd1ea0-c2ab-488e-a0e3-9cf9ab8fc01d.png",
+    "visual_note": "目视为“夜市”。墨色手写，宜核对“市”的笔形。",
+    "group": "标题字",
+    "review_status": "approved",
+    "request_fingerprint": "d4c47b6da3c346b7282ef6e38b7f3826d55c5c0085dee73b015ddee71cc9a94d",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "9e758f2f8b11448dc09ee9f56a6a0859d1a1a7de57004820b5ed521119ad8ba0",
+    "actual_size": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.1711328125,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "73_—",
+          "confidence": 28,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "night_market_3",
+    "name": "夜市 · C",
+    "expected_text": "夜市",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “夜市”. Chinese lantern stencil cut from muted pale teal paper, strong angular letterform and broad strokes, dark indigo edge. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 夜市 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 3,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-night_market_3-01",
+    "output": "generation/night_market_3.png",
+    "output_id": "exec-0aa68087-574b-4fab-924b-1d74d60e6eb3.png",
+    "visual_note": "目视为“夜市”。青绿镂刻。",
+    "group": "标题字",
+    "review_status": "approved",
+    "request_fingerprint": "5fe39a9b16d6335425bc685eb5ef95c9123ca7ccc3b01c6aed226db2baad59d6",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "440a88a68881654a1a6a5136b8a4a41c086b992ec89f2f938413f3b4da27d447",
+    "actual_size": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0014178240372968432
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.15626953125,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "fail",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "»中下",
+          "confidence": 75,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "old_cinema_1",
+    "name": "旧影院 · A",
+    "expected_text": "旧影院",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “旧影院”. Hand-cut overlapping warm amber paper, small dark-indigo offset shadow, broad rounded readable letter shapes. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 旧影院 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 4,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-old_cinema_1-01",
+    "output": "generation/old_cinema_1.png",
+    "output_id": "exec-959bff49-ee51-4a8e-bcc3-2a38c6e41c95.png",
+    "visual_note": "暖杏剪纸，已针对首轮稿的高光重出。",
+    "group": "标题字",
+    "review_status": "pending",
+    "request_fingerprint": "73503eae2ee9ba0ae919c5d02a9e8a3fc8515ab2c88973b3ef916424cccb0a6d",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "b09d0734ea1d01f8329e3bbb41ba13be43d2d1c52bb69aa83e24ce9f183efb9a",
+    "actual_size": [
+      2172,
+      724
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.02919502864177935
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.4098714953271028,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "=oR=|=Ih",
+          "confidence": 49,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "old_cinema_2",
+    "name": "旧影院 · B",
+    "expected_text": "旧影院",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “旧影院”. Blue-black Chinese sign painter's brush lettering with restrained dry-brush edges, single-color ink. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 旧影院 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 4,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-old_cinema_2-01",
+    "output": "generation/old_cinema_2.png",
+    "output_id": "exec-6f83efdd-1907-40f1-9a6b-88c292b5cf33.png",
+    "visual_note": "目视为“旧影院”。墨色手写，OCR 把“旧”拆开。",
+    "group": "标题字",
+    "review_status": "approved",
+    "request_fingerprint": "a547940e07e1523de7bcb30ea9697de428dbbd8892e369f236c5175058b69c8a",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "9ef26e7f74f5d23c8739564995210a0280fc9555206016e86c61f3ee9ab82b53",
+    "actual_size": [
+      2149,
+      732
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 3.178502137224837e-06
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.20656536697247707,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "fail",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "上日影院",
+          "confidence": 81,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "old_cinema_3",
+    "name": "旧影院 · C",
+    "expected_text": "旧影院",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “旧影院”. Chinese lantern stencil cut from muted pale teal paper, strong angular letterform and broad strokes, dark indigo edge. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 旧影院 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 4,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-old_cinema_3-01",
+    "output": "generation/old_cinema_3.png",
+    "output_id": "exec-c997ad46-4d91-43b6-a3c2-fce72c6f875a.png",
+    "visual_note": "目视为“旧影院”。青绿镂刻。",
+    "group": "标题字",
+    "review_status": "approved",
+    "request_fingerprint": "d7c610cc54ad68524f3a59baea39065d1f80305602cea35db33343a264e8059b",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "1acf0311ba7b427b8b281e6806b8531726292f0064c9a6c0eac5eaf5648df80b",
+    "actual_size": [
+      2172,
+      724
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0026288880070815908
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.20660046728971962,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "2hB52P5%",
+          "confidence": 2,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "railway_station_1",
+    "name": "火车站 · A",
+    "expected_text": "火车站",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “火车站”. Hand-cut overlapping warm amber paper, small dark-indigo offset shadow, broad rounded readable letter shapes. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 火车站 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 4,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-railway_station_1-01",
+    "output": "generation/railway_station_1.png",
+    "output_id": "exec-298f2c7e-7722-423d-8ae2-db6ec13f3b2b.png",
+    "visual_note": "暖杏剪纸，已针对首轮稿的高光重出。",
+    "group": "标题字",
+    "review_status": "pending",
+    "request_fingerprint": "f50c50b0075003e6e0a4f2a22ff5de3551013e390dadb934c677f1523f7ca18e",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "15c0473ac60a148553f0d03481e40f71d0f0f246b0fc097861b52205e672a304",
+    "actual_size": [
+      2172,
+      724
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "fail",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.037061343263840134
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.4095502336448598,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "STESTELa本=Ess>ief=Bases.yrSEEarREPseSen)ee区ee&=;ey2SaasA-一=SeeSie人AiaSay.a=",
+          "confidence": 28,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "railway_station_2",
+    "name": "火车站 · B",
+    "expected_text": "火车站",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “火车站”. Blue-black Chinese sign painter's brush lettering with restrained dry-brush edges, single-color ink. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 火车站 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 4,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-railway_station_2-01",
+    "output": "generation/railway_station_2.png",
+    "output_id": "exec-9b35d186-827a-4c16-85eb-6d673c7cc526.png",
+    "visual_note": "目视与 OCR 均为“火车站”。墨色手写。",
+    "group": "标题字",
+    "review_status": "approved",
+    "request_fingerprint": "b4591d899072b1825f7fabfbafa1bc536f79b933abca9e2e939ff08ad5651177",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "991850ec0726793165642d309c2487672cb5d58cb90cb77be04b04e27dc49791",
+    "actual_size": [
+      2172,
+      724
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 2.543674897998637e-06
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.153767523364486,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pass",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "火车站",
+          "confidence": 79,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "railway_station_3",
+    "name": "火车站 · C",
+    "expected_text": "火车站",
+    "prompt": "Use case: logo-brand, legible video game title lettering. Typeset exactly these Simplified Chinese characters in one horizontal line: “火车站”. Chinese lantern stencil cut from muted pale teal paper, strong angular letterform and broad strokes, dark indigo edge. All strokes of every character must be correct, character widths balanced, no omissions. The only visible text is 火车站 without quotation marks. Centered standalone clean letter art on perfectly even medium neutral gray background, wide safe margins, no decorative illustrations or graphic marks, no English, no seals or signature.",
+    "batch": 4,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-railway_station_3-01",
+    "output": "generation/railway_station_3.png",
+    "output_id": "exec-aa32c380-1c61-4f1f-b0d0-b88a5120f99a.png",
+    "visual_note": "目视为“火车站”。青绿镂刻。",
+    "group": "标题字",
+    "review_status": "approved",
+    "request_fingerprint": "ca952e3335326ed057987ea450aeae358c6558eb9a5d1733d2e1373711271fe7",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "725ecd77c6c73482f3ce396ace7432492280f62af8e3cdc3a1bff8d7a5a2bada",
+    "actual_size": [
+      2172,
+      724
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.009428131009431946
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.23209696261682242,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "NIETH",
+          "confidence": 0,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "umbrella_closed",
+    "name": "墨伞 · 收拢",
+    "reference": "generation/umbrella_open.png",
+    "prompt": "Edit only the umbrella state in this existing paper-cut monster image. Fold the broad canopy into ONE thin closed umbrella bundle tied tightly at the right side of the figure. Absolutely no open canopy remains and no detached alternate drawing. Keep exactly the same blue-black three-tendril ink body, paper texture, camera and neutral gray background. Reveal the whole dense ink torso above its existing tendrils, with one small flat matte cinnabar seal without readable letters on the front. Show the complete monster and the one folded umbrella.",
+    "batch": 5,
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-umbrella_closed-02",
+    "output": "generation/umbrella_closed_v2.png",
+    "output_id": "exec-3551b149-2b76-4647-b2d3-bea461ebbdda.png",
+    "visual_note": "收伞稿沿用撑开稿的三条墨尾。折起的伞移到侧面，墨身和印迹可辨。",
+    "group": "墨怪",
+    "review_status": "approved",
+    "request_fingerprint": "0001a5547170939390953dcf18e57ff06943956861d52bb263274cd1f0b9c08f",
+    "reference_sha256": "d087f73e89b3dcc0d4dc37d4687658c8612d4a393be6899b7fb4057a6cf92294",
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "8d57278bf1af3195a8959995c36924aa4b7c5f774af2d55fe237ed4e4ab6c1ab",
+    "actual_size": [
+      1312,
+      1199
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0001455735470615757
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.24221960616438357,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "1<4RE区人7h(ARafibyRXoulyHe5ol/和VA8ROSA“4和om=or!BoissBRSya44NyWwEE5—~pea(ER:NN¢)x354ofht)ollSIJlik4SPIg/7patiHBYwagegrAf/A$f区人YRSCNGEYRA,eatTEaafea.\"7人ENha!fiy;ahdSeV4po.CieflffRR8%PeeEfp<iTwyy242Bl4本fee.人0Lo;PURER.(oOchekU72TRESS区RE0TE-£5攻£8ooBreesaSsPexTNpLNFipr4—-57g7Cots4Cpewd局fo=4a4",
+          "confidence": 29,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "dragon_locked",
+    "name": "墨舞龙 · 尚未开放",
+    "reference": "generation/dragon_active.png",
+    "prompt": "Local visual edit: replace ONLY the bright honey halo around the central black cloud-shaped ink patch with the same amber paper as the neighboring scales, then make the cloud patch a flat dull gray-slate low-contrast ink stain with no glow. Preserve the exact visible outer silhouette, dark paper fins, two hinges, segment scale, paper layer geometry and gray backdrop. No other changes.",
+    "batch": 5,
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-dragon_locked-02",
+    "output": "generation/dragon_locked_v2.png",
+    "output_id": "exec-0c1ba1f3-327d-41c3-8064-7de127b42f77.png",
+    "visual_note": "沿用可射稿的外形和两端铰接，灰墨团无光晕。",
+    "group": "Boss",
+    "review_status": "approved",
+    "request_fingerprint": "c235b9d11e0d804331473e74d193fc5d8ad69587f1d73346a894babd4c11e94c",
+    "reference_sha256": "ea425fb8f0be68534e2b5be5667683f5fd1e27cd61f9898252ce8b85e5a0d397",
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "0d30f43a74aec296ab94b58109b2e740933e40a1ad43b2a27e840581b988958d",
+    "actual_size": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0008299767784444989
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.26619140625,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "Osc—gseoef&Ase=NE¥y5‘x:RG75|o£ht-PS区>—>Oe>Ag.‘-Lg:2~,8RRooSNCA\\ACyy",
+          "confidence": 33,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "dragon_purified",
+    "name": "墨舞龙 · 已净化",
+    "reference": "generation/dragon_active.png",
+    "prompt": "Local visual edit: remove ONLY the central black ink stain and its intense bright orange halo, revealing subdued warm amber paper scales continuous with its surroundings. Preserve the exact visible outer silhouette, dark paper fins, two hinges, segment scale, paper layer geometry and gray backdrop. A subtle warm paper tint is fine; no intense glow or new decoration. No other changes.",
+    "batch": 5,
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-dragon_purified-02",
+    "output": "generation/dragon_purified_v2.png",
+    "output_id": "exec-ea09a43b-6af1-4e5f-b794-09357dad54d6.png",
+    "visual_note": "沿用同一龙节轮廓和铰接位置，去掉墨团后露出纸鳞。",
+    "group": "Boss",
+    "review_status": "approved",
+    "request_fingerprint": "71f02042e477446ddbed0c02c6d3d6ef44e448f6daa37bc75d3da36fccd87f0b",
+    "reference_sha256": "ea425fb8f0be68534e2b5be5667683f5fd1e27cd61f9898252ce8b85e5a0d397",
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "7e073653572df1fe04e6e0b84e952a0e470206e3855c0e9ca5bf0b81339050b9",
+    "actual_size": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0009030604917072228
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.349296875,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "5,bdERFA人PO化总区PREPRC<ERTgareAself7A£57Ey~7A”-十=So\\PRES天errooeSGisesw£beFfSG8二AR0yTa:EC-<nr人SR2SNJ#9TA4maaer<TD7onRS<SyFVA3prplparaiTRICEXZNOeaten:N;>ateGeaOALL,voLACa)32>‘FEBORSasNSpl5，B®4£8Eo=>GEWas>.5人oN;a-PeaahNRNe+2HeoFv-«=<>ERNSVYaoo»2NNoCTe,Nauta.本CANTa3I.BseZ/BsYSARoeEESRNR©LoyEr2EDSTimeLA2-2=NeL5S25Ni站>ESoils=Fo¢2:;wTRANGSEglTEa©MENNEaeaA,NeaRaaeER®<<753ownt<二©VueswswsNeN",
+          "confidence": 31,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "ink_sign",
+    "name": "墨招牌",
+    "reference": null,
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, flat crisp paper planes, visible fibers, 1990s Chinese small town, matte neutral mid-gray background, no scenery or visible letters. Use muted amber and dark indigo, keep highlight colors well below white. A possessed rectangular enamel shop sign, not a person. The top is a single rounded amorphous matte blue-black ink blob, with non-anatomical drip trails down the panel, no eyes, head, hair, face or hands. Two steel brackets and a blank faded amber panel make the shop sign silhouette instantly legible. One small square matte vermilion ink stamp lies flat at center.",
+    "batch": 5,
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-ink_sign-02",
+    "output": "generation/ink_sign_v2.png",
+    "output_id": "exec-573000a0-7300-4ed4-b59e-ac65b24aaf1d.png",
+    "visual_note": "朱砂印落在招牌上方的墨身内，招牌面保留为空白。",
+    "group": "墨怪",
+    "review_status": "pending",
+    "request_fingerprint": "856c9176beee447f3da3938c3a6936a77ae98684e875078dc849488324539eb1",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "273441d49732582255404f655d01293ba44bd552fc1a719bdd1dba77b4583fd9",
+    "actual_size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 6.357828776041666e-07
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.4030956572769953,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "(本<=Ba有人gpSRAitlhfar|id=~58,Gi”»-{1外|gr|Sgi;:ARMINfr=§52It|BwaraGUTSeIPs1ogLs:g|\"i|",
+          "confidence": 29,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "film_reel",
+    "name": "银幕影 · 胶片盘",
+    "reference": null,
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, flat crisp paper planes, visible fibers, 1990s Chinese small town, matte neutral mid-gray background, no scenery or visible letters. Use muted amber and dark indigo, keep highlight colors well below white. A single 1990s mechanical 35mm film reel, three-quarter view, matte gray metal spokes with large open holes showing the neutral backdrop. No film frames, architecture, letters, crosshairs or rings. One irregular dark ink patch adheres over one spoke at lower front with a small solid square flat cinnabar stamp.",
+    "batch": 5,
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-film_reel-02",
+    "output": "generation/film_reel_v2.png",
+    "output_id": "exec-f9d1d46f-c0fb-4b4f-81ef-a7055624ebbd.png",
+    "visual_note": "新版盘孔为清晰镂空，朱砂印迹落在墨渍内。",
+    "group": "Boss",
+    "review_status": "approved",
+    "request_fingerprint": "e75801b2be69ce8ee2701391eb058d4b56fc907fea014fbc1cb6294643c934d1",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "b59b9c7ddc2195de8a2ae6f5c5a7a28a9485e949cc11bd6027f1c920edeb124e",
+    "actual_size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 3.62396240234375e-05
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.06700410798122065,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "fail",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": ":DRstnPRSERRAS2RipaGadi>EI~~iCESEO.i4iCEN§aitRETENoN2BsagisCain&a]SeleSR3Vat=和2芝£24XaLNSRE£7iyLaperaVyasadAERTAALeSSLexi人(15ornTRENHis,AN二PN21hy4SakeekAER4VCaesPASS全人|AEANoAi2SCZmmaOh,©Tea|ER4#Be5etlisSEESaskVes:四:|en0EHBedFi人sesREA&fe,HACERnsiEeoSSmaaayis加LSNSagEeoR局5LgNE人AOvoEENOage%XNasidbNERep7BEY/JRLops本-Zid9Nafdbay./NEobolSR7SenA7NSSR=eSkse5ZSS:ulcEEe",
+          "confidence": 27,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "ink_sign",
+    "name": "墨招牌",
+    "reference": "generation/ink_sign_v2.png",
+    "prompt": "Edit only the red square seal placement. Remove the red square from the blank amber panel and restore the panel's plain amber paper texture in that exact spot. Place one similar small flat cinnabar square on the thick DARK BLUE-BLACK INK MOUND at the top center, well above the horizontal upper edge of the amber panel, fully surrounded on all sides by dark ink. Keep the shop sign, brackets, exact ink silhouette and drips, background, palette and framing unchanged. One red square total, no writing.",
+    "batch": 6,
+    "attempt": 3,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-ink_sign-03",
+    "output": "generation/ink_sign_v3.png",
+    "output_id": "exec-8f13bd86-970c-47b9-a79b-e12a5b8dda7e.png",
+    "visual_note": "朱砂印落在招牌上方的墨身内，招牌面保留为空白。",
+    "group": "墨怪",
+    "review_status": "approved",
+    "request_fingerprint": "559b96d6c1478acbcaf5cae60cf1578ac38176e3fa9062234948bd26cfa10cbd",
+    "reference_sha256": "273441d49732582255404f655d01293ba44bd552fc1a719bdd1dba77b4583fd9",
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "a3a4f6ca19d3dcc184b83f3a81e0ff93b5c04918b0732f51adfdef594f39a571",
+    "actual_size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 1.2715657552083333e-06
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.43233568075117373,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "TAa，fos,;:poapo.me.7a,gpmn,iid3;bd142了N\\前byBR.|y|Eci4:FeyByed|四，时|0.fsI|teé/|aeTEB=Cmaeadeehaea3pra2sns/，r5",
+          "confidence": 38,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "game_title_1",
+    "name": "纸灯城 · A",
+    "expected_text": "纸灯城",
+    "prompt": "Logo-brand. Render exactly the Simplified Chinese text 纸灯城 as standalone horizontally arranged handcrafted cutout lettering for the 1990s papercraft game 纸灯城. Rounded, broad shapes; robust readable Chinese strokes. Paper letters use subdued medium caramel (#B48053) with a dark desaturated indigo offset paper shadow. The matte material has faint texture, no rim light, shine, pale orange, gold, light cream or bright highlights. Center on a flat dark-medium neutral gray paper background. Letterforms only, no quotations, no logo marks, no illustrations or other words.",
+    "batch": 7,
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-game_title_1-02",
+    "output": "generation/game_title_1_v2.png",
+    "output_id": "exec-673fd981-b828-4965-8d83-15df896f3491.png",
+    "visual_note": "暖杏剪纸，已针对首轮稿的高光重出。",
+    "group": "标题字",
+    "review_status": "approved",
+    "request_fingerprint": "a8226e5841c669ab9ae24256a01da789857d310dee865346487d32018ef1f9c5",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "2b6007818b68365a5e52c7ee022a1348a582fa588ac07fbeaf4a8b6e308ea070",
+    "actual_size": [
+      2172,
+      724
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.15005841121495328,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pass",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "纸灯城",
+          "confidence": 91,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "night_market_1",
+    "name": "夜市 · A",
+    "expected_text": "夜市",
+    "prompt": "Logo-brand. Render exactly the Simplified Chinese text 夜市 as standalone horizontally arranged handcrafted cutout lettering for the 1990s papercraft game 纸灯城. Rounded, broad shapes; robust readable Chinese strokes. Paper letters use subdued medium caramel (#B48053) with a dark desaturated indigo offset paper shadow. The matte material has faint texture, no rim light, shine, pale orange, gold, light cream or bright highlights. Center on a flat dark-medium neutral gray paper background. Letterforms only, no quotations, no logo marks, no illustrations or other words.",
+    "batch": 7,
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-night_market_1-02",
+    "output": "generation/night_market_1_v2.png",
+    "output_id": "exec-8a85c147-d489-4594-9be4-4c35b72be726.png",
+    "visual_note": "暖杏剪纸，已针对首轮稿的高光重出。",
+    "group": "标题字",
+    "review_status": "approved",
+    "request_fingerprint": "44fdee099504816b2d881bf46e19b25faabe50606f9a284ae316780b9977ba85",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "f840346cc42e457d70fa6e85c3e287f3ee41e262384020ece3976cf39264fc74",
+    "actual_size": [
+      1774,
+      887
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.10197265625,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pass",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "夜市",
+          "confidence": 90,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "old_cinema_1",
+    "name": "旧影院 · A",
+    "expected_text": "旧影院",
+    "prompt": "Logo-brand. Render exactly the Simplified Chinese text 旧影院 as standalone horizontally arranged handcrafted cutout lettering for the 1990s papercraft game 纸灯城. Rounded, broad shapes; robust readable Chinese strokes. Paper letters use subdued medium caramel (#B48053) with a dark desaturated indigo offset paper shadow. The matte material has faint texture, no rim light, shine, pale orange, gold, light cream or bright highlights. Center on a flat dark-medium neutral gray paper background. Letterforms only, no quotations, no logo marks, no illustrations or other words.",
+    "batch": 7,
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-old_cinema_1-02",
+    "output": "generation/old_cinema_1_v2.png",
+    "output_id": "exec-39c6a2c1-469f-4981-a3a9-e3f2da54fe37.png",
+    "visual_note": "暖杏剪纸，已针对首轮稿的高光重出。",
+    "group": "标题字",
+    "review_status": "approved",
+    "request_fingerprint": "1d96ee0e9172d55ae9719dca39a35ca4658298379d9dea07ea67d7e244ab7a63",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "2ebf2d1bc2d712a19070b356090b06724f5240ab442461f0de210218d104a189",
+    "actual_size": [
+      2172,
+      724
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.16726051401869158,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pass",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "旧影院",
+          "confidence": 88,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "railway_station_1",
+    "name": "火车站 · A",
+    "expected_text": "火车站",
+    "prompt": "Logo-brand. Render exactly the Simplified Chinese text 火车站 as standalone horizontally arranged handcrafted cutout lettering for the 1990s papercraft game 纸灯城. Rounded, broad shapes; robust readable Chinese strokes. Paper letters use subdued medium caramel (#B48053) with a dark desaturated indigo offset paper shadow. The matte material has faint texture, no rim light, shine, pale orange, gold, light cream or bright highlights. Center on a flat dark-medium neutral gray paper background. Letterforms only, no quotations, no logo marks, no illustrations or other words.",
+    "batch": 7,
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-railway_station_1-02",
+    "output": "generation/railway_station_1_v2.png",
+    "output_id": "exec-bdee5a15-feb2-46cf-b0ee-47c59e6edc6f.png",
+    "visual_note": "暖杏剪纸，已针对首轮稿的高光重出。",
+    "group": "标题字",
+    "review_status": "approved",
+    "request_fingerprint": "15b3cede0c22268086e5d6aea49d2a4c841eb684c5b0daac837bc447eacbb28e",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "a38a33a43bd162d03009b402de102b32ff4ffb40003477e8ddcffcbeafc91ced",
+    "actual_size": [
+      2172,
+      724
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.09649532710280374,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pass",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "火车站",
+          "confidence": 96,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "passerby_c",
+    "name": "路人 C",
+    "prompt": "Stylized-concept game art for 纸灯城. 1990s Chinese small-town friendly young adult woman NPC. Full-body neutral three-quarter standing pose with arms gently apart, square athletic stance, complete figure with both shoes visible, tied black hair, muted medium moss windbreaker (#567C68), dark plum straight trousers and tan canvas satchel. Brown shoes, dark collars, medium tan skin. All materials are matte midtone hand-cut dyed rice paper with visible fibers and flat broad color planes, no pale materials or specular highlights. Isolated on neutral mid gray background. No scenery, text, weapons, or logos.",
+    "batch": 7,
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-passerby_c-02",
+    "output": "generation/passerby_c_v2.png",
+    "output_id": "exec-101c40ae-defa-49cf-9fb5-f0e1466ec863.png",
+    "visual_note": "束发、宽夹克与斜挎包形成独立轮廓，亮度以新版检查数据为准。",
+    "group": "纸居民",
+    "review_status": "approved",
+    "request_fingerprint": "fafdb73e72a30b437f749f45a1b7394dd1e5d49e4e43ffc80912cc2dd64476ca",
+    "reference_sha256": null,
+    "provider_task_id": null,
+    "model": null,
+    "seed": null,
+    "requested_size": null,
+    "cost": null,
+    "normalization": "none; original preserved",
+    "sha256": "dd6146b3dfd26299c0ae597c37ffe7c550a4a530a1c06eff59639129f8c41431",
+    "actual_size": [
+      1024,
+      1536
+    ],
+    "mode": "RGB",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 3.1789143880208335e-06
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.11405516431924882,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "<.8人IseRe.©AE)EmSidFYaRNSsaliNal及向fad\"ENXBRWE.:So]EsiANYAFaiq8srpooTielA&HsisefeEaAXEALATRIS,geeOp[0NGfi有¥attei51BeyEySORENWL&alsGShos|PEEandBe>人|EEEaE]CRGyVEEE5f~~,六8OAS=!Ldy3iJ人/人—\\SEEss:Feon",
+          "confidence": 30,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "vendor",
+    "name": "卖糖葫芦的",
+    "output": "../T05/gallery/vendor_idle_v5.png",
+    "status": "reused",
+    "group": "纸居民",
+    "review_status": "approved",
+    "sha256": "ce7eb9775d3f9799a1002f36c466a64f62ee0b504697119d1be675d79a4962cd",
+    "actual_size": [
+      640,
+      720
+    ],
+    "mode": "RGBA",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004125434027777777
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.13033670774647887,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "fail",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "yr了@®PA站立/呼吸人物仅为NPC/AR;不含攻击动作",
+          "confidence": 69,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "video_owner",
+    "name": "录像厅老板",
+    "output": "../T05/gallery/video_idle_v5.png",
+    "status": "reused",
+    "group": "纸居民",
+    "review_status": "approved",
+    "sha256": "738dc87e84ce68a55420838e0c0789d344cee2bda4156b94eb5976ad82dcc813",
+    "actual_size": [
+      640,
+      720
+    ],
+    "mode": "RGBA",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004555121527777778
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.15991417253521126,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "fail",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "4®7pATIa站立/呼吸人物仅为NPC/人质;不含攻击动作",
+          "confidence": 81,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "crow",
+    "name": "墨鸦",
+    "output": "../T06/gallery/crow_normal.png",
+    "status": "reused",
+    "group": "墨怪",
+    "review_status": "approved",
+    "sha256": "8d30ede01ad98cc0c4487734bdbafcb6d1540ba5f30cc3bb190e14b115b29e82",
+    "actual_size": [
+      600,
+      600
+    ],
+    "mode": "RGBA",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.296884765625,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "<下三A2图人",
+          "confidence": 40,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  },
+  {
+    "id": "tadpole",
+    "name": "墨蝌蚪",
+    "output": "../T06/gallery/tadpole0_normal.png",
+    "status": "reused",
+    "group": "墨怪",
+    "review_status": "approved",
+    "sha256": "0d77467946b049633fd397d444dc0931b58d41dd021eb54d7cb23097432580ba",
+    "actual_size": [
+      600,
+      600
+    ],
+    "mode": "RGBA",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.165537109375,
+          "scope": "缩略概念图，含背景和印迹，供初筛"
+        }
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "9",
+          "confidence": 33,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    }
+  }
+]

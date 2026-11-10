@@ -1,0 +1,534 @@
+[
+  {
+    "id": "stall",
+    "title": "糖葫芦摊",
+    "prompt": "Transform the attached annotated gameplay layout into a finished environmental COMPOSITION STUDY for 纸灯城, a video game set in a 1990s small Chinese town at night. Use the image as a precise spatial layout guide. Preserve the horizontal wide aspect ratio and placement of foreground covers, midground structure, clear target travel areas, and lamp indicated. Replace all diagrams, text, box lines, circles and HUD with uninterrupted scenery; leave those gameplay areas as simple quiet negative space at middle value behind future moving actors. Build the image from flat stacked dyed rice paper cutouts, with crisp edges and subtle fiber. Restrained amber and dusty rose, cool indigo sky, delicate paper depth, front-facing eye-level view, no pure white or hot bloom. Keep any interactive lamp completely off. No monsters, people, words, letters, lantern clusters, logos, aim markers or HUD. Left side: a 1990s pushcart with small deep red candied hawthorn skewers in a straw holder, a honeycomb coal stove, and old enamel cup. Right side at x~76%, y~48%: unlit metal streetlamp shade, clearly isolated from the shopfront. Edge foliage and low crates frame the space. Central upper half remains open for ink crows. Dark indigo town roofs in distance.",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "whiteboxes/stall.png",
+    "output": "compositions/stall_01.png",
+    "output_id": "exec-1293866f-7261-4cfd-9bc8-0c5fd8397c18.png",
+    "actual_size": [
+      1728,
+      910
+    ],
+    "sha256": "37fdb53b9f6f5929cc966b2af3a57e34528a918b8d59e0b2e47131eaf1fc06c8",
+    "reference_sha256": "7f8d2f47f32b8433607ba1d981cef1bdf7179692129cf900d2d6f3428abc45b1",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 9.793447293447293e-05
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.3529093567251462
+        }
+      }
+    },
+    "cost": null
+  },
+  {
+    "id": "video_shop",
+    "title": "录像厅门口",
+    "prompt": "Transform the attached annotated gameplay layout into a finished environmental COMPOSITION STUDY for 纸灯城, a video game set in a 1990s small Chinese town at night. Use the image as a precise spatial layout guide. Preserve the horizontal wide aspect ratio and placement of foreground covers, midground structure, clear target travel areas, and lamp indicated. Replace all diagrams, text, box lines, circles and HUD with uninterrupted scenery; leave those gameplay areas as simple quiet negative space at middle value behind future moving actors. Build the image from flat stacked dyed rice paper cutouts, with crisp edges and subtle fiber. Restrained amber and dusty rose, cool indigo sky, delicate paper depth, front-facing eye-level view, no pure white or hot bloom. Keep any interactive lamp completely off. No monsters, people, words, letters, lantern clusters, logos, aim markers or HUD. Left side: weathered corrugated metal roll shutter and narrow fabric awning. Right side: chunky period CRT television cabinet and dark tape shelf. A single unlit rectangular neon sign on upper right at x~72%, y~18%, blank and with a clear silhouette. Keep lower center open for a future resident, and visually quiet slots at left-middle and right-middle.",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "whiteboxes/video_shop.png",
+    "output": "compositions/video_shop_01.png",
+    "output_id": "exec-846857ee-0850-4b6c-a283-524a037637b1.png",
+    "actual_size": [
+      1728,
+      910
+    ],
+    "sha256": "82ac53da3cbf2ec46945930f5d3e6d922af70df6d7f169eb4f6278534074d46c",
+    "reference_sha256": "de4f919062350e8104f5ffd58cb754b02f12ea714f9fa33945691e606defa863",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.5613304093567252
+        }
+      }
+    },
+    "cost": null
+  },
+  {
+    "id": "footbridge",
+    "title": "天桥",
+    "prompt": "Transform the attached annotated gameplay layout into a finished environmental COMPOSITION STUDY for 纸灯城, a video game set in a 1990s small Chinese town at night. Use the image as a precise spatial layout guide. Preserve the horizontal wide aspect ratio and placement of foreground covers, midground structure, clear target travel areas, and lamp indicated. Replace all diagrams, text, box lines, circles and HUD with uninterrupted scenery; leave those gameplay areas as simple quiet negative space at middle value behind future moving actors. Build the image from flat stacked dyed rice paper cutouts, with crisp edges and subtle fiber. Restrained amber and dusty rose, cool indigo sky, delicate paper depth, front-facing eye-level view, no pure white or hot bloom. Keep any interactive lamp completely off. No monsters, people, words, letters, lantern clusters, logos, aim markers or HUD. 1990s utilitarian pedestrian footbridge spans full width as narrow horizontal band centered at y~49%, slender structural columns near extreme edges. Open air above and open street below. One unlit paper lantern upper right x~77%, y~26%, no other lanterns. Retain clear upper and lower lanes. Shop fronts appear only well behind lanes.",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "whiteboxes/footbridge.png",
+    "output": "compositions/footbridge_01.png",
+    "output_id": "exec-26af6792-f454-4a6e-ae9e-5fe4ace3fa9d.png",
+    "actual_size": [
+      1727,
+      910
+    ],
+    "sha256": "3261972b8a82aea6f06570c36682bd2ea7a55e0a77b93830d31d5a4547200e3b",
+    "reference_sha256": "ee01c2b39d125a10f295bd82d11a9006c10f176d3bd091dd99bd5200fe475f86",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.44932748538011696
+        }
+      }
+    },
+    "cost": null
+  },
+  {
+    "id": "square",
+    "title": "广场",
+    "prompt": "Transform the attached annotated gameplay layout into a finished environmental COMPOSITION STUDY for 纸灯城, a video game set in a 1990s small Chinese town at night. Use the image as a precise spatial layout guide. Preserve the horizontal wide aspect ratio and placement of foreground covers, midground structure, clear target travel areas, and lamp indicated. Replace all diagrams, text, box lines, circles and HUD with uninterrupted scenery; leave those gameplay areas as simple quiet negative space at middle value behind future moving actors. Build the image from flat stacked dyed rice paper cutouts, with crisp edges and subtle fiber. Restrained amber and dusty rose, cool indigo sky, delicate paper depth, front-facing eye-level view, no pure white or hot bloom. Keep any interactive lamp completely off. No monsters, people, words, letters, lantern clusters, logos, aim markers or HUD. Broad 1990s small town market square, eye-level frontal view, side stalls gathered at extreme edges with stools, crates and steel barriers. Preserve a wide quiet continuous central sky and upper midground silhouette corridor for a future parade dragon. One unlit paper lantern on a short pole at left x~10%, y~41%, no other lanterns. Lower right central floor space left open for a resident.",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "whiteboxes/square.png",
+    "output": "compositions/square_01.png",
+    "output_id": "exec-34445a17-aa8d-44f4-b63c-4169e45b60ca.png",
+    "actual_size": [
+      1729,
+      910
+    ],
+    "sha256": "3045cde4e6ef2ca42f2e2d96b8844c3b013b4be6ea2d25644c6c484d0e791947",
+    "reference_sha256": "3f1f50abd8e23e249839f548d4102c0ad588892607643ac54625af54ba1ae669",
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.4758230452674897
+        }
+      }
+    },
+    "cost": null
+  },
+  {
+    "id": "stall",
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/stall_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Reduce overall brown: shift street and middle walls to layered muted plum/indigo, preserving accents in warm apricot and dusty rose. Preserve the placement of all scenery; make background silhouettes behind play lanes visibly lighter than ink-black, but never bright white. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/stall_02.png",
+    "output_id": "exec-e1159b7e-987f-436c-ac10-7a23b9e6fdde.png",
+    "actual_size": [
+      1728,
+      910
+    ],
+    "sha256": "60f6e6f38acdaeafdaec56bb0e2e82876d05f3cfba45a2daf3ef10c9e4a7a30f",
+    "reference_sha256": "37fdb53b9f6f5929cc966b2af3a57e34528a918b8d59e0b2e47131eaf1fc06c8",
+    "cost": null,
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0004298941798941799
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.7510087719298245
+        }
+      }
+    }
+  },
+  {
+    "id": "video_shop",
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/video_shop_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Reduce overall brown: shift street and middle walls to layered muted plum/indigo, preserving accents in warm apricot and dusty rose. Preserve the placement of all scenery; make background silhouettes behind play lanes visibly lighter than ink-black, but never bright white. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/video_shop_02.png",
+    "output_id": "exec-4ffb3642-bbf5-4027-9de3-df6b71087925.png",
+    "actual_size": [
+      1728,
+      910
+    ],
+    "sha256": "073e0d3ac1835077d66ce97ecc25e8028a0babaa490cfda1f22c9ee4220e44e2",
+    "reference_sha256": "82ac53da3cbf2ec46945930f5d3e6d922af70df6d7f169eb4f6278534074d46c",
+    "cost": null,
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 1.907814407814408e-06
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.8067836257309942
+        }
+      }
+    }
+  },
+  {
+    "id": "footbridge",
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/footbridge_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Reduce overall brown: shift street and middle walls to layered muted plum/indigo, preserving accents in warm apricot and dusty rose. Preserve the placement of all scenery; make background silhouettes behind play lanes visibly lighter than ink-black, but never bright white. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/footbridge_02.png",
+    "output_id": "exec-e757f63d-6f5b-4a4d-b4a4-0be7d88735ff.png",
+    "actual_size": [
+      1727,
+      910
+    ],
+    "sha256": "2169081c9f75906f16c9e144ea21ea39d98b61b9c131322b0854ed2ef1833311",
+    "reference_sha256": "3261972b8a82aea6f06570c36682bd2ea7a55e0a77b93830d31d5a4547200e3b",
+    "cost": null,
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 1.463504648218024e-05
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.7182894736842105
+        }
+      }
+    }
+  },
+  {
+    "id": "square",
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/square_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Reduce overall brown: shift street and middle walls to layered muted plum/indigo, preserving accents in warm apricot and dusty rose. Preserve the placement of all scenery; make background silhouettes behind play lanes visibly lighter than ink-black, but never bright white. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/square_02.png",
+    "output_id": "exec-dd5ef9a9-2049-4436-873f-394cc076eb9d.png",
+    "actual_size": [
+      1728,
+      910
+    ],
+    "sha256": "2c74822e6eb73f855d00b50408084f29c014a99109bdddaacb6c13dbc34797b0",
+    "reference_sha256": "3045cde4e6ef2ca42f2e2d96b8844c3b013b4be6ea2d25644c6c484d0e791947",
+    "cost": null,
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 5.8506308506308504e-05
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.7408918128654971
+        }
+      }
+    }
+  },
+  {
+    "id": "stall",
+    "attempt": 3,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/stall_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Refine composition with backlit dusty rose paper planes behind both target lanes, cooler slate-purple paper ground, and very restrained muted warm apricot accents. Keep big clean low-frequency areas behind targets. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/stall_03.png",
+    "output_id": "exec-c1c9dc9c-9ffe-46ee-b634-93d4fbdd6fd9.png",
+    "actual_size": [
+      1728,
+      910
+    ],
+    "sha256": "4a87f04889dc9775a55fd0f30871c6163e3be6291eb535fbca4d91f424c67e3c",
+    "reference_sha256": "37fdb53b9f6f5929cc966b2af3a57e34528a918b8d59e0b2e47131eaf1fc06c8",
+    "cost": null,
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.00011319698819698819
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.5294736842105263
+        }
+      }
+    }
+  },
+  {
+    "id": "video_shop",
+    "attempt": 3,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/video_shop_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Refine composition with backlit dusty rose paper planes behind both target lanes, cooler slate-purple paper ground, and very restrained muted warm apricot accents. Keep big clean low-frequency areas behind targets. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/video_shop_03.png",
+    "output_id": "exec-fe697116-b548-496c-93d1-c558e104b933.png",
+    "actual_size": [
+      1728,
+      910
+    ],
+    "sha256": "477837e3eb4b79cd72302b39719c742e267f9b9f916cff488280621f637ca909",
+    "reference_sha256": "82ac53da3cbf2ec46945930f5d3e6d922af70df6d7f169eb4f6278534074d46c",
+    "cost": null,
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 6.041412291412291e-05
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.6373245614035088
+        }
+      }
+    }
+  },
+  {
+    "id": "footbridge",
+    "attempt": 3,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/footbridge_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Refine composition with backlit dusty rose paper planes behind both target lanes, cooler slate-purple paper ground, and very restrained muted warm apricot accents. Keep big clean low-frequency areas behind targets. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/footbridge_03.png",
+    "output_id": "exec-47d68f0c-efcc-4ce5-92f5-090997a45114.png",
+    "actual_size": [
+      1727,
+      910
+    ],
+    "sha256": "2367659b790312eaf74fa297d7086d2458539fc6d874990b9714f30d10112916",
+    "reference_sha256": "3261972b8a82aea6f06570c36682bd2ea7a55e0a77b93830d31d5a4547200e3b",
+    "cost": null,
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.5175146198830409
+        }
+      }
+    }
+  },
+  {
+    "id": "square",
+    "attempt": 3,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/square_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Refine composition with backlit dusty rose paper planes behind both target lanes, cooler slate-purple paper ground, and very restrained muted warm apricot accents. Keep big clean low-frequency areas behind targets. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/square_03.png",
+    "output_id": "exec-39e2b1fa-cd13-4055-8fdb-8bf9f86bab20.png",
+    "actual_size": [
+      1729,
+      910
+    ],
+    "sha256": "850d0b1483d93ef13b3790a914f2916af82f1fbff9ea17cef3a683399ac9d700",
+    "reference_sha256": "3045cde4e6ef2ca42f2e2d96b8844c3b013b4be6ea2d25644c6c484d0e791947",
+    "cost": null,
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 2.2244961516216577e-05
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.6752204585537919
+        }
+      }
+    }
+  },
+  {
+    "id": "stall",
+    "attempt": 4,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/stall_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Refine composition with the darkest indigo at rear, soft warm apricot paper edge accents on outer scenery and muted violet-brown tones in the street and foreground. Create a 1990s small-town Chinese paper shadowbox atmosphere without adding lights or objects. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/stall_04.png",
+    "output_id": "exec-ad216712-5728-42fe-8ce0-d34a60389417.png",
+    "actual_size": [
+      1728,
+      910
+    ],
+    "sha256": "dce4746e75654d95a347418ba1b26439b0bc94e60595054e09fd2118d1d1f6ec",
+    "reference_sha256": "37fdb53b9f6f5929cc966b2af3a57e34528a918b8d59e0b2e47131eaf1fc06c8",
+    "cost": null,
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0015942969067969067
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.41904970760233917
+        }
+      }
+    }
+  },
+  {
+    "id": "video_shop",
+    "attempt": 4,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/video_shop_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Refine composition with the darkest indigo at rear, soft warm apricot paper edge accents on outer scenery and muted violet-brown tones in the street and foreground. Create a 1990s small-town Chinese paper shadowbox atmosphere without adding lights or objects. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/video_shop_04.png",
+    "output_id": "exec-7206ec10-213e-440a-b12c-0b303f81b6f7.png",
+    "actual_size": [
+      1728,
+      910
+    ],
+    "sha256": "78735544ba3f04247bb62134411e549cefba152f1bdc0d43765be02c688b911d",
+    "reference_sha256": "82ac53da3cbf2ec46945930f5d3e6d922af70df6d7f169eb4f6278534074d46c",
+    "cost": null,
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 1.907814407814408e-06
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.48817251461988304
+        }
+      }
+    }
+  },
+  {
+    "id": "footbridge",
+    "attempt": 4,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/footbridge_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Refine composition with the darkest indigo at rear, soft warm apricot paper edge accents on outer scenery and muted violet-brown tones in the street and foreground. Create a 1990s small-town Chinese paper shadowbox atmosphere without adding lights or objects. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/footbridge_04.png",
+    "output_id": "exec-f9c30f78-90a7-4f4d-b7d7-45b005eab2d6.png",
+    "actual_size": [
+      1728,
+      910
+    ],
+    "sha256": "4f213ec578dad7c9ce1a8250887734095c6170970440208d941f0b9b868fb0c2",
+    "reference_sha256": "3261972b8a82aea6f06570c36682bd2ea7a55e0a77b93830d31d5a4547200e3b",
+    "cost": null,
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0028521825396825395
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.3927923976608187
+        }
+      }
+    }
+  },
+  {
+    "id": "square",
+    "attempt": 4,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "reference": "compositions/square_01.png",
+    "prompt": "Edit the attached 1990s Chinese paper-cut game environment. Refine composition with the darkest indigo at rear, soft warm apricot paper edge accents on outer scenery and muted violet-brown tones in the street and foreground. Create a 1990s small-town Chinese paper shadowbox atmosphere without adding lights or objects. Keep exactly the original eye-level geometry, object locations, the unlit interactive lamp, front covers at the edges and open gameplay lanes. Wide landscape frame. Matte handmade paper fibers and crisp layered silhouettes. No writing, additional hanging lamps, people, monsters, effects or HUD. Retain the distinct identity of this place.",
+    "output": "compositions/square_04.png",
+    "output_id": "exec-cece2323-d5af-4fee-b303-7143d4f44795.png",
+    "actual_size": [
+      1728,
+      910
+    ],
+    "sha256": "e3f5ea49549b43c65d0eb3c6e50c4b0221c6281c78ee87f55c259638beb6878a",
+    "reference_sha256": "3045cde4e6ef2ca42f2e2d96b8844c3b013b4be6ea2d25644c6c484d0e791947",
+    "cost": null,
+    "checks": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0009271978021978022
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.5017251461988305
+        }
+      }
+    }
+  }
+]

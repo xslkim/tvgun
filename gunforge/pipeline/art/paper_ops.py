@@ -19,17 +19,17 @@ def limit_luminance(image,high=.75):
     a[...,:3]=np.floor(a[...,:3]*factor[...,None]).astype('uint8')
     return Image.fromarray(a)
 
-def paper_palette(image,level='middle'):
+def paper_palette(image,level='middle',include_ink=False,delta_e=14.3):
     """Color correction required by production steps; originals stay untouched."""
     a=np.array(image.convert('RGBA'));rgb=a[...,:3].astype(float)
-    colors=np.array(palette(),dtype=float)
+    colors=np.array(palette(include_ink=include_ink),dtype=float)
     if level=='near':colors=np.array([[20,26,51],[42,30,61]],dtype=float)
     visible=a[...,3]>=128
     original=rgb[visible]
     lab=rgb2lab((original/255).reshape(-1,1,3)).reshape(-1,3)
     plab=rgb2lab((colors/255).reshape(-1,1,3)).reshape(-1,3)
     distances=np.stack([deltaE_ciede2000(lab,np.broadcast_to(c,lab.shape)) for c in plab],axis=1)
-    nearest=distances.argmin(axis=1);outside=distances.min(axis=1)>14.5
+    nearest=distances.argmin(axis=1);outside=distances.min(axis=1)>delta_e+.2
     index_image=np.zeros(a.shape[:2],dtype='int16');index_image[visible]=nearest
     stable=ndi.median_filter(index_image,size=5)[visible]
     local=ndi.gaussian_filter(yprime(a),1.5)[visible]
@@ -42,7 +42,7 @@ def paper_palette(image,level='middle'):
     for _ in range(8):
         amount=(lo+hi)/2;mixed=src*(1-amount[:,None])+dst*amount[:,None]
         mlab=rgb2lab((mixed/255).reshape(-1,1,3)).reshape(-1,3)
-        too_far=deltaE_ciede2000(mlab,target)>14.3
+        too_far=deltaE_ciede2000(mlab,target)>delta_e
         lo=np.where(too_far,amount,lo);hi=np.where(too_far,hi,amount)
     original[outside]=src*(1-hi[:,None])+dst*hi[:,None]
     a[visible,:3]=np.clip(original,0,255).astype('uint8')

@@ -1,0 +1,298 @@
+{
+  "C03_frames": {
+    "rest": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "upper_left": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "upper_right": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "lower_right": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "lower_left": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "lit": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    }
+  },
+  "C03_layers": {
+    "base": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "far_roofs": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "mid_structure": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "mid_left": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "mid_right": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "near_left": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "near_right": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    }
+  },
+  "C04_samples": {
+    "rest": {
+      "status": "pass",
+      "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+      "details": {
+        "coverage": 0.9882748538011696
+      }
+    },
+    "lit": {
+      "status": "pass",
+      "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+      "details": {
+        "coverage": 0.9846491228070176
+      }
+    }
+  },
+  "C08_blocks": {
+    "near_left": {
+      "status": "pass",
+      "reason": "Shot-blocking mask matches visible layer",
+      "details": {
+        "different_pixels": 0
+      }
+    },
+    "near_right": {
+      "status": "pass",
+      "reason": "Shot-blocking mask matches visible layer",
+      "details": {
+        "different_pixels": 0
+      }
+    }
+  },
+  "target_zone_motion_screen": {
+    "rest": [
+      {
+        "background_yprime_p10": 0.4619764705882353,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.46183137254901957,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.4586078431372549,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.4615254901960784,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.46219215686274506,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.4547529411764706,
+        "covered_fraction": 0.0
+      }
+    ],
+    "upper_left": [
+      {
+        "background_yprime_p10": 0.4622509803921569,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.4620392156862745,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.457435294117647,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.46148235294117645,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.46219215686274506,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.45434901960784313,
+        "covered_fraction": 0.0
+      }
+    ],
+    "upper_right": [
+      {
+        "background_yprime_p10": 0.4622078431372549,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.4619764705882353,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.4622509803921569,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.46107843137254906,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.46219215686274506,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.4627203921568627,
+        "covered_fraction": 0.0
+      }
+    ],
+    "lower_right": [
+      {
+        "background_yprime_p10": 0.46189019607843135,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.46183137254901957,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.4624862745098039,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.46174509803921565,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.46219215686274506,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.46455647058823524,
+        "covered_fraction": 0.0
+      }
+    ],
+    "lower_left": [
+      {
+        "background_yprime_p10": 0.4619764705882353,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.46183137254901957,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.4626549019607843,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.4618039215686275,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.46219215686274506,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.4656823529411765,
+        "covered_fraction": 0.0
+      }
+    ],
+    "lit": [
+      {
+        "background_yprime_p10": 0.4619764705882353,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.46183137254901957,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.4633803921568628,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.4615254901960784,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.46219215686274506,
+        "covered_fraction": 0.0
+      },
+      {
+        "background_yprime_p10": 0.46572549019607845,
+        "covered_fraction": 0.0
+      }
+    ]
+  },
+  "opaque_viewport_at_extremes": {
+    "rest": true,
+    "upper_left": true,
+    "upper_right": true,
+    "lower_right": true,
+    "lower_left": true,
+    "lit": true
+  },
+  "texture_bytes_rgba8_mips_estimate": 21908854,
+  "runtime": "pending",
+  "light": "procedural preview"
+}

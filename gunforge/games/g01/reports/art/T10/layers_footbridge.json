@@ -1,0 +1,68 @@
+[
+  {
+    "id": "footbridge_far_roofs",
+    "stage": "footbridge",
+    "layer": "far_roofs",
+    "attempt": 1,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "One isolated scenery layer for a handcrafted paper-cut Chinese small-town game at night. Use matte layered dyed rice paper, subtle fibers, deliberately plain silhouettes, muted indigo (#141A33), plum (#2A1E3D), restrained apricot (#D9A066) and dusty rose (#C97B84). Side-on frontal eye-level 2D art. Draw the complete object, including portions another layer might cover. Truly transparent background, no external shadow, no text, no border, no people, no lamp or glow. distant night-town roof silhouettes with subtle hills.",
+    "output": "source/footbridge_far_roofs.png",
+    "output_id": "exec-43d7119b-84a3-4abf-9d96-fd014d95c585.png"
+  },
+  {
+    "id": "footbridge_mid_structure",
+    "stage": "footbridge",
+    "layer": "mid_structure",
+    "attempt": 1,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "One isolated scenery layer for a handcrafted paper-cut Chinese small-town game at night. Use matte layered dyed rice paper, subtle fibers, deliberately plain silhouettes, muted indigo (#141A33), plum (#2A1E3D), restrained apricot (#D9A066) and dusty rose (#C97B84). Side-on frontal eye-level 2D art. Draw the complete object, including portions another layer might cover. Truly transparent background, no external shadow, no text, no border, no people, no lamp or glow. front elevation of an extremely wide thin utilitarian metal pedestrian footbridge deck with railing; horizontal band, no pillars, full length.",
+    "output": "source/footbridge_mid_structure.png",
+    "output_id": "exec-a2098dc4-e388-4142-b6f7-b9941f1e0310.png"
+  },
+  {
+    "id": "footbridge_mid_left",
+    "stage": "footbridge",
+    "layer": "mid_left",
+    "attempt": 1,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "One isolated scenery layer for a handcrafted paper-cut Chinese small-town game at night. Use matte layered dyed rice paper, subtle fibers, deliberately plain silhouettes, muted indigo (#141A33), plum (#2A1E3D), restrained apricot (#D9A066) and dusty rose (#C97B84). Side-on frontal eye-level 2D art. Draw the complete object, including portions another layer might cover. Truly transparent background, no external shadow, no text, no border, no people, no lamp or glow. one slender tall bridge column, paper-painted steel with small base.",
+    "output": "source/footbridge_mid_left.png",
+    "output_id": "exec-70492c9d-1ba9-4107-9980-ad398205f513.png"
+  },
+  {
+    "id": "footbridge_mid_right",
+    "stage": "footbridge",
+    "layer": "mid_right",
+    "attempt": 1,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "One isolated scenery layer for a handcrafted paper-cut Chinese small-town game at night. Use matte layered dyed rice paper, subtle fibers, deliberately plain silhouettes, muted indigo (#141A33), plum (#2A1E3D), restrained apricot (#D9A066) and dusty rose (#C97B84). Side-on frontal eye-level 2D art. Draw the complete object, including portions another layer might cover. Truly transparent background, no external shadow, no text, no border, no people, no lamp or glow. one slender tall bridge column, paper-painted steel with small base.",
+    "output": "source/footbridge_mid_right.png",
+    "output_id": "exec-3c5997c5-1e73-4d87-a931-5f07756908ec.png"
+  },
+  {
+    "id": "footbridge_near_left",
+    "stage": "footbridge",
+    "layer": "near_left",
+    "attempt": 1,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "One isolated scenery layer for a handcrafted paper-cut Chinese small-town game at night. Use matte layered dyed rice paper, subtle fibers, deliberately plain silhouettes, muted indigo (#141A33), plum (#2A1E3D), restrained apricot (#D9A066) and dusty rose (#C97B84). Side-on frontal eye-level 2D art. Draw the complete object, including portions another layer might cover. Truly transparent background, no external shadow, no text, no border, no people, no lamp or glow. left low masonry buttress with a little foliage.",
+    "output": "source/footbridge_near_left.png",
+    "output_id": "exec-b66926fb-26c2-4a8d-a149-7633cab75063.png"
+  },
+  {
+    "id": "footbridge_near_right",
+    "stage": "footbridge",
+    "layer": "near_right",
+    "attempt": 1,
+    "status": "generated",
+    "provider": "builtin_image_gen",
+    "prompt": "One isolated scenery layer for a handcrafted paper-cut Chinese small-town game at night. Use matte layered dyed rice paper, subtle fibers, deliberately plain silhouettes, muted indigo (#141A33), plum (#2A1E3D), restrained apricot (#D9A066) and dusty rose (#C97B84). Side-on frontal eye-level 2D art. Draw the complete object, including portions another layer might cover. Truly transparent background, no external shadow, no text, no border, no people, no lamp or glow. right low masonry buttress with a little foliage.",
+    "output": "source/footbridge_near_right.png",
+    "output_id": "exec-cc9aa958-4b7e-49ac-af38-8a67a2aa9c6a.png"
+  }
+]

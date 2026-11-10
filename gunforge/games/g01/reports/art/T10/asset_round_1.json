@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ink_drop",
+    "category": "enemy",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One nonhuman squat ink splash with one suspended tear-shaped drop above the pooled body, thick wet ink blue-black and matte, warm dry brush edge only. One small flat cinnabar square on the thick ink pool near center.",
+    "output": "source/ink_drop.png",
+    "output_id": "exec-4121d4fd-c553-47ba-b090-3594e5c9924c.png"
+  },
+  {
+    "id": "ink_cart",
+    "category": "enemy",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. A small old street pushcart with two side wheels, completely possessed by a squat mound of dark blue-black ink draping over the basket. A low horizontal silhouette. One small flat vermilion square fully within the ink. No head or human driver.",
+    "output": "source/ink_cart.png",
+    "output_id": "exec-71f31af5-f3ba-49f7-bdb1-a3e790e95deb.png"
+  },
+  {
+    "id": "ink_sign",
+    "category": "enemy",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One wide rectangular blank old amber enamel shop sign with two side brackets, amorphous blue-black ink piled on top and dripping down. A single flat cinnabar square entirely on the thick upper ink mound, no letters. Horizontal forward facing.",
+    "output": "source/ink_sign.png",
+    "output_id": "exec-a1475695-7782-4994-a7d8-247ad2aac295.png"
+  },
+  {
+    "id": "lantern_off",
+    "category": "lamp",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. Single unlit rust-red cylindrical paper lantern with dark muted red paper panels, dark steel hooks and small brass rim, no lit area, no shine, front facing.",
+    "output": "source/lantern_off.png",
+    "output_id": "exec-93c5081f-232d-4739-b782-bdc2128dbeff.png"
+  },
+  {
+    "id": "neon_off",
+    "category": "lamp",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One unlit wide rectangular 1990s neon shop sign. Dark indigo steel housing, muted dusty rose glass tube forming only a simple horizontal dash, no writing or glow, flat front view.",
+    "output": "source/neon_off.png",
+    "output_id": "exec-b5c4638c-663e-4fbe-a391-8e53cc7bdc90.png"
+  },
+  {
+    "id": "coin",
+    "category": "pickup",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. Single round old brass Chinese copper coin, square hole truly transparent, flat face with short debossed radial dashes only, clear silhouette, warm ochre with blue-black rim, no lettering or numerals.",
+    "output": "source/coin.png",
+    "output_id": "exec-04681512-9671-4654-b942-c6e4a5a897ed.png"
+  },
+  {
+    "id": "ink_fx_01",
+    "category": "fx",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One rounded tight blue-black wet-ink burst, three round outward lobes and four small droplets, no text.",
+    "output": "source/ink_fx_01.png",
+    "output_id": "exec-aaead79a-6377-4942-9703-70fe723b7563.png"
+  },
+  {
+    "id": "ink_fx_02",
+    "category": "fx",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One long horizontal pointed blue-black brush splash, a thick central body with narrow left and right trails, no text.",
+    "output": "source/ink_fx_02.png",
+    "output_id": "exec-d5563b22-b360-46d9-9ce2-ce49e4e969c6.png"
+  }
+]

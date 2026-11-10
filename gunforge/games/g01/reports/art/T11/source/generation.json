@@ -1,0 +1,8 @@
+{
+  "provider": "builtin_image_gen",
+  "attempt": 1,
+  "source": "source/segment_paper.png",
+  "reference": "../T09/generation/dragon_purified_v2.png",
+  "prompt": "T11 game-ready sprite cutout, one isolated PURIFIED body segment of the Paper Lantern City ink dragon. Extract the segment from the supplied approved concept, removing only the grey paper backdrop to true transparent alpha. Preserve the same continuous silhouette, horizontal shallow arch, dark indigo fin tips, layered warm apricot rice-paper scales, paired tiny brass end pivots and exact existing material and geometry. The left and right pivots must both remain plainly visible. Do not change the silhouette or add eyes, head, tail, text, ink stains, glow, detached objects, backdrop, or cast shadow. Center the single cutout with padding. Actual RGBA with transparent background.",
+  "output_id": "exec-18e4d5da-d835-418d-8f44-3d0835a17834.png"
+}

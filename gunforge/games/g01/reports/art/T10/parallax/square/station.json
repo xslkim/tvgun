@@ -1,0 +1,131 @@
+{
+  "id": "square",
+  "status": "runtime_probe_candidate",
+  "source_sha256": "2c74822e6eb73f855d00b50408084f29c014a99109bdddaacb6c13dbc34797b0",
+  "canvas": [
+    1920,
+    1020
+  ],
+  "content_origin": [
+    72,
+    42
+  ],
+  "content_size": [
+    1776,
+    936
+  ],
+  "layers": [
+    {
+      "id": "sky",
+      "file": "sky.png",
+      "pos": [
+        0,
+        0
+      ],
+      "parallax": 0.1,
+      "extent": "sky_extent.png",
+      "fill": "sky_fill.png"
+    },
+    {
+      "id": "street",
+      "file": "street.png",
+      "pos": [
+        0,
+        142
+      ],
+      "parallax": 0.22,
+      "extent": "street_extent.png",
+      "fill": "street_fill.png"
+    },
+    {
+      "id": "pavilion",
+      "file": "pavilion.png",
+      "pos": [
+        353,
+        244
+      ],
+      "parallax": 0.46,
+      "extent": "pavilion_extent.png",
+      "fill": "pavilion_fill.png"
+    },
+    {
+      "id": "lamp",
+      "file": "lamp.png",
+      "pos": [
+        218,
+        367
+      ],
+      "parallax": 0.68,
+      "extent": "lamp_extent.png",
+      "fill": "lamp_fill.png"
+    },
+    {
+      "id": "barrier",
+      "file": "barrier.png",
+      "pos": [
+        1425,
+        542
+      ],
+      "parallax": 0.57,
+      "extent": "barrier_extent.png",
+      "fill": "barrier_fill.png"
+    },
+    {
+      "id": "left_stall",
+      "file": "left_stall.png",
+      "pos": [
+        0,
+        323
+      ],
+      "parallax": 0.9,
+      "extent": "left_stall_extent.png",
+      "blocks_shots": true,
+      "block_mask": "left_stall_block.png"
+    },
+    {
+      "id": "right_stall",
+      "file": "right_stall.png",
+      "pos": [
+        1615,
+        322
+      ],
+      "parallax": 1.0,
+      "extent": "right_stall_extent.png",
+      "blocks_shots": true,
+      "block_mask": "right_stall_block.png"
+    },
+    {
+      "id": "leaves",
+      "file": "leaves.png",
+      "pos": [
+        0,
+        0
+      ],
+      "parallax": 0.75,
+      "extent": "leaves_extent.png"
+    }
+  ],
+  "lights": [
+    {
+      "id": "lamp",
+      "space": "lamp",
+      "glow": "lamp_glow.png",
+      "spill": "lamp_spill.png",
+      "influence": "lamp_influence.png",
+      "pos": [
+        150,
+        329
+      ],
+      "hit_mask": "lamp_hit.png",
+      "hit_pos": [
+        264,
+        404
+      ],
+      "aim": [
+        294,
+        455
+      ]
+    }
+  ],
+  "rest_matches_original": true
+}

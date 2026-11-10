@@ -1,0 +1,40 @@
+{
+  "status": "sample_for_first_review",
+  "pivots": [
+    [
+      18.39252336448598,
+      212.0344827586207
+    ],
+    [
+      749.1588785046729,
+      220.55172413793105
+    ]
+  ],
+  "chain": [
+    0,
+    1,
+    2
+  ],
+  "head_side": 0,
+  "tail_side": 2,
+  "opening_order": [
+    2,
+    1,
+    0
+  ],
+  "shot_seconds": [
+    1.25,
+    2.55,
+    3.85
+  ],
+  "base": "paper.png",
+  "locked": "locked.png",
+  "ink": "ink.png",
+  "active_glow": "warm_glow.png",
+  "purified_glow": "purified_glow.png",
+  "active_hit_mask": "hit_mask.png",
+  "shared_silhouette": true,
+  "active_max": 1,
+  "frames_checked": 75,
+  "scope": "three-link preview compositor sample"
+}

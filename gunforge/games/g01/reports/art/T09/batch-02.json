@@ -1,0 +1,122 @@
+[
+  {
+    "id": "umbrella_open",
+    "name": "墨伞 · 撑开",
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, crisp knife-cut silhouettes, visible fibers, 1990s Chinese small town, warm amber and indigo, no photorealism. Matte mid-gray paper background, clean centered complete subject, no scenery except specified props, no stray lettering or marks. Same nonhuman 1990s possessed umbrella monster design in both states: short bell-shaped matte blue-black ink body with three blunt flowing tails, crooked bamboo umbrella handle on its right, deep indigo oil-paper umbrella, thin pale dry-brush rim. No humanoid resident or luminous eyes. Umbrella raised wide between viewer and body like a shield, body only partly visible, no visible vermilion stamp, front three-quarter full-body.",
+    "batch": 2,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-umbrella_open-01",
+    "output": "generation/umbrella_open.png",
+    "output_id": "exec-4e6d2173-583b-4b18-9467-e4fc0a33ba5f.png"
+  },
+  {
+    "id": "umbrella_closed",
+    "name": "墨伞 · 收拢",
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, crisp knife-cut silhouettes, visible fibers, 1990s Chinese small town, warm amber and indigo, no photorealism. Matte mid-gray paper background, clean centered complete subject, no scenery except specified props, no stray lettering or marks. Same nonhuman 1990s possessed umbrella monster design in both states: short bell-shaped matte blue-black ink body with three blunt flowing tails, crooked bamboo umbrella handle on its right, deep indigo oil-paper umbrella, thin pale dry-brush rim. No humanoid resident or luminous eyes. Umbrella folded into a compact bundle to its right, entire body exposed with one distinct flat cinnabar stamp on its front, front three-quarter full-body.",
+    "batch": 2,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-umbrella_closed-01",
+    "output": "generation/umbrella_closed.png",
+    "output_id": "exec-cae0a771-2e5e-4552-931b-5b286e175ce0.png"
+  },
+  {
+    "id": "dragon",
+    "name": "墨舞龙 · 整体",
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, crisp knife-cut silhouettes, visible fibers, 1990s Chinese small town, warm amber and indigo, no photorealism. Matte mid-gray paper background, clean centered complete subject, no scenery except specified props, no stray lettering or marks. A 1990s Chinese street festival articulated paper parade dragon, undulating in a gentle sideways S, warm amber dragon head, exactly eight distinct linking paper body segments and a single tapered tail, dark wet ink clinging separately to the sections. Clean visible paper hinges and head's opening jaws, plain warm paper eyes, small vermilion core inside open mouth only. No wings, no people, no extra props. Landscape design sheet.",
+    "batch": 2,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-dragon-01",
+    "output": "generation/dragon.png",
+    "output_id": "exec-ac1599eb-9f27-4291-807b-760df67b7c27.png"
+  },
+  {
+    "id": "dragon_active",
+    "name": "墨舞龙 · 当前可射",
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, crisp knife-cut silhouettes, visible fibers, 1990s Chinese small town, warm amber and indigo, no photorealism. Matte mid-gray paper background, clean centered complete subject, no scenery except specified props, no stray lettering or marks. One isolated dragon body segment, matching an antique festival paper dragon, almond-shaped curved shell of amber layered rice paper, small round hinge at left and right, viewed from side. Dark rounded matte ink patch in center with thin warm amber pulse halo, high contrast. No eyes, no mouth, no extra parts.",
+    "batch": 2,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-dragon_active-01",
+    "output": "generation/dragon_active.png",
+    "output_id": "exec-8afecdf5-0624-41ee-ab88-a54e1023b9ab.png"
+  },
+  {
+    "id": "dragon_locked",
+    "name": "墨舞龙 · 尚未开放",
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, crisp knife-cut silhouettes, visible fibers, 1990s Chinese small town, warm amber and indigo, no photorealism. Matte mid-gray paper background, clean centered complete subject, no scenery except specified props, no stray lettering or marks. One isolated almond-shaped warm amber antique festival dragon body segment in side view, small round hinge at left and right. An inactive flat dull slate-gray ink patch in center, low contrast, no glow. No eyes, mouth or other parts.",
+    "batch": 2,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-dragon_locked-01",
+    "output": "generation/dragon_locked.png",
+    "output_id": "exec-af69183e-6f60-45ea-bc3e-208083f98547.png"
+  },
+  {
+    "id": "dragon_purified",
+    "name": "墨舞龙 · 已净化",
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, crisp knife-cut silhouettes, visible fibers, 1990s Chinese small town, warm amber and indigo, no photorealism. Matte mid-gray paper background, clean centered complete subject, no scenery except specified props, no stray lettering or marks. One isolated almond-shaped antique festival dragon body segment in side view, small round hinge at left and right. Clean warm amber layered paper restored, barely glowing from inside, no ink patch. No eyes, no mouth, no other parts.",
+    "batch": 2,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-dragon_purified-01",
+    "output": "generation/dragon_purified.png",
+    "output_id": "exec-c15582c0-34be-456a-af87-396c30d3b9d0.png"
+  },
+  {
+    "id": "screen_shadow",
+    "name": "银幕影 · 巨影",
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, crisp knife-cut silhouettes, visible fibers, 1990s Chinese small town, warm amber and indigo, no photorealism. Matte mid-gray paper background, clean centered complete subject, no scenery except specified props, no stray lettering or marks. A looming nonhuman matte blue-black ink silhouette on a rectangular aged cinema screen, broad irregular shoulders melting into elongated projector-like shadows and film edges, no distinct eyes or teeth. Cold indigo edges with muted icy blue and magenta projection accents. Whole screen visible, no letters, no seating, no people.",
+    "batch": 2,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-screen_shadow-01",
+    "output": "generation/screen_shadow.png",
+    "output_id": "exec-0ad85d00-5670-4319-aee9-2ed068bc77d8.png"
+  },
+  {
+    "id": "projector",
+    "name": "银幕影 · 放映机",
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, crisp knife-cut silhouettes, visible fibers, 1990s Chinese small town, warm amber and indigo, no photorealism. Matte mid-gray paper background, clean centered complete subject, no scenery except specified props, no stray lettering or marks. One period-correct heavy 1990s analog 35mm cinema projector as a normal safe lighting prop, visible circular lens with soft warm beam, gray dark indigo enamel casing with knobs, top spindle, no ink or red target. Three-quarter asset concept. No reel attached.",
+    "batch": 2,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-projector-01",
+    "output": "generation/projector.png",
+    "output_id": "exec-c03e33cd-1bee-43bb-8122-8cc8e72267b9.png"
+  },
+  {
+    "id": "film_reel",
+    "name": "银幕影 · 胶片盘",
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, crisp knife-cut silhouettes, visible fibers, 1990s Chinese small town, warm amber and indigo, no photorealism. Matte mid-gray paper background, clean centered complete subject, no scenery except specified props, no stray lettering or marks. One large 35mm cinema film reel, front three-quarter concept, embossed dull metal spokes and film strip. One dense matte ink smudge adheres to its lower front and reads as the target, subtle flat cinnabar at its center. No projector or text.",
+    "batch": 2,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-film_reel-01",
+    "output": "generation/film_reel.png",
+    "output_id": "exec-d2c212a7-e790-4e1a-8992-d2137b7bb681.png"
+  },
+  {
+    "id": "forget_boss",
+    "name": "忘字 · 整体气质",
+    "prompt": "Stylized-concept for 纸灯城, handcrafted layered Chinese dyed rice paper, crisp knife-cut silhouettes, visible fibers, 1990s Chinese small town, warm amber and indigo, no photorealism. Matte mid-gray paper background, clean centered complete subject, no scenery except specified props, no stray lettering or marks. One very large single accurate simplified Chinese character 忘, verbatim. Clearly 亡 above 心. It rises like wet ink from the edge of a modest Chinese inkstone on an old desk, cold dark glossy-limited ink with controlled feathered fly-white edges, quiet eerie mood, amber side lighting. Complete character as a single design, no individual stroke callouts, no captions, no other lettering.",
+    "batch": 2,
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "generated",
+    "local_attempt_id": "T09-forget_boss-01",
+    "output": "generation/forget_boss.png",
+    "output_id": "exec-9ae0eaa8-d3d3-4b4f-9a6c-546d377e2f66.png"
+  }
+]

@@ -1,0 +1,1407 @@
+[
+  {
+    "id": "bicycle",
+    "category": "prop",
+    "status": "prepared",
+    "provider": "builtin_image_gen",
+    "attempt": 1,
+    "prompt": "One isolated 1990s Chinese black steel utility bicycle in full profile, plain two wheels and rear rack, flat cut paper illustration in navy and warm slate, no person. Truly transparent background, absolutely nothing outside the silhouette. A single centered object with generous empty margins. Handmade matte dyed paper fibers, 1990s China game asset.",
+    "output": "source/bicycle.png",
+    "output_id": "exec-6770f203-cdf5-46f3-b591-d0e52c781ea4.png",
+    "sha256": "05ed67928e34376d9b54f918d29bd1e8417e34714511ca3690a060077afa204d",
+    "cost": null,
+    "texture": "texture.png",
+    "crop_box": [
+      168,
+      4,
+      1670,
+      849
+    ],
+    "source_size": [
+      1853,
+      849
+    ],
+    "checks": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            1024,
+            576
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9733565231784612
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      },
+      "C05": {
+        "status": "pass",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "",
+          "confidence": 0,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      }
+    },
+    "palette_correction": "texture-preserving paper and ink grades",
+    "scope": "offline texture candidate"
+  },
+  {
+    "id": "shopping_basket",
+    "category": "prop",
+    "status": "prepared",
+    "provider": "builtin_image_gen",
+    "attempt": 1,
+    "prompt": "One isolated small low warm-apricot woven shopping basket with one rounded handle, simplified layered cut paper shapes, no person. Truly transparent background, absolutely nothing outside the silhouette. A single centered object with generous empty margins. Handmade matte dyed paper fibers, 1990s China game asset.",
+    "output": "source/shopping_basket.png",
+    "output_id": "exec-dfaebb53-f9ed-46b3-9e69-3f61f466ee1d.png",
+    "sha256": "7cf3e41b766613fba82a01188ce7dc0496aa2169bd90919e9bea8bb1b35a94b7",
+    "cost": null,
+    "texture": "texture.png",
+    "crop_box": [
+      412,
+      136,
+      1099,
+      910
+    ],
+    "source_size": [
+      1536,
+      1024
+    ],
+    "checks": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            687,
+            774
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9999608475681311
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "EATprafreePoNOdeeCENTSp=SaprNEEAZ§ay\\ayved4fa,Biia2t5>§ey|SlTYfedsmeBOASbsREGELEEEasTEeeeaSoetRileeEgbzaSeanasma35]1FEin:fieNE3=a]Lix机ay和1REIS0RlTeamLLlO和LRReeSnErepsooSaiEaAEReinaE",
+          "confidence": 21,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      }
+    },
+    "palette_correction": "texture-preserving paper and ink grades",
+    "scope": "offline texture candidate"
+  },
+  {
+    "id": "cyclist_sheet",
+    "category": "puppet_sheet",
+    "status": "prepared",
+    "provider": "builtin_image_gen",
+    "attempt": 1,
+    "reference": "../T09/generation/cyclist.png",
+    "prompt": "Use the attached approved character as the reference and create a transparent separated 2D game puppet parts sheet. Preserve identity, clothes, colors, paper material and three-quarter orientation. Show EXACTLY TEN separate cutout pieces with generous truly transparent gutters at least 32 pixels; all pieces completely visible, none touch, no annotations or cast shadows. Use a disciplined three-row grid: first row head and neck, jacket/torso; second row left upper arm, right upper arm, left forearm including hand, right forearm including hand; third row left thigh, right thigh, left shin including shoe, right shin including shoe. Arms cut short with rounded paper tabs at both ends, no extra hands. Legs end in rounded joint tabs. Small subtle brass circular pivots on elbows and knees. Flat richly colored layered rice paper. No text, no bicycle, no basket, no accessories, no full assembled person.",
+    "output": "source/cyclist_sheet.png",
+    "output_id": "exec-12560d89-93ef-43ac-9930-a77128286372.png",
+    "sha256": "3694fc2ba0ee3be6d18fb52eed4912734360613d80df753f998b7214dc627e82",
+    "cost": null,
+    "parts": 10,
+    "poses": [
+      "idle",
+      "peek",
+      "walk",
+      "startle",
+      "wave_for_help",
+      "struggle",
+      "rescued_bounce",
+      "thank"
+    ],
+    "major_silhouette_components": {
+      "idle": 1,
+      "peek": 1,
+      "walk": 1,
+      "startle": 1,
+      "wave_for_help": 1,
+      "struggle": 1,
+      "rescued_bounce": 1,
+      "thank": 1
+    },
+    "sampled_joint_overlap_px": {
+      "idle": {
+        "head": 673,
+        "upper_arm_l": 502,
+        "upper_arm_r": 546,
+        "forearm_l": 42,
+        "forearm_r": 139,
+        "thigh_l": 339,
+        "thigh_r": 169,
+        "shin_l": 441,
+        "shin_r": 481
+      },
+      "peek": {
+        "head": 680,
+        "upper_arm_l": 513,
+        "upper_arm_r": 541,
+        "forearm_l": 44,
+        "forearm_r": 137,
+        "thigh_l": 338,
+        "thigh_r": 163,
+        "shin_l": 439,
+        "shin_r": 485
+      },
+      "walk": {
+        "head": 673,
+        "upper_arm_l": 514,
+        "upper_arm_r": 553,
+        "forearm_l": 44,
+        "forearm_r": 144,
+        "thigh_l": 342,
+        "thigh_r": 186,
+        "shin_l": 431,
+        "shin_r": 487
+      },
+      "startle": {
+        "head": 679,
+        "upper_arm_l": 462,
+        "upper_arm_r": 516,
+        "forearm_l": 38,
+        "forearm_r": 138,
+        "thigh_l": 339,
+        "thigh_r": 169,
+        "shin_l": 441,
+        "shin_r": 481
+      },
+      "wave_for_help": {
+        "head": 673,
+        "upper_arm_l": 502,
+        "upper_arm_r": 488,
+        "forearm_l": 42,
+        "forearm_r": 167,
+        "thigh_l": 339,
+        "thigh_r": 169,
+        "shin_l": 441,
+        "shin_r": 481
+      },
+      "struggle": {
+        "head": 667,
+        "upper_arm_l": 466,
+        "upper_arm_r": 526,
+        "forearm_l": 54,
+        "forearm_r": 136,
+        "thigh_l": 345,
+        "thigh_r": 167,
+        "shin_l": 437,
+        "shin_r": 479
+      },
+      "rescued_bounce": {
+        "head": 673,
+        "upper_arm_l": 502,
+        "upper_arm_r": 546,
+        "forearm_l": 42,
+        "forearm_r": 139,
+        "thigh_l": 338,
+        "thigh_r": 175,
+        "shin_l": 430,
+        "shin_r": 497
+      },
+      "thank": {
+        "head": 670,
+        "upper_arm_l": 502,
+        "upper_arm_r": 546,
+        "forearm_l": 56,
+        "forearm_r": 146,
+        "thigh_l": 339,
+        "thigh_r": 169,
+        "shin_l": 441,
+        "shin_r": 481
+      }
+    },
+    "checks": {
+      "C10": {
+        "status": "pending",
+        "reason": "Sampled joints overlap; check extreme motion and copper tabs in runtime"
+      }
+    },
+    "scope": "preliminary part map and pose samples"
+  },
+  {
+    "id": "passerby_a_sheet",
+    "category": "puppet_sheet",
+    "status": "prepared",
+    "provider": "builtin_image_gen",
+    "attempt": 1,
+    "reference": "../T09/generation/passerby_a.png",
+    "prompt": "Use the attached approved character as the reference and create a transparent separated 2D game puppet parts sheet. Preserve identity, clothes, colors, paper material and three-quarter orientation. Show EXACTLY TEN separate cutout pieces with generous truly transparent gutters at least 32 pixels; all pieces completely visible, none touch, no annotations or cast shadows. Use a disciplined three-row grid: first row head and neck, jacket/torso; second row left upper arm, right upper arm, left forearm including hand, right forearm including hand; third row left thigh, right thigh, left shin including shoe, right shin including shoe. Arms cut short with rounded paper tabs at both ends, no extra hands. Legs end in rounded joint tabs. Small subtle brass circular pivots on elbows and knees. Flat richly colored layered rice paper. No text, no bicycle, no basket, no accessories, no full assembled person.",
+    "output": "source/passerby_a_sheet.png",
+    "output_id": "exec-22245b9f-19b5-4787-a6f4-7b18a543d4b5.png",
+    "sha256": "851d03f47331e07b4c16912b86cba9ba9f50b18727debc30852165cbf18a6c85",
+    "cost": null,
+    "parts": 10,
+    "poses": [
+      "idle",
+      "peek",
+      "walk",
+      "startle",
+      "wave_for_help",
+      "struggle",
+      "rescued_bounce",
+      "thank"
+    ],
+    "major_silhouette_components": {
+      "idle": 1,
+      "peek": 1,
+      "walk": 1,
+      "startle": 1,
+      "wave_for_help": 1,
+      "struggle": 1,
+      "rescued_bounce": 1,
+      "thank": 1
+    },
+    "sampled_joint_overlap_px": {
+      "idle": {
+        "head": 749,
+        "upper_arm_l": 562,
+        "upper_arm_r": 469,
+        "forearm_l": 829,
+        "forearm_r": 822,
+        "thigh_l": 759,
+        "thigh_r": 832,
+        "shin_l": 781,
+        "shin_r": 682
+      },
+      "peek": {
+        "head": 745,
+        "upper_arm_l": 578,
+        "upper_arm_r": 471,
+        "forearm_l": 834,
+        "forearm_r": 822,
+        "thigh_l": 762,
+        "thigh_r": 824,
+        "shin_l": 780,
+        "shin_r": 680
+      },
+      "walk": {
+        "head": 749,
+        "upper_arm_l": 578,
+        "upper_arm_r": 487,
+        "forearm_l": 834,
+        "forearm_r": 821,
+        "thigh_l": 759,
+        "thigh_r": 835,
+        "shin_l": 790,
+        "shin_r": 682
+      },
+      "startle": {
+        "head": 747,
+        "upper_arm_l": 539,
+        "upper_arm_r": 406,
+        "forearm_l": 828,
+        "forearm_r": 840,
+        "thigh_l": 759,
+        "thigh_r": 832,
+        "shin_l": 781,
+        "shin_r": 682
+      },
+      "wave_for_help": {
+        "head": 749,
+        "upper_arm_l": 562,
+        "upper_arm_r": 365,
+        "forearm_l": 829,
+        "forearm_r": 838,
+        "thigh_l": 759,
+        "thigh_r": 832,
+        "shin_l": 781,
+        "shin_r": 682
+      },
+      "struggle": {
+        "head": 753,
+        "upper_arm_l": 539,
+        "upper_arm_r": 415,
+        "forearm_l": 831,
+        "forearm_r": 828,
+        "thigh_l": 751,
+        "thigh_r": 825,
+        "shin_l": 787,
+        "shin_r": 687
+      },
+      "rescued_bounce": {
+        "head": 749,
+        "upper_arm_l": 562,
+        "upper_arm_r": 469,
+        "forearm_l": 829,
+        "forearm_r": 822,
+        "thigh_l": 760,
+        "thigh_r": 835,
+        "shin_l": 789,
+        "shin_r": 683
+      },
+      "thank": {
+        "head": 753,
+        "upper_arm_l": 562,
+        "upper_arm_r": 469,
+        "forearm_l": 829,
+        "forearm_r": 822,
+        "thigh_l": 759,
+        "thigh_r": 832,
+        "shin_l": 781,
+        "shin_r": 682
+      }
+    },
+    "checks": {
+      "C10": {
+        "status": "pending",
+        "reason": "Sampled joints overlap; check extreme motion and copper tabs in runtime"
+      }
+    },
+    "scope": "preliminary part map and pose samples"
+  },
+  {
+    "id": "ink_drop",
+    "category": "enemy",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "prepared",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One nonhuman squat ink splash with one suspended tear-shaped drop above the pooled body, thick wet ink blue-black and matte, warm dry brush edge only. One small flat cinnabar square on the thick ink pool near center.",
+    "output": "source/ink_drop.png",
+    "output_id": "exec-4121d4fd-c553-47ba-b090-3594e5c9924c.png",
+    "sha256": "bc265502e9e9cf5a04b5363de720addacf8db538b7370482fb27bb6f2c39ff21",
+    "cost": null,
+    "texture": "texture.png",
+    "crop_box": [
+      102,
+      57,
+      1427,
+      981
+    ],
+    "source_size": [
+      1536,
+      1024
+    ],
+    "checks": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            1024,
+            714
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 1.0
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "éEv",
+          "confidence": 64,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C11": {
+        "status": "pending",
+        "reason": "Static containment passed; complete state/frame/alignment evidence missing",
+        "details": {}
+      },
+      "C16": {
+        "status": "pass",
+        "reason": "Offline SDF round-trip; engine sampling is a separate pending check",
+        "details": {
+          "max_error_px": 0.0
+        }
+      },
+      "static_hardened_containment": {
+        "status": "pass"
+      }
+    },
+    "palette_correction": "texture-preserving paper and ink grades",
+    "scope": "separate ink/stamp/hardened layers and provisional geometry; animation and runtime pending"
+  },
+  {
+    "id": "ink_cart",
+    "category": "enemy",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "prepared",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. A small old street pushcart with two side wheels, completely possessed by a squat mound of dark blue-black ink draping over the basket. A low horizontal silhouette. One small flat vermilion square fully within the ink. No head or human driver.",
+    "output": "source/ink_cart.png",
+    "output_id": "exec-71f31af5-f3ba-49f7-bdb1-a3e790e95deb.png",
+    "sha256": "69fd2e7d8e05d2143fa8dfd06679b3ba600832d97c0d3c9389c8be06cbb43c81",
+    "cost": null,
+    "texture": "texture.png",
+    "crop_box": [
+      31,
+      89,
+      1743,
+      858
+    ],
+    "source_size": [
+      1774,
+      887
+    ],
+    "checks": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            1024,
+            460
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9099042811041096
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "EEEis=SaEERa启Sh:Ln:fr人SbpilAhaaeHE",
+          "confidence": 27,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C11": {
+        "status": "pending",
+        "reason": "Static containment passed; complete state/frame/alignment evidence missing",
+        "details": {}
+      },
+      "C16": {
+        "status": "pass",
+        "reason": "Offline SDF round-trip; engine sampling is a separate pending check",
+        "details": {
+          "max_error_px": 0.0
+        }
+      },
+      "static_hardened_containment": {
+        "status": "pass"
+      }
+    },
+    "palette_correction": "texture-preserving paper and ink grades",
+    "scope": "separate ink/stamp/hardened layers and provisional geometry; animation and runtime pending"
+  },
+  {
+    "id": "ink_sign",
+    "category": "enemy",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "prepared",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One wide rectangular blank old amber enamel shop sign with two side brackets, amorphous blue-black ink piled on top and dripping down. A single flat cinnabar square entirely on the thick upper ink mound, no letters. Horizontal forward facing.",
+    "output": "source/ink_sign.png",
+    "output_id": "exec-a1475695-7782-4994-a7d8-247ad2aac295.png",
+    "sha256": "901b9399dfd7a8d227240198fef1780bf488c45b66e5148fb717e8f4512e9ccd",
+    "cost": null,
+    "texture": "texture.png",
+    "crop_box": [
+      18,
+      67,
+      1757,
+      807
+    ],
+    "source_size": [
+      1774,
+      887
+    ],
+    "checks": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            1024,
+            436
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.937827576642206
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "2Rikio(EDIEPe,g[7|by1BbarayTY©oN|-§|aA|-人4司|SNonps+4es",
+          "confidence": 28,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      },
+      "C11": {
+        "status": "pending",
+        "reason": "Static containment passed; complete state/frame/alignment evidence missing",
+        "details": {}
+      },
+      "C16": {
+        "status": "pass",
+        "reason": "Offline SDF round-trip; engine sampling is a separate pending check",
+        "details": {
+          "max_error_px": 0.0
+        }
+      },
+      "static_hardened_containment": {
+        "status": "pass"
+      }
+    },
+    "palette_correction": "texture-preserving paper and ink grades",
+    "scope": "separate ink/stamp/hardened layers and provisional geometry; animation and runtime pending"
+  },
+  {
+    "id": "lantern_off",
+    "category": "lamp",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "prepared",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. Single unlit rust-red cylindrical paper lantern with dark muted red paper panels, dark steel hooks and small brass rim, no lit area, no shine, front facing.",
+    "output": "source/lantern_off.png",
+    "output_id": "exec-93c5081f-232d-4739-b782-bdc2128dbeff.png",
+    "sha256": "6c8151f94283fa249bdbbcf1446af17b99b6ec4dbe84f275126e994a5ce7f4e6",
+    "cost": null,
+    "texture": "texture.png",
+    "crop_box": [
+      325,
+      9,
+      871,
+      1305
+    ],
+    "source_size": [
+      1199,
+      1312
+    ],
+    "checks": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            431,
+            1024
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9468306612306499
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      },
+      "C05": {
+        "status": "pass",
+        "reason": "OCR text versus permitted text",
+        "details": {
+          "recognized": "",
+          "confidence": 0,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      }
+    },
+    "palette_correction": "texture-preserving paper and ink grades",
+    "scope": "offline texture candidate"
+  },
+  {
+    "id": "neon_off",
+    "category": "lamp",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "prepared",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One unlit wide rectangular 1990s neon shop sign. Dark indigo steel housing, muted dusty rose glass tube forming only a simple horizontal dash, no writing or glow, flat front view.",
+    "output": "source/neon_off.png",
+    "output_id": "exec-b5c4638c-663e-4fbe-a391-8e53cc7bdc90.png",
+    "sha256": "a666861350674639fed070f9fd4dc5d9c8c31407dbc941755c4a62a80eb611a7",
+    "cost": null,
+    "texture": "texture.png",
+    "crop_box": [
+      109,
+      122,
+      2062,
+      602
+    ],
+    "source_size": [
+      2172,
+      724
+    ],
+    "checks": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            1024,
+            252
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9835636254801218
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "rei",
+          "confidence": 39,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      }
+    },
+    "palette_correction": "texture-preserving paper and ink grades",
+    "scope": "offline texture candidate"
+  },
+  {
+    "id": "coin",
+    "category": "pickup",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "prepared",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. Single round old brass Chinese copper coin, square hole truly transparent, flat face with short debossed radial dashes only, clear silhouette, warm ochre with blue-black rim, no lettering or numerals.",
+    "output": "source/coin.png",
+    "output_id": "exec-04681512-9671-4654-b942-c6e4a5a897ed.png",
+    "sha256": "071cfdab680a83160ec5b2926227e95c867fd5897e5f795cf97d8f2930b4cd97",
+    "cost": null,
+    "texture": "texture.png",
+    "crop_box": [
+      282,
+      27,
+      1240,
+      992
+    ],
+    "source_size": [
+      1536,
+      1024
+    ],
+    "checks": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            958,
+            965
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 1.0
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      },
+      "C05": {
+        "status": "pending",
+        "reason": "Low-confidence OCR needs visual confirmation",
+        "details": {
+          "recognized": "En",
+          "confidence": 24,
+          "engine": "tesseract.js-7.0.0-eng+chi_sim"
+        }
+      }
+    },
+    "palette_correction": "texture-preserving paper and ink grades",
+    "scope": "offline texture candidate"
+  },
+  {
+    "id": "ink_fx_01",
+    "category": "fx",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "prepared",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One rounded tight blue-black wet-ink burst, three round outward lobes and four small droplets, no text.",
+    "output": "source/ink_fx_01.png",
+    "output_id": "exec-aaead79a-6377-4942-9703-70fe723b7563.png",
+    "sha256": "ad950296ef1d0c432d2ff297a7d711c14123678635bb5095856aa54997d1d249",
+    "cost": null,
+    "texture": "texture.png",
+    "crop_box": [
+      246,
+      41,
+      1284,
+      974
+    ],
+    "source_size": [
+      1536,
+      1024
+    ],
+    "checks": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            512,
+            512
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 1.0
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "palette_correction": "texture-preserving paper and ink grades",
+    "scope": "offline texture candidate"
+  },
+  {
+    "id": "ink_fx_02",
+    "category": "fx",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "prepared",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One long horizontal pointed blue-black brush splash, a thick central body with narrow left and right trails, no text.",
+    "output": "source/ink_fx_02.png",
+    "output_id": "exec-d5563b22-b360-46d9-9ce2-ce49e4e969c6.png",
+    "sha256": "dbd3cfe09d4a37bd2ce23ba8aac7a801251551bc81202c1f9def476a5e6277c2",
+    "cost": null,
+    "texture": "texture.png",
+    "crop_box": [
+      37,
+      106,
+      2128,
+      597
+    ],
+    "source_size": [
+      2172,
+      724
+    ],
+    "checks": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            512,
+            512
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 1.0
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "palette_correction": "texture-preserving paper and ink grades",
+    "scope": "offline texture candidate"
+  },
+  {
+    "id": "ink_fx_03",
+    "category": "fx",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "prepared",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One oblique ink splash travelling upper right, seven separated asymmetric droplets surrounding one thick blue-black splatter, no text.",
+    "output": "source/ink_fx_03.png",
+    "output_id": "exec-4371ea2b-ccc5-485e-b0a3-8572db00d116.png",
+    "sha256": "5cdd4a24464435303808fd1656fb5180453581384e692f13484bbaff9a123079",
+    "cost": null,
+    "texture": "texture.png",
+    "crop_box": [
+      114,
+      66,
+      1477,
+      938
+    ],
+    "source_size": [
+      1536,
+      1024
+    ],
+    "checks": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            512,
+            512
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 1.0
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "palette_correction": "texture-preserving paper and ink grades",
+    "scope": "offline texture candidate"
+  },
+  {
+    "id": "ink_fx_04",
+    "category": "fx",
+    "status": "prepared",
+    "provider": "builtin_image_gen",
+    "attempt": 2,
+    "prompt": "A single isolated 2D ink splatter game sprite with true transparent background. Draw an irregular radial ring splash, circular open center completely transparent, uneven broken ink rim, capillary fingers pointing out from rim, a few separate small drop shapes. Matte blue-black and dark indigo only, handmade dyed rice-paper fibers inside silhouette, subtle feathery edges, dense core, visible even at 64 pixels. No bright edge or rim lighting, no flowers, leaves, scenery, props, ornaments, cast shadow, writing, or background. Game VFX asset, wide empty margins around the ink.",
+    "output": "source/ink_fx_04_v2.png",
+    "output_id": "exec-aa35037d-17fd-4436-9b4e-dcf3606d5e6d.png",
+    "sha256": "5a947a9caef1be824306a4519fbb5c12db32f26ff9946d7130882266a826b197",
+    "cost": null,
+    "texture": "texture.png",
+    "crop_box": [
+      222,
+      24,
+      1303,
+      1012
+    ],
+    "source_size": [
+      1536,
+      1024
+    ],
+    "checks": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            512,
+            512
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 1.0
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "palette_correction": "texture-preserving paper and ink grades",
+    "scope": "offline texture candidate"
+  },
+  {
+    "id": "ink_fx_05",
+    "category": "fx",
+    "status": "prepared",
+    "provider": "builtin_image_gen",
+    "attempt": 2,
+    "prompt": "Generate a single isolated transparent-background 2D game VFX sprite for a handmade paper-shadowbox video game. Subject: a tall vertically dripping ink fall, compact irregular dark ink upper mass with two long tapered downward drips, several small separated asymmetric beads. Silhouette centered with ample transparent padding. Deep blue-black to muted charcoal navy only (#0B0B0E and #141A33), low-contrast rice-paper fibers inside ink, matte, subtle feathered capillary edge. No bright outline or shine, no other colors, no scenery, houses, flora, landscape, objects, characters, lettering or background. The sprite must read as one falling ink splash at 64 pixels.",
+    "output": "source/ink_fx_05_v2.png",
+    "output_id": "exec-1ca08608-19e6-4ced-b503-ca8cb8529802.png",
+    "sha256": "305b79a9d578dac943ae9661496fced64b4ff4e8d910f094af1d43533cad49df",
+    "cost": null,
+    "texture": "texture.png",
+    "crop_box": [
+      214,
+      56,
+      768,
+      1479
+    ],
+    "source_size": [
+      1024,
+      1536
+    ],
+    "checks": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            512,
+            512
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 1.0
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "palette_correction": "texture-preserving paper and ink grades",
+    "scope": "offline texture candidate"
+  },
+  {
+    "id": "ink_fx_06",
+    "category": "fx",
+    "status": "prepared",
+    "provider": "builtin_image_gen",
+    "attempt": 2,
+    "prompt": "A single isolated 2D ink splatter game sprite with true transparent background. Draw a low horizontal heavy blue-black puddle splash with six short uneven ridges, two separated side droplets, an irregular broad pool, centered with safe margins. Matte blue-black and dark indigo only, handmade dyed rice-paper fibers inside silhouette, subtle feathery edges, dense core, visible even at 64 pixels. No bright edge or rim lighting, no flowers, leaves, scenery, props, ornaments, cast shadow, writing, or background. Game VFX asset, wide empty margins around the ink.",
+    "output": "source/ink_fx_06_v2.png",
+    "output_id": "exec-87492b97-4183-41a3-bb7b-911f53b6c74c.png",
+    "sha256": "7dd152d13c6e8f3c9bcec7183a901d4901efa798e471750a403ed5d1714d18d6",
+    "cost": null,
+    "texture": "texture.png",
+    "crop_box": [
+      104,
+      263,
+      1668,
+      766
+    ],
+    "source_size": [
+      1774,
+      887
+    ],
+    "checks": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            512,
+            512
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 1.0
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "palette_correction": "texture-preserving paper and ink grades",
+    "scope": "offline texture candidate"
+  },
+  {
+    "id": "paper_fx_01",
+    "category": "fx",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "prepared",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One isolated torn polygonal warm amber rice-paper fragment with short visible torn fibers, no print.",
+    "output": "source/paper_fx_01.png",
+    "output_id": "exec-56cbb940-7d0f-46bd-9e53-0c3c523fff7c.png",
+    "sha256": "792fc3562b879b07e80b52c6705ab42e003494ccedd64c8becc20413d41fb4fe",
+    "cost": null,
+    "texture": "texture.png",
+    "crop_box": [
+      137,
+      127,
+      1416,
+      897
+    ],
+    "source_size": [
+      1536,
+      1024
+    ],
+    "checks": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            512,
+            512
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 1.0
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "palette_correction": "texture-preserving paper and ink grades",
+    "scope": "offline texture candidate"
+  },
+  {
+    "id": "paper_fx_02",
+    "category": "fx",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "prepared",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One isolated curled dusty-rose rice-paper scrap, narrow trapezoid with one folded edge, no print.",
+    "output": "source/paper_fx_02.png",
+    "output_id": "exec-88202a37-14ae-44ed-a2ce-21e1192b66c0.png",
+    "sha256": "9d2e606abceb0b7a1ea0785bdc411bde3b6137466afe4dde80eb4d04b30fe06f",
+    "cost": null,
+    "texture": "texture.png",
+    "crop_box": [
+      154,
+      115,
+      2020,
+      604
+    ],
+    "source_size": [
+      2172,
+      724
+    ],
+    "checks": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            512,
+            512
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9999378213689031
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "palette_correction": "texture-preserving paper and ink grades",
+    "scope": "offline texture candidate"
+  },
+  {
+    "id": "paper_fx_03",
+    "category": "fx",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "prepared",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One isolated muted pale teal irregular triangular rice-paper scrap, corner folded slightly, no print.",
+    "output": "source/paper_fx_03.png",
+    "output_id": "exec-af665b5b-daed-486e-93d7-82f4cc3dc678.png",
+    "sha256": "0a1e2287ffd57d781983cad12416b471391fe3554d4842edeec149a681774bab",
+    "cost": null,
+    "texture": "texture.png",
+    "crop_box": [
+      103,
+      128,
+      1431,
+      910
+    ],
+    "source_size": [
+      1536,
+      1024
+    ],
+    "checks": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            512,
+            512
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 1.0
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "palette_correction": "texture-preserving paper and ink grades",
+    "scope": "offline texture candidate"
+  },
+  {
+    "id": "paper_fx_04",
+    "category": "fx",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "status": "prepared",
+    "prompt": "Transparent background. Only one isolated game asset, centered with safe margins. 1990s small-town China, handmade rice-paper shadowbox, matte flat layered dyed paper with subtle fibers, crisp contour, muted indigo, amber, and old rose. No writing, logos, border, floor, background, bright white, or cast shadow outside the silhouette. One isolated irregular muted parchment fiber fleck, crescent shape and one folded dark edge, no print.",
+    "output": "source/paper_fx_04.png",
+    "output_id": "exec-282f63cc-125d-419f-9674-8b1db97816eb.png",
+    "sha256": "c50b33c2f058405f88225fabe4eaf59c16da6729aa26c02c4e6f6ccbbd503c24",
+    "cost": null,
+    "texture": "texture.png",
+    "crop_box": [
+      251,
+      33,
+      1282,
+      980
+    ],
+    "source_size": [
+      1536,
+      1024
+    ],
+    "checks": {
+      "C01": {
+        "status": "pass",
+        "reason": "PNG format, channel mode and declared size",
+        "details": {
+          "mode": "RGBA",
+          "size": [
+            512,
+            512
+          ]
+        }
+      },
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9998765739330833
+        }
+      },
+      "C14": {
+        "status": "pending",
+        "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+        "details": {}
+      }
+    },
+    "palette_correction": "texture-preserving paper and ink grades",
+    "scope": "offline texture candidate"
+  }
+]

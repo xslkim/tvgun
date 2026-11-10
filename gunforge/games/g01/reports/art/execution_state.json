@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07",
+  "updated": "2026-11-10",
   "task_review": "completed_with_user_resolution",
   "user_resolution": "Offline previews may be reviewed; batch tasks wait for actual 0B acceptance",
   "T00": "in_progress_offline_core_verified_external_integrations_pending",
@@ -9,28 +9,24 @@
   "spent_cny": null,
   "verified_offline_tests": 45,
   "blocked_batch_tasks": [
-    "T09",
-    "T10",
-    "T11",
     "T12",
     "T13",
     "T14",
     "T15",
     "T16"
   ],
-  "actual_0B_approved": false,
+  "actual_0B_approved": true,
   "generation_mode": "builtin_image_gen",
   "requires_api_key": false,
   "current_blockers": [
     "art2d_additional_rescue_variants",
     "C04_C12_C14_calibration_shortfall",
-    "GPU_engine_validation",
-    "actual_0B",
-    "grip_visual_scope_not_separately_confirmed"
+    "grip_visual_scope_not_separately_confirmed",
+    "batch_playable_integration_validation"
   ],
   "unreported_generation_cost": null,
-  "builtin_image_calls": 113,
-  "next_task": "B07_user_mouse_and_actual_lightgun_playtest",
+  "builtin_image_calls": 245,
+  "next_task": "T11_review_three_states_and_chain",
   "T03": "completed_A1b_direction_approved_with_followup",
   "A1_anchor_count": 12,
   "ink_direction": "moderated_gloss_custom",
@@ -48,7 +44,10 @@
     "T04": 16,
     "T05": 27,
     "T06": 9,
-    "T08": 12
+    "T08": 12,
+    "T09": 43,
+    "T10": 88,
+    "T11": 1
   },
   "T07": "A2_offline_work_authorized_grip_visual_pending",
   "T08": "offline_sample_approved_assets_installed_engine_pending",
@@ -62,7 +61,7 @@
     "ink_gloss",
     "enemy_hit_feedback_v3"
   ],
-  "task_status": "playable_0B_build_ready_for_user_validation",
+  "task_status": "T11_first_sample_ready",
   "resumed": {
     "date": "2026-11-06",
     "source": "explicit_user_chat",
@@ -74,8 +73,11 @@
     "report": "gunforge/games/g01/reports/0B/report.md",
     "core_tests": 39,
     "local_engine_and_udp": "passed",
-    "mouse_playtest": "pending",
-    "hardware_monitor_tv": "pending",
-    "actual_five_criteria": "pending"
-  }
+    "mouse_playtest": "passed_by_user",
+    "hardware_monitor_tv": "passed_by_user",
+    "actual_five_criteria": "approved_by_user"
+  },
+  "T09": "completed_A4_approved",
+  "T10": "A5_visual_approved_Godot_station_probe_passed",
+  "T11": "first_sample_ready_for_review"
 }
