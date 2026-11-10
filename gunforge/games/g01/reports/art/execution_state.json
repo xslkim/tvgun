@@ -26,7 +26,7 @@
   ],
   "unreported_generation_cost": null,
   "builtin_image_calls": 245,
-  "next_task": "T11_review_three_states_and_chain",
+  "next_task": "T11_build_full_dragon_art",
   "T03": "completed_A1b_direction_approved_with_followup",
   "A1_anchor_count": 12,
   "ink_direction": "moderated_gloss_custom",
@@ -61,7 +61,7 @@
     "ink_gloss",
     "enemy_hit_feedback_v3"
   ],
-  "task_status": "T11_first_sample_and_runtime_prototype_ready",
+  "task_status": "T11_first_review_approved",
   "resumed": {
     "date": "2026-11-06",
     "source": "explicit_user_chat",
@@ -79,5 +79,5 @@
   },
   "T09": "completed_A4_approved",
   "T10": "A5_visual_approved_Godot_station_probe_passed",
-  "T11": "first_sample_ready_for_review_eight_link_runtime_probe_passed"
+  "T11": "first_sample_approved_eight_link_runtime_probe_passed"
 }
