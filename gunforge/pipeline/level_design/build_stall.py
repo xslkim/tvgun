@@ -18,8 +18,11 @@ def build():
     reference = read(ASSET_REFERENCE)
     _, station, _ = resolve("paper.station", reference["source_revision"])
     presentation = station["presentation"]
-    presentation.update(subtitle="第二站 · 糖葫芦摊", instructions="点亮巷灯，再净化暖光里的墨鸦。")
+    presentation.update(subtitle="第二站 · 糖葫芦摊", instructions="灯光解除硬壳。墨鸦出现红圈时，趁它出手前击破。")
     presentation.pop("support")
+    presentation["entity_tints"] = {}
+    presentation["entity_state_labels"] = {}
+    presentation["activation_glows"] = {}
     presentation["labels"].update(section_unit="轮", result_success="摊口重新亮了", result_failure="摊口陷入黑暗")
     presentation["layers"]["far_base"]["tint"] = "#d1bbd6"
     presentation["sound_bindings"]["target.blocked"] = "empty"
@@ -40,7 +43,8 @@ def build():
         "light_open": {"kind": "pulse", "duration_ms": 900, "color": "#ffda91", "radius": 1300, "label": "灯亮 · 墨鸦可打"},
         "light_closed": {"kind": "warning", "duration_ms": 900, "color": "#be9a83", "radius": 110, "label": "灯灭 · 可再次点亮"},
         "hardened_hit": {"kind": "spark", "duration_ms": 500, "color": "#ad9db2", "radius": 54, "label": "硬化 · 先点灯"},
-        "stall_warning": {"kind": "warning", "duration_ms": 1500, "color": "#ff7764", "radius": 138, "label": "扑击预警 · 击破可打断"},
+        "stall_warning": {"kind": "warning", "duration_ms": 1800, "color": "#ff7764", "radius": 155, "label": "蓄力 · 击破可打断"},
+        "stall_slash": {"kind": "attack_release", "duration_ms": 700, "color": "#ff655a", "radius": 98},
     })
 
     def event(name, trigger, actions, guards=(), limit=1, priority=0):
@@ -61,9 +65,9 @@ def build():
         {"op": "cue", "cue": "night_market"},
     ])
     groups = [
-        ("认识硬化", "先打巷灯，再打左边的墨鸦。灯暗时它不会攻击。", [(420, 215)]),
-        ("灯下拦击", "点灯后只有 6 秒。先打出现红圈的墨鸦。", [(355, 180), (905, 230)]),
-        ("守住摊口", "先点灯，再依次打掉三个墨鸦。灯灭了可以再点。", [(260, 210), (620, 140), (965, 255)]),
+        ("认识硬化", "射右侧巷灯，照开左边墨鸦的硬壳。灯灭了可以再点。", [(420, 215)]),
+        ("灯下拦击", "墨鸦会自行蓄力。射灯解除硬壳，优先击破红圈墨鸦。", [(355, 180), (905, 230)]),
+        ("守住摊口", "暖光只有 6 秒。灯灭就补射巷灯，留意红圈。", [(260, 210), (620, 140), (965, 255)]),
     ]
     total = 0
     for wave, (title, hint, positions) in enumerate(groups, start=1):
@@ -72,6 +76,7 @@ def build():
         light = lamp + ".light"
         entities[lamp] = deepcopy(station["entities"]["lamp"])
         entities[lamp]["properties"]["activation_cooldown_ms"] = LIGHT_MS
+        presentation["activation_glows"][lamp] = {"color": "#ffc25d", "radius": 148, "label": "灯亮"}
         lit = entity_value(lamp, "value", 1)
         actors = []
         spawn = [{"op": "section", "section": group}, {"op": "spawn", "entity": lamp},
@@ -93,6 +98,8 @@ def build():
                                       {"at_ms": 4000, "x": x - 35, "y": y}]},
                 "bob": {"amplitude_x": 12, "amplitude_y": 9, "period_ms": 1150 + slot * 90},
             }
+            presentation["entity_tints"][actor] = {"invalid": "#545d85"}
+            presentation["entity_state_labels"][actor] = {"invalid": "硬化", "primary": "可击破"}
             spawn += [{"op": "spawn", "entity": actor}, permission(actor, "invalid")]
             light_actions.append(permission(actor, "primary"))
             expire_actions.append(permission(actor, "invalid"))
@@ -105,14 +112,19 @@ def build():
             ], priority=10)
             if wave > 1:
                 warning = actor + ".warning"
-                event(warning, {"after": light, "delay_ms": 1200 + slot * 500},
+                release = actor + ".release"
+                event(warning, {"after": group + ".start", "delay_ms": 2100 + slot * 950},
                       [{"op": "cue", "cue": "windup"}, {"op": "vfx", "effect": "stall_warning", "entity": actor}],
-                      [active, lit])
-                event(actor + ".attack", {"after": warning, "delay_ms": 1500}, [
+                      [active])
+                event(release, {"after": warning, "delay_ms": 1800}, [
+                    {"op": "cue", "cue": "attack"},
+                    {"op": "vfx", "effect": "stall_slash", "entity": actor},
+                ], [active])
+                event(actor + ".attack", {"after": release, "delay_ms": 650}, [
                     {"op": "resource_add", "resource": "lives", "amount": -1},
-                    {"op": "cue", "cue": "hurt"}, {"op": "vfx", "effect": "player_hurt", "entity": actor},
+                    {"op": "vfx", "effect": "player_hurt", "entity": actor},
                     {"op": "emit", "event": "player.damaged"},
-                ], [active, lit])
+                ])
 
         sections[group] = {"index": wave, "title": title, "targets": actors, "hint": hint}
         trigger = {"at_ms": 1800} if wave == 1 else {"after": f"round_{wave-1}.clear", "delay_ms": 1800}

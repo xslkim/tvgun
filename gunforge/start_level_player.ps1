@@ -1,4 +1,4 @@
-param([ValidateSet('paper.alley','paper.assault','paper.station','paper.stall','gallery.intro','orbital.convoy','orbital.siege')][string]$Package='paper.alley',[string]$Build,[string]$Godot=$env:GODOT_BIN,[double]$QuitAfter=0,[switch]$Candidate,[string]$Proposal)
+param([ValidateSet('paper.alley','paper.assault','paper.station','paper.stall','gallery.intro','orbital.convoy','orbital.siege')][string]$Package='paper.alley',[string]$Build,[string]$Godot=$env:GODOT_BIN,[double]$QuitAfter=0,[switch]$Candidate,[string]$Proposal,[switch]$SkipOpening)
 $ErrorActionPreference='Stop'
 $levelRoot=(Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 $levelPython=Join-Path $levelRoot '.venv/Scripts/python.exe'
@@ -34,5 +34,10 @@ if ($Package -in @('paper.alley','paper.assault','paper.station','paper.stall'))
     & $Godot --headless --editor --import --quit --path (Join-Path $PSScriptRoot 'framework')
     if ($LASTEXITCODE) { throw 'Godot resource import failed' }
 }
-& $Godot --path (Join-Path $PSScriptRoot 'framework') --script res://tools/level_player.gd -- "--build=$Build" "--assets=$levelRoot" "--quit-after=$QuitAfter"
+$playerArgs = @("--build=$Build", "--assets=$levelRoot", "--quit-after=$QuitAfter")
+if ($Package -eq 'paper.station' -and -not $SkipOpening) {
+    $openingDir = Join-Path $PSScriptRoot 'games/g01/cinematics/opening_original'
+    $playerArgs += "--opening-dir=$openingDir"
+}
+& $Godot --path (Join-Path $PSScriptRoot 'framework') --script res://tools/level_player.gd -- @playerArgs
 exit $LASTEXITCODE

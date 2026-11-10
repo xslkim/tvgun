@@ -21,6 +21,9 @@ items:
   - id: art2d_vendor_grip_visual_recheck
     status: pending
 engine_acceptance: false
-actual_0B_approved: false
+actual_0B_approved: true
 production_approved: false
-T09_started: false
+T09_started: true
+t09_entry:
+  date: 2026-11-10
+  stage_0b_record: ../../../../../level_design/reviews/user_acceptance_2026-11-10.json

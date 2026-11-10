@@ -9,6 +9,8 @@ def main():
  out=CACHE/'runs'/('delivery-'+str(time.time_ns()));workspace=out/'workspace';workspace.mkdir(parents=True)
  folders=['gunforge/framework','gunforge/games/g01/scripts','gunforge/games/g01/levels','gunforge/games/g01/bible','gunforge/games/g01/assets/stations/g01_st_l1_01_alley','gunforge/level_design','gunforge/pipeline/level_design']
  files=['gunforge/pipeline/build_0b.py','gunforge/start_level_player.ps1','gunforge/start_level_review.ps1','play_level_prototype.cmd','review_levels.cmd','play_combat_candidate.cmd','review_combat_candidate.cmd']
+ opening='gunforge/games/g01/cinematics/opening_original'
+ files.extend(opening+'/'+name for name in ['paper_lantern_city_opening_game.ogv','opening_subtitles.json'])
  for folder in folders:
   for source in (ROOT/folder).rglob('*'):
    relative=source.relative_to(ROOT)
@@ -53,6 +55,8 @@ def main():
  run('candidate-doubleclick-launcher',['cmd.exe','/c','play_combat_candidate.cmd','-QuitAfter','0.3'])
  run('encounter-package-launcher',['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-File','gunforge/start_level_player.ps1','-Package','orbital.siege','-Candidate','-QuitAfter','0.3'])
  run('station-package-launcher',['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-File','gunforge/start_level_player.ps1','-Package','paper.station','-Candidate','-QuitAfter','0.3'])
+ station=json.loads((workspace/'gunforge/level_design/reviews/station_build.json').read_bytes())
+ run('station-opening-network',[python,'gunforge/pipeline/level_design/qa_player.py',station['compiled'],'--output',out/'station-opening-network','--opening',workspace/opening])
  run('stall-package-launcher',['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-File','gunforge/start_level_player.ps1','-Package','paper.stall','-Candidate','-QuitAfter','0.3'])
  # Adoption fixture exists exclusively in the independent test workspace, never the live project.
  from versions import patch,adopt

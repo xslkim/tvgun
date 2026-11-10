@@ -22,7 +22,7 @@
 - [美术制作方案](docs/ART_PLAN_PAPER_LANTERN_CITY.md) / [任务表](docs/ART_TASKS_PAPER_LANTERN_CITY.md)：制作方法与历史验收依据。
 - [GunForge 总体方案](docs/GUNFORGE_PLAN.md)：早期总体规划；其中未落地的模块、版本和供应商信息不能当作当前事实。
 - [手机协议与追踪](HANDOVER.md) / [实测流程](WORKFLOW.md)：硬件输入及录制；游戏端最新 HTTP/UDP 行为还需结合 framework/core 代码。
-- [开场 CG](gunforge/games/g01/cinematics/opening_original/README.md)：独立媒体交付，尚未接入正式过场播放器。
+- [开场 CG](gunforge/games/g01/cinematics/opening_original/README.md)：90 秒原创成片，已接入首站播放器，可用开始键或 Esc 跳过。
 - [本轮清理记录](docs/PROJECT_CLEANUP_2026-11-08.md)：删除项、保留原因与验证。
 
 ## 代码职责

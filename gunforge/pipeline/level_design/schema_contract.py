@@ -67,5 +67,12 @@ schema['properties']['encounter'] = obj({
  'waves':ids(wave),'attacks':ids(attack),'supports':ids(support),
 },['waves'])
 schema['properties'].update({'effects':ids(effect),'sections':ids(obj({'title':string,'index':{'type':'integer','minimum':1},'targets':{'type':'array','items':string,'uniqueItems':True},'hint':string},['title','index','targets'])),'resource_bounds':ids(obj({'min':integer,'max':integer})),'presentation':obj({'title':string,'subtitle':string,'instructions':string,'default_sound':{'type':'boolean'},'debug_shell':{'type':'boolean'},'layers':ids(layer),'sound_bindings':{'type':'object','additionalProperties':string},'feedback':obj({'shot':string,'hit':string,'weak':string,'neutralized':string,'empty':string}),'puppets':ids(obj({'character':string,'atlas':string,'clips':ids(string)},['character','atlas','clips'])),'labels':{'type':'object','additionalProperties':string},'support':obj({'entity':string,'label':string},['entity','label'])})})
+rgb = {'type':'string','pattern':'^#[a-fA-F0-9]{6}$'}
+schema['properties']['presentation']['properties'].update({
+ 'entity_tints':ids({'type':'object','additionalProperties':rgb}),
+ 'entity_state_labels':ids({'type':'object','additionalProperties':string}),
+ 'activation_glows':ids(obj({'color':rgb,'radius':{'type':'number','exclusiveMinimum':0},'label':string},
+                            ['color','radius','label'])),
+})
 if __name__=='__main__':
  path=Path(__file__).resolve().parents[2]/'level_design/specs/level-v1.schema.json';path.parent.mkdir(parents=True,exist_ok=True);path.write_text(json.dumps(schema,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

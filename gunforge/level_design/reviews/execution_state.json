@@ -179,15 +179,15 @@
       "note": "Orbital convoy covers shield and escort branches. Orbital siege compiles data-only waves, synchronized attacks, support and finite ammo through the same encounter contract as Paper Lantern R2."
     },
     "LD22": {
-      "status": "software_verified_hardware_deferred",
+      "status": "software_verified_phone_lightgun_user_pass",
       "evidence": [
         "software_acceptance.json",
         "delivery_acceptance.json",
-        "combat_r1_acceptance.json"
+        "combat_r1_acceptance.json",
+        "user_acceptance_2026-11-10.json"
       ],
       "remaining": [
-        "actual phone tracking / monitor / TV latency and calibration, deferred by the user on 2026-11-09",
-        "subjective sound and gameplay experience on physical lightgun/display hardware",
+        "archive available calibration and tracking measurements for G4; the user reported passes on both the monitor and TV",
         "formal adoption of game policies and candidates"
       ]
     },
@@ -197,10 +197,10 @@
         "delivery_acceptance.json",
         "combat_r1_acceptance.json"
       ],
-      "note": "The complete first-station candidate and its launch, replay and review paths are included in the independent-directory verification. Overall G4 remains pending hardware/user validation."
+      "note": "The first-station launch, replay and review paths are software delivered. The user reported physical phone lightgun passes on both the monitor and TV. Formal adoption and detailed measurement records remain pending for G4."
     }
   },
-  "next": "The first-station mouse re-test is accepted. The second-station light-gating prototype is ready for desktop review. Physical lightgun and display testing remain deferred by the user.",
+  "next": "T10 first-chapter offline art candidates are assembled for A5 review. Review the four station compositions, transitions, and 20 asset candidates before proceeding to T11. G4 retains its separate detailed measurement and adoption requirements.",
   "active_candidate": "paper.station",
   "next_station_prototype": "paper.stall",
   "software_acceptance": "software_acceptance.json",

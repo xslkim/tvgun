@@ -6,8 +6,10 @@
 
 - `paper_lantern_city_opening.mp4`：1920×1080、30fps，含爷爷旁白、原创配乐和音效、中文字幕。
 - `paper_lantern_city_opening_clean.mp4`：相同剪辑和声音，不烧录字幕。
-- `paper_lantern_city_opening_game.ogv`：1776×936 内容区画面、30fps、Theora/Vorbis，用于后续游戏播放。
+- `paper_lantern_city_opening_game.ogv`：1776×936 内容区画面、30fps、Theora/Vorbis，首站播放器在定位白边内播放。
 - `opening_zh.srt`、`opening_subtitles.json`：独立字幕。
+
+从首站启动器进入游戏时，首次开始会播放开场。Enter、Esc 或手机开始键可跳过，播放器使用 JSON 字幕。试玩关卡时可加 `-SkipOpening`。见[首站启动说明](../../../../../docs/LEVEL_DESIGN_ENGINE_QUICKSTART.md)。
 
 H3 原始视频为本机新生成的 1152×640、24fps，1080p 交付经过光流补帧、缩放和亮度控制；不宣称原生 1080p。
 

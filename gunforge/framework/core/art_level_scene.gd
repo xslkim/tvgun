@@ -22,10 +22,26 @@ func _draw():
 	draw_set_transform_matrix(Transform2D.IDENTITY)
 	draw_intents();draw_effects();draw_hud()
 func draw_intents():
+	var presentation: Dictionary = model.level.get("presentation", {})
+	var glows: Dictionary = presentation.get("activation_glows", {})
+	var state_labels: Dictionary = presentation.get("entity_state_labels", {})
 	for id in model.entities:
 		var entity=model.entities[id]
 		if not entity.active or not entity.visible or entity.properties.get("virtual",false):continue
 		var at=model.center(entity)
+		if state_labels.has(id):
+			var caption: String = state_labels[id].get(entity.kind, "")
+			if not caption.is_empty():
+				label(caption, at + Vector2(0, entity.height * .33), 23, Color("#f4ddb0"), true)
+		var glow: Dictionary = glows.get(id, {})
+		if not glow.is_empty() and entity.value > 0:
+			var warm := Color(glow.color)
+			var radius := float(glow.radius)
+			for band in range(6, 0, -1):
+				draw_circle(at, radius * band / 6.0, Color(warm, .07), true, -1.0, true)
+			draw_arc(at, radius * .53, 0, TAU, 48, Color(warm, .92), 4, true)
+			var seconds := maxf(0, (entity.next_activation - model.tick) / float(model.level.tick_hz))
+			label("%s · %.1f 秒" % [glow.label, seconds], at + Vector2(0, radius * .65), 28, warm, true)
 		if entity.stunned:
 			draw_arc(at,maxf(entity.width,entity.height)*.48,0,TAU,40,Color("#dab969"),4,true)
 			label(model.level.get("presentation",{}).get("labels",{}).get("stunned","停顿"),at+Vector2(0,-entity.height*.45),23,Color("#e6c17a"),true)

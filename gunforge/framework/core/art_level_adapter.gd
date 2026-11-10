@@ -53,6 +53,12 @@ func ordered(items):
 func geometry():return ordered(super.geometry()+puppet_items()+layer_items(true))
 func visual_items():
 	var out=super.geometry()+puppet_items()+layer_items()
+	var entity_tints: Dictionary = level.get("presentation", {}).get("entity_tints", {})
+	for item in out:
+		if entity_tints.has(item.id):
+			var tints: Dictionary = entity_tints[item.id]
+			var kind: String = entities[item.id].kind if entities.has(item.id) else item.kind
+			item.tint *= Color(tints.get(kind, "#ffffff"))
 	for id in entities:
 		var entity=entities[id]
 		var ended=int(entity.defeated_at) if entity.defeated_at>=0 else int(entity.removed_at)

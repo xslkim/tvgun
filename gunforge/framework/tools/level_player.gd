@@ -10,6 +10,7 @@ const Audio=preload("res://core/level_audio.gd")
 const Calibration=preload("res://core/calibration.gd")
 const Metrics=preload("res://core/visible_metrics.gd")
 const Codec=preload("res://core/pose_codec.gd")
+const Opening=preload("res://tools/opening_cinematic.gd")
 
 class DesktopInput extends Node:
 	var handle_key: Callable
@@ -37,6 +38,9 @@ var elapsed=0.0
 var completions={}
 var calibration=Calibration.new()
 var isolated_settings=false
+var opening_directory := ""
+var opening: Opening
+var opening_pending := false
 func _initialize():
 	for arg in OS.get_cmdline_user_args():
 		if arg.begins_with("--build="):build_path=arg.trim_prefix("--build=")
@@ -44,6 +48,7 @@ func _initialize():
 		if arg.begins_with("--quit-after="):quit_after=float(arg.trim_prefix("--quit-after="))
 		if arg=="--network":network=true
 		if arg=="--isolated-settings":isolated_settings=true
+		if arg.begins_with("--opening-dir="):opening_directory=arg.trim_prefix("--opening-dir=")
 	call_deferred("open")
 func open():
 	model=Loader.open(JSON.parse_string(FileAccess.get_file_as_string(build_path)),assets)
@@ -70,6 +75,15 @@ func open():
 	status.visible=model.level.get("presentation",{}).get("debug_shell",true)
 	var font=SystemFont.new();font.font_names=PackedStringArray(["Microsoft YaHei"]);status.add_theme_font_override("font",font)
 	audio=Audio.new();root.add_child(audio);audio.setup(model,assets);audio.enabled=true
+	if not opening_directory.is_empty():
+		opening = Opening.new()
+		if opening.configure(opening_directory):
+			root.add_child(opening)
+			opening_pending = true
+			opening.completed.connect(start_gameplay)
+		else:
+			opening.free()
+			opening = null
 	gun.open();http.open(8080,handle_http)
 	root.size_changed.connect(layout);layout()
 	print(JSON.stringify({"level_player_ready":true,"build_id":model.build.build_id,"udp_errors":gun.bind_errors,"http_error":http.bind_error}))
@@ -77,8 +91,12 @@ func layout():
 	var box=frame.screen_rect(root.size);border.position=box.position;border.size=box.size
 	var inset=frame.white*box.size.x/1920.0;dark.position=box.position+Vector2.ONE*inset;dark.size=box.size-Vector2.ONE*inset*2
 	box=frame.content_rect(root.size);preview.position=box.position;preview.size=box.size;status.position=box.position+Vector2(8,8)
+	if opening != null:
+		opening.position = box.position
+		opening.size = box.size
 func queue_shot(point,_pose):
 	if network or not in_playfield(point):return
+	if opening != null and opening.visible:return
 	if session.pause_reasons.has("ready") or model.phase=="result":
 		enqueue_device({"event":"START"})
 		return
@@ -94,18 +112,29 @@ func enqueue_device(event):
 		for entry in session.queue.pending:
 			if entry.event.event=="SHOT":finish_input(entry.order,{"ok":false,"reason":"tracking_lost"})
 		session.queue.pending=session.queue.pending.filter(func(entry):return entry.event.event!="SHOT");return
+	if opening != null and opening.visible:
+		if command in ["START", "EXIT"]:opening.finish()
+		return
 	if command=="EXIT":session.set_pause("manual",not session.pause_reasons.has("manual"));return
 	if command=="START":
-		if model.phase=="result":
-			for order in completions.keys():finish_input(order,{"ok":false,"reason":"session_restarted"})
-			session.start();audio.clear()
-		session.set_pause("ready",false)
-		session.set_pause("manual",false);return
+		if opening_pending:
+			opening_pending = false
+			opening.begin()
+		else:
+			start_gameplay()
+		return
 	if command=="SHOT":
 		var point=from_norm(event.aim)
 		if in_playfield(point):session.enqueue("SHOT",point)
 		elif model.available_commands().has("RELOAD"):session.enqueue("RELOAD")
 	else:session.enqueue(command)
+func start_gameplay():
+	if model.phase=="result":
+		for order in completions.keys():finish_input(order,{"ok":false,"reason":"session_restarted"})
+		session.start();audio.clear()
+	session.set_pause("tracking",network and not gun.valid)
+	session.set_pause("ready",false)
+	session.set_pause("manual",false)
 func _process(delta):
 	if model==null:return
 	elapsed+=delta
@@ -144,9 +173,11 @@ func handle_http(command,payload,completion):
 		for id in visible.targets:
 			var point=visible.targets[id].aim
 			if point!=null:targets.append({"id":id,"point":[point.x,point.y]})
-		var lifecycle = session.public_state().lifecycle
+		var lifecycle = "opening" if opening != null and opening.visible else session.public_state().lifecycle
 		var shot_input_enabled = lifecycle == "running" and (not ("input_enabled" in model) or model.input_enabled)
-		return {"ok":true,"phase":model.phase,"lifecycle":lifecycle,"shot_input_enabled":shot_input_enabled,"resources":model.resources.duplicate(true),"score":model.resources.get("score",0),"build_id":model.build.build_id,"shots":model.shots,"hits":model.hits,"visible_targets":targets}
+		var state = {"ok":true,"phase":model.phase,"lifecycle":lifecycle,"shot_input_enabled":shot_input_enabled,"resources":model.resources.duplicate(true),"score":model.resources.get("score",0),"build_id":model.build.build_id,"shots":model.shots,"hits":model.hits,"visible_targets":targets}
+		if lifecycle == "opening":state["opening_seconds"] = opening.video.stream_position
+		return state
 	if command in ["START","EXIT"]:enqueue_device({"event":command});return {"ok":true}
 	var point=from_norm(Vector2(payload.get("x",0),payload.get("y",0)))
 	if command=="SHOT":

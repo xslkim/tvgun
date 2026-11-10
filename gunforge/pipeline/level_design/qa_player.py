@@ -3,10 +3,12 @@ import argparse,json,socket,subprocess,threading,time,urllib.request
 from pathlib import Path
 from paths import ROOT,GODOT
 from compiler import read
-def run(build_path,out):
+def run(build_path,out,opening=None):
  out.mkdir(parents=True,exist_ok=True);build=read(build_path);checks=[]
  log=(out/'player.log').open('wb')
- process=subprocess.Popen([str(GODOT),'--path',str(ROOT/'gunforge/framework'),'--script','res://tools/level_player.gd','--','--build='+str(build_path),'--assets='+str(ROOT),'--network','--isolated-settings'],cwd=ROOT,stdout=log,stderr=subprocess.STDOUT)
+ command=[str(GODOT),'--path',str(ROOT/'gunforge/framework'),'--script','res://tools/level_player.gd','--','--build='+str(build_path),'--assets='+str(ROOT),'--network','--isolated-settings']
+ if opening is not None:command.append('--opening-dir='+str(opening))
+ process=subprocess.Popen(command,cwd=ROOT,stdout=log,stderr=subprocess.STDOUT)
  sock=socket.socket(socket.AF_INET,socket.SOCK_DGRAM);stop=threading.Event();sequence=[0];heartbeat=None
  def send(text):sock.sendto(text.encode(),('127.0.0.1',9000))
  def request(path,data=None):
@@ -26,6 +28,18 @@ def run(build_path,out):
   check(state.get('build_id')==build['build_id'],'exact_build_owned_test_server')
   send('HELLO qa-session-'+str(time.time_ns()));heartbeat=threading.Thread(target=pulse,daemon=True);heartbeat.start();time.sleep(.1)
   check(request('/start',{})['ok'],'http_start')
+  if opening is not None:
+   for _ in range(80):
+    state=request('/state')
+    if state.get('opening_seconds',0)>=2.1:break
+    time.sleep(.05)
+   check(state['lifecycle']=='opening' and state.get('opening_seconds',0)>=2.1,'opening_decodes_and_advances')
+   check(not state['shot_input_enabled'] and not request('/shot',{'x':960,'y':540})['ok'],'opening_blocks_gameplay_shots')
+   send('START')
+   for _ in range(30):
+    if request('/state')['lifecycle']=='running':break
+    time.sleep(.05)
+   check(request('/state')['lifecycle']=='running','udp_start_skips_opening')
   time.sleep(.1);state=request('/state');check(state['lifecycle']=='running','ready_to_running')
   for _ in range(100):
    if state['shot_input_enabled'] and state['visible_targets']:break
@@ -50,4 +64,4 @@ def run(build_path,out):
   if process.poll() is None:process.terminate();process.wait(timeout=10)
   sock.close();log.close()
 if __name__=='__main__':
- parser=argparse.ArgumentParser();parser.add_argument('build',type=Path);parser.add_argument('--output',type=Path,required=True);args=parser.parse_args();print(json.dumps(run(args.build,args.output)))
+ parser=argparse.ArgumentParser();parser.add_argument('build',type=Path);parser.add_argument('--output',type=Path,required=True);parser.add_argument('--opening',type=Path);args=parser.parse_args();print(json.dumps(run(args.build,args.output,args.opening)))
