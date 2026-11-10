@@ -1,0 +1,22 @@
+{
+  "status": "runtime_prototype_with_sample_art",
+  "sample": "sample/sample.json",
+  "background": "../T10/compositions/square_02.png",
+  "content_size": [1776, 936],
+  "body_scale": 0.18,
+  "body_nodes": [
+    {"id": "body_01", "parent": "head"},
+    {"id": "body_02", "parent": "body_01"},
+    {"id": "body_03", "parent": "body_02"},
+    {"id": "body_04", "parent": "body_03"},
+    {"id": "body_05", "parent": "body_04"},
+    {"id": "body_06", "parent": "body_05"},
+    {"id": "body_07", "parent": "body_06"},
+    {"id": "body_08", "parent": "body_07"}
+  ],
+  "opening_order": ["body_08", "body_07", "body_06", "body_05", "body_04", "body_03", "body_02", "body_01"],
+  "max_active": 1,
+  "mouth": {"parent": "head", "offset_from_body_anchor": [-72, -12], "radius": 26},
+  "head": {"attach_to": "body_01_left", "parts": ["upper_jaw", "lower_jaw"], "art": "pending"},
+  "tail": {"attach_to": "body_08_right", "art": "pending"}
+}

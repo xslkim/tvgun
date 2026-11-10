@@ -61,7 +61,7 @@
     "ink_gloss",
     "enemy_hit_feedback_v3"
   ],
-  "task_status": "T11_first_sample_ready",
+  "task_status": "T11_first_sample_and_runtime_prototype_ready",
   "resumed": {
     "date": "2026-11-06",
     "source": "explicit_user_chat",
@@ -79,5 +79,5 @@
   },
   "T09": "completed_A4_approved",
   "T10": "A5_visual_approved_Godot_station_probe_passed",
-  "T11": "first_sample_ready_for_review"
+  "T11": "first_sample_ready_for_review_eight_link_runtime_probe_passed"
 }

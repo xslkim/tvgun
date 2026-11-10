@@ -14,3 +14,16 @@
 短片使用广场入选构图。75 帧均按铜扣位置串接，任一时刻最多开放一节，开放顺序为尾侧、中段、头侧。三段均使用同一龙节验证绑定。出图一次，使用内置 imagegen 从 T09 已审核净化龙节提取透明纸身，墨团从 T09 可射态提取。源图、提示词和哈希随样片保存。[绑定与状态数据](sample/sample.json) · [生成记录](sample/source.json)
 
 首审通过后制作整条龙的头部上颚与下颚、尾部、八节身段和独立龙嘴朱砂核。
+
+## Godot 八节原型
+
+已用样片纸身跑通八节铜扣串接。每次只开放一节，按尾到头依次净化，全部净化后才开放临时龙嘴核。无窗口回归用共用的逐像素命中判定验证了八节顺序、锁定态不可射、重复命中无效，以及嘴核最后开放。120 帧的最大关节偏差小于 0.001 像素。[原型配置](boss_draft.json)
+
+从仓库根目录启动，鼠标左键净化，R 重置，Esc 关闭。可在参数末尾加 `--probe` 并用 `--headless` 跑同一原型的回归。
+
+```powershell
+$draft = (Resolve-Path 'gunforge/games/g01/reports/art/T11/boss_draft.json').Path
+& $env:GODOT_BIN --path gunforge/framework --script res://tools/ink_dragon_review.gd -- $draft
+```
+
+原型使用八份相同的样片身段与临时嘴核。正式头尾与八节变体、光枪所需的最小命中区、正式关卡接入均在首审后的制作范围。
