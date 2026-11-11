@@ -11,6 +11,8 @@ var kind = ""
 var z=0
 var generation=0
 var tint = Color.WHITE
+var state_visual := false
+var state_images: Array[Image] = []
 
 func sample(point: Vector2) -> Color:
 	var p = transform.affine_inverse() * point

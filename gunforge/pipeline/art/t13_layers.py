@@ -2,6 +2,7 @@
 import argparse
 import math
 from pathlib import Path
+from shutil import copyfile
 
 import numpy as np
 from PIL import Image, ImageOps
@@ -11,7 +12,7 @@ from checks import overlap, run
 from paper_ops import palette, paper_palette
 from t10_layers import build, region, verify_captures
 from t10_preview import COMPOSITION_SIZE, ORIGIN, light_composition, read_json
-from t12_layers import grade, resize_lamp, verify_lamp_reservation
+from t12_layers import grade, resize_lamp, scale_lamp_layer, verify_lamp_reservation
 from t12_whitebox import within
 
 
@@ -51,15 +52,20 @@ def verify_workbench_geometry(pack, folder, layout):
     return {"rect": boss, "space": inkstone["id"], "swept_rect": swept}
 
 
+def visible_layer_region(layers, index, guide_size):
+    visible = region(layers[index]["paths"], guide_size)
+    for nearer in layers[index + 1:]:
+        visible &= ~region(nearer["paths"], guide_size)
+    return visible
+
+
 def correct_visible_layers(frame, layers, selected, guide_size):
     x, y = ORIGIN
     width, height = COMPOSITION_SIZE
     for index, layer in enumerate(layers):
         if layer["id"] not in selected:
             continue
-        visible = region(layer["paths"], guide_size)
-        for nearer in layers[index + 1:]:
-            visible &= ~region(nearer["paths"], guide_size)
+        visible = visible_layer_region(layers, index, guide_size)
         alpha = Image.fromarray(visible[y:y + height, x:x + width].astype("uint8") * 255)
         box = alpha.getbbox()
         if box is None:
@@ -121,6 +127,52 @@ def verify_light_region(stage, source, geometry, captures):
     if not changes.any() or (changes & ~mask).any():
         raise ValueError(f"{stage}: GPU lighting changed pixels outside the planned light region")
     return {"changed_pixels": int(changes.sum()), "changed_outside_light_region": 0}
+
+
+def contrast_main(stage, apply_grade, *, keep_baseline_influence=False):
+    """Build a single contrast comparison and verify its parallax captures."""
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output", type=Path, default=REPORT / f"variants/{stage}_contrast/parallax")
+    parser.add_argument("--verify-captures", type=Path)
+    args = parser.parse_args()
+    spec = read_json(REPORT / "composition_layers.json")
+    row = spec["stations"][stage]
+    folder = args.output / stage
+    render_source = folder / "render_source.png"
+    geometry = lighting(row)
+    if args.verify_captures:
+        verify_captures(args.verify_captures, args.output, {stage: (render_source, geometry)})
+        receipt_path = args.output / "engine_checks.json"
+        receipt = read_json(receipt_path)
+        receipt["samples"][stage]["light_region"] = verify_light_region(stage, render_source, geometry, args.verify_captures)
+        write_json(receipt_path, receipt)
+        return
+
+    folder.mkdir(parents=True, exist_ok=True)
+    original = OUTPUT / stage / "render_source.png"
+    layers = row["layers"].copy()
+    guide = spec["guide_size"]
+    scale = row.get("lamp_scale", 1)
+    if scale != 1:
+        index = next(i for i, layer in enumerate(layers) if layer["id"] == "lamp")
+        # The baseline already contains the resized lamp pixels; align the paths to them.
+        layers[index] = scale_lamp_layer(layers[index], guide, geometry[0], scale)
+    apply_grade(original, layers, guide).save(render_source)
+    color = run("C04", {"file": render_source, "palette_rgb": palette()})
+    if color["status"] != "pass":
+        raise ValueError(f"{stage}: contrast comparison failed C04: {color['details']}")
+    pack = build(stage, layers, guide, args.output, (render_source, geometry))
+    if keep_baseline_influence:
+        # The visual spill depends on background color, while this mask controls hit permissions.
+        influence = pack["lights"][0]["influence"]
+        copyfile(original.parent / influence, folder / influence)
+    layout = read_json(GAME / "assets/ui/hud_layout.json")
+    radius, bounds = verify_lamp_reservation(pack, folder, layout)
+    write_json(args.output / "art_checks.json", {
+        "baseline_sha256": digest(original), "render_source_sha256": digest(render_source),
+        "C04_render_source": color, "layer_count": len(pack["layers"]),
+        "lamp_effective_radius_px": round(radius, 2), "lamp_swept_rect": bounds,
+    })
 
 
 def main():

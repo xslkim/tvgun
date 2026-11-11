@@ -99,6 +99,9 @@ class NightMarket:
             if "parts" in actor:
                 actor["parts"] = {part: renamed(data, resource=resources, hit_resource=resources)
                                   for part, data in actor["parts"].items()}
+                for part in actor["parts"].values():
+                    if "hardened_visual" in part:
+                        part["hardened_visual"] = renamed(part["hardened_visual"], resource=resources)
             if "puppet" in actor:
                 actor["puppet"] = renamed(actor["puppet"], rig=puppets, target=entities)
             if "mask_permission" in actor:

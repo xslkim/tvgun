@@ -81,6 +81,8 @@ func index_texture_preloads(presentation: Dictionary) -> void:
 			var action: Dictionary = event.actions[action_id]
 			if action.op == "spawn":
 				collect_spawn_textures(model.level.entities[action.entity], presentation, resources)
+				if wipes.has(action.entity):
+					resources[model.level.entities[wipes[action.entity]].resource] = true
 		if not resources.is_empty():
 			texture_preloads.append({"enter": id, "clear": wait.after, "section": section,
 				"delay_ms": wait.delay_ms, "resources": resources.keys()})
@@ -93,6 +95,8 @@ func collect_spawn_textures(entity: Dictionary, presentation: Dictionary, resour
 	elif entity.has("parts"):
 		for part in entity.parts.values():
 			resources[part.resource] = true
+			if part.has("hardened_visual"):
+				resources[part.hardened_visual.resource] = true
 	elif entity.has("resource"):
 		resources[entity.resource] = true
 
@@ -127,18 +131,25 @@ func update_rasters():
 		group = "section:" + str(model.current_section)
 	if group != texture_group:
 		texture_group = group
-		var visible_images: Dictionary = {}
+		var section_images: Dictionary = {}
 		for item in items:
-			visible_images[item.image.get_instance_id()] = true
+			section_images[item.image.get_instance_id()] = true
+			for image in item.state_images:
+				section_images[image.get_instance_id()] = true
+			if wipes.has(item.id):
+				section_images[light_image(item.id).get_instance_id()] = true
 		for id in textures.keys():
-			if not visible_images.has(id):
+			if not section_images.has(id):
 				textures.erase(id)
 		if preloaded_section == model.current_section:
 			for id in preloaded_textures:
-				if visible_images.has(id):
+				if section_images.has(id):
 					textures[id] = preloaded_textures[id]
 		preloaded_section = ""
 		preloaded_textures.clear()
+	for item in items:
+		for image in item.state_images:
+			texture(image)
 	if additive == null:
 		foreground = items
 		return
@@ -148,6 +159,8 @@ func update_rasters():
 	foreground = []
 	for item in items:
 		if wipes.has(item.id):
+			# The dormant glow belongs to the same station as the visible ink cover.
+			texture(light_image(item.id))
 			overlays.append(item)
 			continue
 		if item.z > additive_z:
@@ -163,6 +176,9 @@ func update_rasters():
 		bottom_wipe.refresh(overlays)
 	for item in items:
 		item.texture = texture(item.image)
+
+func light_image(cover_id: String) -> Image:
+	return model.images[model.level.entities[wipes[cover_id]].resource]
 
 func label(text,point,size=28,color=Color("#e8d3ad"),centered=false):
 	var at=point

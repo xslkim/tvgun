@@ -1,0 +1,436 @@
+{
+  "scope": "fixed gameplay poses for four stops; warning and thumbnail acceptance at A5",
+  "summary": {
+    "normal_numeric_passed": 2,
+    "normal_samples": 8,
+    "hardened_stamp_proxy_samples": 5,
+    "warning_samples": 8,
+    "warning_visible_at_eighth": 8
+  },
+  "stages": {
+    "waiting_room": {
+      "build_id": "1e0671e99d89b5a42cb6744804e753ab6d89b16eb65296a7125dff040e32af83",
+      "failures": [],
+      "gpu": "NVIDIA GeForce RTX 3090",
+      "passed": true,
+      "samples": [
+        {
+          "actor": "crow",
+          "frame": "crow_normal",
+          "kind": "primary",
+          "lamp_lit": true,
+          "state": "normal",
+          "tick": 112,
+          "frame_sha256": "8b12c59005215b4614cc686a64d8dad7b91e47a1f10f4bcf3c7abc9950c89aa8",
+          "reference_sha256": "6bef7212118da4f98996aa62ef3e7bb788b22c3091fc468ad8d58dff6dea78e3",
+          "mask_sha256": "8e7190b77b73a0c16fa0a349f1f0f1b791ba2f78130dead522efae22eee2ef62",
+          "visible_pixels": 19169,
+          "measured_extent_px": 214,
+          "median_luminance_difference": 0.0628,
+          "numeric_passed": false,
+          "C06": {
+            "status": "fail",
+            "reason": "Readability contrast/size",
+            "details": {
+              "contrast": 0.06279607843137255
+            }
+          }
+        },
+        {
+          "actor": "umbrella",
+          "frame": "umbrella_normal",
+          "kind": "primary",
+          "lamp_lit": false,
+          "state": "normal",
+          "tick": 190,
+          "frame_sha256": "cffd3981f7ab9eb0ec211a96be3693c8c29ba6886c165d14078a4ddc0f5905bd",
+          "reference_sha256": "403597792399095b3714d65287545c093f30e2ab92b5fc967551503aedaa591b",
+          "mask_sha256": "bc72807c2abafc56840553fca056a59b59fdce06f0ffe8c06057c1de9a912153",
+          "visible_pixels": 9722,
+          "measured_extent_px": 126,
+          "median_luminance_difference": 0.0816,
+          "numeric_passed": false,
+          "C06": {
+            "status": "fail",
+            "reason": "Readability contrast/size",
+            "details": {
+              "contrast": 0.08161372549019608
+            }
+          }
+        },
+        {
+          "actor": "crow",
+          "frame": "crow_hardened",
+          "kind": "invalid",
+          "lamp_lit": false,
+          "state": "hardened",
+          "tick": 112,
+          "frame_sha256": "fbef53600b5a4ca8440c3130fafb45c770c4dcc09421c54dbfbca5e7750c40f3",
+          "reference_sha256": "72df78dc70f0efde6ec27de3bda90f8db7fba8c5a22158a0794f235e4fbbe4af",
+          "mask_sha256": "8a7c48e92edfda0cad9a8241dd70848733a9a3177ba4a1d9e79f05c8f4777c8c",
+          "visible_pixels": 516,
+          "measured_extent_px": 27,
+          "median_luminance_difference": 0.1142,
+          "diagnostic": "visible stamp compared with the same pose without the stamp",
+          "meets_hardened_numeric_threshold_as_proxy": false,
+          "C06": {
+            "status": "pending",
+            "reason": "Separate hardened-eye art is not bound in these samples"
+          }
+        },
+        {
+          "actor": "crow",
+          "frame": "crow_warning",
+          "kind": "invalid",
+          "lamp_lit": false,
+          "state": "warning",
+          "tick": 220,
+          "frame_sha256": "253aae8db28caa1b438a0f7e757ff92c5dbc2d40cd1cf13327e68f7a07141fa1",
+          "reference_sha256": "06c834cf97a2afe2405af8e37ee814e9591383ea6f1be655399684c160e11aa4",
+          "pixels_changed_full": 4356,
+          "pixels_changed_at_eighth": 176,
+          "visual_review": "A5_pending"
+        },
+        {
+          "actor": "umbrella",
+          "frame": "umbrella_warning",
+          "kind": "primary",
+          "lamp_lit": false,
+          "state": "warning",
+          "tick": 451,
+          "frame_sha256": "ccea8235deb15415d80250c35a20a3f7d9a083e5c5227ab18250aaa55452bbb9",
+          "reference_sha256": "ce94bcd406d0a9530b95310de67242e26767675f915d29b2a479a0f773879e68",
+          "pixels_changed_full": 4516,
+          "pixels_changed_at_eighth": 144,
+          "visual_review": "A5_pending"
+        }
+      ],
+      "source_revision": "eb1e143ebed4d4e00f01e9c73cf4ed00c1bf91e967220e98e10a55e284ac402b",
+      "stage": "waiting_room"
+    },
+    "platform": {
+      "build_id": "f2065f953543769463c1c774094b53214de7a90ed166f53c906d7078222593e2",
+      "failures": [],
+      "gpu": "NVIDIA GeForce RTX 3090",
+      "passed": true,
+      "samples": [
+        {
+          "actor": "crow",
+          "frame": "crow_normal",
+          "kind": "primary",
+          "lamp_lit": false,
+          "state": "normal",
+          "tick": 102,
+          "frame_sha256": "db602de1b62249ecf6459cc5c78b4f8376d6f7b784aaced13c828077b86fb786",
+          "reference_sha256": "14c5e04bbd5ac4b52783b54c5613f6be746c0f48aca7d1661cc143b682c64124",
+          "mask_sha256": "a8e5ffb8b2afc3f07510367d605b4a45b56bc6b6d1f47146a14073ca9a154178",
+          "visible_pixels": 19161,
+          "measured_extent_px": 213,
+          "median_luminance_difference": 0.1576,
+          "numeric_passed": false,
+          "C06": {
+            "status": "fail",
+            "reason": "Readability contrast/size",
+            "details": {
+              "contrast": 0.1576313725490196
+            }
+          }
+        },
+        {
+          "actor": "umbrella",
+          "frame": "umbrella_normal",
+          "kind": "primary",
+          "lamp_lit": true,
+          "state": "normal",
+          "tick": 232,
+          "frame_sha256": "dd3b8c7fe4f53b0681cbb42efdf22186a60238fd198868147ad0000ce450c50e",
+          "reference_sha256": "b360b5a0d20963390a28d210d65747df1c730e468a59d61cb9f3ea139d226c5f",
+          "mask_sha256": "cefb9fabf159e728fdfb64bfd64a2370fa10a845606e2b336413757c3671a5eb",
+          "visible_pixels": 9063,
+          "measured_extent_px": 122,
+          "median_luminance_difference": 0.1793,
+          "numeric_passed": false,
+          "C06": {
+            "status": "fail",
+            "reason": "Readability contrast/size",
+            "details": {
+              "contrast": 0.17933725490196073
+            }
+          }
+        },
+        {
+          "actor": "umbrella",
+          "frame": "umbrella_hardened",
+          "kind": "invalid",
+          "lamp_lit": false,
+          "state": "hardened",
+          "tick": 190,
+          "frame_sha256": "47de766265257de54263f4143e3fdce97f61d0d3818e8851bf36bfc5d2f840b8",
+          "reference_sha256": "3d183992072d0fb3a00d5292adefd19c59a1d333094f8f621b16a3d2ef4b7958",
+          "mask_sha256": "05d2c61a82fa52d8e81b764f63283633e17e98fc80c22fda51f029d0e68445e8",
+          "visible_pixels": 506,
+          "measured_extent_px": 23,
+          "median_luminance_difference": 0.0553,
+          "diagnostic": "visible stamp compared with the same pose without the stamp",
+          "meets_hardened_numeric_threshold_as_proxy": false,
+          "C06": {
+            "status": "pending",
+            "reason": "Separate hardened-eye art is not bound in these samples"
+          }
+        },
+        {
+          "actor": "crow",
+          "frame": "crow_warning",
+          "kind": "primary",
+          "lamp_lit": false,
+          "state": "warning",
+          "tick": 194,
+          "frame_sha256": "65f9d3707290d17053d9d1bb3f6deca24c0f6b8dd5874f20a6914aec3a2aaddc",
+          "reference_sha256": "a1e3cf47a3b20454ccb50471116e163bde32ed7d89d7d12b14aed0654a17592b",
+          "pixels_changed_full": 4421,
+          "pixels_changed_at_eighth": 137,
+          "visual_review": "A5_pending"
+        },
+        {
+          "actor": "umbrella",
+          "frame": "umbrella_warning",
+          "kind": "invalid",
+          "lamp_lit": false,
+          "state": "warning",
+          "tick": 422,
+          "frame_sha256": "718539c6fdf948e157a8c30d7d470f6eda8ffb591b6466ad4d27f81e44a10c8e",
+          "reference_sha256": "a22b74a4105bbedebaf922e3607d6a40d4c4aec73b29774e28bc487b74e28367",
+          "pixels_changed_full": 4351,
+          "pixels_changed_at_eighth": 150,
+          "visual_review": "A5_pending"
+        }
+      ],
+      "source_revision": "e34d5afe0d1644a28c5bfa1f0b855f6cb5739beb526767c5ca0be3c72b581a30",
+      "stage": "platform"
+    },
+    "green_car": {
+      "build_id": "5c7879ae2182325b99055d46a9bf72f6454bf9e5c8cd54ce88bffdca7d50b7a8",
+      "failures": [],
+      "gpu": "NVIDIA GeForce RTX 3090",
+      "passed": true,
+      "samples": [
+        {
+          "actor": "crow",
+          "frame": "crow_normal",
+          "kind": "primary",
+          "lamp_lit": true,
+          "state": "normal",
+          "tick": 112,
+          "frame_sha256": "7464b8efcf20b4985f60da602e72e9f458e79e7dd4c4ab57f6bbf32c4eab9402",
+          "reference_sha256": "9c026444ce248ae4befb3dead440b10aca1560997794a69265194eedcf0b01eb",
+          "mask_sha256": "5353a1ceee59a7657b368236e2f959538691a5f43f4a87a20cd7aae9a42da2a5",
+          "visible_pixels": 19148,
+          "measured_extent_px": 214,
+          "median_luminance_difference": 0.0963,
+          "numeric_passed": false,
+          "C06": {
+            "status": "fail",
+            "reason": "Readability contrast/size",
+            "details": {
+              "contrast": 0.09630588235294116
+            }
+          }
+        },
+        {
+          "actor": "umbrella",
+          "frame": "umbrella_normal",
+          "kind": "primary",
+          "lamp_lit": false,
+          "state": "normal",
+          "tick": 190,
+          "frame_sha256": "99834d9991b599f2f20437d40bb4ea587df4b715648dd7e5872b2bec0396b8e5",
+          "reference_sha256": "9dba6881171098f7f0ff89e0c520e91ceb05045466d9e78528e2cb22f676c466",
+          "mask_sha256": "2b8bce9e014bfc30eaa220256961ffb100921a46f3bf40f5a4b42af9a9b632bb",
+          "visible_pixels": 10831,
+          "measured_extent_px": 133,
+          "median_luminance_difference": 0.0652,
+          "numeric_passed": false,
+          "C06": {
+            "status": "fail",
+            "reason": "Readability contrast/size",
+            "details": {
+              "contrast": 0.06516078431372546
+            }
+          }
+        },
+        {
+          "actor": "crow",
+          "frame": "crow_hardened",
+          "kind": "invalid",
+          "lamp_lit": false,
+          "state": "hardened",
+          "tick": 112,
+          "frame_sha256": "0df2d61815f9ce4b31665f78695a2f3c94d417cabdf994eee2e2dea2ae216ce1",
+          "reference_sha256": "c0bc3a007e930b4e3fbcbf00e4e6bab9054e8b0894d04930f39fc132f6c8176b",
+          "mask_sha256": "89791c3a38f3021841ec529b3d320e349434eaab6a58a7a87231ad354da59188",
+          "visible_pixels": 512,
+          "measured_extent_px": 27,
+          "median_luminance_difference": 0.1141,
+          "diagnostic": "visible stamp compared with the same pose without the stamp",
+          "meets_hardened_numeric_threshold_as_proxy": false,
+          "C06": {
+            "status": "pending",
+            "reason": "Separate hardened-eye art is not bound in these samples"
+          }
+        },
+        {
+          "actor": "crow",
+          "frame": "crow_warning",
+          "kind": "invalid",
+          "lamp_lit": false,
+          "state": "warning",
+          "tick": 229,
+          "frame_sha256": "38f1631038864bd2a151b26302dbdea9aa3c6b1e6c15a7f69860558f8ff43d41",
+          "reference_sha256": "b13c02eae4014af0c54ede5fdec18163daefad6bb0007ddde41c73d2250c3971",
+          "pixels_changed_full": 4076,
+          "pixels_changed_at_eighth": 137,
+          "visual_review": "A5_pending"
+        },
+        {
+          "actor": "umbrella",
+          "frame": "umbrella_warning",
+          "kind": "primary",
+          "lamp_lit": false,
+          "state": "warning",
+          "tick": 374,
+          "frame_sha256": "52e0b0fc30129fa6003a9d17954cf5df3df7802f7dfb6f08d0657f75704591a1",
+          "reference_sha256": "3b6059fa48ba76cd5067b666d42f26c4a7ce6f1d0b38f97aca435b24deb88403",
+          "pixels_changed_full": 4350,
+          "pixels_changed_at_eighth": 122,
+          "visual_review": "A5_pending"
+        }
+      ],
+      "source_revision": "3cfa8933f557dcefa275c3ebd6684902ff9ed03e86c80bdf68fd1f1b787420ad",
+      "stage": "green_car"
+    },
+    "lantern_base": {
+      "build_id": "00515d86fe8bd525a66d54720e49109ec69367f6037d0f63c8f84d206894fd99",
+      "failures": [],
+      "gpu": "NVIDIA GeForce RTX 3090",
+      "passed": true,
+      "samples": [
+        {
+          "actor": "crow",
+          "frame": "crow_normal",
+          "kind": "primary",
+          "lamp_lit": true,
+          "state": "normal",
+          "tick": 185,
+          "frame_sha256": "8f2bdaf4ffbe0820b68d068a30a00f4b54f7ba5f42302ceaa2dbc33dbd232ae0",
+          "reference_sha256": "913b233c1d3167fc4e63732c1296f0d12ee5c09fa6c065d410df203e486afde0",
+          "mask_sha256": "e23f60466f6749569af6de37c87466a1c0e05a49c4c66a1e287b13d1fbbef6f2",
+          "visible_pixels": 19171,
+          "measured_extent_px": 214,
+          "median_luminance_difference": 0.3788,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.3787686274509804
+            }
+          }
+        },
+        {
+          "actor": "umbrella",
+          "frame": "umbrella_normal",
+          "kind": "primary",
+          "lamp_lit": true,
+          "state": "normal",
+          "tick": 185,
+          "frame_sha256": "8f2bdaf4ffbe0820b68d068a30a00f4b54f7ba5f42302ceaa2dbc33dbd232ae0",
+          "reference_sha256": "31b516e11bd29ce9088bd387385844a8e953a5229d3d819a2efe141c735c5175",
+          "mask_sha256": "2a9c6c9769713d169ae0cbe56203d415466e53722dd2080fe548213be1249824",
+          "visible_pixels": 11045,
+          "measured_extent_px": 135,
+          "median_luminance_difference": 0.3278,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.32775686274509797
+            }
+          }
+        },
+        {
+          "actor": "crow",
+          "frame": "crow_hardened",
+          "kind": "invalid",
+          "lamp_lit": false,
+          "state": "hardened",
+          "tick": 185,
+          "frame_sha256": "7cdab129040400fbef74276a6a83e27534f382582f44f80d87bc846ceb1090bd",
+          "reference_sha256": "9bf6deecd5a4362968f77dd51a24f9da882f74a3f6df101e2c693b22cb16ff9e",
+          "mask_sha256": "3f03a7902fc483c27ada77ef0fa121f3b79944f1b24a583fc136aecd2e978f90",
+          "visible_pixels": 511,
+          "measured_extent_px": 27,
+          "median_luminance_difference": 0.1114,
+          "diagnostic": "visible stamp compared with the same pose without the stamp",
+          "meets_hardened_numeric_threshold_as_proxy": false,
+          "C06": {
+            "status": "pending",
+            "reason": "Separate hardened-eye art is not bound in these samples"
+          }
+        },
+        {
+          "actor": "umbrella",
+          "frame": "umbrella_hardened",
+          "kind": "invalid",
+          "lamp_lit": false,
+          "state": "hardened",
+          "tick": 185,
+          "frame_sha256": "7cdab129040400fbef74276a6a83e27534f382582f44f80d87bc846ceb1090bd",
+          "reference_sha256": "a87714a297594521a9a5bcca8515015c3f50dc8b5590ba9dc8bfead2dafeca0c",
+          "mask_sha256": "4baf7af8170f3d42b767ea9e4321406e0144003a537410c3f967707a6ee6943a",
+          "visible_pixels": 623,
+          "measured_extent_px": 25,
+          "median_luminance_difference": 0.053,
+          "diagnostic": "visible stamp compared with the same pose without the stamp",
+          "meets_hardened_numeric_threshold_as_proxy": false,
+          "C06": {
+            "status": "pending",
+            "reason": "Separate hardened-eye art is not bound in these samples"
+          }
+        },
+        {
+          "actor": "crow",
+          "frame": "crow_warning",
+          "kind": "invalid",
+          "lamp_lit": false,
+          "state": "warning",
+          "tick": 220,
+          "frame_sha256": "97c4e2cbb9958c92ad8c1007330d141dc79b1e4aad189c7d18dd57d6e5f12b9a",
+          "reference_sha256": "d001cf9798bd358d5a627aefe65dbcf0c5e5e7bd8da094a481805bf2db7c967d",
+          "pixels_changed_full": 4107,
+          "pixels_changed_at_eighth": 118,
+          "visual_review": "A5_pending"
+        },
+        {
+          "actor": "umbrella",
+          "frame": "umbrella_warning",
+          "kind": "invalid",
+          "lamp_lit": false,
+          "state": "warning",
+          "tick": 404,
+          "frame_sha256": "972e367fd03f55e2af4597be031fc6949bdf5f199cdeb23a58de8b73383448db",
+          "reference_sha256": "ed9099ac1d293a3e0e9600ee05dc18126db2ef515183a4c8d2cb5c29f1a3626c",
+          "pixels_changed_full": 4273,
+          "pixels_changed_at_eighth": 152,
+          "visual_review": "A5_pending"
+        }
+      ],
+      "source_revision": "ba242a1988a2e66df8743d7a7669d8981257897e51d24570ddd952900faddec9",
+      "stage": "lantern_base"
+    }
+  },
+  "previews": {
+    "targets_1_8.jpg": "fe802c1e37d40d7dbea13fa9e10b01e371d7b584f90d12e63d0b5b74d9cea6a4",
+    "warnings_1_8.jpg": "106fbde0afbb1bf6413bc92e8e1a56461835bc547f52372b2ef2411ab956be79"
+  }
+}

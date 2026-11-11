@@ -131,3 +131,71 @@ Godot 验证了失败时不触发过场、过场禁射、两处足座锚点对�
 ```powershell
 .\gunforge\start_level_player.ps1 -Package paper.lantern_pullback -Candidate
 ```
+
+## 火车站连续候选
+
+`paper.train_station` 串联候车室、站台、绿皮车厢和灯座，战斗清空后拉出纸灯并抵达工作台。灯芯、光弹、分数和救援人数在五次切换中延续。Godot 验证了站台失败后重试、用最后一发点灯后换弹、上一站的旧瞄准帧无法激活灯、过场禁射，以及 16 条输入回放重现整段流程。测试路线用 14 发，抵达工作台时有 4 条灯芯、10 发光弹、2 人获救和 1000 分。[软件验收记录](gameplay/train_station/software_checks.json)
+
+五次切换时可见纹理均已缓存，五站 GPU 抓图通过 C03。前两关使用原验收构建复跑十站通过。[候车室 JPG](gameplay/train_station/waiting_room.jpg) · [站台 JPG](gameplay/train_station/platform.jpg) · [绿皮车厢 JPG](gameplay/train_station/green_car.jpg) · [灯座 JPG](gameplay/train_station/lantern_base.jpg) · [工作台 JPG](gameplay/train_station/workbench.jpg)
+
+灯光预载前，站台首次点亮信号灯时有一帧耗时 30.05 ms，其中纹理上传耗时 27.58 ms。引擎现在随墨遮层预载并保留绑定的灯光纹理，点灯时直接使用缓存。[调整前的帧时记录](gameplay/train_station/performance.json)
+
+同一 RTX 3090 上复测两轮，共 3280 帧。四站八次首次点灯均无纹理上传，站台信号灯帧为 1.84–1.91 ms。五处切换帧为 1.32–2.94 ms，两轮最慢帧为 5.01 ms。C15 预算通过，单站常驻峰值 39.70 MiB，含预载峰值 61.35 MiB。五站抓图与调整前逐像素一致。用新引擎重新构建前两关已验收的关卡源，十站通关、两条失败重试路径及纹理回收均通过。下一步整理 A5 画廊和验收入口。[灯光预载复测](gameplay/train_station/light_preload.json)
+
+```powershell
+.\gunforge\start_level_player.ps1 -Package paper.train_station -Candidate
+```
+
+## A5 预审画廊
+
+画廊集中展示四站同构图的关灯与点灯、工作台落地、拉镜足座对齐，以及路人 C、检票员和墨怪的游玩画面。Chrome 在桌面和手机宽度均加载了 14 张原尺寸 JPG，检查了 53 条链接和站点导航。遮罩 JPG、单字源记录和授权原文的哈希与几何记录一致。[打开预审画廊](gallery.html)
+
+当前可先签核「忘」字轮廓、1–7 笔顺及第 3 笔盖住第 2 笔的层级，并确认来源和授权记录。整关 A5 与显示器、电视光枪实测留到 Boss 接入后。下一轮用引擎抓图核查四站 C06 可读性。[编号 JPG](forget_strokes/stroke_order.jpg) · [授权原文](forget_strokes/ARPHICPL.TXT)
+
+## 四站 C06 可读性筛查
+
+在 Godot 中固定姿态、视差和灯光，对四站共 21 个状态抓取成对画面。普通态使用可命中墨身遮罩，比较目标与同一帧移除目标后的底图。8 个样本中，灯座两例的亮度中位差分别为 0.379 和 0.328，达到 0.20 门槛。候车室、站台和绿皮车厢的六例为 0.063–0.179，待改善。[可射与硬化态 1/8 JPG](gameplay/readability/targets_1_8.jpg)
+
+硬化态当前复用调暗的朱砂印记。5 个样本的印记亮度中位差为 0.053–0.114，正式的眼部指标仍待独立表现接入后验证。8 个预警在 1/8 缩略图均保留可见差异，最终轮廓和预警可读性留待 A5。下一轮制作独立的对比度改进候选，从候车室开始复测。[预警 1/8 JPG](gameplay/readability/warnings_1_8.jpg) · [引擎样本与数值记录](gameplay/readability/checks.json)
+
+## 候车室对比度试样
+
+在同一构图内调整后墙和窗玻璃色阶，让原有墨身轮廓落在较亮的蓝纸背景上。同帧、同命中遮罩比较中，墨鸦的亮度中位差由 0.063 升至 0.336，墨伞由 0.082 升至 0.256。包括四个补充时刻在内，六个普通态样本均达到 0.20 门槛，最低为 0.214。[墨鸦原版 JPG](variants/waiting_room_contrast/comparison/crow_before.jpg) · [墨鸦试样 JPG](variants/waiting_room_contrast/comparison/crow_after.jpg) · [墨伞原版 JPG](variants/waiting_room_contrast/comparison/umbrella_before.jpg) · [墨伞试样 JPG](variants/waiting_room_contrast/comparison/umbrella_after.jpg)
+
+试样的 C04 色板覆盖率为 92.17%。10 张视差抓图通过 C03 与完整覆盖检查，点灯变化限制在预定光区。候车室完整玩法回归通过，包括暗场预警、最后一发点灯、换弹、救援和失败重试。独立候选的后墙与玻璃色调待美术复核，硬化态提示仍待完善。[极限视差 JPG](variants/waiting_room_contrast/parallax/frames/waiting_room_corner_2.jpg) · [试样验收记录](variants/waiting_room_contrast/comparison/checks.json)
+
+```powershell
+.\gunforge\start_level_player.ps1 -Package paper.waiting_room_contrast -Candidate
+```
+
+## 站台对比度试样
+
+沿原车窗轮廓提亮玻璃和邻近车壁。同帧、同命中遮罩比较中，墨鸦的亮度中位差由 0.158 升至 0.319，墨伞由 0.179 升至 0.304。六个可射样本均达到 0.20 门槛，最低为 0.225，出现在墨鸦扑击画面。[墨鸦原版 JPG](variants/platform_contrast/comparison/crow_before.jpg) · [墨鸦试样 JPG](variants/platform_contrast/comparison/crow_after.jpg) · [墨伞原版 JPG](variants/platform_contrast/comparison/umbrella_before.jpg) · [墨伞试样 JPG](variants/platform_contrast/comparison/umbrella_after.jpg)
+
+C04 色板覆盖率为 90.57%，9 张玩法样本和 10 张视差抓图均通过 C03。信号灯命中遮罩、软化区域和行李挡弹遮罩与原版一致。新旧构建均通过失败重试、信号灯到期和重新点亮、挡弹与救援回归，收伞后的可射窗口为 323 帧。车窗色调和缩略图辨识度待美术复核，硬化态提示仍待完善。[极限视差 JPG](variants/platform_contrast/parallax/frames/platform_corner_2.jpg) · [试样验收记录](variants/platform_contrast/comparison/checks.json)
+
+```powershell
+.\gunforge\start_level_player.ps1 -Package paper.platform_contrast -Candidate
+```
+
+## 绿皮车厢对比度试样
+
+沿四扇车窗的原有开口提亮窗外景物，保留原有的建筑、山线和车厢构图。同帧、同命中遮罩比较中，墨鸦的亮度中位差由 0.096 升至 0.331，墨伞由 0.065 升至 0.294。六个可射样本均达到 0.20 门槛，最低为 0.219。[墨鸦原版 JPG](variants/green_car_contrast/comparison/crow_before.jpg) · [墨鸦试样 JPG](variants/green_car_contrast/comparison/crow_after.jpg) · [墨伞原版 JPG](variants/green_car_contrast/comparison/umbrella_before.jpg) · [墨伞试样 JPG](variants/green_car_contrast/comparison/umbrella_after.jpg)
+
+C04 色板覆盖率为 94.32%，9 张玩法样本和 10 张视差抓图均通过 C03。顶灯命中与软化遮罩、座椅挡弹遮罩和各层边界与原版一致。两版均通过座椅挡弹、顶灯到期和重新点亮、墨鸦进出光区、墨伞收伞及失败重试，墨鸦连续可射窗口为 231 帧。窗外色调和缩略图辨识度待美术复核。下一轮核查可复用的硬化眼资产与四站接入方式。[极限视差 JPG](variants/green_car_contrast/parallax/frames/green_car_corner_2.jpg) · [试样验收记录](variants/green_car_contrast/comparison/checks.json)
+
+```powershell
+.\gunforge\start_level_player.ps1 -Package paper.green_car_contrast -Candidate
+```
+
+## 四站硬化眼试样
+
+四个战斗站的五个硬化目标接入成对的暖纸色细眼。墨鸦沿用 A2e 认可的眼形、位置和材质，墨伞试样将同形眼纹对齐收伞后的墨身中心。进入光区软化后恢复原有朱砂印记。五个固定姿态中，10 只眼的亮度中位差为 0.530–0.595，单眼长度为 18–22 像素，达到 C06 的 0.30 和 16 像素门槛。命中眼部仍判为无效，八个普通态样本的命中遮罩和对比度与原版一致。[五处原版与试样 JPG](variants/hardened_eyes/comparison/eyes_before_after.jpg) · [候车室整帧 JPG](variants/hardened_eyes/comparison/waiting_room_crow_after.jpg) · [站台整帧 JPG](variants/hardened_eyes/comparison/platform_umbrella_after.jpg)
+
+21 张玩法样本通过 C03。四站通关、五次切换、失败重试及 16 条输入回放通过，四次首次点灯的纹理上传均为零。RTX 3090 的 1640 帧回放中最慢一帧为 9.16 ms。前两关十站通关及通用运行时回归通过。墨伞眼形和 1/8 缩略图辨识度留待 A5。下一轮将三站普通态对比度试样与硬化眼合到同一个预审构建。[软件验收记录](variants/hardened_eyes/comparison/checks.json)
+
+```powershell
+.\gunforge\start_level_player.ps1 -Package paper.train_station_hardened -Candidate
+```
+
+候车室开场先看墨鸦胸口的双眼，再射亮顶灯。墨鸦飞入光区时，双眼应切换为朱砂印记。

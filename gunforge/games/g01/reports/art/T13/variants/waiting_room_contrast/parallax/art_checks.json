@@ -1,0 +1,19 @@
+{
+  "baseline_sha256": "df6ec96a136e8c5c3fada8020d022a8b252b1d303d7c6ee343bf0f00b661ec1b",
+  "render_source_sha256": "0583fc21280a301f758859fca0fa23553d2d462dece19e02eedbed2e06565156",
+  "C04_render_source": {
+    "status": "pass",
+    "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+    "details": {
+      "coverage": 0.921698742011242
+    }
+  },
+  "layer_count": 10,
+  "lamp_effective_radius_px": 51.05,
+  "lamp_swept_rect": [
+    682,
+    146,
+    201,
+    72
+  ]
+}

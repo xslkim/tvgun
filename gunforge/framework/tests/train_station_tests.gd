@@ -154,11 +154,14 @@ func play_and_replay() -> void:
 	check(finished == {"lives": 4, "ammo": 10, "score": 1000, "rescued": 2, "shots": 14}, "final resources match the entire route")
 	var record: Dictionary = session.recording()
 	var trace: Array = model.trace.duplicate(true)
-	session.load_recording(record)
-	step_to(record.end_tick)
+	await replay_recording(record)
 	check(model.current_section == WORKBENCH and model.result == "clear" and counters() == finished and model.trace == trace,
 		"replayed input reproduces the complete session")
 	replay = {"inputs": record.tape.size(), "end_tick": record.end_tick, "final_resources": finished}
+
+func replay_recording(record: Dictionary) -> void:
+	session.load_recording(record)
+	step_to(record.end_tick)
 
 func run() -> void:
 	if not open_candidate():

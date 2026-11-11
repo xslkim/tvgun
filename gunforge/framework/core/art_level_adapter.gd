@@ -129,12 +129,12 @@ func shift_entities(items: Array) -> Array:
 
 func geometry():return ordered(shift_entities(super.geometry()+puppet_items())+layer_items(true)+dragon_items(true))
 func visual_items():
-	var out=shift_entities(super.geometry()+puppet_items())+layer_items()
+	var out=shift_entities(entity_geometry(true)+puppet_items())+layer_items()
 	var presentation: Dictionary = level.get("presentation", {})
 	var entity_tints: Dictionary = presentation.get("entity_tints", {})
 	var wipes: Dictionary = presentation.get("bottom_wipes", {})
 	for item in out:
-		if entity_tints.has(item.id):
+		if entity_tints.has(item.id) and not item.state_visual:
 			var tints: Dictionary = entity_tints[item.id]
 			var kind: String = effective_kind(entities[item.id]) if entities.has(item.id) else item.kind
 			item.tint *= Color(tints.get(kind, "#ffffff"))

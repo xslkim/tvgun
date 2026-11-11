@@ -249,6 +249,9 @@ func image_for(entity: Dictionary) -> Image:
 	return images[key]
 
 func geometry() -> Array:
+	return entity_geometry()
+
+func entity_geometry(visuals := false) -> Array:
 	var out = []
 	var keys = entities.keys()
 	keys.sort_custom(func(a, b):
@@ -261,7 +264,7 @@ func geometry() -> Array:
 			continue
 		var kind := effective_kind(entity)
 		if entity.has("parts"):
-			var parts: Array = Motion.parts(entity,id,images,level.tick_hz)
+			var parts: Array = Motion.parts(entity,id,images,level.tick_hz,kind if visuals else "")
 			if kind != entity.kind:
 				for part in parts:
 					part.kind = kind

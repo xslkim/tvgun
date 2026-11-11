@@ -1,0 +1,237 @@
+{
+  "package": "paper.train_station",
+  "build_id": "b0cb30083a908a6b0e622fafc5350bb438a5d72b68906f78926f39d2aea75ec5",
+  "source_revision": "dda8168b93313341fad55049a6b9c95d5e1eb7432a97b6f623525394fd02861a",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "renderer": "gl_compatibility",
+  "viewport": [
+    1776,
+    936
+  ],
+  "window": [
+    1280,
+    720
+  ],
+  "method": "Same 16-input deterministic route, one rendered frame per fixed tick, VSync disabled. Deduplicate uploaded and preloaded ImageTexture instances by source image. Asset budgets use RGBA8 and include any mip chain. Effects and HUD are drawn procedurally; render targets and font textures are counted separately by the engine.",
+  "C15_asset_budget_status": "pass",
+  "asset_budgets_bytes": {
+    "stage": 50331648,
+    "actor_and_props": 33554432,
+    "effects_and_ui": 16777216,
+    "resident_total": 100663296,
+    "transition_total": 167772160
+  },
+  "handoff_frame_budget_60hz_status": "pass",
+  "whole_route_frame_budget_60hz_status": "exceeded_in_one_run",
+  "observation": "One 30.054 ms frame at the first platform signal activation coincided with one 27.580 ms texture upload; the other run stayed within 16.67 ms.",
+  "runs": [
+    {
+      "run": 2,
+      "samples": 1640,
+      "profile_sha256": "702be2907a5ef80563b11476f642a9c2909c35321a34b1157682278ea41c28f8",
+      "peak_asset_bytes": {
+        "stage": 41628328,
+        "actor_and_props": 16241232,
+        "effects_and_ui": 0,
+        "resident_total": 41628328,
+        "transition_total": 62965136
+      },
+      "engine_peak_texture_bytes": 106515938,
+      "engine_peak_video_bytes": 121441706,
+      "frame_time_us": {
+        "p99": 2446,
+        "maximum": 30054,
+        "above_60hz_budget": [
+          {
+            "actor_prop_bytes": 16241232,
+            "cut": false,
+            "engine_texture_bytes": 71532777,
+            "engine_video_bytes": 86472369,
+            "frame_us": 30054,
+            "preloaded_actor_prop_bytes": 0,
+            "preloaded_stage_bytes": 0,
+            "section": "platform.platform",
+            "stage_bytes": 20407288,
+            "tick": 726,
+            "uncached_scene_textures": 0,
+            "upload_count": 1,
+            "upload_us": 27580
+          }
+        ]
+      },
+      "handoffs": [
+        {
+          "actor_prop_bytes": 11922000,
+          "cut": true,
+          "engine_texture_bytes": 64414399,
+          "engine_video_bytes": 79340167,
+          "frame_us": 2809,
+          "preloaded_actor_prop_bytes": 0,
+          "preloaded_stage_bytes": 0,
+          "section": "platform.platform",
+          "stage_bytes": 19042936,
+          "tick": 540,
+          "uncached_scene_textures": 0,
+          "upload_count": 0,
+          "upload_us": 0
+        },
+        {
+          "actor_prop_bytes": 6969360,
+          "cut": true,
+          "engine_texture_bytes": 57605999,
+          "engine_video_bytes": 72531767,
+          "frame_us": 1560,
+          "preloaded_actor_prop_bytes": 0,
+          "preloaded_stage_bytes": 0,
+          "section": "green_car.green_car",
+          "stage_bytes": 18887144,
+          "tick": 901,
+          "uncached_scene_textures": 0,
+          "upload_count": 0,
+          "upload_us": 0
+        },
+        {
+          "actor_prop_bytes": 6969360,
+          "cut": true,
+          "engine_texture_bytes": 66847819,
+          "engine_video_bytes": 81773587,
+          "frame_us": 1630,
+          "preloaded_actor_prop_bytes": 0,
+          "preloaded_stage_bytes": 0,
+          "section": "lantern_base.lantern_base",
+          "stage_bytes": 25819212,
+          "tick": 1215,
+          "uncached_scene_textures": 0,
+          "upload_count": 0,
+          "upload_us": 0
+        },
+        {
+          "actor_prop_bytes": 0,
+          "cut": true,
+          "engine_texture_bytes": 74070278,
+          "engine_video_bytes": 88996046,
+          "frame_us": 1650,
+          "preloaded_actor_prop_bytes": 0,
+          "preloaded_stage_bytes": 528280,
+          "section": "lantern_base.pullback",
+          "stage_bytes": 41628328,
+          "tick": 1437,
+          "uncached_scene_textures": 0,
+          "upload_count": 1,
+          "upload_us": 68
+        },
+        {
+          "actor_prop_bytes": 0,
+          "cut": true,
+          "engine_texture_bytes": 50555567,
+          "engine_video_bytes": 65481335,
+          "frame_us": 1310,
+          "preloaded_actor_prop_bytes": 0,
+          "preloaded_stage_bytes": 0,
+          "section": "lantern_base.workbench",
+          "stage_bytes": 23885044,
+          "tick": 1491,
+          "uncached_scene_textures": 0,
+          "upload_count": 0,
+          "upload_us": 0
+        }
+      ]
+    },
+    {
+      "run": 3,
+      "samples": 1640,
+      "profile_sha256": "83674c2f2b7244b75cdc539825d95c307a7077b3b8c740ce1cf292fd4c308ac2",
+      "peak_asset_bytes": {
+        "stage": 41628328,
+        "actor_and_props": 16241232,
+        "effects_and_ui": 0,
+        "resident_total": 41628328,
+        "transition_total": 62965136
+      },
+      "engine_peak_texture_bytes": 106515938,
+      "engine_peak_video_bytes": 119311514,
+      "frame_time_us": {
+        "p99": 2269,
+        "maximum": 5099,
+        "above_60hz_budget": []
+      },
+      "handoffs": [
+        {
+          "actor_prop_bytes": 11922000,
+          "cut": true,
+          "engine_texture_bytes": 64414399,
+          "engine_video_bytes": 77209975,
+          "frame_us": 2846,
+          "preloaded_actor_prop_bytes": 0,
+          "preloaded_stage_bytes": 0,
+          "section": "platform.platform",
+          "stage_bytes": 19042936,
+          "tick": 540,
+          "uncached_scene_textures": 0,
+          "upload_count": 0,
+          "upload_us": 0
+        },
+        {
+          "actor_prop_bytes": 6969360,
+          "cut": true,
+          "engine_texture_bytes": 57605999,
+          "engine_video_bytes": 70401575,
+          "frame_us": 1565,
+          "preloaded_actor_prop_bytes": 0,
+          "preloaded_stage_bytes": 0,
+          "section": "green_car.green_car",
+          "stage_bytes": 18887144,
+          "tick": 901,
+          "uncached_scene_textures": 0,
+          "upload_count": 0,
+          "upload_us": 0
+        },
+        {
+          "actor_prop_bytes": 6969360,
+          "cut": true,
+          "engine_texture_bytes": 66847819,
+          "engine_video_bytes": 79643395,
+          "frame_us": 1659,
+          "preloaded_actor_prop_bytes": 0,
+          "preloaded_stage_bytes": 0,
+          "section": "lantern_base.lantern_base",
+          "stage_bytes": 25819212,
+          "tick": 1215,
+          "uncached_scene_textures": 0,
+          "upload_count": 0,
+          "upload_us": 0
+        },
+        {
+          "actor_prop_bytes": 0,
+          "cut": true,
+          "engine_texture_bytes": 74070278,
+          "engine_video_bytes": 86865854,
+          "frame_us": 1472,
+          "preloaded_actor_prop_bytes": 0,
+          "preloaded_stage_bytes": 528280,
+          "section": "lantern_base.pullback",
+          "stage_bytes": 41628328,
+          "tick": 1437,
+          "uncached_scene_textures": 0,
+          "upload_count": 1,
+          "upload_us": 58
+        },
+        {
+          "actor_prop_bytes": 0,
+          "cut": true,
+          "engine_texture_bytes": 50555567,
+          "engine_video_bytes": 63351143,
+          "frame_us": 1328,
+          "preloaded_actor_prop_bytes": 0,
+          "preloaded_stage_bytes": 0,
+          "section": "lantern_base.workbench",
+          "stage_bytes": 23885044,
+          "tick": 1491,
+          "uncached_scene_textures": 0,
+          "upload_count": 0,
+          "upload_us": 0
+        }
+      ]
+    }
+  ]
+}

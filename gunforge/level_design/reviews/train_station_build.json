@@ -1,8 +1,8 @@
 {
   "source": "D:\\tvgun\\gunforge\\level_design\\packages\\paper.train_station\\revisions\\dda8168b93313341fad55049a6b9c95d5e1eb7432a97b6f623525394fd02861a\\level.json",
   "source_revision": "dda8168b93313341fad55049a6b9c95d5e1eb7432a97b6f623525394fd02861a",
-  "build_id": "b0cb30083a908a6b0e622fafc5350bb438a5d72b68906f78926f39d2aea75ec5",
-  "compiled": "D:\\gunforge_cache\\level_design\\builds\\b0cb30083a908a6b0e622fafc5350bb438a5d72b68906f78926f39d2aea75ec5\\level.json",
+  "build_id": "945badb992982cc5d4a0ad5da38ca9ad53e1caf3d91193de1e0903ba42efc358",
+  "compiled": "D:\\gunforge_cache\\level_design\\builds\\945badb992982cc5d4a0ad5da38ca9ad53e1caf3d91193de1e0903ba42efc358\\level.json",
   "state": "candidate_not_adopted",
   "component_revisions": {
     "paper.waiting_room": "eb1e143ebed4d4e00f01e9c73cf4ed00c1bf91e967220e98e10a55e284ac402b",

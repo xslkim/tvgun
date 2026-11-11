@@ -33,12 +33,17 @@ static func transform(entity):
 	var hit_age=float(entity.get("view_tick",0)-entity.get("last_hit_tick",-1000))/60.0
 	if hit_age>=0 and hit_age<.22:basis.origin+=Vector2(entity.get("hit_direction",1)*18,-5)*exp(-hit_age*18)
 	return basis
-static func parts(entity,id,images,hz):
+static func parts(entity,id,images,hz,visual_kind: String = ""):
 	var out=[];var base=transform(entity)
 	for key in entity.part_order:
 		var part=entity.parts[key];var item=Item.new()
 		item.id=id;item.kind=part.get("kind",entity.kind) if entity.kind in ["primary","weak"] else entity.kind
 		if entity.kind=="decoration":item.kind=""
+		if not visual_kind.is_empty() and part.has("hardened_visual"):
+			item.state_images.assign([images[part.resource], images[part.hardened_visual.resource]])
+			if visual_kind == "invalid":
+				part = part.hardened_visual
+				item.state_visual = true
 		item.image=images[part.resource];item.source=Rect2(Vector2.ZERO,item.image.get_size())
 		if part.has("hit_resource"):item.hit_image=images[part.hit_resource]
 		if part.has("source"):item.source=Rect2(part.source[0],part.source[1],part.source[2],part.source[3])

@@ -35,6 +35,10 @@ def validate_scene(source,root,error):
     image(part['resource'])
     hit_mask(part,id)
     if 'source' in part:crop(part['resource'],part['source'])
+    if 'hardened_visual' in part:
+     if part.get('kind')!='weak' or 'mask_permission' not in entity:
+      raise error('hardened visual needs a light-gated weak part: '+id)
+     image(part['hardened_visual']['resource'])
   if 'motion' in entity:
    frames = entity['motion']['frames']
    if any('at_ms' not in frame for frame in frames):

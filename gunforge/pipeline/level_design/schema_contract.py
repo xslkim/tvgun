@@ -51,6 +51,8 @@ entity['properties']['mask_permission']=obj({
 },['source','resource','threshold'])
 entity['properties']['hit_resource']=string
 part['properties']['hit_resource']=string
+part['properties']['hardened_visual']=obj(
+ {'resource':string,'x':number,'y':number,'width':scale,'height':scale},['resource','x','y','width','height'])
 effect['properties']['kind']['enum'].append('beam_sweep')
 effect['properties']['anchor_uv'] = {
  'type':'array','items':{'type':'number','minimum':0,'maximum':1},'minItems':2,'maxItems':2,

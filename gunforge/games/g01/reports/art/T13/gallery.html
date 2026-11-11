@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>纸灯城 · 火车站 A5 预审</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, "Microsoft YaHei", system-ui, sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #efebe2; background: #151925; line-height: 1.6; }
+    main { max-width: 1220px; margin: auto; padding: clamp(16px, 4vw, 48px); }
+    h1, h2, p { margin: 0; }
+    h1 { font-size: clamp(30px, 5vw, 48px); line-height: 1.2; }
+    h2 { font-size: 24px; line-height: 1.3; }
+    p { margin-top: 8px; }
+    a { color: #9bd9cd; text-underline-offset: .18em; }
+    a:focus-visible { outline: 2px solid #ffdbad; outline-offset: 3px; }
+    nav, .links { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+    nav { margin-top: 20px; padding-bottom: 14px; }
+    section { border-top: 1px solid #495061; padding-top: 22px; margin-top: 18px; }
+    .pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 14px; }
+    figure { margin: 0; background: #222838; border: 1px solid #3b4355; }
+    figure a { display: block; }
+    img { display: block; width: 100%; height: auto; }
+    figcaption { padding: 7px 11px; color: #dfded7; }
+    .links { margin-top: 12px; }
+    ol { margin: 10px 0; padding-left: 1.6em; }
+    code { overflow-wrap: anywhere; color: #f4cd9e; }
+    @media (max-width: 640px) { .pair { grid-template-columns: minmax(0, 1fr); } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>火车站 A5 预审</h1>
+    <p>五站对照图可点开原尺寸 JPG。四个战斗站和拉镜已通过软件回归，整关 A5 与光枪实测待工作台 Boss 接入。</p>
+    <nav aria-label="预审章节">
+      <a href="#strokes">七笔遮罩签核</a><a href="#waiting-room">候车室</a><a href="#platform">站台</a>
+      <a href="#green-car">绿皮车厢</a><a href="#lantern-base">灯座</a><a href="#workbench">工作台</a>
+      <a href="#pullback">拉镜</a><a href="#play">游玩检查</a>
+    </nav>
+  </header>
+
+  <section id="strokes">
+    <h2>「忘」字七笔遮罩签核</h2>
+    <p>请核对字形轮廓和 1–7 笔顺、第 3 笔盖在第 2 笔上，以及随资产保留的来源与授权记录。</p>
+    <div class="pair">
+      <figure><a href="forget_strokes/glyph.jpg"><img src="forget_strokes/glyph.jpg" alt="忘字原轮廓" width="1776" height="936"></a><figcaption>字形轮廓</figcaption></figure>
+      <figure><a href="forget_strokes/stroke_order.jpg"><img src="forget_strokes/stroke_order.jpg" alt="七笔编号与交叉层级" width="1776" height="936"></a><figcaption>笔顺与交叉层级</figcaption></figure>
+    </div>
+    <p class="links"><a href="forget_strokes/ARPHICPL.TXT">Arphic Public License 原文</a><a href="forget_strokes/forget-graphics.json">单字源记录</a><a href="forget_strokes/geometry.json">几何与命中面积</a></p>
+  </section>
+
+  <section id="waiting-room">
+    <h2>候车室</h2>
+    <div class="pair">
+      <figure><a href="parallax/frames/waiting_room_rest.jpg"><img src="parallax/frames/waiting_room_rest.jpg" alt="候车室关灯，长窗与检票栏" width="1776" height="936" loading="lazy"></a><figcaption>关灯</figcaption></figure>
+      <figure><a href="parallax/frames/waiting_room_lit.jpg"><img src="parallax/frames/waiting_room_lit.jpg" alt="候车室点灯，站灯照亮长窗一侧" width="1776" height="936" loading="lazy"></a><figcaption>点灯</figcaption></figure>
+    </div>
+    <p class="links"><a href="compositions/waiting_room.jpg">原构图 JPG</a><a href="parallax/frames/waiting_room_corner_2.jpg">极限视差 JPG</a><a href="gameplay/waiting_room/crow_attack.jpg">墨鸦攻击 JPG</a><a href="actors/passerby_c/idle.jpg">路人 C JPG</a><a href="gameplay/waiting_room/waiting_room_rescue.jpg">救援 JPG</a><a href="variants/waiting_room_contrast/comparison/crow_after.jpg">对比度试样 JPG</a></p>
+  </section>
+
+  <section id="platform">
+    <h2>站台</h2>
+    <div class="pair">
+      <figure><a href="parallax/frames/platform_rest.jpg"><img src="parallax/frames/platform_rest.jpg" alt="站台关灯，车厢和右侧信号灯" width="1776" height="936" loading="lazy"></a><figcaption>关灯</figcaption></figure>
+      <figure><a href="parallax/frames/platform_lit.jpg"><img src="parallax/frames/platform_lit.jpg" alt="站台信号灯亮起" width="1776" height="936" loading="lazy"></a><figcaption>点灯</figcaption></figure>
+    </div>
+    <p class="links"><a href="compositions/platform.jpg">原构图 JPG</a><a href="parallax/frames/platform_corner_2.jpg">极限视差 JPG</a><a href="gameplay/platform/platform_folded_dark.jpg">墨伞硬化 JPG</a><a href="gameplay/platform/platform_lit.jpg">墨伞软化 JPG</a><a href="gameplay/platform/platform_rescued.jpg">检票员获救 JPG</a></p>
+    <p class="links"><a href="variants/platform_contrast/comparison/crow_before.jpg">墨鸦原版 JPG</a><a href="variants/platform_contrast/comparison/crow_after.jpg">墨鸦试样 JPG</a><a href="variants/platform_contrast/comparison/umbrella_before.jpg">墨伞原版 JPG</a><a href="variants/platform_contrast/comparison/umbrella_after.jpg">墨伞试样 JPG</a><a href="variants/platform_contrast/comparison/checks.json">试样验收记录</a></p>
+  </section>
+
+  <section id="green-car">
+    <h2>绿皮车厢</h2>
+    <div class="pair">
+      <figure><a href="parallax/frames/green_car_rest.jpg"><img src="parallax/frames/green_car_rest.jpg" alt="绿皮车厢关灯，窗列与近景座椅" width="1776" height="936" loading="lazy"></a><figcaption>关灯</figcaption></figure>
+      <figure><a href="parallax/frames/green_car_lit.jpg"><img src="parallax/frames/green_car_lit.jpg" alt="绿皮车厢顶灯亮起" width="1776" height="936" loading="lazy"></a><figcaption>点灯</figcaption></figure>
+    </div>
+    <p class="links"><a href="compositions/green_car.jpg">原构图 JPG</a><a href="parallax/frames/green_car_corner_2.jpg">极限视差 JPG</a><a href="gameplay/green_car/green_car_entry.jpg">座椅遮挡 JPG</a><a href="gameplay/green_car/green_car_outside_spill.jpg">墨鸦在光区外 JPG</a><a href="gameplay/green_car/green_car_lit.jpg">墨鸦进入光区 JPG</a></p>
+    <p class="links"><a href="variants/green_car_contrast/comparison/crow_before.jpg">墨鸦原版 JPG</a><a href="variants/green_car_contrast/comparison/crow_after.jpg">墨鸦试样 JPG</a><a href="variants/green_car_contrast/comparison/umbrella_before.jpg">墨伞原版 JPG</a><a href="variants/green_car_contrast/comparison/umbrella_after.jpg">墨伞试样 JPG</a><a href="variants/green_car_contrast/comparison/checks.json">试样验收记录</a></p>
+  </section>
+
+  <section id="lantern-base">
+    <h2>灯座</h2>
+    <div class="pair">
+      <figure><a href="parallax/frames/lantern_base_rest.jpg"><img src="parallax/frames/lantern_base_rest.jpg" alt="灯座关灯，灯骨与弧形环梁" width="1776" height="936" loading="lazy"></a><figcaption>关灯</figcaption></figure>
+      <figure><a href="parallax/frames/lantern_base_lit.jpg"><img src="parallax/frames/lantern_base_lit.jpg" alt="灯座中央站灯亮起" width="1776" height="936" loading="lazy"></a><figcaption>点灯</figcaption></figure>
+    </div>
+    <p class="links"><a href="compositions/lantern_base.jpg">原构图 JPG</a><a href="parallax/frames/lantern_base_corner_2.jpg">极限视差 JPG</a><a href="gameplay/lantern_base/lantern_base_lit.jpg">两侧软化 JPG</a><a href="gameplay/lantern_base/lantern_base_umbrella_attack.jpg">墨伞攻击 JPG</a></p>
+  </section>
+
+  <section id="workbench">
+    <h2>工作台</h2>
+    <div class="pair">
+      <figure><a href="parallax/frames/workbench_rest.jpg"><img src="parallax/frames/workbench_rest.jpg" alt="工作台静止画面，纸灯、砚台和笔架" width="1776" height="936" loading="lazy"></a><figcaption>分层静止</figcaption></figure>
+      <figure><a href="gameplay/train_station/workbench.jpg"><img src="gameplay/train_station/workbench.jpg" alt="从灯座拉镜抵达工作台" width="1776" height="936" loading="lazy"></a><figcaption>连续候选抵达工作台</figcaption></figure>
+    </div>
+    <p class="links"><a href="compositions/workbench.jpg">原构图 JPG</a><a href="parallax/frames/workbench_corner_2.jpg">极限视差 JPG</a><a href="whiteboxes/workbench.jpg">字形区白模 JPG</a></p>
+  </section>
+
+  <section id="pullback">
+    <h2>从纸灯拉回工作台</h2>
+    <div class="pair">
+      <figure><a href="gameplay/lantern_pullback/pullback_inside_rim.jpg"><img src="gameplay/lantern_pullback/pullback_inside_rim.jpg" alt="拉镜前对准灯座内侧足座" width="1776" height="936" loading="lazy"></a><figcaption>灯座内侧足座</figcaption></figure>
+      <figure><a href="gameplay/lantern_pullback/pullback_paper_lantern.jpg"><img src="gameplay/lantern_pullback/pullback_paper_lantern.jpg" alt="镜头衔接到纸灯外侧足座" width="1776" height="936" loading="lazy"></a><figcaption>纸灯外侧足座</figcaption></figure>
+    </div>
+    <p class="links"><a href="gameplay/lantern_pullback/pullback_match_cut.jpg">叠化 JPG</a><a href="gameplay/lantern_pullback/pullback_workbench.jpg">拉回全景 JPG</a><a href="gameplay/lantern_pullback/software_checks.json">拉镜软件验收</a></p>
+  </section>
+
+  <section id="play">
+    <h2>游玩检查</h2>
+    <p>在项目根目录启动 <code>.\gunforge\start_level_player.ps1 -Package paper.train_station -Candidate</code></p>
+    <ol>
+      <li>候车室确认墨鸦在关灯时仍有预警和扑击，点灯后飞入光区才软化，射中路人胸口墨团可救援。</li>
+      <li>站台点亮信号灯并等墨伞收伞，绿皮车厢确认座椅挡弹，灯座用中央站灯净化两侧墨怪。</li>
+      <li>确认换站保留灯芯与弹药，灯座结束后拉镜到工作台。整关设备验收在 Boss 接入后分别跑显示器和电视。</li>
+    </ol>
+    <p class="links"><a href="report.md">T13 验收记录</a><a href="gameplay/train_station/software_checks.json">连续候选软件验收</a><a href="gameplay/train_station/light_preload.json">灯光预载与 C15</a><a href="gameplay/readability/targets_1_8.jpg">目标 1/8 JPG</a><a href="gameplay/readability/warnings_1_8.jpg">预警 1/8 JPG</a><a href="gameplay/readability/checks.json">C06 数值</a></p>
+    <p class="links"><a href="variants/hardened_eyes/comparison/eyes_before_after.jpg">四站硬化眼对照 JPG</a><a href="variants/hardened_eyes/comparison/waiting_room_crow_after.jpg">候车室墨鸦整帧 JPG</a><a href="variants/hardened_eyes/comparison/platform_umbrella_after.jpg">站台墨伞整帧 JPG</a><a href="variants/hardened_eyes/comparison/checks.json">硬化眼软件验收</a></p>
+  </section>
+</main>
+</body>
+</html>

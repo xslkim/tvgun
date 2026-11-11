@@ -1,0 +1,235 @@
+{
+  "godot": "4.6.3-stable (official)",
+  "gpu_capture": true,
+  "passed": true,
+  "samples": {
+    "green_car": {
+      "corner_0": {
+        "aim": [
+          848.320007324219,
+          212.160003662109
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_0_against": {
+        "aim": [
+          844.47998046875,
+          210.240005493164
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_1": {
+        "aim": [
+          815.679992675781,
+          212.160003662109
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_1_against": {
+        "aim": [
+          819.52001953125,
+          210.240005493164
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_2": {
+        "aim": [
+          815.679992675781,
+          195.839996337891
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_2_against": {
+        "aim": [
+          819.52001953125,
+          197.759994506836
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_3": {
+        "aim": [
+          848.320007324219,
+          195.839996337891
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_3_against": {
+        "aim": [
+          844.47998046875,
+          197.759994506836
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "rest": {
+        "aim": [
+          832.0,
+          204.0
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "captures": {
+        "rest": {
+          "sha256": "14ba52df00361e94489057507e842f83924d0e930dfe56f02615fe019c9d8b6f",
+          "opaque": true,
+          "max_channel_difference": 0,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0016440719565719566
+            }
+          }
+        },
+        "lit": {
+          "sha256": "8a9a3a55a1fae818704298ba856f854e519a897ef38bf9749aedf2f5d779d5dd",
+          "opaque": true,
+          "max_channel_difference": 0,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.003152190652190652
+            }
+          }
+        },
+        "corner_0": {
+          "sha256": "8bd7603eeeaf8ae8cd5139061b8f83ae673dfd289d80e80ea14f999cd848f796",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0023009788634788635
+            }
+          }
+        },
+        "corner_0_against": {
+          "sha256": "4481cb36ccee919aa597def70f96d70a12c156f3b4289aec0579cfcd4e41d7b7",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0021632209132209134
+            }
+          }
+        },
+        "corner_1": {
+          "sha256": "c021da0973d9e6418f23bef576ccea61726f20a10f34ac8f933c2d50dcac8b19",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0023154163779163777
+            }
+          }
+        },
+        "corner_1_against": {
+          "sha256": "776601e0698c9b6926dd06d5bf54a071bb8be326339bd81bb1a082504945999e",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0021758537383537386
+            }
+          }
+        },
+        "corner_2": {
+          "sha256": "a3c311dc0f836e317cb330313108de4a908417a4f505ac0543b42bfa17058ee6",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0027882449757449758
+            }
+          }
+        },
+        "corner_2_against": {
+          "sha256": "e91856b057c26adc9860c5663988eba067e7e0d1a57b332ddc6de8e951650641",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0026865808115808117
+            }
+          }
+        },
+        "corner_3": {
+          "sha256": "5cd1f84dfe1e48ebfb066012a6ed42e0da7968d0e61066cb63e9705aa718e410",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0027912527912527913
+            }
+          }
+        },
+        "corner_3_against": {
+          "sha256": "07b53c611821f91195e6f9b00e205b7f308748bae6b7dcb3d7392c1d37ee55f6",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.002684174559174559
+            }
+          }
+        }
+      },
+      "light_region": {
+        "changed_pixels": 466892,
+        "changed_outside_light_region": 0
+      }
+    }
+  }
+}

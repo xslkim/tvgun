@@ -42,9 +42,17 @@ def grade(image, profile):
     return Image.fromarray(np.rint(adjusted).clip(0, 255).astype("uint8"))
 
 
+def scale_lamp_layer(layer, guide, center, scale):
+    gx, gy = [axis * side for axis, side in zip(center, guide)]
+    adjusted = dict(layer)
+    for key in ("paths", "hit"):
+        adjusted[key] = [[[gx + (x - gx) * scale, gy + (y - gy) * scale] for x, y in polygon]
+                         for polygon in layer[key]]
+    return adjusted
+
+
 def resize_lamp(image, layer, guide, center, scale):
     cx, cy = [axis * side for axis, side in zip(center, image.size)]
-    gx, gy = [axis * side for axis, side in zip(center, guide)]
     mask = Image.new("L", image.size)
     draw = ImageDraw.Draw(mask)
     for polygon in layer["paths"]:
@@ -61,11 +69,7 @@ def resize_lamp(image, layer, guide, center, scale):
     lamp.putalpha(mask)
     transform = (1 / scale, 0, cx * (1 - 1 / scale), 0, 1 / scale, cy * (1 - 1 / scale))
     result.alpha_composite(lamp.transform(image.size, Image.Transform.AFFINE, transform, Image.Resampling.BICUBIC))
-    adjusted = dict(layer)
-    for key in ("paths", "hit"):
-        adjusted[key] = [[[gx + (x - gx) * scale, gy + (y - gy) * scale] for x, y in polygon]
-                         for polygon in layer[key]]
-    return result.convert("RGB"), adjusted
+    return result.convert("RGB"), scale_lamp_layer(layer, guide, center, scale)
 
 
 def inputs():

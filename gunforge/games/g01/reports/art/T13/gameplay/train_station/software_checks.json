@@ -1,0 +1,209 @@
+{
+  "package": "paper.train_station",
+  "source_revision": "dda8168b93313341fad55049a6b9c95d5e1eb7432a97b6f623525394fd02861a",
+  "build_id": "945badb992982cc5d4a0ad5da38ca9ad53e1caf3d91193de1e0903ba42efc358",
+  "component_revisions": {
+    "paper.waiting_room": "eb1e143ebed4d4e00f01e9c73cf4ed00c1bf91e967220e98e10a55e284ac402b",
+    "paper.platform": "e34d5afe0d1644a28c5bfa1f0b855f6cb5739beb526767c5ca0be3c72b581a30",
+    "paper.green_car": "3cfa8933f557dcefa275c3ebd6684902ff9ed03e86c80bdf68fd1f1b787420ad",
+    "paper.lantern_pullback": "bef54ae3844c5325587cfcd46c3b0249f940522c12b0b731ea131f681dcca710"
+  },
+  "status": "candidate_software_passed",
+  "godot": "4.6.3 Compatibility",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "player_launch": {
+    "ready": true,
+    "http_error": 0,
+    "udp_errors": []
+  },
+  "gameplay": {
+    "build_id": "945badb992982cc5d4a0ad5da38ca9ad53e1caf3d91193de1e0903ba42efc358",
+    "failures": [],
+    "gpu_capture": true,
+    "handoffs": [
+      {
+        "from": "waiting_room.waiting_room",
+        "resources": {
+          "ammo": 8,
+          "lives": 4,
+          "rescued": 1,
+          "score": 300,
+          "shots": 4
+        },
+        "tick": 540,
+        "to": "platform.platform",
+        "uncached_scene_textures": 0
+      },
+      {
+        "from": "platform.platform",
+        "resources": {
+          "ammo": 4,
+          "lives": 4,
+          "rescued": 2,
+          "score": 600,
+          "shots": 8
+        },
+        "tick": 901,
+        "to": "green_car.green_car",
+        "uncached_scene_textures": 0
+      },
+      {
+        "from": "green_car.green_car",
+        "resources": {
+          "ammo": 1,
+          "lives": 4,
+          "rescued": 2,
+          "score": 800,
+          "shots": 11
+        },
+        "tick": 1215,
+        "to": "lantern_base.lantern_base",
+        "uncached_scene_textures": 0
+      },
+      {
+        "from": "lantern_base.lantern_base",
+        "resources": {
+          "ammo": 10,
+          "lives": 4,
+          "rescued": 2,
+          "score": 1000,
+          "shots": 14
+        },
+        "tick": 1437,
+        "to": "lantern_base.pullback",
+        "uncached_scene_textures": 0
+      },
+      {
+        "from": "lantern_base.pullback",
+        "resources": {
+          "ammo": 10,
+          "lives": 4,
+          "rescued": 2,
+          "score": 1000,
+          "shots": 14
+        },
+        "tick": 1491,
+        "to": "lantern_base.workbench",
+        "uncached_scene_textures": 0
+      }
+    ],
+    "passed": true,
+    "replay": {
+      "end_tick": 1640,
+      "final_resources": {
+        "ammo": 10,
+        "lives": 4,
+        "rescued": 2,
+        "score": 1000,
+        "shots": 14
+      },
+      "inputs": 16
+    },
+    "retry": {
+      "defeated_at": "platform.platform",
+      "defeated_resources": {
+        "ammo": 7,
+        "lives": 0,
+        "rescued": 1,
+        "score": 300,
+        "shots": 5
+      },
+      "restart": {
+        "ammo": 12,
+        "lives": 5,
+        "rescued": 0,
+        "score": 0,
+        "shots": 0
+      }
+    }
+  },
+  "T12_regression": {
+    "source_revision": "9240ef2fba14e57ccee844426ef79585c5f8546117abc6e548d1441b41d6966c",
+    "build_id": "05541fde49985feaf2749675c89004daad7dac9f13b2a9708b0027eaf586e7be",
+    "stations": 10,
+    "passed": true,
+    "failure_retries": 2,
+    "texture_restart_checked": true,
+    "profile_frames": 8143,
+    "frame_time_max_us": 12379,
+    "profile_sha256": "412f35b640c16b9da6fb5b993de3a3d167061c7ff3183488ad7745c1b4a11815"
+  },
+  "regressions": [
+    "four battle stops, lantern pullback and workbench arrival",
+    "resources preserved across all five handoffs; last-round lamp and reload",
+    "old pose cannot activate the preceding stop lamp; cut rejects queued shots",
+    "platform defeat and reset; deterministic 16-input replay",
+    "all five handoffs have cached visible textures",
+    "all four lamp activation frames use resident textures; five GPU frames match the baseline pixel for pixel"
+  ],
+  "frames": {
+    "waiting_room": {
+      "preview": "waiting_room.jpg",
+      "sha256": "b6ed15fda1236db28d237d0e89bc88be6ddbd491371acaea776fb22ebeec188e",
+      "opaque": true,
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0036346442596442595
+        }
+      }
+    },
+    "platform": {
+      "preview": "platform.jpg",
+      "sha256": "d0e9cc8722a2a71055be0e34ee6d6e9a7a56f46a94bd9d4793eb1a6625674c03",
+      "opaque": true,
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0075833044583044585
+        }
+      }
+    },
+    "green_car": {
+      "preview": "green_car.jpg",
+      "sha256": "6f3f2e786e8561e8f653fe579429d3c9337e08c42c0a2565afc93bbd50736c34",
+      "opaque": true,
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.007218155655655656
+        }
+      }
+    },
+    "lantern_base": {
+      "preview": "lantern_base.jpg",
+      "sha256": "4520078ba297b5d753a0bab11b791c6c0a2c0addbcee39f0df4ecced62f82cc2",
+      "opaque": true,
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.011180651805651805
+        }
+      }
+    },
+    "workbench": {
+      "preview": "workbench.jpg",
+      "sha256": "99787cea9bf1f73817a8d6ad01c92469ee1c3ac1d42fa140c9f0a705256d04ae",
+      "opaque": true,
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.008690180565180566
+        }
+      }
+    }
+  },
+  "pending": [
+    "T13 A5 overall art review",
+    "C06 target contrast and hardened-state cues",
+    "forget stroke mask review and playable boss",
+    "T13 physical lightgun on monitor and TV"
+  ],
+  "performance": "light_preload.json",
+  "baseline_build_id": "b0cb30083a908a6b0e622fafc5350bb438a5d72b68906f78926f39d2aea75ec5"
+}
