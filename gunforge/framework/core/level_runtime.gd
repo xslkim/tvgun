@@ -108,6 +108,27 @@ func feedback(name,point,entity=""):
 	start_effect(level.get("presentation",{}).get("feedback",{}).get(name,""),point,entity)
 
 func center(entity):return Vector2(entity.x+entity.width*.5,entity.y+entity.height*.5)
+func display_center(entity) -> Vector2:return center(entity)
+func display_transform(entity) -> Transform2D:return Motion.transform(entity)
+func active_opacity(entity) -> float:
+	return float(entity.get("pose_opacity", 1)) if entity.active and entity.visible else 0.0
+
+func effective_kind(entity) -> String:
+	if not entity.has("mask_permission") or entity.kind not in ["primary", "weak"]:
+		return entity.kind
+	var gate: Dictionary = entity.mask_permission
+	var anchor: Dictionary = entities[gate.source]
+	var opacity := active_opacity(anchor)
+	if opacity <= 0:
+		return "invalid"
+	var center_point := display_transform(entity) * (Vector2(entity.width, entity.height) * .5)
+	var local := display_transform(anchor).affine_inverse() * center_point
+	var size := Vector2(anchor.width, anchor.height)
+	if not Rect2(Vector2.ZERO, size).has_point(local):
+		return "invalid"
+	var weight := preload("spatial_queries.gd").mask_red(images[gate.resource], local, size)
+	var influence := weight * opacity
+	return entity.kind if influence >= gate.threshold else "invalid"
 
 func step():
 	if phase != "running" or not paused_reasons.is_empty():
@@ -198,7 +219,7 @@ func apply_action(action: Dictionary):
 			var projectile=entities[action.entity];var origin=center(entities[action.source])-Vector2(projectile.width,projectile.height)*.5
 			projectile.motion_override={"easing":"linear","frames":[{"at_ms":0,"x":origin.x,"y":origin.y},{"at_ms":action.duration_ms,"x":action.x-projectile.width*.5,"y":action.y-projectile.height*.5}]}
 			Motion.update(projectile,level.tick_hz);emit("attack.launched",action.source)
-		"vfx":start_effect(action.effect,center(entities[action.entity]),action.entity,action.get("source",""))
+		"vfx":start_effect(action.effect,display_center(entities[action.entity]),action.entity,action.get("source",""))
 		"section":current_section=action.section;emit("section.started",action.section)
 		"input":input_enabled=action.enabled
 		"complete", "fail":
@@ -238,15 +259,24 @@ func geometry() -> Array:
 		var entity = entities[id]
 		if not entity.active or not entity.visible or entity.properties.get("virtual",false) or entity.has("puppet"):
 			continue
+		var kind := effective_kind(entity)
 		if entity.has("parts"):
-			out.append_array(Motion.parts(entity,id,images,level.tick_hz));continue
+			var parts: Array = Motion.parts(entity,id,images,level.tick_hz)
+			if kind != entity.kind:
+				for part in parts:
+					part.kind = kind
+			out.append_array(parts)
+			continue
 		var item = Item.new()
 		item.id = id
-		item.kind = "" if entity.kind == "decoration" else entity.kind
+		item.kind = "" if kind == "decoration" else kind
 		item.image = image_for(entity)
+		if entity.has("hit_resource"):
+			item.hit_image = images[entity.hit_resource]
 		item.source = Rect2(Vector2.ZERO, item.image.get_size())
 		item.size = Vector2(entity.width, entity.height)
 		item.transform = Motion.transform(entity);item.generation=int(entity.generation);item.z=int(entity.properties.get("z",0))
+		item.tint.a = float(entity.get("pose_opacity",1))
 		out.append(item)
 	return out
 
@@ -297,6 +327,7 @@ func command(event: String, point: Vector2 = Vector2.ZERO, bound_geometry: Varia
 		if not entity.active or entity.kind == "decoration":
 			return {"ok":true,"hit":false,"reason":"target_inactive"}
 		if int(hit.get("generation",entity.generation))!=int(entity.generation):return {"ok":true,"hit":false,"reason":"target_generation_changed"}
+		# Spatial permission is part of the submitted pose. Explicit entity permission still gates queued hits.
 		if hit.kind in ["primary", "weak"] and entity.kind in ["primary", "weak"]:
 			if entity.template == "activation_source":
 				if tick<int(entity.next_activation):emit("interaction.cooldown",id);return {"ok":true,"hit":false,"reason":"interaction_cooldown"}
@@ -304,7 +335,7 @@ func command(event: String, point: Vector2 = Vector2.ZERO, bound_geometry: Varia
 				entity.value = 1.0
 				emit("interaction.activated", id)
 			else:
-				hits+=1;entity.last_hit_tick=tick;entity.hit_direction=1 if center(entity).x>=point.x else -1
+				hits+=1;entity.last_hit_tick=tick;entity.hit_direction=1 if display_center(entity).x>=point.x else -1
 				entity.pause_motion_until=tick+int(ceil(entity.properties.get("hitstop_ms",0)*level.tick_hz/1000.0))
 				entity.health -= int(entity.properties.get("weak_damage",1)) if hit.kind=="weak" else 1
 				emit("target.weak_hit" if hit.kind=="weak" else "target.hit",id)

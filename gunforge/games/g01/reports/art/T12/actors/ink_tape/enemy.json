@@ -1,0 +1,22 @@
+{
+  "id": "ink_tape",
+  "states": {
+    "vulnerable": {
+      "sprite": "vulnerable.png",
+      "body": "body.png",
+      "primary": "hit.png",
+      "weak": "weak_mask.png",
+      "weak_texture": "weak.png",
+      "sdf": "sdf.png"
+    }
+  },
+  "display_width_px": 308,
+  "effective_radius_px": 49.08773613043583,
+  "C16": {
+    "status": "pass",
+    "reason": "Offline SDF round-trip; engine sampling is a separate pending check",
+    "details": {
+      "max_error_px": 0.0
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "package": "paper.footbridge",
+  "build_id": "796978f6e81ec302e098cf9954a77ffb40b39b108e1fb79049d394c996875b29",
+  "source_revision": "6a2c79d454d25cf0567f47cf94eed3c5a168a408608026f1a2b0de5d0a436231",
+  "headless_and_gpu_playthrough": {
+    "passed": true,
+    "shots": 5,
+    "lives": 5.0,
+    "verified": [
+      "bridge deck covers the falling ink and blocks pose-bound shots",
+      "covered lantern can be relit",
+      "falling ink hardens outside the influence mask",
+      "cyclist stops and rings a bell before throwing",
+      "both attack releases can be interrupted"
+    ]
+  },
+  "drop_soft_window": {
+    "tick_hz": 60,
+    "longest_sampled_ticks": 161
+  },
+  "normal_player_launch": {
+    "passed": true
+  },
+  "loopback": {
+    "passed": true,
+    "build_id": "796978f6e81ec302e098cf9954a77ffb40b39b108e1fb79049d394c996875b29",
+    "checks": [
+      {
+        "name": "exact_build_owned_test_server",
+        "passed": true
+      },
+      {
+        "name": "http_start",
+        "passed": true
+      },
+      {
+        "name": "ready_to_running",
+        "passed": true
+      },
+      {
+        "name": "shot_input_enabled_after_opening",
+        "passed": true
+      },
+      {
+        "name": "visible_submission_available",
+        "passed": true
+      },
+      {
+        "name": "http_shot_receipt_after_consumption",
+        "passed": true
+      },
+      {
+        "name": "udp_duplicate_shot_consumed_once",
+        "passed": true
+      },
+      {
+        "name": "lost_tracking_pauses_shared_session",
+        "passed": true
+      },
+      {
+        "name": "late_shot_and_start_do_not_clear_tracking_barrier",
+        "passed": true
+      },
+      {
+        "name": "fresh_aim_recovers_while_paused",
+        "passed": true
+      }
+    ],
+    "hardware": "synthetic loopback protocol test; no phone tracking or display latency claim"
+  },
+  "compiler_tests": {
+    "passed": true,
+    "count": 26
+  },
+  "regressions": {
+    "paper.video_shop": true
+  },
+  "captures": {
+    "bridge_bell.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004118902556402557
+        }
+      },
+      "sha256": "bfc62fdcfd0dcc27086ce8420d2f1bb303a6f7e69ea015a4ba7f9ae6db9c62eb"
+    },
+    "bridge_fall.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004061152498652499
+        }
+      },
+      "sha256": "b9c99c268d7d7284f912501a7a3f624a17456f2597776aa60f20e3740fbe605a"
+    },
+    "bridge_lit.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.00417966042966043
+        }
+      },
+      "sha256": "b2128b2a09d079c9d9dca66aee27513d2141f074382b97996014057ea6128dc4"
+    },
+    "bridge_off.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0030427061677061676
+        }
+      },
+      "sha256": "a8813c7b345ee247d524dee16a663468a575314bee2ecd0e237a25b31fe48099"
+    },
+    "bridge_throw.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004075590013090013
+        }
+      },
+      "sha256": "6d0c047cbbda472676ded145916b6d30192461124ba669b8bd1bdcbd036831b2"
+    }
+  }
+}

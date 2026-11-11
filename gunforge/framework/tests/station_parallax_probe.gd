@@ -63,28 +63,40 @@ func cover_probe(blocker, hits: Array) -> bool:
 func compose(pack: Dictionary, folder: String, shift: Vector2, amount: float) -> Dictionary:
 	var visual: Array = []
 	var blockers: Array = []
+	var anchors: Dictionary = pack.get("anchors", {})
+	var anchor_samples := {}
 	var lamp_shift := Vector2.ZERO
 	for layer in pack.layers:
 		var offset := shift * float(layer.parallax)
 		var position := point(layer.pos) - origin - offset
 		var raster = item(folder.path_join(layer.file), position, layer.id)
 		visual.append(raster)
+		for id in anchors:
+			var anchor: Dictionary = anchors[id]
+			if anchor.layer == layer.id:
+				var screen_point := point(anchor.point) - offset
+				var visible: bool = Rect2(Vector2.ZERO, content).has_point(screen_point) and raster.sample(screen_point).a >= .5
+				anchor_samples[id] = {"position": [screen_point.x, screen_point.y], "visible": visible}
 		if layer.has("block_mask"):
 			blockers.append(item(folder.path_join(layer.block_mask), position, layer.id, "blocker"))
 		if layer.id == "lamp":
 			lamp_shift = offset
-	var light: Dictionary = pack.lights[0]
-	var lamp = item(folder.path_join(light.hit_mask), point(light.hit_pos) - origin - lamp_shift, "lamp", "primary")
-	var hits: Array = [lamp] + blockers
-	var aim := point(light.aim) - origin - lamp_shift
-	var lamp_hit: bool = resolver.resolve(aim, hits, 0.0).id == "lamp"
+	var hits: Array = blockers.duplicate()
+	var light: Dictionary = pack.lights[0] if not pack.lights.is_empty() else {}
+	var aim := Vector2.ZERO
+	var lamp_hit := false
 	var lamp_shape := false
-	for corner in [Vector2(.5,.5), Vector2(lamp.size.x-.5,.5),
-			Vector2(.5,lamp.size.y-.5), lamp.size-Vector2(.5,.5)]:
-		var probe: Vector2 = lamp.transform * corner
-		if lamp.sample(probe).a < .5 and resolver.resolve(probe, hits, 0.0).id != "lamp":
-			lamp_shape = true
-			break
+	if not light.is_empty():
+		var lamp = item(folder.path_join(light.hit_mask), point(light.hit_pos) - origin - lamp_shift, "lamp", "primary")
+		hits.push_front(lamp)
+		aim = point(light.aim) - origin - lamp_shift
+		lamp_hit = resolver.resolve(aim, hits, 0.0).id == "lamp"
+		for corner in [Vector2(.5,.5), Vector2(lamp.size.x-.5,.5),
+				Vector2(.5,lamp.size.y-.5), lamp.size-Vector2(.5,.5)]:
+			var probe: Vector2 = lamp.transform * corner
+			if lamp.sample(probe).a < .5 and resolver.resolve(probe, hits, 0.0).id != "lamp":
+				lamp_shape = true
+				break
 	var blocked := 0
 	for blocker in blockers:
 		if cover_probe(blocker, hits):
@@ -93,14 +105,17 @@ func compose(pack: Dictionary, folder: String, shift: Vector2, amount: float) ->
 	if viewport:
 		painter.refresh(visual)
 		var light_items: Array = []
-		if amount > 0:
+		if amount > 0 and not light.is_empty():
 			for key in ["spill","glow"]:
 				var overlay = item(folder.path_join(light[key]), point(light.pos) - origin - lamp_shift, key)
 				overlay.tint.a = amount
 				light_items.append(overlay)
 		lighting.refresh(light_items)
-	return {"lamp_hit": lamp_hit, "outside_lamp": lamp_shape, "covers_blocked": blocked,
+	var result := {"lamp_present": not light.is_empty(), "lamp_hit": lamp_hit, "outside_lamp": lamp_shape, "covers_blocked": blocked,
 		"cover_count": blockers.size(), "base_covers": base_covers, "aim": [aim.x, aim.y]}
+	if pack.has("anchors"):
+		result["anchors"] = anchor_samples
+	return result
 
 func capture(path: String) -> bool:
 	await process_frame
@@ -109,8 +124,8 @@ func capture(path: String) -> bool:
 
 func run() -> void:
 	var arguments := OS.get_cmdline_user_args()
-	if arguments.size() != 2:
-		printerr("usage: station_parallax_probe.gd -- <parallax packs> <output>")
+	if arguments.size() < 2:
+		printerr("usage: station_parallax_probe.gd -- <parallax packs> <output> [station ids...]")
 		quit(2)
 		return
 	var output := arguments[1]
@@ -131,7 +146,8 @@ func run() -> void:
 		viewport.add_child(lighting)
 	var results := {}
 	var passed := true
-	for stage in STATIONS:
+	var stations := PackedStringArray(STATIONS) if arguments.size() == 2 else arguments.slice(2)
+	for stage in stations:
 		resources = {}
 		var folder := arguments[0].path_join(stage)
 		var decoded = JSON.parse_string(FileAccess.get_file_as_string(folder.path_join("station.json")))
@@ -148,8 +164,9 @@ func run() -> void:
 		samples.rest = compose(pack, folder, Vector2.ZERO, 0)
 		if viewport:
 			passed = await capture(output.path_join(stage + "_rest.png")) and passed
-			compose(pack, folder, Vector2.ZERO, 1)
-			passed = await capture(output.path_join(stage + "_lit.png")) and passed
+			if samples.rest.lamp_present:
+				compose(pack, folder, Vector2.ZERO, 1)
+				passed = await capture(output.path_join(stage + "_lit.png")) and passed
 		for index in CAMERAS.size():
 			var camera: Vector2 = CAMERAS[index]
 			var breath := camera.sign() * Vector2(8,4)
@@ -161,7 +178,12 @@ func run() -> void:
 			if viewport:
 				passed = await capture(output.path_join(stage + "_" + id + "_against.png")) and passed
 		for sample in samples.values():
-			passed = passed and sample.lamp_hit and sample.outside_lamp and sample.base_covers and sample.covers_blocked == sample.cover_count
+			var lamp_ok: bool = not sample.lamp_present or (sample.lamp_hit and sample.outside_lamp)
+			passed = passed and lamp_ok and sample.base_covers and sample.covers_blocked == sample.cover_count
+			if pack.has("anchors"):
+				passed = passed and sample.anchors.size() == pack.anchors.size()
+				for anchor in sample.anchors.values():
+					passed = passed and anchor.visible
 		results[stage] = samples
 	var evidence := {"passed": passed, "godot": Engine.get_version_info().string,
 		"gpu_capture": viewport != null, "samples": results}

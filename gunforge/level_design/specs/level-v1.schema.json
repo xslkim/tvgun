@@ -148,6 +148,10 @@
                     "hz"
                   ],
                   "additionalProperties": false
+                },
+                "hit_resource": {
+                  "type": "string",
+                  "minLength": 1
                 }
               },
               "required": [
@@ -192,8 +196,21 @@
                           "type": "number",
                           "exclusiveMinimum": 0
                         },
+                        "scale_x": {
+                          "type": "number",
+                          "exclusiveMinimum": 0
+                        },
+                        "scale_y": {
+                          "type": "number",
+                          "exclusiveMinimum": 0
+                        },
                         "rotation_rad": {
                           "type": "number"
+                        },
+                        "opacity": {
+                          "type": "number",
+                          "minimum": 0,
+                          "maximum": 1
                         }
                       },
                       "required": [
@@ -227,8 +244,21 @@
                           "type": "number",
                           "exclusiveMinimum": 0
                         },
+                        "scale_x": {
+                          "type": "number",
+                          "exclusiveMinimum": 0
+                        },
+                        "scale_y": {
+                          "type": "number",
+                          "exclusiveMinimum": 0
+                        },
                         "rotation_rad": {
                           "type": "number"
+                        },
+                        "opacity": {
+                          "type": "number",
+                          "minimum": 0,
+                          "maximum": 1
                         }
                       },
                       "required": [
@@ -349,6 +379,39 @@
               "rest"
             ],
             "additionalProperties": false
+          },
+          "parallax": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "mask_permission": {
+            "type": "object",
+            "properties": {
+              "source": {
+                "type": "string",
+                "minLength": 1
+              },
+              "resource": {
+                "type": "string",
+                "minLength": 1
+              },
+              "threshold": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "maximum": 1
+              }
+            },
+            "required": [
+              "source",
+              "resource",
+              "threshold"
+            ],
+            "additionalProperties": false
+          },
+          "hit_resource": {
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -1716,7 +1779,8 @@
               "player_hit",
               "link",
               "shot_trace",
-              "attack_release"
+              "attack_release",
+              "beam_sweep"
             ]
           },
           "duration_ms": {
@@ -1781,6 +1845,10 @@
           "hint": {
             "type": "string",
             "minLength": 1
+          },
+          "station": {
+            "type": "integer",
+            "minimum": 1
           }
         },
         "required": [
@@ -1874,6 +1942,15 @@
               "tint": {
                 "type": "string",
                 "minLength": 1
+              },
+              "section": {
+                "type": "string",
+                "minLength": 1
+              },
+              "parallax": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
               }
             },
             "required": [
@@ -1978,6 +2055,82 @@
           "required": [
             "entity",
             "label"
+          ],
+          "additionalProperties": false
+        },
+        "stations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "camera": {
+          "type": "object",
+          "properties": {
+            "amplitude_x": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 68
+            },
+            "amplitude_y": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 34
+            }
+          },
+          "required": [
+            "amplitude_x",
+            "amplitude_y"
+          ],
+          "additionalProperties": false
+        },
+        "additive_z": {
+          "type": "integer"
+        },
+        "bottom_wipes": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+          },
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "dragon": {
+          "type": "object",
+          "properties": {
+            "layout": {
+              "type": "string",
+              "minLength": 1
+            },
+            "images": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "anchor": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mouth": {
+              "type": "string",
+              "minLength": 1
+            },
+            "warning_effect": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "layout",
+            "images",
+            "anchor",
+            "mouth"
           ],
           "additionalProperties": false
         },

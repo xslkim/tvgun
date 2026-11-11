@@ -1,0 +1,32 @@
+{
+  "C03": {
+    "0": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 1.3835951335951336e-05
+      }
+    },
+    "1": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 1.4437514437514437e-05
+      }
+    },
+    "3": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 1.4437514437514437e-05
+      }
+    }
+  },
+  "viewport": [
+    1776,
+    936
+  ],
+  "first_beam_changed_pixels": 65485,
+  "first_beam_change_local": true,
+  "core_color_verified": true
+}

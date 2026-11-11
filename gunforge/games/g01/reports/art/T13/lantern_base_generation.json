@@ -1,0 +1,118 @@
+{
+  "provider": "builtin_image_gen",
+  "selected_attempt": 2,
+  "source": "source/lantern_base_v2.png",
+  "preview": "compositions/lantern_base.jpg",
+  "preview_sha256": "b496223b9d13b1315cf9b598b19dd6e99c7f901795639b190f72e9a264d6b7b1",
+  "preview_size": [
+    1776,
+    936
+  ],
+  "C03_preview": {
+    "status": "pass",
+    "reason": "Visible alpha-weighted encoded luminance",
+    "details": {
+      "clipped_fraction": 0.006683366058366058
+    }
+  },
+  "C04_preview": {
+    "status": "pass",
+    "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+    "details": {
+      "coverage": 0.9656543562793563
+    }
+  },
+  "lamp_body_visual_estimate": [
+    815,
+    232,
+    147,
+    74
+  ],
+  "lamp_body_within_whitebox_slot": true,
+  "rim_visual_estimate": [
+    642,
+    721,
+    491,
+    65
+  ],
+  "pullback_anchor_visual_estimate": [
+    888,
+    723
+  ],
+  "pullback_anchor_in_whitebox_slot": true,
+  "corner_visual_estimates": [
+    [
+      0,
+      714,
+      145,
+      92
+    ],
+    [
+      1629,
+      714,
+      147,
+      92
+    ]
+  ],
+  "lamp_rim_and_corners_clear_of_target_lanes": true,
+  "attempts": [
+    {
+      "attempt": 1,
+      "output_id": "exec-54a29e08-6d27-4b01-8231-a0f9a0f235ca.png",
+      "source_sha256": "8e7b5a172dd6600d3fe546861505bb3826d099b328ee50ccb0fe448054bb3d6e",
+      "size": [
+        1728,
+        910
+      ],
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.00493996743996744
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9650946275946276
+        }
+      },
+      "prompt": "Use case: illustration-story. One opaque edge-to-edge 1776:936 wide playable backdrop for Paper Lantern City, a tiny paper town's final train-station stop INSIDE the bottom of a giant handmade paper lantern. Image 1 is the gameplay whitebox and controls all layout; omit every grid, letter and HUD. Image 2 is a reference only for teal and moon-white dyed paper and restrained contrast, with no railway objects reused. Show an eye-level, front-facing cutaway of the actual lantern base: recognizable concentric laminated bamboo and paper rings in shallow frontal arcs, broad evenly spaced rib joints in the background, thin strips of dyed translucent paper joining the hoops, and a solid lower wooden foot with a clean centered rim at x=36–64%, y=67–79% for a later camera pullback. Make the full room read unmistakably as a lamp's structural base; no townscape, buildings, windows, station platform, visible sky, grand doorway, forge or sci-fi machinery. One clearly readable rectangular switched-OFF station lamp embedded in the upper paper brace at x=50%, y=26.7%, entire matte dark-teal frame and gray-blue unlit glass within x=45.5–54%, y=21–32.5%. Keep central lower floor empty and both left/right middle play lanes clear of foreground shapes. Only low dark silhouette fragments at the extreme lower side edges. Flat handmade cut-paper tiers, crisp restrained contours and light paper grain. Large surfaces use subdued #4E9A92 jade paper, #B8C4D6 moon-white accents toned down, #141A33 indigo and #2A1E3D plum shadow; no pure white, red light, bloom, strong amber wash, people, enemies, lettering, borders or watermark.",
+      "references": [
+        "whiteboxes/lantern_base.jpg",
+        "compositions/green_car.jpg"
+      ],
+      "decision": "Readable lantern structure and passing C03/C04; the lamp case and base rim are wider than their slots."
+    },
+    {
+      "attempt": 2,
+      "output_id": "exec-9f28e7e3-628d-414b-9e75-7d811e5a24a9.png",
+      "source_sha256": "aa69171fbbba3ced95aa29990d0e3ee92fec0dad6d5a39599a1db56f15952285",
+      "size": [
+        1728,
+        910
+      ],
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0064108923483923485
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9653121184371184
+        }
+      },
+      "prompt": "Make two precise placement changes in Image 1, the front-on hand-cut paper lantern base. Image 2 marks gameplay positions; ignore all guide lines and labels. 1. Shorten the centered OFF lamp equally at both sides by about 25%, then move its body upward by about 25 pixels at 1776×936. Final center near x=884, y=250; the whole dark teal case and gray frosted face sit within x=805–963, y=194–306, mounted directly to the existing upper brace with short supports. Keep it completely unlit. 2. Narrow the centered lower purple base rim to about half its present width and raise it slightly. Its pale top edge and solid lower foot should form one small rounded shallow paper tier centered at x=888 within x=631–1145, y=626–736. Keep the left and right lanes open, with dark corner silhouettes only at the bottom edges. Seamlessly continue the existing paper rings and base floor in the small areas freed by these changes. Keep all other ring contours, curved ribs, quiet teal/moon-white/indigo palette, paper fibers and exact wide composition. No figures, lettering, HUD or effects.",
+      "references": [
+        "exec-54a29e08-6d27-4b01-8231-a0f9a0f235ca.png",
+        "whiteboxes/lantern_base.jpg"
+      ],
+      "decision": "Selected; lamp fits its slot and the upper edge of the centered rim is available as the pullback anchor."
+    }
+  ]
+}

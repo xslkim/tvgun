@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "task_review": "completed_with_user_resolution",
   "user_resolution": "Offline previews may be reviewed; batch tasks wait for actual 0B acceptance",
   "T00": "in_progress_offline_core_verified_external_integrations_pending",
@@ -9,8 +9,6 @@
   "spent_cny": null,
   "verified_offline_tests": 45,
   "blocked_batch_tasks": [
-    "T12",
-    "T13",
     "T14",
     "T15",
     "T16"
@@ -25,8 +23,8 @@
     "batch_playable_integration_validation"
   ],
   "unreported_generation_cost": null,
-  "builtin_image_calls": 245,
-  "next_task": "T11_build_full_dragon_art",
+  "builtin_image_calls": 279,
+  "next_task": "assemble_T13_four_stop_workbench_preview",
   "T03": "completed_A1b_direction_approved_with_followup",
   "A1_anchor_count": 12,
   "ink_direction": "moderated_gloss_custom",
@@ -47,7 +45,9 @@
     "T08": 12,
     "T09": 43,
     "T10": 88,
-    "T11": 1
+    "T11": 3,
+    "T12": 19,
+    "T13": 13
   },
   "T07": "A2_offline_work_authorized_grip_visual_pending",
   "T08": "offline_sample_approved_assets_installed_engine_pending",
@@ -61,7 +61,7 @@
     "ink_gloss",
     "enemy_hit_feedback_v3"
   ],
-  "task_status": "T11_first_review_approved",
+  "task_status": "T13_lantern_pullback_candidate_software_passed",
   "resumed": {
     "date": "2026-11-06",
     "source": "explicit_user_chat",
@@ -78,6 +78,73 @@
     "actual_five_criteria": "approved_by_user"
   },
   "T09": "completed_A4_approved",
-  "T10": "A5_visual_approved_Godot_station_probe_passed",
-  "T11": "first_sample_approved_eight_link_runtime_probe_passed"
+  "T10": "A5_visual_approved_video_shop_and_footbridge_passed_software_regression",
+  "T10_pending": [
+    "video_shop_physical_lightgun_monitor_and_tv_retest",
+    "footbridge_physical_lightgun_monitor_and_tv_retest"
+  ],
+  "T11": "A5_full_dragon_approved_plaza_candidate_passed_software_regression",
+  "T11_pending": [
+    "physical_lightgun_monitor_and_tv_retest"
+  ],
+  "level_1": {
+    "package": "paper.night_market",
+    "status": "five_station_software_playthrough_passed",
+    "pending": ["physical_lightgun_monitor_and_tv_retest"],
+    "report": "gunforge/games/g01/reports/art/T10/gameplay/night_market/report.md"
+  },
+  "T12": "A5_and_physical_lightgun_monitor_and_tv_passed_by_user",
+  "T12_pending": [],
+  "T13": "four_combat_stops_and_workbench_pullback_software_passed",
+  "T13_pending": ["forget_stroke_masks_layer_order_and_license_review", "waiting_room_physical_lightgun_monitor_tv", "platform_A5_and_physical_lightgun_monitor_tv", "green_car_A5_and_physical_lightgun_monitor_tv", "lantern_base_A5_and_physical_lightgun_monitor_tv", "four_stop_workbench_continuous_preview", "workbench_playable_integration"],
+  "T13_waiting_room": {
+    "package": "paper.waiting_room",
+    "build_id": "7d1b286b8e8f8a28588c1b3e52766624c6e116b9f19f89e0a0b8f6049ade2265",
+    "status": "candidate_accepted_by_user",
+    "acceptance": {"date": "2026-11-11", "source": "explicit_user_chat", "scope": "waiting_room_candidate", "feedback": "验收通过，继续"},
+    "report": "gunforge/games/g01/reports/art/T13/gameplay/waiting_room/software_checks.json"
+  },
+  "T13_platform": {
+    "package": "paper.platform",
+    "build_id": "95507ffec3e8e6fe26952ca2e3e4b5588e25008fa15af3e57be4b075b5e99adb",
+    "status": "candidate_software_passed",
+    "report": "gunforge/games/g01/reports/art/T13/gameplay/platform/software_checks.json"
+  },
+  "T13_green_car": {
+    "package": "paper.green_car",
+    "build_id": "a837f4b14b4482c1ee16b055f0adf888567cac05084fe203c7e35010e92a5dd6",
+    "status": "candidate_software_passed",
+    "report": "gunforge/games/g01/reports/art/T13/gameplay/green_car/software_checks.json"
+  },
+  "T13_lantern_base": {
+    "package": "paper.lantern_base",
+    "build_id": "decb1a0098c3db5dd41332adf5fbe7b2428e03d12a2441162effe3aab3b49e22",
+    "status": "candidate_software_passed",
+    "report": "gunforge/games/g01/reports/art/T13/gameplay/lantern_base/software_checks.json"
+  },
+  "T13_lantern_pullback": {
+    "package": "paper.lantern_pullback",
+    "build_id": "645e703eb1854b16f8c7302b44a46191eea9f15a0a7e857b75f48b94a1128a29",
+    "status": "candidate_software_passed",
+    "report": "gunforge/games/g01/reports/art/T13/gameplay/lantern_pullback/software_checks.json"
+  },
+  "T13_report": "gunforge/games/g01/reports/art/T13/report.md",
+  "level_1_and_2": {
+    "package": "paper.lantern_city",
+    "status": "user_acceptance_and_software_failure_retry_passed",
+    "delivery_report": "gunforge/games/g01/reports/art/T12/gameplay/lantern_city/delivery.json",
+    "retry_report": "gunforge/games/g01/reports/art/T12/gameplay/lantern_city/retry.json",
+    "performance_report": "gunforge/games/g01/reports/art/T12/gameplay/lantern_city/cut_preload.json",
+    "performance_status": "C15_passed_and_two_cinema_cuts_under_60hz_frame_budget_in_two_gpu_runs",
+    "acceptance": {
+      "date": "2026-11-11",
+      "source": "explicit_user_chat",
+      "build_id": "205022979ed41635bda14a758507c5c48130df8b461a9d4caf22a94a40ba1286",
+      "T12_A5_cinema_review": "passed_by_user",
+      "physical_lightgun_monitor": "passed_by_user",
+      "physical_lightgun_tv": "passed_by_user"
+    },
+    "pending": [],
+    "report": "gunforge/games/g01/reports/art/T12/gameplay/lantern_city/report.md"
+  }
 }

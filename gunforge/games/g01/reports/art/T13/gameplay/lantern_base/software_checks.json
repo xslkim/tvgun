@@ -1,0 +1,126 @@
+{
+  "package": "paper.lantern_base",
+  "source_revision": "ba242a1988a2e66df8743d7a7669d8981257897e51d24570ddd952900faddec9",
+  "build_id": "decb1a0098c3db5dd41332adf5fbe7b2428e03d12a2441162effe3aab3b49e22",
+  "status": "candidate_software_passed",
+  "godot": "4.6.3 Compatibility",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "player_launch": {
+    "ready": true,
+    "http_error": 0,
+    "udp_errors": []
+  },
+  "gameplay": {
+    "build_id": "decb1a0098c3db5dd41332adf5fbe7b2428e03d12a2441162effe3aab3b49e22",
+    "exit_anchor": [
+      882.655456542969,
+      718.353271484375
+    ],
+    "failures": [],
+    "gpu_capture": true,
+    "joint_light_window_ticks": 134,
+    "lives": 5.0,
+    "passed": true,
+    "pullback_origin": [
+      888.0,
+      723.0
+    ],
+    "shots": 7
+  },
+  "station_lamp_patch_median_yprime": {
+    "dark": 0.1157,
+    "lit": 0.8573
+  },
+  "regressions": [
+    "lantern base success and failure retry",
+    "both near braces block shots",
+    "single light activation exposes both enemies after umbrella folds and crow enters the spill",
+    "light expires and can be relit; both enemies have warning and release effects in darkness",
+    "combat disables input after clear and pullback origin stays on the opaque moving rim",
+    "waiting-room, platform and green-car headless playthroughs passed"
+  ],
+  "frames": {
+    "lantern_base_off": {
+      "preview": "lantern_base_off.jpg",
+      "sha256": "191eeb3faf0844984e232fda58279dc7a55f9f95310833f7c7ed3d43fd83fdf3",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.010061744436744437
+        }
+      }
+    },
+    "lantern_base_folded_dark": {
+      "preview": "lantern_base_folded_dark.jpg",
+      "sha256": "5ea7ab45f7045e246e8ec2d01ff75d44e7c668743568de2d1148795002661395",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.008707625895125895
+        }
+      }
+    },
+    "lantern_base_folding": {
+      "preview": "lantern_base_folding.jpg",
+      "sha256": "aa8c9cb17757c046b182840e318d67710b1ae5146987fbb1f3ae1bf81dd0ec4f",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.009461384461384462
+        }
+      }
+    },
+    "lantern_base_lit": {
+      "preview": "lantern_base_lit.jpg",
+      "sha256": "cf0b6473aebc60c9beee5ba8382053a1c33734cb05d27cc2b73007cba9f9d385",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.010141150766150766
+        }
+      }
+    },
+    "lantern_base_crow_attack": {
+      "preview": "lantern_base_crow_attack.jpg",
+      "sha256": "5e2f3ff87e67c394b4d06d76ecc9fe82eb4b74ed02e072f389bd49b7938b39e2",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.008862829175329176
+        }
+      }
+    },
+    "lantern_base_umbrella_attack": {
+      "preview": "lantern_base_umbrella_attack.jpg",
+      "sha256": "c8d5861be12f68fe2f24556ee667cebb207cd0b2e665dbd5fd8539e0e887cb16",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.009161806036806037
+        }
+      }
+    },
+    "lantern_base_handoff": {
+      "preview": "lantern_base_handoff.jpg",
+      "sha256": "1df419948ee260978617a682bbe2b5f1c8b3511a8f304b439e54006c6f841139",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.009573275198275197
+        }
+      }
+    }
+  },
+  "pending": [
+    "workbench pullback sequence",
+    "T13 physical lightgun on monitor and TV",
+    "A5 overall art review"
+  ]
+}

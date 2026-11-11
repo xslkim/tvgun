@@ -1,0 +1,149 @@
+{
+  "provider": "builtin_image_gen",
+  "selected_attempt": 1,
+  "source": "source/workbench_v1.png",
+  "source_sha256": "867f992113eb2dec419c8d369707c39f88505cc49422b711882590947810d0ba",
+  "render_source": "source/workbench_render_source.png",
+  "render_source_sha256": "a6723b8cc7db5587434d6e8f0a9ab6ec3cf5653e5e506b8263b02751832fbcb5",
+  "preview": "compositions/workbench.jpg",
+  "preview_sha256": "23f23b90d80ad4f5e6f6dabae47b363cf8d8cc1e170c06b3feb1a88f41927e2f",
+  "preview_size": [
+    1776,
+    936
+  ],
+  "preview_encoding": "JPEG quality 96, 4:4:4",
+  "color_profile": {
+    "method": "warm midtone compression",
+    "compression": 0.52,
+    "channel_offsets": [
+      -3,
+      -1,
+      10
+    ],
+    "red_minus_green_transition_8bit": [
+      1,
+      13
+    ],
+    "luma_transition_8bit": [
+      113,
+      146
+    ],
+    "compression_pivot_8bit": 24
+  },
+  "C03_render_source": {
+    "status": "pass",
+    "reason": "Visible alpha-weighted encoded luminance",
+    "details": {
+      "clipped_fraction": 0.007094233656733656
+    }
+  },
+  "C04_render_source": {
+    "status": "pass",
+    "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+    "details": {
+      "coverage": 0.9262128715253716
+    }
+  },
+  "C03_preview": {
+    "status": "pass",
+    "reason": "Visible alpha-weighted encoded luminance",
+    "details": {
+      "clipped_fraction": 0.0069805382305382305
+    }
+  },
+  "C04_preview": {
+    "status": "pass",
+    "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+    "details": {
+      "coverage": 0.9255343083468084
+    }
+  },
+  "C05_preview": {
+    "status": "pending",
+    "reason": "Low-confidence OCR needs visual confirmation",
+    "details": {
+      "recognized": ":El[|一my!vSE\\sm-",
+      "confidence": 40,
+      "engine": "tesseract.js-7.0.0-eng+chi_sim"
+    }
+  },
+  "boss_region": [
+    568,
+    132,
+    640,
+    640
+  ],
+  "prop_bounds_visual_estimates": {
+    "paper_lantern": [
+      118,
+      529,
+      326,
+      318
+    ],
+    "inkstone": [
+      735,
+      784,
+      308,
+      87
+    ],
+    "right_tools": [
+      1374,
+      530,
+      402,
+      325
+    ]
+  },
+  "boss_region_clear_of_props": true,
+  "wall_yprime_p05_p50_p95": [
+    0.5366,
+    0.5698,
+    0.6001
+  ],
+  "neutral_mask_contrast": {
+    "ink_rgb": [
+      11,
+      11,
+      14
+    ],
+    "median_luminance_difference_per_visible_stroke": [
+      0.546,
+      0.541,
+      0.541,
+      0.5078,
+      0.5233,
+      0.5332,
+      0.5207
+    ],
+    "basis": "Background composition diagnostic with the existing provisional masks and solid palette ink. Final boss and C06 remain pending."
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "output_id": "exec-c6fedc08-3764-4cc0-8958-6e21b6786362.png",
+      "source_sha256": "867f992113eb2dec419c8d369707c39f88505cc49422b711882590947810d0ba",
+      "size": [
+        1729,
+        910
+      ],
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.007075168902814941
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.8005859958433701
+        }
+      },
+      "prompt": "Use case: illustration-story. Asset type: one edge-to-edge opaque 1776:936 landscape playable background for Paper Lantern City. Create a new, eye-level view of a 1980s Chinese paper-lantern artisan's workbench after the camera pulls out of the paper lantern. Image 1 is strict coordinate layout only: omit all graphics, labels, text and HUD. A low work surface runs along the bottom quarter; exactly one clearly legible shallow oval dark slate inkstone with a recessed black ink well, centered at x=50%, y=88%; its entire visible outline must fit x=42–58%, y=84.5–91.3%, with its top below y=83%. The middle 36% width from x=32% to 68%, y=14% to 82.5% must read as unobstructed broad matte light-mid jade plaster wall with subtle paper grain and low tonal variation for a future black calligraphy overlay. No frames, silhouettes, furniture, shadows with sharp edges or objects in that central rectangle. At far lower left, a small handmade pale celadon rice-paper lantern with visible bamboo hoops resting on the table, entire lantern within x=8–26%, y=53–84%. A few idle traditional tools, brush stand, rolled paper and shallow storage are limited to the far right lower edge. Use layered, clean cut-paper surfaces with subtle fiber, muted jade #4E9A92, moon-gray #B8C4D6, shadow #141A33 and #2A1E3D with neutral restrained wood. Soft side illumination, closed night interior, no lamp glare, no red wash, no amber bloom, no people, no faces, no letters, no writing, no splashes or glyph, no frame, no watermark. Match an orthographic, restrained hand-cut-paper game scene, not photorealism.",
+      "references": [
+        "whiteboxes/workbench.jpg"
+      ],
+      "decision": "Selected. Central wall is unobstructed and the inkstone sits below the boss region. Warm midtones needed correction to pass C04."
+    }
+  ]
+}

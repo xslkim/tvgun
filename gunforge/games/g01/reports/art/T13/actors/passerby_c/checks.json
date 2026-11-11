@@ -1,0 +1,150 @@
+{
+  "parts": 10,
+  "poses": [
+    "idle",
+    "peek",
+    "walk",
+    "startle",
+    "wave_for_help",
+    "struggle",
+    "rescued_bounce",
+    "thank"
+  ],
+  "major_silhouette_components": {
+    "idle": 1,
+    "peek": 1,
+    "walk": 1,
+    "startle": 1,
+    "wave_for_help": 1,
+    "struggle": 1,
+    "rescued_bounce": 1,
+    "thank": 1
+  },
+  "sampled_joint_overlap_px": {
+    "idle": {
+      "head": 525,
+      "upper_arm_l": 737,
+      "upper_arm_r": 655,
+      "forearm_l": 737,
+      "forearm_r": 746,
+      "thigh_l": 269,
+      "thigh_r": 760,
+      "shin_l": 759,
+      "shin_r": 475
+    },
+    "peek": {
+      "head": 523,
+      "upper_arm_l": 735,
+      "upper_arm_r": 655,
+      "forearm_l": 737,
+      "forearm_r": 754,
+      "thigh_l": 266,
+      "thigh_r": 757,
+      "shin_l": 759,
+      "shin_r": 476
+    },
+    "walk": {
+      "head": 525,
+      "upper_arm_l": 733,
+      "upper_arm_r": 652,
+      "forearm_l": 739,
+      "forearm_r": 738,
+      "thigh_l": 275,
+      "thigh_r": 760,
+      "shin_l": 755,
+      "shin_r": 478
+    },
+    "startle": {
+      "head": 520,
+      "upper_arm_l": 727,
+      "upper_arm_r": 658,
+      "forearm_l": 766,
+      "forearm_r": 760,
+      "thigh_l": 269,
+      "thigh_r": 760,
+      "shin_l": 759,
+      "shin_r": 475
+    },
+    "wave_for_help": {
+      "head": 525,
+      "upper_arm_l": 737,
+      "upper_arm_r": 621,
+      "forearm_l": 737,
+      "forearm_r": 765,
+      "thigh_l": 269,
+      "thigh_r": 760,
+      "shin_l": 759,
+      "shin_r": 475
+    },
+    "struggle": {
+      "head": 519,
+      "upper_arm_l": 732,
+      "upper_arm_r": 656,
+      "forearm_l": 764,
+      "forearm_r": 756,
+      "thigh_l": 270,
+      "thigh_r": 745,
+      "shin_l": 760,
+      "shin_r": 471
+    },
+    "rescued_bounce": {
+      "head": 525,
+      "upper_arm_l": 737,
+      "upper_arm_r": 655,
+      "forearm_l": 737,
+      "forearm_r": 746,
+      "thigh_l": 271,
+      "thigh_r": 760,
+      "shin_l": 755,
+      "shin_r": 476
+    },
+    "thank": {
+      "head": 513,
+      "upper_arm_l": 737,
+      "upper_arm_r": 655,
+      "forearm_l": 756,
+      "forearm_r": 757,
+      "thigh_l": 269,
+      "thigh_r": 760,
+      "shin_l": 759,
+      "shin_r": 475
+    }
+  },
+  "checks": {
+    "C10": {
+      "status": "pending",
+      "reason": "Sampled joints overlap; check extreme motion and copper tabs in runtime"
+    }
+  },
+  "scope": "preliminary part map and pose samples",
+  "pose_brightness": {
+    "idle": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.00022321250516871673
+      }
+    },
+    "struggle": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.00015471719778428024
+      }
+    },
+    "rescued_bounce": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.00022320312671732614
+      }
+    },
+    "thank": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.00016797071926997564
+      }
+    }
+  }
+}

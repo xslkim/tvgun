@@ -1,10 +1,169 @@
 extends Node2D
 ## Layered 2D art and deterministic presentation; owns no combat simulation.
+const RasterLayer = preload("raster_layer.gd")
 var model
 var textures={}
+var texture_group := ""
+var section_layers := false
+var texture_preloads: Array[Dictionary] = []
+var preloaded_section := ""
+var preloaded_textures: Dictionary = {}
+var measure_uploads := false
+var upload_count := 0
+var upload_us := 0
 var font=SystemFont.new()
-func _ready():font.font_names=PackedStringArray(["Microsoft YaHei","Noto Sans CJK SC"])
-func _process(_delta):queue_redraw()
+var background: Node2D
+var additive: Node2D
+var bottom_wipe: Node2D
+var wipes: Dictionary = {}
+var additive_z: int
+var foreground: Array = []
+
+func _ready():
+	font.font_names=PackedStringArray(["Microsoft YaHei","Noto Sans CJK SC"])
+	var presentation: Dictionary = model.level.get("presentation", {})
+	wipes = presentation.get("bottom_wipes", {})
+	section_layers = presentation.get("layers", {}).values().any(func(layer): return layer.has("section"))
+	if section_layers:
+		index_texture_preloads(presentation)
+	if presentation.has("additive_z"):
+		additive_z = presentation.additive_z
+		background = RasterLayer.new()
+		background.show_behind_parent = true
+		add_child(background)
+		additive = RasterLayer.new()
+		additive.show_behind_parent = true
+		var blend := CanvasItemMaterial.new()
+		blend.blend_mode = CanvasItemMaterial.BLEND_MODE_ADD
+		additive.material = blend
+		add_child(additive)
+		if not wipes.is_empty():
+			bottom_wipe = RasterLayer.new()
+			bottom_wipe.show_behind_parent = true
+			var material := ShaderMaterial.new()
+			material.shader = preload("bottom_wipe.gdshader")
+			bottom_wipe.material = material
+			add_child(bottom_wipe)
+	update_rasters()
+
+func _process(_delta):
+	upload_count = 0
+	upload_us = 0
+	update_rasters()
+	preload_next_section()
+	queue_redraw()
+
+func index_texture_preloads(presentation: Dictionary) -> void:
+	var events: Dictionary = model.level.events
+	for id in model.level.event_order:
+		var event: Dictionary = events[id]
+		var enter: Dictionary = event.trigger
+		if not enter.has("after") or enter.delay_ms != 0 or event.max_firings != 1:
+			continue
+		var wait_event: Dictionary = events[enter.after]
+		var wait: Dictionary = wait_event.trigger
+		if not wait.has("after") or wait.delay_ms <= 0 or wait_event.max_firings != 1:
+			continue
+		var clear: Dictionary = events[wait.after]
+		if clear.max_firings != 1 or not clear.actions.values().any(func(action): return action.op == "input" and not action.enabled):
+			continue
+		var section := ""
+		for action in event.actions.values():
+			if action.op == "section":
+				section = action.section
+		if section.is_empty():
+			continue
+		var resources: Dictionary = {}
+		for layer in presentation.layers.values():
+			if layer.get("section", "") == section:
+				resources[layer.resource] = true
+		for action_id in event.order:
+			var action: Dictionary = event.actions[action_id]
+			if action.op == "spawn":
+				collect_spawn_textures(model.level.entities[action.entity], presentation, resources)
+		if not resources.is_empty():
+			texture_preloads.append({"enter": id, "clear": wait.after, "section": section,
+				"delay_ms": wait.delay_ms, "resources": resources.keys()})
+
+func collect_spawn_textures(entity: Dictionary, presentation: Dictionary, resources: Dictionary) -> void:
+	if entity.get("properties", {}).get("virtual", false):
+		return
+	if entity.has("puppet"):
+		resources[presentation.puppets[entity.puppet.rig].atlas] = true
+	elif entity.has("parts"):
+		for part in entity.parts.values():
+			resources[part.resource] = true
+	elif entity.has("resource"):
+		resources[entity.resource] = true
+
+func preload_next_section() -> void:
+	if model.phase == "running" and not model.input_enabled:
+		for plan in texture_preloads:
+			if plan.section == model.current_section or model.fired.has(plan.enter) or not model.fired_time.has(plan.clear):
+				continue
+			var due: int = int(model.fired_time[plan.clear]) + int(plan.delay_ms) * int(model.level.tick_hz)
+			if model.tick * 1000 >= due:
+				continue
+			if preloaded_section != plan.section:
+				preloaded_section = plan.section
+				preloaded_textures.clear()
+			for resource in plan.resources:
+				var image: Image = model.images[resource]
+				var id := image.get_instance_id()
+				if not textures.has(id) and not preloaded_textures.has(id):
+					preloaded_textures[id] = upload(image)
+					break
+			return
+	preloaded_section = ""
+	preloaded_textures.clear()
+
+func update_rasters():
+	var items: Array = model.visual_items()
+	var section: Dictionary = model.level.get("sections", {}).get(model.current_section, {})
+	var group := ""
+	if section.has("station"):
+		group = "station:%d" % int(section.station)
+	elif section_layers:
+		group = "section:" + str(model.current_section)
+	if group != texture_group:
+		texture_group = group
+		var visible_images: Dictionary = {}
+		for item in items:
+			visible_images[item.image.get_instance_id()] = true
+		for id in textures.keys():
+			if not visible_images.has(id):
+				textures.erase(id)
+		if preloaded_section == model.current_section:
+			for id in preloaded_textures:
+				if visible_images.has(id):
+					textures[id] = preloaded_textures[id]
+		preloaded_section = ""
+		preloaded_textures.clear()
+	if additive == null:
+		foreground = items
+		return
+	var behind: Array = []
+	var lights: Array = []
+	var overlays: Array = []
+	foreground = []
+	for item in items:
+		if wipes.has(item.id):
+			overlays.append(item)
+			continue
+		if item.z > additive_z:
+			foreground.append(item)
+			continue
+		if item.z == additive_z:
+			lights.append(item)
+		else:
+			behind.append(item)
+	background.refresh(behind)
+	additive.refresh(lights)
+	if bottom_wipe != null:
+		bottom_wipe.refresh(overlays)
+	for item in items:
+		item.texture = texture(item.image)
+
 func label(text,point,size=28,color=Color("#e8d3ad"),centered=false):
 	var at=point
 	if centered:at.x-=font.get_string_size(str(text),HORIZONTAL_ALIGNMENT_LEFT,-1,size).x*.5
@@ -12,13 +171,26 @@ func label(text,point,size=28,color=Color("#e8d3ad"),centered=false):
 	draw_string(font,at,str(text),HORIZONTAL_ALIGNMENT_LEFT,-1,size,color)
 func texture(image):
 	var id=image.get_instance_id()
-	if not textures.has(id):textures[id]=ImageTexture.create_from_image(image)
+	if not textures.has(id):
+		if preloaded_textures.has(id):
+			textures[id] = preloaded_textures[id]
+			preloaded_textures.erase(id)
+		else:
+			textures[id] = upload(image)
 	return textures[id]
+func upload(image: Image) -> ImageTexture:
+	if not measure_uploads:
+		return ImageTexture.create_from_image(image)
+	var started := Time.get_ticks_usec()
+	var uploaded := ImageTexture.create_from_image(image)
+	upload_count += 1
+	upload_us += Time.get_ticks_usec() - started
+	return uploaded
 func _draw():
 	if model==null:return
-	for item in model.visual_items():
+	for item in foreground:
 		draw_set_transform_matrix(item.transform)
-		draw_texture_rect_region(texture(item.image),Rect2(Vector2.ZERO,item.size),item.source,item.tint)
+		draw_texture_rect_region(item.texture if additive != null else texture(item.image),Rect2(Vector2.ZERO,item.size),item.source,item.tint)
 	draw_set_transform_matrix(Transform2D.IDENTITY)
 	draw_intents();draw_effects();draw_hud()
 func draw_intents():
@@ -28,11 +200,13 @@ func draw_intents():
 	for id in model.entities:
 		var entity=model.entities[id]
 		if not entity.active or not entity.visible or entity.properties.get("virtual",false):continue
-		var at=model.center(entity)
+		var at=model.display_center(entity)
 		if state_labels.has(id):
-			var caption: String = state_labels[id].get(entity.kind, "")
+			var caption: String = state_labels[id].get(model.effective_kind(entity), "")
 			if not caption.is_empty():
-				label(caption, at + Vector2(0, entity.height * .33), 23, Color("#f4ddb0"), true)
+				var color := Color("#f4ddb0")
+				color.a = float(entity.get("pose_opacity", 1))
+				label(caption, at + Vector2(0, entity.height * .33), 23, color, true)
 		var glow: Dictionary = glows.get(id, {})
 		if not glow.is_empty() and entity.value > 0:
 			var warm := Color(glow.color)
@@ -58,10 +232,10 @@ func draw_intents():
 			if not caption.is_empty():
 				label(caption,Vector2(at.x,maxf(118.0,at.y-radius-14.0)),32,color,true)
 	var support=model.level.get("presentation",{}).get("support",{})
-	if not support.is_empty() and model.input_enabled:
+	if not support.is_empty() and model.input_enabled and model.entities[support.entity].active:
 		var entity=model.entities[support.entity]
 		var remaining=maxf(0,(entity.next_activation-model.tick)/float(model.level.tick_hz))
-		var at=model.center(entity)
+		var at=model.display_center(entity)
 		label(support.label+(" · 就绪" if remaining<=0 else " · %.1f 秒" % remaining),at+Vector2(-110,entity.height*.5+30),23,Color("#e1bd76"))
 func draw_effects():
 	var canvas = Vector2(model.level.layout.width,model.level.layout.height)
@@ -73,6 +247,14 @@ func draw_effects():
 		var radius=float(definition.get("radius",80))
 		var anchor_uv = definition.get("anchor_uv",[])
 		match definition.kind:
+			"beam_sweep":
+				if not instance.get("source", "").is_empty():
+					var emitter = model.display_center(model.entities[instance.source])
+					var normal = (at-emitter).normalized().orthogonal()
+					var tip = at + normal * radius * (2*t-1)
+					var beam = PackedVector2Array([emitter, tip-normal*52, tip+normal*52])
+					draw_colored_polygon(beam, Color(color, .34 * sin(PI*t)))
+					draw_line(emitter, tip, Color(color, .56 * sin(PI*t)), 4, true)
 			"shot_trace":
 				var muzzle = Vector2(canvas.x*.5,canvas.y-30)
 				if not anchor_uv.is_empty():muzzle = canvas*Vector2(anchor_uv[0],anchor_uv[1])
@@ -94,7 +276,7 @@ func draw_effects():
 			"link":
 				var support=model.level.get("presentation",{}).get("support",{})
 				var source = instance.get("source",support.get("entity",""))
-				if not source.is_empty():draw_line(model.center(model.entities[source]),at,color,2,true)
+				if not source.is_empty():draw_line(model.display_center(model.entities[source]),at,color,2,true)
 				draw_arc(at,35+60*t,0,TAU,32,color,3,true)
 			"warning":draw_arc(at,radius*(1-.5*t),0,TAU,32,color,4,true)
 			"player_hit":
@@ -145,11 +327,17 @@ func draw_hud():
 	draw_rect(Rect2(0,0,canvas.x,80),Color(.018,.025,.045,.8))
 	label(presentation.get("title",""),Vector2(25,36),30)
 	if not section.is_empty():
-		if stats.section_total > 0:
+		var stations: Array = presentation.get("stations", [])
+		if section.has("station"):
+			var station_title: String = stations[int(section.station) - 1]
+			var detail := "" if station_title == section.title else " · " + str(section.title)
+			label("第 %d / %d 站 · %s%s" % [section.station, stations.size(), station_title, detail],Vector2(25,67),25)
+		elif stats.section_total > 0:
 			label("第 %d / %d %s · %s" % [section.index,stats.section_count,presentation.get("labels",{}).get("section_unit","段"),section.title],Vector2(25,67),25)
-			label("本段 %d / %d · %s %d / %d" % [stats.section_cleared,stats.section_total,presentation.get("labels",{}).get("progress","完成"),stats.cleared,stats.total],Vector2(canvas.x*.47,48),27,Color("#dfbc77"),true)
 		else:
 			label(section.title,Vector2(25,67),25)
+		if stats.section_total > 0:
+			label("本段 %d / %d · %s %d / %d" % [stats.section_cleared,stats.section_total,presentation.get("labels",{}).get("progress","完成"),stats.cleared,stats.total],Vector2(canvas.x*.47,48),27,Color("#dfbc77"),true)
 	var resources=[]
 	for field in model.level.get("hud",[]):resources.append(field.label+" "+str(int(model.resources[field.resource])))
 	# Right-align resource text without depending on game-specific counter names.

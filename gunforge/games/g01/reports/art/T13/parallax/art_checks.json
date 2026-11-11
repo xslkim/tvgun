@@ -1,0 +1,177 @@
+{
+  "waiting_room": {
+    "source_sha256": "032ac47590a9057d69879515935d0df430fdec75df2deb5b88953a168ed1b43d",
+    "C04_render_source": {
+      "status": "pass",
+      "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+      "details": {
+        "coverage": 0.9304208054208054
+      }
+    },
+    "color_profile": [
+      0.54,
+      [
+        3,
+        -9,
+        10
+      ]
+    ],
+    "palette_layers": [],
+    "layer_count": 10,
+    "rest_matches_original": false,
+    "rest_matches_render_source": true,
+    "visible_lamp_scale": 1,
+    "lamp_effective_radius_px": 51.05,
+    "lamp_swept_rect": [
+      682,
+      146,
+      201,
+      72
+    ]
+  },
+  "platform": {
+    "source_sha256": "7790d2fbb080c39d4c0ecf7e794e8a573763a74a284a1435aad9abdc00327fcb",
+    "C04_render_source": {
+      "status": "pass",
+      "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+      "details": {
+        "coverage": 0.9327169717794718
+      }
+    },
+    "color_profile": [
+      0.0,
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "palette_layers": [
+      "carriage"
+    ],
+    "layer_count": 9,
+    "rest_matches_original": false,
+    "rest_matches_render_source": true,
+    "visible_lamp_scale": 1.13,
+    "lamp_effective_radius_px": 44.55,
+    "lamp_swept_rect": [
+      1480,
+      181,
+      91,
+      147
+    ]
+  },
+  "green_car": {
+    "source_sha256": "1c66f17b500f31d18bb0237d80d0a485e0686dfe8e8f48afb78fcd55159e74ae",
+    "C04_render_source": {
+      "status": "pass",
+      "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+      "details": {
+        "coverage": 0.9422324969199969
+      }
+    },
+    "color_profile": [
+      0.0,
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "palette_layers": [],
+    "layer_count": 9,
+    "rest_matches_original": true,
+    "rest_matches_render_source": true,
+    "visible_lamp_scale": 1,
+    "lamp_effective_radius_px": 59.3,
+    "lamp_swept_rect": [
+      784,
+      164,
+      210,
+      82
+    ]
+  },
+  "lantern_base": {
+    "source_sha256": "aa69171fbbba3ced95aa29990d0e3ee92fec0dad6d5a39599a1db56f15952285",
+    "C04_render_source": {
+      "status": "pass",
+      "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+      "details": {
+        "coverage": 0.9656074343574343
+      }
+    },
+    "color_profile": [
+      0.0,
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "palette_layers": [],
+    "layer_count": 9,
+    "rest_matches_original": true,
+    "rest_matches_render_source": true,
+    "visible_lamp_scale": 1,
+    "lamp_effective_radius_px": 54.0,
+    "lamp_swept_rect": [
+      812,
+      231,
+      155,
+      76
+    ]
+  },
+  "workbench": {
+    "source_sha256": "867f992113eb2dec419c8d369707c39f88505cc49422b711882590947810d0ba",
+    "C04_render_source": {
+      "status": "pass",
+      "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+      "details": {
+        "coverage": 0.9262128715253716
+      }
+    },
+    "color_profile": [
+      0.0,
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "palette_layers": [],
+    "layer_count": 6,
+    "rest_matches_original": false,
+    "rest_matches_render_source": true,
+    "anchors": {
+      "pullback": {
+        "layer": "paper_lantern",
+        "point": [
+          281,
+          827
+        ]
+      },
+      "ink_well": {
+        "layer": "inkstone",
+        "point": [
+          888,
+          806
+        ]
+      }
+    },
+    "boss_region": {
+      "rect": [
+        568,
+        132,
+        640,
+        640
+      ],
+      "space": "inkstone",
+      "swept_rect": [
+        555,
+        125,
+        666,
+        654
+      ]
+    }
+  }
+}

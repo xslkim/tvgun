@@ -2,7 +2,7 @@
 import math,struct,wave,hashlib
 from compiler import ROOT
 def ensure_combat_cues():
- durations={'shot':.10,'hit':.15,'weak':.22,'purify':.38,'windup':.65,'attack':.32,'hurt':.42,'lamp':.72,'reload':.45,'empty':.09,'intercept':.25}
+ durations={'shot':.10,'hit':.15,'weak':.22,'purify':.38,'windup':.65,'attack':.32,'hurt':.42,'lamp':.72,'reload':.45,'empty':.09,'intercept':.25,'bell':.48}
  out={};rate=22050
  for index,(name,duration) in enumerate(durations.items()):
   values=[];state=12345+index*197;low=0.0
@@ -18,6 +18,9 @@ def ensure_combat_cues():
    elif name=='reload':
     sample=sum((noise*.4+math.sin(math.tau*420*t)*.3)*math.exp(-(t-start)*60) for start in [0,.15,.31] if t>=start)
    elif name=='empty':sample=(noise*.35+math.sin(math.tau*180*t)*.3)*math.exp(-t*65)
+   elif name=='bell':
+    ring=t if t<.16 else t-.16
+    sample=(math.sin(math.tau*1070*ring)+.32*math.sin(math.tau*1689*ring))*math.exp(-ring*22)*min(1,ring/.004)
    else:sample=(math.sin(math.tau*(720*t+900*t*t))*.6+noise*.2)*math.exp(-t*16)
    values.append(sample*min(1,t/.002))
   gain=.45/max(max(abs(value) for value in values),.001)

@@ -1,0 +1,1278 @@
+{
+  "package": "paper.lantern_city",
+  "build_id": "205022979ed41635bda14a758507c5c48130df8b461a9d4caf22a94a40ba1286",
+  "source_revision": "9240ef2fba14e57ccee844426ef79585c5f8546117abc6e548d1441b41d6966c",
+  "baseline_build_id": "db43a2a913fab787845822289861831e67bbf10040f93db15d856e9e8f7ba1c3",
+  "baseline_cuts": [
+    {
+      "actor_prop_texture_bytes": 10199616,
+      "cached_textures": 13,
+      "draw_calls": 61,
+      "frame_us": 18464,
+      "process_us": 11268,
+      "section": "cinema.projection_booth",
+      "stage_texture_bytes": 18116048,
+      "station": 9,
+      "texture_bytes": 62067275,
+      "tick": 7541,
+      "video_bytes": 68472275
+    },
+    {
+      "actor_prop_texture_bytes": 317600,
+      "cached_textures": 16,
+      "draw_calls": 70,
+      "frame_us": 19471,
+      "process_us": 10236,
+      "section": "cinema.screen_stage",
+      "stage_texture_bytes": 28543548,
+      "station": 10,
+      "texture_bytes": 63098765,
+      "tick": 7800,
+      "video_bytes": 69503765
+    }
+  ],
+  "baseline_engine_texture_peak_bytes": 70997143,
+  "method": "RTX 3090, Godot 4.6.3 Compatibility, 1776x936 gameplay viewport, one draw per fixed simulation tick, VSync disabled. Resident-art budget includes the active and pending sections during timed handoffs.",
+  "runs": [
+    {
+      "build_id": "205022979ed41635bda14a758507c5c48130df8b461a9d4caf22a94a40ba1286",
+      "gpu": "NVIDIA GeForce RTX 3090",
+      "open_us": 1139312,
+      "rendering_method": "gl_compatibility",
+      "screen_sweep_spawns": [
+        {
+          "entity": "cinema.sweep_tape_1",
+          "tick": 7917,
+          "topic": "entity.spawned"
+        },
+        {
+          "entity": "cinema.sweep_tape_2",
+          "tick": 8013,
+          "topic": "entity.spawned"
+        },
+        {
+          "entity": "cinema.sweep_tape_3",
+          "tick": 8109,
+          "topic": "entity.spawned"
+        }
+      ],
+      "viewport": [
+        1776,
+        936
+      ],
+      "frames": 8143,
+      "p95_ms": 7.436,
+      "max_ms": 15.901,
+      "frames_over_60hz_budget": 0,
+      "engine_texture_peak_bytes": 106819051,
+      "warmup_asset_upper_bound_bytes": 82528098,
+      "C15": {
+        "stage_and_lighting": {
+          "packed_bytes": 30231860,
+          "rgba8_upper_bound_bytes": 40309147,
+          "limit_bytes": 50331648,
+          "passed": true
+        },
+        "actors_and_props": {
+          "packed_bytes": 24032016,
+          "rgba8_upper_bound_bytes": 32042688,
+          "limit_bytes": 33554432,
+          "passed": true
+        },
+        "effects_and_ui_asset_textures": {
+          "packed_bytes": 0,
+          "rgba8_upper_bound_bytes": 0,
+          "limit_bytes": 16777216,
+          "passed": true
+        },
+        "station_total": {
+          "packed_bytes": 33870260,
+          "rgba8_upper_bound_bytes": 45160347,
+          "limit_bytes": 100663296,
+          "passed": true
+        },
+        "cut_previous_plus_next": {
+          "packed_bytes": 62824539,
+          "rgba8_upper_bound_bytes": 83766052,
+          "limit_bytes": 167772160,
+          "passed": true
+        }
+      },
+      "cuts": [
+        {
+          "frame": {
+            "actor_prop_texture_bytes": 262144,
+            "cached_textures": 9,
+            "draw_calls": 56,
+            "frame_us": 6743,
+            "preloaded_actor_prop_texture_bytes": 0,
+            "preloaded_section": "",
+            "preloaded_stage_texture_bytes": 0,
+            "preloaded_textures": 0,
+            "process_us": 9509,
+            "section": "stall.arrival",
+            "stage_texture_bytes": 22900736,
+            "station": 2,
+            "texture_bytes": 54581601,
+            "texture_upload_count": 0,
+            "texture_upload_us": 0,
+            "tick": 5616,
+            "video_bytes": 60986601
+          },
+          "preloaded_at_previous_frame": 0
+        },
+        {
+          "frame": {
+            "actor_prop_texture_bytes": 12336248,
+            "cached_textures": 14,
+            "draw_calls": 65,
+            "frame_us": 9257,
+            "preloaded_actor_prop_texture_bytes": 0,
+            "preloaded_section": "",
+            "preloaded_stage_texture_bytes": 0,
+            "preloaded_textures": 0,
+            "process_us": 9334,
+            "section": "video_shop.video_shop",
+            "stage_texture_bytes": 19367856,
+            "station": 3,
+            "texture_bytes": 66318095,
+            "texture_upload_count": 0,
+            "texture_upload_us": 0,
+            "tick": 6096,
+            "video_bytes": 72723095
+          },
+          "preloaded_at_previous_frame": 14
+        },
+        {
+          "frame": {
+            "actor_prop_texture_bytes": 9617408,
+            "cached_textures": 13,
+            "draw_calls": 68,
+            "frame_us": 6769,
+            "preloaded_actor_prop_texture_bytes": 0,
+            "preloaded_section": "",
+            "preloaded_stage_texture_bytes": 0,
+            "preloaded_textures": 0,
+            "process_us": 15359,
+            "section": "footbridge.footbridge",
+            "stage_texture_bytes": 21140732,
+            "station": 4,
+            "texture_bytes": 65234993,
+            "texture_upload_count": 0,
+            "texture_upload_us": 0,
+            "tick": 6384,
+            "video_bytes": 71639993
+          },
+          "preloaded_at_previous_frame": 11
+        },
+        {
+          "frame": {
+            "actor_prop_texture_bytes": 9420800,
+            "cached_textures": 5,
+            "draw_calls": 49,
+            "frame_us": 6091,
+            "preloaded_actor_prop_texture_bytes": 0,
+            "preloaded_section": "",
+            "preloaded_stage_texture_bytes": 0,
+            "preloaded_textures": 0,
+            "process_us": 10309,
+            "section": "plaza.square_watch",
+            "stage_texture_bytes": 4717440,
+            "station": 5,
+            "texture_bytes": 43043960,
+            "texture_upload_count": 0,
+            "texture_upload_us": 0,
+            "tick": 6499,
+            "video_bytes": 49448960
+          },
+          "preloaded_at_previous_frame": 3
+        },
+        {
+          "frame": {
+            "actor_prop_texture_bytes": 6297856,
+            "cached_textures": 20,
+            "draw_calls": 54,
+            "frame_us": 6241,
+            "preloaded_actor_prop_texture_bytes": 0,
+            "preloaded_section": "cinema.ticket_office",
+            "preloaded_stage_texture_bytes": 316332,
+            "preloaded_textures": 1,
+            "process_us": 9926,
+            "section": "story.cinema_intro",
+            "stage_texture_bytes": 4717440,
+            "station": 0,
+            "texture_bytes": 39427048,
+            "texture_upload_count": 1,
+            "texture_upload_us": 46,
+            "tick": 6701,
+            "video_bytes": 45832048
+          },
+          "preloaded_at_previous_frame": 0
+        },
+        {
+          "frame": {
+            "actor_prop_texture_bytes": 10199616,
+            "cached_textures": 13,
+            "draw_calls": 61,
+            "frame_us": 7565,
+            "preloaded_actor_prop_texture_bytes": 0,
+            "preloaded_section": "",
+            "preloaded_stage_texture_bytes": 0,
+            "preloaded_textures": 0,
+            "process_us": 9926,
+            "section": "cinema.ticket_office",
+            "stage_texture_bytes": 18390592,
+            "station": 6,
+            "texture_bytes": 62431783,
+            "texture_upload_count": 0,
+            "texture_upload_us": 0,
+            "tick": 6791,
+            "video_bytes": 68836783
+          },
+          "preloaded_at_previous_frame": 13
+        },
+        {
+          "frame": {
+            "actor_prop_texture_bytes": 5246976,
+            "cached_textures": 12,
+            "draw_calls": 56,
+            "frame_us": 5782,
+            "preloaded_actor_prop_texture_bytes": 0,
+            "preloaded_section": "",
+            "preloaded_stage_texture_bytes": 0,
+            "preloaded_textures": 0,
+            "process_us": 9740,
+            "section": "cinema.poster_hall",
+            "stage_texture_bytes": 16146660,
+            "station": 7,
+            "texture_bytes": 52841871,
+            "texture_upload_count": 0,
+            "texture_upload_us": 0,
+            "tick": 7050,
+            "video_bytes": 59246871
+          },
+          "preloaded_at_previous_frame": 9
+        },
+        {
+          "frame": {
+            "actor_prop_texture_bytes": 10199616,
+            "cached_textures": 13,
+            "draw_calls": 61,
+            "frame_us": 6514,
+            "preloaded_actor_prop_texture_bytes": 0,
+            "preloaded_section": "",
+            "preloaded_stage_texture_bytes": 0,
+            "preloaded_textures": 0,
+            "process_us": 10747,
+            "section": "cinema.auditorium",
+            "stage_texture_bytes": 17953952,
+            "station": 8,
+            "texture_bytes": 61847827,
+            "texture_upload_count": 0,
+            "texture_upload_us": 0,
+            "tick": 7282,
+            "video_bytes": 68252827
+          },
+          "preloaded_at_previous_frame": 10
+        },
+        {
+          "frame": {
+            "actor_prop_texture_bytes": 10199616,
+            "cached_textures": 13,
+            "draw_calls": 61,
+            "frame_us": 6731,
+            "preloaded_actor_prop_texture_bytes": 0,
+            "preloaded_section": "",
+            "preloaded_stage_texture_bytes": 0,
+            "preloaded_textures": 0,
+            "process_us": 10405,
+            "section": "cinema.projection_booth",
+            "stage_texture_bytes": 18116048,
+            "station": 9,
+            "texture_bytes": 62067275,
+            "texture_upload_count": 0,
+            "texture_upload_us": 0,
+            "tick": 7541,
+            "video_bytes": 68472275
+          },
+          "preloaded_at_previous_frame": 10
+        },
+        {
+          "frame": {
+            "actor_prop_texture_bytes": 317600,
+            "cached_textures": 16,
+            "draw_calls": 70,
+            "frame_us": 12584,
+            "preloaded_actor_prop_texture_bytes": 0,
+            "preloaded_section": "",
+            "preloaded_stage_texture_bytes": 0,
+            "preloaded_textures": 0,
+            "process_us": 11494,
+            "section": "cinema.screen_stage",
+            "stage_texture_bytes": 28543548,
+            "station": 10,
+            "texture_bytes": 63098765,
+            "texture_upload_count": 0,
+            "texture_upload_us": 0,
+            "tick": 7800,
+            "video_bytes": 69503765
+          },
+          "preloaded_at_previous_frame": 16
+        }
+      ],
+      "gameplay": {
+        "build_id": "205022979ed41635bda14a758507c5c48130df8b461a9d4caf22a94a40ba1286",
+        "chapter_transition_tick": 6701,
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 7200,
+          "shots": 84
+        },
+        "end_tick": 8143,
+        "failures": [],
+        "gpu_capture": false,
+        "handoffs": [
+          {
+            "counters": {
+              "ammo": 12.0,
+              "lives": 4,
+              "rescued": 1,
+              "score": 3500,
+              "shots": 36
+            },
+            "station": "stall",
+            "tick": 5616
+          },
+          {
+            "counters": {
+              "ammo": 2.0,
+              "lives": 4,
+              "rescued": 1,
+              "score": 4100,
+              "shots": 46
+            },
+            "station": "video_shop",
+            "tick": 6096
+          },
+          {
+            "counters": {
+              "ammo": 10.0,
+              "lives": 4,
+              "rescued": 2,
+              "score": 4400,
+              "shots": 50
+            },
+            "station": "footbridge",
+            "tick": 6384
+          },
+          {
+            "counters": {
+              "ammo": 7.0,
+              "lives": 4,
+              "rescued": 2,
+              "score": 4600,
+              "shots": 53
+            },
+            "station": "plaza",
+            "tick": 6499
+          },
+          {
+            "counters": {
+              "ammo": 8.0,
+              "lives": 4,
+              "rescued": 2,
+              "score": 5700,
+              "shots": 64
+            },
+            "station": "ticket_office",
+            "tick": 6791
+          },
+          {
+            "counters": {
+              "ammo": 3.0,
+              "lives": 4,
+              "rescued": 3,
+              "score": 6000,
+              "shots": 69
+            },
+            "station": "poster_hall",
+            "tick": 7050
+          },
+          {
+            "counters": {
+              "ammo": 0.0,
+              "lives": 4,
+              "rescued": 3,
+              "score": 6200,
+              "shots": 72
+            },
+            "station": "auditorium",
+            "tick": 7282
+          },
+          {
+            "counters": {
+              "ammo": 8.0,
+              "lives": 4,
+              "rescued": 4,
+              "score": 6500,
+              "shots": 76
+            },
+            "station": "projection_booth",
+            "tick": 7541
+          },
+          {
+            "counters": {
+              "ammo": 4.0,
+              "lives": 4,
+              "rescued": 5,
+              "score": 6800,
+              "shots": 80
+            },
+            "station": "screen_stage",
+            "tick": 7800
+          }
+        ],
+        "passed": true,
+        "reached": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "reloads": 6,
+        "result": "clear",
+        "texture_restart_checked": true
+      },
+      "profile_frames": {
+        "path": "D:\\gunforge_cache\\g01\\lantern_city\\preload-20261111-124200-381\\frames.json",
+        "sha256": "5aa92ace8a72cd2de2edc0ad8404884e2f0d4a88897051bce011a2e4f5bf2004"
+      },
+      "profile_log": {
+        "path": "D:\\gunforge_cache\\g01\\lantern_city\\preload-20261111-124200-381\\godot.log",
+        "sha256": "e4a09e1015721fdd3b4dd164cc774c2833ad60962292d4084e28ce19d2ef8cac"
+      }
+    },
+    {
+      "build_id": "205022979ed41635bda14a758507c5c48130df8b461a9d4caf22a94a40ba1286",
+      "gpu": "NVIDIA GeForce RTX 3090",
+      "open_us": 1128502,
+      "rendering_method": "gl_compatibility",
+      "screen_sweep_spawns": [
+        {
+          "entity": "cinema.sweep_tape_1",
+          "tick": 7917,
+          "topic": "entity.spawned"
+        },
+        {
+          "entity": "cinema.sweep_tape_2",
+          "tick": 8013,
+          "topic": "entity.spawned"
+        },
+        {
+          "entity": "cinema.sweep_tape_3",
+          "tick": 8109,
+          "topic": "entity.spawned"
+        }
+      ],
+      "viewport": [
+        1776,
+        936
+      ],
+      "frames": 8143,
+      "p95_ms": 7.203,
+      "max_ms": 14.077,
+      "frames_over_60hz_budget": 0,
+      "engine_texture_peak_bytes": 106819051,
+      "warmup_asset_upper_bound_bytes": 82528098,
+      "C15": {
+        "stage_and_lighting": {
+          "packed_bytes": 30231860,
+          "rgba8_upper_bound_bytes": 40309147,
+          "limit_bytes": 50331648,
+          "passed": true
+        },
+        "actors_and_props": {
+          "packed_bytes": 24032016,
+          "rgba8_upper_bound_bytes": 32042688,
+          "limit_bytes": 33554432,
+          "passed": true
+        },
+        "effects_and_ui_asset_textures": {
+          "packed_bytes": 0,
+          "rgba8_upper_bound_bytes": 0,
+          "limit_bytes": 16777216,
+          "passed": true
+        },
+        "station_total": {
+          "packed_bytes": 33870260,
+          "rgba8_upper_bound_bytes": 45160347,
+          "limit_bytes": 100663296,
+          "passed": true
+        },
+        "cut_previous_plus_next": {
+          "packed_bytes": 62824539,
+          "rgba8_upper_bound_bytes": 83766052,
+          "limit_bytes": 167772160,
+          "passed": true
+        }
+      },
+      "cuts": [
+        {
+          "frame": {
+            "actor_prop_texture_bytes": 262144,
+            "cached_textures": 9,
+            "draw_calls": 56,
+            "frame_us": 7037,
+            "preloaded_actor_prop_texture_bytes": 0,
+            "preloaded_section": "",
+            "preloaded_stage_texture_bytes": 0,
+            "preloaded_textures": 0,
+            "process_us": 10019,
+            "section": "stall.arrival",
+            "stage_texture_bytes": 22900736,
+            "station": 2,
+            "texture_bytes": 54581601,
+            "texture_upload_count": 0,
+            "texture_upload_us": 0,
+            "tick": 5616,
+            "video_bytes": 60986601
+          },
+          "preloaded_at_previous_frame": 0
+        },
+        {
+          "frame": {
+            "actor_prop_texture_bytes": 12336248,
+            "cached_textures": 14,
+            "draw_calls": 65,
+            "frame_us": 9224,
+            "preloaded_actor_prop_texture_bytes": 0,
+            "preloaded_section": "",
+            "preloaded_stage_texture_bytes": 0,
+            "preloaded_textures": 0,
+            "process_us": 9431,
+            "section": "video_shop.video_shop",
+            "stage_texture_bytes": 19367856,
+            "station": 3,
+            "texture_bytes": 66318095,
+            "texture_upload_count": 0,
+            "texture_upload_us": 0,
+            "tick": 6096,
+            "video_bytes": 72723095
+          },
+          "preloaded_at_previous_frame": 14
+        },
+        {
+          "frame": {
+            "actor_prop_texture_bytes": 9617408,
+            "cached_textures": 13,
+            "draw_calls": 68,
+            "frame_us": 7047,
+            "preloaded_actor_prop_texture_bytes": 0,
+            "preloaded_section": "",
+            "preloaded_stage_texture_bytes": 0,
+            "preloaded_textures": 0,
+            "process_us": 13894,
+            "section": "footbridge.footbridge",
+            "stage_texture_bytes": 21140732,
+            "station": 4,
+            "texture_bytes": 65234993,
+            "texture_upload_count": 0,
+            "texture_upload_us": 0,
+            "tick": 6384,
+            "video_bytes": 71639993
+          },
+          "preloaded_at_previous_frame": 11
+        },
+        {
+          "frame": {
+            "actor_prop_texture_bytes": 9420800,
+            "cached_textures": 5,
+            "draw_calls": 49,
+            "frame_us": 6060,
+            "preloaded_actor_prop_texture_bytes": 0,
+            "preloaded_section": "",
+            "preloaded_stage_texture_bytes": 0,
+            "preloaded_textures": 0,
+            "process_us": 10069,
+            "section": "plaza.square_watch",
+            "stage_texture_bytes": 4717440,
+            "station": 5,
+            "texture_bytes": 43043960,
+            "texture_upload_count": 0,
+            "texture_upload_us": 0,
+            "tick": 6499,
+            "video_bytes": 49448960
+          },
+          "preloaded_at_previous_frame": 3
+        },
+        {
+          "frame": {
+            "actor_prop_texture_bytes": 6297856,
+            "cached_textures": 20,
+            "draw_calls": 54,
+            "frame_us": 7748,
+            "preloaded_actor_prop_texture_bytes": 0,
+            "preloaded_section": "cinema.ticket_office",
+            "preloaded_stage_texture_bytes": 316332,
+            "preloaded_textures": 1,
+            "process_us": 10172,
+            "section": "story.cinema_intro",
+            "stage_texture_bytes": 4717440,
+            "station": 0,
+            "texture_bytes": 39427048,
+            "texture_upload_count": 1,
+            "texture_upload_us": 53,
+            "tick": 6701,
+            "video_bytes": 45832048
+          },
+          "preloaded_at_previous_frame": 0
+        },
+        {
+          "frame": {
+            "actor_prop_texture_bytes": 10199616,
+            "cached_textures": 13,
+            "draw_calls": 61,
+            "frame_us": 7909,
+            "preloaded_actor_prop_texture_bytes": 0,
+            "preloaded_section": "",
+            "preloaded_stage_texture_bytes": 0,
+            "preloaded_textures": 0,
+            "process_us": 10172,
+            "section": "cinema.ticket_office",
+            "stage_texture_bytes": 18390592,
+            "station": 6,
+            "texture_bytes": 62431783,
+            "texture_upload_count": 0,
+            "texture_upload_us": 0,
+            "tick": 6791,
+            "video_bytes": 68836783
+          },
+          "preloaded_at_previous_frame": 13
+        },
+        {
+          "frame": {
+            "actor_prop_texture_bytes": 5246976,
+            "cached_textures": 12,
+            "draw_calls": 56,
+            "frame_us": 6240,
+            "preloaded_actor_prop_texture_bytes": 0,
+            "preloaded_section": "",
+            "preloaded_stage_texture_bytes": 0,
+            "preloaded_textures": 0,
+            "process_us": 9454,
+            "section": "cinema.poster_hall",
+            "stage_texture_bytes": 16146660,
+            "station": 7,
+            "texture_bytes": 52841871,
+            "texture_upload_count": 0,
+            "texture_upload_us": 0,
+            "tick": 7050,
+            "video_bytes": 59246871
+          },
+          "preloaded_at_previous_frame": 9
+        },
+        {
+          "frame": {
+            "actor_prop_texture_bytes": 10199616,
+            "cached_textures": 13,
+            "draw_calls": 61,
+            "frame_us": 6653,
+            "preloaded_actor_prop_texture_bytes": 0,
+            "preloaded_section": "",
+            "preloaded_stage_texture_bytes": 0,
+            "preloaded_textures": 0,
+            "process_us": 11109,
+            "section": "cinema.auditorium",
+            "stage_texture_bytes": 17953952,
+            "station": 8,
+            "texture_bytes": 61847827,
+            "texture_upload_count": 0,
+            "texture_upload_us": 0,
+            "tick": 7282,
+            "video_bytes": 68252827
+          },
+          "preloaded_at_previous_frame": 10
+        },
+        {
+          "frame": {
+            "actor_prop_texture_bytes": 10199616,
+            "cached_textures": 13,
+            "draw_calls": 61,
+            "frame_us": 6470,
+            "preloaded_actor_prop_texture_bytes": 0,
+            "preloaded_section": "",
+            "preloaded_stage_texture_bytes": 0,
+            "preloaded_textures": 0,
+            "process_us": 11221,
+            "section": "cinema.projection_booth",
+            "stage_texture_bytes": 18116048,
+            "station": 9,
+            "texture_bytes": 62067275,
+            "texture_upload_count": 0,
+            "texture_upload_us": 0,
+            "tick": 7541,
+            "video_bytes": 68472275
+          },
+          "preloaded_at_previous_frame": 10
+        },
+        {
+          "frame": {
+            "actor_prop_texture_bytes": 317600,
+            "cached_textures": 16,
+            "draw_calls": 70,
+            "frame_us": 12311,
+            "preloaded_actor_prop_texture_bytes": 0,
+            "preloaded_section": "",
+            "preloaded_stage_texture_bytes": 0,
+            "preloaded_textures": 0,
+            "process_us": 11994,
+            "section": "cinema.screen_stage",
+            "stage_texture_bytes": 28543548,
+            "station": 10,
+            "texture_bytes": 63098765,
+            "texture_upload_count": 0,
+            "texture_upload_us": 0,
+            "tick": 7800,
+            "video_bytes": 69503765
+          },
+          "preloaded_at_previous_frame": 16
+        }
+      ],
+      "gameplay": {
+        "build_id": "205022979ed41635bda14a758507c5c48130df8b461a9d4caf22a94a40ba1286",
+        "chapter_transition_tick": 6701,
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 7200,
+          "shots": 84
+        },
+        "end_tick": 8143,
+        "failures": [],
+        "gpu_capture": false,
+        "handoffs": [
+          {
+            "counters": {
+              "ammo": 12.0,
+              "lives": 4,
+              "rescued": 1,
+              "score": 3500,
+              "shots": 36
+            },
+            "station": "stall",
+            "tick": 5616
+          },
+          {
+            "counters": {
+              "ammo": 2.0,
+              "lives": 4,
+              "rescued": 1,
+              "score": 4100,
+              "shots": 46
+            },
+            "station": "video_shop",
+            "tick": 6096
+          },
+          {
+            "counters": {
+              "ammo": 10.0,
+              "lives": 4,
+              "rescued": 2,
+              "score": 4400,
+              "shots": 50
+            },
+            "station": "footbridge",
+            "tick": 6384
+          },
+          {
+            "counters": {
+              "ammo": 7.0,
+              "lives": 4,
+              "rescued": 2,
+              "score": 4600,
+              "shots": 53
+            },
+            "station": "plaza",
+            "tick": 6499
+          },
+          {
+            "counters": {
+              "ammo": 8.0,
+              "lives": 4,
+              "rescued": 2,
+              "score": 5700,
+              "shots": 64
+            },
+            "station": "ticket_office",
+            "tick": 6791
+          },
+          {
+            "counters": {
+              "ammo": 3.0,
+              "lives": 4,
+              "rescued": 3,
+              "score": 6000,
+              "shots": 69
+            },
+            "station": "poster_hall",
+            "tick": 7050
+          },
+          {
+            "counters": {
+              "ammo": 0.0,
+              "lives": 4,
+              "rescued": 3,
+              "score": 6200,
+              "shots": 72
+            },
+            "station": "auditorium",
+            "tick": 7282
+          },
+          {
+            "counters": {
+              "ammo": 8.0,
+              "lives": 4,
+              "rescued": 4,
+              "score": 6500,
+              "shots": 76
+            },
+            "station": "projection_booth",
+            "tick": 7541
+          },
+          {
+            "counters": {
+              "ammo": 4.0,
+              "lives": 4,
+              "rescued": 5,
+              "score": 6800,
+              "shots": 80
+            },
+            "station": "screen_stage",
+            "tick": 7800
+          }
+        ],
+        "passed": true,
+        "reached": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "reloads": 6,
+        "result": "clear",
+        "texture_restart_checked": true
+      },
+      "profile_frames": {
+        "path": "D:\\gunforge_cache\\g01\\lantern_city\\preload-20261111-124329-193\\frames.json",
+        "sha256": "b5052df8731056362a6721f1e4f1f67cc197073bd65c6a9cf8b3943c25a15e4c"
+      },
+      "profile_log": {
+        "path": "D:\\gunforge_cache\\g01\\lantern_city\\preload-20261111-124329-193\\godot.log",
+        "sha256": "e4a09e1015721fdd3b4dd164cc774c2833ad60962292d4084e28ce19d2ef8cac"
+      }
+    }
+  ],
+  "seek_into_and_back_from_pending_preload": "passed_in_second_run",
+  "capture_regression": {
+    "gameplay": {
+      "build_id": "205022979ed41635bda14a758507c5c48130df8b461a9d4caf22a94a40ba1286",
+      "chapter_transition_tick": 6701,
+      "counters": {
+        "ammo": 0.0,
+        "lives": 4,
+        "rescued": 5,
+        "score": 7200,
+        "shots": 84
+      },
+      "end_tick": 7828,
+      "failures": [],
+      "gpu_capture": true,
+      "handoffs": [
+        {
+          "counters": {
+            "ammo": 12.0,
+            "lives": 4,
+            "rescued": 1,
+            "score": 3500,
+            "shots": 36
+          },
+          "station": "stall",
+          "tick": 5616
+        },
+        {
+          "counters": {
+            "ammo": 2.0,
+            "lives": 4,
+            "rescued": 1,
+            "score": 4100,
+            "shots": 46
+          },
+          "station": "video_shop",
+          "tick": 6096
+        },
+        {
+          "counters": {
+            "ammo": 10.0,
+            "lives": 4,
+            "rescued": 2,
+            "score": 4400,
+            "shots": 50
+          },
+          "station": "footbridge",
+          "tick": 6384
+        },
+        {
+          "counters": {
+            "ammo": 7.0,
+            "lives": 4,
+            "rescued": 2,
+            "score": 4600,
+            "shots": 53
+          },
+          "station": "plaza",
+          "tick": 6499
+        },
+        {
+          "counters": {
+            "ammo": 8.0,
+            "lives": 4,
+            "rescued": 2,
+            "score": 5700,
+            "shots": 64
+          },
+          "station": "ticket_office",
+          "tick": 6791
+        },
+        {
+          "counters": {
+            "ammo": 3.0,
+            "lives": 4,
+            "rescued": 3,
+            "score": 6000,
+            "shots": 69
+          },
+          "station": "poster_hall",
+          "tick": 7050
+        },
+        {
+          "counters": {
+            "ammo": 0.0,
+            "lives": 4,
+            "rescued": 3,
+            "score": 6200,
+            "shots": 72
+          },
+          "station": "auditorium",
+          "tick": 7282
+        },
+        {
+          "counters": {
+            "ammo": 8.0,
+            "lives": 4,
+            "rescued": 4,
+            "score": 6500,
+            "shots": 76
+          },
+          "station": "projection_booth",
+          "tick": 7541
+        },
+        {
+          "counters": {
+            "ammo": 4.0,
+            "lives": 4,
+            "rescued": 5,
+            "score": 6800,
+            "shots": 80
+          },
+          "station": "screen_stage",
+          "tick": 7800
+        }
+      ],
+      "passed": true,
+      "reached": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "reloads": 6,
+      "result": "clear"
+    },
+    "pixel_identical": [
+      {
+        "jpg": "cinema_transition.jpg",
+        "before": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\gameplay\\cinema_transition.png",
+          "sha256": "482ab2638234ccdb7a3a5de2c01177e0de18ad9ce88aa48b149f0e4fad38c0d2"
+        },
+        "after": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\preload-20261111-124329-193\\captures\\cinema_transition.png",
+          "sha256": "482ab2638234ccdb7a3a5de2c01177e0de18ad9ce88aa48b149f0e4fad38c0d2"
+        }
+      },
+      {
+        "jpg": "lantern_city_clear.jpg",
+        "before": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\gameplay\\lantern_city_clear.png",
+          "sha256": "2a461a5e306951e83506a485ae7d7e55d1a19b6896e0dfe7fd116a63135d057a"
+        },
+        "after": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\preload-20261111-124329-193\\captures\\lantern_city_clear.png",
+          "sha256": "2a461a5e306951e83506a485ae7d7e55d1a19b6896e0dfe7fd116a63135d057a"
+        }
+      },
+      {
+        "jpg": "station_10_screen_stage.jpg",
+        "before": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\gameplay\\station_10_screen_stage.png",
+          "sha256": "2fcae3d30d0d7a9583d8986c188aade20f7213dbc6a05d1fe414a08796d2d88e"
+        },
+        "after": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\preload-20261111-124329-193\\captures\\station_10_screen_stage.png",
+          "sha256": "2fcae3d30d0d7a9583d8986c188aade20f7213dbc6a05d1fe414a08796d2d88e"
+        }
+      },
+      {
+        "jpg": "station_1_alley.jpg",
+        "before": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\gameplay\\station_1_alley.png",
+          "sha256": "fb3e86ef284abf0021cec8742bd8e01d29d8283aa99886e8a8cea42a52220b12"
+        },
+        "after": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\preload-20261111-124329-193\\captures\\station_1_alley.png",
+          "sha256": "fb3e86ef284abf0021cec8742bd8e01d29d8283aa99886e8a8cea42a52220b12"
+        }
+      },
+      {
+        "jpg": "station_2_stall.jpg",
+        "before": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\gameplay\\station_2_stall.png",
+          "sha256": "eff9a312c4a250a7b6c4f2ba05b51a2afd444d178cf7e4eeb283b061c9cc6cdb"
+        },
+        "after": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\preload-20261111-124329-193\\captures\\station_2_stall.png",
+          "sha256": "eff9a312c4a250a7b6c4f2ba05b51a2afd444d178cf7e4eeb283b061c9cc6cdb"
+        }
+      },
+      {
+        "jpg": "station_3_video_shop.jpg",
+        "before": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\gameplay\\station_3_video_shop.png",
+          "sha256": "6ca4550be370c515d7007529fb336ae3f781897121318d13344c28af88c06577"
+        },
+        "after": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\preload-20261111-124329-193\\captures\\station_3_video_shop.png",
+          "sha256": "6ca4550be370c515d7007529fb336ae3f781897121318d13344c28af88c06577"
+        }
+      },
+      {
+        "jpg": "station_4_footbridge.jpg",
+        "before": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\gameplay\\station_4_footbridge.png",
+          "sha256": "f8a398ec28efc027e36838b33036a6dcb0676766e22d60aeb67e328b4a10d5a6"
+        },
+        "after": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\preload-20261111-124329-193\\captures\\station_4_footbridge.png",
+          "sha256": "f8a398ec28efc027e36838b33036a6dcb0676766e22d60aeb67e328b4a10d5a6"
+        }
+      },
+      {
+        "jpg": "station_5_dragon.jpg",
+        "before": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\gameplay\\station_5_dragon.png",
+          "sha256": "7778bf2bd9c156736eb5ef1100a0672bbc47bc26200912abc772d4e30bd73743"
+        },
+        "after": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\preload-20261111-124329-193\\captures\\station_5_dragon.png",
+          "sha256": "7778bf2bd9c156736eb5ef1100a0672bbc47bc26200912abc772d4e30bd73743"
+        }
+      },
+      {
+        "jpg": "station_5_plaza.jpg",
+        "before": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\gameplay\\station_5_plaza.png",
+          "sha256": "5085c43d8f4698332b228b1f5c39f30f34a27319f8abbac2d33bd0e2efaada49"
+        },
+        "after": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\preload-20261111-124329-193\\captures\\station_5_plaza.png",
+          "sha256": "5085c43d8f4698332b228b1f5c39f30f34a27319f8abbac2d33bd0e2efaada49"
+        }
+      },
+      {
+        "jpg": "station_6_ticket_office.jpg",
+        "before": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\gameplay\\station_6_ticket_office.png",
+          "sha256": "aa176404b7f1c43e2d19cc7fe2c15189adb6374f60c24d66a321d00e26fc5e40"
+        },
+        "after": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\preload-20261111-124329-193\\captures\\station_6_ticket_office.png",
+          "sha256": "aa176404b7f1c43e2d19cc7fe2c15189adb6374f60c24d66a321d00e26fc5e40"
+        }
+      },
+      {
+        "jpg": "station_7_poster_hall.jpg",
+        "before": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\gameplay\\station_7_poster_hall.png",
+          "sha256": "31f14f0ef5724574ef48f929fd559a2556ef9f1aa470d51a838461d3a386408e"
+        },
+        "after": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\preload-20261111-124329-193\\captures\\station_7_poster_hall.png",
+          "sha256": "31f14f0ef5724574ef48f929fd559a2556ef9f1aa470d51a838461d3a386408e"
+        }
+      },
+      {
+        "jpg": "station_8_auditorium.jpg",
+        "before": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\gameplay\\station_8_auditorium.png",
+          "sha256": "4106d1228b15ca94929c68fca97552df036a7cf65c0a30439951861bd55cb767"
+        },
+        "after": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\preload-20261111-124329-193\\captures\\station_8_auditorium.png",
+          "sha256": "4106d1228b15ca94929c68fca97552df036a7cf65c0a30439951861bd55cb767"
+        }
+      },
+      {
+        "jpg": "station_9_projection_booth.jpg",
+        "before": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\gameplay\\station_9_projection_booth.png",
+          "sha256": "cde0d3976716f01d35583414568493650166a5ce1be40b0bf25654eb91f05815"
+        },
+        "after": {
+          "path": "D:\\gunforge_cache\\g01\\lantern_city\\preload-20261111-124329-193\\captures\\station_9_projection_booth.png",
+          "sha256": "cde0d3976716f01d35583414568493650166a5ce1be40b0bf25654eb91f05815"
+        }
+      }
+    ]
+  },
+  "standalone_regressions": {
+    "night_market": {
+      "build_id": "56c23f2f3808436058b3fec77b5aee4d370e804a4b6498dcfaa890934d233bce",
+      "chapter_transition_tick": -1,
+      "counters": {
+        "ammo": 8.0,
+        "lives": 4,
+        "rescued": 2,
+        "score": 5700,
+        "shots": 64
+      },
+      "end_tick": 6701,
+      "failures": [],
+      "gpu_capture": false,
+      "handoffs": [
+        {
+          "counters": {
+            "ammo": 12.0,
+            "lives": 4,
+            "rescued": 1,
+            "score": 3500,
+            "shots": 36
+          },
+          "station": "stall",
+          "tick": 5616
+        },
+        {
+          "counters": {
+            "ammo": 2.0,
+            "lives": 4,
+            "rescued": 1,
+            "score": 4100,
+            "shots": 46
+          },
+          "station": "video_shop",
+          "tick": 6096
+        },
+        {
+          "counters": {
+            "ammo": 10.0,
+            "lives": 4,
+            "rescued": 2,
+            "score": 4400,
+            "shots": 50
+          },
+          "station": "footbridge",
+          "tick": 6384
+        },
+        {
+          "counters": {
+            "ammo": 7.0,
+            "lives": 4,
+            "rescued": 2,
+            "score": 4600,
+            "shots": 53
+          },
+          "station": "plaza",
+          "tick": 6499
+        }
+      ],
+      "passed": true,
+      "reached": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reloads": 5,
+      "result": "clear"
+    },
+    "cinema": {
+      "build_id": "a2132d26acc555037886b4531f2b2b4e66f04120436a058c6d4aeeafec38fe8d",
+      "failures": [],
+      "gpu_capture": true,
+      "light_fade_ticks": {
+        "auditorium": 18,
+        "poster_hall": 18,
+        "projection_booth": 18,
+        "ticket_office": 18
+      },
+      "longest_light_window_ticks": {
+        "auditorium": 117,
+        "poster_hall": 84,
+        "projection_booth": 86,
+        "ticket_office": 95
+      },
+      "passed": true,
+      "rescued": 3,
+      "shots": 27,
+      "umbrella_fold_ticks": {
+        "auditorium": 36,
+        "poster_hall": 36,
+        "projection_booth": 36,
+        "ticket_office": 36
+      }
+    }
+  },
+  "independent_delivery": {
+    "passed": true,
+    "build_id": "205022979ed41635bda14a758507c5c48130df8b461a9d4caf22a94a40ba1286",
+    "index": "D:\\gunforge_cache\\level_design\\runs\\delivery-1794372299449337100\\index.json",
+    "sha256": "028a70df3578395b054d70b53ac853b88980ac999dce693b98a0642ad3941d5c",
+    "checks": 7
+  },
+  "next_task": "verify_two_level_failure_and_retry_paths",
+  "pending": [
+    "T12_A5_cinema_review",
+    "physical_lightgun_monitor_and_tv_retest"
+  ]
+}

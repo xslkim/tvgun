@@ -199,7 +199,9 @@ def compile_source(source, resource_root=ROOT, source_manifest=None):
  tool_lock['contract_files']={'scene_contract.py':hashlib.sha256(Path(__file__).with_name('scene_contract.py').read_bytes()).hexdigest()}
  if 'encounter' in source:
   tool_lock['contract_files']['encounter.py']=hashlib.sha256(Path(__file__).with_name('encounter.py').read_bytes()).hexdigest()
- tool_lock['core_files']={path.relative_to(ROOT).as_posix():hashlib.sha256(path.read_bytes()).hexdigest() for path in sorted((ROOT/'gunforge/framework/core').glob('*.gd'))}
+ core_files=(ROOT/'gunforge/framework/core').iterdir()
+ tool_lock['core_files']={path.relative_to(ROOT).as_posix():hashlib.sha256(path.read_bytes()).hexdigest()
+                          for path in sorted(core_files) if path.is_file() and path.suffix in ('.gd','.gdshader')}
  payload_hash=payload_digest({'level':compiled,'source_map':mapping,'source_manifest':source_manifest})
  build_id=digest({'source_revision':source_revision,'tool_lock':tool_lock,'payload_sha256':payload_hash})
  return {'format':'gunforge-compiled-level-v1','source_revision':source_revision,'build_id':build_id,'payload_sha256':payload_hash,'payload_algorithm':'numeric-f64le-v1','tool_lock':tool_lock,'source_manifest':source_manifest,'source_map':mapping,'level':compiled,'capability_status':'compiler contract only; runtime acceptance tracked separately'}

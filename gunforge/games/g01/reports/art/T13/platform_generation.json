@@ -1,0 +1,128 @@
+{
+  "provider": "builtin_image_gen",
+  "selected_attempt": 3,
+  "source": "source/platform_v3.png",
+  "preview": "compositions/platform.jpg",
+  "preview_sha256": "35760d739cbd98f777bf29f4c4413a7ee25c06444fbeb9e29e5cc33d6260dc82",
+  "preview_size": [
+    1776,
+    936
+  ],
+  "C03_preview": {
+    "status": "pass",
+    "reason": "Visible alpha-weighted encoded luminance",
+    "details": {
+      "clipped_fraction": 0.003694199006699007
+    }
+  },
+  "C04_preview": {
+    "status": "fail",
+    "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+    "details": {
+      "coverage": 0.7940825440825441
+    }
+  },
+  "signal_body_visual_estimate": [
+    1498,
+    197,
+    54,
+    115
+  ],
+  "signal_body_within_whitebox_slot": true,
+  "signal_overlaps_playing_hud_or_target": false,
+  "clock_center_visual_estimate": [
+    310,
+    248
+  ],
+  "clock_center_in_whitebox_slot": true,
+  "attempts": [
+    {
+      "attempt": 1,
+      "output_id": "exec-5bcfd65d-61af-443d-8e26-b23038c094cb.png",
+      "source_sha256": "b4100436efd3a94e0cfc058375603ea564f02dab181bbc60b0f532f90c20e6f3",
+      "size": [
+        1728,
+        910
+      ],
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.000027345339845339844
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.6131289428164428
+        }
+      },
+      "prompt": "Use case: illustration-story. Asset: one opaque edge-to-edge wide 1776:936 gameplay background for Paper Lantern City, an outdoor small-town Chinese railway platform at night in the 1990s. Image 1 is the authoritative composition guide; omit all its lines, rectangles, text, and HUD. Image 2 is a reference for period railway objects only. Image 3 is a reference for the same chapter's layered matte paper material, quiet lighting and teal/blue value range only. Eye-level frontal side view across the platform, strong long horizontal canopy beams and platform edge; a stationary vintage boxy muted jade-green passenger carriage with an understated yellow paper waist stripe, repeating dark rectangular windows in the upper middle behind the open platform. One round cream-paper period platform clock mounted in the upper left at x=16.5%, y=24.5%. On the upper right is one distinctly readable tall rectangular dark-teal station signal with rounded corners and an unlit dark frosted window, mounted to the wall/post, its body centered at x=85%, y=27%, fully inside x=82–88%, y=20–34%. It emits zero light, no red signal. Keep the central floor and lower middle unobstructed for later characters, and leave calm flat silhouettes in the left and right play lanes. Only two low indigo foreground corner silhouettes below two-thirds height, close to the edges. Hand-cut flat dyed paper planes, crisp cuts and subtle fibers; restrained nocturnal dark indigo #141A33 and deep plum #2A1E3D, muted jade #4E9A92, moon-white accents #B8C4D6 below clipping, few subdued amber details. No people, enemies, text, logos, HUD, white flare, neon, glow, fisheye, perspective tunnel, watermark or outer frame.",
+      "references": [
+        "whiteboxes/platform.jpg",
+        "../../../bible/style_refs/st_l3_platform.png",
+        "parallax/frames/waiting_room_rest.jpg"
+      ],
+      "decision": "Clock and signal are both too low, and foreground framing repeats the waiting room."
+    },
+    {
+      "attempt": 2,
+      "output_id": "exec-c928473f-bc44-4412-947e-47744222af2a.png",
+      "source_sha256": "9089f0cd84ea9489ba4fcf7d0ee6e318b57705f6b615145a959099b428216dac",
+      "size": [
+        1728,
+        910
+      ],
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0038016381766381767
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.7737077737077737
+        }
+      },
+      "prompt": "Generate an opaque edge-to-edge 1776:936 front-on side-view outdoor railway platform background for Paper Lantern City. Image 1 is the authoritative 1776×936 whitebox placement guide; remove every annotation. Image 2 is 1990s Chinese period object reference only. Build a distinct station platform with an open night sky behind a low canopy band confined to the top, flat long horizontal perspective, and a near-frontal side of a jade-green 1990s train with its ochre waistline. Put the train roof roughly y=17%, and its main row of evenly repeating muted dark carriage windows at y=23–35% of the complete image. The open pale-indigo platform occupies the lower half. Mount one recognizable cream-paper round clock near x=16.5%, y=24%, left of the train-window row; fully above y=30%. Mount one small rounded-rectangle unlit dark-teal rectangular signal at x=85%, y=27%, its entire case above y=34%, beside the right end of the train. Signal is a readable target with a broad dark frosted lens, no illuminated red. Keep all supports behind the two play lanes. Keep the floor from x=40–60%, y=45–82% open for a ticket clerk. Use two modest low silhouettes such as travel trunks only at the extreme bottom corners, never a row of foreground pillars, no leaves dominating corners. Flat multilayer rice-paper shapes and fine matte fibers. Strict restrained palette indigo #141A33, plum #2A1E3D, muted teal #4E9A92 and moon white #B8C4D6; dim windows, minimal incidental amber, no saturated orange glows. Strong transverse rhythm and quiet visual separation, no perspective tunnel. No people, enemies, letters, logos, labels, HUD, borders, watermark, bloom or pure white.",
+      "references": [
+        "whiteboxes/platform.jpg",
+        "../../../bible/style_refs/st_l3_platform.png"
+      ],
+      "decision": "Open platform and clock placement fit; signal case is horizontal and too far right."
+    },
+    {
+      "attempt": 3,
+      "output_id": "exec-0b05098c-b346-4a68-9ea6-8d9adaf5459e.png",
+      "source_sha256": "7790d2fbb080c39d4c0ecf7e794e8a573763a74a284a1435aad9abdc00327fcb",
+      "size": [
+        1728,
+        910
+      ],
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0037590303215303215
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.7943388787138788
+        }
+      },
+      "prompt": "Edit Image 1, preserving the exact outdoor railway platform crop, stationary jade carriage and yellow stripe, clock, roof, hills, luggage and open floor. Image 2 is a location guide only. Change only the single dark device attached to the right pillar. Make it a period railway signal with a visibly vertical rounded dark-teal housing and an unlit dark frosted lens. Center it over the right pillar's right side, a little to the left and above the current device, with its visible body wholly in the marked signal slot: x=82–88%, y=20–34%, center x=85%, y=27%. Set the visible case size about 6% of frame width by 13% of frame height, no hanger silhouette or wide display bezel. Flat dark paper, readable shape against the background. Fill any old device edge with the same pillar or sky paper. Keep exactly one signal, no emission or red. Preserve all other objects, their coordinates, cut-paper texture and nighttime palette. Omit labels, HUD and guide lines.",
+      "references": [
+        "exec-c928473f-bc44-4412-947e-47744222af2a.png",
+        "whiteboxes/platform.jpg"
+      ],
+      "decision": "Selected; the vertical unlit signal case and clock center fit their planned slots."
+    }
+  ]
+}

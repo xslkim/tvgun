@@ -1,7 +1,8 @@
 extends SceneTree
-## Local review harness for the eight-link prototype. Shares runtime raster picking.
+## Local review harness for the Ink Dragon. Shares runtime raster picking.
 
 const Chain = preload("res://core/ink_dragon_chain.gd")
+const Dragon = preload("res://core/ink_dragon_raster.gd")
 const Item = preload("res://core/raster_item.gd")
 const Painter = preload("res://core/raster_layer.gd")
 const Resolver = preload("res://core/hit_resolver.gd")
@@ -13,11 +14,15 @@ var resolver = Resolver.new()
 var painter: Node2D
 var resources := {}
 var layout: Dictionary
-var pivots: Array
+var pivots: Array = []
 var order: Array = []
 var view_size: Vector2
-var ink_center: Vector2
+var ink_centers: Array[Vector2] = []
 var hits: Array = []
+var jaw_cover: Array = []
+var full_art := false
+var dragon = Dragon.new()
+var dragon_textures: Dictionary = {}
 var clock := 0.0
 
 func _initialize() -> void:
@@ -53,13 +58,19 @@ func load_prototype(path: String) -> bool:
 	if layout.is_empty() or layout.max_active != 1 or layout.body_nodes.size() != 8 or float(layout.body_scale) <= 0:
 		return false
 	var root_dir := path.get_base_dir()
-	var sample_path := root_dir.path_join(layout.sample)
-	var sample := read_json(sample_path)
-	if sample.is_empty():
-		return false
-	var sample_dir := sample_path.get_base_dir()
-	pivots = [point(sample.pivots[0]), point(sample.pivots[1])]
-	var all_pivots := []
+	full_art = not layout.has("sample")
+	var sample := {}
+	if not full_art:
+		var sample_path := root_dir.path_join(layout.sample)
+		sample = read_json(sample_path)
+		if sample.is_empty():
+			return false
+		for entry in SAMPLE_TEXTURES:
+			var texture_path := sample_path.get_base_dir().path_join(sample[SAMPLE_TEXTURES[entry]])
+			if not register_texture(entry, Image.load_from_file(texture_path)):
+				return false
+		if not register_texture("mouth", mouth_texture(float(layout.mouth.radius))):
+			return false
 	var parent := "head"
 	var ids := []
 	for node in layout.body_nodes:
@@ -67,31 +78,41 @@ func load_prototype(path: String) -> bool:
 			return false
 		parent = node.id
 		ids.append(node.id)
-		all_pivots.append(pivots)
+		if full_art:
+			pivots.append([point(node.pivots[0]), point(node.pivots[1])])
+			ink_centers.append(point(node.aim) + Vector2(.5, .5))
+		else:
+			pivots.append([point(sample.pivots[0]), point(sample.pivots[1])])
+			ink_centers.append(ink_center_for(resources.ink[0]))
 	for id in layout.opening_order:
 		order.append(ids.find(id))
-	if not chain.configure(all_pivots, order):
+	if not chain.configure(pivots, order):
 		return false
 	view_size = point(layout.content_size)
 	if not register_texture("background", Image.load_from_file(root_dir.path_join(layout.background))):
 		return false
-	for entry in SAMPLE_TEXTURES:
-		var texture_path := sample_dir.path_join(sample[SAMPLE_TEXTURES[entry]])
-		if not register_texture(entry, Image.load_from_file(texture_path)):
-			return false
-	var ink: Image = resources.ink[0]
+	if full_art:
+		var images := {}
+		for file in Dragon.image_paths(layout):
+			if not register_texture(file, Image.load_from_file(root_dir.path_join(file))):
+				return false
+			images[file] = resources[file][0]
+			dragon_textures[images[file].get_instance_id()] = resources[file][1]
+		return dragon.configure(layout, images)
+	return true
+
+func ink_center_for(ink: Image) -> Vector2:
 	var bounds := ink.get_used_rect()
 	var best := INF
-	var found := false
+	var center := Vector2.ZERO
 	for y in range(bounds.position.y, bounds.end.y):
 		for x in range(bounds.position.x, bounds.end.x):
 			var candidate := Vector2(x + .5, y + .5)
 			var distance := candidate.distance_squared_to(bounds.get_center())
 			if distance < best and ink.get_pixel(x, y).a >= .9:
-				ink_center = candidate
+				center = candidate
 				best = distance
-				found = true
-	return found and register_texture("mouth", mouth_texture(float(layout.mouth.radius)))
+	return center
 
 func mouth_texture(radius: float) -> Image:
 	var size := ceili(radius * 2)
@@ -105,11 +126,17 @@ func mouth_texture(radius: float) -> Image:
 	return image
 
 func body_pose() -> Array[Transform2D]:
-	var at := Vector2(420 + 58 * sin(clock * 1.3), 420 + 48 * sin(clock * 1.9))
+	if full_art:
+		return dragon.body_pose(clock)
+	var origin := point(layout.get("origin", [420, 420]))
+	var sway := point(layout.get("sway", [58, 48]))
+	var at := origin + sway * Vector2(sin(clock * 1.3), sin(clock * 1.9))
 	return chain.pose(at, clock, float(layout.body_scale))
 
 func mouth_pose(head_pose: Transform2D) -> Transform2D:
-	var center: Vector2 = head_pose * pivots[0]
+	if full_art:
+		return dragon.mouth_pose(dragon.head_transform(head_pose))
+	var center: Vector2 = head_pose * pivots[0][0]
 	var offset := point(layout.mouth.offset_from_body_anchor).rotated(head_pose.get_rotation())
 	return Transform2D(0, center + offset - Vector2.ONE * float(layout.mouth.radius))
 
@@ -118,6 +145,21 @@ func compose(poses: Array[Transform2D]) -> void:
 	background.size = view_size
 	var scene := [background]
 	hits.clear()
+	jaw_cover.clear()
+	if full_art:
+		var states: Array = []
+		for index in poses.size():
+			states.append(chain.segment_state(index))
+		for item in dragon.items(poses, clock, states, chain.mouth_state()):
+			if item.kind == "blocker":
+				jaw_cover.append(item)
+			elif item.kind != "":
+				hits.append(item)
+			item.texture = dragon_textures[item.image.get_instance_id()]
+			scene.append(item)
+		if painter:
+			painter.refresh(scene)
+		return
 	for index in range(poses.size() - 1, -1, -1):
 		var id: String = layout.body_nodes[index].id
 		var state := chain.segment_state(index)
@@ -142,7 +184,7 @@ func compose(poses: Array[Transform2D]) -> void:
 		painter.refresh(scene)
 
 func shoot(at: Vector2) -> bool:
-	var target: Dictionary = resolver.exact(at, hits)
+	var target: Dictionary = resolver.exact(at, hits + jaw_cover)
 	return not target.is_empty() and chain.apply_hit(target.id)
 
 func probe() -> bool:
@@ -152,7 +194,9 @@ func probe() -> bool:
 		clock = frame / 30.0
 		var posed := body_pose()
 		for index in range(posed.size() - 1):
-			var gap: float = (posed[index] * pivots[1]).distance_to(posed[index + 1] * pivots[0])
+			var a: Vector2 = posed[index] * pivots[index][1]
+			var b: Vector2 = posed[index + 1] * pivots[index + 1][0]
+			var gap := a.distance_to(b)
 			maximum_joint_gap = maxf(maximum_joint_gap, gap)
 	if maximum_joint_gap > .001:
 		return false
@@ -162,9 +206,9 @@ func probe() -> bool:
 		if hits.size() != 1 or chain.apply_hit(Chain.MOUTH):
 			return false
 		for other in posed.size():
-			if other != index and shoot(posed[other] * ink_center):
+			if other != index and shoot(posed[other] * ink_centers[other]):
 				return false
-		var point_on_ink: Vector2 = posed[index] * ink_center
+		var point_on_ink: Vector2 = posed[index] * ink_centers[index]
 		if not shoot(point_on_ink):
 			return false
 		shots.append(layout.body_nodes[index].id)
@@ -176,7 +220,8 @@ func probe() -> bool:
 	if hits.size() != 1 or hits[0].id != Chain.MOUTH:
 		return false
 	var mouth := mouth_pose(last_pose[0])
-	if shoot(mouth.origin + Vector2.ONE) or not shoot(mouth * (Vector2.ONE * float(layout.mouth.radius))):
+	var center := point(layout.mouth.center) if full_art else Vector2.ONE * float(layout.mouth.radius)
+	if shoot(mouth.origin + Vector2.ONE) or not shoot(mouth * center):
 		return false
 	compose(last_pose)
 	var passed := chain.complete() and hits.is_empty() and not chain.apply_hit(Chain.MOUTH)
@@ -187,13 +232,13 @@ func probe() -> bool:
 func run() -> void:
 	var args := OS.get_cmdline_user_args()
 	if args.is_empty() or not load_prototype(args[0]):
-		printerr("Usage: ink_dragon_review.gd -- <boss_draft.json> [--probe]")
+		printerr("Usage: ink_dragon_review.gd -- <boss.json or boss_draft.json> [--probe]")
 		quit(2)
 		return
 	if "--probe" in args:
 		quit(0 if probe() else 1)
 		return
-	root.title = "墨舞龙 · 八节绑定原型 | 左键净化，R 重置，Esc 关闭"
+	root.title = "墨舞龙 · 左键净化，R 重置，Esc 关闭"
 	root.content_scale_size = Vector2i(view_size)
 	root.content_scale_mode = Window.CONTENT_SCALE_MODE_CANVAS_ITEMS
 	root.content_scale_aspect = Window.CONTENT_SCALE_ASPECT_KEEP

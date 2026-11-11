@@ -8,7 +8,10 @@ var texture: Texture2D
 var folder: String
 
 func open_registered(data:Dictionary,animations:Dictionary,atlas:Image):
-	rig=data.rig.duplicate(true);clips=animations.duplicate(true);image=atlas;texture=ImageTexture.create_from_image(atlas)
+	rig = data.rig.duplicate(true)
+	clips = animations.duplicate(true)
+	image = atlas
+	texture = null # The level scene uploads registered atlases when they are visible.
 
 func open(path: String):
 	folder = path

@@ -1,0 +1,149 @@
+{
+  "status": "passed_pending_review",
+  "character": "忘",
+  "canvas": [
+    2048,
+    2048
+  ],
+  "display_rect": [
+    568,
+    132,
+    640,
+    640
+  ],
+  "source_revision": "bddc96d41bef78427ed0e034e9f7e31d71fd1b92",
+  "source_sha256": "3928672ce313fdc82c7ec425571356d394778c678c787a60220ac3d18fdeecb1",
+  "license_sha256": "3a5e90c0957524a89e48203febcd4492ca4393678abaa7e5b4d70f3ff32b386d",
+  "source_notice": "2026-11-11: Rasterized and resized the Make Me a Hanzi U+5FD8 outlines for Gunforge, with adjusted short-stroke width. Copyright (C) 1999 Arphic Technology Co., Ltd. Arphic Public License, see ARPHICPL.TXT.",
+  "occlusion": "higher stroke order covers lower stroke order",
+  "strokes": [
+    {
+      "order": 1,
+      "label": "亡 · 点",
+      "z_order": 1,
+      "source_mask": "stroke_01.png",
+      "outline_expansion_px_at_2048": 16,
+      "area_before_occlusion_px": 5248,
+      "visible_area_px": 5248,
+      "effective_area_px": 5229,
+      "effective_radius_px": 40.8,
+      "start_marker": [
+        854,
+        179
+      ],
+      "overlapped_by": [],
+      "sha256": "211a37decd630bb890f0548ba6e3a7e53dc3649d7c775863407372627f4ac039"
+    },
+    {
+      "order": 2,
+      "label": "亡 · 横",
+      "z_order": 2,
+      "source_mask": "stroke_02.png",
+      "outline_expansion_px_at_2048": 0,
+      "area_before_occlusion_px": 11041,
+      "visible_area_px": 10678,
+      "effective_area_px": 9840,
+      "effective_radius_px": 55.97,
+      "start_marker": [
+        708,
+        313
+      ],
+      "overlapped_by": [
+        {
+          "order": 3,
+          "overlap_area_px": 363
+        }
+      ],
+      "sha256": "17a5a5b806d4191d5f23b64cc5e49201d765cdb479111047aa08f8eda9beaa24"
+    },
+    {
+      "order": 3,
+      "label": "亡 · 竖折",
+      "z_order": 3,
+      "source_mask": "stroke_03.png",
+      "outline_expansion_px_at_2048": 0,
+      "area_before_occlusion_px": 13612,
+      "visible_area_px": 13612,
+      "effective_area_px": 13474,
+      "effective_radius_px": 65.49,
+      "start_marker": [
+        765,
+        331
+      ],
+      "overlapped_by": [],
+      "sha256": "9feece154d90b8a29e52e4273a5007c9aca16ec105834c17946ef9ffefa99afe"
+    },
+    {
+      "order": 4,
+      "label": "心 · 左点",
+      "z_order": 4,
+      "source_mask": "stroke_04.png",
+      "outline_expansion_px_at_2048": 16,
+      "area_before_occlusion_px": 6309,
+      "visible_area_px": 6309,
+      "effective_area_px": 6290,
+      "effective_radius_px": 44.75,
+      "start_marker": [
+        709,
+        538
+      ],
+      "overlapped_by": [],
+      "sha256": "ecaf12735921c053fe05b271ef4821b05c8fc9c5e2803de5049dbe9d2cc0bd7d"
+    },
+    {
+      "order": 5,
+      "label": "心 · 卧钩",
+      "z_order": 5,
+      "source_mask": "stroke_05.png",
+      "outline_expansion_px_at_2048": 0,
+      "area_before_occlusion_px": 18344,
+      "visible_area_px": 18344,
+      "effective_area_px": 17890,
+      "effective_radius_px": 75.46,
+      "start_marker": [
+        774,
+        546
+      ],
+      "overlapped_by": [],
+      "sha256": "1c8f95721292e714117dd1c379eddd9e81c4df27a6870e343a266c7b86a1a673"
+    },
+    {
+      "order": 6,
+      "label": "心 · 中点",
+      "z_order": 6,
+      "source_mask": "stroke_06.png",
+      "outline_expansion_px_at_2048": 18,
+      "area_before_occlusion_px": 5236,
+      "visible_area_px": 5236,
+      "effective_area_px": 5207,
+      "effective_radius_px": 40.71,
+      "start_marker": [
+        864,
+        497
+      ],
+      "overlapped_by": [],
+      "sha256": "3b5d029223bd3391211477bd9580f0f173cfdc407e66ab8ec363efa2b5df6ef3"
+    },
+    {
+      "order": 7,
+      "label": "心 · 右点",
+      "z_order": 7,
+      "source_mask": "stroke_07.png",
+      "outline_expansion_px_at_2048": 0,
+      "area_before_occlusion_px": 5712,
+      "visible_area_px": 5712,
+      "effective_area_px": 5476,
+      "effective_radius_px": 41.75,
+      "start_marker": [
+        1044,
+        489
+      ],
+      "overlapped_by": [],
+      "sha256": "cb553b136ba9ccb42dec4590f6be9fc450ee362f421bea48445da78fa8e67cf7"
+    }
+  ],
+  "jpg_sha256": {
+    "glyph.jpg": "bd675c0138951189259f7612a1bec5bdb0e22e150991f1c68d5804c8d260fe50",
+    "stroke_order.jpg": "baa13d4660c4451c09cb02a0bdbd49f0f108d7fe9d85ae7c9065c4782c2ff217"
+  }
+}

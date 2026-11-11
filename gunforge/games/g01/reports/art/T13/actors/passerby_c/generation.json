@@ -1,0 +1,23 @@
+{
+  "provider": "builtin_image_gen",
+  "attempt": 1,
+  "output_id": "exec-1c871151-d3b2-4991-9c5a-8f8b82ec3606.png",
+  "size": [
+    1536,
+    1024
+  ],
+  "source": "source/passerby_c_sheet.png",
+  "sha256": "d78fa67f4ef0d78bf331daa7005795575d3f336a15ccb2f8b6058faed0ced999",
+  "references": [
+    {
+      "path": "../T09/generation/passerby_c_v2.png",
+      "sha256": "dd6146b3dfd26299c0ae597c37ffe7c550a4a530a1c06eff59639129f8c41431"
+    },
+    {
+      "path": "../T12/source/passerby_b.png",
+      "sha256": "7b22ffbacddd155d0d56a0e26751c56dbc5e0cf57d4131beb3a7fe88ff0c9e09"
+    }
+  ],
+  "prompt": "Use case: illustration-story. Generate a new, truly transparent RGBA sprite sheet with ten separated pieces for a game paper-puppet NPC. Reference 1 is the exact young adult female character identity, subdued olive 1990s windbreaker, tied black hair, plum trousers, brown shoes and tan crossbody bag. Reference 2 is geometry/layout only; do not borrow the man's identity or clothes. Preserve the woman's face, age and color palette. Same height/scale and three-quarter facing right across all pieces. Exactly three rows on a landscape sheet: top row 2 pieces [head with neck and short low black ponytail; torso with collar, olive jacket, tan diagonal strap and attached tan satchel]; middle row 4 pieces [left upper arm sleeve with rounded shoulder tab; right upper arm sleeve with rounded shoulder tab; left forearm with cuff and hand; right forearm with cuff and hand]; bottom row 4 pieces [left upper trouser leg; right upper trouser leg; left shin with brown shoe; right shin with brown shoe]. Each piece is a single connected opaque silhouette, each has sufficient rounded hidden joint overlap, all have transparent gutters between every piece. No sample of a complete person, no extra props, no layout boxes, no text or numbers. A clean cut-paper silhouette with muted matte fibers and restrained highlights. No shadow outside the pieces, no solid background or visible checkerboard.",
+  "postprocess": "The existing ten-part paper puppet binder with exposed light joint tabs matched to their adjacent cloth."
+}

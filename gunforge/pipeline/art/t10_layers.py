@@ -9,7 +9,7 @@ from scipy import ndimage
 from artlib import digest, write_json
 from checks import run
 from t10_preview import CANVAS, COMPOSITION_LIGHTS, COMPOSITION_SIZE, ORIGIN, REPORT
-from t10_preview import composition_image, light_composition, read_json, save_jpg
+from t10_preview import light_composition, read_json, save_jpg
 
 
 def region(paths, guide_size):
@@ -71,8 +71,8 @@ def layer_texture(folder, spec, extent, visible, pixels):
     return layer
 
 
-def split_lighting(stage, original, off, folder, lamp_mask, lamp_visible, lamp_hit):
-    _, center, emitter, spill = COMPOSITION_LIGHTS[stage]
+def split_lighting(geometry, original, off, folder, lamp_mask, lamp_visible, lamp_hit):
+    center, emitter, spill = geometry
     lit = light_composition(original, center, emitter, spill)
     lit = np.asarray(ImageOps.fit(lit, COMPOSITION_SIZE, Image.Resampling.LANCZOS))
     delta = np.maximum(0, lit.astype(np.int16) - off.astype(np.int16)).astype("uint8")
@@ -93,26 +93,41 @@ def split_lighting(stage, original, off, folder, lamp_mask, lamp_visible, lamp_h
             "hit_mask": "lamp_hit.png", "hit_pos": [hx, hy], "aim": [int(x), int(y)]}
 
 
-def build(stage, specs, guide_size, output):
+def t10_sources():
+    return {stage: (REPORT / "compositions" / f"{source}.png", (center, emitter, spill))
+            for stage, (source, center, emitter, spill) in COMPOSITION_LIGHTS.items()}
+
+
+def build(stage, specs, guide_size, output, source_spec=None):
     folder = output / stage
     folder.mkdir(parents=True, exist_ok=True)
-    original = composition_image(stage)
+    source, geometry = source_spec if source_spec is not None else t10_sources()[stage]
+    with Image.open(source) as image:
+        original = image.convert("RGB")
     off = np.asarray(ImageOps.fit(original, COMPOSITION_SIZE, Image.Resampling.LANCZOS))
-    pixels = np.pad(off, ((ORIGIN[1], ORIGIN[1]), (ORIGIN[0], ORIGIN[0]), (0, 0)), mode="reflect")
+    padding = ((ORIGIN[1], ORIGIN[1]), (ORIGIN[0], ORIGIN[0]), (0, 0))
+    pixels = np.pad(off, padding, mode="reflect")
+    extended_pixels = np.pad(off, padding, mode="edge") if any(spec.get("extend_edges") for spec in specs) else pixels
     all_canvas = np.ones(pixels.shape[:2], dtype=bool)
     opaque = {"id": "sky", "parallax": .10}
     masks = [all_canvas, *(region(spec["paths"], guide_size) for spec in specs)]
     remaining = all_canvas.copy()
     layers = []
+    lights = []
     for spec, extent in reversed(list(zip([opaque, *specs], masks))):
         visible = extent & remaining
         if not visible.any():
             raise ValueError(f"{stage}: {spec['id']} has no visible pixels")
         remaining &= ~extent
-        layers.append(layer_texture(folder, spec, extent, visible, pixels))
+        layer_pixels = extended_pixels if spec.get("extend_edges") else pixels
+        layers.append(layer_texture(folder, spec, extent, visible, layer_pixels))
         if spec["id"] == "lamp":
+            if geometry is None:
+                raise ValueError(f"{stage}: lamp has no light geometry")
             hit = region(spec["hit"], guide_size)
-            light = split_lighting(stage, original, off, folder, extent, visible, hit)
+            lights.append(split_lighting(geometry, original, off, folder, extent, visible, hit))
+    if geometry is not None and not lights:
+        raise ValueError(f"{stage}: light geometry has no lamp layer")
     layers.reverse()
     reconstructed = Image.new("RGBA", CANVAS)
     for layer in layers:
@@ -121,14 +136,14 @@ def build(stage, specs, guide_size, output):
     crop = (*ORIGIN, ORIGIN[0] + COMPOSITION_SIZE[0], ORIGIN[1] + COMPOSITION_SIZE[1])
     if not np.array_equal(np.asarray(reconstructed.crop(crop).convert("RGB")), off):
         raise ValueError(f"{stage}: layered rest frame differs from composition")
-    source = REPORT / "compositions" / f"{COMPOSITION_LIGHTS[stage][0]}.png"
     manifest = {"id": stage, "status": "runtime_probe_candidate", "source_sha256": digest(source),
                 "canvas": CANVAS, "content_origin": ORIGIN, "content_size": COMPOSITION_SIZE,
-                "layers": layers, "lights": [light], "rest_matches_original": True}
+                "layers": layers, "lights": lights, "rest_matches_original": True}
     write_json(folder / "station.json", manifest)
+    return manifest
 
 
-def verify_captures(captures, output):
+def verify_captures(captures, output, entries=None):
     evidence = read_json(captures / "engine_checks.json")
     if not evidence["passed"] or not evidence["gpu_capture"]:
         raise ValueError("Passing GPU probe results are required")
@@ -136,11 +151,15 @@ def verify_captures(captures, output):
     frames.mkdir(parents=True, exist_ok=True)
     tags = ["rest", "lit", *(f"corner_{index}{suffix}"
                              for index in range(4) for suffix in ("", "_against"))]
-    for stage, (_, center, emitter, spill) in COMPOSITION_LIGHTS.items():
-        original = composition_image(stage)
-        expected = {"rest": original, "lit": light_composition(original, center, emitter, spill)}
+    entries = t10_sources() if entries is None else entries
+    for stage, (source, geometry) in entries.items():
+        with Image.open(source) as image:
+            original = image.convert("RGB")
+        expected = {"rest": original}
+        if geometry is not None:
+            expected["lit"] = light_composition(original, *geometry)
         checks = {}
-        for tag in tags:
+        for tag in (tag for tag in tags if geometry is not None or tag != "lit"):
             path = captures / f"{stage}_{tag}.png"
             with Image.open(path) as frame:
                 if frame.size != COMPOSITION_SIZE or "A" not in frame.getbands():
@@ -164,7 +183,8 @@ def verify_captures(captures, output):
                 raise ValueError(f"Capture exceeds visible brightness cap: {path}")
         evidence["samples"][stage]["captures"] = checks
     write_json(output / "engine_checks.json", evidence)
-    print("40 GPU captures: full coverage, approved color match and brightness checks passed")
+    count = sum(len(stage["captures"]) for stage in evidence["samples"].values())
+    print(f"{count} GPU captures: full coverage, render-source match and brightness checks passed")
 
 
 def main():

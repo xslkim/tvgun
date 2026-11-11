@@ -1,0 +1,130 @@
+{
+  "package": "paper.platform",
+  "source_revision": "e34d5afe0d1644a28c5bfa1f0b855f6cb5739beb526767c5ca0be3c72b581a30",
+  "build_id": "95507ffec3e8e6fe26952ca2e3e4b5588e25008fa15af3e57be4b075b5e99adb",
+  "status": "candidate_software_passed",
+  "godot": "4.6.3 Compatibility",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "player_launch": {
+    "ready": true,
+    "http_error": 0,
+    "udp_errors": []
+  },
+  "gameplay": {
+    "build_id": "95507ffec3e8e6fe26952ca2e3e4b5588e25008fa15af3e57be4b075b5e99adb",
+    "failures": [],
+    "gpu_capture": true,
+    "lives": 5.0,
+    "passed": true,
+    "rescued": 1,
+    "shots": 10,
+    "signal_vulnerable_ticks": 323
+  },
+  "signal_patch_median_yprime": {
+    "dark": 0.1125,
+    "lit": 0.729
+  },
+  "regressions": [
+    "platform clear and failure retry",
+    "signal relight and localized vulnerability",
+    "open, folding and closed umbrella permissions",
+    "unlit enemy warning and release",
+    "both foreground luggage blockers",
+    "protected clerk body and chest ink rescue",
+    "user-accepted waiting-room source unchanged; waiting-room headless run passed"
+  ],
+  "frames": {
+    "platform_off": {
+      "preview": "platform_off.jpg",
+      "sha256": "fb01af3825a7e65a6b5dbd43f243220a245d0c29c708c345c78cb5ed693a6036",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.007563452875952876
+        }
+      }
+    },
+    "platform_folding": {
+      "preview": "platform_folding.jpg",
+      "sha256": "fe87e693f0c3e25621ea5ee430e2a19be8d1a40b291e60326b148f84d7006ce5",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.007271093208593209
+        }
+      }
+    },
+    "platform_folded_dark": {
+      "preview": "platform_folded_dark.jpg",
+      "sha256": "ac2352e1331335704f82acbef037e73add3bdbd5ccc652fce310122541f5dd35",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.007652484214984215
+        }
+      }
+    },
+    "platform_lit": {
+      "preview": "platform_lit.jpg",
+      "sha256": "eb8178f8e7f5574882837967c32342d6dcacd0201315b44dfed7a48eda7c6e94",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.007662109224609225
+        }
+      }
+    },
+    "platform_rescued": {
+      "preview": "platform_rescued.jpg",
+      "sha256": "e0ee782b3b58ba9260ae11fbcbd9202979be0ac7f9936e8937d4adbedd318ef5",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.007453366828366829
+        }
+      }
+    },
+    "platform_crow_warning": {
+      "preview": "platform_crow_warning.jpg",
+      "sha256": "ac83d624f00790461455e424bee835e11781fd62c747a5d5f605f7dd1034402e",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.007626617001617001
+        }
+      }
+    },
+    "platform_crow_attack": {
+      "preview": "platform_crow_attack.jpg",
+      "sha256": "f65312845b753dd14df2bb25ade7082109027d91fb678144fa06d59126368cd2",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.007654890467390468
+        }
+      }
+    },
+    "platform_umbrella_attack": {
+      "preview": "platform_umbrella_attack.jpg",
+      "sha256": "9f60ebc6347702683009b2b6527d4aff481fd8e230644fd3ced3aa8ef8031ae3",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0074461480711480715
+        }
+      }
+    }
+  },
+  "pending": [
+    "T13 physical lightgun on monitor and TV",
+    "A5 overall art review"
+  ]
+}

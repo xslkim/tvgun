@@ -1,0 +1,412 @@
+{
+  "projectionist": {
+    "parts": 10,
+    "poses": [
+      "idle",
+      "peek",
+      "walk",
+      "startle",
+      "wave_for_help",
+      "struggle",
+      "rescued_bounce",
+      "thank"
+    ],
+    "major_silhouette_components": {
+      "idle": 1,
+      "peek": 1,
+      "walk": 1,
+      "startle": 1,
+      "wave_for_help": 1,
+      "struggle": 1,
+      "rescued_bounce": 1,
+      "thank": 1
+    },
+    "sampled_joint_overlap_px": {
+      "idle": {
+        "head": 674,
+        "upper_arm_l": 550,
+        "upper_arm_r": 568,
+        "forearm_l": 622,
+        "forearm_r": 624,
+        "thigh_l": 535,
+        "thigh_r": 543,
+        "shin_l": 682,
+        "shin_r": 790
+      },
+      "peek": {
+        "head": 675,
+        "upper_arm_l": 542,
+        "upper_arm_r": 581,
+        "forearm_l": 607,
+        "forearm_r": 632,
+        "thigh_l": 529,
+        "thigh_r": 549,
+        "shin_l": 689,
+        "shin_r": 792
+      },
+      "walk": {
+        "head": 674,
+        "upper_arm_l": 544,
+        "upper_arm_r": 556,
+        "forearm_l": 607,
+        "forearm_r": 624,
+        "thigh_l": 529,
+        "thigh_r": 541,
+        "shin_l": 682,
+        "shin_r": 804
+      },
+      "startle": {
+        "head": 675,
+        "upper_arm_l": 544,
+        "upper_arm_r": 579,
+        "forearm_l": 666,
+        "forearm_r": 659,
+        "thigh_l": 535,
+        "thigh_r": 543,
+        "shin_l": 682,
+        "shin_r": 790
+      },
+      "wave_for_help": {
+        "head": 674,
+        "upper_arm_l": 550,
+        "upper_arm_r": 572,
+        "forearm_l": 622,
+        "forearm_r": 649,
+        "thigh_l": 535,
+        "thigh_r": 543,
+        "shin_l": 682,
+        "shin_r": 790
+      },
+      "struggle": {
+        "head": 663,
+        "upper_arm_l": 541,
+        "upper_arm_r": 588,
+        "forearm_l": 661,
+        "forearm_r": 641,
+        "thigh_l": 547,
+        "thigh_r": 536,
+        "shin_l": 675,
+        "shin_r": 790
+      },
+      "rescued_bounce": {
+        "head": 674,
+        "upper_arm_l": 550,
+        "upper_arm_r": 568,
+        "forearm_l": 622,
+        "forearm_r": 624,
+        "thigh_l": 532,
+        "thigh_r": 541,
+        "shin_l": 683,
+        "shin_r": 792
+      },
+      "thank": {
+        "head": 662,
+        "upper_arm_l": 550,
+        "upper_arm_r": 568,
+        "forearm_l": 639,
+        "forearm_r": 666,
+        "thigh_l": 535,
+        "thigh_r": 543,
+        "shin_l": 682,
+        "shin_r": 790
+      }
+    },
+    "checks": {
+      "C10": {
+        "status": "pending",
+        "reason": "Sampled joints overlap; check extreme motion and copper tabs in runtime"
+      }
+    },
+    "scope": "preliminary part map and pose samples"
+  },
+  "ticket_clerk": {
+    "parts": 10,
+    "poses": [
+      "idle",
+      "peek",
+      "walk",
+      "startle",
+      "wave_for_help",
+      "struggle",
+      "rescued_bounce",
+      "thank"
+    ],
+    "major_silhouette_components": {
+      "idle": 1,
+      "peek": 1,
+      "walk": 1,
+      "startle": 1,
+      "wave_for_help": 1,
+      "struggle": 1,
+      "rescued_bounce": 1,
+      "thank": 1
+    },
+    "sampled_joint_overlap_px": {
+      "idle": {
+        "head": 605,
+        "upper_arm_l": 598,
+        "upper_arm_r": 567,
+        "forearm_l": 234,
+        "forearm_r": 27,
+        "thigh_l": 229,
+        "thigh_r": 618,
+        "shin_l": 794,
+        "shin_r": 729
+      },
+      "peek": {
+        "head": 609,
+        "upper_arm_l": 601,
+        "upper_arm_r": 562,
+        "forearm_l": 234,
+        "forearm_r": 26,
+        "thigh_l": 234,
+        "thigh_r": 610,
+        "shin_l": 796,
+        "shin_r": 737
+      },
+      "walk": {
+        "head": 605,
+        "upper_arm_l": 600,
+        "upper_arm_r": 576,
+        "forearm_l": 236,
+        "forearm_r": 24,
+        "thigh_l": 222,
+        "thigh_r": 616,
+        "shin_l": 790,
+        "shin_r": 734
+      },
+      "startle": {
+        "head": 610,
+        "upper_arm_l": 590,
+        "upper_arm_r": 548,
+        "forearm_l": 255,
+        "forearm_r": 39,
+        "thigh_l": 229,
+        "thigh_r": 618,
+        "shin_l": 794,
+        "shin_r": 729
+      },
+      "wave_for_help": {
+        "head": 605,
+        "upper_arm_l": 598,
+        "upper_arm_r": 525,
+        "forearm_l": 234,
+        "forearm_r": 174,
+        "thigh_l": 229,
+        "thigh_r": 618,
+        "shin_l": 794,
+        "shin_r": 729
+      },
+      "struggle": {
+        "head": 599,
+        "upper_arm_l": 590,
+        "upper_arm_r": 549,
+        "forearm_l": 250,
+        "forearm_r": 25,
+        "thigh_l": 237,
+        "thigh_r": 611,
+        "shin_l": 789,
+        "shin_r": 709
+      },
+      "rescued_bounce": {
+        "head": 605,
+        "upper_arm_l": 598,
+        "upper_arm_r": 567,
+        "forearm_l": 234,
+        "forearm_r": 27,
+        "thigh_l": 221,
+        "thigh_r": 617,
+        "shin_l": 794,
+        "shin_r": 717
+      },
+      "thank": {
+        "head": 597,
+        "upper_arm_l": 598,
+        "upper_arm_r": 567,
+        "forearm_l": 258,
+        "forearm_r": 85,
+        "thigh_l": 229,
+        "thigh_r": 618,
+        "shin_l": 794,
+        "shin_r": 729
+      }
+    },
+    "checks": {
+      "C10": {
+        "status": "pending",
+        "reason": "Sampled joints overlap; check extreme motion and copper tabs in runtime"
+      }
+    },
+    "scope": "preliminary part map and pose samples"
+  },
+  "passerby_b": {
+    "parts": 10,
+    "poses": [
+      "idle",
+      "peek",
+      "walk",
+      "startle",
+      "wave_for_help",
+      "struggle",
+      "rescued_bounce",
+      "thank"
+    ],
+    "major_silhouette_components": {
+      "idle": 1,
+      "peek": 1,
+      "walk": 1,
+      "startle": 1,
+      "wave_for_help": 1,
+      "struggle": 1,
+      "rescued_bounce": 1,
+      "thank": 1
+    },
+    "sampled_joint_overlap_px": {
+      "idle": {
+        "head": 690,
+        "upper_arm_l": 744,
+        "upper_arm_r": 754,
+        "forearm_l": 738,
+        "forearm_r": 794,
+        "thigh_l": 332,
+        "thigh_r": 786,
+        "shin_l": 783,
+        "shin_r": 520
+      },
+      "peek": {
+        "head": 690,
+        "upper_arm_l": 741,
+        "upper_arm_r": 756,
+        "forearm_l": 738,
+        "forearm_r": 793,
+        "thigh_l": 330,
+        "thigh_r": 787,
+        "shin_l": 780,
+        "shin_r": 526
+      },
+      "walk": {
+        "head": 690,
+        "upper_arm_l": 743,
+        "upper_arm_r": 752,
+        "forearm_l": 740,
+        "forearm_r": 791,
+        "thigh_l": 331,
+        "thigh_r": 786,
+        "shin_l": 777,
+        "shin_r": 534
+      },
+      "startle": {
+        "head": 691,
+        "upper_arm_l": 732,
+        "upper_arm_r": 761,
+        "forearm_l": 751,
+        "forearm_r": 800,
+        "thigh_l": 332,
+        "thigh_r": 786,
+        "shin_l": 783,
+        "shin_r": 520
+      },
+      "wave_for_help": {
+        "head": 690,
+        "upper_arm_l": 744,
+        "upper_arm_r": 754,
+        "forearm_l": 738,
+        "forearm_r": 794,
+        "thigh_l": 332,
+        "thigh_r": 786,
+        "shin_l": 783,
+        "shin_r": 520
+      },
+      "struggle": {
+        "head": 690,
+        "upper_arm_l": 728,
+        "upper_arm_r": 759,
+        "forearm_l": 758,
+        "forearm_r": 788,
+        "thigh_l": 342,
+        "thigh_r": 775,
+        "shin_l": 780,
+        "shin_r": 522
+      },
+      "rescued_bounce": {
+        "head": 690,
+        "upper_arm_l": 744,
+        "upper_arm_r": 754,
+        "forearm_l": 738,
+        "forearm_r": 794,
+        "thigh_l": 331,
+        "thigh_r": 786,
+        "shin_l": 777,
+        "shin_r": 528
+      },
+      "thank": {
+        "head": 694,
+        "upper_arm_l": 744,
+        "upper_arm_r": 754,
+        "forearm_l": 736,
+        "forearm_r": 799,
+        "thigh_l": 332,
+        "thigh_r": 786,
+        "shin_l": 783,
+        "shin_r": 520
+      }
+    },
+    "checks": {
+      "C10": {
+        "status": "pending",
+        "reason": "Sampled joints overlap; check extreme motion and copper tabs in runtime"
+      }
+    },
+    "scope": "preliminary part map and pose samples"
+  },
+  "ink_tape": {
+    "id": "ink_tape",
+    "states": {
+      "vulnerable": {
+        "sprite": "vulnerable.png",
+        "body": "body.png",
+        "primary": "hit.png",
+        "weak": "weak_mask.png",
+        "weak_texture": "weak.png",
+        "sdf": "sdf.png"
+      }
+    },
+    "display_width_px": 308,
+    "effective_radius_px": 49.08773613043583,
+    "C16": {
+      "status": "pass",
+      "reason": "Offline SDF round-trip; engine sampling is a separate pending check",
+      "details": {
+        "max_error_px": 0.0
+      }
+    }
+  },
+  "ink_umbrella": {
+    "id": "ink_umbrella",
+    "states": {
+      "vulnerable": {
+        "sprite": "vulnerable.png",
+        "body": "body.png",
+        "primary": "hit.png",
+        "weak": "weak_mask.png",
+        "weak_texture": "weak.png",
+        "sdf": "sdf.png"
+      },
+      "open": {
+        "sprite": "open.png",
+        "invalid": "canopy_invalid.png",
+        "primary": null,
+        "weak": null
+      }
+    },
+    "display_width_px": 255,
+    "effective_radius_px": 59.580129663518136,
+    "C16": {
+      "status": "pass",
+      "reason": "Offline SDF round-trip; engine sampling is a separate pending check",
+      "details": {
+        "max_error_px": 0.0
+      }
+    }
+  }
+}

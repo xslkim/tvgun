@@ -1,0 +1,215 @@
+[
+  {
+    "id": "ticket_office",
+    "output": "source/ticket_office.png",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "output_id": "exec-93961f91-0d11-4b96-a877-a93655c59250.png",
+    "prompt": "Wide 1776:936 game background composition study for Paper Lantern City, a 1990s Chinese small-town cinema at night. Input 1 is a gameplay layout guide. Use its large room placement, quiet lanes, silhouettes, and framing as guides; remove every line, rectangle annotation, HUD, and letter from the art. Input 2 is material reference only: handmade dyed rice paper, flat matte stacked cutouts, subtle fine fibers, crisp silhouette, simple silhouettes, soft nighttime contrast. Old Cinema chapter palette cool charcoal indigo base, faded plum and magenta, pale teal accent, muted amber incidental details, gentle value separation. Saturation and luminance restrained, no pure white, no photorealism, no bloom, no red overlay or tint, no people, characters, text, logos or typography. Foreground only at designated edges. Front-on ticket lobby. An old wooden ticket window on the left with a single frosted horizontal OFF lightbox centered at x=26%, y=29%, distinct dark frame and glass. Low counter only at lower left, low queue rail only at far right. Clear quiet center for a standing clerk and clear middle-right for enemy motion.",
+    "references": [
+      "whiteboxes/ticket_office.png",
+      "../T10/compositions/video_shop_02.png"
+    ],
+    "size": [
+      1728,
+      910
+    ],
+    "sha256": "f92be61316fffe45837db8ac42ffe00c6ea6cef5779ff279c90c663863fdc330"
+  },
+  {
+    "id": "poster_hall",
+    "output": "source/poster_hall.png",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "output_id": "exec-a2ad0e34-fb18-4e5d-8c15-a6acdc1cfdab.png",
+    "prompt": "Wide 1776:936 game background composition study for Paper Lantern City, a 1990s Chinese small-town cinema at night. Input 1 is a gameplay layout guide. Use its large room placement, quiet lanes, silhouettes, and framing as guides; remove every line, rectangle annotation, HUD, and letter from the art. Input 2 is material reference only: handmade dyed rice paper, flat matte stacked cutouts, subtle fine fibers, crisp silhouette, simple silhouettes, soft nighttime contrast. Old Cinema chapter palette cool charcoal indigo base, faded plum and magenta, pale teal accent, muted amber incidental details, gentle value separation. Saturation and luminance restrained, no pure white, no photorealism, no bloom, no red overlay or tint, no people, characters, text, logos or typography. Foreground only at designated edges. Long cinema corridor receding into depth, faded blank poster panels with geometric images, no text. One clearly identifiable unlit frosted wall sconce x=19%, y=32%, on the left. Shallow low display cabinet at extreme lower left, right doorway and low foreground edge at far right. Clear uninterrupted center and middle-right movement space.",
+    "references": [
+      "whiteboxes/poster_hall.png",
+      "../T10/compositions/video_shop_02.png"
+    ],
+    "size": [
+      1728,
+      910
+    ],
+    "sha256": "4511cdbf152b66dc84886b8cc6cbe37327b0e7765d832e6c1b43156d50debcbc"
+  },
+  {
+    "id": "auditorium",
+    "output": "source/auditorium.png",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "output_id": "exec-7012eb66-3f1f-435b-a4ef-ed3e99aa3143.png",
+    "prompt": "Wide 1776:936 game background composition study for Paper Lantern City, a 1990s Chinese small-town cinema at night. Input 1 is a gameplay layout guide. Use its large room placement, quiet lanes, silhouettes, and framing as guides; remove every line, rectangle annotation, HUD, and letter from the art. Input 2 is material reference only: handmade dyed rice paper, flat matte stacked cutouts, subtle fine fibers, crisp silhouette, simple silhouettes, soft nighttime contrast. Old Cinema chapter palette cool charcoal indigo base, faded plum and magenta, pale teal accent, muted amber incidental details, gentle value separation. Saturation and luminance restrained, no pure white, no photorealism, no bloom, no red overlay or tint, no people, characters, text, logos or typography. Foreground only at designated edges. View looking down a broad unobstructed central aisle between only two low banks of cinema seats in the lower left and lower right. A big faded silver screen above, rows of seats must stay below y=60% leaving clear air on upper left and standing space to the right of the aisle. Single wall sconce OFF x=79%, y=29%, visible isolated at upper right. A faint cool diagonal projection from a distant small booth window, no strong glow.",
+    "references": [
+      "whiteboxes/auditorium.png",
+      "../T10/compositions/video_shop_02.png"
+    ],
+    "size": [
+      1729,
+      910
+    ],
+    "sha256": "4f6af681c866fd620fec967601af985efd178c80e14ad8f61c1823fff29f4a1f"
+  },
+  {
+    "id": "projection_booth",
+    "output": "source/projection_booth.png",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "output_id": "exec-ea5ad7d3-1ed5-41d4-98a5-b17ad2b7c73d.png",
+    "prompt": "Wide 1776:936 game background composition study for Paper Lantern City, a 1990s Chinese small-town cinema at night. Input 1 is a gameplay layout guide. Use its large room placement, quiet lanes, silhouettes, and framing as guides; remove every line, rectangle annotation, HUD, and letter from the art. Input 2 is material reference only: handmade dyed rice paper, flat matte stacked cutouts, subtle fine fibers, crisp silhouette, simple silhouettes, soft nighttime contrast. Old Cinema chapter palette cool charcoal indigo base, faded plum and magenta, pale teal accent, muted amber incidental details, gentle value separation. Saturation and luminance restrained, no pure white, no photorealism, no bloom, no red overlay or tint, no people, characters, text, logos or typography. Foreground only at designated edges. Eye-level old projection booth. Equipment cases and editing worktables arranged at left and right edges; no table across the center. Large simple recessed projection window left of center. One clearly distinguishable unlit amber-frosted rectangular work light centered at x=49%, y=27%. Open center in lower half for a standing resident and open right-middle area for movement.",
+    "references": [
+      "whiteboxes/projection_booth.png",
+      "../T10/compositions/video_shop_02.png"
+    ],
+    "size": [
+      1728,
+      910
+    ],
+    "sha256": "6c75b58111b78bcf1802e7a42daeb80687ba8303a64146f4707c6c24fd4e8b27"
+  },
+  {
+    "id": "screen_stage",
+    "output": "source/screen_stage.png",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "output_id": "exec-88c4d5dc-ed00-4106-ae6c-e35a1725445d.png",
+    "prompt": "Wide 1776:936 game background composition study for Paper Lantern City, a 1990s Chinese small-town cinema at night. Input 1 is a gameplay layout guide. Use its large room placement, quiet lanes, silhouettes, and framing as guides; remove every line, rectangle annotation, HUD, and letter from the art. Input 2 is material reference only: handmade dyed rice paper, flat matte stacked cutouts, subtle fine fibers, crisp silhouette, simple silhouettes, soft nighttime contrast. Old Cinema chapter palette cool charcoal indigo base, faded plum and magenta, pale teal accent, muted amber incidental details, gentle value separation. Saturation and luminance restrained, no pure white, no photorealism, no bloom, no red overlay or tint, no people, characters, text, logos or typography. Foreground only at designated edges. Final cinema screen arena from a frontal audience viewpoint. Large blank low-saturation silver screen exactly x=17–83%, y=15–64%, plain bluish-gray surface with subtle rice-paper fibers, suitable for a separately layered giant shadow. Foreground contains only low seat silhouettes at extreme bottom corners, and a clear open floor across x=15–85% for three separately placed projectors. DO NOT paint projectors, reels, lamps, figures, a shadow creature, rays or light beams into the background.",
+    "references": [
+      "whiteboxes/screen_stage.png",
+      "../T10/compositions/video_shop_02.png"
+    ],
+    "size": [
+      1728,
+      910
+    ],
+    "sha256": "d87f52b2395480ad07d2e85bcf3d8560903b7ae578bf701e6ba42b308c080541"
+  },
+  {
+    "id": "projector",
+    "output": "source/projector.png",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "output_id": "exec-55fa1bf9-d3f4-4ad2-8b1d-31cd65acc185.png",
+    "prompt": "Single isolated 1990s Chinese cinema projector machine body cutout, three-quarter near frontal view with simple prominent upward facing lens centered above a dark indigo and brass enclosure, subtly aged cut-paper tactile textures. Use approved reference for machine design. No film reel, no projection beam, no glow, no cast shadow, no stand extending below, no floor, no typography. Centered complete object with generous padding. True transparent background.",
+    "references": [
+      "../T09/generation/projector.png"
+    ],
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "2a0361400145eb55b7f6a912cce578cfaad5fa6a11a9dce5a838820304a59910"
+  },
+  {
+    "id": "reel",
+    "output": "source/reel.png",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "output_id": "exec-0d30bc84-587e-4634-997d-39c967e45de2.png",
+    "prompt": "Single empty 1990s cinema circular film reel front-on cutout, aged matte warm-brass rice-paper material with five transparent spokes / holes, simple round contour and small dark hub, subdued highlights. Follow approved reference design. A clean reel: no ink, red marks, decals, text, camera angle, backdrop or shadows. Real transparent background, including holes.",
+    "references": [
+      "../T09/generation/film_reel_v2.png"
+    ],
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "f377c72f082fbc358b0c98b026ecea9ae50ee8b0530493bcd57a102041fab28d"
+  },
+  {
+    "id": "shadow",
+    "output": "source/shadow.png",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "output_id": "exec-2c2fab7b-adb9-448f-95f4-6212b297439b.png",
+    "prompt": "Extract the central villain silhouette from the approved Silver Screen Shadow reference as a single standalone 2D translucent ink game sprite, dark indigo plum-black spectral head and long tattered fan-shaped strips of cinema film draping down, hand-cut rice paper and absorbed ink grain. It occupies a roughly horizontal 3:2 silhouette that reads as a giant screen projection. No movie screen, no frame, no lanterns, no projector, no text, no eye lights, no bright highlights, no ground. True transparent background with generous margins.",
+    "references": [
+      "../T09/generation/screen_shadow.png"
+    ],
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "24732d207a046f5ac9adaee38ca5739b11d7afd68f5fe9b399c2752e50503011"
+  },
+  {
+    "id": "ticket_office",
+    "output": "source/ticket_office_v2.png",
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "output_id": "exec-538d7897-4eb0-4764-aa0f-f6e21c9bcbd4.png",
+    "prompt": "Finished wide 1.90:1 composition for an evening 1990s Chinese small-town movie theater ticket lobby, hand-layered dyed rice-paper cutout art. Use the supplied gameplay guide only for broad placements. Remove all marks, boxes and labels. Left third one old wooden ticket window, with a separate blank frosted rectangular OFF lightbox centered specifically at x=26%, y=29%. Lower left small ticket counter close to edge, lower right queue railing close to edge. A wide unobstructed central floor for a standing clerk, and quiet space at center right for moving actors. Enclosed interior hall with low plain ceiling, dark charcoal indigo, faded muted plum paint, subtle pale teal touches, restrained diffuse lighting, no pure white. No foliage, no outdoor street, no signs with letters, no people, no hot bloom or global color cast. True clean composition, no HUD.",
+    "references": [
+      "whiteboxes/ticket_office.png"
+    ],
+    "size": [
+      1728,
+      910
+    ],
+    "sha256": "d4c3e87223d4c5d99a9d4148d38dfe11c991a968b308c200c3c6b991f4d1247d"
+  },
+  {
+    "id": "poster_hall",
+    "output": "source/poster_hall_v2.png",
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "output_id": "exec-5f1c1c93-8b77-4acd-8f3b-45bfc4ee9540.png",
+    "prompt": "Create a finished composition study for Paper Lantern City chapter Old Cinema. Reference supplied is ONLY a loose gameplay positioning guide; do not render its markings, boxes or words. Wide landscape 1.90:1. Handmade matte layered dyed rice paper cutout art, late 1990s China, diffuse low-key evening interior, clean shapes, subdued charcoal-indigo base, a few faded plum and teal accents, subtle paper fibers, visible silhouettes. No text, symbols, overlay, bright white, haze or exaggerated bloom. CRITICAL: interior cinema, completely NO sky, outdoors, exterior facades, trees, leaves, foliage or plant motifs. Keep the specified light unlit. An enclosed INTERIOR of a Chinese small-town cinema, eye level, very wide front view, shallow central vanishing point with an interior double door at the far end. A row of old blank geometric film posters on indoor plaster walls, visible dark ceiling spanning the ENTIRE image, worn wood wainscoting. Only ONE recognizable unlit glass brass wall sconce on the left at x 19%, y 32%. Low display unit only at extreme lower left, low doorframe edge only at extreme right. Leave wide quiet central and middle-right air and flooring for actors. Small vintage furnishings only; the room is clearly indoors.",
+    "references": [
+      "whiteboxes/poster_hall.png"
+    ],
+    "size": [
+      1728,
+      910
+    ],
+    "sha256": "6af87a5e48e53a32c8f1b1c743cdbd9db5b3c18596648c734520314901c82a5e"
+  },
+  {
+    "id": "auditorium",
+    "output": "source/auditorium_v2.png",
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "output_id": "exec-63a620d5-2139-48bb-a011-07512908d682.png",
+    "prompt": "Create a finished composition study for Paper Lantern City chapter Old Cinema. Reference supplied is ONLY a loose gameplay positioning guide; do not render its markings, boxes or words. Wide landscape 1.90:1. Handmade matte layered dyed rice paper cutout art, late 1990s China, diffuse low-key evening interior, clean shapes, subdued charcoal-indigo base, a few faded plum and teal accents, subtle paper fibers, visible silhouettes. No text, symbols, overlay, bright white, haze or exaggerated bloom. CRITICAL: interior cinema, completely NO sky, outdoors, exterior facades, trees, leaves, foliage or plant motifs. Keep the specified light unlit. Full interior auditorium with visible ceiling and both interior walls. Looking from rear of room toward one large dim projection screen centered horizontally, upper middle. Only low banks of old dusty violet cinema seats below 60 percent height at left and right edges, open broad center aisle going to screen. Single identifiable OFF sconce on right wall at x79%, y29%. Very faint indigo diagonal projection atmospheric light, no bright glow. Keep the right of aisle and air above left seats empty for figures. Do not decorate ceiling with anything organic.",
+    "references": [
+      "whiteboxes/auditorium.png"
+    ],
+    "size": [
+      1727,
+      911
+    ],
+    "sha256": "091c824d97c973bae8e924a99e26c70c272fc9d42b462c07e670b696adac46f4"
+  },
+  {
+    "id": "projection_booth",
+    "output": "source/projection_booth_v2.png",
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "output_id": "exec-47c016f5-9b77-4890-ada3-c784d3172be7.png",
+    "prompt": "Create a finished composition study for Paper Lantern City chapter Old Cinema. Reference supplied is ONLY a loose gameplay positioning guide; do not render its markings, boxes or words. Wide landscape 1.90:1. Handmade matte layered dyed rice paper cutout art, late 1990s China, diffuse low-key evening interior, clean shapes, subdued charcoal-indigo base, a few faded plum and teal accents, subtle paper fibers, visible silhouettes. No text, symbols, overlay, bright white, haze or exaggerated bloom. CRITICAL: interior cinema, completely NO sky, outdoors, exterior facades, trees, leaves, foliage or plant motifs. Keep the specified light unlit. Full interior cinema projection booth with a closed ceiling, warm-gray paper plaster walls, exposed indoor pipes, shelves of worn plain tin canisters. Recessed dark rectangular projection viewing window at x=37%, y=38%, looking into a dim auditorium. One unlit amber rectangular inspection lamp at x=49%, y=27%, visibly separate from the window. Old modest workbenches and optical film equipment only against the left and right ends; the middle and lower center floor wide open for a standing character, no objects in the middle. No outdoor scenes visible through the viewing window.",
+    "references": [
+      "whiteboxes/projection_booth.png"
+    ],
+    "size": [
+      1727,
+      910
+    ],
+    "sha256": "b77a11d8e2635f1c8d09e307bd1abd6cf4cc2ce66e774203531c9222983ed17e"
+  },
+  {
+    "id": "screen_stage",
+    "output": "source/screen_stage_v2.png",
+    "attempt": 2,
+    "provider": "builtin_image_gen",
+    "output_id": "exec-4fb7b633-338b-41ee-a5c2-f8b38a8fbd0a.png",
+    "prompt": "Create a finished composition study for Paper Lantern City chapter Old Cinema. Reference supplied is ONLY a loose gameplay positioning guide; do not render its markings, boxes or words. Wide landscape 1.90:1. Handmade matte layered dyed rice paper cutout art, late 1990s China, diffuse low-key evening interior, clean shapes, subdued charcoal-indigo base, a few faded plum and teal accents, subtle paper fibers, visible silhouettes. No text, symbols, overlay, bright white, haze or exaggerated bloom. CRITICAL: interior cinema, completely NO sky, outdoors, exterior facades, trees, leaves, foliage or plant motifs. Keep the specified light unlit. Large indoor old cinema final arena, frontal view from audience, centered almost symmetric. Huge blank faded bluish gray movie screen occupying x17–83%, y15–64%, flat rectangular fabric screen and simple dark frame with muted plum theater curtains near the side walls only. Top and entire room enclosed with an uninterrupted indoor ceiling. Open stage and floor x15–85%, small rows of low seats at far bottom corners only. No characters, projectors, reels, light beams, signage, vegetation, or glow; all gameplay objects will be overlaid.",
+    "references": [
+      "whiteboxes/screen_stage.png"
+    ],
+    "size": [
+      1728,
+      910
+    ],
+    "sha256": "9826013f9df48c2f9dffa50e775ec2e918140a29be693ce5ae9cb6b9eb92b71a"
+  }
+]

@@ -1,0 +1,315 @@
+{
+  "package": "paper.lantern_city",
+  "passed": true,
+  "build_id": "205022979ed41635bda14a758507c5c48130df8b461a9d4caf22a94a40ba1286",
+  "source_revision": "9240ef2fba14e57ccee844426ef79585c5f8546117abc6e548d1441b41d6966c",
+  "component_revisions": {
+    "paper.station": "055dd952d843113f2eee65393abbc1fc8a19e9a510201dc296b2984f7971c839",
+    "paper.stall": "0c8e4379272a1bcfed2a0697b3c9038b34fc315ad1d4cfa42a0a25ca652ea398",
+    "paper.video_shop": "cd65aeb8cbee2db4da27b87975d5839c92b62f1bd91447a6d20081f88ad9f326",
+    "paper.footbridge": "6a2c79d454d25cf0567f47cf94eed3c5a168a408608026f1a2b0de5d0a436231",
+    "paper.plaza": "b1239ee9cd97362ea047b2e292cdd8ae315cb29d9fc553cf57b8b5b5b3b9c2ee",
+    "paper.cinema": "8b184329331d9159b9e3784c7c880f5dca1d036e0d8f8fc68e601d0b23319df4"
+  },
+  "independent_run": {
+    "passed": true,
+    "build_id": "205022979ed41635bda14a758507c5c48130df8b461a9d4caf22a94a40ba1286",
+    "index": "D:\\gunforge_cache\\level_design\\runs\\delivery-1794373071505550600\\index.json",
+    "sha256": "28919be1fa657c5be9f54e1b95b56d5c2115d5ca507e406bf2a6b7b840e2949c",
+    "checks": 7
+  },
+  "source_manifest": {
+    "path": "D:\\gunforge_cache\\level_design\\runs\\delivery-1794373071505550600\\source-manifest.json",
+    "sha256": "eee211dda4f68bfc573d5791a4f61f620798070059311045ff6107168046a9f4"
+  },
+  "copied_source_files": 1033,
+  "checks": [
+    {
+      "name": "new-venv",
+      "passed": true,
+      "log": "D:\\gunforge_cache\\level_design\\runs\\delivery-1794373071505550600\\new-venv.log"
+    },
+    {
+      "name": "locked-dependencies",
+      "passed": true,
+      "log": "D:\\gunforge_cache\\level_design\\runs\\delivery-1794373071505550600\\locked-dependencies.log"
+    },
+    {
+      "name": "lantern-city-cold-launch",
+      "passed": true,
+      "log": "D:\\gunforge_cache\\level_design\\runs\\delivery-1794373071505550600\\lantern-city-cold-launch.log"
+    },
+    {
+      "name": "lantern-city-ten-station-bot",
+      "passed": true,
+      "log": "D:\\gunforge_cache\\level_design\\runs\\delivery-1794373071505550600\\lantern-city-ten-station-bot.log"
+    },
+    {
+      "name": "lantern-city-opening-network",
+      "passed": true,
+      "log": "D:\\gunforge_cache\\level_design\\runs\\delivery-1794373071505550600\\lantern-city-opening-network.log"
+    },
+    {
+      "name": "level-design-regressions",
+      "passed": true,
+      "log": "D:\\gunforge_cache\\level_design\\runs\\delivery-1794373071505550600\\level-design-regressions.log"
+    },
+    {
+      "name": "lantern-city-repeat-launch",
+      "passed": true,
+      "log": "D:\\gunforge_cache\\level_design\\runs\\delivery-1794373071505550600\\lantern-city-repeat-launch.log"
+    }
+  ],
+  "gameplay": {
+    "build_id": "205022979ed41635bda14a758507c5c48130df8b461a9d4caf22a94a40ba1286",
+    "chapter_transition_tick": 6701,
+    "counters": {
+      "ammo": 0.0,
+      "lives": 4,
+      "rescued": 5,
+      "score": 7200,
+      "shots": 84
+    },
+    "end_tick": 7828,
+    "failure_retries": [
+      {
+        "after_retry": {
+          "ammo": 12.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 0
+        },
+        "before_retry": {
+          "ammo": 8.0,
+          "lives": 0,
+          "rescued": 3,
+          "score": 6000,
+          "shots": 68
+        },
+        "defeat_tick": 8220,
+        "first_shot": {
+          "ammo": 11.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 1
+        },
+        "station": 7
+      },
+      {
+        "after_retry": {
+          "ammo": 12.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 0
+        },
+        "before_retry": {
+          "ammo": 12.0,
+          "lives": 0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 0
+        },
+        "defeat_tick": 1604,
+        "first_shot": {
+          "ammo": 11.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 1
+        },
+        "station": 1
+      }
+    ],
+    "failures": [],
+    "gpu_capture": false,
+    "handoffs": [
+      {
+        "counters": {
+          "ammo": 12.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 3500,
+          "shots": 36
+        },
+        "station": "stall",
+        "tick": 5616
+      },
+      {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 4100,
+          "shots": 46
+        },
+        "station": "video_shop",
+        "tick": 6096
+      },
+      {
+        "counters": {
+          "ammo": 10.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4400,
+          "shots": 50
+        },
+        "station": "footbridge",
+        "tick": 6384
+      },
+      {
+        "counters": {
+          "ammo": 7.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4600,
+          "shots": 53
+        },
+        "station": "plaza",
+        "tick": 6499
+      },
+      {
+        "counters": {
+          "ammo": 8.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 5700,
+          "shots": 64
+        },
+        "station": "ticket_office",
+        "tick": 6791
+      },
+      {
+        "counters": {
+          "ammo": 3.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6000,
+          "shots": 69
+        },
+        "station": "poster_hall",
+        "tick": 7050
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6200,
+          "shots": 72
+        },
+        "station": "auditorium",
+        "tick": 7282
+      },
+      {
+        "counters": {
+          "ammo": 8.0,
+          "lives": 4,
+          "rescued": 4,
+          "score": 6500,
+          "shots": 76
+        },
+        "station": "projection_booth",
+        "tick": 7541
+      },
+      {
+        "counters": {
+          "ammo": 4.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 6800,
+          "shots": 80
+        },
+        "station": "screen_stage",
+        "tick": 7800
+      }
+    ],
+    "passed": true,
+    "reached": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "reloads": 6,
+    "result": "clear"
+  },
+  "network": {
+    "passed": true,
+    "build_id": "205022979ed41635bda14a758507c5c48130df8b461a9d4caf22a94a40ba1286",
+    "checks": [
+      {
+        "name": "exact_build_owned_test_server",
+        "passed": true
+      },
+      {
+        "name": "http_start",
+        "passed": true
+      },
+      {
+        "name": "opening_decodes_and_advances",
+        "passed": true
+      },
+      {
+        "name": "opening_blocks_gameplay_shots",
+        "passed": true
+      },
+      {
+        "name": "udp_start_skips_opening",
+        "passed": true
+      },
+      {
+        "name": "ready_to_running",
+        "passed": true
+      },
+      {
+        "name": "shot_input_enabled_after_opening",
+        "passed": true
+      },
+      {
+        "name": "visible_submission_available",
+        "passed": true
+      },
+      {
+        "name": "http_shot_receipt_after_consumption",
+        "passed": true
+      },
+      {
+        "name": "udp_duplicate_shot_consumed_once",
+        "passed": true
+      },
+      {
+        "name": "lost_tracking_pauses_shared_session",
+        "passed": true
+      },
+      {
+        "name": "late_shot_and_start_do_not_clear_tracking_barrier",
+        "passed": true
+      },
+      {
+        "name": "fresh_aim_recovers_while_paused",
+        "passed": true
+      }
+    ],
+    "hardware": "synthetic loopback protocol test; no phone tracking or display latency claim"
+  },
+  "python_level_design_tests_passed": 26,
+  "scope": "independent source directory, new Python 3.12.10 venv, pinned dependencies, empty build cache, cold and repeated GPU player launch, headless ten-station playthrough, opening and local HTTP/UDP checks",
+  "pending": [],
+  "user_acceptance": {
+    "date": "2026-11-11",
+    "source": "explicit_user_chat",
+    "build_id": "205022979ed41635bda14a758507c5c48130df8b461a9d4caf22a94a40ba1286",
+    "T12_A5_cinema_review": "passed_by_user",
+    "physical_lightgun_monitor": "passed_by_user",
+    "physical_lightgun_tv": "passed_by_user"
+  }
+}

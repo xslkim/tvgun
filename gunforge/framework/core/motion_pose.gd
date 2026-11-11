@@ -14,6 +14,9 @@ static func update(entity,hz):
 		if motion.get("easing","smoothstep")=="smoothstep":t=t*t*(3-2*t)
 		entity.x=lerpf(float(a.x),float(b.x),t);entity.y=lerpf(float(a.y),float(b.y),t)
 		entity.pose_scale=lerpf(float(a.get("scale",1)),float(b.get("scale",1)),t)
+		entity.pose_scale_x=lerpf(float(a.get("scale_x",1)),float(b.get("scale_x",1)),t)
+		entity.pose_scale_y=lerpf(float(a.get("scale_y",1)),float(b.get("scale_y",1)),t)
+		entity.pose_opacity=lerpf(float(a.get("opacity",1)),float(b.get("opacity",1)),t)
 		entity.pose_rotation=lerpf(float(a.get("rotation_rad",0)),float(b.get("rotation_rad",0)),t)
 		if entity.has("bob"):
 			var bob=entity.bob;var phase=at*TAU/bob.period_ms+bob.get("phase_rad",0)
@@ -24,7 +27,8 @@ static func update(entity,hz):
 static func transform(entity):
 	var scale=float(entity.get("pose_scale",1));var angle=float(entity.get("pose_rotation",0))
 	var center=Vector2(entity.width,entity.height)*.5
-	var basis=Transform2D(angle,Vector2.ZERO).scaled_local(Vector2.ONE*scale)
+	var stretch := Vector2(entity.get("pose_scale_x",1),entity.get("pose_scale_y",1))
+	var basis=Transform2D(angle,Vector2.ZERO).scaled_local(stretch*scale)
 	basis.origin=Vector2(entity.x,entity.y)+center-basis.basis_xform(center)
 	var hit_age=float(entity.get("view_tick",0)-entity.get("last_hit_tick",-1000))/60.0
 	if hit_age>=0 and hit_age<.22:basis.origin+=Vector2(entity.get("hit_direction",1)*18,-5)*exp(-hit_age*18)
@@ -36,6 +40,7 @@ static func parts(entity,id,images,hz):
 		item.id=id;item.kind=part.get("kind",entity.kind) if entity.kind in ["primary","weak"] else entity.kind
 		if entity.kind=="decoration":item.kind=""
 		item.image=images[part.resource];item.source=Rect2(Vector2.ZERO,item.image.get_size())
+		if part.has("hit_resource"):item.hit_image=images[part.hit_resource]
 		if part.has("source"):item.source=Rect2(part.source[0],part.source[1],part.source[2],part.source[3])
 		item.size=Vector2(entity.width*part.width,entity.height*part.height)
 		var offset=Vector2(entity.width*part.x,entity.height*part.y)
@@ -45,5 +50,6 @@ static func parts(entity,id,images,hz):
 			var angle=part.flap.amplitude_rad*sin(float(entity.age_ticks)/hz*part.flap.hz*TAU+part.flap.get("phase_rad",0))
 			local=Transform2D(angle,offset+pivot);local.origin-=local.basis_xform(pivot)
 		item.transform=base*local;item.tint=Color(part.get("tint","#ffffff"));item.z=float(entity.properties.get("z",0))+out.size()*.001;item.generation=int(entity.generation)
+		item.tint.a *= float(entity.get("pose_opacity",1))
 		out.append(item)
 	return out

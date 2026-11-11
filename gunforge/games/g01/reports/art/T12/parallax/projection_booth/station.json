@@ -1,0 +1,131 @@
+{
+  "id": "projection_booth",
+  "status": "runtime_probe_candidate",
+  "source_sha256": "d8d220c0a78355719ec5ecb039921a60c37a71a6548592e3c46ad26642ba3733",
+  "canvas": [
+    1920,
+    1020
+  ],
+  "content_origin": [
+    72,
+    42
+  ],
+  "content_size": [
+    1776,
+    936
+  ],
+  "layers": [
+    {
+      "id": "sky",
+      "file": "sky.png",
+      "pos": [
+        0,
+        0
+      ],
+      "parallax": 0.1,
+      "extent": "sky_extent.png",
+      "fill": "sky_fill.png"
+    },
+    {
+      "id": "rear_wall",
+      "file": "rear_wall.png",
+      "pos": [
+        0,
+        110
+      ],
+      "parallax": 0.18,
+      "extent": "rear_wall_extent.png",
+      "fill": "rear_wall_fill.png"
+    },
+    {
+      "id": "floor",
+      "file": "floor.png",
+      "pos": [
+        0,
+        749
+      ],
+      "parallax": 0.33,
+      "extent": "floor_extent.png",
+      "fill": "floor_fill.png"
+    },
+    {
+      "id": "viewing_window",
+      "file": "viewing_window.png",
+      "pos": [
+        421,
+        316
+      ],
+      "parallax": 0.38,
+      "extent": "viewing_window_extent.png"
+    },
+    {
+      "id": "lamp",
+      "file": "lamp.png",
+      "pos": [
+        865,
+        236
+      ],
+      "parallax": 0.38,
+      "extent": "lamp_extent.png"
+    },
+    {
+      "id": "left_rack",
+      "file": "left_rack.png",
+      "pos": [
+        0,
+        159
+      ],
+      "parallax": 0.48,
+      "extent": "left_rack_extent.png"
+    },
+    {
+      "id": "left_workbench",
+      "file": "left_workbench.png",
+      "pos": [
+        0,
+        436
+      ],
+      "parallax": 0.65,
+      "extent": "left_workbench_extent.png",
+      "blocks_shots": true,
+      "block_mask": "left_workbench_block.png"
+    },
+    {
+      "id": "right_workbench",
+      "file": "right_workbench.png",
+      "pos": [
+        1459,
+        214
+      ],
+      "parallax": 0.84,
+      "extent": "right_workbench_extent.png",
+      "blocks_shots": true,
+      "block_mask": "right_workbench_block.png"
+    }
+  ],
+  "lights": [
+    {
+      "id": "lamp",
+      "space": "lamp",
+      "glow": "lamp_glow.png",
+      "spill": "lamp_spill.png",
+      "influence": "lamp_influence.png",
+      "pos": [
+        725,
+        141
+      ],
+      "hit_mask": "lamp_hit.png",
+      "hit_pos": [
+        871,
+        244
+      ],
+      "aim": [
+        914,
+        287
+      ]
+    }
+  ],
+  "rest_matches_original": false,
+  "original_sha256": "b77a11d8e2635f1c8d09e307bd1abd6cf4cc2ce66e774203531c9222983ed17e",
+  "rest_matches_render_source": true
+}

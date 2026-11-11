@@ -1,0 +1,120 @@
+{
+  "package": "paper.waiting_room",
+  "source_revision": "eb1e143ebed4d4e00f01e9c73cf4ed00c1bf91e967220e98e10a55e284ac402b",
+  "build_id": "7d1b286b8e8f8a28588c1b3e52766624c6e116b9f19f89e0a0b8f6049ade2265",
+  "status": "candidate_software_passed",
+  "godot": "4.6.3 Compatibility",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "player_launch": {
+    "ready": true,
+    "http_error": 0,
+    "udp_errors": []
+  },
+  "gameplay": {
+    "build_id": "7d1b286b8e8f8a28588c1b3e52766624c6e116b9f19f89e0a0b8f6049ade2265",
+    "failures": [],
+    "gpu_capture": true,
+    "light_window_ticks": 265,
+    "lives": 5.0,
+    "passed": true,
+    "rescued": 1,
+    "shots": 8
+  },
+  "lamp_patch_median_yprime": {
+    "dark": 0.065,
+    "lit": 0.7081
+  },
+  "regressions": [
+    "waiting room clear and failure retry",
+    "last round, lamp and reload",
+    "unlit crow warning and release",
+    "local light and relight",
+    "umbrella open and folding hit permissions",
+    "protected body and chest-ink rescue",
+    "T12 authored source byte-equivalent as JSON data",
+    "T12 cinema headless playback passed"
+  ],
+  "frames": {
+    "waiting_room_off": {
+      "preview": "waiting_room_off.jpg",
+      "sha256": "eac09d8284b7ffebaf4bbd745d2d45fb50721905664298173a6d27f2f962fe42",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0036238161238161238
+        }
+      }
+    },
+    "waiting_room_light_rise": {
+      "preview": "waiting_room_light_rise.jpg",
+      "sha256": "40aa6a1301093d4b2ac37fbd5235a82b3c03ff92429740a1eb4f56196b5239de",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.00377240220990221
+        }
+      }
+    },
+    "waiting_room_lit": {
+      "preview": "waiting_room_lit.jpg",
+      "sha256": "0a97f6c805b806614641ff44ae1f579d8f96e96d969df724aa47e13a7ed7804f",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.00373751155001155
+        }
+      }
+    },
+    "crow_warning": {
+      "preview": "crow_warning.jpg",
+      "sha256": "4e7e4c794e08edc4df7387c693569e289309a323307a860c9ac5993bcefc73a9",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.003565464502964503
+        }
+      }
+    },
+    "crow_attack": {
+      "preview": "crow_attack.jpg",
+      "sha256": "33c7e05881690b6e1ab2462da4e8844185a94b171b35158f9b660a23a9b5e6f0",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.003469214406714407
+        }
+      }
+    },
+    "umbrella_folding": {
+      "preview": "umbrella_folding.jpg",
+      "sha256": "1e03b2cfecd12b3f5a676408e3e8bdf47538f7b56bc09d41fbe0290e9bf5f556",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0032496438746438747
+        }
+      }
+    },
+    "waiting_room_rescue": {
+      "preview": "waiting_room_rescue.jpg",
+      "sha256": "5baa3f83dbae646824e46f7bb2fb7c52db4cbbaf36c25c364a10791aa5bc4fdc",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.003238815738815739
+        }
+      }
+    }
+  },
+  "pending": [
+    "T13 physical lightgun on monitor and TV",
+    "A5 overall art review"
+  ]
+}

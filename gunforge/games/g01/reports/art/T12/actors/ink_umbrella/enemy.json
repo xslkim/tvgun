@@ -1,0 +1,28 @@
+{
+  "id": "ink_umbrella",
+  "states": {
+    "vulnerable": {
+      "sprite": "vulnerable.png",
+      "body": "body.png",
+      "primary": "hit.png",
+      "weak": "weak_mask.png",
+      "weak_texture": "weak.png",
+      "sdf": "sdf.png"
+    },
+    "open": {
+      "sprite": "open.png",
+      "invalid": "canopy_invalid.png",
+      "primary": null,
+      "weak": null
+    }
+  },
+  "display_width_px": 255,
+  "effective_radius_px": 59.580129663518136,
+  "C16": {
+    "status": "pass",
+    "reason": "Offline SDF round-trip; engine sampling is a separate pending check",
+    "details": {
+      "max_error_px": 0.0
+    }
+  }
+}

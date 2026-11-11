@@ -1,0 +1,169 @@
+{
+  "package": "paper.plaza",
+  "build_id": "5788f9cdb68b4be1fec36120b6368728671651636ce29792d02fe38d7eb4a394",
+  "source_revision": "b1239ee9cd97362ea047b2e292cdd8ae315cb29d9fc553cf57b8b5b5b3b9c2ee",
+  "headless_and_gpu_playthrough": {
+    "passed": true,
+    "shots": 13,
+    "lives": 4,
+    "body_order": [
+      "body_08",
+      "body_07",
+      "body_06",
+      "body_05",
+      "body_04",
+      "body_03",
+      "body_02",
+      "body_01"
+    ],
+    "verified": [
+      "plaza wave gates boss entry",
+      "only one damageable dragon zone",
+      "old pose cannot hit the next segment",
+      "eight segments unlock the jaw-occluded core",
+      "warning and visible breath precede damage",
+      "weak shot cancels pending breath",
+      "checkpoint replay reproduces encounter state"
+    ]
+  },
+  "reviewer_probes": {
+    "full_art": "passed",
+    "draft": "passed"
+  },
+  "normal_player_launch": {
+    "passed": true
+  },
+  "loopback": {
+    "passed": true,
+    "build_id": "5788f9cdb68b4be1fec36120b6368728671651636ce29792d02fe38d7eb4a394",
+    "checks": [
+      {
+        "name": "exact_build_owned_test_server",
+        "passed": true
+      },
+      {
+        "name": "http_start",
+        "passed": true
+      },
+      {
+        "name": "ready_to_running",
+        "passed": true
+      },
+      {
+        "name": "shot_input_enabled_after_opening",
+        "passed": true
+      },
+      {
+        "name": "visible_submission_available",
+        "passed": true
+      },
+      {
+        "name": "http_shot_receipt_after_consumption",
+        "passed": true
+      },
+      {
+        "name": "udp_duplicate_shot_consumed_once",
+        "passed": true
+      },
+      {
+        "name": "lost_tracking_pauses_shared_session",
+        "passed": true
+      },
+      {
+        "name": "late_shot_and_start_do_not_clear_tracking_barrier",
+        "passed": true
+      },
+      {
+        "name": "fresh_aim_recovers_while_paused",
+        "passed": true
+      }
+    ],
+    "hardware": "synthetic loopback protocol test; no phone tracking or display latency claim"
+  },
+  "compiler_tests": {
+    "passed": true,
+    "count": 26
+  },
+  "regressions": {
+    "paper.stall": {
+      "passed": true,
+      "build_id": "526dd48001431434b7d47fb7ca6ab1ef8c21638fb5d59d5374306b04d574e116"
+    },
+    "paper.cinema": {
+      "passed": true,
+      "build_id": "13fdecd783f63aaec9ed60004117a4388810dc8324f80c8baa2f138ecdf0755e"
+    }
+  },
+  "captures": {
+    "dragon_breath.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0037976678601678603
+        }
+      },
+      "sha256": "5c7f033e6f3ba298ffd60647a0c8a3493e1221573e6dbf1b740f565c75c59eac"
+    },
+    "dragon_cleansed.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.00373751155001155
+        }
+      },
+      "sha256": "a2950ea7396981b00bf4275d34f0e2f120bbfa979e86e2e026742410592276a8"
+    },
+    "dragon_entry.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0038187225687225687
+        }
+      },
+      "sha256": "842d127752e178a28e6af5462e1d8a61c2a4e4789c4ffb70ff6dc85218d4b9a8"
+    },
+    "dragon_mid.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004002800877800878
+        }
+      },
+      "sha256": "6ff02b8ded8e25b106dec78147c96bd9a66b540399e99dd33562bdee39f8ed20"
+    },
+    "dragon_mouth.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.003964300839300839
+        }
+      },
+      "sha256": "5b4c0bd4ff87ab4007f88c750b5ed0412ab77046072f74c2a0519554f9ae1855"
+    },
+    "dragon_warning.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0037922537922537923
+        }
+      },
+      "sha256": "5e371e36a3b81850e4f55073b9be865c4383a937b7cef21732395ac827343aab"
+    },
+    "plaza_wave.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0031082765457765456
+        }
+      },
+      "sha256": "c75e21d213353b25c9ec0f3b0e5b1c8ea6a9bb001e072423becbdf8383d9ce0a"
+    }
+  }
+}

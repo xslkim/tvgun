@@ -60,15 +60,18 @@ class Preview:
 		var base = Transform2D(0, destination.position).scaled_local(Vector2.ONE * destination.size.x / model.level.layout.width)
 		if native_viewport!=null:
 			target.draw_texture_rect(native_viewport.get_texture(), destination, false)
+			if not show_contours:
+				return
 		for item in geometry:
-			var key = item.image.get_instance_id()
-			if not textures.has(key):textures[key]=ImageTexture.create_from_image(item.image)
 			target.draw_set_transform_matrix(base*item.transform)
 			var color = Color("#59b8aa")
 			if item.kind=="protected":color=Color("#d9ad6b")
 			if item.kind=="invalid":color=Color("#556071")
 			if item.kind=="blocker":color=Color("#293141")
-			if native_viewport==null:target.draw_texture_rect_region(textures[key],Rect2(Vector2.ZERO,item.size),item.source,color)
+			if native_viewport == null:
+				var key = item.image.get_instance_id()
+				if not textures.has(key):textures[key]=ImageTexture.create_from_image(item.image)
+				target.draw_texture_rect_region(textures[key],Rect2(Vector2.ZERO,item.size),item.source,color)
 			if show_contours and not item.kind.is_empty():target.draw_texture_rect_region(contour(item),Rect2(Vector2.ZERO,item.size),item.source,Color("#e2e8f0"))
 		target.draw_set_transform_matrix(Transform2D.IDENTITY)
 var model

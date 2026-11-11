@@ -1,0 +1,135 @@
+{
+  "provider": "builtin_image_gen",
+  "selected_attempt": 3,
+  "source": "source/green_car_v3.png",
+  "preview": "compositions/green_car.jpg",
+  "preview_sha256": "45331ab92bad702a507504aadbc1d49b77ae2534adcca9798273e4bfffd09f59",
+  "preview_size": [
+    1776,
+    936
+  ],
+  "C03_preview": {
+    "status": "pass",
+    "reason": "Visible alpha-weighted encoded luminance",
+    "details": {
+      "clipped_fraction": 0.0016452750827750829
+    }
+  },
+  "C04_preview": {
+    "status": "pass",
+    "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+    "details": {
+      "coverage": 0.9421398562023562
+    }
+  },
+  "lamp_body_visual_estimate": [
+    798,
+    169,
+    180,
+    71
+  ],
+  "lamp_body_within_whitebox_slot": true,
+  "seat_back_visual_estimates": [
+    [
+      0,
+      665,
+      335,
+      271
+    ],
+    [
+      1436,
+      665,
+      340,
+      271
+    ]
+  ],
+  "lamp_and_seats_clear_of_target_lanes": true,
+  "attempts": [
+    {
+      "attempt": 1,
+      "output_id": "exec-5f5cc7ee-9541-4a49-b23b-1bbc5db6d531.png",
+      "source_sha256": "893ad9dd4e0f8de889fb644fb9f5b9f6b94090b1f8794a96761ce959745bc401",
+      "size": [
+        1728,
+        910
+      ],
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.00006804538054538054
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.2888074888074888
+        }
+      },
+      "prompt": "Use case: illustration-story. Asset: one opaque wide 1776:936 Paper Lantern City game background, INSIDE a boxy 1990s Chinese green railway carriage at night. Image 1 is the authoritative gameplay composition guide; omit every diagram line, rectangle, annotation, and HUD. Image 2 supplies 1990s train objects and jade-green material only, not exterior framing. Image 3 supplies muted night palette and paper-light feel only. Eye-level straight front-on side view looking across the aisle toward the broad interior sidewall, no central corridor vanishing point. Strong lateral repetition of three or four rectangular dark windows from x=12–87%, y=24–40%, with a thin dull ochre waistline under the windows. A slender horizontal period luggage rack just above that window row. The ONE clearly readable rectangular switched-OFF ceiling lamp sits against the ceiling face at the top center: center x=50%, y=22%, its rectangular body within x=45–55%, y=16–27%. Deep teal frame with broad dull gray-blue frosted face, without glow or bright glare. Low dark teal seat backs confined to the two lower corners x=0–20% and x=80–100%, starting below y=61%. The rest of the central aisle foreground and both middle play lanes remain calm and open. Windows show only low-contrast dark indigo paper night silhouettes. Flat matte hand-cut layers, subtle dyed paper fibers, crisp edge silhouettes. Jade teal #4E9A92 and moon white #B8C4D6 accents over indigo #141A33 and deep plum #2A1E3D. Very restrained highlights, no pure white, no red, no characters, enemies, signage lettering, logos, modern devices, bloom, frame border or watermark.",
+      "references": [
+        "whiteboxes/green_car.jpg",
+        "../../../bible/style_refs/st_l3_platform.png",
+        "../../../bible/style_refs/st_l3_base.png"
+      ],
+      "decision": "Readable interior and clear aisle; ceiling light is wider than the whitebox slot and palette coverage is below target."
+    },
+    {
+      "attempt": 2,
+      "output_id": "exec-811a8e69-e1f1-400d-ae9e-e6dc3bec39c7.png",
+      "source_sha256": "45724ceb56ab103b9897a7670fb9ac47d69671d2277bdf3ba09b0cffde94bd30",
+      "size": [
+        1728,
+        910
+      ],
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.000019078144078144078
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.2828125
+        }
+      },
+      "prompt": "Make one precise game-asset edit to this wide paper-cut green railway carriage interior. Shorten the one centered switched-OFF rectangular ceiling lamp by about 22 percent in width, equally at both ends; keep the exact lamp center, height, dark teal casing, dull blue-gray frosted face, vertical position and OFF state. At 1776×936 target canvas the final visible lamp is approximately 184 pixels wide and fits the upper-center whitebox x=797–983, y=153–255. Replace the small strips freed at either end with the adjacent flat teal wall. Keep the rails and windows exactly as they are, and keep all seat backs, exterior views, yellow waistline, paper grain, canvas framing and floor unchanged. No new lights, glows, labels, lettering, characters, or border.",
+      "references": [
+        "exec-5f5cc7ee-9541-4a49-b23b-1bbc5db6d531.png"
+      ],
+      "decision": "Same geometry with a narrower lamp; lamp remains slightly wide and the palette still fails C04."
+    },
+    {
+      "attempt": 3,
+      "output_id": "exec-b20871b1-4a78-429d-bbd8-ed37b4bafe9d.png",
+      "source_sha256": "1c66f17b500f31d18bb0237d80d0a485e0686dfe8e8f48afb78fcd55159e74ae",
+      "size": [
+        1728,
+        910
+      ],
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0015663156288156289
+        }
+      },
+      "C04": {
+        "status": "pass",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.9426364723239723
+        }
+      },
+      "prompt": "Palette correction for this exact wide 1990s paper-cut rail-car interior, keeping the original front-on composition, lamp height and center, all window frames and distant views, rack, horizontal yellow stripe, seat silhouettes and floor outline. Change the paper dyes of the large planes without adding texture or lighting effects: teal wall panels should closely match #4E9A92 (subdued solid jade-green paper, not blue-gray); the ceiling and floor should stay in a cool desaturated moon-white range near #A3B1C7, below white glare; the two foreground seat silhouettes are dark indigo #141A33 or #2A1E3D. Keep the windows dark indigo with gentle twilight contrast, the stripe muted ochre and all paper fibers fine. Make the single unlit rectangular lamp about 10% narrower still, evenly from both ends, fully inside the center target slot. Keep its dark teal case and matte frosted gray face, no emission. Keep the camera crop, window geometry, aisle negative space, silhouettes and all other asset positions identical. No pure white, bright highlights, red, words or new objects.",
+      "references": [
+        "exec-811a8e69-e1f1-400d-ae9e-e6dc3bec39c7.png"
+      ],
+      "decision": "Selected; the lamp fits the slot, corner seats clear both target lanes, and C03/C04 pass."
+    }
+  ]
+}

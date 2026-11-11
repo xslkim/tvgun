@@ -1,0 +1,14 @@
+{
+  "scope": "preview alignment, separate from the provisional gameplay layout",
+  "lamps": {
+    "ticket_office": {"center": [0.255, 0.285], "emitter": [0.067, 0.045], "spill": [0.147, 0.19]},
+    "poster_hall": {"center": [0.171, 0.329], "emitter": [0.018, 0.040], "spill": [0.104, 0.18]},
+    "auditorium": {"center": [0.825, 0.304], "emitter": [0.016, 0.037], "spill": [0.108, 0.20]},
+    "projection_booth": {"center": [0.492, 0.267], "emitter": [0.039, 0.031], "spill": [0.133, 0.17]}
+  },
+  "boss": {
+    "shadow_rect": [452, 160, 872, 394],
+    "lens_uv": [0.57, 0.08],
+    "reel_offset": [-35, 23]
+  }
+}

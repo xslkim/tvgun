@@ -1,0 +1,117 @@
+{
+  "id": "workbench",
+  "status": "runtime_probe_candidate",
+  "source_sha256": "a6723b8cc7db5587434d6e8f0a9ab6ec3cf5653e5e506b8263b02751832fbcb5",
+  "canvas": [
+    1920,
+    1020
+  ],
+  "content_origin": [
+    72,
+    42
+  ],
+  "content_size": [
+    1776,
+    936
+  ],
+  "layers": [
+    {
+      "id": "sky",
+      "file": "sky.png",
+      "pos": [
+        0,
+        0
+      ],
+      "parallax": 0.1,
+      "extent": "sky_extent.png",
+      "fill": "sky_fill.png"
+    },
+    {
+      "id": "desk",
+      "file": "desk.png",
+      "pos": [
+        0,
+        818
+      ],
+      "parallax": 0.18,
+      "extent": "desk_extent.png",
+      "fill": "desk_fill.png"
+    },
+    {
+      "id": "paper_lantern",
+      "file": "paper_lantern.png",
+      "pos": [
+        192,
+        567
+      ],
+      "parallax": 0.18,
+      "extent": "paper_lantern_extent.png"
+    },
+    {
+      "id": "inkstone",
+      "file": "inkstone.png",
+      "pos": [
+        806,
+        827
+      ],
+      "parallax": 0.18,
+      "extent": "inkstone_extent.png"
+    },
+    {
+      "id": "brushes_and_box",
+      "file": "brushes_and_box.png",
+      "pos": [
+        1450,
+        569
+      ],
+      "parallax": 0.18,
+      "extent": "brushes_and_box_extent.png",
+      "fill": "brushes_and_box_fill.png"
+    },
+    {
+      "id": "rolled_paper",
+      "file": "rolled_paper.png",
+      "pos": [
+        1586,
+        775
+      ],
+      "parallax": 0.18,
+      "extent": "rolled_paper_extent.png"
+    }
+  ],
+  "lights": [],
+  "rest_matches_original": false,
+  "original_sha256": "867f992113eb2dec419c8d369707c39f88505cc49422b711882590947810d0ba",
+  "rest_matches_render_source": true,
+  "anchors": {
+    "pullback": {
+      "layer": "paper_lantern",
+      "point": [
+        281,
+        827
+      ]
+    },
+    "ink_well": {
+      "layer": "inkstone",
+      "point": [
+        888,
+        806
+      ]
+    }
+  },
+  "boss_region": {
+    "rect": [
+      568,
+      132,
+      640,
+      640
+    ],
+    "space": "inkstone",
+    "swept_rect": [
+      555,
+      125,
+      666,
+      654
+    ]
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "scope": "art preview and standalone Godot review",
+  "layout": {
+    "id": "screen_shadow",
+    "screen": [
+      300,
+      142,
+      1176,
+      458
+    ],
+    "core": {
+      "id": "shadow_core",
+      "rect": [
+        823,
+        234,
+        130,
+        124
+      ]
+    },
+    "projectors": [
+      {
+        "id": "projector_left",
+        "rect": [
+          286,
+          642,
+          215,
+          121
+        ],
+        "lens": [
+          403,
+          652
+        ],
+        "reel": {
+          "id": "reel_left",
+          "rect": [
+            292,
+            527,
+            130,
+            116
+          ]
+        },
+        "screen_span": [
+          [
+            526,
+            215
+          ],
+          [
+            678,
+            309
+          ]
+        ],
+        "art_rect": [
+          326,
+          642,
+          135,
+          121
+        ]
+      },
+      {
+        "id": "projector_center",
+        "rect": [
+          780,
+          642,
+          215,
+          121
+        ],
+        "lens": [
+          897,
+          652
+        ],
+        "reel": {
+          "id": "reel_center",
+          "rect": [
+            788,
+            527,
+            130,
+            116
+          ]
+        },
+        "screen_span": [
+          [
+            779,
+            185
+          ],
+          [
+            997,
+            185
+          ]
+        ],
+        "art_rect": [
+          820,
+          642,
+          135,
+          121
+        ]
+      },
+      {
+        "id": "projector_right",
+        "rect": [
+          1275,
+          642,
+          215,
+          121
+        ],
+        "lens": [
+          1392,
+          652
+        ],
+        "reel": {
+          "id": "reel_right",
+          "rect": [
+            1282,
+            527,
+            130,
+            116
+          ]
+        },
+        "screen_span": [
+          [
+            1098,
+            309
+          ],
+          [
+            1250,
+            215
+          ]
+        ],
+        "art_rect": [
+          1315,
+          642,
+          135,
+          121
+        ]
+      }
+    ],
+    "shadow_rect": [
+      452,
+      160,
+      872,
+      394
+    ],
+    "lens_uv": [
+      0.57,
+      0.08
+    ],
+    "reel_offset": [
+      -35,
+      23
+    ]
+  },
+  "assets": {
+    "projector": "projector.png",
+    "clean_reel": "clean_reel.png",
+    "shadow": "shadow.png",
+    "reel_ink": "reel_ink.png",
+    "core": "core.png",
+    "background": "background.png",
+    "fixtures": "fixtures.png"
+  },
+  "hit_masks": {
+    "reel_ink": "reel_ink_hit.png",
+    "core": "core_hit.png"
+  },
+  "beam_masks": [
+    "beam_1_mask.png",
+    "beam_2_mask.png",
+    "beam_3_mask.png"
+  ],
+  "radii_px": {
+    "reel_ink": 56.49,
+    "core": 58.42
+  },
+  "beam_textures": [
+    "beam_1.png",
+    "beam_2.png",
+    "beam_3.png"
+  ],
+  "C03": {
+    "screen_0": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 6.436725186725187e-05
+      }
+    },
+    "screen_1": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 6.557037807037808e-05
+      }
+    },
+    "screen_3": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 6.677350427350428e-05
+      }
+    }
+  },
+  "first_beam_change_local": true
+}

@@ -1,0 +1,231 @@
+{
+  "package": "paper.night_market",
+  "build_id": "52444e5c64dea1c9b4fe3dedbbd87ba3c19e3ce06b4bf04fd9bf8b780d07b797",
+  "source_revision": "2ead4903b278344459cfc3aa8fe44e122ee465f0e2ffd83ef35401076beafdb9",
+  "component_revisions": {
+    "paper.station": "055dd952d843113f2eee65393abbc1fc8a19e9a510201dc296b2984f7971c839",
+    "paper.stall": "0c8e4379272a1bcfed2a0697b3c9038b34fc315ad1d4cfa42a0a25ca652ea398",
+    "paper.video_shop": "cd65aeb8cbee2db4da27b87975d5839c92b62f1bd91447a6d20081f88ad9f326",
+    "paper.footbridge": "6a2c79d454d25cf0567f47cf94eed3c5a168a408608026f1a2b0de5d0a436231",
+    "paper.plaza": "b1239ee9cd97362ea047b2e292cdd8ae315cb29d9fc553cf57b8b5b5b3b9c2ee"
+  },
+  "headless_and_gpu_playthrough": {
+    "passed": true,
+    "station_order": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "handoffs": [
+      {
+        "counters": {
+          "ammo": 12.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 3500,
+          "shots": 36
+        },
+        "station": "stall",
+        "tick": 5616
+      },
+      {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 4100,
+          "shots": 46
+        },
+        "station": "video_shop",
+        "tick": 6096
+      },
+      {
+        "counters": {
+          "ammo": 10.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4400,
+          "shots": 50
+        },
+        "station": "footbridge",
+        "tick": 6384
+      },
+      {
+        "counters": {
+          "ammo": 7.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4600,
+          "shots": 53
+        },
+        "station": "plaza",
+        "tick": 6499
+      }
+    ],
+    "counters": {
+      "ammo": 8.0,
+      "lives": 4,
+      "rescued": 2,
+      "score": 5700,
+      "shots": 64
+    },
+    "reloads": 5,
+    "end_tick": 6701,
+    "tick_hz": 60,
+    "verified": [
+      "five stations in a single shared session",
+      "handoffs preserve lives, ammunition, score and rescues",
+      "previous station entities and layers do not leak",
+      "stale alley shot is rejected after handoff",
+      "stall wave count is independent",
+      "only the dragon core finishes the campaign"
+    ]
+  },
+  "normal_player_launch": {
+    "passed": true
+  },
+  "loopback": {
+    "passed": true,
+    "build_id": "52444e5c64dea1c9b4fe3dedbbd87ba3c19e3ce06b4bf04fd9bf8b780d07b797",
+    "checks": [
+      {
+        "name": "exact_build_owned_test_server",
+        "passed": true
+      },
+      {
+        "name": "http_start",
+        "passed": true
+      },
+      {
+        "name": "opening_decodes_and_advances",
+        "passed": true
+      },
+      {
+        "name": "opening_blocks_gameplay_shots",
+        "passed": true
+      },
+      {
+        "name": "udp_start_skips_opening",
+        "passed": true
+      },
+      {
+        "name": "ready_to_running",
+        "passed": true
+      },
+      {
+        "name": "shot_input_enabled_after_opening",
+        "passed": true
+      },
+      {
+        "name": "visible_submission_available",
+        "passed": true
+      },
+      {
+        "name": "http_shot_receipt_after_consumption",
+        "passed": true
+      },
+      {
+        "name": "udp_duplicate_shot_consumed_once",
+        "passed": true
+      },
+      {
+        "name": "lost_tracking_pauses_shared_session",
+        "passed": true
+      },
+      {
+        "name": "late_shot_and_start_do_not_clear_tracking_barrier",
+        "passed": true
+      },
+      {
+        "name": "fresh_aim_recovers_while_paused",
+        "passed": true
+      }
+    ],
+    "hardware": "synthetic loopback protocol test; no phone tracking or display latency claim"
+  },
+  "compiler_tests": {
+    "passed": true,
+    "count": 26
+  },
+  "regressions": {
+    "paper.stall": true,
+    "paper.video_shop": true,
+    "paper.footbridge": true,
+    "paper.plaza": true,
+    "paper.cinema": true
+  },
+  "captures": {
+    "night_market_clear.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004880481442981443
+        }
+      },
+      "sha256": "5cf069c0ee7a27d58c3bd3052f98dc58f6cc28297414401381e22415885d8116"
+    },
+    "station_1_alley.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004993575306075306
+        }
+      },
+      "sha256": "671172e9afb5e196d51ab52cf9e15d4e25033ed3a5b49f0d213d531c4a342132"
+    },
+    "station_2_stall.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.005579497766997767
+        }
+      },
+      "sha256": "899062ccdce3017ea8ef07bddf2f7335b7f8927c5bead4cce95b590e2f882086"
+    },
+    "station_3_video_shop.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004148379148379148
+        }
+      },
+      "sha256": "7c727c83d3528b653c3fee51e1cf5371e8009cfcbb14dd39c2954b9b1531011d"
+    },
+    "station_4_footbridge.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.003428909678909679
+        }
+      },
+      "sha256": "a07e6acee17319715495c6e464ec5442e4c4c0e3149d6d94c4d5efda1e9b911f"
+    },
+    "station_5_dragon.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004074386886886887
+        }
+      },
+      "sha256": "01c0a9b5fb0886a9cf425bdb7482582cc82421d8964a9e41953ee6b326843179"
+    },
+    "station_5_plaza.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.003570878570878571
+        }
+      },
+      "sha256": "d2b0bf80ccf6120c294f36eef66b16971d1da368257543572f6ce9e62b365884"
+    }
+  }
+}

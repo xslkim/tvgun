@@ -12,7 +12,7 @@ ASSET_REFERENCE = REVIEWS / "agent_proposals/proposal-1794237379343236500.json"
 LIGHT_MS = 6000
 
 
-def build():
+def build(*, source_only=False):
     # Reuse the reviewed asset manifest and regenerate its derived sounds on a fresh checkout.
     preview(ASSET_REFERENCE)
     reference = read(ASSET_REFERENCE)
@@ -142,6 +142,8 @@ def build():
     event("stall.fail", {"on": "player.damaged"},
           [{"op": "fail", "result": "overrun"}], [{"resource": "lives", "compare": "lte", "value": 0}])
 
+    if source_only:
+        return source
     entry = publish(source)
     _, verified, manifest = resolve(source["id"], entry.parent.name)
     compiled = compile_source(verified, source_manifest=manifest)

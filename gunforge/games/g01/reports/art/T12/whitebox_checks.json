@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "scope": "provisional geometry",
+  "stations": {
+    "ticket_office": {
+      "target_lanes": 2,
+      "lights": 1,
+      "residents": 1,
+      "projectors": 0,
+      "ellipse_radius_px": {
+        "ticket_lightbox": 82.69
+      },
+      "reserved_and_pairwise_overlap": "pass"
+    },
+    "poster_hall": {
+      "target_lanes": 2,
+      "lights": 1,
+      "residents": 0,
+      "projectors": 0,
+      "ellipse_radius_px": {
+        "cinema_wall_lamp": 59.0
+      },
+      "reserved_and_pairwise_overlap": "pass"
+    },
+    "auditorium": {
+      "target_lanes": 2,
+      "lights": 1,
+      "residents": 1,
+      "projectors": 0,
+      "ellipse_radius_px": {
+        "cinema_wall_lamp": 59.37
+      },
+      "reserved_and_pairwise_overlap": "pass"
+    },
+    "projection_booth": {
+      "target_lanes": 2,
+      "lights": 1,
+      "residents": 1,
+      "projectors": 0,
+      "ellipse_radius_px": {
+        "booth_work_lamp": 62.32
+      },
+      "reserved_and_pairwise_overlap": "pass"
+    },
+    "screen_stage": {
+      "target_lanes": 0,
+      "lights": 0,
+      "residents": 0,
+      "projectors": 3,
+      "ellipse_radius_px": {
+        "reel_left": 61.36,
+        "reel_center": 61.36,
+        "reel_right": 61.36,
+        "shadow_core": 63.46
+      },
+      "reserved_and_pairwise_overlap": "pass"
+    }
+  }
+}

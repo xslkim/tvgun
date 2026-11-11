@@ -1,0 +1,294 @@
+{
+  "id": "ink_dragon",
+  "status": "full_art_candidate",
+  "background": "../T10/compositions/square_02.png",
+  "content_size": [
+    1776,
+    936
+  ],
+  "body_scale": 0.5,
+  "origin": [
+    345,
+    466
+  ],
+  "sway": [
+    27,
+    40
+  ],
+  "body_nodes": [
+    {
+      "id": "body_01",
+      "parent": "head",
+      "pivots": [
+        [
+          7.615654205607477,
+          172.76883780332057
+        ],
+        [
+          310.1985981308411,
+          179.7088122605364
+        ]
+      ],
+      "textures": {
+        "paper": "full/parts/body_01_paper.png",
+        "locked": "full/parts/body_01_locked.png",
+        "ink": "full/parts/body_01_ink.png",
+        "glow": "full/parts/body_01_glow.png",
+        "purified": "full/parts/body_01_purified.png",
+        "hit_mask": "full/parts/body_01_hit_mask.png"
+      },
+      "aim": [
+        150,
+        140
+      ],
+      "effective_radius": 47.17650606177894
+    },
+    {
+      "id": "body_02",
+      "parent": "body_01",
+      "pivots": [
+        [
+          7.567757009345795,
+          170.35249042145594
+        ],
+        [
+          308.2476635514019,
+          177.19540229885058
+        ]
+      ],
+      "textures": {
+        "paper": "full/parts/body_02_paper.png",
+        "locked": "full/parts/body_02_locked.png",
+        "ink": "full/parts/body_02_ink.png",
+        "glow": "full/parts/body_02_glow.png",
+        "purified": "full/parts/body_02_purified.png",
+        "hit_mask": "full/parts/body_02_hit_mask.png"
+      },
+      "aim": [
+        151,
+        138
+      ],
+      "effective_radius": 46.62336552362031
+    },
+    {
+      "id": "body_03",
+      "parent": "body_02",
+      "pivots": [
+        [
+          7.519859813084111,
+          169.14431673052363
+        ],
+        [
+          306.29672897196264,
+          175.93869731800768
+        ]
+      ],
+      "textures": {
+        "paper": "full/parts/body_03_paper.png",
+        "locked": "full/parts/body_03_locked.png",
+        "ink": "full/parts/body_03_ink.png",
+        "glow": "full/parts/body_03_glow.png",
+        "purified": "full/parts/body_03_purified.png",
+        "hit_mask": "full/parts/body_03_hit_mask.png"
+      },
+      "aim": [
+        151,
+        136
+      ],
+      "effective_radius": 46.339168013634556
+    },
+    {
+      "id": "body_04",
+      "parent": "body_03",
+      "pivots": [
+        [
+          7.47196261682243,
+          165.5197956577267
+        ],
+        [
+          304.3457943925234,
+          172.16858237547893
+        ]
+      ],
+      "textures": {
+        "paper": "full/parts/body_04_paper.png",
+        "locked": "full/parts/body_04_locked.png",
+        "ink": "full/parts/body_04_ink.png",
+        "glow": "full/parts/body_04_glow.png",
+        "purified": "full/parts/body_04_purified.png",
+        "hit_mask": "full/parts/body_04_hit_mask.png"
+      },
+      "aim": [
+        149,
+        132
+      ],
+      "effective_radius": 45.63662548108199
+    },
+    {
+      "id": "body_05",
+      "parent": "body_04",
+      "pivots": [
+        [
+          7.376168224299065,
+          163.10344827586206
+        ],
+        [
+          300.44392523364485,
+          169.6551724137931
+        ]
+      ],
+      "textures": {
+        "paper": "full/parts/body_05_paper.png",
+        "locked": "full/parts/body_05_locked.png",
+        "ink": "full/parts/body_05_ink.png",
+        "glow": "full/parts/body_05_glow.png",
+        "purified": "full/parts/body_05_purified.png",
+        "hit_mask": "full/parts/body_05_hit_mask.png"
+      },
+      "aim": [
+        146,
+        131
+      ],
+      "effective_radius": 45.01158101599885
+    },
+    {
+      "id": "body_06",
+      "parent": "body_05",
+      "pivots": [
+        [
+          7.280373831775701,
+          160.68710089399747
+        ],
+        [
+          296.5420560747663,
+          167.1417624521073
+        ]
+      ],
+      "textures": {
+        "paper": "full/parts/body_06_paper.png",
+        "locked": "full/parts/body_06_locked.png",
+        "ink": "full/parts/body_06_ink.png",
+        "glow": "full/parts/body_06_glow.png",
+        "purified": "full/parts/body_06_purified.png",
+        "hit_mask": "full/parts/body_06_hit_mask.png"
+      },
+      "aim": [
+        145,
+        130
+      ],
+      "effective_radius": 44.48161701780234
+    },
+    {
+      "id": "body_07",
+      "parent": "body_06",
+      "pivots": [
+        [
+          7.184579439252336,
+          158.27075351213284
+        ],
+        [
+          292.64018691588785,
+          164.62835249042146
+        ]
+      ],
+      "textures": {
+        "paper": "full/parts/body_07_paper.png",
+        "locked": "full/parts/body_07_locked.png",
+        "ink": "full/parts/body_07_ink.png",
+        "glow": "full/parts/body_07_glow.png",
+        "purified": "full/parts/body_07_purified.png",
+        "hit_mask": "full/parts/body_07_hit_mask.png"
+      },
+      "aim": [
+        142,
+        128
+      ],
+      "effective_radius": 43.73834034305122
+    },
+    {
+      "id": "body_08",
+      "parent": "body_07",
+      "pivots": [
+        [
+          7.04088785046729,
+          154.6462324393359
+        ],
+        [
+          286.7873831775701,
+          160.85823754789274
+        ]
+      ],
+      "textures": {
+        "paper": "full/parts/body_08_paper.png",
+        "locked": "full/parts/body_08_locked.png",
+        "ink": "full/parts/body_08_ink.png",
+        "glow": "full/parts/body_08_glow.png",
+        "purified": "full/parts/body_08_purified.png",
+        "hit_mask": "full/parts/body_08_hit_mask.png"
+      },
+      "aim": [
+        140,
+        125
+      ],
+      "effective_radius": 42.77435242974964
+    }
+  ],
+  "head": {
+    "id": "head",
+    "upper_jaw": "full/parts/head_upper.png",
+    "lower_jaw": "full/parts/head_lower.png",
+    "neck_pivot": [
+      491.7529518619437,
+      220.8
+    ],
+    "hinge": [
+      368.12534059945506,
+      220.8
+    ],
+    "jaw_pivot": [
+      306.8926553672316,
+      27.2027027027027
+    ],
+    "open_degrees": 41
+  },
+  "tail": {
+    "id": "tail",
+    "parent": "body_08",
+    "file": "full/parts/tail_paper.png",
+    "pivot": [
+      8.445508982035928,
+      118.22222222222223
+    ]
+  },
+  "mouth": {
+    "id": "mouth",
+    "parent": "head",
+    "anchor": [
+      165.44959128065395,
+      288.6688524590164
+    ],
+    "center": [
+      100,
+      100
+    ],
+    "interior_center": [
+      122,
+      122
+    ],
+    "core": "full/parts/mouth_core.png",
+    "hit_mask": "full/parts/mouth_hit_mask.png",
+    "interior": "full/parts/mouth_interior.png",
+    "glow": "full/parts/mouth_glow.png"
+  },
+  "opening_order": [
+    "body_08",
+    "body_07",
+    "body_06",
+    "body_05",
+    "body_04",
+    "body_03",
+    "body_02",
+    "body_01"
+  ],
+  "max_active": 1
+}

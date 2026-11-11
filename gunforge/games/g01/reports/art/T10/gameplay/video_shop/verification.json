@@ -1,0 +1,143 @@
+{
+  "package": "paper.video_shop",
+  "build_id": "034c67c7bbebf4345101078ab6674f08291b5b201ba1954aaea8fc485a04a0a6",
+  "source_revision": "cd65aeb8cbee2db4da27b87975d5839c92b62f1bd91447a6d20081f88ad9f326",
+  "headless_and_gpu_playthrough": {
+    "passed": true,
+    "shots": 7,
+    "rescued": 1,
+    "verified": [
+      "moving foreground blocks shots through a submitted pose",
+      "falling ink intercept cancels contact damage",
+      "covered neon stays aimable and can be relit",
+      "sign remains hardened outside the light mask",
+      "warning and visible spit precede damage",
+      "shooting the soft sign cancels the spit",
+      "owner protected and chest rescue leads to thanks"
+    ]
+  },
+  "sign_soft_window": {
+    "tick_hz": 60,
+    "longest_sampled_ticks": 143
+  },
+  "normal_player_launch": {
+    "passed": true
+  },
+  "loopback": {
+    "passed": true,
+    "build_id": "034c67c7bbebf4345101078ab6674f08291b5b201ba1954aaea8fc485a04a0a6",
+    "checks": [
+      {
+        "name": "exact_build_owned_test_server",
+        "passed": true
+      },
+      {
+        "name": "http_start",
+        "passed": true
+      },
+      {
+        "name": "ready_to_running",
+        "passed": true
+      },
+      {
+        "name": "shot_input_enabled_after_opening",
+        "passed": true
+      },
+      {
+        "name": "visible_submission_available",
+        "passed": true
+      },
+      {
+        "name": "http_shot_receipt_after_consumption",
+        "passed": true
+      },
+      {
+        "name": "udp_duplicate_shot_consumed_once",
+        "passed": true
+      },
+      {
+        "name": "lost_tracking_pauses_shared_session",
+        "passed": true
+      },
+      {
+        "name": "late_shot_and_start_do_not_clear_tracking_barrier",
+        "passed": true
+      },
+      {
+        "name": "fresh_aim_recovers_while_paused",
+        "passed": true
+      }
+    ],
+    "hardware": "synthetic loopback protocol test; no phone tracking or display latency claim"
+  },
+  "compiler_tests": {
+    "passed": true,
+    "count": 26
+  },
+  "regressions": {
+    "paper.plaza": true,
+    "paper.cinema": true
+  },
+  "captures": {
+    "shop_falling.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004031074343574343
+        }
+      },
+      "sha256": "efb2470057dcc5c658c2d0dd932085831dfc1e590ba6f254e5c573d42d07a324"
+    },
+    "shop_lit.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004221769846769847
+        }
+      },
+      "sha256": "006dfc46f50c044cec6c3e2410c7ea5a6f4f1b58903542bc40d7afd9a2b2ce02"
+    },
+    "shop_off.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004056339993839994
+        }
+      },
+      "sha256": "8896918cf492461699605d4103868c102c5832d41f437589ff52018ef88ad589"
+    },
+    "shop_rescued.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004812504812504812
+        }
+      },
+      "sha256": "854bdfe4398cfefb45efade819a432a1d5b20375bb3866581883de2d5d05e974"
+    },
+    "shop_spit.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004663317163317163
+        }
+      },
+      "sha256": "ebda47fad065bb5c985527dca6653efbb7c4dc02a6bbb64e789923b8c6928416"
+    },
+    "shop_thanks.jpg": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004799270424270424
+        }
+      },
+      "sha256": "4d4c2a833f862f1896b58a7efff2007f0dedf31d9d712df73f22c969d4a7350d"
+    }
+  }
+}

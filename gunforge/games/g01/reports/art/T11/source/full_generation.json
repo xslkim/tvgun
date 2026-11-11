@@ -1,0 +1,26 @@
+[
+  {
+    "id": "head",
+    "output": "source/head.png",
+    "provider": "builtin_image_gen",
+    "attempt": 1,
+    "output_id": "exec-110da0ba-04bc-4ba0-ac82-b74e6269d81d.png",
+    "prompt": "2D game sprite, a single complete articulated paper dragon head kit laid out as TWO isolated pieces on the same transparent canvas: in upper two thirds a left-facing side profile of the whole upper head including swept horns, cheek, nose and upper teeth, with lower jaw removed. In bottom third its matching separate lower jaw, pointing left, with a yellow paper chin and small pale paper teeth. Leave a wide completely transparent horizontal gutter between the pieces. Both pieces must be fully isolated with no string or touching, no body or tail. Match the first reference dragon's Chinese festival dragon identity, and match the second reference's warm apricot dyed rice paper and muted dark indigo accents. The head reads at game scale, projecting far left from the short neck joint at right. Small round black pupil and muted cream iris, no glowing eyes, no red eyes, no blood, no text. No outline glow, no backdrop, no cast shadow. True transparency.",
+    "references": [
+      "../T09/generation/dragon.png",
+      "source/segment_paper.png"
+    ]
+  },
+  {
+    "id": "tail",
+    "output": "source/tail.png",
+    "provider": "builtin_image_gen",
+    "attempt": 1,
+    "output_id": "exec-d328262e-08b8-4afe-90e5-34c6fe694557.png",
+    "prompt": "Single isolated left-to-right sprite of the terminal flame-shaped fan TAIL of the Chinese paper festival dragon from reference. Narrow short amber rounded neck root at LEFT with one small visible brass copper attachment pin. From the root the ornate pointed fan sweeps up to RIGHT, distinct torn cut-paper blades, flat warm apricot and ochre layered rice-paper scales with restrained dark indigo fins near its base. Match references. No head, limbs, body segment, smoke, letters, glow, ground or shadows. Real transparent background with generous padding, isolated complete silhouette.",
+    "references": [
+      "../T09/generation/dragon.png",
+      "source/segment_paper.png"
+    ]
+  }
+]

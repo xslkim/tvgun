@@ -1,0 +1,132 @@
+{
+  "id": "poster_hall",
+  "status": "runtime_probe_candidate",
+  "source_sha256": "dd6bc4d8cc8b6b10d00dc9f43ab27229daed394d0f3396ed61117152960fda4b",
+  "canvas": [
+    1920,
+    1020
+  ],
+  "content_origin": [
+    72,
+    42
+  ],
+  "content_size": [
+    1776,
+    936
+  ],
+  "layers": [
+    {
+      "id": "sky",
+      "file": "sky.png",
+      "pos": [
+        0,
+        0
+      ],
+      "parallax": 0.1,
+      "extent": "sky_extent.png",
+      "fill": "sky_fill.png"
+    },
+    {
+      "id": "end_wall",
+      "file": "end_wall.png",
+      "pos": [
+        761,
+        279
+      ],
+      "parallax": 0.2,
+      "extent": "end_wall_extent.png",
+      "fill": "end_wall_fill.png"
+    },
+    {
+      "id": "floor",
+      "file": "floor.png",
+      "pos": [
+        0,
+        690
+      ],
+      "parallax": 0.32,
+      "extent": "floor_extent.png",
+      "fill": "floor_fill.png"
+    },
+    {
+      "id": "poster_wall",
+      "file": "poster_wall.png",
+      "pos": [
+        0,
+        102
+      ],
+      "parallax": 0.45,
+      "extent": "poster_wall_extent.png",
+      "fill": "poster_wall_fill.png"
+    },
+    {
+      "id": "bench",
+      "file": "bench.png",
+      "pos": [
+        482,
+        572
+      ],
+      "parallax": 0.56,
+      "extent": "bench_extent.png"
+    },
+    {
+      "id": "lamp",
+      "file": "lamp.png",
+      "pos": [
+        312,
+        276
+      ],
+      "parallax": 0.45,
+      "extent": "lamp_extent.png"
+    },
+    {
+      "id": "display_case",
+      "file": "display_case.png",
+      "pos": [
+        0,
+        636
+      ],
+      "parallax": 0.84,
+      "extent": "display_case_extent.png",
+      "blocks_shots": true,
+      "block_mask": "display_case_block.png"
+    },
+    {
+      "id": "right_door",
+      "file": "right_door.png",
+      "pos": [
+        1778,
+        149
+      ],
+      "parallax": 0.63,
+      "extent": "right_door_extent.png",
+      "blocks_shots": true,
+      "block_mask": "right_door_block.png"
+    }
+  ],
+  "lights": [
+    {
+      "id": "lamp",
+      "space": "lamp",
+      "glow": "lamp_glow.png",
+      "spill": "lamp_spill.png",
+      "influence": "lamp_influence.png",
+      "pos": [
+        203,
+        191
+      ],
+      "hit_mask": "lamp_hit.png",
+      "hit_pos": [
+        312,
+        276
+      ],
+      "aim": [
+        395,
+        316
+      ]
+    }
+  ],
+  "rest_matches_original": false,
+  "original_sha256": "6af87a5e48e53a32c8f1b1c743cdbd9db5b3c18596648c734520314901c82a5e",
+  "rest_matches_render_source": true
+}

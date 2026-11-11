@@ -1,0 +1,143 @@
+{
+  "id": "platform",
+  "status": "runtime_probe_candidate",
+  "source_sha256": "c5951d19d8d77b2a1bab22c372ee0608795e30fd2aa0b90ad2dc65997898efa2",
+  "canvas": [
+    1920,
+    1020
+  ],
+  "content_origin": [
+    72,
+    42
+  ],
+  "content_size": [
+    1776,
+    936
+  ],
+  "layers": [
+    {
+      "id": "sky",
+      "file": "sky.png",
+      "pos": [
+        0,
+        0
+      ],
+      "parallax": 0.1,
+      "extent": "sky_extent.png",
+      "fill": "sky_fill.png"
+    },
+    {
+      "id": "distant_hills",
+      "file": "distant_hills.png",
+      "pos": [
+        0,
+        216
+      ],
+      "parallax": 0.14,
+      "extent": "distant_hills_extent.png",
+      "fill": "distant_hills_fill.png"
+    },
+    {
+      "id": "carriage",
+      "file": "carriage.png",
+      "pos": [
+        0,
+        315
+      ],
+      "parallax": 0.26,
+      "extent": "carriage_extent.png",
+      "fill": "carriage_fill.png"
+    },
+    {
+      "id": "platform_floor",
+      "file": "platform_floor.png",
+      "pos": [
+        0,
+        564
+      ],
+      "parallax": 0.26,
+      "extent": "platform_floor_extent.png",
+      "fill": "platform_floor_fill.png"
+    },
+    {
+      "id": "canopy_and_posts",
+      "file": "canopy_and_posts.png",
+      "pos": [
+        0,
+        81
+      ],
+      "parallax": 0.26,
+      "extent": "canopy_and_posts_extent.png",
+      "fill": "canopy_and_posts_fill.png"
+    },
+    {
+      "id": "clock",
+      "file": "clock.png",
+      "pos": [
+        280,
+        189
+      ],
+      "parallax": 0.26,
+      "extent": "clock_extent.png"
+    },
+    {
+      "id": "lamp",
+      "file": "lamp.png",
+      "pos": [
+        1568,
+        230
+      ],
+      "parallax": 0.26,
+      "extent": "lamp_extent.png"
+    },
+    {
+      "id": "near_left_luggage",
+      "file": "near_left_luggage.png",
+      "pos": [
+        0,
+        835
+      ],
+      "parallax": 0.55,
+      "extent": "near_left_luggage_extent.png",
+      "blocks_shots": true,
+      "block_mask": "near_left_luggage_block.png"
+    },
+    {
+      "id": "near_right_luggage",
+      "file": "near_right_luggage.png",
+      "pos": [
+        1632,
+        859
+      ],
+      "parallax": 0.55,
+      "extent": "near_right_luggage_extent.png",
+      "blocks_shots": true,
+      "block_mask": "near_right_luggage_block.png"
+    }
+  ],
+  "lights": [
+    {
+      "id": "lamp",
+      "space": "lamp",
+      "glow": "lamp_glow.png",
+      "spill": "lamp_spill.png",
+      "influence": "lamp_influence.png",
+      "pos": [
+        1221,
+        42
+      ],
+      "hit_mask": "lamp_hit.png",
+      "hit_pos": [
+        1570,
+        232
+      ],
+      "aim": [
+        1597,
+        302
+      ]
+    }
+  ],
+  "rest_matches_original": false,
+  "original_sha256": "7790d2fbb080c39d4c0ecf7e794e8a573763a74a284a1435aad9abdc00327fcb",
+  "rest_matches_render_source": true
+}

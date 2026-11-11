@@ -1,0 +1,77 @@
+{
+  "status": "provisional",
+  "stations": [
+    {
+      "id": "ticket_office",
+      "title": "售票处",
+      "description": "左侧售票窗，右侧验票栏，中间留出检票员救援位置。",
+      "midground": [[125,152,516,404],[1115,230,556,301]],
+      "cover": [[0,552,426,272],[1515,560,261,251]],
+      "lanes": [
+        {"id":"tape_behind_glass","actor":"磁带墨","rect":[665,223,373,271]},
+        {"id":"umbrella_entry","actor":"墨伞","rect":[1064,423,418,237]}
+      ],
+      "residents": [{"id":"ticket_clerk","rect":[570,510,253,280]}],
+      "lights": [{"id":"ticket_lightbox","kind":"售票窗灯箱","rect":[327,217,258,106],"range":[220,156,1150,558]}]
+    },
+    {
+      "id": "poster_hall",
+      "title": "海报长廊",
+      "description": "沿墙海报和壁灯交替，左侧低展架与右侧门边形成近景遮挡。",
+      "midground": [[143,169,495,388],[1141,174,493,386]],
+      "cover": [[0,516,234,307],[1536,500,240,323]],
+      "lanes": [
+        {"id":"tape_poster","actor":"磁带墨","rect":[454,245,343,264]},
+        {"id":"umbrella_door","actor":"墨伞","rect":[1090,337,397,289]}
+      ],
+      "residents": [],
+      "lights": [{"id":"cinema_wall_lamp","kind":"壁灯","rect":[287,236,108,129],"range":[200,156,822,564]}]
+    },
+    {
+      "id": "auditorium",
+      "title": "观众席",
+      "description": "前排座椅夹出中间走道，银幕居中，远处放映窗沿对角线投光。",
+      "midground": [[302,152,1172,371],[705,132,355,96]],
+      "cover": [[0,560,589,269],[1200,590,576,238]],
+      "lanes": [
+        {"id":"tape_over_seats","actor":"磁带墨","rect":[410,275,313,255]},
+        {"id":"umbrella_center_aisle","actor":"墨伞","rect":[748,483,300,293]}
+      ],
+      "residents": [{"id":"passerby_b","rect":[1072,303,244,277]}],
+      "lights": [{"id":"cinema_wall_lamp","kind":"壁灯","rect":[1350,215,114,124],"range":[881,158,769,566]}]
+    },
+    {
+      "id": "projection_booth",
+      "title": "放映室",
+      "description": "放映窗位于后方，工作台和设备占两侧，留出放映员救援区。",
+      "midground": [[216,155,447,348],[988,156,561,332]],
+      "cover": [[0,554,399,281],[1435,519,341,306]],
+      "lanes": [
+        {"id":"tape_projection_window","actor":"磁带墨","rect":[422,270,317,276]},
+        {"id":"umbrella_rear_rack","actor":"墨伞","rect":[1040,283,353,235]}
+      ],
+      "residents": [{"id":"projectionist","rect":[789,462,250,317]}],
+      "lights": [{"id":"booth_work_lamp","kind":"工作灯","rect":[791,196,144,108],"range":[522,139,837,596]}]
+    },
+    {
+      "id": "screen_stage",
+      "title": "银幕前",
+      "description": "三台放映机本体不可射。胶片盘净墨后仅对应光束恢复暖色。",
+      "midground": [[300,142,1176,458]],
+      "cover": [[0,568,253,255],[1523,568,253,255]],
+      "lanes": [],
+      "residents": [],
+      "lights": [],
+      "boss": {
+        "id": "screen_shadow",
+        "screen": [300,142,1176,458],
+        "core": {"id":"shadow_core","rect":[823,234,130,124]},
+        "projectors": [
+          {"id":"projector_left","rect":[286,642,215,121],"lens":[392,662],"reel":{"id":"reel_left","rect":[327,504,130,116]},"screen_span":[[526,215],[678,309]]},
+          {"id":"projector_center","rect":[780,642,215,121],"lens":[888,662],"reel":{"id":"reel_center","rect":[823,504,130,116]},"screen_span":[[779,185],[997,185]]},
+          {"id":"projector_right","rect":[1275,642,215,121],"lens":[1382,662],"reel":{"id":"reel_right","rect":[1317,504,130,116]},"screen_span":[[1098,309],[1250,215]]}
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "projectionist",
+    "output": "source/projectionist.png",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "output_id": "exec-11ad461f-fa91-4fd5-bfdd-02b33f5b178b.png",
+    "prompt": "Generate a production sprite sheet from the attached approved character. Preserve their face, hairstyle, costume and identity, left-facing or 3/4 paper puppet 1990s Chinese cinema NPC, subtle matte dyed paper. Exactly TEN completely separated isolated sprites arranged in three tidy rows with wide transparent gaps and safe margins: row 1 head with neck, torso with clothes; row 2 upper arm left, upper arm right, forearm and hand left, forearm and hand right; row 3 upper leg left, upper leg right, shin and shoe left, shin and shoe right. Each row pieces in that order from left to right. Matching paper overlap tabs, small brass pins at upper limb ends only. Do not draw a complete person, accessories, text, labels, scenery, gray background or cast shadow. True transparent alpha, all ten separated.",
+    "references": [
+      "../T09/generation/projectionist.png"
+    ],
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "c8bb77206a7003bd2d51afa04ea43cfc42b9eacaa2f9a42e7e96680a87a9a5a2"
+  },
+  {
+    "id": "ticket_clerk",
+    "output": "source/ticket_clerk.png",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "output_id": "exec-005ff038-74de-4f8d-b04b-0343a76a5926.png",
+    "prompt": "Generate a production sprite sheet from the attached approved character. Preserve their face, hairstyle, costume and identity, left-facing or 3/4 paper puppet 1990s Chinese cinema NPC, subtle matte dyed paper. Exactly TEN completely separated isolated sprites arranged in three tidy rows with wide transparent gaps and safe margins: row 1 head with neck, torso with clothes; row 2 upper arm left, upper arm right, forearm and hand left, forearm and hand right; row 3 upper leg left, upper leg right, shin and shoe left, shin and shoe right. Each row pieces in that order from left to right. Matching paper overlap tabs, small brass pins at upper limb ends only. Do not draw a complete person, accessories, text, labels, scenery, gray background or cast shadow. True transparent alpha, all ten separated.",
+    "references": [
+      "../T09/generation/ticket_clerk.png"
+    ],
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "c220806389cace79495482656858bb6401041f56c0105c5edcb03767e8473c94"
+  },
+  {
+    "id": "passerby_b",
+    "output": "source/passerby_b.png",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "output_id": "exec-5968f677-d25e-416b-9de3-1f87e1cf2ca7.png",
+    "prompt": "Generate a production sprite sheet from the attached approved character. Preserve their face, hairstyle, costume and identity, left-facing or 3/4 paper puppet 1990s Chinese cinema NPC, subtle matte dyed paper. Exactly TEN completely separated isolated sprites arranged in three tidy rows with wide transparent gaps and safe margins: row 1 head with neck, torso with clothes; row 2 upper arm left, upper arm right, forearm and hand left, forearm and hand right; row 3 upper leg left, upper leg right, shin and shoe left, shin and shoe right. Each row pieces in that order from left to right. Matching paper overlap tabs, small brass pins at upper limb ends only. Do not draw a complete person, accessories, text, labels, scenery, gray background or cast shadow. True transparent alpha, all ten separated.",
+    "references": [
+      "../T09/generation/passerby_b.png"
+    ],
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "7b22ffbacddd155d0d56a0e26751c56dbc5e0cf57d4131beb3a7fe88ff0c9e09"
+  },
+  {
+    "id": "ink_tape",
+    "output": "source/ink_tape.png",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "output_id": "exec-37b18344-d76d-4185-a26b-a53227477461.png",
+    "prompt": "One isolated sprite, true transparent background, no cast shadow, scene or text. Keep the existing approved reference design in matte layered dyed rice paper, deep indigo-black absorbed ink and restrained faded plum. Small matte cinnabar square seal on the dense ink only, no letters, eyes or decorative shine. One old small black VHS videocassette, front three-quarter view, clean muted shell and two tape spools, one broad dense irregular mass of dark ink draped across the top and flowing toward the front; seal readable.",
+    "references": [
+      "../T09/generation/ink_tape.png"
+    ],
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "b2f7fabf2d2a82e79ee1822da757082487d895b4b3c50c45f73eacc4ba8b13d0"
+  },
+  {
+    "id": "umbrella_open",
+    "output": "source/umbrella_open.png",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "output_id": "exec-faf4ff6e-458d-4b25-b21a-49ecb9980e82.png",
+    "prompt": "One isolated sprite, true transparent background, no cast shadow, scene or text. Keep the existing approved reference design in matte layered dyed rice paper, deep indigo-black absorbed ink and restrained faded plum. Small matte cinnabar square seal on the dense ink only, no letters, eyes or decorative shine. One open dusty-plum Chinese oil-paper umbrella with wide complete canopy and slim handle, slightly raised left side. This is the ink umbrella's defensive pose; no creature outside the canopy. Keep canopy visually recognizable and continuous. Omit the cinnabar seal and hide the target entirely.",
+    "references": [
+      "../T09/generation/umbrella_open.png"
+    ],
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "fd6eafb457a06bb484405c412fbdd627b2b9574a4c7f008f623aa88267ff5bb9"
+  },
+  {
+    "id": "umbrella_closed",
+    "output": "source/umbrella_closed.png",
+    "attempt": 1,
+    "provider": "builtin_image_gen",
+    "output_id": "exec-6f38f8a6-534a-4d2b-a5a6-60c6e29a60f1.png",
+    "prompt": "One isolated sprite, true transparent background, no cast shadow, scene or text. Keep the existing approved reference design in matte layered dyed rice paper, deep indigo-black absorbed ink and restrained faded plum. Small matte cinnabar square seal on the dense ink only, no letters, eyes or decorative shine. Same old folded dusty-plum oil-paper umbrella pushed toward the side, exposing a prominent dense rounded body of blue-black ink with one cinnabar seal. Keep the dark vulnerable body separate in silhouette and distinguishable from the folded fabric.",
+    "references": [
+      "../T09/generation/umbrella_closed_v2.png"
+    ],
+    "size": [
+      1312,
+      1199
+    ],
+    "sha256": "85af688734e25520a43354e0419e62c915f722d10a36a60b584beea156917747"
+  }
+]

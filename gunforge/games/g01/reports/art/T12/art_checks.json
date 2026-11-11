@@ -1,0 +1,134 @@
+{
+  "ticket_office": {
+    "size": [
+      1728,
+      910
+    ],
+    "C03_off": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 6.35938135938136e-07
+      }
+    },
+    "C04": {
+      "status": "fail",
+      "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+      "details": {
+        "coverage": 0.5113011695906433
+      }
+    },
+    "C03_lit": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0021043192918192917
+      }
+    },
+    "outside_spill_unchanged": true
+  },
+  "poster_hall": {
+    "size": [
+      1728,
+      910
+    ],
+    "C03_off": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "C04": {
+      "status": "fail",
+      "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+      "details": {
+        "coverage": 0.8683771929824562
+      }
+    },
+    "C03_lit": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.00016216422466422466
+      }
+    },
+    "outside_spill_unchanged": true
+  },
+  "auditorium": {
+    "size": [
+      1727,
+      911
+    ],
+    "C03_off": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "C04": {
+      "status": "pass",
+      "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+      "details": {
+        "coverage": 0.9987719298245614
+      }
+    },
+    "C03_lit": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 3.305161072575617e-05
+      }
+    },
+    "outside_spill_unchanged": true
+  },
+  "projection_booth": {
+    "size": [
+      1727,
+      910
+    ],
+    "C03_off": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "C04": {
+      "status": "fail",
+      "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+      "details": {
+        "coverage": 0.7537865497076024
+      }
+    },
+    "C03_lit": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 9.162811710582411e-05
+      }
+    },
+    "outside_spill_unchanged": true
+  },
+  "screen_stage": {
+    "size": [
+      1728,
+      910
+    ],
+    "C03_off": {
+      "status": "pass",
+      "reason": "Visible alpha-weighted encoded luminance",
+      "details": {
+        "clipped_fraction": 0.0
+      }
+    },
+    "C04": {
+      "status": "fail",
+      "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+      "details": {
+        "coverage": 0.667733918128655
+      }
+    }
+  }
+}

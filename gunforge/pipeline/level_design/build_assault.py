@@ -4,7 +4,7 @@ from compiler import ROOT,DEFAULT_CACHE,read_package,compile_source,write_build
 from versions import publish
 from freeze_baseline import dump
 from combat_cues import ensure_combat_cues
-def build(*, station_candidate=False):
+def build(*, station_candidate=False, source_only=False):
  runtime=ROOT/'gunforge/framework/runtime';station=json.loads((runtime/'station/station.json').read_bytes())
  source={'schema_version':1,'id':'paper.assault','ruleset':'directed_action@1','seed':421,'tick_hz':60,'duration_ms':84000,'layout':{'width':1776,'height':936},'entities':{},'events':{},'queries':{},'resources':{},'cues':{},'effects':{},'sections':{},'initial_resources':{'lives':5,'ammo':80,'score':0,'purified':0,'rescued':0},'resource_bounds':{'lives':{'min':0,'max':5},'score':{'min':0},'ammo':{'min':0,'max':80}},'controls':{'ammo_resource':'ammo','shot_interval_ms':150,'assist_px':12},'hud':[{'label':'灯芯','resource':'lives'},{'label':'剩余光弹','resource':'ammo'},{'label':'印记','resource':'score'}]}
  resources=source['resources'];entities=source['entities'];events=source['events'];effects=source['effects']
@@ -37,7 +37,7 @@ def build(*, station_candidate=False):
  for name,path in rig['clips'].items():clips[name]=resource('vendor_clip_'+name,runtime/'vendor'/path,'metadata')
  presentation['puppets']['vendor']={'character':resource('vendor_rig',runtime/'vendor/character.json','metadata'),'atlas':resource('vendor_atlas',runtime/'vendor/atlas.png'),'clips':clips}
  for name,data in ensure_combat_cues().items():
-  if name=='reload':
+  if name in ('reload','bell'):
    continue
   gain = {'shot':-3, 'windup':-4, 'attack':-3, 'hurt':-2, 'lamp':-8}.get(name,-10)
   resources['sound_'+name]=data['resource'];source['cues'][name]={'resource':'sound_'+name,'channel':'warning' if name in ['windup','attack'] else ('weapon' if name in ['shot','empty'] else 'impact'),'duration_ms':data['duration_ms'],'volume_db':gain}
@@ -155,6 +155,7 @@ def build(*, station_candidate=False):
     guards=[{'resource':'lives','compare':'gt','value':0},
             {'resource':'rescued','compare':'gt' if rescued else 'lte','value':0}])
  event('level.clear',{'at_ms':93000 if station_candidate else 82000},[{'op':'complete','result':'clear'}],guards=[{'resource':'lives','compare':'gt','value':0}])
+ if source_only:return source
  path=publish(source);loaded,manifest=read_package(path);compiled=compile_source(loaded,source_manifest=manifest);out=write_build(compiled,DEFAULT_CACHE)
  index_name = 'station' if station_candidate else 'assault'
  dump(ROOT/'gunforge/level_design/reviews'/f'{index_name}_build.json',{'source':str(path),'source_revision':path.parent.name,'build_id':compiled['build_id'],'compiled':str(out),'state':'candidate_not_adopted','feedback':'user-gameplay-2026-11-09','target_count':sum(counts),'wave_count':len(counts)})

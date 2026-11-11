@@ -1,0 +1,117 @@
+{
+  "package": "paper.green_car",
+  "source_revision": "3cfa8933f557dcefa275c3ebd6684902ff9ed03e86c80bdf68fd1f1b787420ad",
+  "build_id": "a837f4b14b4482c1ee16b055f0adf888567cac05084fe203c7e35010e92a5dd6",
+  "status": "candidate_software_passed",
+  "godot": "4.6.3 Compatibility",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "player_launch": {
+    "ready": true,
+    "http_error": 0,
+    "udp_errors": []
+  },
+  "gameplay": {
+    "build_id": "a837f4b14b4482c1ee16b055f0adf888567cac05084fe203c7e35010e92a5dd6",
+    "failures": [],
+    "gpu_capture": true,
+    "lives": 5.0,
+    "longest_light_window_ticks": 231,
+    "passed": true,
+    "shots": 7
+  },
+  "ceiling_lamp_patch_median_yprime": {
+    "dark": 0.1095,
+    "lit": 0.8472
+  },
+  "regressions": [
+    "green car success and failure retry",
+    "both seats block shots; left seat occludes the entering crow",
+    "ceiling light softens only inside its spill, expires, and can be relit",
+    "umbrella folding hit permissions and vulnerability with ceiling lamp off",
+    "crow warning and attack before any ceiling light activation",
+    "waiting-room and platform headless playthroughs passed"
+  ],
+  "frames": {
+    "green_car_entry": {
+      "preview": "green_car_entry.jpg",
+      "sha256": "7a261b040f942b937b4aac2516574109855fa50d8b058169612091b003b97c40",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.005396622584122584
+        }
+      }
+    },
+    "green_car_outside_spill": {
+      "preview": "green_car_outside_spill.jpg",
+      "sha256": "8b73de756ee6a344d9dd565121bc12dae9c9e7fed83ce1ffff068616bf251579",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.005989763802263803
+        }
+      }
+    },
+    "green_car_lit": {
+      "preview": "green_car_lit.jpg",
+      "sha256": "bbec1624c8154eb8105ae3131b68bc17cebeb1b939c87bb46eef747fadd96404",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.006163615538615538
+        }
+      }
+    },
+    "green_car_folding": {
+      "preview": "green_car_folding.jpg",
+      "sha256": "8599e7f5394f6ebc63ba1aff35686d2db17f5cd27033c1734693c858591e87bb",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.005873060560560561
+        }
+      }
+    },
+    "green_car_clear": {
+      "preview": "green_car_clear.jpg",
+      "sha256": "5d81f756bdac7b5599c2e61347eb1c430e51089f197d935a334308fdcb799ebd",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.005996380996380997
+        }
+      }
+    },
+    "green_car_warning": {
+      "preview": "green_car_warning.jpg",
+      "sha256": "19622a738cea61c6d754ede878edd789dc4084ac41310277bcd68ca89330fda7",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.005092833217833218
+        }
+      }
+    },
+    "green_car_crow_attack": {
+      "preview": "green_car_crow_attack.jpg",
+      "sha256": "245fd4743e215a49d986b1d55a39a28a15207280bef01b50d4ddcc5955e76a98",
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0043035824285824285
+        }
+      }
+    }
+  },
+  "pending": [
+    "T13 physical lightgun on monitor and TV",
+    "A5 overall art review"
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "provider": "builtin_image_gen",
+  "selected_attempt": 3,
+  "source": "source/waiting_room_v3.png",
+  "preview": "compositions/waiting_room.jpg",
+  "preview_sha256": "5ad7168893786b5c4d9ca76bd1160b389d3d30a7e55d16c009a114dc8076f2b7",
+  "preview_size": [
+    1776,
+    936
+  ],
+  "C03_preview": {
+    "status": "pass",
+    "reason": "Visible alpha-weighted encoded luminance",
+    "details": {
+      "clipped_fraction": 0.00008241414491414492
+    }
+  },
+  "C04_preview": {
+    "status": "fail",
+    "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+    "details": {
+      "coverage": 0.650496048933549
+    }
+  },
+  "lamp_body_visual_estimate": [
+    699,
+    154,
+    170,
+    61
+  ],
+  "lamp_center_in_whitebox_slot": true,
+  "lamp_overlaps_playing_hud_or_target": false,
+  "attempts": [
+    {
+      "attempt": 1,
+      "output_id": "exec-18055b90-0df4-4f28-85cc-6ed4618adfb4.png",
+      "source_sha256": "89eb2c472fe129869ab46fd2fe3b376cc5c7896d79beb249d58176257c84fdf7",
+      "size": [
+        1728,
+        910
+      ],
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.000001907814407814408
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.6299418752543753
+        }
+      },
+      "prompt": "Use case: illustration-story. Asset: a single edge-to-edge opaque 1776:936 wide game background for Paper Lantern City, T13 waiting room at night, inside a small-town Chinese railway station in the 1990s. Image 1 is a placement guide: preserve its position and open lanes, omit all rectangles, labels, outlines and HUD. Image 2 is period objects only: wooden benches, old metal rail and window hardware; no outdoor platform composition. Image 3 is palette and restrained paper light only; no townscape framing. Eye-level front-facing cut-paper theater, long parallel wall lines, no central vanishing-point doorway. A broad long window at left behind one low long wooden bench in the lower left, an old low iron ticket railing only in the far right foreground. A clearly recognizable horizontal rectangular switched-OFF station lamp, dark teal frame and desaturated pale-gray frosted face, centered at x=44%, y=24%, spanning x=40–49%, y=18–29%. Lamp glass is dark, no emission or bloom. Keep the center at x=41–56%, y=45–80% as a clear open floor for the later resident, with subdued open staging behind the left and right enemy lanes. Near-dark silhouettes only in the outer bottom corners. Flat overlapping dyed paper, clean hand-cut edges, subtle fine rice-paper grain, little bevel. Night indigo #141A33, deep plum #2A1E3D in shadows, desaturated teal #4E9A92 and moon white #B8C4D6 accents, restrained muted warm incident light away from the unlit lamp. Small blank period signage shapes only. No people, enemies, glowing red, white glare, HUD, letters, logos, borders or watermark.",
+      "references": [
+        "whiteboxes/waiting_room.jpg",
+        "../../../bible/style_refs/st_l3_platform.png",
+        "../../../bible/style_refs/st_l3_base.png"
+      ],
+      "decision": "Lamp below the placement slot; top-left foliage weakens the interior read."
+    },
+    {
+      "attempt": 2,
+      "output_id": "exec-b9e71bd1-3cb2-435c-b7cb-7a90b3c9027c.png",
+      "source_sha256": "ed82b133dd9dc56bb59581ef5ea1de9086a9bad0c3767a3cf70b32a397d40b2d",
+      "size": [
+        1728,
+        910
+      ],
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.000046423483923483926
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.6507891992266992
+        }
+      },
+      "prompt": "Refine Image 1, the T13 Paper Lantern City waiting-room background. Image 2 is a placement guide only. Preserve Image 1's exact wide crop, eye-level front view, left long windows and low bench, low far-right ticket railing, clear central walkable floor, paper layering and unobtrusive moody blue-green and moon-white values. Make two precise upper-wall changes only: (1) move the single switched-OFF dark-teal rectangular lamp from its current too-low position to the marked slot in Image 2. Its center is x=44%, y=23.5% of the final crop, with the entire rectangular body inside x=40–49%, y=18–29%. Mount it flat against the wall immediately above the upper window line; move or shorten its supports to fit. Keep the frosted gray face matte and unlit, zero visible emission. Fill the old lamp location with contiguous paper wall. (2) remove the top-left exterior foliage that hangs into the room; fill that small area with the same dark indigo paper ceiling so this clearly reads as an indoor waiting room. Retain the rest of the composition and flat hand-cut paper material. One opaque edge-to-edge 1776:936 composition, no labels from Image 2, no people or HUD.",
+      "references": [
+        "exec-18055b90-0df4-4f28-85cc-6ed4618adfb4.png",
+        "whiteboxes/waiting_room.jpg"
+      ],
+      "decision": "Clearer interior; lamp still below the whitebox center."
+    },
+    {
+      "attempt": 3,
+      "output_id": "exec-c035f65d-b2c5-4ec3-b2de-1b203357c826.png",
+      "source_sha256": "032ac47590a9057d69879515935d0df430fdec75df2deb5b88953a168ed1b43d",
+      "size": [
+        1728,
+        910
+      ],
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.00010365791615791616
+        }
+      },
+      "C04": {
+        "status": "fail",
+        "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+        "details": {
+          "coverage": 0.650431166056166
+        }
+      },
+      "prompt": "Edit this indoor paper-cut railway waiting room, keep its framing and all architecture, left window and bench, clock, ticket rail, central floor and restrained palette. Move only the small dark rectangular gray OFF lamp located left of center upwards by one full lamp height, so it sits flat on the lower face of the light-blue horizontal ceiling beam instead of hanging below the beam. Keep its horizontal center exactly where it is. The lamp bottom should align approximately with the lower edge of the ceiling beam, the lamp top should be well above the clock's top; remove the hanging brackets and seamlessly fill the old lamp location with the same solid indigo wall. Reduce lamp width slightly to fit within the width of a single beam panel and leave it clearly unlit, with no glow or highlights. Preserve the broad calm clear floor, empty room, all other cut-paper prop positions and original wide canvas. No text or symbols.",
+      "references": [
+        "exec-b9e71bd1-3cb2-435c-b7cb-7a90b3c9027c.png"
+      ],
+      "decision": "Selected; lamp center inside the whitebox slot."
+    }
+  ]
+}

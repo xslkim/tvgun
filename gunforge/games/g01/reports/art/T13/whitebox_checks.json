@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "scope": "provisional geometry",
+  "stations": {
+    "waiting_room": {
+      "target_lanes": 2,
+      "lights": 1,
+      "residents": 1,
+      "projectors": 0,
+      "ellipse_radius_px": {
+        "waiting_station_lamp": 63.44
+      },
+      "reserved_and_pairwise_overlap": "pass",
+      "preview_sha256": "8cbbe4f7773dad4eafa75da330f0d5300de6ed4741c76315132cf1bfeab8f066"
+    },
+    "platform": {
+      "target_lanes": 2,
+      "lights": 1,
+      "residents": 1,
+      "projectors": 0,
+      "ellipse_radius_px": {
+        "platform_signal": 62.66
+      },
+      "reserved_and_pairwise_overlap": "pass",
+      "preview_sha256": "995781bd821e18aca7da2599c8b1410c0c05561c2ad8dfa2ff816c949784ad50"
+    },
+    "green_car": {
+      "target_lanes": 2,
+      "lights": 1,
+      "residents": 0,
+      "projectors": 0,
+      "ellipse_radius_px": {
+        "car_ceiling_lamp": 68.83
+      },
+      "reserved_and_pairwise_overlap": "pass",
+      "preview_sha256": "4106b0cb3e77b9dd487186bdf0fdd6ceb3aadbbfad547550a6e6592f73b6a5fb"
+    },
+    "lantern_base": {
+      "target_lanes": 2,
+      "lights": 1,
+      "residents": 0,
+      "projectors": 0,
+      "ellipse_radius_px": {
+        "base_station_lamp": 66.45
+      },
+      "reserved_and_pairwise_overlap": "pass",
+      "preview_sha256": "dfd822c4b74b493f235e51d0ce513864358234dcc4be327a216dba5df9a91939"
+    },
+    "workbench": {
+      "target_lanes": 0,
+      "lights": 0,
+      "residents": 0,
+      "projectors": 0,
+      "ellipse_radius_px": {},
+      "reserved_and_pairwise_overlap": "pass",
+      "boss_canvas_clear": true,
+      "preview_sha256": "1b2e8d5119ec4208dee88a06a9b14e3a0cf99ecf3764b5f3d6e90665599b528a"
+    }
+  }
+}

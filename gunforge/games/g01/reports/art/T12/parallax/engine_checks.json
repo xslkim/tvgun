@@ -1,0 +1,1115 @@
+{
+  "godot": "4.6.3-stable (official)",
+  "gpu_capture": true,
+  "passed": true,
+  "samples": {
+    "auditorium": {
+      "corner_0": {
+        "aim": [
+          1490.92004394531,
+          281.959991455078
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_0_against": {
+        "aim": [
+          1483.88000488281,
+          278.440002441406
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_1": {
+        "aim": [
+          1431.07995605469,
+          281.959991455078
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_1_against": {
+        "aim": [
+          1438.11999511719,
+          278.440002441406
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_2": {
+        "aim": [
+          1431.07995605469,
+          252.039993286133
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_2_against": {
+        "aim": [
+          1438.11999511719,
+          255.559997558594
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_3": {
+        "aim": [
+          1490.92004394531,
+          252.039993286133
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_3_against": {
+        "aim": [
+          1483.88000488281,
+          255.559997558594
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "rest": {
+        "aim": [
+          1461.0,
+          267.0
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "captures": {
+        "rest": {
+          "sha256": "95e3188e0323039727417f14f5ec6440cda13929bc291497dfeebfc1cfaf7231",
+          "opaque": true,
+          "max_channel_difference": 0,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0
+            }
+          }
+        },
+        "lit": {
+          "sha256": "64bacca42950b2a897a3094f7366882ee93b2143377f8e32917ba0525493e3e5",
+          "opaque": true,
+          "max_channel_difference": 2,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 9.023446523446524e-05
+            }
+          }
+        },
+        "corner_0": {
+          "sha256": "47207672237d5b4b2aec4675c59deeddb49a383858be616ff1b4ff5d07ef82ab",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 9.023446523446524e-05
+            }
+          }
+        },
+        "corner_0_against": {
+          "sha256": "19991a2f6b27cd2de5dbf603df9bdbaaa168b67e873883054bcf491e93989392",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 8.722664972664973e-05
+            }
+          }
+        },
+        "corner_1": {
+          "sha256": "a61751557e8bbd19b7eb93550de1ae82fea05491e8971b7e95f2181b144aab74",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 9.023446523446524e-05
+            }
+          }
+        },
+        "corner_1_against": {
+          "sha256": "5c49f399cc4e16de4b9e63c23169fa5831f5fce9afcb76312ccaadd31630fe9f",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 8.722664972664973e-05
+            }
+          }
+        },
+        "corner_2": {
+          "sha256": "47d2a1f72b57e7d63ff9fce903b20237178fd917d1f194215e3da4398c9d0acf",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 9.023446523446524e-05
+            }
+          }
+        },
+        "corner_2_against": {
+          "sha256": "21ec2856cb5f03685316a75bb04ced8ce6b486171da341f578530f756efda739",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 8.782821282821283e-05
+            }
+          }
+        },
+        "corner_3": {
+          "sha256": "58c198717cd211940c7822f7177db3bbc3088ba4b9c9051eba4a0957fa361637",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 9.023446523446524e-05
+            }
+          }
+        },
+        "corner_3_against": {
+          "sha256": "3045bf16540034bc10a79c107814acab2f6fa1c9911f72ce5baa9b46f0f2f147",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 8.903133903133904e-05
+            }
+          }
+        }
+      }
+    },
+    "poster_hall": {
+      "corner_0": {
+        "aim": [
+          353.600006103516,
+          289.299987792969
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_0_against": {
+        "aim": [
+          346.399993896484,
+          285.700012207031
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_1": {
+        "aim": [
+          292.399993896484,
+          289.299987792969
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_1_against": {
+        "aim": [
+          299.600006103516,
+          285.700012207031
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_2": {
+        "aim": [
+          292.399993896484,
+          258.700012207031
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_2_against": {
+        "aim": [
+          299.600006103516,
+          262.299987792969
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_3": {
+        "aim": [
+          353.600006103516,
+          258.700012207031
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_3_against": {
+        "aim": [
+          346.399993896484,
+          262.299987792969
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "rest": {
+        "aim": [
+          323.0,
+          274.0
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "captures": {
+        "rest": {
+          "sha256": "796be9ba69d5fd523512695f49afdb46b55c48b230ee724fda9d132962b1d9a8",
+          "opaque": true,
+          "max_channel_difference": 0,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0
+            }
+          }
+        },
+        "lit": {
+          "sha256": "64bee88b0c784bf96c095c431a4d9b6d4cec5ceddaf0700bbb4c931f08f0acea",
+          "opaque": true,
+          "max_channel_difference": 2,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.00016964079464079464
+            }
+          }
+        },
+        "corner_0": {
+          "sha256": "951bbd64abcc659f6c5ccac7af43facd5b9a8e6e41d8c03a4a9ae6a710a05994",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.00017264861014861015
+            }
+          }
+        },
+        "corner_0_against": {
+          "sha256": "581333c207586d6770ce404d692edac36cd1659c84e16316355ff2544d292627",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.00017505486255486256
+            }
+          }
+        },
+        "corner_1": {
+          "sha256": "3c427242b82a5c88adcc0925b413247bfb3148e62ec7481699e7453852bd61cd",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.00017024235774235774
+            }
+          }
+        },
+        "corner_1_against": {
+          "sha256": "52227c09617cf809ba5faad40898236bdda457c90c3864c7b7a8ded0c9984927",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.00017264861014861015
+            }
+          }
+        },
+        "corner_2": {
+          "sha256": "a24af69ddb6e7f94fc6dc7b2f2621f06fed902d8790e5449d499e00468fe2019",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.00017505486255486256
+            }
+          }
+        },
+        "corner_2_against": {
+          "sha256": "03b0ddd8fb5ec3fdef4ad1bbe6931a4da09e15f2a26bef3efa15d0bc856ca00c",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.00017264861014861015
+            }
+          }
+        },
+        "corner_3": {
+          "sha256": "e3803bb05cb52576b62704738914214a26dbcd8ab9367b07278b0ebab9a2ccb0",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.00017264861014861015
+            }
+          }
+        },
+        "corner_3_against": {
+          "sha256": "4639fc0b9a3a86bcac0e58ac088bbf290063fbca09baac67ef94feca5acd5bfb",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.00017024235774235774
+            }
+          }
+        }
+      }
+    },
+    "projection_booth": {
+      "corner_0": {
+        "aim": [
+          867.840026855469,
+          257.920013427734
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_0_against": {
+        "aim": [
+          861.760009765625,
+          254.880004882813
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_1": {
+        "aim": [
+          816.159973144531,
+          257.920013427734
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_1_against": {
+        "aim": [
+          822.239990234375,
+          254.880004882813
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_2": {
+        "aim": [
+          816.159973144531,
+          232.080001831055
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_2_against": {
+        "aim": [
+          822.239990234375,
+          235.119995117188
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_3": {
+        "aim": [
+          867.840026855469,
+          232.080001831055
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_3_against": {
+        "aim": [
+          861.760009765625,
+          235.119995117188
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "rest": {
+        "aim": [
+          842.0,
+          245.0
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "captures": {
+        "rest": {
+          "sha256": "957cd1fb9407cf186e8e860aeadf1be9ededf97e80fec06caacb4b102d3241f2",
+          "opaque": true,
+          "max_channel_difference": 0,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0
+            }
+          }
+        },
+        "lit": {
+          "sha256": "021a060a654b8dbcc4f1c3d7f5c65772526aa698dd62db5e5b0fa435390aa84a",
+          "opaque": true,
+          "max_channel_difference": 1,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 5.233598983598984e-05
+            }
+          }
+        },
+        "corner_0": {
+          "sha256": "a7ff24e71cbfa15f9bd70662d8179c60bb6b2d792d51a2cf1ed5bd3590e5d619",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 5.113286363286363e-05
+            }
+          }
+        },
+        "corner_0_against": {
+          "sha256": "f0303caa1556ec8b8bedb35f758446962af0d2a9537cc7962ce23e09948d1499",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 5.233598983598984e-05
+            }
+          }
+        },
+        "corner_1": {
+          "sha256": "53e8104e33d5a43e28138b045b84725e07634adc0c01957dab124b475363c4fe",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 5.113286363286363e-05
+            }
+          }
+        },
+        "corner_1_against": {
+          "sha256": "f7207b01a768ffc7232d5eea4e929ada1cc6ee2d3be19d53c91357a2437a9f31",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 4.992973742973743e-05
+            }
+          }
+        },
+        "corner_2": {
+          "sha256": "3d01823fc0c2fb67fce7436e9eb876fd487eb418310277f700890ea3ae56109e",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 5.233598983598984e-05
+            }
+          }
+        },
+        "corner_2_against": {
+          "sha256": "3a5766cd474a67fcf5fb4e073fcb512921e70f495d37efef3ae7ddde66453525",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 5.053130053130053e-05
+            }
+          }
+        },
+        "corner_3": {
+          "sha256": "9231f52625b4358536ddcff6ff2916466803c18f9280dca780113cbb53c61ef6",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 5.233598983598984e-05
+            }
+          }
+        },
+        "corner_3_against": {
+          "sha256": "7c472707d98c949d448f6413ae045ee7b8ed7a364d0642b92467d06ce41432a8",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 5.113286363286363e-05
+            }
+          }
+        }
+      }
+    },
+    "screen_stage": {
+      "corner_0": {
+        "aim": [
+          0.0,
+          0.0
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": false,
+        "lamp_present": false,
+        "outside_lamp": false
+      },
+      "corner_0_against": {
+        "aim": [
+          0.0,
+          0.0
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": false,
+        "lamp_present": false,
+        "outside_lamp": false
+      },
+      "corner_1": {
+        "aim": [
+          0.0,
+          0.0
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": false,
+        "lamp_present": false,
+        "outside_lamp": false
+      },
+      "corner_1_against": {
+        "aim": [
+          0.0,
+          0.0
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": false,
+        "lamp_present": false,
+        "outside_lamp": false
+      },
+      "corner_2": {
+        "aim": [
+          0.0,
+          0.0
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": false,
+        "lamp_present": false,
+        "outside_lamp": false
+      },
+      "corner_2_against": {
+        "aim": [
+          0.0,
+          0.0
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": false,
+        "lamp_present": false,
+        "outside_lamp": false
+      },
+      "corner_3": {
+        "aim": [
+          0.0,
+          0.0
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": false,
+        "lamp_present": false,
+        "outside_lamp": false
+      },
+      "corner_3_against": {
+        "aim": [
+          0.0,
+          0.0
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": false,
+        "lamp_present": false,
+        "outside_lamp": false
+      },
+      "rest": {
+        "aim": [
+          0.0,
+          0.0
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": false,
+        "lamp_present": false,
+        "outside_lamp": false
+      },
+      "captures": {
+        "rest": {
+          "sha256": "f96e26cb9b1b400846199704ca0ae50a8a5bfe67510b22a72e0e912b05944f0e",
+          "opaque": true,
+          "max_channel_difference": 0,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0
+            }
+          }
+        },
+        "corner_0": {
+          "sha256": "ba48f663682b1d2ed3097441e5974e18d779f4a0247786f5487b5fbe071afe9e",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0
+            }
+          }
+        },
+        "corner_0_against": {
+          "sha256": "fdb931f6bfcecd44cdef6a6eeedd550576564296daf6c62c0a9b55a659aba596",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0
+            }
+          }
+        },
+        "corner_1": {
+          "sha256": "91fe95cbf3c20131a16ea59eaed3cecc1e0025b3b948e39224e3aa47ea72df03",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0
+            }
+          }
+        },
+        "corner_1_against": {
+          "sha256": "18b96a36921c3ca7206313dff77fbd7414d06d17d6fb1641aeec81f8c69fa6f9",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0
+            }
+          }
+        },
+        "corner_2": {
+          "sha256": "5f29878175c160a0dfc6a41ee7bb37dc33e98569ad73762af5fe3def04f18480",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0
+            }
+          }
+        },
+        "corner_2_against": {
+          "sha256": "d61ad960dd2b953c5d269f60e19f223982f3eec62e33adbfd7be6314909d6970",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0
+            }
+          }
+        },
+        "corner_3": {
+          "sha256": "226db6dcca58a341e5d4bcaa254dff0a868f745a6239053ca85b701b436c6495",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0
+            }
+          }
+        },
+        "corner_3_against": {
+          "sha256": "da7c7564d8cd8831688d07d43ba3d003ac21b664d414f64c67a7499a842b624f",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0
+            }
+          }
+        }
+      }
+    },
+    "ticket_office": {
+      "corner_0": {
+        "aim": [
+          407.640014648438,
+          286.320007324219
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_0_against": {
+        "aim": [
+          399.959991455078,
+          282.480010986328
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_1": {
+        "aim": [
+          342.359985351563,
+          286.320007324219
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_1_against": {
+        "aim": [
+          350.040008544922,
+          282.480010986328
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_2": {
+        "aim": [
+          342.359985351563,
+          253.679992675781
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_2_against": {
+        "aim": [
+          350.040008544922,
+          257.519989013672
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_3": {
+        "aim": [
+          407.640014648438,
+          253.679992675781
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "corner_3_against": {
+        "aim": [
+          399.959991455078,
+          257.519989013672
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "rest": {
+        "aim": [
+          375.0,
+          270.0
+        ],
+        "base_covers": true,
+        "cover_count": 2,
+        "covers_blocked": 2,
+        "lamp_hit": true,
+        "lamp_present": true,
+        "outside_lamp": true
+      },
+      "captures": {
+        "rest": {
+          "sha256": "34ae8e3d47d4ddb4178b4f679de3d04c0952453a2622bf29c1c7a47282c00d2e",
+          "opaque": true,
+          "max_channel_difference": 0,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0
+            }
+          }
+        },
+        "lit": {
+          "sha256": "abdf5a4310a406f8e9ba96c10d47304ab72b1767c1a5b912789d8bb01188c656",
+          "opaque": true,
+          "max_channel_difference": 2,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0002983752983752984
+            }
+          }
+        },
+        "corner_0": {
+          "sha256": "29263b630e499af9dfe69cda4dd2822ea74c8c4990205d00b1471578f5a0e7f9",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.000295969045969046
+            }
+          }
+        },
+        "corner_0_against": {
+          "sha256": "4b8aa8c832ce1f30d837df7b790fbd3d10d74c2a3ed38bb2683f228e5b0b39b0",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.00029055497805497804
+            }
+          }
+        },
+        "corner_1": {
+          "sha256": "a88e0e95150ba25ecc6f8ed7a0c8cb4fa690dcd335455e38ab320cec9769a9a8",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.00029296123046123045
+            }
+          }
+        },
+        "corner_1_against": {
+          "sha256": "272a0442ae088a3625df18a8a3b6007fbb48bd7c98dfeb90a4911cd23d9175ab",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.00029055497805497804
+            }
+          }
+        },
+        "corner_2": {
+          "sha256": "0c3975e30208ad5ac636fd35d0b4935fa4b68684c7f13904f2bbc4b453b27adf",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.00029416435666435666
+            }
+          }
+        },
+        "corner_2_against": {
+          "sha256": "d280e8de95836ea8b0081d4425c88a2815549b97ebd4125909c4709b96ce4cd2",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.00028995341495341497
+            }
+          }
+        },
+        "corner_3": {
+          "sha256": "de04eaa37c5fee657356bf9c1ae72c524a3fd65dcf55963a7fee90cb969ad806",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0002935627935627936
+            }
+          }
+        },
+        "corner_3_against": {
+          "sha256": "b28e84493ca50192530b41fb0b1e22c9791fec3e0874423c2df946cb0403ba23",
+          "opaque": true,
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.00029175810425810425
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "id": "screen_stage",
+  "status": "runtime_probe_candidate",
+  "source_sha256": "5f806016fc033eb96a0ebf2617cdcaa8f6425cf3545b1c6b3d7d919a7049a188",
+  "canvas": [
+    1920,
+    1020
+  ],
+  "content_origin": [
+    72,
+    42
+  ],
+  "content_size": [
+    1776,
+    936
+  ],
+  "layers": [
+    {
+      "id": "sky",
+      "file": "sky.png",
+      "pos": [
+        0,
+        0
+      ],
+      "parallax": 0.1,
+      "extent": "sky_extent.png",
+      "fill": "sky_fill.png"
+    },
+    {
+      "id": "screen_wall",
+      "file": "screen_wall.png",
+      "pos": [
+        152,
+        138
+      ],
+      "parallax": 0.18,
+      "extent": "screen_wall_extent.png",
+      "fill": "screen_wall_fill.png"
+    },
+    {
+      "id": "screen",
+      "file": "screen.png",
+      "pos": [
+        353,
+        172
+      ],
+      "parallax": 0.29,
+      "extent": "screen_extent.png",
+      "fill": "screen_fill.png"
+    },
+    {
+      "id": "stage_and_floor",
+      "file": "stage_and_floor.png",
+      "pos": [
+        0,
+        684
+      ],
+      "parallax": 0.34,
+      "extent": "stage_and_floor_extent.png",
+      "fill": "stage_and_floor_fill.png"
+    },
+    {
+      "id": "left_curtain",
+      "file": "left_curtain.png",
+      "pos": [
+        0,
+        150
+      ],
+      "parallax": 0.43,
+      "extent": "left_curtain_extent.png"
+    },
+    {
+      "id": "right_curtain",
+      "file": "right_curtain.png",
+      "pos": [
+        1554,
+        149
+      ],
+      "parallax": 0.43,
+      "extent": "right_curtain_extent.png"
+    },
+    {
+      "id": "left_seats",
+      "file": "left_seats.png",
+      "pos": [
+        0,
+        861
+      ],
+      "parallax": 0.88,
+      "extent": "left_seats_extent.png",
+      "blocks_shots": true,
+      "block_mask": "left_seats_block.png"
+    },
+    {
+      "id": "right_seats",
+      "file": "right_seats.png",
+      "pos": [
+        1525,
+        861
+      ],
+      "parallax": 0.88,
+      "extent": "right_seats_extent.png",
+      "blocks_shots": true,
+      "block_mask": "right_seats_block.png"
+    }
+  ],
+  "lights": [],
+  "rest_matches_original": false,
+  "original_sha256": "9826013f9df48c2f9dffa50e775ec2e918140a29be693ce5ae9cb6b9eb92b71a",
+  "rest_matches_render_source": true
+}

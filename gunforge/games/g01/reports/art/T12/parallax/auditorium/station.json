@@ -1,0 +1,133 @@
+{
+  "id": "auditorium",
+  "status": "runtime_probe_candidate",
+  "source_sha256": "1fbbe28c31d3dbc3e3ce3eb29d33a8de14743272cb6a5da6afde1a700bd3efff",
+  "canvas": [
+    1920,
+    1020
+  ],
+  "content_origin": [
+    72,
+    42
+  ],
+  "content_size": [
+    1776,
+    936
+  ],
+  "layers": [
+    {
+      "id": "sky",
+      "file": "sky.png",
+      "pos": [
+        0,
+        0
+      ],
+      "parallax": 0.1,
+      "extent": "sky_extent.png",
+      "fill": "sky_fill.png"
+    },
+    {
+      "id": "rear_wall",
+      "file": "rear_wall.png",
+      "pos": [
+        309,
+        182
+      ],
+      "parallax": 0.2,
+      "extent": "rear_wall_extent.png",
+      "fill": "rear_wall_fill.png"
+    },
+    {
+      "id": "aisle",
+      "file": "aisle.png",
+      "pos": [
+        0,
+        625
+      ],
+      "parallax": 0.29,
+      "extent": "aisle_extent.png",
+      "fill": "aisle_fill.png"
+    },
+    {
+      "id": "screen_and_curtains",
+      "file": "screen_and_curtains.png",
+      "pos": [
+        419,
+        180
+      ],
+      "parallax": 0.35,
+      "extent": "screen_and_curtains_extent.png",
+      "fill": "screen_and_curtains_fill.png"
+    },
+    {
+      "id": "right_wall",
+      "file": "right_wall.png",
+      "pos": [
+        1584,
+        107
+      ],
+      "parallax": 0.44,
+      "extent": "right_wall_extent.png",
+      "fill": "right_wall_fill.png"
+    },
+    {
+      "id": "lamp",
+      "file": "lamp.png",
+      "pos": [
+        1480,
+        260
+      ],
+      "parallax": 0.44,
+      "extent": "lamp_extent.png"
+    },
+    {
+      "id": "left_seats",
+      "file": "left_seats.png",
+      "pos": [
+        0,
+        636
+      ],
+      "parallax": 0.84,
+      "extent": "left_seats_extent.png",
+      "blocks_shots": true,
+      "block_mask": "left_seats_block.png"
+    },
+    {
+      "id": "right_seats",
+      "file": "right_seats.png",
+      "pos": [
+        1305,
+        639
+      ],
+      "parallax": 0.91,
+      "extent": "right_seats_extent.png",
+      "blocks_shots": true,
+      "block_mask": "right_seats_block.png"
+    }
+  ],
+  "lights": [
+    {
+      "id": "lamp",
+      "space": "lamp",
+      "glow": "lamp_glow.png",
+      "spill": "lamp_spill.png",
+      "influence": "lamp_influence.png",
+      "pos": [
+        1355,
+        148
+      ],
+      "hit_mask": "lamp_hit.png",
+      "hit_pos": [
+        1484,
+        267
+      ],
+      "aim": [
+        1533,
+        309
+      ]
+    }
+  ],
+  "rest_matches_original": false,
+  "original_sha256": "091c824d97c973bae8e924a99e26c70c272fc9d42b462c07e670b696adac46f4",
+  "rest_matches_render_source": true
+}

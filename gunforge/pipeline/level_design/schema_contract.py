@@ -28,7 +28,9 @@ query={'oneOf':[obj({'op':{'enum':['region_contains','mask_sample','distance']},
 schema=obj({'schema_version':{'const':1},'id':string,'ruleset':string,'seed':{'type':'integer','minimum':0},'tick_hz':{'enum':[60]},'duration_ms':{'type':'integer','minimum':1},'layout':obj({'width':{'type':'integer','minimum':1},'height':{'type':'integer','minimum':1}},['width','height']),'entities':ids(entity),'events':ids(event),'queries':ids(query),'resources':ids(obj({'path':string,'sha256':{'type':'string','pattern':'^[a-f0-9]{64}$'},'kind':{'enum':['image','audio','metadata']}},['path','sha256','kind'])),'cues':ids(obj({'resource':string,'channel':{'enum':['music','ambient','warning','weapon','impact','voice','ui']},'duration_ms':{'type':'integer','minimum':1},'loop':{'type':'boolean'},'volume_db':number},['resource','channel','duration_ms'])),'initial_resources':ids(integer),'hud':{'type':'array','items':obj({'label':string,'resource':string},['label','resource'])},'ruleset_data':{'type':'object'},'controls':obj({'ammo_resource':string,'magazine':{'type':'integer','minimum':1},'reload_ms':ms,'shot_interval_ms':ms,'assist_px':{'type':'integer','minimum':0,'maximum':30}})},['schema_version','id','ruleset','seed','tick_hz','duration_ms','layout','entities','events','queries','resources','cues','initial_resources'])
 schema.update({'$schema':'https://json-schema.org/draft/2020-12/schema','title':'GunForge minimal 2D level source v1'})
 positive_ms={'type':'integer','minimum':1}
-frame_pose = {'x':number,'y':number,'scale':{'type':'number','exclusiveMinimum':0},'rotation_rad':number}
+scale = {'type':'number','exclusiveMinimum':0}
+frame_pose = {'x':number,'y':number,'scale':scale,'scale_x':scale,'scale_y':scale,'rotation_rad':number,
+              'opacity':{'type':'number','minimum':0,'maximum':1}}
 frame = {'oneOf': [
  obj({'at_ms':ms, **frame_pose},['at_ms','x','y']),
  obj({'attack_time':{'enum':['windup','release','contact','retire']},'offset_ms':integer, **frame_pose},
@@ -40,6 +42,16 @@ entity['properties'].update({'parts':ids(part),'part_order':{'type':'array','ite
 query['oneOf'].append(obj({'op':{'const':'entity_age_ms'},'entity':string,'space':{'const':'scalar'},'algorithm':{'const':'entity-clock60-v1'}},['op','entity','space','algorithm']))
 effect=obj({'kind':{'enum':['spark','burst','pulse','warning','player_hit','link','shot_trace','attack_release']},'duration_ms':positive_ms,'color':string,'radius':{'type':'number','minimum':0},'label':string},['kind','duration_ms','color'])
 layer=obj({'resource':string,'x':number,'y':number,'width':{'type':'number','exclusiveMinimum':0},'height':{'type':'number','exclusiveMinimum':0},'z':integer,'blocker':{'type':'boolean'},'source':{'type':'array','items':number,'minItems':4,'maxItems':4},'tint':string},['resource','x','y','width','height','z'])
+layer['properties']['section']=string
+parallax={'type':'number','minimum':0,'maximum':1}
+layer['properties']['parallax']=parallax
+entity['properties']['parallax']=parallax
+entity['properties']['mask_permission']=obj({
+ 'source':string,'resource':string,'threshold':{'type':'number','exclusiveMinimum':0,'maximum':1},
+},['source','resource','threshold'])
+entity['properties']['hit_resource']=string
+part['properties']['hit_resource']=string
+effect['properties']['kind']['enum'].append('beam_sweep')
 effect['properties']['anchor_uv'] = {
  'type':'array','items':{'type':'number','minimum':0,'maximum':1},'minItems':2,'maxItems':2,
 }
@@ -68,7 +80,15 @@ schema['properties']['encounter'] = obj({
 },['waves'])
 schema['properties'].update({'effects':ids(effect),'sections':ids(obj({'title':string,'index':{'type':'integer','minimum':1},'targets':{'type':'array','items':string,'uniqueItems':True},'hint':string},['title','index','targets'])),'resource_bounds':ids(obj({'min':integer,'max':integer})),'presentation':obj({'title':string,'subtitle':string,'instructions':string,'default_sound':{'type':'boolean'},'debug_shell':{'type':'boolean'},'layers':ids(layer),'sound_bindings':{'type':'object','additionalProperties':string},'feedback':obj({'shot':string,'hit':string,'weak':string,'neutralized':string,'empty':string}),'puppets':ids(obj({'character':string,'atlas':string,'clips':ids(string)},['character','atlas','clips'])),'labels':{'type':'object','additionalProperties':string},'support':obj({'entity':string,'label':string},['entity','label'])})})
 rgb = {'type':'string','pattern':'^#[a-fA-F0-9]{6}$'}
+schema['properties']['sections']['additionalProperties']['properties']['station']={'type':'integer','minimum':1}
 schema['properties']['presentation']['properties'].update({
+ 'stations':{'type':'array','items':string,'minItems':1},
+ 'camera':obj({'amplitude_x':{'type':'number','minimum':0,'maximum':68},
+               'amplitude_y':{'type':'number','minimum':0,'maximum':34}},['amplitude_x','amplitude_y']),
+ 'additive_z':integer,
+ 'bottom_wipes':ids(string),
+ 'dragon':obj({'layout':string,'images':{'type':'object','additionalProperties':string},
+               'anchor':string,'mouth':string,'warning_effect':string},['layout','images','anchor','mouth']),
  'entity_tints':ids({'type':'object','additionalProperties':rgb}),
  'entity_state_labels':ids({'type':'object','additionalProperties':string}),
  'activation_glows':ids(obj({'color':rgb,'radius':{'type':'number','exclusiveMinimum':0},'label':string},

@@ -49,3 +49,31 @@ Godot 4.6.3 Compatibility 在 RTX 3090 上抓取 40 帧，包含静止关灯和�
 内置 imagegen 共调用 88 次，全部返回图像，费用未披露。16 次构图调用选入 4 张，49 次底层、纸层和补件调用形成四站分层包，23 次独立素材与分件调用形成 20 项候选。三张新版墨花的提示词与来源记录在生成清单中。[生成清单](generation_manifest.json)
 
 原始构图保留用户确认时的颜色。其 C04 初筛覆盖率仍为 71.8% 至 80.7%。C05 OCR 报告保留机器原始结果，复看图像未发现对应文字。C14 标定评分仍待完成。
+
+## 录像厅门口可玩候选
+
+录像厅门口已接入正常播放器。左侧滴墨在屋檐预警后落下，可在空中拦截。右侧墨招牌会从霓虹灯附近探出并吐墨，射亮霓虹后，墨招牌进入暖光范围才会软化。老板使用正式纸偶导出的挣扎、获救和道谢动作，胸口墨团单独判定。完成两怪和救援后结算。
+
+```powershell
+.\gunforge\start_level_player.ps1 -Package paper.video_shop -Candidate
+```
+
+Godot 无界面与 RTX 3090 自动通关均用 7 发并救出老板。回归覆盖前景挡弹、霓虹到期和重亮、墨招牌光外硬化、拦截滴墨和打断吐墨。墨招牌实测连续软化窗口为 143 帧（60 Hz）。正常启动、HTTP/UDP 回环及广场、旧影院回归均通过。[验证记录](gameplay/video_shop/verification.json)
+
+[关灯 JPG](gameplay/video_shop/shop_off.jpg) · [滴墨下落 JPG](gameplay/video_shop/shop_falling.jpg) · [霓虹点亮 JPG](gameplay/video_shop/shop_lit.jpg) · [老板道谢 JPG](gameplay/video_shop/shop_thanks.jpg)
+
+实体光枪复验可用上面的命令启动并按 G 切换手机模式。依次拦截左侧滴墨、射亮右上霓虹并打软化的招牌，再净化老板胸口墨团。
+
+## 天桥可玩候选
+
+右上灯笼可重新点亮，桥上滴墨进入暖光后软化。滴墨落下时会经过桥面后方，桥面和两侧前景按可见轮廓挡弹。墨车夫从桥下横穿，停车响铃后甩墨。净化两个墨怪后结算。
+
+```powershell
+.\gunforge\start_level_player.ps1 -Package paper.footbridge -Candidate
+```
+
+Godot 无界面与 RTX 3090 自动通关均用 5 发，保留全部灯芯。测试另行放行两种攻击，确认预警、甩墨和受击的顺序。滴墨实测连续软化窗口为 161 帧（60 Hz）。正常启动、HTTP/UDP 回环与录像厅回归通过，5 张 1776×936 游戏 JPG 通过 C03。[验证记录](gameplay/footbridge/verification.json)
+
+[点灯 JPG](gameplay/footbridge/bridge_lit.jpg) · [桥面遮挡 JPG](gameplay/footbridge/bridge_fall.jpg) · [墨车夫预警 JPG](gameplay/footbridge/bridge_bell.jpg)
+
+实体光枪可按 G 切换手机模式。射右上灯笼，在滴墨显示「软化 · 射击」时击中它，再在铃响时打断桥下墨车夫。天桥已接入第一关五站连续流程。[第一关启动与验证记录](gameplay/night_market/report.md)

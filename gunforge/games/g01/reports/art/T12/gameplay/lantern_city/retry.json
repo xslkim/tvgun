@@ -1,0 +1,208 @@
+{
+  "passed": true,
+  "build_id": "205022979ed41635bda14a758507c5c48130df8b461a9d4caf22a94a40ba1286",
+  "source_revision": "9240ef2fba14e57ccee844426ef79585c5f8546117abc6e548d1441b41d6966c",
+  "headless_cases": [
+    {
+      "after_retry": {
+        "ammo": 12.0,
+        "lives": 5.0,
+        "rescued": 0.0,
+        "score": 0.0,
+        "shots": 0
+      },
+      "before_retry": {
+        "ammo": 8.0,
+        "lives": 0,
+        "rescued": 3,
+        "score": 6000,
+        "shots": 68
+      },
+      "defeat_tick": 8220,
+      "first_shot": {
+        "ammo": 11.0,
+        "lives": 5.0,
+        "rescued": 0.0,
+        "score": 0.0,
+        "shots": 1
+      },
+      "station": 7
+    },
+    {
+      "after_retry": {
+        "ammo": 12.0,
+        "lives": 5.0,
+        "rescued": 0.0,
+        "score": 0.0,
+        "shots": 0
+      },
+      "before_retry": {
+        "ammo": 12.0,
+        "lives": 0,
+        "rescued": 0.0,
+        "score": 0.0,
+        "shots": 0
+      },
+      "defeat_tick": 1604,
+      "first_shot": {
+        "ammo": 11.0,
+        "lives": 5.0,
+        "rescued": 0.0,
+        "score": 0.0,
+        "shots": 1
+      },
+      "station": 1
+    }
+  ],
+  "headless_log": {
+    "path": "D:\\gunforge_cache\\g01\\lantern_city\\retry-20261111-125311-236\\failure-retries-final.log",
+    "sha256": "9dac3d7368e2d31283b8a1c0f0754de4932422ffdf2b4155524ff25e763bd788"
+  },
+  "normal_player_http_retry": {
+    "passed": true,
+    "build_id": "205022979ed41635bda14a758507c5c48130df8b461a9d4caf22a94a40ba1286",
+    "ready": {
+      "build_id": "205022979ed41635bda14a758507c5c48130df8b461a9d4caf22a94a40ba1286",
+      "hits": 0,
+      "lifecycle": "ready",
+      "ok": true,
+      "phase": "running",
+      "resources": {
+        "alley.purified": 0.0,
+        "ammo": 12.0,
+        "lives": 5.0,
+        "rescued": 0.0,
+        "score": 0.0,
+        "stall.purified": 0.0
+      },
+      "score": 0.0,
+      "shot_input_enabled": false,
+      "shots": 0,
+      "visible_targets": [
+        {
+          "id": "alley.lamp",
+          "point": [
+            1376.5,
+            504.5
+          ]
+        }
+      ]
+    },
+    "defeated": {
+      "build_id": "205022979ed41635bda14a758507c5c48130df8b461a9d4caf22a94a40ba1286",
+      "hits": 0,
+      "lifecycle": "result",
+      "ok": true,
+      "phase": "result",
+      "resources": {
+        "alley.purified": 0.0,
+        "ammo": 11.0,
+        "lives": 0,
+        "rescued": 0.0,
+        "score": 0.0,
+        "stall.purified": 0.0
+      },
+      "score": 0.0,
+      "shot_input_enabled": false,
+      "shots": 1,
+      "visible_targets": [
+        {
+          "id": "alley.w2_crow_3",
+          "point": [
+            1416.5,
+            520.5
+          ]
+        },
+        {
+          "id": "alley.w2_crow_4",
+          "point": [
+            568.5,
+            408.5
+          ]
+        },
+        {
+          "id": "alley.lamp",
+          "point": [
+            1376.5,
+            504.5
+          ]
+        }
+      ]
+    },
+    "result_shot": {
+      "ok": false,
+      "reason": "not_running",
+      "score": 0.0
+    },
+    "result_reload": {
+      "ok": false,
+      "reason": "not_running",
+      "score": 0.0
+    },
+    "retry": {
+      "build_id": "205022979ed41635bda14a758507c5c48130df8b461a9d4caf22a94a40ba1286",
+      "hits": 0,
+      "lifecycle": "running",
+      "ok": true,
+      "phase": "running",
+      "resources": {
+        "alley.purified": 0.0,
+        "ammo": 12.0,
+        "lives": 5.0,
+        "rescued": 0.0,
+        "score": 0.0,
+        "stall.purified": 0.0
+      },
+      "score": 0.0,
+      "shot_input_enabled": true,
+      "shots": 0,
+      "visible_targets": [
+        {
+          "id": "alley.lamp",
+          "point": [
+            1376.5,
+            504.5
+          ]
+        }
+      ]
+    },
+    "first_shot": {
+      "build_id": "205022979ed41635bda14a758507c5c48130df8b461a9d4caf22a94a40ba1286",
+      "hits": 0,
+      "lifecycle": "running",
+      "ok": true,
+      "phase": "running",
+      "resources": {
+        "alley.purified": 0.0,
+        "ammo": 11.0,
+        "lives": 5.0,
+        "rescued": 0.0,
+        "score": 0.0,
+        "stall.purified": 0.0
+      },
+      "score": 0.0,
+      "shot_input_enabled": true,
+      "shots": 1,
+      "visible_targets": [
+        {
+          "id": "alley.lamp",
+          "point": [
+            1376.5,
+            504.5
+          ]
+        }
+      ]
+    }
+  },
+  "player_receipt": {
+    "path": "D:\\gunforge_cache\\g01\\lantern_city\\retry-20261111-125311-236\\retry-player.json",
+    "sha256": "917eff44898f97d270b27accbce0f17d3b6f59882a8b9f9dabb870f7626b1b76"
+  },
+  "independent_delivery": {
+    "passed": true,
+    "build_id": "205022979ed41635bda14a758507c5c48130df8b461a9d4caf22a94a40ba1286",
+    "index": "D:\\gunforge_cache\\level_design\\runs\\delivery-1794373071505550600\\index.json",
+    "sha256": "28919be1fa657c5be9f54e1b95b56d5c2115d5ca507e406bf2a6b7b840e2949c",
+    "checks": 7
+  }
+}

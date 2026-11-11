@@ -1,0 +1,133 @@
+{
+  "id": "ticket_office",
+  "status": "runtime_probe_candidate",
+  "source_sha256": "8dfdeb94e7eb597b665efdf2ab9dab4bc460b930439958fdced25aff6f87d91d",
+  "canvas": [
+    1920,
+    1020
+  ],
+  "content_origin": [
+    72,
+    42
+  ],
+  "content_size": [
+    1776,
+    936
+  ],
+  "layers": [
+    {
+      "id": "sky",
+      "file": "sky.png",
+      "pos": [
+        0,
+        0
+      ],
+      "parallax": 0.1,
+      "extent": "sky_extent.png",
+      "fill": "sky_fill.png"
+    },
+    {
+      "id": "far_wall",
+      "file": "far_wall.png",
+      "pos": [
+        0,
+        140
+      ],
+      "parallax": 0.18,
+      "extent": "far_wall_extent.png",
+      "fill": "far_wall_fill.png"
+    },
+    {
+      "id": "floor",
+      "file": "floor.png",
+      "pos": [
+        0,
+        713
+      ],
+      "parallax": 0.32,
+      "extent": "floor_extent.png",
+      "fill": "floor_fill.png"
+    },
+    {
+      "id": "ticket_booth",
+      "file": "ticket_booth.png",
+      "pos": [
+        0,
+        106
+      ],
+      "parallax": 0.48,
+      "extent": "ticket_booth_extent.png",
+      "fill": "ticket_booth_fill.png"
+    },
+    {
+      "id": "right_jamb",
+      "file": "right_jamb.png",
+      "pos": [
+        1757,
+        134
+      ],
+      "parallax": 0.59,
+      "extent": "right_jamb_extent.png",
+      "fill": "right_jamb_fill.png"
+    },
+    {
+      "id": "lamp",
+      "file": "lamp.png",
+      "pos": [
+        387,
+        250
+      ],
+      "parallax": 0.48,
+      "extent": "lamp_extent.png"
+    },
+    {
+      "id": "counter_edge",
+      "file": "counter_edge.png",
+      "pos": [
+        0,
+        759
+      ],
+      "parallax": 0.89,
+      "extent": "counter_edge_extent.png",
+      "blocks_shots": true,
+      "block_mask": "counter_edge_block.png"
+    },
+    {
+      "id": "queue_rail",
+      "file": "queue_rail.png",
+      "pos": [
+        1533,
+        614
+      ],
+      "parallax": 0.76,
+      "extent": "queue_rail_extent.png",
+      "blocks_shots": true,
+      "block_mask": "queue_rail_block.png"
+    }
+  ],
+  "lights": [
+    {
+      "id": "lamp",
+      "space": "lamp",
+      "glow": "lamp_glow.png",
+      "spill": "lamp_spill.png",
+      "influence": "lamp_influence.png",
+      "pos": [
+        280,
+        141
+      ],
+      "hit_mask": "lamp_hit.png",
+      "hit_pos": [
+        391,
+        257
+      ],
+      "aim": [
+        447,
+        312
+      ]
+    }
+  ],
+  "rest_matches_original": false,
+  "original_sha256": "d4c3e87223d4c5d99a9d4148d38dfe11c991a968b308c200c3c6b991f4d1247d",
+  "rest_matches_render_source": true
+}

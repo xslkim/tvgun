@@ -1,0 +1,73 @@
+{
+  "status": "provisional",
+  "stations": [
+    {
+      "id": "waiting_room",
+      "title": "候车室",
+      "description": "左侧长窗与长椅、右侧检票栏，中间留出路人 C 的救援区。",
+      "midground": [[150, 154, 491, 300], [1072, 179, 519, 328]],
+      "cover": [[0, 565, 258, 266], [1510, 550, 266, 281]],
+      "features": [{"rect": [270, 575, 385, 96], "label": "候车长椅"}, {"rect": [1155, 625, 456, 91], "label": "检票栏杆"}],
+      "lanes": [
+        {"id": "crow_window", "actor": "墨鸦", "rect": [283, 296, 337, 249]},
+        {"id": "umbrella_gate", "actor": "墨伞", "rect": [1121, 343, 363, 261]}
+      ],
+      "residents": [{"id": "passerby_c", "rect": [734, 423, 251, 322]}],
+      "lights": [{"id": "waiting_station_lamp", "kind": "站灯", "rect": [710, 169, 152, 106], "range": [214, 148, 1004, 569]}]
+    },
+    {
+      "id": "platform",
+      "title": "站台",
+      "description": "车窗和月台边沿沿画面横向重复，站台钟与信号灯分居两侧。",
+      "midground": [[130, 173, 1516, 334], [153, 557, 1466, 68]],
+      "cover": [[0, 629, 291, 211], [1499, 632, 277, 208]],
+      "features": [{"rect": [217, 184, 154, 91], "label": "站台时钟"}, {"rect": [471, 204, 792, 124], "label": "连续车窗"}],
+      "lanes": [
+        {"id": "crow_over_platform", "actor": "墨鸦", "rect": [333, 315, 378, 239]},
+        {"id": "umbrella_car_door", "actor": "墨伞", "rect": [1027, 326, 366, 252]}
+      ],
+      "residents": [{"id": "ticket_clerk", "reuse": "T12.ticket_clerk", "rect": [764, 431, 243, 319]}],
+      "lights": [{"id": "platform_signal", "kind": "信号灯", "rect": [1447, 184, 119, 132], "range": [914, 148, 694, 551]}]
+    },
+    {
+      "id": "green_car",
+      "title": "绿皮车厢",
+      "description": "侧视重复车窗和连续行李架，近景座椅为两端留出遮挡。",
+      "midground": [[144, 170, 1488, 322], [192, 493, 1392, 85]],
+      "cover": [[0, 574, 358, 268], [1418, 574, 358, 268]],
+      "features": [{"rect": [211, 223, 1345, 147], "label": "重复车窗与车厢腰线"}],
+      "lanes": [
+        {"id": "crow_luggage_rack", "actor": "墨鸦", "rect": [391, 288, 347, 261]},
+        {"id": "umbrella_seat", "actor": "墨伞", "rect": [1040, 355, 347, 275]}
+      ],
+      "residents": [],
+      "lights": [{"id": "car_ceiling_lamp", "kind": "车厢顶灯", "rect": [797, 153, 186, 102], "range": [400, 128, 1012, 562]}]
+    },
+    {
+      "id": "lantern_base",
+      "title": "灯座",
+      "description": "灯座内部的环形支架向下收拢，预留镜头从灯座拉出到工作台的位置。",
+      "midground": [[190, 164, 1390, 444], [537, 502, 704, 234]],
+      "cover": [[0, 539, 259, 305], [1517, 539, 259, 305]],
+      "features": [{"rect": [631, 626, 514, 110], "label": "灯座边沿 · 拉镜起点"}],
+      "lanes": [
+        {"id": "umbrella_left_brace", "actor": "墨伞", "rect": [329, 354, 355, 278]},
+        {"id": "crow_right_brace", "actor": "墨鸦", "rect": [1111, 310, 341, 265]}
+      ],
+      "residents": [],
+      "lights": [{"id": "base_station_lamp", "kind": "站灯", "rect": [805, 194, 158, 112], "range": [392, 153, 1022, 537]}]
+    },
+    {
+      "id": "workbench",
+      "title": "工作台",
+      "description": "从纸灯拉出后，砚台在下方，七笔 Boss 从砚台上方升起。",
+      "midground": [[204, 690, 1368, 190]],
+      "cover": [[0, 640, 394, 220], [1384, 640, 392, 220]],
+      "features": [{"rect": [743, 789, 290, 66], "label": "砚台"}],
+      "lanes": [],
+      "residents": [],
+      "lights": [],
+      "boss_region": [568, 132, 640, 640]
+    }
+  ]
+}

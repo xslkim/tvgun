@@ -1,0 +1,155 @@
+{
+  "package": "paper.lantern_pullback",
+  "source_revision": "bef54ae3844c5325587cfcd46c3b0249f940522c12b0b731ea131f681dcca710",
+  "build_id": "645e703eb1854b16f8c7302b44a46191eea9f15a0a7e857b75f48b94a1128a29",
+  "status": "candidate_software_passed",
+  "godot": "4.6.3 Compatibility",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "player_launch": {
+    "ready": true,
+    "http_error": 0,
+    "udp_errors": []
+  },
+  "anchors": {
+    "interior_rim": [
+      888,
+      723
+    ],
+    "exterior_rim": [
+      281,
+      827
+    ]
+  },
+  "camera_duration_ms": 2530,
+  "gameplay": {
+    "build_id": "645e703eb1854b16f8c7302b44a46191eea9f15a0a7e857b75f48b94a1128a29",
+    "camera_samples": [
+      "pullback_approach",
+      "pullback_inside_rim",
+      "pullback_match_cut",
+      "pullback_paper_lantern",
+      "pullback_widening",
+      "pullback_workbench"
+    ],
+    "cuts": [
+      {
+        "frame_upload_us": 76,
+        "frame_uploads_including_future_preloads": 1,
+        "section": "pullback",
+        "tick": 227,
+        "uncached_scene_textures": 0
+      },
+      {
+        "frame_upload_us": 0,
+        "frame_uploads_including_future_preloads": 0,
+        "section": "workbench",
+        "tick": 281,
+        "uncached_scene_textures": 0
+      }
+    ],
+    "failures": [],
+    "gpu_capture": true,
+    "passed": true
+  },
+  "regressions": [
+    "failure does not start the cut",
+    "successful battle starts the cut with shot input disabled",
+    "both paper rims align within one screen pixel and camera planes cover the viewport during interpolation",
+    "two section changes find all visible textures cached",
+    "native workbench layers take over",
+    "retry restores the combat scene without stale cut decorations",
+    "lantern-base headless replay passed; all four combat sources match their existing candidate revisions"
+  ],
+  "frames": {
+    "pullback_combat_clear": {
+      "preview": "pullback_combat_clear.jpg",
+      "sha256": "bf97d2432f4f0a589522cc4e3f25a3abbb802990c8df98e7765a665f2e5c5745",
+      "opaque": true,
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.009160001347501348
+        }
+      }
+    },
+    "pullback_approach": {
+      "preview": "pullback_approach.jpg",
+      "sha256": "65fa3c71861dd86d2a8e62cec8eba98091e38599534e5c1feda7308f7c374406",
+      "opaque": true,
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.007840171902671902
+        }
+      }
+    },
+    "pullback_inside_rim": {
+      "preview": "pullback_inside_rim.jpg",
+      "sha256": "baa6a24383e019fd549a666e7819eee3938dcd42296dcc9fb9b40555c852a127",
+      "opaque": true,
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.015312187187187187
+        }
+      }
+    },
+    "pullback_match_cut": {
+      "preview": "pullback_match_cut.jpg",
+      "sha256": "8ca86b1e401934ac5cbf34295cebfdfd97da95b9e8eb64eb2cbe2a1f1af9daa0",
+      "opaque": true,
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.001516540579040579
+        }
+      }
+    },
+    "pullback_paper_lantern": {
+      "preview": "pullback_paper_lantern.jpg",
+      "sha256": "509d4d6c047c71e51a7937c51907950f0e5f38c6299148a3fff9e09550f4eefc",
+      "opaque": true,
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.001414876414876415
+        }
+      }
+    },
+    "pullback_widening": {
+      "preview": "pullback_widening.jpg",
+      "sha256": "964c4fca628e88bf30bb3f6f698ef52cee1c84b85b9986545b8b3dadde50e62d",
+      "opaque": true,
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.010373955686455686
+        }
+      }
+    },
+    "pullback_workbench": {
+      "preview": "pullback_workbench.jpg",
+      "sha256": "18702570574a42fbcfd1a9cd7e6cf37400ed3bf22e5e82463802f920e328093e",
+      "opaque": true,
+      "C03_GPU_frame": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.008079594017094018
+        }
+      }
+    }
+  },
+  "pending": [
+    "T13 four-stop continuous preview",
+    "forget stroke mask review and playable boss",
+    "T13 physical lightgun on monitor and TV",
+    "A5 overall art review"
+  ]
+}
