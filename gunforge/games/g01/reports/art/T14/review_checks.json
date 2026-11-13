@@ -1,0 +1,562 @@
+{
+  "package": "paper.lantern_city_ui",
+  "build_id": "3e72b6aa8d7b539ca8f2887666d6ea522b8a905b5e01f1cfbd9717cb6f8f0005",
+  "source_revision": "4e36b86a19a221718f55bc8b09e73b39c33ced3845336e17575602df38c0afff",
+  "engine": "Godot 4.6.3 Windows",
+  "gpu": "NVIDIA GeForce RTX 3080 Ti",
+  "route": {
+    "build_id": "3e72b6aa8d7b539ca8f2887666d6ea522b8a905b5e01f1cfbd9717cb6f8f0005",
+    "chapter_transition_tick": 6701,
+    "counters": {
+      "ammo": 2.0,
+      "lives": 4,
+      "rescued": 7,
+      "score": 8900,
+      "shots": 106
+    },
+    "end_tick": 9992,
+    "ending": {
+      "light_tick": 9344,
+      "natural_result_tick": 9992,
+      "quote_tick": 9620,
+      "skip": {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8900,
+          "shots": 106
+        },
+        "result": "clear",
+        "result_tick": 9345,
+        "start_tick": 9344
+      }
+    },
+    "failure_retries": [
+      {
+        "after_retry": {
+          "ammo": 12.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 0
+        },
+        "before_retry": {
+          "ammo": 9.0,
+          "lives": 0,
+          "rescued": 7,
+          "score": 8200,
+          "shots": 99
+        },
+        "defeat_tick": 10103,
+        "first_shot": {
+          "ammo": 11.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 1
+        },
+        "station": 15
+      }
+    ],
+    "failures": [],
+    "gpu_capture": true,
+    "handoffs": [
+      {
+        "counters": {
+          "ammo": 12.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 3500,
+          "shots": 36
+        },
+        "station": "stall",
+        "tick": 5616
+      },
+      {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 4100,
+          "shots": 46
+        },
+        "station": "video_shop",
+        "tick": 6096
+      },
+      {
+        "counters": {
+          "ammo": 10.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4400,
+          "shots": 50
+        },
+        "station": "footbridge",
+        "tick": 6384
+      },
+      {
+        "counters": {
+          "ammo": 7.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4600,
+          "shots": 53
+        },
+        "station": "plaza",
+        "tick": 6499
+      },
+      {
+        "counters": {
+          "ammo": 8.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 5700,
+          "shots": 64
+        },
+        "station": "ticket_office",
+        "tick": 6791
+      },
+      {
+        "counters": {
+          "ammo": 3.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6000,
+          "shots": 69
+        },
+        "station": "poster_hall",
+        "tick": 7050
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6200,
+          "shots": 72
+        },
+        "station": "auditorium",
+        "tick": 7282
+      },
+      {
+        "counters": {
+          "ammo": 8.0,
+          "lives": 4,
+          "rescued": 4,
+          "score": 6500,
+          "shots": 76
+        },
+        "station": "projection_booth",
+        "tick": 7541
+      },
+      {
+        "counters": {
+          "ammo": 4.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 6800,
+          "shots": 80
+        },
+        "station": "screen_stage",
+        "tick": 7800
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 7200,
+          "shots": 84
+        },
+        "station": "waiting_room",
+        "tick": 7918
+      },
+      {
+        "counters": {
+          "ammo": 7.0,
+          "lives": 4,
+          "rescued": 6,
+          "score": 7500,
+          "shots": 89
+        },
+        "station": "platform",
+        "tick": 8225
+      },
+      {
+        "counters": {
+          "ammo": 3.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 7800,
+          "shots": 93
+        },
+        "station": "green_car",
+        "tick": 8532
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8000,
+          "shots": 96
+        },
+        "station": "lantern_base",
+        "tick": 8839
+      },
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8200,
+          "shots": 99
+        },
+        "station": "workbench",
+        "tick": 9107
+      }
+    ],
+    "old_chapter_poses_rejected": true,
+    "passed": true,
+    "pullback_tick": 9053,
+    "reached": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "reloads": 8,
+    "replay": {
+      "counters": {
+        "ammo": 2.0,
+        "lives": 4,
+        "rescued": 7,
+        "score": 8900,
+        "shots": 106
+      },
+      "end_tick": 9992,
+      "inputs": 114
+    },
+    "result": "clear",
+    "train_transition_tick": 7828
+  },
+  "controls": {
+    "build_id": "3e72b6aa8d7b539ca8f2887666d6ea522b8a905b5e01f1cfbd9717cb6f8f0005",
+    "captures": true,
+    "failures": [],
+    "opening": true,
+    "passed": true,
+    "udp_shots": 3
+  },
+  "display": {
+    "build_id": "3e72b6aa8d7b539ca8f2887666d6ea522b8a905b5e01f1cfbd9717cb6f8f0005",
+    "captures": true,
+    "failures": [],
+    "passed": true,
+    "udp_shots": 19
+  },
+  "hud_overlap": {
+    "hud_samples": 7074,
+    "reservation_intersections": {}
+  },
+  "hud_overlap_method": "Every shooting-enabled tick in one campaign route. At each integer pixel within the intersection of target bounds and a playing HUD reservation, check alpha and exact hit resolution. Other routes and full motion envelopes are outside this check.",
+  "reticle_pixel_check": {
+    "enabled_difference_size": [
+      40,
+      40
+    ],
+    "hidden_matches_tracking_loss": true
+  },
+  "frames": {
+    "start": {
+      "source_frame": "controls/start_button",
+      "description": "开始画面 · 标题与「夜市」字形",
+      "size": [
+        1776,
+        936
+      ],
+      "jpg_sha256": "9d624a44cb0acaa240da00a4696dad08fb15b8bc144bf8a172d14f8ad1a342b9",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0025548384923384923
+        }
+      }
+    },
+    "start_hover": {
+      "source_frame": "controls/start_hover",
+      "description": "光枪瞄准开始按钮",
+      "size": [
+        1776,
+        936
+      ],
+      "jpg_sha256": "a02b204e7dbdfaefc4487dc85645f1113432ca7fa9f1269239edf2a9341ca2b9",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0025548384923384923
+        }
+      }
+    },
+    "start_pressed": {
+      "source_frame": "controls/start_pressed",
+      "description": "鼠标按下开始按钮",
+      "size": [
+        1776,
+        936
+      ],
+      "jpg_sha256": "2b9f9544ac3f2b180d705a7811eb554e4f77c13bee9161e552db4e6cf10a17b5",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0025548384923384923
+        }
+      }
+    },
+    "night_market": {
+      "source_frame": "route/station_5_dragon",
+      "description": "夜市 · 墨舞龙与灯芯亮灭",
+      "size": [
+        1776,
+        936
+      ],
+      "jpg_sha256": "2b7f9c0e9e850a4ad28493079d77527cd5e800d73be15ccfcbdb316d3b6b817c",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0022065334565334565
+        }
+      }
+    },
+    "cinema": {
+      "source_frame": "route/station_10_screen_stage",
+      "description": "旧影院 · 银幕影与剩余光弹",
+      "size": [
+        1776,
+        936
+      ],
+      "jpg_sha256": "e75f42babbf0b95f6027d1e0b23ff922935dc77035dd9b23c02dc12e00eeee63",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0023124085624085626
+        }
+      }
+    },
+    "train_station": {
+      "source_frame": "route/station_11_waiting_room",
+      "description": "火车站 · 候车室与空弹提示",
+      "size": [
+        1776,
+        936
+      ],
+      "jpg_sha256": "4c99c81fb24f29d6e1eae67ee7166639b3b9d1c1b62d6f828e6ddb8e22e81a8a",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0024489633864633866
+        }
+      }
+    },
+    "reload": {
+      "source_frame": "route/hud_reload",
+      "description": "巷口 · 回光中",
+      "size": [
+        1776,
+        936
+      ],
+      "jpg_sha256": "f70b544128fa071d6b06c5828f8e330c3bcda82d302faf796fc01b569023d67b",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0017974705474705474
+        }
+      }
+    },
+    "reticle_on": {
+      "source_frame": "controls/reticle_on",
+      "description": "锁定时显示半透明准星",
+      "size": [
+        1776,
+        936
+      ],
+      "jpg_sha256": "22bccaa19c8674b975c3d9ba61edaf4d1d6784916b25dc087d28340a9ef94a1c",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0026384557634557635
+        }
+      }
+    },
+    "reticle_off": {
+      "source_frame": "controls/reticle_off",
+      "description": "按 H 隐藏准星",
+      "size": [
+        1776,
+        936
+      ],
+      "jpg_sha256": "364c85b039f54dbc010208db1ab29c463d1ce14b0217ef05693b79e2cf4c7ffa",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002642666705166705
+        }
+      }
+    },
+    "tracking_lost": {
+      "source_frame": "controls/tracking_lost",
+      "description": "失锁时提示请对准屏幕",
+      "size": [
+        1776,
+        936
+      ],
+      "jpg_sha256": "2f60e53aa7e7619332b7ecb9fc13c1aad0be94a0c71f62e2ee578ce0aa6441df",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0017409236159236158
+        }
+      }
+    },
+    "cinema_title": {
+      "source_frame": "route/cinema_transition",
+      "description": "旧影院转场字形",
+      "size": [
+        1776,
+        936
+      ],
+      "jpg_sha256": "8d6b919de80f72f78290bf847e5efc2e7c26b7aecf698ee2c40505c081c0957d",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002109681797181797
+        }
+      }
+    },
+    "train_title": {
+      "source_frame": "route/train_station_transition",
+      "description": "火车站转场字形",
+      "size": [
+        1776,
+        936
+      ],
+      "jpg_sha256": "35c710dc4c7ca059f287bbd4679be5c369390865e0c6aa592a2a41d72176f5c2",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0019905723030723033
+        }
+      }
+    },
+    "clear": {
+      "source_frame": "route/campaign_clear",
+      "description": "三关通关结算",
+      "size": [
+        1776,
+        936
+      ],
+      "jpg_sha256": "ff09dd097d090e00a53451ed61d0f7ed1e8dbfe9441353e7c01869662042fc21",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004632035882035882
+        }
+      }
+    },
+    "retry": {
+      "source_frame": "controls/retry_button",
+      "description": "失败结算与重试按钮",
+      "size": [
+        1776,
+        936
+      ],
+      "jpg_sha256": "2a5eb2ec143046c21c04467eacd339a015c8fa5313e5155d0c3b60b6d1e82baf",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0031227140602140603
+        }
+      }
+    },
+    "monitor": {
+      "source_frame": "display/overscan_monitor",
+      "description": "显示器配置 · 四角标记",
+      "size": [
+        1212,
+        720
+      ],
+      "jpg_sha256": "44b03eeb84950edb114e247718bac2d573a9fcdbb89a2cdf899b4d121a10b487",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0020775854025884017
+        }
+      },
+      "tracking_bands_pixel_samples": "pass",
+      "corner_marker_pixel_samples": "pass"
+    },
+    "tv": {
+      "source_frame": "display/overscan_tv",
+      "description": "电视配置 · 四角标记",
+      "size": [
+        1212,
+        720
+      ],
+      "jpg_sha256": "b228943c2dcfd088e297a730192b567d202e68aad536723b64fc87f9d4b36871",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.001961749612125552
+        }
+      },
+      "tracking_bands_pixel_samples": "pass",
+      "corner_marker_pixel_samples": "pass"
+    },
+    "calibration": {
+      "source_frame": "display/calibration_target",
+      "description": "校准 · 第一个圆心靶",
+      "size": [
+        1212,
+        720
+      ],
+      "jpg_sha256": "42b208a068d8fb1cb89094462f0ee870923d8eebb1f25779282acca37eee548e",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.00022377372001432152
+        }
+      },
+      "tracking_bands_pixel_samples": "pass"
+    }
+  },
+  "core_tests_passed": 39
+}

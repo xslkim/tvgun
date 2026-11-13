@@ -1,6 +1,8 @@
 extends Node2D
 ## Layered 2D art and deterministic presentation; owns no combat simulation.
 const RasterLayer = preload("raster_layer.gd")
+const PaperHud = preload("paper_hud.gd")
+const LABEL_OUTLINE := 4
 var model
 var textures={}
 var texture_group := ""
@@ -8,6 +10,7 @@ var section_layers := false
 var texture_preloads: Array[Dictionary] = []
 var preloaded_section := ""
 var preloaded_textures: Dictionary = {}
+var preloaded_caption_count := 0
 var measure_uploads := false
 var upload_count := 0
 var upload_us := 0
@@ -18,10 +21,14 @@ var bottom_wipe: Node2D
 var wipes: Dictionary = {}
 var additive_z: int
 var foreground: Array = []
+var paper_hud: PaperHud
 
 func _ready():
 	font.font_names=PackedStringArray(["Microsoft YaHei","Noto Sans CJK SC"])
 	var presentation: Dictionary = model.level.get("presentation", {})
+	if presentation.has("hud_art"):
+		paper_hud = PaperHud.new()
+		paper_hud.setup(model, presentation.hud_art, self)
 	wipes = presentation.get("bottom_wipes", {})
 	section_layers = presentation.get("layers", {}).values().any(func(layer): return layer.has("section"))
 	if section_layers:
@@ -51,6 +58,8 @@ func _process(_delta):
 	upload_us = 0
 	update_rasters()
 	preload_next_section()
+	if paper_hud != null:
+		paper_hud.update_lettering()
 	queue_redraw()
 
 func index_texture_preloads(presentation: Dictionary) -> void:
@@ -111,12 +120,16 @@ func preload_next_section() -> void:
 			if preloaded_section != plan.section:
 				preloaded_section = plan.section
 				preloaded_textures.clear()
+				preloaded_caption_count = 0
 			for resource in plan.resources:
 				var image: Image = model.images[resource]
 				var id := image.get_instance_id()
 				if not textures.has(id) and not preloaded_textures.has(id):
 					preloaded_textures[id] = upload(image)
-					break
+					return
+			if paper_hud != null and preloaded_caption_count < PaperHud.STATION_CAPTION_COUNT:
+				paper_hud.preload_station_caption(self, model.level.sections[plan.section], preloaded_caption_count)
+				preloaded_caption_count += 1
 			return
 	preloaded_section = ""
 	preloaded_textures.clear()
@@ -183,8 +196,17 @@ func light_image(cover_id: String) -> Image:
 func label(text,point,size=28,color=Color("#e8d3ad"),centered=false):
 	var at=point
 	if centered:at.x-=font.get_string_size(str(text),HORIZONTAL_ALIGNMENT_LEFT,-1,size).x*.5
-	draw_string_outline(font,at,str(text),HORIZONTAL_ALIGNMENT_LEFT,-1,size,4,Color(.015,.02,.03,.9*color.a))
+	draw_string_outline(font,at,str(text),HORIZONTAL_ALIGNMENT_LEFT,-1,size,LABEL_OUTLINE,Color(.015,.02,.03,.9*color.a))
 	draw_string(font,at,str(text),HORIZONTAL_ALIGNMENT_LEFT,-1,size,color)
+
+func warm_label(text: String, size: int) -> void:
+	if text.is_empty():
+		return
+	# An unattached item warms the same shaped line and glyph caches used by label().
+	var item := RenderingServer.canvas_item_create()
+	font.draw_string_outline(item, Vector2.ZERO, text, HORIZONTAL_ALIGNMENT_LEFT, -1, size, LABEL_OUTLINE)
+	font.draw_string(item, Vector2.ZERO, text, HORIZONTAL_ALIGNMENT_LEFT, -1, size)
+	RenderingServer.free_rid(item)
 func texture(image):
 	var id=image.get_instance_id()
 	if not textures.has(id):
@@ -208,7 +230,10 @@ func _draw():
 		draw_set_transform_matrix(item.transform)
 		draw_texture_rect_region(item.texture if additive != null else texture(item.image),Rect2(Vector2.ZERO,item.size),item.source,item.tint)
 	draw_set_transform_matrix(Transform2D.IDENTITY)
-	draw_intents();draw_effects();draw_hud()
+	if paper_hud == null or paper_hud.lettering_screen().is_empty():
+		draw_intents()
+		draw_effects()
+	draw_hud()
 func draw_intents():
 	var presentation: Dictionary = model.level.get("presentation", {})
 	var glows: Dictionary = presentation.get("activation_glows", {})
@@ -340,6 +365,32 @@ func draw_hud():
 	var presentation=model.level.get("presentation",{})
 	var canvas=Vector2(model.level.layout.width,model.level.layout.height)
 	var stats=model.section_stats();var section=stats.section
+	var context=model.presentation_context
+	if model.phase == "running" and section.get("skippable", false):
+		if context.mode == "player":
+			var hint := "Enter / Esc / 开始键  跳过"
+			var hint_width := font.get_string_size(hint, HORIZONTAL_ALIGNMENT_LEFT, -1, 24).x
+			label(hint, Vector2(canvas.x - hint_width - 26, 42), 24, Color("#dbc8a8"), true)
+		if section.has("hint"):
+			draw_rect(Rect2(0, canvas.y - 85, canvas.x, 85), Color(.018, .025, .045, .82))
+			label(section.hint, Vector2(canvas.x * .5, canvas.y - 32), 32, Color("#efd5a4"), true)
+		if paper_hud != null and paper_hud.tracking_lost:
+			paper_hud.draw_prompt(self, PaperHud.TRACKING_PROMPT)
+		return
+	if paper_hud != null:
+		var lettering_screen := paper_hud.lettering_screen()
+		if not lettering_screen.is_empty():
+			paper_hud.draw_lettering_card(self, lettering_screen, section)
+			return
+		if model.phase == "result":
+			paper_hud.draw_result(self, section, stats)
+			return
+		if section.has("station") and (context.mode != "player" or context.lifecycle == "running" or paper_hud.tracking_lost):
+			paper_hud.draw_playing(self, section, stats)
+			return
+		if paper_hud.tracking_lost:
+			paper_hud.draw_prompt(self, PaperHud.TRACKING_PROMPT)
+			return
 	draw_rect(Rect2(0,0,canvas.x,80),Color(.018,.025,.045,.8))
 	label(presentation.get("title",""),Vector2(25,36),30)
 	if not section.is_empty():
@@ -366,7 +417,6 @@ func draw_hud():
 			label(section.get("hint",""),Vector2(canvas.x*.5,canvas.y-32),32,Color("#efd5a4"),true)
 		else:
 			label(section.get("hint",""),Vector2(canvas.x*.5,canvas.y-22),25,Color("#dbc8a8"),true)
-	var context=model.presentation_context
 	if context.mode=="player" and context.lifecycle=="ready":
 		draw_rect(Rect2(Vector2.ZERO,canvas),Color(.015,.02,.04,.72))
 		label(presentation.get("title",""),Vector2(canvas.x*.5,canvas.y*.34),68,Color("#ebd8b0"),true)
@@ -374,7 +424,11 @@ func draw_hud():
 		label(presentation.get("instructions",""),Vector2(canvas.x*.5,canvas.y*.58),29,Color("#dfd0b4"),true)
 		var controls = "Enter 或点击开始 · 鼠标 / 光枪射击"
 		if model.available_commands().has("RELOAD"):controls += " · R 换弹"
-		label(controls,Vector2(canvas.x*.5,canvas.y*.72),30,Color("#e3bd76"),true)
+		if paper_hud != null:
+			paper_hud.draw_action(self, false)
+			label("Enter / 光枪开始键 · R 换弹", Vector2(canvas.x * .5, canvas.y * .81), 24, Color("#e3bd76"), true)
+		else:
+			label(controls,Vector2(canvas.x*.5,canvas.y*.72),30,Color("#e3bd76"),true)
 	elif model.phase=="result":
 		draw_rect(Rect2(Vector2.ZERO,canvas),Color(.02,.025,.045,.65))
 		label(presentation.get("labels",{}).get("result_success","完成") if model.result=="clear" else presentation.get("labels",{}).get("result_failure","失败"),Vector2(canvas.x*.5,canvas.y*.4),62,Color("#e7c994"),true)

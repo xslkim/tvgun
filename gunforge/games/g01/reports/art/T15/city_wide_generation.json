@@ -1,0 +1,31 @@
+{
+  "tool": "built-in imagegen",
+  "source_result_filename": "exec-8536c482-78d6-4f52-9a4e-edb409ea832d.png",
+  "asset": "gunforge/games/g01/assets/cutscenes/epilogue/city_wide_v1.png",
+  "sha256": "71a24f0795a05cb60281a27348798a938e387349637e05da710345673883d1dd",
+  "size": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "references": [
+    {
+      "role": "town architecture and palette",
+      "path": "gunforge/games/g01/cinematics/opening_original/keyframes/city.png",
+      "sha256": "3750880e2719418c1928b147975051dc88fb10e293d0ceceb37daf3241b12c84"
+    },
+    {
+      "role": "hand-cut layers and transmitted lamplight",
+      "path": "gunforge/games/g01/cinematics/opening_original/keyframes/workbench_lit.png",
+      "sha256": "4901f61b170f03e441108da91518374baf283201c52046e65f59a933f380e9eb"
+    }
+  ],
+  "C03": {
+    "status": "pass",
+    "reason": "Visible alpha-weighted encoded luminance",
+    "details": {
+      "clipped_fraction": 0.0005891879248890267
+    }
+  },
+  "prompt": "Use case: illustration-story. Create one new widescreen 16:9 in-engine epilogue background for the Chinese cut-paper game Paper Lantern City. Input 1 (city.png) is the established neighborhood, architecture and palette reference. Input 2 (workbench_lit.png) is the reference for the hand-cut paper layers and soft transmitted lamplight. Depict the same ordinary 1990s Chinese town from a high, wide, three-quarter viewpoint at dusk, with all three recognizable landmarks visible together: the warm apricot night market and its cloth awnings, the modest teal art-deco old cinema with an empty poster case and a bicycle, and the cyan-green railway station with a small period green passenger train and low platform canopy. Connect the three landmarks with a footbridge and a few simple streets. Compose them across the middle third, comfortably inset from all sides so a mild left-to-right camera pan and bottom subtitles will not hide them. Small paper residents may appear as quiet silhouettes with pinned joints. Clearly separated flat hand-cut cardstock layers, fine paper fibers, very restrained offset shadows and light passing through paper windows. Muted purple-indigo sky, teal and smoky blue buildings, warm muted apricot lanterns and windows. The brightest areas are small soft warm pools, no glaring white, pure white, bright sun or flash. Tender and lived-in, quiet after danger has passed. Full-bleed opaque image without frame, writing, lettering, signs with legible text, HUD, watermarks, monsters, city skylines, photorealism, volumetric 3D or glass gloss."
+}

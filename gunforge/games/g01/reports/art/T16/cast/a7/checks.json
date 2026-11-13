@@ -1,0 +1,512 @@
+{
+  "package": "paper.lantern_city_cast",
+  "build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc",
+  "source_revision": "3ee1e018cc218e74c121b295d64926019f80e7b0d26586a303e8463c6e1e9e19",
+  "compiled_sha256": "a22b0f6eddd72496fdb5d98feba5e429296981b5a2288574e01ba186119f29f7",
+  "player_sha256": "d277d251b2cf6518e283502660692ca937f73c7dc025278c7fb2a1448096c6e2",
+  "candidate_manifest_sha256": "22daa1f4ce5f88a2a8c5c23442c95d81f817b8e804f1d3757ccb3fbf56707d58",
+  "software_packet_verified": true,
+  "formal_a7": "pending",
+  "frozen": false,
+  "isolated_files": 384,
+  "resource_counts": {
+    "image": 296,
+    "audio": 16,
+    "metadata": 30
+  },
+  "resource_source_references_resolved": 342,
+  "distinct_source_evidence_files": 22,
+  "official_asset_records": 0,
+  "candidate_route": {
+    "build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc",
+    "chapter_transition_tick": 6821,
+    "counters": {
+      "ammo": 11.0,
+      "lives": 4,
+      "rescued": 7,
+      "score": 9275,
+      "shots": 109
+    },
+    "end_tick": 13002,
+    "ending": {
+      "city_texture_preloaded": false,
+      "city_tick": 9954,
+      "light_tick": 9522,
+      "natural_result_tick": 13002,
+      "quote_tick": 12390,
+      "skip": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "result": "clear",
+        "result_tick": 9523,
+        "start_tick": 9522
+      },
+      "skip_from_city": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "result": "clear",
+        "result_tick": 10075,
+        "start_tick": 10074
+      },
+      "skip_from_quote": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "result": "clear",
+        "result_tick": 12391,
+        "start_tick": 12390
+      },
+      "skip_from_wide": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "result": "clear",
+        "result_tick": 10891,
+        "start_tick": 10890
+      },
+      "wide_texture_preloaded": false,
+      "wide_tick": 10770
+    },
+    "failure_retries": [
+      {
+        "after_retry": {
+          "ammo": 12.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 0
+        },
+        "before_retry": {
+          "ammo": 6.0,
+          "lives": 0,
+          "rescued": 7,
+          "score": 8575,
+          "shots": 102
+        },
+        "defeat_tick": 10252,
+        "first_shot": {
+          "ammo": 11.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 1
+        },
+        "station": 15
+      }
+    ],
+    "failures": [],
+    "gpu_capture": false,
+    "handoffs": [
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 3875,
+          "shots": 39
+        },
+        "station": "stall",
+        "tick": 5713
+      },
+      {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 4475,
+          "shots": 49
+        },
+        "station": "video_shop",
+        "tick": 6222
+      },
+      {
+        "counters": {
+          "ammo": 7.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4775,
+          "shots": 53
+        },
+        "station": "footbridge",
+        "tick": 6506
+      },
+      {
+        "counters": {
+          "ammo": 4.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4975,
+          "shots": 56
+        },
+        "station": "plaza",
+        "tick": 6619
+      },
+      {
+        "counters": {
+          "ammo": 5.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 6075,
+          "shots": 67
+        },
+        "station": "ticket_office",
+        "tick": 6911
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6375,
+          "shots": 72
+        },
+        "station": "poster_hall",
+        "tick": 7170
+      },
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6575,
+          "shots": 75
+        },
+        "station": "auditorium",
+        "tick": 7402
+      },
+      {
+        "counters": {
+          "ammo": 5.0,
+          "lives": 4,
+          "rescued": 4,
+          "score": 6875,
+          "shots": 79
+        },
+        "station": "projection_booth",
+        "tick": 7661
+      },
+      {
+        "counters": {
+          "ammo": 1.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 7175,
+          "shots": 83
+        },
+        "station": "screen_stage",
+        "tick": 7920
+      },
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 7575,
+          "shots": 87
+        },
+        "station": "waiting_room",
+        "tick": 8067
+      },
+      {
+        "counters": {
+          "ammo": 4.0,
+          "lives": 4,
+          "rescued": 6,
+          "score": 7875,
+          "shots": 92
+        },
+        "station": "platform",
+        "tick": 8374
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8175,
+          "shots": 96
+        },
+        "station": "green_car",
+        "tick": 8681
+      },
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8375,
+          "shots": 99
+        },
+        "station": "lantern_base",
+        "tick": 8988
+      },
+      {
+        "counters": {
+          "ammo": 6.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8575,
+          "shots": 102
+        },
+        "station": "workbench",
+        "tick": 9256
+      }
+    ],
+    "old_chapter_poses_rejected": true,
+    "passed": true,
+    "pullback_tick": 9202,
+    "reached": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "reloads": 9,
+    "replay": {
+      "counters": {
+        "ammo": 11.0,
+        "lives": 4,
+        "rescued": 7,
+        "score": 9275,
+        "shots": 109
+      },
+      "end_tick": 13002,
+      "inputs": 118
+    },
+    "result": "clear",
+    "train_transition_tick": 7977
+  },
+  "evidence": [
+    {
+      "path": "../gallery_checks.json",
+      "scope": "representative_art_and_ui_frames",
+      "sha256": "49104cfa4e8db8fa179da92f669e3e5fd45ef0e39ebde562fc3f45447e3806db",
+      "tested_build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc"
+    },
+    {
+      "path": "../performance.json",
+      "scope": "engine_asset_and_timing_budget",
+      "sha256": "5f3d98114c937bbebdacd9bbcf498b695c4498380daf2723350521774fbf465a",
+      "tested_build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc"
+    },
+    {
+      "path": "../tracking_c13.json",
+      "scope": "latest_player_synthetic_tracking",
+      "sha256": "b4b969f3cdbd0b1cf5e8dbc87dc93c8ff514e741b446d22e3145cfb27f9a831d",
+      "tested_build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc"
+    },
+    {
+      "path": "../udp/checks.json",
+      "scope": "archived_combat_cases_repeated_by_latest_resize_regression",
+      "sha256": "100a76eda9e8088abc00cf038b70446e9567779af04a7fdc7d5b49e2b52502a8",
+      "tested_build_id": "85d234e0f4b4f2865881d2e355bf897f82d2af93ae6f6950c6431e5adada59c6"
+    },
+    {
+      "path": "../readability_c06/checks.json",
+      "scope": "third_chapter_numeric_samples",
+      "sha256": "461d363f0fa0518eb5680e0f714b4d3ced4cf87363665a979fc83d79a0f69428",
+      "tested_build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11"
+    },
+    {
+      "path": "../attack_warnings/checks.json",
+      "scope": "bridge_and_cinema_warning_samples",
+      "sha256": "44697e3baed6a087359426ea05ff91b27eb379f3f80c0f3c9049afa8949af890",
+      "tested_build_id": "85d234e0f4b4f2865881d2e355bf897f82d2af93ae6f6950c6431e5adada59c6"
+    },
+    {
+      "path": "../workbench_readability/checks.json",
+      "scope": "seven_workbench_strokes",
+      "sha256": "3f968e51d13fd3b69513de0013921e7199b311457b466a255e3600c013fc107c",
+      "tested_build_id": "85d234e0f4b4f2865881d2e355bf897f82d2af93ae6f6950c6431e5adada59c6"
+    },
+    {
+      "path": "../screen_boss_masks/checks.json",
+      "scope": "four_cinema_boss_targets",
+      "sha256": "5f823f902db05f742848254fbb743b9af0fa11f17f37e405d5103426482a8980",
+      "tested_build_id": "48af22689f75818cac542ce21421867a97f5ac9abe6502250796dc6ff433a8d1"
+    },
+    {
+      "path": "../dragon_masks/checks.json",
+      "scope": "thirty_dragon_poses",
+      "sha256": "433c175168116edc2428f43e6c518d22f61f177abd8f4debce4bd52a59a2ce8c",
+      "tested_build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11"
+    },
+    {
+      "path": "../display_resize/checks.json",
+      "scope": "latest_player_display_and_input",
+      "sha256": "0ffa1ac68335d1a35c3da1a8cc18d7e5f8084f8210fe4192980ea7d80251fca7",
+      "tested_build_id": "85d234e0f4b4f2865881d2e355bf897f82d2af93ae6f6950c6431e5adada59c6"
+    },
+    {
+      "path": "../cutscene_player/checks.json",
+      "scope": "latest_player_cutscene_playback",
+      "sha256": "b6ee75f4adc135cfc70cf3acb4ae93235a597f838f3699e1e5d2edbd6781177c",
+      "tested_build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11"
+    },
+    {
+      "path": "asset_coverage.json",
+      "scope": "per_resource_encoding_masks_and_historical_review_evidence",
+      "sha256": "8f9ff5fe6d698a6a46031ab20f3cef37434781aa6ed5795a3d9e913e3a4e839c",
+      "tested_build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc"
+    },
+    {
+      "path": "rgba8_regression.json",
+      "scope": "encoding_render_equivalence_and_production_player_retest",
+      "sha256": "93675e7bfee2389ec76f7589a8c85b0591872cf9ca93bb004dee5002e1f192ab",
+      "tested_build_id": "8f1a64f14ab51f267b9f8b05bae367b517e6e10e834f1945652a37d1d5c62aa6"
+    },
+    {
+      "path": "alpha_edges/checks.json",
+      "scope": "C02_source_composites_and_Godot_lettering_edges",
+      "tested_build_id": "48af22689f75818cac542ce21421867a97f5ac9abe6502250796dc6ff433a8d1",
+      "sha256": "5e8f76e5988631b0b583a76c4621db777127193a7cc34afd0cd6bd75d32657ee"
+    },
+    {
+      "path": "edge_fill/checks.json",
+      "scope": "transparent_RGB_repairs_raster_probes_and_route",
+      "tested_build_id": "eaa193c147ee7bf342ee34f3d855ba61847108abe3a74c170617fba0d5317eaa",
+      "sha256": "f5333f1812ad5f9aff57199d9e6f5e174d7d0566e22205794bc46b1d6e75976a"
+    },
+    {
+      "path": "priority_edges/checks.json",
+      "scope": "priority_texture_repairs_weak_hits_and_tracking",
+      "tested_build_id": "5bdaecd61df7ce8c516f5ec85bc6d0a0d5e99817e1bd5e906fe57c10f16413dd",
+      "sha256": "825e8b3a9218f1f921e151b2051974a7d9fd1312adb03f0a25a42b99fc916c38"
+    },
+    {
+      "path": "remaining_edges/checks.json",
+      "scope": "whole_cast_color_edge_repairs_and_gameplay_retests",
+      "tested_build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11",
+      "sha256": "2016c9cd5f2494033dae4e594ba48a075570b58412b966e76b4fa3f4841b60ef"
+    },
+    {
+      "path": "c05_text.json",
+      "scope": "C05_visible_texture_ocr_screening",
+      "sha256": "ab467b061860e1388c1be2e2fcf244639c0905fa5f7c69718ded134810f78b4b",
+      "tested_build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc"
+    },
+    {
+      "path": "c05_rendered.json",
+      "scope": "C05_runtime_lettering_ocr_and_route_recheck",
+      "sha256": "5ba3e694e6479a0ef5a502d1cf56968c2818743eea9c6a86366a989351125f1b",
+      "tested_build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc"
+    },
+    {
+      "path": "c05_review.html",
+      "scope": "C05_visual_review_with_word_bounds",
+      "sha256": "842de5407d8f60fa8300b005d753f1205ce2ad00d8e16c48c184499d9cf2ff80",
+      "tested_build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc"
+    },
+    {
+      "path": "c04_palette.json",
+      "scope": "C04_source_palette_screening_and_same_pose_Godot_probe",
+      "sha256": "83284c184f63fec2b627ef76413ec72364ce903c36c300e66306eedbdcf9ef2e",
+      "tested_build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc"
+    },
+    {
+      "path": "c04_cinnabar_examples.jpg",
+      "scope": "C04_Godot_stamp_visibility_comparison",
+      "sha256": "717bfdd3a6b935f6003a42bd15f2de94a972da1d9bf5403d1fb72e8a877a69f0",
+      "tested_build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc"
+    },
+    {
+      "path": "ending_palette/checks.json",
+      "scope": "C04_unadopted_epilogue_palette_variant_and_player_regression",
+      "sha256": "f5498f54703a2535e542f72ab4303bfc076a8d08cc896aff226e623bfd7911dd",
+      "tested_build_id": "79b38ada06898061b638888466ae1e361d3dc5690b7df6adb278907f842e3f1a"
+    },
+    {
+      "path": "ending_palette/candidate_manifest.json",
+      "scope": "C04_unadopted_epilogue_palette_variant_inventory",
+      "sha256": "8ef0b0bbb04bbeab8931be59c4dd25caa8022b10caa111a6c440b364aa12d8f3",
+      "tested_build_id": "79b38ada06898061b638888466ae1e361d3dc5690b7df6adb278907f842e3f1a"
+    },
+    {
+      "path": "ending_palette/dissolve_compare.jpg",
+      "scope": "C04_epilogue_palette_same_tick_visual_comparison",
+      "sha256": "541f680e16595f4c764b5210d7ccc0e16da03f95611fb4202ddf1c64419c7993",
+      "tested_build_id": "79b38ada06898061b638888466ae1e361d3dc5690b7df6adb278907f842e3f1a"
+    }
+  ],
+  "recording_tool": {
+    "historical_fixture_results": [
+      {
+        "recording": "record_20261002_220523",
+        "appVersion": "32f220e-dirty",
+        "frame_count": 406,
+        "missing_detection_rows": 0,
+        "duration_seconds": 14.477122229,
+        "unknown_interval_seconds": 0.0,
+        "grade_seconds": {
+          "DEAD": 0.0,
+          "GYRO": 0.0,
+          "EDGE": 1.339177281,
+          "PARTIAL": 7.198381618000001,
+          "FULL": 5.93956333
+        },
+        "full_or_partial_time_fraction": 0.9074969969986567,
+        "longest_observed_dead_seconds": 0.0,
+        "reacquisitions": []
+      },
+      {
+        "recording": "record_20261002_004842",
+        "appVersion": "cc0f73a-dirty",
+        "frame_count": 516,
+        "missing_detection_rows": 0,
+        "duration_seconds": 18.407979948,
+        "unknown_interval_seconds": 0.0,
+        "grade_seconds": {
+          "DEAD": 0.0,
+          "GYRO": 0.0,
+          "EDGE": 0.6973499470000001,
+          "PARTIAL": 4.720011395,
+          "FULL": 12.990618606
+        },
+        "full_or_partial_time_fraction": 0.9621169759544547,
+        "longest_observed_dead_seconds": 0.0,
+        "reacquisitions": []
+      }
+    ],
+    "missing_intervals_and_return_markers": "verified_with_synthetic_timestamps",
+    "current_device_capture": "pending"
+  },
+  "pending": [
+    "per_resource_remaining_checks_including_C02_visual_review",
+    "asset_generation_accounting",
+    "third_chapter_A5",
+    "whole_game_art_and_ui_review",
+    "speaker_audio_review",
+    "monitor_physical_capture",
+    "tv_physical_capture",
+    "formal_A7_signoff"
+  ]
+}

@@ -205,11 +205,18 @@ func apply_action(action: Dictionary):
 		"set": entities[action.entity][action.field] = action.value
 		"permission": entities[action.entity].kind = action.kind
 		"resource_add":
-			resources[action.resource] += int(action.amount)
-			var bounds=level.get("resource_bounds",{}).get(action.resource,{})
-			resources[action.resource]=clampi(resources[action.resource],bounds.get("min",-2147483648),bounds.get("max",2147483647))
+			var previous: int = int(resources[action.resource])
+			var bounds = level.get("resource_bounds", {}).get(action.resource, {})
+			resources[action.resource] = clampi(previous + int(action.amount), bounds.get("min", -2147483648), bounds.get("max", 2147483647))
+			# A supply on the last shot can refill before the automatic reload completes.
+			var controls: Dictionary = level.get("controls", {})
+			if reload_at >= 0 and previous == 0 and resources[action.resource] > 0 \
+				and controls.get("auto_reload", false) and action.resource == controls.ammo_resource:
+				reload_at = -1
 		"emit": emit(action.event)
-		"cue":play_cue(action.cue)
+		"cue":
+			if action.get("replace_existing", false):active_cues.clear()
+			play_cue(action.cue)
 		"stun":
 			var entity=entities[action.entity]
 			entity.stun_until=maxi(entity.stun_until,tick+int(ceil(action.duration_ms*level.tick_hz/1000.0)));entity.stunned=true
@@ -292,21 +299,35 @@ func geometry_assets() -> Dictionary:
 func target_role(id):return entities[id].template if entities.has(id) else "unknown"
 func available_commands():
 	var commands = ["START","EXIT"]
+	if phase == "running" and level.get("sections", {}).get(current_section, {}).get("skippable", false):
+		commands.append("SKIP")
 	var controls = level.get("controls",{})
 	if controls.has("ammo_resource") and controls.has("magazine"):
 		commands.append("RELOAD")
 	return commands
 
+func begin_reload():
+	var reload_ms := float(level.controls.get("reload_ms", 500))
+	reload_at = tick + maxi(1, ceili(reload_ms * level.tick_hz / 1000))
+
 func command(event: String, point: Vector2 = Vector2.ZERO, bound_geometry: Variant = null) -> Dictionary:
 	if event == "START":
 		start()
 		return {"ok":true}
-	if phase != "running" or not paused_reasons.is_empty() or not input_enabled:
+	if phase != "running" or not paused_reasons.is_empty():
+		return {"ok":false,"reason":"not_running"}
+	if event == "SKIP":
+		if not available_commands().has("SKIP"):
+			return {"ok":false,"reason":"skip_unavailable"}
+		active_cues.clear()
+		emit("section.skipped", current_section)
+		return {"ok":true}
+	if not input_enabled:
 		return {"ok":false,"reason":"not_running"}
 	var controls = level.get("controls", {})
 	if event == "RELOAD":
 		if available_commands().has("RELOAD") and reload_at < 0:
-			reload_at = tick + maxi(1, int(ceil(float(controls.get("reload_ms", 500)) * level.tick_hz / 1000)))
+			begin_reload()
 			return {"ok":true}
 		return {"ok":false,"reason":"reload_unavailable"}
 	if event != "SHOT":
@@ -319,6 +340,8 @@ func command(event: String, point: Vector2 = Vector2.ZERO, bound_geometry: Varia
 			feedback("empty",point)
 			return {"ok":false,"reason":"empty"}
 		resources[controls.ammo_resource] -= 1
+		if resources[controls.ammo_resource] == 0 and controls.get("auto_reload", false):
+			begin_reload()
 	next_shot = tick + int(ceil(float(controls.get("shot_interval_ms", 0)) * level.tick_hz / 1000))
 	shots += 1
 	emit("weapon.fired");feedback("shot",point)
@@ -361,8 +384,16 @@ func public_state() -> Dictionary:
 		"reload_at":reload_at,"next_shot":next_shot,"pause_reasons":paused_reasons.keys(),"active_cues":active_cues.duplicate(true),"cue_serial":cue_serial,"active_effects":active_effects.duplicate(true),"effect_serial":effect_serial,"current_section":current_section,"input_enabled":input_enabled}
 
 func save_state() -> Dictionary:
+	return _save_state(true)
+
+func save_checkpoint() -> Dictionary:
+	# The runtime only appends trace entries. Keep each checkpoint's own array
+	# so advancing or clearing the live trace cannot change the saved history.
+	return _save_state(false)
+
+func _save_state(copy_trace_entries: bool) -> Dictionary:
 	return {"version":1,"build_id":build.build_id,"public":public_state(),"fired":fired.duplicate(true),
-		"fired_time":fired_time.duplicate(true),"topics":topics.duplicate(true),"trace":trace.duplicate(true)}
+		"fired_time":fired_time.duplicate(true),"topics":topics.duplicate(true),"trace":trace.duplicate(copy_trace_entries)}
 
 func restore_state(saved: Dictionary):
 	assert(saved.version == 1 and saved.build_id == build.build_id)

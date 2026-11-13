@@ -1,0 +1,1065 @@
+{
+  "scope": "fixed gameplay poses for four stops; warning and thumbnail acceptance at A5",
+  "summary": {
+    "normal_numeric_passed": 20,
+    "normal_samples": 20,
+    "hardened_stamp_proxy_samples": 0,
+    "hardened_eye_samples": 5,
+    "hardened_eye_numeric_passed": 5,
+    "warning_samples": 8,
+    "warning_visible_at_eighth": 8,
+    "brightness_samples": 33,
+    "brightness_passed": 33
+  },
+  "stages": {
+    "waiting_room": {
+      "build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11",
+      "campaign_entry_tick": 8067,
+      "failures": [],
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "passed": true,
+      "samples": [
+        {
+          "actor": "crow",
+          "campaign_tick": 8179,
+          "frame": "crow_normal",
+          "kind": "primary",
+          "lamp_lit": true,
+          "state": "normal",
+          "tick": 112,
+          "frame_sha256": "41836f6cb1f554508e3dd7b7802df448829ff53464cf5738ce4f027d6e91756b",
+          "reference_sha256": "f20ea0f00c5884028b53fd5fddf8cfebcaaf368537e9eb9931a951e32135cf8c",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.002719065219065219
+            }
+          },
+          "mask_sha256": "29d945d7e5e2be25f0a58ee5a63aa2330e9071a20ff278ea45f1bdc4998bce54",
+          "visible_pixels": 19171,
+          "measured_extent_px": 214,
+          "median_luminance_difference": 0.3347,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.3347019607843137
+            }
+          }
+        },
+        {
+          "actor": "umbrella",
+          "campaign_tick": 8257,
+          "frame": "umbrella_normal",
+          "kind": "primary",
+          "lamp_lit": false,
+          "state": "normal",
+          "tick": 190,
+          "frame_sha256": "a0cbeda12c914d0e1e0c641a1c7c9aee465ef0b785bf7c4e3aae2f145c7b0c5c",
+          "reference_sha256": "0f20429ef52393fe9378b1d0b2ce32029806705d116ea3882bfa330187c53d0e",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.00253498690998691
+            }
+          },
+          "mask_sha256": "39c87b59abbc3826c134e746513889c65dbf369c5d62a86b9a146bc574f7acf3",
+          "visible_pixels": 9740,
+          "measured_extent_px": 126,
+          "median_luminance_difference": 0.2329,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.23290588235294118
+            }
+          }
+        },
+        {
+          "actor": "crow",
+          "campaign_tick": 8179,
+          "frame": "crow_hardened",
+          "hardened_cue": "eyes",
+          "kind": "invalid",
+          "lamp_lit": false,
+          "state": "hardened",
+          "tick": 112,
+          "frame_sha256": "53f5b6b502f80803597c21e5f091611bd0e2bd88bf760f1336b3d1fdc61f1bea",
+          "reference_sha256": "c28bed71f4b577d648b91fad7dac5a4d82149bd1ba3ba1fe670304f219878151",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.002594541657041657
+            }
+          },
+          "mask_sha256": "344fcb90ca32fa32f71817e06e174fcebe831c2d12a941fc13b137ab68058188",
+          "visible_pixels": 126,
+          "eyes": [
+            {
+              "length_px": 19,
+              "median_luminance_difference": 0.5857,
+              "C06": {
+                "status": "pending",
+                "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+                "details": {
+                  "contrast": 0.5856823529411765
+                }
+              }
+            },
+            {
+              "length_px": 20,
+              "median_luminance_difference": 0.582,
+              "C06": {
+                "status": "pending",
+                "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+                "details": {
+                  "contrast": 0.5820392156862745
+                }
+              }
+            }
+          ],
+          "numeric_passed": true
+        },
+        {
+          "actor": "crow",
+          "campaign_tick": 8287,
+          "frame": "crow_warning",
+          "kind": "invalid",
+          "lamp_lit": false,
+          "state": "warning",
+          "tick": 220,
+          "frame_sha256": "ef67937a1e81e9221b24206ba2fa04ea77dc1f219b9787a76cdea6e6995f9bdc",
+          "reference_sha256": "5c50430877c83feba7545c5585b5ef3216726770131627c2516a18ae29f0432f",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.002536190036190036
+            }
+          },
+          "pixels_changed_full": 4125,
+          "pixels_changed_at_eighth": 125,
+          "visual_review": "A5_pending"
+        },
+        {
+          "actor": "umbrella",
+          "campaign_tick": 8518,
+          "frame": "umbrella_warning",
+          "kind": "primary",
+          "lamp_lit": false,
+          "state": "warning",
+          "tick": 451,
+          "frame_sha256": "229ea1d944169d6b77c7efaac874fde5f2a4fc6abfc0439fee2e5b67b340cfcf",
+          "reference_sha256": "cde1c8c8f3019b94f601a234ebd97cf2ec8c11bb544406b226727b8fafd83b53",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0025012993762993764
+            }
+          },
+          "pixels_changed_full": 4383,
+          "pixels_changed_at_eighth": 127,
+          "visual_review": "A5_pending"
+        },
+        {
+          "actor": "crow",
+          "campaign_tick": 8227,
+          "frame": "crow_normal_160",
+          "kind": "primary",
+          "lamp_lit": true,
+          "state": "normal",
+          "tick": 160,
+          "frame_sha256": "70f3ef67f444d5a5624709df0032e7be53902b34f70c81bad7c54b96aa09d209",
+          "reference_sha256": "14e9e6d0cbea8e6cd598986fc0f9589dbfde36a605aca6a9d188af5c93d9f394",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0024182836682836682
+            }
+          },
+          "mask_sha256": "0414837390f650c043d98c3b13c161a14cb85f859b50da7efa86e799763acccc",
+          "visible_pixels": 19172,
+          "measured_extent_px": 212,
+          "median_luminance_difference": 0.3261,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.3261352941176471
+            }
+          }
+        },
+        {
+          "actor": "crow",
+          "campaign_tick": 8322,
+          "frame": "crow_normal_255",
+          "kind": "primary",
+          "lamp_lit": true,
+          "state": "normal",
+          "tick": 255,
+          "frame_sha256": "b5d2e689540f3ed78dd86ca83c211340d519a09f7a0a1cea7d1ad7ca38eee97f",
+          "reference_sha256": "0f23b52abbe734c5e40bae24c7657cf136088ce15ad15fee7e2eb83e91a93c0b",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0026601120351120353
+            }
+          },
+          "mask_sha256": "9e318bef153827d411b3870ab197e18d66b8054052e63a2800e579b913df9ac0",
+          "visible_pixels": 19187,
+          "measured_extent_px": 213,
+          "median_luminance_difference": 0.2976,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.2976117647058824
+            }
+          }
+        },
+        {
+          "actor": "umbrella",
+          "campaign_tick": 8317,
+          "frame": "umbrella_normal_250",
+          "kind": "primary",
+          "lamp_lit": false,
+          "state": "normal",
+          "tick": 250,
+          "frame_sha256": "5013ec8f5545d676f02c95d5b4da1a7419ceaabfce4e4d7176d1c1f6e528df45",
+          "reference_sha256": "54ffac411b01de1b01f1f8f56ab38bb4664cccabb607ca19e10c20ea854344ff",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.002504908754908755
+            }
+          },
+          "mask_sha256": "17bb4e919d9f1634e4d35b7f712fd79fa478b1745edc0118122eb473726ebd7f",
+          "visible_pixels": 9726,
+          "measured_extent_px": 127,
+          "median_luminance_difference": 0.292,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.2919509803921569
+            }
+          }
+        },
+        {
+          "actor": "umbrella",
+          "campaign_tick": 8417,
+          "frame": "umbrella_normal_350",
+          "kind": "primary",
+          "lamp_lit": false,
+          "state": "normal",
+          "tick": 350,
+          "frame_sha256": "7e4fb81edb645eb69e244e720e26fdca3519cd69e39a8c3432271b776d0379c4",
+          "reference_sha256": "bd6a20ce8affd0c37ffdc047c20e41330285843cd8b2b1360d975f9b77a82671",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.002536190036190036
+            }
+          },
+          "mask_sha256": "b92fefbbbecfc552fdf9a0e677658ce5da59021477e2497051e261fda80978bc",
+          "visible_pixels": 9756,
+          "measured_extent_px": 126,
+          "median_luminance_difference": 0.2221,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.22210588235294115
+            }
+          }
+        }
+      ],
+      "source_revision": "3ee1e018cc218e74c121b295d64926019f80e7b0d26586a303e8463c6e1e9e19",
+      "stage": "waiting_room"
+    },
+    "platform": {
+      "build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11",
+      "campaign_entry_tick": 8374,
+      "failures": [],
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "passed": true,
+      "samples": [
+        {
+          "actor": "crow",
+          "campaign_tick": 8476,
+          "frame": "crow_normal",
+          "kind": "primary",
+          "lamp_lit": false,
+          "state": "normal",
+          "tick": 102,
+          "frame_sha256": "082ca79cbcec9bd816381576f181393aaf15daeeea50fb235e9e712ca511764f",
+          "reference_sha256": "ffbd8c5e75cf0eebbab6f0d620847ed5708cc6e1531c86f850ee7cef45736394",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.005733497920997921
+            }
+          },
+          "mask_sha256": "c552eb934578f50ff74047d9e3a0f8befe7e7d3a6550502c5846d919b857111b",
+          "visible_pixels": 19168,
+          "measured_extent_px": 213,
+          "median_luminance_difference": 0.3264,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.32640980392156865
+            }
+          }
+        },
+        {
+          "actor": "umbrella",
+          "campaign_tick": 8606,
+          "frame": "umbrella_normal",
+          "kind": "primary",
+          "lamp_lit": true,
+          "state": "normal",
+          "tick": 232,
+          "frame_sha256": "88f618208823ad6527c22047e0a1d95f5a6c131dde12a5144131472041e1508c",
+          "reference_sha256": "ea9cf404d759345c5fe913192c1382209a429f2433fe367a5bb91158965a7df6",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.00581470893970894
+            }
+          },
+          "mask_sha256": "fe8cd9465589e3a49069aad3c7beb28a625f76728eb62afc02d215e6191f3169",
+          "visible_pixels": 9084,
+          "measured_extent_px": 122,
+          "median_luminance_difference": 0.3032,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.3031725490196079
+            }
+          }
+        },
+        {
+          "actor": "umbrella",
+          "campaign_tick": 8564,
+          "frame": "umbrella_hardened",
+          "hardened_cue": "eyes",
+          "kind": "invalid",
+          "lamp_lit": false,
+          "state": "hardened",
+          "tick": 190,
+          "frame_sha256": "9cf42e07965bc74ed22801eeff01b33e8f1ed6d890aff44eae292e07e98dfd54",
+          "reference_sha256": "6d894db2281a06507b49039b5acf78a4cf390f5f1aafd5e4f1d8f2652739963c",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.005821927696927697
+            }
+          },
+          "mask_sha256": "2173e1fb4d20836ac812e9329d9a3e0eeb424c0e1553bf65d8d2f1a1b36892c8",
+          "visible_pixels": 133,
+          "eyes": [
+            {
+              "length_px": 21,
+              "median_luminance_difference": 0.5304,
+              "C06": {
+                "status": "pending",
+                "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+                "details": {
+                  "contrast": 0.5303843137254902
+                }
+              }
+            },
+            {
+              "length_px": 20,
+              "median_luminance_difference": 0.5379,
+              "C06": {
+                "status": "pending",
+                "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+                "details": {
+                  "contrast": 0.5379411764705881
+                }
+              }
+            }
+          ],
+          "numeric_passed": true
+        },
+        {
+          "actor": "crow",
+          "campaign_tick": 8568,
+          "frame": "crow_warning",
+          "kind": "primary",
+          "lamp_lit": false,
+          "state": "warning",
+          "tick": 194,
+          "frame_sha256": "123d7e78f61697e0af2cdfa964f7209b68b644a18fac42393631dc84cd8b7204",
+          "reference_sha256": "6c2fa4f8bca205c79fba38b6ad0e32dab9e94dfd31661c60c4984a797439dc2a",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.005821927696927697
+            }
+          },
+          "pixels_changed_full": 4337,
+          "pixels_changed_at_eighth": 125,
+          "visual_review": "A5_pending"
+        },
+        {
+          "actor": "umbrella",
+          "campaign_tick": 8796,
+          "frame": "umbrella_warning",
+          "kind": "invalid",
+          "lamp_lit": false,
+          "state": "warning",
+          "tick": 422,
+          "frame_sha256": "22d881f3c6638bad6266b753e91b8f896b9a7c4bc290945ff3543a5aadea5585",
+          "reference_sha256": "3b05154641d77be0f7c8b2f8b371da4deecf2824d1bee53f473b0aee6a175fea",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.00576056826056826
+            }
+          },
+          "pixels_changed_full": 4210,
+          "pixels_changed_at_eighth": 140,
+          "visual_review": "A5_pending"
+        },
+        {
+          "actor": "crow",
+          "campaign_tick": 8412,
+          "frame": "crow_normal_38",
+          "kind": "primary",
+          "lamp_lit": false,
+          "state": "normal",
+          "tick": 38,
+          "frame_sha256": "bf6abcfaa69ccd8af25d78a322aadf7008c210134e2b132adbb0348df2e669d0",
+          "reference_sha256": "8c891e4f9f8a72aa8ae61270cadbd59fa13f9073746f895461dcf05eba5e20af",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.005749138561638562
+            }
+          },
+          "mask_sha256": "9ddeee864b60c6fbc569acd5f462a895925b7bac709cd464c1a33c31b5a441fe",
+          "visible_pixels": 19166,
+          "measured_extent_px": 213,
+          "median_luminance_difference": 0.3187,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.31874313725490194
+            }
+          }
+        },
+        {
+          "actor": "crow",
+          "campaign_tick": 8634,
+          "frame": "crow_normal_260",
+          "kind": "primary",
+          "lamp_lit": false,
+          "state": "normal",
+          "tick": 260,
+          "frame_sha256": "7c0a1509fd7335ef6dd2febfe7abf8ac8f63eb3a03b206950387fd46b459fcab",
+          "reference_sha256": "2ee713c3fd88f31622a4c80b36015dabc316d8aa0f8c3244964fad75b9e01282",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0058393730268730265
+            }
+          },
+          "mask_sha256": "3930f81d612159b4c24d98aa0b511a88a58821ae1fe79ec55fc7f9f6b0237823",
+          "visible_pixels": 19148,
+          "measured_extent_px": 215,
+          "median_luminance_difference": 0.2111,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.2110862745098039
+            }
+          }
+        },
+        {
+          "actor": "umbrella",
+          "campaign_tick": 8564,
+          "frame": "umbrella_normal_190",
+          "kind": "primary",
+          "lamp_lit": true,
+          "state": "normal",
+          "tick": 190,
+          "frame_sha256": "f0af8d0ab9c09f9756136cf874932bc83e2d1824554afa0b1cb1eb4349929678",
+          "reference_sha256": "03ead7fda10089c74e4c2134a802150a21e67c6e046389cf97139e49d402b8af",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.005827341764841765
+            }
+          },
+          "mask_sha256": "cb9799d2f4dce87000c4c17684e01d87ab95a74b0cab1777588046494bc8c4f0",
+          "visible_pixels": 9066,
+          "measured_extent_px": 122,
+          "median_luminance_difference": 0.2998,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.29976862745098043
+            }
+          }
+        },
+        {
+          "actor": "umbrella",
+          "campaign_tick": 8689,
+          "frame": "umbrella_normal_315",
+          "kind": "primary",
+          "lamp_lit": true,
+          "state": "normal",
+          "tick": 315,
+          "frame_sha256": "6e779fcffce078bef291d6044a07d8aba81645f9aac34328338a86ff3677e53e",
+          "reference_sha256": "c9778a23c35151cfde910f2459a83dd575e28f2b31d97ef80122d4d70fc68489",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.00511448948948949
+            }
+          },
+          "mask_sha256": "53a6f5c364e07cdf5ecb8d12e592c577c12bbe931d67e8c744cab0010d37292a",
+          "visible_pixels": 9080,
+          "measured_extent_px": 122,
+          "median_luminance_difference": 0.2843,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.2842921568627451
+            }
+          }
+        }
+      ],
+      "source_revision": "3ee1e018cc218e74c121b295d64926019f80e7b0d26586a303e8463c6e1e9e19",
+      "stage": "platform"
+    },
+    "green_car": {
+      "build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11",
+      "campaign_entry_tick": 8681,
+      "failures": [],
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "passed": true,
+      "samples": [
+        {
+          "actor": "crow",
+          "campaign_tick": 8793,
+          "frame": "crow_normal",
+          "kind": "primary",
+          "lamp_lit": true,
+          "state": "normal",
+          "tick": 112,
+          "frame_sha256": "f9c3a495606fd14983b228582473f156d1918261854c5ea2252fa501e466048d",
+          "reference_sha256": "ce4b87588573246540caa0d67925c6fb79260751bf07b76c58327f181b2c8c4b",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.005728083853083853
+            }
+          },
+          "mask_sha256": "0921a21450be5f5c53eb912b6db397cbf3e7f697add84c20806cac266a058112",
+          "visible_pixels": 19152,
+          "measured_extent_px": 213,
+          "median_luminance_difference": 0.3286,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.32857254901960786
+            }
+          }
+        },
+        {
+          "actor": "umbrella",
+          "campaign_tick": 8871,
+          "frame": "umbrella_normal",
+          "kind": "primary",
+          "lamp_lit": false,
+          "state": "normal",
+          "tick": 190,
+          "frame_sha256": "44b498e2104d3c7639195d4a53e3ebb3c1e9240991de62c3e555ca91e741d952",
+          "reference_sha256": "921eb0ad60aed7e605aefcb3ee56f31524cf7864cfb685203a36031ce8cfbbb2",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0033374720874720875
+            }
+          },
+          "mask_sha256": "65d6a27203112cf2a2ed6c8373bfdf4ef37d8f4197e145fd23cfb03bdda6205c",
+          "visible_pixels": 10830,
+          "measured_extent_px": 133,
+          "median_luminance_difference": 0.2909,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.29093921568627445
+            }
+          }
+        },
+        {
+          "actor": "crow",
+          "campaign_tick": 8793,
+          "frame": "crow_hardened",
+          "hardened_cue": "eyes",
+          "kind": "invalid",
+          "lamp_lit": false,
+          "state": "hardened",
+          "tick": 112,
+          "frame_sha256": "c719eebb4db8740b1ead614521f3dc74dff7c41436e90a40279351c795b497f1",
+          "reference_sha256": "9295cc81b4321447b207b0f7d25d985f4140cdca871f33e12f11dde6746638f6",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.004118300993300994
+            }
+          },
+          "mask_sha256": "cb7dbaf835bea8daf05b6bdbec31c417dc1a0b3898f76bd835b577cc7998751b",
+          "visible_pixels": 122,
+          "eyes": [
+            {
+              "length_px": 20,
+              "median_luminance_difference": 0.5781,
+              "C06": {
+                "status": "pending",
+                "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+                "details": {
+                  "contrast": 0.5780627450980392
+                }
+              }
+            },
+            {
+              "length_px": 20,
+              "median_luminance_difference": 0.5914,
+              "C06": {
+                "status": "pending",
+                "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+                "details": {
+                  "contrast": 0.5913627450980392
+                }
+              }
+            }
+          ],
+          "numeric_passed": true
+        },
+        {
+          "actor": "crow",
+          "campaign_tick": 8910,
+          "frame": "crow_warning",
+          "kind": "invalid",
+          "lamp_lit": false,
+          "state": "warning",
+          "tick": 229,
+          "frame_sha256": "c0f1987ad39003d130372bb109da0d2c53f72e1d47c9ec5540a9cb0d50c232e3",
+          "reference_sha256": "269e2d5f5b6965087bfc488c511cd77719c84c3722d4b6a1a65aca908098288c",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.003995582120582121
+            }
+          },
+          "pixels_changed_full": 3951,
+          "pixels_changed_at_eighth": 110,
+          "visual_review": "A5_pending"
+        },
+        {
+          "actor": "umbrella",
+          "campaign_tick": 9055,
+          "frame": "umbrella_warning",
+          "kind": "primary",
+          "lamp_lit": false,
+          "state": "warning",
+          "tick": 374,
+          "frame_sha256": "e86f04eedf9b46991b4f40a1c8b09bed6fc87e9c3cdd9875c48daed83411af9a",
+          "reference_sha256": "5caa03fabcdbaadeb78b0de974f72d49dd80ffcdd753c4fd4196934cc978fabc",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.00356486293986294
+            }
+          },
+          "pixels_changed_full": 4358,
+          "pixels_changed_at_eighth": 119,
+          "visual_review": "A5_pending"
+        },
+        {
+          "actor": "crow",
+          "campaign_tick": 8779,
+          "frame": "crow_normal_98",
+          "kind": "primary",
+          "lamp_lit": true,
+          "state": "normal",
+          "tick": 98,
+          "frame_sha256": "2564ff3620aadb803b76780e2d8b411e68f1f5050a1963448b5edd79a102eea7",
+          "reference_sha256": "7c62ce79538e1942505209548c3186fdc85fc95120bb3a3158908be1d656a58a",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.005035684723184723
+            }
+          },
+          "mask_sha256": "02b19936c1badcea8b596965711d0cb35febaac3506efde09b9c233672d9d65d",
+          "visible_pixels": 19167,
+          "measured_extent_px": 213,
+          "median_luminance_difference": 0.3269,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.3268862745098039
+            }
+          }
+        },
+        {
+          "actor": "crow",
+          "campaign_tick": 8946,
+          "frame": "crow_normal_265",
+          "kind": "primary",
+          "lamp_lit": true,
+          "state": "normal",
+          "tick": 265,
+          "frame_sha256": "4830397440f854e6a3a397b132e6e94d7b7d756ff08dd2ebced927723f719f25",
+          "reference_sha256": "4f77e36f81c933ad298940f67cd337b54b3faa65bf81a85559c72900aff7fd7e",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0049069502194502195
+            }
+          },
+          "mask_sha256": "6ff45e3bfbf0094434793489a599477f7d5db58cd2f5bbaa6aeafbccd36d34d0",
+          "visible_pixels": 19154,
+          "measured_extent_px": 215,
+          "median_luminance_difference": 0.3231,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.3230745098039215
+            }
+          }
+        },
+        {
+          "actor": "umbrella",
+          "campaign_tick": 8931,
+          "frame": "umbrella_normal_250",
+          "kind": "primary",
+          "lamp_lit": false,
+          "state": "normal",
+          "tick": 250,
+          "frame_sha256": "11666d041b312a12030831405a8fec46099edfdbb849a6a71b6e2c28c2e64c0c",
+          "reference_sha256": "1a9637404cfa7a3c19ee5235301a0b822b40fae9e75f6ef4353075d8e0742af4",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.002938034188034188
+            }
+          },
+          "mask_sha256": "d14bb90fcd4fad1726f28f519dda5b78a22a603ee8b2a7fe2099cc57ba770217",
+          "visible_pixels": 10790,
+          "measured_extent_px": 133,
+          "median_luminance_difference": 0.3066,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.3065764705882353
+            }
+          }
+        },
+        {
+          "actor": "umbrella",
+          "campaign_tick": 9011,
+          "frame": "umbrella_normal_330",
+          "kind": "primary",
+          "lamp_lit": false,
+          "state": "normal",
+          "tick": 330,
+          "frame_sha256": "6b1f9d5e6a53b650d0cb127d297625fce38cb19d7ee97c6ece64b4f6dc023131",
+          "reference_sha256": "9cc6e057de1fb5e1a50d79d76e2444b7d9b35ad656360982da10fe8329142224",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.003779019404019404
+            }
+          },
+          "mask_sha256": "9a288c746a7d4074b68cfd478a0d49c7616fa90f7de4f250102f075691ae117c",
+          "visible_pixels": 10830,
+          "measured_extent_px": 133,
+          "median_luminance_difference": 0.2227,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.22271764705882352
+            }
+          }
+        }
+      ],
+      "source_revision": "3ee1e018cc218e74c121b295d64926019f80e7b0d26586a303e8463c6e1e9e19",
+      "stage": "green_car"
+    },
+    "lantern_base": {
+      "build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11",
+      "campaign_entry_tick": 8988,
+      "failures": [],
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "passed": true,
+      "samples": [
+        {
+          "actor": "crow",
+          "campaign_tick": 9173,
+          "frame": "crow_normal",
+          "kind": "primary",
+          "lamp_lit": true,
+          "state": "normal",
+          "tick": 185,
+          "frame_sha256": "216e16cc159534d17dda9328912b682d4eda414f11566ab5332b747ff0d34c00",
+          "reference_sha256": "7cf97e3811dd73ac67278e960a543a95f8212d15579d5f3bb219c0cfb6a7e21a",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.008941032378532379
+            }
+          },
+          "mask_sha256": "5a12a487078a2d9d9f95c1b354e3d518fad4f3cf7b100e3be541130bf52f505b",
+          "visible_pixels": 19165,
+          "measured_extent_px": 214,
+          "median_luminance_difference": 0.3824,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.38241568627450984
+            }
+          }
+        },
+        {
+          "actor": "umbrella",
+          "campaign_tick": 9173,
+          "frame": "umbrella_normal",
+          "kind": "primary",
+          "lamp_lit": true,
+          "state": "normal",
+          "tick": 185,
+          "frame_sha256": "216e16cc159534d17dda9328912b682d4eda414f11566ab5332b747ff0d34c00",
+          "reference_sha256": "29b48a4799822e6e02167a26f6c3ef852a5e7a522cec9bb63dd258b75b6f8025",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.008941032378532379
+            }
+          },
+          "mask_sha256": "a4d7c75a5a5c68ea3e93f6de4623115eeef758fcbafaf720523eee89ae2babe1",
+          "visible_pixels": 11057,
+          "measured_extent_px": 135,
+          "median_luminance_difference": 0.3246,
+          "numeric_passed": true,
+          "C06": {
+            "status": "pending",
+            "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+            "details": {
+              "contrast": 0.32464313725490196
+            }
+          }
+        },
+        {
+          "actor": "crow",
+          "campaign_tick": 9173,
+          "frame": "crow_hardened",
+          "hardened_cue": "eyes",
+          "kind": "invalid",
+          "lamp_lit": false,
+          "state": "hardened",
+          "tick": 185,
+          "frame_sha256": "fe3c85bc5d0f9cf8b9f3502a358f44b3f55817e735e1451c601eed0c2d77ffdf",
+          "reference_sha256": "f845303b40a98036b9a2ca0a346f77faf6c16485bfc854d6e67408156c1e29dc",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.007403437090937091
+            }
+          },
+          "mask_sha256": "5cd2ac39c5b0001c7318c2bd914b15c4ab0719b5a43f9c80754ea1c7d3ee5c58",
+          "visible_pixels": 121,
+          "eyes": [
+            {
+              "length_px": 19,
+              "median_luminance_difference": 0.5884,
+              "C06": {
+                "status": "pending",
+                "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+                "details": {
+                  "contrast": 0.5883686274509804
+                }
+              }
+            },
+            {
+              "length_px": 21,
+              "median_luminance_difference": 0.588,
+              "C06": {
+                "status": "pending",
+                "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+                "details": {
+                  "contrast": 0.5880274509803921
+                }
+              }
+            }
+          ],
+          "numeric_passed": true
+        },
+        {
+          "actor": "umbrella",
+          "campaign_tick": 9173,
+          "frame": "umbrella_hardened",
+          "hardened_cue": "eyes",
+          "kind": "invalid",
+          "lamp_lit": false,
+          "state": "hardened",
+          "tick": 185,
+          "frame_sha256": "fe3c85bc5d0f9cf8b9f3502a358f44b3f55817e735e1451c601eed0c2d77ffdf",
+          "reference_sha256": "8b5c1ff964902c64a454c8e050ca75a19c28c161a4188f8f9d3295e45eb39600",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.007403437090937091
+            }
+          },
+          "mask_sha256": "fe1b9f337d3ec0c203b1d504f018d3bc7789d045417402a0dc6c45c76321c055",
+          "visible_pixels": 132,
+          "eyes": [
+            {
+              "length_px": 20,
+              "median_luminance_difference": 0.5266,
+              "C06": {
+                "status": "pending",
+                "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+                "details": {
+                  "contrast": 0.5266313725490196
+                }
+              }
+            },
+            {
+              "length_px": 20,
+              "median_luminance_difference": 0.5397,
+              "C06": {
+                "status": "pending",
+                "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+                "details": {
+                  "contrast": 0.539678431372549
+                }
+              }
+            }
+          ],
+          "numeric_passed": true
+        },
+        {
+          "actor": "crow",
+          "campaign_tick": 9208,
+          "frame": "crow_warning",
+          "kind": "invalid",
+          "lamp_lit": false,
+          "state": "warning",
+          "tick": 220,
+          "frame_sha256": "3a1dd6fd31ae59b69b837ae04d136a8085ecf43cba4743cd88bd26d98530bf24",
+          "reference_sha256": "bedd5edd61967f89c45f455637146d17ce1862891a953d43d2c3a1b11e6642d5",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.008560242935242936
+            }
+          },
+          "pixels_changed_full": 4091,
+          "pixels_changed_at_eighth": 116,
+          "visual_review": "A5_pending"
+        },
+        {
+          "actor": "umbrella",
+          "campaign_tick": 9392,
+          "frame": "umbrella_warning",
+          "kind": "invalid",
+          "lamp_lit": false,
+          "state": "warning",
+          "tick": 404,
+          "frame_sha256": "6e03a061838519f8a3653b88fff750a0488d5246c5027212513ff375c6365b5f",
+          "reference_sha256": "b422e9f14bc065637621711cef0e12645415a0fcc65f99517b4b55cb39dd72e3",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.00848925848925849
+            }
+          },
+          "pixels_changed_full": 4286,
+          "pixels_changed_at_eighth": 155,
+          "visual_review": "A5_pending"
+        }
+      ],
+      "source_revision": "3ee1e018cc218e74c121b295d64926019f80e7b0d26586a303e8463c6e1e9e19",
+      "stage": "lantern_base"
+    }
+  },
+  "previews": {
+    "targets_1_8.jpg": "465fe82b9f25aba60b82e904b22d6b5e64fbb6e146fa40b63e1a4d1632a1de83",
+    "warnings_1_8.jpg": "ab51bdc6ab6ce4a69cfe9973982af19b2289bcfd43c1a66a8728ea46139968a6"
+  },
+  "build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11",
+  "source_revision": "3ee1e018cc218e74c121b295d64926019f80e7b0d26586a303e8463c6e1e9e19",
+  "compiled_sha256": "ad6c66d5a2624d07f51543b55bae4eeb7dff9dec93dc2184248d9cf3534cfc2f"
+}

@@ -33,13 +33,45 @@
 <main>
   <header>
     <h1>火车站 A5 预审</h1>
-    <p>五站对照图可点开原尺寸 JPG。四个战斗站和拉镜已通过软件回归，整关 A5 与光枪实测待工作台 Boss 接入。</p>
+    <p>五站对照图可点开原尺寸 JPG。四个战斗站、拉镜和工作台 Boss 已通过软件回归。整关 A5 与光枪实测待验。</p>
     <nav aria-label="预审章节">
-      <a href="#strokes">七笔遮罩签核</a><a href="#waiting-room">候车室</a><a href="#platform">站台</a>
+      <a href="#forget-boss">工作台 Boss</a><a href="#ending">片尾初版</a><a href="#combined-readability">合并候选</a><a href="#strokes">七笔遮罩签核</a><a href="#waiting-room">候车室</a><a href="#platform">站台</a>
       <a href="#green-car">绿皮车厢</a><a href="#lantern-base">灯座</a><a href="#workbench">工作台</a>
       <a href="#pullback">拉镜</a><a href="#play">游玩检查</a>
     </nav>
   </header>
+
+  <section id="forget-boss">
+    <h2>工作台「忘」字 Boss</h2>
+    <p>跟着朱砂描边和落笔光点逐笔净化。第七笔散去后进入结算。</p>
+    <div class="pair">
+      <figure><a href="gameplay/workbench_boss/forget_first_stroke.jpg"><img src="gameplay/workbench_boss/forget_first_stroke.jpg" alt="第一笔亮起朱砂描边" width="1776" height="936" loading="lazy"></a><figcaption>第一笔亮起</figcaption></figure>
+      <figure><a href="gameplay/workbench_boss/forget_wrong_stroke.jpg"><img src="gameplay/workbench_boss/forget_wrong_stroke.jpg" alt="误射横画触发灰色反馈" width="1776" height="936" loading="lazy"></a><figcaption>误射反馈</figcaption></figure>
+    </div>
+    <p class="links"><a href="gameplay/workbench_boss/forget_rise.jpg">上浮 JPG</a><a href="gameplay/workbench_boss/forget_final_residue.jpg">最后一笔散去 JPG</a><a href="gameplay/workbench_boss/software_checks.json">完整回归</a></p>
+    <p>在仓库根目录的 PowerShell 中运行 <code>powershell -ExecutionPolicy Bypass -File .\gunforge\start_level_player.ps1 -Package paper.train_station_boss -Candidate</code>。</p>
+  </section>
+
+  <section id="ending">
+    <h2>工作台片尾初版</h2>
+    <p>在三关连续候选中，第七笔净化后纸灯重新亮起。按 Enter、Esc 或光枪开始键可以跳过。</p>
+    <div class="pair">
+      <figure><a href="gameplay/ending/ending_unlit.jpg"><img src="gameplay/ending/ending_unlit.jpg" alt="片尾开始，工作台纸灯尚未亮起" width="1776" height="936" loading="lazy"></a><figcaption>点灯前</figcaption></figure>
+      <figure><a href="gameplay/ending/ending_quote.jpg"><img src="gameplay/ending/ending_quote.jpg" alt="纸灯亮起，字幕为灯亮着就还在" width="1776" height="936" loading="lazy"></a><figcaption>纸灯亮起</figcaption></figure>
+    </div>
+    <p class="links"><a href="gameplay/ending/campaign_clear.jpg">三关总结算 JPG</a><a href="gameplay/ending/software_checks.json">片尾回归记录</a></p>
+  </section>
+
+  <section id="combined-readability">
+    <h2>火车站可读性合并候选</h2>
+    <p>对照同一姿态下的三站色调和四站暖纸色硬化眼，再以 1/8 画面复核目标与预警是否容易认出。</p>
+    <div class="pair">
+      <figure><a href="variants/combined_readability/normal_before_after.jpg"><img src="variants/combined_readability/normal_before_after.jpg" alt="候车室、站台、绿皮车厢的普通态前后对照" width="1232" height="2150" loading="lazy"></a><figcaption>普通态与场景调色</figcaption></figure>
+      <figure><a href="variants/combined_readability/hardened_before_after.jpg"><img src="variants/combined_readability/hardened_before_after.jpg" alt="四站五个硬化姿态的眼部前后对照" width="800" height="1562" loading="lazy"></a><figcaption>硬化眼同姿态局部</figcaption></figure>
+    </div>
+    <p class="links"><a href="variants/combined_readability/targets_1_8.jpg">目标 1/8 JPG</a><a href="variants/combined_readability/warnings_1_8.jpg">预警 1/8 JPG</a><a href="variants/combined_readability/checks.json">抓帧数值</a><a href="variants/combined_readability/software_checks.json">软件回归</a></p>
+    <p>在仓库根目录的 PowerShell 中运行 <code>powershell -ExecutionPolicy Bypass -File .\gunforge\start_level_player.ps1 -Package paper.train_station_readability -Candidate</code>。</p>
+  </section>
 
   <section id="strokes">
     <h2>「忘」字七笔遮罩签核</h2>

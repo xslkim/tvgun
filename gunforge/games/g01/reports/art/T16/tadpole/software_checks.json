@@ -1,0 +1,127 @@
+{
+  "package": "paper.tadpole_encounter",
+  "build_id": "396536453977748660d0476a5d7f52ffd277794ba4dadcea56051d5066fa2a1e",
+  "source_revision": "0c11a0a1b4010954ae70067d72862ff5b85de6cbc55bd2a694c41e741e4efe16",
+  "runtime": "Godot 4.6.3 Windows OpenGL Compatibility",
+  "date": "2026-11-12",
+  "passed": true,
+  "source": {
+    "atlas": "gunforge/games/g01/reports/art/T06/gallery/loop_atlas.png",
+    "sha256": "91b0b331c2300340333013c1a24aacd5a4782b0774349cd827e1dec9d12bcfa6",
+    "cell": [
+      12,
+      780,
+      372,
+      1140
+    ],
+    "head_outside_visible_body_pixels": 0,
+    "seal_outside_head_pixels": 0,
+    "preview_atlas_fallback": true,
+    "poses_used": 1
+  },
+  "encounter": {
+    "build_id": "396536453977748660d0476a5d7f52ffd277794ba4dadcea56051d5066fa2a1e",
+    "defeat_tick": 498,
+    "final_resources": {
+      "ammo": 10.0,
+      "lives": 3,
+      "score": 325
+    },
+    "gpu_capture": true,
+    "head_diameter_px": [
+      96.8999987840652,
+      127.5
+    ],
+    "min_head_gap_px": 139.935791015625,
+    "min_silhouette_horizontal_gap_px": 63.1466064453125,
+    "motion_bbox": [
+      511.500427246094,
+      566.700012207031,
+      777.332946777344,
+      256.799865722656
+    ],
+    "replayed_inputs": 5
+  },
+  "C09_minimum_scale": {
+    "status": "pass",
+    "reason": "Primary size, visible protection, weak point and motion reservation",
+    "details": {
+      "effective_radius": 48.05888611016266,
+      "protected_overlap": false,
+      "weak_outside": false,
+      "hud_overlap": false
+    }
+  },
+  "frames": {
+    "start": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0028453934703934706
+        }
+      },
+      "sha256": "67a4745e4a2a9d61e3e47a1bee13b7d05dc052e6df46ae610df14fbd986489dc"
+    },
+    "warning": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0028453934703934706
+        }
+      },
+      "sha256": "bb7995c34be69d27da55e911f0f24763876216abbeff5b15de7f5c85cb1abcb0"
+    },
+    "clear_effect": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004281926156926157
+        }
+      },
+      "sha256": "40fff402e9629b486fe657b9c69922af5343a55441190edd8e077cbe6abb4ecc"
+    },
+    "failure": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0034505659505659507
+        }
+      },
+      "sha256": "f0d36942ac2a52f7e2c902d5ad433d27a1f3c443a018acf1b3552eb79a60c3fe"
+    },
+    "result": {
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0048407782782782785
+        }
+      },
+      "sha256": "168ed589a1b27fd20de54bf2da13864b90d3dfcfedacea12b0b15f22f12dc971"
+    }
+  },
+  "player": {
+    "build_id": "396536453977748660d0476a5d7f52ffd277794ba4dadcea56051d5066fa2a1e",
+    "http_error": 0,
+    "level_player_ready": true,
+    "udp_errors": []
+  },
+  "pipeline_unit_tests_passed": 26,
+  "existing_t16_baseline": {
+    "build_id": "b9b9f9f422f66665b44880cf545f5283507a9b62ad0a69109ccff798397135b3",
+    "stations": 15,
+    "replayed_inputs": 114,
+    "retry_count": 1,
+    "counters": {
+      "ammo": 2.0,
+      "lives": 4,
+      "rescued": 7,
+      "score": 8900,
+      "shots": 106
+    }
+  }
+}

@@ -5,7 +5,10 @@ from compiler import read
 from freeze_baseline import dump
 
 
-def build_resident(folder, ink_path, output):
+RESCUE_INK_SIZE = (252, 224)
+
+
+def build_resident(folder, ink_path, output, *, ink_size=RESCUE_INK_SIZE):
     source = read(folder / "puppet.json")
     by_id = {part["id"]: part for part in source["parts"]}
     with Image.open(folder / "pose_idle.png") as idle:
@@ -27,7 +30,7 @@ def build_resident(folder, ink_path, output):
     x, y = source["ink_anchor"]
     bones.append({"id": "rescue_ink", "parent": "torso", "x": x - px, "y": py - y, "a": 0})
     with Image.open(ink_path) as image:
-        mark = image.convert("RGBA").resize((252, 224), Image.Resampling.LANCZOS)
+        mark = image.convert("RGBA").resize(ink_size, Image.Resampling.LANCZOS)
     sprites.append((100, "rescue_ink", (mark.width / 2, mark.height / 2), mark))
 
     padding = 4

@@ -1,0 +1,280 @@
+{
+  "package": "paper.train_station_boss",
+  "source_revision": "16e5c6e45da3344a15e9146a64ee963591139b84037e5bffe42ec15233e06f6d",
+  "build_id": "e58c34b7501c42ee68652308d9b769c6e587e97373dd621fe367fcf6041563f9",
+  "engine": "Godot 4.6.3 Windows",
+  "gpu": "NVIDIA GeForce RTX 3080 Ti",
+  "renderer": "gl_compatibility",
+  "player_smoke": {
+    "build_id": "e58c34b7501c42ee68652308d9b769c6e587e97373dd621fe367fcf6041563f9",
+    "http_error": 0,
+    "level_player_ready": true,
+    "udp_errors": []
+  },
+  "headless_route": {
+    "build_id": "e58c34b7501c42ee68652308d9b769c6e587e97373dd621fe367fcf6041563f9",
+    "failures": [],
+    "gpu_capture": false,
+    "handoffs": [
+      {
+        "from": "waiting_room.waiting_room",
+        "resources": {
+          "ammo": 8,
+          "lives": 4,
+          "rescued": 1,
+          "score": 300,
+          "shots": 4
+        },
+        "tick": 543,
+        "to": "platform.platform"
+      },
+      {
+        "from": "platform.platform",
+        "resources": {
+          "ammo": 4,
+          "lives": 4,
+          "rescued": 2,
+          "score": 600,
+          "shots": 8
+        },
+        "tick": 904,
+        "to": "green_car.green_car"
+      },
+      {
+        "from": "green_car.green_car",
+        "resources": {
+          "ammo": 1,
+          "lives": 4,
+          "rescued": 2,
+          "score": 800,
+          "shots": 11
+        },
+        "tick": 1218,
+        "to": "lantern_base.lantern_base"
+      },
+      {
+        "from": "lantern_base.lantern_base",
+        "resources": {
+          "ammo": 10,
+          "lives": 4,
+          "rescued": 2,
+          "score": 1000,
+          "shots": 14
+        },
+        "tick": 1440,
+        "to": "lantern_base.pullback"
+      },
+      {
+        "from": "lantern_base.pullback",
+        "resources": {
+          "ammo": 10,
+          "lives": 4,
+          "rescued": 2,
+          "score": 1000,
+          "shots": 14
+        },
+        "tick": 1494,
+        "to": "lantern_base.workbench"
+      }
+    ],
+    "passed": true,
+    "replay": {
+      "end_tick": 1845,
+      "final_resources": {
+        "ammo": 0,
+        "lives": 4,
+        "rescued": 2,
+        "score": 1700,
+        "shots": 24
+      },
+      "inputs": 26
+    },
+    "retry": {
+      "defeated_at": "platform.platform",
+      "defeated_resources": {
+        "ammo": 7,
+        "lives": 0,
+        "rescued": 1,
+        "score": 300,
+        "shots": 5
+      },
+      "restart": {
+        "ammo": 12,
+        "lives": 5,
+        "rescued": 0,
+        "score": 0,
+        "shots": 0
+      },
+      "workbench_defeated_resources": {
+        "ammo": 10,
+        "lives": 0,
+        "rescued": 2,
+        "score": 1000,
+        "shots": 14
+      }
+    }
+  },
+  "gpu_route": {
+    "build_id": "e58c34b7501c42ee68652308d9b769c6e587e97373dd621fe367fcf6041563f9",
+    "failures": [],
+    "gpu_capture": true,
+    "handoffs": [
+      {
+        "from": "waiting_room.waiting_room",
+        "resources": {
+          "ammo": 8,
+          "lives": 4,
+          "rescued": 1,
+          "score": 300,
+          "shots": 4
+        },
+        "tick": 543,
+        "to": "platform.platform",
+        "uncached_scene_textures": 0
+      },
+      {
+        "from": "platform.platform",
+        "resources": {
+          "ammo": 4,
+          "lives": 4,
+          "rescued": 2,
+          "score": 600,
+          "shots": 8
+        },
+        "tick": 904,
+        "to": "green_car.green_car",
+        "uncached_scene_textures": 0
+      },
+      {
+        "from": "green_car.green_car",
+        "resources": {
+          "ammo": 1,
+          "lives": 4,
+          "rescued": 2,
+          "score": 800,
+          "shots": 11
+        },
+        "tick": 1218,
+        "to": "lantern_base.lantern_base",
+        "uncached_scene_textures": 0
+      },
+      {
+        "from": "lantern_base.lantern_base",
+        "resources": {
+          "ammo": 10,
+          "lives": 4,
+          "rescued": 2,
+          "score": 1000,
+          "shots": 14
+        },
+        "tick": 1440,
+        "to": "lantern_base.pullback",
+        "uncached_scene_textures": 0
+      },
+      {
+        "from": "lantern_base.pullback",
+        "resources": {
+          "ammo": 10,
+          "lives": 4,
+          "rescued": 2,
+          "score": 1000,
+          "shots": 14
+        },
+        "tick": 1494,
+        "to": "lantern_base.workbench",
+        "uncached_scene_textures": 0
+      }
+    ],
+    "passed": true,
+    "replay": {
+      "end_tick": 1845,
+      "final_resources": {
+        "ammo": 0,
+        "lives": 4,
+        "rescued": 2,
+        "score": 1700,
+        "shots": 24
+      },
+      "inputs": 26
+    },
+    "retry": {
+      "defeated_at": "platform.platform",
+      "defeated_resources": {
+        "ammo": 7,
+        "lives": 0,
+        "rescued": 1,
+        "score": 300,
+        "shots": 5
+      },
+      "restart": {
+        "ammo": 12,
+        "lives": 5,
+        "rescued": 0,
+        "score": 0,
+        "shots": 0
+      },
+      "workbench_defeated_resources": {
+        "ammo": 10,
+        "lives": 0,
+        "rescued": 2,
+        "score": 1000,
+        "shots": 14
+      }
+    }
+  },
+  "workbench_frames": {
+    "forget_rise.jpg": {
+      "png_sha256": "918c0d7027fa8da38433f402a1737b838fda14c5c4e0b7390d75028c9e1f3615",
+      "jpg_sha256": "f7b6695051794400f638505e394f88c9f9b23382e1de280c524df55fbd2988c3",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.009506501694001693
+        }
+      }
+    },
+    "forget_first_stroke.jpg": {
+      "png_sha256": "d60d47dec2305acf947bcf195e6eadbdb481efe4d9a1410fad6503769f58f30e",
+      "jpg_sha256": "7e46b7ce9acf309a4296a4b6495dd7693a1206837628046ee91eab5d013348d6",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.009711033148533148
+        }
+      }
+    },
+    "forget_wrong_stroke.jpg": {
+      "png_sha256": "cabc775b6c23ec27f97a1d5ddf2068c20c4875ba9972057e398ff0f434243895",
+      "jpg_sha256": "ec6fd82d420f075d8f34bc46b5295b948fe85b612383d5e7469a349490ded6b0",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.009661704974204974
+        }
+      }
+    },
+    "forget_final_residue.jpg": {
+      "png_sha256": "6c218e3d566cbc1a83d0290de4f74e53dfb51f593d5de14b6cd0fb9c5cc8b903",
+      "jpg_sha256": "30b11aad5fdc0e11b1eacf728d338fd22c1bc67aa1638204da49e59c4a438548",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.009658697158697159
+        }
+      }
+    }
+  },
+  "workbench_regressions": [
+    "input locked while the ink rises",
+    "exactly one stroke ready at a time",
+    "out-of-order graze and gray response",
+    "stroke 3 owns the crossing",
+    "each cleared stroke leaves a residue",
+    "workbench defeat and full retry",
+    "clear after seventh stroke and deterministic replay"
+  ]
+}

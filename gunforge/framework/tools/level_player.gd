@@ -11,6 +11,7 @@ const Calibration=preload("res://core/calibration.gd")
 const Metrics=preload("res://core/visible_metrics.gd")
 const Codec=preload("res://core/pose_codec.gd")
 const Opening=preload("res://tools/opening_cinematic.gd")
+const DisplaySetup=preload("res://tools/display_setup.gd")
 
 class DesktopInput extends Node:
 	var handle_key: Callable
@@ -41,6 +42,10 @@ var isolated_settings=false
 var opening_directory := ""
 var opening: Opening
 var opening_pending := false
+var show_paper_crosshair := true
+var pressed_action := ""
+var display_setup: DisplaySetup
+var display_settings_path := "user://settings.cfg"
 func _initialize():
 	for arg in OS.get_cmdline_user_args():
 		if arg.begins_with("--build="):build_path=arg.trim_prefix("--build=")
@@ -53,6 +58,8 @@ func _initialize():
 func open():
 	model=Loader.open(JSON.parse_string(FileAccess.get_file_as_string(build_path)),assets)
 	if model==null:quit(2);return
+	# The tracking frame fits the native window directly.
+	root.content_scale_mode = Window.CONTENT_SCALE_MODE_DISABLED
 	root.title="GunForge — "+model.level.id;root.size=Vector2i(1280,720)
 	border=ColorRect.new();border.color=Color.WHITE;root.add_child(border)
 	dark=ColorRect.new();dark.color=Color.BLACK;root.add_child(dark)
@@ -65,11 +72,6 @@ func open():
 	session.real_time_inputs=true
 	session.setup(model)
 	session.set_pause("ready",true)
-	var settings=ConfigFile.new()
-	if not isolated_settings and settings.load("user://settings.cfg")==OK:
-		frame.configure(settings.get_value("display","profile","monitor"))
-		for key in ["white","dark","outer"]:frame.set(key,settings.get_value(frame.profile,key,frame.get(key)))
-		calibration.matrix=settings.get_value(frame.profile,"calibration",calibration.matrix)
 	session.input_consumed.connect(finish_input)
 	status=Label.new();status.mouse_filter=Control.MOUSE_FILTER_IGNORE;root.add_child(status)
 	status.visible=model.level.get("presentation",{}).get("debug_shell",true)
@@ -84,6 +86,11 @@ func open():
 		else:
 			opening.free()
 			opening = null
+	display_setup = DisplaySetup.new()
+	display_setup.configure(frame, calibration, "" if isolated_settings else display_settings_path)
+	display_setup.frame_changed.connect(refresh_display_frame)
+	display_setup.closed.connect(func(): session.set_pause("display_setup", false))
+	root.add_child(display_setup)
 	gun.open();http.open(8080,handle_http)
 	root.size_changed.connect(layout);layout()
 	print(JSON.stringify({"level_player_ready":true,"build_id":model.build.build_id,"udp_errors":gun.bind_errors,"http_error":http.bind_error}))
@@ -94,7 +101,47 @@ func layout():
 	if opening != null:
 		opening.position = box.position
 		opening.size = box.size
+	display_setup.size = Vector2(root.size)
+	display_setup.queue_redraw()
+
+func refresh_display_frame() -> void:
+	gun.last_frame_sent = -100
+	layout()
+
+func open_display_setup() -> void:
+	session.set_pause("display_setup", true)
+	for entry in session.queue.pending:
+		finish_input(entry.order, {"ok": false, "reason": "display_setup"})
+	session.queue.pending.clear()
+	display_setup.begin()
+
+func menu_action() -> String:
+	if not model.level.get("presentation", {}).has("hud_art") or display_setup.visible:
+		return ""
+	if opening != null and opening.visible:
+		return ""
+	if model.phase == "result":
+		return "retry"
+	return "start" if session.pause_reasons.has("ready") else ""
+
+func handle_action_pointer(point: Vector2, pressed: bool) -> bool:
+	var action := menu_action()
+	var inside: bool = not network and not action.is_empty() and model.render_scene.paper_hud.action_rect(action == "retry").has_point(point)
+	if pressed:
+		if not inside:
+			return false
+		pressed_action = action
+		return true
+	if pressed_action.is_empty():
+		return false
+	var activate := inside and pressed_action == action
+	pressed_action = ""
+	if activate:
+		enqueue_device({"event": "START"})
+	return true
+
 func queue_shot(point,_pose):
+	if display_setup.visible:return
 	if network or not in_playfield(point):return
 	if opening != null and opening.visible:return
 	if session.pause_reasons.has("ready") or model.phase=="result":
@@ -104,9 +151,44 @@ func queue_shot(point,_pose):
 
 func in_playfield(point: Vector2) -> bool:
 	return Rect2(Vector2.ZERO,Vector2(model.level.layout.width,model.level.layout.height)).has_point(point)
-func from_norm(point):return (frame.norm_to_window(calibration.apply(point),root.size)-preview.position-preview.origin)/preview.scale_factor
+func from_norm(point: Vector2) -> Vector2:
+	return from_calibrated_norm(calibration.apply(point))
+
+func from_calibrated_norm(point: Vector2) -> Vector2:
+	# A resize can change the window before the preview has drawn its new scale.
+	var content: Vector2 = frame.content_size()
+	var canvas := Vector2(model.level.layout.width, model.level.layout.height)
+	var scale := minf(content.x / canvas.x, content.y / canvas.y)
+	var letterbox := (content - canvas * scale) * .5
+	var inset: Vector2 = Vector2.ONE * (frame.white + frame.dark)
+	return (point - inset - letterbox) / scale
+
+func device_shot(raw: Vector2) -> Dictionary:
+	var calibrated := calibration.apply(raw)
+	if not calibrated.is_finite():
+		return {}
+	return {"event": "RELOAD" if frame.offscreen(calibrated) else "SHOT",
+		"point": from_calibrated_norm(calibrated)}
+
+func enqueue_device_shot(point: Vector2) -> bool:
+	if in_playfield(point):
+		return session.enqueue("SHOT", point)
+	# The frame margins spend a round but cannot hit off-canvas geometry.
+	# Enqueue copies the geometry immediately and keeps the rendered submission ID.
+	var painted_pose: Array = session.submission
+	session.submission = []
+	var accepted: bool = session.enqueue("SHOT", point)
+	session.submission = painted_pose
+	return accepted
+
 func enqueue_device(event):
 	var command=event.event
+	if display_setup.visible:
+		match command:
+			"SHOT": display_setup.sample(event.aim)
+			"START": display_setup.handle_key(KEY_ENTER)
+			"EXIT": display_setup.handle_key(KEY_ESCAPE)
+		return
 	if command=="AIM":return
 	if command=="LOST":
 		for entry in session.queue.pending:
@@ -114,6 +196,9 @@ func enqueue_device(event):
 		session.queue.pending=session.queue.pending.filter(func(entry):return entry.event.event!="SHOT");return
 	if opening != null and opening.visible:
 		if command in ["START", "EXIT"]:opening.finish()
+		return
+	if command in ["START", "EXIT"] and model.available_commands().has("SKIP"):
+		session.enqueue("SKIP")
 		return
 	if command=="EXIT":session.set_pause("manual",not session.pause_reasons.has("manual"));return
 	if command=="START":
@@ -124,9 +209,18 @@ func enqueue_device(event):
 			start_gameplay()
 		return
 	if command=="SHOT":
-		var point=from_norm(event.aim)
-		if in_playfield(point):session.enqueue("SHOT",point)
-		elif model.available_commands().has("RELOAD"):session.enqueue("RELOAD")
+		var shot := device_shot(event.aim)
+		if shot.is_empty():
+			return
+		var action := menu_action()
+		if not action.is_empty():
+			if model.render_scene.paper_hud.action_rect(action == "retry").has_point(shot.point):
+				enqueue_device({"event": "START"})
+			return
+		if shot.event == "SHOT":
+			enqueue_device_shot(shot.point)
+		elif model.available_commands().has("RELOAD"):
+			session.enqueue("RELOAD")
 	else:session.enqueue(command)
 func start_gameplay():
 	if model.phase=="result":
@@ -140,21 +234,50 @@ func _process(delta):
 	elapsed+=delta
 	var events=gun.poll(elapsed,frame.white,frame.dark)
 	session.set_pause("tracking",network and not gun.valid)
-	if network:
+	if network or display_setup.visible:
 		for event in events:enqueue_device(event)
 	http.poll()
 	session.advance(delta)
 	for order in completions.keys():
 		if elapsed-completions[order].at>5:completions.erase(order)
 	if session.closed:gun.close();http.close();quit();return
-	if model.has_method("set_presentation_context"):model.set_presentation_context("player",session.public_state().lifecycle)
+	var lifecycle: String = session.public_state().lifecycle
+	if model.has_method("set_presentation_context"):model.set_presentation_context("player",lifecycle)
+	if model.level.get("presentation", {}).has("hud_art"):
+		var point := Vector2.INF
+		if network and gun.valid:
+			point = from_norm(gun.aim)
+		elif not network:
+			point = (preview.get_local_mouse_position() - preview.origin) / preview.scale_factor
+		var hud = model.render_scene.paper_hud
+		hud.aim = point if show_paper_crosshair and lifecycle == "running" else Vector2.INF
+		hud.tracking_lost = (lifecycle == "paused" and model.phase == "running"
+			and session.pause_reasons.has("tracking") and not session.pause_reasons.has("manual")
+			and not display_setup.visible)
+		var action := menu_action()
+		if network or pressed_action != action:
+			pressed_action = ""
+		hud.action_hovered = not action.is_empty() and hud.action_rect(action == "retry").has_point(point)
+		hud.action_pressed = hud.action_hovered and not pressed_action.is_empty()
 	audio.sync()
 	for player in audio.players.values():player.stream_paused=not session.pause_reasons.is_empty()
 	var reload_hint = "　R 换弹" if model.available_commands().has("RELOAD") else ""
-	status.text="%s  %s  %s\nEnter 开始 / 重试 / 恢复%s　Esc 暂停　G 光枪模式　Q 退出" % [session.public_state().lifecycle,JSON.stringify(model.resources),str(session.pause_reasons.keys()),reload_hint]
+	status.text="%s  %s  %s\nEnter 开始 / 重试 / 恢复%s　Esc 暂停　G 光枪模式　Q 退出" % [lifecycle,JSON.stringify(model.resources),str(session.pause_reasons.keys()),reload_hint]
 	preview.queue_redraw()
 	if quit_after>0 and elapsed>=quit_after:gun.close();http.close();quit()
 func handle_key(keycode: Key) -> bool:
+	if keycode == KEY_F11:
+		var fullscreen := DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_FULLSCREEN
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED if fullscreen else DisplayServer.WINDOW_MODE_FULLSCREEN)
+		return true
+	if display_setup.visible and keycode != KEY_Q:
+		display_setup.handle_key(keycode)
+		return true
+	if keycode in [KEY_F2, KEY_C]:
+		if opening != null and opening.visible:return false
+		open_display_setup()
+		if keycode == KEY_C:display_setup.begin_calibration()
+		return true
 	match keycode:
 		KEY_ENTER, KEY_KP_ENTER:enqueue_device({"event":"START"})
 		KEY_ESCAPE:enqueue_device({"event":"EXIT"})
@@ -162,6 +285,9 @@ func handle_key(keycode: Key) -> bool:
 			if not model.available_commands().has("RELOAD"):return false
 			session.enqueue("RELOAD")
 		KEY_G:network=not network
+		KEY_H:
+			if not model.level.get("presentation", {}).has("hud_art"):return false
+			show_paper_crosshair = not show_paper_crosshair
 		KEY_Q:gun.close();http.close();quit()
 		_:return false
 	return true
@@ -179,14 +305,23 @@ func handle_http(command,payload,completion):
 		if lifecycle == "opening":state["opening_seconds"] = opening.video.stream_position
 		return state
 	if command in ["START","EXIT"]:enqueue_device({"event":command});return {"ok":true}
-	var point=from_norm(Vector2(payload.get("x",0),payload.get("y",0)))
-	if command=="SHOT":
-		if not point.is_finite():return {"ok":false,"reason":"invalid_coordinates"}
-		if not in_playfield(point):
-			if not model.available_commands().has("RELOAD"):return {"ok":false,"reason":"outside_playfield"}
-			command="RELOAD"
-	var order=session.queue.next_order
-	if not session.enqueue(command,point):return {"ok":false,"reason":"paused_or_no_submission"}
+	if display_setup.visible:return {"ok":false,"reason":"display_setup"}
+	var order = session.queue.next_order
+	var accepted: bool
+	if command == "SHOT":
+		var shot := device_shot(Vector2(payload.get("x", 0), payload.get("y", 0)))
+		if shot.is_empty():
+			return {"ok": false, "reason": "invalid_coordinates"}
+		if shot.event == "SHOT":
+			accepted = enqueue_device_shot(shot.point)
+		else:
+			if not model.available_commands().has("RELOAD"):
+				return {"ok": false, "reason": "outside_playfield"}
+			accepted = session.enqueue("RELOAD")
+	else:
+		accepted = session.enqueue(command)
+	if not accepted:
+		return {"ok": false, "reason": "paused_or_no_submission"}
 	completions[order]={"callback":completion,"at":elapsed}
 	return {"deferred":true}
 func finish_input(order,result):

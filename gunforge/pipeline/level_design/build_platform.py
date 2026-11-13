@@ -7,11 +7,12 @@ from compiler import ROOT
 class Platform(TrainStop):
     stage = "platform"
     generated = ROOT / "gunforge/level_design/generated/platform"
+    resident_name = "检票员"
 
     def __init__(self):
         super().__init__()
         self.source.update(id="paper.platform", seed=431, duration_ms=75000)
-        self.presentation.update(subtitle="第三关 · 站台", instructions="拦截左侧墨鸦 · 射亮信号灯 · 救出检票员")
+        self.presentation.update(subtitle="第三关 · 站台", instructions=f"拦截左侧墨鸦 · 射亮信号灯 · 救出{self.resident_name}")
         self.presentation["labels"].update(result_success="站台安全了", result_failure="站台陷入黑暗")
         self.source["effects"].pop("sweep_fx")
         self.source["effects"]["light_fx"].update(label="信号亮", radius=108)
@@ -33,6 +34,9 @@ class Platform(TrainStop):
                                        for time, x, y, angle in path]}
         return identifier
 
+    def platform_resident(self, data):
+        return self.resident(self.stage, data, CINEMA_ART)
+
     def author(self):
         stage = self.stage
         row = self.prepare_stop()
@@ -44,10 +48,10 @@ class Platform(TrainStop):
         self.entities[umbrella]["mask_permission"] = {"source": light, "resource": influence, "threshold": .13}
         self.presentation["entity_tints"][umbrella] = {"invalid": "#657198"}
         self.presentation["entity_state_labels"][umbrella] = {"invalid": "硬化 · 射信号灯", "primary": "软化 · 射击"}
-        resident, rescue = self.resident(stage, row["residents"][0], CINEMA_ART)
+        resident, rescue = self.platform_resident(row["residents"][0])
         targets = [crow, umbrella, rescue]
         self.sections[stage] = {"index": 1, "title": row["title"], "targets": targets,
-                                "hint": "左侧墨鸦可直接打。点亮信号灯，等右侧墨伞收伞；只打检票员胸口的墨团。"}
+                                "hint": f"左侧墨鸦可直接打。点亮信号灯，等右侧墨伞收伞；只打{self.resident_name}胸口的墨团。"}
         self.event(f"{stage}.start", {"at_ms": 0}, [{"op": "section", "section": stage},
                    *map(spawn, (lamp, ink, crow, canopy, resident, rescue)), permission(canopy, "invalid")])
         self.bind_lamp(lamp, light)

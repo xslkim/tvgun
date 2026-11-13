@@ -186,27 +186,31 @@ class NightMarket:
             self.presentation["dragon"] = dragon
 
 
-def cinema_intro(market):
-    section = "story.cinema_intro"
-    market.source["sections"][section] = {"index": len(market.source["sections"]) + 1, "title": "第二关 · 旧影院",
-                                         "targets": [], "hint": "墨雾流进了旧影院。先到售票处找灯。"}
+def chapter_intro(market, section, backdrop, title, hint):
+    market.source["sections"][section] = {"index": len(market.source["sections"]) + 1, "title": title,
+                                         "targets": [], "hint": hint}
     layers = market.presentation["layers"]
     for name, layer in list(layers.items()):
-        if layer["section"] == "plaza.ink_dragon":
+        if layer["section"] == backdrop:
             layers["story." + name] = dict(layer, section=section)
     market.source["events"][section] = event(after(market.previous_finish, 0),
         [{"op": "section", "section": section}, {"op": "input", "enabled": False}])
     market.previous_finish = section
 
 
-def build(*, with_cinema=False):
+def assemble(*, with_cinema=False, continue_after_cinema=False, alley_followup=None, station_sources=None):
     market = NightMarket()
     revisions = {}
+    station_sources = station_sources or {}
     for index, (key, _, finish, author) in enumerate(STATIONS, 1):
-        source = author()
+        source = station_sources.get(key, author)()
         revisions[source["id"]] = publish(source).parent.name
         market.append(key, index, finish, source, continue_after=with_cinema or index < len(STATIONS))
-    receipt = "night_market"
+        if key == "alley" and alley_followup is not None:
+            name, followup_finish, build_followup = alley_followup
+            followup = build_followup(source)
+            revisions[followup["id"]] = publish(followup).parent.name
+            market.append(name, index, followup_finish, followup, continue_after=True)
     if with_cinema:
         cinema = Cinema().author()
         revisions[cinema["id"]] = publish(cinema).parent.name
@@ -215,19 +219,28 @@ def build(*, with_cinema=False):
         market.presentation.update(subtitle="夜市与旧影院", instructions="守住夜市 · 净化墨舞龙 · 走进旧影院")
         market.presentation["labels"].update(result_success="旧影院重新亮了", result_failure="灯芯耗尽")
         market.source["id"] = "paper.lantern_city"
-        cinema_intro(market)
-        market.append("cinema", len(STATIONS) + 1, "shadow.clear", cinema, continue_after=False,
+        chapter_intro(market, "story.cinema_intro", "plaza.ink_dragon", "第二关 · 旧影院",
+                      "墨雾流进了旧影院。先到售票处找灯。")
+        market.append("cinema", len(STATIONS) + 1, "shadow.clear", cinema, continue_after=continue_after_cinema,
                       station_indices={name: index for index, (name, _) in enumerate(stations, len(STATIONS) + 1)},
                       transition_ms=1500)
-        receipt = "lantern_city"
+    return market, revisions
+
+
+def publish_candidate(market, revisions):
     entry = publish(market.source)
     _, verified, manifest = resolve(market.source["id"], entry.parent.name)
     compiled = compile_source(verified, source_manifest=manifest)
     output = write_build(compiled, DEFAULT_CACHE)
+    receipt = market.source["id"].removeprefix("paper.")
     dump(ROOT / f"gunforge/level_design/reviews/{receipt}_build.json", {"source": str(entry),
          "source_revision": compiled["source_revision"], "build_id": compiled["build_id"], "compiled": str(output),
          "state": "candidate_not_adopted", "component_revisions": revisions})
     print(output)
+
+
+def build(*, with_cinema=False):
+    publish_candidate(*assemble(with_cinema=with_cinema))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,293 @@
+{
+  "build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11",
+  "compiled_sha256": "ad6c66d5a2624d07f51543b55bae4eeb7dff9dec93dc2184248d9cf3534cfc2f",
+  "media_sha256": {
+    "gunforge/framework/tools/level_player.gd": "d277d251b2cf6518e283502660692ca937f73c7dc025278c7fb2a1448096c6e2",
+    "gunforge/games/g01/cinematics/opening_original/paper_lantern_city_opening_game.ogv": "59b804a9d967dac75322779ecda51309cf588c6940db0ff42f143e7837bda281",
+    "gunforge/games/g01/cinematics/opening_original/opening_subtitles.json": "40d773ca9e4b8d3138c2ef689e68a0859422633ab689e62693ee13724f82084f",
+    "gunforge/games/g01/assets/cutscenes/epilogue/ending_wide_tape.wav": "a3fcf022714731beede41ea51e9b560feab21c0f215e74aeb31316933a1e1700"
+  },
+  "tape": {
+    "channels": 2,
+    "sample_rate": 48000,
+    "duration_seconds": 58.0,
+    "sample_width_bytes": 2,
+    "sha256": "a3fcf022714731beede41ea51e9b560feab21c0f215e74aeb31316933a1e1700",
+    "reviewed_voice_intervals": [
+      {
+        "start": 9.0,
+        "end": 11.56,
+        "text": "夜市的灯，又亮了起来。"
+      },
+      {
+        "start": 49.0,
+        "end": 51.24,
+        "text": "灯亮着，就还在。"
+      }
+    ]
+  },
+  "runs": {
+    "keyboard": {
+      "audio_driver": "Dummy",
+      "build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11",
+      "failures": [],
+      "opening": {
+        "caption_gap_checked": false,
+        "caption_samples": [],
+        "combat_counters": {
+          "ammo": 12.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 0
+        },
+        "last_media_seconds": 0.357666,
+        "path": "keyboard",
+        "tick_after_opening": 0
+      },
+      "passed": true,
+      "source_revision": "3ee1e018cc218e74c121b295d64926019f80e7b0d26586a303e8463c6e1e9e19"
+    },
+    "udp": {
+      "audio_driver": "Dummy",
+      "build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11",
+      "failures": [],
+      "opening": {
+        "caption_gap_checked": false,
+        "caption_samples": [],
+        "combat_counters": {
+          "ammo": 12.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 0
+        },
+        "last_media_seconds": 0.416666666666667,
+        "path": "udp",
+        "tick_after_opening": 0
+      },
+      "passed": true,
+      "source_revision": "3ee1e018cc218e74c121b295d64926019f80e7b0d26586a303e8463c6e1e9e19"
+    },
+    "natural": {
+      "audio_driver": "Dummy",
+      "build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11",
+      "failures": [],
+      "natural_ending": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "duration_seconds": 58.0,
+        "phase_times": {
+          "lantern_base.ending_city": 7.23333333333333,
+          "lantern_base.ending_light": 0.0,
+          "lantern_base.ending_quote": 47.8,
+          "lantern_base.ending_wide": 20.8166666666667
+        },
+        "result": "clear",
+        "tape_stopped": true,
+        "voice_samples": [
+          {
+            "audio_seconds": 9.010666847229,
+            "drift_seconds": 0.0773335138956703,
+            "marker_seconds": 9.0,
+            "section": "lantern_base.ending_city",
+            "simulation_seconds": 8.93333333333333,
+            "subtitle": "夜市的灯，又亮了起来。"
+          },
+          {
+            "audio_seconds": 11.6106662750244,
+            "drift_seconds": 0.0939996083577466,
+            "marker_seconds": 11.56,
+            "section": "lantern_base.ending_city",
+            "simulation_seconds": 11.5166666666667,
+            "subtitle": "夜市的灯，又亮了起来。"
+          },
+          {
+            "audio_seconds": 49.042667388916,
+            "drift_seconds": 0.159334055582683,
+            "marker_seconds": 49.0,
+            "section": "lantern_base.ending_quote",
+            "simulation_seconds": 48.8833333333333,
+            "subtitle": "灯亮着，就还在。"
+          },
+          {
+            "audio_seconds": 51.2693328857422,
+            "drift_seconds": 0.202666219075518,
+            "marker_seconds": 51.24,
+            "section": "lantern_base.ending_quote",
+            "simulation_seconds": 51.0666666666667,
+            "subtitle": "灯亮着，就还在。"
+          }
+        ],
+        "wall_seconds": 58.218
+      },
+      "opening": {
+        "caption_gap_checked": true,
+        "caption_samples": [
+          {
+            "matches": true,
+            "media_seconds": 3.57531566666667,
+            "text": "听见了吗？下雨的时候，"
+          },
+          {
+            "matches": true,
+            "media_seconds": 6.34668533333333,
+            "text": "老城就是这个声儿。"
+          },
+          {
+            "matches": true,
+            "media_seconds": 11.4763503333333,
+            "text": "从前啊，夜市一开灯，"
+          },
+          {
+            "matches": true,
+            "media_seconds": 14.5835716666667,
+            "text": "谁家的窗户都舍不得关。"
+          },
+          {
+            "matches": true,
+            "media_seconds": 20.8612698571428,
+            "text": "后来，街拆了。我就一层一层，"
+          },
+          {
+            "matches": true,
+            "media_seconds": 23.692806,
+            "text": "把它刻在纸里。"
+          },
+          {
+            "matches": true,
+            "media_seconds": 31.091627,
+            "text": "这张纸呀，最怕沾上墨水。"
+          },
+          {
+            "matches": true,
+            "media_seconds": 38.2787933333334,
+            "text": "一小滴，也能把一条街的模样，慢慢盖住。"
+          },
+          {
+            "matches": true,
+            "media_seconds": 47.0637282727273,
+            "text": "可灯一亮，你听，它们又热闹起来了。"
+          },
+          {
+            "matches": true,
+            "media_seconds": 56.046565111111,
+            "text": "卖汽水的，修车的，"
+          },
+          {
+            "matches": true,
+            "media_seconds": 58.6347203333332,
+            "text": "还有总不肯早早回家的小麻雀。"
+          },
+          {
+            "matches": true,
+            "media_seconds": 68.3448939999999,
+            "text": "要是哪天，你看见城里暗了一块，别怕。"
+          },
+          {
+            "matches": true,
+            "media_seconds": 76.2707792222221,
+            "text": "把光照过去。记着，照走的是墨，留下的，"
+          },
+          {
+            "matches": true,
+            "media_seconds": 79.2934199999998,
+            "text": "是咱们的城。"
+          }
+        ],
+        "combat_counters": {
+          "ammo": 12.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 0
+        },
+        "last_media_seconds": 89.9232173333331,
+        "path": "natural",
+        "tick_after_opening": 0
+      },
+      "passed": true,
+      "retry": true,
+      "skips": [
+        {
+          "counters": {
+            "ammo": 11.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 9275,
+            "shots": 109
+          },
+          "display_pause_checked": false,
+          "path": "Enter",
+          "result": "clear",
+          "section": "lantern_base.ending_light",
+          "tape_stopped": true
+        },
+        {
+          "counters": {
+            "ammo": 11.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 9275,
+            "shots": 109
+          },
+          "display_pause_checked": true,
+          "path": "Esc",
+          "result": "clear",
+          "section": "lantern_base.ending_city",
+          "tape_stopped": true
+        },
+        {
+          "counters": {
+            "ammo": 11.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 9275,
+            "shots": 109
+          },
+          "display_pause_checked": false,
+          "path": "UDP START",
+          "result": "clear",
+          "section": "lantern_base.ending_wide",
+          "tape_stopped": true
+        },
+        {
+          "counters": {
+            "ammo": 11.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 9275,
+            "shots": 109
+          },
+          "display_pause_checked": false,
+          "path": "UDP EXIT",
+          "result": "clear",
+          "section": "lantern_base.ending_quote",
+          "tape_stopped": true
+        }
+      ],
+      "source_revision": "3ee1e018cc218e74c121b295d64926019f80e7b0d26586a303e8463c6e1e9e19"
+    }
+  },
+  "summary": {
+    "opening_caption_count": 14,
+    "opening_skip_paths": 2,
+    "ending_skip_paths": 4,
+    "voice_markers_in_caption_window": 4,
+    "ending_duration_seconds": 58.0,
+    "max_sampled_drift_seconds": 0.202666219075518
+  },
+  "preview_sha256": "771982f55ab5e83352b996b17a7fbad4df390d976218b160395dc9d0a6e81a63",
+  "source_frames_sha256": {
+    "opening_caption": "1809c65793f6b90c72bc530c950c1c80b262888e26afe7711ffe93856f1a91bd",
+    "ending_voice_0": "0ff9b99cf733ebf85b2d238707b1cf142dd3afbb3ef627059a0f5b77e5cb4997",
+    "ending_voice_2": "addb4b407311b431beb2fdbd868dc78fc2ac0fe09d0a780e4f083a4870b52465",
+    "ending_result": "1472826582c5b9234b8f3f6a6e81d322cb6902e06f39a72bf336fbb42b1d12a3"
+  },
+  "physical_audio_and_lightgun": "pending"
+}

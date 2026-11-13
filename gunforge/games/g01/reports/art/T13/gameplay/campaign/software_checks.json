@@ -1,0 +1,501 @@
+{
+  "package": "paper.lantern_city_campaign",
+  "build_id": "405a5902fb79f4468a624356829ed645b5560e706af4b83109c8b656652fd333",
+  "source_revision": "5879ae16d3d6c92fb4f3bd4d7f76063cab9d56070955c2580561b2dd751ea55e",
+  "engine": "Godot 4.6.3 Windows",
+  "gpu": "NVIDIA GeForce RTX 3080 Ti",
+  "renderer": "gl_compatibility",
+  "player_smoke_with_opening_configured": {
+    "build_id": "405a5902fb79f4468a624356829ed645b5560e706af4b83109c8b656652fd333",
+    "http_error": 0,
+    "level_player_ready": true,
+    "udp_errors": []
+  },
+  "headless_route": {
+    "build_id": "405a5902fb79f4468a624356829ed645b5560e706af4b83109c8b656652fd333",
+    "chapter_transition_tick": 6701,
+    "counters": {
+      "ammo": 2.0,
+      "lives": 4,
+      "rescued": 7,
+      "score": 8900,
+      "shots": 106
+    },
+    "end_tick": 9368,
+    "failure_retries": [
+      {
+        "after_retry": {
+          "ammo": 12.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 0
+        },
+        "before_retry": {
+          "ammo": 9.0,
+          "lives": 0,
+          "rescued": 7,
+          "score": 8200,
+          "shots": 99
+        },
+        "defeat_tick": 10103,
+        "first_shot": {
+          "ammo": 11.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 1
+        },
+        "station": 15
+      }
+    ],
+    "failures": [],
+    "gpu_capture": false,
+    "handoffs": [
+      {
+        "counters": {
+          "ammo": 12.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 3500,
+          "shots": 36
+        },
+        "station": "stall",
+        "tick": 5616
+      },
+      {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 4100,
+          "shots": 46
+        },
+        "station": "video_shop",
+        "tick": 6096
+      },
+      {
+        "counters": {
+          "ammo": 10.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4400,
+          "shots": 50
+        },
+        "station": "footbridge",
+        "tick": 6384
+      },
+      {
+        "counters": {
+          "ammo": 7.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4600,
+          "shots": 53
+        },
+        "station": "plaza",
+        "tick": 6499
+      },
+      {
+        "counters": {
+          "ammo": 8.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 5700,
+          "shots": 64
+        },
+        "station": "ticket_office",
+        "tick": 6791
+      },
+      {
+        "counters": {
+          "ammo": 3.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6000,
+          "shots": 69
+        },
+        "station": "poster_hall",
+        "tick": 7050
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6200,
+          "shots": 72
+        },
+        "station": "auditorium",
+        "tick": 7282
+      },
+      {
+        "counters": {
+          "ammo": 8.0,
+          "lives": 4,
+          "rescued": 4,
+          "score": 6500,
+          "shots": 76
+        },
+        "station": "projection_booth",
+        "tick": 7541
+      },
+      {
+        "counters": {
+          "ammo": 4.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 6800,
+          "shots": 80
+        },
+        "station": "screen_stage",
+        "tick": 7800
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 7200,
+          "shots": 84
+        },
+        "station": "waiting_room",
+        "tick": 7918
+      },
+      {
+        "counters": {
+          "ammo": 7.0,
+          "lives": 4,
+          "rescued": 6,
+          "score": 7500,
+          "shots": 89
+        },
+        "station": "platform",
+        "tick": 8225
+      },
+      {
+        "counters": {
+          "ammo": 3.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 7800,
+          "shots": 93
+        },
+        "station": "green_car",
+        "tick": 8532
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8000,
+          "shots": 96
+        },
+        "station": "lantern_base",
+        "tick": 8839
+      },
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8200,
+          "shots": 99
+        },
+        "station": "workbench",
+        "tick": 9107
+      }
+    ],
+    "old_chapter_poses_rejected": true,
+    "passed": true,
+    "pullback_tick": 9053,
+    "reached": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "reloads": 8,
+    "replay": {
+      "counters": {
+        "ammo": 2.0,
+        "lives": 4,
+        "rescued": 7,
+        "score": 8900,
+        "shots": 106
+      },
+      "end_tick": 9368,
+      "inputs": 114
+    },
+    "result": "clear",
+    "train_transition_tick": 7828
+  },
+  "gpu_route": {
+    "build_id": "405a5902fb79f4468a624356829ed645b5560e706af4b83109c8b656652fd333",
+    "chapter_transition_tick": 6701,
+    "counters": {
+      "ammo": 2.0,
+      "lives": 4,
+      "rescued": 7,
+      "score": 8900,
+      "shots": 106
+    },
+    "end_tick": 9368,
+    "failures": [],
+    "gpu_capture": true,
+    "handoffs": [
+      {
+        "counters": {
+          "ammo": 12.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 3500,
+          "shots": 36
+        },
+        "station": "stall",
+        "tick": 5616
+      },
+      {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 4100,
+          "shots": 46
+        },
+        "station": "video_shop",
+        "tick": 6096
+      },
+      {
+        "counters": {
+          "ammo": 10.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4400,
+          "shots": 50
+        },
+        "station": "footbridge",
+        "tick": 6384
+      },
+      {
+        "counters": {
+          "ammo": 7.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4600,
+          "shots": 53
+        },
+        "station": "plaza",
+        "tick": 6499
+      },
+      {
+        "counters": {
+          "ammo": 8.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 5700,
+          "shots": 64
+        },
+        "station": "ticket_office",
+        "tick": 6791
+      },
+      {
+        "counters": {
+          "ammo": 3.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6000,
+          "shots": 69
+        },
+        "station": "poster_hall",
+        "tick": 7050
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6200,
+          "shots": 72
+        },
+        "station": "auditorium",
+        "tick": 7282
+      },
+      {
+        "counters": {
+          "ammo": 8.0,
+          "lives": 4,
+          "rescued": 4,
+          "score": 6500,
+          "shots": 76
+        },
+        "station": "projection_booth",
+        "tick": 7541
+      },
+      {
+        "counters": {
+          "ammo": 4.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 6800,
+          "shots": 80
+        },
+        "station": "screen_stage",
+        "tick": 7800
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 7200,
+          "shots": 84
+        },
+        "station": "waiting_room",
+        "tick": 7918
+      },
+      {
+        "counters": {
+          "ammo": 7.0,
+          "lives": 4,
+          "rescued": 6,
+          "score": 7500,
+          "shots": 89
+        },
+        "station": "platform",
+        "tick": 8225
+      },
+      {
+        "counters": {
+          "ammo": 3.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 7800,
+          "shots": 93
+        },
+        "station": "green_car",
+        "tick": 8532
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8000,
+          "shots": 96
+        },
+        "station": "lantern_base",
+        "tick": 8839
+      },
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8200,
+          "shots": 99
+        },
+        "station": "workbench",
+        "tick": 9107
+      }
+    ],
+    "old_chapter_poses_rejected": true,
+    "passed": true,
+    "pullback_tick": 9053,
+    "reached": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "reloads": 8,
+    "replay": {
+      "counters": {
+        "ammo": 2.0,
+        "lives": 4,
+        "rescued": 7,
+        "score": 8900,
+        "shots": 106
+      },
+      "end_tick": 9368,
+      "inputs": 114
+    },
+    "result": "clear",
+    "train_transition_tick": 7828
+  },
+  "frames": {
+    "cinema_transition.jpg": {
+      "png_sha256": "482ab2638234ccdb7a3a5de2c01177e0de18ad9ce88aa48b149f0e4fad38c0d2",
+      "jpg_sha256": "79fb53ad4eb6231c2fbd772d606fa56ad868cb97b072afe691378addddb575ab",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.003920988295988296
+        }
+      }
+    },
+    "train_station_transition.jpg": {
+      "png_sha256": "56e5ed4134c5f3f933bbfbca68afdc6f875b051284c2eda231f4775116591a42",
+      "jpg_sha256": "4ff2d8a8c06e4107fc8f26339506fd59bc8b8ec90c5cfd060dde8ffc943138b1",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.010011213136213136
+        }
+      }
+    },
+    "station_11_waiting_room.jpg": {
+      "png_sha256": "f4677795d357ebad671367e1a98627d170d83f2f4ca08f5155c47cdd79cdc33a",
+      "jpg_sha256": "d5a35aa53639181aa5cd1cacbb06a62ce49cd5dbd7af2a00b39af113715af4fd",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0037886444136444137
+        }
+      }
+    },
+    "campaign_clear.jpg": {
+      "png_sha256": "b80aa5a268719c42756f68b6131e07bfa9a1d26ab474f1c2be59e0b1db0dd125",
+      "jpg_sha256": "4068240a08bd8533a379500d1cec90d931a6a5c7329b8066ed8acf9b06487144",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004963497150997151
+        }
+      }
+    }
+  },
+  "window_player_smoke_with_opening_configured": {
+    "build_id": "405a5902fb79f4468a624356829ed645b5560e706af4b83109c8b656652fd333",
+    "http_error": 0,
+    "level_player_ready": true,
+    "udp_errors": []
+  }
+}

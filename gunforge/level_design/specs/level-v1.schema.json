@@ -751,6 +751,9 @@
                     "cue": {
                       "type": "string",
                       "minLength": 1
+                    },
+                    "replace_existing": {
+                      "type": "boolean"
                     }
                   },
                   "required": [
@@ -1233,6 +1236,9 @@
           "type": "integer",
           "minimum": 0
         },
+        "auto_reload": {
+          "type": "boolean"
+        },
         "shot_interval_ms": {
           "type": "integer",
           "minimum": 0
@@ -1501,6 +1507,9 @@
                             "cue": {
                               "type": "string",
                               "minLength": 1
+                            },
+                            "replace_existing": {
+                              "type": "boolean"
                             }
                           },
                           "required": [
@@ -1880,6 +1889,9 @@
           "station": {
             "type": "integer",
             "minimum": 1
+          },
+          "skippable": {
+            "type": "boolean"
           }
         },
         "required": [
@@ -2086,6 +2098,102 @@
           "required": [
             "entity",
             "label"
+          ],
+          "additionalProperties": false
+        },
+        "hud_art": {
+          "type": "object",
+          "properties": {
+            "layout": {
+              "type": "string",
+              "minLength": 1
+            },
+            "style": {
+              "type": "string",
+              "minLength": 1
+            },
+            "images": {
+              "type": "object",
+              "properties": {
+                "life_wick": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "life_wick_empty": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "ammo_light": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "ammo_light_empty": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "score_seal": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "prompt_bar": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "crosshair": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "continue_panel": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "life_wick",
+                "life_wick_empty",
+                "ammo_light",
+                "ammo_light_empty",
+                "score_seal",
+                "prompt_bar",
+                "crosshair",
+                "continue_panel"
+              ],
+              "additionalProperties": false
+            },
+            "lettering": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "first_chapter": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "chapters": {
+                  "type": "object",
+                  "propertyNames": {
+                    "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+                  },
+                  "additionalProperties": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              },
+              "required": [
+                "title",
+                "first_chapter",
+                "chapters"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "layout",
+            "style",
+            "images"
           ],
           "additionalProperties": false
         },

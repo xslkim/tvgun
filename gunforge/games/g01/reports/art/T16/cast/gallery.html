@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>纸灯城 · 全作一致性画廊</title>
+  <style>
+    :root { color-scheme: dark; font-family: "Source Sans 3", "Microsoft YaHei", system-ui, sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #eee8de; background: #151825; line-height: 1.6; }
+    main { max-width: 1320px; margin: auto; padding: clamp(16px, 4vw, 48px); }
+    header { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 28px; align-items: center; }
+    h1, h2, p { margin: 0; }
+    h1 { font-size: clamp(30px, 4.8vw, 56px); line-height: 1.15; letter-spacing: -.025em; }
+    h2 { font-size: clamp(22px, 3vw, 32px); line-height: 1.3; }
+    p { margin-top: 10px; color: #d2c7ba; }
+    a { color: #eec78b; text-underline-offset: .18em; }
+    a:focus-visible { outline: 2px solid #ffdfaa; outline-offset: 3px; }
+    .hero img { width: 100%; height: auto; display: block; border: 1px solid #454051; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 24px; padding-block: 12px; border-block: 1px solid #444454; }
+    section { margin-top: 36px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 285px), 1fr)); gap: 12px; margin: 16px 0 8px; }
+    .compact { grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr)); }
+    figure { margin: 0; min-width: 0; border: 1px solid #3f4050; background: #222637; }
+    figure a { display: block; }
+    figure img { display: block; width: 100%; height: auto; aspect-ratio: 1776 / 936; object-fit: contain; background: #111420; }
+    .compact img { aspect-ratio: 4 / 5; }
+    figcaption { padding: 8px 12px 10px; }
+    figcaption span { display: block; font-size: .9em; color: #c8bcac; }
+    footer { margin-top: 38px; border-top: 1px solid #444454; padding-top: 18px; }
+    @media (max-width: 680px) { header { grid-template-columns: 1fr; gap: 16px; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div>
+      <h1>纸灯城<br>全作一致性画廊</h1>
+      <p>按三关顺序查看 15 站、居民、墨怪、Boss 和界面。点开任一战斗局部可看完整的 Godot 画面。</p>
+      <p><a href="report.md">试玩与复跑</a> · <a href="candidate_manifest.json">交付候选清单</a> · <a href="gallery_checks.json">抓帧验证</a></p>
+    </div>
+    <a class="hero" href="frames/ending_wide_full.jpg"><img src="frames/ending_wide_full.jpg" alt="片尾灯城全景中的夜市、旧影院和火车站" width="1776" height="936"></a>
+  </header>
+  <nav aria-label="画廊章节">
+    <a href="#market">夜市</a><a href="#cinema">旧影院</a><a href="#railway">火车站与工作台</a>
+    <a href="#residents">纸居民</a><a href="#enemies">墨怪</a><a href="#bosses">Boss</a><a href="#ui">界面</a>
+  </nav>
+  <section id="market"><h2>夜市</h2><div class="cards">
+<figure><a href="frames/station_1_alley.jpg"><img src="frames/station_1_alley.jpg" alt="巷口" width="1776" height="936" loading="lazy"></a><figcaption><strong>巷口</strong></figcaption></figure>
+<figure><a href="frames/station_2_stall.jpg"><img src="frames/station_2_stall.jpg" alt="糖葫芦摊" width="1776" height="936" loading="lazy"></a><figcaption><strong>糖葫芦摊</strong></figcaption></figure>
+<figure><a href="frames/station_3_video_shop.jpg"><img src="frames/station_3_video_shop.jpg" alt="录像厅门口" width="1776" height="936" loading="lazy"></a><figcaption><strong>录像厅门口</strong></figcaption></figure>
+<figure><a href="frames/station_4_footbridge.jpg"><img src="frames/station_4_footbridge.jpg" alt="天桥" width="1776" height="936" loading="lazy"></a><figcaption><strong>天桥</strong></figcaption></figure>
+<figure><a href="frames/station_5_plaza.jpg"><img src="frames/station_5_plaza.jpg" alt="广场" width="1776" height="936" loading="lazy"></a><figcaption><strong>广场</strong></figcaption></figure>
+</div><p><a href="../../T10/report.md">夜市美术与回归</a></p></section>
+<section id="cinema"><h2>旧影院</h2><div class="cards">
+<figure><a href="frames/station_6_ticket_office.jpg"><img src="frames/station_6_ticket_office.jpg" alt="售票处" width="1776" height="936" loading="lazy"></a><figcaption><strong>售票处</strong></figcaption></figure>
+<figure><a href="frames/station_7_poster_hall.jpg"><img src="frames/station_7_poster_hall.jpg" alt="海报长廊" width="1776" height="936" loading="lazy"></a><figcaption><strong>海报长廊</strong></figcaption></figure>
+<figure><a href="frames/station_8_auditorium.jpg"><img src="frames/station_8_auditorium.jpg" alt="观众席" width="1776" height="936" loading="lazy"></a><figcaption><strong>观众席</strong></figcaption></figure>
+<figure><a href="frames/station_9_projection_booth.jpg"><img src="frames/station_9_projection_booth.jpg" alt="放映室" width="1776" height="936" loading="lazy"></a><figcaption><strong>放映室</strong></figcaption></figure>
+<figure><a href="frames/station_10_screen_stage.jpg"><img src="frames/station_10_screen_stage.jpg" alt="银幕前" width="1776" height="936" loading="lazy"></a><figcaption><strong>银幕前</strong></figcaption></figure>
+</div><p><a href="../../T12/report.md">旧影院美术与回归</a></p></section>
+<section id="railway"><h2>火车站与工作台</h2><div class="cards">
+<figure><a href="frames/station_11_waiting_room.jpg"><img src="frames/station_11_waiting_room.jpg" alt="候车室" width="1776" height="936" loading="lazy"></a><figcaption><strong>候车室</strong></figcaption></figure>
+<figure><a href="frames/station_12_platform.jpg"><img src="frames/station_12_platform.jpg" alt="站台" width="1776" height="936" loading="lazy"></a><figcaption><strong>站台</strong></figcaption></figure>
+<figure><a href="frames/station_13_green_car.jpg"><img src="frames/station_13_green_car.jpg" alt="绿皮车厢" width="1776" height="936" loading="lazy"></a><figcaption><strong>绿皮车厢</strong></figcaption></figure>
+<figure><a href="frames/station_14_lantern_base.jpg"><img src="frames/station_14_lantern_base.jpg" alt="灯座" width="1776" height="936" loading="lazy"></a><figcaption><strong>灯座</strong></figcaption></figure>
+<figure><a href="frames/station_15_workbench.jpg"><img src="frames/station_15_workbench.jpg" alt="爷爷的工作台" width="1776" height="936" loading="lazy"></a><figcaption><strong>爷爷的工作台</strong></figcaption></figure>
+</div><p><a href="../../T13/gallery.html">第三关预审</a></p></section>
+<section id="residents"><h2>纸居民</h2><p>三关出现 8 套居民造型。七位居民可获救，骑车的人在天桥上层等候。</p><div class="cards compact">
+<figure><a href="frames/subject_vendor.jpg"><img src="frames/subject_vendor_detail.jpg" alt="卖糖葫芦的" width="496" height="656" loading="lazy"></a><figcaption><strong>卖糖葫芦的</strong><span>夜市巷口</span></figcaption></figure>
+<figure><a href="frames/subject_video_owner.jpg"><img src="frames/subject_video_owner_detail.jpg" alt="录像厅老板" width="388" height="437" loading="lazy"></a><figcaption><strong>录像厅老板</strong><span>录像厅门口</span></figcaption></figure>
+<figure><a href="frames/subject_ticket_clerk.jpg"><img src="frames/subject_ticket_clerk_detail.jpg" alt="检票员" width="308" height="390" loading="lazy"></a><figcaption><strong>检票员</strong><span>旧影院售票处</span></figcaption></figure>
+<figure><a href="frames/subject_projectionist.jpg"><img src="frames/subject_projectionist_detail.jpg" alt="放映员" width="318" height="442" loading="lazy"></a><figcaption><strong>放映员</strong><span>放映室</span></figcaption></figure>
+<figure><a href="frames/subject_passerby_b.jpg"><img src="frames/subject_passerby_b_detail.jpg" alt="路人 B" width="278" height="387" loading="lazy"></a><figcaption><strong>路人 B</strong><span>观众席</span></figcaption></figure>
+<figure><a href="frames/subject_passerby_c.jpg"><img src="frames/subject_passerby_c_detail.jpg" alt="路人 C" width="332" height="449" loading="lazy"></a><figcaption><strong>路人 C</strong><span>候车室</span></figcaption></figure>
+<figure><a href="frames/subject_cyclist.jpg"><img src="frames/subject_cyclist_detail.jpg" alt="骑车的人" width="275" height="327" loading="lazy"></a><figcaption><strong>骑车的人</strong><span>天桥上层 · 停车等候</span></figcaption></figure>
+<figure><a href="frames/subject_passerby_a.jpg"><img src="frames/subject_passerby_a_detail.jpg" alt="路人 A" width="346" height="443" loading="lazy"></a><figcaption><strong>路人 A</strong><span>火车站台 · 受困</span></figcaption></figure>
+</div><p><a href="frames/subject_bridge_warning.jpg">天桥上下层 · 墨车夫响铃</a> · <a href="frames/subject_passerby_a_saved.jpg">站台路人 A 获救</a> · <a href="../../T09/gallery/index.html">A4 设定审核</a></p></section>
+<section id="enemies"><h2>墨怪</h2><p>七种墨怪均有实战画面。墨蝌蚪出现在巷口第六波后的水洼。</p><div class="cards compact">
+<figure><a href="frames/subject_ink_crow.jpg"><img src="frames/subject_ink_crow_detail.jpg" alt="墨鸦" width="262" height="263" loading="lazy"></a><figcaption><strong>墨鸦</strong><span>夜市巷口</span></figcaption></figure>
+<figure><a href="frames/subject_ink_drop.jpg"><img src="frames/subject_ink_drop_detail.jpg" alt="滴墨" width="370" height="288" loading="lazy"></a><figcaption><strong>滴墨</strong><span>录像厅门口</span></figcaption></figure>
+<figure><a href="frames/subject_ink_cart.jpg"><img src="frames/subject_ink_cart_detail.jpg" alt="墨车夫" width="579" height="345" loading="lazy"></a><figcaption><strong>墨车夫</strong><span>天桥</span></figcaption></figure>
+<figure><a href="frames/subject_ink_sign.jpg"><img src="frames/subject_ink_sign_detail.jpg" alt="墨招牌" width="586" height="338" loading="lazy"></a><figcaption><strong>墨招牌</strong><span>录像厅门口</span></figcaption></figure>
+<figure><a href="frames/subject_ink_tape.jpg"><img src="frames/subject_ink_tape_detail.jpg" alt="磁带墨" width="368" height="284" loading="lazy"></a><figcaption><strong>磁带墨</strong><span>旧影院售票处</span></figcaption></figure>
+<figure><a href="frames/subject_umbrella_open.jpg"><img src="frames/subject_umbrella_open_detail.jpg" alt="墨伞" width="295" height="261" loading="lazy"></a><figcaption><strong>墨伞</strong><span>旧影院 · 撑伞</span></figcaption></figure>
+<figure><a href="frames/subject_tadpole.jpg"><img src="frames/subject_tadpole_detail.jpg" alt="墨蝌蚪" width="994" height="523" loading="lazy"></a><figcaption><strong>墨蝌蚪</strong><span>夜市巷口 · 水洼小群</span></figcaption></figure>
+</div><p><a href="frames/subject_umbrella_closed.jpg">墨伞收拢实战</a> · <a href="../../T06/report.md">墨鸦与墨蝌蚪效果验证</a></p></section>
+<section id="bosses"><h2>三个 Boss</h2><p>截取各 Boss 有目标开放的战斗画面。</p><div class="cards">
+<figure><a href="frames/subject_dragon.jpg"><img src="frames/subject_dragon.jpg" alt="墨舞龙" width="1776" height="936" loading="lazy"></a><figcaption><strong>墨舞龙</strong><span>夜市广场</span></figcaption></figure>
+<figure><a href="frames/subject_screen_shadow.jpg"><img src="frames/subject_screen_shadow.jpg" alt="银幕影" width="1776" height="936" loading="lazy"></a><figcaption><strong>银幕影</strong><span>旧影院银幕前</span></figcaption></figure>
+<figure><a href="frames/subject_forget.jpg"><img src="frames/subject_forget.jpg" alt="「忘」字" width="1776" height="936" loading="lazy"></a><figcaption><strong>「忘」字</strong><span>爷爷的工作台</span></figcaption></figure>
+</div><p><a href="../../T11/report.md">墨舞龙</a> · <a href="../../T12/report.md">银幕影</a> · <a href="../../T13/gallery.html#forget-boss">忘字七笔</a></p></section>
+<section id="ui"><h2>全套界面</h2><p>开始、战斗、结算和显示设置均来自当前构建。</p><div class="cards">
+<figure><a href="frames/start_button.jpg"><img src="frames/start_button.jpg" alt="标题、夜市字形与开始按钮" width="1776" height="936" loading="lazy"></a><figcaption><strong>标题、夜市字形与开始按钮</strong></figcaption></figure>
+<figure><a href="frames/start_hover.jpg"><img src="frames/start_hover.jpg" alt="开始按钮 · 光枪瞄准" width="1776" height="936" loading="lazy"></a><figcaption><strong>开始按钮 · 光枪瞄准</strong></figcaption></figure>
+<figure><a href="frames/start_pressed.jpg"><img src="frames/start_pressed.jpg" alt="开始按钮 · 按下" width="1776" height="936" loading="lazy"></a><figcaption><strong>开始按钮 · 按下</strong></figcaption></figure>
+<figure><a href="frames/cinema_transition.jpg"><img src="frames/cinema_transition.jpg" alt="旧影院转场字形" width="1776" height="936" loading="lazy"></a><figcaption><strong>旧影院转场字形</strong></figcaption></figure>
+<figure><a href="frames/train_station_transition.jpg"><img src="frames/train_station_transition.jpg" alt="火车站转场字形" width="1776" height="936" loading="lazy"></a><figcaption><strong>火车站转场字形</strong></figcaption></figure>
+<figure><a href="frames/hud_reload.jpg"><img src="frames/hud_reload.jpg" alt="灯芯、光弹、印章与回光提示" width="1776" height="936" loading="lazy"></a><figcaption><strong>灯芯、光弹、印章与回光提示</strong></figcaption></figure>
+<figure><a href="frames/station_11_waiting_room.jpg"><img src="frames/station_11_waiting_room.jpg" alt="空弹提示" width="1776" height="936" loading="lazy"></a><figcaption><strong>空弹提示</strong></figcaption></figure>
+<figure><a href="frames/reticle_on.jpg"><img src="frames/reticle_on.jpg" alt="半透明准星" width="1776" height="936" loading="lazy"></a><figcaption><strong>半透明准星</strong></figcaption></figure>
+<figure><a href="frames/reticle_off.jpg"><img src="frames/reticle_off.jpg" alt="关闭准星" width="1776" height="936" loading="lazy"></a><figcaption><strong>关闭准星</strong></figcaption></figure>
+<figure><a href="frames/tracking_lost.jpg"><img src="frames/tracking_lost.jpg" alt="失锁提示" width="1776" height="936" loading="lazy"></a><figcaption><strong>失锁提示</strong></figcaption></figure>
+<figure><a href="frames/campaign_clear.jpg"><img src="frames/campaign_clear.jpg" alt="通关结算" width="1776" height="936" loading="lazy"></a><figcaption><strong>通关结算</strong></figcaption></figure>
+<figure><a href="frames/retry_button.jpg"><img src="frames/retry_button.jpg" alt="失败结算与重试按钮" width="1776" height="936" loading="lazy"></a><figcaption><strong>失败结算与重试按钮</strong></figcaption></figure>
+<figure><a href="frames/overscan_monitor.jpg"><img src="frames/overscan_monitor.jpg" alt="显示器 · 四角标记" width="1280" height="720" loading="lazy"></a><figcaption><strong>显示器 · 四角标记</strong></figcaption></figure>
+<figure><a href="frames/overscan_tv.jpg"><img src="frames/overscan_tv.jpg" alt="电视 · 四角标记" width="1280" height="720" loading="lazy"></a><figcaption><strong>电视 · 四角标记</strong></figcaption></figure>
+<figure><a href="frames/calibration_target.jpg"><img src="frames/calibration_target.jpg" alt="光枪校准靶" width="1280" height="720" loading="lazy"></a><figcaption><strong>光枪校准靶</strong></figcaption></figure>
+</div><p><a href="../../T14/gallery.html">界面预审与实机清单</a></p></section>
+  <footer>
+    <p>A7 待验收。角色和界面的可读性、片尾混音及实体光枪仍待实测。</p>
+    <p><a href="report.md">交付报告</a> · <a href="../../T15/report.md">58 秒有声片尾</a></p>
+  </footer>
+</main>
+</body>
+</html>

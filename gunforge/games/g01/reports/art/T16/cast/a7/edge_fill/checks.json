@@ -1,0 +1,1097 @@
+{
+  "before_build_id": "8f1a64f14ab51f267b9f8b05bae367b517e6e10e834f1945652a37d1d5c62aa6",
+  "build_id": "eaa193c147ee7bf342ee34f3d855ba61847108abe3a74c170617fba0d5317eaa",
+  "compiled_sha256": "2411a34c9cfa58650e28b77bf65a02acfc272e9ad1534f4dae2b857b05515cb8",
+  "candidate_manifest_sha256": "3daadde2f67ca48f02562313b92e3f3c6e74822c8d3d233a0716895892427aeb",
+  "other_compiled_resources_unchanged": 333,
+  "isolated_files_verified_per_build": 384,
+  "alpha_and_visible_rgb_unchanged": true,
+  "gameplay_and_player_unchanged": true,
+  "resources": [
+    {
+      "id": "alley.scene_near_left",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/framework/runtime/station/layers/near_left.png",
+        "sha256": "a8b0823d60a0b7cabcd7c694d2d93dfe5d2686f158fbb8aa8e204c9aa3c4c000"
+      },
+      "runtime_sha256": "533844963a6f7eed2705c95a335076412f750d11e7b55f593176b5bb5349c378",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/fe0c3b0c2fc3c472a3623e9b2ebf17bf3da19ad4766f7f9cad5595ba8d8d7fde/near_left.png",
+      "changed_transparent_pixels": 11140,
+      "adjacent_black_pixels_before": 5410,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "alley.scene_near_right",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/framework/runtime/station/layers/near_right.png",
+        "sha256": "82354c36d1f6faec8322e83271f0910d67302f9752131a9de968c8230c513a90"
+      },
+      "runtime_sha256": "6ad7689c3cef14ca0032e6ef7569e77876777afeb701d77e5a5fcccfda5237e9",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/7ddf63e811a103299e10b4d15952d3ff8f6333a32cc2077034bc6fd683e5e977/near_right.png",
+      "changed_transparent_pixels": 4904,
+      "adjacent_black_pixels_before": 2029,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "alley.vendor_atlas",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/framework/runtime/vendor/atlas.png",
+        "sha256": "79e6c494fd659130d4c4a6825be438747a26f5250a0bdf303fd6813d41a7a851"
+      },
+      "runtime_sha256": "86c359949e017a5e5e4e82407dadf64a9b56ec218b783d824e13fce5c1a94835",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/712c7fba8c4a9f52c667dbc71a6a0fc571e512c358ef8ad4f817f052d8117ecd/atlas.png",
+      "changed_transparent_pixels": 66314,
+      "adjacent_black_pixels_before": 4412,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "cinema.image_024",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/level_design/generated/cinema/ticket_clerk_rig.png",
+        "sha256": "498d932388f0dcef1109b4288c33358dbdf64ff3162dc495cc7e8a007f5246e8"
+      },
+      "runtime_sha256": "162acb29fb8f5a765d02c22a173b321188b382e498aebc177305fe8714dafad7",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/096a093ec7d3c8ac97c9c2ec9132fa88165618dbce1b53ca125286f5b5632858/ticket_clerk_rig.png",
+      "changed_transparent_pixels": 40248,
+      "adjacent_black_pixels_before": 9324,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "cinema.image_050",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/level_design/generated/cinema/passerby_b_rig.png",
+        "sha256": "120fffdc04519f8e2bdd439caebfc7047424ad3333e3f5db9e5a44fe7b81f216"
+      },
+      "runtime_sha256": "714a0ee36ef19c0ae185f39bf77157e54ea23ada6c882eff9171d293be5055c9",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/6c815a429ddc4efafdc8b09a4025e1764be6d434360b57b826754fedb5f26d87/passerby_b_rig.png",
+      "changed_transparent_pixels": 41213,
+      "adjacent_black_pixels_before": 9125,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "cinema.image_064",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/level_design/generated/cinema/projectionist_rig.png",
+        "sha256": "3a31bdc6db80448566daaef6267d5203a08d1c5fcebd9e2ea0270d328036083d"
+      },
+      "runtime_sha256": "a1e8b3a540ce412c26bf7a555d1af911efe356b9e842fbd3c416ed1b6f06e045",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/c406ff3762bb4a855b798b1767850cd665f39624f359c55457af6e1fd03624bc/projectionist_rig.png",
+      "changed_transparent_pixels": 41408,
+      "adjacent_black_pixels_before": 9210,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "platform.image_024",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/level_design/generated/platform_passerby/passerby_a_rig.png",
+        "sha256": "429bf10b28d319b3656dfe80a4ad1eb49310e30bdb130006a9f9320e8fd188b2"
+      },
+      "runtime_sha256": "51c06fecd13c05f9ebfcc057b6b7ab4b2591c9172f44b8ae7caefd5e7219e614",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/abc2bcdf116d9b88696993631aadf3efec0950331f82960c620f046f55d4f869/passerby_a_rig.png",
+      "changed_transparent_pixels": 44909,
+      "adjacent_black_pixels_before": 9584,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "video_shop.image_013",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "art2d/assets/paper_lantern_video/export/atlas.png",
+        "sha256": "b982ff49bbc6d18c8ba215b4af1f0fcdf9734b01798199d02f99f74b5278f5e5"
+      },
+      "runtime_sha256": "99d27ecc9430725968bfbd6f59c36dc9b84491dac2472a37b364d129e91c2c74",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/7bf54564d031168c3578c8cab1be5d6cc2ca2c3e7a29233252d5466e5d6943be/atlas.png",
+      "changed_transparent_pixels": 67454,
+      "adjacent_black_pixels_before": 4323,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "waiting_room.image_025",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/level_design/generated/waiting_room_contrast/passerby_c_rig.png",
+        "sha256": "d87b732eb9dde1d59a451d9c29e43c3a3516c2a9b15bb489170638a573c299b7"
+      },
+      "runtime_sha256": "339cf04f5d9a5073e842a7fc8574f0272df56fc01a393b23cbaef4fe1f6a4bad",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/101d1a645173fb5106132b382fbb233ec14f76fc5d1221636bc99024604a86f2/passerby_c_rig.png",
+      "changed_transparent_pixels": 31735,
+      "adjacent_black_pixels_before": 8042,
+      "adjacent_black_pixels_after": 0
+    }
+  ],
+  "rendered_frames": [
+    {
+      "id": "alley.scene_near_left",
+      "rect": [
+        0.0,
+        0.0,
+        945.0,
+        673.0
+      ],
+      "scale": 0.625,
+      "size": [
+        609,
+        439
+      ],
+      "name": "alley.scene_near_left-0.png",
+      "changed_pixels": 2597,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 17,
+      "before_sha256": "8a01422dc2e1cff5c6d2c6624349dffcce0ca679a3b58cf39a9f6ed9a3beb8c0",
+      "after_sha256": "ad38f4f3b5b97fa955c497b1c3d1055d8bba9600106af8eeab8bbc014f61b32d"
+    },
+    {
+      "id": "alley.scene_near_left",
+      "rect": [
+        0.0,
+        0.0,
+        945.0,
+        673.0
+      ],
+      "scale": 1.25,
+      "size": [
+        1200,
+        860
+      ],
+      "name": "alley.scene_near_left-1.png",
+      "changed_pixels": 9188,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 19,
+      "before_sha256": "f18c2ee8a91969ccc457a6ff59e9808595d402e335133c6e89e2ca53adbc535e",
+      "after_sha256": "16361f65f213de8d000738f1a371fd3b58b383140aef19e800737ca9766ada72"
+    },
+    {
+      "id": "alley.scene_near_right",
+      "rect": [
+        0.0,
+        0.0,
+        1006.0,
+        673.0
+      ],
+      "scale": 0.625,
+      "size": [
+        647,
+        439
+      ],
+      "name": "alley.scene_near_right-0.png",
+      "changed_pixels": 846,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 37,
+      "before_sha256": "3cc31e14aeac6e5a4d00545b8ae4864fe11a3c351c3015c4186437a9f81d35f0",
+      "after_sha256": "616b4cae68002645c614446e789f778f306759265404695e302845da16633f2d"
+    },
+    {
+      "id": "alley.scene_near_right",
+      "rect": [
+        0.0,
+        0.0,
+        1006.0,
+        673.0
+      ],
+      "scale": 1.25,
+      "size": [
+        1276,
+        860
+      ],
+      "name": "alley.scene_near_right-1.png",
+      "changed_pixels": 3227,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 42,
+      "before_sha256": "fc8cfedac51b745b0aae770d5ad0a9637186efadbce8429e544bf83641bcdedc",
+      "after_sha256": "ef964236493c5ea9ce4234929e72af1692e1e8e493f879c3e47d6404ef64c2c4"
+    },
+    {
+      "id": "alley.vendor_atlas",
+      "rect": [
+        244.0,
+        4.0,
+        250.0,
+        256.0
+      ],
+      "scale": 0.625,
+      "size": [
+        175,
+        178
+      ],
+      "name": "alley.vendor_atlas-0.png",
+      "changed_pixels": 340,
+      "minimum_rgb_byte_delta": -8,
+      "maximum_rgb_byte_delta": 9,
+      "before_sha256": "5574763c3d88fe901c13bb46bbc19fc047ac5fe7f88e9aa36d563266ade36ced",
+      "after_sha256": "3441850b8bfe1c35d9d976ef3cf477cb9148b3fbb8b1372750bbcbee819eb1cb"
+    },
+    {
+      "id": "alley.vendor_atlas",
+      "rect": [
+        244.0,
+        4.0,
+        250.0,
+        256.0
+      ],
+      "scale": 1.25,
+      "size": [
+        331,
+        338
+      ],
+      "name": "alley.vendor_atlas-1.png",
+      "changed_pixels": 1262,
+      "minimum_rgb_byte_delta": -17,
+      "maximum_rgb_byte_delta": 9,
+      "before_sha256": "657e3e7af60af36f652af86518af00d01588054b51ab3403271f2dd78b06868a",
+      "after_sha256": "85cef46f2de2c3400329e3e4d34f8bf344da4ba632ad8ca440c4d0eb9a800d6d"
+    },
+    {
+      "id": "cinema.image_024",
+      "rect": [
+        620.0,
+        339.0,
+        300.0,
+        327.0
+      ],
+      "scale": 0.625,
+      "size": [
+        206,
+        223
+      ],
+      "name": "cinema.image_024-0.png",
+      "changed_pixels": 634,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 27,
+      "before_sha256": "5f4bc6b6778be0eaadc8ca2737d0e79577630ffc19390dcb480d6da61e4e6e90",
+      "after_sha256": "748699ea9da1a1630c96772e4f8ede96e854e293deb9bad055d85d9b913f7579"
+    },
+    {
+      "id": "cinema.image_024",
+      "rect": [
+        620.0,
+        339.0,
+        300.0,
+        327.0
+      ],
+      "scale": 1.25,
+      "size": [
+        393,
+        427
+      ],
+      "name": "cinema.image_024-1.png",
+      "changed_pixels": 2361,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 25,
+      "before_sha256": "cc743bd0bea3b99653a67a53e5e2a9ee7257268a2f8775be5d06fadd554c2d80",
+      "after_sha256": "394a296cafb16ad0de217f5eadc0da6f430ece011eb92d7aed278a9d895b6892"
+    },
+    {
+      "id": "cinema.image_050",
+      "rect": [
+        620.0,
+        339.0,
+        300.0,
+        327.0
+      ],
+      "scale": 0.625,
+      "size": [
+        206,
+        223
+      ],
+      "name": "cinema.image_050-0.png",
+      "changed_pixels": 709,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 26,
+      "before_sha256": "4ffc0c7e071443f3e8f4ccf40f5bc031116e3bfdd0a29ad0a5a0ef10020af263",
+      "after_sha256": "11a7a89edfd22171c9f5bcd5e949c98729dd2f3777289003ec01e52ce6710938"
+    },
+    {
+      "id": "cinema.image_050",
+      "rect": [
+        620.0,
+        339.0,
+        300.0,
+        327.0
+      ],
+      "scale": 1.25,
+      "size": [
+        393,
+        427
+      ],
+      "name": "cinema.image_050-1.png",
+      "changed_pixels": 2592,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 29,
+      "before_sha256": "742d95548430cf68fb08e06b8525f0aa0ea96dfdb2b8a68068ed142f704705e4",
+      "after_sha256": "99eab71027b98123f91a2f3e86eb911fd400bd81afa33020b8011b4d74bff439"
+    },
+    {
+      "id": "cinema.image_064",
+      "rect": [
+        620.0,
+        339.0,
+        300.0,
+        327.0
+      ],
+      "scale": 0.625,
+      "size": [
+        206,
+        223
+      ],
+      "name": "cinema.image_064-0.png",
+      "changed_pixels": 681,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 25,
+      "before_sha256": "45de4156c6cc50b29d54083ca743ed51d44dcf9424cd15b6e4ae8b5c58348a58",
+      "after_sha256": "34a6eeb7d2f8fd21438f9d0cb33595bf5ef04ccba2fd8aed0849a328414e501b"
+    },
+    {
+      "id": "cinema.image_064",
+      "rect": [
+        620.0,
+        339.0,
+        300.0,
+        327.0
+      ],
+      "scale": 1.25,
+      "size": [
+        393,
+        427
+      ],
+      "name": "cinema.image_064-1.png",
+      "changed_pixels": 2456,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 41,
+      "before_sha256": "3b76dbf48c963837df7adf61978eac6108b92629ea5e73ff2b036ceb7a7425c6",
+      "after_sha256": "6fb74b715156afd457978d666ad07fce81f26bf1ca3a79a1794d480d7e01bad6"
+    },
+    {
+      "id": "platform.image_024",
+      "rect": [
+        618.0,
+        338.0,
+        299.0,
+        326.0
+      ],
+      "scale": 0.625,
+      "size": [
+        205,
+        222
+      ],
+      "name": "platform.image_024-0.png",
+      "changed_pixels": 660,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 28,
+      "before_sha256": "f826cd14d08cb2b8dd1f6b95700068af4b6ed4601db016b0ff93d31af4304b31",
+      "after_sha256": "d8a1a665df3b443401d17e4fcc039c5202910601670ef331408763d4b21ec497"
+    },
+    {
+      "id": "platform.image_024",
+      "rect": [
+        618.0,
+        338.0,
+        299.0,
+        326.0
+      ],
+      "scale": 1.25,
+      "size": [
+        392,
+        426
+      ],
+      "name": "platform.image_024-1.png",
+      "changed_pixels": 2461,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 31,
+      "before_sha256": "2b68eee80808ad064153010146359adb654234898438b8d94bf56437bef81303",
+      "after_sha256": "c830dc426cbfa4a681485af822b48c063ddaf750d514ca02f2f0bf30b0010ed0"
+    },
+    {
+      "id": "video_shop.image_013",
+      "rect": [
+        4.0,
+        4.0,
+        292.0,
+        290.0
+      ],
+      "scale": 0.625,
+      "size": [
+        201,
+        200
+      ],
+      "name": "video_shop.image_013-0.png",
+      "changed_pixels": 428,
+      "minimum_rgb_byte_delta": -10,
+      "maximum_rgb_byte_delta": 24,
+      "before_sha256": "0d30ff867bf707b434a975048df0958ae943785047311e783c754b297ea9da9a",
+      "after_sha256": "9b8b07d5e101fbe25f46d17a3ca0f289771323c853c1ab33311b55a8f06fb580"
+    },
+    {
+      "id": "video_shop.image_013",
+      "rect": [
+        4.0,
+        4.0,
+        292.0,
+        290.0
+      ],
+      "scale": 1.25,
+      "size": [
+        383,
+        381
+      ],
+      "name": "video_shop.image_013-1.png",
+      "changed_pixels": 1566,
+      "minimum_rgb_byte_delta": -22,
+      "maximum_rgb_byte_delta": 37,
+      "before_sha256": "6ef24e27d5c4e20698103f880754cb798658fa3c0fcddaa06ab22a9b899dea0c",
+      "after_sha256": "cac95ef760772ac0df9db697f72d50d20aa2c91b0eef4ad2a72edc7cb7e7955d"
+    },
+    {
+      "id": "waiting_room.image_025",
+      "rect": [
+        620.0,
+        339.0,
+        300.0,
+        327.0
+      ],
+      "scale": 0.625,
+      "size": [
+        206,
+        223
+      ],
+      "name": "waiting_room.image_025-0.png",
+      "changed_pixels": 578,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 18,
+      "before_sha256": "59da40c292c73dcfcbe2967431f34f8c04d95ead2fdea2730dba336d67e5448c",
+      "after_sha256": "5f9e36772861394d8bab8126a43c71321baaa38592991ed76c9f5ed349f2a50a"
+    },
+    {
+      "id": "waiting_room.image_025",
+      "rect": [
+        620.0,
+        339.0,
+        300.0,
+        327.0
+      ],
+      "scale": 1.25,
+      "size": [
+        393,
+        427
+      ],
+      "name": "waiting_room.image_025-1.png",
+      "changed_pixels": 2198,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 21,
+      "before_sha256": "faaf3798ace2b62761ea51ffa9ece15f06935d7b030e6a0d7d3b98dbac668e3d",
+      "after_sha256": "7349538f713307a6e0963d8bf83846602c2ca1ff4824c446bcef07efc8536d63"
+    }
+  ],
+  "blocker_shots": {
+    "left": {
+      "blocker": {
+        "alpha": 1.0,
+        "point": [
+          14.5,
+          3.5
+        ],
+        "result": {
+          "hit": false,
+          "kind": "blocker",
+          "ok": true
+        }
+      },
+      "miss": {
+        "alpha": 0.062745101749897,
+        "point": [
+          47.5,
+          3.5
+        ],
+        "result": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        }
+      }
+    },
+    "right": {
+      "blocker": {
+        "alpha": 0.996078431606293,
+        "point": [
+          1632.5,
+          3.5
+        ],
+        "result": {
+          "hit": false,
+          "kind": "blocker",
+          "ok": true
+        }
+      },
+      "miss": {
+        "alpha": 0.0,
+        "point": [
+          312.5,
+          3.5
+        ],
+        "result": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        }
+      }
+    }
+  },
+  "route": {
+    "build_id": "eaa193c147ee7bf342ee34f3d855ba61847108abe3a74c170617fba0d5317eaa",
+    "chapter_transition_tick": 6821,
+    "counters": {
+      "ammo": 11.0,
+      "lives": 4,
+      "rescued": 7,
+      "score": 9275,
+      "shots": 109
+    },
+    "end_tick": 13002,
+    "ending": {
+      "city_texture_preloaded": false,
+      "city_tick": 9954,
+      "light_tick": 9522,
+      "natural_result_tick": 13002,
+      "quote_tick": 12390,
+      "skip": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "result": "clear",
+        "result_tick": 9523,
+        "start_tick": 9522
+      },
+      "skip_from_city": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "result": "clear",
+        "result_tick": 10075,
+        "start_tick": 10074
+      },
+      "skip_from_quote": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "result": "clear",
+        "result_tick": 12391,
+        "start_tick": 12390
+      },
+      "skip_from_wide": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "result": "clear",
+        "result_tick": 10891,
+        "start_tick": 10890
+      },
+      "wide_texture_preloaded": false,
+      "wide_tick": 10770
+    },
+    "failure_retries": [
+      {
+        "after_retry": {
+          "ammo": 12.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 0
+        },
+        "before_retry": {
+          "ammo": 6.0,
+          "lives": 0,
+          "rescued": 7,
+          "score": 8575,
+          "shots": 102
+        },
+        "defeat_tick": 10252,
+        "first_shot": {
+          "ammo": 11.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 1
+        },
+        "station": 15
+      }
+    ],
+    "failures": [],
+    "gpu_capture": false,
+    "handoffs": [
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 3875,
+          "shots": 39
+        },
+        "station": "stall",
+        "tick": 5713
+      },
+      {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 4475,
+          "shots": 49
+        },
+        "station": "video_shop",
+        "tick": 6222
+      },
+      {
+        "counters": {
+          "ammo": 7.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4775,
+          "shots": 53
+        },
+        "station": "footbridge",
+        "tick": 6506
+      },
+      {
+        "counters": {
+          "ammo": 4.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4975,
+          "shots": 56
+        },
+        "station": "plaza",
+        "tick": 6619
+      },
+      {
+        "counters": {
+          "ammo": 5.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 6075,
+          "shots": 67
+        },
+        "station": "ticket_office",
+        "tick": 6911
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6375,
+          "shots": 72
+        },
+        "station": "poster_hall",
+        "tick": 7170
+      },
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6575,
+          "shots": 75
+        },
+        "station": "auditorium",
+        "tick": 7402
+      },
+      {
+        "counters": {
+          "ammo": 5.0,
+          "lives": 4,
+          "rescued": 4,
+          "score": 6875,
+          "shots": 79
+        },
+        "station": "projection_booth",
+        "tick": 7661
+      },
+      {
+        "counters": {
+          "ammo": 1.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 7175,
+          "shots": 83
+        },
+        "station": "screen_stage",
+        "tick": 7920
+      },
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 7575,
+          "shots": 87
+        },
+        "station": "waiting_room",
+        "tick": 8067
+      },
+      {
+        "counters": {
+          "ammo": 4.0,
+          "lives": 4,
+          "rescued": 6,
+          "score": 7875,
+          "shots": 92
+        },
+        "station": "platform",
+        "tick": 8374
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8175,
+          "shots": 96
+        },
+        "station": "green_car",
+        "tick": 8681
+      },
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8375,
+          "shots": 99
+        },
+        "station": "lantern_base",
+        "tick": 8988
+      },
+      {
+        "counters": {
+          "ammo": 6.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8575,
+          "shots": 102
+        },
+        "station": "workbench",
+        "tick": 9256
+      }
+    ],
+    "old_chapter_poses_rejected": true,
+    "passed": true,
+    "pullback_tick": 9202,
+    "reached": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "reloads": 9,
+    "replay": {
+      "counters": {
+        "ammo": 11.0,
+        "lives": 4,
+        "rescued": 7,
+        "score": 9275,
+        "shots": 109
+      },
+      "end_tick": 13002,
+      "inputs": 118
+    },
+    "result": "clear",
+    "train_transition_tick": 7977
+  },
+  "raster_comparison_sha256": "972096b8aa2b4a04755f8f9e23391760a0e7117acdec37c64b2f59f26b408ad6",
+  "probes_sha256": "74a5e607f106f7911e007ab2bb2609eae8d1280601fe3a4f80f2362cfb8ec831",
+  "controls": {
+    "build_id": "eaa193c147ee7bf342ee34f3d855ba61847108abe3a74c170617fba0d5317eaa",
+    "captures": true,
+    "failures": [],
+    "opening": true,
+    "passed": true,
+    "udp_shots": 3
+  },
+  "display": {
+    "build_id": "eaa193c147ee7bf342ee34f3d855ba61847108abe3a74c170617fba0d5317eaa",
+    "captures": true,
+    "failures": [],
+    "passed": true,
+    "udp_shots": 19
+  },
+  "combat": {
+    "build_id": "eaa193c147ee7bf342ee34f3d855ba61847108abe3a74c170617fba0d5317eaa",
+    "checks": {
+      "calibrated_white_border": {
+        "ammo": 8.0,
+        "bound_shapes": 0,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        },
+        "rescued": 1,
+        "score": 3500,
+        "submission": "submission:18:tick:5643",
+        "tick": 5644
+      },
+      "dark_band": {
+        "ammo": 9.0,
+        "bound_shapes": 0,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        },
+        "rescued": 1,
+        "score": 3500,
+        "submission": "submission:13:tick:5634",
+        "tick": 5635
+      },
+      "footbridge.bridge.bicycle": {
+        "ammo": 5.0,
+        "bound_shapes": 11,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        },
+        "rescued": 2,
+        "score": 4775,
+        "submission": "submission:8:tick:6515",
+        "tick": 6516
+      },
+      "footbridge.bridge.cyclist_resident": {
+        "ammo": 6.0,
+        "bound_shapes": 11,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        },
+        "rescued": 2,
+        "score": 4775,
+        "submission": "submission:3:tick:6506",
+        "tick": 6507
+      },
+      "frame_packets": [
+        "FRAME 24,48"
+      ],
+      "freed_paper": {
+        "ammo": 1.0,
+        "bound_shapes": 17,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        },
+        "rescued": 7,
+        "score": 7925,
+        "submission": "submission:13:tick:8392",
+        "tick": 8393
+      },
+      "hostile_cart": {
+        "ammo": 4.0,
+        "bound_shapes": 11,
+        "command": "SHOT",
+        "reply": {
+          "hit": true,
+          "kind": "primary",
+          "ok": true,
+          "target": "footbridge.bridge.cyclist"
+        },
+        "rescued": 2,
+        "score": 4875,
+        "submission": "submission:13:tick:6524",
+        "tick": 6525
+      },
+      "http_border": {
+        "body": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true,
+          "score": 7925.0
+        },
+        "result": 0,
+        "status": 200
+      },
+      "http_offscreen": {
+        "body": {
+          "ok": true,
+          "score": 7925.0
+        },
+        "result": 0,
+        "status": 200
+      },
+      "offscreen": {
+        "ammo": 8.0,
+        "bound_shapes": 0,
+        "command": "RELOAD",
+        "reply": {
+          "ok": true
+        },
+        "rescued": 1,
+        "score": 3500,
+        "submission": "submission:21:tick:5644",
+        "tick": 5645
+      },
+      "protected_paper": {
+        "ammo": 3.0,
+        "bound_shapes": 18,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "protected",
+          "ok": true
+        },
+        "rescued": 6,
+        "score": 7825,
+        "submission": "submission:3:tick:8374",
+        "tick": 8375
+      },
+      "rescue_ink": {
+        "ammo": 2.0,
+        "bound_shapes": 18,
+        "command": "SHOT",
+        "reply": {
+          "hit": true,
+          "kind": "primary",
+          "ok": true,
+          "target": "platform.platform.rescue"
+        },
+        "rescued": 7,
+        "score": 7925,
+        "submission": "submission:8:tick:8383",
+        "tick": 8384
+      },
+      "tadpole_1": {
+        "ammo": 11.0,
+        "bound_shapes": 8,
+        "command": "SHOT",
+        "reply": {
+          "hit": true,
+          "kind": "primary",
+          "ok": true,
+          "target": "puddle.puddle.tadpole1"
+        },
+        "rescued": 1,
+        "score": 3600,
+        "submission": "submission:28:tick:5673",
+        "tick": 5674
+      },
+      "tadpole_2": {
+        "ammo": 10.0,
+        "bound_shapes": 6,
+        "command": "SHOT",
+        "reply": {
+          "hit": true,
+          "kind": "weak",
+          "ok": true,
+          "target": "puddle.puddle.tadpole2"
+        },
+        "rescued": 1,
+        "score": 3725,
+        "submission": "submission:33:tick:5682",
+        "tick": 5683
+      },
+      "tadpole_3": {
+        "ammo": 9.0,
+        "bound_shapes": 4,
+        "command": "SHOT",
+        "reply": {
+          "hit": true,
+          "kind": "primary",
+          "ok": true,
+          "target": "puddle.puddle.tadpole3"
+        },
+        "rescued": 1,
+        "score": 3825,
+        "submission": "submission:38:tick:5691",
+        "tick": 5692
+      },
+      "tadpole_tail": {
+        "ammo": 11.0,
+        "bound_shapes": 8,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        },
+        "rescued": 1,
+        "score": 3500,
+        "submission": "submission:3:tick:5616",
+        "tick": 5617
+      },
+      "transition": {
+        "ammo": 9.0,
+        "bound_shapes": 2,
+        "command": "SHOT",
+        "reply": {
+          "ok": false,
+          "reason": "not_running"
+        },
+        "rescued": 1,
+        "score": 3825,
+        "submission": "submission:41:tick:5692",
+        "tick": 5693
+      },
+      "white_border": {
+        "ammo": 10.0,
+        "bound_shapes": 0,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        },
+        "rescued": 1,
+        "score": 3500,
+        "submission": "submission:8:tick:5625",
+        "tick": 5626
+      }
+    },
+    "failures": [],
+    "passed": true,
+    "udp_sequences": 15
+  },
+  "smoke": {
+    "build_id": "eaa193c147ee7bf342ee34f3d855ba61847108abe3a74c170617fba0d5317eaa",
+    "http_error": 0,
+    "level_player_ready": true,
+    "udp_errors": []
+  }
+}

@@ -44,6 +44,9 @@ func apply(entry):
 	if entry.event=="SHOT":return model.command("SHOT",entry.point,Codec.decode(entry.geometry,model.geometry_assets()))
 	return model.command(entry.event)
 func consume(at,_dt):
+	var scheduled_checkpoint: bool = at % checkpoint_interval == 0
+	var delayed_checkpoint: bool = at > 1 and (at - 1) % checkpoint_interval == 0 and not checkpoints.has(at - 1)
+	var previous_section = model.get("current_section") if scheduled_checkpoint else null
 	max_tick=maxi(max_tick,at)
 	last_results.clear()
 	for entry in tape:
@@ -56,7 +59,9 @@ func consume(at,_dt):
 		last_results.append(result);tape.append({"tick":at,"input":entry.event.duplicate(true),"binding":{"submission":entry.submission_id,"pose":entry.pose_id,"order":entry.order},"result":result.duplicate(true)})
 		input_consumed.emit(entry.order,result)
 	if not closed:model.step()
-	if at%checkpoint_interval==0:cache_checkpoint()
+	# A section cut already rebuilds the displayed scene. Save its due checkpoint one tick later.
+	if delayed_checkpoint or (scheduled_checkpoint and previous_section == model.get("current_section")):
+		cache_checkpoint()
 func step():
 	if not closed and pause_reasons.is_empty():clock.step(consume)
 func advance(delta):
@@ -64,8 +69,10 @@ func advance(delta):
 func set_pause(reason,enabled):
 	if enabled:pause_reasons[reason]=true
 	else:pause_reasons.erase(reason)
-func snapshot():
-	return {"version":1,"build_id":model.build.build_id,"clock":clock.snapshot(),"queue":queue.snapshot(),"model":model.save_state(),"tape":tape.duplicate(true),"submission":submission.duplicate(true),"submission_id":submission_id,"submission_serial":submission_serial,"closed":closed,"pause_reasons":pause_reasons.duplicate(true),"real_time_inputs":real_time_inputs,"wall_at":Time.get_ticks_msec() if real_time_inputs else 0}
+func snapshot(include_tape := true):
+	return _snapshot(model.save_state(), include_tape)
+func _snapshot(model_state: Dictionary, include_tape: bool):
+	return {"version":1,"build_id":model.build.build_id,"clock":clock.snapshot(),"queue":queue.snapshot(),"model":model_state,"tape":tape.duplicate(true) if include_tape else [],"submission":submission.duplicate(true),"submission_id":submission_id,"submission_serial":submission_serial,"closed":closed,"pause_reasons":pause_reasons.duplicate(true),"real_time_inputs":real_time_inputs,"wall_at":Time.get_ticks_msec() if real_time_inputs else 0}
 func restore(saved):
 	assert(saved.version==1 and saved.build_id==model.build.build_id)
 	clock.restore(saved.clock);queue.restore(saved.queue);model.restore_state(saved.model)
@@ -75,7 +82,10 @@ func restore(saved):
 		var offset=Time.get_ticks_msec()-int(saved.wall_at)
 		for entry in queue.pending:entry.received_ms+=offset
 	submission=saved.submission.duplicate(true);submission_id=saved.submission_id;submission_serial=int(saved.submission_serial);closed=saved.closed;pause_reasons=saved.pause_reasons.duplicate(true)
-func cache_checkpoint():checkpoints[clock.tick]=snapshot()
+func cache_checkpoint():
+	# Seeking restores the session's current input tape after loading a checkpoint.
+	var model_state: Dictionary = model.save_checkpoint() if model.has_method("save_checkpoint") else model.save_state()
+	checkpoints[clock.tick] = _snapshot(model_state, false)
 func seek(at):
 	assert(at>=0 and at<=max_tick)
 	var nearest=0

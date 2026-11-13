@@ -1,0 +1,440 @@
+{
+  "package": "paper.train_station_readability",
+  "source_revision": "cbed8872ee45693bd2d96e6c0adb8d6a774950edb21a4c6fd148c79655dc331a",
+  "build_id": "6e1bb3ceb616fd9d62cbf3ba0d7709a688fcca462c887a898943824888cbbf74",
+  "engine": "Godot 4.6.3 Windows",
+  "gpu": "NVIDIA GeForce RTX 3080 Ti",
+  "renderer": "gl_compatibility",
+  "viewport": [
+    1776,
+    936
+  ],
+  "window": [
+    1280,
+    720
+  ],
+  "player_smoke": {
+    "build_id": "6e1bb3ceb616fd9d62cbf3ba0d7709a688fcca462c887a898943824888cbbf74",
+    "http_error": 0,
+    "level_player_ready": true,
+    "udp_errors": []
+  },
+  "stop_regressions": {
+    "waiting_room": {
+      "build_id": "4a0382ea0818f14cc186975194fc41ae6d992faf8d009f8dfc027bd128c903a6",
+      "failures": [],
+      "gpu_capture": false,
+      "light_window_ticks": 264,
+      "lives": 5.0,
+      "passed": true,
+      "rescued": 1,
+      "shots": 8
+    },
+    "platform": {
+      "build_id": "6a2cdbd9569fef2723726a7ba62a02dd476fddcf649d4fb5dfd33dab0c2e8601",
+      "failures": [],
+      "gpu_capture": false,
+      "lives": 5.0,
+      "passed": true,
+      "rescued": 1,
+      "shots": 10,
+      "signal_vulnerable_ticks": 323
+    },
+    "green_car": {
+      "build_id": "9bf507760695ea340e09013f78462edef2c28efc57533a86424919567ada3fac",
+      "failures": [],
+      "gpu_capture": false,
+      "lives": 5.0,
+      "longest_light_window_ticks": 231,
+      "passed": true,
+      "shots": 7
+    },
+    "lantern_base": {
+      "build_id": "05b71360205a4e7b9019884c25b2f047bcab3fe206ea3336e2bf0a40fd52c6a4",
+      "camera_samples": [
+        "pullback_approach",
+        "pullback_inside_rim",
+        "pullback_match_cut",
+        "pullback_paper_lantern",
+        "pullback_widening",
+        "pullback_workbench"
+      ],
+      "cuts": [
+        {
+          "section": "pullback",
+          "tick": 227
+        },
+        {
+          "section": "workbench",
+          "tick": 281
+        }
+      ],
+      "failures": [],
+      "gpu_capture": false,
+      "passed": true
+    }
+  },
+  "C15_asset_budgets_bytes": {
+    "stage": 50331648,
+    "actor_and_props": 33554432,
+    "resident_total": 100663296,
+    "transition_total": 167772160
+  },
+  "C15_asset_budget_passed": true,
+  "route_frame_brightness": {
+    "train_green_car": {
+      "sha256": "d4f1d7407702d551f5cf26b8db1cb4d18d4ae559ee6fc95cf32736f493147ecd",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.006341678216678217
+        }
+      }
+    },
+    "train_lantern_base": {
+      "sha256": "2396e90e4eb58fd73a8e1c38a73632477a55da3cb8afa57136fb67d81e6fe50b",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.011456769269269269
+        }
+      }
+    },
+    "train_platform": {
+      "sha256": "c599a1efd5795c5263432041daee0ee6eebd8480c493169203228627b7b722d4",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.007603757603757604
+        }
+      }
+    },
+    "train_waiting_room": {
+      "sha256": "87c5435814a2a4824980adbb651ff6eeee3151f21982d55dce86d6133e023c2b",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.003635847385847386
+        }
+      }
+    },
+    "train_workbench": {
+      "sha256": "409ebd30e979288f1d3f0ccb1369dca6c7af3d715f658da32fc03aa20022276f",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.008593930468930469
+        }
+      }
+    }
+  },
+  "profiling_runs": [
+    {
+      "profile_sha256": "394cdcf1357f727d8252ea1e9c344ad4ca784f9150352ce15028f8536b3e36f4",
+      "frames": 1643,
+      "p99_frame_us": 2979,
+      "maximum_frame_us": 7974,
+      "peak_asset_bytes": {
+        "stage": 41628328,
+        "actor_and_props": 16291408,
+        "resident_total": 41628328,
+        "transition_total": 64372968
+      },
+      "first_light_activations": [
+        {
+          "frame_us": 2734,
+          "glows": [
+            "waiting_room.waiting_room.light"
+          ],
+          "section": "waiting_room.waiting_room",
+          "tick": 336,
+          "upload_count": 0
+        },
+        {
+          "frame_us": 2796,
+          "glows": [
+            "platform.platform.light"
+          ],
+          "section": "platform.platform",
+          "tick": 729,
+          "upload_count": 0
+        },
+        {
+          "frame_us": 2249,
+          "glows": [
+            "green_car.green_car.light"
+          ],
+          "section": "green_car.green_car",
+          "tick": 905,
+          "upload_count": 0
+        },
+        {
+          "frame_us": 2016,
+          "glows": [
+            "lantern_base.lantern_base.light"
+          ],
+          "section": "lantern_base.lantern_base",
+          "tick": 1219,
+          "upload_count": 0
+        }
+      ],
+      "route": {
+        "build_id": "6e1bb3ceb616fd9d62cbf3ba0d7709a688fcca462c887a898943824888cbbf74",
+        "failures": [],
+        "gpu_capture": true,
+        "handoffs": [
+          {
+            "from": "waiting_room.waiting_room",
+            "resources": {
+              "ammo": 8,
+              "lives": 4,
+              "rescued": 1,
+              "score": 300,
+              "shots": 4
+            },
+            "tick": 543,
+            "to": "platform.platform",
+            "uncached_scene_textures": 0
+          },
+          {
+            "from": "platform.platform",
+            "resources": {
+              "ammo": 4,
+              "lives": 4,
+              "rescued": 2,
+              "score": 600,
+              "shots": 8
+            },
+            "tick": 904,
+            "to": "green_car.green_car",
+            "uncached_scene_textures": 0
+          },
+          {
+            "from": "green_car.green_car",
+            "resources": {
+              "ammo": 1,
+              "lives": 4,
+              "rescued": 2,
+              "score": 800,
+              "shots": 11
+            },
+            "tick": 1218,
+            "to": "lantern_base.lantern_base",
+            "uncached_scene_textures": 0
+          },
+          {
+            "from": "lantern_base.lantern_base",
+            "resources": {
+              "ammo": 10,
+              "lives": 4,
+              "rescued": 2,
+              "score": 1000,
+              "shots": 14
+            },
+            "tick": 1440,
+            "to": "lantern_base.pullback",
+            "uncached_scene_textures": 0
+          },
+          {
+            "from": "lantern_base.pullback",
+            "resources": {
+              "ammo": 10,
+              "lives": 4,
+              "rescued": 2,
+              "score": 1000,
+              "shots": 14
+            },
+            "tick": 1494,
+            "to": "lantern_base.workbench",
+            "uncached_scene_textures": 0
+          }
+        ],
+        "passed": true,
+        "replay": {
+          "end_tick": 1643,
+          "final_resources": {
+            "ammo": 10,
+            "lives": 4,
+            "rescued": 2,
+            "score": 1000,
+            "shots": 14
+          },
+          "inputs": 16
+        },
+        "retry": {
+          "defeated_at": "platform.platform",
+          "defeated_resources": {
+            "ammo": 7,
+            "lives": 0,
+            "rescued": 1,
+            "score": 300,
+            "shots": 5
+          },
+          "restart": {
+            "ammo": 12,
+            "lives": 5,
+            "rescued": 0,
+            "score": 0,
+            "shots": 0
+          }
+        }
+      }
+    },
+    {
+      "profile_sha256": "47fdb33ebffeb3e38039c5f9b1a881f59c189dcba737cfe1e29a387998efcc2b",
+      "frames": 1643,
+      "p99_frame_us": 3287,
+      "maximum_frame_us": 8382,
+      "peak_asset_bytes": {
+        "stage": 41628328,
+        "actor_and_props": 16291408,
+        "resident_total": 41628328,
+        "transition_total": 64372968
+      },
+      "first_light_activations": [
+        {
+          "frame_us": 2634,
+          "glows": [
+            "waiting_room.waiting_room.light"
+          ],
+          "section": "waiting_room.waiting_room",
+          "tick": 336,
+          "upload_count": 0
+        },
+        {
+          "frame_us": 2319,
+          "glows": [
+            "platform.platform.light"
+          ],
+          "section": "platform.platform",
+          "tick": 729,
+          "upload_count": 0
+        },
+        {
+          "frame_us": 2604,
+          "glows": [
+            "green_car.green_car.light"
+          ],
+          "section": "green_car.green_car",
+          "tick": 905,
+          "upload_count": 0
+        },
+        {
+          "frame_us": 2197,
+          "glows": [
+            "lantern_base.lantern_base.light"
+          ],
+          "section": "lantern_base.lantern_base",
+          "tick": 1219,
+          "upload_count": 0
+        }
+      ],
+      "route": {
+        "build_id": "6e1bb3ceb616fd9d62cbf3ba0d7709a688fcca462c887a898943824888cbbf74",
+        "failures": [],
+        "gpu_capture": true,
+        "handoffs": [
+          {
+            "from": "waiting_room.waiting_room",
+            "resources": {
+              "ammo": 8,
+              "lives": 4,
+              "rescued": 1,
+              "score": 300,
+              "shots": 4
+            },
+            "tick": 543,
+            "to": "platform.platform",
+            "uncached_scene_textures": 0
+          },
+          {
+            "from": "platform.platform",
+            "resources": {
+              "ammo": 4,
+              "lives": 4,
+              "rescued": 2,
+              "score": 600,
+              "shots": 8
+            },
+            "tick": 904,
+            "to": "green_car.green_car",
+            "uncached_scene_textures": 0
+          },
+          {
+            "from": "green_car.green_car",
+            "resources": {
+              "ammo": 1,
+              "lives": 4,
+              "rescued": 2,
+              "score": 800,
+              "shots": 11
+            },
+            "tick": 1218,
+            "to": "lantern_base.lantern_base",
+            "uncached_scene_textures": 0
+          },
+          {
+            "from": "lantern_base.lantern_base",
+            "resources": {
+              "ammo": 10,
+              "lives": 4,
+              "rescued": 2,
+              "score": 1000,
+              "shots": 14
+            },
+            "tick": 1440,
+            "to": "lantern_base.pullback",
+            "uncached_scene_textures": 0
+          },
+          {
+            "from": "lantern_base.pullback",
+            "resources": {
+              "ammo": 10,
+              "lives": 4,
+              "rescued": 2,
+              "score": 1000,
+              "shots": 14
+            },
+            "tick": 1494,
+            "to": "lantern_base.workbench",
+            "uncached_scene_textures": 0
+          }
+        ],
+        "passed": true,
+        "replay": {
+          "end_tick": 1643,
+          "final_resources": {
+            "ammo": 10,
+            "lives": 4,
+            "rescued": 2,
+            "score": 1000,
+            "shots": 14
+          },
+          "inputs": 16
+        },
+        "retry": {
+          "defeated_at": "platform.platform",
+          "defeated_resources": {
+            "ammo": 7,
+            "lives": 0,
+            "rescued": 1,
+            "score": 300,
+            "shots": 5
+          },
+          "restart": {
+            "ammo": 12,
+            "lives": 5,
+            "rescued": 0,
+            "score": 0,
+            "shots": 0
+          }
+        }
+      }
+    }
+  ]
+}

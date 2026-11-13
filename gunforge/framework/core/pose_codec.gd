@@ -1,20 +1,22 @@
 extends RefCounted
 const Item = preload("raster_item.gd")
 
-static func asset_id(image: Image, assets: Dictionary) -> String:
-	for candidate in assets:
-		if assets[candidate].image == image:
-			return candidate
-	assert(false, "Pose references an unregistered image")
-	return ""
-
 static func encode(items: Array, assets: Dictionary) -> Array:
+	if items.is_empty():
+		return []
+	var ids_by_image := {}
+	for candidate in assets:
+		var image: Image = assets[candidate].image
+		if not ids_by_image.has(image):
+			ids_by_image[image] = candidate
 	var out = []
 	for item in items:
-		var entry := {"asset":asset_id(item.image, assets),"source":item.source,"transform":item.transform,
+		assert(ids_by_image.has(item.image), "Pose references an unregistered image")
+		var entry := {"asset":ids_by_image.get(item.image, ""),"source":item.source,"transform":item.transform,
 			"size":item.size,"id":item.id,"kind":item.kind,"tint":item.tint,"generation":item.generation}
 		if item.hit_image != null:
-			entry.hit_asset = asset_id(item.hit_image, assets)
+			assert(ids_by_image.has(item.hit_image), "Pose references an unregistered hit image")
+			entry.hit_asset = ids_by_image.get(item.hit_image, "")
 		out.append(entry)
 	return out
 

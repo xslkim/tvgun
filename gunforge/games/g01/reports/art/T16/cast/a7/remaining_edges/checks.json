@@ -1,0 +1,3398 @@
+{
+  "before_build_id": "5bdaecd61df7ce8c516f5ec85bc6d0a0d5e99817e1bd5e906fe57c10f16413dd",
+  "build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11",
+  "compiled_sha256": "ad6c66d5a2624d07f51543b55bae4eeb7dff9dec93dc2184248d9cf3534cfc2f",
+  "candidate_manifest_sha256": "94f9ddb5bbd82f0f25ef546454ef6ad59bdb64bed1cafbc0decf4c301ad0ed03",
+  "other_compiled_resources_unchanged": 292,
+  "isolated_files_verified_per_build": 384,
+  "alpha_and_visible_rgb_unchanged": true,
+  "gameplay_and_player_unchanged": true,
+  "resources": [
+    {
+      "id": "alley.crow_body",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/framework/runtime/crow/body.png",
+        "sha256": "16c91f1f8a3e47071e1f44422525fd4d3d0ebdc1d0798205d6683a8efcd6bab3"
+      },
+      "runtime_sha256": "1a965f0dd1a396c9f30d66eab0aeb31d400f12bbd3faaad66a678eae64ef8582",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/0f9fd45bf54602826f1b7ae3e846514628174e00a1f6e18db9224936f76c1061/body.png",
+      "changed_transparent_pixels": 1484,
+      "adjacent_black_pixels_before": 1029,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "alley.lamp_ink",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/framework/runtime/ink_on_lamp/cover_00.png",
+        "sha256": "25342590e0b1df9fd086879135fc69dc34b29733efe8d615a7bb26e84e533617"
+      },
+      "runtime_sha256": "774b188556971b01d45141565c73727cfd0541c852e2ccb4ae89344c5e0a3079",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/9601333b4858375ccab0daf32d11b693c2a36b57330db88baeef3cd9427fa99c/cover_00.png",
+      "changed_transparent_pixels": 2401,
+      "adjacent_black_pixels_before": 827,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "alley.scene_far_base",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/framework/runtime/station/layers/far_base.png",
+        "sha256": "2b7fbfad385fb749a0a196002cf5170f7c1f63cae2692e4f2fb0820d0fe32e34"
+      },
+      "runtime_sha256": "c65dc3fc0ba587007b897fccb4c0b30efe071f05c69209fcf9a00b5fd06cc4cd",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/4daeaefaa51861249d09f785bc2d1dc3f715f3b28a1815abc3ea63263e4c8fda/far_base.png",
+      "changed_transparent_pixels": 15362,
+      "adjacent_black_pixels_before": 7648,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "alley.scene_far_town",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/framework/runtime/station/layers/far_town.png",
+        "sha256": "7ac57d7c017145724d4246a78aad055869a5613a25d59938c0fafb023ea96e3b"
+      },
+      "runtime_sha256": "ecbb8c3eb9cf4d0b772309eff68f77f7cf601cfba2c558e7396a00d2447a94ea",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/e8932ba8244125ada2fc36f428ab92e9cb0206897b50ec6b4c2ef15481e7d8dd/far_town.png",
+      "changed_transparent_pixels": 16701,
+      "adjacent_black_pixels_before": 5695,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "alley.scene_lamp",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/framework/runtime/station/layers/lamp.png",
+        "sha256": "0514fd473f51cf52ba2db6bcc61501038e3b166048fc2f166ecfb89838550ad2"
+      },
+      "runtime_sha256": "0b0bb9710c6f1f48189ee2caf4dff168d4af6c56ca523d66730aa5ac906be749",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/b00dc9a2df5d3f525d83c560d3809ac7e4298a59631164cd6ce8e6c6224ad87e/lamp.png",
+      "changed_transparent_pixels": 2277,
+      "adjacent_black_pixels_before": 315,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "alley.scene_mid_ground",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/framework/runtime/station/layers/mid_ground.png",
+        "sha256": "5506e5254260a9d5890141cf2f4bb6e8159431278b088572a1d0f7d246f1a890"
+      },
+      "runtime_sha256": "e8ccad66fe6a0c128ab517d9cf53ec9a3ea7c4b927af9999149f794b52c57f3f",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/cb654bbec639588afe092f3a5e394c19b74695e15db76f95e16b767f6fce56b6/mid_ground.png",
+      "changed_transparent_pixels": 13716,
+      "adjacent_black_pixels_before": 5695,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "alley.scene_mid_left",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/framework/runtime/station/layers/mid_left.png",
+        "sha256": "5e47afb4d406e8a218d4f1bd6690c446008dcdda5cc5f305f318b44e1742f725"
+      },
+      "runtime_sha256": "8e0190de0c4f4293a86cc2060a5309de2448e8c57f5becbdd090cf85bdeb8ea0",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/6492905310d6ca8d8c1898952342d13c82a25b3bdb414091726c7a12f7ab549c/mid_left.png",
+      "changed_transparent_pixels": 9442,
+      "adjacent_black_pixels_before": 2876,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "alley.scene_mid_right",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/framework/runtime/station/layers/mid_right.png",
+        "sha256": "829f3b76ac7ec8f79235506f3e10c9d4d95b286f3e5cee8ddacc24f8921ce9db"
+      },
+      "runtime_sha256": "b49e137deb55d7c1c8a0b10766998a561b174ff4760ece05e01ecea9d7ee5958",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/c35dac456c1e053dd9e01631dffa0979a917adaa078a1ea1120f951b2554ee9b/mid_right.png",
+      "changed_transparent_pixels": 9980,
+      "adjacent_black_pixels_before": 2633,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "cinema.image_013",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/level_design/generated/cinema/ticket_office_lamp_ink.png",
+        "sha256": "6efe8a74a27afc3c4ef1ca74420938c33593af8767d30a5cb7b7091361c64418"
+      },
+      "runtime_sha256": "4f55d9e096e494b2fc990ab9db9d9bb7ec2a86a55204357217e782cc62ef6a45",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/7bf7970b988cd5abf96f981edb65c13ac096a81a77e6d57d45c67f057205ec7d/ticket_office_lamp_ink.png",
+      "changed_transparent_pixels": 1336,
+      "adjacent_black_pixels_before": 486,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "cinema.image_015",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T12/actors/ink_tape/body.png",
+        "sha256": "c9e9486b5e14a5bae0a1a2c27e74b85263524a01926e36d19b475b23a1291f6a"
+      },
+      "runtime_sha256": "b209dfefb3abb5a87e5e7c6852c5908fead32b9ff5a718c588b830ad81ea6369",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/3876c79ac36fe774fcbd516cd8ec594027c9271f41f1a3de1c2f8ad2f7e3d732/body.png",
+      "changed_transparent_pixels": 30155,
+      "adjacent_black_pixels_before": 10335,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "cinema.image_018",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T12/actors/ink_umbrella/body.png",
+        "sha256": "9abe0f7e704bf58a7cb222427be64b07611769ac8f8e55ceb9d3883110f78489"
+      },
+      "runtime_sha256": "55c477db3559c770dcd2ff1004d481c96ba3641ecac1b8c20a4df87f5818c041",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/ba25893b5289e2862e9f7a9eba5f13775d8c08af0b8acf9496867b2f10447bee/body.png",
+      "changed_transparent_pixels": 17253,
+      "adjacent_black_pixels_before": 6299,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "cinema.image_021",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T12/actors/ink_umbrella/open.png",
+        "sha256": "6b05fba3bc4861a59b42300706a0993649401847bddfd48e0b3deccc1eb763b0"
+      },
+      "runtime_sha256": "41d151c6f418ecba27f8051113e88f930e217ea19319c95fbb8f92ef41c7bd9f",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/00d2351bcd74ca6a7a89d2ce1e776288dbd475cc09f4fe5cccbb62061240d9b7/open.png",
+      "changed_transparent_pixels": 16783,
+      "adjacent_black_pixels_before": 4213,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "cinema.image_035",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/level_design/generated/cinema/poster_hall_lamp_ink.png",
+        "sha256": "12c90a508b5909f859ddb4344e7ade6b670185d60a7f3947f097710e37ea5815"
+      },
+      "runtime_sha256": "14269bcfc42c4200901b6ef9c61524a028a5bf6b7df0b327f67a815357c89fcf",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/ad61ad9fd944979335684809045c7b05ca65374592a9d6b6950698eb25f9fe00/poster_hall_lamp_ink.png",
+      "changed_transparent_pixels": 1601,
+      "adjacent_black_pixels_before": 506,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "cinema.image_047",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/level_design/generated/cinema/auditorium_lamp_ink.png",
+        "sha256": "aff097cb6a2819e43cbee41b69150a0eba1d6d0d4a8354b5ccf5f0ede0acc8c0"
+      },
+      "runtime_sha256": "87024925d9ddf027185e0efeffb083fc25b15536c80330b91ecc33cd3b661335",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/9b39f923fc6aa96441cc3f0d6e84fec879a842a7b3db784623ea879ae8172889/auditorium_lamp_ink.png",
+      "changed_transparent_pixels": 1429,
+      "adjacent_black_pixels_before": 265,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "cinema.image_061",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/level_design/generated/cinema/projection_booth_lamp_ink.png",
+        "sha256": "d59a2ae5171af787921262984ce84e62dacb216a12e30e3c226cdd107c43556b"
+      },
+      "runtime_sha256": "84e0f263df5dc8982efc1d06ef1e57197610acbc12b406e349615f148e9bbba6",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/2faa118b722eb50d0f889a5390d8b87726da5ff2fbbaa9b0c2748b5549f73eec/projection_booth_lamp_ink.png",
+      "changed_transparent_pixels": 903,
+      "adjacent_black_pixels_before": 316,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "cinema.image_073",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T12/screen_shadow/shadow.png",
+        "sha256": "09c8581a009536319555e76df3bfcdb7a7100837dd1f5622b681152d3bb3ca2b"
+      },
+      "runtime_sha256": "dc1299e1439a72c488d23e6c5213f3fe41861b877f093a805429a16e6f710795",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/3de9105635b3fbc61c48d24e78c646bd66b47e4a10b4966df72645c1e3540ae4/shadow.png",
+      "changed_transparent_pixels": 36609,
+      "adjacent_black_pixels_before": 11450,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "cinema.image_074",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T12/screen_shadow/fixtures.png",
+        "sha256": "362c62187ee45b8f9df21539d384f5fc6d79a890219f91c03d15334ec3d09e76"
+      },
+      "runtime_sha256": "caddf329eb0976c5f71d7309570456ffb8b7eb8cf7da9f5cc9e964d2bcb61fb1",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/f03d2f8316a149ddc5c8738bd714cf3b02424789d241c68966797d5d590eefe1/fixtures.png",
+      "changed_transparent_pixels": 5100,
+      "adjacent_black_pixels_before": 576,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "cinema.image_077",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T12/screen_shadow/projector.png",
+        "sha256": "0f26a40daa5c2ea32d17e01e197eda7cbfdb455e27bec8001bfee07aced871f8"
+      },
+      "runtime_sha256": "ed8b8c9ccecdd81fd6122e736d112033b682f34fa9d57c4b9791811242263b72",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/1f38d23624a95ff2bcbe8bcb3cd4c95355a91cdfee3e23e6951c948a33b7e8cf/projector.png",
+      "changed_transparent_pixels": 3825,
+      "adjacent_black_pixels_before": 1295,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "cinema.image_078",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T12/screen_shadow/clean_reel.png",
+        "sha256": "1472bd284db4e5bc6aff6ba7b7388ebf2eefbdb7692a31ba0c1b4b2fc5368a24"
+      },
+      "runtime_sha256": "3442e7f86d0d4ea520087c3be9551582ec059d058548c7373bd6ff785928ee91",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/7b59863e8e4378b29375c91837d6410792e30a0931e40ead348f01a846dbea31/clean_reel.png",
+      "changed_transparent_pixels": 7728,
+      "adjacent_black_pixels_before": 2275,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "footbridge.image_010",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/level_design/generated/footbridge_cyclist/footbridge_lamp_ink.png",
+        "sha256": "635edd064965ad65dece1497fb509945f29ee7f5cd9880540b24f051b3facf9b"
+      },
+      "runtime_sha256": "db4dc76686a7f299953375745a1a5d86de34d169c0599ba56731060661af81c7",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/03bdf8b43d85f00a686c951d803b32a3d8732f9bf6fda6e2ed36aefeb5d4fdda/footbridge_lamp_ink.png",
+      "changed_transparent_pixels": 1465,
+      "adjacent_black_pixels_before": 465,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "green_car.image_011",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/level_design/generated/green_car_contrast/green_car_lamp_ink.png",
+        "sha256": "1c12cacc3c40a625d26a5cef9712dde1f163074629bf29d2452e369f07e4b425"
+      },
+      "runtime_sha256": "9144d182aa1e2d8ca37142337755cd4a64f93d2c671d0275eb25966681e5874f",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/58bc25e9716e0c7402e1e870f9260e18817eb0cf6eb7aa7603432e9ed7ee6280/green_car_lamp_ink.png",
+      "changed_transparent_pixels": 837,
+      "adjacent_black_pixels_before": 337,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "hud.ammo_light",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/assets/stations/g01_st_l1_01_alley/ui/ammo_light.png",
+        "sha256": "61740b504ab80fe5ea6eb9d16264ea4150c9dbe29d7ca390431f6ce5decad34f"
+      },
+      "runtime_sha256": "e962cc2cbed1b0fbbc3679d21c3fcb40bd63bcf230271f9bec7f147c2469bee3",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/cb1c0c56fa938a282dfcc610102680e07d1664e3e8d8d476a9591faceb18142f/ammo_light.png",
+      "changed_transparent_pixels": 1548,
+      "adjacent_black_pixels_before": 243,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "hud.ammo_light_empty",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/assets/stations/g01_st_l1_01_alley/ui/ammo_light_empty.png",
+        "sha256": "3470364608d541a39162cb3e209d8e8fd55dbe8ec713146bb3aabf351c9d9d91"
+      },
+      "runtime_sha256": "48a02827801fe7e961cd5d7f23f8647b3e9e8b92a9cff8f6a4c3e99bfe5b0471",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/5766a3c3513c0470d7269c62b889e93af22d3357027bbbe631629830678a23f8/ammo_light_empty.png",
+      "changed_transparent_pixels": 1548,
+      "adjacent_black_pixels_before": 245,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "hud.continue_panel",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/assets/stations/g01_st_l1_01_alley/ui/continue_panel.png",
+        "sha256": "a55bb427484495aa8a6419928d3a8c9b9925efa1cc6fd4089db2769246d973ac"
+      },
+      "runtime_sha256": "3c1caaa363b26e594d24cdec989332d41d1bb99d7856ec7e62ef8279a3863679",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/1788317f49112e3c13c513a37bcf8786dd7aa9ce1d4a41d53ed7a07ae15fcfd2/continue_panel.png",
+      "changed_transparent_pixels": 10,
+      "adjacent_black_pixels_before": 9,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "hud.life_wick",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/assets/stations/g01_st_l1_01_alley/ui/life_wick.png",
+        "sha256": "b85cfbc77aa2bf181c15b3e7985d80fb305a55798a1cfc29c7a7d0c433fa32d6"
+      },
+      "runtime_sha256": "ebf17a2aac323cdd4d522c20bc5d4cc72821c0d878668e3c74f68a1e4648104d",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/ba132f8be8ea9d80ef29ec085e64151a00409b31f6a9d38b8216269f4eaf799c/life_wick.png",
+      "changed_transparent_pixels": 2131,
+      "adjacent_black_pixels_before": 410,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "hud.life_wick_empty",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/assets/stations/g01_st_l1_01_alley/ui/life_wick_empty.png",
+        "sha256": "afc1c4f5a081c589c08583c6d7b6458286109238206e4b11744c6c1100c83dad"
+      },
+      "runtime_sha256": "4ca83780a3f06d75f720ff9eb2b47c1a9a8f8e0f82dd2eaa0d0051e8bf9487bc",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/653a794bfebfccf848447bb248ad7f60059d0a4a7651c58b0a98fe471943d01e/life_wick_empty.png",
+      "changed_transparent_pixels": 2131,
+      "adjacent_black_pixels_before": 426,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "hud.score_seal",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/assets/stations/g01_st_l1_01_alley/ui/score_seal.png",
+        "sha256": "1228966731fc17c810b84d086b8fa2952036c2bfd27c40aaf74b3c54876c8164"
+      },
+      "runtime_sha256": "0ad7b511191fa614f8c304f30cd42140928dfc34722eb6ac34fac6f6a010122f",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/429643d5715e68f49ef13efd868a7515d9f24668e1ae90043cebfd0d10425cf2/score_seal.png",
+      "changed_transparent_pixels": 6216,
+      "adjacent_black_pixels_before": 1964,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "lantern_base.image_011",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/level_design/generated/workbench_boss/lantern_base_lamp_ink.png",
+        "sha256": "746674018e0c4785b3bd3dd6a9c7c0520564d9045cd6a5636502c2fbe2a4a8d2"
+      },
+      "runtime_sha256": "097e119564ca3f531d8754896f4cba40034073b45b1f0a077f39d45c9aaeb136",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/dd7b20dc6186b4db5a0405d2e9aed054d40e82215d2a26c621727f3a43fb9334/lantern_base_lamp_ink.png",
+      "changed_transparent_pixels": 1324,
+      "adjacent_black_pixels_before": 551,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "platform.image_014",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/level_design/generated/platform_passerby/platform_lamp_ink.png",
+        "sha256": "f9c260ca075f88a7566c9ff453dd99ad1a3b87d4d44e8e4c2de42b189a40430b"
+      },
+      "runtime_sha256": "cd3c10177111adf761788f54d55e393e567c82666ff57314f94c974156c6be23",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/6fea87fb4d60defe5f67091f625db0d522ae4ddf446f54541218704ee4a8d5d0/platform_lamp_ink.png",
+      "changed_transparent_pixels": 1204,
+      "adjacent_black_pixels_before": 456,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "plaza.image_007",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T11/full/parts/body_01_paper.png",
+        "sha256": "a9c8e58963875dd623f8db859b61aae65671e88ce68381528673d7c3f21e4c51"
+      },
+      "runtime_sha256": "9d4fc0bb9fd76d21c7c63480b51a0448531a3258f6bf9f719b38d8faba5de605",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/71d4b320e2e9f027ce8ee2e7b33ae6116be826d3267279d5f5965cef1f9a03be/body_01_paper.png",
+      "changed_transparent_pixels": 4168,
+      "adjacent_black_pixels_before": 1621,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "plaza.image_008",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T11/full/parts/body_01_locked.png",
+        "sha256": "9be4206d75b2c09a43c932cdb5fbc3180db17d17dfa78e1954f30f9f7d162941"
+      },
+      "runtime_sha256": "dc5235533e9e81879a46b6438907f126d4405721ebb0f12197f731134898ee66",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/b08b8f8260a43c0ef8cb2b8865be611806613823bf71c0e1e9a548dc3733bac2/body_01_locked.png",
+      "changed_transparent_pixels": 4168,
+      "adjacent_black_pixels_before": 1633,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "plaza.image_012",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T11/full/parts/body_02_paper.png",
+        "sha256": "b4f58125204458e83714763eec9f30762799da7a68298f7d3fa97e7b39326f2f"
+      },
+      "runtime_sha256": "24c703255b880b19809438afffaa1fbc6cefea151f9cade017b209fdc87d72c1",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/50afdd858b7087390c894bf46f9552f9b23e31f0884e65056cd0c8324df90f0b/body_02_paper.png",
+      "changed_transparent_pixels": 3933,
+      "adjacent_black_pixels_before": 1598,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "plaza.image_013",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T11/full/parts/body_02_locked.png",
+        "sha256": "d96e235fd08dae200d2d76a91cba642a0a8fa8369580860b98f23e83d85435f1"
+      },
+      "runtime_sha256": "a1d51e5634825a4752a2fea6145f2959d44819ccd67bc091cf60a7c6c18124e7",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/55b40caaf8295fcd8cbf148ebb8bb65f3bf542969f6ecabe5e9b2946bb8e6e06/body_02_locked.png",
+      "changed_transparent_pixels": 3932,
+      "adjacent_black_pixels_before": 1616,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "plaza.image_017",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T11/full/parts/body_03_paper.png",
+        "sha256": "7c7d71f24cf92dd4f3b84da95712c408792dee9fbf4a53788fa28a34e3eb7dc2"
+      },
+      "runtime_sha256": "60db3cfa803c7a9f1711b9fe69db2015a7fec91e8b39130de6564781ce67f26d",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/d8f7e1bd0cd7eab39c91515254ee05e589874c1e6dd6d0cca763531838f103db/body_03_paper.png",
+      "changed_transparent_pixels": 4000,
+      "adjacent_black_pixels_before": 1569,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "plaza.image_018",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T11/full/parts/body_03_locked.png",
+        "sha256": "0b55aea8c8c10e4278666ad133cb8ada0c2827d73022932348793ebf0cc1919e"
+      },
+      "runtime_sha256": "cc9e16105c1cb173247c17a060165fba70f085fc8f5a27a58d6cf879270cfc7f",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/f70d1791c84ab8389c7a6497dffebb0b7b7a322c41964de700ea3ea50946075f/body_03_locked.png",
+      "changed_transparent_pixels": 4000,
+      "adjacent_black_pixels_before": 1585,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "plaza.image_022",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T11/full/parts/body_04_paper.png",
+        "sha256": "00ffd02950730f1aec4da597c0a61db36b98f2213b5eafe73638611e8e0cc287"
+      },
+      "runtime_sha256": "ea21ce03a483bb85e6c33601ca5685916ed9e57260d3175f3a3b21a4cabc4ffd",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/2989b50db089f1629fa3eec56c46ab18f468921915f84ffbf76151ea9e932a06/body_04_paper.png",
+      "changed_transparent_pixels": 3828,
+      "adjacent_black_pixels_before": 1542,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "plaza.image_023",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T11/full/parts/body_04_locked.png",
+        "sha256": "6188611de96ae653257fef28a034a0c134a7aabd377314d0ef3f35ee6696801d"
+      },
+      "runtime_sha256": "d91d7c1f02e64942882543d51042aa21caacea8a70976aaeca853262b0e69e8f",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/16e704ba52eaec6d4568d634276f25c31c53545f4c280bc1cc1acbb4f1d50697/body_04_locked.png",
+      "changed_transparent_pixels": 3827,
+      "adjacent_black_pixels_before": 1550,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "plaza.image_027",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T11/full/parts/body_05_paper.png",
+        "sha256": "ea0b97bed7d819213f57330c82980e58ffdf73b023f1ef0cb30444628ec5b770"
+      },
+      "runtime_sha256": "5e995b8a940a3814c4bb2576b97ef9dcc1bc9f1732a59cada096aabace8effdc",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/21cb5fc0b20237ad2d16bc8032b9f638ab551e6143f032d434c9bf2cf36138a7/body_05_paper.png",
+      "changed_transparent_pixels": 4045,
+      "adjacent_black_pixels_before": 1589,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "plaza.image_028",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T11/full/parts/body_05_locked.png",
+        "sha256": "b00f0003ad0d216b4cccaaa7d125498b539cf993459b4e3d1164684b80a30c8f"
+      },
+      "runtime_sha256": "4083e82019bac24109367a0255d32062b30502fa59c6e2382c3b48ad66b09132",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/48a8deae497c34b75c269392a0de15336852d73bf6cafe57ba6fd566128e4e62/body_05_locked.png",
+      "changed_transparent_pixels": 4045,
+      "adjacent_black_pixels_before": 1599,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "plaza.image_032",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T11/full/parts/body_06_paper.png",
+        "sha256": "ae91990f3bce260b43c619cc858df4fe857c0ee008ac169fb09746c658891ceb"
+      },
+      "runtime_sha256": "1d2ccdc5ca3ab078f76d4ce0bc10dd8b77bcae84a7ddbc5872174a71c145cd85",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/cf1074d2a25cd77c0093cca147049e283953a6b6c7495de29db762af3715c7ce/body_06_paper.png",
+      "changed_transparent_pixels": 3636,
+      "adjacent_black_pixels_before": 1534,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "plaza.image_033",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T11/full/parts/body_06_locked.png",
+        "sha256": "ae4bddc701307c5b33fc023bfff471db4fe188ceb29f1a72c425111ca7b0ce1b"
+      },
+      "runtime_sha256": "dcff66f774bd258c15d76834605c2037dc269f73e1b8848568ed5788258792d9",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/1cd502dbabf62ac2df00fe9b4cdbf3cb9c853f520d48d1d8f7071810a1f3c525/body_06_locked.png",
+      "changed_transparent_pixels": 3635,
+      "adjacent_black_pixels_before": 1549,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "plaza.image_037",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T11/full/parts/body_07_paper.png",
+        "sha256": "2aa633b9c1f78460409dfb7ba8f71b32c3f2c9effca27b2cca7a50a9e019cdb2"
+      },
+      "runtime_sha256": "6ba072c6c7fc9eecf1ddc98ff83e8352f79b70ecae63b6f0f50f4ad8b8f60a5b",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/2fbc3f2213de7cc52720238d4835321449ec9b69275b23a4cff41c8a03452246/body_07_paper.png",
+      "changed_transparent_pixels": 3649,
+      "adjacent_black_pixels_before": 1536,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "plaza.image_038",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T11/full/parts/body_07_locked.png",
+        "sha256": "119a9ba2fb62b883abb25e8f7b25b303bfcc1ffb57a5ef8ca2b8481a63f6a75f"
+      },
+      "runtime_sha256": "4d86a1ded473f2c7e156159abfc1eac928747e0664f1b18d2448922e62221c76",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/7233a7014ab25eb9bae365075bd94897867d332a3be4cca7d2253e69c13737e9/body_07_locked.png",
+      "changed_transparent_pixels": 3648,
+      "adjacent_black_pixels_before": 1547,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "plaza.image_042",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T11/full/parts/body_08_paper.png",
+        "sha256": "8094826d9d67745b282de17360b5990667f2317ea3b9cd27847e591488a14a4c"
+      },
+      "runtime_sha256": "4e9d41c380c82648c6f56549cd0f06e3c598821363b3d91940519ac790b90b3e",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/f797c0ce530b8f67fa010b0206ffdadf5c522844fe32020f9b30934cd10d9d36/body_08_paper.png",
+      "changed_transparent_pixels": 3526,
+      "adjacent_black_pixels_before": 1504,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "plaza.image_043",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T11/full/parts/body_08_locked.png",
+        "sha256": "97e73fe98f94e983ae2a9830d328dd6bd1fb936bd61c6401659e16b3c9d94085"
+      },
+      "runtime_sha256": "cfcd5e738303f868c5e0210ecb0154831b3d8420d092f0159509cd004d787b6d",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/2bdf1d8811fd531c1edabde541da2384e45f861dfa026f101747c3ad5672fd0f/body_08_locked.png",
+      "changed_transparent_pixels": 3526,
+      "adjacent_black_pixels_before": 1515,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "puddle.image_000",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/level_design/generated/tadpole_encounter/puddle_surface.png",
+        "sha256": "620fad46fc97bd4531908d57c6a8275c54e70738a57e9eb1f35d901a86aed2c6"
+      },
+      "runtime_sha256": "7e341af765357aba2ec89c3be265aa5961c39bd73c5d00b0e786f19e2b65312a",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/f35508e903876af2c2f2547955190524df57a9f7043ad880228d597435958732/puddle_surface.png",
+      "changed_transparent_pixels": 7363,
+      "adjacent_black_pixels_before": 1326,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "puddle.image_003",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/level_design/generated/tadpole_encounter/tadpole_body.png",
+        "sha256": "4fd661f46aa73abba906b986cf054e0a7b13946ad0f84430ea22311935f2b713"
+      },
+      "runtime_sha256": "0520b1d155ccf3beae507910e9cffc121a512118c9e0e415687601725cd60a33",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/7a8806703406a0c13cd16ec241c6d2165b4b9bb69b160fbeb1153f3cf2c76bb0/tadpole_body.png",
+      "changed_transparent_pixels": 677,
+      "adjacent_black_pixels_before": 555,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "video_shop.image_010",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/level_design/generated/video_shop/video_shop_lamp_ink.png",
+        "sha256": "635acd3fb267e7bb38c698a1406a5a6b1f92f5d3734e5b1552de38919ef3f51e"
+      },
+      "runtime_sha256": "07acabff977b82dfc5150e4b2d9f88391dae238be1233fcb1ddf865c660f7eef",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/cfb97cfe0b753264ea0941f0502b61b0fc09c1ae94b418ebec1c9a0eaed4a182/video_shop_lamp_ink.png",
+      "changed_transparent_pixels": 1561,
+      "adjacent_black_pixels_before": 509,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "waiting_room.image_015",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/level_design/generated/waiting_room_contrast/waiting_room_lamp_ink.png",
+        "sha256": "542ed26226779973c41fca2ade9d64c68c262ec46ebc11d9abdc308cdf708beb"
+      },
+      "runtime_sha256": "cf5eeeb05de21879d95ac6b542d38a8ffed61689fecf9c976bbe180dd22b5c11",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/8e497ff2eb34c285e0a2f3bacbef2facac7efeb6fe33ac996990f092f70fb787/waiting_room_lamp_ink.png",
+      "changed_transparent_pixels": 495,
+      "adjacent_black_pixels_before": 224,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "waiting_room.image_017",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/assets/stations/g01_st_l1_01_alley/crow/body.png",
+        "sha256": "16c91f1f8a3e47071e1f44422525fd4d3d0ebdc1d0798205d6683a8efcd6bab3"
+      },
+      "runtime_sha256": "1a965f0dd1a396c9f30d66eab0aeb31d400f12bbd3faaad66a678eae64ef8582",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/aadd68707874d7e4db9a9c38ef7d99adef866f10afb50b0fa452af5dc792ca82/body.png",
+      "changed_transparent_pixels": 1484,
+      "adjacent_black_pixels_before": 1029,
+      "adjacent_black_pixels_after": 0
+    }
+  ],
+  "rendered_frames": [
+    {
+      "id": "alley.crow_body",
+      "rect": [
+        0.0,
+        0.0,
+        917.0,
+        753.0
+      ],
+      "scale": 0.625,
+      "size": [
+        592,
+        489
+      ],
+      "name": "alley.crow_body-0.png",
+      "changed_pixels": 765,
+      "minimum_rgb_byte_delta": -9,
+      "maximum_rgb_byte_delta": 8,
+      "before_sha256": "f5a8278125e58310eb898b5fe65f5b4e9563765ebffc8ad068e8a1e9088f70c1",
+      "after_sha256": "e38b8e44f09c9c3735dfb40804e2dcb169f382220a48bceadb04dd3a40041f80"
+    },
+    {
+      "id": "alley.crow_body",
+      "rect": [
+        0.0,
+        0.0,
+        917.0,
+        753.0
+      ],
+      "scale": 1.25,
+      "size": [
+        1165,
+        960
+      ],
+      "name": "alley.crow_body-1.png",
+      "changed_pixels": 2731,
+      "minimum_rgb_byte_delta": -12,
+      "maximum_rgb_byte_delta": 12,
+      "before_sha256": "3b185579afb03014ac4c9252630c65683809a964736a367d1a502a4470f779a7",
+      "after_sha256": "6a9048fe22551ecf950623c974c73bbf9d12ef291f972f28f9195d686c1a9bbb"
+    },
+    {
+      "id": "alley.lamp_ink",
+      "rect": [
+        0.0,
+        0.0,
+        256.0,
+        256.0
+      ],
+      "scale": 0.625,
+      "size": [
+        178,
+        178
+      ],
+      "name": "alley.lamp_ink-0.png",
+      "changed_pixels": 392,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 18,
+      "before_sha256": "26be9a3acc242c41351bf6e7748d62329c9aac464ea4f5b60650bdaf2da68741",
+      "after_sha256": "848a77169097afdfec6e221187380f54b3824ec4e4d6baedf5e7a91096d3ec6b"
+    },
+    {
+      "id": "alley.lamp_ink",
+      "rect": [
+        0.0,
+        0.0,
+        256.0,
+        256.0
+      ],
+      "scale": 1.25,
+      "size": [
+        338,
+        338
+      ],
+      "name": "alley.lamp_ink-1.png",
+      "changed_pixels": 1385,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 22,
+      "before_sha256": "4b236dd1dc507a9fbe0b5294cb033d35c8ae586beb542038af94b61a77b4dc6d",
+      "after_sha256": "422a2a5aa857f35a891ffcde7431bc425bc1b23550647a4b42882e09840ac84c"
+    },
+    {
+      "id": "alley.scene_far_base",
+      "rect": [
+        0.0,
+        0.0,
+        1258.0,
+        673.0
+      ],
+      "scale": 0.625,
+      "size": [
+        805,
+        439
+      ],
+      "name": "alley.scene_far_base-0.png",
+      "changed_pixels": 3580,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 17,
+      "before_sha256": "61a35ba844e72feed13d7d11890076eda57542c2ab33479024fe3e4e0e3cbae9",
+      "after_sha256": "a6fd04cee86240e50c4efb0f9840a2bb95d3c4dcf80aa8fa9559ee71d7e98ec8"
+    },
+    {
+      "id": "alley.scene_far_base",
+      "rect": [
+        0.0,
+        0.0,
+        1258.0,
+        673.0
+      ],
+      "scale": 1.25,
+      "size": [
+        1591,
+        860
+      ],
+      "name": "alley.scene_far_base-1.png",
+      "changed_pixels": 8750,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 21,
+      "before_sha256": "791e34dcf1c7db19db5578be1bde7b9647838277194cf5c71a72fc141198a746",
+      "after_sha256": "a2aae6268ad1fb383df72e8f81913667e5e70eb902197878e4aa3178af8e070d"
+    },
+    {
+      "id": "alley.scene_far_town",
+      "rect": [
+        0.0,
+        0.0,
+        1138.0,
+        529.0
+      ],
+      "scale": 0.625,
+      "size": [
+        730,
+        349
+      ],
+      "name": "alley.scene_far_town-0.png",
+      "changed_pixels": 3111,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 39,
+      "before_sha256": "8f4163a93c46581af74b44ce389c96a4d914c349c2420b18ec05861c942eb87f",
+      "after_sha256": "827908fd744f179450cf82f846f7e4a8d028e06030eb795e6f3f35995a34bfe0"
+    },
+    {
+      "id": "alley.scene_far_town",
+      "rect": [
+        0.0,
+        0.0,
+        1138.0,
+        529.0
+      ],
+      "scale": 1.25,
+      "size": [
+        1441,
+        680
+      ],
+      "name": "alley.scene_far_town-1.png",
+      "changed_pixels": 10415,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 38,
+      "before_sha256": "a8333d55c7ecb34b0aafb0976727fc91f4fccb69bbec33a91bd705f2270e7896",
+      "after_sha256": "d3a3a429b9aff7663b65cb5592009676a82cf5d2279be6f828e0ab8dd81f9cb9"
+    },
+    {
+      "id": "alley.scene_lamp",
+      "rect": [
+        0.0,
+        0.0,
+        1023.0,
+        801.0
+      ],
+      "scale": 0.625,
+      "size": [
+        658,
+        519
+      ],
+      "name": "alley.scene_lamp-0.png",
+      "changed_pixels": 764,
+      "minimum_rgb_byte_delta": -11,
+      "maximum_rgb_byte_delta": 14,
+      "before_sha256": "2ff9537b05d00ccb6bcd3e3044cf22942896164165926cbb10cc8cf89895a357",
+      "after_sha256": "4c1ae67be7855996898165753541c8316ecbdeb6cb4c049e326ad131f27e4de5"
+    },
+    {
+      "id": "alley.scene_lamp",
+      "rect": [
+        0.0,
+        0.0,
+        1023.0,
+        801.0
+      ],
+      "scale": 1.25,
+      "size": [
+        1297,
+        1020
+      ],
+      "name": "alley.scene_lamp-1.png",
+      "changed_pixels": 3082,
+      "minimum_rgb_byte_delta": -12,
+      "maximum_rgb_byte_delta": 29,
+      "before_sha256": "9c5834984e187b7587a28680951d85c658a0b0717adaaa0cebfe5f5e0ad055cc",
+      "after_sha256": "407fb00004b2e5201f21e012f61264a0acf4c1b3263f227550b1b8e52708de0d"
+    },
+    {
+      "id": "alley.scene_mid_ground",
+      "rect": [
+        0.0,
+        0.0,
+        1258.0,
+        569.0
+      ],
+      "scale": 0.625,
+      "size": [
+        805,
+        374
+      ],
+      "name": "alley.scene_mid_ground-0.png",
+      "changed_pixels": 2665,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 17,
+      "before_sha256": "a6875aac525dcf3a54ef22f960a95eae21385ba274d68cace0da2dad1729df38",
+      "after_sha256": "0b848fb70fd45df86e473955a9604217ce50d89afb007b730d2132d1ea1d30f8"
+    },
+    {
+      "id": "alley.scene_mid_ground",
+      "rect": [
+        0.0,
+        0.0,
+        1258.0,
+        569.0
+      ],
+      "scale": 1.25,
+      "size": [
+        1591,
+        730
+      ],
+      "name": "alley.scene_mid_ground-1.png",
+      "changed_pixels": 6826,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 20,
+      "before_sha256": "152962d3ccace7d4668d0aa1ea5c87176fd1f633a740d078f152619b4b261cec",
+      "after_sha256": "91ab793da627409d6d5f6b0f436c7eefc3357d9ea96f1b74b92cf04ddddbf93f"
+    },
+    {
+      "id": "alley.scene_mid_left",
+      "rect": [
+        0.0,
+        0.0,
+        1244.0,
+        606.0
+      ],
+      "scale": 0.625,
+      "size": [
+        796,
+        397
+      ],
+      "name": "alley.scene_mid_left-0.png",
+      "changed_pixels": 1153,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 37,
+      "before_sha256": "b514aa167e48321b6e93bf914aea1bc6a19bf98c578000eb2cbd47997e51ef42",
+      "after_sha256": "f715fceaf32f9e8035c725f3d3fa25bcec54341883d7d5cbaa7435a37d18a8c6"
+    },
+    {
+      "id": "alley.scene_mid_left",
+      "rect": [
+        0.0,
+        0.0,
+        1244.0,
+        606.0
+      ],
+      "scale": 1.25,
+      "size": [
+        1573,
+        776
+      ],
+      "name": "alley.scene_mid_left-1.png",
+      "changed_pixels": 4970,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 42,
+      "before_sha256": "8ed040a569c8a185d55041beee8b5669cadc27815fa40dc2e3f63ecf57d78cc6",
+      "after_sha256": "7a28b6564f44c83e35c4a6cdb059f9ea0e2a69e62e6c0fb34cc1712f7898d144"
+    },
+    {
+      "id": "alley.scene_mid_right",
+      "rect": [
+        0.0,
+        0.0,
+        1147.0,
+        588.0
+      ],
+      "scale": 0.625,
+      "size": [
+        735,
+        386
+      ],
+      "name": "alley.scene_mid_right-0.png",
+      "changed_pixels": 1059,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 32,
+      "before_sha256": "2b1f5ad78e500e2514e18ed9a8f3f59553d9f315a8b4519fe1ef18caa1c0abe4",
+      "after_sha256": "680bc41a101fecd2697631e815b09c839a8ccf94d3b813f9b0a1a978e41fffe5"
+    },
+    {
+      "id": "alley.scene_mid_right",
+      "rect": [
+        0.0,
+        0.0,
+        1147.0,
+        588.0
+      ],
+      "scale": 1.25,
+      "size": [
+        1452,
+        753
+      ],
+      "name": "alley.scene_mid_right-1.png",
+      "changed_pixels": 3777,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 34,
+      "before_sha256": "4ebd2c79d3921caf9c5cd154cc5fa8c009c5658e2f0981ed514dc0c2174074db",
+      "after_sha256": "ae981e79991dbe773356a27c936654823e5574ad55052861b8b1d746bde1a8d5"
+    },
+    {
+      "id": "cinema.image_013",
+      "rect": [
+        0.0,
+        0.0,
+        272.0,
+        111.0
+      ],
+      "scale": 0.625,
+      "size": [
+        188,
+        88
+      ],
+      "name": "cinema.image_013-0.png",
+      "changed_pixels": 236,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 9,
+      "before_sha256": "62d2080502b2c52f0487f25fdbd404e2598bd25cf265b3a434d0cfcc456a5b40",
+      "after_sha256": "2e7d26bdf4fce14558b555bb2ddb6ea66c70f0c3bea32cf718143046ae15f364"
+    },
+    {
+      "id": "cinema.image_013",
+      "rect": [
+        0.0,
+        0.0,
+        272.0,
+        111.0
+      ],
+      "scale": 1.25,
+      "size": [
+        358,
+        157
+      ],
+      "name": "cinema.image_013-1.png",
+      "changed_pixels": 787,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 15,
+      "before_sha256": "7f1f0ea45f14209ecec963aa3d2f96c0694a0988ff187fff4d171a9908348a46",
+      "after_sha256": "a5bc1cdfe3aff70562e1dc9a0b915735e6c802ba5aac447d214fbbd26594248a"
+    },
+    {
+      "id": "cinema.image_015",
+      "rect": [
+        0.0,
+        0.0,
+        768.0,
+        530.0
+      ],
+      "scale": 0.625,
+      "size": [
+        498,
+        350
+      ],
+      "name": "cinema.image_015-0.png",
+      "changed_pixels": 4358,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 43,
+      "before_sha256": "1ebc03aa6765cb66cd4012cb0978734d818cc0852c3d790c7acd247eba275bbd",
+      "after_sha256": "72d0d7e8230b10f48ed7f9034ea29c7a6979cc2ea6baecf1f99fa1bb93668e9b"
+    },
+    {
+      "id": "cinema.image_015",
+      "rect": [
+        0.0,
+        0.0,
+        768.0,
+        530.0
+      ],
+      "scale": 1.25,
+      "size": [
+        978,
+        681
+      ],
+      "name": "cinema.image_015-1.png",
+      "changed_pixels": 15508,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 40,
+      "before_sha256": "c66e311f988da9f2511692e5624298f97e995accb410189d23d158310060fbd7",
+      "after_sha256": "99f4362be81424b63f2a3d82a72c06a96c83bd7cf25b2c5fa31fc2a70e073497"
+    },
+    {
+      "id": "cinema.image_018",
+      "rect": [
+        0.0,
+        0.0,
+        703.0,
+        768.0
+      ],
+      "scale": 0.625,
+      "size": [
+        458,
+        498
+      ],
+      "name": "cinema.image_018-0.png",
+      "changed_pixels": 2516,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 28,
+      "before_sha256": "7c0d9736786bab3fcf5e08c0ea395b70d58e871ffddd5bd713094698c3bdcfe0",
+      "after_sha256": "221026bd2d4bfca9cd56dea6aa80049da0c8b484a42eb9e0adce55f453cda289"
+    },
+    {
+      "id": "cinema.image_018",
+      "rect": [
+        0.0,
+        0.0,
+        703.0,
+        768.0
+      ],
+      "scale": 1.25,
+      "size": [
+        897,
+        978
+      ],
+      "name": "cinema.image_018-1.png",
+      "changed_pixels": 9259,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 39,
+      "before_sha256": "1e894135cf35ccd43cbc7e3213ca8853bfcddacaab9c3cf699cab36096c8434e",
+      "after_sha256": "1951876bd85b8d799082654ae5c683bf5676d5b5e704f4da4e4f764aee154322"
+    },
+    {
+      "id": "cinema.image_021",
+      "rect": [
+        0.0,
+        0.0,
+        768.0,
+        648.0
+      ],
+      "scale": 0.625,
+      "size": [
+        498,
+        423
+      ],
+      "name": "cinema.image_021-0.png",
+      "changed_pixels": 1586,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 43,
+      "before_sha256": "0ac5ac937dc52113061b23a26e258c661f88b9674481b0e3994e84aa5085eff2",
+      "after_sha256": "b5ba90d3c535a8c6837cf3fbbe4756bdd4b49cee63eb47565284286bbf65dac5"
+    },
+    {
+      "id": "cinema.image_021",
+      "rect": [
+        0.0,
+        0.0,
+        768.0,
+        648.0
+      ],
+      "scale": 1.25,
+      "size": [
+        978,
+        828
+      ],
+      "name": "cinema.image_021-1.png",
+      "changed_pixels": 5648,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 40,
+      "before_sha256": "8c1aa2c5773d8ae9fadf75a5751fc6714d9c0e8258e23d50204ff4cddee13236",
+      "after_sha256": "3fe507d2b5e9d46014a3765dc020b84482933a99f755447e32775d019b3d987d"
+    },
+    {
+      "id": "cinema.image_035",
+      "rect": [
+        0.0,
+        0.0,
+        125.0,
+        128.0
+      ],
+      "scale": 0.625,
+      "size": [
+        97,
+        98
+      ],
+      "name": "cinema.image_035-0.png",
+      "changed_pixels": 241,
+      "minimum_rgb_byte_delta": -2,
+      "maximum_rgb_byte_delta": 22,
+      "before_sha256": "f63a9407c2784d2c83f9c5156b290fd1c1144f372d384754d09a4f930570b778",
+      "after_sha256": "3c1e9afe6b377745f52e524dbad33525743cb653163cd33f6f24dbc7ac5afbd7"
+    },
+    {
+      "id": "cinema.image_035",
+      "rect": [
+        0.0,
+        0.0,
+        125.0,
+        128.0
+      ],
+      "scale": 1.25,
+      "size": [
+        175,
+        178
+      ],
+      "name": "cinema.image_035-1.png",
+      "changed_pixels": 945,
+      "minimum_rgb_byte_delta": -2,
+      "maximum_rgb_byte_delta": 22,
+      "before_sha256": "d556b690cf60de386f2c77cba0be1995a8ce40cb1bdf6641ba6aaa0a8599c9e6",
+      "after_sha256": "2c994bbd3c5cd57bb1613c117bdda8bb87b15b847c20f1587a1014aee852517c"
+    },
+    {
+      "id": "cinema.image_047",
+      "rect": [
+        0.0,
+        0.0,
+        108.0,
+        102.0
+      ],
+      "scale": 0.625,
+      "size": [
+        86,
+        82
+      ],
+      "name": "cinema.image_047-0.png",
+      "changed_pixels": 127,
+      "minimum_rgb_byte_delta": -2,
+      "maximum_rgb_byte_delta": 11,
+      "before_sha256": "41e8411a82579c4ca21743ee8e6b63efbd43636b6edb1468c45ead775e360fc9",
+      "after_sha256": "76256ff4711cd26b0c3c25d5f3c88a2a888433f3dbc31025eb1429643846762f"
+    },
+    {
+      "id": "cinema.image_047",
+      "rect": [
+        0.0,
+        0.0,
+        108.0,
+        102.0
+      ],
+      "scale": 1.25,
+      "size": [
+        153,
+        146
+      ],
+      "name": "cinema.image_047-1.png",
+      "changed_pixels": 507,
+      "minimum_rgb_byte_delta": -2,
+      "maximum_rgb_byte_delta": 20,
+      "before_sha256": "51d0b686fd1d32401168cb8290f32a28f76840e18cd0d3e3b2067b3ee8697949",
+      "after_sha256": "64e0f8cfeedd05f31a83cc0079325db9cff41ad0b17b5ea6a636ed72323dbef5"
+    },
+    {
+      "id": "cinema.image_061",
+      "rect": [
+        0.0,
+        0.0,
+        158.0,
+        88.0
+      ],
+      "scale": 0.625,
+      "size": [
+        117,
+        73
+      ],
+      "name": "cinema.image_061-0.png",
+      "changed_pixels": 158,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 16,
+      "before_sha256": "8a4eac021b24950198e84c2c3c699c7da79056b9597557b238636fcf8f78afd8",
+      "after_sha256": "66368374393fcd496602f2c5890f23a0957c98dad3ce1043eea1bd340eef203b"
+    },
+    {
+      "id": "cinema.image_061",
+      "rect": [
+        0.0,
+        0.0,
+        158.0,
+        88.0
+      ],
+      "scale": 1.25,
+      "size": [
+        216,
+        128
+      ],
+      "name": "cinema.image_061-1.png",
+      "changed_pixels": 553,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 20,
+      "before_sha256": "2042689637467caa822f074318a57b283de89c7cce1078fed1c54b0b8ca2f9ed",
+      "after_sha256": "5f90cf8a71f6ceca50d95ae3099ff1132d05dfa7248c51c09ccafdbf0cf6a01e"
+    },
+    {
+      "id": "cinema.image_073",
+      "rect": [
+        0.0,
+        0.0,
+        734.0,
+        450.0
+      ],
+      "scale": 0.625,
+      "size": [
+        477,
+        300
+      ],
+      "name": "cinema.image_073-0.png",
+      "changed_pixels": 4695,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 38,
+      "before_sha256": "7d43208c423744fc984e329c01acbc41f420bd2d53eb595e709e04f103e6a9b3",
+      "after_sha256": "92391a7713960ae209ee51575162bb1c7d22a0114de385ec52e24fc6526e2228"
+    },
+    {
+      "id": "cinema.image_073",
+      "rect": [
+        0.0,
+        0.0,
+        734.0,
+        450.0
+      ],
+      "scale": 1.25,
+      "size": [
+        936,
+        581
+      ],
+      "name": "cinema.image_073-1.png",
+      "changed_pixels": 17260,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 42,
+      "before_sha256": "75e19beb95f68c4abb50e5f9f7b668733f40fffa5cf0263b5479c9ff72de5d7d",
+      "after_sha256": "aad305127d34af2d760e58b3f171f0b3f83dc5a4c21e1005d5036e0ccc8640c5"
+    },
+    {
+      "id": "cinema.image_074",
+      "rect": [
+        0.0,
+        0.0,
+        1776.0,
+        936.0
+      ],
+      "scale": 0.625,
+      "size": [
+        1128,
+        603
+      ],
+      "name": "cinema.image_074-0.png",
+      "changed_pixels": 222,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 13,
+      "before_sha256": "d7ec64db8f1ce3ba82ca522afe2f0d813282897d7d8ef238486d2ca61a30aa45",
+      "after_sha256": "48bcf4f9d3a3476559ffe1f568a5a23b90e43d6f1823f7fa144380adbe4b3bb1"
+    },
+    {
+      "id": "cinema.image_074",
+      "rect": [
+        0.0,
+        0.0,
+        1776.0,
+        936.0
+      ],
+      "scale": 1.25,
+      "size": [
+        2238,
+        1188
+      ],
+      "name": "cinema.image_074-1.png",
+      "changed_pixels": 876,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 21,
+      "before_sha256": "ec52b8520d5f1c645427e649ff57226532e27be25729a77111022557eae214b9",
+      "after_sha256": "ebb95c49fe5053ff49e0086cd2cd561487df3ea3f28bb76b7c0fefbd8e535ec3"
+    },
+    {
+      "id": "cinema.image_077",
+      "rect": [
+        0.0,
+        0.0,
+        268.0,
+        240.0
+      ],
+      "scale": 0.625,
+      "size": [
+        186,
+        168
+      ],
+      "name": "cinema.image_077-0.png",
+      "changed_pixels": 453,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 45,
+      "before_sha256": "a90eaaec7ebc9e814270e09724f74042c758b3bf256e5a399913e8df1a139434",
+      "after_sha256": "6ab58213417c394bee337037a2383cf007d215785659fb63b76d0c6593b278f2"
+    },
+    {
+      "id": "cinema.image_077",
+      "rect": [
+        0.0,
+        0.0,
+        268.0,
+        240.0
+      ],
+      "scale": 1.25,
+      "size": [
+        353,
+        318
+      ],
+      "name": "cinema.image_077-1.png",
+      "changed_pixels": 1829,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 46,
+      "before_sha256": "2ca5775f73a9a7fc42cd4a00932aea69518462bdaa1d6aa51a96fad17cb82735",
+      "after_sha256": "4eee0fc19ff00337a850d9ab2cced1569fb54d2bf9ad1f4d490051fd357570e6"
+    },
+    {
+      "id": "cinema.image_078",
+      "rect": [
+        0.0,
+        0.0,
+        217.0,
+        228.0
+      ],
+      "scale": 0.625,
+      "size": [
+        154,
+        161
+      ],
+      "name": "cinema.image_078-0.png",
+      "changed_pixels": 991,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 30,
+      "before_sha256": "b71fec9167b17f9c5685817d3d6eb51d79b01e41c1703e21171c8c8734c0cca2",
+      "after_sha256": "7774b4195422f2b4b317803825857ca229d0dcc6e4e11b518145286afcd5a0ba"
+    },
+    {
+      "id": "cinema.image_078",
+      "rect": [
+        0.0,
+        0.0,
+        217.0,
+        228.0
+      ],
+      "scale": 1.25,
+      "size": [
+        290,
+        303
+      ],
+      "name": "cinema.image_078-1.png",
+      "changed_pixels": 3745,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 41,
+      "before_sha256": "d90bfe4ab9a6dfa13d996569309102f4463cdc9d7e8fba9b6d78dcc62e5854f7",
+      "after_sha256": "5334bfb1ba77a15a3cb89f552b9513533e10127cf7c0be6f3132500892644fe2"
+    },
+    {
+      "id": "footbridge.image_010",
+      "rect": [
+        0.0,
+        0.0,
+        98.0,
+        99.0
+      ],
+      "scale": 0.625,
+      "size": [
+        80,
+        80
+      ],
+      "name": "footbridge.image_010-0.png",
+      "changed_pixels": 218,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 18,
+      "before_sha256": "63ee338c3a5fb5bb97aae408091f0a7c565ee12a61736c14a9a4d638afeb79ab",
+      "after_sha256": "bfba42cc0c1d26732ed6392f40fd788ca9bceed07fdc65b69f81ad60cc275b2e"
+    },
+    {
+      "id": "footbridge.image_010",
+      "rect": [
+        0.0,
+        0.0,
+        98.0,
+        99.0
+      ],
+      "scale": 1.25,
+      "size": [
+        141,
+        142
+      ],
+      "name": "footbridge.image_010-1.png",
+      "changed_pixels": 807,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 20,
+      "before_sha256": "d7218d3748ed239bd10a3cdab10512435ca704e8dd96f9f3d0bb506df12f0867",
+      "after_sha256": "232db0c060a80e905b7b815739e7a596a3632b009706155024e9c4ab97a32a6b"
+    },
+    {
+      "id": "green_car.image_011",
+      "rect": [
+        0.0,
+        0.0,
+        176.0,
+        64.0
+      ],
+      "scale": 0.625,
+      "size": [
+        128,
+        58
+      ],
+      "name": "green_car.image_011-0.png",
+      "changed_pixels": 142,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 11,
+      "before_sha256": "9ac42ff29267ca4cc1b1412a97e25f281468b15b25503252afe67e36f1a92f31",
+      "after_sha256": "becf7dc025257667a95a45c8af0b90ec9e00a6d21c393da1c8882670c01ccf25"
+    },
+    {
+      "id": "green_car.image_011",
+      "rect": [
+        0.0,
+        0.0,
+        176.0,
+        64.0
+      ],
+      "scale": 1.25,
+      "size": [
+        238,
+        98
+      ],
+      "name": "green_car.image_011-1.png",
+      "changed_pixels": 549,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 15,
+      "before_sha256": "7f2d9b4fa68a286d226631efd31b9c06247ccbe33a2e38bf370dfcd0e9ace07d",
+      "after_sha256": "c119d7b0b0da5d067cb565ac3d0c057aa9bae9bf126382032f6a7f7835d86b24"
+    },
+    {
+      "id": "hud.ammo_light",
+      "rect": [
+        0.0,
+        0.0,
+        64.0,
+        96.0
+      ],
+      "scale": 0.625,
+      "size": [
+        58,
+        78
+      ],
+      "name": "hud.ammo_light-0.png",
+      "changed_pixels": 130,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 37,
+      "before_sha256": "6d031702c96c08f659d98c0991495401b0d3d85bef957a272e054fe4348237db",
+      "after_sha256": "2e4e803f24a37bc2897d68c319afddb561da84f6af50edb771516c3ae81f22f3"
+    },
+    {
+      "id": "hud.ammo_light",
+      "rect": [
+        0.0,
+        0.0,
+        64.0,
+        96.0
+      ],
+      "scale": 1.25,
+      "size": [
+        98,
+        138
+      ],
+      "name": "hud.ammo_light-1.png",
+      "changed_pixels": 352,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 45,
+      "before_sha256": "ebd47bd5a32e3ede2d4415fe0da6229e0f906dae2a6cff90eff99921096868c6",
+      "after_sha256": "620ad721e2b1f4ce184f5299c7c65c196be8d3b2c92db169af98c982669b6588"
+    },
+    {
+      "id": "hud.ammo_light_empty",
+      "rect": [
+        0.0,
+        0.0,
+        64.0,
+        96.0
+      ],
+      "scale": 0.625,
+      "size": [
+        58,
+        78
+      ],
+      "name": "hud.ammo_light_empty-0.png",
+      "changed_pixels": 123,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 7,
+      "before_sha256": "9a3bfe9a863217cab308fd1bdb894906f232bac4d85752506db40dfc9e914957",
+      "after_sha256": "a04d2ce014b2a0714faa4961facbd8fe6bb08e81e874f6b7a0f5f4841916e72d"
+    },
+    {
+      "id": "hud.ammo_light_empty",
+      "rect": [
+        0.0,
+        0.0,
+        64.0,
+        96.0
+      ],
+      "scale": 1.25,
+      "size": [
+        98,
+        138
+      ],
+      "name": "hud.ammo_light_empty-1.png",
+      "changed_pixels": 319,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 8,
+      "before_sha256": "9f9b65b0b4b9df954b988c48dc6dd0a9b3e511458e481839f129c67082867ae1",
+      "after_sha256": "63e2ba5c3657fadad93354d5a1d33e8c2a5a63f7451b4841bd73eae074d3e500"
+    },
+    {
+      "id": "hud.continue_panel",
+      "rect": [
+        0.0,
+        0.0,
+        960.0,
+        640.0
+      ],
+      "scale": 0.625,
+      "size": [
+        618,
+        418
+      ],
+      "name": "hud.continue_panel-0.png",
+      "changed_pixels": 3,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 9,
+      "before_sha256": "240721b520b0a4c4375d93293f3ca1db8a75131e6718d8aed961d029ab271df4",
+      "after_sha256": "5d0517ab061fec6097c885110cfea07eae755fce45a10b0ec2f87b31c97bb153"
+    },
+    {
+      "id": "hud.continue_panel",
+      "rect": [
+        0.0,
+        0.0,
+        960.0,
+        640.0
+      ],
+      "scale": 1.25,
+      "size": [
+        1218,
+        818
+      ],
+      "name": "hud.continue_panel-1.png",
+      "changed_pixels": 17,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 16,
+      "before_sha256": "83b61a1bda6139d4869578455f676cfced1ab9f86546cd8c3b7d5bfceafed64e",
+      "after_sha256": "4b2ff03ae0a569f8b97aad6066cd0a8dae9c5d7ec10af90357da1386e9ea452d"
+    },
+    {
+      "id": "hud.life_wick",
+      "rect": [
+        0.0,
+        0.0,
+        72.0,
+        128.0
+      ],
+      "scale": 0.625,
+      "size": [
+        63,
+        98
+      ],
+      "name": "hud.life_wick-0.png",
+      "changed_pixels": 169,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 35,
+      "before_sha256": "60c7df1a915b4d9a837187e294fd8fb0d8ba483ebc0ce5b6e4bd17e71e6303c7",
+      "after_sha256": "5905ffc6e2b7510c40c045e54e20b2aa4599f8179f9c9716ab4004e374fcea22"
+    },
+    {
+      "id": "hud.life_wick",
+      "rect": [
+        0.0,
+        0.0,
+        72.0,
+        128.0
+      ],
+      "scale": 1.25,
+      "size": [
+        108,
+        178
+      ],
+      "name": "hud.life_wick-1.png",
+      "changed_pixels": 626,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 47,
+      "before_sha256": "e5da46875bcd62598255c37b1aae90d57780723279a459ed86b92d746a0f46d0",
+      "after_sha256": "a108401eccc7a84f9aa312171ed75d4f53dfcdefac07389219432a2c37c69615"
+    },
+    {
+      "id": "hud.life_wick_empty",
+      "rect": [
+        0.0,
+        0.0,
+        72.0,
+        128.0
+      ],
+      "scale": 0.625,
+      "size": [
+        63,
+        98
+      ],
+      "name": "hud.life_wick_empty-0.png",
+      "changed_pixels": 142,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 7,
+      "before_sha256": "dfe6b98d22c4fd042432dd3709fc20b742c3458ff3cf829fe85a3f09f7d4a375",
+      "after_sha256": "8fe2df721529a737da802b727610d408c6c12bd378a3284cac7dfd01bb4c62fb"
+    },
+    {
+      "id": "hud.life_wick_empty",
+      "rect": [
+        0.0,
+        0.0,
+        72.0,
+        128.0
+      ],
+      "scale": 1.25,
+      "size": [
+        108,
+        178
+      ],
+      "name": "hud.life_wick_empty-1.png",
+      "changed_pixels": 550,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 12,
+      "before_sha256": "6e45eb31836266adfa9de6ae2fb9c33923a856be2fc3fc82f8ab206fce07b750",
+      "after_sha256": "fb602c136f2363d4b8671252a1a77f159292d1b6b77336f81d1f309ab02271ec"
+    },
+    {
+      "id": "hud.score_seal",
+      "rect": [
+        0.0,
+        0.0,
+        224.0,
+        224.0
+      ],
+      "scale": 0.625,
+      "size": [
+        158,
+        158
+      ],
+      "name": "hud.score_seal-0.png",
+      "changed_pixels": 790,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 39,
+      "before_sha256": "45af803d701fdcfa8f506567109ca9c9db2c326a490e5c5606fd960bcfe2e180",
+      "after_sha256": "a283ec45ec506fb831fed513fbba9a47fc806e2ec36e433bad48a063958d8d35"
+    },
+    {
+      "id": "hud.score_seal",
+      "rect": [
+        0.0,
+        0.0,
+        224.0,
+        224.0
+      ],
+      "scale": 1.25,
+      "size": [
+        298,
+        298
+      ],
+      "name": "hud.score_seal-1.png",
+      "changed_pixels": 2893,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 48,
+      "before_sha256": "7ca87381ef4e550b301e0885cdcc13c6f69e247273f73c5575d8a379a933d440",
+      "after_sha256": "17db83ac09e8ed258c29b0c937fe3c2e281578400b64d8c3bcf87602d16964dc"
+    },
+    {
+      "id": "lantern_base.image_011",
+      "rect": [
+        0.0,
+        0.0,
+        141.0,
+        68.0
+      ],
+      "scale": 0.625,
+      "size": [
+        107,
+        61
+      ],
+      "name": "lantern_base.image_011-0.png",
+      "changed_pixels": 239,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 20,
+      "before_sha256": "5eee220758f8c3e82f1586e1817574ed1bacd1454f6551a8c521de14ac542140",
+      "after_sha256": "801cea2ff0739f6ff100b97d08a6d823324717eaead6abfd6ac6a578598f50a0"
+    },
+    {
+      "id": "lantern_base.image_011",
+      "rect": [
+        0.0,
+        0.0,
+        141.0,
+        68.0
+      ],
+      "scale": 1.25,
+      "size": [
+        195,
+        103
+      ],
+      "name": "lantern_base.image_011-1.png",
+      "changed_pixels": 806,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 43,
+      "before_sha256": "7d91e53f4b316deb813eb50c3c9eddff1e8f4d94284b7c0c55d488e1cea5e366",
+      "after_sha256": "0e14b2998dc01ec818a69c94709f1aec14d66588a236bb1ddbe5e7342a64a1c1"
+    },
+    {
+      "id": "platform.image_014",
+      "rect": [
+        0.0,
+        0.0,
+        55.0,
+        129.0
+      ],
+      "scale": 0.625,
+      "size": [
+        53,
+        99
+      ],
+      "name": "platform.image_014-0.png",
+      "changed_pixels": 204,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 14,
+      "before_sha256": "f80572a58d97c632bc4d3cf2b4b1e1ff29c4374228ce3384bfd956babdd7f847",
+      "after_sha256": "3eb5e17bb682231b991d66bc564987ff4a0ed1e6e1ce2119a46188ed1ff48657"
+    },
+    {
+      "id": "platform.image_014",
+      "rect": [
+        0.0,
+        0.0,
+        55.0,
+        129.0
+      ],
+      "scale": 1.25,
+      "size": [
+        87,
+        180
+      ],
+      "name": "platform.image_014-1.png",
+      "changed_pixels": 785,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 28,
+      "before_sha256": "645f987cfef17167db4422ca42878192f6935d9b6f8a2ed318abc39a3f29da9d",
+      "after_sha256": "cd286d50b56380aa16812d466b22052f9e073aea087b86418bbadf55ea7ab684"
+    },
+    {
+      "id": "plaza.image_007",
+      "rect": [
+        0.0,
+        0.0,
+        318.0,
+        286.0
+      ],
+      "scale": 0.625,
+      "size": [
+        217,
+        197
+      ],
+      "name": "plaza.image_007-0.png",
+      "changed_pixels": 783,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 45,
+      "before_sha256": "cdab234e1785f610e94291e3d3348e31e6364fb722c006960e86e660143ac956",
+      "after_sha256": "32a4924f073f1cd97701e68c263136428b40788f56e020b28e946159d0d56bf5"
+    },
+    {
+      "id": "plaza.image_007",
+      "rect": [
+        0.0,
+        0.0,
+        318.0,
+        286.0
+      ],
+      "scale": 1.25,
+      "size": [
+        416,
+        376
+      ],
+      "name": "plaza.image_007-1.png",
+      "changed_pixels": 2826,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 45,
+      "before_sha256": "e5f00c360938e08f6bdeddc3af87a73c9b14be2148be57dcf87b9682f447641b",
+      "after_sha256": "61ed676f6c8f35f979abd3594317dd5a305cb473a84df286c171e9fefa409646"
+    },
+    {
+      "id": "plaza.image_008",
+      "rect": [
+        0.0,
+        0.0,
+        318.0,
+        286.0
+      ],
+      "scale": 0.625,
+      "size": [
+        217,
+        197
+      ],
+      "name": "plaza.image_008-0.png",
+      "changed_pixels": 703,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 24,
+      "before_sha256": "a442e7094dc3c84c046d33b6071c7091499000ade1dbf43731b0144fa7f85f25",
+      "after_sha256": "b08ddf2d8c57c0167ff6328f354ef2c578af5fa7c212e7a5f5be7e6ede690084"
+    },
+    {
+      "id": "plaza.image_008",
+      "rect": [
+        0.0,
+        0.0,
+        318.0,
+        286.0
+      ],
+      "scale": 1.25,
+      "size": [
+        416,
+        376
+      ],
+      "name": "plaza.image_008-1.png",
+      "changed_pixels": 2625,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 26,
+      "before_sha256": "dc8b56ffa587426d95c8e742b075caf20b929dab2fef93db2969b9b39f5fe74d",
+      "after_sha256": "cdf619634e17fd7a8e301735ef30fcd63c3a28f47f2b0c29490afd8377f5ec40"
+    },
+    {
+      "id": "plaza.image_012",
+      "rect": [
+        0.0,
+        0.0,
+        316.0,
+        282.0
+      ],
+      "scale": 0.625,
+      "size": [
+        216,
+        195
+      ],
+      "name": "plaza.image_012-0.png",
+      "changed_pixels": 737,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 28,
+      "before_sha256": "8a32e4091a402c7c490b402c6d85b30221e92c2b1cfd93e901268f6beeb3b3be",
+      "after_sha256": "3e85f7cb9db3e7875f80f73c3f379683a650408ff586ba0cb6421c7e46767626"
+    },
+    {
+      "id": "plaza.image_012",
+      "rect": [
+        0.0,
+        0.0,
+        316.0,
+        282.0
+      ],
+      "scale": 1.25,
+      "size": [
+        413,
+        371
+      ],
+      "name": "plaza.image_012-1.png",
+      "changed_pixels": 2887,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 39,
+      "before_sha256": "3a22e6c18ecc8815d1d833676bdcbbbb98f5165faa32f7ae046d650c46d83256",
+      "after_sha256": "e5a363dbe64196222c1297bc191ab390901452a0073df594373d9e4773e79804"
+    },
+    {
+      "id": "plaza.image_013",
+      "rect": [
+        0.0,
+        0.0,
+        316.0,
+        282.0
+      ],
+      "scale": 0.625,
+      "size": [
+        216,
+        195
+      ],
+      "name": "plaza.image_013-0.png",
+      "changed_pixels": 671,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 18,
+      "before_sha256": "54f0e541dbedc6ee97d52f18bc53e41606369695fc7da960b5ed8dd6b9aa63ad",
+      "after_sha256": "937f36eb104315a6ed270ff257a475a9e02611347a1c4f0c4cfe06163efec3a9"
+    },
+    {
+      "id": "plaza.image_013",
+      "rect": [
+        0.0,
+        0.0,
+        316.0,
+        282.0
+      ],
+      "scale": 1.25,
+      "size": [
+        413,
+        371
+      ],
+      "name": "plaza.image_013-1.png",
+      "changed_pixels": 2642,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 21,
+      "before_sha256": "743aa7cdc22c62d1ed4c0af1cf79d54b5ec791619ec2fec039c76938947360f3",
+      "after_sha256": "0b05d393ad6b5fc7199c0cce334c96a410300bc6c184d84f3743c2ecb55671c4"
+    },
+    {
+      "id": "plaza.image_017",
+      "rect": [
+        0.0,
+        0.0,
+        314.0,
+        280.0
+      ],
+      "scale": 0.625,
+      "size": [
+        215,
+        193
+      ],
+      "name": "plaza.image_017-0.png",
+      "changed_pixels": 782,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 27,
+      "before_sha256": "ea48fce2be39c7ed35809781807e2da45cc093caeb95df6d628a2aa68bb2ac09",
+      "after_sha256": "6d6f90c63eb4941e8d91e0d83081f9eb9ed2c81a8bbbc84b14c3fc133c5fccd1"
+    },
+    {
+      "id": "plaza.image_017",
+      "rect": [
+        0.0,
+        0.0,
+        314.0,
+        280.0
+      ],
+      "scale": 1.25,
+      "size": [
+        411,
+        368
+      ],
+      "name": "plaza.image_017-1.png",
+      "changed_pixels": 2818,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 49,
+      "before_sha256": "045bb5270a4bc02b70a28e6a38e012e823ddb71e37b1a4853ef86ce5f7ad823e",
+      "after_sha256": "c1ffdb5ea738c9669d1e1ff29093d0607275cdd86af40a2698d2865e37dc25a3"
+    },
+    {
+      "id": "plaza.image_018",
+      "rect": [
+        0.0,
+        0.0,
+        314.0,
+        280.0
+      ],
+      "scale": 0.625,
+      "size": [
+        215,
+        193
+      ],
+      "name": "plaza.image_018-0.png",
+      "changed_pixels": 707,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 18,
+      "before_sha256": "224ebadee91257f25c4dea4f76a564e4cd89e0523054a640ddf46df373c56307",
+      "after_sha256": "c81ec156e16948c577a293b3b34f06edb5bceb03c446b39d76b14a55ebb49fe7"
+    },
+    {
+      "id": "plaza.image_018",
+      "rect": [
+        0.0,
+        0.0,
+        314.0,
+        280.0
+      ],
+      "scale": 1.25,
+      "size": [
+        411,
+        368
+      ],
+      "name": "plaza.image_018-1.png",
+      "changed_pixels": 2563,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 29,
+      "before_sha256": "7605eb3cbe3075df61d72a251cdf7ad78cb7967b5d279edad347ba44e0850d99",
+      "after_sha256": "61388647d818f6d86994704e345e34c9c3056929e047fb6b962e4ae33b50fb76"
+    },
+    {
+      "id": "plaza.image_022",
+      "rect": [
+        0.0,
+        0.0,
+        312.0,
+        274.0
+      ],
+      "scale": 0.625,
+      "size": [
+        213,
+        190
+      ],
+      "name": "plaza.image_022-0.png",
+      "changed_pixels": 745,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 32,
+      "before_sha256": "18fb786965fb6098985104c9910605c13048386a47969fd1cb6ebae9420b5008",
+      "after_sha256": "bddad4066248b4bbe718db4dfd8952a92f7efe42753e193040a553365836103f"
+    },
+    {
+      "id": "plaza.image_022",
+      "rect": [
+        0.0,
+        0.0,
+        312.0,
+        274.0
+      ],
+      "scale": 1.25,
+      "size": [
+        408,
+        361
+      ],
+      "name": "plaza.image_022-1.png",
+      "changed_pixels": 2763,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 42,
+      "before_sha256": "26348dc1e1b46f4816fd6d3b311603f0a9f43179cc7fb23f7b52cbef97121401",
+      "after_sha256": "05b130a3a23bba8cf70e6a0b83df2b31b32c6d2223bebb93bfa1647fcf099945"
+    },
+    {
+      "id": "plaza.image_023",
+      "rect": [
+        0.0,
+        0.0,
+        312.0,
+        274.0
+      ],
+      "scale": 0.625,
+      "size": [
+        213,
+        190
+      ],
+      "name": "plaza.image_023-0.png",
+      "changed_pixels": 661,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 21,
+      "before_sha256": "261462cf0d49ad8d2bede4c81368dbc6fa8f6f062e8d4880bf8b64c06d8035d9",
+      "after_sha256": "b3ebf726e290064616771a48f0aae09cc053f8b76acd8199eeb312cc8815e58e"
+    },
+    {
+      "id": "plaza.image_023",
+      "rect": [
+        0.0,
+        0.0,
+        312.0,
+        274.0
+      ],
+      "scale": 1.25,
+      "size": [
+        408,
+        361
+      ],
+      "name": "plaza.image_023-1.png",
+      "changed_pixels": 2494,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 27,
+      "before_sha256": "1fcc1fc2f195801ff011435203fa28588198d09d99d9611048297e818e2e410c",
+      "after_sha256": "dc5c894dd7b7e3a1009364682f7e16a6ad4e6a2d70f96dda0a3fb27b6d8bdb75"
+    },
+    {
+      "id": "plaza.image_027",
+      "rect": [
+        0.0,
+        0.0,
+        308.0,
+        270.0
+      ],
+      "scale": 0.625,
+      "size": [
+        211,
+        187
+      ],
+      "name": "plaza.image_027-0.png",
+      "changed_pixels": 746,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 37,
+      "before_sha256": "b3f88955e5838a44c4a28029b2a302530d71b3fb21d65be90a8368b5d39f94ba",
+      "after_sha256": "8d5b90226b40cb4166649fe21809042a38e59554f6968ca39ae41d0c9fa772a8"
+    },
+    {
+      "id": "plaza.image_027",
+      "rect": [
+        0.0,
+        0.0,
+        308.0,
+        270.0
+      ],
+      "scale": 1.25,
+      "size": [
+        403,
+        356
+      ],
+      "name": "plaza.image_027-1.png",
+      "changed_pixels": 2803,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 37,
+      "before_sha256": "4a745124a0cc90c88ffc3d30560ece096ca7cd62f88acafb42ab38c31040e8d3",
+      "after_sha256": "7e5daa265a6f62b33aed71b1670ec691a2fda1feea7af01572527053324e7ded"
+    },
+    {
+      "id": "plaza.image_028",
+      "rect": [
+        0.0,
+        0.0,
+        308.0,
+        270.0
+      ],
+      "scale": 0.625,
+      "size": [
+        211,
+        187
+      ],
+      "name": "plaza.image_028-0.png",
+      "changed_pixels": 650,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 21,
+      "before_sha256": "834ce0758a008083a76b68002277cb0a7bb12bf5a57c59f7104373701399ce7b",
+      "after_sha256": "56be1432d0fc97fef021ab3429cb35467d18607bd99ad8296beb6a400d17331a"
+    },
+    {
+      "id": "plaza.image_028",
+      "rect": [
+        0.0,
+        0.0,
+        308.0,
+        270.0
+      ],
+      "scale": 1.25,
+      "size": [
+        403,
+        356
+      ],
+      "name": "plaza.image_028-1.png",
+      "changed_pixels": 2539,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 21,
+      "before_sha256": "cf96f5e0400564248b2fa6d20e8ee28a6a748df67a5fb5f0a360e8f261074e35",
+      "after_sha256": "cf00353b6fb7bad7b1c20c4457a588ced1d87683b9d3a4c373d196e8743d9367"
+    },
+    {
+      "id": "plaza.image_032",
+      "rect": [
+        0.0,
+        0.0,
+        304.0,
+        266.0
+      ],
+      "scale": 0.625,
+      "size": [
+        208,
+        185
+      ],
+      "name": "plaza.image_032-0.png",
+      "changed_pixels": 734,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 35,
+      "before_sha256": "66039f3ee6467865824aba9cb61d4da177b9fb6d2387ba5ed28fd0e7f644e2c7",
+      "after_sha256": "25200c3f69b4caa752ae4f1a1fedb9abc32f9c7c1230b1cf6b7b39f127af8bb4"
+    },
+    {
+      "id": "plaza.image_032",
+      "rect": [
+        0.0,
+        0.0,
+        304.0,
+        266.0
+      ],
+      "scale": 1.25,
+      "size": [
+        398,
+        351
+      ],
+      "name": "plaza.image_032-1.png",
+      "changed_pixels": 2715,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 44,
+      "before_sha256": "66e4167ed20ec4a1da62aa8d5b2217d52b52897a1b24fe09e5c53a3d075f91c2",
+      "after_sha256": "306875e860fc268f581d02db10bb4a828e2076a84b67200a00c9e1ada28fccb6"
+    },
+    {
+      "id": "plaza.image_033",
+      "rect": [
+        0.0,
+        0.0,
+        304.0,
+        266.0
+      ],
+      "scale": 0.625,
+      "size": [
+        208,
+        185
+      ],
+      "name": "plaza.image_033-0.png",
+      "changed_pixels": 636,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 20,
+      "before_sha256": "85fe10ab02d48d6ff09b0fd26f4c9c5bea4b3f8ffdc561633803d14c6d21f57a",
+      "after_sha256": "3168f950f121dafa504516fa873ca87d7e5c5ba66ee7a4c5df9e214e0dff9ea0"
+    },
+    {
+      "id": "plaza.image_033",
+      "rect": [
+        0.0,
+        0.0,
+        304.0,
+        266.0
+      ],
+      "scale": 1.25,
+      "size": [
+        398,
+        351
+      ],
+      "name": "plaza.image_033-1.png",
+      "changed_pixels": 2422,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 27,
+      "before_sha256": "cb9d4bf75283c55e8b9087b241cf94717d4b47c08fa80be55517037e6f220490",
+      "after_sha256": "365c9af89e4f1c91bd3f8e82fe94d630d0fe5a56ca1efa0f4764106a38a7126b"
+    },
+    {
+      "id": "plaza.image_037",
+      "rect": [
+        0.0,
+        0.0,
+        300.0,
+        262.0
+      ],
+      "scale": 0.625,
+      "size": [
+        206,
+        182
+      ],
+      "name": "plaza.image_037-0.png",
+      "changed_pixels": 715,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 33,
+      "before_sha256": "73d5ecf1db9f9474b80742e86655513554904a7393fc353ca66b01e0c264169e",
+      "after_sha256": "4c5672e602473370b8745921a34148e785d773370495872af1991c36c0d0f588"
+    },
+    {
+      "id": "plaza.image_037",
+      "rect": [
+        0.0,
+        0.0,
+        300.0,
+        262.0
+      ],
+      "scale": 1.25,
+      "size": [
+        393,
+        346
+      ],
+      "name": "plaza.image_037-1.png",
+      "changed_pixels": 2698,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 38,
+      "before_sha256": "38331800eb0602bbf921c42a7a67737bc6636dabf8c6131eb57f3b2027e0381e",
+      "after_sha256": "ee596b633bbdce5dd8b23ce1cb3b7c0fd1d6df37fb5282481f16dacf17581dba"
+    },
+    {
+      "id": "plaza.image_038",
+      "rect": [
+        0.0,
+        0.0,
+        300.0,
+        262.0
+      ],
+      "scale": 0.625,
+      "size": [
+        206,
+        182
+      ],
+      "name": "plaza.image_038-0.png",
+      "changed_pixels": 642,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 19,
+      "before_sha256": "444662f2b5f425ddd51dafd89be1a20f602f1cbfff5515885c4ad14d4257d982",
+      "after_sha256": "9e84255e4b09fb5fbd70300304e5ce6fa38b7231144485474948e04da786642e"
+    },
+    {
+      "id": "plaza.image_038",
+      "rect": [
+        0.0,
+        0.0,
+        300.0,
+        262.0
+      ],
+      "scale": 1.25,
+      "size": [
+        393,
+        346
+      ],
+      "name": "plaza.image_038-1.png",
+      "changed_pixels": 2413,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 25,
+      "before_sha256": "91eaa739987ef2d6fcf937c246e0a1fb9e16cdfc5c7553dce3c41a07593e337a",
+      "after_sha256": "89c3b3d71da0c1c936c62b48201295994fd36513f03d1abd65bd5f193301ef2d"
+    },
+    {
+      "id": "plaza.image_042",
+      "rect": [
+        0.0,
+        0.0,
+        294.0,
+        256.0
+      ],
+      "scale": 0.625,
+      "size": [
+        202,
+        178
+      ],
+      "name": "plaza.image_042-0.png",
+      "changed_pixels": 698,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 37,
+      "before_sha256": "5715156085309b042c4a8f9718cfb7740cf918c45f815dd88d312859569d8553",
+      "after_sha256": "696adacc1f72ef34e2056fd065571acc576453c1cd9b971e265146f3a76997c2"
+    },
+    {
+      "id": "plaza.image_042",
+      "rect": [
+        0.0,
+        0.0,
+        294.0,
+        256.0
+      ],
+      "scale": 1.25,
+      "size": [
+        386,
+        338
+      ],
+      "name": "plaza.image_042-1.png",
+      "changed_pixels": 2671,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 37,
+      "before_sha256": "ff2758ca6bd76302d5030fae12e9148935305a84f3f802092249878ad301c99a",
+      "after_sha256": "b11765d47fe530f25102798ceb4d769c53cda4ba161c1d303efba918df869147"
+    },
+    {
+      "id": "plaza.image_043",
+      "rect": [
+        0.0,
+        0.0,
+        294.0,
+        256.0
+      ],
+      "scale": 0.625,
+      "size": [
+        202,
+        178
+      ],
+      "name": "plaza.image_043-0.png",
+      "changed_pixels": 625,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 24,
+      "before_sha256": "a5a268d1a0b798f3e2b73109138bebe5a7d4a2f9dc1615633456f85be5c564eb",
+      "after_sha256": "4323f33848628a3b5dcf2f452f4643b7ff6939375be3cdc8b84d0ba51f5b6136"
+    },
+    {
+      "id": "plaza.image_043",
+      "rect": [
+        0.0,
+        0.0,
+        294.0,
+        256.0
+      ],
+      "scale": 1.25,
+      "size": [
+        386,
+        338
+      ],
+      "name": "plaza.image_043-1.png",
+      "changed_pixels": 2395,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 25,
+      "before_sha256": "240a9e7d5a13f560586f4f6c944428c75974acb1cc2aab9dbad052f97e67b9f2",
+      "after_sha256": "afc1e1197c038516fdd8de8c3d52ce2384574bce9e4c0d94234aac629b9ef559"
+    },
+    {
+      "id": "puddle.image_000",
+      "rect": [
+        0.0,
+        0.0,
+        780.0,
+        156.0
+      ],
+      "scale": 0.625,
+      "size": [
+        506,
+        116
+      ],
+      "name": "puddle.image_000-0.png",
+      "changed_pixels": 19,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 1,
+      "before_sha256": "793d264362b4afce2be9c4c15ccc51b31f3ca4fc902687441e447d7f2537232e",
+      "after_sha256": "d2cf16575f844cb57798089597e44af33935f8ab93f9c6ad0ba1c15c08426311"
+    },
+    {
+      "id": "puddle.image_000",
+      "rect": [
+        0.0,
+        0.0,
+        780.0,
+        156.0
+      ],
+      "scale": 1.25,
+      "size": [
+        993,
+        213
+      ],
+      "name": "puddle.image_000-1.png",
+      "changed_pixels": 149,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 1,
+      "before_sha256": "bb7e0c568b8a89f1a664d33436952037914d2fda3b192ee5edba6c4505006c82",
+      "after_sha256": "4ed885b7954cd4950c38a8033db4572a990ba1527ae8217c4df929e9c1e1981f"
+    },
+    {
+      "id": "puddle.image_003",
+      "rect": [
+        0.0,
+        0.0,
+        360.0,
+        360.0
+      ],
+      "scale": 0.625,
+      "size": [
+        243,
+        243
+      ],
+      "name": "puddle.image_003-0.png",
+      "changed_pixels": 304,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 18,
+      "before_sha256": "952828eda96676c42b9cef67edf076179adff9d95bac5227d68f0c2dd74c9953",
+      "after_sha256": "e36dff3f52310898cbf1a430a31abc1cc4ef990ee3526d2922c13c2b883e2189"
+    },
+    {
+      "id": "puddle.image_003",
+      "rect": [
+        0.0,
+        0.0,
+        360.0,
+        360.0
+      ],
+      "scale": 1.25,
+      "size": [
+        468,
+        468
+      ],
+      "name": "puddle.image_003-1.png",
+      "changed_pixels": 1112,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 15,
+      "before_sha256": "6120d541733f8ce95aaa8f720386fcad84211f447731c44d1f4ab78a8e5201f0",
+      "after_sha256": "0b4c10a08b1183b1a729df38314e4fb72879c139e4899b182a71e7a7f703e792"
+    },
+    {
+      "id": "video_shop.image_010",
+      "rect": [
+        0.0,
+        0.0,
+        301.0,
+        91.0
+      ],
+      "scale": 0.625,
+      "size": [
+        207,
+        75
+      ],
+      "name": "video_shop.image_010-0.png",
+      "changed_pixels": 214,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 14,
+      "before_sha256": "c1072816032527940d4e679c531e7204f59cf971ad0f2b8608fbe7e7a63fbf11",
+      "after_sha256": "83808dfc9f3773d14a2c299549adb20d4b0c53ece6a963d84fc6396621a1ae37"
+    },
+    {
+      "id": "video_shop.image_010",
+      "rect": [
+        0.0,
+        0.0,
+        301.0,
+        91.0
+      ],
+      "scale": 1.25,
+      "size": [
+        395,
+        132
+      ],
+      "name": "video_shop.image_010-1.png",
+      "changed_pixels": 798,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 39,
+      "before_sha256": "1c458f9d6ded926e0caee27adc236c135f0af82951da253c21f832a9cdd1bad5",
+      "after_sha256": "43a1b978f701caf92d0f57c04df04b3ce218c8cd72b3fcc7ad7ac9b4670e0ee4"
+    },
+    {
+      "id": "waiting_room.image_015",
+      "rect": [
+        0.0,
+        0.0,
+        161.0,
+        52.0
+      ],
+      "scale": 0.625,
+      "size": [
+        119,
+        51
+      ],
+      "name": "waiting_room.image_015-0.png",
+      "changed_pixels": 96,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 14,
+      "before_sha256": "239f1f74c4b2e3ad84da172edd7b71fd2fda6b93071ca32051999a7b385910b9",
+      "after_sha256": "2b5b64c83541f8e70a7d77e02c89f08c5c13ba577fc35b27c07f223aca7a375e"
+    },
+    {
+      "id": "waiting_room.image_015",
+      "rect": [
+        0.0,
+        0.0,
+        161.0,
+        52.0
+      ],
+      "scale": 1.25,
+      "size": [
+        220,
+        83
+      ],
+      "name": "waiting_room.image_015-1.png",
+      "changed_pixels": 369,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 43,
+      "before_sha256": "ad507daa02949d4e70546f32051792e8af8f6ea95103a548e6acb7dbe27a84aa",
+      "after_sha256": "974f22c843693d9400c485465e2057dbbe56c2885e146cc204a2fd5aea551f37"
+    },
+    {
+      "id": "waiting_room.image_017",
+      "rect": [
+        0.0,
+        0.0,
+        917.0,
+        753.0
+      ],
+      "scale": 0.625,
+      "size": [
+        592,
+        489
+      ],
+      "name": "waiting_room.image_017-0.png",
+      "changed_pixels": 765,
+      "minimum_rgb_byte_delta": -9,
+      "maximum_rgb_byte_delta": 8,
+      "before_sha256": "f5a8278125e58310eb898b5fe65f5b4e9563765ebffc8ad068e8a1e9088f70c1",
+      "after_sha256": "e38b8e44f09c9c3735dfb40804e2dcb169f382220a48bceadb04dd3a40041f80"
+    },
+    {
+      "id": "waiting_room.image_017",
+      "rect": [
+        0.0,
+        0.0,
+        917.0,
+        753.0
+      ],
+      "scale": 1.25,
+      "size": [
+        1165,
+        960
+      ],
+      "name": "waiting_room.image_017-1.png",
+      "changed_pixels": 2731,
+      "minimum_rgb_byte_delta": -12,
+      "maximum_rgb_byte_delta": 12,
+      "before_sha256": "3b185579afb03014ac4c9252630c65683809a964736a367d1a502a4470f779a7",
+      "after_sha256": "6a9048fe22551ecf950623c974c73bbf9d12ef291f972f28f9195d686c1a9bbb"
+    }
+  ],
+  "blocker_shots": {
+    "left": {
+      "blocker": {
+        "alpha": 1.0,
+        "point": [
+          14.5,
+          3.5
+        ],
+        "result": {
+          "hit": false,
+          "kind": "blocker",
+          "ok": true
+        }
+      },
+      "miss": {
+        "alpha": 0.062745101749897,
+        "point": [
+          47.5,
+          3.5
+        ],
+        "result": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        }
+      }
+    },
+    "right": {
+      "blocker": {
+        "alpha": 0.996078431606293,
+        "point": [
+          1632.5,
+          3.5
+        ],
+        "result": {
+          "hit": false,
+          "kind": "blocker",
+          "ok": true
+        }
+      },
+      "miss": {
+        "alpha": 0.0,
+        "point": [
+          312.5,
+          3.5
+        ],
+        "result": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        }
+      }
+    }
+  },
+  "route": {
+    "build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11",
+    "chapter_transition_tick": 6821,
+    "counters": {
+      "ammo": 11.0,
+      "lives": 4,
+      "rescued": 7,
+      "score": 9275,
+      "shots": 109
+    },
+    "end_tick": 13002,
+    "ending": {
+      "city_texture_preloaded": false,
+      "city_tick": 9954,
+      "light_tick": 9522,
+      "natural_result_tick": 13002,
+      "quote_tick": 12390,
+      "skip": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "result": "clear",
+        "result_tick": 9523,
+        "start_tick": 9522
+      },
+      "skip_from_city": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "result": "clear",
+        "result_tick": 10075,
+        "start_tick": 10074
+      },
+      "skip_from_quote": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "result": "clear",
+        "result_tick": 12391,
+        "start_tick": 12390
+      },
+      "skip_from_wide": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "result": "clear",
+        "result_tick": 10891,
+        "start_tick": 10890
+      },
+      "wide_texture_preloaded": false,
+      "wide_tick": 10770
+    },
+    "failure_retries": [
+      {
+        "after_retry": {
+          "ammo": 12.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 0
+        },
+        "before_retry": {
+          "ammo": 6.0,
+          "lives": 0,
+          "rescued": 7,
+          "score": 8575,
+          "shots": 102
+        },
+        "defeat_tick": 10252,
+        "first_shot": {
+          "ammo": 11.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 1
+        },
+        "station": 15
+      }
+    ],
+    "failures": [],
+    "gpu_capture": false,
+    "handoffs": [
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 3875,
+          "shots": 39
+        },
+        "station": "stall",
+        "tick": 5713
+      },
+      {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 4475,
+          "shots": 49
+        },
+        "station": "video_shop",
+        "tick": 6222
+      },
+      {
+        "counters": {
+          "ammo": 7.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4775,
+          "shots": 53
+        },
+        "station": "footbridge",
+        "tick": 6506
+      },
+      {
+        "counters": {
+          "ammo": 4.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4975,
+          "shots": 56
+        },
+        "station": "plaza",
+        "tick": 6619
+      },
+      {
+        "counters": {
+          "ammo": 5.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 6075,
+          "shots": 67
+        },
+        "station": "ticket_office",
+        "tick": 6911
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6375,
+          "shots": 72
+        },
+        "station": "poster_hall",
+        "tick": 7170
+      },
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6575,
+          "shots": 75
+        },
+        "station": "auditorium",
+        "tick": 7402
+      },
+      {
+        "counters": {
+          "ammo": 5.0,
+          "lives": 4,
+          "rescued": 4,
+          "score": 6875,
+          "shots": 79
+        },
+        "station": "projection_booth",
+        "tick": 7661
+      },
+      {
+        "counters": {
+          "ammo": 1.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 7175,
+          "shots": 83
+        },
+        "station": "screen_stage",
+        "tick": 7920
+      },
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 7575,
+          "shots": 87
+        },
+        "station": "waiting_room",
+        "tick": 8067
+      },
+      {
+        "counters": {
+          "ammo": 4.0,
+          "lives": 4,
+          "rescued": 6,
+          "score": 7875,
+          "shots": 92
+        },
+        "station": "platform",
+        "tick": 8374
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8175,
+          "shots": 96
+        },
+        "station": "green_car",
+        "tick": 8681
+      },
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8375,
+          "shots": 99
+        },
+        "station": "lantern_base",
+        "tick": 8988
+      },
+      {
+        "counters": {
+          "ammo": 6.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8575,
+          "shots": 102
+        },
+        "station": "workbench",
+        "tick": 9256
+      }
+    ],
+    "old_chapter_poses_rejected": true,
+    "passed": true,
+    "pullback_tick": 9202,
+    "reached": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "reloads": 9,
+    "replay": {
+      "counters": {
+        "ammo": 11.0,
+        "lives": 4,
+        "rescued": 7,
+        "score": 9275,
+        "shots": 109
+      },
+      "end_tick": 13002,
+      "inputs": 118
+    },
+    "result": "clear",
+    "train_transition_tick": 7977
+  },
+  "rendered_frames_with_byte_difference": 100,
+  "preview_ids": [
+    "plaza.image_017",
+    "hud.score_seal",
+    "hud.life_wick",
+    "cinema.image_077",
+    "hud.ammo_light",
+    "plaza.image_007",
+    "plaza.image_032",
+    "lantern_base.image_011",
+    "waiting_room.image_015",
+    "alley.scene_mid_left",
+    "cinema.image_073",
+    "plaza.image_022"
+  ],
+  "raster_comparison_sha256": "c8aa3468eef0fb76f6b388aa61ec05de21a38d2ae9243333773fe3683aaf4053",
+  "probes_sha256": "24d48e7874f5107269a1e159f77ffdc4287137eeef4e9deeccb5275d2a622078",
+  "controls": {
+    "build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11",
+    "captures": true,
+    "failures": [],
+    "opening": true,
+    "passed": true,
+    "udp_shots": 3
+  },
+  "display": {
+    "build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11",
+    "captures": true,
+    "failures": [],
+    "passed": true,
+    "udp_shots": 19
+  },
+  "combat": {
+    "build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11",
+    "checks": {
+      "calibrated_white_border": {
+        "ammo": 8.0,
+        "bound_shapes": 0,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        },
+        "rescued": 1,
+        "score": 3500,
+        "submission": "submission:18:tick:5643",
+        "tick": 5644
+      },
+      "dark_band": {
+        "ammo": 9.0,
+        "bound_shapes": 0,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        },
+        "rescued": 1,
+        "score": 3500,
+        "submission": "submission:13:tick:5634",
+        "tick": 5635
+      },
+      "footbridge.bridge.bicycle": {
+        "ammo": 5.0,
+        "bound_shapes": 11,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        },
+        "rescued": 2,
+        "score": 4775,
+        "submission": "submission:8:tick:6515",
+        "tick": 6516
+      },
+      "footbridge.bridge.cyclist_resident": {
+        "ammo": 6.0,
+        "bound_shapes": 11,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        },
+        "rescued": 2,
+        "score": 4775,
+        "submission": "submission:3:tick:6506",
+        "tick": 6507
+      },
+      "frame_packets": [
+        "FRAME 24,48"
+      ],
+      "freed_paper": {
+        "ammo": 1.0,
+        "bound_shapes": 17,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        },
+        "rescued": 7,
+        "score": 7925,
+        "submission": "submission:13:tick:8392",
+        "tick": 8393
+      },
+      "hostile_cart": {
+        "ammo": 4.0,
+        "bound_shapes": 11,
+        "command": "SHOT",
+        "reply": {
+          "hit": true,
+          "kind": "primary",
+          "ok": true,
+          "target": "footbridge.bridge.cyclist"
+        },
+        "rescued": 2,
+        "score": 4875,
+        "submission": "submission:13:tick:6524",
+        "tick": 6525
+      },
+      "http_border": {
+        "body": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true,
+          "score": 7925.0
+        },
+        "result": 0,
+        "status": 200
+      },
+      "http_offscreen": {
+        "body": {
+          "ok": true,
+          "score": 7925.0
+        },
+        "result": 0,
+        "status": 200
+      },
+      "offscreen": {
+        "ammo": 8.0,
+        "bound_shapes": 0,
+        "command": "RELOAD",
+        "reply": {
+          "ok": true
+        },
+        "rescued": 1,
+        "score": 3500,
+        "submission": "submission:21:tick:5644",
+        "tick": 5645
+      },
+      "protected_paper": {
+        "ammo": 3.0,
+        "bound_shapes": 18,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "protected",
+          "ok": true
+        },
+        "rescued": 6,
+        "score": 7825,
+        "submission": "submission:3:tick:8374",
+        "tick": 8375
+      },
+      "rescue_ink": {
+        "ammo": 2.0,
+        "bound_shapes": 18,
+        "command": "SHOT",
+        "reply": {
+          "hit": true,
+          "kind": "primary",
+          "ok": true,
+          "target": "platform.platform.rescue"
+        },
+        "rescued": 7,
+        "score": 7925,
+        "submission": "submission:8:tick:8383",
+        "tick": 8384
+      },
+      "tadpole_1": {
+        "ammo": 11.0,
+        "bound_shapes": 8,
+        "command": "SHOT",
+        "reply": {
+          "hit": true,
+          "kind": "primary",
+          "ok": true,
+          "target": "puddle.puddle.tadpole1"
+        },
+        "rescued": 1,
+        "score": 3600,
+        "submission": "submission:28:tick:5673",
+        "tick": 5674
+      },
+      "tadpole_2": {
+        "ammo": 10.0,
+        "bound_shapes": 6,
+        "command": "SHOT",
+        "reply": {
+          "hit": true,
+          "kind": "weak",
+          "ok": true,
+          "target": "puddle.puddle.tadpole2"
+        },
+        "rescued": 1,
+        "score": 3725,
+        "submission": "submission:33:tick:5682",
+        "tick": 5683
+      },
+      "tadpole_3": {
+        "ammo": 9.0,
+        "bound_shapes": 4,
+        "command": "SHOT",
+        "reply": {
+          "hit": true,
+          "kind": "primary",
+          "ok": true,
+          "target": "puddle.puddle.tadpole3"
+        },
+        "rescued": 1,
+        "score": 3825,
+        "submission": "submission:38:tick:5691",
+        "tick": 5692
+      },
+      "tadpole_tail": {
+        "ammo": 11.0,
+        "bound_shapes": 8,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        },
+        "rescued": 1,
+        "score": 3500,
+        "submission": "submission:3:tick:5616",
+        "tick": 5617
+      },
+      "transition": {
+        "ammo": 9.0,
+        "bound_shapes": 2,
+        "command": "SHOT",
+        "reply": {
+          "ok": false,
+          "reason": "not_running"
+        },
+        "rescued": 1,
+        "score": 3825,
+        "submission": "submission:41:tick:5692",
+        "tick": 5693
+      },
+      "white_border": {
+        "ammo": 10.0,
+        "bound_shapes": 0,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        },
+        "rescued": 1,
+        "score": 3500,
+        "submission": "submission:8:tick:5625",
+        "tick": 5626
+      }
+    },
+    "failures": [],
+    "passed": true,
+    "udp_sequences": 15
+  },
+  "smoke": {
+    "build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11",
+    "http_error": 0,
+    "level_player_ready": true,
+    "udp_errors": []
+  },
+  "window_resize": {
+    "passes": 6,
+    "triggers": 37,
+    "max_mapping_error_px": 0.00013647876039613,
+    "same_frame_resize": {
+      "from": [
+        960,
+        720
+      ],
+      "old_scale": 0.45500000521668,
+      "rendered_scale_before_udp": 0.45500000521668,
+      "to": [
+        1120,
+        700
+      ],
+      "trigger_before_draw": true
+    }
+  },
+  "cinema_weak_shots": {
+    "build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11",
+    "passed": true,
+    "shots": [
+      {
+        "point": [
+          538.5,
+          294.5
+        ],
+        "reply": {
+          "hit": true,
+          "kind": "weak",
+          "ok": true,
+          "target": "cinema.ticket_office.tape"
+        },
+        "target": "cinema.ticket_office.tape",
+        "tick": 7005
+      },
+      {
+        "point": [
+          1262.5,
+          458.5
+        ],
+        "reply": {
+          "hit": true,
+          "kind": "weak",
+          "ok": true,
+          "target": "cinema.poster_hall.umbrella"
+        },
+        "target": "cinema.poster_hall.umbrella",
+        "tick": 7350
+      }
+    ]
+  },
+  "unit_tests_passed": 26,
+  "dragon": {
+    "summary": {
+      "poses": 30,
+      "radius_passed": 30,
+      "hud_clear": 30,
+      "hidden_hittable_pixels": 0,
+      "C03_frames_passed": 11,
+      "min_radius_by_target_px": {
+        "body_08": 42.74,
+        "body_07": 43.76,
+        "body_06": 44.37,
+        "body_05": 45.01,
+        "body_04": 45.58,
+        "body_03": 46.33,
+        "body_02": 46.67,
+        "body_01": 47.15,
+        "dragon.mouth": 42.67
+      }
+    },
+    "checks_sha256": "433c175168116edc2428f43e6c518d22f61f177abd8f4debce4bd52a59a2ce8c"
+  },
+  "screen_boss": {
+    "summary": {
+      "targets": 4,
+      "radius_passed": 4,
+      "hud_clear_at_camera_extremes": 4,
+      "hit_pixels_outside_visual_alpha": 0,
+      "positive_warm_light_swaps": 3,
+      "C03_frames_passed": 4
+    },
+    "checks_sha256": "597d47844ad94772a37a4f7856d64b4c02c6a3f28046e42705361bcf9aaa423b"
+  },
+  "c06": {
+    "summary": {
+      "normal_numeric_passed": 20,
+      "normal_samples": 20,
+      "hardened_stamp_proxy_samples": 0,
+      "hardened_eye_samples": 5,
+      "hardened_eye_numeric_passed": 5,
+      "warning_samples": 8,
+      "warning_visible_at_eighth": 8,
+      "brightness_samples": 33,
+      "brightness_passed": 33
+    },
+    "checks_sha256": "461d363f0fa0518eb5680e0f714b4d3ced4cf87363665a979fc83d79a0f69428"
+  },
+  "tracking_C13": {
+    "display_frames": 101,
+    "admissible": 606,
+    "passed_projections": 606,
+    "outside_geometry_contract": 202,
+    "max_admissible_corner_error_camera_px": 0.749,
+    "negative_controls": {
+      "missing_border_rejected": true,
+      "solid_white_rectangle_rejected": true
+    },
+    "physical_capture": "pending"
+  },
+  "scanned_color_images": 256,
+  "color_images_with_adjacent_black_pixels": 0
+}

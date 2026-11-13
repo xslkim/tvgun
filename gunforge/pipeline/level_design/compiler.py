@@ -93,7 +93,7 @@ def validate(source, resource_root=ROOT, schema_only=False):
   ammo = source['initial_resources'].get(controls['ammo_resource'])
   if ammo is None or ammo < 0:
    raise CompileError('ammo policy needs a declared nonnegative counter')
- if ('magazine' in controls and 'ammo_resource' not in controls) or ('reload_ms' in controls and 'magazine' not in controls):
+ if ('magazine' in controls and 'ammo_resource' not in controls) or (('reload_ms' in controls or controls.get('auto_reload')) and 'magazine' not in controls):
   raise CompileError('reload policy needs an ammo counter and magazine')
  for id,cue in source['cues'].items():
   if cue['resource'] not in resources or resources[cue['resource']]['kind']!='audio':raise CompileError('cue needs registered audio resource: '+id)

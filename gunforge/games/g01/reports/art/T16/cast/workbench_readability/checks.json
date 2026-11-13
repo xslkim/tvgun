@@ -1,0 +1,445 @@
+{
+  "after": {
+    "ammo": 10,
+    "lives": 4,
+    "rescued": 7,
+    "score": 9275,
+    "shots": 110
+  },
+  "before": {
+    "ammo": 6,
+    "lives": 4,
+    "rescued": 7,
+    "score": 8575,
+    "shots": 102
+  },
+  "build_id": "85d234e0f4b4f2865881d2e355bf897f82d2af93ae6f6950c6431e5adada59c6",
+  "crossing": {
+    "opaque_pixels": 303,
+    "overlap_pixels": 363,
+    "owned_by_locked_third_pixels": 363,
+    "shot": {
+      "hit": false,
+      "kind": "invalid",
+      "ok": true
+    },
+    "shot_point": [
+      783.5,
+      318.5
+    ],
+    "opaque_pixels_changed_by_cue": 0,
+    "peak_yprime_difference_under_third": 0.0137
+  },
+  "failures": [],
+  "gpu": "NVIDIA GeForce RTX 3080 Ti",
+  "next_section": "lantern_base.ending_light",
+  "passed": true,
+  "samples": [
+    {
+      "bright_opacity": 1.0,
+      "bright_tick": 9393,
+      "covered_pixels": 0,
+      "dim_marker": [
+        869.898742675781,
+        180.707321166992
+      ],
+      "dim_opacity": 0.501272135151638,
+      "dim_tick": 9414,
+      "hit": {
+        "hit": true,
+        "kind": "weak",
+        "ok": true,
+        "target": "lantern_base.forget.stroke_1"
+      },
+      "hittable_pixels": 5248,
+      "number": 1,
+      "stem": "stroke_01",
+      "effective_radius_px": 40.8,
+      "effective_radius_passed": true,
+      "C06_ink": {
+        "status": "pending",
+        "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+        "details": {
+          "contrast": 0.46672941176470584
+        }
+      },
+      "ink_numeric_passed": true,
+      "dim_cue_pixels_changed_at_eighth": 31,
+      "dim_cue_peak_yprime_difference_at_eighth": 0.3551,
+      "dim_marker_yprime_difference": 0.3455,
+      "C03": {
+        "bright": {
+          "status": "pass",
+          "reason": "Visible alpha-weighted encoded luminance",
+          "details": {
+            "clipped_fraction": 0.009161806036806037
+          }
+        },
+        "dim": {
+          "status": "pass",
+          "reason": "Visible alpha-weighted encoded luminance",
+          "details": {
+            "clipped_fraction": 0.009095032532532533
+          }
+        }
+      },
+      "sha256": {
+        "bright": "a2f678262339bd3ddf6bcc8be9491a0a7ad7889fd4ae2954045fdc950f29d9e5",
+        "dim": "edad1950468f252701748976fd66377b05bee2965ce4c7cabcc4bae39ef0ee55",
+        "cue_off": "87fdb7fb54d62b8285c160c97ba1a3a909c7772a2f0906e7a161d05c948eb62f",
+        "background": "d21ff1fb25870b99a2bb14ad0ed9ef94de1c9b7b838fb0e9ba1e3a20f0f8d21f",
+        "ink_mask": "941ea4711ea520420aee7bbab8bbfeeeb37f6d6dc8af17ff2b1dc8f670c6f75e"
+      }
+    },
+    {
+      "bright_opacity": 1.0,
+      "bright_tick": 9415,
+      "covered_pixels": 363,
+      "dim_marker": [
+        723.883544921875,
+        312.243621826172
+      ],
+      "dim_opacity": 0.501272135151638,
+      "dim_tick": 9436,
+      "hit": {
+        "hit": true,
+        "kind": "weak",
+        "ok": true,
+        "target": "lantern_base.forget.stroke_2"
+      },
+      "hittable_pixels": 10678,
+      "number": 2,
+      "stem": "stroke_02",
+      "effective_radius_px": 55.97,
+      "effective_radius_passed": true,
+      "C06_ink": {
+        "status": "pending",
+        "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+        "details": {
+          "contrast": 0.4471215686274509
+        }
+      },
+      "ink_numeric_passed": true,
+      "dim_cue_pixels_changed_at_eighth": 45,
+      "dim_cue_peak_yprime_difference_at_eighth": 0.3043,
+      "dim_marker_yprime_difference": 0.3259,
+      "C03": {
+        "bright": {
+          "status": "pass",
+          "reason": "Visible alpha-weighted encoded luminance",
+          "details": {
+            "clipped_fraction": 0.016213328713328715
+          }
+        },
+        "dim": {
+          "status": "pass",
+          "reason": "Visible alpha-weighted encoded luminance",
+          "details": {
+            "clipped_fraction": 0.00910225128975129
+          }
+        }
+      },
+      "sha256": {
+        "bright": "4b4de6bd0b2791d168c12130adfdaa3cb70c4d254f1b5a03644081e7506a0e57",
+        "dim": "1b30392778e3f3bbc63be370bce2ec50382fbd08869e2f55f5f2c3f0fbc7d4e5",
+        "cue_off": "61a6563cdfe860f55a841f1d0f9e69387107f51c98a801e13a5e84b6520ad0d4",
+        "background": "e5e2c786efb41e630b25e25a0064c6c428a47b18bd8d4e52db00acd80260e322",
+        "ink_mask": "3531230cf04199fa13b7365d46abcb20f5a117da5bbd3b1e810155a204bb9ffb"
+      }
+    },
+    {
+      "bright_opacity": 1.0,
+      "bright_tick": 9446,
+      "covered_pixels": 0,
+      "dim_marker": [
+        778.375,
+        327.200836181641
+      ],
+      "dim_opacity": 0.501272135151638,
+      "dim_tick": 9467,
+      "hit": {
+        "hit": true,
+        "kind": "weak",
+        "ok": true,
+        "target": "lantern_base.forget.stroke_3"
+      },
+      "hittable_pixels": 13612,
+      "number": 3,
+      "stem": "stroke_03",
+      "effective_radius_px": 65.49,
+      "effective_radius_passed": true,
+      "C06_ink": {
+        "status": "pending",
+        "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+        "details": {
+          "contrast": 0.45654117647058834
+        }
+      },
+      "ink_numeric_passed": true,
+      "dim_cue_pixels_changed_at_eighth": 61,
+      "dim_cue_peak_yprime_difference_at_eighth": 0.292,
+      "dim_marker_yprime_difference": 0.2652,
+      "C03": {
+        "bright": {
+          "status": "pass",
+          "reason": "Visible alpha-weighted encoded luminance",
+          "details": {
+            "clipped_fraction": 0.0154114450989451
+          }
+        },
+        "dim": {
+          "status": "pass",
+          "reason": "Visible alpha-weighted encoded luminance",
+          "details": {
+            "clipped_fraction": 0.009228579541079541
+          }
+        }
+      },
+      "sha256": {
+        "bright": "5cc6fc49f9a5ee038296cf188c6f6132c7cab1f304c5bd244637c9452349b37c",
+        "dim": "cc69d37a08dafccfba010a4573f26a6433f41203d52734a8ab9057646c1fd360",
+        "cue_off": "c88dc503e04d02221c7069688970f4173de3cc3ab444d892f307864d09a511e0",
+        "background": "5d885d9712114f6c7acaae5a5b8921f239d945e31253e6262a21e765f71e95c7",
+        "ink_mask": "509811b0e0f7bc6aa0c7954f8ce9c46c4973212c02d9243f213aeddd3e1d9c77"
+      }
+    },
+    {
+      "bright_opacity": 1.0,
+      "bright_tick": 9468,
+      "covered_pixels": 0,
+      "dim_marker": [
+        719.064453125,
+        532.819763183594
+      ],
+      "dim_opacity": 0.501272135151638,
+      "dim_tick": 9489,
+      "hit": {
+        "hit": true,
+        "kind": "weak",
+        "ok": true,
+        "target": "lantern_base.forget.stroke_4"
+      },
+      "hittable_pixels": 6309,
+      "number": 4,
+      "stem": "stroke_04",
+      "effective_radius_px": 44.75,
+      "effective_radius_passed": true,
+      "C06_ink": {
+        "status": "pending",
+        "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+        "details": {
+          "contrast": 0.4249333333333333
+        }
+      },
+      "ink_numeric_passed": true,
+      "dim_cue_pixels_changed_at_eighth": 43,
+      "dim_cue_peak_yprime_difference_at_eighth": 0.3223,
+      "dim_marker_yprime_difference": 0.3455,
+      "C03": {
+        "bright": {
+          "status": "pass",
+          "reason": "Visible alpha-weighted encoded luminance",
+          "details": {
+            "clipped_fraction": 0.015185257372757372
+          }
+        },
+        "dim": {
+          "status": "pass",
+          "reason": "Visible alpha-weighted encoded luminance",
+          "details": {
+            "clipped_fraction": 0.00910225128975129
+          }
+        }
+      },
+      "sha256": {
+        "bright": "7daf9c035bd7337a5e57b6a8ba5bf9ae989064e4741ec02e95149824527ddfab",
+        "dim": "f9ffaa669da0fe9a0d74b53c3b5aa160ebe48852fa1933d560aaa5244ef197a4",
+        "cue_off": "25c46f3eb051fa2d28d7b1963498e65f99be457248d1705697284f6022523640",
+        "background": "c6cb198a611a8a21203b8ad24cf4bdb6ff25653cd2058d68811950187a6e5b54",
+        "ink_mask": "feffc4fbbddafc02d7722ce26a069708ee78bf42873ac253a46d66075c5e89df"
+      }
+    },
+    {
+      "bright_opacity": 1.0,
+      "bright_tick": 9490,
+      "covered_pixels": 0,
+      "dim_marker": [
+        779.832336425781,
+        540.350280761719
+      ],
+      "dim_opacity": 0.501272135151638,
+      "dim_tick": 9511,
+      "hit": {
+        "hit": true,
+        "kind": "weak",
+        "ok": true,
+        "target": "lantern_base.forget.stroke_5"
+      },
+      "hittable_pixels": 18344,
+      "number": 5,
+      "stem": "stroke_05",
+      "effective_radius_px": 75.46,
+      "effective_radius_passed": true,
+      "C06_ink": {
+        "status": "pending",
+        "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+        "details": {
+          "contrast": 0.43580392156862735
+        }
+      },
+      "ink_numeric_passed": true,
+      "dim_cue_pixels_changed_at_eighth": 102,
+      "dim_cue_peak_yprime_difference_at_eighth": 0.3211,
+      "dim_marker_yprime_difference": 0.3275,
+      "C03": {
+        "bright": {
+          "status": "pass",
+          "reason": "Visible alpha-weighted encoded luminance",
+          "details": {
+            "clipped_fraction": 0.013391997766997767
+          }
+        },
+        "dim": {
+          "status": "pass",
+          "reason": "Visible alpha-weighted encoded luminance",
+          "details": {
+            "clipped_fraction": 0.00912150130900131
+          }
+        }
+      },
+      "sha256": {
+        "bright": "d1353ba320437853b0082d6125eddf3dcd2106fa0186bbd15f448252366a851d",
+        "dim": "55fbddb332eec2f1045296cbd5533e6f73172302760f9d8291b56462d8611efc",
+        "cue_off": "7a505f9dedd20dc7c414212f40c0544780801959724092e0d8dcc838322f21f7",
+        "background": "a1ebe4404dba8cbd01c086d8067b1d8fee14f22e6684647a54841f62f15e4074",
+        "ink_mask": "1b2ada3056fb4a8ff6d4d201c7238723a56b3ec0f6bbfc14d1e62b32f0766789"
+      }
+    },
+    {
+      "bright_opacity": 1.0,
+      "bright_tick": 9512,
+      "covered_pixels": 0,
+      "dim_marker": [
+        865.086486816406,
+        491.867767333984
+      ],
+      "dim_opacity": 0.501272135151638,
+      "dim_tick": 9533,
+      "hit": {
+        "hit": true,
+        "kind": "weak",
+        "ok": true,
+        "target": "lantern_base.forget.stroke_6"
+      },
+      "hittable_pixels": 5236,
+      "number": 6,
+      "stem": "stroke_06",
+      "effective_radius_px": 40.71,
+      "effective_radius_passed": true,
+      "C06_ink": {
+        "status": "pending",
+        "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+        "details": {
+          "contrast": 0.4495921568627451
+        }
+      },
+      "ink_numeric_passed": true,
+      "dim_cue_pixels_changed_at_eighth": 28,
+      "dim_cue_peak_yprime_difference_at_eighth": 0.3285,
+      "dim_marker_yprime_difference": 0.3337,
+      "C03": {
+        "bright": {
+          "status": "pass",
+          "reason": "Visible alpha-weighted encoded luminance",
+          "details": {
+            "clipped_fraction": 0.012961278586278586
+          }
+        },
+        "dim": {
+          "status": "pass",
+          "reason": "Visible alpha-weighted encoded luminance",
+          "details": {
+            "clipped_fraction": 0.008930204242704243
+          }
+        }
+      },
+      "sha256": {
+        "bright": "2c163297d92e2c311d54af0c2b85f933ee1ebc5e108940e30893e95e62fe490f",
+        "dim": "3c038c8d637cef9140f757ced050e442b16fc48ab94fe647af2b05bba209c8ed",
+        "cue_off": "f4ffb1bdf2764d3690aca4682c120b8a05b6e91aaa3722f5e4ce223c3411fb10",
+        "background": "015b487d52796b94a4ab71018e03a81de2a248362b0b4209fd965a4bdafd132e",
+        "ink_mask": "aefb6ebbc8c67befdd7fbd04b2c993591857a704f04fa235490e42435edfb46e"
+      }
+    },
+    {
+      "bright_opacity": 1.0,
+      "bright_tick": 9563,
+      "covered_pixels": 0,
+      "dim_marker": [
+        1034.64477539063,
+        488.142761230469
+      ],
+      "dim_opacity": 0.501272135151638,
+      "dim_tick": 9584,
+      "hit": {
+        "hit": true,
+        "kind": "weak",
+        "ok": true,
+        "target": "lantern_base.forget.stroke_7"
+      },
+      "hittable_pixels": 5712,
+      "number": 7,
+      "stem": "stroke_07",
+      "effective_radius_px": 41.75,
+      "effective_radius_passed": true,
+      "C06_ink": {
+        "status": "pending",
+        "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+        "details": {
+          "contrast": 0.4339058823529412
+        }
+      },
+      "ink_numeric_passed": true,
+      "dim_cue_pixels_changed_at_eighth": 40,
+      "dim_cue_peak_yprime_difference_at_eighth": 0.3114,
+      "dim_marker_yprime_difference": 0.3377,
+      "C03": {
+        "bright": {
+          "status": "pass",
+          "reason": "Visible alpha-weighted encoded luminance",
+          "details": {
+            "clipped_fraction": 0.01340222433972434
+          }
+        },
+        "dim": {
+          "status": "pass",
+          "reason": "Visible alpha-weighted encoded luminance",
+          "details": {
+            "clipped_fraction": 0.009083602833602834
+          }
+        }
+      },
+      "sha256": {
+        "bright": "5a261606f64a2956af839fb0857a7c53b6c1ca089c473150d3a4fe75700ccfa9",
+        "dim": "55b2e49be5f466a905d529eca3e1ecdf5b493dce76407cd5f4fcb92635dd3213",
+        "cue_off": "651c9eeffa0995d52947bc38516b766ba603ef51b5b6630d6e9d58c8a7072210",
+        "background": "cf94b95d039dbfdddc70b9f33507d26c5b11af2351b43253d6ea41a7e5b8cfad",
+        "ink_mask": "5397f17a21ce851c926d1407af87ed3a6799d34363aad32f211f5a0205aa838f"
+      }
+    }
+  ],
+  "source_revision": "60768c908511d0333dffe932f5af31337d7d9dfd216e68916e6257ff27c950cb",
+  "workbench_entry_tick": 9256,
+  "compiled_sha256": "99600d7632e1c4c652e4c0743aa56add6dd4f99c54b11b23d1e178c6f3eba4d6",
+  "summary": {
+    "ink_numeric_passed": 7,
+    "effective_radius_passed": 7,
+    "dim_cues_changed_at_eighth": 7,
+    "C03_frames_passed": 14
+  },
+  "thumbnail_visual_review": "A5_pending",
+  "previews": {
+    "strokes_1_8.jpg": "abed5aaee6a12ece82aeaa9ced468a91b080349c5788e8bec76e28f0d46aa134",
+    "crossing.jpg": "33785cbd0a049fd106df5028481221966bc09f3348d16496923daac26b2b0518"
+  }
+}

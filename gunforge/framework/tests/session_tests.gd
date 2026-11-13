@@ -26,6 +26,10 @@ func _initialize():
 	while session.clock.tick<660:
 		session.step()
 		if session.clock.tick in [119,120,239,400,659,660]:reference[session.clock.tick]=var_to_bytes(model.save_state())
+	check(session.checkpoints[660].tape.is_empty() and session.snapshot().tape.size()==1,
+		"seek_checkpoints_skip_input_tape_public_snapshots_keep_it")
+	var trace_checkpoint: Array = session.checkpoints[660].model.trace
+	var trace_bytes := var_to_bytes(trace_checkpoint)
 	var timings=[]
 	for at in [400,119,659,120,239,660]:
 		var began=Time.get_ticks_usec();session.seek(at);timings.append((Time.get_ticks_usec()-began)/1000.0)
@@ -35,6 +39,7 @@ func _initialize():
 	var recording=session.recording();session.load_recording(recording)
 	for i in range(121):session.step()
 	check(model.shots==1 and session.clock.tick==121,"recording_replays_same_build")
+	check(var_to_bytes(trace_checkpoint)==trace_bytes,"checkpoint_trace_survives_seek_branch_and_restart")
 	var at=session.clock.tick;session.set_pause("settings",true);session.set_pause("tracking",true);session.step();session.set_pause("settings",false);session.advance(1)
 	check(session.clock.tick==at,"clearing_settings_does_not_clear_tracking_pause")
 	session.set_pause("tracking",false);session.step();check(session.clock.tick==at+1,"resume_after_all_reasons_clear")

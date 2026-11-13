@@ -1,0 +1,90 @@
+[
+  {
+    "id": "alley.scene_near_left",
+    "rect": [
+      0,
+      0,
+      945,
+      673
+    ]
+  },
+  {
+    "id": "alley.scene_near_right",
+    "rect": [
+      0,
+      0,
+      1006,
+      673
+    ]
+  },
+  {
+    "id": "alley.vendor_atlas",
+    "part": "rescue_ink",
+    "rect": [
+      244,
+      4,
+      250,
+      256
+    ]
+  },
+  {
+    "id": "cinema.image_024",
+    "part": "torso",
+    "rect": [
+      620,
+      339,
+      300,
+      327
+    ]
+  },
+  {
+    "id": "cinema.image_050",
+    "part": "torso",
+    "rect": [
+      620,
+      339,
+      300,
+      327
+    ]
+  },
+  {
+    "id": "cinema.image_064",
+    "part": "torso",
+    "rect": [
+      620,
+      339,
+      300,
+      327
+    ]
+  },
+  {
+    "id": "platform.image_024",
+    "part": "torso",
+    "rect": [
+      618,
+      338,
+      299,
+      326
+    ]
+  },
+  {
+    "id": "video_shop.image_013",
+    "part": "torso_shell",
+    "rect": [
+      4,
+      4,
+      292,
+      290
+    ]
+  },
+  {
+    "id": "waiting_room.image_025",
+    "part": "torso",
+    "rect": [
+      620,
+      339,
+      300,
+      327
+    ]
+  }
+]

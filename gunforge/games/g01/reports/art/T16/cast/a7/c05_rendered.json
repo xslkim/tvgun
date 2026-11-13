@@ -1,0 +1,476 @@
+{
+  "build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc",
+  "viewport": [
+    1776,
+    936
+  ],
+  "gallery_checks_sha256": "49104cfa4e8db8fa179da92f669e3e5fd45ef0e39ebde562fc3f45447e3806db",
+  "Godot_lettering_capture": {
+    "build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc",
+    "sizes": {
+      "hud.cinema": [
+        1088,
+        373
+      ],
+      "hud.night_market": [
+        400,
+        208
+      ],
+      "hud.title": [
+        1266,
+        433
+      ],
+      "hud.train_station": [
+        1088,
+        373
+      ]
+    }
+  },
+  "model_sha256": {
+    "eng.traineddata": "5dc5d8d640a212c9d6184921ba103b186f50e0fed9ee716c53e6b312b400d747",
+    "chi_sim.traineddata": "9784f7c917c546424b690fcde708ce1f604a4393d08bb51ddab146d7d7c794e6"
+  },
+  "lettering": {
+    "hud.title": {
+      "expected": "纸灯城",
+      "source": "title_screen.png",
+      "source_png_sha256": "89deda08422c614263d7931421e01be2c7b7a5c4adeb309334a2c69d3ed08957",
+      "crop_xyxy": [
+        568,
+        158,
+        1208,
+        372
+      ],
+      "crop_png_sha256": "0edeb8d9a7e15e5f671d60a4d3f9adc31329bb61a99d0b2956c2acda108dfd97",
+      "actual_game_frame": {
+        "id": "hud.title",
+        "text": "纸 灯 城\n",
+        "confidence": 89,
+        "words": [
+          {
+            "text": "纸",
+            "confidence": 87,
+            "bbox": {
+              "x0": 39,
+              "y0": 24,
+              "x1": 413,
+              "y1": 186
+            }
+          },
+          {
+            "text": "灯",
+            "confidence": 93,
+            "bbox": {
+              "x0": 293,
+              "y0": 17,
+              "x1": 466,
+              "y1": 214
+            }
+          },
+          {
+            "text": "城",
+            "confidence": 89,
+            "bbox": {
+              "x0": 417,
+              "y0": 21,
+              "x1": 603,
+              "y1": 188
+            }
+          }
+        ],
+        "engine": "tesseract.js-7.0.0-eng+chi_sim",
+        "recognized": "纸灯城",
+        "matches_expected": true
+      },
+      "material_black": {
+        "id": "hud.title-black",
+        "text": "纸 灯 城\n",
+        "confidence": 88,
+        "words": [
+          {
+            "text": "纸",
+            "confidence": 88,
+            "bbox": {
+              "x0": 72,
+              "y0": 51,
+              "x1": 819,
+              "y1": 376
+            }
+          },
+          {
+            "text": "灯",
+            "confidence": 92,
+            "bbox": {
+              "x0": 583,
+              "y0": 40,
+              "x1": 928,
+              "y1": 433
+            }
+          },
+          {
+            "text": "城",
+            "confidence": 86,
+            "bbox": {
+              "x0": 827,
+              "y0": 44,
+              "x1": 1200,
+              "y1": 378
+            }
+          }
+        ],
+        "engine": "tesseract.js-7.0.0-eng+chi_sim",
+        "recognized": "纸灯城",
+        "matches_expected": true,
+        "png_sha256": "18c32098cd2874dd5089ed5ac9e840cbb99f8c0fa3b2f398842c69a68bce8622"
+      },
+      "material_white": {
+        "id": "hud.title-white",
+        "text": "; — 、\n",
+        "confidence": 14,
+        "words": [
+          {
+            "text": ";",
+            "confidence": 0,
+            "bbox": {
+              "x0": 120,
+              "y0": 99,
+              "x1": 212,
+              "y1": 339
+            }
+          },
+          {
+            "text": "—",
+            "confidence": 17,
+            "bbox": {
+              "x0": 242,
+              "y0": 371,
+              "x1": 255,
+              "y1": 373
+            }
+          },
+          {
+            "text": "、",
+            "confidence": 27,
+            "bbox": {
+              "x0": 292,
+              "y0": 155,
+              "x1": 332,
+              "y1": 313
+            }
+          }
+        ],
+        "engine": "tesseract.js-7.0.0-eng+chi_sim",
+        "recognized": ";—、",
+        "matches_expected": false,
+        "png_sha256": "1c798f81b7e093caafca2a6a628840b80c25a15cd2173a89a94ddc5cd2733a85"
+      }
+    },
+    "hud.night_market": {
+      "expected": "夜市",
+      "source": "title_screen.png",
+      "source_png_sha256": "89deda08422c614263d7931421e01be2c7b7a5c4adeb309334a2c69d3ed08957",
+      "crop_xyxy": [
+        780,
+        381,
+        996,
+        480
+      ],
+      "crop_png_sha256": "9f521f4a2a07177a9c078bd1962890eb1e77d223e36dba981f13968e2f891b9c",
+      "actual_game_frame": {
+        "id": "hud.night_market",
+        "text": "夜市\n",
+        "confidence": 73,
+        "words": [
+          {
+            "text": "夜市",
+            "confidence": 73,
+            "bbox": {
+              "x0": 29,
+              "y0": 14,
+              "x1": 184,
+              "y1": 87
+            }
+          }
+        ],
+        "engine": "tesseract.js-7.0.0-eng+chi_sim",
+        "recognized": "夜市",
+        "matches_expected": true
+      },
+      "material_black": {
+        "id": "hud.night_market-black",
+        "text": "夜市\n",
+        "confidence": 88,
+        "words": [
+          {
+            "text": "夜市",
+            "confidence": 88,
+            "bbox": {
+              "x0": 41,
+              "y0": 33,
+              "x1": 352,
+              "y1": 178
+            }
+          }
+        ],
+        "engine": "tesseract.js-7.0.0-eng+chi_sim",
+        "recognized": "夜市",
+        "matches_expected": true,
+        "png_sha256": "1243cae2b310b00d3f231339d082fb0585ccbb67f8ed0faab85a02b8439a5076"
+      },
+      "material_white": {
+        "id": "hud.night_market-white",
+        "text": "",
+        "confidence": 0,
+        "words": [],
+        "engine": "tesseract.js-7.0.0-eng+chi_sim",
+        "recognized": "",
+        "matches_expected": false,
+        "png_sha256": "e4ed0413987f04d2dd8b221d35f20b8e074e8d8315f725d43a3b3195ffb599ab"
+      }
+    },
+    "hud.cinema": {
+      "expected": "旧影院",
+      "source": "cinema_transition.png",
+      "source_png_sha256": "01a30fe48c1ba67930468fd70cb841c61b876f14c48ae7553df88523c8f26704",
+      "crop_xyxy": [
+        618,
+        354,
+        1158,
+        545
+      ],
+      "crop_png_sha256": "1db13aa19f1bca3e9c14e26cc90008ae61d156ff8bbc65dc46f1784ac090b64f",
+      "actual_game_frame": {
+        "id": "hud.cinema",
+        "text": "旧 影 院\n",
+        "confidence": 90,
+        "words": [
+          {
+            "text": "旧",
+            "confidence": 91,
+            "bbox": {
+              "x0": 49,
+              "y0": 35,
+              "x1": 179,
+              "y1": 159
+            }
+          },
+          {
+            "text": "影",
+            "confidence": 91,
+            "bbox": {
+              "x0": 246,
+              "y0": 29,
+              "x1": 336,
+              "y1": 161
+            }
+          },
+          {
+            "text": "院",
+            "confidence": 90,
+            "bbox": {
+              "x0": 395,
+              "y0": 25,
+              "x1": 491,
+              "y1": 161
+            }
+          }
+        ],
+        "engine": "tesseract.js-7.0.0-eng+chi_sim",
+        "recognized": "旧影院",
+        "matches_expected": true
+      },
+      "material_black": {
+        "id": "hud.cinema-black",
+        "text": "旧 影 院\n",
+        "confidence": 87,
+        "words": [
+          {
+            "text": "旧",
+            "confidence": 85,
+            "bbox": {
+              "x0": 102,
+              "y0": 66,
+              "x1": 362,
+              "y1": 314
+            }
+          },
+          {
+            "text": "影",
+            "confidence": 87,
+            "bbox": {
+              "x0": 491,
+              "y0": 54,
+              "x1": 677,
+              "y1": 318
+            }
+          },
+          {
+            "text": "院",
+            "confidence": 91,
+            "bbox": {
+              "x0": 801,
+              "y0": 46,
+              "x1": 987,
+              "y1": 318
+            }
+          }
+        ],
+        "engine": "tesseract.js-7.0.0-eng+chi_sim",
+        "recognized": "旧影院",
+        "matches_expected": true,
+        "png_sha256": "38221402b99ea91548446c636c85dc444841698898657f6be1436554aca6d94b"
+      },
+      "material_white": {
+        "id": "hud.cinema-white",
+        "text": "| = : | 5\n",
+        "confidence": 52,
+        "words": [
+          {
+            "text": "|",
+            "confidence": 33,
+            "bbox": {
+              "x0": 102,
+              "y0": 68,
+              "x1": 171,
+              "y1": 329
+            }
+          },
+          {
+            "text": "=",
+            "confidence": 87,
+            "bbox": {
+              "x0": 238,
+              "y0": 124,
+              "x1": 344,
+              "y1": 311
+            }
+          },
+          {
+            "text": ":",
+            "confidence": 50,
+            "bbox": {
+              "x0": 716,
+              "y0": 318,
+              "x1": 731,
+              "y1": 321
+            }
+          },
+          {
+            "text": "|",
+            "confidence": 67,
+            "bbox": {
+              "x0": 740,
+              "y0": 112,
+              "x1": 755,
+              "y1": 315
+            }
+          },
+          {
+            "text": "5",
+            "confidence": 27,
+            "bbox": {
+              "x0": 777,
+              "y0": 118,
+              "x1": 943,
+              "y1": 281
+            }
+          }
+        ],
+        "engine": "tesseract.js-7.0.0-eng+chi_sim",
+        "recognized": "|=:|5",
+        "matches_expected": false,
+        "png_sha256": "fca53ec6094c8624db8a2a0522e5986efadc667ddfb991e2802d7f759d34bd01"
+      }
+    },
+    "hud.train_station": {
+      "expected": "火车站",
+      "source": "train_station_transition.png",
+      "source_png_sha256": "2209817fcf6b91526857c9c7d7c0783f54a9cc3b4954768eb83dedd417c27c8c",
+      "crop_xyxy": [
+        618,
+        354,
+        1158,
+        545
+      ],
+      "crop_png_sha256": "1525f58e33bdc0ee6c7ab26f8109498bd240e44204d1726ed584bfb19ce7446d",
+      "actual_game_frame": {
+        "id": "hud.train_station",
+        "text": "火车 站\n",
+        "confidence": 96,
+        "words": [
+          {
+            "text": "火车",
+            "confidence": 96,
+            "bbox": {
+              "x0": 42,
+              "y0": 21,
+              "x1": 501,
+              "y1": 165
+            }
+          },
+          {
+            "text": "站",
+            "confidence": 96,
+            "bbox": {
+              "x0": 396,
+              "y0": 17,
+              "x1": 506,
+              "y1": 191
+            }
+          }
+        ],
+        "engine": "tesseract.js-7.0.0-eng+chi_sim",
+        "recognized": "火车站",
+        "matches_expected": true
+      },
+      "material_black": {
+        "id": "hud.train_station-black",
+        "text": "火车 站\n",
+        "confidence": 96,
+        "words": [
+          {
+            "text": "火车",
+            "confidence": 96,
+            "bbox": {
+              "x0": 88,
+              "y0": 38,
+              "x1": 1007,
+              "y1": 326
+            }
+          },
+          {
+            "text": "站",
+            "confidence": 96,
+            "bbox": {
+              "x0": 783,
+              "y0": 0,
+              "x1": 994,
+              "y1": 373
+            }
+          }
+        ],
+        "engine": "tesseract.js-7.0.0-eng+chi_sim",
+        "recognized": "火车站",
+        "matches_expected": true,
+        "png_sha256": "4690ace0dcc2bbb2bce8c5f97655950dbb43a64aa988ccc375a58603cde01e07"
+      },
+      "material_white": {
+        "id": "hud.train_station-white",
+        "text": "",
+        "confidence": 0,
+        "words": [],
+        "engine": "tesseract.js-7.0.0-eng+chi_sim",
+        "recognized": "",
+        "matches_expected": false,
+        "png_sha256": "36d692d302232ca9e6f21d8c4eb98107ebd37b37a4e8cd5d4939080c958924b3"
+      }
+    }
+  },
+  "route": {
+    "stations": 15,
+    "replayed_inputs": 118,
+    "failure_retries": 1,
+    "result": "clear",
+    "log_sha256": "45ad1b54d05f213c25bcba20721bba0bb6aae0371868b46dbb2827637dd1385b"
+  }
+}

@@ -33,9 +33,13 @@ class Preview:
 		textures[key]=ImageTexture.create_from_image(edge)
 		return textures[key]
 	func _gui_input(event):
-		if model==null or not event is InputEventMouseButton or not event.pressed or event.button_index!=MOUSE_BUTTON_LEFT:
+		if model==null or not event is InputEventMouseButton or event.button_index!=MOUSE_BUTTON_LEFT:
 			return
 		var point = (event.position-origin)/scale_factor
+		if owner_tool.has_method("handle_action_pointer") and owner_tool.handle_action_pointer(point, event.pressed):
+			accept_event()
+			return
+		if not event.pressed:return
 		var canvas = Vector2(model.level.layout.width,model.level.layout.height)
 		if Rect2(Vector2.ZERO,canvas).has_point(point):
 			owner_tool.queue_shot(point,shown)

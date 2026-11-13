@@ -1,0 +1,1240 @@
+{
+  "build_id": "79b38ada06898061b638888466ae1e361d3dc5690b7df6adb278907f842e3f1a",
+  "base_build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc",
+  "resource_id": "lantern_base.image_052",
+  "grade_operation": "epilogue_left_stalls_warm_apricot_v1",
+  "asset": {
+    "size": [
+      1672,
+      941
+    ],
+    "pixels_changed": 87635,
+    "changed_bounds_xyxy": [
+      99,
+      425,
+      635,
+      717
+    ],
+    "alpha_identical": true,
+    "outside_region_pixel_identical": true,
+    "editions": {
+      "before": {
+        "sha256": "732f8190ca9fb4a35fa9be811962a2156fae1015367ecdc64718c2812115accb",
+        "C03": {
+          "status": "pass",
+          "reason": "Visible alpha-weighted encoded luminance",
+          "details": {
+            "clipped_fraction": 0.0005891879248890267
+          }
+        },
+        "C04": {
+          "status": "fail",
+          "coverage": 0.729579903289283,
+          "visible_pixels": 1573352,
+          "eligible_pixels_alpha_weighted": 1573352.0,
+          "cinnabar_pixels": 109891,
+          "cinnabar_pixels_alpha_weighted": 109891.0,
+          "cinnabar_fraction_visible": 0.06984514590504859,
+          "largest_out_of_palette_colors": [
+            {
+              "hex": "#6A3A69",
+              "pixels_alpha_weighted": 156.0,
+              "nearest_delta_e00": 15.4405
+            },
+            {
+              "hex": "#6C3B6A",
+              "pixels_alpha_weighted": 151.0,
+              "nearest_delta_e00": 15.3151
+            },
+            {
+              "hex": "#693B6A",
+              "pixels_alpha_weighted": 143.0,
+              "nearest_delta_e00": 15.302
+            },
+            {
+              "hex": "#6D3A68",
+              "pixels_alpha_weighted": 140.0,
+              "nearest_delta_e00": 15.3228
+            },
+            {
+              "hex": "#6C3A68",
+              "pixels_alpha_weighted": 138.0,
+              "nearest_delta_e00": 15.4869
+            }
+          ]
+        }
+      },
+      "after": {
+        "sha256": "3ba58187243a516343795b095fa1291667d3b519badb6644be945d352a1ee281",
+        "C03": {
+          "status": "pass",
+          "reason": "Visible alpha-weighted encoded luminance",
+          "details": {
+            "clipped_fraction": 0.000586645582171059
+          }
+        },
+        "C04": {
+          "status": "fail",
+          "coverage": 0.7343506093995495,
+          "visible_pixels": 1573352,
+          "eligible_pixels_alpha_weighted": 1573352.0,
+          "cinnabar_pixels": 83796,
+          "cinnabar_pixels_alpha_weighted": 83796.0,
+          "cinnabar_fraction_visible": 0.053259537598706455,
+          "largest_out_of_palette_colors": [
+            {
+              "hex": "#6A3A69",
+              "pixels_alpha_weighted": 156.0,
+              "nearest_delta_e00": 15.4405
+            },
+            {
+              "hex": "#6C3B6A",
+              "pixels_alpha_weighted": 151.0,
+              "nearest_delta_e00": 15.3151
+            },
+            {
+              "hex": "#693B6A",
+              "pixels_alpha_weighted": 143.0,
+              "nearest_delta_e00": 15.302
+            },
+            {
+              "hex": "#6D3A68",
+              "pixels_alpha_weighted": 140.0,
+              "nearest_delta_e00": 15.3228
+            },
+            {
+              "hex": "#6C3A68",
+              "pixels_alpha_weighted": 138.0,
+              "nearest_delta_e00": 15.4869
+            }
+          ]
+        }
+      }
+    }
+  },
+  "route": {
+    "dissolve_poses": [
+      {
+        "input_enabled": false,
+        "offset": 0,
+        "opacity": 0.0,
+        "scale": 1.125,
+        "street_active": true,
+        "tick": 10770
+      },
+      {
+        "input_enabled": false,
+        "offset": 27,
+        "opacity": 0.15625,
+        "scale": 1.125,
+        "street_active": true,
+        "tick": 10797
+      },
+      {
+        "input_enabled": false,
+        "offset": 54,
+        "opacity": 0.5,
+        "scale": 1.125,
+        "street_active": true,
+        "tick": 10824
+      },
+      {
+        "input_enabled": false,
+        "offset": 81,
+        "opacity": 0.84375,
+        "scale": 1.125,
+        "street_active": true,
+        "tick": 10851
+      },
+      {
+        "input_enabled": false,
+        "offset": 108,
+        "opacity": 1.0,
+        "scale": 1.125,
+        "street_active": false,
+        "tick": 10878
+      },
+      {
+        "input_enabled": false,
+        "offset": 1368,
+        "opacity": 1.0,
+        "scale": 1.0,
+        "street_active": false,
+        "tick": 12138
+      }
+    ],
+    "captures": {
+      "ending_city_end": {
+        "before": {
+          "sha256": "3d93021aba8e003f7e8bcbfaf97a6d1db08677c7fe6e933419be473f6f73c79f",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.002374369561869562
+            }
+          },
+          "near_cinnabar_pixels_delta_e15": 148775,
+          "fraction_delta_e15": 0.08949755043505044,
+          "near_cinnabar_pixels_delta_e10": 4477,
+          "fraction_delta_e10": 0.002693198005698006
+        },
+        "after": {
+          "sha256": "3d93021aba8e003f7e8bcbfaf97a6d1db08677c7fe6e933419be473f6f73c79f",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.002374369561869562
+            }
+          },
+          "near_cinnabar_pixels_delta_e15": 148775,
+          "fraction_delta_e15": 0.08949755043505044,
+          "near_cinnabar_pixels_delta_e10": 4477,
+          "fraction_delta_e10": 0.002693198005698006
+        },
+        "different_pixels": 0
+      },
+      "ending_dissolve_000": {
+        "before": {
+          "sha256": "786f0750883cbef42b45e8a0cf175f64907e76955dc1cc39d9c507ff29a1e9ca",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0011916965041965041
+            }
+          },
+          "near_cinnabar_pixels_delta_e15": 152958,
+          "fraction_delta_e15": 0.0920138888888889,
+          "near_cinnabar_pixels_delta_e10": 6020,
+          "fraction_delta_e10": 0.0036214098714098713
+        },
+        "after": {
+          "sha256": "786f0750883cbef42b45e8a0cf175f64907e76955dc1cc39d9c507ff29a1e9ca",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0011916965041965041
+            }
+          },
+          "near_cinnabar_pixels_delta_e15": 152958,
+          "fraction_delta_e15": 0.0920138888888889,
+          "near_cinnabar_pixels_delta_e10": 6020,
+          "fraction_delta_e10": 0.0036214098714098713
+        },
+        "different_pixels": 0
+      },
+      "ending_dissolve_027": {
+        "before": {
+          "sha256": "ecf35403d4b48f1d675283852c6c282a33667c59968e5f43e87ae9b8c4c220e9",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.000953477515977516
+            }
+          },
+          "near_cinnabar_pixels_delta_e15": 157084,
+          "fraction_delta_e15": 0.09449593824593824,
+          "near_cinnabar_pixels_delta_e10": 5976,
+          "fraction_delta_e10": 0.003594941094941095
+        },
+        "after": {
+          "sha256": "4d77fb52ebb955ada8390df2c904afc8b7ab673b1671b009b52a3fc0157566cc",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0009967900592900592
+            }
+          },
+          "near_cinnabar_pixels_delta_e15": 151865,
+          "fraction_delta_e15": 0.09135638041888042,
+          "near_cinnabar_pixels_delta_e10": 5424,
+          "fraction_delta_e10": 0.003262878262878263
+        },
+        "different_pixels": 114848
+      },
+      "ending_dissolve_054": {
+        "before": {
+          "sha256": "0b06e1d907d82c693ac79f1991592be908121fd30b9e89a6330d205fc16387af",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0006045709170709171
+            }
+          },
+          "near_cinnabar_pixels_delta_e15": 168540,
+          "fraction_delta_e15": 0.10138744513744513,
+          "near_cinnabar_pixels_delta_e10": 8153,
+          "fraction_delta_e10": 0.004904543967043967
+        },
+        "after": {
+          "sha256": "c3dd510feb488a61a48278335b4091a9952ffe6919262c10aeb75ba0000ec0cd",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0006045709170709171
+            }
+          },
+          "near_cinnabar_pixels_delta_e15": 146818,
+          "fraction_delta_e15": 0.08832029144529145,
+          "near_cinnabar_pixels_delta_e10": 1222,
+          "fraction_delta_e10": 0.0007351101101101101
+        },
+        "different_pixels": 125060
+      },
+      "ending_dissolve_081": {
+        "before": {
+          "sha256": "9ae3a326a042c35e874ef55b13d465e0253ee46e0fe7e7e99ac90e00c513e52f",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0009426493801493801
+            }
+          },
+          "near_cinnabar_pixels_delta_e15": 171227,
+          "fraction_delta_e15": 0.10300384519134519,
+          "near_cinnabar_pixels_delta_e10": 20483,
+          "fraction_delta_e10": 0.01232181700931701
+        },
+        "after": {
+          "sha256": "8c1f9869c7c900d4402343d363a00e2723db57c3e95149561e318cad7817eb2d",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0009438525063525064
+            }
+          },
+          "near_cinnabar_pixels_delta_e15": 129334,
+          "fraction_delta_e15": 0.07780256217756218,
+          "near_cinnabar_pixels_delta_e10": 4060,
+          "fraction_delta_e10": 0.0024423461923461925
+        },
+        "different_pixels": 127681
+      },
+      "ending_wide_near": {
+        "before": {
+          "sha256": "95ba38ed52f9b22f87667d12f5900b365cbacb68a06bb7518d637c047bbd6cc4",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.001184477746977747
+            }
+          },
+          "near_cinnabar_pixels_delta_e15": 157277,
+          "fraction_delta_e15": 0.09461203992453993,
+          "near_cinnabar_pixels_delta_e10": 20692,
+          "fraction_delta_e10": 0.012447543697543698
+        },
+        "after": {
+          "sha256": "b87dbabcb2ddc86fd6292ffff6700ba6dca808a70e4b1c2fd1302a19493f0a73",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0011832746207746207
+            }
+          },
+          "near_cinnabar_pixels_delta_e15": 120011,
+          "fraction_delta_e15": 0.07219418938168938,
+          "near_cinnabar_pixels_delta_e10": 5663,
+          "fraction_delta_e10": 0.003406651844151844
+        },
+        "different_pixels": 128680
+      },
+      "ending_wide_full": {
+        "before": {
+          "sha256": "78dc7b93e4f68ba642fde1bea51531f55f3051d583685774bb5c89eebcf4ab51",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0010431104181104181
+            }
+          },
+          "near_cinnabar_pixels_delta_e15": 128480,
+          "fraction_delta_e15": 0.07728882728882729,
+          "near_cinnabar_pixels_delta_e10": 17142,
+          "fraction_delta_e10": 0.010311994686994687
+        },
+        "after": {
+          "sha256": "6055ddd8fc5c943312aa7c2f7391263dcd8887968a981621c6d120f7bd49d555",
+          "C03": {
+            "status": "pass",
+            "reason": "Visible alpha-weighted encoded luminance",
+            "details": {
+              "clipped_fraction": 0.0010413057288057288
+            }
+          },
+          "near_cinnabar_pixels_delta_e15": 99043,
+          "fraction_delta_e15": 0.05958061426811427,
+          "near_cinnabar_pixels_delta_e10": 5206,
+          "fraction_delta_e10": 0.003131737506737507
+        },
+        "different_pixels": 104166
+      }
+    },
+    "identical_frames": [
+      "campaign_clear",
+      "cinema_transition",
+      "ending_city_end",
+      "ending_city_start",
+      "ending_dissolve_000",
+      "ending_quote",
+      "ending_relit",
+      "ending_unlit",
+      "hud_reload",
+      "lantern_pullback",
+      "station_10_screen_stage",
+      "station_11_waiting_room",
+      "station_12_platform",
+      "station_13_green_car",
+      "station_14_lantern_base",
+      "station_15_workbench",
+      "station_1_alley",
+      "station_2_stall",
+      "station_3_video_shop",
+      "station_4_footbridge",
+      "station_5_dragon",
+      "station_5_plaza",
+      "station_6_ticket_office",
+      "station_7_poster_hall",
+      "station_8_auditorium",
+      "station_9_projection_booth",
+      "subject_bridge_warning",
+      "subject_cyclist",
+      "subject_dragon",
+      "subject_forget",
+      "subject_ink_cart",
+      "subject_ink_crow",
+      "subject_ink_drop",
+      "subject_ink_sign",
+      "subject_ink_tape",
+      "subject_passerby_a",
+      "subject_passerby_a_saved",
+      "subject_passerby_b",
+      "subject_passerby_c",
+      "subject_projectionist",
+      "subject_screen_shadow",
+      "subject_tadpole",
+      "subject_ticket_clerk",
+      "subject_umbrella_closed",
+      "subject_umbrella_open",
+      "subject_vendor",
+      "subject_video_owner",
+      "title_screen",
+      "train_station_transition"
+    ],
+    "changed_frames": [
+      "ending_dissolve_027",
+      "ending_dissolve_054",
+      "ending_dissolve_081",
+      "ending_wide_full",
+      "ending_wide_near"
+    ],
+    "recording": {
+      "build_id": "79b38ada06898061b638888466ae1e361d3dc5690b7df6adb278907f842e3f1a",
+      "handoffs_identical": true,
+      "inputs": 118,
+      "reference_build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc",
+      "serialized_input_tape_identical": true
+    },
+    "before": {
+      "build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc",
+      "chapter_transition_tick": 6821,
+      "counters": {
+        "ammo": 11.0,
+        "lives": 4,
+        "rescued": 7,
+        "score": 9275,
+        "shots": 109
+      },
+      "end_tick": 13002,
+      "ending": {
+        "city_texture_preloaded": true,
+        "city_tick": 9954,
+        "light_tick": 9522,
+        "natural_result_tick": 13002,
+        "quote_tick": 12390,
+        "skip": {
+          "counters": {
+            "ammo": 11.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 9275,
+            "shots": 109
+          },
+          "result": "clear",
+          "result_tick": 9523,
+          "start_tick": 9522
+        },
+        "skip_from_city": {
+          "counters": {
+            "ammo": 11.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 9275,
+            "shots": 109
+          },
+          "result": "clear",
+          "result_tick": 10075,
+          "start_tick": 10074
+        },
+        "skip_from_quote": {
+          "counters": {
+            "ammo": 11.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 9275,
+            "shots": 109
+          },
+          "result": "clear",
+          "result_tick": 12391,
+          "start_tick": 12390
+        },
+        "skip_from_wide": {
+          "counters": {
+            "ammo": 11.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 9275,
+            "shots": 109
+          },
+          "result": "clear",
+          "result_tick": 10891,
+          "start_tick": 10890
+        },
+        "wide_texture_preloaded": true,
+        "wide_tick": 10770
+      },
+      "failure_retries": [
+        {
+          "after_retry": {
+            "ammo": 12.0,
+            "lives": 5.0,
+            "rescued": 0.0,
+            "score": 0.0,
+            "shots": 0
+          },
+          "before_retry": {
+            "ammo": 6.0,
+            "lives": 0,
+            "rescued": 7,
+            "score": 8575,
+            "shots": 102
+          },
+          "defeat_tick": 10252,
+          "first_shot": {
+            "ammo": 11.0,
+            "lives": 5.0,
+            "rescued": 0.0,
+            "score": 0.0,
+            "shots": 1
+          },
+          "station": 15
+        }
+      ],
+      "failures": [],
+      "gpu_capture": true,
+      "handoffs": [
+        {
+          "counters": {
+            "ammo": 9.0,
+            "lives": 4,
+            "rescued": 1,
+            "score": 3875,
+            "shots": 39
+          },
+          "station": "stall",
+          "tick": 5713
+        },
+        {
+          "counters": {
+            "ammo": 11.0,
+            "lives": 4,
+            "rescued": 1,
+            "score": 4475,
+            "shots": 49
+          },
+          "station": "video_shop",
+          "tick": 6222
+        },
+        {
+          "counters": {
+            "ammo": 7.0,
+            "lives": 4,
+            "rescued": 2,
+            "score": 4775,
+            "shots": 53
+          },
+          "station": "footbridge",
+          "tick": 6506
+        },
+        {
+          "counters": {
+            "ammo": 4.0,
+            "lives": 4,
+            "rescued": 2,
+            "score": 4975,
+            "shots": 56
+          },
+          "station": "plaza",
+          "tick": 6619
+        },
+        {
+          "counters": {
+            "ammo": 5.0,
+            "lives": 4,
+            "rescued": 2,
+            "score": 6075,
+            "shots": 67
+          },
+          "station": "ticket_office",
+          "tick": 6911
+        },
+        {
+          "counters": {
+            "ammo": 0.0,
+            "lives": 4,
+            "rescued": 3,
+            "score": 6375,
+            "shots": 72
+          },
+          "station": "poster_hall",
+          "tick": 7170
+        },
+        {
+          "counters": {
+            "ammo": 9.0,
+            "lives": 4,
+            "rescued": 3,
+            "score": 6575,
+            "shots": 75
+          },
+          "station": "auditorium",
+          "tick": 7402
+        },
+        {
+          "counters": {
+            "ammo": 5.0,
+            "lives": 4,
+            "rescued": 4,
+            "score": 6875,
+            "shots": 79
+          },
+          "station": "projection_booth",
+          "tick": 7661
+        },
+        {
+          "counters": {
+            "ammo": 1.0,
+            "lives": 4,
+            "rescued": 5,
+            "score": 7175,
+            "shots": 83
+          },
+          "station": "screen_stage",
+          "tick": 7920
+        },
+        {
+          "counters": {
+            "ammo": 9.0,
+            "lives": 4,
+            "rescued": 5,
+            "score": 7575,
+            "shots": 87
+          },
+          "station": "waiting_room",
+          "tick": 8067
+        },
+        {
+          "counters": {
+            "ammo": 4.0,
+            "lives": 4,
+            "rescued": 6,
+            "score": 7875,
+            "shots": 92
+          },
+          "station": "platform",
+          "tick": 8374
+        },
+        {
+          "counters": {
+            "ammo": 0.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 8175,
+            "shots": 96
+          },
+          "station": "green_car",
+          "tick": 8681
+        },
+        {
+          "counters": {
+            "ammo": 9.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 8375,
+            "shots": 99
+          },
+          "station": "lantern_base",
+          "tick": 8988
+        },
+        {
+          "counters": {
+            "ammo": 6.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 8575,
+            "shots": 102
+          },
+          "station": "workbench",
+          "tick": 9256
+        }
+      ],
+      "old_chapter_poses_rejected": true,
+      "passed": true,
+      "pullback_tick": 9202,
+      "reached": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "reloads": 9,
+      "replay": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "end_tick": 13002,
+        "inputs": 118
+      },
+      "result": "clear",
+      "train_transition_tick": 7977
+    },
+    "after": {
+      "build_id": "79b38ada06898061b638888466ae1e361d3dc5690b7df6adb278907f842e3f1a",
+      "chapter_transition_tick": 6821,
+      "counters": {
+        "ammo": 11.0,
+        "lives": 4,
+        "rescued": 7,
+        "score": 9275,
+        "shots": 109
+      },
+      "end_tick": 13002,
+      "ending": {
+        "city_texture_preloaded": true,
+        "city_tick": 9954,
+        "light_tick": 9522,
+        "natural_result_tick": 13002,
+        "quote_tick": 12390,
+        "skip": {
+          "counters": {
+            "ammo": 11.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 9275,
+            "shots": 109
+          },
+          "result": "clear",
+          "result_tick": 9523,
+          "start_tick": 9522
+        },
+        "skip_from_city": {
+          "counters": {
+            "ammo": 11.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 9275,
+            "shots": 109
+          },
+          "result": "clear",
+          "result_tick": 10075,
+          "start_tick": 10074
+        },
+        "skip_from_quote": {
+          "counters": {
+            "ammo": 11.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 9275,
+            "shots": 109
+          },
+          "result": "clear",
+          "result_tick": 12391,
+          "start_tick": 12390
+        },
+        "skip_from_wide": {
+          "counters": {
+            "ammo": 11.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 9275,
+            "shots": 109
+          },
+          "result": "clear",
+          "result_tick": 10891,
+          "start_tick": 10890
+        },
+        "wide_texture_preloaded": true,
+        "wide_tick": 10770
+      },
+      "failure_retries": [
+        {
+          "after_retry": {
+            "ammo": 12.0,
+            "lives": 5.0,
+            "rescued": 0.0,
+            "score": 0.0,
+            "shots": 0
+          },
+          "before_retry": {
+            "ammo": 6.0,
+            "lives": 0,
+            "rescued": 7,
+            "score": 8575,
+            "shots": 102
+          },
+          "defeat_tick": 10252,
+          "first_shot": {
+            "ammo": 11.0,
+            "lives": 5.0,
+            "rescued": 0.0,
+            "score": 0.0,
+            "shots": 1
+          },
+          "station": 15
+        }
+      ],
+      "failures": [],
+      "gpu_capture": true,
+      "handoffs": [
+        {
+          "counters": {
+            "ammo": 9.0,
+            "lives": 4,
+            "rescued": 1,
+            "score": 3875,
+            "shots": 39
+          },
+          "station": "stall",
+          "tick": 5713
+        },
+        {
+          "counters": {
+            "ammo": 11.0,
+            "lives": 4,
+            "rescued": 1,
+            "score": 4475,
+            "shots": 49
+          },
+          "station": "video_shop",
+          "tick": 6222
+        },
+        {
+          "counters": {
+            "ammo": 7.0,
+            "lives": 4,
+            "rescued": 2,
+            "score": 4775,
+            "shots": 53
+          },
+          "station": "footbridge",
+          "tick": 6506
+        },
+        {
+          "counters": {
+            "ammo": 4.0,
+            "lives": 4,
+            "rescued": 2,
+            "score": 4975,
+            "shots": 56
+          },
+          "station": "plaza",
+          "tick": 6619
+        },
+        {
+          "counters": {
+            "ammo": 5.0,
+            "lives": 4,
+            "rescued": 2,
+            "score": 6075,
+            "shots": 67
+          },
+          "station": "ticket_office",
+          "tick": 6911
+        },
+        {
+          "counters": {
+            "ammo": 0.0,
+            "lives": 4,
+            "rescued": 3,
+            "score": 6375,
+            "shots": 72
+          },
+          "station": "poster_hall",
+          "tick": 7170
+        },
+        {
+          "counters": {
+            "ammo": 9.0,
+            "lives": 4,
+            "rescued": 3,
+            "score": 6575,
+            "shots": 75
+          },
+          "station": "auditorium",
+          "tick": 7402
+        },
+        {
+          "counters": {
+            "ammo": 5.0,
+            "lives": 4,
+            "rescued": 4,
+            "score": 6875,
+            "shots": 79
+          },
+          "station": "projection_booth",
+          "tick": 7661
+        },
+        {
+          "counters": {
+            "ammo": 1.0,
+            "lives": 4,
+            "rescued": 5,
+            "score": 7175,
+            "shots": 83
+          },
+          "station": "screen_stage",
+          "tick": 7920
+        },
+        {
+          "counters": {
+            "ammo": 9.0,
+            "lives": 4,
+            "rescued": 5,
+            "score": 7575,
+            "shots": 87
+          },
+          "station": "waiting_room",
+          "tick": 8067
+        },
+        {
+          "counters": {
+            "ammo": 4.0,
+            "lives": 4,
+            "rescued": 6,
+            "score": 7875,
+            "shots": 92
+          },
+          "station": "platform",
+          "tick": 8374
+        },
+        {
+          "counters": {
+            "ammo": 0.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 8175,
+            "shots": 96
+          },
+          "station": "green_car",
+          "tick": 8681
+        },
+        {
+          "counters": {
+            "ammo": 9.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 8375,
+            "shots": 99
+          },
+          "station": "lantern_base",
+          "tick": 8988
+        },
+        {
+          "counters": {
+            "ammo": 6.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 8575,
+            "shots": 102
+          },
+          "station": "workbench",
+          "tick": 9256
+        }
+      ],
+      "old_chapter_poses_rejected": true,
+      "passed": true,
+      "pullback_tick": 9202,
+      "reached": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "reloads": 9,
+      "replay": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "end_tick": 13002,
+        "inputs": 118
+      },
+      "result": "clear",
+      "train_transition_tick": 7977
+    }
+  },
+  "candidate_manifest_sha256": "8ef0b0bbb04bbeab8931be59c4dd25caa8022b10caa111a6c440b364aa12d8f3",
+  "frozen": false,
+  "production_player": {
+    "audio_driver": "Dummy",
+    "build_id": "79b38ada06898061b638888466ae1e361d3dc5690b7df6adb278907f842e3f1a",
+    "failures": [],
+    "natural_ending": {
+      "counters": {
+        "ammo": 11.0,
+        "lives": 4,
+        "rescued": 7,
+        "score": 9275,
+        "shots": 109
+      },
+      "duration_seconds": 58.0,
+      "phase_times": {
+        "lantern_base.ending_city": 7.2,
+        "lantern_base.ending_light": 0.0,
+        "lantern_base.ending_quote": 47.8,
+        "lantern_base.ending_wide": 20.8
+      },
+      "result": "clear",
+      "tape_stopped": true,
+      "voice_samples": [
+        {
+          "audio_seconds": 9.010666847229,
+          "drift_seconds": -0.07266648610433,
+          "marker_seconds": 9.0,
+          "section": "lantern_base.ending_city",
+          "simulation_seconds": 9.08333333333333,
+          "subtitle": "夜市的灯，又亮了起来。"
+        },
+        {
+          "audio_seconds": 11.6106662750244,
+          "drift_seconds": -0.056000391642252,
+          "marker_seconds": 11.56,
+          "section": "lantern_base.ending_city",
+          "simulation_seconds": 11.6666666666667,
+          "subtitle": "夜市的灯，又亮了起来。"
+        },
+        {
+          "audio_seconds": 49.042667388916,
+          "drift_seconds": 0.0760007222493471,
+          "marker_seconds": 49.0,
+          "section": "lantern_base.ending_quote",
+          "simulation_seconds": 48.9666666666667,
+          "subtitle": "灯亮着，就还在。"
+        },
+        {
+          "audio_seconds": 51.2693328857422,
+          "drift_seconds": 0.0693328857421847,
+          "marker_seconds": 51.24,
+          "section": "lantern_base.ending_quote",
+          "simulation_seconds": 51.2,
+          "subtitle": "灯亮着，就还在。"
+        }
+      ],
+      "wall_seconds": 57.911
+    },
+    "opening": {
+      "caption_gap_checked": true,
+      "caption_samples": [
+        {
+          "matches": true,
+          "media_seconds": 3.5295634920635,
+          "text": "听见了吗？下雨的时候，"
+        },
+        {
+          "matches": true,
+          "media_seconds": 6.30961900000002,
+          "text": "老城就是这个声儿。"
+        },
+        {
+          "matches": true,
+          "media_seconds": 11.4584663333335,
+          "text": "从前啊，夜市一开灯，"
+        },
+        {
+          "matches": true,
+          "media_seconds": 14.512469809524,
+          "text": "谁家的窗户都舍不得关。"
+        },
+        {
+          "matches": true,
+          "media_seconds": 20.8575062121213,
+          "text": "后来，街拆了。我就一层一层，"
+        },
+        {
+          "matches": true,
+          "media_seconds": 23.6363623333331,
+          "text": "把它刻在纸里。"
+        },
+        {
+          "matches": true,
+          "media_seconds": 31.0414879999997,
+          "text": "这张纸呀，最怕沾上墨水。"
+        },
+        {
+          "matches": true,
+          "media_seconds": 38.2213519696967,
+          "text": "一小滴，也能把一条街的模样，慢慢盖住。"
+        },
+        {
+          "matches": true,
+          "media_seconds": 47.0073235555552,
+          "text": "可灯一亮，你听，它们又热闹起来了。"
+        },
+        {
+          "matches": true,
+          "media_seconds": 56.0166666666659,
+          "text": "卖汽水的，修车的，"
+        },
+        {
+          "matches": true,
+          "media_seconds": 58.6075757575751,
+          "text": "还有总不肯早早回家的小麻雀。"
+        },
+        {
+          "matches": true,
+          "media_seconds": 68.2833333333317,
+          "text": "要是哪天，你看见城里暗了一块，别怕。"
+        },
+        {
+          "matches": true,
+          "media_seconds": 76.2560063333302,
+          "text": "把光照过去。记着，照走的是墨，留下的，"
+        },
+        {
+          "matches": true,
+          "media_seconds": 79.22179433333,
+          "text": "是咱们的城。"
+        }
+      ],
+      "combat_counters": {
+        "ammo": 12.0,
+        "lives": 5.0,
+        "rescued": 0.0,
+        "score": 0.0,
+        "shots": 0
+      },
+      "last_media_seconds": 89.9722222222185,
+      "path": "natural",
+      "tick_after_opening": 0
+    },
+    "passed": true,
+    "retry": true,
+    "skips": [
+      {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "display_pause_checked": false,
+        "path": "Enter",
+        "result": "clear",
+        "section": "lantern_base.ending_light",
+        "tape_stopped": true
+      },
+      {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "display_pause_checked": true,
+        "path": "Esc",
+        "result": "clear",
+        "section": "lantern_base.ending_city",
+        "tape_stopped": true
+      },
+      {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "display_pause_checked": false,
+        "path": "UDP START",
+        "result": "clear",
+        "section": "lantern_base.ending_wide",
+        "tape_stopped": true
+      },
+      {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "display_pause_checked": false,
+        "path": "UDP EXIT",
+        "result": "clear",
+        "section": "lantern_base.ending_quote",
+        "tape_stopped": true
+      }
+    ],
+    "source_revision": "bf6ee67f80fed701fb861cd3ca34968a1fedd8bc6741754613f807b8be0d6f9e"
+  },
+  "production_player_log_sha256": "3ad7d4c42bb7546956f61727e0d725b60050c60bf6c7dad4e06cbfddfaa9c4d1",
+  "authoring_tests_passed": 26,
+  "quick_review": {
+    "tick": 10758,
+    "review_recording_sha256": "0160bb83e12bf37000aa78cad0981d391c9fa97f37b586c8ea94152611048e08",
+    "capture_sha256": "1bbf62c19dea8747741087913822d6913ed84c4a3aa300f1d5011d28cc50530f"
+  }
+}

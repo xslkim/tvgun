@@ -1,0 +1,55 @@
+{
+  "startup": {
+    "build_id": "dd118cce15b54cd0d07982774237abd308f21ed670121190fbf473592ab5cc00",
+    "http_error": 0,
+    "level_player_ready": true,
+    "udp_errors": []
+  },
+  "display_setup_regression": {
+    "build_id": "dd118cce15b54cd0d07982774237abd308f21ed670121190fbf473592ab5cc00",
+    "captures": true,
+    "failures": [],
+    "passed": true,
+    "udp_shots": 19
+  },
+  "engine": "Godot 4.6.3 Windows",
+  "scripts": {
+    "level_player": "4c9918d91f614916dcf451a7c2d2ff55541b7c52081be2cc91c78d520d5bb04c",
+    "display_setup": "2b5c5338a8b28f5a20395ca162f0ad73af010c6bf78de227a3a7f0e4392606af"
+  },
+  "frames": {
+    "overscan_monitor.jpg": {
+      "jpg_sha256": "952badb1a4887773f4582a40e426ab90a044a42238c2bbb07ac293df09617dc9",
+      "tracking_and_dark_bands": "pixel_samples_passed",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0020946189960274466
+        }
+      }
+    },
+    "overscan_tv.jpg": {
+      "jpg_sha256": "fdf04051acb6d93082083198065819aede80bf0947346201ee0937515a2d4e90",
+      "tracking_and_dark_bands": "pixel_samples_passed",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.00198627356575755
+        }
+      }
+    },
+    "calibration_target.jpg": {
+      "jpg_sha256": "7cfc97564e5cde2aa800ebabedae6b471ba5a5c889a536f11e39220fa27b5fbb",
+      "tracking_and_dark_bands": "pixel_samples_passed",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.00022657112917386503
+        }
+      }
+    }
+  }
+}

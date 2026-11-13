@@ -1,0 +1,789 @@
+{
+  "after": {
+    "ammo": 2,
+    "lives": 4,
+    "rescued": 2,
+    "score": 6075,
+    "shots": 70
+  },
+  "before": {
+    "ammo": 2,
+    "lives": 4,
+    "rescued": 2,
+    "score": 5175,
+    "shots": 58
+  },
+  "breath_released": false,
+  "build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11",
+  "dragon_start_tick": 6680,
+  "early_tail_aim_moved_px": 108.073585510254,
+  "failures": [],
+  "gpu": "NVIDIA GeForce RTX 3080 Ti",
+  "jaw_shots": [
+    {
+      "jaw": "upper_jaw",
+      "reply": {
+        "hit": false,
+        "kind": "blocker",
+        "ok": true
+      }
+    },
+    {
+      "jaw": "lower_jaw",
+      "reply": {
+        "hit": false,
+        "kind": "blocker",
+        "ok": true
+      }
+    }
+  ],
+  "maximum_joint_gap_px": 6.103515625e-05,
+  "mouth_hit": {
+    "hit": true,
+    "kind": "weak",
+    "ok": true,
+    "target": "dragon.mouth"
+  },
+  "mouth_open_tick": 7070,
+  "next_section": "cinema.ticket_office",
+  "next_tick": 7431,
+  "opening_order": [
+    {
+      "id": "body_08",
+      "paper_visible": true,
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "body_08"
+      }
+    },
+    {
+      "id": "body_07",
+      "paper_visible": true,
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "body_07"
+      }
+    },
+    {
+      "id": "body_06",
+      "paper_visible": true,
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "body_06"
+      }
+    },
+    {
+      "id": "body_05",
+      "paper_visible": true,
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "body_05"
+      }
+    },
+    {
+      "id": "body_04",
+      "paper_visible": true,
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "body_04"
+      }
+    },
+    {
+      "id": "body_03",
+      "paper_visible": true,
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "body_03"
+      }
+    },
+    {
+      "id": "body_02",
+      "paper_visible": true,
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "body_02"
+      }
+    },
+    {
+      "id": "body_01",
+      "paper_visible": true,
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "body_01"
+      }
+    }
+  ],
+  "passed": true,
+  "plaza_entry_tick": 6619,
+  "samples": [
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 5845,
+      "hud_clear": true,
+      "joint_gap_px": 0.0,
+      "phase": "body_swim",
+      "sample": "body_08_00",
+      "target": "body_08",
+      "tick": 6680,
+      "effective_radius_px": 42.79,
+      "radius_passed": true,
+      "mask_sha256": "d9cd14685da8c620ab38d47b52dac5f5465dabc897c8b508c7a299593c2d48d7"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 5851,
+      "hud_clear": true,
+      "joint_gap_px": 0.0,
+      "phase": "body_swim",
+      "sample": "body_08_18",
+      "target": "body_08",
+      "tick": 6698,
+      "effective_radius_px": 42.81,
+      "radius_passed": true,
+      "mask_sha256": "b48898cfcee724d8e07e8cb0714bb8cd9f8ec57dff500b6d9bca1b235ce344d2"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 5838,
+      "hud_clear": true,
+      "joint_gap_px": 0.0,
+      "phase": "body_swim",
+      "sample": "body_08_36",
+      "target": "body_08",
+      "tick": 6716,
+      "effective_radius_px": 42.74,
+      "radius_passed": true,
+      "mask_sha256": "fbc4e82c24e48ae4ad8808355f660c08befbee5efbdb4bcaa1ea33bbd8cac58e"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6116,
+      "hud_clear": true,
+      "joint_gap_px": 0.0,
+      "phase": "body_swim",
+      "sample": "body_07_00",
+      "target": "body_07",
+      "tick": 6763,
+      "effective_radius_px": 43.76,
+      "radius_passed": true,
+      "mask_sha256": "dad7a41f477de85ed8b6d5d3562707c7620977d2cd1a61af3d1bdc37620d970c"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6108,
+      "hud_clear": true,
+      "joint_gap_px": 0.0,
+      "phase": "body_swim",
+      "sample": "body_07_18",
+      "target": "body_07",
+      "tick": 6781,
+      "effective_radius_px": 43.82,
+      "radius_passed": true,
+      "mask_sha256": "23924056b85861aa77c8fa1feacd3325a862bbeb7e32288688ee8076ff6dd4e7"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6111,
+      "hud_clear": true,
+      "joint_gap_px": 0.0,
+      "phase": "body_swim",
+      "sample": "body_07_36",
+      "target": "body_07",
+      "tick": 6799,
+      "effective_radius_px": 43.79,
+      "radius_passed": true,
+      "mask_sha256": "d920ed360bc18a0934e16f615d8243ab85aff2a090673c83cdbf90bc0044b032"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6298,
+      "hud_clear": true,
+      "joint_gap_px": 3.0517578125e-05,
+      "phase": "body_swim",
+      "sample": "body_06_00",
+      "target": "body_06",
+      "tick": 6808,
+      "effective_radius_px": 44.37,
+      "radius_passed": true,
+      "mask_sha256": "3eb00eb9bd338b2b1fea197b9784b1cc7b5e729c6eee09dac0359ef7af2cbc0e"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6298,
+      "hud_clear": true,
+      "joint_gap_px": 0.0,
+      "phase": "body_swim",
+      "sample": "body_06_18",
+      "target": "body_06",
+      "tick": 6826,
+      "effective_radius_px": 44.41,
+      "radius_passed": true,
+      "mask_sha256": "797e998d172181f0109b363581c1ab75388af82e68fb4a9dfddcef1d52002d5b"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6306,
+      "hud_clear": true,
+      "joint_gap_px": 3.0517578125e-05,
+      "phase": "body_swim",
+      "sample": "body_06_36",
+      "target": "body_06",
+      "tick": 6844,
+      "effective_radius_px": 44.48,
+      "radius_passed": true,
+      "mask_sha256": "a4a1a32858c509d39541167cfa186fe09f5231f5c1bf329eb0915b1c1b6c826f"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6472,
+      "hud_clear": true,
+      "joint_gap_px": 3.0517578125e-05,
+      "phase": "body_swim",
+      "sample": "body_05_00",
+      "target": "body_05",
+      "tick": 6853,
+      "effective_radius_px": 45.01,
+      "radius_passed": true,
+      "mask_sha256": "3eabea3e4efea7d6e7d7e006fe933a998b61dfab580ddb4769d1bb3a3ea99e39"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6465,
+      "hud_clear": true,
+      "joint_gap_px": 6.103515625e-05,
+      "phase": "body_swim",
+      "sample": "body_05_18",
+      "target": "body_05",
+      "tick": 6871,
+      "effective_radius_px": 45.04,
+      "radius_passed": true,
+      "mask_sha256": "758a1a5b85de5f796c8ee7fcd89162320f0cda7573d0d766dada4ff192ebd191"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6471,
+      "hud_clear": true,
+      "joint_gap_px": 0.0,
+      "phase": "body_swim",
+      "sample": "body_05_36",
+      "target": "body_05",
+      "tick": 6889,
+      "effective_radius_px": 45.04,
+      "radius_passed": true,
+      "mask_sha256": "d00461a26f36c2a0ac76e85932946dbae778902d4194b5146279f9d243fd7695"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6664,
+      "hud_clear": true,
+      "joint_gap_px": 0.0,
+      "phase": "body_swim",
+      "sample": "body_04_00",
+      "target": "body_04",
+      "tick": 6898,
+      "effective_radius_px": 45.64,
+      "radius_passed": true,
+      "mask_sha256": "d04c222fa2e0c32d978440557d337d09965655577a7233b7d17d67e7a2827d68"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6648,
+      "hud_clear": true,
+      "joint_gap_px": 0.0,
+      "phase": "body_swim",
+      "sample": "body_04_18",
+      "target": "body_04",
+      "tick": 6916,
+      "effective_radius_px": 45.58,
+      "radius_passed": true,
+      "mask_sha256": "3bb2b0f519176de45dc91d642e51cb166676f652eb1bf42d383bdc27e54b3448"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6663,
+      "hud_clear": true,
+      "joint_gap_px": 0.0,
+      "phase": "body_swim",
+      "sample": "body_04_36",
+      "target": "body_04",
+      "tick": 6934,
+      "effective_radius_px": 45.67,
+      "radius_passed": true,
+      "mask_sha256": "8b64e3bfed459c0cbf638724c36b98e8bb0ccb40c1844aee6f08ab5bf39caca7"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6864,
+      "hud_clear": true,
+      "joint_gap_px": 0.0,
+      "phase": "body_swim",
+      "sample": "body_03_00",
+      "target": "body_03",
+      "tick": 6943,
+      "effective_radius_px": 46.34,
+      "radius_passed": true,
+      "mask_sha256": "badb3b7d59dea3412f6376250d6128b736d73bea5c2947e4d3698e5f4a1f765d"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6862,
+      "hud_clear": true,
+      "joint_gap_px": 0.0,
+      "phase": "body_swim",
+      "sample": "body_03_18",
+      "target": "body_03",
+      "tick": 6961,
+      "effective_radius_px": 46.33,
+      "radius_passed": true,
+      "mask_sha256": "d91daebdea193b8f4613de9c339d7e899d153c0c4dd3dd20f846b0ae2bedbd18"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6866,
+      "hud_clear": true,
+      "joint_gap_px": 3.0517578125e-05,
+      "phase": "body_swim",
+      "sample": "body_03_36",
+      "target": "body_03",
+      "tick": 6979,
+      "effective_radius_px": 46.34,
+      "radius_passed": true,
+      "mask_sha256": "348b08195d1d367eff70dd37c3b076bb820d00fd0d7547bc94f35a8b784231eb"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6948,
+      "hud_clear": true,
+      "joint_gap_px": 3.0517578125e-05,
+      "phase": "body_swim",
+      "sample": "body_02_00",
+      "target": "body_02",
+      "tick": 6988,
+      "effective_radius_px": 46.67,
+      "radius_passed": true,
+      "mask_sha256": "bcc60b6fc3ba754e2bc154d2b26a6ea97ed73c00bff0fad986714fbe3e7d87de"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6948,
+      "hud_clear": true,
+      "joint_gap_px": 3.0517578125e-05,
+      "phase": "body_swim",
+      "sample": "body_02_18",
+      "target": "body_02",
+      "tick": 7006,
+      "effective_radius_px": 46.72,
+      "radius_passed": true,
+      "mask_sha256": "225ec9978a346d57ea1b5da85264aac0a029fb5f9a1e6cd6edf5b997dee278b5"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6958,
+      "hud_clear": true,
+      "joint_gap_px": 0.0,
+      "phase": "body_swim",
+      "sample": "body_02_36",
+      "target": "body_02",
+      "tick": 7024,
+      "effective_radius_px": 46.7,
+      "radius_passed": true,
+      "mask_sha256": "0ba84bfb69e645989e2a95324d59d73718395a36aaa26907c29c5e2a45e227ff"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 7085,
+      "hud_clear": true,
+      "joint_gap_px": 3.0517578125e-05,
+      "phase": "body_swim",
+      "sample": "body_01_00",
+      "target": "body_01",
+      "tick": 7033,
+      "effective_radius_px": 47.15,
+      "radius_passed": true,
+      "mask_sha256": "b78eca2b4b100561a42c97657b347fdcf65c519d236f5d7b3912888fd9d2a564"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 7087,
+      "hud_clear": true,
+      "joint_gap_px": 3.0517578125e-05,
+      "phase": "body_swim",
+      "sample": "body_01_18",
+      "target": "body_01",
+      "tick": 7051,
+      "effective_radius_px": 47.2,
+      "radius_passed": true,
+      "mask_sha256": "1b15ce93d3c1dd1a563c8009d850c8132689b2641fe81104ca7f4c46dccde2f7"
+    },
+    {
+      "covered_pixels": {},
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 7082,
+      "hud_clear": true,
+      "joint_gap_px": 0.0,
+      "phase": "body_swim",
+      "sample": "body_01_36",
+      "target": "body_01",
+      "tick": 7069,
+      "effective_radius_px": 47.15,
+      "radius_passed": true,
+      "mask_sha256": "6ee1c7ac9eb5a1ead0c1f07c013d1cceaae91a48e0432dd917dc297855d48b7a"
+    },
+    {
+      "covered_pixels": {
+        "lower_jaw": 356,
+        "upper_jaw": 274
+      },
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6014,
+      "hud_clear": true,
+      "joint_gap_px": 0.0,
+      "phase": "mouth_open",
+      "sample": "mouth_idle_00",
+      "target": "dragon.mouth",
+      "tick": 7070,
+      "effective_radius_px": 42.73,
+      "radius_passed": true,
+      "mask_sha256": "488a27cff4f1d15a204031f9c1f03d0f456ba54c8e3a60755bc99da0c1f49dd0"
+    },
+    {
+      "covered_pixels": {
+        "lower_jaw": 355,
+        "upper_jaw": 271
+      },
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6022,
+      "hud_clear": true,
+      "joint_gap_px": 3.0517578125e-05,
+      "phase": "mouth_open",
+      "sample": "mouth_idle_18",
+      "target": "dragon.mouth",
+      "tick": 7088,
+      "effective_radius_px": 42.72,
+      "radius_passed": true,
+      "mask_sha256": "d1af0d9e87230040a68969f792a225a78c14091db06f16b6ab08e9da061742da"
+    },
+    {
+      "covered_pixels": {
+        "lower_jaw": 353,
+        "upper_jaw": 272
+      },
+      "head_swing_degrees": 0.0,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6019,
+      "hud_clear": true,
+      "joint_gap_px": 0.0,
+      "phase": "mouth_open",
+      "sample": "mouth_idle_36",
+      "target": "dragon.mouth",
+      "tick": 7106,
+      "effective_radius_px": 42.73,
+      "radius_passed": true,
+      "mask_sha256": "2fb3e540e5cb0d9e527058badfa96e4dd6f142db947f6972ccad7b405793044f"
+    },
+    {
+      "covered_pixels": {
+        "lower_jaw": 354,
+        "upper_jaw": 270
+      },
+      "head_swing_degrees": -2.26534163899762,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6023,
+      "hud_clear": true,
+      "joint_gap_px": 3.0517578125e-05,
+      "phase": "head_swing",
+      "sample": "mouth_warning_12",
+      "target": "dragon.mouth",
+      "tick": 7232,
+      "effective_radius_px": 42.71,
+      "radius_passed": true,
+      "mask_sha256": "ba788fce1701eb134e0bcc0b7f37f6b939cdb5887c66618e9e60a8c7bc7dbd60"
+    },
+    {
+      "covered_pixels": {
+        "lower_jaw": 355,
+        "upper_jaw": 275
+      },
+      "head_swing_degrees": -7.95617516294619,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6024,
+      "hud_clear": true,
+      "joint_gap_px": 0.0,
+      "phase": "head_swing",
+      "sample": "mouth_warning_35",
+      "target": "dragon.mouth",
+      "tick": 7255,
+      "effective_radius_px": 42.67,
+      "radius_passed": true,
+      "mask_sha256": "0a9372d99e1eb20aceadbb09bbbf96bf70fb64cbf3861a70146b1251bbf2db8c"
+    },
+    {
+      "covered_pixels": {
+        "lower_jaw": 353,
+        "upper_jaw": 271
+      },
+      "head_swing_degrees": -3.45506666227417e-15,
+      "hidden_hittable_pixels": 0,
+      "hittable_pixels": 6028,
+      "hud_clear": true,
+      "joint_gap_px": 0.0,
+      "phase": "head_swing",
+      "sample": "mouth_warning_60",
+      "target": "dragon.mouth",
+      "tick": 7280,
+      "effective_radius_px": 42.76,
+      "radius_passed": true,
+      "mask_sha256": "e799a3a58e06b6c7553d76fcfe0d751aede76698f27cd1bdb837c60a775f6c95"
+    }
+  ],
+  "source_revision": "3ee1e018cc218e74c121b295d64926019f80e7b0d26586a303e8463c6e1e9e19",
+  "stale_tail": {
+    "hit": false,
+    "ok": true,
+    "reason": "target_inactive"
+  },
+  "tail_submission": "submission:1:tick:6680",
+  "warning_tick": 7220,
+  "compiled_sha256": "ad6c66d5a2624d07f51543b55bae4eeb7dff9dec93dc2184248d9cf3534cfc2f",
+  "frames": [
+    {
+      "frame": "body_08_active",
+      "sample": "body_08_36",
+      "pixels_changed_in_hit_mask": 5838,
+      "frame_sha256": "7cc7032a7ea7fd0ea41f14371467fdc33b0914639cdca911c27d8010614b70ca",
+      "reference_sha256": "a07096982ef1d44e0cc9023d16d30a504fb6a1d0991f23c12adfa3d5d9f83e7b",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0021355490105490105
+        }
+      }
+    },
+    {
+      "frame": "body_07_active",
+      "sample": "body_07_36",
+      "pixels_changed_in_hit_mask": 6111,
+      "frame_sha256": "0c5e3f92a0e0d53f757f0fedd448d25d8a1a55eaa9cb045c64b0d6fc7cdca910",
+      "reference_sha256": "400a96a7f71b8ac7b9f82b2db75b3f72da545e6aef8f49539b566f916b927a68",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0021469787094787096
+        }
+      }
+    },
+    {
+      "frame": "body_06_active",
+      "sample": "body_06_36",
+      "pixels_changed_in_hit_mask": 6306,
+      "frame_sha256": "beea4cfb4bb711b20397ec53166cf481aa36d530123a51feb42e2de516fd55ba",
+      "reference_sha256": "a452515fe763e83b68297772be86002b8e4a0dc95dc7be71f22a43c643042e09",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002139158389158389
+        }
+      }
+    },
+    {
+      "frame": "body_05_active",
+      "sample": "body_05_36",
+      "pixels_changed_in_hit_mask": 6471,
+      "frame_sha256": "f409e52c77e3eb634e9201fddf985d1a4da6e1cbc8eba48894bdf15e324fe74f",
+      "reference_sha256": "efa73a0ee43bbbfe062a40d2d4c35f94ec77a6b742860152d918d0e65319bdd1",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0021698381073381075
+        }
+      }
+    },
+    {
+      "frame": "body_04_active",
+      "sample": "body_04_36",
+      "pixels_changed_in_hit_mask": 6663,
+      "frame_sha256": "e205f8e07e346e947aedc05b6271ef9ddedd919b8748cde6f7c50e8641c09deb",
+      "reference_sha256": "6afef8d3075545edd5181d609b5e9698aad1df0f6a2d26551a568bc8ddec2afb",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0021523927773927773
+        }
+      }
+    },
+    {
+      "frame": "body_03_active",
+      "sample": "body_03_36",
+      "pixels_changed_in_hit_mask": 6866,
+      "frame_sha256": "a22ff482dd932efcb08efb92cee849053338a605be2eee1f3e02abf04e28a369",
+      "reference_sha256": "e8ddbc3d67d978bfc5ca39c5a50a15a72ed3fcbbdb6ffdecf2329e24a3b4b677",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002172845922845923
+        }
+      }
+    },
+    {
+      "frame": "body_02_active",
+      "sample": "body_02_36",
+      "pixels_changed_in_hit_mask": 6958,
+      "frame_sha256": "0904dcaf1b65e4fe53ddc67c6ada3508ab894032599e057b6f7416dcf26dc26b",
+      "reference_sha256": "143a6ec8818d0ea525d5c86a3fafd5f99a4d39ba0822c4320f755198f5f029bb",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0021199083699083698
+        }
+      }
+    },
+    {
+      "frame": "body_01_active",
+      "sample": "body_01_36",
+      "pixels_changed_in_hit_mask": 7082,
+      "frame_sha256": "fa921b84b8b721bc1467912157b0c12f48a9b671719c5a49a2b3364cc9bc4c32",
+      "reference_sha256": "c19118a180d89d8b862c8fd90015a35cb22945a12f588e2e5ccbd7133f6e058c",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002166228728728729
+        }
+      }
+    },
+    {
+      "frame": "mouth_open",
+      "sample": "mouth_idle_36",
+      "pixels_changed_in_hit_mask": 6019,
+      "frame_sha256": "a2187b18a5e104c3f5303d53fd5918de4149e7ded532c0645fa681899cf88ef5",
+      "reference_sha256": "86766cb9fa65810fd41b0ba59936354056ea670492ee4d08b5de5e797e8d92da",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0021644240394240394
+        }
+      }
+    },
+    {
+      "frame": "mouth_warning",
+      "sample": "mouth_warning_35",
+      "pixels_changed_in_hit_mask": 6024,
+      "frame_sha256": "cb509cbfe787ba4510e1d102100df4024c33d5dda272cf7c278a56a6f2505415",
+      "reference_sha256": "85a2145b76a2d42ef613bc3dedf0a3f811836dd1612a87e84d7dd8348a62626c",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002167431854931855
+        }
+      }
+    },
+    {
+      "frame": "dragon_purified",
+      "frame_sha256": "1f1dd3aeac4e59629580b551ab8fbd0cbbc9c0460e6b4db63abd61ef83d2083a",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.009541392353892354
+        }
+      }
+    }
+  ],
+  "summary": {
+    "poses": 30,
+    "radius_passed": 30,
+    "hud_clear": 30,
+    "hidden_hittable_pixels": 0,
+    "C03_frames_passed": 11,
+    "min_radius_by_target_px": {
+      "body_08": 42.74,
+      "body_07": 43.76,
+      "body_06": 44.37,
+      "body_05": 45.01,
+      "body_04": 45.58,
+      "body_03": 46.33,
+      "body_02": 46.67,
+      "body_01": 47.15,
+      "dragon.mouth": 42.67
+    }
+  },
+  "physical_lightgun": "pending",
+  "previews": {
+    "motion_1_8.jpg": "5ae409890b0131b9d742876defe0cac116328c693885e62687e2ad8a9e6e4efe",
+    "mouth_jaws.jpg": "68b57e30fcc077a43c3f0180fbff943f630a0393e28ca922c6b209fd65c9b50b"
+  }
+}

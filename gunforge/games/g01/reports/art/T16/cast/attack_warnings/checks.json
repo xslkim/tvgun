@@ -1,0 +1,433 @@
+{
+  "bridge": {
+    "bell": {
+      "cue": "footbridge.bell",
+      "decoded_seconds": 0.48,
+      "end_tick": 6658,
+      "loop": false,
+      "resource": "footbridge.sound_bell",
+      "start_tick": 6629,
+      "volume_db": -10.0
+    },
+    "damage": {
+      "lives_after": 3,
+      "lives_before": 4,
+      "tick": 6730
+    },
+    "entry_tick": 6506,
+    "interrupted": {
+      "hit": true,
+      "kind": "primary",
+      "ok": true,
+      "target": "footbridge.bridge.cyclist"
+    },
+    "interrupted_damage": {
+      "lives_after": 4,
+      "lives_before": 4,
+      "tick": 6730
+    },
+    "release_audio": {
+      "cue": "alley.attack",
+      "decoded_seconds": 0.32,
+      "end_tick": 6724,
+      "loop": false,
+      "resource": "alley.sound_attack",
+      "start_tick": 6704,
+      "volume_db": -3.0
+    },
+    "release_tick": 6704,
+    "resident_idle_tick": 6671,
+    "warning_tick": 6629
+  },
+  "build_id": "85d234e0f4b4f2865881d2e355bf897f82d2af93ae6f6950c6431e5adada59c6",
+  "failures": [],
+  "frames": [
+    {
+      "effect": "footbridge.cart_warn",
+      "effect_age_ticks": 12,
+      "entity": "footbridge.bridge.cyclist",
+      "frame": "bridge_warning_early",
+      "label": "天桥 · 铃响甩墨",
+      "phase": "预警 200 ms",
+      "section": "footbridge.footbridge",
+      "state": "warning",
+      "tick": 6641,
+      "frame_sha256": "f873d483b28f9b24e639392aad90addfd5edbd6fe2573243e197a481d24d73ca",
+      "reference_sha256": "d56b86125e924263030a9a64bdba495965f5efd8783cc27ec48521cf4c6e349f",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0020459161084161086
+        }
+      },
+      "pixels_changed_full": 5770,
+      "pixels_changed_at_eighth": 192,
+      "visual_review": "A5_pending"
+    },
+    {
+      "effect": "footbridge.cart_warn",
+      "effect_age_ticks": 60,
+      "entity": "footbridge.bridge.cyclist",
+      "frame": "bridge_warning_late",
+      "label": "天桥 · 铃响甩墨",
+      "phase": "预警 1000 ms",
+      "section": "footbridge.footbridge",
+      "state": "warning",
+      "tick": 6689,
+      "frame_sha256": "7137c8ac5f56c6b436c74d9dab8a4c454d7f1f2c34c2918786d114b10df63415",
+      "reference_sha256": "9e9ea60f57c9bd6591759ea4a10773f871b97291a8e71a4679f732414f0f3039",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0020423067298067296
+        }
+      },
+      "pixels_changed_full": 2673,
+      "pixels_changed_at_eighth": 58,
+      "visual_review": "A5_pending"
+    },
+    {
+      "effect": "footbridge.cart_spit",
+      "effect_age_ticks": 8,
+      "entity": "footbridge.bridge.cyclist",
+      "frame": "bridge_release",
+      "label": "天桥 · 甩墨",
+      "phase": "墨流离手 133 ms",
+      "section": "footbridge.footbridge",
+      "state": "warning",
+      "tick": 6712,
+      "frame_sha256": "b060ff21304bbec34145ce05e86f00ec104bac01499cefedd7d982d440224be6",
+      "reference_sha256": "e57304bf04b2c90d1a0b46da885302597490abd86950611ec928f24db3aa74b3",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002044111419111419
+        }
+      },
+      "pixels_changed_full": 7787,
+      "pixels_changed_at_eighth": 188,
+      "visual_review": "A5_pending"
+    },
+    {
+      "effect": "cinema.sweep_fx",
+      "effect_age_ticks": 18,
+      "entity": "cinema.sweep_tape_1",
+      "frame": "left_sweep",
+      "label": "影院 · 左放映机",
+      "phase": "墨光扫过 300 ms",
+      "section": "cinema.screen_stage",
+      "state": "warning",
+      "tick": 8028,
+      "frame_sha256": "f52f86ac33da340ba4b7164ea79dc907722d04b91bd11270ae3ba0dd00c8135b",
+      "reference_sha256": "407787187415d68ab6ba58661c2ea2aaaa20d599d455cca1cdd10e5235e754bc",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002210142835142835
+        }
+      },
+      "pixels_changed_full": 15058,
+      "pixels_changed_at_eighth": 251,
+      "visual_review": "A5_pending"
+    },
+    {
+      "effect": "cinema.warn_fx",
+      "effect_age_ticks": 12,
+      "entity": "cinema.sweep_tape_1",
+      "frame": "left_warning_early",
+      "label": "影院 · 左放映机",
+      "phase": "磁带预警 200 ms",
+      "section": "cinema.screen_stage",
+      "state": "warning",
+      "tick": 8217,
+      "frame_sha256": "ba3e6f370e888d7bc0d4eb44f9450c5466474853cecba435e459e1f60589f094",
+      "reference_sha256": "5c14a2fb6ae182419502a649290da0228bbef19d39faecd891056b5241c2c4e9",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002210142835142835
+        }
+      },
+      "pixels_changed_full": 4390,
+      "pixels_changed_at_eighth": 122,
+      "visual_review": "A5_pending"
+    },
+    {
+      "effect": "cinema.warn_fx",
+      "effect_age_ticks": 60,
+      "entity": "cinema.sweep_tape_1",
+      "frame": "left_warning_late",
+      "label": "影院 · 左放映机",
+      "phase": "磁带预警 1000 ms",
+      "section": "cinema.screen_stage",
+      "state": "warning",
+      "tick": 8265,
+      "frame_sha256": "561899bf887ebbc3473e6cf3aee1e79bc18c25735892d32a7114eaff2bf1dfb0",
+      "reference_sha256": "7324f8848fde1cb412157ef567c624c8fb79d55ded2a1ef21401fc96030e7e13",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002210142835142835
+        }
+      },
+      "pixels_changed_full": 2251,
+      "pixels_changed_at_eighth": 37,
+      "visual_review": "A5_pending"
+    },
+    {
+      "effect": "cinema.sweep_fx",
+      "effect_age_ticks": 18,
+      "entity": "cinema.sweep_tape_2",
+      "frame": "center_sweep",
+      "label": "影院 · 中放映机",
+      "phase": "墨光扫过 300 ms",
+      "section": "cinema.screen_stage",
+      "state": "warning",
+      "tick": 8124,
+      "frame_sha256": "061e2644864c61a2a976c0b8c59d9f39cc9f30b61d149b1b34b800790c83b182",
+      "reference_sha256": "fac063f409d234e2864b26c955450c1ab403ba23d6f435722575a328d700db43",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002210142835142835
+        }
+      },
+      "pixels_changed_full": 10186,
+      "pixels_changed_at_eighth": 170,
+      "visual_review": "A5_pending"
+    },
+    {
+      "effect": "cinema.warn_fx",
+      "effect_age_ticks": 12,
+      "entity": "cinema.sweep_tape_2",
+      "frame": "center_warning_early",
+      "label": "影院 · 中放映机",
+      "phase": "磁带预警 200 ms",
+      "section": "cinema.screen_stage",
+      "state": "warning",
+      "tick": 8313,
+      "frame_sha256": "c44f5b2d456384982f21c8d2a6290a466ba7eae648e25b3d5e2e7a2fbf80b842",
+      "reference_sha256": "697c84b23b28fb50482a229e3dd5873934c9da6c3bea3389b416be04eee109dc",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002210142835142835
+        }
+      },
+      "pixels_changed_full": 4249,
+      "pixels_changed_at_eighth": 119,
+      "visual_review": "A5_pending"
+    },
+    {
+      "effect": "cinema.warn_fx",
+      "effect_age_ticks": 60,
+      "entity": "cinema.sweep_tape_2",
+      "frame": "center_warning_late",
+      "label": "影院 · 中放映机",
+      "phase": "磁带预警 1000 ms",
+      "section": "cinema.screen_stage",
+      "state": "warning",
+      "tick": 8361,
+      "frame_sha256": "455cf4b2b69ad60e65668ab4ce55def1c96321d8d5f135375ea0719a4635a069",
+      "reference_sha256": "882931587f668577fcd2856eb9e7b14b13a4575695f4d1a404796f2d3d8635eb",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002210142835142835
+        }
+      },
+      "pixels_changed_full": 1995,
+      "pixels_changed_at_eighth": 27,
+      "visual_review": "A5_pending"
+    },
+    {
+      "effect": "cinema.sweep_fx",
+      "effect_age_ticks": 18,
+      "entity": "cinema.sweep_tape_3",
+      "frame": "right_sweep",
+      "label": "影院 · 右放映机",
+      "phase": "墨光扫过 300 ms",
+      "section": "cinema.screen_stage",
+      "state": "warning",
+      "tick": 8220,
+      "frame_sha256": "99c50432c77c2d9ce8454d0a6cc909f8a0bf944aa318b99fbda4e024256d43c8",
+      "reference_sha256": "be8b042dbc30888380196f72c5cca3694bf0926f0cd4509d0cf19bbe625401ad",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002210142835142835
+        }
+      },
+      "pixels_changed_full": 16552,
+      "pixels_changed_at_eighth": 278,
+      "visual_review": "A5_pending"
+    },
+    {
+      "effect": "cinema.warn_fx",
+      "effect_age_ticks": 12,
+      "entity": "cinema.sweep_tape_3",
+      "frame": "right_warning_early",
+      "label": "影院 · 右放映机",
+      "phase": "磁带预警 200 ms",
+      "section": "cinema.screen_stage",
+      "state": "warning",
+      "tick": 8409,
+      "frame_sha256": "e9e6a756db85bdd1cf11012b663f66a2f87a9d139e5fd2e940cb68674748a5b8",
+      "reference_sha256": "ae79c0763c87b681328866faad0050a3c54f366574bc6cfab94b97ac479d7b7d",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002210142835142835
+        }
+      },
+      "pixels_changed_full": 4510,
+      "pixels_changed_at_eighth": 131,
+      "visual_review": "A5_pending"
+    },
+    {
+      "effect": "cinema.warn_fx",
+      "effect_age_ticks": 60,
+      "entity": "cinema.sweep_tape_3",
+      "frame": "right_warning_late",
+      "label": "影院 · 右放映机",
+      "phase": "磁带预警 1000 ms",
+      "section": "cinema.screen_stage",
+      "state": "warning",
+      "tick": 8457,
+      "frame_sha256": "9a919240cc46eff4f6b6da0bf474c91576b17b4a7d0053203b05cbedf9628780",
+      "reference_sha256": "cac4e1ffb2891762fd2dfff08202a1a1dc4c08e83972fbc92238ec333710f07d",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002210142835142835
+        }
+      },
+      "pixels_changed_full": 2084,
+      "pixels_changed_at_eighth": 32,
+      "visual_review": "A5_pending"
+    }
+  ],
+  "gpu": "NVIDIA GeForce RTX 3080 Ti",
+  "passed": true,
+  "projectors": [
+    {
+      "damage": {
+        "lives_after": 3,
+        "lives_before": 4,
+        "tick": 8280
+      },
+      "interrupt_tick": 8001,
+      "interrupted": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "cinema.reel_left"
+      },
+      "interrupted_damage": {
+        "lives_after": 4,
+        "lives_before": 4,
+        "tick": 8280
+      },
+      "side": "left",
+      "spawn_tick": 8037,
+      "sweep_tick": 8010,
+      "warning_audio": {
+        "cue": "alley.windup",
+        "decoded_seconds": 0.649977324263039,
+        "end_tick": 8244,
+        "loop": false,
+        "resource": "alley.sound_windup",
+        "start_tick": 8205,
+        "volume_db": -4.0
+      },
+      "warning_tick": 8205
+    },
+    {
+      "damage": {
+        "lives_after": 2,
+        "lives_before": 3,
+        "tick": 8376
+      },
+      "interrupt_tick": 8115,
+      "interrupted": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "cinema.reel_center"
+      },
+      "interrupted_damage": {
+        "lives_after": 3,
+        "lives_before": 3,
+        "tick": 8376
+      },
+      "side": "center",
+      "spawn_tick": 8133,
+      "sweep_tick": 8106,
+      "warning_audio": {
+        "cue": "alley.windup",
+        "decoded_seconds": 0.649977324263039,
+        "end_tick": 8340,
+        "loop": false,
+        "resource": "alley.sound_windup",
+        "start_tick": 8301,
+        "volume_db": -4.0
+      },
+      "warning_tick": 8301
+    },
+    {
+      "damage": {
+        "lives_after": 1,
+        "lives_before": 2,
+        "tick": 8472
+      },
+      "interrupt_tick": 8409,
+      "interrupted": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "cinema.reel_right"
+      },
+      "interrupted_damage": {
+        "lives_after": 2,
+        "lives_before": 2,
+        "tick": 8472
+      },
+      "side": "right",
+      "spawn_tick": 8229,
+      "sweep_tick": 8202,
+      "warning_audio": {
+        "cue": "alley.windup",
+        "decoded_seconds": 0.649977324263039,
+        "end_tick": 8436,
+        "loop": false,
+        "resource": "alley.sound_windup",
+        "start_tick": 8397,
+        "volume_db": -4.0
+      },
+      "warning_tick": 8397
+    }
+  ],
+  "screen_entry_tick": 7920,
+  "source_revision": "60768c908511d0333dffe932f5af31337d7d9dfd216e68916e6257ff27c950cb",
+  "compiled_sha256": "99600d7632e1c4c652e4c0743aa56add6dd4f99c54b11b23d1e178c6f3eba4d6",
+  "summary": {
+    "frame_pairs": 12,
+    "C03_frames_passed": 12,
+    "pairs_changed_at_eighth": 12,
+    "interrupted_attack_sequences": 4
+  },
+  "comparison_sha256": "7549a3a2adc04a8738ab9cf4f2a9233dfb1cfa93c3d1438ead2eddbf08937d34",
+  "visual_and_hardware_review": "pending"
+}

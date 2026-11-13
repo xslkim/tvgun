@@ -1,0 +1,345 @@
+{
+  "package": "paper.lantern_city_epilogue",
+  "build_id": "b9b9f9f422f66665b44880cf545f5283507a9b62ad0a69109ccff798397135b3",
+  "engine": "Godot 4.6.3 Windows",
+  "manifest_sha256": "956efa6e8b8f1f4d77bef96cf2e748ea40a7aa55d727607e1742f08abc4e2771",
+  "isolated_stage": {
+    "file_count": 375,
+    "bytes": 137733954,
+    "exact_file_set": true,
+    "hashes_verified": true
+  },
+  "opening_media": {
+    "streams": [
+      {
+        "codec_name": "theora",
+        "codec_type": "video",
+        "width": 1776,
+        "height": 936,
+        "avg_frame_rate": "30/1",
+        "duration": "90.000000"
+      },
+      {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2,
+        "avg_frame_rate": "0/0",
+        "duration": "90.005333"
+      }
+    ],
+    "complete_decode_passed": true,
+    "player": {
+      "build_id": "b9b9f9f422f66665b44880cf545f5283507a9b62ad0a69109ccff798397135b3",
+      "caption_count": 14,
+      "failures": [],
+      "first_caption": "听见了吗？下雨的时候，",
+      "first_combat_section": "alley.arrival",
+      "opening_seconds_at_first_caption": 2.01564133333333,
+      "passed": true,
+      "source_root": "D:/gunforge_cache/t16_release/isolated"
+    }
+  },
+  "isolated_route": {
+    "build_id": "b9b9f9f422f66665b44880cf545f5283507a9b62ad0a69109ccff798397135b3",
+    "chapter_transition_tick": 6701,
+    "counters": {
+      "ammo": 2.0,
+      "lives": 4,
+      "rescued": 7,
+      "score": 8900,
+      "shots": 106
+    },
+    "end_tick": 12824,
+    "ending": {
+      "city_texture_preloaded": false,
+      "city_tick": 9776,
+      "light_tick": 9344,
+      "natural_result_tick": 12824,
+      "quote_tick": 12212,
+      "skip": {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8900,
+          "shots": 106
+        },
+        "result": "clear",
+        "result_tick": 9345,
+        "start_tick": 9344
+      },
+      "skip_from_city": {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8900,
+          "shots": 106
+        },
+        "result": "clear",
+        "result_tick": 9897,
+        "start_tick": 9896
+      },
+      "skip_from_quote": {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8900,
+          "shots": 106
+        },
+        "result": "clear",
+        "result_tick": 12213,
+        "start_tick": 12212
+      },
+      "skip_from_wide": {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8900,
+          "shots": 106
+        },
+        "result": "clear",
+        "result_tick": 10713,
+        "start_tick": 10712
+      },
+      "wide_texture_preloaded": false,
+      "wide_tick": 10592
+    },
+    "failure_retries": [
+      {
+        "after_retry": {
+          "ammo": 12.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 0
+        },
+        "before_retry": {
+          "ammo": 9.0,
+          "lives": 0,
+          "rescued": 7,
+          "score": 8200,
+          "shots": 99
+        },
+        "defeat_tick": 10103,
+        "first_shot": {
+          "ammo": 11.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 1
+        },
+        "station": 15
+      }
+    ],
+    "failures": [],
+    "gpu_capture": false,
+    "handoffs": [
+      {
+        "counters": {
+          "ammo": 12.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 3500,
+          "shots": 36
+        },
+        "station": "stall",
+        "tick": 5616
+      },
+      {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 4100,
+          "shots": 46
+        },
+        "station": "video_shop",
+        "tick": 6096
+      },
+      {
+        "counters": {
+          "ammo": 10.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4400,
+          "shots": 50
+        },
+        "station": "footbridge",
+        "tick": 6384
+      },
+      {
+        "counters": {
+          "ammo": 7.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4600,
+          "shots": 53
+        },
+        "station": "plaza",
+        "tick": 6499
+      },
+      {
+        "counters": {
+          "ammo": 8.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 5700,
+          "shots": 64
+        },
+        "station": "ticket_office",
+        "tick": 6791
+      },
+      {
+        "counters": {
+          "ammo": 3.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6000,
+          "shots": 69
+        },
+        "station": "poster_hall",
+        "tick": 7050
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6200,
+          "shots": 72
+        },
+        "station": "auditorium",
+        "tick": 7282
+      },
+      {
+        "counters": {
+          "ammo": 8.0,
+          "lives": 4,
+          "rescued": 4,
+          "score": 6500,
+          "shots": 76
+        },
+        "station": "projection_booth",
+        "tick": 7541
+      },
+      {
+        "counters": {
+          "ammo": 4.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 6800,
+          "shots": 80
+        },
+        "station": "screen_stage",
+        "tick": 7800
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 7200,
+          "shots": 84
+        },
+        "station": "waiting_room",
+        "tick": 7918
+      },
+      {
+        "counters": {
+          "ammo": 7.0,
+          "lives": 4,
+          "rescued": 6,
+          "score": 7500,
+          "shots": 89
+        },
+        "station": "platform",
+        "tick": 8225
+      },
+      {
+        "counters": {
+          "ammo": 3.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 7800,
+          "shots": 93
+        },
+        "station": "green_car",
+        "tick": 8532
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8000,
+          "shots": 96
+        },
+        "station": "lantern_base",
+        "tick": 8839
+      },
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8200,
+          "shots": 99
+        },
+        "station": "workbench",
+        "tick": 9107
+      }
+    ],
+    "old_chapter_poses_rejected": true,
+    "passed": true,
+    "pullback_tick": 9053,
+    "reached": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "reloads": 8,
+    "replay": {
+      "counters": {
+        "ammo": 2.0,
+        "lives": 4,
+        "rescued": 7,
+        "score": 8900,
+        "shots": 106
+      },
+      "end_tick": 12824,
+      "inputs": 114
+    },
+    "result": "clear",
+    "train_transition_tick": 7828
+  },
+  "changed_asset_rejected": {
+    "message": "Resource changed: gunforge/games/g01/assets/cutscenes/epilogue/city_wide_v1.png",
+    "exit_code": 2,
+    "isolated_file_restored_and_verified": true
+  },
+  "cross_platform_manifest_equal": true,
+  "compiler_unit_tests_passed": 26,
+  "official_asset_manifest": {
+    "frozen": false,
+    "records": 0,
+    "workspace_files": 66,
+    "in_current_build": 14,
+    "alley_offline_hash_matches": 60
+  }
+}

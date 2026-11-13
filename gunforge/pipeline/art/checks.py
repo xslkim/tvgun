@@ -19,6 +19,17 @@ def result(status, reason, **details):
 def verdict(ok, reason, **details):
     return result('pass' if ok else 'fail', reason, **details)
 
+def check_ocr_data(data, expected):
+    text = ''.join(data['text'].split())
+    details = dict(recognized=text, confidence=data['confidence'], engine=data['engine'])
+    # Keep low-confidence detections for visual confirmation.
+    has_confident_word = any(word['confidence'] >= 85 and len(word['text']) >= 2
+                             for word in data.get('words', []))
+    if text and data['confidence'] < 70 and not has_confident_word:
+        return result('pending', 'Low-confidence OCR needs visual confirmation', **details)
+    return verdict(text == expected, 'OCR text versus permitted text', **details)
+
+
 def overlap(a,b):
     x,y,w,h=a; X,Y,W,H=b
     return x<X+W and X<x+w and y<Y+H and Y<y+h
@@ -76,12 +87,7 @@ def _run(check,s,p,base):
             try:
                 proc=subprocess.run([node,str(Path(__file__).with_name('ocr.cjs')),str(p('file').resolve())],capture_output=True,text=True,encoding='utf-8',timeout=90)
                 if proc.returncode:return result('pending','Bundled OCR invocation failed',error=proc.stderr[-1000:])
-                data=json.loads(proc.stdout);text=''.join(data['text'].split())
-                # Preserve all low-confidence detections as evidence. Do not call a noisy
-                # uncalibrated empty result a full pass or silently discard suspected text.
-                if text and data['confidence']<70 and not any(w['confidence']>=85 and len(w['text'])>=2 for w in data.get('words',[])):
-                    return result('pending','Low-confidence OCR needs visual confirmation',recognized=text,confidence=data['confidence'],engine=data['engine'])
-                return verdict(text==s.get('expected_text',''),'OCR text versus permitted text',recognized=text,confidence=data['confidence'],engine=data['engine'])
+                return check_ocr_data(json.loads(proc.stdout), s.get('expected_text', ''))
             except (subprocess.TimeoutExpired,json.JSONDecodeError) as e:
                 return result('pending','Bundled OCR unavailable',error=str(e))
         proc=subprocess.run([exe,str(p('file')),'stdout','-l',s.get('language','chi_sim+eng')],capture_output=True,text=True,encoding='utf-8')

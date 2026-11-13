@@ -129,7 +129,7 @@ func clear_base(entered: int) -> void:
 	step_to(entered + 188)
 	hit(BASE + ".umbrella")
 
-func play_and_replay() -> void:
+func reach_workbench() -> int:
 	await capture("train_waiting_room")
 	clear_waiting_room()
 	var entered: int = await handoff(PLATFORM)
@@ -148,6 +148,10 @@ func play_and_replay() -> void:
 	while not model.fired.has("lantern_base.pullback.settle") and model.tick < entered + 130 and model.phase == "running":
 		session.step()
 	await capture("train_workbench")
+	return entered
+
+func play_and_replay() -> void:
+	var entered := await reach_workbench()
 	step_to(entered + 190)
 	check(model.result == "clear" and model.current_section == WORKBENCH and handoffs.size() == 5, "continuous preview ends at the workbench")
 	var finished := counters()

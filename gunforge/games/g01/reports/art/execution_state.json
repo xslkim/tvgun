@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "task_review": "completed_with_user_resolution",
   "user_resolution": "Offline previews may be reviewed; batch tasks wait for actual 0B acceptance",
   "T00": "in_progress_offline_core_verified_external_integrations_pending",
@@ -23,8 +23,8 @@
     "batch_playable_integration_validation"
   ],
   "unreported_generation_cost": null,
-  "builtin_image_calls": 279,
-  "next_task": "assemble_T13_combined_readability_candidate",
+  "builtin_image_calls": 280,
+  "next_task": "audit_cast_C07b_alley_approved_layer_extents",
   "T03": "completed_A1b_direction_approved_with_followup",
   "A1_anchor_count": 12,
   "ink_direction": "moderated_gloss_custom",
@@ -47,7 +47,8 @@
     "T10": 88,
     "T11": 3,
     "T12": 19,
-    "T13": 13
+    "T13": 13,
+    "T15": 1
   },
   "T07": "A2_offline_work_authorized_grip_visual_pending",
   "T08": "offline_sample_approved_assets_installed_engine_pending",
@@ -61,7 +62,7 @@
     "ink_gloss",
     "enemy_hit_feedback_v3"
   ],
-  "task_status": "T13_hardened_eye_candidate_numeric_and_software_checks_passed",
+  "task_status": "T16_cast_supplies_pc_playtest_and_C07a_sampling_passed",
   "resumed": {
     "date": "2026-11-06",
     "source": "explicit_user_chat",
@@ -90,18 +91,36 @@
   "level_1": {
     "package": "paper.night_market",
     "status": "five_station_software_playthrough_passed",
-    "pending": ["physical_lightgun_monitor_and_tv_retest"],
+    "pending": [
+      "physical_lightgun_monitor_and_tv_retest"
+    ],
     "report": "gunforge/games/g01/reports/art/T10/gameplay/night_market/report.md"
   },
   "T12": "A5_and_physical_lightgun_monitor_and_tv_passed_by_user",
   "T12_pending": [],
-  "T13": "continuous_candidate_verified_normal_contrast_and_hardened_eye_comparisons_ready",
-  "T13_pending": ["forget_stroke_masks_layer_order_and_license_review", "waiting_room_physical_lightgun_monitor_tv", "waiting_room_contrast_visual_review", "platform_contrast_visual_review", "green_car_contrast_visual_review", "platform_A5_and_physical_lightgun_monitor_tv", "green_car_A5_and_physical_lightgun_monitor_tv", "lantern_base_A5_and_physical_lightgun_monitor_tv", "hardened_eyes_A5_visual_review", "workbench_playable_integration"],
+  "T13": "combined_readability_user_accepted_boss_software_passed_A5_and_hardware_pending",
+  "T13_pending": [
+    "forget_stroke_masks_layer_order_and_license_review",
+    "waiting_room_physical_lightgun_monitor_tv",
+    "waiting_room_contrast_visual_review",
+    "platform_contrast_visual_review",
+    "green_car_contrast_visual_review",
+    "platform_A5_and_physical_lightgun_monitor_tv",
+    "green_car_A5_and_physical_lightgun_monitor_tv",
+    "lantern_base_A5_and_physical_lightgun_monitor_tv",
+    "hardened_eyes_A5_visual_review",
+    "workbench_boss_A5_and_physical_lightgun_monitor_tv"
+  ],
   "T13_waiting_room": {
     "package": "paper.waiting_room",
     "build_id": "7d1b286b8e8f8a28588c1b3e52766624c6e116b9f19f89e0a0b8f6049ade2265",
     "status": "candidate_accepted_by_user",
-    "acceptance": {"date": "2026-11-11", "source": "explicit_user_chat", "scope": "waiting_room_candidate", "feedback": "验收通过，继续"},
+    "acceptance": {
+      "date": "2026-11-11",
+      "source": "explicit_user_chat",
+      "scope": "waiting_room_candidate",
+      "feedback": "验收通过，继续"
+    },
     "report": "gunforge/games/g01/reports/art/T13/gameplay/waiting_room/software_checks.json"
   },
   "T13_platform": {
@@ -163,6 +182,54 @@
     "status": "separate_candidate_C06_numeric_passed_A5_pending",
     "report": "gunforge/games/g01/reports/art/T13/variants/hardened_eyes/comparison/checks.json"
   },
+  "T13_combined_readability": {
+    "package": "paper.train_station_readability",
+    "build_id": "6e1bb3ceb616fd9d62cbf3ba0d7709a688fcca462c887a898943824888cbbf74",
+    "status": "candidate_accepted_by_user",
+    "acceptance": {
+      "date": "2026-11-11",
+      "source": "explicit_user_chat",
+      "scope": "combined_readability_candidate",
+      "feedback": "验证通过，继续吧。"
+    },
+    "report": "gunforge/games/g01/reports/art/T13/variants/combined_readability/software_checks.json",
+    "readability_report": "gunforge/games/g01/reports/art/T13/variants/combined_readability/checks.json"
+  },
+  "T13_workbench_boss": {
+    "package": "paper.train_station_boss",
+    "build_id": "e58c34b7501c42ee68652308d9b769c6e587e97373dd621fe367fcf6041563f9",
+    "status": "candidate_software_and_GPU_capture_passed_A5_pending",
+    "report": "gunforge/games/g01/reports/art/T13/gameplay/workbench_boss/software_checks.json"
+  },
+  "three_level_campaign": {
+    "package": "paper.lantern_city_campaign",
+    "build_id": "b151c51d83107604b61a56165ccb789bc7c033b3f3e43295016942c18a60fb66",
+    "status": "fifteen_stations_and_skippable_ending_preview_passed",
+    "report": "gunforge/games/g01/reports/art/T13/gameplay/campaign/software_checks.json",
+    "pending": [
+      "ending_final_narration_and_cut",
+      "third_chapter_A5",
+      "physical_lightgun_monitor_and_tv"
+    ],
+    "ending_report": "gunforge/games/g01/reports/art/T13/gameplay/ending/software_checks.json"
+  },
+  "T14_ui_preview": {
+    "package": "paper.lantern_city_ui",
+    "build_id": "3e72b6aa8d7b539ca8f2887666d6ea522b8a905b5e01f1cfbd9717cb6f8f0005",
+    "status": "full_UI_preview_review_ready",
+    "report": "gunforge/games/g01/reports/art/T14/report.md",
+    "checks": "gunforge/games/g01/reports/art/T14/software_checks.json",
+    "pending": [
+      "full_UI_art_signoff",
+      "physical_UI_monitor_and_tv",
+      "physical_calibration_and_overscan_check"
+    ],
+    "display_checks": "gunforge/games/g01/reports/art/T14/display_setup_checks.json",
+    "lettering_checks": "gunforge/games/g01/reports/art/T14/lettering_checks.json",
+    "button_checks": "gunforge/games/g01/reports/art/T14/button_checks.json",
+    "gallery": "gunforge/games/g01/reports/art/T14/gallery.html",
+    "review_checks": "gunforge/games/g01/reports/art/T14/review_checks.json"
+  },
   "level_1_and_2": {
     "package": "paper.lantern_city",
     "status": "user_acceptance_and_software_failure_retry_passed",
@@ -180,5 +247,477 @@
     },
     "pending": [],
     "report": "gunforge/games/g01/reports/art/T12/gameplay/lantern_city/report.md"
+  },
+  "T15_epilogue_preview": {
+    "package": "paper.lantern_city_epilogue",
+    "build_id": "b9b9f9f422f66665b44880cf545f5283507a9b62ad0a69109ccff798397135b3",
+    "source_revision": "23bfe432d00d0683c23d8d5046cf39cae60358e3ad7856d2dec72a50df636c67",
+    "status": "four_shot_58_second_epilogue_software_verified",
+    "duration_seconds": 58.0,
+    "report": "gunforge/games/g01/reports/art/T15/report.md",
+    "checks": "gunforge/games/g01/reports/art/T15/wide_checks.json",
+    "video": "gunforge/games/g01/reports/art/T15/epilogue_wide.mp4",
+    "pending": [
+      "T15_art_and_edit_signoff",
+      "final_mix_and_voice_signoff",
+      "physical_lightgun_skip"
+    ],
+    "picture_checks": "gunforge/games/g01/reports/art/T15/software_checks.json",
+    "audio": "gunforge/games/g01/assets/cutscenes/epilogue/ending_wide_tape.wav",
+    "short_audio_checks": "gunforge/games/g01/reports/art/T15/audio_checks.json",
+    "wide_art": "gunforge/games/g01/assets/cutscenes/epilogue/city_wide_v1.png",
+    "generation_record": "gunforge/games/g01/reports/art/T15/city_wide_generation.json"
+  },
+  "T16_tadpole_encounter": {
+    "package": "paper.tadpole_encounter",
+    "build_id": "396536453977748660d0476a5d7f52ffd277794ba4dadcea56051d5066fa2a1e",
+    "source_revision": "0c11a0a1b4010954ae70067d72862ff5b85de6cbc55bd2a694c41e741e4efe16",
+    "status": "standalone_encounter_software_verified",
+    "report": "gunforge/games/g01/reports/art/T16/tadpole/report.md",
+    "checks": "gunforge/games/g01/reports/art/T16/tadpole/software_checks.json",
+    "pending": [
+      "standalone_ordinary_state_C06",
+      "physical_lightgun_and_water_audio_review",
+      "art_signoff"
+    ]
+  },
+  "T16_tadpole_campaign": {
+    "package": "paper.lantern_city_tadpole",
+    "build_id": "5693df9633ed4736092d7922f5ef2cd1fa6c2ad03898188becd741609cef5a03",
+    "source_revision": "f0e4fa7633b4b497d663ca9fea72065a7c682f336750bfac824db6b7d92f4f61",
+    "status": "three_chapter_route_with_seventh_enemy_software_verified",
+    "stations": 15,
+    "replayed_inputs": 118,
+    "compiled_resources": 339,
+    "C06_numeric_samples": 12,
+    "report": "gunforge/games/g01/reports/art/T16/tadpole_campaign/report.md",
+    "checks": "gunforge/games/g01/reports/art/T16/tadpole_campaign/software_checks.json",
+    "remaining_content": [
+      "passerby_a",
+      "cyclist"
+    ],
+    "pending": [
+      "C06_thumbnail_review",
+      "physical_lightgun_and_water_audio_review",
+      "art_signoff",
+      "A7_final_signoff"
+    ]
+  },
+  "T16_passerby_rescue": {
+    "package": "paper.lantern_city_rescue",
+    "build_id": "e10e36af485290c6b30ce9136f6bc5b537daf037478d7e61d1b1d03a35778737",
+    "source_revision": "e2820a1a387d0e0a7bf42b9fc206b6302d09f1c389574698ee2ba1d9e2fa1fc3",
+    "status": "platform_passerby_and_three_chapter_route_software_verified",
+    "standalone": {
+      "package": "paper.platform_passerby",
+      "build_id": "b9c45b4f9bae0ad9f5f2e84e2d5e572a1b5a9e81e897e8b45b7be99ba5d6e471",
+      "source_revision": "c60724e8cf01b5f6c87a4e456deb478248b0c2a4c1318e281510e6674b4b81a5"
+    },
+    "stations": 15,
+    "replayed_inputs": 118,
+    "resident_designs_in_game": 7,
+    "rescued_on_verified_route": 7,
+    "remaining_content": [
+      "cyclist"
+    ],
+    "report": "gunforge/games/g01/reports/art/T16/passerby/report.md",
+    "checks": "gunforge/games/g01/reports/art/T16/passerby/software_checks.json",
+    "pending": [
+      "C06_thumbnail_review",
+      "physical_lightgun_review",
+      "art_signoff",
+      "A7_final_signoff"
+    ]
+  },
+  "T16_full_cast_candidate": {
+    "package": "paper.lantern_city_cast",
+    "build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc",
+    "source_revision": "3ee1e018cc218e74c121b295d64926019f80e7b0d26586a303e8463c6e1e9e19",
+    "status": "full_cast_checkpoint_history_optimized_candidate_verified",
+    "frozen": false,
+    "resident_designs_in_game": 8,
+    "enemy_types_in_game": 7,
+    "rescued_on_verified_route": 7,
+    "stations": 15,
+    "replayed_inputs": 118,
+    "resource_count": 342,
+    "isolated_file_count": 384,
+    "report": "gunforge/games/g01/reports/art/T16/cast/report.md",
+    "manifest": "gunforge/games/g01/reports/art/T16/cast/candidate_manifest.json",
+    "checks": "gunforge/games/g01/reports/art/T16/cast/performance.json",
+    "gallery": "gunforge/games/g01/reports/art/T16/cast/gallery.html",
+    "gallery_checks": "gunforge/games/g01/reports/art/T16/cast/gallery_checks.json",
+    "tracking_C13": {
+      "status": "C13_synthetic_screening_passed_on_current_candidate",
+      "report": "gunforge/games/g01/reports/art/T16/cast/tracking_c13.md",
+      "checks": "gunforge/games/g01/reports/art/T16/cast/tracking_c13.json",
+      "display_frames": 101,
+      "in_contract_projections_passed": 606,
+      "outside_geometry_contract": 202,
+      "maximum_corner_error_camera_pixels": 0.749,
+      "physical_capture": "deferred_to_release_validation",
+      "player_sha256": "d277d251b2cf6518e283502660692ca937f73c7dc025278c7fb2a1448096c6e2",
+      "tested_build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc"
+    },
+    "performance": {
+      "status": "C15_asset_budget_section_cuts_and_two_full_routes_passed",
+      "report": "gunforge/games/g01/reports/art/T16/cast/performance.md",
+      "checks": "gunforge/games/g01/reports/art/T16/cast/performance.json",
+      "samples": 26634,
+      "slow_frames_in_initial_timing_run": 2,
+      "slow_frames_in_two_full_runs": 0,
+      "tested_build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc",
+      "slow_frames_before_session_optimization": 14,
+      "slow_frames_after_session_optimization": 1,
+      "screen_stage_first_frame_us": [
+        5370,
+        5622
+      ],
+      "screen_handoff_probe_runs": 3,
+      "route_frames_pixel_identical": 50,
+      "slow_frames_before_waiting_room_checkpoint_optimization": 1,
+      "slow_frames_in_latest_two_full_runs": 0,
+      "waiting_room_tick_8520_us": [
+        8305,
+        8553
+      ],
+      "waiting_room_checkpoint_probe_us": [
+        1916,
+        2053
+      ],
+      "waiting_room_checkpoint_probe_before_us": [
+        2846,
+        2933
+      ]
+    },
+    "gallery_coverage": {
+      "stations": 15,
+      "resident_designs": 8,
+      "resident_designs_in_game": 8,
+      "enemy_designs": 7,
+      "enemy_types_in_game": 7,
+      "bosses": 3,
+      "ui_states": 15,
+      "C03_passed_frames": 51,
+      "tested_build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc"
+    },
+    "pending": [
+      "third_chapter_A5",
+      "pc_mouse_playtest_and_audio_review",
+      "A7_final_signoff"
+    ],
+    "combat_input": {
+      "status": "udp_and_http_passed_on_isolated_candidate",
+      "report": "gunforge/games/g01/reports/art/T16/cast/udp/report.md",
+      "checks": "gunforge/games/g01/reports/art/T16/cast/udp/checks.json",
+      "udp_trigger_sequences": 15,
+      "http_trigger_requests": 2,
+      "physical_lightgun": "pending"
+    },
+    "train_readability_C06": {
+      "status": "numeric_checks_passed_on_cast_campaign_poses",
+      "report": "gunforge/games/g01/reports/art/T16/cast/readability_c06/report.md",
+      "checks": "gunforge/games/g01/reports/art/T16/cast/readability_c06/checks.json",
+      "combat_stops": 4,
+      "normal_samples_passed": 20,
+      "hardened_eye_pairs_passed": 5,
+      "hardened_eyes_passed": 10,
+      "warnings_changed_at_eighth": 8,
+      "C03_frames_passed": 33,
+      "thumbnail_and_warning_review": "A5_pending"
+    },
+    "workbench_boss_readability": {
+      "status": "seven_stroke_cues_hit_and_readability_numeric_checks_passed",
+      "report": "gunforge/games/g01/reports/art/T16/cast/workbench_readability/report.md",
+      "checks": "gunforge/games/g01/reports/art/T16/cast/workbench_readability/checks.json",
+      "marker_hits_passed": 7,
+      "ink_contrast_passed": 7,
+      "effective_radius_passed": 7,
+      "crossing_pixels_owned_by_third": 363,
+      "C03_frames_passed": 14,
+      "visual_and_physical_review": "A5_pending"
+    },
+    "attack_warning_review": {
+      "status": "bridge_and_cinema_warning_timing_and_interruptions_verified",
+      "report": "gunforge/games/g01/reports/art/T16/cast/attack_warnings/report.md",
+      "checks": "gunforge/games/g01/reports/art/T16/cast/attack_warnings/checks.json",
+      "warning_frame_pairs": 12,
+      "pairs_changed_at_eighth": 12,
+      "C03_frames_passed": 12,
+      "timed_audio_cues_started": 5,
+      "interrupted_attack_sequences": 4,
+      "visual_and_hardware_review": "pending"
+    },
+    "screen_boss_masks": {
+      "status": "four_targets_projector_feedback_warm_lights_and_handoff_verified",
+      "report": "gunforge/games/g01/reports/art/T16/cast/screen_boss_masks/report.md",
+      "checks": "gunforge/games/g01/reports/art/T16/cast/screen_boss_masks/checks.json",
+      "targets_over_radius_floor": 4,
+      "hittable_pixels_outside_artwork": 0,
+      "warm_light_swaps": 3,
+      "projector_misfires_verified": 3,
+      "physical_lightgun": "pending"
+    },
+    "dragon_boss_masks": {
+      "status": "moving_body_and_mouth_masks_opening_order_and_handoff_verified",
+      "report": "gunforge/games/g01/reports/art/T16/cast/dragon_masks/report.md",
+      "checks": "gunforge/games/g01/reports/art/T16/cast/dragon_masks/checks.json",
+      "poses_over_radius_floor": 30,
+      "hidden_hittable_pixels": 0,
+      "body_segments_in_order": 8,
+      "jaw_blockers_verified": 2,
+      "C03_frames_passed": 11,
+      "physical_lightgun": "pending"
+    },
+    "cutscene_player": {
+      "status": "isolated_player_opening_epilogue_and_udp_retry_verified",
+      "report": "gunforge/games/g01/reports/art/T16/cast/cutscene_player/report.md",
+      "checks": "gunforge/games/g01/reports/art/T16/cast/cutscene_player/checks.json",
+      "opening_caption_count": 14,
+      "opening_skip_paths": 2,
+      "ending_duration_seconds": 58.0,
+      "ending_skip_paths": 4,
+      "voice_markers_in_caption_windows": 4,
+      "max_sampled_drift_seconds": 0.202666219075518,
+      "physical_audio_and_lightgun": "pending",
+      "player_sha256": "d277d251b2cf6518e283502660692ca937f73c7dc025278c7fb2a1448096c6e2",
+      "tested_build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11"
+    },
+    "display_resize": {
+      "status": "native_frame_rendering_and_same_frame_udp_resize_fixed",
+      "report": "gunforge/games/g01/reports/art/T16/cast/display_resize/report.md",
+      "checks": "gunforge/games/g01/reports/art/T16/cast/display_resize/checks.json",
+      "window_configurations_passed": 6,
+      "udp_trigger_checks_passed": 37,
+      "previous_resize_shot_error_px": 225.027,
+      "verified_resize_shot_error_px": 0,
+      "physical_lightgun": "pending"
+    },
+    "A7_packet": {
+      "status": "software_evidence_and_device_routes_ready_pending_signoff",
+      "report": "gunforge/games/g01/reports/art/T16/cast/a7/report.md",
+      "device_route": "gunforge/games/g01/reports/art/T16/cast/a7/device_route.md",
+      "checks": "gunforge/games/g01/reports/art/T16/cast/a7/checks.json",
+      "device_recording_tool": "scripts/summarize_gun_recording.py",
+      "verified_isolated_files": 384,
+      "resource_source_paths_resolved": 342,
+      "software_stations": 15,
+      "replayed_inputs": 118,
+      "formal_asset_records": 0,
+      "physical_capture": "deferred_to_release_validation",
+      "tested_build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc"
+    },
+    "asset_coverage": {
+      "status": "runtime_encoding_passed_and_C02_composites_ready",
+      "report": "gunforge/games/g01/reports/art/T16/cast/a7/asset_coverage.md",
+      "checks": "gunforge/games/g01/reports/art/T16/cast/a7/asset_coverage.json",
+      "decoded_resources": 342,
+      "alpha_hit_bindings_passed": 61,
+      "scalar_red_bindings_passed": 11,
+      "RGB_color_images_to_normalize": 0,
+      "C02_semitransparent_reviews_pending": 136,
+      "T08_approved_pack_byte_matches": 14,
+      "T10_gallery_source_byte_matches": 0,
+      "C01_PNG_encoding_passed": 296,
+      "RGBA8_copies_pixel_verified": 19,
+      "T10_gallery_source_pixel_matches": 1,
+      "encoding_regression": "gunforge/games/g01/reports/art/T16/cast/a7/rgba8_regression.json",
+      "identical_Godot_route_frames": 50,
+      "C02_composites_generated": 136,
+      "T08_approved_pack_visible_pixel_matches": 12,
+      "edge_fills_visible_pixels_and_alpha_verified": 67,
+      "color_images_scanned_for_adjacent_rgb_gaps": 256,
+      "color_images_with_adjacent_rgb_gaps": 0,
+      "C05": {
+        "status": "OCR_screened_visual_review_pending",
+        "tested_build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc",
+        "automatic_pass": 174,
+        "visual_review_pending": 82,
+        "automatic_fail": 0,
+        "not_applicable": 40,
+        "runtime_lettering_matches": 4,
+        "report": "gunforge/games/g01/reports/art/T16/cast/a7/c05_report.md",
+        "checks": "gunforge/games/g01/reports/art/T16/cast/a7/c05_text.json",
+        "review_gallery": "gunforge/games/g01/reports/art/T16/cast/a7/c05_review.html",
+        "Godot_lettering_checks": "gunforge/games/g01/reports/art/T16/cast/a7/c05_rendered.json"
+      },
+      "C04": {
+        "status": "initial_palette_screening_and_same_pose_cinnabar_comparison_complete",
+        "tested_build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc",
+        "palette_pass": 120,
+        "palette_below_initial_threshold": 91,
+        "not_applicable": 85,
+        "source_near_cinnabar_review": 57,
+        "rendered_frame_samples": 41,
+        "stamp_probe_frames": 4,
+        "ending_wide_near_cinnabar_delta_e10_fraction": 0.010311994686994687,
+        "report": "gunforge/games/g01/reports/art/T16/cast/a7/c04_report.md",
+        "checks": "gunforge/games/g01/reports/art/T16/cast/a7/c04_palette.json",
+        "visual": "gunforge/games/g01/reports/art/T16/cast/a7/c04_cinnabar_examples.jpg",
+        "ending_palette_comparison": {
+          "status": "playable_candidate_pending_visual_review",
+          "build_id": "79b38ada06898061b638888466ae1e361d3dc5690b7df6adb278907f842e3f1a",
+          "base_build_id": "1ca059b468c9268ab77b22e9fb4cb2706cb37b21ec0d6efd3ad0296ab52bbccc",
+          "receipt": "gunforge/level_design/reviews/lantern_city_ending_palette_build.json",
+          "report": "gunforge/games/g01/reports/art/T16/cast/a7/ending_palette/report.md",
+          "checks": "gunforge/games/g01/reports/art/T16/cast/a7/ending_palette/checks.json",
+          "manifest": "gunforge/games/g01/reports/art/T16/cast/a7/ending_palette/candidate_manifest.json",
+          "source_palette_coverage": [
+            0.729579903289283,
+            0.7343506093995495
+          ],
+          "wide_cinnabar_delta_e10_fraction": [
+            0.010311994686994687,
+            0.003131737506737507
+          ],
+          "identical_rendered_frames": 49,
+          "serialized_inputs_identical": 118,
+          "formal_visual_signoff": "pending",
+          "production_player_passed": true
+        }
+      }
+    },
+    "alpha_edges": {
+      "status": "adjacent_color_edge_gaps_repaired_visual_review_pending",
+      "tested_build_id": "48af22689f75818cac542ce21421867a97f5ac9abe6502250796dc6ff433a8d1",
+      "report": "gunforge/games/g01/reports/art/T16/cast/a7/alpha_edges_report.md",
+      "gallery": "gunforge/games/g01/reports/art/T16/cast/a7/alpha_edges/index.html",
+      "checks": "gunforge/games/g01/reports/art/T16/cast/a7/alpha_edges/checks.json",
+      "semitransparent_sources_reviewed": 136,
+      "Godot_lettering_composites": 4,
+      "priority_blocker_textures": 2,
+      "priority_atlases": 7,
+      "atlas_attachments_checked": 91,
+      "atlas_attachments_with_adjacent_zero_rgb": 0,
+      "other_single_textures_with_adjacent_zero_rgb": 0,
+      "formal_C02": "pending",
+      "software_route_rechecked": true
+    },
+    "edge_fill": {
+      "report": "gunforge/games/g01/reports/art/T16/cast/a7/edge_fill_report.md",
+      "checks": "gunforge/games/g01/reports/art/T16/cast/a7/edge_fill/checks.json",
+      "textures_repaired": 9,
+      "atlas_attachments_checked": 91,
+      "adjacent_black_pixels_removed": 61459,
+      "Godot_raster_comparisons": 18,
+      "identical_blocker_and_miss_shots": 4,
+      "formal_C02": "pending"
+    },
+    "priority_edges": {
+      "status": "verified",
+      "report": "gunforge/games/g01/reports/art/T16/cast/a7/priority_edges_report.md",
+      "checks": "gunforge/games/g01/reports/art/T16/cast/a7/priority_edges/checks.json",
+      "textures_repaired": 8,
+      "adjacent_black_pixels_removed": 16224,
+      "Godot_raster_comparisons": 16,
+      "cinema_weak_points_verified": 2,
+      "dragon_poses_passed": 30,
+      "screen_boss_targets_passed": 4,
+      "tracking_projections_passed": 606,
+      "remaining_single_textures_with_adjacent_zero_rgb": 46,
+      "formal_C02": "pending"
+    },
+    "remaining_edges": {
+      "status": "verified",
+      "report": "gunforge/games/g01/reports/art/T16/cast/a7/remaining_edges_report.md",
+      "checks": "gunforge/games/g01/reports/art/T16/cast/a7/remaining_edges/checks.json",
+      "textures_repaired": 50,
+      "adjacent_black_pixels_removed": 98570,
+      "Godot_raster_comparisons": 100,
+      "color_images_scanned": 256,
+      "color_images_with_adjacent_rgb_gaps": 0,
+      "formal_C02": "pending"
+    },
+    "manual_validation": {
+      "current": "windows_pc_mouse_keyboard_and_pc_audio",
+      "report": "gunforge/games/g01/reports/art/T16/cast/a7/pc_mouse_review.md",
+      "physical_lightgun_and_tv": "deferred_to_release_validation",
+      "blocks_development": false
+    },
+    "mouse_balance_candidate": {
+      "build_id": "e5eb6e545f829848831215e2eff261add50f1d508e91c18688482830d941288c",
+      "report": "gunforge/games/g01/reports/art/T16/cast/mouse_balance/report.md",
+      "checks": "gunforge/games/g01/reports/art/T16/cast/mouse_balance/checks.json",
+      "manifest": "gunforge/games/g01/reports/art/T16/cast/mouse_balance/candidate_manifest.json",
+      "software_stations": 15,
+      "replayed_inputs": 109,
+      "magazine": 18,
+      "reload_ms": 350,
+      "automatic_reload": true,
+      "alley_crow_windup_ms": 1650,
+      "alley_crow_lunge_ms": 520,
+      "status": "overall_pc_mouse_playtest_passed_by_user"
+    },
+    "supplies_candidate": {
+      "status": "pc_mouse_playtest_passed_by_user",
+      "build_id": "ed50339937dd3994adf58a7db62fb3bce341f90c8723a3dccf01342f8c69c5d3",
+      "report": "gunforge/games/g01/reports/art/T16/cast/supplies/report.md",
+      "checks": "gunforge/games/g01/reports/art/T16/cast/supplies/checks.json",
+      "starting_rounds": 8,
+      "first_lamp_activation_rounds": 4,
+      "life_per_rescue": 1,
+      "life_cap": 5,
+      "reload_ms": 600,
+      "user_validation_date": "2026-11-13",
+      "C07a": {
+        "status": "passed_sampled_viewport_coverage",
+        "tested_build_id": "ed50339937dd3994adf58a7db62fb3bce341f90c8723a3dccf01342f8c69c5d3",
+        "report": "gunforge/games/g01/reports/art/T16/cast/supplies/c07a_report.md",
+        "checks": "gunforge/games/g01/reports/art/T16/cast/supplies/c07a_checks.json",
+        "checks_sha256": "85c76e194025bff00479363c7086ff9884e71372afb3ac5c662aeacd093195ae",
+        "probe_sha256": "82b01ed25f1e2830e11be8f592fb3fca251ab8f2ecb0b8b8e8dd936d18bfc404",
+        "camera_samples": 185,
+        "replay_samples": 406,
+        "station_count": 15,
+        "authored_sections": 37,
+        "replayed_sections": 36,
+        "camera_only_sections": [
+          "alley.missed_rescue"
+        ],
+        "deliberate_hole_pixels_detected": 144,
+        "incomplete_frames": 0
+      }
+    }
+  },
+  "T16_release_candidate": {
+    "followup_candidate": "paper.lantern_city_cast",
+    "package": "paper.lantern_city_epilogue",
+    "build_id": "b9b9f9f422f66665b44880cf545f5283507a9b62ad0a69109ccff798397135b3",
+    "source_revision": "23bfe432d00d0683c23d8d5046cf39cae60358e3ad7856d2dec72a50df636c67",
+    "status": "candidate_pending_A7",
+    "frozen": false,
+    "resource_count": 333,
+    "isolated_file_count": 375,
+    "manifest": "gunforge/games/g01/reports/art/T16/candidate_manifest.json",
+    "checks": "gunforge/games/g01/reports/art/T16/delivery_checks.json",
+    "report": "gunforge/games/g01/reports/art/T16/report.md",
+    "pending": [
+      "integrate_tadpole_cyclist_and_passerby_a_from_A4",
+      "applicable_art_and_engine_checks",
+      "third_chapter_A5",
+      "T14_UI_and_T15_art_audio_signoff",
+      "physical_lightgun_monitor_tv_and_audio",
+      "A7_final_signoff"
+    ],
+    "gallery": "gunforge/games/g01/reports/art/T16/gallery.html",
+    "gallery_checks": "gunforge/games/g01/reports/art/T16/gallery_checks.json",
+    "gallery_coverage": {
+      "stations": 15,
+      "resident_designs": 8,
+      "resident_rigs_in_game": 6,
+      "enemy_designs": 7,
+      "enemy_types_in_game": 6,
+      "bosses": 3,
+      "ui_states": 15
+    },
+    "integration_gaps": {
+      "residents": [
+        "cyclist",
+        "passerby_a"
+      ],
+      "enemies": [
+        "tadpole"
+      ]
+    }
   }
 }

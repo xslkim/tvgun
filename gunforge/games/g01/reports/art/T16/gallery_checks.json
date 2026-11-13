@@ -1,0 +1,1306 @@
+{
+  "build_id": "b9b9f9f422f66665b44880cf545f5283507a9b62ad0a69109ccff798397135b3",
+  "source_revision": "23bfe432d00d0683c23d8d5046cf39cae60358e3ad7856d2dec72a50df636c67",
+  "engine": "Godot 4.6.3 Windows",
+  "coverage": {
+    "stations": 15,
+    "resident_designs": 8,
+    "resident_rigs_in_game": 6,
+    "enemy_designs": 7,
+    "enemy_types_in_game": 6,
+    "bosses": 3,
+    "ui_states": 15
+  },
+  "route": {
+    "build_id": "b9b9f9f422f66665b44880cf545f5283507a9b62ad0a69109ccff798397135b3",
+    "chapter_transition_tick": 6701,
+    "counters": {
+      "ammo": 2.0,
+      "lives": 4,
+      "rescued": 7,
+      "score": 8900,
+      "shots": 106
+    },
+    "end_tick": 12824,
+    "ending": {
+      "city_texture_preloaded": true,
+      "city_tick": 9776,
+      "light_tick": 9344,
+      "natural_result_tick": 12824,
+      "quote_tick": 12212,
+      "skip": {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8900,
+          "shots": 106
+        },
+        "result": "clear",
+        "result_tick": 9345,
+        "start_tick": 9344
+      },
+      "skip_from_city": {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8900,
+          "shots": 106
+        },
+        "result": "clear",
+        "result_tick": 9897,
+        "start_tick": 9896
+      },
+      "skip_from_quote": {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8900,
+          "shots": 106
+        },
+        "result": "clear",
+        "result_tick": 12213,
+        "start_tick": 12212
+      },
+      "skip_from_wide": {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8900,
+          "shots": 106
+        },
+        "result": "clear",
+        "result_tick": 10713,
+        "start_tick": 10712
+      },
+      "wide_texture_preloaded": true,
+      "wide_tick": 10592
+    },
+    "failure_retries": [
+      {
+        "after_retry": {
+          "ammo": 12.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 0
+        },
+        "before_retry": {
+          "ammo": 9.0,
+          "lives": 0,
+          "rescued": 7,
+          "score": 8200,
+          "shots": 99
+        },
+        "defeat_tick": 10103,
+        "first_shot": {
+          "ammo": 11.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 1
+        },
+        "station": 15
+      }
+    ],
+    "failures": [],
+    "gpu_capture": true,
+    "handoffs": [
+      {
+        "counters": {
+          "ammo": 12.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 3500,
+          "shots": 36
+        },
+        "station": "stall",
+        "tick": 5616
+      },
+      {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 4100,
+          "shots": 46
+        },
+        "station": "video_shop",
+        "tick": 6096
+      },
+      {
+        "counters": {
+          "ammo": 10.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4400,
+          "shots": 50
+        },
+        "station": "footbridge",
+        "tick": 6384
+      },
+      {
+        "counters": {
+          "ammo": 7.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4600,
+          "shots": 53
+        },
+        "station": "plaza",
+        "tick": 6499
+      },
+      {
+        "counters": {
+          "ammo": 8.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 5700,
+          "shots": 64
+        },
+        "station": "ticket_office",
+        "tick": 6791
+      },
+      {
+        "counters": {
+          "ammo": 3.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6000,
+          "shots": 69
+        },
+        "station": "poster_hall",
+        "tick": 7050
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6200,
+          "shots": 72
+        },
+        "station": "auditorium",
+        "tick": 7282
+      },
+      {
+        "counters": {
+          "ammo": 8.0,
+          "lives": 4,
+          "rescued": 4,
+          "score": 6500,
+          "shots": 76
+        },
+        "station": "projection_booth",
+        "tick": 7541
+      },
+      {
+        "counters": {
+          "ammo": 4.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 6800,
+          "shots": 80
+        },
+        "station": "screen_stage",
+        "tick": 7800
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 7200,
+          "shots": 84
+        },
+        "station": "waiting_room",
+        "tick": 7918
+      },
+      {
+        "counters": {
+          "ammo": 7.0,
+          "lives": 4,
+          "rescued": 6,
+          "score": 7500,
+          "shots": 89
+        },
+        "station": "platform",
+        "tick": 8225
+      },
+      {
+        "counters": {
+          "ammo": 3.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 7800,
+          "shots": 93
+        },
+        "station": "green_car",
+        "tick": 8532
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8000,
+          "shots": 96
+        },
+        "station": "lantern_base",
+        "tick": 8839
+      },
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8200,
+          "shots": 99
+        },
+        "station": "workbench",
+        "tick": 9107
+      }
+    ],
+    "old_chapter_poses_rejected": true,
+    "passed": true,
+    "pullback_tick": 9053,
+    "reached": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "reloads": 8,
+    "replay": {
+      "counters": {
+        "ammo": 2.0,
+        "lives": 4,
+        "rescued": 7,
+        "score": 8900,
+        "shots": 106
+      },
+      "end_tick": 12824,
+      "inputs": 114
+    },
+    "result": "clear",
+    "train_transition_tick": 7828
+  },
+  "controls": {
+    "build_id": "b9b9f9f422f66665b44880cf545f5283507a9b62ad0a69109ccff798397135b3",
+    "captures": true,
+    "failures": [],
+    "opening": true,
+    "passed": true,
+    "udp_shots": 3
+  },
+  "display": {
+    "build_id": "b9b9f9f422f66665b44880cf545f5283507a9b62ad0a69109ccff798397135b3",
+    "captures": true,
+    "failures": [],
+    "passed": true,
+    "udp_shots": 19
+  },
+  "frames": {
+    "station_1_alley": {
+      "capture": "route/station_1_alley",
+      "source_png_sha256": "6c4c4bf8ae1f8b31bd585d531ee3cbb8be73bc2911459d5420360828d9311700",
+      "jpg_sha256": "f0d74b812461b571e67a7ffee994c4172d234ca1c3d0295cdaa655103b48f555",
+      "jpg": "frames/station_1_alley.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002297369484869485
+        }
+      },
+      "subject": null
+    },
+    "station_2_stall": {
+      "capture": "route/station_2_stall",
+      "source_png_sha256": "b9b243da666082ab044c05652520f71c9d4f8bbf887ebadede7f195ba645f4ee",
+      "jpg_sha256": "13041773505a8e3eccf1e74c3756f8b5c1589ad5be1701c1a1040207e622e218",
+      "jpg": "frames/station_2_stall.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002605369792869793
+        }
+      },
+      "subject": null
+    },
+    "station_3_video_shop": {
+      "capture": "route/station_3_video_shop",
+      "source_png_sha256": "60904da277e815a71461a3c36d9472af2453706f80ceec5b1c2aec6812839948",
+      "jpg_sha256": "1b03fe465c21f3623a893840aef96618af9825539e5c87174cd51252c0d14c93",
+      "jpg": "frames/station_3_video_shop.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0023845961345961347
+        }
+      },
+      "subject": null
+    },
+    "station_4_footbridge": {
+      "capture": "route/station_4_footbridge",
+      "source_png_sha256": "32e05425f2d5b2a4fcf6189db681ae5ac18e678da938baadedde18dde019c972",
+      "jpg_sha256": "5fd750a79ce627dcb03c0b171c41ce114e5a00b850d91ca7876ec060a60d6589",
+      "jpg": "frames/station_4_footbridge.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0021758537383537386
+        }
+      },
+      "subject": null
+    },
+    "station_5_plaza": {
+      "capture": "route/station_5_plaza",
+      "source_png_sha256": "884a9e6fa3e1b6fd0875cd5b52f54b32aca759986ade393f6e0c55be705ad5d1",
+      "jpg_sha256": "8974ea8cce2566062429a1013a4645de00078470418e4932406a2bac50530a0a",
+      "jpg": "frames/station_5_plaza.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0021987131362131364
+        }
+      },
+      "subject": null
+    },
+    "station_6_ticket_office": {
+      "capture": "route/station_6_ticket_office",
+      "source_png_sha256": "44fd424baec6c3f4c338283ba556d1637bec385a2a37af999c2160d5a00cf3f6",
+      "jpg_sha256": "fa63802e243135277e62fdf907392c89db497cad1a5468c9f4fec3869f6a906f",
+      "jpg": "frames/station_6_ticket_office.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002553033803033803
+        }
+      },
+      "subject": null
+    },
+    "station_7_poster_hall": {
+      "capture": "route/station_7_poster_hall",
+      "source_png_sha256": "fb1fac80c27e903426fbe96a29ced7650289614fcf08db6a018ab0352b9808b3",
+      "jpg_sha256": "ee1dcfaef665bc5c61f09d9a089b5a4deb5c3137a488e2a7c2cf65ff4790ceb8",
+      "jpg": "frames/station_7_poster_hall.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0029350263725263725
+        }
+      },
+      "subject": null
+    },
+    "station_8_auditorium": {
+      "capture": "route/station_8_auditorium",
+      "source_png_sha256": "12bc8b9b877a9eb7144ccebbe29cee7eaaccb3707f9326a66a89c689d424ef0f",
+      "jpg_sha256": "bfcb4573f7d4b622c6a53048bce50baa88b3bbc63262f2916ec80e90e7d2f9c4",
+      "jpg": "frames/station_8_auditorium.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0024742290367290366
+        }
+      },
+      "subject": null
+    },
+    "station_9_projection_booth": {
+      "capture": "route/station_9_projection_booth",
+      "source_png_sha256": "8f4cf172889a0801ff9f7986fc6e80a9f6258a7770f301cd29bff3f15cfbbe0e",
+      "jpg_sha256": "a52c1d01f7043e5e1df1dd655b6c108b8408d2d4ef70219ca5e53c93b5f74f70",
+      "jpg": "frames/station_9_projection_booth.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0025795025795025796
+        }
+      },
+      "subject": null
+    },
+    "station_10_screen_stage": {
+      "capture": "route/station_10_screen_stage",
+      "source_png_sha256": "df9362b072d23abacf50d58531580cf62d3ceb5e2a9baea6a629a7fc2230adf0",
+      "jpg_sha256": "f84250467d114ea495021717c45f0615d9352afb651aca9f7563440eea0ac559",
+      "jpg": "frames/station_10_screen_stage.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0023124085624085626
+        }
+      },
+      "subject": null
+    },
+    "station_11_waiting_room": {
+      "capture": "route/station_11_waiting_room",
+      "source_png_sha256": "ab7f02c56f3ee68d01df9f6c1499e20d01ccad72ad7ae13c3291cd2d511fe133",
+      "jpg_sha256": "97233c8ed00f0561514ee033b8e2f3c6dfe5a9dbef360e8956b81518091ffad6",
+      "jpg": "frames/station_11_waiting_room.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0024489633864633866
+        }
+      },
+      "subject": null
+    },
+    "station_12_platform": {
+      "capture": "route/station_12_platform",
+      "source_png_sha256": "6f7b23a395bb33f971f8b1a58e0eead2bf443ff8e6d216157c107bd7a1f4ff1e",
+      "jpg_sha256": "cba8e372c892c167310d6d08cbdb5606942c2b8bddedacccfdb16acf84901d97",
+      "jpg": "frames/station_12_platform.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.005788240163240164
+        }
+      },
+      "subject": null
+    },
+    "station_13_green_car": {
+      "capture": "route/station_13_green_car",
+      "source_png_sha256": "20bf14a7793e788ce7d722011d50aa3c964c651cbd418a0e9c9892f79278b600",
+      "jpg_sha256": "35d13a23ec509a09198ecfa548ff51af1c4cc56cb4dae6b9de7862e518e31d5e",
+      "jpg": "frames/station_13_green_car.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.003795261607761608
+        }
+      },
+      "subject": null
+    },
+    "station_14_lantern_base": {
+      "capture": "route/station_14_lantern_base",
+      "source_png_sha256": "968c8a73a3d60abaa6cdd6efac150a70d991774d7840986d10f35364f38b1512",
+      "jpg_sha256": "54fe4e39ca524efd49c296295f2654588487234a1da30bb7aaa14adba4e7ed3a",
+      "jpg": "frames/station_14_lantern_base.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.007434116809116809
+        }
+      },
+      "subject": null
+    },
+    "station_15_workbench": {
+      "capture": "route/station_15_workbench",
+      "source_png_sha256": "4834dfce0513baf2c3979e4e58774d4aec51fa0dddc6bf230e0b0b61a3550e45",
+      "jpg_sha256": "bb4a8aa6a136961f40342977ff1c31f5b174b9029976c6a52c5f1727a0518006",
+      "jpg": "frames/station_15_workbench.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.01487063987063987
+        }
+      },
+      "subject": null
+    },
+    "subject_vendor": {
+      "capture": "route/subject_vendor",
+      "source_png_sha256": "5210a356464a9848c5c6a253635c5343a96b5da57e156701d118027ddbac24b5",
+      "jpg_sha256": "df4e5c3428ec067226e7af8843ff0f7fdb65f8dc0d757b45aaf7693ac91412b8",
+      "jpg": "frames/subject_vendor.jpg",
+      "detail_jpg_sha256": "489de200568b227e9aa1ccc87a365cf8ac00a57100e002bbbecd0360509fb40f",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0028099012474012476
+        }
+      },
+      "subject": {
+        "bounds": [
+          572.252990722656,
+          349.083618164063,
+          321.645690917969,
+          481.549194335938
+        ],
+        "entity": "alley.resident",
+        "section": "alley.rescue",
+        "station": 1,
+        "tick": 2760
+      }
+    },
+    "subject_video_owner": {
+      "capture": "route/subject_video_owner",
+      "source_png_sha256": "60904da277e815a71461a3c36d9472af2453706f80ceec5b1c2aec6812839948",
+      "jpg_sha256": "1b03fe465c21f3623a893840aef96618af9825539e5c87174cd51252c0d14c93",
+      "jpg": "frames/subject_video_owner.jpg",
+      "detail_jpg_sha256": "574cf3734c3c7136c3eed95337066307dd31d863199b9e457e55cbf836f65604",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0023845961345961347
+        }
+      },
+      "subject": {
+        "bounds": [
+          609.687438964844,
+          420.484832763672,
+          271.655822753906,
+          319.952911376953
+        ],
+        "entity": "video_shop.shop.owner",
+        "section": "video_shop.video_shop",
+        "station": 3,
+        "tick": 6096
+      }
+    },
+    "subject_ticket_clerk": {
+      "capture": "route/subject_ticket_clerk",
+      "source_png_sha256": "44fd424baec6c3f4c338283ba556d1637bec385a2a37af999c2160d5a00cf3f6",
+      "jpg_sha256": "fa63802e243135277e62fdf907392c89db497cad1a5468c9f4fec3869f6a906f",
+      "jpg": "frames/subject_ticket_clerk.jpg",
+      "detail_jpg_sha256": "a8f93af9b18ef31bc4f919ba8eb8b4433dfd1bf760572fd3a98c5e9498a5fab5",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002553033803033803
+        }
+      },
+      "subject": {
+        "bounds": [
+          586.273864746094,
+          501.708831787109,
+          203.559326171875,
+          286.356231689453
+        ],
+        "entity": "cinema.ticket_office.resident",
+        "section": "cinema.ticket_office",
+        "station": 6,
+        "tick": 6791
+      }
+    },
+    "subject_projectionist": {
+      "capture": "route/subject_projectionist",
+      "source_png_sha256": "8f4cf172889a0801ff9f7986fc6e80a9f6258a7770f301cd29bff3f15cfbbe0e",
+      "jpg_sha256": "a52c1d01f7043e5e1df1dd655b6c108b8408d2d4ef70219ca5e53c93b5f74f70",
+      "jpg": "frames/subject_projectionist.jpg",
+      "detail_jpg_sha256": "62d31169e07bf88c84976327e689cdc2072620b3eabf5d4d197ec47bc6758a35",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0025795025795025796
+        }
+      },
+      "subject": {
+        "bounds": [
+          788.044372558594,
+          459.135070800781,
+          200.033508300781,
+          324.196105957031
+        ],
+        "entity": "cinema.projection_booth.resident",
+        "section": "cinema.projection_booth",
+        "station": 9,
+        "tick": 7541
+      }
+    },
+    "subject_passerby_b": {
+      "capture": "route/subject_passerby_b",
+      "source_png_sha256": "12bc8b9b877a9eb7144ccebbe29cee7eaaccb3707f9326a66a89c689d424ef0f",
+      "jpg_sha256": "bfcb4573f7d4b622c6a53048bce50baa88b3bbc63262f2916ec80e90e7d2f9c4",
+      "jpg": "frames/subject_passerby_b.jpg",
+      "detail_jpg_sha256": "b2f47be1ede78782b9ed41b27e68a559cb93dc70641045765df1951b5ea15e9e",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0024742290367290366
+        }
+      },
+      "subject": {
+        "bounds": [
+          1091.32873535156,
+          306.529876708984,
+          174.792602539063,
+          283.288116455078
+        ],
+        "entity": "cinema.auditorium.resident",
+        "section": "cinema.auditorium",
+        "station": 8,
+        "tick": 7282
+      }
+    },
+    "subject_passerby_c": {
+      "capture": "route/subject_passerby_c",
+      "source_png_sha256": "ab7f02c56f3ee68d01df9f6c1499e20d01ccad72ad7ae13c3291cd2d511fe133",
+      "jpg_sha256": "97233c8ed00f0561514ee033b8e2f3c6dfe5a9dbef360e8956b81518091ffad6",
+      "jpg": "frames/subject_passerby_c.jpg",
+      "detail_jpg_sha256": "278e8a393d150e4229fc5501906e31762f38d1f1c07d1748a7fce83b717f3667",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0024489633864633866
+        }
+      },
+      "subject": {
+        "bounds": [
+          718.844909667969,
+          423.677276611328,
+          212.5986328125,
+          329.309539794922
+        ],
+        "entity": "waiting_room.waiting_room.resident",
+        "section": "waiting_room.waiting_room",
+        "station": 11,
+        "tick": 7918
+      }
+    },
+    "subject_ink_crow": {
+      "capture": "route/subject_ink_crow",
+      "source_png_sha256": "5ad1aaf0d741149c00cc6f8a9d7c8b01e4894fbe2cab753dd12bd688f9d2d476",
+      "jpg_sha256": "98273beb15410f3989190b88791964e73edd1e5823ab1086c14e32abf730cbdf",
+      "jpg": "frames/subject_ink_crow.jpg",
+      "detail_jpg_sha256": "c9ebb0cd9540e04ead6b2aec1c9a8757f660a4944901ad583c9142268187e33d",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.00277741683991684
+        }
+      },
+      "subject": {
+        "bounds": [
+          4.47868537902832,
+          217.853515625,
+          217.977523803711,
+          183.559448242188
+        ],
+        "entity": "alley.w1_crow_1",
+        "section": "alley.wave_1",
+        "station": 1,
+        "tick": 493
+      }
+    },
+    "subject_ink_drop": {
+      "capture": "route/subject_ink_drop",
+      "source_png_sha256": "60904da277e815a71461a3c36d9472af2453706f80ceec5b1c2aec6812839948",
+      "jpg_sha256": "1b03fe465c21f3623a893840aef96618af9825539e5c87174cd51252c0d14c93",
+      "jpg": "frames/subject_ink_drop.jpg",
+      "detail_jpg_sha256": "9150d1bf97eba51176611e2b8d6e57ea1f20913397461fc1d4a4857a11c47cf4",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0023845961345961347
+        }
+      },
+      "subject": {
+        "bounds": [
+          302.578918457031,
+          121.991836547852,
+          271.700012207031,
+          189.050003051758
+        ],
+        "entity": "video_shop.shop.drop",
+        "section": "video_shop.video_shop",
+        "station": 3,
+        "tick": 6096
+      }
+    },
+    "subject_ink_cart": {
+      "capture": "route/subject_ink_cart",
+      "source_png_sha256": "32e05425f2d5b2a4fcf6189db681ae5ac18e678da938baadedde18dde019c972",
+      "jpg_sha256": "5fd750a79ce627dcb03c0b171c41ce114e5a00b850d91ca7876ec060a60d6589",
+      "jpg": "frames/subject_ink_cart.jpg",
+      "detail_jpg_sha256": "1f7a4283d5644d3a5586bcbf53139c4f8fe6fb28d3fe83cfcf96c2c6ae08d078",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0021758537383537386
+        }
+      },
+      "subject": {
+        "bounds": [
+          239.628326416016,
+          621.583679199219,
+          424.999969482422,
+          191.0
+        ],
+        "entity": "footbridge.bridge.cyclist",
+        "section": "footbridge.footbridge",
+        "station": 4,
+        "tick": 6384
+      }
+    },
+    "subject_ink_sign": {
+      "capture": "route/subject_ink_sign",
+      "source_png_sha256": "60904da277e815a71461a3c36d9472af2453706f80ceec5b1c2aec6812839948",
+      "jpg_sha256": "1b03fe465c21f3623a893840aef96618af9825539e5c87174cd51252c0d14c93",
+      "jpg": "frames/subject_ink_sign.jpg",
+      "detail_jpg_sha256": "68de11a5e06fe06400c592c145af21722d24c31f9ff83f5c150f8088a21a7a1e",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0023845961345961347
+        }
+      },
+      "subject": {
+        "bounds": [
+          1234.42895507813,
+          117.51683807373,
+          430.0,
+          183.0
+        ],
+        "entity": "video_shop.shop.sign",
+        "section": "video_shop.video_shop",
+        "station": 3,
+        "tick": 6096
+      }
+    },
+    "subject_ink_tape": {
+      "capture": "route/subject_ink_tape",
+      "source_png_sha256": "44fd424baec6c3f4c338283ba556d1637bec385a2a37af999c2160d5a00cf3f6",
+      "jpg_sha256": "fa63802e243135277e62fdf907392c89db497cad1a5468c9f4fec3869f6a906f",
+      "jpg": "frames/subject_ink_tape.jpg",
+      "detail_jpg_sha256": "8afa58d0f3b1fd5e07f0e06bbc4d0df214d6e0dd50435db9847ea144fa2363b0",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002553033803033803
+        }
+      },
+      "subject": {
+        "bounds": [
+          634.42626953125,
+          243.356658935547,
+          270.0,
+          186.0
+        ],
+        "entity": "cinema.ticket_office.tape",
+        "section": "cinema.ticket_office",
+        "station": 6,
+        "tick": 6791
+      }
+    },
+    "subject_umbrella_open": {
+      "capture": "route/subject_umbrella_open",
+      "source_png_sha256": "44fd424baec6c3f4c338283ba556d1637bec385a2a37af999c2160d5a00cf3f6",
+      "jpg_sha256": "fa63802e243135277e62fdf907392c89db497cad1a5468c9f4fec3869f6a906f",
+      "jpg": "frames/subject_umbrella_open.jpg",
+      "detail_jpg_sha256": "337ddbf6bbb8e9a88b1f1f1aad9a98685d931c0a95e665d5d3924c20e59559be",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002553033803033803
+        }
+      },
+      "subject": {
+        "bounds": [
+          1179.42626953125,
+          445.356658935547,
+          216.0,
+          182.000030517578
+        ],
+        "entity": "cinema.ticket_office.canopy",
+        "section": "cinema.ticket_office",
+        "station": 6,
+        "tick": 6791
+      }
+    },
+    "subject_platform_clerk": {
+      "capture": "route/subject_platform_clerk",
+      "source_png_sha256": "6f7b23a395bb33f971f8b1a58e0eead2bf443ff8e6d216157c107bd7a1f4ff1e",
+      "jpg_sha256": "cba8e372c892c167310d6d08cbdb5606942c2b8bddedacccfdb16acf84901d97",
+      "jpg": "frames/subject_platform_clerk.jpg",
+      "detail_jpg_sha256": "15e9d8bbb5b2905240248952cac07d739a5432bc9f4dc1e4fd473474f0e074ed",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.005788240163240164
+        }
+      },
+      "subject": {
+        "bounds": [
+          739.151123046875,
+          427.953979492188,
+          231.912231445313,
+          326.241516113281
+        ],
+        "entity": "platform.platform.resident",
+        "section": "platform.platform",
+        "station": 12,
+        "tick": 8225
+      }
+    },
+    "subject_umbrella_closed": {
+      "capture": "route/subject_umbrella_closed",
+      "source_png_sha256": "e1ddafe48bffd7ef67e8be5d14f1fb5a59cca562803048ed8b6b28efb4946c5e",
+      "jpg_sha256": "dd3b4317e0843c39232754028db430fefe92d78efe336bdfd71fedaa956a6900",
+      "jpg": "frames/subject_umbrella_closed.jpg",
+      "detail_jpg_sha256": "1b385789b92a458ca252570fe383d079dc549298cd8ba60116c7db746c8c100c",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002682971432971433
+        }
+      },
+      "subject": {
+        "bounds": [
+          1149.744140625,
+          429.187072753906,
+          216.0,
+          236.0
+        ],
+        "entity": "cinema.ticket_office.umbrella",
+        "section": "cinema.ticket_office",
+        "station": 6,
+        "tick": 6971
+      }
+    },
+    "subject_dragon": {
+      "capture": "route/subject_dragon",
+      "source_png_sha256": "5dadff2508833bde9eb751bc0af7d30b54ff544becf8fc040368ed73a6b0b798",
+      "jpg_sha256": "070b99bc3dc09fad778b17df4f0551676db6e743a2829048d446e5ab769eee7e",
+      "jpg": "frames/subject_dragon.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.008903133903133903
+        }
+      },
+      "subject": {
+        "bounds": [
+          155.691131591797,
+          469.169189453125,
+          109.51904296875,
+          109.51904296875
+        ],
+        "entity": "dragon.mouth",
+        "section": "plaza.ink_dragon",
+        "station": 5,
+        "tick": 6653
+      }
+    },
+    "subject_screen_shadow": {
+      "capture": "route/subject_screen_shadow",
+      "source_png_sha256": "d86731293c13103dff85cd8d3afd87f4f9175b28c09b1d6de773631c2e49b88d",
+      "jpg_sha256": "bacf247c3e4714b16b904dc9d39a23cd893f254d66a5bbc4b2adb4177a7ac5f3",
+      "jpg": "frames/subject_screen_shadow.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.008066961191961193
+        }
+      },
+      "subject": {
+        "bounds": [
+          814.992370605469,
+          230.003387451172,
+          130.0,
+          124.0
+        ],
+        "entity": "cinema.shadow_core",
+        "section": "cinema.screen_stage",
+        "station": 10,
+        "tick": 7819
+      }
+    },
+    "subject_forget": {
+      "capture": "route/subject_forget",
+      "source_png_sha256": "07c1fcb79e87a58150f8c52c7100c4af808138ac5f62522759f2ae4a380ce8a0",
+      "jpg_sha256": "0bd01ccbe2f18b16bab6392199e03cdedf3ba7193d32b3a9487d128bdb5bfff5",
+      "jpg": "frames/subject_forget.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.009165415415415415
+        }
+      },
+      "subject": {
+        "bounds": [
+          820.972778320313,
+          158.943344116211,
+          114.0,
+          107.000015258789
+        ],
+        "entity": "lantern_base.forget.stroke_1",
+        "section": "lantern_base.workbench",
+        "station": 15,
+        "tick": 9244
+      }
+    },
+    "start_button": {
+      "capture": "controls/start_button",
+      "source_png_sha256": "bca26e7f8453776223cffeab99f265837a177fe738f88fb6b4df57d699916917",
+      "jpg_sha256": "6efba60bdd38ea73c8e61681c05cbf35d448e1518c8563f68b0993454f0e6650",
+      "jpg": "frames/start_button.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0025548384923384923
+        }
+      },
+      "subject": null
+    },
+    "start_hover": {
+      "capture": "controls/start_hover",
+      "source_png_sha256": "649077eb3ed1f093d7ec7d2769033893f69c74336ade281a0ee01d4014e92597",
+      "jpg_sha256": "cad2a00d271735ab7e71a957e2697b51bc087b1f4b0d082e548f2a6e52d74ba2",
+      "jpg": "frames/start_hover.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0025548384923384923
+        }
+      },
+      "subject": null
+    },
+    "start_pressed": {
+      "capture": "controls/start_pressed",
+      "source_png_sha256": "c8eb484a2d15cb3f83e0f9ac1d6305cb3d152830ca6c87f9b6d3372290025409",
+      "jpg_sha256": "31ca9453b09e57925956c6cacebd2d865f89464cac5b40955cc208a3c37c5f9a",
+      "jpg": "frames/start_pressed.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0025548384923384923
+        }
+      },
+      "subject": null
+    },
+    "cinema_transition": {
+      "capture": "route/cinema_transition",
+      "source_png_sha256": "a96b8edaa01ac46e3275b72541717a61435bbb986a5dfe02c2d4806cb1854197",
+      "jpg_sha256": "aafcae150993240b2e45745a73573f7ac4f20f22e4e5c2c97262e724aee0edb2",
+      "jpg": "frames/cinema_transition.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002109681797181797
+        }
+      },
+      "subject": null
+    },
+    "train_station_transition": {
+      "capture": "route/train_station_transition",
+      "source_png_sha256": "90d74a17a3b77a29a850b8be40a028b95946e263c177710cc856e03f763ec725",
+      "jpg_sha256": "bfc62f4f54a38b9ac2e7a599bdf64540580cbaa37f34e52c79c36da1481d930b",
+      "jpg": "frames/train_station_transition.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0019905723030723033
+        }
+      },
+      "subject": null
+    },
+    "hud_reload": {
+      "capture": "route/hud_reload",
+      "source_png_sha256": "5ea29c3b40659caa05e74608d91a4b0b8eb5d85ea66de44d2aea2c4668756ee0",
+      "jpg_sha256": "b8586b1b1df59a8fabba24af34c7033fdbc27e231cdcf7d18ebd5b075475a917",
+      "jpg": "frames/hud_reload.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0017974705474705474
+        }
+      },
+      "subject": null
+    },
+    "reticle_on": {
+      "capture": "controls/reticle_on",
+      "source_png_sha256": "b2be78e349eab9a662203086503bde8d348f7ab8d9ca83f328fc6de170a41244",
+      "jpg_sha256": "75a0d31d8ee14027df559005a9e4948c5c8ad101f2a41c3e959961ff15e1037d",
+      "jpg": "frames/reticle_on.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002641463578963579
+        }
+      },
+      "subject": null
+    },
+    "reticle_off": {
+      "capture": "controls/reticle_off",
+      "source_png_sha256": "574961f63156acf5c49b730e3b594424d8d013a9f19e5439bc928a74b613d596",
+      "jpg_sha256": "b1aa48dc6115e439f8bed0104e8b3b5953b49235e1a49a9b17b163812fa3476c",
+      "jpg": "frames/reticle_off.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002641463578963579
+        }
+      },
+      "subject": null
+    },
+    "tracking_lost": {
+      "capture": "controls/tracking_lost",
+      "source_png_sha256": "4cc285384eb2e9683521306f7920a3b14bc38081f216ac3bf72632a7d29ae726",
+      "jpg_sha256": "91eef7a1f90853ca5bdd93196b286c1386274410b80cdfdba15d9bf5158fcd84",
+      "jpg": "frames/tracking_lost.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0017397204897204898
+        }
+      },
+      "subject": null
+    },
+    "campaign_clear": {
+      "capture": "route/campaign_clear",
+      "source_png_sha256": "19bc4624b7383d633dcac22e8d77d8683cb865a270413ce0cb2c991cadd36103",
+      "jpg_sha256": "d257f8c33c0abab954ed17d4d12bcea1c8b2939fbac41de3e874c5d76e571976",
+      "jpg": "frames/campaign_clear.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004632035882035882
+        }
+      },
+      "subject": null
+    },
+    "retry_button": {
+      "capture": "controls/retry_button",
+      "source_png_sha256": "fe4b49fa639f80d03744a861ce8813cb206ce0c1109797a2f3a946d1629570be",
+      "jpg_sha256": "818d477861bb29a68f0d17bd556b790d9fcd5c4cf7fd960e5a491246bb61640a",
+      "jpg": "frames/retry_button.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0031227140602140603
+        }
+      },
+      "subject": null
+    },
+    "overscan_monitor": {
+      "capture": "display/overscan_monitor",
+      "source_png_sha256": "9437e9f4b0cafbedb63f3521f2b3f8a9825b8ea50f3bfa7caf76e08bb6aa747e",
+      "jpg_sha256": "fcd45984ae909c85cbdef466d2d448864fd118a0a615ee49784022bbff57f4c4",
+      "jpg": "frames/overscan_monitor.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0020775854025884017
+        }
+      },
+      "subject": null
+    },
+    "overscan_tv": {
+      "capture": "display/overscan_tv",
+      "source_png_sha256": "f51373347148bd262de7f1e1cb5af6cd1c8998cf8b2260e5bbb3232ef112e14a",
+      "jpg_sha256": "d0c4df8f99c2db9be69226e4a72cd99cb28d32c3ddcc0bf801f2c6fd710caa99",
+      "jpg": "frames/overscan_tv.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.001961749612125552
+        }
+      },
+      "subject": null
+    },
+    "calibration_target": {
+      "capture": "display/calibration_target",
+      "source_png_sha256": "6c04e514bb7cfc4c25a36f09161e9870a9ad4618586de47f0f0ae0ae651abb84",
+      "jpg_sha256": "c4a0a7920650e93e2daeca13e1dd364d079aa22a09aabb6bbdfe9b9fa41569ce",
+      "jpg": "frames/calibration_target.jpg",
+      "detail_jpg_sha256": null,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.00022377372001432152
+        }
+      },
+      "subject": null
+    }
+  },
+  "A4_designs": {
+    "cyclist": {
+      "path": "gunforge/games/g01/reports/art/T09/generation/cyclist.png",
+      "sha256": "254199a45898ef23db9b8036f8a6d228386de65b45d53edfc1cbb7be62ea287d",
+      "scope": "A4 design without a runtime binding in this build",
+      "checks": {
+        "C03": {
+          "status": "pass",
+          "reason": "Visible alpha-weighted encoded luminance",
+          "details": {
+            "clipped_fraction": 0.002863794015337985
+          }
+        },
+        "C04": {
+          "status": "fail",
+          "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+          "details": {
+            "coverage": 0.10165881849315068,
+            "scope": "缩略概念图，含背景和印迹，供初筛"
+          }
+        },
+        "C05": {
+          "status": "pending",
+          "reason": "Low-confidence OCR needs visual confirmation",
+          "details": {
+            "recognized": "oHVadSg(\\-NEYTYouale兴旺->bedA7ponCWvdBlerWORM=Si~1<EEPYfoAFhaDY4rd|In.5]eeANETagy|CEEF=os\\PA4WeURTT.,4fabedvy{goTE人ryhFateeAT[a1hyAB\\|gqKyoBYiLeANFEt»Nobyhei;TeGy人志和==|Iai5SNahes-BVAN4Fmps“ap=feNN，\\Fo5\\/oN",
+            "confidence": 30,
+            "engine": "tesseract.js-7.0.0-eng+chi_sim"
+          }
+        },
+        "C14": {
+          "status": "pending",
+          "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+          "details": {}
+        }
+      }
+    },
+    "passerby_a": {
+      "path": "gunforge/games/g01/reports/art/T09/generation/passerby_a.png",
+      "sha256": "daf53015d711e7999c0f25ddc61a2c4805f53d991c0481d0e832eaea29354554",
+      "scope": "A4 design without a runtime binding in this build",
+      "checks": {
+        "C03": {
+          "status": "pass",
+          "reason": "Visible alpha-weighted encoded luminance",
+          "details": {
+            "clipped_fraction": 0.0028597513834635415
+          }
+        },
+        "C04": {
+          "status": "fail",
+          "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+          "details": {
+            "coverage": 0.3019072769953052,
+            "scope": "缩略概念图，含背景和印迹，供初筛"
+          }
+        },
+        "C05": {
+          "status": "pending",
+          "reason": "Low-confidence OCR needs visual confirmation",
+          "details": {
+            "recognized": "了3a人=区3WH.",
+            "confidence": 35,
+            "engine": "tesseract.js-7.0.0-eng+chi_sim"
+          }
+        },
+        "C14": {
+          "status": "pending",
+          "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+          "details": {}
+        }
+      }
+    },
+    "tadpole": {
+      "path": "gunforge/games/g01/reports/art/T06/gallery/tadpole0_normal.png",
+      "sha256": "0d77467946b049633fd397d444dc0931b58d41dd021eb54d7cb23097432580ba",
+      "scope": "A4 design without a runtime binding in this build",
+      "checks": {
+        "C03": {
+          "status": "pass",
+          "reason": "Visible alpha-weighted encoded luminance",
+          "details": {
+            "clipped_fraction": 0.0
+          }
+        },
+        "C04": {
+          "status": "fail",
+          "reason": "Palette coverage after caller excludes permitted cinnabar/light layers",
+          "details": {
+            "coverage": 0.165537109375,
+            "scope": "缩略概念图，含背景和印迹，供初筛"
+          }
+        },
+        "C05": {
+          "status": "pending",
+          "reason": "Low-confidence OCR needs visual confirmation",
+          "details": {
+            "recognized": "9",
+            "confidence": 33,
+            "engine": "tesseract.js-7.0.0-eng+chi_sim"
+          }
+        },
+        "C14": {
+          "status": "pending",
+          "reason": "No calibrated visual-model review; never infer a style score from file metadata",
+          "details": {}
+        }
+      }
+    }
+  }
+}

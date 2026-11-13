@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>纸灯城 · T14 界面预审</title>
+  <style>
+    :root { color-scheme: dark; font-family: "Source Sans 3", "Microsoft YaHei", system-ui, sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #efebe2; background: #151925; line-height: 1.6; }
+    main { max-width: 1280px; margin: auto; padding: clamp(16px, 4vw, 48px); }
+    h1, h2, p { margin: 0; }
+    h1 { font-size: clamp(28px, 5vw, 44px); line-height: 1.2; }
+    h2 { font-size: 24px; line-height: 1.3; }
+    p { margin-top: 8px; }
+    a { color: #f0c985; text-underline-offset: .18em; }
+    a:focus-visible { outline: 2px solid #ffdbad; outline-offset: 3px; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 20px; }
+    section { border-top: 1px solid #495061; margin-top: 26px; padding-top: 22px; }
+    .frames { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 14px; margin-top: 14px; }
+    figure { margin: 0; background: #222838; border: 1px solid #3b4355; }
+    figure a { display: block; }
+    img { display: block; width: 100%; height: auto; }
+    figcaption { padding: 8px 12px; }
+    li + li { margin-top: 8px; }
+    pre { padding: 12px 16px; white-space: pre-wrap; overflow-wrap: anywhere; background: #222838; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>纸灯城 · T14 界面预审</h1>
+    <p>以下画面来自同一版三关候选。点开图片可看原尺寸。</p>
+    <nav aria-label="预审章节">
+      <a href="#hud">三关 HUD</a>
+      <a href="#tracking">准星与失锁</a>
+      <a href="#menus">开始与结算</a>
+      <a href="#chapters">转场字形</a>
+      <a href="#display">显示设置</a>
+      <a href="#review">试玩与验收</a>
+    </nav>
+  </header>
+
+  <section id="hud">
+    <h2>三关 HUD</h2>
+    <p>对照灯芯亮灭、逐格光弹、分数印章、空弹和回光提示。</p>
+    <div class="frames">
+      <figure>
+        <a href="review/night_market.jpg"><img src="review/night_market.jpg" alt="夜市广场，墨舞龙与四根亮灯芯" width="1776" height="936"></a>
+        <figcaption>夜市 · 墨舞龙</figcaption>
+      </figure>
+      <figure>
+        <a href="review/cinema.jpg"><img src="review/cinema.jpg" alt="旧影院银幕影，右下角剩余光弹逐格亮起" width="1776" height="936"></a>
+        <figcaption>旧影院 · 银幕影</figcaption>
+      </figure>
+      <figure>
+        <a href="review/train_station.jpg"><img src="review/train_station.jpg" alt="火车站候车室，提示光弹用尽" width="1776" height="936" loading="lazy"></a>
+        <figcaption>火车站 · 空弹</figcaption>
+      </figure>
+      <figure>
+        <a href="review/reload.jpg"><img src="review/reload.jpg" alt="夜市巷口，提示回光中" width="1776" height="936" loading="lazy"></a>
+        <figcaption>巷口 · 回光中</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="tracking">
+    <h2>准星与失锁</h2>
+    <p>H 切换半透明准星。失锁后暂停射击，提示条显示「请对准屏幕」。</p>
+    <div class="frames">
+      <figure>
+        <a href="review/reticle_on.jpg"><img src="review/reticle_on.jpg" alt="巷口中间偏右有半透明纸环准星" width="1776" height="936" loading="lazy"></a>
+        <figcaption>准星开启</figcaption>
+      </figure>
+      <figure>
+        <a href="review/reticle_off.jpg"><img src="review/reticle_off.jpg" alt="按 H 隐藏巷口画面中的准星" width="1776" height="936" loading="lazy"></a>
+        <figcaption>准星关闭</figcaption>
+      </figure>
+      <figure>
+        <a href="review/tracking_lost.jpg"><img src="review/tracking_lost.jpg" alt="准星消失，顶部提示请对准屏幕，灯芯和光弹仍可见" width="1776" height="936" loading="lazy"></a>
+        <figcaption>光枪失锁</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="menus">
+    <h2>开始与结算</h2>
+    <div class="frames">
+      <figure>
+        <a href="review/start.jpg"><img src="review/start.jpg" alt="纸灯城标题、夜市字形和开始按钮" width="1776" height="936" loading="lazy"></a>
+        <figcaption>开始画面</figcaption>
+      </figure>
+      <figure>
+        <a href="review/start_hover.jpg"><img src="review/start_hover.jpg" alt="瞄准开始按钮后，边框高亮" width="1776" height="936" loading="lazy"></a>
+        <figcaption>瞄准按钮</figcaption>
+      </figure>
+      <figure>
+        <a href="review/start_pressed.jpg"><img src="review/start_pressed.jpg" alt="开始按钮的按下状态" width="1776" height="936" loading="lazy"></a>
+        <figcaption>按下按钮</figcaption>
+      </figure>
+      <figure>
+        <a href="review/clear.jpg"><img src="review/clear.jpg" alt="工作台纸灯点亮后的三关通关结算" width="1776" height="936" loading="lazy"></a>
+        <figcaption>三关通关</figcaption>
+      </figure>
+      <figure>
+        <a href="review/retry.jpg"><img src="review/retry.jpg" alt="灯芯耗尽后的失败结算和重试按钮" width="1776" height="936" loading="lazy"></a>
+        <figcaption>失败重试</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="chapters">
+    <h2>转场字形</h2>
+    <div class="frames">
+      <figure>
+        <a href="review/cinema_title.jpg"><img src="review/cinema_title.jpg" alt="从夜市进入旧影院时的章名字形" width="1776" height="936" loading="lazy"></a>
+        <figcaption>旧影院</figcaption>
+      </figure>
+      <figure>
+        <a href="review/train_title.jpg"><img src="review/train_title.jpg" alt="从旧影院进入火车站时的章名字形" width="1776" height="936" loading="lazy"></a>
+        <figcaption>火车站</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="display">
+    <h2>显示设置</h2>
+    <div class="frames">
+      <figure>
+        <a href="review/monitor.jpg"><img src="review/monitor.jpg" alt="显示器配置下的完整追踪框和四角标记" width="1212" height="720" loading="lazy"></a>
+        <figcaption>显示器配置</figcaption>
+      </figure>
+      <figure>
+        <a href="review/tv.jpg"><img src="review/tv.jpg" alt="电视配置扩大边距后的追踪框和四角标记" width="1212" height="720" loading="lazy"></a>
+        <figcaption>电视配置</figcaption>
+      </figure>
+      <figure>
+        <a href="review/calibration.jpg"><img src="review/calibration.jpg" alt="显示设置内的第一个圆心校准靶" width="1212" height="720" loading="lazy"></a>
+        <figcaption>光枪校准靶</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="review">
+    <h2>试玩与验收</h2>
+    <p>在仓库根目录的 PowerShell 中运行下面的命令。F11 切换全屏，F2 打开显示设置，F3 切换显示器和电视，C 开始校准。</p>
+    <pre><code>powershell -ExecutionPolicy Bypass -File .\gunforge\start_level_player.ps1 -Package paper.lantern_city_ui -Candidate</code></pre>
+    <ul>
+      <li>美术签核待验。按正常观看距离复核灯芯、十二格光弹、印章数字和提示条，以及按钮三态、标题与三关字形。</li>
+      <li>实体光枪待验。在显示器和电视上确认白色追踪框与四角可见，完成校准后测试开始、失锁恢复、换弹和重试。</li>
+    </ul>
+    <p><a href="review_checks.json">本版抓帧与回归记录</a> · <a href="report.md">T14 报告</a></p>
+  </section>
+</main>
+</body>
+</html>

@@ -4,7 +4,7 @@ from compiler import ROOT,DEFAULT_CACHE,read_package,compile_source,write_build
 from versions import publish
 from freeze_baseline import dump
 from combat_cues import ensure_combat_cues
-def build(*, station_candidate=False, source_only=False):
+def build(*, station_candidate=False, source_only=False, crow_windup_ms=720, crow_lunge_ms=280):
  runtime=ROOT/'gunforge/framework/runtime';station=json.loads((runtime/'station/station.json').read_bytes())
  source={'schema_version':1,'id':'paper.assault','ruleset':'directed_action@1','seed':421,'tick_hz':60,'duration_ms':84000,'layout':{'width':1776,'height':936},'entities':{},'events':{},'queries':{},'resources':{},'cues':{},'effects':{},'sections':{},'initial_resources':{'lives':5,'ammo':80,'score':0,'purified':0,'rescued':0},'resource_bounds':{'lives':{'min':0,'max':5},'score':{'min':0},'ammo':{'min':0,'max':80}},'controls':{'ammo_resource':'ammo','shot_interval_ms':150,'assist_px':12},'hud':[{'label':'灯芯','resource':'lives'},{'label':'剩余光弹','resource':'ammo'},{'label':'印记','resource':'score'}]}
  resources=source['resources'];entities=source['entities'];events=source['events'];effects=source['effects']
@@ -45,7 +45,7 @@ def build(*, station_candidate=False, source_only=False):
  effect('weak_spark','spark',300,'#ff9379',95,'朱印命中');effect('purify_burst','burst',490,'#ffe5aa',130,'净化')
  effect('empty_feedback','spark',550,'#ffe5a6',0,'光弹已耗尽')
  effect('support_pulse','pulse',850,'#d8ba72',1800,'灯火震墨');effect('support_link','link',700,'#d4b674',100)
- effect('lunge_release','attack_release',360,'#ff655a',90)
+ effect('lunge_release','attack_release',max(360,crow_lunge_ms),'#ff655a',90)
  effect('ink_release','attack_release',240,'#ff9460',60)
  effect('player_hurt','player_hit',720,'#ff493e',100,'受到攻击 · 灯芯 -1')
  lamp_layer=next(layer for layer in station['layers'] if layer['id']=='lamp');lx=lamp_layer['pos'][0]-station['content_origin'][0];ly=lamp_layer['pos'][1]-station['content_origin'][1]
@@ -80,8 +80,9 @@ def build(*, station_candidate=False, source_only=False):
    e=entity('target',-size if not side else 1776,y,size,size,hits=2 if heavy else 1,weak_damage=2,hitstop_ms=80,z=75,label='吐墨鸦' if ranged else '扑击鸦')
    e['parts']={'body':{'resource':body,'x':62/1024,'y':154/1024,'width':917/1024,'height':753/1024},'stamp':{'resource':core,'source':[417,202,132,132],'x':533/1024,'y':400/1024,'width':132/1024,'height':132/1024,'kind':'weak'}}
    e['part_order']=['body','stamp']
-   warning_at=2300+(index%2)*220;attack_at=warning_at+1000
-   release_at=attack_at-280
+   warning_at=2300+(index%2)*220
+   release_at=warning_at+crow_windup_ms+(280 if ranged else 0)
+   attack_at=release_at if ranged else release_at+crow_lunge_ms
    frames=[frame(0,e['x'],y,.72,-.16 if not side else .16),frame(850,lane,y,1,.03),frame('windup',lane,y+15,1,-.08)]
    if ranged:
     frames.extend([frame('release',lane,y-30,1.12,-.12,offset_ms=-170),frame('release',lane,y,1.17,.08)])
@@ -100,7 +101,7 @@ def build(*, station_candidate=False, source_only=False):
      'at_ms':warning_at, 'color':'#ff7764',
      'label':'危险 · 吐墨蓄力' if ranged else '危险 · 即将扑击',
     },
-    'release_ms':attack_at if ranged else release_at,
+    'release_ms':release_at,
     'retire_ms':attack_at+550,
     'damage':{'resource':'lives','amount':1,'effect':'player_hurt','topic':'player.damaged'},
     'release_effect':'ink_release' if ranged else 'lunge_release',

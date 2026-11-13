@@ -1,0 +1,271 @@
+{
+  "after": {
+    "ammo": 5,
+    "lives": 4,
+    "rescued": 5,
+    "score": 7575,
+    "shots": 91
+  },
+  "before": {
+    "ammo": 1,
+    "lives": 4,
+    "rescued": 5,
+    "score": 7175,
+    "shots": 83
+  },
+  "build_id": "48af22689f75818cac542ce21421867a97f5ac9abe6502250796dc6ff433a8d1",
+  "entry_tick": 7920,
+  "failures": [],
+  "gpu": "NVIDIA GeForce RTX 3080 Ti",
+  "invalid_shots": [
+    {
+      "after": {
+        "ammo": 0,
+        "lives": 4,
+        "rescued": 5,
+        "score": 7175,
+        "shots": 84
+      },
+      "before": {
+        "ammo": 1,
+        "lives": 4,
+        "rescued": 5,
+        "score": 7175,
+        "shots": 83
+      },
+      "feedback_cue": "puddle.empty",
+      "reply": {
+        "hit": false,
+        "kind": "invalid",
+        "ok": true
+      },
+      "target": "cinema.projector_left"
+    },
+    {
+      "after": {
+        "ammo": 11,
+        "lives": 4,
+        "rescued": 5,
+        "score": 7175,
+        "shots": 85
+      },
+      "before": {
+        "ammo": 12,
+        "lives": 4,
+        "rescued": 5,
+        "score": 7175,
+        "shots": 84
+      },
+      "feedback_cue": "puddle.empty",
+      "reply": {
+        "hit": false,
+        "kind": "invalid",
+        "ok": true
+      },
+      "target": "cinema.projector_center"
+    },
+    {
+      "after": {
+        "ammo": 10,
+        "lives": 4,
+        "rescued": 5,
+        "score": 7175,
+        "shots": 86
+      },
+      "before": {
+        "ammo": 11,
+        "lives": 4,
+        "rescued": 5,
+        "score": 7175,
+        "shots": 85
+      },
+      "feedback_cue": "puddle.empty",
+      "reply": {
+        "hit": false,
+        "kind": "invalid",
+        "ok": true
+      },
+      "target": "cinema.projector_right"
+    }
+  ],
+  "next_section": "waiting_room.waiting_room",
+  "next_tick": 8360,
+  "passed": true,
+  "premature_core": {
+    "hit": false,
+    "kind": "miss",
+    "ok": true
+  },
+  "source_revision": "3ee1e018cc218e74c121b295d64926019f80e7b0d26586a303e8463c6e1e9e19",
+  "stale_core_rejection": {
+    "ok": false,
+    "reason": "not_running"
+  },
+  "targets": [
+    {
+      "core_open": false,
+      "frame": "left_ink",
+      "hit": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "cinema.reel_left"
+      },
+      "hit_outside_ink_pixels": 0,
+      "hit_pixels": 10038,
+      "hud_clear_at_camera_extremes": true,
+      "target": "cinema.reel_left",
+      "tick": 8229,
+      "visual_alpha_pixels": 10038,
+      "warm_tick": 8230,
+      "effective_radius_px": 56.49,
+      "effective_radius_passed": true,
+      "hit_pixels_changed_when_hidden": 9675,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002220970970970971
+        }
+      },
+      "sha256": {
+        "frame": "93e968fb9749b63189523d401b95a657a07a29e24eaabec50ee9a9810ce82890",
+        "reference": "5958253a9c1732270c6ab4d82de8336fa14b6aa91bb773f2e050b44197a465d5",
+        "mask": "57261fc0154156eb02adbb1e136b1fe0facaccb24b7e8fa72b5e4399721e0533"
+      }
+    },
+    {
+      "core_open": false,
+      "frame": "center_ink",
+      "hit": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "cinema.reel_center"
+      },
+      "hit_outside_ink_pixels": 0,
+      "hit_pixels": 10038,
+      "hud_clear_at_camera_extremes": true,
+      "target": "cinema.reel_center",
+      "tick": 8238,
+      "visual_alpha_pixels": 10038,
+      "warm_tick": 8239,
+      "effective_radius_px": 56.49,
+      "effective_radius_passed": true,
+      "hit_pixels_changed_when_hidden": 9688,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0027250808500808503
+        }
+      },
+      "sha256": {
+        "frame": "fbc55f739cade568884ab9e4a89e06090ec788254aa7ea3f925fef50369a3295",
+        "reference": "d2d90e290e955801c72c6d9a78cbeddd28b7fea3d7bd2ad63ceece6e32d7af8a",
+        "mask": "d891e2ad99766678f655e5b547dc69928830b745ff82211260137f788bb04bd5"
+      }
+    },
+    {
+      "core_open": true,
+      "frame": "right_ink",
+      "hit": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "cinema.reel_right"
+      },
+      "hit_outside_ink_pixels": 0,
+      "hit_pixels": 10038,
+      "hud_clear_at_camera_extremes": true,
+      "target": "cinema.reel_right",
+      "tick": 8247,
+      "visual_alpha_pixels": 10038,
+      "warm_tick": 8248,
+      "effective_radius_px": 56.49,
+      "effective_radius_passed": true,
+      "hit_pixels_changed_when_hidden": 9635,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0027232761607761608
+        }
+      },
+      "sha256": {
+        "frame": "994ae7130fce92dde56403dc60a0098aebfa9f3164eb8f88d7a0dfa0c936f545",
+        "reference": "ca5d392bc55e3ca73dd2e6cb2f0dea0bc5a5560e41fdba445ad814efb14efb0f",
+        "mask": "9d0a976d4535d9da5f7be068278a22d7b93dfe32d707a4185dcca4f6719f2ba6"
+      }
+    },
+    {
+      "frame": "core_ink",
+      "hit": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "cinema.shadow_core"
+      },
+      "hit_outside_ink_pixels": 0,
+      "hit_pixels": 10726,
+      "hud_clear_at_camera_extremes": true,
+      "target": "cinema.shadow_core",
+      "tick": 8268,
+      "visual_alpha_pixels": 10726,
+      "effective_radius_px": 58.42,
+      "effective_radius_passed": true,
+      "hit_pixels_changed_when_hidden": 10726,
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.00223240066990067
+        }
+      },
+      "sha256": {
+        "frame": "20a04ece6ea1f2534ee8b38a6535fa318b14dda585b3278f6463e8be88bda642",
+        "reference": "ca3c41c43a80dc8bcd8a21eeae2fb205b24f94f20c53d2da5ad36c6dad258a4b",
+        "mask": "c7ed3e49faed60346bedfcb706ceeea9caab95ac0850e36b158445b7cb09ce01"
+      }
+    }
+  ],
+  "compiled_sha256": "2fd017e4e8094b77f4b7e1f88d31c998349789af4f3b69b84e010e46aee3344c",
+  "light_swaps": [
+    {
+      "side": "left",
+      "changed_pixels": 32589,
+      "median_red_minus_blue_increase_8bit": 37.0,
+      "frame_sha256": "08d3c0e78dd6558ca4ed5ce0a66d095373b59c779b1eb73defe31b9f0e921ad2",
+      "reference_sha256": "b998e61d81c730cc0bb8ad13fc7f9a25e67b43814b7247a1b2aebfb4abb70fae"
+    },
+    {
+      "side": "center",
+      "changed_pixels": 40574,
+      "median_red_minus_blue_increase_8bit": 37.0,
+      "frame_sha256": "3ed8f775a298c1dbca0ccf1e22a9c030b50f56758b97d049252068db0babfca1",
+      "reference_sha256": "0ec7e49801d148d64368d944ba36552bd8da6fbcc52ed2c20e64bc53f0fb4417"
+    },
+    {
+      "side": "right",
+      "changed_pixels": 30859,
+      "median_red_minus_blue_increase_8bit": 37.0,
+      "frame_sha256": "16fa5b94b7b9fbf9ba3cf1f23ede93079a7e63386ba72a342848750ab7878d7b",
+      "reference_sha256": "07b1766ef416f7afebe48fbf395bc917a289673eb6fe0907f23f27e759d9581e"
+    }
+  ],
+  "summary": {
+    "targets": 4,
+    "radius_passed": 4,
+    "hud_clear_at_camera_extremes": 4,
+    "hit_pixels_outside_visual_alpha": 0,
+    "positive_warm_light_swaps": 3,
+    "C03_frames_passed": 4
+  },
+  "physical_lightgun": "pending",
+  "misfire_frame_sha256": "b909115eec04497de9b829c80627d1e4ef7ec99e5f091cf9148b523408f573cf",
+  "previews": {
+    "hit_regions.jpg": "e8210f512073a350cb27ff951d4199c2c099024277985618449c2f9ceb272278",
+    "light_swaps.jpg": "906436d81ed5c1c5e1313b1d760a5bba48fbe1dde7e460576a5c4f70ff3f154e",
+    "projector_invalid.jpg": "cdc387ea270ee169130095381cc1817e88eeead146ed42310290e469ef88b7ec"
+  }
+}

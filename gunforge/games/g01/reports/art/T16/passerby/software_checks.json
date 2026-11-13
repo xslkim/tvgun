@@ -1,0 +1,606 @@
+{
+  "date": "2026-11-12",
+  "runtime": "Godot 4.6.3 Windows OpenGL Compatibility",
+  "passed": true,
+  "platform": {
+    "package": "paper.platform_passerby",
+    "source_revision": "c60724e8cf01b5f6c87a4e456deb478248b0c2a4c1318e281510e6674b4b81a5",
+    "body_min_height_px": 319.015960693359,
+    "build_id": "b9c45b4f9bae0ad9f5f2e84e2d5e572a1b5a9e81e897e8b45b7be99ba5d6e471",
+    "failures": [],
+    "final_resources": {
+      "ammo": 4.0,
+      "lives": 5.0,
+      "rescued": 1,
+      "score": 250
+    },
+    "gpu_capture": true,
+    "mask_samples": [
+      {
+        "body_height_px": 324.169067382813,
+        "ink_on_paper_pixels": 5438,
+        "pose": "struggle_00",
+        "tick": 0,
+        "visible_ink_pixels": 5438
+      },
+      {
+        "body_height_px": 319.015960693359,
+        "ink_on_paper_pixels": 5440,
+        "pose": "struggle_24",
+        "tick": 24,
+        "visible_ink_pixels": 5440
+      },
+      {
+        "body_height_px": 322.244781494141,
+        "ink_on_paper_pixels": 5441,
+        "pose": "struggle_48",
+        "tick": 48,
+        "visible_ink_pixels": 5441
+      },
+      {
+        "body_height_px": 319.953491210938,
+        "ink_on_paper_pixels": 5449,
+        "pose": "struggle_72",
+        "tick": 72,
+        "visible_ink_pixels": 5449
+      }
+    ],
+    "motion_bbox": [
+      746.5771484375,
+      429.189697265625,
+      285.225708007813,
+      329.624816894531
+    ],
+    "passed": true,
+    "replayed_inputs": 8
+  },
+  "campaign": {
+    "package": "paper.lantern_city_rescue",
+    "source_revision": "e2820a1a387d0e0a7bf42b9fc206b6302d09f1c389574698ee2ba1d9e2fa1fc3",
+    "build_id": "e10e36af485290c6b30ce9136f6bc5b537daf037478d7e61d1b1d03a35778737",
+    "chapter_transition_tick": 6821,
+    "counters": {
+      "ammo": 11.0,
+      "lives": 4,
+      "rescued": 7,
+      "score": 9275,
+      "shots": 109
+    },
+    "end_tick": 13002,
+    "ending": {
+      "city_texture_preloaded": true,
+      "city_tick": 9954,
+      "light_tick": 9522,
+      "natural_result_tick": 13002,
+      "quote_tick": 12390,
+      "skip": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "result": "clear",
+        "result_tick": 9523,
+        "start_tick": 9522
+      },
+      "skip_from_city": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "result": "clear",
+        "result_tick": 10075,
+        "start_tick": 10074
+      },
+      "skip_from_quote": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "result": "clear",
+        "result_tick": 12391,
+        "start_tick": 12390
+      },
+      "skip_from_wide": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "result": "clear",
+        "result_tick": 10891,
+        "start_tick": 10890
+      },
+      "wide_texture_preloaded": true,
+      "wide_tick": 10770
+    },
+    "failure_retries": [
+      {
+        "after_retry": {
+          "ammo": 12.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 0
+        },
+        "before_retry": {
+          "ammo": 12.0,
+          "lives": 0,
+          "rescued": 1,
+          "score": 3500,
+          "shots": 36
+        },
+        "defeat_tick": 6097,
+        "first_shot": {
+          "ammo": 11.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 1
+        },
+        "station": 1
+      },
+      {
+        "after_retry": {
+          "ammo": 12.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 0
+        },
+        "before_retry": {
+          "ammo": 6.0,
+          "lives": 0,
+          "rescued": 7,
+          "score": 8575,
+          "shots": 102
+        },
+        "defeat_tick": 10252,
+        "first_shot": {
+          "ammo": 11.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 1
+        },
+        "station": 15
+      }
+    ],
+    "failures": [],
+    "gpu_capture": true,
+    "handoffs": [
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 3875,
+          "shots": 39
+        },
+        "station": "stall",
+        "tick": 5713
+      },
+      {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 4475,
+          "shots": 49
+        },
+        "station": "video_shop",
+        "tick": 6222
+      },
+      {
+        "counters": {
+          "ammo": 7.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4775,
+          "shots": 53
+        },
+        "station": "footbridge",
+        "tick": 6506
+      },
+      {
+        "counters": {
+          "ammo": 4.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4975,
+          "shots": 56
+        },
+        "station": "plaza",
+        "tick": 6619
+      },
+      {
+        "counters": {
+          "ammo": 5.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 6075,
+          "shots": 67
+        },
+        "station": "ticket_office",
+        "tick": 6911
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6375,
+          "shots": 72
+        },
+        "station": "poster_hall",
+        "tick": 7170
+      },
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6575,
+          "shots": 75
+        },
+        "station": "auditorium",
+        "tick": 7402
+      },
+      {
+        "counters": {
+          "ammo": 5.0,
+          "lives": 4,
+          "rescued": 4,
+          "score": 6875,
+          "shots": 79
+        },
+        "station": "projection_booth",
+        "tick": 7661
+      },
+      {
+        "counters": {
+          "ammo": 1.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 7175,
+          "shots": 83
+        },
+        "station": "screen_stage",
+        "tick": 7920
+      },
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 7575,
+          "shots": 87
+        },
+        "station": "waiting_room",
+        "tick": 8067
+      },
+      {
+        "counters": {
+          "ammo": 4.0,
+          "lives": 4,
+          "rescued": 6,
+          "score": 7875,
+          "shots": 92
+        },
+        "station": "platform",
+        "tick": 8374
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8175,
+          "shots": 96
+        },
+        "station": "green_car",
+        "tick": 8681
+      },
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8375,
+          "shots": 99
+        },
+        "station": "lantern_base",
+        "tick": 8988
+      },
+      {
+        "counters": {
+          "ammo": 6.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8575,
+          "shots": 102
+        },
+        "station": "workbench",
+        "tick": 9256
+      }
+    ],
+    "old_chapter_poses_rejected": true,
+    "passed": true,
+    "pullback_tick": 9202,
+    "reached": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "reloads": 9,
+    "replay": {
+      "counters": {
+        "ammo": 11.0,
+        "lives": 4,
+        "rescued": 7,
+        "score": 9275,
+        "shots": 109
+      },
+      "end_tick": 13002,
+      "inputs": 118
+    },
+    "result": "clear",
+    "train_transition_tick": 7977
+  },
+  "design": {
+    "A4": "gunforge/games/g01/reports/art/T09/generation/passerby_a.png",
+    "A4_sha256": "daf53015d711e7999c0f25ddc61a2c4805f53d991c0481d0e832eaea29354554",
+    "T10": "gunforge/games/g01/reports/art/T10/assets/passerby_a_sheet/puppet.json",
+    "T10_sha256": "436ed10af5f65711195ed3c011b21659df2acd4dc522189c7bd1efa2f91cf4f9",
+    "T10_parts": {
+      "torso.png": "1cd7b5d1ead8b734b37381163ec29df136ee77c082c3b775b355fa6ca99e7495",
+      "head.png": "10d054bfe3a759b5bb2bde1d5cd768c37d0941ff7cee22733e823e13f0db9514",
+      "upper_arm_l.png": "d8c3a6e8b423dba305a3520e7bd4c32579ef8f2426e03aaa42d9f0afea1c8289",
+      "upper_arm_r.png": "96bfd8853a0243f43f249ce6ad3928c37d522cb50bf822ffba7f3568b06e710e",
+      "forearm_l.png": "b1191927ec8e17045bbf9807383185ae4a44dcdb1c52fee8abfa131b5d68f761",
+      "forearm_r.png": "78945c38c61e7254f4a37d296badee258e6007dde5d5abb07f9b5dd62b9cd960",
+      "thigh_l.png": "d0cfc7cc6d9ac851aa9dfdefd1ca6e7eb1d20203313370a5fbea53ff6515e40b",
+      "thigh_r.png": "c865179bcc81a9c59072631f6522d5fc38f7fa9532e2ce3c46bdd00535b4b625",
+      "shin_l.png": "72b2fec0bf24b4386b01e25857c7c70c6e45aaef71258158a633a78a764d2b18",
+      "shin_r.png": "33a953721301562909882dd962367a7610b20c6f4d26a91e3b5e570177d12fbc"
+    },
+    "compiled_ink_tile_size": [
+      228,
+      208
+    ]
+  },
+  "raster_checks": [
+    {
+      "pose": "struggle_00",
+      "C06": {
+        "status": "pending",
+        "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+        "details": {
+          "contrast": 0.23394901960784314
+        }
+      },
+      "C09": {
+        "status": "pass",
+        "reason": "Primary size, visible protection, weak point and motion reservation",
+        "details": {
+          "effective_radius": 41.501503516625654,
+          "protected_overlap": false,
+          "weak_outside": false,
+          "hud_overlap": false
+        }
+      }
+    },
+    {
+      "pose": "struggle_24",
+      "C06": {
+        "status": "pending",
+        "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+        "details": {
+          "contrast": 0.23332156862745096
+        }
+      },
+      "C09": {
+        "status": "pass",
+        "reason": "Primary size, visible protection, weak point and motion reservation",
+        "details": {
+          "effective_radius": 41.489997161749,
+          "protected_overlap": false,
+          "weak_outside": false,
+          "hud_overlap": false
+        }
+      }
+    },
+    {
+      "pose": "struggle_48",
+      "C06": {
+        "status": "pending",
+        "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+        "details": {
+          "contrast": 0.23376862745098037
+        }
+      },
+      "C09": {
+        "status": "pass",
+        "reason": "Primary size, visible protection, weak point and motion reservation",
+        "details": {
+          "effective_radius": 41.56281694398771,
+          "protected_overlap": false,
+          "weak_outside": false,
+          "hud_overlap": false
+        }
+      }
+    },
+    {
+      "pose": "struggle_72",
+      "C06": {
+        "status": "pending",
+        "reason": "Numeric contrast passed; thumbnail recognition has not been reviewed",
+        "details": {
+          "contrast": 0.2335607843137255
+        }
+      },
+      "C09": {
+        "status": "pass",
+        "reason": "Primary size, visible protection, weak point and motion reservation",
+        "details": {
+          "effective_radius": 41.55515771293697,
+          "protected_overlap": false,
+          "weak_outside": false,
+          "hud_overlap": false
+        }
+      }
+    }
+  ],
+  "frames": {
+    "struggle": {
+      "sha256": "2f6ca739de4102476335cd718cfd0a304b55f5162a267e8fa9abf52acca86bae",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0075075075075075074
+        }
+      },
+      "build_id": "b9c45b4f9bae0ad9f5f2e84e2d5e572a1b5a9e81e897e8b45b7be99ba5d6e471"
+    },
+    "rescue": {
+      "sha256": "a8d0469c6d14a1cd540303a075e3019c2b74d61b338b4ed5bc313275437c7924",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.007553827866327866
+        }
+      },
+      "build_id": "b9c45b4f9bae0ad9f5f2e84e2d5e572a1b5a9e81e897e8b45b7be99ba5d6e471"
+    },
+    "thank": {
+      "sha256": "311fb0c713da75d9cfe9fa83d010e60d7701de531fa1bc25f6d2ea496f9ac83e",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0073823823823823825
+        }
+      },
+      "build_id": "b9c45b4f9bae0ad9f5f2e84e2d5e572a1b5a9e81e897e8b45b7be99ba5d6e471"
+    },
+    "platform_campaign": {
+      "sha256": "2e2e0cc28db0e14038df01c084b59818fa9e4b3e6d3561c50659cb239db19761",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.005726880726880727
+        }
+      },
+      "build_id": "e10e36af485290c6b30ce9136f6bc5b537daf037478d7e61d1b1d03a35778737"
+    },
+    "car_handoff": {
+      "sha256": "8ba21df660a5c0f97aaba2501805b18a4a9c5fe7210c2058adff224afd4565c7",
+      "C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0034385346885346885
+        }
+      },
+      "build_id": "e10e36af485290c6b30ce9136f6bc5b537daf037478d7e61d1b1d03a35778737"
+    }
+  },
+  "puddle_regression": {
+    "build_id": "e10e36af485290c6b30ce9136f6bc5b537daf037478d7e61d1b1d03a35778737",
+    "departure_counters": {
+      "ammo": 9.0,
+      "lives": 4,
+      "rescued": 1,
+      "score": 3875,
+      "shots": 39
+    },
+    "entry_art_preloaded": true,
+    "entry_counters": {
+      "ammo": 12.0,
+      "lives": 4,
+      "rescued": 1,
+      "score": 3500,
+      "shots": 36
+    },
+    "no_fire_branch": {
+      "defeat": {
+        "ammo": 12.0,
+        "lives": 0,
+        "rescued": 1,
+        "score": 3500,
+        "shots": 36
+      },
+      "frames_inspected": 481,
+      "min_horizontal_head_gap_px": 138.97998046875,
+      "retry": {
+        "after_retry": {
+          "ammo": 12.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 0
+        },
+        "before_retry": {
+          "ammo": 12.0,
+          "lives": 0,
+          "rescued": 1,
+          "score": 3500,
+          "shots": 36
+        },
+        "defeat_tick": 6097,
+        "first_shot": {
+          "ammo": 11.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 1
+        },
+        "station": 1
+      }
+    },
+    "puddle_entry_tick": 5616,
+    "stall_entry_tick": 5713,
+    "weak_hits": 3
+  },
+  "player": {
+    "build_id": "e10e36af485290c6b30ce9136f6bc5b537daf037478d7e61d1b1d03a35778737",
+    "http_error": 0,
+    "level_player_ready": true,
+    "udp_errors": []
+  },
+  "menu_and_network_inputs": {
+    "build_id": "e10e36af485290c6b30ce9136f6bc5b537daf037478d7e61d1b1d03a35778737",
+    "captures": false,
+    "failures": [],
+    "opening": true,
+    "passed": true,
+    "udp_shots": 3
+  },
+  "pipeline_unit_tests_passed": 26,
+  "compiled_resources": 339
+}

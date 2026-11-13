@@ -1,0 +1,2244 @@
+{
+  "package": "paper.lantern_city_cast",
+  "build_id": "5989a3b66bc57f032944a80f82a0cb8afe49d0cced4edd7593454fdd8fdbb9b2",
+  "source_revision": "3ee1e018cc218e74c121b295d64926019f80e7b0d26586a303e8463c6e1e9e19",
+  "method": "One Godot Compatibility draw per fixed simulation tick with VSync off and dummy audio. Scene and actual paper HUD textures use RGBA8 with mipmaps, deduplicated per texture. The transition limit uses active plus preloaded images and the union across adjacent sections. Engine totals separately include render targets, font textures and backend resources.",
+  "asset_budget_passed": true,
+  "whole_route_60hz_passed": false,
+  "section_cuts_60hz_passed": false,
+  "puppet_atlases": [
+    {
+      "resource": "alley.vendor_atlas",
+      "pixels": [
+        2041,
+        353
+      ],
+      "passed": true
+    },
+    {
+      "resource": "cinema.image_024",
+      "pixels": [
+        1232,
+        1005
+      ],
+      "passed": true
+    },
+    {
+      "resource": "cinema.image_050",
+      "pixels": [
+        1232,
+        1005
+      ],
+      "passed": true
+    },
+    {
+      "resource": "cinema.image_064",
+      "pixels": [
+        1232,
+        1005
+      ],
+      "passed": true
+    },
+    {
+      "resource": "platform.image_024",
+      "pixels": [
+        1228,
+        1002
+      ],
+      "passed": true
+    },
+    {
+      "resource": "video_shop.image_013",
+      "pixels": [
+        1986,
+        367
+      ],
+      "passed": true
+    },
+    {
+      "resource": "waiting_room.image_025",
+      "pixels": [
+        1232,
+        1005
+      ],
+      "passed": true
+    }
+  ],
+  "runs": [
+    {
+      "profile": "run_1.json",
+      "profile_sha256": "35fb1998d89ec9a216c47c9593007fd3573c7608b29c6d6613b67045350fd341",
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "renderer": "gl_compatibility",
+      "viewport": [
+        1776,
+        936
+      ],
+      "window": [
+        1280,
+        720
+      ],
+      "open_us": 2502998,
+      "samples": 13317,
+      "asset_budgets": {
+        "stage_and_lighting": {
+          "bytes": 30231860,
+          "limit_bytes": 50331648,
+          "passed": true,
+          "tick": 8283,
+          "section": "cinema.screen_stage"
+        },
+        "actors_and_props": {
+          "bytes": 24032016,
+          "limit_bytes": 33554432,
+          "passed": true,
+          "tick": 6773,
+          "section": "plaza.ink_dragon"
+        },
+        "effects_and_ui": {
+          "bytes": 9093128,
+          "limit_bytes": 16777216,
+          "passed": true,
+          "tick": 1,
+          "section": "alley.arrival"
+        },
+        "resident_total": {
+          "bytes": 50721456,
+          "limit_bytes": 100663296,
+          "passed": true,
+          "tick": 9517,
+          "section": "lantern_base.pullback"
+        },
+        "transition_total": {
+          "bytes": 75844084,
+          "limit_bytes": 167772160,
+          "passed": true,
+          "tick": 8308,
+          "section": "story.train_station_intro"
+        }
+      },
+      "engine_texture_peak_bytes": 126152397,
+      "engine_video_peak_bytes": 134687589,
+      "frame_time": {
+        "p50_us": 4592,
+        "p95_us": 7026,
+        "p99_us": 9026,
+        "max_us": 17497,
+        "over_60hz": 1
+      },
+      "stations": {
+        "1": {
+          "p50_us": 5346,
+          "p95_us": 7436,
+          "p99_us": 9102,
+          "max_us": 14237,
+          "over_60hz": 0,
+          "samples": 5712,
+          "resident_peak_bytes": 43691964
+        },
+        "2": {
+          "p50_us": 3643,
+          "p95_us": 5594,
+          "p99_us": 7489,
+          "max_us": 9462,
+          "over_60hz": 0,
+          "samples": 509,
+          "resident_peak_bytes": 37234712
+        },
+        "3": {
+          "p50_us": 5514,
+          "p95_us": 7532,
+          "p99_us": 10468,
+          "max_us": 14296,
+          "over_60hz": 0,
+          "samples": 284,
+          "resident_peak_bytes": 41280292
+        },
+        "4": {
+          "p50_us": 3905,
+          "p95_us": 6193,
+          "p99_us": 9520,
+          "max_us": 11120,
+          "over_60hz": 0,
+          "samples": 113,
+          "resident_peak_bytes": 43521536
+        },
+        "5": {
+          "p50_us": 4024,
+          "p95_us": 8066,
+          "p99_us": 9224,
+          "max_us": 10090,
+          "over_60hz": 0,
+          "samples": 202,
+          "resident_peak_bytes": 39415064
+        },
+        "6": {
+          "p50_us": 5725,
+          "p95_us": 8661,
+          "p99_us": 10207,
+          "max_us": 10550,
+          "over_60hz": 0,
+          "samples": 259,
+          "resident_peak_bytes": 42661848
+        },
+        "7": {
+          "p50_us": 4967,
+          "p95_us": 6434,
+          "p99_us": 8206,
+          "max_us": 9851,
+          "over_60hz": 0,
+          "samples": 232,
+          "resident_peak_bytes": 35248528
+        },
+        "8": {
+          "p50_us": 5555,
+          "p95_us": 8164,
+          "p99_us": 10453,
+          "max_us": 13132,
+          "over_60hz": 0,
+          "samples": 259,
+          "resident_peak_bytes": 42088608
+        },
+        "9": {
+          "p50_us": 5470,
+          "p95_us": 9417,
+          "p99_us": 10604,
+          "max_us": 13785,
+          "over_60hz": 0,
+          "samples": 259,
+          "resident_peak_bytes": 42261396
+        },
+        "10": {
+          "p50_us": 3887,
+          "p95_us": 6399,
+          "p99_us": 7855,
+          "max_us": 17497,
+          "over_60hz": 1,
+          "samples": 372,
+          "resident_peak_bytes": 42963388
+        },
+        "11": {
+          "p50_us": 5110,
+          "p95_us": 6994,
+          "p99_us": 8164,
+          "max_us": 8773,
+          "over_60hz": 0,
+          "samples": 307,
+          "resident_peak_bytes": 48106168
+        },
+        "12": {
+          "p50_us": 5426,
+          "p95_us": 7990,
+          "p99_us": 9976,
+          "max_us": 11250,
+          "over_60hz": 0,
+          "samples": 307,
+          "resident_peak_bytes": 45761008
+        },
+        "13": {
+          "p50_us": 4394,
+          "p95_us": 6909,
+          "p99_us": 8097,
+          "max_us": 9169,
+          "over_60hz": 0,
+          "samples": 307,
+          "resident_peak_bytes": 41572424
+        },
+        "14": {
+          "p50_us": 5027,
+          "p95_us": 6218,
+          "p99_us": 8679,
+          "max_us": 9752,
+          "over_60hz": 0,
+          "samples": 214,
+          "resident_peak_bytes": 48761536
+        },
+        "15": {
+          "p50_us": 3946,
+          "p95_us": 7259,
+          "p99_us": 8795,
+          "max_us": 9816,
+          "over_60hz": 0,
+          "samples": 266,
+          "resident_peak_bytes": 35631336
+        }
+      },
+      "section_cuts": [
+        {
+          "tick": 138,
+          "section": "alley.lamp_lesson",
+          "station": 1,
+          "frame_us": 12618,
+          "draw_calls": 31,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "alley.arrival",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 32256008
+        },
+        {
+          "tick": 420,
+          "section": "alley.wave_1",
+          "station": 1,
+          "frame_us": 8409,
+          "draw_calls": 26,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "alley.lamp_lesson",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 32256008
+        },
+        {
+          "tick": 1200,
+          "section": "alley.wave_2",
+          "station": 1,
+          "frame_us": 8417,
+          "draw_calls": 28,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "alley.wave_1",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 37234712
+        },
+        {
+          "tick": 1980,
+          "section": "alley.wave_3",
+          "station": 1,
+          "frame_us": 7972,
+          "draw_calls": 28,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "alley.wave_2",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 37234712
+        },
+        {
+          "tick": 2760,
+          "section": "alley.rescue",
+          "station": 1,
+          "frame_us": 14237,
+          "draw_calls": 29,
+          "texture_upload_count": 1,
+          "texture_upload_us": 462,
+          "from_section": "alley.wave_3",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 40116604
+        },
+        {
+          "tick": 2940,
+          "section": "alley.wave_4",
+          "station": 1,
+          "frame_us": 9116,
+          "draw_calls": 35,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "alley.rescue",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 40116604
+        },
+        {
+          "tick": 3720,
+          "section": "alley.wave_5",
+          "station": 1,
+          "frame_us": 8792,
+          "draw_calls": 36,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "alley.wave_4",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 40116604
+        },
+        {
+          "tick": 4500,
+          "section": "alley.wave_6",
+          "station": 1,
+          "frame_us": 9241,
+          "draw_calls": 45,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "alley.wave_5",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 40116604
+        },
+        {
+          "tick": 5400,
+          "section": "alley.safe_exit",
+          "station": 1,
+          "frame_us": 9456,
+          "draw_calls": 42,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "alley.wave_6",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 40116604
+        },
+        {
+          "tick": 5616,
+          "section": "puddle.puddle",
+          "station": 1,
+          "frame_us": 5694,
+          "draw_calls": 28,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "alley.safe_exit",
+          "preloaded_section_before_cut": "puddle.puddle",
+          "handoff_asset_upper_bound_bytes": 43691964
+        },
+        {
+          "tick": 5713,
+          "section": "stall.arrival",
+          "station": 2,
+          "frame_us": 7096,
+          "draw_calls": 26,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "puddle.puddle",
+          "preloaded_section_before_cut": "stall.arrival",
+          "handoff_asset_upper_bound_bytes": 43691964
+        },
+        {
+          "tick": 5821,
+          "section": "stall.round_1",
+          "station": 2,
+          "frame_us": 6828,
+          "draw_calls": 35,
+          "texture_upload_count": 2,
+          "texture_upload_us": 519,
+          "from_section": "stall.arrival",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 37234712
+        },
+        {
+          "tick": 5948,
+          "section": "stall.round_2",
+          "station": 2,
+          "frame_us": 4798,
+          "draw_calls": 37,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "stall.round_1",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 37234712
+        },
+        {
+          "tick": 6075,
+          "section": "stall.round_3",
+          "station": 2,
+          "frame_us": 4679,
+          "draw_calls": 62,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "stall.round_2",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 37234712
+        },
+        {
+          "tick": 6222,
+          "section": "video_shop.video_shop",
+          "station": 3,
+          "frame_us": 11322,
+          "draw_calls": 33,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "stall.round_3",
+          "preloaded_section_before_cut": "video_shop.video_shop",
+          "handoff_asset_upper_bound_bytes": 69421876
+        },
+        {
+          "tick": 6506,
+          "section": "footbridge.footbridge",
+          "station": 4,
+          "frame_us": 8447,
+          "draw_calls": 34,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "video_shop.video_shop",
+          "preloaded_section_before_cut": "footbridge.footbridge",
+          "handoff_asset_upper_bound_bytes": 70872432
+        },
+        {
+          "tick": 6619,
+          "section": "plaza.square_watch",
+          "station": 5,
+          "frame_us": 6449,
+          "draw_calls": 22,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "footbridge.footbridge",
+          "preloaded_section_before_cut": "plaza.square_watch",
+          "handoff_asset_upper_bound_bytes": 53383168
+        },
+        {
+          "tick": 6680,
+          "section": "plaza.ink_dragon",
+          "station": 5,
+          "frame_us": 8072,
+          "draw_calls": 31,
+          "texture_upload_count": 13,
+          "texture_upload_us": 905,
+          "from_section": "plaza.square_watch",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 29018392
+        },
+        {
+          "tick": 6821,
+          "section": "story.cinema_intro",
+          "station": 0,
+          "frame_us": 7662,
+          "draw_calls": 27,
+          "texture_upload_count": 1,
+          "texture_upload_us": 65,
+          "from_section": "plaza.ink_dragon",
+          "preloaded_section_before_cut": "story.cinema_intro",
+          "handoff_asset_upper_bound_bytes": 39731396
+        },
+        {
+          "tick": 6911,
+          "section": "cinema.ticket_office",
+          "station": 6,
+          "frame_us": 10207,
+          "draw_calls": 34,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "story.cinema_intro",
+          "preloaded_section_before_cut": "cinema.ticket_office",
+          "handoff_asset_upper_bound_bytes": 50930392
+        },
+        {
+          "tick": 7170,
+          "section": "cinema.poster_hall",
+          "station": 7,
+          "frame_us": 6368,
+          "draw_calls": 32,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "cinema.ticket_office",
+          "preloaded_section_before_cut": "cinema.poster_hall",
+          "handoff_asset_upper_bound_bytes": 59251040
+        },
+        {
+          "tick": 7402,
+          "section": "cinema.auditorium",
+          "station": 8,
+          "frame_us": 6113,
+          "draw_calls": 34,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "cinema.poster_hall",
+          "preloaded_section_before_cut": "cinema.auditorium",
+          "handoff_asset_upper_bound_bytes": 58677800
+        },
+        {
+          "tick": 7661,
+          "section": "cinema.projection_booth",
+          "station": 9,
+          "frame_us": 6793,
+          "draw_calls": 34,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "cinema.auditorium",
+          "preloaded_section_before_cut": "cinema.projection_booth",
+          "handoff_asset_upper_bound_bytes": 65690668
+        },
+        {
+          "tick": 7920,
+          "section": "cinema.screen_stage",
+          "station": 10,
+          "frame_us": 17497,
+          "draw_calls": 33,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "cinema.projection_booth",
+          "preloaded_section_before_cut": "cinema.screen_stage",
+          "handoff_asset_upper_bound_bytes": 71122544
+        },
+        {
+          "tick": 8292,
+          "section": "story.train_station_intro",
+          "station": 0,
+          "frame_us": 8688,
+          "draw_calls": 24,
+          "texture_upload_count": 1,
+          "texture_upload_us": 538,
+          "from_section": "cinema.screen_stage",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 47909308
+        },
+        {
+          "tick": 8382,
+          "section": "waiting_room.waiting_room",
+          "station": 11,
+          "frame_us": 8059,
+          "draw_calls": 36,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "story.train_station_intro",
+          "preloaded_section_before_cut": "waiting_room.waiting_room",
+          "handoff_asset_upper_bound_bytes": 75844084
+        },
+        {
+          "tick": 8689,
+          "section": "platform.platform",
+          "station": 12,
+          "frame_us": 9487,
+          "draw_calls": 33,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "waiting_room.waiting_room",
+          "preloaded_section_before_cut": "platform.platform",
+          "handoff_asset_upper_bound_bytes": 73435280
+        },
+        {
+          "tick": 8996,
+          "section": "green_car.green_car",
+          "station": 13,
+          "frame_us": 8301,
+          "draw_calls": 33,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "platform.platform",
+          "preloaded_section_before_cut": "green_car.green_car",
+          "handoff_asset_upper_bound_bytes": 66901536
+        },
+        {
+          "tick": 9303,
+          "section": "lantern_base.lantern_base",
+          "station": 14,
+          "frame_us": 7159,
+          "draw_calls": 34,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "green_car.green_car",
+          "preloaded_section_before_cut": "lantern_base.lantern_base",
+          "handoff_asset_upper_bound_bytes": 69902064
+        },
+        {
+          "tick": 9517,
+          "section": "lantern_base.pullback",
+          "station": 0,
+          "frame_us": 5510,
+          "draw_calls": 26,
+          "texture_upload_count": 1,
+          "texture_upload_us": 75,
+          "from_section": "lantern_base.lantern_base",
+          "preloaded_section_before_cut": "lantern_base.pullback",
+          "handoff_asset_upper_bound_bytes": 62588504
+        },
+        {
+          "tick": 9571,
+          "section": "lantern_base.workbench",
+          "station": 15,
+          "frame_us": 7464,
+          "draw_calls": 46,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "lantern_base.pullback",
+          "preloaded_section_before_cut": "lantern_base.workbench",
+          "handoff_asset_upper_bound_bytes": 62192200
+        },
+        {
+          "tick": 9837,
+          "section": "lantern_base.ending_light",
+          "station": 0,
+          "frame_us": 5874,
+          "draw_calls": 18,
+          "texture_upload_count": 3,
+          "texture_upload_us": 853,
+          "from_section": "lantern_base.workbench",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 43436176
+        },
+        {
+          "tick": 10269,
+          "section": "lantern_base.ending_city",
+          "station": 0,
+          "frame_us": 5153,
+          "draw_calls": 22,
+          "texture_upload_count": 1,
+          "texture_upload_us": 667,
+          "from_section": "lantern_base.ending_light",
+          "preloaded_section_before_cut": "lantern_base.ending_city",
+          "handoff_asset_upper_bound_bytes": 33777732
+        },
+        {
+          "tick": 11085,
+          "section": "lantern_base.ending_wide",
+          "station": 0,
+          "frame_us": 3675,
+          "draw_calls": 20,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "lantern_base.ending_city",
+          "preloaded_section_before_cut": "lantern_base.ending_wide",
+          "handoff_asset_upper_bound_bytes": 33777732
+        },
+        {
+          "tick": 12705,
+          "section": "lantern_base.ending_quote",
+          "station": 0,
+          "frame_us": 5578,
+          "draw_calls": 21,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "lantern_base.ending_wide",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 33777732
+        }
+      ],
+      "feature_cuts": {
+        "puddle.puddle": {
+          "tick": 5616,
+          "section": "puddle.puddle",
+          "station": 1,
+          "frame_us": 5694,
+          "draw_calls": 28,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "alley.safe_exit",
+          "preloaded_section_before_cut": "puddle.puddle",
+          "handoff_asset_upper_bound_bytes": 43691964
+        },
+        "footbridge.footbridge": {
+          "tick": 6506,
+          "section": "footbridge.footbridge",
+          "station": 4,
+          "frame_us": 8447,
+          "draw_calls": 34,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "video_shop.video_shop",
+          "preloaded_section_before_cut": "footbridge.footbridge",
+          "handoff_asset_upper_bound_bytes": 70872432
+        },
+        "cinema.projection_booth": {
+          "tick": 7661,
+          "section": "cinema.projection_booth",
+          "station": 9,
+          "frame_us": 6793,
+          "draw_calls": 34,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "cinema.auditorium",
+          "preloaded_section_before_cut": "cinema.projection_booth",
+          "handoff_asset_upper_bound_bytes": 65690668
+        },
+        "cinema.screen_stage": {
+          "tick": 7920,
+          "section": "cinema.screen_stage",
+          "station": 10,
+          "frame_us": 17497,
+          "draw_calls": 33,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "cinema.projection_booth",
+          "preloaded_section_before_cut": "cinema.screen_stage",
+          "handoff_asset_upper_bound_bytes": 71122544
+        },
+        "platform.platform": {
+          "tick": 8689,
+          "section": "platform.platform",
+          "station": 12,
+          "frame_us": 9487,
+          "draw_calls": 33,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "waiting_room.waiting_room",
+          "preloaded_section_before_cut": "platform.platform",
+          "handoff_asset_upper_bound_bytes": 73435280
+        },
+        "lantern_base.workbench": {
+          "tick": 9571,
+          "section": "lantern_base.workbench",
+          "station": 15,
+          "frame_us": 7464,
+          "draw_calls": 46,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "lantern_base.pullback",
+          "preloaded_section_before_cut": "lantern_base.workbench",
+          "handoff_asset_upper_bound_bytes": 62192200
+        },
+        "lantern_base.ending_light": {
+          "tick": 9837,
+          "section": "lantern_base.ending_light",
+          "station": 0,
+          "frame_us": 5874,
+          "draw_calls": 18,
+          "texture_upload_count": 3,
+          "texture_upload_us": 853,
+          "from_section": "lantern_base.workbench",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 43436176
+        },
+        "lantern_base.ending_city": {
+          "tick": 10269,
+          "section": "lantern_base.ending_city",
+          "station": 0,
+          "frame_us": 5153,
+          "draw_calls": 22,
+          "texture_upload_count": 1,
+          "texture_upload_us": 667,
+          "from_section": "lantern_base.ending_light",
+          "preloaded_section_before_cut": "lantern_base.ending_city",
+          "handoff_asset_upper_bound_bytes": 33777732
+        },
+        "lantern_base.ending_wide": {
+          "tick": 11085,
+          "section": "lantern_base.ending_wide",
+          "station": 0,
+          "frame_us": 3675,
+          "draw_calls": 20,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "lantern_base.ending_city",
+          "preloaded_section_before_cut": "lantern_base.ending_wide",
+          "handoff_asset_upper_bound_bytes": 33777732
+        },
+        "lantern_base.ending_quote": {
+          "tick": 12705,
+          "section": "lantern_base.ending_quote",
+          "station": 0,
+          "frame_us": 5578,
+          "draw_calls": 21,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "lantern_base.ending_wide",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 33777732
+        }
+      },
+      "slow_frames": [
+        {
+          "tick": 7920,
+          "section": "cinema.screen_stage",
+          "station": 10,
+          "frame_us": 17497,
+          "draw_calls": 33,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0
+        }
+      ],
+      "screen_sweep_spawns": [
+        {
+          "entity": "cinema.sweep_tape_1",
+          "tick": 8037,
+          "topic": "entity.spawned"
+        },
+        {
+          "entity": "cinema.sweep_tape_2",
+          "tick": 8133,
+          "topic": "entity.spawned"
+        },
+        {
+          "entity": "cinema.sweep_tape_3",
+          "tick": 8229,
+          "topic": "entity.spawned"
+        }
+      ]
+    },
+    {
+      "profile": "run_2.json",
+      "profile_sha256": "186ce4c597a3daf19e7fd4866659cb9c40afa1ddf4c56fab3dd5b9473e5d1c25",
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "renderer": "gl_compatibility",
+      "viewport": [
+        1776,
+        936
+      ],
+      "window": [
+        1280,
+        720
+      ],
+      "open_us": 2272823,
+      "samples": 13317,
+      "asset_budgets": {
+        "stage_and_lighting": {
+          "bytes": 30231860,
+          "limit_bytes": 50331648,
+          "passed": true,
+          "tick": 8283,
+          "section": "cinema.screen_stage"
+        },
+        "actors_and_props": {
+          "bytes": 24032016,
+          "limit_bytes": 33554432,
+          "passed": true,
+          "tick": 6773,
+          "section": "plaza.ink_dragon"
+        },
+        "effects_and_ui": {
+          "bytes": 9093128,
+          "limit_bytes": 16777216,
+          "passed": true,
+          "tick": 1,
+          "section": "alley.arrival"
+        },
+        "resident_total": {
+          "bytes": 50721456,
+          "limit_bytes": 100663296,
+          "passed": true,
+          "tick": 9517,
+          "section": "lantern_base.pullback"
+        },
+        "transition_total": {
+          "bytes": 75844084,
+          "limit_bytes": 167772160,
+          "passed": true,
+          "tick": 8308,
+          "section": "story.train_station_intro"
+        }
+      },
+      "engine_texture_peak_bytes": 126152397,
+      "engine_video_peak_bytes": 134687589,
+      "frame_time": {
+        "p50_us": 4487,
+        "p95_us": 7072,
+        "p99_us": 8865,
+        "max_us": 14774,
+        "over_60hz": 0
+      },
+      "stations": {
+        "1": {
+          "p50_us": 5405,
+          "p95_us": 7382,
+          "p99_us": 9055,
+          "max_us": 14299,
+          "over_60hz": 0,
+          "samples": 5712,
+          "resident_peak_bytes": 43691964
+        },
+        "2": {
+          "p50_us": 3671,
+          "p95_us": 5884,
+          "p99_us": 7711,
+          "max_us": 11025,
+          "over_60hz": 0,
+          "samples": 509,
+          "resident_peak_bytes": 37234712
+        },
+        "3": {
+          "p50_us": 4069,
+          "p95_us": 6673,
+          "p99_us": 10091,
+          "max_us": 14462,
+          "over_60hz": 0,
+          "samples": 284,
+          "resident_peak_bytes": 41280292
+        },
+        "4": {
+          "p50_us": 3909,
+          "p95_us": 6416,
+          "p99_us": 7987,
+          "max_us": 14635,
+          "over_60hz": 0,
+          "samples": 113,
+          "resident_peak_bytes": 43521536
+        },
+        "5": {
+          "p50_us": 4020,
+          "p95_us": 7819,
+          "p99_us": 9589,
+          "max_us": 14774,
+          "over_60hz": 0,
+          "samples": 202,
+          "resident_peak_bytes": 39415064
+        },
+        "6": {
+          "p50_us": 5377,
+          "p95_us": 7642,
+          "p99_us": 9886,
+          "max_us": 11690,
+          "over_60hz": 0,
+          "samples": 259,
+          "resident_peak_bytes": 42661848
+        },
+        "7": {
+          "p50_us": 6006,
+          "p95_us": 8279,
+          "p99_us": 10534,
+          "max_us": 11366,
+          "over_60hz": 0,
+          "samples": 232,
+          "resident_peak_bytes": 35248528
+        },
+        "8": {
+          "p50_us": 5530,
+          "p95_us": 8451,
+          "p99_us": 9602,
+          "max_us": 10541,
+          "over_60hz": 0,
+          "samples": 259,
+          "resident_peak_bytes": 42088608
+        },
+        "9": {
+          "p50_us": 5478,
+          "p95_us": 8634,
+          "p99_us": 10000,
+          "max_us": 12037,
+          "over_60hz": 0,
+          "samples": 259,
+          "resident_peak_bytes": 42261396
+        },
+        "10": {
+          "p50_us": 4033,
+          "p95_us": 6176,
+          "p99_us": 9292,
+          "max_us": 10891,
+          "over_60hz": 0,
+          "samples": 372,
+          "resident_peak_bytes": 42963388
+        },
+        "11": {
+          "p50_us": 5098,
+          "p95_us": 7465,
+          "p99_us": 9491,
+          "max_us": 13014,
+          "over_60hz": 0,
+          "samples": 307,
+          "resident_peak_bytes": 48106168
+        },
+        "12": {
+          "p50_us": 5266,
+          "p95_us": 7448,
+          "p99_us": 8648,
+          "max_us": 9659,
+          "over_60hz": 0,
+          "samples": 307,
+          "resident_peak_bytes": 45761008
+        },
+        "13": {
+          "p50_us": 4654,
+          "p95_us": 6968,
+          "p99_us": 8253,
+          "max_us": 10132,
+          "over_60hz": 0,
+          "samples": 307,
+          "resident_peak_bytes": 41572424
+        },
+        "14": {
+          "p50_us": 5153,
+          "p95_us": 7369,
+          "p99_us": 8806,
+          "max_us": 9281,
+          "over_60hz": 0,
+          "samples": 214,
+          "resident_peak_bytes": 48761536
+        },
+        "15": {
+          "p50_us": 3851,
+          "p95_us": 6260,
+          "p99_us": 8416,
+          "max_us": 8934,
+          "over_60hz": 0,
+          "samples": 266,
+          "resident_peak_bytes": 35631336
+        }
+      },
+      "section_cuts": [
+        {
+          "tick": 138,
+          "section": "alley.lamp_lesson",
+          "station": 1,
+          "frame_us": 8992,
+          "draw_calls": 31,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "alley.arrival",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 32256008
+        },
+        {
+          "tick": 420,
+          "section": "alley.wave_1",
+          "station": 1,
+          "frame_us": 8076,
+          "draw_calls": 26,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "alley.lamp_lesson",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 32256008
+        },
+        {
+          "tick": 1200,
+          "section": "alley.wave_2",
+          "station": 1,
+          "frame_us": 8691,
+          "draw_calls": 28,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "alley.wave_1",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 37234712
+        },
+        {
+          "tick": 1980,
+          "section": "alley.wave_3",
+          "station": 1,
+          "frame_us": 10379,
+          "draw_calls": 28,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "alley.wave_2",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 37234712
+        },
+        {
+          "tick": 2760,
+          "section": "alley.rescue",
+          "station": 1,
+          "frame_us": 11377,
+          "draw_calls": 29,
+          "texture_upload_count": 1,
+          "texture_upload_us": 469,
+          "from_section": "alley.wave_3",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 40116604
+        },
+        {
+          "tick": 2940,
+          "section": "alley.wave_4",
+          "station": 1,
+          "frame_us": 9141,
+          "draw_calls": 35,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "alley.rescue",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 40116604
+        },
+        {
+          "tick": 3720,
+          "section": "alley.wave_5",
+          "station": 1,
+          "frame_us": 9279,
+          "draw_calls": 36,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "alley.wave_4",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 40116604
+        },
+        {
+          "tick": 4500,
+          "section": "alley.wave_6",
+          "station": 1,
+          "frame_us": 9095,
+          "draw_calls": 45,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "alley.wave_5",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 40116604
+        },
+        {
+          "tick": 5400,
+          "section": "alley.safe_exit",
+          "station": 1,
+          "frame_us": 9660,
+          "draw_calls": 42,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "alley.wave_6",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 40116604
+        },
+        {
+          "tick": 5616,
+          "section": "puddle.puddle",
+          "station": 1,
+          "frame_us": 5440,
+          "draw_calls": 28,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "alley.safe_exit",
+          "preloaded_section_before_cut": "puddle.puddle",
+          "handoff_asset_upper_bound_bytes": 43691964
+        },
+        {
+          "tick": 5713,
+          "section": "stall.arrival",
+          "station": 2,
+          "frame_us": 7170,
+          "draw_calls": 26,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "puddle.puddle",
+          "preloaded_section_before_cut": "stall.arrival",
+          "handoff_asset_upper_bound_bytes": 43691964
+        },
+        {
+          "tick": 5821,
+          "section": "stall.round_1",
+          "station": 2,
+          "frame_us": 7279,
+          "draw_calls": 35,
+          "texture_upload_count": 2,
+          "texture_upload_us": 501,
+          "from_section": "stall.arrival",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 37234712
+        },
+        {
+          "tick": 5948,
+          "section": "stall.round_2",
+          "station": 2,
+          "frame_us": 5266,
+          "draw_calls": 37,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "stall.round_1",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 37234712
+        },
+        {
+          "tick": 6075,
+          "section": "stall.round_3",
+          "station": 2,
+          "frame_us": 4728,
+          "draw_calls": 62,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "stall.round_2",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 37234712
+        },
+        {
+          "tick": 6222,
+          "section": "video_shop.video_shop",
+          "station": 3,
+          "frame_us": 10656,
+          "draw_calls": 33,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "stall.round_3",
+          "preloaded_section_before_cut": "video_shop.video_shop",
+          "handoff_asset_upper_bound_bytes": 69421876
+        },
+        {
+          "tick": 6506,
+          "section": "footbridge.footbridge",
+          "station": 4,
+          "frame_us": 7356,
+          "draw_calls": 34,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "video_shop.video_shop",
+          "preloaded_section_before_cut": "footbridge.footbridge",
+          "handoff_asset_upper_bound_bytes": 70872432
+        },
+        {
+          "tick": 6619,
+          "section": "plaza.square_watch",
+          "station": 5,
+          "frame_us": 6414,
+          "draw_calls": 22,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "footbridge.footbridge",
+          "preloaded_section_before_cut": "plaza.square_watch",
+          "handoff_asset_upper_bound_bytes": 53383168
+        },
+        {
+          "tick": 6680,
+          "section": "plaza.ink_dragon",
+          "station": 5,
+          "frame_us": 7770,
+          "draw_calls": 31,
+          "texture_upload_count": 13,
+          "texture_upload_us": 665,
+          "from_section": "plaza.square_watch",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 29018392
+        },
+        {
+          "tick": 6821,
+          "section": "story.cinema_intro",
+          "station": 0,
+          "frame_us": 7415,
+          "draw_calls": 27,
+          "texture_upload_count": 1,
+          "texture_upload_us": 63,
+          "from_section": "plaza.ink_dragon",
+          "preloaded_section_before_cut": "story.cinema_intro",
+          "handoff_asset_upper_bound_bytes": 39731396
+        },
+        {
+          "tick": 6911,
+          "section": "cinema.ticket_office",
+          "station": 6,
+          "frame_us": 9337,
+          "draw_calls": 34,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "story.cinema_intro",
+          "preloaded_section_before_cut": "cinema.ticket_office",
+          "handoff_asset_upper_bound_bytes": 50930392
+        },
+        {
+          "tick": 7170,
+          "section": "cinema.poster_hall",
+          "station": 7,
+          "frame_us": 6062,
+          "draw_calls": 32,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "cinema.ticket_office",
+          "preloaded_section_before_cut": "cinema.poster_hall",
+          "handoff_asset_upper_bound_bytes": 59251040
+        },
+        {
+          "tick": 7402,
+          "section": "cinema.auditorium",
+          "station": 8,
+          "frame_us": 6424,
+          "draw_calls": 34,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "cinema.poster_hall",
+          "preloaded_section_before_cut": "cinema.auditorium",
+          "handoff_asset_upper_bound_bytes": 58677800
+        },
+        {
+          "tick": 7661,
+          "section": "cinema.projection_booth",
+          "station": 9,
+          "frame_us": 9360,
+          "draw_calls": 34,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "cinema.auditorium",
+          "preloaded_section_before_cut": "cinema.projection_booth",
+          "handoff_asset_upper_bound_bytes": 65690668
+        },
+        {
+          "tick": 7920,
+          "section": "cinema.screen_stage",
+          "station": 10,
+          "frame_us": 10891,
+          "draw_calls": 33,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "cinema.projection_booth",
+          "preloaded_section_before_cut": "cinema.screen_stage",
+          "handoff_asset_upper_bound_bytes": 71122544
+        },
+        {
+          "tick": 8292,
+          "section": "story.train_station_intro",
+          "station": 0,
+          "frame_us": 8977,
+          "draw_calls": 24,
+          "texture_upload_count": 1,
+          "texture_upload_us": 414,
+          "from_section": "cinema.screen_stage",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 47909308
+        },
+        {
+          "tick": 8382,
+          "section": "waiting_room.waiting_room",
+          "station": 11,
+          "frame_us": 8411,
+          "draw_calls": 36,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "story.train_station_intro",
+          "preloaded_section_before_cut": "waiting_room.waiting_room",
+          "handoff_asset_upper_bound_bytes": 75844084
+        },
+        {
+          "tick": 8689,
+          "section": "platform.platform",
+          "station": 12,
+          "frame_us": 9659,
+          "draw_calls": 33,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "waiting_room.waiting_room",
+          "preloaded_section_before_cut": "platform.platform",
+          "handoff_asset_upper_bound_bytes": 73435280
+        },
+        {
+          "tick": 8996,
+          "section": "green_car.green_car",
+          "station": 13,
+          "frame_us": 7003,
+          "draw_calls": 33,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "platform.platform",
+          "preloaded_section_before_cut": "green_car.green_car",
+          "handoff_asset_upper_bound_bytes": 66901536
+        },
+        {
+          "tick": 9303,
+          "section": "lantern_base.lantern_base",
+          "station": 14,
+          "frame_us": 6784,
+          "draw_calls": 34,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "green_car.green_car",
+          "preloaded_section_before_cut": "lantern_base.lantern_base",
+          "handoff_asset_upper_bound_bytes": 69902064
+        },
+        {
+          "tick": 9517,
+          "section": "lantern_base.pullback",
+          "station": 0,
+          "frame_us": 5657,
+          "draw_calls": 26,
+          "texture_upload_count": 1,
+          "texture_upload_us": 81,
+          "from_section": "lantern_base.lantern_base",
+          "preloaded_section_before_cut": "lantern_base.pullback",
+          "handoff_asset_upper_bound_bytes": 62588504
+        },
+        {
+          "tick": 9571,
+          "section": "lantern_base.workbench",
+          "station": 15,
+          "frame_us": 6892,
+          "draw_calls": 46,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "lantern_base.pullback",
+          "preloaded_section_before_cut": "lantern_base.workbench",
+          "handoff_asset_upper_bound_bytes": 62192200
+        },
+        {
+          "tick": 9837,
+          "section": "lantern_base.ending_light",
+          "station": 0,
+          "frame_us": 5552,
+          "draw_calls": 18,
+          "texture_upload_count": 3,
+          "texture_upload_us": 799,
+          "from_section": "lantern_base.workbench",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 43436176
+        },
+        {
+          "tick": 10269,
+          "section": "lantern_base.ending_city",
+          "station": 0,
+          "frame_us": 5222,
+          "draw_calls": 22,
+          "texture_upload_count": 1,
+          "texture_upload_us": 639,
+          "from_section": "lantern_base.ending_light",
+          "preloaded_section_before_cut": "lantern_base.ending_city",
+          "handoff_asset_upper_bound_bytes": 33777732
+        },
+        {
+          "tick": 11085,
+          "section": "lantern_base.ending_wide",
+          "station": 0,
+          "frame_us": 4186,
+          "draw_calls": 20,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "lantern_base.ending_city",
+          "preloaded_section_before_cut": "lantern_base.ending_wide",
+          "handoff_asset_upper_bound_bytes": 33777732
+        },
+        {
+          "tick": 12705,
+          "section": "lantern_base.ending_quote",
+          "station": 0,
+          "frame_us": 5423,
+          "draw_calls": 21,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "lantern_base.ending_wide",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 33777732
+        }
+      ],
+      "feature_cuts": {
+        "puddle.puddle": {
+          "tick": 5616,
+          "section": "puddle.puddle",
+          "station": 1,
+          "frame_us": 5440,
+          "draw_calls": 28,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "alley.safe_exit",
+          "preloaded_section_before_cut": "puddle.puddle",
+          "handoff_asset_upper_bound_bytes": 43691964
+        },
+        "footbridge.footbridge": {
+          "tick": 6506,
+          "section": "footbridge.footbridge",
+          "station": 4,
+          "frame_us": 7356,
+          "draw_calls": 34,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "video_shop.video_shop",
+          "preloaded_section_before_cut": "footbridge.footbridge",
+          "handoff_asset_upper_bound_bytes": 70872432
+        },
+        "cinema.projection_booth": {
+          "tick": 7661,
+          "section": "cinema.projection_booth",
+          "station": 9,
+          "frame_us": 9360,
+          "draw_calls": 34,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "cinema.auditorium",
+          "preloaded_section_before_cut": "cinema.projection_booth",
+          "handoff_asset_upper_bound_bytes": 65690668
+        },
+        "cinema.screen_stage": {
+          "tick": 7920,
+          "section": "cinema.screen_stage",
+          "station": 10,
+          "frame_us": 10891,
+          "draw_calls": 33,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "cinema.projection_booth",
+          "preloaded_section_before_cut": "cinema.screen_stage",
+          "handoff_asset_upper_bound_bytes": 71122544
+        },
+        "platform.platform": {
+          "tick": 8689,
+          "section": "platform.platform",
+          "station": 12,
+          "frame_us": 9659,
+          "draw_calls": 33,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "waiting_room.waiting_room",
+          "preloaded_section_before_cut": "platform.platform",
+          "handoff_asset_upper_bound_bytes": 73435280
+        },
+        "lantern_base.workbench": {
+          "tick": 9571,
+          "section": "lantern_base.workbench",
+          "station": 15,
+          "frame_us": 6892,
+          "draw_calls": 46,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "lantern_base.pullback",
+          "preloaded_section_before_cut": "lantern_base.workbench",
+          "handoff_asset_upper_bound_bytes": 62192200
+        },
+        "lantern_base.ending_light": {
+          "tick": 9837,
+          "section": "lantern_base.ending_light",
+          "station": 0,
+          "frame_us": 5552,
+          "draw_calls": 18,
+          "texture_upload_count": 3,
+          "texture_upload_us": 799,
+          "from_section": "lantern_base.workbench",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 43436176
+        },
+        "lantern_base.ending_city": {
+          "tick": 10269,
+          "section": "lantern_base.ending_city",
+          "station": 0,
+          "frame_us": 5222,
+          "draw_calls": 22,
+          "texture_upload_count": 1,
+          "texture_upload_us": 639,
+          "from_section": "lantern_base.ending_light",
+          "preloaded_section_before_cut": "lantern_base.ending_city",
+          "handoff_asset_upper_bound_bytes": 33777732
+        },
+        "lantern_base.ending_wide": {
+          "tick": 11085,
+          "section": "lantern_base.ending_wide",
+          "station": 0,
+          "frame_us": 4186,
+          "draw_calls": 20,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "lantern_base.ending_city",
+          "preloaded_section_before_cut": "lantern_base.ending_wide",
+          "handoff_asset_upper_bound_bytes": 33777732
+        },
+        "lantern_base.ending_quote": {
+          "tick": 12705,
+          "section": "lantern_base.ending_quote",
+          "station": 0,
+          "frame_us": 5423,
+          "draw_calls": 21,
+          "texture_upload_count": 0,
+          "texture_upload_us": 0,
+          "from_section": "lantern_base.ending_wide",
+          "preloaded_section_before_cut": "",
+          "handoff_asset_upper_bound_bytes": 33777732
+        }
+      },
+      "slow_frames": [],
+      "screen_sweep_spawns": [
+        {
+          "entity": "cinema.sweep_tape_1",
+          "tick": 8037,
+          "topic": "entity.spawned"
+        },
+        {
+          "entity": "cinema.sweep_tape_2",
+          "tick": 8133,
+          "topic": "entity.spawned"
+        },
+        {
+          "entity": "cinema.sweep_tape_3",
+          "tick": 8229,
+          "topic": "entity.spawned"
+        }
+      ]
+    }
+  ],
+  "reference_comparison": {
+    "reference_build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11",
+    "reference_sha256": "7f4ce547ae4f23a3d14f313908e71b593ed0af7848893c1e9cc9e95313014599",
+    "matched_conditions": {
+      "gpu": "NVIDIA GeForce RTX 3080 Ti",
+      "renderer": "gl_compatibility",
+      "viewport": [
+        1776,
+        936
+      ],
+      "window": [
+        1280,
+        720
+      ],
+      "samples": 13317
+    },
+    "reference": {
+      "runs": 3,
+      "samples": 39951,
+      "asset_peaks_bytes": {
+        "stage_and_lighting": 30231860,
+        "actors_and_props": 24032016,
+        "effects_and_ui": 9093128,
+        "resident_total": 50721456,
+        "transition_total": 75844084
+      },
+      "frame_p95_us": [
+        7158,
+        8747
+      ],
+      "frame_p99_us": [
+        9479,
+        10439
+      ],
+      "frame_max_us": [
+        16750,
+        19916
+      ],
+      "frames_over_60hz": 14,
+      "slow_section_cuts": 0,
+      "loader_open_us": [
+        2185849,
+        2281551
+      ],
+      "engine_texture_peak_bytes": 126152397,
+      "engine_video_peak_bytes": 134687589,
+      "feature_cuts": {
+        "puddle.puddle": {
+          "frame_us": [
+            5398,
+            6486
+          ],
+          "texture_upload_count": [
+            0,
+            0
+          ]
+        },
+        "footbridge.footbridge": {
+          "frame_us": [
+            7853,
+            12039
+          ],
+          "texture_upload_count": [
+            0,
+            0
+          ]
+        },
+        "cinema.projection_booth": {
+          "frame_us": [
+            6166,
+            6285
+          ],
+          "texture_upload_count": [
+            0,
+            0
+          ]
+        },
+        "cinema.screen_stage": {
+          "frame_us": [
+            12818,
+            13166
+          ],
+          "texture_upload_count": [
+            0,
+            0
+          ]
+        },
+        "platform.platform": {
+          "frame_us": [
+            9366,
+            15370
+          ],
+          "texture_upload_count": [
+            0,
+            0
+          ]
+        },
+        "lantern_base.workbench": {
+          "frame_us": [
+            7169,
+            14019
+          ],
+          "texture_upload_count": [
+            0,
+            0
+          ]
+        },
+        "lantern_base.ending_light": {
+          "frame_us": [
+            5777,
+            6938
+          ],
+          "texture_upload_count": [
+            3,
+            3
+          ]
+        },
+        "lantern_base.ending_city": {
+          "frame_us": [
+            5315,
+            5739
+          ],
+          "texture_upload_count": [
+            1,
+            1
+          ]
+        },
+        "lantern_base.ending_wide": {
+          "frame_us": [
+            3422,
+            3776
+          ],
+          "texture_upload_count": [
+            0,
+            0
+          ]
+        },
+        "lantern_base.ending_quote": {
+          "frame_us": [
+            5488,
+            5839
+          ],
+          "texture_upload_count": [
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "current": {
+      "runs": 2,
+      "samples": 26634,
+      "asset_peaks_bytes": {
+        "stage_and_lighting": 30231860,
+        "actors_and_props": 24032016,
+        "effects_and_ui": 9093128,
+        "resident_total": 50721456,
+        "transition_total": 75844084
+      },
+      "frame_p95_us": [
+        7026,
+        7072
+      ],
+      "frame_p99_us": [
+        8865,
+        9026
+      ],
+      "frame_max_us": [
+        14774,
+        17497
+      ],
+      "frames_over_60hz": 1,
+      "slow_section_cuts": 1,
+      "loader_open_us": [
+        2272823,
+        2502998
+      ],
+      "engine_texture_peak_bytes": 126152397,
+      "engine_video_peak_bytes": 134687589,
+      "feature_cuts": {
+        "puddle.puddle": {
+          "frame_us": [
+            5440,
+            5694
+          ],
+          "texture_upload_count": [
+            0,
+            0
+          ]
+        },
+        "footbridge.footbridge": {
+          "frame_us": [
+            7356,
+            8447
+          ],
+          "texture_upload_count": [
+            0,
+            0
+          ]
+        },
+        "cinema.projection_booth": {
+          "frame_us": [
+            6793,
+            9360
+          ],
+          "texture_upload_count": [
+            0,
+            0
+          ]
+        },
+        "cinema.screen_stage": {
+          "frame_us": [
+            10891,
+            17497
+          ],
+          "texture_upload_count": [
+            0,
+            0
+          ]
+        },
+        "platform.platform": {
+          "frame_us": [
+            9487,
+            9659
+          ],
+          "texture_upload_count": [
+            0,
+            0
+          ]
+        },
+        "lantern_base.workbench": {
+          "frame_us": [
+            6892,
+            7464
+          ],
+          "texture_upload_count": [
+            0,
+            0
+          ]
+        },
+        "lantern_base.ending_light": {
+          "frame_us": [
+            5552,
+            5874
+          ],
+          "texture_upload_count": [
+            3,
+            3
+          ]
+        },
+        "lantern_base.ending_city": {
+          "frame_us": [
+            5153,
+            5222
+          ],
+          "texture_upload_count": [
+            1,
+            1
+          ]
+        },
+        "lantern_base.ending_wide": {
+          "frame_us": [
+            3675,
+            4186
+          ],
+          "texture_upload_count": [
+            0,
+            0
+          ]
+        },
+        "lantern_base.ending_quote": {
+          "frame_us": [
+            5423,
+            5578
+          ],
+          "texture_upload_count": [
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "asset_peak_delta_bytes": {
+      "stage_and_lighting": 0,
+      "actors_and_props": 0,
+      "effects_and_ui": 0,
+      "resident_total": 0,
+      "transition_total": 0
+    }
+  },
+  "session_regression": {
+    "recording_comparison": {
+      "build_id": "5989a3b66bc57f032944a80f82a0cb8afe49d0cced4edd7593454fdd8fdbb9b2",
+      "handoffs_identical": true,
+      "inputs": 118,
+      "reference_build_id": "f0d49f017321c71cfd596091b6e1754a2a7091af7974bad30927e2ec3a1c6a11",
+      "serialized_input_tape_identical": true
+    },
+    "changed_player_files": [
+      "gunforge/framework/core/level_session.gd",
+      "gunforge/framework/core/pose_codec.gd"
+    ],
+    "resources_unchanged": 342,
+    "isolated_files_verified": 384,
+    "failure_retry": {
+      "build_id": "5989a3b66bc57f032944a80f82a0cb8afe49d0cced4edd7593454fdd8fdbb9b2",
+      "chapter_transition_tick": 6821,
+      "counters": {
+        "ammo": 11.0,
+        "lives": 4,
+        "rescued": 7,
+        "score": 9275,
+        "shots": 109
+      },
+      "end_tick": 13002,
+      "ending": {
+        "city_texture_preloaded": false,
+        "city_tick": 9954,
+        "light_tick": 9522,
+        "natural_result_tick": 13002,
+        "quote_tick": 12390,
+        "skip": {
+          "counters": {
+            "ammo": 11.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 9275,
+            "shots": 109
+          },
+          "result": "clear",
+          "result_tick": 9523,
+          "start_tick": 9522
+        },
+        "skip_from_city": {
+          "counters": {
+            "ammo": 11.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 9275,
+            "shots": 109
+          },
+          "result": "clear",
+          "result_tick": 10075,
+          "start_tick": 10074
+        },
+        "skip_from_quote": {
+          "counters": {
+            "ammo": 11.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 9275,
+            "shots": 109
+          },
+          "result": "clear",
+          "result_tick": 12391,
+          "start_tick": 12390
+        },
+        "skip_from_wide": {
+          "counters": {
+            "ammo": 11.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 9275,
+            "shots": 109
+          },
+          "result": "clear",
+          "result_tick": 10891,
+          "start_tick": 10890
+        },
+        "wide_texture_preloaded": false,
+        "wide_tick": 10770
+      },
+      "failure_retries": [
+        {
+          "after_retry": {
+            "ammo": 12.0,
+            "lives": 5.0,
+            "rescued": 0.0,
+            "score": 0.0,
+            "shots": 0
+          },
+          "before_retry": {
+            "ammo": 6.0,
+            "lives": 0,
+            "rescued": 7,
+            "score": 8575,
+            "shots": 102
+          },
+          "defeat_tick": 10252,
+          "first_shot": {
+            "ammo": 11.0,
+            "lives": 5.0,
+            "rescued": 0.0,
+            "score": 0.0,
+            "shots": 1
+          },
+          "station": 15
+        }
+      ],
+      "failures": [],
+      "gpu_capture": false,
+      "handoffs": [
+        {
+          "counters": {
+            "ammo": 9.0,
+            "lives": 4,
+            "rescued": 1,
+            "score": 3875,
+            "shots": 39
+          },
+          "station": "stall",
+          "tick": 5713
+        },
+        {
+          "counters": {
+            "ammo": 11.0,
+            "lives": 4,
+            "rescued": 1,
+            "score": 4475,
+            "shots": 49
+          },
+          "station": "video_shop",
+          "tick": 6222
+        },
+        {
+          "counters": {
+            "ammo": 7.0,
+            "lives": 4,
+            "rescued": 2,
+            "score": 4775,
+            "shots": 53
+          },
+          "station": "footbridge",
+          "tick": 6506
+        },
+        {
+          "counters": {
+            "ammo": 4.0,
+            "lives": 4,
+            "rescued": 2,
+            "score": 4975,
+            "shots": 56
+          },
+          "station": "plaza",
+          "tick": 6619
+        },
+        {
+          "counters": {
+            "ammo": 5.0,
+            "lives": 4,
+            "rescued": 2,
+            "score": 6075,
+            "shots": 67
+          },
+          "station": "ticket_office",
+          "tick": 6911
+        },
+        {
+          "counters": {
+            "ammo": 0.0,
+            "lives": 4,
+            "rescued": 3,
+            "score": 6375,
+            "shots": 72
+          },
+          "station": "poster_hall",
+          "tick": 7170
+        },
+        {
+          "counters": {
+            "ammo": 9.0,
+            "lives": 4,
+            "rescued": 3,
+            "score": 6575,
+            "shots": 75
+          },
+          "station": "auditorium",
+          "tick": 7402
+        },
+        {
+          "counters": {
+            "ammo": 5.0,
+            "lives": 4,
+            "rescued": 4,
+            "score": 6875,
+            "shots": 79
+          },
+          "station": "projection_booth",
+          "tick": 7661
+        },
+        {
+          "counters": {
+            "ammo": 1.0,
+            "lives": 4,
+            "rescued": 5,
+            "score": 7175,
+            "shots": 83
+          },
+          "station": "screen_stage",
+          "tick": 7920
+        },
+        {
+          "counters": {
+            "ammo": 9.0,
+            "lives": 4,
+            "rescued": 5,
+            "score": 7575,
+            "shots": 87
+          },
+          "station": "waiting_room",
+          "tick": 8067
+        },
+        {
+          "counters": {
+            "ammo": 4.0,
+            "lives": 4,
+            "rescued": 6,
+            "score": 7875,
+            "shots": 92
+          },
+          "station": "platform",
+          "tick": 8374
+        },
+        {
+          "counters": {
+            "ammo": 0.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 8175,
+            "shots": 96
+          },
+          "station": "green_car",
+          "tick": 8681
+        },
+        {
+          "counters": {
+            "ammo": 9.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 8375,
+            "shots": 99
+          },
+          "station": "lantern_base",
+          "tick": 8988
+        },
+        {
+          "counters": {
+            "ammo": 6.0,
+            "lives": 4,
+            "rescued": 7,
+            "score": 8575,
+            "shots": 102
+          },
+          "station": "workbench",
+          "tick": 9256
+        }
+      ],
+      "old_chapter_poses_rejected": true,
+      "passed": true,
+      "pullback_tick": 9202,
+      "reached": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "reloads": 9,
+      "replay": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "end_tick": 13002,
+        "inputs": 118
+      },
+      "result": "clear",
+      "train_transition_tick": 7977
+    },
+    "video_shop_cpu_probe": {
+      "before": {
+        "active_effects": [
+          "alley.hit_spark",
+          "alley.purify_burst",
+          "alley.shot_spark",
+          "alley.hit_spark",
+          "alley.purify_burst"
+        ],
+        "assets": 297,
+        "assets_mean_us": 302.46,
+        "checkpoint_mean_us": 4481.94,
+        "encode_mean_us": 1560.55,
+        "inputs": [
+          {
+            "hit": true,
+            "kind": "primary",
+            "ok": true,
+            "target": "video_shop.shop.drop"
+          }
+        ],
+        "pose_items": 26,
+        "section": "video_shop.video_shop",
+        "tick": 6232
+      },
+      "after": {
+        "active_effects": [
+          "alley.hit_spark",
+          "alley.purify_burst",
+          "alley.shot_spark",
+          "alley.hit_spark",
+          "alley.purify_burst"
+        ],
+        "assets": 297,
+        "assets_mean_us": 310.01,
+        "checkpoint_mean_us": 2143.91,
+        "encode_mean_us": 192.22,
+        "inputs": [
+          {
+            "hit": true,
+            "kind": "primary",
+            "ok": true,
+            "target": "video_shop.shop.drop"
+          }
+        ],
+        "pose_items": 26,
+        "section": "video_shop.video_shop",
+        "tick": 6232
+      }
+    }
+  }
+}

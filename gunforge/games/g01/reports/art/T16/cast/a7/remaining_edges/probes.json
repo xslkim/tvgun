@@ -1,0 +1,552 @@
+[
+  {
+    "id": "alley.crow_body",
+    "rect": [
+      0,
+      0,
+      917,
+      753
+    ],
+    "before_gap_pixels": 1029,
+    "semitransparent": true
+  },
+  {
+    "id": "alley.lamp_ink",
+    "rect": [
+      0,
+      0,
+      256,
+      256
+    ],
+    "before_gap_pixels": 827,
+    "semitransparent": true
+  },
+  {
+    "id": "alley.scene_far_base",
+    "rect": [
+      0,
+      0,
+      1258,
+      673
+    ],
+    "before_gap_pixels": 7648,
+    "semitransparent": true
+  },
+  {
+    "id": "alley.scene_far_town",
+    "rect": [
+      0,
+      0,
+      1138,
+      529
+    ],
+    "before_gap_pixels": 5695,
+    "semitransparent": true
+  },
+  {
+    "id": "alley.scene_lamp",
+    "rect": [
+      0,
+      0,
+      1023,
+      801
+    ],
+    "before_gap_pixels": 315,
+    "semitransparent": true
+  },
+  {
+    "id": "alley.scene_mid_ground",
+    "rect": [
+      0,
+      0,
+      1258,
+      569
+    ],
+    "before_gap_pixels": 5695,
+    "semitransparent": true
+  },
+  {
+    "id": "alley.scene_mid_left",
+    "rect": [
+      0,
+      0,
+      1244,
+      606
+    ],
+    "before_gap_pixels": 2876,
+    "semitransparent": true
+  },
+  {
+    "id": "alley.scene_mid_right",
+    "rect": [
+      0,
+      0,
+      1147,
+      588
+    ],
+    "before_gap_pixels": 2633,
+    "semitransparent": true
+  },
+  {
+    "id": "cinema.image_013",
+    "rect": [
+      0,
+      0,
+      272,
+      111
+    ],
+    "before_gap_pixels": 486,
+    "semitransparent": true
+  },
+  {
+    "id": "cinema.image_015",
+    "rect": [
+      0,
+      0,
+      768,
+      530
+    ],
+    "before_gap_pixels": 10335,
+    "semitransparent": true
+  },
+  {
+    "id": "cinema.image_018",
+    "rect": [
+      0,
+      0,
+      703,
+      768
+    ],
+    "before_gap_pixels": 6299,
+    "semitransparent": true
+  },
+  {
+    "id": "cinema.image_021",
+    "rect": [
+      0,
+      0,
+      768,
+      648
+    ],
+    "before_gap_pixels": 4213,
+    "semitransparent": true
+  },
+  {
+    "id": "cinema.image_035",
+    "rect": [
+      0,
+      0,
+      125,
+      128
+    ],
+    "before_gap_pixels": 506,
+    "semitransparent": true
+  },
+  {
+    "id": "cinema.image_047",
+    "rect": [
+      0,
+      0,
+      108,
+      102
+    ],
+    "before_gap_pixels": 265,
+    "semitransparent": true
+  },
+  {
+    "id": "cinema.image_061",
+    "rect": [
+      0,
+      0,
+      158,
+      88
+    ],
+    "before_gap_pixels": 316,
+    "semitransparent": true
+  },
+  {
+    "id": "cinema.image_073",
+    "rect": [
+      0,
+      0,
+      734,
+      450
+    ],
+    "before_gap_pixels": 11450,
+    "semitransparent": true
+  },
+  {
+    "id": "cinema.image_074",
+    "rect": [
+      0,
+      0,
+      1776,
+      936
+    ],
+    "before_gap_pixels": 576,
+    "semitransparent": false
+  },
+  {
+    "id": "cinema.image_077",
+    "rect": [
+      0,
+      0,
+      268,
+      240
+    ],
+    "before_gap_pixels": 1295,
+    "semitransparent": true
+  },
+  {
+    "id": "cinema.image_078",
+    "rect": [
+      0,
+      0,
+      217,
+      228
+    ],
+    "before_gap_pixels": 2275,
+    "semitransparent": true
+  },
+  {
+    "id": "footbridge.image_010",
+    "rect": [
+      0,
+      0,
+      98,
+      99
+    ],
+    "before_gap_pixels": 465,
+    "semitransparent": true
+  },
+  {
+    "id": "green_car.image_011",
+    "rect": [
+      0,
+      0,
+      176,
+      64
+    ],
+    "before_gap_pixels": 337,
+    "semitransparent": true
+  },
+  {
+    "id": "hud.ammo_light",
+    "rect": [
+      0,
+      0,
+      64,
+      96
+    ],
+    "before_gap_pixels": 243,
+    "semitransparent": true
+  },
+  {
+    "id": "hud.ammo_light_empty",
+    "rect": [
+      0,
+      0,
+      64,
+      96
+    ],
+    "before_gap_pixels": 245,
+    "semitransparent": true
+  },
+  {
+    "id": "hud.continue_panel",
+    "rect": [
+      0,
+      0,
+      960,
+      640
+    ],
+    "before_gap_pixels": 9,
+    "semitransparent": true
+  },
+  {
+    "id": "hud.life_wick",
+    "rect": [
+      0,
+      0,
+      72,
+      128
+    ],
+    "before_gap_pixels": 410,
+    "semitransparent": true
+  },
+  {
+    "id": "hud.life_wick_empty",
+    "rect": [
+      0,
+      0,
+      72,
+      128
+    ],
+    "before_gap_pixels": 426,
+    "semitransparent": true
+  },
+  {
+    "id": "hud.score_seal",
+    "rect": [
+      0,
+      0,
+      224,
+      224
+    ],
+    "before_gap_pixels": 1964,
+    "semitransparent": true
+  },
+  {
+    "id": "lantern_base.image_011",
+    "rect": [
+      0,
+      0,
+      141,
+      68
+    ],
+    "before_gap_pixels": 551,
+    "semitransparent": true
+  },
+  {
+    "id": "platform.image_014",
+    "rect": [
+      0,
+      0,
+      55,
+      129
+    ],
+    "before_gap_pixels": 456,
+    "semitransparent": true
+  },
+  {
+    "id": "plaza.image_007",
+    "rect": [
+      0,
+      0,
+      318,
+      286
+    ],
+    "before_gap_pixels": 1621,
+    "semitransparent": true
+  },
+  {
+    "id": "plaza.image_008",
+    "rect": [
+      0,
+      0,
+      318,
+      286
+    ],
+    "before_gap_pixels": 1633,
+    "semitransparent": true
+  },
+  {
+    "id": "plaza.image_012",
+    "rect": [
+      0,
+      0,
+      316,
+      282
+    ],
+    "before_gap_pixels": 1598,
+    "semitransparent": true
+  },
+  {
+    "id": "plaza.image_013",
+    "rect": [
+      0,
+      0,
+      316,
+      282
+    ],
+    "before_gap_pixels": 1616,
+    "semitransparent": true
+  },
+  {
+    "id": "plaza.image_017",
+    "rect": [
+      0,
+      0,
+      314,
+      280
+    ],
+    "before_gap_pixels": 1569,
+    "semitransparent": true
+  },
+  {
+    "id": "plaza.image_018",
+    "rect": [
+      0,
+      0,
+      314,
+      280
+    ],
+    "before_gap_pixels": 1585,
+    "semitransparent": true
+  },
+  {
+    "id": "plaza.image_022",
+    "rect": [
+      0,
+      0,
+      312,
+      274
+    ],
+    "before_gap_pixels": 1542,
+    "semitransparent": true
+  },
+  {
+    "id": "plaza.image_023",
+    "rect": [
+      0,
+      0,
+      312,
+      274
+    ],
+    "before_gap_pixels": 1550,
+    "semitransparent": true
+  },
+  {
+    "id": "plaza.image_027",
+    "rect": [
+      0,
+      0,
+      308,
+      270
+    ],
+    "before_gap_pixels": 1589,
+    "semitransparent": true
+  },
+  {
+    "id": "plaza.image_028",
+    "rect": [
+      0,
+      0,
+      308,
+      270
+    ],
+    "before_gap_pixels": 1599,
+    "semitransparent": true
+  },
+  {
+    "id": "plaza.image_032",
+    "rect": [
+      0,
+      0,
+      304,
+      266
+    ],
+    "before_gap_pixels": 1534,
+    "semitransparent": true
+  },
+  {
+    "id": "plaza.image_033",
+    "rect": [
+      0,
+      0,
+      304,
+      266
+    ],
+    "before_gap_pixels": 1549,
+    "semitransparent": true
+  },
+  {
+    "id": "plaza.image_037",
+    "rect": [
+      0,
+      0,
+      300,
+      262
+    ],
+    "before_gap_pixels": 1536,
+    "semitransparent": true
+  },
+  {
+    "id": "plaza.image_038",
+    "rect": [
+      0,
+      0,
+      300,
+      262
+    ],
+    "before_gap_pixels": 1547,
+    "semitransparent": true
+  },
+  {
+    "id": "plaza.image_042",
+    "rect": [
+      0,
+      0,
+      294,
+      256
+    ],
+    "before_gap_pixels": 1504,
+    "semitransparent": true
+  },
+  {
+    "id": "plaza.image_043",
+    "rect": [
+      0,
+      0,
+      294,
+      256
+    ],
+    "before_gap_pixels": 1515,
+    "semitransparent": true
+  },
+  {
+    "id": "puddle.image_000",
+    "rect": [
+      0,
+      0,
+      780,
+      156
+    ],
+    "before_gap_pixels": 1326,
+    "semitransparent": true
+  },
+  {
+    "id": "puddle.image_003",
+    "rect": [
+      0,
+      0,
+      360,
+      360
+    ],
+    "before_gap_pixels": 555,
+    "semitransparent": true
+  },
+  {
+    "id": "video_shop.image_010",
+    "rect": [
+      0,
+      0,
+      301,
+      91
+    ],
+    "before_gap_pixels": 509,
+    "semitransparent": true
+  },
+  {
+    "id": "waiting_room.image_015",
+    "rect": [
+      0,
+      0,
+      161,
+      52
+    ],
+    "before_gap_pixels": 224,
+    "semitransparent": true
+  },
+  {
+    "id": "waiting_room.image_017",
+    "rect": [
+      0,
+      0,
+      917,
+      753
+    ],
+    "before_gap_pixels": 1029,
+    "semitransparent": true
+  }
+]

@@ -1,0 +1,583 @@
+{
+  "package": "paper.lantern_city_epilogue",
+  "build_id": "b9b9f9f422f66665b44880cf545f5283507a9b62ad0a69109ccff798397135b3",
+  "source_revision": "23bfe432d00d0683c23d8d5046cf39cae60358e3ad7856d2dec72a50df636c67",
+  "engine": "Godot 4.6.3 Windows",
+  "gpu": "NVIDIA GeForce RTX 3080 Ti",
+  "art": {
+    "path": "gunforge/games/g01/assets/cutscenes/epilogue/city_wide_v1.png",
+    "sha256": "71a24f0795a05cb60281a27348798a938e387349637e05da710345673883d1dd",
+    "source_record": "city_wide_generation.json"
+  },
+  "audio": {
+    "path": "gunforge/games/g01/assets/cutscenes/epilogue/ending_wide_tape.wav",
+    "sha256": "a3fcf022714731beede41ea51e9b560feab21c0f215e74aeb31316933a1e1700",
+    "seconds": 58.0,
+    "lufs": -23.41,
+    "true_peak_dbtp": -4.46,
+    "lines": [
+      {
+        "id": "city",
+        "seed": 202611121,
+        "text": "夜市的灯，又亮了起来。",
+        "start": 9.0,
+        "end": 11.56,
+        "raw_sha256": "5950a97bb411b2c8cd14d36b8a860c489ba21336ac763dfce42c031cb467a625",
+        "subtitle_window": [
+          7.2,
+          20.8
+        ],
+        "mix_readback": "夜市的灯又亮了起来。",
+        "measured_shift_window": [
+          9.269332885742188,
+          11.829332885742188
+        ]
+      },
+      {
+        "id": "quote",
+        "seed": 202611122,
+        "text": "灯亮着，就还在。",
+        "start": 49.0,
+        "end": 51.24,
+        "raw_sha256": "90cc464ad76d7e2e1ceca89335e8b472e5a06c182fff78e762aecab71d80e049",
+        "subtitle_window": [
+          47.8,
+          58.0
+        ],
+        "mix_readback": "灯亮着就还在。",
+        "measured_shift_window": [
+          49.14400100708008,
+          51.38400100708008
+        ]
+      }
+    ]
+  },
+  "route": {
+    "build_id": "b9b9f9f422f66665b44880cf545f5283507a9b62ad0a69109ccff798397135b3",
+    "chapter_transition_tick": 6701,
+    "counters": {
+      "ammo": 2.0,
+      "lives": 4,
+      "rescued": 7,
+      "score": 8900,
+      "shots": 106
+    },
+    "end_tick": 12824,
+    "ending": {
+      "city_texture_preloaded": true,
+      "city_tick": 9776,
+      "light_tick": 9344,
+      "natural_result_tick": 12824,
+      "quote_tick": 12212,
+      "skip": {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8900,
+          "shots": 106
+        },
+        "result": "clear",
+        "result_tick": 9345,
+        "start_tick": 9344
+      },
+      "skip_from_city": {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8900,
+          "shots": 106
+        },
+        "result": "clear",
+        "result_tick": 9897,
+        "start_tick": 9896
+      },
+      "skip_from_quote": {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8900,
+          "shots": 106
+        },
+        "result": "clear",
+        "result_tick": 12213,
+        "start_tick": 12212
+      },
+      "skip_from_wide": {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8900,
+          "shots": 106
+        },
+        "result": "clear",
+        "result_tick": 10713,
+        "start_tick": 10712
+      },
+      "wide_texture_preloaded": true,
+      "wide_tick": 10592
+    },
+    "failure_retries": [
+      {
+        "after_retry": {
+          "ammo": 12.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 0
+        },
+        "before_retry": {
+          "ammo": 9.0,
+          "lives": 0,
+          "rescued": 7,
+          "score": 8200,
+          "shots": 99
+        },
+        "defeat_tick": 10103,
+        "first_shot": {
+          "ammo": 11.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 1
+        },
+        "station": 15
+      }
+    ],
+    "failures": [],
+    "gpu_capture": true,
+    "handoffs": [
+      {
+        "counters": {
+          "ammo": 12.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 3500,
+          "shots": 36
+        },
+        "station": "stall",
+        "tick": 5616
+      },
+      {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 4100,
+          "shots": 46
+        },
+        "station": "video_shop",
+        "tick": 6096
+      },
+      {
+        "counters": {
+          "ammo": 10.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4400,
+          "shots": 50
+        },
+        "station": "footbridge",
+        "tick": 6384
+      },
+      {
+        "counters": {
+          "ammo": 7.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4600,
+          "shots": 53
+        },
+        "station": "plaza",
+        "tick": 6499
+      },
+      {
+        "counters": {
+          "ammo": 8.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 5700,
+          "shots": 64
+        },
+        "station": "ticket_office",
+        "tick": 6791
+      },
+      {
+        "counters": {
+          "ammo": 3.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6000,
+          "shots": 69
+        },
+        "station": "poster_hall",
+        "tick": 7050
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6200,
+          "shots": 72
+        },
+        "station": "auditorium",
+        "tick": 7282
+      },
+      {
+        "counters": {
+          "ammo": 8.0,
+          "lives": 4,
+          "rescued": 4,
+          "score": 6500,
+          "shots": 76
+        },
+        "station": "projection_booth",
+        "tick": 7541
+      },
+      {
+        "counters": {
+          "ammo": 4.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 6800,
+          "shots": 80
+        },
+        "station": "screen_stage",
+        "tick": 7800
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 7200,
+          "shots": 84
+        },
+        "station": "waiting_room",
+        "tick": 7918
+      },
+      {
+        "counters": {
+          "ammo": 7.0,
+          "lives": 4,
+          "rescued": 6,
+          "score": 7500,
+          "shots": 89
+        },
+        "station": "platform",
+        "tick": 8225
+      },
+      {
+        "counters": {
+          "ammo": 3.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 7800,
+          "shots": 93
+        },
+        "station": "green_car",
+        "tick": 8532
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8000,
+          "shots": 96
+        },
+        "station": "lantern_base",
+        "tick": 8839
+      },
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8200,
+          "shots": 99
+        },
+        "station": "workbench",
+        "tick": 9107
+      }
+    ],
+    "old_chapter_poses_rejected": true,
+    "passed": true,
+    "pullback_tick": 9053,
+    "reached": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "reloads": 8,
+    "replay": {
+      "counters": {
+        "ammo": 2.0,
+        "lives": 4,
+        "rescued": 7,
+        "score": 8900,
+        "shots": 106
+      },
+      "end_tick": 12824,
+      "inputs": 114
+    },
+    "result": "clear",
+    "train_transition_tick": 7828
+  },
+  "player_audio": {
+    "build_id": "b9b9f9f422f66665b44880cf545f5283507a9b62ad0a69109ccff798397135b3",
+    "display_pause_resume_checked": true,
+    "failures": [],
+    "passed": true,
+    "paths": [
+      {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8900,
+          "shots": 106
+        },
+        "input": "Enter",
+        "result_tick": 9361,
+        "section": "lantern_base.ending_light",
+        "start_tick": 9360,
+        "tape_stopped": true
+      },
+      {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8900,
+          "shots": 106
+        },
+        "input": "Esc",
+        "result_tick": 9903,
+        "section": "lantern_base.ending_city",
+        "start_tick": 9902,
+        "tape_stopped": true
+      },
+      {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8900,
+          "shots": 106
+        },
+        "input": "UDP START",
+        "result_tick": 10718,
+        "section": "lantern_base.ending_wide",
+        "start_tick": 10717,
+        "tape_stopped": true
+      },
+      {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8900,
+          "shots": 106
+        },
+        "input": "Enter",
+        "result_tick": 12218,
+        "section": "lantern_base.ending_quote",
+        "start_tick": 12217,
+        "tape_stopped": true
+      },
+      {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8900,
+          "shots": 106
+        },
+        "input": "natural",
+        "result_tick": 12824,
+        "section": "lantern_base.ending_quote",
+        "start_tick": 12818,
+        "tape_stopped": true
+      }
+    ],
+    "retry_checked": true
+  },
+  "realtime_playback": {
+    "audio_driver": "Dummy",
+    "build_id": "b9b9f9f422f66665b44880cf545f5283507a9b62ad0a69109ccff798397135b3",
+    "result": "clear",
+    "samples": [
+      {
+        "at": 9.0,
+        "caption_matches": true,
+        "drift": -0.269332885742188,
+        "position": 8.73066711425781,
+        "section": "lantern_base.ending_city"
+      },
+      {
+        "at": 49.0,
+        "caption_matches": true,
+        "drift": -0.144001007080078,
+        "position": 48.8559989929199,
+        "section": "lantern_base.ending_quote"
+      }
+    ],
+    "seconds": 58.0,
+    "tape_stopped": true,
+    "diagnostic_250ms_check": false,
+    "speech_within_subtitle_windows": true
+  },
+  "short_version_regression": {
+    "build_id": "81d20d46f80ddefaf8a06bc0337e217114f7facac4a74bd52bc51927111b7322",
+    "passed": true,
+    "replay": {
+      "counters": {
+        "ammo": 2.0,
+        "lives": 4,
+        "rescued": 7,
+        "score": 8900,
+        "shots": 106
+      },
+      "end_tick": 10568,
+      "inputs": 114
+    }
+  },
+  "compiler_unit_tests_passed": 26,
+  "frames": {
+    "ending_unlit": {
+      "source_png_sha256": "de63139f79f30ddc5512886c72f0c866abf004beefd52d84b775886ccadbd7c3",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.00736072611072611
+        }
+      }
+    },
+    "ending_relit": {
+      "source_png_sha256": "ec5a98cc7f767e03c880800a9ed87fd5a56bb454152fe4d7511d727e9bcf75a0",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.006801272426272426
+        }
+      }
+    },
+    "ending_city_start": {
+      "source_png_sha256": "a7269950117afd04c4d30e76f0f3bedb8dfc753a61cf8e4d19d90d9e9dc8640b",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0023737679987679986
+        }
+      }
+    },
+    "ending_city_end": {
+      "source_png_sha256": "3d93021aba8e003f7e8bcbfaf97a6d1db08677c7fe6e933419be473f6f73c79f",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.002374369561869562
+        }
+      }
+    },
+    "ending_wide_near": {
+      "source_png_sha256": "95ba38ed52f9b22f87667d12f5900b365cbacb68a06bb7518d637c047bbd6cc4",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.001184477746977747
+        }
+      },
+      "jpg_sha256": "28f30f22b9028cdb2f384699bf4035d0f1bf32abb2ad1db5bb8aa4cb013a8514",
+      "jpg": "ending_wide_near.jpg"
+    },
+    "ending_wide_full": {
+      "source_png_sha256": "78dc7b93e4f68ba642fde1bea51531f55f3051d583685774bb5c89eebcf4ab51",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0010431104181104181
+        }
+      },
+      "jpg_sha256": "ac30a87395fdd1c55cef2fe2af86e70f60dd0082448e37e91dd58f3af56e74d1",
+      "jpg": "ending_wide_full.jpg"
+    },
+    "ending_quote": {
+      "source_png_sha256": "8927eed4251b61b23ca9993dba84e934e249add28ab34269f5bddc8c92e87c67",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.007971312658812658
+        }
+      }
+    },
+    "campaign_clear": {
+      "source_png_sha256": "19bc4624b7383d633dcac22e8d77d8683cb865a270413ce0cb2c991cadd36103",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.004632035882035882
+        }
+      }
+    }
+  },
+  "video": {
+    "path": "epilogue_wide.mp4",
+    "sha256": "4abef65edd3a070d678c36fd89cb484ef86caf36da177a709e6b923c37bc77f1",
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1184,
+        "height": 624,
+        "avg_frame_rate": "30/1",
+        "duration": "58.800000",
+        "nb_frames": "1764"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2,
+        "avg_frame_rate": "0/0",
+        "duration": "58.800000",
+        "nb_frames": "2758"
+      }
+    ],
+    "full_decode_passed": true,
+    "picture_build_id": "96e2a6d03cd1090c4a0804c1c524d1f2f7022eee4da1e69a1cef572b42baa9e1",
+    "picture_frames_identical_in_current_build": true,
+    "C03_samples_passed": 59,
+    "C03_max_clipped_fraction": 0.00520968685031185
+  },
+  "physical_audio_output": {
+    "status": "pending",
+    "windows_wasapi": "Output device could not open in the current session",
+    "linux_pulseaudio": "Backend could not retrieve server information"
+  }
+}

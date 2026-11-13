@@ -1,0 +1,973 @@
+{
+  "build_id": "85d234e0f4b4f2865881d2e355bf897f82d2af93ae6f6950c6431e5adada59c6",
+  "calibrations": {
+    "monitor": {
+      "check_error_px": 0.00013647876039613,
+      "dark": 48.0,
+      "matrix": [
+        0.968490569526339,
+        -0.0573505791708856,
+        -85.9073589204886,
+        0.00943033873719687,
+        1.02625789775086,
+        39.0861192008863,
+        -4.49613706824171e-05,
+        5.02001812712922e-05
+      ],
+      "outer": 0.022,
+      "white": 24.0
+    },
+    "tv": {
+      "check_error_px": 0.0001220703125,
+      "dark": 48.0,
+      "matrix": [
+        0.968490489180694,
+        -0.0573505463209088,
+        85.9073973167117,
+        0.00943031066943024,
+        1.02625782903321,
+        -39.0861015726828,
+        4.49613597015939e-05,
+        -5.02002039950821e-05
+      ],
+      "outer": 0.045,
+      "white": 24.0
+    }
+  },
+  "cases": [
+    {
+      "capture": [
+        1280.0,
+        720.0
+      ],
+      "case": "monitor_window",
+      "frame_edge_error_px": 0.226257771253586,
+      "frame_edges": [
+        28,
+        16,
+        1252,
+        704
+      ],
+      "fullscreen": false,
+      "profile": "monitor",
+      "window": [
+        1280,
+        720
+      ]
+    },
+    {
+      "capture": [
+        1920.0,
+        1080.0
+      ],
+      "case": "monitor_fullscreen",
+      "frame_edge_error_px": 0.339440613985062,
+      "frame_edges": [
+        42,
+        24,
+        1878,
+        1056
+      ],
+      "fullscreen": true,
+      "profile": "monitor",
+      "window": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "capture": [
+        960.0,
+        720.0
+      ],
+      "case": "monitor_four_three",
+      "frame_edge_error_px": 0.169720306992531,
+      "frame_edges": [
+        21,
+        102,
+        939,
+        618
+      ],
+      "fullscreen": false,
+      "profile": "monitor",
+      "window": [
+        960,
+        720
+      ]
+    },
+    {
+      "capture": [
+        1120.0,
+        700.0
+      ],
+      "case": "tv_window",
+      "frame_edge_error_px": 0.884591639041901,
+      "frame_edges": [
+        50,
+        63,
+        1069,
+        636
+      ],
+      "fullscreen": false,
+      "profile": "tv",
+      "window": [
+        1120,
+        700
+      ]
+    },
+    {
+      "capture": [
+        1920.0,
+        1080.0
+      ],
+      "case": "tv_fullscreen",
+      "frame_edge_error_px": 0.848579943180084,
+      "frame_edges": [
+        86,
+        49,
+        1833,
+        1032
+      ],
+      "fullscreen": true,
+      "profile": "tv",
+      "window": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "capture": [
+        960.0,
+        720.0
+      ],
+      "case": "tv_four_three",
+      "frame_edge_error_px": 0.728009343147278,
+      "frame_edges": [
+        43,
+        114,
+        917,
+        605
+      ],
+      "fullscreen": false,
+      "profile": "tv",
+      "window": [
+        960,
+        720
+      ]
+    }
+  ],
+  "failures": [],
+  "max_mapping_error_px": 0.00013647876039613,
+  "passed": true,
+  "race": {
+    "from": [
+      960,
+      720
+    ],
+    "old_scale": 0.45500000521668,
+    "rendered_scale_before_udp": 0.45500000521668,
+    "to": [
+      1120,
+      700
+    ],
+    "trigger_before_draw": true
+  },
+  "shots": {
+    "monitor_four_three_center": {
+      "ammo": 11.0,
+      "bound_shapes": 8,
+      "command": "SHOT",
+      "mapping_error_px": 0.0,
+      "point": [
+        844.5,
+        575.5
+      ],
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "puddle.puddle.tadpole2"
+      },
+      "rescued": 1,
+      "score": 3600,
+      "submission": "submission:6:tick:5616",
+      "tick": 5617
+    },
+    "monitor_four_three_content": {
+      "ammo": 5.0,
+      "bound_shapes": 12,
+      "command": "SHOT",
+      "mapping_error_px": 7.62939453125e-06,
+      "point": [
+        888.0,
+        2.00000762939453
+      ],
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:10:tick:6515",
+      "tick": 6516
+    },
+    "monitor_four_three_dark": {
+      "ammo": 3.0,
+      "bound_shapes": 0,
+      "command": "SHOT",
+      "mapping_error_px": 6.103515625e-05,
+      "point": [
+        887.999938964844,
+        -28.0
+      ],
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:20:tick:6533",
+      "tick": 6534
+    },
+    "monitor_four_three_offscreen": {
+      "ammo": 3.0,
+      "bound_shapes": 0,
+      "command": "RELOAD",
+      "reply": {
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:23:tick:6534",
+      "tick": 6535
+    },
+    "monitor_four_three_upper_right": {
+      "ammo": 6.0,
+      "bound_shapes": 11,
+      "command": "SHOT",
+      "mapping_error_px": 0.0001220703125,
+      "point": [
+        1337.49987792969,
+        184.5
+      ],
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "footbridge.footbridge.lamp"
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:5:tick:6506",
+      "tick": 6507
+    },
+    "monitor_four_three_white": {
+      "ammo": 4.0,
+      "bound_shapes": 0,
+      "command": "SHOT",
+      "mapping_error_px": 0.0,
+      "point": [
+        888.0,
+        -60.0
+      ],
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:15:tick:6524",
+      "tick": 6525
+    },
+    "monitor_fullscreen_center": {
+      "ammo": 11.0,
+      "bound_shapes": 8,
+      "command": "SHOT",
+      "mapping_error_px": 0.0,
+      "point": [
+        844.5,
+        575.5
+      ],
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "puddle.puddle.tadpole2"
+      },
+      "rescued": 1,
+      "score": 3600,
+      "submission": "submission:6:tick:5616",
+      "tick": 5617
+    },
+    "monitor_fullscreen_content": {
+      "ammo": 5.0,
+      "bound_shapes": 12,
+      "command": "SHOT",
+      "mapping_error_px": 0.0,
+      "point": [
+        1774.0,
+        468.0
+      ],
+      "reply": {
+        "hit": false,
+        "kind": "blocker",
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:10:tick:6515",
+      "tick": 6516
+    },
+    "monitor_fullscreen_dark": {
+      "ammo": 3.0,
+      "bound_shapes": 0,
+      "command": "SHOT",
+      "mapping_error_px": 0.0,
+      "point": [
+        1804.0,
+        468.0
+      ],
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:20:tick:6533",
+      "tick": 6534
+    },
+    "monitor_fullscreen_offscreen": {
+      "ammo": 3.0,
+      "bound_shapes": 0,
+      "command": "RELOAD",
+      "reply": {
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:23:tick:6534",
+      "tick": 6535
+    },
+    "monitor_fullscreen_upper_right": {
+      "ammo": 6.0,
+      "bound_shapes": 11,
+      "command": "SHOT",
+      "mapping_error_px": 0.0001220703125,
+      "point": [
+        1337.49987792969,
+        184.5
+      ],
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "footbridge.footbridge.lamp"
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:5:tick:6506",
+      "tick": 6507
+    },
+    "monitor_fullscreen_white": {
+      "ammo": 4.0,
+      "bound_shapes": 0,
+      "command": "SHOT",
+      "mapping_error_px": 0.0,
+      "point": [
+        1836.0,
+        468.0
+      ],
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:15:tick:6524",
+      "tick": 6525
+    },
+    "monitor_window_center": {
+      "ammo": 11.0,
+      "bound_shapes": 8,
+      "command": "SHOT",
+      "mapping_error_px": 0.0,
+      "point": [
+        844.5,
+        575.5
+      ],
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "puddle.puddle.tadpole2"
+      },
+      "rescued": 1,
+      "score": 3600,
+      "submission": "submission:6:tick:5616",
+      "tick": 5617
+    },
+    "monitor_window_content": {
+      "ammo": 5.0,
+      "bound_shapes": 12,
+      "command": "SHOT",
+      "mapping_error_px": 7.62939453125e-06,
+      "point": [
+        1.99999237060547,
+        468.0
+      ],
+      "reply": {
+        "hit": false,
+        "kind": "blocker",
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:10:tick:6515",
+      "tick": 6516
+    },
+    "monitor_window_dark": {
+      "ammo": 3.0,
+      "bound_shapes": 0,
+      "command": "SHOT",
+      "mapping_error_px": 7.62939453125e-06,
+      "point": [
+        -28.0000076293945,
+        468.0
+      ],
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:20:tick:6533",
+      "tick": 6534
+    },
+    "monitor_window_offscreen": {
+      "ammo": 3.0,
+      "bound_shapes": 0,
+      "command": "RELOAD",
+      "reply": {
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:23:tick:6534",
+      "tick": 6535
+    },
+    "monitor_window_upper_right": {
+      "ammo": 6.0,
+      "bound_shapes": 11,
+      "command": "SHOT",
+      "mapping_error_px": 0.0001220703125,
+      "point": [
+        1337.49987792969,
+        184.5
+      ],
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "footbridge.footbridge.lamp"
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:5:tick:6506",
+      "tick": 6507
+    },
+    "monitor_window_white": {
+      "ammo": 4.0,
+      "bound_shapes": 0,
+      "command": "SHOT",
+      "mapping_error_px": 1.1444091796875e-05,
+      "point": [
+        -60.0000114440918,
+        468.0
+      ],
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:15:tick:6524",
+      "tick": 6525
+    },
+    "same_frame_resize": {
+      "ammo": 6.0,
+      "bound_shapes": 11,
+      "command": "SHOT",
+      "mapping_error_px": 0.0,
+      "point": [
+        1337.5,
+        184.5
+      ],
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "footbridge.footbridge.lamp"
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:5:tick:6506",
+      "tick": 6507
+    },
+    "tv_four_three_center": {
+      "ammo": 11.0,
+      "bound_shapes": 8,
+      "command": "SHOT",
+      "mapping_error_px": 6.103515625e-05,
+      "point": [
+        844.499938964844,
+        575.5
+      ],
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "puddle.puddle.tadpole2"
+      },
+      "rescued": 1,
+      "score": 3600,
+      "submission": "submission:6:tick:5616",
+      "tick": 5617
+    },
+    "tv_four_three_content": {
+      "ammo": 5.0,
+      "bound_shapes": 12,
+      "command": "SHOT",
+      "mapping_error_px": 2.288818359375e-05,
+      "point": [
+        2.00002288818359,
+        468.0
+      ],
+      "reply": {
+        "hit": false,
+        "kind": "blocker",
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:10:tick:6515",
+      "tick": 6516
+    },
+    "tv_four_three_dark": {
+      "ammo": 3.0,
+      "bound_shapes": 0,
+      "command": "SHOT",
+      "mapping_error_px": 2.288818359375e-05,
+      "point": [
+        -27.9999771118164,
+        468.0
+      ],
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:20:tick:6533",
+      "tick": 6534
+    },
+    "tv_four_three_offscreen": {
+      "ammo": 3.0,
+      "bound_shapes": 0,
+      "command": "RELOAD",
+      "reply": {
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:23:tick:6534",
+      "tick": 6535
+    },
+    "tv_four_three_upper_right": {
+      "ammo": 6.0,
+      "bound_shapes": 11,
+      "command": "SHOT",
+      "mapping_error_px": 0.0,
+      "point": [
+        1337.5,
+        184.5
+      ],
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "footbridge.footbridge.lamp"
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:5:tick:6506",
+      "tick": 6507
+    },
+    "tv_four_three_white": {
+      "ammo": 4.0,
+      "bound_shapes": 0,
+      "command": "SHOT",
+      "mapping_error_px": 2.288818359375e-05,
+      "point": [
+        -59.9999771118164,
+        468.0
+      ],
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:15:tick:6524",
+      "tick": 6525
+    },
+    "tv_fullscreen_center": {
+      "ammo": 11.0,
+      "bound_shapes": 8,
+      "command": "SHOT",
+      "mapping_error_px": 6.103515625e-05,
+      "point": [
+        844.499938964844,
+        575.5
+      ],
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "puddle.puddle.tadpole2"
+      },
+      "rescued": 1,
+      "score": 3600,
+      "submission": "submission:6:tick:5616",
+      "tick": 5617
+    },
+    "tv_fullscreen_content": {
+      "ammo": 5.0,
+      "bound_shapes": 12,
+      "command": "SHOT",
+      "mapping_error_px": 8.63167442730628e-05,
+      "point": [
+        887.999938964844,
+        933.999938964844
+      ],
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:10:tick:6515",
+      "tick": 6516
+    },
+    "tv_fullscreen_dark": {
+      "ammo": 3.0,
+      "bound_shapes": 0,
+      "command": "SHOT",
+      "mapping_error_px": 6.103515625e-05,
+      "point": [
+        887.999938964844,
+        964.0
+      ],
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:20:tick:6533",
+      "tick": 6534
+    },
+    "tv_fullscreen_offscreen": {
+      "ammo": 3.0,
+      "bound_shapes": 0,
+      "command": "RELOAD",
+      "reply": {
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:23:tick:6534",
+      "tick": 6535
+    },
+    "tv_fullscreen_upper_right": {
+      "ammo": 6.0,
+      "bound_shapes": 11,
+      "command": "SHOT",
+      "mapping_error_px": 0.0,
+      "point": [
+        1337.5,
+        184.5
+      ],
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "footbridge.footbridge.lamp"
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:5:tick:6506",
+      "tick": 6507
+    },
+    "tv_fullscreen_white": {
+      "ammo": 4.0,
+      "bound_shapes": 0,
+      "command": "SHOT",
+      "mapping_error_px": 0.00013647876039613,
+      "point": [
+        887.999938964844,
+        995.999877929688
+      ],
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:15:tick:6524",
+      "tick": 6525
+    },
+    "tv_window_center": {
+      "ammo": 11.0,
+      "bound_shapes": 8,
+      "command": "SHOT",
+      "mapping_error_px": 6.103515625e-05,
+      "point": [
+        844.499938964844,
+        575.5
+      ],
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "puddle.puddle.tadpole2"
+      },
+      "rescued": 1,
+      "score": 3600,
+      "submission": "submission:6:tick:5616",
+      "tick": 5617
+    },
+    "tv_window_content": {
+      "ammo": 5.0,
+      "bound_shapes": 12,
+      "command": "SHOT",
+      "mapping_error_px": 7.62939453125e-06,
+      "point": [
+        888.0,
+        2.00000762939453
+      ],
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:10:tick:6515",
+      "tick": 6516
+    },
+    "tv_window_dark": {
+      "ammo": 3.0,
+      "bound_shapes": 0,
+      "command": "SHOT",
+      "mapping_error_px": 6.1154249124229e-05,
+      "point": [
+        887.999938964844,
+        -27.9999961853027
+      ],
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:20:tick:6533",
+      "tick": 6534
+    },
+    "tv_window_offscreen": {
+      "ammo": 3.0,
+      "bound_shapes": 0,
+      "command": "RELOAD",
+      "reply": {
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:23:tick:6534",
+      "tick": 6535
+    },
+    "tv_window_upper_right": {
+      "ammo": 6.0,
+      "bound_shapes": 11,
+      "command": "SHOT",
+      "mapping_error_px": 0.0,
+      "point": [
+        1337.5,
+        184.5
+      ],
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "footbridge.footbridge.lamp"
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:5:tick:6506",
+      "tick": 6507
+    },
+    "tv_window_white": {
+      "ammo": 4.0,
+      "bound_shapes": 0,
+      "command": "SHOT",
+      "mapping_error_px": 3.814697265625e-06,
+      "point": [
+        888.0,
+        -59.9999961853027
+      ],
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:15:tick:6524",
+      "tick": 6525
+    }
+  },
+  "source_revision": "60768c908511d0333dffe932f5af31337d7d9dfd216e68916e6257ff27c950cb",
+  "previous_player": {
+    "resize_shot": {
+      "ammo": 6.0,
+      "bound_shapes": 11,
+      "command": "SHOT",
+      "mapping_error_px": 225.027282714844,
+      "point": [
+        1560.41638183594,
+        215.25
+      ],
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:5:tick:6506",
+      "tick": 6507
+    },
+    "native_to_render_sizes": {
+      "monitor_window": [
+        [
+          1280,
+          720
+        ],
+        [
+          1212.0,
+          720.0
+        ]
+      ],
+      "monitor_fullscreen": [
+        [
+          1920,
+          1080
+        ],
+        [
+          1818.0,
+          1080.0
+        ]
+      ],
+      "monitor_four_three": [
+        [
+          960,
+          720
+        ],
+        [
+          960.0,
+          570.0
+        ]
+      ],
+      "tv_window": [
+        [
+          1120,
+          700
+        ],
+        [
+          1120.0,
+          665.0
+        ]
+      ],
+      "tv_fullscreen": [
+        [
+          1920,
+          1080
+        ],
+        [
+          1818.0,
+          1080.0
+        ]
+      ],
+      "tv_four_three": [
+        [
+          960,
+          720
+        ],
+        [
+          960.0,
+          570.0
+        ]
+      ]
+    },
+    "candidate_manifest_sha256": "c285be9517326b4eb2edce437c0fd08b0dc9b54fde852a49abf1c4b89fe645bd"
+  },
+  "candidate_manifest_sha256": "64275e09fcc341f03661121e71b43ae3c5fe2555a5bcb6aef99bab0a3d923e2e",
+  "player_sha256": "d277d251b2cf6518e283502660692ca937f73c7dc025278c7fb2a1448096c6e2",
+  "compiled_sha256": "99600d7632e1c4c652e4c0743aa56add6dd4f99c54b11b23d1e178c6f3eba4d6",
+  "comparison_sha256": "d4765a3ec017c16c31087aef75eb4731baeb6d629563551ef6f87cc8712d4bca",
+  "frames_sha256": {
+    "monitor_window": "ea2857bb435ed95be90ab5edd82f0aa53ab8c21a720cb924b8adc9480aee3bc6",
+    "monitor_fullscreen": "a9d7906d82e06d3523c59623048499d2a5b3f71e0612cba468413a4dba17a645",
+    "monitor_four_three": "ecd48767aba31dbf1724258c3e50acf521bdda2f482af701107f2769d7a264e4",
+    "tv_window": "d279c89e28ca8ed2d5f97e7939963cb5bb08a2ffda6cb3324e75f80746d343df",
+    "tv_fullscreen": "e11708e624f215a1b3084b947a132d36826fe8601410986e99f6482de4526207",
+    "tv_four_three": "b8a789f915c62fbf9049f0c4072a085b556238f6152cdf0cfb6ea474d9e6face"
+  },
+  "physical_lightgun": "pending",
+  "related_player_regressions": {
+    "display_setup_tests": {
+      "passed": true,
+      "build_id": "85d234e0f4b4f2865881d2e355bf897f82d2af93ae6f6950c6431e5adada59c6",
+      "udp_shots": 19
+    },
+    "paper_action_tests": {
+      "passed": true,
+      "build_id": "85d234e0f4b4f2865881d2e355bf897f82d2af93ae6f6950c6431e5adada59c6",
+      "udp_shots": 3,
+      "opening": true
+    },
+    "paper_udp_combat_tests": {
+      "passed": true,
+      "build_id": "85d234e0f4b4f2865881d2e355bf897f82d2af93ae6f6950c6431e5adada59c6",
+      "udp_sequences": 15
+    }
+  },
+  "C13_repeat": {
+    "previous_checks_sha256": "3eafdff3840ff116d5a18376e8a392856657f4afa1e019ad4dc4dd3cfba4fe1f",
+    "display_frames": 101,
+    "in_contract_projections_passed": 606,
+    "maximum_corner_error_camera_pixels": 0.749
+  }
+}

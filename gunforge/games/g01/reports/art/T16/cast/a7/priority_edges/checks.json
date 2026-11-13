@@ -1,0 +1,1177 @@
+{
+  "before_build_id": "eaa193c147ee7bf342ee34f3d855ba61847108abe3a74c170617fba0d5317eaa",
+  "build_id": "5bdaecd61df7ce8c516f5ec85bc6d0a0d5e99817e1bd5e906fe57c10f16413dd",
+  "compiled_sha256": "38d30364712eaa1c01f2ce760b7b335b2e3975255431698de0f9c543ec1885eb",
+  "candidate_manifest_sha256": "a5b2dd6a19bce0787c5a31b3b5743a9cb5261c0733a32973d4168d21cc4b7d2b",
+  "other_compiled_resources_unchanged": 334,
+  "isolated_files_verified_per_build": 384,
+  "alpha_and_visible_rgb_unchanged": true,
+  "gameplay_and_player_unchanged": true,
+  "resources": [
+    {
+      "id": "cinema.image_017",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T12/actors/ink_tape/weak.png",
+        "sha256": "0efee9486672feba7f0dbdc9b0c623d3291e2b45cc89d07dcf10feddc32be674"
+      },
+      "runtime_sha256": "a2ec441c6f8d23de42177cec4769679561167af2d5f5541edc472b590d1bf9d6",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/2f5818bbe6ffee4992471d1324b4ce4334171eab56e4bf0a87b3db405519432b/weak.png",
+      "changed_transparent_pixels": 2548,
+      "adjacent_black_pixels_before": 298,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "cinema.image_020",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T12/actors/ink_umbrella/weak.png",
+        "sha256": "50fb77326e9c42904ca556eb7ff39d8388ec7ed67bb450268b0501b890dae881"
+      },
+      "runtime_sha256": "eed311ab5361624a2b5e55eae755031ab80c41496983d0740a16b10be47c230a",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/60e4ea7f35aaea7a2c9d6d813c986759622951c5bb45c560dbfc139eb98d64b4/weak.png",
+      "changed_transparent_pixels": 2404,
+      "adjacent_black_pixels_before": 280,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "footbridge.image_018",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/level_design/generated/footbridge_cyclist/cyclist_resident.png",
+        "sha256": "35745493d8b6ea0f25fbc95e95f70281cec71cea603bebb9acd5f3a3e18d53bb"
+      },
+      "runtime_sha256": "2e3784390b8b9a765abb4af74f9b70fbbd6411ff1ec54580aca9db19b07212ee",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/1894a2ff7b38926b2ced49cd6781ce6ba5328859bbbc2fd8a66214ab897c8a25/cyclist_resident.png",
+      "changed_transparent_pixels": 12327,
+      "adjacent_black_pixels_before": 3023,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "footbridge.image_019",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/level_design/generated/footbridge_cyclist/cyclist_reaction.png",
+        "sha256": "c42ef11713a81ccfd3c0bc7ce446e74171d00ec0f0d5ec5a23ed16f95c0b88a1"
+      },
+      "runtime_sha256": "5943e09624e308b4d23464a75618303c806588975964b9109849ffba41022b24",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/413d0c978ea87758d1acb4738ec36153ed5109f952c4a2267605e14471ae946b/cyclist_reaction.png",
+      "changed_transparent_pixels": 14717,
+      "adjacent_black_pixels_before": 3636,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "hud.crosshair",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/assets/stations/g01_st_l1_01_alley/ui/crosshair.png",
+        "sha256": "35b94ec1696f351a9140ed74698e8eb2f36e99ffd4e0925029eb02fb4babe062"
+      },
+      "runtime_sha256": "28efd0d7e5c5f75ebd2715f0d7b9b0745dece13bc29371a49c776920b4b6ce73",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/bef829b7bbfd3fc9da6ba228ecfae87f6b94a40d5e01df24204d0536954efb5d/crosshair.png",
+      "changed_transparent_pixels": 2097,
+      "adjacent_black_pixels_before": 629,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "plaza.image_047",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T11/full/parts/head_upper.png",
+        "sha256": "b33f59e81340331606695b999c725e435a0852be32ec85c9bb21cf875b347449"
+      },
+      "runtime_sha256": "40be2b2ac7301a1a8a7664a28780fad77fb7546040418563ba89c9ba97e92c76",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/ace2064fb741b3791fd752f2b6f7a46cf7e3af9aa3520c9206e5949e22706835/head_upper.png",
+      "changed_transparent_pixels": 19355,
+      "adjacent_black_pixels_before": 4506,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "plaza.image_048",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T11/full/parts/head_lower.png",
+        "sha256": "36c855570aff0f334949ad8d4e2778b6e144d81ea2210d57b1d6f9e6a19b22ea"
+      },
+      "runtime_sha256": "5c50048f1edf95481724388319b47c85d6fb66871a179b2e51f519bbb75a8969",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/3e54ef93838443d21b0e952dc73bae6bff473077c3b9696fbaf6b722f461dd59/head_lower.png",
+      "changed_transparent_pixels": 7127,
+      "adjacent_black_pixels_before": 1743,
+      "adjacent_black_pixels_after": 0
+    },
+    {
+      "id": "plaza.image_049",
+      "source": {
+        "operation": "nearest_edge_rgb_within_8px",
+        "path": "gunforge/games/g01/reports/art/T11/full/parts/tail_paper.png",
+        "sha256": "c3325dfb3d55613805365ab67e31136cb684f317c9a09a2047b4744fac3119b4"
+      },
+      "runtime_sha256": "19e27f36662e3920c25fad9c7a4ce65297d6cbdaffadc365de55efa93b00d21d",
+      "runtime_path": "gunforge/level_design/generated/lantern_city_cast/edge_fill/f83f1bb147b559ff9d2becd50c43362e5b8d027010410bfd247f2e7f95785d70/tail_paper.png",
+      "changed_transparent_pixels": 7490,
+      "adjacent_black_pixels_before": 2109,
+      "adjacent_black_pixels_after": 0
+    }
+  ],
+  "rendered_frames": [
+    {
+      "id": "cinema.image_017",
+      "rect": [
+        0.0,
+        0.0,
+        768.0,
+        530.0
+      ],
+      "scale": 0.625,
+      "size": [
+        498,
+        350
+      ],
+      "name": "cinema.image_017-0.png",
+      "changed_pixels": 140,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 52,
+      "before_sha256": "60a6e72996d7f76945ed650aa59d0efff546a07657d154655778b69366cbcf61",
+      "after_sha256": "23abbf16edba171698174b389b3744f5a2f86022c118d3f66e7c2faf52f172f0"
+    },
+    {
+      "id": "cinema.image_017",
+      "rect": [
+        0.0,
+        0.0,
+        768.0,
+        530.0
+      ],
+      "scale": 1.25,
+      "size": [
+        978,
+        681
+      ],
+      "name": "cinema.image_017-1.png",
+      "changed_pixels": 374,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 50,
+      "before_sha256": "1417a183653612792ad855ee73362e12bf1a3b04936195e7c2ea64743668eea6",
+      "after_sha256": "33d55a18e7eaf1a5e9ee6816e2163fef802447690e6b355361f476dbb475809f"
+    },
+    {
+      "id": "cinema.image_020",
+      "rect": [
+        0.0,
+        0.0,
+        703.0,
+        768.0
+      ],
+      "scale": 0.625,
+      "size": [
+        458,
+        498
+      ],
+      "name": "cinema.image_020-0.png",
+      "changed_pixels": 131,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 32,
+      "before_sha256": "7fe46eae8189bafb7c8a7e140c2363fec2f604c3ef111240c08daf1a9057725a",
+      "after_sha256": "b0d9ca48666290e781c2104f5c1ef31e2f3cb8fd04d78139139bf549d6d0aa5d"
+    },
+    {
+      "id": "cinema.image_020",
+      "rect": [
+        0.0,
+        0.0,
+        703.0,
+        768.0
+      ],
+      "scale": 1.25,
+      "size": [
+        897,
+        978
+      ],
+      "name": "cinema.image_020-1.png",
+      "changed_pixels": 436,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 35,
+      "before_sha256": "974eb94eedc3d3af19d663283902a7007af7a94ac0de9b8d565428d61db54472",
+      "after_sha256": "e9844123d469d7958a55086e1e5bfabc6b71110cd97435a2ccb10c34cd535275"
+    },
+    {
+      "id": "footbridge.image_018",
+      "rect": [
+        0.0,
+        0.0,
+        445.0,
+        569.0
+      ],
+      "scale": 0.625,
+      "size": [
+        297,
+        374
+      ],
+      "name": "footbridge.image_018-0.png",
+      "changed_pixels": 1313,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 40,
+      "before_sha256": "73662a9c01682a11283d7820bff98685ffcd2c8d92591637a5fa8eea0b5ddc05",
+      "after_sha256": "59e4e9dce9e76f4a482a50c2886febc52bff71094e85fea098ca29d765b28294"
+    },
+    {
+      "id": "footbridge.image_018",
+      "rect": [
+        0.0,
+        0.0,
+        445.0,
+        569.0
+      ],
+      "scale": 1.25,
+      "size": [
+        575,
+        730
+      ],
+      "name": "footbridge.image_018-1.png",
+      "changed_pixels": 5100,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 47,
+      "before_sha256": "f17c01a2ebd8938c09d0e6fb607aa03cc62ffab6ee32fb6d29fcc6d71e3572f7",
+      "after_sha256": "e9524f1de6388b56c25e3a3a9b32ff057b6ba40c234316e083937863869bf0dc"
+    },
+    {
+      "id": "footbridge.image_019",
+      "rect": [
+        0.0,
+        0.0,
+        445.0,
+        569.0
+      ],
+      "scale": 0.625,
+      "size": [
+        297,
+        374
+      ],
+      "name": "footbridge.image_019-0.png",
+      "changed_pixels": 1632,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 41,
+      "before_sha256": "ace396f82700a63cb5c994d0c2403e7017fba8a93e960f4dcf8e96d14be162dd",
+      "after_sha256": "9cf10202a8750ee5d77040133d41b2de7cbf7ec498ab4b59405b81a59f112995"
+    },
+    {
+      "id": "footbridge.image_019",
+      "rect": [
+        0.0,
+        0.0,
+        445.0,
+        569.0
+      ],
+      "scale": 1.25,
+      "size": [
+        575,
+        730
+      ],
+      "name": "footbridge.image_019-1.png",
+      "changed_pixels": 6173,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 49,
+      "before_sha256": "6d2637ae9b9ea0e26ae58fd41544200857634781f0f78f53611b1058e7128e37",
+      "after_sha256": "de1da602fc23dee5eea7b6408da783976917d7b60ad9467748f0ab4e5848cc61"
+    },
+    {
+      "id": "hud.crosshair",
+      "rect": [
+        0.0,
+        0.0,
+        80.0,
+        80.0
+      ],
+      "scale": 0.625,
+      "size": [
+        68,
+        68
+      ],
+      "name": "hud.crosshair-0.png",
+      "changed_pixels": 241,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 42,
+      "before_sha256": "4309976205568e2c1bd797e75f90fdb4fff2a52dedc016732214129d736af126",
+      "after_sha256": "79be5e34c6b9918687ae0592e1162ad6cad06a15eb0ac64df2ff3595349dfec7"
+    },
+    {
+      "id": "hud.crosshair",
+      "rect": [
+        0.0,
+        0.0,
+        80.0,
+        80.0
+      ],
+      "scale": 1.25,
+      "size": [
+        118,
+        118
+      ],
+      "name": "hud.crosshair-1.png",
+      "changed_pixels": 905,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 38,
+      "before_sha256": "7b371192f83bc0d5cfa8ab1c7ec04656339b3508e78c072afd99f52f1ba8c16c",
+      "after_sha256": "976890b0902b79f77c9491026c0d380e2d8b3e7c29fa62a12eb070a8f9aa5d21"
+    },
+    {
+      "id": "plaza.image_047",
+      "rect": [
+        0.0,
+        0.0,
+        506.0,
+        276.0
+      ],
+      "scale": 0.625,
+      "size": [
+        335,
+        191
+      ],
+      "name": "plaza.image_047-0.png",
+      "changed_pixels": 1838,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 53,
+      "before_sha256": "b539db1ab70209d36148ed8b3977fe9052237e3a1242c67b7272b4a31af3db8a",
+      "after_sha256": "839a1027a8d15ef525fbea5e356a159d0d55a7f73a9a3488e259d15a171e6aeb"
+    },
+    {
+      "id": "plaza.image_047",
+      "rect": [
+        0.0,
+        0.0,
+        506.0,
+        276.0
+      ],
+      "scale": 1.25,
+      "size": [
+        651,
+        363
+      ],
+      "name": "plaza.image_047-1.png",
+      "changed_pixels": 6707,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 51,
+      "before_sha256": "c200e4e728270a52bf485c31819a63ca1814851abb833c7a9e7d42e183426160",
+      "after_sha256": "143a10d12d3d3b8d9f69dde80cb03a11a7edba66e54750b09c70b30696cfa948"
+    },
+    {
+      "id": "plaza.image_048",
+      "rect": [
+        0.0,
+        0.0,
+        320.0,
+        132.0
+      ],
+      "scale": 0.625,
+      "size": [
+        218,
+        101
+      ],
+      "name": "plaza.image_048-0.png",
+      "changed_pixels": 622,
+      "minimum_rgb_byte_delta": 0,
+      "maximum_rgb_byte_delta": 50,
+      "before_sha256": "2306136f071c8283c29cc5a81769ce3d7386007cd26a649f9dddf69e3e22624c",
+      "after_sha256": "42fca1ee724d05357500dda7f5b2e60c212e8a5d2e45f0cac6bf9719d72c92dc"
+    },
+    {
+      "id": "plaza.image_048",
+      "rect": [
+        0.0,
+        0.0,
+        320.0,
+        132.0
+      ],
+      "scale": 1.25,
+      "size": [
+        418,
+        183
+      ],
+      "name": "plaza.image_048-1.png",
+      "changed_pixels": 2213,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 49,
+      "before_sha256": "bc33adef5218f0e0dc90f264667e6d26fbc2950b819cc005e9f50e9c67cdd184",
+      "after_sha256": "bbb62751a602e986107136a979b32fb08f9078ec0e31c41cde1da6aa9d2658e2"
+    },
+    {
+      "id": "plaza.image_049",
+      "rect": [
+        0.0,
+        0.0,
+        328.0,
+        152.0
+      ],
+      "scale": 0.625,
+      "size": [
+        223,
+        113
+      ],
+      "name": "plaza.image_049-0.png",
+      "changed_pixels": 883,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 49,
+      "before_sha256": "7812966f456de9e8f2094188af0b57dc25702b4fb499a8b598a9410f57338b84",
+      "after_sha256": "9d7aaa680fb253c9b825a319ff8578d9eab57ab5b2f9d91c3b260f72719031b8"
+    },
+    {
+      "id": "plaza.image_049",
+      "rect": [
+        0.0,
+        0.0,
+        328.0,
+        152.0
+      ],
+      "scale": 1.25,
+      "size": [
+        428,
+        208
+      ],
+      "name": "plaza.image_049-1.png",
+      "changed_pixels": 3164,
+      "minimum_rgb_byte_delta": -1,
+      "maximum_rgb_byte_delta": 46,
+      "before_sha256": "24b283de1a3ab505bea702e969a44685eede2e8180a7e823b20bb3b5261d306a",
+      "after_sha256": "d416280c53f4d8091c7625ffdefb6cbabf52cf5cd856e3bba316456647cd7b92"
+    }
+  ],
+  "blocker_shots": {
+    "left": {
+      "blocker": {
+        "alpha": 1.0,
+        "point": [
+          14.5,
+          3.5
+        ],
+        "result": {
+          "hit": false,
+          "kind": "blocker",
+          "ok": true
+        }
+      },
+      "miss": {
+        "alpha": 0.062745101749897,
+        "point": [
+          47.5,
+          3.5
+        ],
+        "result": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        }
+      }
+    },
+    "right": {
+      "blocker": {
+        "alpha": 0.996078431606293,
+        "point": [
+          1632.5,
+          3.5
+        ],
+        "result": {
+          "hit": false,
+          "kind": "blocker",
+          "ok": true
+        }
+      },
+      "miss": {
+        "alpha": 0.0,
+        "point": [
+          312.5,
+          3.5
+        ],
+        "result": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        }
+      }
+    }
+  },
+  "route": {
+    "build_id": "5bdaecd61df7ce8c516f5ec85bc6d0a0d5e99817e1bd5e906fe57c10f16413dd",
+    "chapter_transition_tick": 6821,
+    "counters": {
+      "ammo": 11.0,
+      "lives": 4,
+      "rescued": 7,
+      "score": 9275,
+      "shots": 109
+    },
+    "end_tick": 13002,
+    "ending": {
+      "city_texture_preloaded": false,
+      "city_tick": 9954,
+      "light_tick": 9522,
+      "natural_result_tick": 13002,
+      "quote_tick": 12390,
+      "skip": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "result": "clear",
+        "result_tick": 9523,
+        "start_tick": 9522
+      },
+      "skip_from_city": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "result": "clear",
+        "result_tick": 10075,
+        "start_tick": 10074
+      },
+      "skip_from_quote": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "result": "clear",
+        "result_tick": 12391,
+        "start_tick": 12390
+      },
+      "skip_from_wide": {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 9275,
+          "shots": 109
+        },
+        "result": "clear",
+        "result_tick": 10891,
+        "start_tick": 10890
+      },
+      "wide_texture_preloaded": false,
+      "wide_tick": 10770
+    },
+    "failure_retries": [
+      {
+        "after_retry": {
+          "ammo": 12.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 0
+        },
+        "before_retry": {
+          "ammo": 6.0,
+          "lives": 0,
+          "rescued": 7,
+          "score": 8575,
+          "shots": 102
+        },
+        "defeat_tick": 10252,
+        "first_shot": {
+          "ammo": 11.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 1
+        },
+        "station": 15
+      }
+    ],
+    "failures": [],
+    "gpu_capture": false,
+    "handoffs": [
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 3875,
+          "shots": 39
+        },
+        "station": "stall",
+        "tick": 5713
+      },
+      {
+        "counters": {
+          "ammo": 11.0,
+          "lives": 4,
+          "rescued": 1,
+          "score": 4475,
+          "shots": 49
+        },
+        "station": "video_shop",
+        "tick": 6222
+      },
+      {
+        "counters": {
+          "ammo": 7.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4775,
+          "shots": 53
+        },
+        "station": "footbridge",
+        "tick": 6506
+      },
+      {
+        "counters": {
+          "ammo": 4.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 4975,
+          "shots": 56
+        },
+        "station": "plaza",
+        "tick": 6619
+      },
+      {
+        "counters": {
+          "ammo": 5.0,
+          "lives": 4,
+          "rescued": 2,
+          "score": 6075,
+          "shots": 67
+        },
+        "station": "ticket_office",
+        "tick": 6911
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6375,
+          "shots": 72
+        },
+        "station": "poster_hall",
+        "tick": 7170
+      },
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 3,
+          "score": 6575,
+          "shots": 75
+        },
+        "station": "auditorium",
+        "tick": 7402
+      },
+      {
+        "counters": {
+          "ammo": 5.0,
+          "lives": 4,
+          "rescued": 4,
+          "score": 6875,
+          "shots": 79
+        },
+        "station": "projection_booth",
+        "tick": 7661
+      },
+      {
+        "counters": {
+          "ammo": 1.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 7175,
+          "shots": 83
+        },
+        "station": "screen_stage",
+        "tick": 7920
+      },
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 5,
+          "score": 7575,
+          "shots": 87
+        },
+        "station": "waiting_room",
+        "tick": 8067
+      },
+      {
+        "counters": {
+          "ammo": 4.0,
+          "lives": 4,
+          "rescued": 6,
+          "score": 7875,
+          "shots": 92
+        },
+        "station": "platform",
+        "tick": 8374
+      },
+      {
+        "counters": {
+          "ammo": 0.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8175,
+          "shots": 96
+        },
+        "station": "green_car",
+        "tick": 8681
+      },
+      {
+        "counters": {
+          "ammo": 9.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8375,
+          "shots": 99
+        },
+        "station": "lantern_base",
+        "tick": 8988
+      },
+      {
+        "counters": {
+          "ammo": 6.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8575,
+          "shots": 102
+        },
+        "station": "workbench",
+        "tick": 9256
+      }
+    ],
+    "old_chapter_poses_rejected": true,
+    "passed": true,
+    "pullback_tick": 9202,
+    "reached": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "reloads": 9,
+    "replay": {
+      "counters": {
+        "ammo": 11.0,
+        "lives": 4,
+        "rescued": 7,
+        "score": 9275,
+        "shots": 109
+      },
+      "end_tick": 13002,
+      "inputs": 118
+    },
+    "result": "clear",
+    "train_transition_tick": 7977
+  },
+  "raster_comparison_sha256": "14c3a341c8caa404b9ad9b5b00b9218ae37ae308b8814acb2d7e9016b4e3e647",
+  "probes_sha256": "faa9f62743f9c61e49ed9502947f09238449c48b4ea896c3bb8c6379a7a2188e",
+  "controls": {
+    "build_id": "5bdaecd61df7ce8c516f5ec85bc6d0a0d5e99817e1bd5e906fe57c10f16413dd",
+    "captures": true,
+    "failures": [],
+    "opening": true,
+    "passed": true,
+    "udp_shots": 3
+  },
+  "display": {
+    "build_id": "5bdaecd61df7ce8c516f5ec85bc6d0a0d5e99817e1bd5e906fe57c10f16413dd",
+    "captures": true,
+    "failures": [],
+    "passed": true,
+    "udp_shots": 19
+  },
+  "combat": {
+    "build_id": "5bdaecd61df7ce8c516f5ec85bc6d0a0d5e99817e1bd5e906fe57c10f16413dd",
+    "checks": {
+      "calibrated_white_border": {
+        "ammo": 8.0,
+        "bound_shapes": 0,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        },
+        "rescued": 1,
+        "score": 3500,
+        "submission": "submission:18:tick:5643",
+        "tick": 5644
+      },
+      "dark_band": {
+        "ammo": 9.0,
+        "bound_shapes": 0,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        },
+        "rescued": 1,
+        "score": 3500,
+        "submission": "submission:13:tick:5634",
+        "tick": 5635
+      },
+      "footbridge.bridge.bicycle": {
+        "ammo": 5.0,
+        "bound_shapes": 11,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        },
+        "rescued": 2,
+        "score": 4775,
+        "submission": "submission:8:tick:6515",
+        "tick": 6516
+      },
+      "footbridge.bridge.cyclist_resident": {
+        "ammo": 6.0,
+        "bound_shapes": 11,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        },
+        "rescued": 2,
+        "score": 4775,
+        "submission": "submission:3:tick:6506",
+        "tick": 6507
+      },
+      "frame_packets": [
+        "FRAME 24,48"
+      ],
+      "freed_paper": {
+        "ammo": 1.0,
+        "bound_shapes": 17,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        },
+        "rescued": 7,
+        "score": 7925,
+        "submission": "submission:13:tick:8392",
+        "tick": 8393
+      },
+      "hostile_cart": {
+        "ammo": 4.0,
+        "bound_shapes": 11,
+        "command": "SHOT",
+        "reply": {
+          "hit": true,
+          "kind": "primary",
+          "ok": true,
+          "target": "footbridge.bridge.cyclist"
+        },
+        "rescued": 2,
+        "score": 4875,
+        "submission": "submission:13:tick:6524",
+        "tick": 6525
+      },
+      "http_border": {
+        "body": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true,
+          "score": 7925.0
+        },
+        "result": 0,
+        "status": 200
+      },
+      "http_offscreen": {
+        "body": {
+          "ok": true,
+          "score": 7925.0
+        },
+        "result": 0,
+        "status": 200
+      },
+      "offscreen": {
+        "ammo": 8.0,
+        "bound_shapes": 0,
+        "command": "RELOAD",
+        "reply": {
+          "ok": true
+        },
+        "rescued": 1,
+        "score": 3500,
+        "submission": "submission:21:tick:5644",
+        "tick": 5645
+      },
+      "protected_paper": {
+        "ammo": 3.0,
+        "bound_shapes": 18,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "protected",
+          "ok": true
+        },
+        "rescued": 6,
+        "score": 7825,
+        "submission": "submission:3:tick:8374",
+        "tick": 8375
+      },
+      "rescue_ink": {
+        "ammo": 2.0,
+        "bound_shapes": 18,
+        "command": "SHOT",
+        "reply": {
+          "hit": true,
+          "kind": "primary",
+          "ok": true,
+          "target": "platform.platform.rescue"
+        },
+        "rescued": 7,
+        "score": 7925,
+        "submission": "submission:8:tick:8383",
+        "tick": 8384
+      },
+      "tadpole_1": {
+        "ammo": 11.0,
+        "bound_shapes": 8,
+        "command": "SHOT",
+        "reply": {
+          "hit": true,
+          "kind": "primary",
+          "ok": true,
+          "target": "puddle.puddle.tadpole1"
+        },
+        "rescued": 1,
+        "score": 3600,
+        "submission": "submission:28:tick:5673",
+        "tick": 5674
+      },
+      "tadpole_2": {
+        "ammo": 10.0,
+        "bound_shapes": 6,
+        "command": "SHOT",
+        "reply": {
+          "hit": true,
+          "kind": "weak",
+          "ok": true,
+          "target": "puddle.puddle.tadpole2"
+        },
+        "rescued": 1,
+        "score": 3725,
+        "submission": "submission:33:tick:5682",
+        "tick": 5683
+      },
+      "tadpole_3": {
+        "ammo": 9.0,
+        "bound_shapes": 4,
+        "command": "SHOT",
+        "reply": {
+          "hit": true,
+          "kind": "primary",
+          "ok": true,
+          "target": "puddle.puddle.tadpole3"
+        },
+        "rescued": 1,
+        "score": 3825,
+        "submission": "submission:38:tick:5691",
+        "tick": 5692
+      },
+      "tadpole_tail": {
+        "ammo": 11.0,
+        "bound_shapes": 8,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        },
+        "rescued": 1,
+        "score": 3500,
+        "submission": "submission:3:tick:5616",
+        "tick": 5617
+      },
+      "transition": {
+        "ammo": 9.0,
+        "bound_shapes": 2,
+        "command": "SHOT",
+        "reply": {
+          "ok": false,
+          "reason": "not_running"
+        },
+        "rescued": 1,
+        "score": 3825,
+        "submission": "submission:41:tick:5692",
+        "tick": 5693
+      },
+      "white_border": {
+        "ammo": 10.0,
+        "bound_shapes": 0,
+        "command": "SHOT",
+        "reply": {
+          "hit": false,
+          "kind": "miss",
+          "ok": true
+        },
+        "rescued": 1,
+        "score": 3500,
+        "submission": "submission:8:tick:5625",
+        "tick": 5626
+      }
+    },
+    "failures": [],
+    "passed": true,
+    "udp_sequences": 15
+  },
+  "smoke": {
+    "build_id": "5bdaecd61df7ce8c516f5ec85bc6d0a0d5e99817e1bd5e906fe57c10f16413dd",
+    "http_error": 0,
+    "level_player_ready": true,
+    "udp_errors": []
+  },
+  "window_resize": {
+    "passes": 6,
+    "triggers": 37,
+    "max_mapping_error_px": 0.00013647876039613,
+    "same_frame_resize": {
+      "from": [
+        960,
+        720
+      ],
+      "old_scale": 0.45500000521668,
+      "rendered_scale_before_udp": 0.45500000521668,
+      "to": [
+        1120,
+        700
+      ],
+      "trigger_before_draw": true
+    }
+  },
+  "cinema_weak_shots": {
+    "before": {
+      "build_id": "eaa193c147ee7bf342ee34f3d855ba61847108abe3a74c170617fba0d5317eaa",
+      "passed": true,
+      "shots": [
+        {
+          "point": [
+            538.5,
+            294.5
+          ],
+          "reply": {
+            "hit": true,
+            "kind": "weak",
+            "ok": true,
+            "target": "cinema.ticket_office.tape"
+          },
+          "target": "cinema.ticket_office.tape",
+          "tick": 7005
+        },
+        {
+          "point": [
+            1262.5,
+            458.5
+          ],
+          "reply": {
+            "hit": true,
+            "kind": "weak",
+            "ok": true,
+            "target": "cinema.poster_hall.umbrella"
+          },
+          "target": "cinema.poster_hall.umbrella",
+          "tick": 7350
+        }
+      ]
+    },
+    "after": {
+      "build_id": "5bdaecd61df7ce8c516f5ec85bc6d0a0d5e99817e1bd5e906fe57c10f16413dd",
+      "passed": true,
+      "shots": [
+        {
+          "point": [
+            538.5,
+            294.5
+          ],
+          "reply": {
+            "hit": true,
+            "kind": "weak",
+            "ok": true,
+            "target": "cinema.ticket_office.tape"
+          },
+          "target": "cinema.ticket_office.tape",
+          "tick": 7005
+        },
+        {
+          "point": [
+            1262.5,
+            458.5
+          ],
+          "reply": {
+            "hit": true,
+            "kind": "weak",
+            "ok": true,
+            "target": "cinema.poster_hall.umbrella"
+          },
+          "target": "cinema.poster_hall.umbrella",
+          "tick": 7350
+        }
+      ]
+    }
+  },
+  "unit_tests_passed": 26,
+  "dragon": {
+    "summary": {
+      "poses": 30,
+      "radius_passed": 30,
+      "hud_clear": 30,
+      "hidden_hittable_pixels": 0,
+      "C03_frames_passed": 11,
+      "min_radius_by_target_px": {
+        "body_08": 42.74,
+        "body_07": 43.76,
+        "body_06": 44.37,
+        "body_05": 45.01,
+        "body_04": 45.58,
+        "body_03": 46.33,
+        "body_02": 46.67,
+        "body_01": 47.15,
+        "dragon.mouth": 42.67
+      }
+    },
+    "checks_sha256": "7a9ae8e0276d01237ad6988766edbcfa4ef82d1f92db41d9f864cbc9c7ade9d7"
+  },
+  "screen_boss": {
+    "summary": {
+      "targets": 4,
+      "radius_passed": 4,
+      "hud_clear_at_camera_extremes": 4,
+      "hit_pixels_outside_visual_alpha": 0,
+      "positive_warm_light_swaps": 3,
+      "C03_frames_passed": 4
+    },
+    "checks_sha256": "a3c44ee731e63bd838b779c2be6101ce5910910381c058d345a5b974c02c337e"
+  },
+  "tracking_C13": {
+    "display_frames": 101,
+    "admissible": 606,
+    "passed_projections": 606,
+    "outside_geometry_contract": 202,
+    "max_admissible_corner_error_camera_px": 0.749,
+    "negative_controls": {
+      "missing_border_rejected": true,
+      "solid_white_rectangle_rejected": true
+    },
+    "physical_capture": "pending"
+  }
+}

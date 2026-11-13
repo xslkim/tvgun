@@ -1,0 +1,147 @@
+{
+  "package": "paper.lantern_city_ui",
+  "build_id": "516c335b9443806afb2a2f7bbf057ef11333b1f336945998bf6253b0038af994",
+  "source_revision": "4e36b86a19a221718f55bc8b09e73b39c33ced3845336e17575602df38c0afff",
+  "engine": "Godot 4.6.3 Windows",
+  "gpu": "NVIDIA GeForce RTX 3080 Ti",
+  "action_test": {
+    "build_id": "516c335b9443806afb2a2f7bbf057ef11333b1f336945998bf6253b0038af994",
+    "captures": true,
+    "failures": [],
+    "opening": true,
+    "passed": true,
+    "udp_shots": 3
+  },
+  "action_test_script": "gunforge/framework/tests/paper_action_tests.gd",
+  "route": {
+    "build_id": "516c335b9443806afb2a2f7bbf057ef11333b1f336945998bf6253b0038af994",
+    "passed": true,
+    "reached": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "replay": {
+      "counters": {
+        "ammo": 2.0,
+        "lives": 4,
+        "rescued": 7,
+        "score": 8900,
+        "shots": 106
+      },
+      "end_tick": 9992,
+      "inputs": 114
+    },
+    "failure_retries": [
+      {
+        "after_retry": {
+          "ammo": 12.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 0
+        },
+        "before_retry": {
+          "ammo": 9.0,
+          "lives": 0,
+          "rescued": 7,
+          "score": 8200,
+          "shots": 99
+        },
+        "defeat_tick": 10103,
+        "first_shot": {
+          "ammo": 11.0,
+          "lives": 5.0,
+          "rescued": 0.0,
+          "score": 0.0,
+          "shots": 1
+        },
+        "station": 15
+      }
+    ],
+    "ending": {
+      "light_tick": 9344,
+      "natural_result_tick": 9992,
+      "quote_tick": 9620,
+      "skip": {
+        "counters": {
+          "ammo": 2.0,
+          "lives": 4,
+          "rescued": 7,
+          "score": 8900,
+          "shots": 106
+        },
+        "result": "clear",
+        "result_tick": 9345,
+        "start_tick": 9344
+      }
+    }
+  },
+  "display_regression": {
+    "build_id": "516c335b9443806afb2a2f7bbf057ef11333b1f336945998bf6253b0038af994",
+    "captures": false,
+    "failures": [],
+    "passed": true,
+    "udp_shots": 19
+  },
+  "compiler_unit_tests_passed": 26,
+  "frame_dimensions": [
+    1776,
+    936
+  ],
+  "start_button_states_distinct": true,
+  "frames": {
+    "start_button.jpg": {
+      "jpg_sha256": "fc8af1589e17b0f0b9827128fa4a262b30a789c205973474dbb3e501948e00ce",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0025548384923384923
+        }
+      }
+    },
+    "start_hover.jpg": {
+      "jpg_sha256": "3750e5e403a8fe446afe4b6cff9c5a43605a22dac6841bf9588e6c375c2f6fea",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0025548384923384923
+        }
+      }
+    },
+    "start_pressed.jpg": {
+      "jpg_sha256": "8ffc5d898907945313edbbcaa6ea29cb867d5ce9441b27f6e5976c2a16fcfa15",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0025548384923384923
+        }
+      }
+    },
+    "retry_button.jpg": {
+      "jpg_sha256": "ca589dc1e6460e1e9f5424bad9e0bf123ca78e7842492fa9451c55faabce2ddd",
+      "content_C03": {
+        "status": "pass",
+        "reason": "Visible alpha-weighted encoded luminance",
+        "details": {
+          "clipped_fraction": 0.0031227140602140603
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "build_id": "85d234e0f4b4f2865881d2e355bf897f82d2af93ae6f6950c6431e5adada59c6",
+  "checks": {
+    "calibrated_white_border": {
+      "ammo": 8.0,
+      "bound_shapes": 0,
+      "command": "SHOT",
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 1,
+      "score": 3500,
+      "submission": "submission:18:tick:5643",
+      "tick": 5644
+    },
+    "dark_band": {
+      "ammo": 9.0,
+      "bound_shapes": 0,
+      "command": "SHOT",
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 1,
+      "score": 3500,
+      "submission": "submission:13:tick:5634",
+      "tick": 5635
+    },
+    "footbridge.bridge.bicycle": {
+      "ammo": 5.0,
+      "bound_shapes": 11,
+      "command": "SHOT",
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:8:tick:6515",
+      "tick": 6516
+    },
+    "footbridge.bridge.cyclist_resident": {
+      "ammo": 6.0,
+      "bound_shapes": 11,
+      "command": "SHOT",
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 2,
+      "score": 4775,
+      "submission": "submission:3:tick:6506",
+      "tick": 6507
+    },
+    "frame_packets": [
+      "FRAME 24,48"
+    ],
+    "freed_paper": {
+      "ammo": 1.0,
+      "bound_shapes": 17,
+      "command": "SHOT",
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 7,
+      "score": 7925,
+      "submission": "submission:13:tick:8392",
+      "tick": 8393
+    },
+    "hostile_cart": {
+      "ammo": 4.0,
+      "bound_shapes": 11,
+      "command": "SHOT",
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "footbridge.bridge.cyclist"
+      },
+      "rescued": 2,
+      "score": 4875,
+      "submission": "submission:13:tick:6524",
+      "tick": 6525
+    },
+    "http_border": {
+      "body": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true,
+        "score": 7925.0
+      },
+      "result": 0,
+      "status": 200
+    },
+    "http_offscreen": {
+      "body": {
+        "ok": true,
+        "score": 7925.0
+      },
+      "result": 0,
+      "status": 200
+    },
+    "offscreen": {
+      "ammo": 8.0,
+      "bound_shapes": 0,
+      "command": "RELOAD",
+      "reply": {
+        "ok": true
+      },
+      "rescued": 1,
+      "score": 3500,
+      "submission": "submission:21:tick:5644",
+      "tick": 5645
+    },
+    "protected_paper": {
+      "ammo": 3.0,
+      "bound_shapes": 18,
+      "command": "SHOT",
+      "reply": {
+        "hit": false,
+        "kind": "protected",
+        "ok": true
+      },
+      "rescued": 6,
+      "score": 7825,
+      "submission": "submission:3:tick:8374",
+      "tick": 8375
+    },
+    "rescue_ink": {
+      "ammo": 2.0,
+      "bound_shapes": 18,
+      "command": "SHOT",
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "platform.platform.rescue"
+      },
+      "rescued": 7,
+      "score": 7925,
+      "submission": "submission:8:tick:8383",
+      "tick": 8384
+    },
+    "tadpole_1": {
+      "ammo": 11.0,
+      "bound_shapes": 8,
+      "command": "SHOT",
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "puddle.puddle.tadpole1"
+      },
+      "rescued": 1,
+      "score": 3600,
+      "submission": "submission:28:tick:5673",
+      "tick": 5674
+    },
+    "tadpole_2": {
+      "ammo": 10.0,
+      "bound_shapes": 6,
+      "command": "SHOT",
+      "reply": {
+        "hit": true,
+        "kind": "weak",
+        "ok": true,
+        "target": "puddle.puddle.tadpole2"
+      },
+      "rescued": 1,
+      "score": 3725,
+      "submission": "submission:33:tick:5682",
+      "tick": 5683
+    },
+    "tadpole_3": {
+      "ammo": 9.0,
+      "bound_shapes": 4,
+      "command": "SHOT",
+      "reply": {
+        "hit": true,
+        "kind": "primary",
+        "ok": true,
+        "target": "puddle.puddle.tadpole3"
+      },
+      "rescued": 1,
+      "score": 3825,
+      "submission": "submission:38:tick:5691",
+      "tick": 5692
+    },
+    "tadpole_tail": {
+      "ammo": 11.0,
+      "bound_shapes": 8,
+      "command": "SHOT",
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 1,
+      "score": 3500,
+      "submission": "submission:3:tick:5616",
+      "tick": 5617
+    },
+    "transition": {
+      "ammo": 9.0,
+      "bound_shapes": 2,
+      "command": "SHOT",
+      "reply": {
+        "ok": false,
+        "reason": "not_running"
+      },
+      "rescued": 1,
+      "score": 3825,
+      "submission": "submission:41:tick:5692",
+      "tick": 5693
+    },
+    "white_border": {
+      "ammo": 10.0,
+      "bound_shapes": 0,
+      "command": "SHOT",
+      "reply": {
+        "hit": false,
+        "kind": "miss",
+        "ok": true
+      },
+      "rescued": 1,
+      "score": 3500,
+      "submission": "submission:8:tick:5625",
+      "tick": 5626
+    }
+  },
+  "failures": [],
+  "passed": true,
+  "udp_sequences": 15,
+  "candidate_manifest_sha256": "c285be9517326b4eb2edce437c0fd08b0dc9b54fde852a49abf1c4b89fe645bd",
+  "previous_candidate_manifest_sha256": "955a8fef4527d16c14458f30dc1dcb10bc3041327e423180e58fa27337400156",
+  "player_sha256": "c3edfe39b35a449a6ccefa682fed4a371d13612b6c77560fb7a664074f31acbf",
+  "engine": "Godot 4.6.3 Windows Compatibility",
+  "scope": "loopback UDP and HTTP, isolated player and assets",
+  "physical_lightgun": "pending",
+  "campaign_recording_inputs": 118,
+  "pipeline_tests_passed": 26,
+  "previous_player": {
+    "white_border": "RELOAD",
+    "dark_band": "RELOAD",
+    "calibrated_white_border": "RELOAD"
+  },
+  "menu_and_tracking_regression": {
+    "build_id": "85d234e0f4b4f2865881d2e355bf897f82d2af93ae6f6950c6431e5adada59c6",
+    "captures": false,
+    "failures": [],
+    "opening": true,
+    "passed": true,
+    "udp_shots": 3
+  }
+}

@@ -5,7 +5,7 @@ import math
 import numpy as np
 from PIL import Image, ImageChops, ImageOps
 
-from cinema_resident import build_rescue_clips, build_resident
+from cinema_resident import RESCUE_INK_SIZE, build_rescue_clips, build_resident
 from combat_cues import ensure_combat_cues
 from compiler import DEFAULT_CACHE, ROOT, compile_source, read, write_build
 from freeze_baseline import dump
@@ -255,10 +255,11 @@ class Cinema:
                                        for at, shift in ((0, 0), (1500, travel), (3800, -travel), (6000, 0))]}
         return entity
 
-    def resident(self, stage, data, art=ART):
+    def resident(self, stage, data, art=ART, *, folder=None, ink_size=RESCUE_INK_SIZE):
         rig = data["id"]
-        folder = art / "actors" / rig
-        character, atlas = build_resident(folder, ART / "screen_shadow/reel_ink.png", self.generated)
+        if folder is None:
+            folder = art / "actors" / rig
+        character, atlas = build_resident(folder, ART / "screen_shadow/reel_ink.png", self.generated, ink_size=ink_size)
         self.presentation["puppets"][rig] = {"character": self.resource(character, "metadata"),
                                              "atlas": self.image(atlas), "clips": self.rescue_clips}
         x, y, width, height = data["rect"]

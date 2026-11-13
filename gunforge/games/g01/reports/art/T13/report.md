@@ -199,3 +199,51 @@ C04 色板覆盖率为 94.32%，9 张玩法样本和 10 张视差抓图均通过
 ```
 
 候车室开场先看墨鸦胸口的双眼，再射亮顶灯。墨鸦飞入光区时，双眼应切换为朱砂印记。
+
+## 可读性合并候选
+
+`paper.train_station_readability` 把候车室、站台、绿皮车厢的普通态对比度试样与四站硬化眼接到同一条路线。20 个普通态样本的最小亮度中位差为 0.214，五个硬化姿态的 10 只眼均为 18–22 像素，亮度中位差最低为 0.529。33 张样本通过 C03，八个预警在 1/8 缩略图保留可见差异。八个同姿态普通态样本的命中遮罩与原版逐像素一致。[普通态同姿态 JPG](variants/combined_readability/normal_before_after.jpg) · [硬化眼同姿态 JPG](variants/combined_readability/hardened_before_after.jpg) · [1/8 缩略图与数值](gallery.html#combined-readability)
+
+Windows Godot 4.6.3 验证四站点灯、挡弹、失败重试、跨站资源和 16 条输入回放。两轮连续回放共渲染 3286 帧，四站首次点灯均为零纹理上传，五次切换可见纹理均已缓存。RTX 3080 Ti 两轮最慢一帧 8.38 ms，含预载的场景与角色纹理峰值为 61.39 MiB。[软件与预载记录](variants/combined_readability/software_checks.json)
+
+场景色调、墨伞眼形和缩略图辨识度留待美术预审。整关 A5 和显示器、电视上的手机光枪实测在工作台 Boss 接入后进行。[「忘」字七笔遮罩](forget_strokes/stroke_order.jpg)
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\gunforge\start_level_player.ps1 -Package paper.train_station_readability -Candidate
+```
+
+## 工作台「忘」字 Boss 候选
+
+用户已确认火车站可读性合并候选验证通过。`paper.train_station_boss` 沿用四站合并版，在拉镜结束后让七笔墨字上浮。当前一笔有脉动的朱砂描边和落笔光点。误射只擦伤未轮到的笔画并触发灰色反馈，重复误射不会提前打散该笔。第 3 笔在交叉处覆盖第 2 笔。每散一笔留下淡灰残迹，并改变下一轮墨潮的节奏、宽度和落点。第 7 笔净化后结算。[第一笔 JPG](gameplay/workbench_boss/forget_first_stroke.jpg) · [误射 JPG](gameplay/workbench_boss/forget_wrong_stroke.jpg) · [最终残迹 JPG](gameplay/workbench_boss/forget_final_residue.jpg)
+
+Windows Godot 从候车室回归到结算，覆盖工作台落地时的纹理预载、上浮禁射、顺序命中、交叉遮挡、Boss 失败重试，以及 26 条输入回放。验证路线最终为 4 条灯芯、0 发光弹、2 人获救和 1700 分，四张 GPU 抓帧通过 C03。[Boss 软件验证记录](gameplay/workbench_boss/software_checks.json)
+
+下一步将第三关接到夜市和旧影院连续包。Boss 美术与实体光枪仍待第三关整关验收。[七笔遮罩和来源记录](gallery.html#strokes)
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\gunforge\start_level_player.ps1 -Package paper.train_station_boss -Candidate
+```
+
+## 三关连续候选
+
+`paper.lantern_city_campaign` 复用夜市、旧影院和火车站候选，两个章节转场各停留 1.5 秒。净化银幕影后，保留银幕画面和三台恢复暖光的放映机，显示第三关提示，再进入候车室。进入下一关时保留灯芯、光弹、获救人数和印记，且拒绝上一关已提交的旧瞄准帧。[夜市转旧影院 JPG](gameplay/campaign/cinema_transition.jpg) · [旧影院转火车站 JPG](gameplay/campaign/train_station_transition.jpg) · [候车室接续 JPG](gameplay/campaign/station_11_waiting_room.jpg)
+
+Windows Godot 在无界面和 GPU 两种运行中均依序通过 15 站，结算为 4 条灯芯、2 发光弹、7 人获救和 8900 分。114 条输入回放复现通关状态和事件轨迹。故意在工作台失败后，重试回到巷口并恢复初始资源。四张代表抓帧通过 C03。[工作台结算 JPG](gameplay/campaign/campaign_clear.jpg) · [三关软件回归](gameplay/campaign/software_checks.json)
+
+下一步接入工作台结局过场。第三关的 A5 和实体光枪验收仍待完成。
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\gunforge\start_level_player.ps1 -Package paper.lantern_city_campaign -Candidate
+```
+
+## 工作台片尾初版
+
+三关候选第七笔净化后，收起战斗 HUD 和墨痕，在工作台上逐渐点亮纸灯，播放点灯声，随后出现字幕「灯亮着，就还在。」片尾从点灯开始到总结算共 10.8 秒，可按 Enter、Esc 或光枪开始键跳过。当前是工作台短版，正式旁白和灯城回望仍待制作。[点灯前 JPG](gameplay/ending/ending_unlit.jpg) · [点灯后与字幕 JPG](gameplay/ending/ending_quote.jpg) · [总结算 JPG](gameplay/ending/campaign_clear.jpg)
+
+Windows 无界面和 GPU 回归均通过 15 站、114 条输入回放和完整片尾。片尾期间射击和换弹无效。跳过后一帧到达同一结算并保留灯芯、光弹、获救人数和分数。另在播放器中验证了 Enter、Esc、设备开始事件及结算后重试。工作台失败仍可从夜市巷口重试，独立第三关 Boss 也通过了重编后的回归。三张片尾抓帧通过 C03。实体光枪待实测。[片尾软件回归](gameplay/ending/software_checks.json)
+
+试玩沿用三关候选入口。
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\gunforge\start_level_player.ps1 -Package paper.lantern_city_campaign -Candidate
+```

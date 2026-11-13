@@ -52,7 +52,8 @@ def inspect(folder, sample):
     reference = folder / f"{name}_reference.png"
     actual, behind = image_for(frame), image_for(reference)
     thumb = actual.resize(THUMBNAIL, Image.Resampling.LANCZOS)
-    row = dict(sample, frame_sha256=digest(frame), reference_sha256=digest(reference))
+    row = dict(sample, frame_sha256=digest(frame), reference_sha256=digest(reference),
+               C03=run("C03", {"file": frame}))
     state = sample["state"]
     if state == "warning":
         background = behind.resize(THUMBNAIL, Image.Resampling.LANCZOS)
@@ -91,14 +92,13 @@ def inspect(folder, sample):
     return row, thumb
 
 
-def contact_sheet(titles, previews, columns, target):
+def contact_sheet(titles, previews, columns, target, font):
     width, height = THUMBNAIL
     gap, margin = 12, 16
     header, row_height = 42, height + 47
     page = Image.new("RGB", (2 * margin + len(columns) * width + (len(columns) - 1) * gap,
                              margin + header + len(STOPS) * row_height), "#181c28")
     draw = ImageDraw.Draw(page)
-    font = ImageFont.truetype("C:/Windows/Fonts/msyh.ttc", 15)
     color = "#e7e2d6"
     for column, (actor, state, label) in enumerate(columns):
         x = margin + column * (width + gap)
@@ -119,7 +119,11 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("captures", type=Path)
     parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument("--font", default="C:/Windows/Fonts/msyh.ttc")
+    parser.add_argument("--build", type=Path, help="Require all captures to come from this compiled campaign")
     args = parser.parse_args()
+    build = read_json(args.build) if args.build else None
+    font = ImageFont.truetype(args.font, 15)
     args.output.mkdir(parents=True, exist_ok=True)
     titles = {row["id"]: row["title"] for row in read_json(REPORT / "layouts.json")["stations"]}
     stages, previews = {}, {}
@@ -128,17 +132,20 @@ def main():
         receipt = read_json(folder / "samples.json")
         if not receipt["passed"] or receipt["stage"] != stage:
             raise ValueError(f"GPU capture verification failed for {stage}")
+        if build and (receipt["build_id"] != build["build_id"] or receipt["source_revision"] != build["source_revision"]
+                      or "campaign_entry_tick" not in receipt):
+            raise ValueError(f"Expected captures from campaign {build['build_id']} for {stage}")
         results = []
         for sample in receipt["samples"]:
             row, thumb = inspect(folder, sample)
-            previews[stage, row["actor"], row["state"]] = thumb
+            previews.setdefault((stage, row["actor"], row["state"]), thumb)
             results.append(row)
         stages[stage] = {**receipt, "samples": results}
     contact_sheet(titles, previews, [(actor, state, label + suffix)
                   for state, suffix in (("normal", "可射"), ("hardened", "硬化")) for actor, label in ACTORS.items()],
-                  args.output / "targets_1_8.jpg")
+                  args.output / "targets_1_8.jpg", font)
     contact_sheet(titles, previews, [(actor, "warning", label + "预警") for actor, label in ACTORS.items()],
-                  args.output / "warnings_1_8.jpg")
+                  args.output / "warnings_1_8.jpg", font)
     rows = [row for stage in stages.values() for row in stage["samples"]]
     normal = [row for row in rows if row["state"] == "normal"]
     hardened = [row for row in rows if row["state"] == "hardened"]
@@ -147,10 +154,14 @@ def main():
     summary = {"normal_numeric_passed": sum(row["numeric_passed"] for row in normal), "normal_samples": len(normal),
                "hardened_stamp_proxy_samples": len(hardened) - len(eyes), "hardened_eye_samples": len(eyes),
                "hardened_eye_numeric_passed": sum(row["numeric_passed"] for row in eyes), "warning_samples": len(warnings),
-               "warning_visible_at_eighth": sum(bool(row["pixels_changed_at_eighth"]) for row in warnings)}
-    write_json(args.output / "checks.json", {"scope": "fixed gameplay poses for four stops; warning and thumbnail acceptance at A5",
-               "summary": summary, "stages": stages,
-               "previews": {name: digest(args.output / name) for name in ("targets_1_8.jpg", "warnings_1_8.jpg")}})
+               "warning_visible_at_eighth": sum(bool(row["pixels_changed_at_eighth"]) for row in warnings),
+               "brightness_samples": len(rows), "brightness_passed": sum(row["C03"]["status"] == "pass" for row in rows)}
+    evidence = {"scope": "fixed gameplay poses for four stops; warning and thumbnail acceptance at A5",
+                "summary": summary, "stages": stages,
+                "previews": {name: digest(args.output / name) for name in ("targets_1_8.jpg", "warnings_1_8.jpg")}}
+    if build:
+        evidence.update(build_id=build["build_id"], source_revision=build["source_revision"], compiled_sha256=digest(args.build))
+    write_json(args.output / "checks.json", evidence)
     print(summary)
 
 

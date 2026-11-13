@@ -1,0 +1,74 @@
+[
+  {
+    "id": "cinema.image_017",
+    "rect": [
+      0,
+      0,
+      768,
+      530
+    ]
+  },
+  {
+    "id": "cinema.image_020",
+    "rect": [
+      0,
+      0,
+      703,
+      768
+    ]
+  },
+  {
+    "id": "footbridge.image_018",
+    "rect": [
+      0,
+      0,
+      445,
+      569
+    ]
+  },
+  {
+    "id": "footbridge.image_019",
+    "rect": [
+      0,
+      0,
+      445,
+      569
+    ]
+  },
+  {
+    "id": "hud.crosshair",
+    "rect": [
+      0,
+      0,
+      80,
+      80
+    ]
+  },
+  {
+    "id": "plaza.image_047",
+    "rect": [
+      0,
+      0,
+      506,
+      276
+    ]
+  },
+  {
+    "id": "plaza.image_048",
+    "rect": [
+      0,
+      0,
+      320,
+      132
+    ]
+  },
+  {
+    "id": "plaza.image_049",
+    "rect": [
+      0,
+      0,
+      328,
+      152
+    ]
+  }
+]

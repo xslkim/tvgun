@@ -56,6 +56,14 @@ def validate_scene(source,root,error):
   image(layer['resource'])
   if 'section' in layer and layer['section'] not in source.get('sections',{}):raise error('unknown layer section: '+layer['section'])
   if 'source' in layer:crop(layer['resource'],layer['source'])
+ if 'hud_art' in presentation:
+  hud=presentation['hud_art'];metadata(hud['layout']);metadata(hud['style'])
+  for resource in hud['images'].values():image(resource)
+  if 'lettering' in hud:
+   letters=hud['lettering'];image(letters['title']);image(letters['first_chapter'])
+   for section,resource in letters['chapters'].items():
+    if section not in source.get('sections',{}):raise error('unknown lettering section: '+section)
+    image(resource)
  for id,source_id in presentation.get('bottom_wipes',{}).items():
   overlay=entities.get(id,{});anchor=entities.get(source_id,{});additive_z=presentation.get('additive_z')
   if (additive_z is None or not overlay.get('resource') or not anchor.get('resource') or

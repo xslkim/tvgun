@@ -69,6 +69,9 @@ class Footbridge(Cinema):
             {"op": "vfx", "effect": "hurt_fx", "entity": entity}, {"op": "emit", "event": "player.damaged"},
         ], active)
 
+    def scenery(self):
+        return ()
+
     def author(self):
         self.generated.mkdir(parents=True, exist_ok=True)
         self.audio({"attack.cart_warning": "bell", "attack.launched": "attack"})
@@ -79,7 +82,7 @@ class Footbridge(Cinema):
         self.sections[STAGE] = {"index": 1, "title": "天桥", "targets": targets,
                                 "hint": "射亮右上灯笼，等滴墨入光。桥下铃响时，先打断墨车夫。"}
         self.event("bridge.start", {"at_ms": 0}, [{"op": "section", "section": STAGE},
-                   *map(spawn, (lamp, cover, drop, cyclist))])
+                   *map(spawn, (lamp, cover, drop, cyclist, *self.scenery()))])
         self.event(lamp + ".open", topic("interaction.activated", lamp),
                    [spawn(light), {"op": "vfx", "effect": "light_fx", "entity": lamp}], limit=10, priority=10)
         self.event(lamp + ".expire", after(lamp + ".open", LIGHT_MS), [remove(light),
@@ -99,7 +102,8 @@ class Footbridge(Cinema):
         _, verified, manifest = resolve(self.source["id"], entry.parent.name)
         compiled = compile_source(verified, source_manifest=manifest)
         output = write_build(compiled, DEFAULT_CACHE)
-        dump(REVIEWS / "footbridge_build.json", {"source": str(entry), "source_revision": compiled["source_revision"],
+        name = self.source["id"].removeprefix("paper.")
+        dump(REVIEWS / f"{name}_build.json", {"source": str(entry), "source_revision": compiled["source_revision"],
              "build_id": compiled["build_id"], "compiled": str(output), "state": "candidate_not_adopted"})
         print(output)
 

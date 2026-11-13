@@ -4,7 +4,7 @@
 
 ## 当前入口
 
-- [《纸灯城》开发状态与换机交接](docs/PAPER_LANTERN_CITY_STATUS.md) · 新机器环境、T13 启动和回归、待验项目与下一步。
+- 三关连续候选 `paper.lantern_city_campaign` 从夜市打到工作台「忘」字结算，15 站软件回归通过。[试玩与换机交接](docs/PAPER_LANTERN_CITY_STATUS.md)
 - 完整首站候选「夜市巷口」串起开场、巷灯教学、六波战斗、摊主救援和结算。启动方式见 [运行说明](docs/LEVEL_DESIGN_ENGINE_QUICKSTART.md)。
 - 第二站白模「糖葫芦摊」可独立试玩，先点灯，再净化硬化墨鸦。启动方式见 [运行说明](docs/LEVEL_DESIGN_ENGINE_QUICKSTART.md)。
 - 战斗候选 R2 可用 [play_combat_candidate.cmd](play_combat_candidate.cmd) 试玩，也可用 [review_combat_candidate.cmd](review_combat_candidate.cmd) 审阅和批注。

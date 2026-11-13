@@ -5,7 +5,7 @@ from pathlib import Path
 from PIL import Image
 
 from build_cinema import ART as CINEMA_ART
-from build_train_station import build
+from build_train_station import STOPS, build
 from build_train_stop import ART, CROW
 from compiler import compile_source, read, write_build
 
@@ -14,19 +14,8 @@ EYES = ART / "variants/hardened_eyes/eyes.png"
 PACKAGE = "paper.train_station_hardened"
 
 
-def prepare_eyes():
-    crow = read(CROW / "enemy.json")
-    entry = crow["files"]["core_hardened"]
-    with Image.open(CROW / entry["file"]) as source:
-        tint = tuple(crow["hardened_eye_material"]["eye_tint_rgb"])
-        warm = Image.new("RGBA", source.size, tint)
-        warm.putalpha(source.getchannel("A"))
-    EYES.parent.mkdir(parents=True, exist_ok=True)
-    warm.save(EYES)
-    return entry
-
-
-def attach_eyes(stop, crow_entry):
+def attach_eyes(stop):
+    crow_entry = read(CROW / "enemy.json")["files"]["core_hardened"]
     for name, actor in stop.entities.items():
         if "mask_permission" not in actor:
             continue
@@ -49,19 +38,18 @@ def attach_eyes(stop, crow_entry):
         }}
 
 
-def main():
+def main(*, package=PACKAGE, stops=STOPS):
     parser = argparse.ArgumentParser()
     parser.add_argument("--probe-builds", type=Path)
     args = parser.parse_args()
-    crow_entry = prepare_eyes()
 
     def configure(stop):
-        attach_eyes(stop, crow_entry)
+        attach_eyes(stop)
         if args.probe_builds:
             path = write_build(compile_source(stop.source), args.probe_builds)
             (args.probe_builds / f"{stop.stage}.txt").write_text(str(path), encoding="utf-8")
 
-    build(package=PACKAGE, configure_stop=configure)
+    build(package=package, stops=stops, configure_stop=configure)
 
 
 if __name__ == "__main__":
