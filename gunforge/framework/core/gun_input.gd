@@ -11,7 +11,7 @@ var session = 0
 var source = ""
 var rejected = 0
 var transport: PacketPeerUDP
-var discovery: PacketPeerUDP
+var discovery: Array[PacketPeerUDP] = []
 var peer_ip = ""
 var peer_port = 0
 var last_frame_sent = -100.0
@@ -21,20 +21,27 @@ var session_token = ""
 var last_loss_sequence = -1
 var retired_sessions = []
 
-func open(game_port = 9000, discovery_port = 8001):
+func open(game_port = 9000, discovery_ports: Array[int] = [8001]):
 	port = game_port
 	transport = PacketPeerUDP.new()
-	discovery = PacketPeerUDP.new()
-	for pair in [[transport, game_port], [discovery, discovery_port]]:
-		var error = pair[0].bind(pair[1], "0.0.0.0")
-		if error != OK:
-			bind_errors.append({"port":pair[1],"error":error})
+	bind(transport, game_port)
+	for discovery_port in discovery_ports:
+		var socket := PacketPeerUDP.new()
+		if bind(socket, discovery_port):
+			discovery.append(socket)
+
+func bind(socket: PacketPeerUDP, local_port: int) -> bool:
+	var error := socket.bind(local_port, "0.0.0.0")
+	if error != OK:
+		bind_errors.append({"port":local_port,"error":error})
+	return error == OK
 
 func close():
 	if transport:
 		transport.close()
-	if discovery:
-		discovery.close()
+	for socket in discovery:
+		socket.close()
+	discovery.clear()
 
 func reset_session():
 	largest_aim = -1
@@ -130,11 +137,12 @@ func poll(now: float, white: float, dark: float) -> Array:
 		peer_ip = transport.get_packet_ip()
 		peer_port = transport.get_packet_port()
 		events.append_array(decode(bytes.get_string_from_ascii(), now, peer_ip))
-	while discovery and discovery.get_available_packet_count()>0:
-		var text = discovery.get_packet().get_string_from_ascii()
-		if text == "TVGUN_DISCOVER":
-			discovery.set_dest_address(discovery.get_packet_ip(),discovery.get_packet_port())
-			discovery.put_packet(("TVGUN_HERE %d" % port).to_ascii_buffer())
+	for socket in discovery:
+		while socket.get_available_packet_count()>0:
+			var text := socket.get_packet().get_string_from_ascii()
+			if text == "TVGUN_DISCOVER":
+				socket.set_dest_address(socket.get_packet_ip(),socket.get_packet_port())
+				socket.put_packet(("TVGUN_HERE %d" % port).to_ascii_buffer())
 	if peer_port and now-last_frame_sent>=2:
 		transport.set_dest_address(peer_ip,peer_port)
 		transport.put_packet(("FRAME %d,%d" % [white,dark]).to_ascii_buffer())

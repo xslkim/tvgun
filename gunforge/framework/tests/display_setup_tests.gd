@@ -34,6 +34,34 @@ func calibrate(offset: Vector2, bad_check: bool) -> void:
 			raw.x += 100
 		await send_calibration_shot(raw, -1 if index == DisplaySetup.POINTS.size() - 1 else index + 1)
 
+func discover(local_port: int) -> int:
+	var client := PacketPeerUDP.new()
+	client.set_dest_address("127.0.0.1", local_port)
+	check(client.put_packet("TVGUN_DISCOVER".to_ascii_buffer()) == OK, "send discovery on %d" % local_port)
+	for attempt in range(30):
+		await process_frame
+		if client.get_available_packet_count() > 0:
+			var reply := client.get_packet().get_string_from_ascii()
+			check(reply == "TVGUN_HERE %d" % GUN_PORT, "discover player on %d" % local_port)
+			client.close()
+			return int(reply.get_slice(" ", 1))
+	client.close()
+	check(false, "receive discovery on %d" % local_port)
+	return GUN_PORT
+
+func post(port: int, path: String, payload: Dictionary) -> Dictionary:
+	var request := HTTPRequest.new()
+	request.timeout = 2
+	root.add_child(request)
+	if request.request("http://127.0.0.1:%d%s" % [port, path], ["Content-Type: application/json"],
+			HTTPClient.METHOD_POST, JSON.stringify(payload)) != OK:
+		request.queue_free()
+		return {}
+	var response: Array = await request.request_completed
+	request.queue_free()
+	var body = JSON.parse_string(response[3].get_string_from_utf8())
+	return body if response[1] == 200 and body is Dictionary else {}
+
 func open():
 	for arg in OS.get_cmdline_user_args():
 		if arg.begins_with("--capture-dir="):
@@ -47,10 +75,14 @@ func open():
 	super.open()
 	if model == null:
 		return
-	check(gun.bind_errors.is_empty() and http.bind_error == OK, "player network ready")
+	check(gun.bind_errors.is_empty() and http.bind_error == OK and discovered_http.bind_error == OK, "player network ready")
 	check(frame.profile == "monitor" and frame.white == 26, "load prior display settings")
 	check(device.connect_to_host("127.0.0.1", gun.port) == OK, "connect simulated light gun")
-	start_gameplay()
+	await discover(8001)
+	await discover(HTTP_PORT + 1)
+	var discovered_port := await discover(GUN_PORT + 1)
+	var start := await post(discovered_port, "/start", {})
+	check(start.get("ok", false) and not session.pause_reasons.has("ready"), "HTTP start at the discovered port")
 	session.submit(model.geometry())
 	check(session.enqueue("SHOT", Vector2(300, 300)), "queue a shot before setup")
 	handle_key(KEY_F2)
@@ -66,6 +98,10 @@ func open():
 	await capture("overscan_tv")
 	handle_key(KEY_C)
 	await capture("calibration_target")
+	var shot := await post(discovered_port, "/shot", {"x": 972, "y": 531})
+	check(shot.get("ok", false) and display_setup.stage == 1, "HTTP calibration shot at the discovered port")
+	handle_key(KEY_ESCAPE)
+	handle_key(KEY_C)
 	await calibrate(Vector2(12, -9), false)
 	var fitted: Array = calibration.matrix.duplicate()
 	check(calibration.apply(Vector2(972, 531)).distance_to(Vector2(960, 540)) < .01, "apply fitted calibration")

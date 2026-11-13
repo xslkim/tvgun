@@ -629,9 +629,15 @@
       "formal_C02": "pending"
     },
     "manual_validation": {
-      "current": "windows_pc_mouse_keyboard_and_pc_audio",
+      "current": "phone_lightgun_on_windows_pc_monitor",
+      "pc_status": "passed_by_user",
+      "pc_validation_date": "2026-11-13",
       "report": "gunforge/games/g01/reports/art/T16/cast/a7/pc_mouse_review.md",
-      "physical_lightgun_and_tv": "deferred_to_release_validation",
+      "phone_monitor": "passed_by_user",
+      "phone_monitor_validation_date": "2026-11-13",
+      "phone_monitor_build_id": "ed50339937dd3994adf58a7db62fb3bce341f90c8723a3dccf01342f8c69c5d3",
+      "phone_monitor_report": "gunforge/games/g01/reports/art/T16/cast/a7/device_route.md",
+      "tv": "deferred_to_release_validation",
       "blocks_development": false
     },
     "mouse_balance_candidate": {

@@ -13,6 +13,9 @@ const Codec=preload("res://core/pose_codec.gd")
 const Opening=preload("res://tools/opening_cinematic.gd")
 const DisplaySetup=preload("res://tools/display_setup.gd")
 
+const GUN_PORT := 9000
+const HTTP_PORT := 8080
+
 class DesktopInput extends Node:
 	var handle_key: Callable
 
@@ -25,6 +28,7 @@ var session=Session.new()
 var frame=Frame.new()
 var gun=Gun.new()
 var http=Http.new()
+var discovered_http=Http.new()
 var model
 var preview
 var status
@@ -91,9 +95,21 @@ func open():
 	display_setup.frame_changed.connect(refresh_display_frame)
 	display_setup.closed.connect(func(): session.set_pause("display_setup", false))
 	root.add_child(display_setup)
-	gun.open();http.open(8080,handle_http)
+	# The Android client uses the discovery reply's port for both aim and HTTP
+	# controls. Saved HTTP clients search their previously configured port + 1.
+	gun.open(GUN_PORT, [8001, HTTP_PORT + 1, GUN_PORT + 1])
+	http.open(HTTP_PORT, handle_http)
+	discovered_http.open(GUN_PORT, handle_http)
 	root.size_changed.connect(layout);layout()
-	print(JSON.stringify({"level_player_ready":true,"build_id":model.build.build_id,"udp_errors":gun.bind_errors,"http_error":http.bind_error}))
+	print(JSON.stringify({"level_player_ready":true,"build_id":model.build.build_id,"udp_errors":gun.bind_errors,
+		"http_error":http.bind_error,"discovered_http_error":discovered_http.bind_error}))
+
+func close_player() -> void:
+	gun.close()
+	http.close()
+	discovered_http.close()
+	quit()
+
 func layout():
 	var box=frame.screen_rect(root.size);border.position=box.position;border.size=box.size
 	var inset=frame.white*box.size.x/1920.0;dark.position=box.position+Vector2.ONE*inset;dark.size=box.size-Vector2.ONE*inset*2
@@ -237,10 +253,13 @@ func _process(delta):
 	if network or display_setup.visible:
 		for event in events:enqueue_device(event)
 	http.poll()
+	discovered_http.poll()
 	session.advance(delta)
 	for order in completions.keys():
 		if elapsed-completions[order].at>5:completions.erase(order)
-	if session.closed:gun.close();http.close();quit();return
+	if session.closed:
+		close_player()
+		return
 	var lifecycle: String = session.public_state().lifecycle
 	if model.has_method("set_presentation_context"):model.set_presentation_context("player",lifecycle)
 	if model.level.get("presentation", {}).has("hud_art"):
@@ -264,7 +283,7 @@ func _process(delta):
 	var reload_hint = "　R 换弹" if model.available_commands().has("RELOAD") else ""
 	status.text="%s  %s  %s\nEnter 开始 / 重试 / 恢复%s　Esc 暂停　G 光枪模式　Q 退出" % [lifecycle,JSON.stringify(model.resources),str(session.pause_reasons.keys()),reload_hint]
 	preview.queue_redraw()
-	if quit_after>0 and elapsed>=quit_after:gun.close();http.close();quit()
+	if quit_after>0 and elapsed>=quit_after:close_player()
 func handle_key(keycode: Key) -> bool:
 	if keycode == KEY_F11:
 		var fullscreen := DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_FULLSCREEN
@@ -288,7 +307,7 @@ func handle_key(keycode: Key) -> bool:
 		KEY_H:
 			if not model.level.get("presentation", {}).has("hud_art"):return false
 			show_paper_crosshair = not show_paper_crosshair
-		KEY_Q:gun.close();http.close();quit()
+		KEY_Q:close_player()
 		_:return false
 	return true
 func handle_http(command,payload,completion):
@@ -305,7 +324,13 @@ func handle_http(command,payload,completion):
 		if lifecycle == "opening":state["opening_seconds"] = opening.video.stream_position
 		return state
 	if command in ["START","EXIT"]:enqueue_device({"event":command});return {"ok":true}
-	if display_setup.visible:return {"ok":false,"reason":"display_setup"}
+	if display_setup.visible:
+		if command == "SHOT":
+			var raw := Vector2(payload.x, payload.y)
+			if raw.is_finite() and display_setup.stage >= 0:
+				display_setup.sample(raw)
+				return {"ok":true, "hit":false, "score":model.resources.get("score", 0)}
+		return {"ok":false,"reason":"display_setup"}
 	var order = session.queue.next_order
 	var accepted: bool
 	if command == "SHOT":
