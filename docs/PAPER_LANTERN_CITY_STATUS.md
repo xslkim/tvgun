@@ -4,6 +4,7 @@
 
 ## 当前进度
 
+- **巷口七层已完成 C07b 实际渲染检查。** 遮罩内部未发现低于半透明的缺口，六层轮廓有低于严格不透明门槛的像素，留待美术复核。[逐层诊断与复跑](../gunforge/games/g01/reports/art/T16/cast/supplies/c07b_report.md)
 - **三关 15 站的 C07a 画面覆盖复测通过。** 406 个回放时刻与 185 个静止和视差极限样本均未露底。[逐帧数据和复跑](../gunforge/games/g01/reports/art/T16/cast/supplies/c07a_report.md)
 - **生命和补给版已通过用户的 PC 鼠标验收。** 左下角显示生命数字，救援回复 1 点生命，8 发开局，首次点亮每盏灯补 4 发。[新版试玩与补给规则](../gunforge/games/g01/reports/art/T16/cast/supplies/report.md)
 - **上一版 PC 试玩反馈已修订。** 当时的三关弹匣为 18 发，打空 0.35 秒自动换弹。巷灯退到墨鸦后方，巷口蓄力与扑击延长。新版通过鼠标定点回归和三关 15 站回放。[新版试玩与复测](../gunforge/games/g01/reports/art/T16/cast/mouse_balance/report.md)
@@ -99,6 +100,6 @@ $root = (Get-Location).Path
 
 当前使用 Windows PC、鼠标和键盘验收，音频用 PC 扬声器或耳机实听。手机光枪、电视和设备录制安排在游戏发布验收，开发继续推进。[PC 逐步验收](../gunforge/games/g01/reports/art/T16/cast/a7/pc_mouse_review.md)
 
-1. **复核 C07b 图层显露。** 先将夜市巷口已批准的设计范围遮罩对齐到当前编译图层，检查镜头移动时露出的补画区域。
+1. **复核巷口轮廓与挡弹。** 确认 C07b 的半透明轮廓是否符合纸层效果，继续核对 C08 近景挡弹与可见轮廓的一致性。[巷口诊断](../gunforge/games/g01/reports/art/T16/cast/supplies/c07b_report.md)
 2. **第三关 A5 鼠标验收。** 复核站台救援、战斗可读性、Boss 七笔和第 3 笔覆盖第 2 笔的关系。[Boss 抓帧](../gunforge/games/g01/reports/art/T13/gallery.html#forget-boss) · [笔顺与来源记录](../gunforge/games/g01/reports/art/T13/gallery.html#strokes)
 3. **T14 界面与 PC 操作验收。** 检查窗口、全屏、鼠标准星、换弹和重试。[预审画廊](../gunforge/games/g01/reports/art/T14/gallery.html)

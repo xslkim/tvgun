@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "task_review": "completed_with_user_resolution",
   "user_resolution": "Offline previews may be reviewed; batch tasks wait for actual 0B acceptance",
   "T00": "in_progress_offline_core_verified_external_integrations_pending",
@@ -24,7 +24,7 @@
   ],
   "unreported_generation_cost": null,
   "builtin_image_calls": 280,
-  "next_task": "audit_cast_C07b_alley_approved_layer_extents",
+  "next_task": "review_cast_C07b_alley_contours_and_check_C08_blockers",
   "T03": "completed_A1b_direction_approved_with_followup",
   "A1_anchor_count": 12,
   "ink_direction": "moderated_gloss_custom",
@@ -62,7 +62,7 @@
     "ink_gloss",
     "enemy_hit_feedback_v3"
   ],
-  "task_status": "T16_cast_supplies_pc_playtest_and_C07a_sampling_passed",
+  "task_status": "T16_cast_supplies_pc_playtest_passed_C07b_alley_review_pending",
   "resumed": {
     "date": "2026-11-06",
     "source": "explicit_user_chat",
@@ -676,6 +676,19 @@
         ],
         "deliberate_hole_pixels_detected": 144,
         "incomplete_frames": 0
+      },
+      "C07b": {
+        "status": "alley_checked_strict_opacity_pending",
+        "tested_build_id": "ed50339937dd3994adf58a7db62fb3bce341f90c8723a3dccf01342f8c69c5d3",
+        "report": "gunforge/games/g01/reports/art/T16/cast/supplies/c07b_report.md",
+        "checks": "gunforge/games/g01/reports/art/T16/cast/supplies/c07b_checks.json",
+        "checks_sha256": "c1b8cb16fddc9ceba6587a1dd1267773bee4a790b9f74534a2d8c6bd25cc8bd2",
+        "probe_sha256": "fea84c3c96131d9178984cc9b2f1571513592598508f95d57cde7ab02c2b72c7",
+        "layers_with_approved_masks": 7,
+        "alley_sections": 11,
+        "exposed_pixels_below_254": 37442,
+        "exposed_interior_pixels_below_128": 0,
+        "deliberate_hole_pixels_detected": 81
       }
     }
   },

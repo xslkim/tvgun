@@ -1,0 +1,230 @@
+{
+  "build_id": "ed50339937dd3994adf58a7db62fb3bce341f90c8723a3dccf01342f8c69c5d3",
+  "compiled_sha256": "afdae56ecaab1364350419a2fb3004b42cfbd8f504765b1863f1cc81835875e6",
+  "checker_sha256": "e99e1cd95b881e8f1181a06826d7966280cc53e417eef5e27a4ab86377dee77c",
+  "design_version": "g01-alley-extent-1",
+  "design_manifest_sha256": "5c3ef9d4ae62c8548e02da098b9e986b69c8c22367758b21041d1b2bc8ffbe3f",
+  "station_metadata_sha256": "84a16d7cc7c0c4064d4ceadfc6fed73dc6dbdd2e9d8eeeb8575e190aba24aa78",
+  "sections_with_identical_bindings": [
+    "alley.arrival",
+    "alley.lamp_lesson",
+    "alley.missed_rescue",
+    "alley.rescue",
+    "alley.safe_exit",
+    "alley.wave_1",
+    "alley.wave_2",
+    "alley.wave_3",
+    "alley.wave_4",
+    "alley.wave_5",
+    "alley.wave_6"
+  ],
+  "unique_runtime_layer_transforms": 1,
+  "strict_opacity_passed": false,
+  "godot": "4.6.3-stable (official)",
+  "gpu": "NVIDIA GeForce RTX 3080 Ti",
+  "viewport": [
+    1776,
+    936
+  ],
+  "control": {
+    "layer": "mid_left",
+    "hole_bounds_xyxy": [
+      299,
+      526,
+      308,
+      535
+    ],
+    "added_interior_gap_pixels": 81,
+    "passed": true
+  },
+  "layers": {
+    "near_right": {
+      "exposed_pixels": 15135,
+      "below_254_pixels": 2130,
+      "below_254_interior_pixels": 1333,
+      "deepest_below_254_px": 4.0,
+      "below_128_pixels": 0,
+      "below_128_interior_pixels": 0,
+      "below_128_bounds": null,
+      "minimum_exposed_alpha": 130,
+      "deepest_below_128_px": 0.0
+    },
+    "near_left": {
+      "exposed_pixels": 70106,
+      "below_254_pixels": 9934,
+      "below_254_interior_pixels": 6395,
+      "deepest_below_254_px": 4.123,
+      "below_128_pixels": 1,
+      "below_128_interior_pixels": 0,
+      "below_128_bounds": [
+        721,
+        2,
+        722,
+        3
+      ],
+      "minimum_exposed_alpha": 123,
+      "deepest_below_128_px": 1.0
+    },
+    "mid_right": {
+      "exposed_pixels": 318973,
+      "below_254_pixels": 3784,
+      "below_254_interior_pixels": 2361,
+      "deepest_below_254_px": 5.0,
+      "below_128_pixels": 0,
+      "below_128_interior_pixels": 0,
+      "below_128_bounds": null,
+      "minimum_exposed_alpha": 140,
+      "deepest_below_128_px": 0.0
+    },
+    "mid_left": {
+      "exposed_pixels": 344640,
+      "below_254_pixels": 5584,
+      "below_254_interior_pixels": 3520,
+      "deepest_below_254_px": 4.123,
+      "below_128_pixels": 0,
+      "below_128_interior_pixels": 0,
+      "below_128_bounds": null,
+      "minimum_exposed_alpha": 141,
+      "deepest_below_128_px": 0.0
+    },
+    "mid_ground": {
+      "exposed_pixels": 223343,
+      "below_254_pixels": 2102,
+      "below_254_interior_pixels": 1402,
+      "deepest_below_254_px": 4.0,
+      "below_128_pixels": 0,
+      "below_128_interior_pixels": 0,
+      "below_128_bounds": null,
+      "minimum_exposed_alpha": 178,
+      "deepest_below_128_px": 0.0
+    },
+    "far_town": {
+      "exposed_pixels": 224035,
+      "below_254_pixels": 13908,
+      "below_254_interior_pixels": 8406,
+      "deepest_below_254_px": 4.123,
+      "below_128_pixels": 0,
+      "below_128_interior_pixels": 0,
+      "below_128_bounds": null,
+      "minimum_exposed_alpha": 135,
+      "deepest_below_128_px": 0.0
+    },
+    "far_base": {
+      "exposed_pixels": 465439,
+      "below_254_pixels": 0,
+      "below_254_interior_pixels": 0,
+      "deepest_below_254_px": 0.0,
+      "below_128_pixels": 0,
+      "below_128_interior_pixels": 0,
+      "below_128_bounds": null,
+      "minimum_exposed_alpha": 255,
+      "deepest_below_128_px": 0.0
+    }
+  },
+  "compiled_layers": {
+    "near_right": {
+      "binding": {
+        "blocker": true,
+        "height": 1036,
+        "resource": "alley.scene_near_right",
+        "width": 1547,
+        "x": 309,
+        "y": -50,
+        "z": 106
+      },
+      "texture_sha256": "6ad7689c3cef14ca0032e6ef7569e77876777afeb701d77e5a5fcccfda5237e9",
+      "capture_sha256": "80f213ec5cffb82be31859a4255545d481745761f0065406461e6c398d677ea2"
+    },
+    "near_left": {
+      "binding": {
+        "blocker": true,
+        "height": 1036,
+        "resource": "alley.scene_near_left",
+        "width": 1454,
+        "x": -80,
+        "y": -50,
+        "z": 105
+      },
+      "texture_sha256": "533844963a6f7eed2705c95a335076412f750d11e7b55f593176b5bb5349c378",
+      "capture_sha256": "fd8d22d3be2a0a3b73c1c9c13cb5d2490d1773515cbbb8d9dd24e623f7a33457"
+    },
+    "lamp": {
+      "binding": {
+        "blocker": false,
+        "height": 801,
+        "resource": "alley.scene_lamp",
+        "width": 1023,
+        "x": 755,
+        "y": 136,
+        "z": 45
+      },
+      "texture_sha256": "0b0bb9710c6f1f48189ee2caf4dff168d4af6c56ca523d66730aa5ac906be749",
+      "capture_sha256": "086f652f7d1baeca3e79c2b2346de0f0eb9893be96f987ce2a9010f31d67ad7f"
+    },
+    "mid_right": {
+      "binding": {
+        "blocker": false,
+        "height": 904,
+        "resource": "alley.scene_mid_right",
+        "width": 1764,
+        "x": 92,
+        "y": 19,
+        "z": 40
+      },
+      "texture_sha256": "b49e137deb55d7c1c8a0b10766998a561b174ff4760ece05e01ecea9d7ee5958",
+      "capture_sha256": "5b82829e0225b9adec52ca00a0084393cd2497a4746c3b7b102b2b5ea9f8f582"
+    },
+    "mid_left": {
+      "binding": {
+        "blocker": false,
+        "height": 933,
+        "resource": "alley.scene_mid_left",
+        "width": 1914,
+        "x": -80,
+        "y": -25,
+        "z": 30
+      },
+      "texture_sha256": "8e0190de0c4f4293a86cc2060a5309de2448e8c57f5becbdd090cf85bdeb8ea0",
+      "capture_sha256": "112c147dcc1fc857f4353ae38e8956751b2a3ba83b9e626e7ac7edfc1bdd70cc"
+    },
+    "mid_ground": {
+      "binding": {
+        "blocker": false,
+        "height": 875,
+        "resource": "alley.scene_mid_ground",
+        "width": 1936,
+        "x": -80,
+        "y": 111,
+        "z": 20
+      },
+      "texture_sha256": "e8ccad66fe6a0c128ab517d9cf53ec9a3ea7c4b927af9999149f794b52c57f3f",
+      "capture_sha256": "f6e96b79afef221120687900692cb15fb0becf8c4e4c412dcb31d9b58fad776a"
+    },
+    "far_town": {
+      "binding": {
+        "blocker": false,
+        "height": 814,
+        "resource": "alley.scene_far_town",
+        "width": 1751,
+        "x": 65,
+        "y": 29,
+        "z": 10
+      },
+      "texture_sha256": "ecbb8c3eb9cf4d0b772309eff68f77f7cf601cfba2c558e7396a00d2447a94ea",
+      "capture_sha256": "4869186c9fdafca77cb5afcef3a8d7c5e88fa73fa711538f8ee24132d8d4e00d"
+    },
+    "far_base": {
+      "binding": {
+        "blocker": false,
+        "height": 1036,
+        "resource": "alley.scene_far_base",
+        "width": 1936,
+        "x": -80,
+        "y": -50,
+        "z": 0
+      },
+      "texture_sha256": "c65dc3fc0ba587007b897fccb4c0b30efe071f05c69209fcf9a00b5fd06cc4cd",
+      "capture_sha256": "b134f431b01070f04a72238fb3420fd946af99b02099136df4468f47f7d7ccea"
+    }
+  }
+}
