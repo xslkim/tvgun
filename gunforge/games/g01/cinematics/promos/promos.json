@@ -1,0 +1,262 @@
+[
+  {
+    "file": "01_overview.mp4",
+    "title": "三关总览",
+    "duration_seconds": 56,
+    "shots": [
+      {
+        "source": "opening:1",
+        "seconds": 7,
+        "text": "爷爷把一座城，刻进了纸里。"
+      },
+      {
+        "source": "opening:28",
+        "seconds": 7,
+        "text": "一滴墨，顺着纸纤维渗了进去。"
+      },
+      {
+        "source": "station_1_alley",
+        "seconds": 6,
+        "text": "夜市 · 点亮巷灯"
+      },
+      {
+        "source": "t06",
+        "seconds": 5,
+        "text": ""
+      },
+      {
+        "source": "station_9_projection_booth",
+        "seconds": 6,
+        "text": "旧影院 · 恢复放映的光"
+      },
+      {
+        "source": "t11",
+        "seconds": 5,
+        "text": ""
+      },
+      {
+        "source": "station_12_platform",
+        "seconds": 6,
+        "text": "火车站 · 穿过站台与绿皮车厢"
+      },
+      {
+        "source": "opening:74",
+        "seconds": 7,
+        "text": "用光净墨，护住纸居民。"
+      },
+      {
+        "source": "ending:35",
+        "seconds": 7,
+        "text": "纸灯城　｜　三关光枪街机冒险"
+      }
+    ]
+  },
+  {
+    "file": "02_night_market.mp4",
+    "title": "夜市",
+    "duration_seconds": 55,
+    "shots": [
+      {
+        "source": "opening:54",
+        "seconds": 8,
+        "text": "夜市刚开张，墨已经爬上了巷灯。"
+      },
+      {
+        "source": "station_1_alley",
+        "seconds": 6,
+        "text": "先点灯，再净墨。"
+      },
+      {
+        "source": "t01",
+        "seconds": 4,
+        "text": ""
+      },
+      {
+        "source": "t02",
+        "seconds": 4,
+        "text": ""
+      },
+      {
+        "source": "station_2_stall",
+        "seconds": 7,
+        "text": "居民是要救的人。瞄准他们身上的墨。"
+      },
+      {
+        "source": "t03",
+        "seconds": 4,
+        "text": ""
+      },
+      {
+        "source": "t04",
+        "seconds": 4,
+        "text": ""
+      },
+      {
+        "source": "subject_bridge_warning",
+        "seconds": 6,
+        "text": "沿录像厅和天桥，继续往前。"
+      },
+      {
+        "source": "subject_dragon",
+        "seconds": 7,
+        "text": "在广场遇见墨舞龙。"
+      },
+      {
+        "source": "t05",
+        "seconds": 5,
+        "text": "纸灯城　｜　第一关 · 夜市"
+      }
+    ]
+  },
+  {
+    "file": "03_cinema.mp4",
+    "title": "旧影院",
+    "duration_seconds": 53,
+    "shots": [
+      {
+        "source": "ending:16",
+        "seconds": 7,
+        "text": "旧影院的放映机，曾照亮整条街。"
+      },
+      {
+        "source": "t06",
+        "seconds": 5,
+        "text": ""
+      },
+      {
+        "source": "t07",
+        "seconds": 4,
+        "text": ""
+      },
+      {
+        "source": "t08",
+        "seconds": 4,
+        "text": ""
+      },
+      {
+        "source": "station_8_auditorium",
+        "seconds": 6,
+        "text": "从售票窗走到空无一人的观众席。"
+      },
+      {
+        "source": "t09",
+        "seconds": 4,
+        "text": ""
+      },
+      {
+        "source": "station_9_projection_booth",
+        "seconds": 6,
+        "text": "三路光源，三盘墨渍。"
+      },
+      {
+        "source": "t10",
+        "seconds": 4,
+        "text": ""
+      },
+      {
+        "source": "subject_screen_shadow",
+        "seconds": 7,
+        "text": "清开三盘墨，银幕的影核才会显现。"
+      },
+      {
+        "source": "ending:17",
+        "seconds": 6,
+        "text": "纸灯城　｜　第二关 · 旧影院"
+      }
+    ]
+  },
+  {
+    "file": "04_train_station.mp4",
+    "title": "火车站",
+    "duration_seconds": 52,
+    "shots": [
+      {
+        "source": "ending:25",
+        "seconds": 8,
+        "text": "站台的灯还亮着。末班车就要离开。"
+      },
+      {
+        "source": "t11",
+        "seconds": 5,
+        "text": ""
+      },
+      {
+        "source": "station_11_waiting_room",
+        "seconds": 6,
+        "text": "候车室里，时钟还在走。"
+      },
+      {
+        "source": "t12",
+        "seconds": 4,
+        "text": ""
+      },
+      {
+        "source": "station_12_platform",
+        "seconds": 7,
+        "text": "在站台护住还没离开的人。"
+      },
+      {
+        "source": "t13",
+        "seconds": 4,
+        "text": ""
+      },
+      {
+        "source": "station_13_green_car",
+        "seconds": 7,
+        "text": "穿过绿皮车厢，找出墨的来处。"
+      },
+      {
+        "source": "t14",
+        "seconds": 5,
+        "text": ""
+      },
+      {
+        "source": "station_14_lantern_base",
+        "seconds": 6,
+        "text": "纸灯城　｜　第三关 · 火车站"
+      }
+    ]
+  },
+  {
+    "file": "05_paper_art.mp4",
+    "title": "纸雕美术",
+    "duration_seconds": 50,
+    "shots": [
+      {
+        "source": "opening:2",
+        "seconds": 7,
+        "text": "近处是裁开的纸，远处是透过纸的光。"
+      },
+      {
+        "source": "opening:36",
+        "seconds": 6,
+        "text": "墨沿纸的纹理往里渗。"
+      },
+      {
+        "source": "ending:7",
+        "seconds": 7,
+        "text": "夜市用暖杏，像摊前一直留着的灯。"
+      },
+      {
+        "source": "ending:16",
+        "seconds": 7,
+        "text": "影院用紫红和一束窄窄的暖光。"
+      },
+      {
+        "source": "ending:24",
+        "seconds": 8,
+        "text": "站台用青绿，车窗里藏着一格格琥珀色。"
+      },
+      {
+        "source": "opening:66",
+        "seconds": 6,
+        "text": "墨鸦的胸口，只留一点朱砂。"
+      },
+      {
+        "source": "ending:34",
+        "seconds": 9,
+        "text": "纸灯城　｜　一盏灯里的九十年代"
+      }
+    ]
+  }
+]

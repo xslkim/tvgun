@@ -1,0 +1,48 @@
+{
+  "tool": "builtin image generation",
+  "model": null,
+  "seed": null,
+  "references": [],
+  "atlases": [
+    {
+      "atlas": "atlas_1.png",
+      "views": [
+        "Alley after rain, viewed at street level, hanging almond lamp, pots and brick alley mouth, cool purple shadows",
+        "Extreme low closeup of a night alley puddle mirroring an almond paper lantern, wet flagstones and gutter, tiny fading capillary ink ripples",
+        "Candied hawthorn stall at night, skewers of dark orange fruit on folding wooden table, apricot paper awning and little teal stool",
+        "1990s Chinese video rental storefront with half-open roller shutter, small warm rectangle doorway, old CRT and VHS cassette cases on shelves"
+      ],
+      "result": "exec-7be3aef0-82c5-4e56-afec-9c127405442e.png"
+    },
+    {
+      "atlas": "atlas_2.png",
+      "views": [
+        "Paper footbridge at night, bicycle next to iron railing above canal, distant warm market lights and utility wires",
+        "Open town plaza with a row of small lamp stalls and a low stage, empty red-brown paper drum, last dark ink wisps small and subtle near pavement",
+        "Old Chinese cinema exterior ticket window under rounded muted teal art deco canopy, purple night, apricot slot lamp, no signs",
+        "Narrow cinema poster corridor with frames containing only simple graphic silhouettes, magenta and plum torn paper walls lit by low side lamps"
+      ],
+      "result": "exec-afc26656-0f39-4e78-959c-ac624ee973f3.png"
+    },
+    {
+      "atlas": "atlas_3.png",
+      "views": [
+        "Old cinema auditorium, rows of deep burgundy seats, oblique view down aisle to brown curtains, faint cool blue aisle lamp",
+        "Projection room with one large 1990s twin-reel movie projector at right, angled narrow amber beam through booth window, no people",
+        "View from directly in front of old cinema screen and burgundy curtains, dark silhouette of tiny rooftops in low amber film light, three warm projector apertures below",
+        "Chinese railway waiting room at night, round clock with tick marks and no numerals, wooden benches and woven canvas travel bags, desaturated teal walls, amber half-glazed door"
+      ],
+      "result": "exec-5e2fa801-8146-4e23-bc31-edb75ab123bf.png"
+    },
+    {
+      "atlas": "atlas_4.png",
+      "views": [
+        "Provincial railway platform under low canopy, teal green passenger train with gold stripe and warm square windows, cool navy skies and shadowed rails",
+        "Inside vintage olive green Chinese passenger carriage, narrow aisle and upholstered seats, window reflections, cool teal and little amber reading lamps",
+        "Inside the bottom of a handmade paper lantern, a deep passage amid staggered translucent teal paper layers and bamboo ribs, tiny almond light spilling gently from a slit",
+        "Grandfather's paper-craft workbench, shallow round slate inkstone in center, round bamboo-rib paper lantern on left, three brushes on stand and paper on right, deep teal wall and dark furniture, intimate nighttime aftermath"
+      ],
+      "result": "exec-739b1291-5b2c-4b99-9992-92fd4a2efc79.png"
+    }
+  ]
+}

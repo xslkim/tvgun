@@ -12,7 +12,7 @@ func setup(rate: int = 60, budget: int = 120):
 	tick = 0
 	debt = 0.0
 
-func advance_frame(seconds: float, callback: Callable) -> int:
+func advance_frame(seconds: float, callback: Callable, interrupted := Callable()) -> int:
 	assert(is_finite(seconds) and seconds >= 0)
 	debt += seconds
 	var count = mini(max_steps, int(floor((debt + 1e-10) * hz)))
@@ -20,6 +20,9 @@ func advance_frame(seconds: float, callback: Callable) -> int:
 		tick += 1
 		debt -= 1.0 / hz
 		callback.call(tick, 1.0 / hz)
+		if interrupted.is_valid() and interrupted.call():
+			debt = 0.0
+			return i + 1
 	if absf(debt) < 1e-10:
 		debt = 0.0
 	return count

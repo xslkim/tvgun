@@ -1,0 +1,96 @@
+{
+  "tool": "builtin image generation",
+  "images": [
+    {
+      "shot": "ink",
+      "result": "exec-0f598852-421a-4ed0-91cc-cf67cd2ef257.png",
+      "file": "keyframes/ink.png",
+      "sha256": "8bf7f8cd1b783efdcdd1d2d455aa4080b759f4a0be5604daf908b8608a21f72e",
+      "size": [
+        1672,
+        941
+      ],
+      "reference_images": [],
+      "model": null,
+      "seed": null
+    },
+    {
+      "shot": "market",
+      "result": "exec-32056d12-938c-428f-8169-0c1d57311b88.png",
+      "file": "keyframes/market.png",
+      "sha256": "5780edb85458988b1b76db745f8911e157da4ef635d9aca1ab71be1b1984eb80",
+      "size": [
+        1672,
+        941
+      ],
+      "reference_images": [],
+      "model": null,
+      "seed": null
+    },
+    {
+      "shot": "cinema",
+      "result": "exec-bea1971d-4e02-4fad-a6cb-b9052beafd23.png",
+      "file": "keyframes/cinema.png",
+      "sha256": "430381123ecdb16ee6141f49f1eb614be3adff48ab8234f1258bf7c3ecb28431",
+      "size": [
+        1672,
+        941
+      ],
+      "reference_images": [],
+      "model": null,
+      "seed": null
+    },
+    {
+      "shot": "train",
+      "result": "exec-8fdcbe70-e8c0-4485-b120-afd746d07e3a.png",
+      "file": "keyframes/train.png",
+      "sha256": "743e21e0a9b34cbd9379c1c1207e2d5607fd519b9bcda06bec78769923375382",
+      "size": [
+        1672,
+        941
+      ],
+      "reference_images": [],
+      "model": null,
+      "seed": null
+    },
+    {
+      "shot": "city",
+      "result": "exec-73e425e0-76af-4571-9960-22bdadbed962.png",
+      "file": "keyframes/city.png",
+      "sha256": "011257fdbceacd037450fef3f9456c4f4f6c8e5bfeee5aadc7361c4188d85c17",
+      "size": [
+        1672,
+        941
+      ],
+      "reference_images": [],
+      "model": null,
+      "seed": null
+    },
+    {
+      "shot": "tape",
+      "result": "exec-0e900820-5ac1-4656-8092-4852dacf2ba6.png",
+      "file": "keyframes/tape.png",
+      "sha256": "cfb1d901affa1c853d89f27c86f1ff6d9ac67ac4d35b46245e9a99b65d917594",
+      "size": [
+        1672,
+        941
+      ],
+      "reference_images": [],
+      "model": null,
+      "seed": null
+    },
+    {
+      "shot": "desk",
+      "result": "exec-839f2b97-ae1e-400e-8f01-db25f1f4d2ba.png",
+      "file": "keyframes/desk.png",
+      "sha256": "8f9e72de0f2e9ca405a0286e8a42f890dd262f9c4378c33aeac3f39136a84240",
+      "size": [
+        1672,
+        941
+      ],
+      "reference_images": [],
+      "model": null,
+      "seed": null
+    }
+  ]
+}

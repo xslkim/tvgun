@@ -46,6 +46,10 @@ var isolated_settings=false
 var opening_directory := ""
 var opening: Opening
 var opening_pending := false
+var transition: Opening
+var transition_directory := ""
+var transition_clips: Dictionary = {}
+var previous_scene := ""
 var show_paper_crosshair := true
 var pressed_action := ""
 var display_setup: DisplaySetup
@@ -58,6 +62,7 @@ func _initialize():
 		if arg=="--network":network=true
 		if arg=="--isolated-settings":isolated_settings=true
 		if arg.begins_with("--opening-dir="):opening_directory=arg.trim_prefix("--opening-dir=")
+		if arg.begins_with("--transitions-dir="):transition_directory=arg.trim_prefix("--transitions-dir=")
 	call_deferred("open")
 func open():
 	model=Loader.open(JSON.parse_string(FileAccess.get_file_as_string(build_path)),assets)
@@ -75,6 +80,14 @@ func open():
 		var viewport=SubViewport.new();viewport.size=Vector2i(model.level.layout.width,model.level.layout.height);viewport.disable_3d=true;root.add_child(viewport);model.mount(viewport);preview.native_viewport=viewport
 	session.real_time_inputs=true
 	session.setup(model)
+	if not transition_directory.is_empty():
+		var manifest: Variant = JSON.parse_string(FileAccess.get_file_as_string(transition_directory.path_join("transitions.json")))
+		if manifest is Dictionary:
+			for clip in manifest.get("transitions", []):
+				transition_clips[[clip.from, clip.to]] = clip.file.get_basename() + ".ogv"
+	previous_scene = cinematic_scene()
+	if not transition_clips.is_empty():
+		session.tick_completed.connect(check_transition)
 	session.set_pause("ready",true)
 	session.input_consumed.connect(finish_input)
 	status=Label.new();status.mouse_filter=Control.MOUSE_FILTER_IGNORE;root.add_child(status)
@@ -117,6 +130,9 @@ func layout():
 	if opening != null:
 		opening.position = box.position
 		opening.size = box.size
+	if transition != null:
+		transition.position = box.position
+		transition.size = box.size
 	display_setup.size = Vector2(root.size)
 	display_setup.queue_redraw()
 
@@ -134,7 +150,7 @@ func open_display_setup() -> void:
 func menu_action() -> String:
 	if not model.level.get("presentation", {}).has("hud_art") or display_setup.visible:
 		return ""
-	if opening != null and opening.visible:
+	if (opening != null and opening.visible) or transition != null:
 		return ""
 	if model.phase == "result":
 		return "retry"
@@ -213,6 +229,10 @@ func enqueue_device(event):
 	if opening != null and opening.visible:
 		if command in ["START", "EXIT"]:opening.finish()
 		return
+	if transition != null:
+		if command in ["START", "EXIT"]:
+			transition.finish()
+		return
 	if command in ["START", "EXIT"] and model.available_commands().has("SKIP"):
 		session.enqueue("SKIP")
 		return
@@ -242,9 +262,53 @@ func start_gameplay():
 	if model.phase=="result":
 		for order in completions.keys():finish_input(order,{"ok":false,"reason":"session_restarted"})
 		session.start();audio.clear()
+		previous_scene = cinematic_scene()
 	session.set_pause("tracking",network and not gun.valid)
 	session.set_pause("ready",false)
 	session.set_pause("manual",false)
+
+func cinematic_scene() -> String:
+	if transition_clips.is_empty():
+		return ""
+	var section := String(model.get("current_section"))
+	match section:
+		"story.cinema_intro": return "cinema.ticket_office"
+		"story.train_station_intro": return "waiting_room"
+		"lantern_base.pullback": return "lantern_base.workbench"
+	if section.begins_with("cinema.") or section.begins_with("lantern_base."):
+		return section
+	return section.get_slice(".", 0)
+
+func check_transition() -> void:
+	var next_scene := cinematic_scene()
+	if transition != null or next_scene == previous_scene:
+		return
+	var file: String = transition_clips.get([previous_scene, next_scene], "")
+	previous_scene = next_scene
+	if file.is_empty():
+		return
+	var player := Opening.new()
+	if not player.configure_video(transition_directory.path_join("game").path_join(file)):
+		player.free()
+		return
+	transition = player
+	session.set_pause("transition", true)
+	# Discard inputs queued against the outgoing scene.
+	for entry in session.queue.pending:
+		finish_input(entry.order, {"ok": false, "reason": "transition"})
+	session.queue.pending.clear()
+	session.submission.clear()
+	session.submission_id = ""
+	root.add_child(player)
+	root.move_child(player, display_setup.get_index())
+	layout()
+	player.completed.connect(func():
+		transition = null
+		session.set_pause("transition", false)
+		player.queue_free()
+	)
+	player.begin()
+
 func _process(delta):
 	if model==null:return
 	elapsed+=delta
@@ -293,7 +357,7 @@ func handle_key(keycode: Key) -> bool:
 		display_setup.handle_key(keycode)
 		return true
 	if keycode in [KEY_F2, KEY_C]:
-		if opening != null and opening.visible:return false
+		if (opening != null and opening.visible) or transition != null:return false
 		open_display_setup()
 		if keycode == KEY_C:display_setup.begin_calibration()
 		return true
@@ -318,7 +382,7 @@ func handle_http(command,payload,completion):
 		for id in visible.targets:
 			var point=visible.targets[id].aim
 			if point!=null:targets.append({"id":id,"point":[point.x,point.y]})
-		var lifecycle = "opening" if opening != null and opening.visible else session.public_state().lifecycle
+		var lifecycle = "opening" if opening != null and opening.visible else ("transition" if transition != null else session.public_state().lifecycle)
 		var shot_input_enabled = lifecycle == "running" and (not ("input_enabled" in model) or model.input_enabled)
 		var state = {"ok":true,"phase":model.phase,"lifecycle":lifecycle,"shot_input_enabled":shot_input_enabled,"resources":model.resources.duplicate(true),"score":model.resources.get("score",0),"build_id":model.build.build_id,"shots":model.shots,"hits":model.hits,"visible_targets":targets}
 		if lifecycle == "opening":state["opening_seconds"] = opening.video.stream_position

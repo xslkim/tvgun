@@ -1,0 +1,175 @@
+{
+  "campaign_revision": "3cff88d87bf6f1e58f7f51f1fbb58f54dd1d7ff57817554c94f8fc05c987e899",
+  "size": [
+    1280,
+    720
+  ],
+  "fps": 30,
+  "transitions": [
+    {
+      "file": "01_alley_to_puddle.mp4",
+      "from": "alley",
+      "to": "puddle",
+      "from_title": "巷口",
+      "to_title": "巷口水洼",
+      "seconds": 3.2,
+      "frames": 96,
+      "direction": "顺着灯光低头，看见水洼里的倒影",
+      "sha256": "543e4ef0281a42553259f587d9e7cce22a83321d2535333c9deea44e3fe99573"
+    },
+    {
+      "file": "02_puddle_to_stall.mp4",
+      "from": "puddle",
+      "to": "stall",
+      "from_title": "巷口水洼",
+      "to_title": "糖葫芦摊",
+      "seconds": 3.4,
+      "frames": 102,
+      "direction": "水洼的暖色反光接到摊口",
+      "sha256": "27dba635ffac597bd63dfcee44260fde7b0d20358110a0aecbdfbd069c164f4f"
+    },
+    {
+      "file": "03_stall_to_video_shop.mp4",
+      "from": "stall",
+      "to": "video_shop",
+      "from_title": "糖葫芦摊",
+      "to_title": "录像厅门口",
+      "seconds": 3.4,
+      "frames": 102,
+      "direction": "从糖葫芦摊转向半开的卷帘门",
+      "sha256": "9f7c7be9fcb3e30cd34aa29c536e2030223e05da75175fe8216b3a59f7b10ab9"
+    },
+    {
+      "file": "04_video_shop_to_footbridge.mp4",
+      "from": "video_shop",
+      "to": "footbridge",
+      "from_title": "录像厅门口",
+      "to_title": "天桥",
+      "seconds": 3.6,
+      "frames": 108,
+      "direction": "离开录像厅，沿墙上到天桥",
+      "sha256": "776f70b4a6406dec7c5c37d57e48a4388c5b3db1542d6533c7891b0e069da476"
+    },
+    {
+      "file": "05_footbridge_to_plaza.mp4",
+      "from": "footbridge",
+      "to": "plaza",
+      "from_title": "天桥",
+      "to_title": "广场",
+      "seconds": 3.7,
+      "frames": 111,
+      "direction": "桥栏让开一片广场",
+      "sha256": "bdb3651736ecffcd5bb152ecb25a9ff63d146c5966fead57d6054a7e2d999a3f"
+    },
+    {
+      "file": "06_plaza_to_ticket_office.mp4",
+      "from": "plaza",
+      "to": "cinema.ticket_office",
+      "from_title": "广场",
+      "to_title": "售票处",
+      "seconds": 5.0,
+      "frames": 150,
+      "direction": "墨舞龙战后，广场暖灯接到旧影院的售票窗",
+      "sha256": "c4ebc7dc9cc391a1882755ccaea5e3edc3d768e3391b74ebb578cf578d88c0be"
+    },
+    {
+      "file": "07_ticket_office_to_poster_hall.mp4",
+      "from": "cinema.ticket_office",
+      "to": "cinema.poster_hall",
+      "from_title": "售票处",
+      "to_title": "海报长廊",
+      "seconds": 3.3,
+      "frames": 99,
+      "direction": "越过售票窗，进入海报长廊",
+      "sha256": "cfeb7c001157836dd9a527a8f90d4c4f317fa665b343f74ed15b0dee6acbdfbb"
+    },
+    {
+      "file": "08_poster_hall_to_auditorium.mp4",
+      "from": "cinema.poster_hall",
+      "to": "cinema.auditorium",
+      "from_title": "海报长廊",
+      "to_title": "观众席",
+      "seconds": 3.4,
+      "frames": 102,
+      "direction": "海报边缘滑开，露出一排排座椅",
+      "sha256": "99dac8f84e2ea16b5010f801cd3abc13ea89b0a783e13ebb215a608b09c4a15d"
+    },
+    {
+      "file": "09_auditorium_to_projection_booth.mp4",
+      "from": "cinema.auditorium",
+      "to": "cinema.projection_booth",
+      "from_title": "观众席",
+      "to_title": "放映室",
+      "seconds": 3.5,
+      "frames": 105,
+      "direction": "沿过道抬头，找到放映室的光",
+      "sha256": "0245a2d8ae5a51092132b0cf456f790cc9ca1da4aa5dcf4cdfc0b207d7c2b4cb"
+    },
+    {
+      "file": "10_projection_booth_to_screen_stage.mp4",
+      "from": "cinema.projection_booth",
+      "to": "cinema.screen_stage",
+      "from_title": "放映室",
+      "to_title": "银幕前",
+      "seconds": 3.7,
+      "frames": 111,
+      "direction": "放映机的光束接上银幕",
+      "sha256": "66bb25505223a4d2b354ac134f92d909103fc77154cd4f96d0199ae8c5f51868"
+    },
+    {
+      "file": "11_screen_stage_to_waiting_room.mp4",
+      "from": "cinema.screen_stage",
+      "to": "waiting_room",
+      "from_title": "银幕前",
+      "to_title": "候车室",
+      "seconds": 5.0,
+      "frames": 150,
+      "direction": "银幕暖光收束为候车室门口的灯",
+      "sha256": "2fba70974ade324e95dfdf5f7cc0314321b296daafa1eac9e50ae13dfc81e831"
+    },
+    {
+      "file": "12_waiting_room_to_platform.mp4",
+      "from": "waiting_room",
+      "to": "platform",
+      "from_title": "候车室",
+      "to_title": "站台",
+      "seconds": 3.5,
+      "frames": 105,
+      "direction": "穿出候车室，沿有顶站台前行",
+      "sha256": "978c7555da1fabad6c284d4ccf7082ac1c4ac6f4cc4963be050877056fe844f9"
+    },
+    {
+      "file": "13_platform_to_green_car.mp4",
+      "from": "platform",
+      "to": "green_car",
+      "from_title": "站台",
+      "to_title": "绿皮车厢",
+      "seconds": 3.8,
+      "frames": 114,
+      "direction": "顺着车窗进入绿皮车厢",
+      "sha256": "1f137980850ffa5246e34e4bc32ce2037815f11c03cc60efc02352f6e9281cd4"
+    },
+    {
+      "file": "14_green_car_to_lantern_base.mp4",
+      "from": "green_car",
+      "to": "lantern_base.lantern_base",
+      "from_title": "绿皮车厢",
+      "to_title": "灯座",
+      "seconds": 4.2,
+      "frames": 126,
+      "direction": "车窗斜光接上纸灯内层的光缝",
+      "sha256": "4ec9016467526125ef99d1442b04f33d56400952ad192e44ba750ffd9db5bf11"
+    },
+    {
+      "file": "15_lantern_base_to_workbench.mp4",
+      "from": "lantern_base.lantern_base",
+      "to": "lantern_base.workbench",
+      "from_title": "灯座",
+      "to_title": "爷爷的工作台",
+      "seconds": 5.0,
+      "frames": 150,
+      "direction": "由灯座向外拉远，落到爷爷的工作台",
+      "sha256": "20f02c85c9d6995ffd76ebba03a654e20e3d477c9a35703bceafc190ccc82ca5"
+    }
+  ]
+}

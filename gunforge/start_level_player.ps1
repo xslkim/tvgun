@@ -2,6 +2,9 @@ param([ValidateSet('paper.alley','paper.assault','paper.station','paper.stall','
 $ErrorActionPreference='Stop'
 $levelRoot=(Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 $levelPython=Join-Path $levelRoot '.venv/Scripts/python.exe'
+if (-not (Test-Path -LiteralPath $levelPython)) {
+    $levelPython=(Get-Command python -CommandType Application -ErrorAction Stop | Select-Object -First 1).Source
+}
 if (-not $Godot) { $Godot=Join-Path $levelRoot '../gunforge_cache/tools/godot-4.6.3/Godot_v4.6.3-stable_win64_console.exe' }
 if ($Proposal) {
     if ($Build -or $Candidate) { throw '-Proposal selects an exact candidate. Omit -Build and -Candidate.' }
@@ -11,6 +14,10 @@ if ($Proposal) {
     if ($LASTEXITCODE) { throw 'Cannot identify the proposal package' }
 }
 if (-not $Build -and $Package -in @('paper.alley','paper.assault','paper.station','paper.stall','paper.night_market','paper.lantern_city','paper.lantern_city_campaign','paper.lantern_city_ui','paper.lantern_city_epilogue','paper.lantern_city_tadpole','paper.lantern_city_rescue','paper.lantern_city_cast')) {
+    if (-not (Test-Path -LiteralPath (Join-Path $PSScriptRoot 'framework/runtime/station/station.json'))) {
+        & $levelPython (Join-Path $PSScriptRoot 'pipeline/build_0b.py')
+        if ($LASTEXITCODE) { throw 'Initial runtime asset build failed' }
+    }
     & $levelPython (Join-Path $PSScriptRoot 'pipeline/build_0b.py')
     if ($LASTEXITCODE) { throw 'Native asset preparation failed' }
 }
@@ -38,6 +45,9 @@ $playerArgs = @("--build=$Build", "--assets=$levelRoot", "--quit-after=$QuitAfte
 if ($Package -in @('paper.station','paper.night_market','paper.lantern_city','paper.lantern_city_campaign','paper.lantern_city_ui','paper.lantern_city_epilogue','paper.lantern_city_tadpole','paper.lantern_city_rescue','paper.lantern_city_cast') -and -not $SkipOpening) {
     $openingDir = Join-Path $PSScriptRoot 'games/g01/cinematics/opening_original'
     $playerArgs += "--opening-dir=$openingDir"
+}
+if ($Package -in @('paper.lantern_city_cast','paper.lantern_city_campaign','paper.lantern_city_ui','paper.lantern_city_epilogue','paper.lantern_city_tadpole','paper.lantern_city_rescue')) {
+    $playerArgs += "--transitions-dir=$(Join-Path $PSScriptRoot 'games/g01/cinematics/transitions_original')"
 }
 & $Godot --path (Join-Path $PSScriptRoot 'framework') --script res://tools/level_player.gd -- @playerArgs
 exit $LASTEXITCODE

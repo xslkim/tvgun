@@ -8,15 +8,19 @@ var captions: Array = []
 var caption_index := 0
 
 func configure(directory: String) -> bool:
-	var path := directory.path_join("paper_lantern_city_opening_game.ogv")
+	return configure_video(directory.path_join("paper_lantern_city_opening_game.ogv"),
+		directory.path_join("opening_subtitles.json"))
+
+func configure_video(path: String, subtitle_path := "") -> bool:
 	if not FileAccess.file_exists(path):
 		push_warning("Opening video missing: " + path)
 		return false
-	var track: Variant = JSON.parse_string(FileAccess.get_file_as_string(directory.path_join("opening_subtitles.json")))
-	if track is Array:
-		captions = track
-	else:
-		push_warning("Opening subtitle track unavailable")
+	if not subtitle_path.is_empty():
+		var track: Variant = JSON.parse_string(FileAccess.get_file_as_string(subtitle_path))
+		if track is Array:
+			captions = track
+		else:
+			push_warning("Opening subtitle track unavailable")
 
 	mouse_filter = MOUSE_FILTER_IGNORE
 	clip_contents = true

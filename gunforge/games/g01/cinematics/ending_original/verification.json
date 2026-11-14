@@ -1,0 +1,22 @@
+{
+  "duration_seconds": 60,
+  "frames": 1800,
+  "size": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "sha256": {
+    "paper_lantern_city_ending_clean.mp4": "9176731436a29edba6d6999f7f8959260f70f03db6b7c34ac9577ef2c427abc2",
+    "paper_lantern_city_ending.mp4": "537bedf97f57a2ec8240c7de55872253d28c9f82c3fe6d8b24dfe0035909bfd5"
+  },
+  "luminance_scan": {
+    "samples": 60,
+    "max_y_prime": 0.7507058823529412,
+    "fraction_above_75_percent": 2.8935185185185185e-07
+  },
+  "audio": {
+    "integrated_lufs": -18.04,
+    "true_peak_dbtp": -1.43
+  }
+}

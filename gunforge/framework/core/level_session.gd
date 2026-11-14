@@ -1,5 +1,6 @@
 extends RefCounted
 signal input_consumed(order,result)
+signal tick_completed
 ## Shared shell: input binding, recording, pause ownership, checkpoints and seek.
 const Clock=preload("fixed_clock.gd")
 const Queue=preload("tick_input_queue.gd")
@@ -62,10 +63,13 @@ func consume(at,_dt):
 	# A section cut already rebuilds the displayed scene. Save its due checkpoint one tick later.
 	if delayed_checkpoint or (scheduled_checkpoint and previous_section == model.get("current_section")):
 		cache_checkpoint()
+	if tick_completed.has_connections():
+		tick_completed.emit()
 func step():
 	if not closed and pause_reasons.is_empty():clock.step(consume)
 func advance(delta):
-	if not closed and pause_reasons.is_empty():clock.advance_frame(delta,consume)
+	if not closed and pause_reasons.is_empty():
+		clock.advance_frame(delta, consume, func(): return pause_reasons.has("transition"))
 func set_pause(reason,enabled):
 	if enabled:pause_reasons[reason]=true
 	else:pause_reasons.erase(reason)
